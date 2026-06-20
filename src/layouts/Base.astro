@@ -13,7 +13,7 @@ const base = import.meta.env.BASE_URL;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} · SilentStars</title>
+    <title>{title === 'SilentStars' ? title : `${title} · SilentStars`}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={`${title} · SilentStars`} />
     <meta property="og:description" content={description} />
@@ -80,6 +80,18 @@ const base = import.meta.env.BASE_URL;
 <!-- torch + theme toggle — after paint -->
 <script is:inline>
   (function(){
+    // star: spin once on load, then every 5s
+    var star = document.querySelector('.ss-star');
+    if (star) {
+      var spin = function() {
+        star.style.animation = 'none';
+        star.getBoundingClientRect();
+        star.style.animation = 'ss-coin 0.65s ease-in-out';
+      };
+      spin();
+      setInterval(spin, 5000);
+    }
+
     // torch
     var torch = document.getElementById('ss-torch');
     if (torch) {
