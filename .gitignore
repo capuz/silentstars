@@ -4,3 +4,10 @@ node_modules/
 .env.*
 !.env.example
 .astro/
+
+# design reference files
+HANDOFF-astro.md
+SilentStars.dc.html
+support.js
+.thumbnail
+.atl/
