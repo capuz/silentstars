@@ -11,6 +11,7 @@ interface Props {
   undervaluedScore: number;
   stars: number;
   language?: string;
+  languages?: string[];
   lastCommitAt: string;
   maintainers: string[];
   promoted?: boolean;
@@ -26,9 +27,16 @@ interface Props {
 
 const {
   slug, name, description, repo, url, status, tags,
-  healthScore, undervaluedScore, stars, language, lastCommitAt,
+  healthScore, undervaluedScore, stars, language, languages = [], lastCommitAt,
   maintainers, createdAt,
 } = Astro.props;
+
+const secondaryLang = languages[1] && languages[1] !== language ? languages[1] : null;
+const lang2Slug = secondaryLang ? deviconMap[secondaryLang] : undefined;
+const lang2Icon = lang2Slug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2Slug}/${lang2Slug}-original.svg` : null;
+const lang2Code = secondaryLang ? (langCodes[secondaryLang] ?? secondaryLang.slice(0, 2).toUpperCase()) : null;
+const lang2Pct  = secondaryLang ? (Astro.props.languagePcts?.[1] ?? null) : null;
+const lang1Pct  = language ? (Astro.props.languagePcts?.[0] ?? null) : null;
 
 const base = import.meta.env.BASE_URL;
 
@@ -113,17 +121,19 @@ const tagLabels: Record<string, string> = {
       </span>
       <!-- language chip -->
       {language && langCode && (
-        <span class="lang-chip">
+        <span class="lang-chip" title={lang1Pct ? `${language} ${lang1Pct}%` : language}>
           {langIcon && (
-            <img
-              src={langIcon}
-              alt={language}
-              width="16"
-              height="16"
-              onerror="this.style.display='none'"
-            />
+            <img src={langIcon} alt={language} width="16" height="16" onerror="this.style.display='none'" />
           )}
           {langCode}
+        </span>
+      )}
+      {secondaryLang && lang2Code && (
+        <span class="lang-chip lang-chip--secondary" title={lang2Pct ? `${secondaryLang} ${lang2Pct}%` : secondaryLang}>
+          {lang2Icon && (
+            <img src={lang2Icon} alt={secondaryLang} width="14" height="14" onerror="this.style.display='none'" />
+          )}
+          {lang2Code}
         </span>
       )}
     </div>
@@ -247,6 +257,12 @@ const tagLabels: Record<string, string> = {
     background: #fff;
     color: #17150f;
     flex-shrink: 0;
+  }
+  .lang-chip--secondary {
+    font-size: 10px;
+    padding: 2px 8px 2px 3px;
+    opacity: 0.72;
+    border-style: dashed;
   }
 
   /* score */

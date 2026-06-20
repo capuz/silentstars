@@ -13,6 +13,8 @@ const projects = defineCollection({
     url: z.string().url(),
     homepage: z.string().url().optional(),
     language: z.string().optional(),
+    languages: z.array(z.string()).default([]),
+    languagePcts: z.array(z.number()).default([]),
 
     // GitHub metrics
     stars: z.number().int().nonnegative(),

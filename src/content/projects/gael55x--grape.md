@@ -5,6 +5,8 @@ description: "Better context transport for AI coding agents."
 url: "https://github.com/gael55x/Grape"
 homepage: "https://www.npmjs.com/package/grape-context"
 language: "TypeScript"
+languages: ["TypeScript", "JavaScript"]
+languagePcts: [57, 43]
 stars: 11
 forks: 1
 openIssues: 0
