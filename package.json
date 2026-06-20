@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",
+    "@atproto/api": "^0.20.16",
     "astro": "^4.15.0"
   },
   "devDependencies": {
