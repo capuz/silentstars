@@ -5,6 +5,9 @@ description: "🚀 A curated collection of working proxies, automatically update
 url: "https://github.com/stormsia/proxy-list"
 homepage: "https://stormsia.github.io/proxy-list/"
 language: "TypeScript"
+languages: ["TypeScript"]
+languagePcts: [84]
+topics: ["http-proxy", "proxies", "proxy", "proxy-list", "proxy-scraper", "socks4-proxy", "socks5-proxy"]
 stars: 30
 forks: 3
 openIssues: 0
@@ -13,7 +16,7 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-11-29T12:14:06Z"
-lastCommitAt: "2026-06-20T14:06:36Z"
+lastCommitAt: "2026-06-20T23:36:06Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80

@@ -5,6 +5,9 @@ description: "🔒 Free V2Ray configs auto-updated every 30m | VLESS, VMess, Tro
 url: "https://github.com/0xRadikal/Free-v2ray-Configs"
 homepage: "https://t.me/raydikalx"
 language: "Python"
+languages: ["Python"]
+languagePcts: [100]
+topics: ["bypass-censorship", "free-v2ray", "free-vpn", "hiddify", "hysteria2", "iran", "reality", "shadowsocks", "trojan", "tuic"]
 stars: 19
 forks: 1
 openIssues: 0
@@ -13,7 +16,7 @@ watchers: 0
 contributors: 1
 recentReleases: 1
 createdAt: "2026-06-06T08:44:26Z"
-lastCommitAt: "2026-06-20T14:07:27Z"
+lastCommitAt: "2026-06-20T23:37:32Z"
 lastReleaseAt: "2026-06-06T11:18:10Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]

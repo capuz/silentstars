@@ -5,6 +5,8 @@ description: "ThinkWork AI Open Source Enterprise Agent Harness"
 url: "https://github.com/thinkwork-ai/thinkwork"
 homepage: "https://thinkwork.ai"
 language: "TypeScript"
+languages: ["TypeScript"]
+languagePcts: [90]
 stars: 9
 forks: 1
 openIssues: 4
@@ -13,7 +15,7 @@ watchers: 0
 contributors: 5
 recentReleases: 10
 createdAt: "2026-04-10T00:48:50Z"
-lastCommitAt: "2026-06-20T13:50:01Z"
+lastCommitAt: "2026-06-20T23:40:31Z"
 lastReleaseAt: "2026-05-18T11:16:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
