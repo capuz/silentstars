@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base title="404" description="Page not found — SilentStars">
+  <div class="container section not-found">
+
+    <p class="eyebrow">// 404</p>
+    <h1 class="nf-title">Star not found</h1>
+    <p class="nf-sub">
+      This repo may have been deleted, renamed, or the link is broken.
+    </p>
+
+    <div class="nf-actions">
+      <a href={`${base}`} class="btn-primary">← Home</a>
+      <a href={`${base}projects/`} class="btn-ghost">Browse directory</a>
+    </div>
+
+    <div class="nf-star" aria-hidden="true">★</div>
+
+  </div>
+</Base>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: .08em;
+    margin: 0 0 12px;
+  }
+
+  .nf-title {
+    font-family: var(--f-display);
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 16px;
+    line-height: 1.1;
+  }
+
+  .nf-sub {
+    font-family: var(--f-body);
+    font-size: 1.05rem;
+    color: var(--ink);
+    opacity: .6;
+    max-width: 420px;
+    margin: 0 0 40px;
+    line-height: 1.6;
+  }
+
+  .nf-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 22px;
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 999px;
+    border: 2px solid var(--ink);
+    transition: background .12s, color .12s;
+  }
+  .btn-primary:hover { background: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+  .btn-ghost {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 22px;
+    background: transparent;
+    color: var(--ink);
+    border-radius: 999px;
+    border: 2px solid var(--ink);
+    transition: background .12s, color .12s;
+  }
+  .btn-ghost:hover { background: var(--ink); color: var(--paper); text-decoration: none; }
+
+  .nf-star {
+    position: absolute;
+    bottom: -1rem;
+    right: 2rem;
+    font-size: clamp(6rem, 18vw, 12rem);
+    color: var(--ink);
+    opacity: .04;
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    font-family: var(--f-display);
+  }
+</style>

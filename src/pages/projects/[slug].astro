@@ -99,6 +99,9 @@ const tagLabels: Record<string, string> = {
 
 const base    = import.meta.env.BASE_URL;
 const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
+const pageUrl = new URL(`${base}projects/${project.slug}/`, Astro.site).href;
+const bskyText = encodeURIComponent(`★ ${d.name} — ${d.description}\n\n${pageUrl}`);
+const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage}>
   <div class="container section">
@@ -196,6 +199,12 @@ const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
         <div class="footer-right">
           <a href={d.url} target="_blank" rel="noopener noreferrer" class="footer-stars">
             <span>★</span>{d.stars}
+          </a>
+          <a href={bskyUrl} target="_blank" rel="noopener noreferrer" class="btn-bsky" title="Share on Bluesky">
+            <svg width="13" height="13" viewBox="0 0 568 501" fill="currentColor" aria-hidden="true">
+              <path d="M123.121 33.664C188.898 82.147 259.758 180.6 284 234.217c24.242-53.617 95.102-152.07 160.879-200.553C491.44-.584 568-13.998 568 66.914c0 15.773-9.019 132.555-14.301 151.42-18.372 65.631-85.347 82.35-144.986 72.218 104.16 17.695 130.667 76.28 73.358 134.862-108.836 111.703-156.394-28.032-168.441-63.86-2.26-6.643-3.313-9.738-3.33-7.108-.016 2.63-1.069 5.725-3.329 12.368-12.047 35.828-59.605 175.563-168.441 63.86C79.001 371.802 105.508 313.217 209.668 295.52c-59.64 10.132-126.615-6.587-144.987-72.218C59.38 204.437 50.36 87.655 50.36 71.882c0-80.912 76.56-67.498 72.761-38.218z"/>
+            </svg>
+            Share
           </a>
           <a href={d.url} target="_blank" rel="noopener noreferrer" class="btn-gh">
             View on GitHub ↗
@@ -434,6 +443,23 @@ const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
     transition: background .12s, color .12s;
   }
   .footer-stars:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .btn-bsky {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    background: transparent;
+    letter-spacing: 0.02em;
+    transition: background .12s, color .12s;
+  }
+  .btn-bsky:hover { background: #0085ff; border-color: #0085ff; color: #fff; text-decoration: none; }
 
   .btn-gh {
     font-family: var(--f-mono);
