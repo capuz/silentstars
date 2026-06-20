@@ -92,7 +92,7 @@ details[open] .ss-plus { transform: rotate(45deg); }
 @keyframes ss-coin    { from { transform: rotateY(0deg); } to   { transform: rotateY(360deg); } }
 @keyframes ss-blink   { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
 
-.ss-star   { display: inline-block; animation: ss-coin 2.2s linear infinite; }
+.ss-star   { display: inline-block; }
 .ss-cursor { display: inline-block; margin-left: 2px; color: var(--term-fg);
              text-shadow: 0 0 6px rgba(94,255,160,.55);
              animation: ss-blink 1.1s step-end infinite; }
