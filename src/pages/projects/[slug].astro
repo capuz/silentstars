@@ -52,6 +52,13 @@ const deviconMap: Record<string, string> = {
 const langSlug = d.language ? deviconMap[d.language] : undefined;
 const langIcon  = langSlug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langSlug}/${langSlug}-original.svg` : null;
 const langCode  = d.language ? (langCodes[d.language] ?? d.language.slice(0, 2).toUpperCase()) : null;
+const lang1Pct  = d.languagePcts?.[0] ?? null;
+
+const secondaryLang = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
+const lang2Slug = secondaryLang ? deviconMap[secondaryLang] : undefined;
+const lang2Icon = lang2Slug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2Slug}/${lang2Slug}-original.svg` : null;
+const lang2Code = secondaryLang ? (langCodes[secondaryLang] ?? secondaryLang.slice(0, 2).toUpperCase()) : null;
+const lang2Pct  = d.languagePcts?.[1] ?? null;
 
 // ── Health ─────────────────────────────────────────────────────
 function healthMeta(h: number) {
@@ -111,12 +118,22 @@ const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
             {cat.label}
           </span>
           {d.language && langCode && (
-            <span class="lang-chip">
+            <span class="lang-chip" title={lang1Pct ? `${d.language} ${lang1Pct}%` : d.language}>
               {langIcon && (
                 <img src={langIcon} alt={d.language} width="16" height="16"
                   onerror="this.style.display='none'" />
               )}
               {langCode}
+            </span>
+          )}
+          {secondaryLang && lang2Code && (
+            <span class="lang-chip lang-chip--secondary"
+                  title={lang2Pct ? `${secondaryLang} ${lang2Pct}%` : secondaryLang}>
+              {lang2Icon && (
+                <img src={lang2Icon} alt={secondaryLang} width="14" height="14"
+                  onerror="this.style.display='none'" />
+              )}
+              {lang2Code}
             </span>
           )}
         </div>
@@ -307,6 +324,12 @@ const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
     border: 1.5px solid var(--ink);
     background: #fff;
     color: #17150f;
+  }
+  .lang-chip--secondary {
+    font-size: 10px;
+    padding: 2px 8px 2px 3px;
+    opacity: 0.72;
+    border-style: dashed;
   }
 
   .card-score { display: flex; align-items: baseline; gap: 2px; font-family: var(--f-display); }
