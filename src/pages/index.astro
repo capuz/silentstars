@@ -21,6 +21,21 @@ const hiddenGems = visible
   .sort((a, b) => b.data.attentionGap - a.data.attentionGap)
   .slice(0, 9);
 
+const quiet = visible
+  .filter(p => p.data.status === 'quiet')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap)
+  .slice(0, 9);
+
+const atRisk = visible
+  .filter(p => p.data.status === 'at_risk')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap)
+  .slice(0, 9);
+
+const revived = visible
+  .filter(p => p.data.status === 'revived')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap)
+  .slice(0, 9);
+
 const base = import.meta.env.BASE_URL;
 ---
 <Base title="SilentStars">
@@ -77,6 +92,51 @@ const base = import.meta.env.BASE_URL;
         ))}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>ver más →</a></div>
+    </section>
+  )}
+
+  {quiet.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Quiet</h2>
+        <p>Still alive, just not loud. Slow cadence, steady craft.</p>
+      </div>
+      <div class="grid">
+        {quiet.map(p => (
+          <ProjectCard slug={p.slug} {...p.data} />
+        ))}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>ver más →</a></div>
+    </section>
+  )}
+
+  {atRisk.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> At Risk</h2>
+        <p>Fading signal. Worth a star, a PR, or just a look.</p>
+      </div>
+      <div class="grid">
+        {atRisk.map(p => (
+          <ProjectCard slug={p.slug} {...p.data} />
+        ))}
+      </div>
+      <div class="see-more"><a href={`${base}at-risk/`}>ver más →</a></div>
+    </section>
+  )}
+
+  {revived.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Revived</h2>
+        <p>Back from the dead. Someone cared enough to pick it up again.</p>
+      </div>
+      <div class="grid">
+        {revived.map(p => (
+          <ProjectCard slug={p.slug} {...p.data} />
+        ))}
+      </div>
+      <div class="see-more"><a href={`${base}resurrections/`}>ver más →</a></div>
     </section>
   )}
 
