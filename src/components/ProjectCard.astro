@@ -1,6 +1,7 @@
 ---
 import StatusBadge from './StatusBadge.astro';
 import VitalityBar from './VitalityBar.astro';
+import LanguageIcon from './LanguageIcon.astro';
 
 interface Props {
   slug: string;
@@ -15,11 +16,14 @@ interface Props {
   stars: number;
   language?: string;
   lastCommitAt: string;
+  maintainers: string[];
+  promoted?: boolean;
 }
 
 const {
   slug, name, description, repo, url, status, tags,
-  vitalityScore, attentionGap, stars, language, lastCommitAt
+  vitalityScore, attentionGap, stars, language, lastCommitAt,
+  maintainers, promoted = false,
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
@@ -44,10 +48,11 @@ const daysSince = Math.floor((Date.now() - new Date(lastCommitAt).getTime()) / 8
 const lastCommitLabel = daysSince === 0 ? 'today' : daysSince === 1 ? 'yesterday' : `${daysSince}d ago`;
 ---
 <article class="card" style={`--status-color: ${statusVar[status]}`}>
+  {promoted && <span class="promo-badge">promoted</span>}
   <div class="card-top">
     <div class="card-meta">
       <StatusBadge status={status} />
-      {language && <span class="lang">{language}</span>}
+      {language && <LanguageIcon language={language} size={16} />}
     </div>
     <div class="gap-score" title="Attention Gap — higher means more undervalued">
       ↑{attentionGap.toFixed(1)}
@@ -72,11 +77,31 @@ const lastCommitLabel = daysSince === 0 ? 'today' : daysSince === 1 ? 'yesterday
 
   <div class="card-footer">
     <span class="last-commit">{lastCommitLabel}</span>
+    {maintainers.length > 0 && (
+      <span class="maintainers" title={maintainers.join(', ')}>
+        by {maintainers.slice(0, 2).join(', ')}
+      </span>
+    )}
     <a href={url} target="_blank" rel="noopener" class="stars">★ {stars}</a>
   </div>
 </article>
 
 <style>
+  .promo-badge {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.06em;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 0.1em 0.45em;
+    border-radius: 2px;
+    text-transform: lowercase;
+    z-index: 1;
+  }
+
   .card {
     position: relative;
     background: var(--bg-card);
@@ -202,6 +227,13 @@ const lastCommitLabel = daysSince === 0 ? 'today' : daysSince === 1 ? 'yesterday
     font-family: var(--font-mono);
     font-size: 0.65rem;
     color: var(--text-dim);
+  }
+  .maintainers {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 110px;
+    opacity: 0.7;
   }
   .stars { opacity: 0.5; transition: opacity 0.15s; }
   .stars:hover { opacity: 1; text-decoration: none; }

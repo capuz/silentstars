@@ -6,6 +6,10 @@ import ProjectCard from '../components/ProjectCard.astro';
 const all = await getCollection('projects');
 const visible = all.filter(p => p.data.status !== 'archived');
 
+const newborns = visible
+  .filter(p => p.data.status === 'newborn')
+  .sort((a, b) => new Date(b.data.createdAt).getTime() - new Date(a.data.createdAt).getTime());
+
 const thriving = visible
   .filter(p => p.data.status === 'thriving')
   .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
@@ -20,26 +24,27 @@ const base = import.meta.env.BASE_URL;
   <section class="hero">
     <div class="container">
       <p class="eyebrow">// open source is more than stars</p>
-      <h1 class="headline">
-        <span class="hl-line">Not famous.</span>
-        <span class="hl-line">Not abandoned.</span>
-        <span class="hl-line hl-accent">Just building.</span>
-      </h1>
-      <p class="tagline">
-        A directory of projects that are <strong>alive but invisible</strong> —
-        newborns finding their feet, solo builders shipping in silence, and
-        projects that came back from the edge.
-        <br />No vanity metrics. Ranked by how much they deserve to be seen.
-      </p>
+      <h1 class="headline">Not famous. Not abandoned. Just building.</h1>
       <div class="hero-actions">
         <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
-        <a href={`${base}at-risk`} class="btn-ghost">At risk projects →</a>
+        <a href={`${base}at-risk`} class="btn-ghost">At risk →</a>
       </div>
-      <p class="hero-stat">
-        <span class="stat-num">{visible.length}</span> projects tracked
-      </p>
     </div>
   </section>
+
+  {newborns.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Newborn · just started</h2>
+        <p>Projects born in the last 6 months — fragile, alive, and worth watching.</p>
+      </div>
+      <div class="grid">
+        {newborns.map(p => (
+          <ProjectCard slug={p.slug} {...p.data} />
+        ))}
+      </div>
+    </section>
+  )}
 
   {thriving.length > 0 && (
     <section class="section container">
@@ -78,44 +83,29 @@ const base = import.meta.env.BASE_URL;
 <style>
   /* Hero */
   .hero {
-    padding: 5rem 0 4rem;
+    padding: 1.5rem 0 1.25rem;
     border-bottom: 1px solid var(--border);
   }
   .eyebrow {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     letter-spacing: 0.08em;
     color: var(--text-dim);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.6rem;
   }
   .headline {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1em;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.35rem, 4vw, 2rem);
     font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 1.75rem;
-    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
   }
-  .hl-line { display: block; }
-  .hl-accent { color: var(--revived); }
-
-  .tagline {
-    max-width: 520px;
-    color: var(--text-muted);
-    font-size: 0.925rem;
-    line-height: 1.75;
-    margin-bottom: 2rem;
-  }
-  .tagline strong { color: var(--text); font-weight: 500; }
 
   .hero-actions {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 2rem;
   }
   .btn-primary {
     font-family: var(--font-mono);
@@ -137,14 +127,6 @@ const base = import.meta.env.BASE_URL;
     letter-spacing: 0.02em;
   }
   .btn-ghost:hover { color: var(--text); text-decoration: none; }
-
-  .hero-stat {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-dim);
-    letter-spacing: 0.06em;
-  }
-  .stat-num { color: var(--thriving); font-weight: 700; }
 
   /* Sections */
   .section-header { margin-bottom: 1.75rem; }

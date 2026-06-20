@@ -2,12 +2,20 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import promotedRaw from '../../../data/promoted.json';
+
+type PromotedEntry = { repo: string; until: string | null };
+const promotedEntries = promotedRaw as PromotedEntry[];
+const promotedRepos = new Set(promotedEntries.map(e => e.repo.toLowerCase()));
 
 const all = await getCollection('projects');
 
 const projects = all
   .filter(p => p.data.status !== 'archived')
   .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+
+const regular  = projects.filter(p => !promotedRepos.has(p.data.repo.toLowerCase()));
+const promoted = projects.filter(p =>  promotedRepos.has(p.data.repo.toLowerCase()));
 
 const statuses = ['thriving', 'quiet', 'at_risk', 'newborn', 'revived'] as const;
 const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero'] as const;
@@ -36,6 +44,7 @@ const tagLabels: Record<string, string> = {
       </p>
     </div>
 
+
     <div class="filters" id="filters">
       <div class="filter-group">
         <span class="filter-label">status</span>
@@ -53,7 +62,7 @@ const tagLabels: Record<string, string> = {
     </div>
 
     <div class="grid" id="project-grid">
-      {projects.map(p => (
+      {regular.map(p => (
         <div
           class="grid-item"
           data-status={p.data.status}
@@ -67,6 +76,17 @@ const tagLabels: Record<string, string> = {
     <p class="empty-state" id="empty-state" style="display:none">
       No projects match the selected filters.
     </p>
+
+    {promoted.length > 0 && (
+      <div class="promoted-block">
+        <p class="promoted-label">// promoted</p>
+        <div class="grid">
+          {promoted.map(p => (
+            <ProjectCard slug={p.slug} {...p.data} promoted={true} />
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </Base>
 
@@ -161,7 +181,7 @@ const tagLabels: Record<string, string> = {
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s;
   }
-  .filter-btn:hover { border-color: #555; color: var(--text-muted); }
+  .filter-btn:hover { border-color: var(--text-muted); color: var(--text-muted); }
   .filter-btn.active { border-color: var(--revived); color: var(--revived); }
 
   .filter-reset {
@@ -187,5 +207,18 @@ const tagLabels: Record<string, string> = {
     padding: 3rem 0;
     font-family: var(--font-mono);
     font-size: 0.8rem;
+  }
+
+  .promoted-block {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .promoted-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
   }
 </style>
