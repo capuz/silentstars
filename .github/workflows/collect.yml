@@ -31,7 +31,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node 20
+      - name: Setup Node 24
         uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -76,7 +76,7 @@ jobs:
         with:
           ref: main   # always build the latest commit (after collect may have pushed)
 
-      - name: Setup Node 20
+      - name: Setup Node 24
         uses: actions/setup-node@v4
         with:
           node-version: '24'
@@ -117,7 +117,7 @@ jobs:
         with:
           ref: main
 
-      - name: Setup Node 20
+      - name: Setup Node 24
         uses: actions/setup-node@v4
         with:
           node-version: '24'

@@ -2,7 +2,7 @@ import { BskyAgent } from '@atproto/api';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-const DRY_RUN = process.argv.includes('--dry-run');
+const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
 const LANG_EMOJI: Record<string, string> = {
   TypeScript: '🟦', JavaScript: '🟨', Python: '🐍', Go: '🐹',

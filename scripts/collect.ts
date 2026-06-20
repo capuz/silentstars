@@ -9,7 +9,7 @@
  * Env:  GITHUB_TOKEN — personal access token or Actions token
  */
 
-import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -32,6 +32,7 @@ interface RepoData {
   language?: string;
   languages?: string[];
   languagePcts?: number[];
+  topics?: string[];
   stars: number;
   forks: number;
   openIssues: number;
@@ -86,7 +87,7 @@ interface GraphQLRepo {
   goodFirstIssues: { totalCount: number };
   hasReadme: { id: string } | null;
   hasLicense: { id: string } | null;
-  hasContributing: { id: string } | null;
+  repositoryTopics: { nodes: Array<{ topic: { name: string } }> };
   mentionableUsers: { totalCount: number };
   watchers: { totalCount: number };
 }
@@ -138,7 +139,7 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     goodFirstIssues:  issues(states: OPEN, labels: ["good first issue"]) { totalCount }
     hasReadme:        object(expression: "HEAD:README.md") { id }
     hasLicense:       object(expression: "HEAD:LICENSE")   { id }
-    hasContributing:  object(expression: "HEAD:CONTRIBUTING.md") { id }
+    repositoryTopics(first: 10) { nodes { topic { name } } }
     mentionableUsers(first: 5) { totalCount }
   }
 }`;
@@ -387,6 +388,7 @@ function toFrontmatter(data: RepoData): string {
   if (data.language) lines.push(`language: "${data.language}"`);
   if (data.languages?.length) lines.push(`languages: [${data.languages.map(l => `"${l}"`).join(', ')}]`);
   if (data.languagePcts?.length) lines.push(`languagePcts: [${data.languagePcts.join(', ')}]`);
+  if (data.topics?.length) lines.push(`topics: [${data.topics.map(t => `"${t}"`).join(', ')}]`);
   lines.push(`stars: ${data.stars}`);
   lines.push(`forks: ${data.forks}`);
   lines.push(`openIssues: ${data.openIssues}`);
@@ -465,6 +467,7 @@ async function main() {
   const since180d = new Date(now - 180 * DAY_MS).toISOString();
 
   const results: RepoData[] = [];
+  const writtenSlugs = new Set<string>();
   const BATCH_SIZE = 10;
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
@@ -542,6 +545,7 @@ async function main() {
             languagePcts: qualified.map(l => l.pct),
           };
         })(),
+        topics: raw.repositoryTopics.nodes.map(n => n.topic.name),
         stars: raw.stargazerCount,
         forks: raw.forkCount,
         openIssues: raw.openIssues.totalCount,
@@ -573,10 +577,21 @@ async function main() {
       const mdPath = resolve(ROOT, `src/content/projects/${slug}.md`);
       const body = `${data.name} is tracked by SilentStars. ${data.description}`;
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
+      writtenSlugs.add(slug);
     }
 
     if (i + BATCH_SIZE < repos.length) {
       await new Promise(r => setTimeout(r, 500));
+    }
+  }
+
+  // Remove orphan MDs whose repo is no longer in the active set
+  const projectsDir = resolve(ROOT, 'src/content/projects');
+  for (const file of readdirSync(projectsDir).filter(f => f.endsWith('.md'))) {
+    const fileSlug = file.slice(0, -3);
+    if (!writtenSlugs.has(fileSlug)) {
+      unlinkSync(resolve(projectsDir, file));
+      console.log(`  🗑  Removed orphan MD: ${file}`);
     }
   }
 

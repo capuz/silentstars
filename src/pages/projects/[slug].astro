@@ -171,9 +171,10 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
       </div>
 
       <!-- tags -->
-      {d.tags.length > 0 && (
+      {(d.tags.length > 0 || (d.topics && d.topics.length > 0)) && (
         <div class="card-tags">
           {d.tags.map(t => <span class="tag">// {tagLabels[t] ?? t}</span>)}
+          {d.topics?.map(t => <span class="tag tag--topic">{t}</span>)}
         </div>
       )}
 
@@ -411,6 +412,11 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
     padding: 2px 7px;
     border-radius: 5px;
     border: 1.5px solid var(--faint);
+  }
+  .tag--topic {
+    opacity: 0.65;
+    font-weight: 500;
+    border-style: dashed;
   }
 
   .card-footer {
