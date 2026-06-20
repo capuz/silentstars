@@ -1,9 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import StatusBadge from '../../components/StatusBadge.astro';
-import VitalityBar from '../../components/VitalityBar.astro';
-import LanguageIcon from '../../components/LanguageIcon.astro';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -15,333 +12,513 @@ const { project } = Astro.props;
 const { Content } = await project.render();
 const d = project.data;
 
-function relativeDate(iso: string) {
+// ── Category badge (same as ProjectCard) ──────────────────────
+const catMap: Record<string, { label: string; bg: string; path: string }> = {
+  newborn:  { label: 'Newborn',  bg: '#bdebd0',
+    path: '<path d="M12 21v-8"/><path d="M12 13C12 9 9 6.5 5 6.5 5 10.5 8 13 12 13z"/><path d="M12 13.5c0-3.5 2.6-6 6-6 0 3.5-2.6 6-6 6z"/>' },
+  thriving: { label: 'Thriving', bg: '#ffe08a',
+    path: '<path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/>' },
+  quiet:    { label: 'Quiet',    bg: '#e6e0d2',
+    path: '<path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"/>' },
+  at_risk:  { label: 'At Risk',  bg: '#ffd5cc',
+    path: '<path d="M12 9v4m0 3h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>' },
+  revived:  { label: 'Revived',  bg: '#e8d5f5',
+    path: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>' },
+  watched:  { label: 'Watched',  bg: '#d5eeff',
+    path: '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>' },
+  archived: { label: 'Archived', bg: '#e2e0da',
+    path: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
+};
+const cat = catMap[d.status] ?? catMap.quiet!;
+const catIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#17150f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${cat.path}</svg>`;
+const catIconSrc = `data:image/svg+xml,${encodeURIComponent(catIconSvg)}`;
+
+// ── Language chip ──────────────────────────────────────────────
+const langCodes: Record<string, string> = {
+  TypeScript: 'TS', JavaScript: 'JS', Python: 'PY', Go: 'GO', Rust: 'RS',
+  Ruby: 'RB', Java: 'JV', Kotlin: 'KT', Swift: 'SW', 'C++': 'C+', 'C#': 'C#',
+  PHP: 'PH', Dart: 'DA', Scala: 'SC', Haskell: 'HS', Lua: 'LU', Elixir: 'EX',
+  Zig: 'ZG', Shell: 'SH', HTML: 'HT', CSS: 'CS', Vue: 'VU', Svelte: 'SV',
+  Clojure: 'CL', Julia: 'JL', C: 'C ',
+};
+const deviconMap: Record<string, string> = {
+  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Go: 'go',
+  Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin', Swift: 'swift',
+  'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php', Dart: 'dart', Scala: 'scala',
+  Haskell: 'haskell', Lua: 'lua', Elixir: 'elixir', Zig: 'zig', Shell: 'bash',
+  HTML: 'html5', CSS: 'css3', Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure',
+  Julia: 'julia', C: 'c',
+};
+const langSlug = d.language ? deviconMap[d.language] : undefined;
+const langIcon  = langSlug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langSlug}/${langSlug}-original.svg` : null;
+const langCode  = d.language ? (langCodes[d.language] ?? d.language.slice(0, 2).toUpperCase()) : null;
+
+// ── Health ─────────────────────────────────────────────────────
+function healthMeta(h: number) {
+  if (h >= 80) return { color: '#1f9d55', label: 'Healthy' };
+  if (h >= 60) return { color: '#c98a1e', label: 'Stable' };
+  if (h >= 40) return { color: '#d4691e', label: 'Quiet' };
+  return         { color: '#d8392b', label: 'At Risk' };
+}
+const { color: hColor, label: hLabel } = healthMeta(d.healthScore);
+
+// ── Meta helpers ───────────────────────────────────────────────
+function relDate(iso: string) {
   const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
   if (days === 0) return 'today';
   if (days === 1) return 'yesterday';
-  if (days < 30) return `${days}d ago`;
-  const months = Math.floor(days / 30);
-  if (months < 12) return `${months}mo ago`;
-  const years = Math.floor(months / 12);
-  return `${years}y ago`;
+  if (days < 30)  return `${days}d ago`;
+  const mo = Math.floor(days / 30);
+  if (mo < 12)    return `${mo}mo ago`;
+  return `${Math.floor(mo / 12)}y ago`;
+}
+function mmyyyy(iso: string) {
+  const d = new Date(iso);
+  return `${String(d.getMonth()+1).padStart(2,'0')}-${d.getFullYear()}`;
 }
 
-function ageLabel(iso: string) {
-  const months = Math.floor((Date.now() - new Date(iso).getTime()) / (30 * 86_400_000));
-  if (months < 1) return '< 1 month';
-  if (months < 12) return `${months}mo`;
-  const years = Math.floor(months / 12);
-  const rem = months % 12;
-  return `${years}y${rem > 0 ? ` ${rem}mo` : ''}`;
-}
+const daysSince = Math.floor((Date.now() - new Date(d.lastCommitAt).getTime()) / 86_400_000);
+const age       = daysSince === 0 ? 'today' : daysSince === 1 ? '1d ago' : `${daysSince}d ago`;
+const author    = d.maintainers[0] ?? d.repo.split('/')[0];
+const authorUrl = `https://github.com/${author}`;
 
 const tagLabels: Record<string, string> = {
-  solo_builder:       '// solo builder',
-  needs_contributors: '// help wanted',
-  hidden_gem:         '// hidden gem',
-  legacy_hero:        '// legacy hero',
-  community_watch:    '// community watch',
+  solo_builder:       'solo builder',
+  needs_contributors: 'help wanted',
+  hidden_gem:         'hidden gem',
+  legacy_hero:        'legacy hero',
+  community_watch:    'community watch',
 };
 
 const base = import.meta.env.BASE_URL;
 ---
 <Base title={d.name} description={d.description}>
   <div class="container section">
+
     <nav class="breadcrumb">
-      <a href={`${base}projects`}>← directory</a>
+      <a href={`${base}projects/`}>← directory</a>
     </nav>
 
-    <header class="proj-header">
-      <div class="proj-title-row">
-        <h1 class="proj-name">{d.name}</h1>
-        {d.language && (
-          <span class="lang-row">
-            <LanguageIcon language={d.language} size={16} />
-            <span class="lang-text">{d.language}</span>
+    <!-- ── Hero card (same visual language as ProjectCard) ── -->
+    <article class="hero-card">
+
+      <!-- top row -->
+      <div class="card-top">
+        <div class="card-badges">
+          <span class="cat-badge" style={`background:${cat.bg};`}>
+            <img src={catIconSrc} alt={cat.label} width="16" height="16" />
+            {cat.label}
           </span>
-        )}
+          {d.language && langCode && (
+            <span class="lang-chip">
+              {langIcon && (
+                <img src={langIcon} alt={d.language} width="16" height="16"
+                  onerror="this.style.display='none'" />
+              )}
+              {langCode}
+            </span>
+          )}
+        </div>
+        <div class="card-score" title="Undervalued score">
+          <span class="score-arrow">↑</span>
+          <span class="score-num">{d.undervaluedScore}</span>
+        </div>
       </div>
-      <p class="proj-repo">
-        <a href={d.url} target="_blank" rel="noopener">{d.repo}</a>
-      </p>
-      <p class="proj-desc">{d.description}</p>
+
+      <!-- name + repo -->
+      <a href={d.url} target="_blank" rel="noopener noreferrer" class="card-name">{d.name}</a>
+      <span class="card-slug">{d.repo}</span>
+
+      <!-- description -->
+      <p class="card-desc">{d.description}</p>
+
       {d.homepage && (
-        <p class="proj-homepage">
-          <a href={d.homepage} target="_blank" rel="noopener">{d.homepage}</a>
-        </p>
+        <a href={d.homepage} target="_blank" rel="noopener" class="card-homepage">
+          {d.homepage} ↗
+        </a>
       )}
-    </header>
 
-    <div class="layout">
-      <!-- Sidebar: metadata in spec-defined order -->
-      <aside class="sidebar">
+      <!-- health bar -->
+      <div class="health-wrap">
+        <div class="health-header">
+          <span class="health-label-text">HEALTH</span>
+          <span class="health-value" style={`color:${hColor};`}>{d.healthScore} / {hLabel}</span>
+        </div>
+        <div class="health-track">
+          <div class="health-fill" style={`width:${d.healthScore}%;background:${hColor};`}></div>
+        </div>
+      </div>
 
-        <!-- 1. Estado -->
-        <div class="meta-row">
-          <span class="meta-label">status</span>
-          <StatusBadge status={d.status} />
+      <!-- tags -->
+      {d.tags.length > 0 && (
+        <div class="card-tags">
+          {d.tags.map(t => <span class="tag">// {tagLabels[t] ?? t}</span>)}
+        </div>
+      )}
+
+      <!-- footer -->
+      <div class="card-footer">
+        <span class="footer-meta">
+          {d.createdAt && (
+            <>
+              <span class="meta-since">{mmyyyy(d.createdAt)}</span>
+              <span class="meta-dot">·</span>
+            </>
+          )}
+          <span class="meta-age">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg>
+            {age}
+          </span>
+          <span class="meta-dot">·</span>
+          <a href={authorUrl} target="_blank" rel="noopener" class="meta-author">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M5.5 20c0-3.4 2.9-5.8 6.5-5.8s6.5 2.4 6.5 5.8"/></svg>
+            {author}
+          </a>
+        </span>
+        <div class="footer-right">
+          <a href={d.url} target="_blank" rel="noopener noreferrer" class="footer-stars">
+            <span>★</span>{d.stars}
+          </a>
+          <a href={d.url} target="_blank" rel="noopener noreferrer" class="btn-gh">
+            View on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ── Expanded stats + content ── -->
+    <div class="detail-grid">
+
+      <!-- stats panel -->
+      <aside class="stats-panel">
+        <p class="panel-label">// stats</p>
+
+        <div class="stat-row">
+          <span class="stat-key">last commit</span>
+          <span class="stat-val">{relDate(d.lastCommitAt)}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">latest release</span>
+          <span class="stat-val">{d.lastReleaseAt ? relDate(d.lastReleaseAt) : '—'}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">releases (90d)</span>
+          <span class="stat-val">{d.recentReleases ?? 0}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">open issues</span>
+          <span class="stat-val">{d.openIssues}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">closed issues</span>
+          <span class="stat-val">{d.closedIssues ?? 0}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">forks</span>
+          <span class="stat-val">{d.forks}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">watchers</span>
+          <span class="stat-val">{d.watchers ?? 0}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">contributors</span>
+          <span class="stat-val">{d.contributors ?? 0}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">created</span>
+          <span class="stat-val">{mmyyyy(d.createdAt)}</span>
         </div>
 
-        {d.status === 'revived' && d.revivedAfterMonths && d.revivedDaysAgo && (
+        {d.status === 'revived' && d.revivedAfterMonths && (
           <div class="revived-note">
             ↻ inactive {d.revivedAfterMonths}mo → back {d.revivedDaysAgo}d ago
           </div>
         )}
-
-        <!-- 2. Last commit -->
-        <div class="meta-row">
-          <span class="meta-label">last commit</span>
-          <span class="meta-val">{relativeDate(d.lastCommitAt)}</span>
-        </div>
-
-        <!-- 3. Latest release -->
-        <div class="meta-row">
-          <span class="meta-label">latest release</span>
-          <span class="meta-val">{d.lastReleaseAt ? relativeDate(d.lastReleaseAt) : '—'}</span>
-        </div>
-
-        <!-- 4. Maintainers -->
-        <div class="meta-row">
-          <span class="meta-label">maintainers</span>
-          <span class="meta-val">{d.maintainers.length > 0 ? d.maintainers.join(', ') : '—'}</span>
-        </div>
-
-        <!-- 5. Age -->
-        <div class="meta-row">
-          <span class="meta-label">age</span>
-          <span class="meta-val">{ageLabel(d.createdAt)}</span>
-        </div>
-
-        <!-- 6. Open issues -->
-        <div class="meta-row">
-          <span class="meta-label">open issues</span>
-          <span class="meta-val">{d.openIssues}</span>
-        </div>
-
-        <!-- 7. Forks -->
-        <div class="meta-row">
-          <span class="meta-label">forks</span>
-          <span class="meta-val">{d.forks}</span>
-        </div>
-
-        <!-- Health Score -->
-        <div class="meta-vitality">
-          <span class="meta-label">health score</span>
-          <VitalityBar score={d.healthScore} />
-        </div>
-
-        <!-- Undervalued Score -->
-        <div class="meta-row">
-          <span class="meta-label">undervalued score</span>
-          <span class="meta-val meta-gap">↑ {d.undervaluedScore}</span>
-        </div>
-
-        <!-- Tags -->
-        {d.tags.length > 0 && (
-          <div class="meta-tags">
-            {d.tags.map(t => <span class="tag">{tagLabels[t] ?? t}</span>)}
-          </div>
-        )}
-
-        <!-- Stars — last, small, by design -->
-        <div class="meta-row meta-stars">
-          <span class="meta-label">stars</span>
-          <a href={d.url} target="_blank" rel="noopener" class="stars-link">★ {d.stars}</a>
-        </div>
       </aside>
 
-      <!-- Main: rendered markdown -->
-      <article class="prose">
-        <Content />
-        <div class="proj-cta">
-          <a href={d.url} target="_blank" rel="noopener" class="btn-primary">
-            View on GitHub ↗
-          </a>
-        </div>
-      </article>
+      <!-- prose content -->
+      <div class="prose-panel">
+        <p class="panel-label">// readme</p>
+        <article class="prose">
+          <Content />
+        </article>
+      </div>
     </div>
+
   </div>
 </Base>
 
 <style>
   .breadcrumb {
-    font-family: var(--font-mono);
+    font-family: var(--f-mono);
     font-size: 0.7rem;
-    color: var(--text-dim);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.02em;
   }
-  .breadcrumb a { color: var(--text-muted); }
-  .breadcrumb a:hover { color: var(--text); text-decoration: none; }
+  .breadcrumb a { color: var(--muted); }
+  .breadcrumb a:hover { color: var(--ink); text-decoration: none; }
 
-  .proj-header { margin-bottom: 2.5rem; }
-  .proj-title-row {
+  /* ── Hero card ── */
+  .hero-card {
     display: flex;
-    align-items: baseline;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.3rem;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 8px;
+    background: var(--card);
+    border: 2px solid var(--ink);
+    box-shadow: 4px 4px 0 var(--shadow);
+    gap: 0;
+    margin-bottom: 1.5rem;
   }
-  .proj-name {
-    font-size: 1.75rem;
-    letter-spacing: -0.02em;
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
   }
-  .lang-row {
+  .card-badges { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+
+  .cat-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    padding: 0.15em 0.5em;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px 3px 4px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: #17150f;
+    transform: rotate(-2deg);
   }
-  .lang-text {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-dim);
+  .lang-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px 3px 4px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    background: #fff;
+    color: #17150f;
   }
-  .proj-repo {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--text-dim);
-    margin-bottom: 0.75rem;
-  }
-  .proj-repo a { color: var(--text-muted); text-decoration: underline; }
-  .proj-desc { color: var(--text-muted); line-height: 1.7; max-width: 62ch; }
-  .proj-homepage {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    margin-top: 0.5rem;
-  }
-  .proj-homepage a { color: var(--text-dim); text-decoration: underline; }
 
-  /* Layout */
-  .layout {
+  .card-score { display: flex; align-items: baseline; gap: 2px; font-family: var(--f-display); }
+  .score-arrow { color: var(--accent); font-size: 14px; font-weight: 800; }
+  .score-num   { color: var(--accent); font-size: 28px; font-weight: 800; letter-spacing: -0.03em; }
+
+  .card-name {
+    font-family: var(--f-display);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 3px;
+    transition: color .12s;
+  }
+  .card-name:hover { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  .card-slug {
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .card-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 10px;
+    font-weight: 500;
+    max-width: 72ch;
+  }
+
+  .card-homepage {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .card-homepage:hover { color: var(--accent); text-decoration: underline; }
+
+  .health-wrap { margin-bottom: 14px; }
+  .health-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .health-label-text { color: var(--muted); letter-spacing: .04em; }
+  .health-track {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    overflow: hidden;
+  }
+  .health-fill { height: 100%; }
+
+  .card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+  .tag {
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--ink);
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1.5px solid var(--faint);
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 13px;
+    border-top: 1.5px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    flex-wrap: wrap;
+  }
+  .footer-meta { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); flex-wrap: wrap; }
+  .meta-age    { display: inline-flex; align-items: center; gap: 4px; }
+  .meta-dot    { opacity: .45; }
+  .meta-author { display: inline-flex; align-items: center; gap: 4px; color: inherit; }
+  .meta-author:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+
+  .footer-right { display: flex; align-items: center; gap: 8px; }
+  .footer-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    transition: background .12s, color .12s;
+  }
+  .footer-stars:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .btn-gh {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    letter-spacing: 0.02em;
+    transition: opacity .12s;
+  }
+  .btn-gh:hover { opacity: .8; text-decoration: none; }
+
+  /* ── Detail grid ── */
+  .detail-grid {
     display: grid;
-    grid-template-columns: 210px 1fr;
-    gap: 3rem;
+    grid-template-columns: 200px 1fr;
+    gap: 1.25rem;
     align-items: start;
   }
   @media (max-width: 680px) {
-    .layout { grid-template-columns: 1fr; }
-    .sidebar { order: 1; }
-    article { order: 0; }
+    .detail-grid { grid-template-columns: 1fr; }
   }
 
-  /* Sidebar */
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    position: sticky;
-    top: 68px;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+  .stats-panel,
+  .prose-panel {
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: 2px 2px 0 var(--shadow);
     overflow: hidden;
   }
-  .meta-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.65rem 0.875rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .meta-label {
-    font-family: var(--font-mono);
+
+  .panel-label {
+    font-family: var(--f-mono);
     font-size: 0.6rem;
-    letter-spacing: 0.06em;
-    color: var(--text-dim);
-    text-transform: lowercase;
-  }
-  .meta-val {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-muted);
-  }
-  .meta-gap { color: var(--revived); font-weight: 700; }
-
-  .meta-vitality {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    padding: 0.65rem 0.875rem;
-    border-bottom: 1px solid var(--border);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    padding: 8px 12px;
+    border-bottom: 1.5px solid var(--faint);
+    margin: 0;
   }
 
-  .meta-tags {
+  .stat-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    padding: 0.65rem 0.875rem;
-    border-bottom: 1px solid var(--border);
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 12px;
+    border-bottom: 1px solid var(--faint);
   }
-  .tag {
-    font-family: var(--font-mono);
+  .stat-row:last-child { border-bottom: none; }
+  .stat-key {
+    font-family: var(--f-mono);
     font-size: 0.6rem;
     color: var(--text-dim);
     letter-spacing: 0.03em;
   }
-
-  .meta-stars { opacity: 0.45; }
-  .stars-link {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--text-dim);
+  .stat-val {
+    font-family: var(--f-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--ink);
   }
 
   .revived-note {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-family: var(--f-mono);
+    font-size: 0.6rem;
     color: var(--revived);
     border-left: 2px solid var(--revived);
-    padding: 0.4em 0.75em;
-    margin: 0;
-    background: rgba(124, 58, 237, 0.07);
+    padding: 6px 10px;
+    background: rgba(124, 58, 237, 0.06);
   }
 
-  /* Prose */
+  /* ── Prose ── */
+  .prose-panel { padding: 0; }
   .prose {
+    padding: 16px;
     color: var(--text-muted);
     line-height: 1.8;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   .prose :global(p) { margin-bottom: 1rem; }
   .prose :global(h2), .prose :global(h3) {
-    font-family: var(--font-mono);
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    color: var(--text);
-    font-size: 1rem;
+    font-family: var(--f-mono);
+    margin: 1.5rem 0 0.5rem;
+    color: var(--ink);
+    font-size: 0.875rem;
+    letter-spacing: 0.03em;
   }
   .prose :global(code) {
-    font-family: var(--font-mono);
+    font-family: var(--f-mono);
     background: var(--bg-code);
     padding: 0.1em 0.4em;
     border-radius: 2px;
     font-size: 0.85em;
-    color: var(--text);
+    color: var(--ink);
   }
   .prose :global(pre) {
     background: var(--bg-code);
     padding: 1rem;
-    border-radius: var(--radius);
+    border-radius: 6px;
     overflow-x: auto;
     margin-bottom: 1rem;
     border: 1px solid var(--border);
   }
-
-  .proj-cta { margin-top: 2.5rem; }
-  .btn-primary {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    background: var(--text);
-    color: var(--bg);
-    padding: 0.6em 1.4em;
-    border-radius: var(--radius);
-    transition: opacity 0.15s;
-  }
-  .btn-primary:hover { opacity: 0.85; text-decoration: none; }
+  .prose :global(a) { color: var(--accent); text-decoration: underline; }
+  .prose :global(ul), .prose :global(ol) { padding-left: 1.25rem; margin-bottom: 1rem; }
+  .prose :global(li) { margin-bottom: 0.3rem; }
 </style>
