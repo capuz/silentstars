@@ -50,6 +50,10 @@ interface RepoData {
   maintainers: string[];
   revivedAfterMonths?: number;
   revivedDaysAgo?: number;
+  isFork?: boolean;
+  openGraphImageUrl?: string;
+  fundingLinks?: Array<{ platform: string; url: string }>;
+  discussionCount?: number;
 }
 
 interface LatestJson {
@@ -90,6 +94,11 @@ interface GraphQLRepo {
   repositoryTopics: { nodes: Array<{ topic: { name: string } }> };
   mentionableUsers: { totalCount: number };
   watchers: { totalCount: number };
+  isFork: boolean;
+  openGraphImageUrl: string;
+  fundingLinks: Array<{ platform: string; url: string }>;
+  hasDiscussionsEnabled: boolean;
+  discussions: { totalCount: number };
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -141,6 +150,11 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     hasLicense:       object(expression: "HEAD:LICENSE")   { id }
     repositoryTopics(first: 10) { nodes { topic { name } } }
     mentionableUsers(first: 5) { totalCount }
+    isFork
+    openGraphImageUrl
+    fundingLinks { platform url }
+    hasDiscussionsEnabled
+    discussions(first: 0) { totalCount }
   }
 }`;
 
@@ -406,6 +420,9 @@ function toFrontmatter(data: RepoData): string {
   lines.push(`maintainers: [${data.maintainers.map(m => `"${m}"`).join(', ')}]`);
   if (data.revivedAfterMonths != null) lines.push(`revivedAfterMonths: ${data.revivedAfterMonths}`);
   if (data.revivedDaysAgo != null) lines.push(`revivedDaysAgo: ${data.revivedDaysAgo}`);
+  if (data.openGraphImageUrl) lines.push(`openGraphImageUrl: "${data.openGraphImageUrl}"`);
+  if (data.fundingLinks?.length) lines.push(`fundingLinks: [${data.fundingLinks.map(f => `"${f.platform}:${f.url}"`).join(', ')}]`);
+  if (data.discussionCount != null) lines.push(`discussionCount: ${data.discussionCount}`);
   lines.push('---');
   return lines.join('\n');
 }
@@ -482,6 +499,10 @@ async function main() {
 
       console.log(`  → ${owner}/${name}`);
       const raw = await queryGitHub(token, owner, name, since180d);
+      if (raw?.isFork) {
+        console.log(`    skip (fork)`);
+        continue;
+      }
       if (!raw) {
         console.warn(`  ⚠  Could not fetch ${owner}/${name} — removing stale content if present`);
         const staleSlug = `${owner}--${name}`.toLowerCase();
@@ -563,6 +584,10 @@ async function main() {
         maintainers,
         revivedAfterMonths,
         revivedDaysAgo,
+        isFork: raw.isFork,
+        openGraphImageUrl: raw.openGraphImageUrl || undefined,
+        fundingLinks: raw.fundingLinks?.length ? raw.fundingLinks : undefined,
+        discussionCount: raw.hasDiscussionsEnabled ? raw.discussions.totalCount : undefined,
       };
 
       results.push(data);
