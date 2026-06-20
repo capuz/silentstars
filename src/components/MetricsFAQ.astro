@@ -42,7 +42,8 @@ At Risk    0 – 39    going dark · candidate for rescue`,
 ];
 ---
 
-<div class="container faq">
+<div class="faq-wrap">
+<div class="faq">
   {items.map(it => (
     <details>
       <summary>
@@ -58,15 +59,23 @@ At Risk    0 – 39    going dark · candidate for rescue`,
       </div>
     </details>
   ))}
+  </div>
 </div>
 
 <style>
+  .faq-wrap {
+    width: 100%;
+  }
+
   .faq {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    max-width: var(--max-w);
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
   }
 
   details {
