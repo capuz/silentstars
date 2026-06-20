@@ -62,22 +62,18 @@ const starsDisplay   = totalStars >= 1000
           <span class="stat-value">{totalProjects}</span>
           <span class="stat-label">projects</span>
         </div>
-        <div class="stat-divider" aria-hidden="true">/</div>
         <div class="stat">
           <span class="stat-value">{totalThriving}</span>
           <span class="stat-label">thriving</span>
         </div>
-        <div class="stat-divider" aria-hidden="true">/</div>
         <div class="stat">
           <span class="stat-value">{totalNewborn}</span>
           <span class="stat-label">newborn</span>
         </div>
-        <div class="stat-divider" aria-hidden="true">/</div>
         <div class="stat">
           <span class="stat-value stat-risk">{totalAtRisk}</span>
           <span class="stat-label">at risk</span>
         </div>
-        <div class="stat-divider" aria-hidden="true">/</div>
         <div class="stat">
           <span class="stat-value">★ {starsDisplay}</span>
           <span class="stat-label">total stars</span>
@@ -234,12 +230,9 @@ const starsDisplay   = totalStars >= 1000
     text-transform: uppercase;
     color: var(--text-muted);
   }
-  .stat-divider {
-    font-family: var(--f-mono);
-    font-size: 1rem;
-    color: var(--border);
-    align-self: center;
-    padding-bottom: 14px;
+  .stat + .stat {
+    border-left: 1px solid var(--faint);
+    padding-left: 14px;
   }
 
   .hero-actions {
