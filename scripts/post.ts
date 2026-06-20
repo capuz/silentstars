@@ -79,7 +79,7 @@ async function main(): Promise<void> {
     return;
   }
 
-  const identifier = (process.env.BSKY_IDENTIFIER ?? '').replace(/^@/, '');
+  const identifier = process.env.BSKY_IDENTIFIER;
   const password   = process.env.BSKY_APP_PASSWORD;
   if (!identifier || !password) {
     throw new Error('BSKY_IDENTIFIER and BSKY_APP_PASSWORD env vars are required');
