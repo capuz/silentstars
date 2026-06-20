@@ -5,6 +5,9 @@ description: "Prevent Windows from sleeping with silent mouse and keyboard simul
 url: "https://github.com/opn-build/OpenAlive"
 homepage: "https://opn-build.github.io/"
 language: "Go"
+languages: ["Go"]
+languagePcts: [97]
+topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "productivity", "system-tray", "windows"]
 stars: 1
 forks: 0
 openIssues: 0

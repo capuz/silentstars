@@ -4,6 +4,8 @@ name: "snowykami"
 description: "snowykami/snowykami is a ✨special ✨ repository."
 url: "https://github.com/snowykami/snowykami"
 language: "Python"
+languages: ["Python"]
+languagePcts: [100]
 stars: 5
 forks: 1
 openIssues: 0
@@ -12,7 +14,7 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-02-04T11:54:02Z"
-lastCommitAt: "2026-06-20T14:10:27Z"
+lastCommitAt: "2026-06-20T23:37:28Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80

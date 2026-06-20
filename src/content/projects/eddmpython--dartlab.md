@@ -5,15 +5,18 @@ description: "Korean DART + SEC EDGAR filings as structured Python data for comp
 url: "https://github.com/eddmpython/dartlab"
 homepage: "https://eddmpython.github.io/dartlab"
 language: "Python"
-stars: 173
-forks: 36
+languages: ["Python"]
+languagePcts: [79]
+topics: ["dart", "finance", "financial-analysis", "korea", "python", "disclosure", "financial-statements", "polars", "10-k", "xbrl"]
+stars: 175
+forks: 37
 openIssues: 1
 closedIssues: 28
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2026-03-06T14:58:20Z"
-lastCommitAt: "2026-06-20T07:06:03Z"
+lastCommitAt: "2026-06-20T23:41:31Z"
 lastReleaseAt: "2026-03-08T03:01:20Z"
 status: "thriving"
 tags: ["solo_builder"]
