@@ -1,0 +1,42 @@
+---
+type Status = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived';
+interface Props { status: Status; }
+const { status } = Astro.props;
+
+const map: Record<Status, { label: string; emoji: string; cls: string }> = {
+  thriving:  { label: 'Thriving',  emoji: '🟢', cls: 'thriving' },
+  quiet:     { label: 'Quiet',     emoji: '🟡', cls: 'quiet' },
+  at_risk:   { label: 'At Risk',   emoji: '🟠', cls: 'at-risk' },
+  newborn:   { label: 'Newborn',   emoji: '🔵', cls: 'newborn' },
+  revived:   { label: 'Revived',   emoji: '🟣', cls: 'revived' },
+  archived:  { label: 'Archived',  emoji: '⚫', cls: 'archived' },
+};
+const { label, emoji, cls } = map[status];
+---
+<span class={`badge badge--${cls}`} title={label}>
+  <span class="dot" aria-hidden="true">{emoji}</span>
+  {label}
+</span>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    border: 1px solid currentColor;
+  }
+  .dot { font-size: 0.6rem; }
+
+  .badge--thriving { color: var(--thriving); }
+  .badge--quiet    { color: var(--quiet); }
+  .badge--at-risk  { color: var(--at-risk); }
+  .badge--newborn  { color: var(--newborn); }
+  .badge--revived  { color: var(--revived); }
+  .badge--archived { color: var(--archived); }
+</style>

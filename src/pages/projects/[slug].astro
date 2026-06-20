@@ -1,0 +1,309 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+import VitalityBar from '../../components/VitalityBar.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map(p => ({ params: { slug: p.slug }, props: { project: p } }));
+}
+
+interface Props { project: CollectionEntry<'projects'>; }
+const { project } = Astro.props;
+const { Content } = await project.render();
+const d = project.data;
+
+function relativeDate(iso: string) {
+  const days = Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000);
+  if (days === 0) return 'Today';
+  if (days === 1) return 'Yesterday';
+  if (days < 30) return `${days} days ago`;
+  const months = Math.floor(days / 30);
+  if (months < 12) return `${months} month${months > 1 ? 's' : ''} ago`;
+  const years = Math.floor(months / 12);
+  return `${years} year${years > 1 ? 's' : ''} ago`;
+}
+
+function ageLabel(iso: string) {
+  const months = Math.floor((Date.now() - new Date(iso).getTime()) / (30 * 86_400_000));
+  if (months < 1) return 'Less than a month';
+  if (months < 12) return `${months} month${months > 1 ? 's' : ''}`;
+  const years = Math.floor(months / 12);
+  const rem = months % 12;
+  return `${years}y ${rem > 0 ? `${rem}m` : ''}`.trim();
+}
+
+const tagLabels: Record<string, string> = {
+  solo_builder:       '👤 Solo builder',
+  needs_contributors: '🙋 Needs contributors',
+  hidden_gem:         '💎 Hidden gem',
+  legacy_hero:        '🏛 Legacy hero',
+};
+
+const base = import.meta.env.BASE_URL;
+---
+<Base title={d.name} description={d.description}>
+  <div class="container section">
+    <nav class="breadcrumb">
+      <a href={`${base}projects`}>← Directory</a>
+    </nav>
+
+    <header class="proj-header">
+      <div class="proj-title-row">
+        <h1 class="proj-name">{d.name}</h1>
+        {d.language && <span class="lang">{d.language}</span>}
+      </div>
+      <p class="proj-repo">
+        <a href={d.url} target="_blank" rel="noopener">{d.repo}</a>
+      </p>
+      <p class="proj-desc">{d.description}</p>
+      {d.homepage && (
+        <p class="proj-homepage">
+          <a href={d.homepage} target="_blank" rel="noopener">{d.homepage}</a>
+        </p>
+      )}
+    </header>
+
+    <div class="layout">
+      <!-- Left: metadata in spec-defined order -->
+      <aside class="sidebar">
+        <!-- 1. Estado -->
+        <div class="meta-row">
+          <span class="meta-label">Status</span>
+          <StatusBadge status={d.status} />
+        </div>
+
+        {d.status === 'revived' && d.revivedAfterMonths && d.revivedDaysAgo && (
+          <div class="revived-note">
+            Inactive for {d.revivedAfterMonths} months → Back to life {d.revivedDaysAgo} days ago
+          </div>
+        )}
+
+        <!-- 2. Last commit -->
+        <div class="meta-row">
+          <span class="meta-label">Last commit</span>
+          <span class="meta-val">{relativeDate(d.lastCommitAt)}</span>
+        </div>
+
+        <!-- 3. Latest release -->
+        <div class="meta-row">
+          <span class="meta-label">Latest release</span>
+          <span class="meta-val">
+            {d.lastReleaseAt ? relativeDate(d.lastReleaseAt) : '—'}
+          </span>
+        </div>
+
+        <!-- 4. Maintainers -->
+        <div class="meta-row">
+          <span class="meta-label">Maintainers</span>
+          <span class="meta-val">
+            {d.maintainers.length > 0
+              ? d.maintainers.join(', ')
+              : '—'}
+          </span>
+        </div>
+
+        <!-- 5. Age -->
+        <div class="meta-row">
+          <span class="meta-label">Age</span>
+          <span class="meta-val">{ageLabel(d.createdAt)}</span>
+        </div>
+
+        <!-- 6. Open issues -->
+        <div class="meta-row">
+          <span class="meta-label">Open issues</span>
+          <span class="meta-val">{d.openIssues}</span>
+        </div>
+
+        <!-- 7. Forks -->
+        <div class="meta-row">
+          <span class="meta-label">Forks</span>
+          <span class="meta-val">{d.forks}</span>
+        </div>
+
+        <!-- Vitality score -->
+        <div class="meta-vitality">
+          <span class="meta-label">Vitality score</span>
+          <VitalityBar score={d.vitalityScore} />
+        </div>
+
+        <!-- Attention Gap -->
+        <div class="meta-row">
+          <span class="meta-label">Attention Gap</span>
+          <span class="meta-val meta-gap" title="vitality ÷ log₁₀(stars+10)">
+            ↑ {d.attentionGap.toFixed(1)}
+          </span>
+        </div>
+
+        <!-- Tags -->
+        {d.tags.length > 0 && (
+          <div class="meta-tags">
+            {d.tags.map(t => <span class="tag">{tagLabels[t] ?? t}</span>)}
+          </div>
+        )}
+
+        <!-- Stars — last and small, by design -->
+        <div class="meta-row meta-stars">
+          <span class="meta-label">Stars</span>
+          <a href={d.url} target="_blank" rel="noopener" class="stars-link">
+            ★ {d.stars}
+          </a>
+        </div>
+      </aside>
+
+      <!-- Right: rendered markdown body -->
+      <article class="prose">
+        <Content />
+        <div class="proj-cta">
+          <a href={d.url} target="_blank" rel="noopener" class="btn-primary">
+            View on GitHub ↗
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .breadcrumb {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 2rem;
+  }
+  .breadcrumb a { color: var(--text-muted); }
+  .breadcrumb a:hover { color: var(--text); }
+
+  .proj-header { margin-bottom: 2rem; }
+  .proj-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+  }
+  .proj-name { font-size: 2rem; }
+  .lang {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    padding: 0.15em 0.5em;
+    border-radius: 3px;
+  }
+  .proj-repo { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 0.75rem; }
+  .proj-repo a { color: var(--text-muted); text-decoration: underline; }
+  .proj-desc { color: var(--text-muted); line-height: 1.65; max-width: 65ch; }
+  .proj-homepage { font-size: 0.8rem; margin-top: 0.5rem; }
+  .proj-homepage a { color: var(--text-dim); text-decoration: underline; }
+
+  /* Layout */
+  .layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { order: 1; }
+    article { order: 0; }
+  }
+
+  /* Sidebar */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: sticky;
+    top: 72px;
+  }
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+  }
+  .meta-val { font-size: 0.875rem; color: var(--text-muted); }
+  .meta-gap { color: var(--text); font-weight: 600; }
+
+  .meta-vitality {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .meta-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .tag {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    border: 1px solid #2a2a2a;
+    padding: 0.15em 0.45em;
+    border-radius: 3px;
+  }
+
+  .meta-stars { opacity: 0.5; }
+  .stars-link { font-size: 0.875rem; color: var(--text-dim); }
+
+  .revived-note {
+    font-size: 0.75rem;
+    color: var(--revived);
+    border: 1px solid var(--revived);
+    border-radius: 4px;
+    padding: 0.4em 0.65em;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Prose */
+  .prose {
+    color: var(--text-muted);
+    line-height: 1.75;
+    font-size: 0.95rem;
+  }
+  .prose :global(p) { margin-bottom: 1rem; }
+  .prose :global(h2), .prose :global(h3) {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+  .prose :global(code) {
+    background: #1e1e1e;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-size: 0.85em;
+  }
+  .prose :global(pre) {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: var(--radius);
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  .proj-cta { margin-top: 2rem; }
+  .btn-primary {
+    display: inline-block;
+    background: var(--text);
+    color: var(--bg);
+    padding: 0.6em 1.4em;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:hover { opacity: 0.85; text-decoration: none; }
+</style>

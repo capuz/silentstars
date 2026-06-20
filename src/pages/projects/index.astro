@@ -1,0 +1,197 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+
+const all = await getCollection('projects');
+
+// Archived projects are never shown in the directory
+const projects = all
+  .filter(p => p.data.status !== 'archived')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+
+const statuses = ['thriving', 'quiet', 'at_risk', 'newborn', 'revived'] as const;
+const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero'] as const;
+
+const statusLabels: Record<string, string> = {
+  thriving: '🟢 Thriving',
+  quiet:    '🟡 Quiet',
+  at_risk:  '🟠 At Risk',
+  newborn:  '🔵 Newborn',
+  revived:  '🟣 Revived',
+};
+const tagLabels: Record<string, string> = {
+  solo_builder:       '👤 Solo builder',
+  needs_contributors: '🙋 Needs contributors',
+  hidden_gem:         '💎 Hidden gem',
+  legacy_hero:        '🏛 Legacy hero',
+};
+---
+<Base title="Directory" description="All open source projects tracked by SilentStars, sorted by Attention Gap.">
+  <div class="container section">
+    <div class="dir-header">
+      <h1>Directory</h1>
+      <p class="subtitle">
+        {projects.length} projects · sorted by Attention Gap
+        <span class="hint">(vitality ÷ log₁₀(stars) — higher = more undervalued)</span>
+      </p>
+    </div>
+
+    <!-- Client-side filters: lightweight JS, no framework -->
+    <div class="filters" id="filters">
+      <div class="filter-group">
+        <span class="filter-label">Status</span>
+        {statuses.map(s => (
+          <button class="filter-btn" data-filter-status={s}>{statusLabels[s]}</button>
+        ))}
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Tags</span>
+        {tags.map(t => (
+          <button class="filter-btn" data-filter-tag={t}>{tagLabels[t]}</button>
+        ))}
+      </div>
+      <button class="filter-reset" id="filter-reset">Reset</button>
+    </div>
+
+    <div class="grid" id="project-grid">
+      {projects.map(p => (
+        <div
+          class="grid-item"
+          data-status={p.data.status}
+          data-tags={p.data.tags.join(',')}
+        >
+          <ProjectCard
+            slug={p.slug}
+            {...p.data}
+          />
+        </div>
+      ))}
+    </div>
+
+    <p class="empty-state" id="empty-state" style="display:none">
+      No projects match the selected filters.
+    </p>
+  </div>
+</Base>
+
+<script>
+  const grid = document.getElementById('project-grid')!;
+  const emptyState = document.getElementById('empty-state')!;
+  const resetBtn = document.getElementById('filter-reset')!;
+
+  let activeStatuses = new Set<string>();
+  let activeTags = new Set<string>();
+
+  function applyFilters() {
+    const items = grid.querySelectorAll<HTMLElement>('.grid-item');
+    let visible = 0;
+
+    items.forEach(item => {
+      const status = item.dataset.status ?? '';
+      const tags = (item.dataset.tags ?? '').split(',').filter(Boolean);
+
+      const statusOk = activeStatuses.size === 0 || activeStatuses.has(status);
+      const tagOk    = activeTags.size === 0    || tags.some(t => activeTags.has(t));
+
+      const show = statusOk && tagOk;
+      item.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    emptyState.style.display = visible === 0 ? '' : 'none';
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('[data-filter-status]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const s = btn.dataset.filterStatus!;
+      activeStatuses.has(s) ? activeStatuses.delete(s) : activeStatuses.add(s);
+      btn.classList.toggle('active', activeStatuses.has(s));
+      applyFilters();
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('[data-filter-tag]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const t = btn.dataset.filterTag!;
+      activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
+      btn.classList.toggle('active', activeTags.has(t));
+      applyFilters();
+    });
+  });
+
+  resetBtn.addEventListener('click', () => {
+    activeStatuses.clear();
+    activeTags.clear();
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    applyFilters();
+  });
+</script>
+
+<style>
+  .dir-header { margin-bottom: 2rem; }
+  .dir-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+  .subtitle { color: var(--text-muted); font-size: 0.875rem; }
+  .hint { color: var(--text-dim); font-size: 0.8rem; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .filter-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .filter-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-right: 0.25rem;
+  }
+  .filter-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 0.25em 0.65em;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+    font-family: var(--font-body);
+  }
+  .filter-btn:hover { border-color: #444; color: var(--text); }
+  .filter-btn.active { border-color: var(--text); color: var(--text); }
+
+  .filter-reset {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-family: var(--font-body);
+  }
+  .filter-reset:hover { color: var(--text); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  .empty-state {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 3rem 0;
+    font-size: 0.9rem;
+  }
+</style>
