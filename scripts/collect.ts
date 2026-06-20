@@ -9,7 +9,7 @@
  * Env:  GITHUB_TOKEN — personal access token or Actions token
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, unlinkSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -471,7 +471,13 @@ async function main() {
       console.log(`  → ${owner}/${name}`);
       const raw = await queryGitHub(token, owner, name, since180d);
       if (!raw) {
-        console.warn(`  ⚠  Could not fetch ${owner}/${name}`);
+        console.warn(`  ⚠  Could not fetch ${owner}/${name} — removing stale content if present`);
+        const staleSlug = `${owner}--${name}`.toLowerCase();
+        const stalePath = resolve(ROOT, `src/content/projects/${staleSlug}.md`);
+        if (existsSync(stalePath)) {
+          unlinkSync(stalePath);
+          console.warn(`  🗑  Deleted ${stalePath}`);
+        }
         continue;
       }
 
