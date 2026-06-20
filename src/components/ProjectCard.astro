@@ -1,8 +1,4 @@
 ---
-import StatusBadge from './StatusBadge.astro';
-import VitalityBar from './VitalityBar.astro';
-import LanguageIcon from './LanguageIcon.astro';
-
 interface Props {
   slug: string;
   name: string;
@@ -18,223 +14,361 @@ interface Props {
   lastCommitAt: string;
   maintainers: string[];
   promoted?: boolean;
+  // passthrough fields from schema spread (unused but silences TS)
+  createdAt?: string;
+  lastReleaseAt?: string;
+  openIssues?: number;
+  forks?: number;
+  homepage?: string;
+  revivedAfterMonths?: number;
+  revivedDaysAgo?: number;
 }
 
 const {
   slug, name, description, repo, url, status, tags,
   vitalityScore, attentionGap, stars, language, lastCommitAt,
-  maintainers, promoted = false,
+  maintainers,
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 
-const tagLabels: Record<string, string> = {
-  solo_builder:       '// solo',
-  needs_contributors: '// help wanted',
-  hidden_gem:         '// hidden gem',
-  legacy_hero:        '// legacy',
+// ── Category badge ────────────────────────────────────────
+const catMap: Record<string, { label: string; bg: string; path: string }> = {
+  newborn:  { label: 'Newborn',  bg: '#bdebd0',
+    path: '<path d="M12 21v-8"/><path d="M12 13C12 9 9 6.5 5 6.5 5 10.5 8 13 12 13z"/><path d="M12 13.5c0-3.5 2.6-6 6-6 0 3.5-2.6 6-6 6z"/>' },
+  thriving: { label: 'Thriving', bg: '#ffe08a',
+    path: '<path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/>' },
+  quiet:    { label: 'Quiet',    bg: '#e6e0d2',
+    path: '<path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"/>' },
+  at_risk:  { label: 'At Risk',  bg: '#ffd5cc',
+    path: '<path d="M12 9v4m0 3h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>' },
+  revived:  { label: 'Revived',  bg: '#e8d5f5',
+    path: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>' },
+  archived: { label: 'Archived', bg: '#e2e0da',
+    path: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
 };
 
-const statusVar: Record<string, string> = {
-  thriving: 'var(--thriving)',
-  quiet:    'var(--quiet)',
-  at_risk:  'var(--at-risk)',
-  newborn:  'var(--newborn)',
-  revived:  'var(--revived)',
-  archived: 'var(--archived)',
-};
+const cat = catMap[status] ?? catMap.quiet!;
+const catIconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#17150f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">${cat.path}</svg>`;
+const catIconSrc = `data:image/svg+xml,${encodeURIComponent(catIconSvg)}`;
 
+// ── Language chip ──────────────────────────────────────────
+const langCodes: Record<string, string> = {
+  TypeScript: 'TS', JavaScript: 'JS', Python: 'PY', Go: 'GO', Rust: 'RS',
+  Ruby: 'RB', Java: 'JV', Kotlin: 'KT', Swift: 'SW', 'C++': 'C+', 'C#': 'C#',
+  PHP: 'PH', Dart: 'DA', Scala: 'SC', Haskell: 'HS', Lua: 'LU', Elixir: 'EX',
+  Zig: 'ZG', Shell: 'SH', HTML: 'HT', CSS: 'CS', Vue: 'VU', Svelte: 'SV',
+  Clojure: 'CL', Julia: 'JL', C: 'C ',
+};
+const deviconMap: Record<string, string> = {
+  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Go: 'go',
+  Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin', Swift: 'swift',
+  'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php', Dart: 'dart', Scala: 'scala',
+  Haskell: 'haskell', Lua: 'lua', Elixir: 'elixir', Zig: 'zig', Shell: 'bash',
+  HTML: 'html5', CSS: 'css3', Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure',
+  Julia: 'julia', C: 'c',
+};
+const langSlug  = language ? deviconMap[language] : undefined;
+const langIcon  = langSlug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langSlug}/${langSlug}-original.svg` : null;
+const langCode  = language ? (langCodes[language] ?? language.slice(0, 2).toUpperCase()) : null;
+
+// ── Health bar ─────────────────────────────────────────────
+function healthMeta(h: number): { color: string; label: string } {
+  if (h >= 80) return { color: '#1f9d55', label: 'Healthy' };
+  if (h >= 60) return { color: '#c98a1e', label: 'Stable' };
+  if (h >= 40) return { color: '#d4691e', label: 'Quiet' };
+  return         { color: '#d8392b', label: 'At Risk' };
+}
+const { color: healthColor, label: healthLabel } = healthMeta(vitalityScore);
+
+// ── Meta ───────────────────────────────────────────────────
 const daysSince = Math.floor((Date.now() - new Date(lastCommitAt).getTime()) / 86_400_000);
-const lastCommitLabel = daysSince === 0 ? 'today' : daysSince === 1 ? 'yesterday' : `${daysSince}d ago`;
+const age = daysSince === 0 ? 'today' : daysSince === 1 ? '1d ago' : `${daysSince}d ago`;
+
+const author    = maintainers[0] ?? repo.split('/')[0];
+const authorUrl = `https://github.com/${author}`;
+
+const tagLabels: Record<string, string> = {
+  solo_builder:       'solo',
+  needs_contributors: 'help wanted',
+  hidden_gem:         'hidden gem',
+  legacy_hero:        'legacy hero',
+};
 ---
-<article class="card" style={`--status-color: ${statusVar[status]}`}>
-  {promoted && <span class="promo-badge">promoted</span>}
+<article class="card">
+  <!-- top row: badges + score -->
   <div class="card-top">
-    <div class="card-meta">
-      <StatusBadge status={status} />
-      {language && <LanguageIcon language={language} size={16} />}
+    <div class="card-badges">
+      <!-- category badge -->
+      <span class="cat-badge" style={`background:${cat.bg};`}>
+        <img src={catIconSrc} alt={cat.label} width="16" height="16" />
+        {cat.label}
+      </span>
+      <!-- language chip -->
+      {language && langCode && (
+        <span class="lang-chip">
+          {langIcon && (
+            <img
+              src={langIcon}
+              alt={language}
+              width="16"
+              height="16"
+              onerror="this.style.display='none'"
+            />
+          )}
+          {langCode}
+        </span>
+      )}
     </div>
-    <div class="gap-score" title="Attention Gap — higher means more undervalued">
-      ↑{attentionGap.toFixed(1)}
+    <div class="card-score" title="Undervalued score — higher is more overlooked">
+      <span class="score-arrow">↑</span>
+      <span class="score-num">{attentionGap.toFixed(1)}</span>
     </div>
   </div>
 
-  <a href={`${base}projects/${slug}`} class="card-title-link">
-    <h3 class="card-title">{name}</h3>
-  </a>
-  <p class="card-repo">{repo}</p>
+  <!-- title + repo slug -->
+  <a href={url} target="_blank" rel="noopener noreferrer" class="card-name">{name}</a>
+  <a href={`${base}projects/${slug}`} class="card-slug">{repo}</a>
+
+  <!-- description -->
   <p class="card-desc">{description}</p>
 
-  <div class="vitality">
-    <VitalityBar score={vitalityScore} />
+  <!-- health bar -->
+  <div class="health-wrap">
+    <div class="health-header">
+      <span class="health-label-text">HEALTH</span>
+      <span class="health-value" style={`color:${healthColor};`}>{vitalityScore} / {healthLabel}</span>
+    </div>
+    <div class="health-track">
+      <div class="health-fill" style={`width:${vitalityScore}%;background:${healthColor};`}></div>
+    </div>
   </div>
 
+  <!-- tags -->
   {tags.length > 0 && (
-    <ul class="tags">
-      {tags.map(t => <li class="tag">{tagLabels[t] ?? t}</li>)}
-    </ul>
+    <div class="card-tags">
+      {tags.map(t => <span class="tag">// {tagLabels[t] ?? t}</span>)}
+    </div>
   )}
 
+  <!-- footer -->
   <div class="card-footer">
-    <span class="last-commit">{lastCommitLabel}</span>
-    {maintainers.length > 0 && (
-      <span class="maintainers" title={maintainers.join(', ')}>
-        by {maintainers.slice(0, 2).join(', ')}
+    <span class="footer-meta">
+      <span class="meta-age">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg>
+        {age}
       </span>
-    )}
-    <a href={url} target="_blank" rel="noopener" class="stars">★ {stars}</a>
+      <span class="meta-dot" aria-hidden="true">·</span>
+      <a href={authorUrl} target="_blank" rel="noopener" class="meta-author">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M5.5 20c0-3.4 2.9-5.8 6.5-5.8s6.5 2.4 6.5 5.8"/></svg>
+        {author}
+      </a>
+    </span>
+    <a href={url} target="_blank" rel="noopener noreferrer" class="footer-stars">
+      <span>★</span>{stars}
+    </a>
   </div>
 </article>
 
 <style>
-  .promo-badge {
-    position: absolute;
-    top: 0.625rem;
-    right: 0.625rem;
-    font-family: var(--font-mono);
-    font-size: 0.55rem;
-    letter-spacing: 0.06em;
-    color: var(--text-dim);
-    border: 1px solid var(--border);
-    padding: 0.1em 0.45em;
-    border-radius: 2px;
-    text-transform: lowercase;
-    z-index: 1;
-  }
-
   .card {
     position: relative;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    transition: border-color 0.2s, background 0.2s, transform 0.2s;
-    overflow: hidden;
+    padding: 14px;
+    border-radius: 8px;
+    background: var(--card);
+    border: 2px solid var(--ink);
+    box-shadow: 2px 2px 0 var(--shadow);
+    transition: transform .12s, box-shadow .12s, border-color .12s;
+    gap: 0;
   }
-
-  /* Pixel corner accent — top-left, takes status color on hover */
-  .card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 6px; height: 6px;
-    background: var(--border);
-    transition: background 0.2s;
-  }
-  /* Pixel corner accent — bottom-right */
-  .card::after {
-    content: '';
-    position: absolute;
-    bottom: 0; right: 0;
-    width: 4px; height: 4px;
-    background: var(--border);
-    transition: background 0.2s, opacity 0.2s;
-    opacity: 0;
-  }
-
   .card:hover {
-    border-color: var(--status-color);
-    background: var(--bg-card-hover);
-    transform: translateY(-2px);
-  }
-  .card:hover::before {
-    background: var(--status-color);
-    animation: pixel-blink 0.5s steps(1) infinite;
-  }
-  .card:hover::after {
-    background: var(--status-color);
-    opacity: 0.4;
+    border-color: var(--accent);
+    box-shadow: 6px 6px 0 var(--accent);
+    transform: translateY(-4px) scale(1.012);
   }
 
-  @keyframes pixel-blink { 50% { opacity: 0; } }
-
-  /* Top row */
+  /* top row */
   .card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 13px;
+  }
+  .card-badges {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+
+  /* category badge */
+  .cat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px 3px 4px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: #17150f;
+    transform: rotate(-2deg);
+    flex-shrink: 0;
+  }
+
+  /* language chip */
+  .lang-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px 3px 4px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    background: #fff;
+    color: #17150f;
+    flex-shrink: 0;
+  }
+
+  /* score */
+  .card-score {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    font-family: var(--f-display);
+    flex-shrink: 0;
+  }
+  .score-arrow {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .score-num {
+    color: var(--accent);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  /* name + slug */
+  .card-name {
+    font-family: var(--f-display);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin-bottom: 2px;
+    transition: color .12s;
+  }
+  .card-name:hover { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  .card-slug {
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    margin-bottom: 11px;
+    display: block;
+    transition: color .12s;
+  }
+  .card-slug:hover { color: var(--accent2); }
+
+  /* description */
+  .card-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0 0 13px;
+    flex: 1;
+    font-weight: 500;
+  }
+
+  /* health bar */
+  .health-wrap { margin-bottom: 13px; }
+  .health-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5rem;
-  }
-  .card-meta { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
-  .lang {
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    color: var(--text-dim);
-    padding: 0.15em 0.5em;
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    letter-spacing: 0.04em;
-  }
-  .gap-score {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-dim);
+    font-family: var(--f-mono);
+    font-size: 10.5px;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    margin-bottom: 6px;
   }
-
-  /* Title */
-  .card-title-link:hover { text-decoration: none; }
-  .card-title {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-    transition: color 0.15s;
+  .health-label-text { color: var(--muted); letter-spacing: .04em; }
+  .health-track {
+    height: 8px;
+    border-radius: 999px;
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    overflow: hidden;
   }
-  .card:hover .card-title { color: var(--status-color); }
+  .health-fill { height: 100%; transition: width .3s ease; }
 
-  .card-repo {
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    color: var(--text-dim);
-    margin-top: -0.5rem;
-    letter-spacing: 0.02em;
-  }
-
-  .card-desc {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-    flex: 1;
-  }
-
-  /* Tags */
-  .tags {
-    list-style: none;
+  /* tags */
+  .card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 5px;
+    margin-bottom: 15px;
   }
   .tag {
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    color: var(--text-dim);
-    letter-spacing: 0.03em;
+    font-family: var(--f-mono);
+    font-size: 10.5px;
+    font-weight: 700;
+    color: var(--ink);
+    padding: 2px 7px;
+    border-radius: 5px;
+    border: 1.5px solid var(--faint);
   }
 
-  /* Footer */
+  /* footer */
   .card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--border);
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-dim);
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1.5px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
   }
-  .maintainers {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 110px;
-    opacity: 0.7;
+  .footer-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    flex-wrap: wrap;
   }
-  .stars { opacity: 0.5; transition: opacity 0.15s; }
-  .stars:hover { opacity: 1; text-decoration: none; }
+  .meta-age {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .meta-dot { opacity: .45; }
+  .meta-author {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: inherit;
+  }
+  .meta-author:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+
+  .footer-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    flex: none;
+    transition: background .12s, color .12s;
+  }
+  .footer-stars:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 </style>

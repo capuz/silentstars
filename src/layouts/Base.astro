@@ -1,4 +1,6 @@
 ---
+import '../styles/theme.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -20,232 +22,189 @@ const base = import.meta.env.BASE_URL;
     <link rel="alternate" type="application/rss+xml" title="SilentStars" href={`${base}rss.xml`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- theme init — before paint to avoid flash -->
+    <script is:inline>
+      (function(){
+        var t = localStorage.getItem('ss-theme') || 'light';
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href={`${base}`} class="wordmark">
-          <span class="wordmark-px" aria-hidden="true">★</span>
-          SilentStars
+    <!-- grain -->
+    <div aria-hidden="true" style="position:fixed;inset:0;z-index:9;pointer-events:none;opacity:var(--grain-op,.35);mix-blend-mode:var(--grain-blend,multiply);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-repeat:repeat;background-size:140px 140px;"></div>
+
+    <!-- torch: lego stud pattern revealed under cursor -->
+    <div id="ss-torch" aria-hidden="true" style="position:fixed;inset:0;z-index:8;pointer-events:none;opacity:0.5;background-image:radial-gradient(circle,var(--ink) 1.4px,transparent 1.9px),radial-gradient(circle,var(--ink) 0.7px,transparent 1.1px);background-size:26px 26px,26px 26px;background-position:0 0,13px 13px;-webkit-mask-image:radial-gradient(170px circle at var(--mx,-300px) var(--my,-300px),#000 0%,rgba(0,0,0,.4) 42%,transparent 72%);mask-image:radial-gradient(170px circle at var(--mx,-300px) var(--my,-300px),#000 0%,rgba(0,0,0,.4) 42%,transparent 72%);"></div>
+
+    <div style="position:relative;z-index:1;display:flex;flex-direction:column;min-height:100dvh;">
+
+      <!-- NAV -->
+      <nav class="ss-nav">
+        <a href={`${base}`} class="ss-wordmark">
+          <span class="ss-star" style="color:var(--accent);font-size:22px;line-height:1;">★</span>
+          <span><span style="color:var(--ink);">Silent</span><span style="color:var(--accent);">Stars</span></span>
         </a>
-        <ul>
-          <li><a href={`${base}projects`}>Directory</a></li>
-          <li><a href={`${base}at-risk`}>At Risk</a></li>
-          <li><a href={`${base}resurrections`}>Resurrections</a></li>
-          <li><a href={`${base}rss.xml`} class="rss">RSS</a></li>
-        </ul>
+        <div class="ss-nav-links">
+          <a href={`${base}projects/`} class="ss-nav-link">Directory</a>
+          <a href={`${base}at-risk/`} class="ss-nav-link">At Risk</a>
+          <a href={`${base}resurrections/`} class="ss-nav-link">Resurrections</a>
+          <a href={`${base}rss.xml`} class="ss-nav-link" style="opacity:.6;">RSS</a>
+          <button id="ss-theme-btn" class="ss-theme-btn">◐ Night</button>
+        </div>
       </nav>
-    </header>
 
-    <main>
-      <slot />
-    </main>
+      <main style="flex:1;">
+        <slot />
+      </main>
 
-    <footer>
-      <p class="lema">Not famous. Not abandoned. Just building.</p>
-      <p class="sub">Open source projects deserve to be seen — regardless of their star count.</p>
-      <p class="footer-px" aria-hidden="true">// SilentStars ★ coste 0 ★ sin backend ★ puro amor //</p>
-    </footer>
+      <!-- FOOTER -->
+      <footer class="ss-footer">
+        <div class="ss-footer-inner">
+          <div class="ss-footer-copy">
+            <span style="color:#c9c6bc;">★ SilentStars</span>
+            &nbsp;//&nbsp; coste 0 &nbsp;·&nbsp; sin backend &nbsp;·&nbsp; puro amor
+          </div>
+          <a href="https://www.paypal.com/paypalme/fcapuz" target="_blank" rel="noopener" class="ss-donate">
+            <img src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal" width="15" height="15" style="display:block;" />
+            Donate
+          </a>
+        </div>
+      </footer>
+
+    </div>
   </body>
 </html>
 
-<!-- Cursor trail — disabled when prefers-reduced-motion -->
-<script>
-(function () {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  const N = 8;
-  const LERP = 0.14;
-  const COLOR = '29, 78, 216'; // --newborn in RGB
-
-  const dots: HTMLElement[] = [];
-  let mouseX = -200, mouseY = -200;
-  const positions: { x: number; y: number }[] = Array.from({ length: N }, () => ({ x: -200, y: -200 }));
-
-  for (let i = 0; i < N; i++) {
-    const el = document.createElement('span');
-    el.className = 'cursor-dot';
-    const scale = 1 - i / N;
-    const opacity = (0.55 - i * 0.055).toFixed(2);
-    el.style.cssText = `width:${4 + scale * 4}px;height:${4 + scale * 4}px;opacity:${opacity};`;
-    document.body.appendChild(el);
-    dots.push(el);
-  }
-
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  }, { passive: true });
-
-  function tick() {
-    positions[0]!.x += (mouseX - positions[0]!.x) * LERP;
-    positions[0]!.y += (mouseY - positions[0]!.y) * LERP;
-    for (let i = 1; i < N; i++) {
-      positions[i]!.x += (positions[i - 1]!.x - positions[i]!.x) * LERP;
-      positions[i]!.y += (positions[i - 1]!.y - positions[i]!.y) * LERP;
+<!-- torch + theme toggle — after paint -->
+<script is:inline>
+  (function(){
+    // torch
+    var torch = document.getElementById('ss-torch');
+    if (torch) {
+      window.addEventListener('mousemove', function(e){
+        torch.style.setProperty('--mx', e.clientX + 'px');
+        torch.style.setProperty('--my', e.clientY + 'px');
+      }, { passive: true });
     }
-    for (let i = 0; i < N; i++) {
-      dots[i]!.style.transform = `translate(${positions[i]!.x}px,${positions[i]!.y}px)`;
+
+    // theme toggle
+    var btn = document.getElementById('ss-theme-btn');
+    function syncBtn(t) {
+      if (btn) btn.textContent = t === 'light' ? '◐ Night' : '◑ Paper';
     }
-    requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-})();
+    syncBtn(document.documentElement.dataset.theme || 'light');
+    if (btn) {
+      btn.addEventListener('click', function(){
+        var t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+        localStorage.setItem('ss-theme', t);
+        syncBtn(t);
+      });
+    }
+  })();
 </script>
 
 <style is:global>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    /* Palette — Nintendo / game-cartridge bright */
-    --bg:           #f0ebe0;
-    --bg-card:      #faf7f2;
-    --bg-card-hover:#fff5e6;
-    --bg-code:      #e0d8ce;
-    --text:         #1c150f;
-    --text-muted:   #5a4a40;
-    --text-dim:     #9a8a80;
-    --border:       #c8b8a8;
-
-    /* Status — saturados, vivos */
-    --thriving: #16a34a;
-    --quiet:    #ca8a04;
-    --at-risk:  #dc2626;
-    --newborn:  #1d4ed8;
-    --revived:  #7c3aed;
-    --archived: #9ca3af;
-
-    /* Typography */
-    --font-body:  'DM Sans', system-ui, sans-serif;
-    --font-mono:  'Space Mono', 'Courier New', monospace;
-
-    --max-w: 1100px;
-    --radius: 4px;
-  }
-
-  html { font-size: 16px; scroll-behavior: smooth; }
-
-  body {
-    background-color: var(--bg);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 200px 200px;
-    color: var(--text);
-    font-family: var(--font-body);
-    line-height: 1.6;
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  main { flex: 1; }
-
-  a { color: inherit; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-
-  /* ── Cursor trail dots ── */
-  .cursor-dot {
-    position: fixed;
-    top: 0; left: 0;
-    border-radius: 50%;
-    background: rgb(29, 78, 216);
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    z-index: 9999;
-    will-change: transform;
-    margin-left: -4px;
-    margin-top: -4px;
-  }
-
   /* ── Nav ── */
-  header {
-    border-bottom: 1px solid var(--border);
+  .ss-nav {
     position: sticky;
     top: 0;
-    background: rgba(240,235,224,0.92);
-    backdrop-filter: blur(10px);
-    z-index: 10;
-  }
-
-  nav {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    height: 52px;
+    z-index: 30;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 20px;
+    padding: 9px 30px;
+    background: var(--paper);
+    border-bottom: 2px solid var(--ink);
+    transition: background .25s;
   }
+  .ss-wordmark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--f-display);
+    font-weight: 800;
+    font-size: 24px;
+    perspective: 500px;
+  }
+  .ss-wordmark:hover { text-decoration: none; }
 
-  .wordmark {
-    font-family: var(--font-mono);
-    font-size: 1rem;
+  .ss-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
     font-weight: 700;
-    letter-spacing: -0.02em;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: var(--text);
   }
-  .wordmark:hover { text-decoration: none; opacity: 0.8; }
-  .wordmark-px {
-    color: var(--revived);
-    font-size: 0.75rem;
-    animation: star-blink 3s steps(1) infinite;
+  .ss-nav-link {
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background .12s, color .12s;
   }
-  @keyframes star-blink {
-    0%, 89%  { opacity: 1; }
-    90%, 100% { opacity: 0; }
+  .ss-nav-link:hover {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
   }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
+  .ss-theme-btn {
+    margin-left: 6px;
+    display: inline-flex;
     align-items: center;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 5px 11px;
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background .12s, color .12s;
   }
-  nav ul a {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    letter-spacing: 0.03em;
-    transition: color 0.15s;
-  }
-  nav ul a:hover { color: var(--text); text-decoration: none; }
-  nav ul a.rss { opacity: 0.5; }
-  nav ul a.rss:hover { opacity: 1; }
+  .ss-theme-btn:hover { background: var(--ink); color: var(--paper); }
 
   /* ── Footer ── */
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 3rem 1.5rem;
-    text-align: center;
+  .ss-footer {
+    border-top: 2px solid var(--ink);
+    background: #1b1c19;
+    color: #c9c6bc;
   }
-  footer .lema {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 0.5rem;
-    font-style: italic;
+  .ss-footer-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
   }
-  footer .sub {
-    font-size: 0.8rem;
-    color: var(--text-dim);
-    margin-bottom: 1rem;
+  .ss-footer-copy {
+    font-family: var(--f-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #8b877b;
+    letter-spacing: .01em;
   }
-  footer .footer-px {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-dim);
-    letter-spacing: 0.05em;
-    opacity: 0.6;
+  .ss-donate {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f7f5ef;
+    color: #17150f;
+    font-family: var(--f-mono);
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    transition: background .12s;
   }
-
-  /* ── Utility ── */
-  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
-  .section { padding: 3rem 0; }
-  h1, h2, h3 { font-family: var(--font-mono); line-height: 1.2; }
+  .ss-donate:hover { background: #fff; text-decoration: none; }
 </style>

@@ -1,0 +1,103 @@
+/* ── Light (default) ── */
+:root,
+[data-theme='light'] {
+  --paper:  #edeae2;
+  --ink:    #17150f;
+  --muted:  #6f6757;
+  --faint:  rgba(23,21,15,.13);
+  --card:   #f7f5ef;
+  --accent: #ff5436;
+  --accent2:#2747f0;
+  --shadow: #17150f;
+  --grain-blend: multiply;
+  --grain-op:    .35;
+
+  /* terminal — never changes with theme */
+  --term-bg: #0d140f;
+  --term-fg: #5dffa0;
+
+  /* font stacks */
+  --f-display: 'Bricolage Grotesque', sans-serif;
+  --f-pixel:   'Silkscreen', monospace;
+  --f-body:    'Hanken Grotesk', system-ui, sans-serif;
+  --f-mono:    'Space Mono', monospace;
+
+  /* layout */
+  --max-w: 1100px;
+
+  /* ── backward-compat aliases (pages not yet ported) ── */
+  --bg:           var(--paper);
+  --bg-card:      var(--card);
+  --bg-card-hover:#fff8f0;
+  --bg-code:      #ddd8ce;
+  --text:         var(--ink);
+  --text-muted:   var(--muted);
+  --text-dim:     #9a8a7a;
+  --border:       rgba(23,21,15,.22);
+  --font-body:    var(--f-body);
+  --font-mono:    var(--f-mono);
+  --radius:       8px;
+
+  /* status colors */
+  --thriving: #16a34a;
+  --quiet:    #ca8a04;
+  --at-risk:  #dc2626;
+  --newborn:  #1d4ed8;
+  --revived:  #7c3aed;
+  --archived: #9ca3af;
+}
+
+/* ── Dark ── */
+[data-theme='dark'] {
+  --paper:  #15140f;
+  --ink:    #f1eee5;
+  --muted:  #9a9281;
+  --faint:  rgba(241,238,229,.16);
+  --card:   #201d15;
+  --accent: #ff5436;
+  --accent2:#8d98ff;
+  --shadow: #ff5436;
+  --grain-blend: overlay;
+  --grain-op:    .45;
+
+  /* backward-compat dark overrides */
+  --bg:          var(--paper);
+  --bg-card:     var(--card);
+  --bg-code:     #1c1910;
+  --text:        var(--ink);
+  --text-muted:  var(--muted);
+  --text-dim:    #7a7060;
+  --border:      rgba(241,238,229,.18);
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--f-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: var(--accent); color: #fff; }
+a { color: inherit; text-decoration: none; }
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .ss-plus { transform: rotate(45deg); }
+
+/* ── Animations ── */
+@keyframes ss-marquee { from { transform: translateX(0); } to   { transform: translateX(-50%); } }
+@keyframes ss-coin    { from { transform: rotateY(0deg); } to   { transform: rotateY(360deg); } }
+@keyframes ss-blink   { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+.ss-star   { display: inline-block; animation: ss-coin 2.2s linear infinite; }
+.ss-cursor { display: inline-block; margin-left: 2px; color: var(--term-fg);
+             text-shadow: 0 0 6px rgba(94,255,160,.55);
+             animation: ss-blink 1.1s step-end infinite; }
+
+/* ── Layout helpers ── */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 30px; }
+.section   { padding: 3rem 0; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; }
