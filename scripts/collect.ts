@@ -30,6 +30,8 @@ interface RepoData {
   url: string;
   homepage?: string;
   language?: string;
+  languages?: string[];
+  languagePcts?: number[];
   stars: number;
   forks: number;
   openIssues: number;
@@ -61,6 +63,7 @@ interface GraphQLRepo {
   url: string;
   homepageUrl: string | null;
   primaryLanguage: { name: string } | null;
+  languages: { totalSize: number; edges: Array<{ size: number; node: { name: string } }> };
   stargazerCount: number;
   forkCount: number;
   isArchived: boolean;
@@ -101,6 +104,10 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     url
     homepageUrl
     primaryLanguage { name }
+    languages(first: 5, orderBy: { field: SIZE, direction: DESC }) {
+      totalSize
+      edges { size node { name } }
+    }
     stargazerCount
     forkCount
     isArchived
@@ -378,6 +385,8 @@ function toFrontmatter(data: RepoData): string {
   lines.push(`url: "${data.url}"`);
   if (data.homepage) lines.push(`homepage: "${data.homepage}"`);
   if (data.language) lines.push(`language: "${data.language}"`);
+  if (data.languages?.length) lines.push(`languages: [${data.languages.map(l => `"${l}"`).join(', ')}]`);
+  if (data.languagePcts?.length) lines.push(`languagePcts: [${data.languagePcts.join(', ')}]`);
   lines.push(`stars: ${data.stars}`);
   lines.push(`forks: ${data.forks}`);
   lines.push(`openIssues: ${data.openIssues}`);
@@ -523,6 +532,16 @@ async function main() {
         url: raw.url,
         homepage: raw.homepageUrl ?? undefined,
         language: raw.primaryLanguage?.name,
+        ...(() => {
+          const total = raw.languages?.totalSize ?? 0;
+          const qualified = (raw.languages?.edges ?? [])
+            .map(e => ({ name: e.node.name, pct: total > 0 ? Math.round(e.size / total * 100) : 0 }))
+            .filter(l => l.pct >= 20);
+          return {
+            languages: qualified.map(l => l.name),
+            languagePcts: qualified.map(l => l.pct),
+          };
+        })(),
         stars: raw.stargazerCount,
         forks: raw.forkCount,
         openIssues: raw.openIssues.totalCount,
