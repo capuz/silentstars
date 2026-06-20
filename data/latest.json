@@ -1,4 +1,4652 @@
 {
-  "collectedAt": "2026-06-19T00:00:00.000Z",
-  "projects": []
+  "collectedAt": "2026-06-20T05:11:46.750Z",
+  "projects": [
+    {
+      "repo": "opn-build/OpenAlive",
+      "name": "OpenAlive",
+      "description": "Prevent Windows from sleeping with silent mouse and keyboard simulation. Lightweight, no-telemetry, 8 languages.",
+      "url": "https://github.com/opn-build/OpenAlive",
+      "homepage": "https://opn-build.github.io/",
+      "language": "Go",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-30T02:07:49Z",
+      "lastCommitAt": "2026-06-19T13:40:59Z",
+      "lastReleaseAt": "2026-06-19T11:24:49Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 52,
+      "attentionGap": 49.9,
+      "maintainers": [
+        "capuz"
+      ]
+    },
+    {
+      "repo": "jellydn/vite-react-recoil",
+      "name": "vite-react-recoil",
+      "description": "Simple demo for react + recoil + react-hook-form",
+      "url": "https://github.com/jellydn/vite-react-recoil",
+      "homepage": "https://vite-react-recoil.vercel.app",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 1,
+      "createdAt": "2021-05-18T14:17:11Z",
+      "lastCommitAt": "2026-06-20T05:09:30Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 52,
+      "attentionGap": 44.2,
+      "maintainers": [
+        "renovate[bot]"
+      ]
+    },
+    {
+      "repo": "juzhp/atmb-us-address-directory",
+      "name": "atmb-us-address-directory",
+      "description": "一个基于 AnytimeMailbox地址数据的美国住宅地址筛选项目，通过街景、RDI、CMRA 等信息辅助判断，帮助用户更快找出合适的美国真实住宅地址租用。在线查看：https://usaddres.com",
+      "url": "https://github.com/juzhp/atmb-us-address-directory",
+      "homepage": "https://usaddres.com",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-03-28T07:01:43Z",
+      "lastCommitAt": "2026-06-20T05:09:24Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 37,
+      "attentionGap": 28.9,
+      "maintainers": []
+    },
+    {
+      "repo": "allgpt-co/QuickVoice",
+      "name": "QuickVoice",
+      "description": "The open-source alternative to Retell for AI phone agents.",
+      "url": "https://github.com/allgpt-co/QuickVoice",
+      "homepage": "https://quickvoice.co",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 1,
+      "createdAt": "2026-03-23T15:20:22Z",
+      "lastCommitAt": "2026-06-20T05:09:10Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 87,
+      "attentionGap": 68,
+      "maintainers": [
+        "MohitBhalotia",
+        "DebdipWritesCode",
+        "deshmukh-anurag"
+      ]
+    },
+    {
+      "repo": "wenxig/free-nodes-sub",
+      "name": "free-nodes-sub",
+      "description": "科学上网: 免费！✈️✈️✈️自动抓取free-nodes的v2ray节点🪜🪜🪜，已适配形式更改🪜🪜🪜，多格式支持。✈️✈️✈️，，，，chatgpt，gemini，claude，grok，x，twitter，youtube，油管，discord，google，yandex，e-hentai，jmcomic，tor，github，代理，节点，梯子，fanqiang",
+      "url": "https://github.com/wenxig/free-nodes-sub",
+      "homepage": "https://github.com/free-nodes/v2rayfree",
+      "language": "TypeScript",
+      "stars": 60,
+      "forks": 8,
+      "openIssues": 1,
+      "createdAt": "2025-12-24T14:54:18Z",
+      "lastCommitAt": "2026-06-20T05:09:11Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 39,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "steelpipe75/padtools_ts",
+      "name": "padtools_ts",
+      "description": "Simple tool to write PAD. (TypeScript版)",
+      "url": "https://github.com/steelpipe75/padtools_ts",
+      "homepage": "https://steelpipe75.github.io/padtools_ts/",
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 1,
+      "createdAt": "2025-07-25T12:22:52Z",
+      "lastCommitAt": "2026-06-20T05:09:07Z",
+      "lastReleaseAt": "2026-05-20T10:44:20Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 73.9,
+      "maintainers": [
+        "steelpipe75",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "flathub-infra/website",
+      "name": "website",
+      "description": "Monorepo with website and API",
+      "url": "https://github.com/flathub-infra/website",
+      "homepage": "https://flathub.org",
+      "language": "TypeScript",
+      "stars": 352,
+      "forks": 126,
+      "openIssues": 68,
+      "createdAt": "2022-03-25T09:00:32Z",
+      "lastCommitAt": "2026-06-20T05:08:50Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 89,
+      "attentionGap": 34.8,
+      "maintainers": [
+        "bbhtt",
+        "barthalion",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "Access-At/proxy-scraping",
+      "name": "proxy-scraping",
+      "description": "",
+      "url": "https://github.com/Access-At/proxy-scraping",
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2024-09-07T18:21:18Z",
+      "lastCommitAt": "2026-06-20T05:08:56Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 59.8,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "yumilengjiao/yumihub",
+      "name": "yumihub",
+      "description": "一个galagame的集中式管理工具",
+      "url": "https://github.com/yumilengjiao/yumihub",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 25,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-01-17T07:30:27Z",
+      "lastCommitAt": "2026-06-20T05:08:53Z",
+      "lastReleaseAt": "2026-06-14T12:03:55Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 49,
+      "attentionGap": 31.7,
+      "maintainers": [
+        "yumilengjiao"
+      ]
+    },
+    {
+      "repo": "ronisarkarexe/story-spark-ai",
+      "name": "story-spark-ai",
+      "description": "StorySparkAI is an open-source platform designed for creative minds to generate and share multiple story variations from a single prompt.",
+      "url": "https://github.com/ronisarkarexe/story-spark-ai",
+      "homepage": "https://storysparkai.vercel.app",
+      "language": "TypeScript",
+      "stars": 328,
+      "forks": 961,
+      "openIssues": 357,
+      "createdAt": "2025-02-18T09:34:15Z",
+      "lastCommitAt": "2026-06-20T05:08:55Z",
+      "status": "quiet",
+      "tags": [
+        "needs_contributors"
+      ],
+      "vitalityScore": 96,
+      "attentionGap": 38,
+      "maintainers": [
+        "ronisarkarexe",
+        "Xenon010101",
+        "jainiksha"
+      ]
+    },
+    {
+      "repo": "kiyeonjeon21/reframe",
+      "name": "reframe",
+      "description": "Declarative motion graphics AI can write, humans can tweak — edits survive AI regeneration. Deterministic mp4 from plain-data scenes. npm: reframe-video",
+      "url": "https://github.com/kiyeonjeon21/reframe",
+      "language": "TypeScript",
+      "stars": 14,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-06-11T00:43:45Z",
+      "lastCommitAt": "2026-06-20T05:08:42Z",
+      "lastReleaseAt": "2026-06-20T05:09:12Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 72.5,
+      "maintainers": [
+        "kiyeonjeon21"
+      ]
+    },
+    {
+      "repo": "RosaErick/erickrosa.dev",
+      "name": "erickrosa.dev",
+      "description": "my currently portfolio, built with TypeScript, Next.js 14, React, ChakraUI and ThreeJS. The blog uses Notion as a headless CMS. The projects were fetched using GitHub API.",
+      "url": "https://github.com/RosaErick/erickrosa.dev",
+      "homepage": "https://erickrosa.dev",
+      "language": "TypeScript",
+      "stars": 28,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2022-02-11T04:04:47Z",
+      "lastCommitAt": "2026-06-20T05:08:41Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 57,
+      "attentionGap": 36.1,
+      "maintainers": [
+        "RosaErick"
+      ]
+    },
+    {
+      "repo": "Mister-Hope/bcrypt-ts",
+      "name": "bcrypt-ts",
+      "description": "Optimized bcrypt written in typescript with zero dependencies and 8KB Gzip size",
+      "url": "https://github.com/Mister-Hope/bcrypt-ts",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 47,
+      "forks": 5,
+      "openIssues": 1,
+      "createdAt": "2022-05-04T12:04:10Z",
+      "lastCommitAt": "2026-06-20T05:08:36Z",
+      "lastReleaseAt": "2025-12-13T02:07:56Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 66,
+      "attentionGap": 37.6,
+      "maintainers": [
+        "renovate[bot]",
+        "Mister-Hope"
+      ]
+    },
+    {
+      "repo": "marabesi/json-tool",
+      "name": "json-tool",
+      "description": "json-tool the privacy first tool that allows you to quick format json, everything runs locally.",
+      "url": "https://github.com/marabesi/json-tool",
+      "homepage": "https://marabesi.github.io/json-tool",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 2,
+      "openIssues": 7,
+      "createdAt": "2021-08-03T06:13:22Z",
+      "lastCommitAt": "2026-06-20T05:08:20Z",
+      "lastReleaseAt": "2021-11-28T13:43:59Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 53,
+      "attentionGap": 41.4,
+      "maintainers": [
+        "marabesi",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "LucasQuiles/WhatSoup",
+      "name": "WhatSoup",
+      "description": "Multi-instance WhatsApp platform — passive listener, conversational chatbot, and autonomous AI agent runtimes behind Baileys v7. Fleet console, 162 MCP tools, durable message delivery, and WhatsApp poll-based decision bridge.",
+      "url": "https://github.com/LucasQuiles/WhatSoup",
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 4,
+      "openIssues": 27,
+      "createdAt": "2026-03-31T01:34:48Z",
+      "lastCommitAt": "2026-06-20T05:08:25Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 68.3,
+      "maintainers": [
+        "LucasQuiles",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "Astro-Han/pawwork",
+      "name": "pawwork",
+      "description": "PawWork — free, open-source desktop AI agent for macOS and Windows. Alternative to Codex App and Claude Cowork. BYOK with 75+ providers, ChatGPT OAuth, local models, Office files. No terminal needed.",
+      "url": "https://github.com/Astro-Han/pawwork",
+      "homepage": "https://pawwork.ai",
+      "language": "TypeScript",
+      "stars": 55,
+      "forks": 7,
+      "openIssues": 58,
+      "createdAt": "2026-04-14T02:12:52Z",
+      "lastCommitAt": "2026-06-20T05:08:26Z",
+      "lastReleaseAt": "2026-06-18T04:14:58Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 54.6,
+      "maintainers": [
+        "Astro-Han"
+      ]
+    },
+    {
+      "repo": "moe-sekai/Moesekai",
+      "name": "Moesekai",
+      "description": "",
+      "url": "https://github.com/moe-sekai/Moesekai",
+      "homepage": "https://pjsk.moe",
+      "language": "TypeScript",
+      "stars": 29,
+      "forks": 4,
+      "openIssues": 0,
+      "createdAt": "2026-01-11T13:33:00Z",
+      "lastCommitAt": "2026-06-20T05:08:09Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 56.6,
+      "maintainers": [
+        "Exmeaning",
+        "NeuraXmy",
+        "MetaMikuAI"
+      ]
+    },
+    {
+      "repo": "chrischall/ofw-mcp",
+      "name": "ofw-mcp",
+      "description": "MCP for interacting with Our Family Wizard (OFW)",
+      "url": "https://github.com/chrischall/ofw-mcp",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-03-16T01:56:02Z",
+      "lastCommitAt": "2026-06-20T05:08:04Z",
+      "lastReleaseAt": "2026-06-15T14:33:08Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 76.5,
+      "maintainers": [
+        "chrischall",
+        "dependabot[bot]",
+        "thanbey"
+      ]
+    },
+    {
+      "repo": "brendanlong/lion-reader",
+      "name": "lion-reader",
+      "description": "A heavily-optimized RSS, email and save-for-later reading app with AI features and integrations",
+      "url": "https://github.com/brendanlong/lion-reader",
+      "homepage": "https://lionreader.com",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 24,
+      "createdAt": "2025-12-26T22:48:46Z",
+      "lastCommitAt": "2026-06-20T05:08:01Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 69.6,
+      "maintainers": [
+        "claude",
+        "brendanlong",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "dossierhq/dossierhq",
+      "name": "dossierhq",
+      "description": "The headless CMS toolkit",
+      "url": "https://github.com/dossierhq/dossierhq",
+      "homepage": "https://dossierhq.dev",
+      "language": "TypeScript",
+      "stars": 52,
+      "forks": 0,
+      "openIssues": 6,
+      "createdAt": "2020-10-26T12:31:01Z",
+      "lastCommitAt": "2026-06-20T05:08:02Z",
+      "status": "quiet",
+      "tags": [
+        "legacy_hero"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 46.9,
+      "maintainers": [
+        "dependabot[bot]",
+        "jonasb"
+      ]
+    },
+    {
+      "repo": "leviFrosty/witness-work",
+      "name": "witness-work",
+      "description": "A powerful field service assistant that puts user experience first.",
+      "url": "https://github.com/leviFrosty/witness-work",
+      "homepage": "https://www.leviwilkerson.com/witness-work",
+      "language": "TypeScript",
+      "stars": 25,
+      "forks": 3,
+      "openIssues": 12,
+      "createdAt": "2023-05-18T19:18:55Z",
+      "lastCommitAt": "2026-06-20T05:07:59Z",
+      "lastReleaseAt": "2026-04-16T00:29:39Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 83,
+      "attentionGap": 53.8,
+      "maintainers": [
+        "leviFrosty",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "KalkulierbaR/kalkulierbar",
+      "name": "kalkulierbar",
+      "description": " Learning Framework for Logic Calculi",
+      "url": "https://github.com/KalkulierbaR/kalkulierbar",
+      "homepage": "https://kbar.app",
+      "language": "TypeScript",
+      "stars": 16,
+      "forks": 3,
+      "openIssues": 2,
+      "createdAt": "2020-11-08T17:57:41Z",
+      "lastCommitAt": "2026-06-20T05:07:58Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 55,
+      "attentionGap": 38.9,
+      "maintainers": [
+        "renovate[bot]",
+        "Drodt",
+        "JuliusHenke"
+      ]
+    },
+    {
+      "repo": "case-contract-testing/contract-case",
+      "name": "contract-case",
+      "description": "Next generation contract testing",
+      "url": "https://github.com/case-contract-testing/contract-case",
+      "homepage": "https://case.contract-testing.io/",
+      "language": "TypeScript",
+      "stars": 12,
+      "forks": 4,
+      "openIssues": 0,
+      "createdAt": "2022-09-17T05:35:03Z",
+      "lastCommitAt": "2026-06-20T05:08:12Z",
+      "lastReleaseAt": "2026-06-04T13:43:54Z",
+      "status": "thriving",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 67,
+      "maintainers": [
+        "dependabot[bot]",
+        "TimothyJones",
+        "JamesBurnsCanva"
+      ]
+    },
+    {
+      "repo": "IlyaSemenov/bunlock-dedupe",
+      "name": "bunlock-dedupe",
+      "description": "Analyze and deduplicate bun.lock dependencies.",
+      "url": "https://github.com/IlyaSemenov/bunlock-dedupe",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 1,
+      "createdAt": "2026-02-20T08:44:48Z",
+      "lastCommitAt": "2026-06-20T05:07:58Z",
+      "lastReleaseAt": "2026-06-20T05:08:25Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 55,
+      "attentionGap": 45.7,
+      "maintainers": [
+        "IlyaSemenov",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "xlnfinance/xln",
+      "name": "xln",
+      "description": "0.1 - Q1 2026. DRAFT xln: a credit+collateral netting-account L2 for all EVM and future CBDC jurisdictions—unicast O(1) per hop, link-capped risk, local state, sovereign exits.",
+      "url": "https://github.com/xlnfinance/xln",
+      "homepage": "https://xln.finance",
+      "language": "TypeScript",
+      "stars": 103,
+      "forks": 22,
+      "openIssues": 1,
+      "createdAt": "2018-01-05T11:22:14Z",
+      "lastCommitAt": "2026-06-20T05:07:52Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 40.9,
+      "maintainers": [
+        "homakov"
+      ]
+    },
+    {
+      "repo": "marabesi/software-metrics-machine",
+      "name": "software-metrics-machine",
+      "description": "See your software development process through data. Everything runs locally. You own your data.",
+      "url": "https://github.com/marabesi/software-metrics-machine",
+      "homepage": "https://marabesi.github.io/software-metrics-machine/",
+      "language": "TypeScript",
+      "stars": 12,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2025-09-03T18:56:19Z",
+      "lastCommitAt": "2026-06-20T05:07:43Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 74.5,
+      "maintainers": [
+        "marabesi",
+        "jchacana"
+      ]
+    },
+    {
+      "repo": "gael55x/Grape",
+      "name": "Grape",
+      "description": "Better context transport for AI coding agents.",
+      "url": "https://github.com/gael55x/Grape",
+      "homepage": "https://www.npmjs.com/package/grape-context",
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-05-14T08:58:42Z",
+      "lastCommitAt": "2026-06-20T05:07:39Z",
+      "lastReleaseAt": "2026-06-17T13:18:03Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 75.6,
+      "maintainers": [
+        "gael55x"
+      ]
+    },
+    {
+      "repo": "electron/website",
+      "name": "website",
+      "description": ":electron: The Electron website",
+      "url": "https://github.com/electron/website",
+      "homepage": "https://electronjs.org",
+      "language": "TypeScript",
+      "stars": 155,
+      "forks": 208,
+      "openIssues": 34,
+      "createdAt": "2021-04-14T21:01:49Z",
+      "lastCommitAt": "2026-06-20T05:07:45Z",
+      "status": "quiet",
+      "tags": [
+        "legacy_hero"
+      ],
+      "vitalityScore": 76,
+      "attentionGap": 34.3,
+      "maintainers": [
+        "dependabot[bot]",
+        "electron-website-docs-updater[bot]",
+        "dsanders11"
+      ]
+    },
+    {
+      "repo": "kubestellar/console",
+      "name": "console",
+      "description": "World's first fully integrated and fully Automated Kubernetes management and orchestration solution",
+      "url": "https://github.com/kubestellar/console",
+      "homepage": "https://console.kubestellar.io",
+      "language": "TypeScript",
+      "stars": 118,
+      "forks": 121,
+      "openIssues": 29,
+      "createdAt": "2026-01-16T06:32:19Z",
+      "lastCommitAt": "2026-06-20T04:58:26Z",
+      "lastReleaseAt": "2026-06-19T23:32:23Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "needs_contributors"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 47.5,
+      "maintainers": [
+        "clubanderson",
+        "ashnaaseth2325-oss",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "jurerotar/Pillage-First-Ask-Questions-Later",
+      "name": "Pillage-First-Ask-Questions-Later",
+      "description": "An open-source, single-player, Travian alternative browser strategy game, inspired by Travian T4 and Travian Kingdoms",
+      "url": "https://github.com/jurerotar/Pillage-First-Ask-Questions-Later",
+      "homepage": "https://pillagefirst.com",
+      "language": "TypeScript",
+      "stars": 158,
+      "forks": 46,
+      "openIssues": 5,
+      "createdAt": "2022-04-20T18:37:54Z",
+      "lastCommitAt": "2026-06-19T15:58:53Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "needs_contributors"
+      ],
+      "vitalityScore": 93,
+      "attentionGap": 41.8,
+      "maintainers": [
+        "jurerotar",
+        "shivamAmrutia",
+        "erayzeki"
+      ]
+    },
+    {
+      "repo": "PsycherosAI/Psycheros",
+      "name": "Psycheros",
+      "description": "A persistent AI entity harness. The entity has its own identity files, a memory hierarchy that consolidates across time, and a single canonical self that persists across multiple interfaces.",
+      "url": "https://github.com/PsycherosAI/Psycheros",
+      "homepage": "https://psycherosai.github.io/Psycheros/",
+      "language": "TypeScript",
+      "stars": 22,
+      "forks": 5,
+      "openIssues": 19,
+      "createdAt": "2026-05-11T12:44:31Z",
+      "lastCommitAt": "2026-06-20T05:07:35Z",
+      "lastReleaseAt": "2026-06-20T05:08:17Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 75,
+      "attentionGap": 49.8,
+      "maintainers": [
+        "PsycherosOps"
+      ]
+    },
+    {
+      "repo": "fangzhouzhu/ai-agent",
+      "name": "ai-agent",
+      "description": "一个本地化部署的ai agent，支持对话，操作文件，使用技术  electron+react+ts+langchain+ollama",
+      "url": "https://github.com/fangzhouzhu/ai-agent",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-04-03T03:22:28Z",
+      "lastCommitAt": "2026-06-20T05:07:14Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 51,
+      "attentionGap": 43.4,
+      "maintainers": [
+        "fangzhouzhu"
+      ]
+    },
+    {
+      "repo": "freestyle-voice/freestyle",
+      "name": "freestyle",
+      "description": "Voice interface for Claude Code",
+      "url": "https://github.com/freestyle-voice/freestyle",
+      "homepage": "https://freestylevoice.com",
+      "language": "TypeScript",
+      "stars": 386,
+      "forks": 50,
+      "openIssues": 13,
+      "createdAt": "2026-05-25T02:25:59Z",
+      "lastCommitAt": "2026-06-18T17:17:33Z",
+      "lastReleaseAt": "2026-06-16T05:07:49Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors"
+      ],
+      "vitalityScore": 98,
+      "attentionGap": 37.7,
+      "maintainers": [
+        "matteo8p",
+        "MathurAditya724",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "AWMC-TEAM/koishi-plugin-maibot",
+      "name": "koishi-plugin-maibot",
+      "description": "舞萌DX游戏高级操作插件 for Koishi - 支持用户绑定、B50更新、账号状态提醒、1.5倍票获取等功能",
+      "url": "https://github.com/AWMC-TEAM/koishi-plugin-maibot",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 21,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2025-12-09T11:21:16Z",
+      "lastCommitAt": "2026-06-20T05:07:08Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 40.2,
+      "maintainers": [
+        "Michaelwucoc"
+      ]
+    },
+    {
+      "repo": "CoderAllan/vscode-ebcdicconverter",
+      "name": "vscode-ebcdicconverter",
+      "description": "VsCode extension that converts the current file or the current selection from Ebcdic to Ascii or from Ascii to Ebcdic.",
+      "url": "https://github.com/CoderAllan/vscode-ebcdicconverter",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2021-09-25T04:57:32Z",
+      "lastCommitAt": "2026-06-20T05:07:00Z",
+      "lastReleaseAt": "2024-11-28T04:23:23Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 56,
+      "attentionGap": 47.6,
+      "maintainers": [
+        "CoderAllan"
+      ]
+    },
+    {
+      "repo": "nnnkit/totem",
+      "name": "totem",
+      "description": "A Chrome extension that replaces your new tab with a calm reading queue built from your X (Twitter) bookmarks.",
+      "url": "https://github.com/nnnkit/totem",
+      "homepage": "https://usetotem.xyz",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-02-12T20:15:56Z",
+      "lastCommitAt": "2026-06-20T05:06:56Z",
+      "lastReleaseAt": "2026-06-20T05:08:34Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 71.4,
+      "maintainers": [
+        "nnnkit"
+      ]
+    },
+    {
+      "repo": "AlexLee00/ai-agent-system",
+      "name": "ai-agent-system",
+      "description": "A production-grade multi-agent AI platform running 24/7 on Apple Silicon, orchestrating 121 autonomous agents that trade crypto, publish blogs, manage reservations, conduct research, and continuously improve themselves — all at $0 API cost using local LLMs.",
+      "url": "https://github.com/AlexLee00/ai-agent-system",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-02-22T05:53:35Z",
+      "lastCommitAt": "2026-06-20T05:06:52Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 65.5,
+      "maintainers": [
+        "AlexLee00"
+      ]
+    },
+    {
+      "repo": "fru-dev3/prevail-desktop",
+      "name": "prevail-desktop",
+      "description": "Native macOS cockpit for AI council deliberation. Companion to the Prevail CLI.",
+      "url": "https://github.com/fru-dev3/prevail-desktop",
+      "homepage": "https://prevail.sh",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-06-05T05:10:43Z",
+      "lastCommitAt": "2026-06-20T05:06:56Z",
+      "lastReleaseAt": "2026-06-20T04:50:44Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 85,
+      "maintainers": [
+        "frudev3"
+      ]
+    },
+    {
+      "repo": "CoderAllan/vscode-dgmlviewer",
+      "name": "vscode-dgmlviewer",
+      "description": "DGML Viewer is a extension for rendering dgml files in Visual Studio code.",
+      "url": "https://github.com/CoderAllan/vscode-dgmlviewer",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 3,
+      "openIssues": 5,
+      "createdAt": "2021-01-21T15:01:45Z",
+      "lastCommitAt": "2026-06-20T05:06:56Z",
+      "lastReleaseAt": "2024-11-28T04:24:17Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 55,
+      "attentionGap": 38.4,
+      "maintainers": [
+        "CoderAllan"
+      ]
+    },
+    {
+      "repo": "duyet/clickhouse-monitoring",
+      "name": "clickhouse-monitoring",
+      "description": "Simple ClickHouse UI that relies on system tables to help monitor and provide overview of your cluster",
+      "url": "https://github.com/duyet/clickhouse-monitoring",
+      "homepage": "https://chmonitor.dev",
+      "language": "TypeScript",
+      "stars": 243,
+      "forks": 39,
+      "openIssues": 11,
+      "createdAt": "2023-11-16T13:18:24Z",
+      "lastCommitAt": "2026-06-20T05:06:53Z",
+      "lastReleaseAt": "2026-06-18T16:07:06Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 37.5,
+      "maintainers": [
+        "duyet",
+        "renovate[bot]",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "cliftonc/lastlight",
+      "name": "lastlight",
+      "description": "An agent that helps you to maintain and improve your repositories. ",
+      "url": "https://github.com/cliftonc/lastlight",
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 2,
+      "openIssues": 8,
+      "createdAt": "2026-04-04T05:20:57Z",
+      "lastCommitAt": "2026-06-20T05:06:51Z",
+      "lastReleaseAt": "2026-04-13T03:23:49Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 97,
+      "attentionGap": 73.4,
+      "maintainers": [
+        "cliftonc",
+        "last-light[bot]"
+      ]
+    },
+    {
+      "repo": "CoderAllan/vscode-angulartools",
+      "name": "vscode-angulartools",
+      "description": "AngularTools is a collection of tools for exploring a Angular project, help you with documenting, reverse engineering a project or help when refactoring.",
+      "url": "https://github.com/CoderAllan/vscode-angulartools",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 21,
+      "forks": 0,
+      "openIssues": 2,
+      "createdAt": "2020-12-03T04:43:21Z",
+      "lastCommitAt": "2026-06-20T05:06:52Z",
+      "lastReleaseAt": "2024-11-28T04:20:52Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 64,
+      "attentionGap": 42.9,
+      "maintainers": [
+        "CoderAllan",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "tiramisulabs/seyfert",
+      "name": "seyfert",
+      "description": "the black magic Discord framework 🧙‍♂️",
+      "url": "https://github.com/tiramisulabs/seyfert",
+      "homepage": "https://seyfert.dev",
+      "language": "TypeScript",
+      "stars": 305,
+      "forks": 45,
+      "openIssues": 0,
+      "createdAt": "2022-06-19T19:43:34Z",
+      "lastCommitAt": "2026-06-20T05:06:51Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 54,
+      "attentionGap": 21.6,
+      "maintainers": [
+        "socram03",
+        "MARCROCK22",
+        "EvilG-MC"
+      ]
+    },
+    {
+      "repo": "Stellar-Mail/stealth",
+      "name": "stealth",
+      "description": "",
+      "url": "https://github.com/Stellar-Mail/stealth",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 111,
+      "openIssues": 311,
+      "createdAt": "2026-05-06T02:51:13Z",
+      "lastCommitAt": "2026-06-20T05:06:39Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 75,
+      "attentionGap": 57.6,
+      "maintainers": [
+        "kryputh",
+        "eleven-smg",
+        "real-venus"
+      ]
+    },
+    {
+      "repo": "ainoya/cloudflare-dom-distiller",
+      "name": "cloudflare-dom-distiller",
+      "description": "A Cloudflare Workers-based API for extracting and converting web page content to Markdown using DOM-Distiller and Turndown.",
+      "url": "https://github.com/ainoya/cloudflare-dom-distiller",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 30,
+      "forks": 2,
+      "openIssues": 1,
+      "createdAt": "2024-06-11T09:39:04Z",
+      "lastCommitAt": "2026-06-20T05:06:37Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 52.4,
+      "maintainers": [
+        "renovate[bot]"
+      ]
+    },
+    {
+      "repo": "duolaAmengweb3/agentstore",
+      "name": "agentstore",
+      "description": "",
+      "url": "https://github.com/duolaAmengweb3/agentstore",
+      "homepage": "https://agentstore-pi.vercel.app",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 59,
+      "createdAt": "2026-04-22T02:26:21Z",
+      "lastCommitAt": "2026-06-20T05:06:32Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 51,
+      "maintainers": []
+    },
+    {
+      "repo": "superduck-ai/superduck",
+      "name": "superduck",
+      "description": "Open-source AI browser assistant — any model, anywhere. Browser automation, workflow recording, MCP runtime & CLI.",
+      "url": "https://github.com/superduck-ai/superduck",
+      "homepage": "https://superduck-ai.github.io/superduck/",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 2,
+      "openIssues": 38,
+      "createdAt": "2026-03-27T01:24:28Z",
+      "lastCommitAt": "2026-06-20T05:06:29Z",
+      "lastReleaseAt": "2026-06-15T13:51:43Z",
+      "status": "thriving",
+      "tags": [],
+      "vitalityScore": 81,
+      "attentionGap": 62.3,
+      "maintainers": [
+        "Postroggy",
+        "jh0904",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "akashic-games/akashic-cli",
+      "name": "akashic-cli",
+      "description": "Command-line utility for Akashic Engine game development",
+      "url": "https://github.com/akashic-games/akashic-cli",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 7,
+      "openIssues": 4,
+      "createdAt": "2017-01-24T09:05:12Z",
+      "lastCommitAt": "2026-06-20T05:06:27Z",
+      "lastReleaseAt": "2026-04-02T03:10:39Z",
+      "status": "thriving",
+      "tags": [
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 63,
+      "attentionGap": 48.4,
+      "maintainers": [
+        "ShinobuTakahashi",
+        "yu-ogi",
+        "renovate[bot]"
+      ]
+    },
+    {
+      "repo": "thinkwork-ai/thinkwork",
+      "name": "thinkwork",
+      "description": "ThinkWork AI Open Source Enterprise Agent Harness",
+      "url": "https://github.com/thinkwork-ai/thinkwork",
+      "homepage": "https://thinkwork.ai",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 4,
+      "createdAt": "2026-04-10T00:48:50Z",
+      "lastCommitAt": "2026-06-20T05:06:01Z",
+      "lastReleaseAt": "2026-06-20T04:43:06Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 78.2,
+      "maintainers": [
+        "ericodom"
+      ]
+    },
+    {
+      "repo": "btsearch/btsearch",
+      "name": "btsearch",
+      "description": "BTSearch to ogólnopolska mapa stacji bazowych oraz wykazu UKE",
+      "url": "https://github.com/btsearch/btsearch",
+      "homepage": "https://btsearch.pl",
+      "language": "TypeScript",
+      "stars": 22,
+      "forks": 2,
+      "openIssues": 26,
+      "createdAt": "2026-02-03T21:32:42Z",
+      "lastCommitAt": "2026-06-20T05:05:38Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 83,
+      "attentionGap": 55.1,
+      "maintainers": [
+        "rxri"
+      ]
+    },
+    {
+      "repo": "Ixotic27/The-Leetcode-City",
+      "name": "The-Leetcode-City",
+      "description": "",
+      "url": "https://github.com/Ixotic27/The-Leetcode-City",
+      "homepage": "https://the-leetcode-city.vercel.app",
+      "language": "TypeScript",
+      "stars": 52,
+      "forks": 77,
+      "openIssues": 23,
+      "createdAt": "2026-03-08T05:47:02Z",
+      "lastCommitAt": "2026-06-20T05:05:45Z",
+      "lastReleaseAt": "2026-06-02T06:31:49Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 98,
+      "attentionGap": 54.7,
+      "maintainers": [
+        "Ixotic27",
+        "nyxsky404",
+        "vipul674"
+      ]
+    },
+    {
+      "repo": "sakilabs/openbts",
+      "name": "openbts",
+      "description": "Improved web app of an old BTSearch",
+      "url": "https://github.com/sakilabs/openbts",
+      "homepage": "https://btsearch.pl",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-02-17T18:47:59Z",
+      "lastCommitAt": "2026-06-20T05:05:20Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 70.4,
+      "maintainers": [
+        "rxri"
+      ]
+    },
+    {
+      "repo": "this-gavagai/foundryvtt-tm",
+      "name": "foundryvtt-tm",
+      "description": "",
+      "url": "https://github.com/this-gavagai/foundryvtt-tm",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2023-10-06T14:58:46Z",
+      "lastCommitAt": "2026-06-20T05:05:48Z",
+      "lastReleaseAt": "2026-06-20T04:05:43Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 72.3,
+      "maintainers": [
+        "this-gavagai",
+        "Larus23"
+      ]
+    },
+    {
+      "repo": "api7/adc",
+      "name": "adc",
+      "description": "API Declarative CLI - ADC",
+      "url": "https://github.com/api7/adc",
+      "homepage": "https://docs.api7.ai/enterprise/reference/adc",
+      "language": "TypeScript",
+      "stars": 68,
+      "forks": 14,
+      "openIssues": 10,
+      "createdAt": "2023-08-16T09:33:38Z",
+      "lastCommitAt": "2026-06-20T05:05:46Z",
+      "lastReleaseAt": "2026-06-17T07:58:02Z",
+      "status": "thriving",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 61,
+      "attentionGap": 32.2,
+      "maintainers": [
+        "bzp2010",
+        "renovate[bot]",
+        "jarvis9443"
+      ]
+    },
+    {
+      "repo": "asaddevx/react-native",
+      "name": "react-native",
+      "description": "Modern React Native + TypeScript starter for secure, AI-powered, and scalable mobile solutions across fintech, wellness, and smart systems.",
+      "url": "https://github.com/asaddevx/react-native",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2025-10-17T17:50:53Z",
+      "lastCommitAt": "2026-06-20T05:05:40Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 58.1,
+      "maintainers": [
+        "asaddevx"
+      ]
+    },
+    {
+      "repo": "FreemapSlovakia/freemap-v3-nodejs-backend",
+      "name": "freemap-v3-nodejs-backend",
+      "description": "API server (backend) for web application (freemap-v3-nodejs)",
+      "url": "https://github.com/FreemapSlovakia/freemap-v3-nodejs-backend",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 4,
+      "openIssues": 2,
+      "createdAt": "2017-03-19T13:16:44Z",
+      "lastCommitAt": "2026-06-20T05:05:37Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 78,
+      "attentionGap": 66.3,
+      "maintainers": [
+        "zdila",
+        "biglaci",
+        "alexanderzatko"
+      ]
+    },
+    {
+      "repo": "stormsia/proxy-list",
+      "name": "proxy-list",
+      "description": "🚀 A curated collection of working proxies, automatically updated every 30 minutes. Features real-time validation, anonymity levels, and detailed statistics. ",
+      "url": "https://github.com/stormsia/proxy-list",
+      "homepage": "https://stormsia.github.io/proxy-list/",
+      "language": "TypeScript",
+      "stars": 30,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2025-11-29T12:14:06Z",
+      "lastCommitAt": "2026-06-20T05:05:30Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 48.1,
+      "maintainers": [
+        "stormsia"
+      ]
+    },
+    {
+      "repo": "LegalQuants/Donna",
+      "name": "Donna",
+      "description": "",
+      "url": "https://github.com/LegalQuants/Donna",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 6,
+      "openIssues": 1,
+      "createdAt": "2026-05-24T17:48:29Z",
+      "lastCommitAt": "2026-06-20T05:05:26Z",
+      "lastReleaseAt": "2026-06-13T21:24:43Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 69.9,
+      "maintainers": [
+        "Kevin-Tucuxi"
+      ]
+    },
+    {
+      "repo": "electron/windows-sign",
+      "name": "windows-sign",
+      "description": "Codesign Electron apps for Windows",
+      "url": "https://github.com/electron/windows-sign",
+      "language": "TypeScript",
+      "stars": 65,
+      "forks": 19,
+      "openIssues": 9,
+      "createdAt": "2023-05-30T23:24:31Z",
+      "lastCommitAt": "2026-06-20T05:05:24Z",
+      "lastReleaseAt": "2026-04-21T21:05:02Z",
+      "status": "thriving",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 45,
+      "attentionGap": 24,
+      "maintainers": [
+        "dependabot[bot]",
+        "dsanders11",
+        "MarshallOfSound"
+      ]
+    },
+    {
+      "repo": "EasyMetaAu/helm-api",
+      "name": "helm-api",
+      "description": "Helm API: intelligent LLM routing gateway specs",
+      "url": "https://github.com/EasyMetaAu/helm-api",
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-05-29T12:32:18Z",
+      "lastCommitAt": "2026-06-20T05:05:12Z",
+      "lastReleaseAt": "2026-06-20T05:05:42Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 68.1,
+      "maintainers": [
+        "mylukin"
+      ]
+    },
+    {
+      "repo": "Moebytes/Moepictures",
+      "name": "Moepictures",
+      "description": "Cute and moe anime image board!",
+      "url": "https://github.com/Moebytes/Moepictures",
+      "homepage": "https://moepictures.net",
+      "language": "TypeScript",
+      "stars": 28,
+      "forks": 0,
+      "openIssues": 23,
+      "createdAt": "2022-03-18T00:58:58Z",
+      "lastCommitAt": "2026-06-20T05:04:42Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 46,
+      "attentionGap": 29.1,
+      "maintainers": [
+        "Moebytes"
+      ]
+    },
+    {
+      "repo": "BasaltBase/BasaltPassDev",
+      "name": "BasaltPassDev",
+      "description": "BasaltPass 是一个面向多应用/跨项目的身份与权限平台（AuthN/AuthZ）Devlopment 仓库",
+      "url": "https://github.com/BasaltBase/BasaltPassDev",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2025-07-20T04:54:56Z",
+      "lastCommitAt": "2026-06-20T05:04:45Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 83,
+      "maintainers": [
+        "zeturn",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "sagemathinc/cocalc-ai",
+      "name": "cocalc-ai",
+      "description": "CoCalc.ai: Collaborative Calculation with AI",
+      "url": "https://github.com/sagemathinc/cocalc-ai",
+      "homepage": "https://CoCalc.ai",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 11,
+      "createdAt": "2026-01-19T22:09:24Z",
+      "lastCommitAt": "2026-06-20T05:04:29Z",
+      "lastReleaseAt": "2026-06-13T21:05:00Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 79,
+      "attentionGap": 67.2,
+      "maintainers": [
+        "williamstein",
+        "Blaec-CoCalc"
+      ]
+    },
+    {
+      "repo": "izrin96/objekt-explorer",
+      "name": "objekt-explorer",
+      "description": "Simple Modhaus Cosmo's K-POP NFT Objekt web explorer",
+      "url": "https://github.com/izrin96/objekt-explorer",
+      "homepage": "https://objekt.top",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2025-01-06T21:42:23Z",
+      "lastCommitAt": "2026-06-20T05:04:28Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 70.4,
+      "maintainers": [
+        "izrin96"
+      ]
+    },
+    {
+      "repo": "alex-grover/astro-themes",
+      "name": "astro-themes",
+      "description": "Easy dark mode for Astro websites",
+      "url": "https://github.com/alex-grover/astro-themes",
+      "homepage": "https://www.npmjs.com/package/astro-themes",
+      "language": "TypeScript",
+      "stars": 83,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2022-08-23T23:49:18Z",
+      "lastCommitAt": "2026-06-20T05:04:32Z",
+      "lastReleaseAt": "2025-07-02T18:27:08Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 49,
+      "attentionGap": 24.9,
+      "maintainers": [
+        "dependabot[bot]",
+        "alex-grover"
+      ]
+    },
+    {
+      "repo": "shuaiyuan17/tomo",
+      "name": "tomo",
+      "description": "A personal AI assistant that lives in your messaging apps.",
+      "url": "https://github.com/shuaiyuan17/tomo",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-04-07T02:02:40Z",
+      "lastCommitAt": "2026-06-20T05:04:31Z",
+      "lastReleaseAt": "2026-06-19T23:15:06Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 76.5,
+      "maintainers": [
+        "clawcrab",
+        "shuaiyuan17",
+        "claude"
+      ]
+    },
+    {
+      "repo": "KGT24k/mcp-tool-search",
+      "name": "mcp-tool-search",
+      "description": "MCP proxy server — 85-96% token savings via lazy tool loading & fuzzy search across 100+ MCP servers. npm i mcp-tool-search",
+      "url": "https://github.com/KGT24k/mcp-tool-search",
+      "homepage": "https://www.npmjs.com/package/mcp-tool-search",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-02-27T02:52:22Z",
+      "lastCommitAt": "2026-06-20T05:04:29Z",
+      "lastReleaseAt": "2026-03-08T02:38:05Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 50,
+      "attentionGap": 42.5,
+      "maintainers": [
+        "KGT24k",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "eltmon/overdeck",
+      "name": "overdeck",
+      "description": "Multi-agent orchestration for AI coding assistants",
+      "url": "https://github.com/eltmon/overdeck",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 553,
+      "createdAt": "2026-01-18T16:57:08Z",
+      "lastCommitAt": "2026-06-20T05:03:48Z",
+      "lastReleaseAt": "2026-06-04T01:44:32Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 93,
+      "attentionGap": 79.1,
+      "maintainers": []
+    },
+    {
+      "repo": "caozisheng/rimedeck",
+      "name": "rimedeck",
+      "description": "RimeDeck is an AI agent workbench forked from Multica, aiming to organize a productive group of agents on your desktop.",
+      "url": "https://github.com/caozisheng/rimedeck",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2026-06-03T07:26:43Z",
+      "lastCommitAt": "2026-06-20T05:04:18Z",
+      "lastReleaseAt": "2026-06-18T10:53:20Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 70.4,
+      "maintainers": [
+        "Bohan-J",
+        "caozisheng",
+        "multica-eve"
+      ]
+    },
+    {
+      "repo": "manu14357/Zelaxy",
+      "name": "Zelaxy",
+      "description": "Zelaxy is a visual platform for building AI-powered automation workflows. Drag blocks onto a canvas, connect them, and watch them execute with real-time LLM streaming. No code required — but fully extensible when you need it.",
+      "url": "https://github.com/manu14357/Zelaxy",
+      "homepage": "https://zelaxy.in",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-03-29T05:26:41Z",
+      "lastCommitAt": "2026-06-20T05:04:10Z",
+      "lastReleaseAt": "2026-03-30T18:10:56Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 71.7,
+      "maintainers": [
+        "manu14357"
+      ]
+    },
+    {
+      "repo": "SerenModz21/cdn-worker",
+      "name": "cdn-worker",
+      "description": "A simple CDN made using Cloudflare Workers and Hono",
+      "url": "https://github.com/SerenModz21/cdn-worker",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 27,
+      "forks": 17,
+      "openIssues": 1,
+      "createdAt": "2023-03-07T23:54:59Z",
+      "lastCommitAt": "2026-06-20T05:04:11Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 45.9,
+      "maintainers": [
+        "renovate[bot]",
+        "SerenModz21",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "loopdive/js2",
+      "name": "js2",
+      "description": "ECMAScript to WebAssembly GC AOT compiler",
+      "url": "https://github.com/loopdive/js2",
+      "homepage": "http://js2.loopdive.com/",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 2,
+      "openIssues": 1,
+      "createdAt": "2026-04-23T11:33:54Z",
+      "lastCommitAt": "2026-06-20T05:04:07Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 69.9,
+      "maintainers": [
+        "ttraenkler"
+      ]
+    },
+    {
+      "repo": "TrejGun/nestjs-auth",
+      "name": "nestjs-auth",
+      "description": "",
+      "url": "https://github.com/TrejGun/nestjs-auth",
+      "language": "TypeScript",
+      "stars": 22,
+      "forks": 3,
+      "openIssues": 1,
+      "createdAt": "2021-03-19T00:13:35Z",
+      "lastCommitAt": "2026-06-20T05:04:02Z",
+      "status": "quiet",
+      "tags": [
+        "legacy_hero"
+      ],
+      "vitalityScore": 65,
+      "attentionGap": 43.2,
+      "maintainers": [
+        "renovate[bot]",
+        "TrejGun"
+      ]
+    },
+    {
+      "repo": "neoPix/bluelinky-stamps",
+      "name": "bluelinky-stamps",
+      "description": "",
+      "url": "https://github.com/neoPix/bluelinky-stamps",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 6,
+      "openIssues": 0,
+      "createdAt": "2021-06-03T15:49:27Z",
+      "lastCommitAt": "2026-06-20T05:03:58Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 59.2,
+      "maintainers": [
+        "neoPix"
+      ]
+    },
+    {
+      "repo": "sb-/notch",
+      "name": "notch",
+      "description": "The open source developer's notebook",
+      "url": "https://github.com/sb-/notch",
+      "language": "TypeScript",
+      "stars": 12,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-01-19T15:04:26Z",
+      "lastCommitAt": "2026-06-20T05:03:35Z",
+      "lastReleaseAt": "2026-06-18T18:52:04Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 57,
+      "attentionGap": 42.5,
+      "maintainers": [
+        "sb-",
+        "ijoseph"
+      ]
+    },
+    {
+      "repo": "jezweb/vite-flare-starter",
+      "name": "vite-flare-starter",
+      "description": "Cloudflare native, ai sdk v6 agent workspace ready to use with better auth and all of the cloudflare dev bindings.",
+      "url": "https://github.com/jezweb/vite-flare-starter",
+      "language": "TypeScript",
+      "stars": 43,
+      "forks": 7,
+      "openIssues": 14,
+      "createdAt": "2025-11-29T10:34:47Z",
+      "lastCommitAt": "2026-06-20T05:03:53Z",
+      "lastReleaseAt": "2026-05-07T04:01:18Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 96,
+      "attentionGap": 55.7,
+      "maintainers": [
+        "claude",
+        "jezweb"
+      ]
+    },
+    {
+      "repo": "DerYeger/yeger",
+      "name": "yeger",
+      "description": "Monorepo for @yeger/ NPM packages",
+      "url": "https://github.com/DerYeger/yeger",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 383,
+      "forks": 26,
+      "openIssues": 1,
+      "createdAt": "2021-08-15T15:31:30Z",
+      "lastCommitAt": "2026-06-20T05:09:49Z",
+      "lastReleaseAt": "2026-06-20T04:55:39Z",
+      "status": "thriving",
+      "tags": [],
+      "vitalityScore": 62,
+      "attentionGap": 23.9,
+      "maintainers": [
+        "DerYeger",
+        "renovate[bot]",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "aidenybai/cnfast",
+      "name": "cnfast",
+      "description": "Fast drop in replacement for `cn`",
+      "url": "https://github.com/aidenybai/cnfast",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-06-19T19:46:29Z",
+      "lastCommitAt": "2026-06-20T05:03:50Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 53,
+      "attentionGap": 42.2,
+      "maintainers": [
+        "aidenybai",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "Coder-s-OG-s/MergeShip",
+      "name": "MergeShip",
+      "description": "MergeShip: a gamified open-source bridge. Contributors find issues via swipe-based discovery, earning XP and tiered badges. Maintainers get an AI Command Center with triage, duplicate detection, and health metrics to prevent burnout and boost PR velocity. Scalable, efficient, and actually fun it's the mission-critical hub for repos.",
+      "url": "https://github.com/Coder-s-OG-s/MergeShip",
+      "homepage": "https://mergeship.vercel.app",
+      "language": "TypeScript",
+      "stars": 14,
+      "forks": 77,
+      "openIssues": 38,
+      "createdAt": "2026-03-27T07:03:56Z",
+      "lastCommitAt": "2026-06-20T05:03:49Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 95,
+      "attentionGap": 68.8,
+      "maintainers": [
+        "yush-1018",
+        "diksha78dev",
+        "Sujini-kudupudi"
+      ]
+    },
+    {
+      "repo": "aziontech/bundler",
+      "name": "bundler",
+      "description": "Bundler to make applications compatible with the Azion Runtime.",
+      "url": "https://github.com/aziontech/bundler",
+      "homepage": "https://www.azion.com",
+      "language": "TypeScript",
+      "stars": 21,
+      "forks": 11,
+      "openIssues": 0,
+      "createdAt": "2023-05-24T21:15:57Z",
+      "lastCommitAt": "2026-06-20T05:03:47Z",
+      "lastReleaseAt": "2026-06-05T18:51:48Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 95,
+      "attentionGap": 63.7,
+      "maintainers": [
+        "jcbsfilho",
+        "gabrielnes-azion",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "studio-mizutama/MizutamaConte",
+      "name": "MizutamaConte",
+      "description": "Easy tool for creating econte.",
+      "url": "https://github.com/studio-mizutama/MizutamaConte",
+      "language": "TypeScript",
+      "stars": 12,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2021-07-21T09:37:14Z",
+      "lastCommitAt": "2026-06-20T05:03:27Z",
+      "lastReleaseAt": "2026-06-19T03:28:53Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 67,
+      "maintainers": [
+        "minorin22"
+      ]
+    },
+    {
+      "repo": "cheminfo/wikipedia",
+      "name": "wikipedia",
+      "description": "Wikipedia chemical structure explorer",
+      "url": "https://github.com/cheminfo/wikipedia",
+      "homepage": "https://wikipedia.cheminfo.org",
+      "language": "TypeScript",
+      "stars": 59,
+      "forks": 17,
+      "openIssues": 10,
+      "createdAt": "2014-12-06T14:02:54Z",
+      "lastCommitAt": "2026-06-20T05:02:49Z",
+      "lastReleaseAt": "2021-07-28T07:03:27Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 76,
+      "attentionGap": 41.3,
+      "maintainers": [
+        "cheminfo-bot",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "hbx12/aura-work",
+      "name": "aura-work",
+      "description": "Build faster with an open-source AI workspace designed for real developer workflows.",
+      "url": "https://github.com/hbx12/aura-work",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 3,
+      "openIssues": 12,
+      "createdAt": "2026-05-31T22:17:51Z",
+      "lastCommitAt": "2026-06-20T05:02:47Z",
+      "lastReleaseAt": "2026-06-17T23:06:10Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 93,
+      "attentionGap": 72.7,
+      "maintainers": [
+        "hbx12"
+      ]
+    },
+    {
+      "repo": "gameworkerkim/cassandra-ai",
+      "name": "cassandra-ai",
+      "description": "",
+      "url": "https://github.com/gameworkerkim/cassandra-ai",
+      "language": "TypeScript",
+      "stars": 41,
+      "forks": 19,
+      "openIssues": 0,
+      "createdAt": "2026-06-07T18:49:31Z",
+      "lastCommitAt": "2026-06-20T05:02:41Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 72,
+      "attentionGap": 42.2,
+      "maintainers": [
+        "gameworkerkim",
+        "actions-user",
+        "cassandra-bot"
+      ]
+    },
+    {
+      "repo": "RYOITABASHI/Shelly",
+      "name": "Shelly",
+      "description": "AI-powered chat-first terminal IDE for Android. Built entirely on a phone, by someone who can't write code.",
+      "url": "https://github.com/RYOITABASHI/Shelly",
+      "language": "TypeScript",
+      "stars": 33,
+      "forks": 4,
+      "openIssues": 19,
+      "createdAt": "2026-03-04T22:41:59Z",
+      "lastCommitAt": "2026-06-20T05:02:31Z",
+      "lastReleaseAt": "2026-06-18T12:20:33Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 93,
+      "attentionGap": 56.9,
+      "maintainers": [
+        "RYOITABASHI",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "clarvia-org/clarvia-graph",
+      "name": "clarvia-graph",
+      "description": "Open consequence graph for source-backed administrative workflows across European jurisdictions.",
+      "url": "https://github.com/clarvia-org/clarvia-graph",
+      "homepage": "https://clarvia.org",
+      "language": "TypeScript",
+      "stars": 12,
+      "forks": 2,
+      "openIssues": 2,
+      "createdAt": "2026-06-01T11:37:50Z",
+      "lastCommitAt": "2026-06-20T05:02:27Z",
+      "lastReleaseAt": "2026-06-11T19:07:59Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 73.7,
+      "maintainers": [
+        "TommiLindfors",
+        "dependabot[bot]",
+        "HirenGajjar"
+      ]
+    },
+    {
+      "repo": "OfficeDev/Office-Addin-Taskpane-SSO",
+      "name": "Office-Addin-Taskpane-SSO",
+      "description": "Project template for creating an Office taskpane add-in that uses SSO.",
+      "url": "https://github.com/OfficeDev/Office-Addin-Taskpane-SSO",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 20,
+      "forks": 19,
+      "openIssues": 2,
+      "createdAt": "2019-09-11T16:04:19Z",
+      "lastCommitAt": "2026-06-20T05:02:25Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 66,
+      "attentionGap": 44.7,
+      "maintainers": [
+        "dependabot[bot]",
+        "Rick-Kirkham",
+        "ElizabethSamuel-MSFT"
+      ]
+    },
+    {
+      "repo": "eriknewton/sanctuary-framework",
+      "name": "sanctuary-framework",
+      "description": "An open standard for sovereignty in the agentic economy. Four-layer architecture protecting humans acting through agents and autonomous agents acting on their own behalf.",
+      "url": "https://github.com/eriknewton/sanctuary-framework",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 3,
+      "createdAt": "2026-03-22T19:21:45Z",
+      "lastCommitAt": "2026-06-20T05:02:14Z",
+      "lastReleaseAt": "2026-06-16T19:04:40Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 84.2,
+      "maintainers": [
+        "eriknewton",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "tscircuit/cli",
+      "name": "cli",
+      "description": "Create electronics with React with a local development server",
+      "url": "https://github.com/tscircuit/cli",
+      "homepage": "https://docs.tscircuit.com/intro/quickstart-cli",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 67,
+      "openIssues": 1,
+      "createdAt": "2024-12-13T07:22:50Z",
+      "lastCommitAt": "2026-06-20T05:02:15Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 62.9,
+      "maintainers": [
+        "tscircuitbot",
+        "rushabhcodes",
+        "mohan-bee"
+      ]
+    },
+    {
+      "repo": "yuekcc/cctv_news",
+      "name": "cctv_news",
+      "description": "新闻联播文字稿",
+      "url": "https://github.com/yuekcc/cctv_news",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2024-08-04T02:31:21Z",
+      "lastCommitAt": "2026-06-20T05:01:54Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 71,
+      "attentionGap": 60.4,
+      "maintainers": []
+    },
+    {
+      "repo": "Slush97/grimoire",
+      "name": "grimoire",
+      "description": "Mod manager for Deadlock",
+      "url": "https://github.com/Slush97/grimoire",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2025-12-28T10:35:12Z",
+      "lastCommitAt": "2026-06-20T05:01:48Z",
+      "lastReleaseAt": "2026-06-19T18:28:58Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 68.4,
+      "maintainers": [
+        "Slush97",
+        "oldreceipt",
+        "BXZ1"
+      ]
+    },
+    {
+      "repo": "appstore-discounts/appstore-discounts",
+      "name": "appstore-discounts",
+      "description": "An open-source App Store discounts tracker built on GitHub Actions, supporting RSS, Telegram and DingTalk notifications",
+      "url": "https://github.com/appstore-discounts/appstore-discounts",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 397,
+      "forks": 19,
+      "openIssues": 1,
+      "createdAt": "2024-07-19T13:58:05Z",
+      "lastCommitAt": "2026-06-20T05:01:45Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 32.6,
+      "maintainers": [
+        "eyelly-wu"
+      ]
+    },
+    {
+      "repo": "kachkaev/website",
+      "name": "website",
+      "description": "Personal mini-website built with Next.js, React, TypeScript, TailwindCSS and Playwright",
+      "url": "https://github.com/kachkaev/website",
+      "homepage": "https://kachkaev.uk",
+      "language": "TypeScript",
+      "stars": 13,
+      "forks": 0,
+      "openIssues": 2,
+      "createdAt": "2023-02-18T14:48:42Z",
+      "lastCommitAt": "2026-06-20T05:01:45Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 78,
+      "attentionGap": 57.3,
+      "maintainers": [
+        "renovate[bot]"
+      ]
+    },
+    {
+      "repo": "SandeepAi369/xel-studio",
+      "name": "xel-studio",
+      "description": "xel studio Best website for automation and AI development Daily News critical articles website all in one",
+      "url": "https://github.com/SandeepAi369/xel-studio",
+      "homepage": "https://xel-studio.vercel.app",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-01-31T13:43:06Z",
+      "lastCommitAt": "2026-06-20T05:01:38Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 61.2,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "sneat-co/sneat-apps",
+      "name": "sneat-apps",
+      "description": "",
+      "url": "https://github.com/sneat-co/sneat-apps",
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 3,
+      "openIssues": 16,
+      "createdAt": "2021-02-16T09:57:21Z",
+      "lastCommitAt": "2026-06-20T05:01:34Z",
+      "status": "quiet",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 72.3,
+      "maintainers": [
+        "trakhimenok",
+        "renovate[bot]",
+        "Copilot"
+      ]
+    },
+    {
+      "repo": "LanternOps/breeze",
+      "name": "breeze",
+      "description": "Open-source Remote Monitoring & Management (RMM) platform for MSPs and IT teams",
+      "url": "https://github.com/LanternOps/breeze",
+      "language": "TypeScript",
+      "stars": 46,
+      "forks": 16,
+      "openIssues": 21,
+      "createdAt": "2026-01-14T06:16:46Z",
+      "lastCommitAt": "2026-06-20T05:01:26Z",
+      "lastReleaseAt": "2026-06-16T20:38:24Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 56.6,
+      "maintainers": [
+        "ToddHebebrand",
+        "dependabot[bot]",
+        "bdunncompany"
+      ]
+    },
+    {
+      "repo": "evepupil/CloudMind",
+      "name": "CloudMind",
+      "description": "CloudMind is an open source, Cloudflare-native, serverless-first private AI memory layer for the AI era.",
+      "url": "https://github.com/evepupil/CloudMind",
+      "homepage": "",
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 4,
+      "openIssues": 0,
+      "createdAt": "2026-03-19T09:41:05Z",
+      "lastCommitAt": "2026-06-20T05:02:48Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 71,
+      "attentionGap": 49.1,
+      "maintainers": [
+        "evepupil"
+      ]
+    },
+    {
+      "repo": "TONresistor/Tonnet-Browser",
+      "name": "Tonnet-Browser",
+      "description": "The Open Network Browser.",
+      "url": "https://github.com/TONresistor/Tonnet-Browser",
+      "language": "TypeScript",
+      "stars": 31,
+      "forks": 2,
+      "openIssues": 1,
+      "createdAt": "2026-01-01T08:54:16Z",
+      "lastCommitAt": "2026-06-20T04:58:43Z",
+      "lastReleaseAt": "2026-06-20T05:08:51Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 66,
+      "attentionGap": 40.9,
+      "maintainers": [
+        "TONresistor",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "imgarylai/use-mailchimp-form",
+      "name": "use-mailchimp-form",
+      "description": "✉️ MailChimp form react integration implemented in React hooks way. ",
+      "url": "https://github.com/imgarylai/use-mailchimp-form",
+      "homepage": "https://imgarylai.github.io/use-mailchimp-form/",
+      "language": "TypeScript",
+      "stars": 27,
+      "forks": 6,
+      "openIssues": 1,
+      "createdAt": "2020-05-08T06:51:38Z",
+      "lastCommitAt": "2026-06-20T05:01:03Z",
+      "lastReleaseAt": "2026-06-18T05:53:32Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 83,
+      "attentionGap": 52.9,
+      "maintainers": [
+        "renovate[bot]",
+        "imgarylai",
+        "semantic-release-bot"
+      ]
+    },
+    {
+      "repo": "wahidyankf/ose-public",
+      "name": "ose-public",
+      "description": "Source-available Sharia-compliant enterprise platform. Phase 1: Building OrganicLever productivity tracker. Learning in public. No timelines—building it right.",
+      "url": "https://github.com/wahidyankf/ose-public",
+      "homepage": "https://oseplatform.com",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2025-11-17T14:55:16Z",
+      "lastCommitAt": "2026-06-20T04:59:15Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 78.2,
+      "maintainers": [
+        "wahidyankf"
+      ]
+    },
+    {
+      "repo": "clarvia-org/workflow-web",
+      "name": "workflow-web",
+      "description": "Open-source multilingual website for publishing Clarvia bereavement checklists and workflow views.",
+      "url": "https://github.com/clarvia-org/workflow-web",
+      "homepage": "https://clarvia.org",
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 1,
+      "createdAt": "2026-05-14T10:00:41Z",
+      "lastCommitAt": "2026-06-20T05:01:01Z",
+      "status": "newborn",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 88,
+      "attentionGap": 74.8,
+      "maintainers": [
+        "TommiLindfors",
+        "dependabot[bot]",
+        "HirenGajjar"
+      ]
+    },
+    {
+      "repo": "developermods/RustAim-Assist-Software",
+      "name": "RustAim-Assist-Software",
+      "description": "",
+      "url": "https://github.com/developermods/RustAim-Assist-Software",
+      "homepage": "",
+      "language": "Python",
+      "stars": 48,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-06-11T08:20:22Z",
+      "lastCommitAt": "2026-06-20T05:10:36Z",
+      "lastReleaseAt": "2026-06-14T18:22:25Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 40.8,
+      "maintainers": [
+        "developermods"
+      ]
+    },
+    {
+      "repo": "HunterDevops/crosshair-v2-mod",
+      "name": "crosshair-v2-mod",
+      "description": "",
+      "url": "https://github.com/HunterDevops/crosshair-v2-mod",
+      "homepage": "",
+      "language": "Python",
+      "stars": 28,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-06-17T19:15:08Z",
+      "lastCommitAt": "2026-06-20T05:10:32Z",
+      "lastReleaseAt": "2026-06-17T19:39:36Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 45.6,
+      "maintainers": [
+        "HunterDevops"
+      ]
+    },
+    {
+      "repo": "HunterDevops/cs2-training-toolkit",
+      "name": "cs2-training-toolkit",
+      "description": "",
+      "url": "https://github.com/HunterDevops/cs2-training-toolkit",
+      "homepage": "",
+      "language": "Python",
+      "stars": 22,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-06-16T11:06:43Z",
+      "lastCommitAt": "2026-06-20T05:10:30Z",
+      "lastReleaseAt": "2026-06-16T11:36:20Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 47.8,
+      "maintainers": [
+        "HunterDevops"
+      ]
+    },
+    {
+      "repo": "MRI-Lab-Graz/prism-studio",
+      "name": "prism-studio",
+      "description": "PRISM is an independent, BIDS-compatible framework and toolkit designed to enrich standard BIDS datasets with psychological and physiological metadata.",
+      "url": "https://github.com/MRI-Lab-Graz/prism-studio",
+      "homepage": "https://prism-studio.readthedocs.io/en/latest/",
+      "language": "Python",
+      "stars": 8,
+      "forks": 2,
+      "openIssues": 5,
+      "createdAt": "2025-09-09T14:28:24Z",
+      "lastCommitAt": "2026-06-20T05:09:24Z",
+      "lastReleaseAt": "2026-05-27T18:20:08Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 94,
+      "attentionGap": 74.9,
+      "maintainers": [
+        "karl-koschutnig",
+        "Copilot"
+      ]
+    },
+    {
+      "repo": "NecRaul/lain-upload",
+      "name": "lain-upload",
+      "description": "A simple CLI file uploader for multiple file-hosting services, with optional clipboard copy",
+      "url": "https://github.com/NecRaul/lain-upload",
+      "homepage": "https://pypi.org/project/lain-upload/",
+      "language": "Python",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2023-08-29T08:15:37Z",
+      "lastCommitAt": "2026-06-20T05:09:09Z",
+      "lastReleaseAt": "2026-06-20T05:05:52Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 54,
+      "attentionGap": 44.8,
+      "maintainers": [
+        "NecRaul"
+      ]
+    },
+    {
+      "repo": "indmdev/Free-Telegram-Store-Bot",
+      "name": "Free-Telegram-Store-Bot",
+      "description": "This is 100% Free Shop Bot, Is a Telegram Store Bot you can use for selling your products and services and managing your products and orders. You customers can  easily use the Auto Buy Bot  to shop on you store with confidence using this Auto shop bot.",
+      "url": "https://github.com/indmdev/Free-Telegram-Store-Bot",
+      "homepage": "https://indmdev.com",
+      "language": "Python",
+      "stars": 121,
+      "forks": 60,
+      "openIssues": 6,
+      "createdAt": "2024-04-14T06:36:33Z",
+      "lastCommitAt": "2026-06-20T05:09:20Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 70,
+      "attentionGap": 33.1,
+      "maintainers": [
+        "indmdev"
+      ]
+    },
+    {
+      "repo": "innovateorange/DiscordBot",
+      "name": "DiscordBot",
+      "description": "Discord Bot for CuseHacks! Displays newly posted jobs and career guidance",
+      "url": "https://github.com/innovateorange/DiscordBot",
+      "homepage": "",
+      "language": "Python",
+      "stars": 5,
+      "forks": 4,
+      "openIssues": 23,
+      "createdAt": "2025-02-28T22:16:20Z",
+      "lastCommitAt": "2026-06-20T05:09:16Z",
+      "lastReleaseAt": "2025-08-29T23:20:33Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 76,
+      "attentionGap": 64.6,
+      "maintainers": [
+        "adhishree114"
+      ]
+    },
+    {
+      "repo": "vouch-protocol/vouch",
+      "name": "vouch",
+      "description": "The Open Standard for AI Agent Identity & Accountability",
+      "url": "https://github.com/vouch-protocol/vouch",
+      "language": "Python",
+      "stars": 27,
+      "forks": 13,
+      "openIssues": 29,
+      "createdAt": "2025-11-30T15:09:55Z",
+      "lastCommitAt": "2026-06-20T05:10:02Z",
+      "lastReleaseAt": "2026-06-07T17:56:50Z",
+      "status": "thriving",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 93,
+      "attentionGap": 59.3,
+      "maintainers": [
+        "rampyg",
+        "github-actions[bot]",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "SnailDev/github-hot-hub",
+      "name": "github-hot-hub",
+      "description": "记录GitHub热门仓库，每小时更新，按天归档。",
+      "url": "https://github.com/SnailDev/github-hot-hub",
+      "language": "Python",
+      "stars": 89,
+      "forks": 10,
+      "openIssues": 0,
+      "createdAt": "2021-02-17T08:14:06Z",
+      "lastCommitAt": "2026-06-20T05:09:14Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 45.1,
+      "maintainers": []
+    },
+    {
+      "repo": "Surfboardv2ray/TGParse",
+      "name": "TGParse",
+      "description": "Get V2ray configs from various Telegram channels and split them by protocol - UDP Based Hysteria2 and TUIC included.",
+      "url": "https://github.com/Surfboardv2ray/TGParse",
+      "homepage": "https:/t.me/Surfboardv2ray",
+      "language": "Python",
+      "stars": 268,
+      "forks": 28,
+      "openIssues": 0,
+      "createdAt": "2024-04-03T12:12:54Z",
+      "lastCommitAt": "2026-06-20T05:09:45Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 34.8,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "eddmpython/dartlab",
+      "name": "dartlab",
+      "description": "Korean DART + SEC EDGAR filings as structured Python data for company analysis",
+      "url": "https://github.com/eddmpython/dartlab",
+      "homepage": "https://eddmpython.github.io/dartlab",
+      "language": "Python",
+      "stars": 172,
+      "forks": 35,
+      "openIssues": 1,
+      "createdAt": "2026-03-06T14:58:20Z",
+      "lastCommitAt": "2026-06-20T05:08:20Z",
+      "lastReleaseAt": "2026-06-12T18:35:56Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 43.8,
+      "maintainers": [
+        "eddmpython"
+      ]
+    },
+    {
+      "repo": "chenxi750328ai/agent-jianghu",
+      "name": "agent-jianghu",
+      "description": "agent江湖 - 多Agent协作平台",
+      "url": "https://github.com/chenxi750328ai/agent-jianghu",
+      "homepage": "https://chenxi750328ai.github.io/agent-jianghu/",
+      "language": "Python",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 6,
+      "createdAt": "2026-02-01T11:37:49Z",
+      "lastCommitAt": "2026-06-20T05:10:37Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 80,
+      "attentionGap": 66.4,
+      "maintainers": [
+        "chenxi750328ai"
+      ]
+    },
+    {
+      "repo": "Adya84/ha-world-cup-2026",
+      "name": "ha-world-cup-2026",
+      "description": "⚽ Home Assistant World Cup 2026 integration with live fixtures, results, standings, statistics, predictions and a ready-to-import dashboard.",
+      "url": "https://github.com/Adya84/ha-world-cup-2026",
+      "homepage": "",
+      "language": "Python",
+      "stars": 89,
+      "forks": 9,
+      "openIssues": 0,
+      "createdAt": "2026-06-02T23:13:35Z",
+      "lastCommitAt": "2026-06-20T05:09:09Z",
+      "lastReleaseAt": "2026-06-19T21:29:53Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 45.1,
+      "maintainers": [
+        "Adya84"
+      ]
+    },
+    {
+      "repo": "qingtingjjjjjjj/iptv-auto-update",
+      "name": "iptv-auto-update",
+      "description": "",
+      "url": "https://github.com/qingtingjjjjjjj/iptv-auto-update",
+      "language": "Python",
+      "stars": 15,
+      "forks": 13,
+      "openIssues": 0,
+      "createdAt": "2024-12-25T16:55:00Z",
+      "lastCommitAt": "2026-06-20T05:09:05Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 51.5,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "WeblateOrg/translation-finder",
+      "name": "translation-finder",
+      "description": "Translation files finder",
+      "url": "https://github.com/WeblateOrg/translation-finder",
+      "homepage": "https://weblate.org/",
+      "language": "Python",
+      "stars": 27,
+      "forks": 8,
+      "openIssues": 1,
+      "createdAt": "2018-10-19T04:51:33Z",
+      "lastCommitAt": "2026-06-20T05:09:00Z",
+      "lastReleaseAt": "2026-05-12T18:45:39Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 54.2,
+      "maintainers": [
+        "renovate[bot]",
+        "nijel"
+      ]
+    },
+    {
+      "repo": "Echoer009/Odysseia-Guidance",
+      "name": "Odysseia-Guidance",
+      "description": "类脑新人引导bot",
+      "url": "https://github.com/Echoer009/Odysseia-Guidance",
+      "language": "Python",
+      "stars": 86,
+      "forks": 19,
+      "openIssues": 0,
+      "createdAt": "2025-08-02T07:19:13Z",
+      "lastCommitAt": "2026-06-20T05:08:58Z",
+      "lastReleaseAt": "2025-09-19T12:24:01Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 45.4,
+      "maintainers": [
+        "Echoer009"
+      ]
+    },
+    {
+      "repo": "golles/ha-tomtom-travel-time",
+      "name": "ha-tomtom-travel-time",
+      "description": "A custom Home Assistant component that integrates TomTom travel time data",
+      "url": "https://github.com/golles/ha-tomtom-travel-time",
+      "homepage": "",
+      "language": "Python",
+      "stars": 10,
+      "forks": 0,
+      "openIssues": 2,
+      "createdAt": "2025-08-14T12:04:44Z",
+      "lastCommitAt": "2026-06-20T05:08:55Z",
+      "lastReleaseAt": "2025-09-17T09:29:57Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 68.4,
+      "maintainers": [
+        "renovate[bot]",
+        "golles",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "tamnd/brain",
+      "name": "brain",
+      "description": "My extended brain, what you learn is what you note.",
+      "url": "https://github.com/tamnd/brain",
+      "homepage": "https://tamnd.github.io/brain",
+      "language": "Python",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 6,
+      "createdAt": "2026-05-02T04:13:03Z",
+      "lastCommitAt": "2026-06-20T05:10:32Z",
+      "lastReleaseAt": "2026-06-19T17:40:54Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 67.7,
+      "maintainers": [
+        "tamnd"
+      ]
+    },
+    {
+      "repo": "Setiawan007/Moonton-Checker",
+      "name": "Moonton-Checker",
+      "description": "",
+      "url": "https://github.com/Setiawan007/Moonton-Checker",
+      "language": "Python",
+      "stars": 13,
+      "forks": 24,
+      "openIssues": 2,
+      "createdAt": "2022-09-20T04:11:47Z",
+      "lastCommitAt": "2026-06-20T05:08:47Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 44.1,
+      "maintainers": [
+        "Setiawan007"
+      ]
+    },
+    {
+      "repo": "Lingtai-AI/lingtai-kernel",
+      "name": "lingtai-kernel",
+      "description": "",
+      "url": "https://github.com/Lingtai-AI/lingtai-kernel",
+      "language": "Python",
+      "stars": 5,
+      "forks": 7,
+      "openIssues": 24,
+      "createdAt": "2026-03-19T22:53:38Z",
+      "lastCommitAt": "2026-06-20T05:08:47Z",
+      "lastReleaseAt": "2026-06-20T01:04:22Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 96,
+      "attentionGap": 81.6,
+      "maintainers": [
+        "huangzesen"
+      ]
+    },
+    {
+      "repo": "SuPoTing/Ultralytics-GUI-PySide6",
+      "name": "Ultralytics-GUI-PySide6",
+      "description": "",
+      "url": "https://github.com/SuPoTing/Ultralytics-GUI-PySide6",
+      "language": "Python",
+      "stars": 155,
+      "forks": 13,
+      "openIssues": 8,
+      "createdAt": "2024-01-07T11:19:09Z",
+      "lastCommitAt": "2026-06-20T05:10:38Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 73,
+      "attentionGap": 32.9,
+      "maintainers": [
+        "SuPoTing"
+      ]
+    },
+    {
+      "repo": "tickernelz/hermes-progress-tail",
+      "name": "hermes-progress-tail",
+      "description": "Compact live tool and reasoning progress tails for Hermes Agent across Discord, Telegram, and other gateway platforms.",
+      "url": "https://github.com/tickernelz/hermes-progress-tail",
+      "language": "Python",
+      "stars": 10,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-05-03T11:41:48Z",
+      "lastCommitAt": "2026-06-20T05:08:29Z",
+      "lastReleaseAt": "2026-06-20T05:09:35Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 65.3,
+      "maintainers": [
+        "tickernelz"
+      ]
+    },
+    {
+      "repo": "c-wilkinson/StravaDataAnalysis",
+      "name": "StravaDataAnalysis",
+      "description": "Simple data extract from the Strava API to generate some data points I'm interested in",
+      "url": "https://github.com/c-wilkinson/StravaDataAnalysis",
+      "homepage": "",
+      "language": "Python",
+      "stars": 21,
+      "forks": 2,
+      "openIssues": 3,
+      "createdAt": "2021-03-11T13:07:38Z",
+      "lastCommitAt": "2026-06-20T05:08:23Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "needs_contributors",
+        "hidden_gem",
+        "legacy_hero"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 59.7,
+      "maintainers": [
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "ember-01/Clash-Aggregator",
+      "name": "Clash-Aggregator",
+      "description": "Fetch proxies from multiple sources and remapping geo location.",
+      "url": "https://github.com/ember-01/Clash-Aggregator",
+      "language": "Python",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2025-09-07T04:36:51Z",
+      "lastCommitAt": "2026-06-20T05:08:22Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 61.2,
+      "maintainers": [
+        "actions-user",
+        "ember-01"
+      ]
+    },
+    {
+      "repo": "xsrazy/Download-All-Tiktok-Videos",
+      "name": "Download-All-Tiktok-Videos",
+      "description": "Download all tiktok videos including description from username without watermark.",
+      "url": "https://github.com/xsrazy/Download-All-Tiktok-Videos",
+      "language": "Python",
+      "stars": 58,
+      "forks": 11,
+      "openIssues": 4,
+      "createdAt": "2023-03-02T10:15:15Z",
+      "lastCommitAt": "2026-06-20T05:08:17Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 32.7,
+      "maintainers": [
+        "xsrazy"
+      ]
+    },
+    {
+      "repo": "scidsg/hushline",
+      "name": "hushline",
+      "description": "Anonymous, end-to-end encrypted tip lines and chat for organizations and individuals.",
+      "url": "https://github.com/scidsg/hushline",
+      "homepage": "https://hushline.app",
+      "language": "Python",
+      "stars": 130,
+      "forks": 24,
+      "openIssues": 2,
+      "createdAt": "2023-03-28T01:06:05Z",
+      "lastCommitAt": "2026-06-20T05:08:14Z",
+      "lastReleaseAt": "2026-06-20T00:38:55Z",
+      "status": "thriving",
+      "tags": [
+        "needs_contributors"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 41.9,
+      "maintainers": [
+        "glenn-sorrentino",
+        "hushline-dev",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "xsrazy/Discord-Bot",
+      "name": "Discord-Bot",
+      "description": "Discord Bot: Type and Delete Messages",
+      "url": "https://github.com/xsrazy/Discord-Bot",
+      "language": "Python",
+      "stars": 9,
+      "forks": 8,
+      "openIssues": 0,
+      "createdAt": "2023-01-22T23:38:03Z",
+      "lastCommitAt": "2026-06-20T05:08:16Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 67,
+      "attentionGap": 52.4,
+      "maintainers": [
+        "xsrazy"
+      ]
+    },
+    {
+      "repo": "camel52zhang/yxip",
+      "name": "yxip",
+      "description": "优选IP",
+      "url": "https://github.com/camel52zhang/yxip",
+      "homepage": "",
+      "language": "Python",
+      "stars": 38,
+      "forks": 40,
+      "openIssues": 0,
+      "createdAt": "2025-04-27T15:53:19Z",
+      "lastCommitAt": "2026-06-20T05:08:14Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 35.7,
+      "maintainers": [
+        "tianshipapa"
+      ]
+    },
+    {
+      "repo": "surenjanath/YTS_Movie_Webscraper",
+      "name": "YTS_Movie_Webscraper",
+      "description": "This script is automated. It rans and add first 10k movies to db. if you need it to run more u need to delete optional code in the script.",
+      "url": "https://github.com/surenjanath/YTS_Movie_Webscraper",
+      "homepage": "",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2023-11-07T00:56:30Z",
+      "lastCommitAt": "2026-06-20T05:08:11Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 66,
+      "attentionGap": 54.8,
+      "maintainers": [
+        "surenjanath"
+      ]
+    },
+    {
+      "repo": "mheidari98/.proxy",
+      "name": ".proxy",
+      "description": "free proxies",
+      "url": "https://github.com/mheidari98/.proxy",
+      "homepage": "",
+      "language": "Python",
+      "stars": 184,
+      "forks": 22,
+      "openIssues": 2,
+      "createdAt": "2022-10-17T07:18:50Z",
+      "lastCommitAt": "2026-06-20T05:08:02Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 36,
+      "attentionGap": 15.7,
+      "maintainers": [
+        "mheidari98"
+      ]
+    },
+    {
+      "repo": "salmanbappi/extensions-repo",
+      "name": "extensions-repo",
+      "description": "Dedicated Anime Extensions Repository for Anikku",
+      "url": "https://github.com/salmanbappi/extensions-repo",
+      "language": "Python",
+      "stars": 18,
+      "forks": 0,
+      "openIssues": 1,
+      "createdAt": "2025-12-24T08:29:57Z",
+      "lastCommitAt": "2026-06-20T05:07:58Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 81,
+      "attentionGap": 56,
+      "maintainers": [
+        "salmanbappi"
+      ]
+    },
+    {
+      "repo": "benseverndev-oss/goldenmatch",
+      "name": "goldenmatch",
+      "description": "Zero-config entity resolution. The zero-tuning Fellegi-Sunter path beats hand-rolled Splink head-to-head; scales from a CSV to a verified 100M-row dedupe in 9.2 min on Ray. Fuzzy/exact/probabilistic + PPRL + LLM, identity graph. Python + edge-safe TypeScript (optional WASM), SQL-native in Postgres & DuckDB, MCP/REST + dbt/Airflow.",
+      "url": "https://github.com/benseverndev-oss/goldenmatch",
+      "homepage": "https://bensevern.dev/",
+      "language": "Python",
+      "stars": 117,
+      "forks": 11,
+      "openIssues": 44,
+      "createdAt": "2026-03-16T20:13:08Z",
+      "lastCommitAt": "2026-06-20T04:47:13Z",
+      "lastReleaseAt": "2026-06-19T11:06:34Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 47.1,
+      "maintainers": [
+        "benzsevern",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "HomericIntelligence/ProjectMnemosyne",
+      "name": "ProjectMnemosyne",
+      "description": "ProjectMnemosyne is a skills marketplace for the HomericIntelligence agentic ecosystem. Named after Mnemosyne, the Greek goddess of memory, this repository serves as the collective memory where team learnings are preserved and made searchable.",
+      "url": "https://github.com/HomericIntelligence/ProjectMnemosyne",
+      "homepage": "",
+      "language": "Python",
+      "stars": 13,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2025-12-13T02:27:19Z",
+      "lastCommitAt": "2026-06-20T05:07:55Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 73.4,
+      "maintainers": [
+        "mvillmow"
+      ]
+    },
+    {
+      "repo": "syedraihanali/dhaka-environment-logger",
+      "name": "dhaka-environment-logger",
+      "description": "🌤️ Automated hourly logger for Dhaka’s weather, air quality, and UV index — powered by Python, OpenWeatherMap, OpenUV, and GitHub Actions. Saves data monthly in JSON and CSV formats for open environmental analysis.",
+      "url": "https://github.com/syedraihanali/dhaka-environment-logger",
+      "language": "Python",
+      "stars": 19,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2025-10-12T11:25:51Z",
+      "lastCommitAt": "2026-06-20T05:07:43Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 52.7,
+      "maintainers": [
+        "syedraihanali"
+      ]
+    },
+    {
+      "repo": "0xRadikal/Free-v2ray-Configs",
+      "name": "Free-v2ray-Configs",
+      "description": "🔒 Free V2Ray configs auto-updated every 30m | VLESS, VMess, Trojan, Shadowsocks, Hysteria2, TUIC, Reality, WireGuard | subscription link | bypass censorship | Compatible with v2rayNG, Hiddify, NekoRay, NekoBox, v2rayN, Clash Meta, Shadowrocket | xray-core | iran | free vpn | @Raydikalx",
+      "url": "https://github.com/0xRadikal/Free-v2ray-Configs",
+      "homepage": "https://t.me/raydikalx",
+      "language": "Python",
+      "stars": 19,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-06-06T08:44:26Z",
+      "lastCommitAt": "2026-06-20T05:07:36Z",
+      "lastReleaseAt": "2026-06-06T11:18:10Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 52.7,
+      "maintainers": []
+    },
+    {
+      "repo": "xbtlin/ai-berkshire",
+      "name": "ai-berkshire",
+      "description": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "homepage": "https://github.com/xbtlin/ai-berkshire#readme",
+      "language": "Python",
+      "stars": 35,
+      "forks": 8,
+      "openIssues": 2,
+      "createdAt": "2026-04-07T11:19:51Z",
+      "lastCommitAt": "2026-06-20T05:07:30Z",
+      "lastReleaseAt": "2026-04-07T11:31:35Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 46.6,
+      "maintainers": [
+        "claude",
+        "xbtlin"
+      ]
+    },
+    {
+      "repo": "nexi-lab/nexus",
+      "name": "nexus",
+      "description": "Nexus, the shared context plane where every agent and human connect, collaborate, and evolve together.",
+      "url": "https://github.com/nexi-lab/nexus",
+      "homepage": "https://nexi-lab.github.io/nexus/",
+      "language": "Python",
+      "stars": 226,
+      "forks": 11,
+      "openIssues": 81,
+      "createdAt": "2025-10-08T03:34:11Z",
+      "lastCommitAt": "2026-06-20T05:07:33Z",
+      "lastReleaseAt": "2026-06-14T13:21:07Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 37.5,
+      "maintainers": [
+        "elfenlieds7",
+        "windoliver"
+      ]
+    },
+    {
+      "repo": "cruxial-ai/cruxial",
+      "name": "cruxial",
+      "description": "The action layer for AI agents. Every tool call returns a receipt, so \"done\" is evidence, not a guess — Cruxial proves what your agent actually did: posted, or unknown. Deterministic, <1ms, open source.",
+      "url": "https://github.com/cruxial-ai/cruxial",
+      "homepage": "https://cruxial.ai",
+      "language": "Python",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-30T20:55:16Z",
+      "lastCommitAt": "2026-06-20T05:07:32Z",
+      "lastReleaseAt": "2026-06-08T16:44:49Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 85,
+      "maintainers": [
+        "skrindra"
+      ]
+    },
+    {
+      "repo": "snowykami/snowykami",
+      "name": "snowykami",
+      "description": "snowykami/snowykami is a ✨special ✨ repository.",
+      "url": "https://github.com/snowykami/snowykami",
+      "language": "Python",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2024-02-04T11:54:02Z",
+      "lastCommitAt": "2026-06-20T05:07:31Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 61.2,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "yohey-w/codd-dev",
+      "name": "codd-dev",
+      "description": "CoDD: Coherence-Driven Development — Claude Code plugin for cross-artifact change impact analysis",
+      "url": "https://github.com/yohey-w/codd-dev",
+      "language": "Python",
+      "stars": 106,
+      "forks": 7,
+      "openIssues": 5,
+      "createdAt": "2026-03-14T21:39:22Z",
+      "lastCommitAt": "2026-06-20T05:07:31Z",
+      "lastReleaseAt": "2026-05-18T20:11:48Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 86,
+      "attentionGap": 41.7,
+      "maintainers": [
+        "yohey-w"
+      ]
+    },
+    {
+      "repo": "bcefghj/bcefghj",
+      "name": "bcefghj",
+      "description": "📊 GitHub Profile - Auto-updated daily stats dashboard",
+      "url": "https://github.com/bcefghj/bcefghj",
+      "language": "Python",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-04-04T21:20:38Z",
+      "lastCommitAt": "2026-06-20T05:07:27Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 57.4,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "Dicklesworthstone/franken_networkx",
+      "name": "franken_networkx",
+      "description": "Memory-safe clean-room Rust reimplementation of NetworkX with deterministic graph semantics, differential conformance, and RaptorQ-backed durability.",
+      "url": "https://github.com/Dicklesworthstone/franken_networkx",
+      "language": "Python",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-02-13T20:09:55Z",
+      "lastCommitAt": "2026-06-20T05:07:08Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 87,
+      "attentionGap": 72.3,
+      "maintainers": [
+        "Dicklesworthstone"
+      ]
+    },
+    {
+      "repo": "alaarab/m4l-builder",
+      "name": "m4l-builder",
+      "description": "Programmatically build Max for Live (.amxd) devices in Python",
+      "url": "https://github.com/alaarab/m4l-builder",
+      "language": "Python",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-03-03T04:09:58Z",
+      "lastCommitAt": "2026-06-20T05:07:09Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 83,
+      "maintainers": [
+        "alaarab"
+      ]
+    },
+    {
+      "repo": "DotDev262/WinHome",
+      "name": "WinHome",
+      "description": "A declarative, idempotent Infrastructure-as-Code tool for setting up Windows Dev Environments. Built with C# and .NET 10.",
+      "url": "https://github.com/DotDev262/WinHome",
+      "homepage": "https://DotDev262.github.io/WinHome/",
+      "language": "Python",
+      "stars": 9,
+      "forks": 77,
+      "openIssues": 15,
+      "createdAt": "2025-12-03T12:18:45Z",
+      "lastCommitAt": "2026-06-20T05:07:08Z",
+      "lastReleaseAt": "2026-02-07T07:43:26Z",
+      "status": "quiet",
+      "tags": [
+        "needs_contributors",
+        "hidden_gem"
+      ],
+      "vitalityScore": 98,
+      "attentionGap": 76.6,
+      "maintainers": [
+        "VIDYANKSHINI",
+        "ionfwsrijan",
+        "DotDev262"
+      ]
+    },
+    {
+      "repo": "iodata999/frxz751113-IPTVzb1",
+      "name": "frxz751113-IPTVzb1",
+      "description": "",
+      "url": "https://github.com/iodata999/frxz751113-IPTVzb1",
+      "language": "Python",
+      "stars": 21,
+      "forks": 36,
+      "openIssues": 0,
+      "createdAt": "2024-05-04T01:43:12Z",
+      "lastCommitAt": "2026-06-20T05:06:53Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 57,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "netcanon/netcanon",
+      "name": "netcanon",
+      "description": "Multi-vendor network config translator — Cisco / Juniper / Fortinet / Aruba / Arista / MikroTik / OPNsense. Cross-mesh audit catches silent translation errors before they ship.",
+      "url": "https://github.com/netcanon/netcanon",
+      "homepage": "https://pypi.org/project/netcanon/",
+      "language": "Python",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-13T06:20:23Z",
+      "lastCommitAt": "2026-06-20T05:06:48Z",
+      "lastReleaseAt": "2026-06-19T07:37:39Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 83,
+      "maintainers": [
+        "netcanon",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "juergen2025sys/NETSHIELD",
+      "name": "NETSHIELD",
+      "description": "Automated IPv4 threat intelligence: combined blacklist from 100+ feeds,  confidence scoring, ASN reputation, geo-tagged per country. Updated every 3h.",
+      "url": "https://github.com/juergen2025sys/NETSHIELD",
+      "homepage": "",
+      "language": "Python",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-02-28T16:12:53Z",
+      "lastCommitAt": "2026-06-20T05:06:49Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 90,
+      "attentionGap": 70.4,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "malinkang/duolingo2notion",
+      "name": "duolingo2notion",
+      "description": "",
+      "url": "https://github.com/malinkang/duolingo2notion",
+      "language": "Python",
+      "stars": 105,
+      "forks": 171,
+      "openIssues": 1,
+      "createdAt": "2024-03-02T02:48:03Z",
+      "lastCommitAt": "2026-06-20T05:06:47Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 29.1,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "matthewhand/open-swarm",
+      "name": "open-swarm",
+      "description": "",
+      "url": "https://github.com/matthewhand/open-swarm",
+      "language": "Python",
+      "stars": 15,
+      "forks": 4,
+      "openIssues": 2,
+      "createdAt": "2024-12-20T21:41:15Z",
+      "lastCommitAt": "2026-06-20T05:06:40Z",
+      "lastReleaseAt": "2026-06-19T01:29:02Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 71.5,
+      "maintainers": [
+        "matthewhand"
+      ]
+    },
+    {
+      "repo": "Skillter/ProxyGather",
+      "name": "ProxyGather",
+      "description": "Sophisticated proxy scraper and checker",
+      "url": "https://github.com/Skillter/ProxyGather",
+      "homepage": "https://skillter.dev/",
+      "language": "Python",
+      "stars": 117,
+      "forks": 10,
+      "openIssues": 2,
+      "createdAt": "2025-06-13T01:56:16Z",
+      "lastCommitAt": "2026-06-20T05:06:38Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 60,
+      "attentionGap": 28.5,
+      "maintainers": [
+        "ProxyGatherBot",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "icoretech/helm",
+      "name": "helm",
+      "description": "📦 iCoreTech Helm Charts",
+      "url": "https://github.com/icoretech/helm",
+      "homepage": "https://icoretech.github.io/helm/",
+      "language": "Python",
+      "stars": 17,
+      "forks": 21,
+      "openIssues": 1,
+      "createdAt": "2023-05-13T13:46:25Z",
+      "lastCommitAt": "2026-06-20T05:06:37Z",
+      "lastReleaseAt": "2026-06-20T05:06:50Z",
+      "status": "thriving",
+      "tags": [],
+      "vitalityScore": 85,
+      "attentionGap": 59.4,
+      "maintainers": [
+        "renovate[bot]",
+        "masterkain"
+      ]
+    },
+    {
+      "repo": "Allenyep/baidu_hor_rank_crawler",
+      "name": "baidu_hor_rank_crawler",
+      "description": "每小时抓取一次百度热搜",
+      "url": "https://github.com/Allenyep/baidu_hor_rank_crawler",
+      "homepage": "",
+      "language": "Python",
+      "stars": 17,
+      "forks": 7,
+      "openIssues": 0,
+      "createdAt": "2021-07-23T02:37:54Z",
+      "lastCommitAt": "2026-06-20T05:06:37Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 53.8,
+      "maintainers": []
+    },
+    {
+      "repo": "WeblateOrg/language-data",
+      "name": "language-data",
+      "description": "Language definitions used by Weblate",
+      "url": "https://github.com/WeblateOrg/language-data",
+      "homepage": "https://weblate.org/",
+      "language": "Python",
+      "stars": 29,
+      "forks": 26,
+      "openIssues": 1,
+      "createdAt": "2018-01-09T12:56:27Z",
+      "lastCommitAt": "2026-06-20T05:06:33Z",
+      "lastReleaseAt": "2026-05-14T13:20:43Z",
+      "status": "thriving",
+      "tags": [
+        "legacy_hero"
+      ],
+      "vitalityScore": 84,
+      "attentionGap": 52.8,
+      "maintainers": [
+        "renovate[bot]",
+        "nijel",
+        "weblate"
+      ]
+    },
+    {
+      "repo": "Unpublished/GithubTrending",
+      "name": "GithubTrending",
+      "description": "",
+      "url": "https://github.com/Unpublished/GithubTrending",
+      "language": "Python",
+      "stars": 8,
+      "forks": 2,
+      "openIssues": 1,
+      "createdAt": "2018-03-07T23:08:43Z",
+      "lastCommitAt": "2026-06-20T05:06:32Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 79,
+      "attentionGap": 62.9,
+      "maintainers": [
+        "actions-user",
+        "renovate[bot]"
+      ]
+    },
+    {
+      "repo": "Bush2021/edge_installer",
+      "name": "edge_installer",
+      "description": "Auto-updated Microsoft Edge offline installers for Windows (Stable/Beta/Dev/Canary, x86/x64/ARM64) with direct links and SHA-256, via GitHub Actions",
+      "url": "https://github.com/Bush2021/edge_installer",
+      "homepage": "",
+      "language": "Python",
+      "stars": 322,
+      "forks": 36,
+      "openIssues": 0,
+      "createdAt": "2023-10-14T00:25:07Z",
+      "lastCommitAt": "2026-06-20T05:06:32Z",
+      "lastReleaseAt": "2026-06-18T20:15:37Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 33,
+      "attentionGap": 13.1,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "love2310216/live",
+      "name": "live",
+      "description": "",
+      "url": "https://github.com/love2310216/live",
+      "language": "Python",
+      "stars": 10,
+      "forks": 2,
+      "openIssues": 1,
+      "createdAt": "2024-09-06T14:18:39Z",
+      "lastCommitAt": "2026-06-20T05:06:32Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 67,
+      "attentionGap": 51.5,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "traders-ark/hyperliquid-carry-screener",
+      "name": "hyperliquid-carry-screener",
+      "description": "A screener to monitor the funding % averages over past N days. Used for a carry strategies on Hyperliquid exchange.",
+      "url": "https://github.com/traders-ark/hyperliquid-carry-screener",
+      "homepage": "",
+      "language": "Python",
+      "stars": 7,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2024-10-23T16:33:29Z",
+      "lastCommitAt": "2026-06-20T05:06:23Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 58.5,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "oqtopus-team/tranqu",
+      "name": "tranqu",
+      "description": "Tranqu: A one-stop framework for transpilers across multiple quantum programming libraries and formats for quantum circuits.",
+      "url": "https://github.com/oqtopus-team/tranqu",
+      "homepage": "https://tranqu.readthedocs.io/",
+      "language": "Python",
+      "stars": 25,
+      "forks": 10,
+      "openIssues": 1,
+      "createdAt": "2024-12-03T18:55:50Z",
+      "lastCommitAt": "2026-06-20T05:06:26Z",
+      "lastReleaseAt": "2026-05-05T06:12:29Z",
+      "status": "thriving",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 58,
+      "attentionGap": 37.6,
+      "maintainers": [
+        "snuffkin",
+        "Copilot",
+        "yasuhito"
+      ]
+    },
+    {
+      "repo": "StormWorld0/storm-framework",
+      "name": "storm-framework",
+      "description": "A modular offensive security framework for reconnaissance, vulnerability assessment, and exploitation.",
+      "url": "https://github.com/StormWorld0/storm-framework",
+      "homepage": "",
+      "language": "Python",
+      "stars": 11,
+      "forks": 8,
+      "openIssues": 0,
+      "createdAt": "2025-11-27T14:17:01Z",
+      "lastCommitAt": "2026-06-20T05:06:28Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 75.6,
+      "maintainers": [
+        "zxelzy"
+      ]
+    },
+    {
+      "repo": "Jonas1015/chacc-api",
+      "name": "chacc-api",
+      "description": "",
+      "url": "https://github.com/Jonas1015/chacc-api",
+      "language": "Python",
+      "stars": 10,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2025-08-18T12:14:27Z",
+      "lastCommitAt": "2026-06-20T05:06:15Z",
+      "lastReleaseAt": "2026-06-19T19:48:36Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 68.4,
+      "maintainers": [
+        "Jonas1015",
+        "bashirii"
+      ]
+    },
+    {
+      "repo": "gslege/CloudflareIP",
+      "name": "CloudflareIP",
+      "description": "全自动优选CF的IP，包含美国US，日本JP，新加坡SG，德国DE，荷兰NL等cloudflare每天每小时自动优选IP，自动生成CF免费Vless节点。",
+      "url": "https://github.com/gslege/CloudflareIP",
+      "homepage": "https://ip.cloudip.ggff.net",
+      "language": "Python",
+      "stars": 491,
+      "forks": 243,
+      "openIssues": 9,
+      "createdAt": "2025-09-28T17:05:17Z",
+      "lastCommitAt": "2026-06-20T05:06:20Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 62,
+      "attentionGap": 23,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "pretyflaco/millet",
+      "name": "millet",
+      "description": "Fully local meeting transcription with speaker diarization, AI summaries, and PDF output",
+      "url": "https://github.com/pretyflaco/millet",
+      "language": "Python",
+      "stars": 342,
+      "forks": 46,
+      "openIssues": 2,
+      "createdAt": "2026-03-13T00:22:04Z",
+      "lastCommitAt": "2026-06-20T05:05:42Z",
+      "lastReleaseAt": "2026-06-20T05:07:57Z",
+      "status": "newborn",
+      "tags": [],
+      "vitalityScore": 79,
+      "attentionGap": 31,
+      "maintainers": [
+        "pretyflaco",
+        "Rolloniel",
+        "fadenb"
+      ]
+    },
+    {
+      "repo": "huangruiteng/goal-harness",
+      "name": "goal-harness",
+      "description": "Lightweight harness for long-running agent goals",
+      "url": "https://github.com/huangruiteng/goal-harness",
+      "language": "Python",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-05-31T14:58:56Z",
+      "lastCommitAt": "2026-06-20T05:06:10Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 75.6,
+      "maintainers": [
+        "huangruiteng"
+      ]
+    },
+    {
+      "repo": "vietvudanh/vietlott-data",
+      "name": "vietlott-data",
+      "description": "Automation fetching data for Vietlott. Just for fun.",
+      "url": "https://github.com/vietvudanh/vietlott-data",
+      "homepage": "https://vietvudanh.github.io/vietlott-data/",
+      "language": "Python",
+      "stars": 63,
+      "forks": 44,
+      "openIssues": 0,
+      "createdAt": "2020-01-11T10:36:37Z",
+      "lastCommitAt": "2026-06-20T05:05:56Z",
+      "lastReleaseAt": "2026-03-04T16:24:11Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 89,
+      "attentionGap": 47.8,
+      "maintainers": [
+        "vietvudanh",
+        "Copilot"
+      ]
+    },
+    {
+      "repo": "JF9SOM/gpredict-improved",
+      "name": "gpredict-improved",
+      "description": "Improvements to GPredict — satellite tracking with built-in Hamlib Doppler control, SDR support (HackRF/RTL-SDR), and browser access from phones on the same LAN.",
+      "url": "https://github.com/JF9SOM/gpredict-improved",
+      "homepage": "",
+      "language": "Python",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 2,
+      "createdAt": "2026-05-10T08:51:04Z",
+      "lastCommitAt": "2026-06-20T05:06:01Z",
+      "lastReleaseAt": "2026-06-20T04:19:17Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 78,
+      "attentionGap": 62.1,
+      "maintainers": [
+        "JF9SOM"
+      ]
+    },
+    {
+      "repo": "giadaf-boosha/claude-code",
+      "name": "claude-code",
+      "description": "",
+      "url": "https://github.com/giadaf-boosha/claude-code",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-02-19T10:23:03Z",
+      "lastCommitAt": "2026-06-20T05:06:01Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 49,
+      "attentionGap": 40.7,
+      "maintainers": [
+        "claude",
+        "giadaf-boosha"
+      ]
+    },
+    {
+      "repo": "mariomerinom/polymarket-bot",
+      "name": "polymarket-bot",
+      "description": "",
+      "url": "https://github.com/mariomerinom/polymarket-bot",
+      "language": "Python",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 46,
+      "createdAt": "2026-03-15T16:48:34Z",
+      "lastCommitAt": "2026-06-20T05:11:04Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 73,
+      "attentionGap": 60.6,
+      "maintainers": []
+    },
+    {
+      "repo": "Dirac-Robot/comet",
+      "name": "comet",
+      "description": "",
+      "url": "https://github.com/Dirac-Robot/comet",
+      "language": "Python",
+      "stars": 34,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2026-01-29T10:19:50Z",
+      "lastCommitAt": "2026-06-20T05:05:55Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 43.8,
+      "maintainers": [
+        "Dirac-Robot",
+        "tatari-p"
+      ]
+    },
+    {
+      "repo": "BG47510/sniftv",
+      "name": "sniftv",
+      "description": "L'utilisation est réservée à un usage strictement personnel et privé, à l’exclusion de tout usage commercial.",
+      "url": "https://github.com/BG47510/sniftv",
+      "homepage": "",
+      "language": "Python",
+      "stars": 11,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2023-10-10T17:02:41Z",
+      "lastCommitAt": "2026-06-20T05:05:37Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 80,
+      "attentionGap": 60.5,
+      "maintainers": [
+        "BG47510"
+      ]
+    },
+    {
+      "repo": "FudanCVL/AVTrack",
+      "name": "AVTrack",
+      "description": "[ICML 2026] AVTrack: Audio-Visual Tracking in Human-centric Complex Scenes",
+      "url": "https://github.com/FudanCVL/AVTrack",
+      "homepage": "https://fudancvl.github.io/AVTrack/",
+      "language": "Python",
+      "stars": 21,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-13T10:21:34Z",
+      "lastCommitAt": "2026-06-20T05:05:36Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 30,
+      "attentionGap": 20.1,
+      "maintainers": [
+        "yaotingwangofficial"
+      ]
+    },
+    {
+      "repo": "MeteoSwiss/ai-models-ensembles",
+      "name": "ai-models-ensembles",
+      "description": "Generating Weather Model Ensembles Using ecmwf-lab/ai-models",
+      "url": "https://github.com/MeteoSwiss/ai-models-ensembles",
+      "homepage": "",
+      "language": "Python",
+      "stars": 15,
+      "forks": 1,
+      "openIssues": 1,
+      "createdAt": "2023-11-23T11:34:09Z",
+      "lastCommitAt": "2026-06-20T04:59:02Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 65,
+      "attentionGap": 46.5,
+      "maintainers": [
+        "sadamov"
+      ]
+    },
+    {
+      "repo": "skalalab/flim_playground",
+      "name": "flim_playground",
+      "description": "Full Docs @ https://skalalab.github.io/flim_playground_doc/",
+      "url": "https://github.com/skalalab/flim_playground",
+      "homepage": "https://flim-playground.streamlit.app/",
+      "language": "Python",
+      "stars": 16,
+      "forks": 1,
+      "openIssues": 1,
+      "createdAt": "2024-12-06T18:18:45Z",
+      "lastCommitAt": "2026-06-20T05:03:20Z",
+      "lastReleaseAt": "2026-06-17T14:11:01Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 60.1,
+      "maintainers": [
+        "Allanware",
+        "dependabot[bot]"
+      ]
+    },
+    {
+      "repo": "whz39coding/GithubCollectAgent",
+      "name": "GithubCollectAgent",
+      "description": "Github自动收集比较热门的项目,并自动阅读项目,生成相关报告发送到自己的飞书中",
+      "url": "https://github.com/whz39coding/GithubCollectAgent",
+      "homepage": "",
+      "language": "Python",
+      "stars": 33,
+      "forks": 3,
+      "openIssues": 0,
+      "createdAt": "2026-02-28T08:40:11Z",
+      "lastCommitAt": "2026-06-20T05:05:26Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 64,
+      "attentionGap": 39.2,
+      "maintainers": [
+        "github-actions[bot]",
+        "whz39coding"
+      ]
+    },
+    {
+      "repo": "issdandavis/SCBE-AETHERMOORE",
+      "name": "SCBE-AETHERMOORE",
+      "description": "Geometric AI governance and evaluation framework with a 14-layer security pipeline, semantic projection, and reproducible benchmark lanes.",
+      "url": "https://github.com/issdandavis/SCBE-AETHERMOORE",
+      "homepage": "https://aethermoore.com",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 3,
+      "createdAt": "2026-01-17T02:59:07Z",
+      "lastCommitAt": "2026-06-20T05:05:24Z",
+      "lastReleaseAt": "2026-06-15T08:32:32Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 83,
+      "maintainers": [
+        "issdandavis",
+        "dependabot[bot]",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "ashik4u/mrgify-clean",
+      "name": "mrgify-clean",
+      "description": "A GitHub Actions bot/utility that automatically downloads and cleans the latest playlist.m3u every hour from an upstream source: https://github.com/abusaeeidx/Mrgify-BDIX-IPTV/",
+      "url": "https://github.com/ashik4u/mrgify-clean",
+      "homepage": "https://github.com/ashik4u/mrgify-clean?tab=readme-ov-file#mrgify-clean",
+      "language": "Python",
+      "stars": 10,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2025-11-21T19:31:03Z",
+      "lastCommitAt": "2026-06-20T05:05:23Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 55.3,
+      "maintainers": []
+    },
+    {
+      "repo": "yuanxiawan/cfipv4db",
+      "name": "cfipv4db",
+      "description": "获取最优的移动，电信，联通的ip线路，韩国优选ip每15分钟更新一次！夜晚高峰14万速度！",
+      "url": "https://github.com/yuanxiawan/cfipv4db",
+      "homepage": "",
+      "language": "Python",
+      "stars": 22,
+      "forks": 13,
+      "openIssues": 0,
+      "createdAt": "2024-09-29T16:35:59Z",
+      "lastCommitAt": "2026-06-20T05:05:22Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 65,
+      "attentionGap": 43.2,
+      "maintainers": [
+        "yuanxiawan"
+      ]
+    },
+    {
+      "repo": "pinedance/quant-data-open",
+      "name": "quant-data-open",
+      "description": "퀀트 투자 기본 데이터 ",
+      "url": "https://github.com/pinedance/quant-data-open",
+      "homepage": "https://pinedance.github.io/quant-data-open/",
+      "language": "Python",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2022-07-27T05:15:40Z",
+      "lastCommitAt": "2026-06-20T05:05:12Z",
+      "status": "quiet",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 65.5,
+      "maintainers": [
+        "pinedance",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "rsasaki0109/gnssplusplus-library",
+      "name": "gnssplusplus-library",
+      "description": "Modern C++ GNSS/RTK/PPP/CLAS toolkit.",
+      "url": "https://github.com/rsasaki0109/gnssplusplus-library",
+      "homepage": "https://rsasaki0109.github.io/gnssplusplus-library/",
+      "language": "Python",
+      "stars": 170,
+      "forks": 19,
+      "openIssues": 9,
+      "createdAt": "2025-09-04T09:37:23Z",
+      "lastCommitAt": "2026-06-20T05:05:13Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 99,
+      "attentionGap": 43.9,
+      "maintainers": [
+        "rsasaki0109"
+      ]
+    },
+    {
+      "repo": "Pedroxious/SkyLog",
+      "name": "SkyLog",
+      "description": " SkyLog  Automated Global Weather Dashboard with GitHub Actions",
+      "url": "https://github.com/Pedroxious/SkyLog",
+      "homepage": "https://pedroxious.github.io/SkyLog/",
+      "language": "Python",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-17T22:52:10Z",
+      "lastCommitAt": "2026-06-20T05:05:12Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 61.2,
+      "maintainers": [
+        "Pedroxious"
+      ]
+    },
+    {
+      "repo": "canonical/k8s-snap",
+      "name": "k8s-snap",
+      "description": "Canonical Kubernetes is an opinionated and CNCF conformant Kubernetes operated by Snaps and Charms, which come together to bring simplified operations and an enhanced security posture on any infrastructure.",
+      "url": "https://github.com/canonical/k8s-snap",
+      "homepage": "",
+      "language": "Python",
+      "stars": 105,
+      "forks": 45,
+      "openIssues": 26,
+      "createdAt": "2023-11-16T09:26:16Z",
+      "lastCommitAt": "2026-06-20T05:05:10Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 75,
+      "attentionGap": 36.4,
+      "maintainers": [
+        "bschimke95",
+        "nhennigan",
+        "HomayoonAlimohammadi"
+      ]
+    },
+    {
+      "repo": "ProxyScrape/free-proxy-list",
+      "name": "free-proxy-list",
+      "description": "Free HTTP, HTTPS, SOCKS4 & SOCKS5 proxy list. ~22k proxies across 90+ countries, refreshed every 5 minutes from the ProxyScrape v4 API. TXT, JSON & CSV.",
+      "url": "https://github.com/ProxyScrape/free-proxy-list",
+      "homepage": "https://proxyscrape.com/free-proxy-list?utm_source=github&utm_medium=repo&utm_campaign=free-proxy-list-mirror&utm_content=repo-homepage",
+      "language": "Python",
+      "stars": 26,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-05-27T22:07:15Z",
+      "lastCommitAt": "2026-06-20T05:10:06Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 49.5,
+      "maintainers": []
+    },
+    {
+      "repo": "gtg7784/exposed-ai-api-keys",
+      "name": "exposed-ai-api-keys",
+      "description": "Please change your api keys to env variable or secrets manager or another place",
+      "url": "https://github.com/gtg7784/exposed-ai-api-keys",
+      "language": "Python",
+      "stars": 6,
+      "forks": 2,
+      "openIssues": 0,
+      "createdAt": "2026-04-15T07:49:42Z",
+      "lastCommitAt": "2026-06-20T05:05:01Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 59.8,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "bitsbb01/ustvgotom3u",
+      "name": "ustvgotom3u",
+      "description": "",
+      "url": "https://github.com/bitsbb01/ustvgotom3u",
+      "language": "Python",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2021-11-17T01:24:01Z",
+      "lastCommitAt": "2026-06-20T05:04:55Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 56.3,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "matsunagalab/mdclaw",
+      "name": "mdclaw",
+      "description": "Molecular dynamics simulation skills for AI agents",
+      "url": "https://github.com/matsunagalab/mdclaw",
+      "homepage": "",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2025-10-18T08:46:40Z",
+      "lastCommitAt": "2026-06-20T05:04:34Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 70.6,
+      "maintainers": [
+        "ymatsunaga"
+      ]
+    },
+    {
+      "repo": "liveqte/Kisama_agent",
+      "name": "Kisama_agent",
+      "description": "Kisama_Panel的agent",
+      "url": "https://github.com/liveqte/Kisama_agent",
+      "homepage": "http://gbjs.gt.tc/",
+      "language": "Python",
+      "stars": 9,
+      "forks": 7,
+      "openIssues": 0,
+      "createdAt": "2026-04-16T11:35:08Z",
+      "lastCommitAt": "2026-06-20T05:04:41Z",
+      "lastReleaseAt": "2026-06-20T04:57:45Z",
+      "status": "newborn",
+      "tags": [
+        "hidden_gem"
+      ],
+      "vitalityScore": 71,
+      "attentionGap": 55.5,
+      "maintainers": [
+        "liveqte",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "AI-sandbox/iLTM",
+      "name": "iLTM",
+      "description": "iLTM: Integrated Large Tabular Model",
+      "url": "https://github.com/AI-sandbox/iLTM",
+      "homepage": "https://arxiv.org/abs/2511.15941",
+      "language": "Python",
+      "stars": 21,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2025-11-18T01:10:01Z",
+      "lastCommitAt": "2026-06-20T05:04:33Z",
+      "lastReleaseAt": "2026-06-20T05:09:11Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 49,
+      "attentionGap": 32.9,
+      "maintainers": [
+        "davidbonet",
+        "salcc"
+      ]
+    },
+    {
+      "repo": "gaofeng21cn/med-autoscience",
+      "name": "med-autoscience",
+      "description": "Medical implementation of Research Foundry for agent-first, publication-oriented Research Ops.",
+      "url": "https://github.com/gaofeng21cn/med-autoscience",
+      "language": "Python",
+      "stars": 18,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2026-03-29T07:28:29Z",
+      "lastCommitAt": "2026-06-20T05:03:05Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 58.7,
+      "maintainers": [
+        "gaofeng21cn"
+      ]
+    },
+    {
+      "repo": "wwind123/coding-review-agent-loop",
+      "name": "coding-review-agent-loop",
+      "description": "Local Claude/Codex PR review loop using existing CLI subscriptions instead of model API keys",
+      "url": "https://github.com/wwind123/coding-review-agent-loop",
+      "language": "Python",
+      "stars": 10,
+      "forks": 2,
+      "openIssues": 38,
+      "createdAt": "2026-04-26T06:01:06Z",
+      "lastCommitAt": "2026-06-20T05:04:22Z",
+      "status": "newborn",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 87,
+      "attentionGap": 66.9,
+      "maintainers": [
+        "wwind123"
+      ]
+    },
+    {
+      "repo": "mewisme/mewisme",
+      "name": "mewisme",
+      "description": "",
+      "url": "https://github.com/mewisme/mewisme",
+      "homepage": "https://mewis.me",
+      "language": "Python",
+      "stars": 5,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2021-04-01T04:18:37Z",
+      "lastCommitAt": "2026-06-20T05:04:19Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "legacy_hero"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 61.2,
+      "maintainers": [
+        "mewisme"
+      ]
+    },
+    {
+      "repo": "blisspixel/deepr",
+      "name": "deepr",
+      "description": "Open-source, multi-provider research automation with persistent experts, eval-based routing, and cost guardrails.",
+      "url": "https://github.com/blisspixel/deepr",
+      "homepage": "",
+      "language": "Python",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2025-07-06T20:29:01Z",
+      "lastCommitAt": "2026-06-20T05:04:05Z",
+      "lastReleaseAt": "2026-06-20T05:10:10Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 100,
+      "attentionGap": 79.7,
+      "maintainers": [
+        "blisspixel"
+      ]
+    },
+    {
+      "repo": "sultanarabi161/filoox-bdix",
+      "name": "filoox-bdix",
+      "description": "— filoox-bdix offers a free auto-updating IPTV playlist with 600+ live channels. The playlist refreshes hourly with working links for reliable streaming. Simply use our M3U URL in any compatible player like Tivimate or NS player.",
+      "url": "https://github.com/sultanarabi161/filoox-bdix",
+      "homepage": "",
+      "language": "Python",
+      "stars": 22,
+      "forks": 2,
+      "openIssues": 4,
+      "createdAt": "2025-10-12T18:52:15Z",
+      "lastCommitAt": "2026-06-20T05:04:12Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 65,
+      "attentionGap": 43.2,
+      "maintainers": [
+        "actions-user"
+      ]
+    },
+    {
+      "repo": "tom-doerr/repo_posts",
+      "name": "repo_posts",
+      "description": "",
+      "url": "https://github.com/tom-doerr/repo_posts",
+      "language": "Python",
+      "stars": 286,
+      "forks": 31,
+      "openIssues": 2,
+      "createdAt": "2025-02-17T04:32:30Z",
+      "lastCommitAt": "2026-06-20T05:04:09Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 31.2,
+      "maintainers": [
+        "tom-doerr"
+      ]
+    },
+    {
+      "repo": "cxyfreedom/v2ex-hot-hub",
+      "name": "v2ex-hot-hub",
+      "description": "记录v2ex热议话题，每小时更新，按天归档。",
+      "url": "https://github.com/cxyfreedom/v2ex-hot-hub",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 0,
+      "createdAt": "2023-10-15T13:07:59Z",
+      "lastCommitAt": "2026-06-20T05:04:06Z",
+      "lastReleaseAt": "2025-06-14T09:16:46Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 77,
+      "attentionGap": 63.9,
+      "maintainers": []
+    },
+    {
+      "repo": "Alexander-Nilsson/Anki-Dictionary-Addon",
+      "name": "Anki-Dictionary-Addon",
+      "description": "A modern, high-performance dictionary addon for Anki. Features lightning-fast one-click card creation, integrated local/cloud LLM generation for smart definitions, privacy-friendly image search, and clean, customizable UI themes.",
+      "url": "https://github.com/Alexander-Nilsson/Anki-Dictionary-Addon",
+      "homepage": "https://ankiweb.net/shared/info/1973740182",
+      "language": "Python",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 3,
+      "createdAt": "2025-07-27T09:06:09Z",
+      "lastCommitAt": "2026-06-20T05:04:03Z",
+      "lastReleaseAt": "2026-06-20T05:04:09Z",
+      "status": "thriving",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 78,
+      "attentionGap": 61,
+      "maintainers": [
+        "Alexander-Nilsson",
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "BuddyChewChew/sports",
+      "name": "sports",
+      "description": "✅",
+      "url": "https://github.com/BuddyChewChew/sports",
+      "homepage": "",
+      "language": "Python",
+      "stars": 10,
+      "forks": 7,
+      "openIssues": 0,
+      "createdAt": "2026-01-16T06:10:44Z",
+      "lastCommitAt": "2026-06-20T05:04:02Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 85,
+      "attentionGap": 65.3,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "abusaeeidx/IPTV-Scraper-Zilla",
+      "name": "IPTV-Scraper-Zilla",
+      "description": "IPTV Scraper Zilla — High-quality, auto-updating IPTV playlist generator with thousands of live channels including sports, movies, anime, and more. Fast, lightweight, and perfect for seamless streaming across all devices.",
+      "url": "https://github.com/abusaeeidx/IPTV-Scraper-Zilla",
+      "homepage": "",
+      "language": "Python",
+      "stars": 206,
+      "forks": 48,
+      "openIssues": 6,
+      "createdAt": "2025-07-31T09:25:30Z",
+      "lastCommitAt": "2026-06-20T05:04:01Z",
+      "status": "quiet",
+      "tags": [],
+      "vitalityScore": 60,
+      "attentionGap": 25.7,
+      "maintainers": [
+        "abusaeeidx"
+      ]
+    },
+    {
+      "repo": "Mai19930513/SamsungTestFirmwareVersionDecrypt",
+      "name": "SamsungTestFirmwareVersionDecrypt",
+      "description": "",
+      "url": "https://github.com/Mai19930513/SamsungTestFirmwareVersionDecrypt",
+      "language": "Python",
+      "stars": 15,
+      "forks": 5,
+      "openIssues": 0,
+      "createdAt": "2022-02-14T02:51:08Z",
+      "lastCommitAt": "2026-06-20T05:03:59Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 85,
+      "attentionGap": 60.8,
+      "maintainers": [
+        "github-actions[bot]"
+      ]
+    },
+    {
+      "repo": "az0/vpn_ip",
+      "name": "vpn_ip",
+      "description": "ip addresses of VPNs",
+      "url": "https://github.com/az0/vpn_ip",
+      "language": "Python",
+      "stars": 85,
+      "forks": 12,
+      "openIssues": 2,
+      "createdAt": "2023-05-01T20:04:59Z",
+      "lastCommitAt": "2026-06-20T05:03:59Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder",
+        "hidden_gem"
+      ],
+      "vitalityScore": 83,
+      "attentionGap": 42,
+      "maintainers": [
+        "actions-user",
+        "az0"
+      ]
+    },
+    {
+      "repo": "jeffdaily/moat",
+      "name": "moat",
+      "description": "MOAT: a Claude-driven effort to port popular CUDA GitHub projects to ROCm/HIP across AMD targets (Linux gfx90a, gfx1100, Windows gfx1151)",
+      "url": "https://github.com/jeffdaily/moat",
+      "language": "Python",
+      "stars": 10,
+      "forks": 0,
+      "openIssues": 0,
+      "createdAt": "2026-05-30T01:24:54Z",
+      "lastCommitAt": "2026-06-20T04:57:32Z",
+      "status": "quiet",
+      "tags": [
+        "solo_builder"
+      ],
+      "vitalityScore": 72,
+      "attentionGap": 55.3,
+      "maintainers": [
+        "jeffdaily"
+      ]
+    },
+    {
+      "repo": "microsoft/microbots",
+      "name": "microbots",
+      "description": "",
+      "url": "https://github.com/microsoft/microbots",
+      "language": "Python",
+      "stars": 35,
+      "forks": 19,
+      "openIssues": 10,
+      "createdAt": "2025-09-15T06:38:10Z",
+      "lastCommitAt": "2026-06-20T05:03:48Z",
+      "lastReleaseAt": "2026-05-29T12:12:19Z",
+      "status": "thriving",
+      "tags": [],
+      "vitalityScore": 62,
+      "attentionGap": 37.5,
+      "maintainers": [
+        "0xba1a",
+        "KavyaSree2610",
+        "shivashanmugam"
+      ]
+    }
+  ]
 }
