@@ -6,7 +6,6 @@ marta-kowalski/inkwell
 devraj-singh/birdwatch-cli
 felicia-okonkwo/patchwork-css
 paulo-mendes/gridlab
-yuki-tanaka-dev/solverkit
 tomasz-wiśniewski/ghosttype
 amara-diallo/carbonmark
 opn-build/OpenAlive
