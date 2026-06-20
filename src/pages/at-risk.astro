@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard.astro';
 const all = await getCollection('projects');
 const atRisk = all
   .filter(p => p.data.status === 'at_risk')
-  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore);
 ---
 <Base
   title="At Risk"
@@ -17,7 +17,7 @@ const atRisk = all
       <p class="eyebrow">// at_risk</p>
       <h1>Projects on the edge</h1>
       <p class="lead">
-        These projects haven't seen a commit in months — but they're not abandoned.
+        These projects haven't seen a commit in 2+ months — but they're not abandoned.
         Open issues, open PRs, a maintainer who got busy with life.
         They just need someone to show up.
       </p>

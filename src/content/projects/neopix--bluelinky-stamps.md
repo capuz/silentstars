@@ -7,12 +7,16 @@ language: "TypeScript"
 stars: 10
 forks: 6
 openIssues: 0
+closedIssues: 5
+watchers: 3
+contributors: 3
+recentReleases: 0
 createdAt: "2021-06-03T15:49:27Z"
-lastCommitAt: "2026-06-20T05:03:58Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T13:03:16Z"
+status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-vitalityScore: 77
-attentionGap: 59.2
+healthScore: 96
+undervaluedScore: 62
 maintainers: ["neoPix"]
 ---
 

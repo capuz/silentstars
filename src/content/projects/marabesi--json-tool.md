@@ -8,13 +8,17 @@ language: "TypeScript"
 stars: 9
 forks: 2
 openIssues: 7
+closedIssues: 19
+watchers: 1
+contributors: 2
+recentReleases: 0
 createdAt: "2021-08-03T06:13:22Z"
 lastCommitAt: "2026-06-20T05:08:20Z"
 lastReleaseAt: "2021-11-28T13:43:59Z"
-status: "quiet"
+status: "thriving"
 tags: []
-vitalityScore: 53
-attentionGap: 41.4
+healthScore: 91
+undervaluedScore: 42
 maintainers: ["marabesi", "dependabot[bot]"]
 ---
 

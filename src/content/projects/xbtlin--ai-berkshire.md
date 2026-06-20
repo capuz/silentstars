@@ -8,13 +8,17 @@ language: "Python"
 stars: 35
 forks: 8
 openIssues: 2
+closedIssues: 1
+watchers: 0
+contributors: 2
+recentReleases: 1
 createdAt: "2026-04-07T11:19:51Z"
-lastCommitAt: "2026-06-20T05:07:30Z"
+lastCommitAt: "2026-06-20T14:09:58Z"
 lastReleaseAt: "2026-04-07T11:31:35Z"
-status: "newborn"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 77
-attentionGap: 46.6
+healthScore: 87
+undervaluedScore: 46
 maintainers: ["claude", "xbtlin"]
 ---
 

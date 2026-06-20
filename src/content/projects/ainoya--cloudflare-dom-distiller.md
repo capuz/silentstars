@@ -7,12 +7,16 @@ language: "TypeScript"
 stars: 30
 forks: 2
 openIssues: 1
+closedIssues: 0
+watchers: 1
+contributors: 1
+recentReleases: 0
 createdAt: "2024-06-11T09:39:04Z"
 lastCommitAt: "2026-06-20T05:06:37Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 84
-attentionGap: 52.4
+healthScore: 79
+undervaluedScore: 40
 maintainers: ["renovate[bot]"]
 ---
 

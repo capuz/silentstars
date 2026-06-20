@@ -7,12 +7,16 @@ language: "Python"
 stars: 105
 forks: 45
 openIssues: 26
+closedIssues: 147
+watchers: 3
+contributors: 49
+recentReleases: 0
 createdAt: "2023-11-16T09:26:16Z"
 lastCommitAt: "2026-06-20T05:05:10Z"
-status: "quiet"
+status: "thriving"
 tags: []
-vitalityScore: 75
-attentionGap: 36.4
+healthScore: 94
+undervaluedScore: 40
 maintainers: ["bschimke95", "nhennigan", "HomayoonAlimohammadi"]
 ---
 

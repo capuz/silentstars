@@ -12,16 +12,17 @@ const all = await getCollection('projects');
 
 const projects = all
   .filter(p => p.data.status !== 'archived')
-  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore);
 
 const regular  = projects.filter(p => !promotedRepos.has(p.data.repo.toLowerCase()));
 const promoted = projects.filter(p =>  promotedRepos.has(p.data.repo.toLowerCase()));
 
-const statuses = ['thriving', 'quiet', 'at_risk', 'newborn', 'revived'] as const;
-const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero'] as const;
+const statuses = ['thriving', 'watched', 'quiet', 'at_risk', 'newborn', 'revived'] as const;
+const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero', 'community_watch'] as const;
 
 const statusLabels: Record<string, string> = {
   thriving: 'Thriving',
+  watched:  'Watched',
   quiet:    'Quiet',
   at_risk:  'At Risk',
   newborn:  'Newborn',
@@ -32,15 +33,16 @@ const tagLabels: Record<string, string> = {
   needs_contributors: '// help wanted',
   hidden_gem:         '// hidden gem',
   legacy_hero:        '// legacy',
+  community_watch:    '// community watch',
 };
 ---
-<Base title="Directory" description="All open source projects tracked by SilentStars, sorted by Attention Gap.">
+<Base title="Directory" description="All open source projects tracked by SilentStars, sorted by Undervalued Score.">
   <div class="container section">
     <div class="dir-header">
       <h1>// Directory</h1>
       <p class="subtitle">
-        {projects.length} projects · sorted by Attention Gap
-        <span class="hint">( vitality ÷ log₁₀(stars) )</span>
+        {projects.length} projects · sorted by Undervalued Score
+        <span class="hint">( signal ÷ log₁₀(stars + watchers) )</span>
       </p>
     </div>
 

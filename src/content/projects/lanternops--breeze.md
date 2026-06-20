@@ -7,14 +7,18 @@ language: "TypeScript"
 stars: 46
 forks: 16
 openIssues: 21
+closedIssues: 288
+watchers: 3
+contributors: 7
+recentReleases: 0
 createdAt: "2026-01-14T06:16:46Z"
-lastCommitAt: "2026-06-20T05:01:26Z"
-lastReleaseAt: "2026-06-16T20:38:24Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T06:43:22Z"
+lastReleaseAt: "2026-02-19T20:57:03Z"
+status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-vitalityScore: 99
-attentionGap: 56.6
-maintainers: ["ToddHebebrand", "dependabot[bot]", "bdunncompany"]
+healthScore: 98
+undervaluedScore: 47
+maintainers: ["ToddHebebrand", "bdunncompany", "dependabot[bot]"]
 ---
 
 breeze is tracked by SilentStars. Open-source Remote Monitoring & Management (RMM) platform for MSPs and IT teams

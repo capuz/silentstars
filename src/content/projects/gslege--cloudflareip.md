@@ -5,15 +5,19 @@ description: "全自动优选CF的IP，包含美国US，日本JP，新加坡SG�
 url: "https://github.com/gslege/CloudflareIP"
 homepage: "https://ip.cloudip.ggff.net"
 language: "Python"
-stars: 491
+stars: 490
 forks: 243
 openIssues: 9
+closedIssues: 1
+watchers: 1
+contributors: 1
+recentReleases: 0
 createdAt: "2025-09-28T17:05:17Z"
-lastCommitAt: "2026-06-20T05:06:20Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T14:06:00Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 62
-attentionGap: 23
+healthScore: 62
+undervaluedScore: 25
 maintainers: ["github-actions[bot]"]
 ---
 

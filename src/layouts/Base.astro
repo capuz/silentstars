@@ -1,5 +1,6 @@
 ---
 import '../styles/theme.css';
+import MetricsFAQ from '../components/MetricsFAQ.astro';
 
 interface Props {
   title: string;
@@ -58,6 +59,9 @@ const base = import.meta.env.BASE_URL;
       <main style="flex:1;">
         <slot />
       </main>
+
+      <!-- METRICS FAQ -->
+      <MetricsFAQ />
 
       <!-- FOOTER -->
       <footer class="ss-footer">

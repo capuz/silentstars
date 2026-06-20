@@ -7,13 +7,17 @@ language: "Python"
 stars: 10
 forks: 2
 openIssues: 0
+closedIssues: 1
+watchers: 0
+contributors: 1
+recentReleases: 10
 createdAt: "2026-05-03T11:41:48Z"
-lastCommitAt: "2026-06-20T05:08:29Z"
-lastReleaseAt: "2026-06-20T05:09:35Z"
+lastCommitAt: "2026-06-20T06:49:18Z"
+lastReleaseAt: "2026-05-04T07:38:48Z"
 status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 85
-attentionGap: 65.3
+healthScore: 89
+undervaluedScore: 77
 maintainers: ["tickernelz"]
 ---
 

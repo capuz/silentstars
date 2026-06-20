@@ -8,13 +8,17 @@ language: "Python"
 stars: 6
 forks: 0
 openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 2
+recentReleases: 10
 createdAt: "2026-05-13T06:20:23Z"
-lastCommitAt: "2026-06-20T05:06:48Z"
-lastReleaseAt: "2026-06-19T07:37:39Z"
+lastCommitAt: "2026-06-20T07:01:00Z"
+lastReleaseAt: "2026-06-16T14:02:13Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 100
-attentionGap: 83
+healthScore: 90
+undervaluedScore: 75
 maintainers: ["netcanon", "dependabot[bot]"]
 ---
 

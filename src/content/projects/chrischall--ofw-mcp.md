@@ -7,13 +7,17 @@ language: "TypeScript"
 stars: 5
 forks: 1
 openIssues: 0
+closedIssues: 3
+watchers: 0
+contributors: 3
+recentReleases: 4
 createdAt: "2026-03-16T01:56:02Z"
 lastCommitAt: "2026-06-20T05:08:04Z"
-lastReleaseAt: "2026-06-15T14:33:08Z"
-status: "newborn"
+lastReleaseAt: "2026-03-31T18:02:33Z"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 90
-attentionGap: 76.5
+healthScore: 99
+undervaluedScore: 85
 maintainers: ["chrischall", "dependabot[bot]", "thanbey"]
 ---
 

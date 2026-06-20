@@ -8,13 +8,17 @@ language: "TypeScript"
 stars: 5
 forks: 1
 openIssues: 11
+closedIssues: 6
+watchers: 0
+contributors: 6
+recentReleases: 10
 createdAt: "2026-01-19T22:09:24Z"
-lastCommitAt: "2026-06-20T05:04:29Z"
-lastReleaseAt: "2026-06-13T21:05:00Z"
+lastCommitAt: "2026-06-20T07:11:25Z"
+lastReleaseAt: "2026-06-02T01:49:49Z"
 status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 79
-attentionGap: 67.2
+healthScore: 84
+undervaluedScore: 74
 maintainers: ["williamstein", "Blaec-CoCalc"]
 ---
 

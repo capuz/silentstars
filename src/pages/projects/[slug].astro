@@ -40,6 +40,7 @@ const tagLabels: Record<string, string> = {
   needs_contributors: '// help wanted',
   hidden_gem:         '// hidden gem',
   legacy_hero:        '// legacy hero',
+  community_watch:    '// community watch',
 };
 
 const base = import.meta.env.BASE_URL;
@@ -123,16 +124,16 @@ const base = import.meta.env.BASE_URL;
           <span class="meta-val">{d.forks}</span>
         </div>
 
-        <!-- Vitality -->
+        <!-- Health Score -->
         <div class="meta-vitality">
-          <span class="meta-label">vitality</span>
-          <VitalityBar score={d.vitalityScore} />
+          <span class="meta-label">health score</span>
+          <VitalityBar score={d.healthScore} />
         </div>
 
-        <!-- Attention Gap -->
+        <!-- Undervalued Score -->
         <div class="meta-row">
-          <span class="meta-label">attention gap</span>
-          <span class="meta-val meta-gap">↑ {d.attentionGap.toFixed(1)}</span>
+          <span class="meta-label">undervalued score</span>
+          <span class="meta-val meta-gap">↑ {d.undervaluedScore}</span>
         </div>
 
         <!-- Tags -->
