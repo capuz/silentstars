@@ -31,11 +31,6 @@ const quiet = visible
   .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
   .slice(0, 9);
 
-const atRisk = visible
-  .filter(p => p.data.status === 'at_risk')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
-
 const revived = visible
   .filter(p => p.data.status === 'revived')
   .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
@@ -46,7 +41,6 @@ const base = import.meta.env.BASE_URL;
 // global stats
 const totalProjects  = visible.length;
 const totalThriving  = visible.filter(p => p.data.status === 'thriving').length;
-const totalAtRisk    = visible.filter(p => p.data.status === 'at_risk').length;
 const totalNewborn   = visible.filter(p => p.data.status === 'newborn').length;
 const totalStars     = visible.reduce((sum, p) => sum + (p.data.stars ?? 0), 0);
 const starsDisplay   = totalStars >= 1000
@@ -60,7 +54,6 @@ const starsDisplay   = totalStars >= 1000
       <h1 class="headline">Not famous. Not abandoned. Just building.</h1>
       <div class="hero-actions">
         <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
-        <a href={`${base}at-risk`} class="btn-ghost">At risk →</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -74,10 +67,6 @@ const starsDisplay   = totalStars >= 1000
         <div class="stat">
           <span class="stat-value">{totalNewborn}</span>
           <span class="stat-label">newborn</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value stat-risk">{totalAtRisk}</span>
-          <span class="stat-label">at risk</span>
         </div>
         <div class="stat">
           <span class="stat-value">★ {starsDisplay}</span>
@@ -162,21 +151,6 @@ const starsDisplay   = totalStars >= 1000
     </section>
   )}
 
-  {atRisk.length > 0 && (
-    <section class="section container">
-      <div class="section-header">
-        <h2><span class="mono-prefix">//</span> At Risk</h2>
-        <p>No commit in 2+ months, open issues still waiting. Worth a star, a PR, or just a look.</p>
-      </div>
-      <div class="grid">
-        {atRisk.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
-      </div>
-      <div class="see-more"><a href={`${base}at-risk/`}>ver más →</a></div>
-    </section>
-  )}
-
   {revived.length > 0 && (
     <section class="section container">
       <div class="section-header">
@@ -241,8 +215,7 @@ const starsDisplay   = totalStars >= 1000
     line-height: 1;
     color: var(--ink);
   }
-  .stat-risk { color: var(--at-risk); }
-  .stat-label {
+.stat-label {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     font-weight: 700;
