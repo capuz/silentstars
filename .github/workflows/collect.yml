@@ -40,7 +40,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run collector
+      - name: Discover new candidates
+        run: npm run discover
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Collect and update data
         run: npm run collect
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +54,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json src/content/projects/
+          git add data/latest.json data/discovered.json src/content/projects/
           git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
           git push
 

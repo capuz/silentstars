@@ -5,7 +5,6 @@ import ProjectCard from '../../components/ProjectCard.astro';
 
 const all = await getCollection('projects');
 
-// Archived projects are never shown in the directory
 const projects = all
   .filter(p => p.data.status !== 'archived')
   .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
@@ -14,44 +13,43 @@ const statuses = ['thriving', 'quiet', 'at_risk', 'newborn', 'revived'] as const
 const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero'] as const;
 
 const statusLabels: Record<string, string> = {
-  thriving: '🟢 Thriving',
-  quiet:    '🟡 Quiet',
-  at_risk:  '🟠 At Risk',
-  newborn:  '🔵 Newborn',
-  revived:  '🟣 Revived',
+  thriving: 'Thriving',
+  quiet:    'Quiet',
+  at_risk:  'At Risk',
+  newborn:  'Newborn',
+  revived:  'Revived',
 };
 const tagLabels: Record<string, string> = {
-  solo_builder:       '👤 Solo builder',
-  needs_contributors: '🙋 Needs contributors',
-  hidden_gem:         '💎 Hidden gem',
-  legacy_hero:        '🏛 Legacy hero',
+  solo_builder:       '// solo',
+  needs_contributors: '// help wanted',
+  hidden_gem:         '// hidden gem',
+  legacy_hero:        '// legacy',
 };
 ---
 <Base title="Directory" description="All open source projects tracked by SilentStars, sorted by Attention Gap.">
   <div class="container section">
     <div class="dir-header">
-      <h1>Directory</h1>
+      <h1>// Directory</h1>
       <p class="subtitle">
         {projects.length} projects · sorted by Attention Gap
-        <span class="hint">(vitality ÷ log₁₀(stars) — higher = more undervalued)</span>
+        <span class="hint">( vitality ÷ log₁₀(stars) )</span>
       </p>
     </div>
 
-    <!-- Client-side filters: lightweight JS, no framework -->
     <div class="filters" id="filters">
       <div class="filter-group">
-        <span class="filter-label">Status</span>
+        <span class="filter-label">status</span>
         {statuses.map(s => (
           <button class="filter-btn" data-filter-status={s}>{statusLabels[s]}</button>
         ))}
       </div>
       <div class="filter-group">
-        <span class="filter-label">Tags</span>
+        <span class="filter-label">tags</span>
         {tags.map(t => (
           <button class="filter-btn" data-filter-tag={t}>{tagLabels[t]}</button>
         ))}
       </div>
-      <button class="filter-reset" id="filter-reset">Reset</button>
+      <button class="filter-reset" id="filter-reset">reset</button>
     </div>
 
     <div class="grid" id="project-grid">
@@ -61,10 +59,7 @@ const tagLabels: Record<string, string> = {
           data-status={p.data.status}
           data-tags={p.data.tags.join(',')}
         >
-          <ProjectCard
-            slug={p.slug}
-            {...p.data}
-          />
+          <ProjectCard slug={p.slug} {...p.data} />
         </div>
       ))}
     </div>
@@ -86,19 +81,14 @@ const tagLabels: Record<string, string> = {
   function applyFilters() {
     const items = grid.querySelectorAll<HTMLElement>('.grid-item');
     let visible = 0;
-
     items.forEach(item => {
       const status = item.dataset.status ?? '';
       const tags = (item.dataset.tags ?? '').split(',').filter(Boolean);
-
-      const statusOk = activeStatuses.size === 0 || activeStatuses.has(status);
-      const tagOk    = activeTags.size === 0    || tags.some(t => activeTags.has(t));
-
-      const show = statusOk && tagOk;
+      const show = (activeStatuses.size === 0 || activeStatuses.has(status)) &&
+                   (activeTags.size === 0 || tags.some(t => activeTags.has(t)));
       item.style.display = show ? '' : 'none';
       if (show) visible++;
     });
-
     emptyState.style.display = visible === 0 ? '' : 'none';
   }
 
@@ -130,17 +120,17 @@ const tagLabels: Record<string, string> = {
 
 <style>
   .dir-header { margin-bottom: 2rem; }
-  .dir-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-  .subtitle { color: var(--text-muted); font-size: 0.875rem; }
-  .hint { color: var(--text-dim); font-size: 0.8rem; }
+  .dir-header h1 { font-size: 1.75rem; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
+  .subtitle { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); }
+  .hint { color: var(--text-dim); }
 
   .filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.65rem;
     align-items: center;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 0.875rem;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -149,49 +139,53 @@ const tagLabels: Record<string, string> = {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 0.35rem;
   }
   .filter-label {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    text-transform: lowercase;
     color: var(--text-dim);
-    margin-right: 0.25rem;
+    margin-right: 0.2rem;
+    letter-spacing: 0.04em;
   }
   .filter-btn {
     background: none;
     border: 1px solid var(--border);
-    color: var(--text-muted);
-    padding: 0.25em 0.65em;
-    border-radius: 3px;
-    font-size: 0.75rem;
+    color: var(--text-dim);
+    padding: 0.2em 0.6em;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
     cursor: pointer;
     transition: border-color 0.15s, color 0.15s;
-    font-family: var(--font-body);
   }
-  .filter-btn:hover { border-color: #444; color: var(--text); }
-  .filter-btn.active { border-color: var(--text); color: var(--text); }
+  .filter-btn:hover { border-color: #555; color: var(--text-muted); }
+  .filter-btn.active { border-color: var(--revived); color: var(--revived); }
 
   .filter-reset {
     margin-left: auto;
     background: none;
     border: none;
     color: var(--text-dim);
-    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
     cursor: pointer;
-    font-family: var(--font-body);
+    letter-spacing: 0.04em;
   }
   .filter-reset:hover { color: var(--text); }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.875rem;
   }
   .empty-state {
     text-align: center;
     color: var(--text-dim);
     padding: 3rem 0;
-    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
   }
 </style>

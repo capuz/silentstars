@@ -1,0 +1,7 @@
+{
+  "starsRange": { "min": 5, "max": 500 },
+  "pushedWithinDays": 90,
+  "languages": ["TypeScript", "Python", "Go", "Rust", "JavaScript", "Zig", "Elixir"],
+  "maxCandidatesPerNight": 200,
+  "vitalityThreshold": 40
+}

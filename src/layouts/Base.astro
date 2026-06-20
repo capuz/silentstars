@@ -19,12 +19,18 @@ const base = import.meta.env.BASE_URL;
     <link rel="alternate" type="application/rss+xml" title="SilentStars" href={`${base}rss.xml`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- Film grain overlay (CSS-only, no image file) -->
+    <div class="grain" aria-hidden="true"></div>
+
     <header>
       <nav>
-        <a href={`${base}`} class="wordmark">SilentStars</a>
+        <a href={`${base}`} class="wordmark">
+          <span class="wordmark-px" aria-hidden="true">★</span>
+          SilentStars
+        </a>
         <ul>
           <li><a href={`${base}projects`}>Directory</a></li>
           <li><a href={`${base}at-risk`}>At Risk</a></li>
@@ -41,34 +47,82 @@ const base = import.meta.env.BASE_URL;
     <footer>
       <p class="lema">Not famous. Not abandoned. Just building.</p>
       <p class="sub">Open source projects deserve to be seen — regardless of their star count.</p>
+      <p class="footer-px" aria-hidden="true">// SilentStars ★ coste 0 ★ sin backend ★ puro amor //</p>
     </footer>
   </body>
 </html>
+
+<!-- Cursor trail — disabled when prefers-reduced-motion -->
+<script>
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const N = 8;
+  const LERP = 0.14;
+  const COLOR = '199, 125, 255'; // --revived in RGB
+
+  const dots: HTMLElement[] = [];
+  let mouseX = -200, mouseY = -200;
+  const positions: { x: number; y: number }[] = Array.from({ length: N }, () => ({ x: -200, y: -200 }));
+
+  for (let i = 0; i < N; i++) {
+    const el = document.createElement('span');
+    el.className = 'cursor-dot';
+    const scale = 1 - i / N;
+    const opacity = (0.55 - i * 0.055).toFixed(2);
+    el.style.cssText = `width:${4 + scale * 4}px;height:${4 + scale * 4}px;opacity:${opacity};`;
+    document.body.appendChild(el);
+    dots.push(el);
+  }
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  }, { passive: true });
+
+  function tick() {
+    positions[0]!.x += (mouseX - positions[0]!.x) * LERP;
+    positions[0]!.y += (mouseY - positions[0]!.y) * LERP;
+    for (let i = 1; i < N; i++) {
+      positions[i]!.x += (positions[i - 1]!.x - positions[i]!.x) * LERP;
+      positions[i]!.y += (positions[i - 1]!.y - positions[i]!.y) * LERP;
+    }
+    for (let i = 0; i < N; i++) {
+      dots[i]!.style.transform = `translate(${positions[i]!.x}px,${positions[i]!.y}px)`;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
 
 <style is:global>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #0d0d0d;
-    --bg-card: #141414;
-    --bg-card-hover: #1a1a1a;
-    --text: #f0ede8;
-    --text-muted: #888;
-    --text-dim: #555;
-    --border: #222;
+    /* Palette — indie / millennial dark */
+    --bg:           #0f0e11;
+    --bg-card:      #19171f;
+    --bg-card-hover:#211e2a;
+    --text:         #e8e3f0;
+    --text-muted:   #8a84a0;
+    --text-dim:     #4e4a5e;
+    --border:       #2a2535;
 
-    /* Status colours */
-    --thriving: #4ade80;
-    --quiet: #facc15;
-    --at-risk: #f97316;
-    --newborn: #60a5fa;
-    --revived: #a78bfa;
-    --archived: #555;
+    /* Status colours — more saturated */
+    --thriving: #39e986;
+    --quiet:    #ffd93d;
+    --at-risk:  #ff6b35;
+    --newborn:  #4cc9f0;
+    --revived:  #c77dff;
+    --archived: #5c5772;
 
-    --font-body: 'Inter', system-ui, sans-serif;
-    --font-display: 'Playfair Display', Georgia, serif;
+    /* Typography */
+    --font-body:  'DM Sans', system-ui, sans-serif;
+    --font-mono:  'Space Mono', 'Courier New', monospace;
+
     --max-w: 1100px;
-    --radius: 6px;
+    --radius: 4px;
   }
 
   html { font-size: 16px; scroll-behavior: smooth; }
@@ -88,13 +142,40 @@ const base = import.meta.env.BASE_URL;
   a { color: inherit; text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* Nav */
+  /* ── Film grain overlay ── */
+  .grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 200px 200px;
+  }
+
+  /* ── Cursor trail dots ── */
+  .cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    border-radius: 50%;
+    background: rgb(199, 125, 255);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+    /* offset to center the dot on the cursor */
+    margin-left: -4px;
+    margin-top: -4px;
+  }
+
+  /* ── Nav ── */
   header {
     border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
-    background: rgba(13,13,13,0.92);
-    backdrop-filter: blur(8px);
+    background: rgba(15,14,17,0.92);
+    backdrop-filter: blur(10px);
     z-index: 10;
   }
 
@@ -102,7 +183,7 @@ const base = import.meta.env.BASE_URL;
     max-width: var(--max-w);
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 56px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,47 +191,72 @@ const base = import.meta.env.BASE_URL;
   }
 
   .wordmark {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text);
   }
-  .wordmark:hover { text-decoration: none; opacity: 0.85; }
+  .wordmark:hover { text-decoration: none; opacity: 0.8; }
+  .wordmark-px {
+    color: var(--revived);
+    font-size: 0.75rem;
+    animation: star-blink 3s steps(1) infinite;
+  }
+  @keyframes star-blink {
+    0%, 89%  { opacity: 1; }
+    90%, 100% { opacity: 0; }
+  }
 
   nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-items: center;
   }
-
   nav ul a {
-    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--text-muted);
+    letter-spacing: 0.03em;
     transition: color 0.15s;
   }
   nav ul a:hover { color: var(--text); text-decoration: none; }
-  nav ul a.rss { font-size: 0.75rem; opacity: 0.6; }
+  nav ul a.rss { opacity: 0.5; }
+  nav ul a.rss:hover { opacity: 1; }
 
-  /* Footer */
+  /* ── Footer ── */
   footer {
     border-top: 1px solid var(--border);
     padding: 3rem 1.5rem;
     text-align: center;
   }
   footer .lema {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 1.125rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 0.5rem;
+    font-style: italic;
   }
-  footer .sub { font-size: 0.8rem; color: var(--text-dim); }
+  footer .sub {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+  }
+  footer .footer-px {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+  }
 
-  /* Utility */
+  /* ── Utility ── */
   .container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
   .section { padding: 3rem 0; }
-
-  h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
+  h1, h2, h3 { font-family: var(--font-mono); line-height: 1.2; }
 </style>
