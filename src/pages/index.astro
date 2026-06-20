@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const all = await getCollection('projects');
+const visible = all.filter(p => p.data.status !== 'archived');
+
+const thriving = visible
+  .filter(p => p.data.status === 'thriving')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+
+const hiddenGems = visible
+  .filter(p => p.data.tags.includes('hidden_gem') && p.data.status !== 'thriving')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+
+const base = import.meta.env.BASE_URL;
+---
+<Base title="Home">
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Open source is more than stars</p>
+      <h1 class="headline">
+        Not famous.<br />
+        Not abandoned.<br />
+        <em>Just building.</em>
+      </h1>
+      <p class="tagline">
+        A directory of open source projects that are <strong>alive but invisible</strong> —
+        newborns finding their feet, solo builders shipping in silence, and projects
+        that came back from the edge. No vanity metrics. Ranked by how much they deserve
+        to be seen.
+      </p>
+      <div class="hero-actions">
+        <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
+        <a href={`${base}at-risk`} class="btn-ghost">Projects at risk →</a>
+      </div>
+    </div>
+  </section>
+
+  {thriving.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2>Thriving Now</h2>
+        <p>Active projects shipping code — ranked by how undervalued they are.</p>
+      </div>
+      <div class="grid">
+        {thriving.map(p => (
+          <ProjectCard
+            slug={p.slug}
+            {...p.data}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {hiddenGems.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2>Hidden Gems 💎</h2>
+        <p>Under 100 stars. Recent activity. Genuine craft. Look closer.</p>
+      </div>
+      <div class="grid">
+        {hiddenGems.map(p => (
+          <ProjectCard
+            slug={p.slug}
+            {...p.data}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="section container cta-section">
+    <p>Discover all <strong>{visible.length}</strong> projects — filtered by state, sorted by attention gap.</p>
+    <a href={`${base}projects`} class="btn-primary">Open the directory</a>
+  </section>
+</Base>
+
+<style>
+  /* Hero */
+  .hero {
+    padding: 5rem 0 4rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+  }
+  .headline {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+  }
+  .headline em {
+    font-style: italic;
+    color: var(--text-muted);
+  }
+  .tagline {
+    max-width: 560px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .btn-primary {
+    background: var(--text);
+    color: var(--bg);
+    padding: 0.6em 1.4em;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.15s;
+  }
+  .btn-primary:hover { opacity: 0.85; text-decoration: none; }
+  .btn-ghost {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+  .btn-ghost:hover { color: var(--text); text-decoration: none; }
+
+  /* Sections */
+  .section-header {
+    margin-bottom: 1.75rem;
+  }
+  .section-header h2 { font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .section-header p { font-size: 0.875rem; color: var(--text-muted); }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .cta-section p { color: var(--text-muted); }
+</style>

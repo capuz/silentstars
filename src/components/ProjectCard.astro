@@ -1,0 +1,154 @@
+---
+import StatusBadge from './StatusBadge.astro';
+import VitalityBar from './VitalityBar.astro';
+
+interface Props {
+  slug: string;
+  name: string;
+  description: string;
+  repo: string;
+  url: string;
+  status: 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived';
+  tags: string[];
+  vitalityScore: number;
+  attentionGap: number;
+  stars: number;
+  language?: string;
+  lastCommitAt: string;
+}
+
+const {
+  slug, name, description, repo, url, status, tags,
+  vitalityScore, attentionGap, stars, language, lastCommitAt
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+
+const tagLabels: Record<string, string> = {
+  solo_builder: '👤 Solo builder',
+  needs_contributors: '🙋 Needs contributors',
+  hidden_gem: '💎 Hidden gem',
+  legacy_hero: '🏛 Legacy hero',
+};
+
+const daysSince = Math.floor((Date.now() - new Date(lastCommitAt).getTime()) / 86_400_000);
+const lastCommitLabel = daysSince === 0 ? 'today' : daysSince === 1 ? 'yesterday' : `${daysSince}d ago`;
+---
+<article class="card">
+  <div class="card-top">
+    <div class="card-meta">
+      <StatusBadge status={status} />
+      {language && <span class="lang">{language}</span>}
+    </div>
+    <div class="gap-score" title="Attention Gap (higher = more undervalued)">
+      ↑ {attentionGap.toFixed(1)}
+    </div>
+  </div>
+
+  <a href={`${base}projects/${slug}`} class="card-title-link">
+    <h3 class="card-title">{name}</h3>
+  </a>
+  <p class="card-repo">{repo}</p>
+  <p class="card-desc">{description}</p>
+
+  <div class="vitality">
+    <VitalityBar score={vitalityScore} />
+  </div>
+
+  {tags.length > 0 && (
+    <ul class="tags">
+      {tags.map(t => <li class="tag">{tagLabels[t] ?? t}</li>)}
+    </ul>
+  )}
+
+  <div class="card-footer">
+    <span class="last-commit">Last commit: {lastCommitLabel}</span>
+    <a href={url} target="_blank" rel="noopener" class="stars">★ {stars}</a>
+  </div>
+</article>
+
+<style>
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .card:hover {
+    border-color: #333;
+    background: var(--bg-card-hover);
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .card-meta { display: flex; align-items: center; gap: 0.5rem; }
+  .lang {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    padding: 0.15em 0.5em;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+  }
+  .gap-score {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  .card-title-link:hover { text-decoration: none; }
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+    line-height: 1.2;
+  }
+  .card-title-link:hover .card-title { text-decoration: underline; }
+
+  .card-repo { font-size: 0.7rem; color: var(--text-dim); margin-top: -0.25rem; }
+
+  .card-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    flex: 1;
+  }
+
+  .tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .tag {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    padding: 0.2em 0.5em;
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+  .stars {
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+  .stars:hover { opacity: 1; text-decoration: none; }
+</style>

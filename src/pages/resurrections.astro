@@ -1,0 +1,145 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import StatusBadge from '../components/StatusBadge.astro';
+
+const all = await getCollection('projects');
+const revived = all
+  .filter(p => p.data.status === 'revived')
+  .sort((a, b) => (a.data.revivedDaysAgo ?? 999) - (b.data.revivedDaysAgo ?? 999));
+
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="Resurrections"
+  description="Open source projects that came back from the edge. Inactive for months — now building again."
+>
+  <div class="container section">
+    <header class="page-header">
+      <span class="eyebrow">🟣 Resurrections</span>
+      <h1>They came back</h1>
+      <p class="lead">
+        These projects went quiet for months — sometimes over a year.
+        Then something happened: a new maintainer, a renewed burst of energy,
+        a community that refused to let it die.
+      </p>
+      <p class="lead">
+        Proof that open source doesn't have to end just because it paused.
+      </p>
+    </header>
+
+    {revived.length === 0 ? (
+      <p class="empty">No revivals tracked yet. Check back soon.</p>
+    ) : (
+      <ul class="revival-list">
+        {revived.map(p => (
+          <li class="revival-item">
+            <div class="revival-header">
+              <a href={`${base}projects/${p.slug}`} class="revival-name">
+                {p.data.name}
+              </a>
+              <StatusBadge status="revived" />
+            </div>
+
+            <p class="revival-story">
+              {p.data.revivedAfterMonths
+                ? `Inactive for ${p.data.revivedAfterMonths} month${p.data.revivedAfterMonths > 1 ? 's' : ''}`
+                : 'Was inactive'
+              }
+              {' → '}
+              <strong>
+                Back to life {p.data.revivedDaysAgo != null
+                  ? `${p.data.revivedDaysAgo} day${p.data.revivedDaysAgo !== 1 ? 's' : ''} ago`
+                  : 'recently'
+                }
+              </strong>
+            </p>
+
+            <p class="revival-desc">{p.data.description}</p>
+
+            <div class="revival-footer">
+              <a href={p.data.url} target="_blank" rel="noopener" class="gh-link">
+                {p.data.repo} ↗
+              </a>
+              <span class="stars">★ {p.data.stars}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--revived);
+    margin-bottom: 0.75rem;
+  }
+  .page-header { max-width: 680px; margin-bottom: 3rem; }
+  .page-header h1 { font-size: 2rem; margin-bottom: 1rem; }
+  .lead {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .revival-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    max-width: 720px;
+  }
+
+  .revival-item {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .revival-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .revival-name {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .revival-name:hover { text-decoration: underline; }
+
+  .revival-story {
+    font-size: 0.9rem;
+    color: var(--revived);
+    font-style: italic;
+  }
+  .revival-story strong { color: var(--text); font-style: normal; }
+
+  .revival-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+
+  .revival-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .gh-link { color: var(--text-dim); }
+  .gh-link:hover { color: var(--text); }
+  .stars { opacity: 0.6; }
+
+  .empty { color: var(--text-dim); font-size: 0.9rem; }
+</style>

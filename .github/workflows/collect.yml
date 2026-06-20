@@ -1,0 +1,96 @@
+name: Nightly collect + deploy
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 03:00 UTC every night
+  push:
+    branches: [main]
+  workflow_dispatch:        # manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # ─────────────────────────────────────────────────────────────
+  # Job 1: query GitHub API, update data/ and content/projects/
+  # Only runs on schedule or manual trigger (not on push)
+  # ─────────────────────────────────────────────────────────────
+  collect:
+    name: Collect data
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run collector
+        run: npm run collect
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json src/content/projects/
+          git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
+          git push
+
+  # ─────────────────────────────────────────────────────────────
+  # Job 2: Astro build + deploy to GitHub Pages
+  # Runs after collect (when scheduled) OR directly on push to main
+  # ─────────────────────────────────────────────────────────────
+  deploy:
+    name: Build & deploy
+    runs-on: ubuntu-latest
+    needs: [collect]
+    if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main   # always build the latest commit (after collect may have pushed)
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

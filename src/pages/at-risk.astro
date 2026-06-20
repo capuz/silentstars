@@ -1,0 +1,106 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const all = await getCollection('projects');
+const atRisk = all
+  .filter(p => p.data.status === 'at_risk')
+  .sort((a, b) => b.data.attentionGap - a.data.attentionGap);
+---
+<Base
+  title="At Risk"
+  description="Open source projects on the edge — still alive, still worth saving. Come contribute."
+>
+  <div class="container section">
+    <header class="page-header">
+      <span class="eyebrow">🟠 At Risk</span>
+      <h1>Projects on the edge</h1>
+      <p class="lead">
+        These projects haven't seen a commit in months — but they're not abandoned.
+        Open issues, open PRs, a maintainer who got busy with life. They just need
+        someone to show up.
+      </p>
+      <p class="lead">
+        No drama. No obituary. This is an invitation: pick one, open a PR,
+        leave a thoughtful issue. Small acts keep open source alive.
+      </p>
+    </header>
+
+    {atRisk.length === 0 ? (
+      <p class="empty">No projects currently at risk. That's a good sign.</p>
+    ) : (
+      <>
+        <p class="count">{atRisk.length} project{atRisk.length > 1 ? 's' : ''} waiting</p>
+        <div class="grid">
+          {atRisk.map(p => (
+            <ProjectCard slug={p.slug} {...p.data} />
+          ))}
+        </div>
+      </>
+    )}
+
+    <div class="cta-box">
+      <h2>How to help</h2>
+      <ol>
+        <li>Find a project that matches your skills.</li>
+        <li>Read the open issues — pick one labeled <code>good first issue</code> or <code>help wanted</code>.</li>
+        <li>Leave a thoughtful comment or open a PR.</li>
+        <li>If the maintainer is gone, ask about co-maintenance.</li>
+      </ol>
+      <p>Sometimes all it takes is one person showing up.</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--at-risk);
+    margin-bottom: 0.75rem;
+  }
+  .page-header { max-width: 680px; margin-bottom: 3rem; }
+  .page-header h1 { font-size: 2rem; margin-bottom: 1rem; }
+  .lead {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+  .count {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  .empty { color: var(--text-dim); font-size: 0.9rem; }
+
+  .cta-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    max-width: 560px;
+    background: var(--bg-card);
+  }
+  .cta-box h2 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .cta-box ol {
+    padding-left: 1.25rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  .cta-box p { color: var(--text-muted); font-size: 0.875rem; }
+  .cta-box code {
+    background: #1e1e1e;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+    font-size: 0.85em;
+  }
+</style>

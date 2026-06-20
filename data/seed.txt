@@ -1,0 +1,11 @@
+# SilentStars seed list — one owner/repo per line, lines starting with # are ignored
+# Add the projects you want to track here.
+
+# Examples (replace with real repos you want to surface)
+marta-kowalski/inkwell
+devraj-singh/birdwatch-cli
+felicia-okonkwo/patchwork-css
+paulo-mendes/gridlab
+yuki-tanaka-dev/solverkit
+tomasz-wiśniewski/ghosttype
+amara-diallo/carbonmark
