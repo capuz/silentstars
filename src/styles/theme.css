@@ -99,5 +99,5 @@ details[open] .ss-plus { transform: rotate(45deg); }
 
 /* ── Layout helpers ── */
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 30px; }
-.section   { padding: 1.5rem 0; }
+.section   { padding: 0.75rem 0; }
 h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; }
