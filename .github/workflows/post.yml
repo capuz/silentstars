@@ -1,0 +1,26 @@
+name: Post to Bluesky
+
+on:
+  workflow_dispatch:
+
+jobs:
+  post:
+    name: Post daily highlight
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - run: npx tsx scripts/post.ts
+        env:
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          BASE_URL:          https://capuz.github.io/silentstars
