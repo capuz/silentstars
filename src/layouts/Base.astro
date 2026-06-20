@@ -80,9 +80,8 @@ const pageUrl = Astro.url.href;
           <div class="ss-footer-copy">
             <span style="color:#c9c6bc;">★ SilentStars</span>
           </div>
-          <a href="https://www.paypal.com/paypalme/fcapuz" target="_blank" rel="noopener" class="ss-donate">
-            <img src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal" width="15" height="15" style="display:block;" />
-            Donate
+          <a href="https://www.paypal.com/donate/?hosted_button_id=US7WTVC7ZDW6Q" target="_blank" rel="noopener" class="ss-donate">
+            <img src="https://img.shields.io/badge/Donate-PayPal-blue" alt="Donate with PayPal" height="20" style="display:block;" />
           </a>
         </div>
       </footer>
@@ -229,16 +228,8 @@ const pageUrl = Astro.url.href;
   .ss-donate {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: #f7f5ef;
-    color: #17150f;
-    font-family: var(--f-mono);
-    font-size: 12.5px;
-    font-weight: 700;
-    padding: 8px 14px;
-    border-radius: 4px;
-    border: 1px solid #000;
-    transition: background .12s;
+    opacity: .85;
+    transition: opacity .12s;
   }
-  .ss-donate:hover { background: #fff; text-decoration: none; }
+  .ss-donate:hover { opacity: 1; text-decoration: none; }
 </style>
