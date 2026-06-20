@@ -37,6 +37,16 @@ const revived = visible
   .slice(0, 9);
 
 const base = import.meta.env.BASE_URL;
+
+// global stats
+const totalProjects  = visible.length;
+const totalThriving  = visible.filter(p => p.data.status === 'thriving').length;
+const totalAtRisk    = visible.filter(p => p.data.status === 'at_risk').length;
+const totalNewborn   = visible.filter(p => p.data.status === 'newborn').length;
+const totalStars     = visible.reduce((sum, p) => sum + (p.data.stars ?? 0), 0);
+const starsDisplay   = totalStars >= 1000
+  ? `${(totalStars / 1000).toFixed(1)}k`
+  : String(totalStars);
 ---
 <Base title="SilentStars">
   <section class="hero">
@@ -46,6 +56,32 @@ const base = import.meta.env.BASE_URL;
       <div class="hero-actions">
         <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
         <a href={`${base}at-risk`} class="btn-ghost">At risk →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">{totalProjects}</span>
+          <span class="stat-label">projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true">/</div>
+        <div class="stat">
+          <span class="stat-value">{totalThriving}</span>
+          <span class="stat-label">thriving</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true">/</div>
+        <div class="stat">
+          <span class="stat-value">{totalNewborn}</span>
+          <span class="stat-label">newborn</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true">/</div>
+        <div class="stat">
+          <span class="stat-value stat-risk">{totalAtRisk}</span>
+          <span class="stat-label">at risk</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true">/</div>
+        <div class="stat">
+          <span class="stat-value">★ {starsDisplay}</span>
+          <span class="stat-label">total stars</span>
+        </div>
       </div>
     </div>
   </section>
@@ -165,6 +201,45 @@ const base = import.meta.env.BASE_URL;
     line-height: 1.15;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+  }
+
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .stat-value {
+    font-family: var(--f-display);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .stat-risk { color: var(--at-risk); }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .stat-divider {
+    font-family: var(--f-mono);
+    font-size: 1rem;
+    color: var(--border);
+    align-self: center;
+    padding-bottom: 14px;
   }
 
   .hero-actions {
