@@ -11,7 +11,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: 'SilentStars',
     description: 'Open source projects that are alive but invisible. Not famous. Not abandoned. Just building.',
-    site: context.site!,
+    site: new URL(import.meta.env.BASE_URL, context.site!).href,
     items: visible.map(p => ({
       title: `${p.data.name} — ${p.data.status}`,
       description: p.data.description,
