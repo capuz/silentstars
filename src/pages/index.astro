@@ -52,25 +52,33 @@ const starsDisplay   = totalStars >= 1000
     <div class="container">
       <p class="eyebrow">// open source is more than stars</p>
       <h1 class="headline">Not famous. Not abandoned. Just building.</h1>
+      <p class="hero-sub">
+        SilentStars tracks <strong>{totalProjects}</strong> open source projects that are actively built but chronically undervalued.
+        No hype. No trending algorithms. Just signal.
+      </p>
       <div class="hero-actions">
-        <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
+        <a href={`${base}projects/`} class="btn-primary">Browse the directory</a>
+        <a href={`${base}submit/`} class="btn-ghost">Submit a project →</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-value">{totalProjects}</span>
-          <span class="stat-label">projects</span>
+          <span class="stat-num">{totalProjects}</span>
+          <span class="stat-label">projects tracked</span>
         </div>
+        <div class="stat-sep">·</div>
         <div class="stat">
-          <span class="stat-value">{totalThriving}</span>
-          <span class="stat-label">thriving</span>
+          <span class="stat-num">{totalThriving}</span>
+          <span class="stat-label">thriving now</span>
         </div>
+        <div class="stat-sep">·</div>
         <div class="stat">
-          <span class="stat-value">{totalNewborn}</span>
+          <span class="stat-num">{totalNewborn}</span>
           <span class="stat-label">newborn</span>
         </div>
+        <div class="stat-sep">·</div>
         <div class="stat">
-          <span class="stat-value">★ {starsDisplay}</span>
-          <span class="stat-label">total stars</span>
+          <span class="stat-num">★ {starsDisplay}</span>
+          <span class="stat-label">combined stars</span>
         </div>
       </div>
     </div>
@@ -193,10 +201,19 @@ const starsDisplay   = totalStars >= 1000
     letter-spacing: -0.02em;
   }
 
+  .hero-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 58ch;
+    margin-bottom: 1.25rem;
+  }
+  .hero-sub strong { color: var(--accent); font-weight: 700; }
+
   .hero-stats {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 1.25rem;
     padding-top: 1rem;
@@ -205,27 +222,29 @@ const starsDisplay   = totalStars >= 1000
   .stat {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 2px;
   }
-  .stat-value {
+  .stat-num {
     font-family: var(--f-display);
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     font-weight: 800;
     letter-spacing: -0.03em;
     line-height: 1;
-    color: var(--ink);
+    color: var(--accent);
   }
-.stat-label {
+  .stat-label {
     font-family: var(--font-mono);
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     font-weight: 700;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--text-dim);
   }
-  .stat + .stat {
-    border-left: 1px solid var(--faint);
-    padding-left: 14px;
+  .stat-sep {
+    color: var(--faint);
+    font-size: 1.25rem;
+    line-height: 1;
+    align-self: center;
   }
 
   .hero-actions {

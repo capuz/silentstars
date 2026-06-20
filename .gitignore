@@ -6,8 +6,5 @@ node_modules/
 .astro/
 
 # design reference files
-HANDOFF-astro.md
-SilentStars.dc.html
-support.js
-.thumbnail
+private/
 .atl/

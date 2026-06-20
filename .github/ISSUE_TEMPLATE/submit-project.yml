@@ -1,0 +1,41 @@
+name: Submit a project
+description: Suggest an open source project to be tracked by SilentStars
+labels: ["submission"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repo (owner/repo)
+      placeholder: "e.g. torvalds/linux"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it deserve to be tracked?
+      description: What makes this project undervalued? Active commits? Interesting niche? Ignored by the algorithm?
+      placeholder: "Active dev since 2022, consistent releases, under 500 stars despite solving a real problem..."
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Primary language
+      placeholder: "TypeScript, Go, Rust..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Self-check
+      description: Please confirm before submitting
+      options:
+        - label: The repo has commits in the last 90 days
+          required: true
+        - label: It has fewer than 5k stars
+          required: false
+        - label: It's not already trending on GitHub
+          required: false
