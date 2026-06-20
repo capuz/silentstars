@@ -16,7 +16,7 @@ const base = import.meta.env.BASE_URL;
 >
   <div class="container section">
     <header class="page-header">
-      <span class="eyebrow">🟣 Resurrections</span>
+      <p class="eyebrow">// revived</p>
       <h1>They came back</h1>
       <p class="lead">
         These projects went quiet for months — sometimes over a year.
@@ -29,7 +29,7 @@ const base = import.meta.env.BASE_URL;
     </header>
 
     {revived.length === 0 ? (
-      <p class="empty">No revivals tracked yet. Check back soon.</p>
+      <p class="empty">// no revivals tracked yet. check back soon.</p>
     ) : (
       <ul class="revival-list">
         {revived.map(p => (
@@ -42,17 +42,16 @@ const base = import.meta.env.BASE_URL;
             </div>
 
             <p class="revival-story">
-              {p.data.revivedAfterMonths
-                ? `Inactive for ${p.data.revivedAfterMonths} month${p.data.revivedAfterMonths > 1 ? 's' : ''}`
-                : 'Was inactive'
-              }
+              <span class="story-dormant">
+                inactive for {p.data.revivedAfterMonths ?? '?'} month{(p.data.revivedAfterMonths ?? 0) !== 1 ? 's' : ''}
+              </span>
               {' → '}
-              <strong>
-                Back to life {p.data.revivedDaysAgo != null
-                  ? `${p.data.revivedDaysAgo} day${p.data.revivedDaysAgo !== 1 ? 's' : ''} ago`
+              <span class="story-alive">
+                back to life {p.data.revivedDaysAgo != null
+                  ? `${p.data.revivedDaysAgo}d ago`
                   : 'recently'
                 }
-              </strong>
+              </span>
             </p>
 
             <p class="revival-desc">{p.data.description}</p>
@@ -72,39 +71,41 @@ const base = import.meta.env.BASE_URL;
 
 <style>
   .eyebrow {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--revived);
     margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
   }
-  .page-header { max-width: 680px; margin-bottom: 3rem; }
-  .page-header h1 { font-size: 2rem; margin-bottom: 1rem; }
+  .page-header { max-width: 660px; margin-bottom: 3rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
   .lead {
     color: var(--text-muted);
-    line-height: 1.7;
+    line-height: 1.75;
     margin-bottom: 0.75rem;
+    font-size: 0.925rem;
   }
 
   .revival-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1px;
-    max-width: 720px;
+    gap: 0.875rem;
+    max-width: 680px;
   }
 
   .revival-item {
-    padding: 1.5rem;
+    padding: 1.25rem;
     background: var(--bg-card);
     border: 1px solid var(--border);
+    border-left: 2px solid var(--revived);
     border-radius: var(--radius);
-    margin-bottom: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    transition: border-color 0.2s;
   }
+  .revival-item:hover { border-color: var(--revived); }
 
   .revival-header {
     display: flex;
@@ -113,33 +114,41 @@ const base = import.meta.env.BASE_URL;
     flex-wrap: wrap;
   }
   .revival-name {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 1rem;
     font-weight: 700;
+    letter-spacing: -0.01em;
   }
-  .revival-name:hover { text-decoration: underline; }
+  .revival-name:hover { color: var(--revived); text-decoration: none; }
 
   .revival-story {
-    font-size: 0.9rem;
-    color: var(--revived);
-    font-style: italic;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
   }
-  .revival-story strong { color: var(--text); font-style: normal; }
+  .story-dormant { color: var(--text-dim); }
+  .story-alive { color: var(--revived); font-weight: 700; }
 
-  .revival-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+  .revival-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.65; }
 
   .revival-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     color: var(--text-dim);
     padding-top: 0.5rem;
     border-top: 1px solid var(--border);
   }
   .gh-link { color: var(--text-dim); }
-  .gh-link:hover { color: var(--text); }
-  .stars { opacity: 0.6; }
+  .gh-link:hover { color: var(--text); text-decoration: none; }
+  .stars { opacity: 0.5; }
 
-  .empty { color: var(--text-dim); font-size: 0.9rem; }
+  .empty {
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
 </style>

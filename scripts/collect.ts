@@ -352,16 +352,39 @@ async function main() {
     process.exit(1);
   }
 
-  // Load seed list
+  // Load seed list (always included, never filtered by vitality)
   const seedPath = resolve(ROOT, 'data/seed.txt');
   if (!existsSync(seedPath)) {
     console.error('❌  data/seed.txt not found.');
     process.exit(1);
   }
-  const repos = readFileSync(seedPath, 'utf8')
+  const seedRepos = readFileSync(seedPath, 'utf8')
     .split('\n')
     .map(l => l.trim())
     .filter(l => l && !l.startsWith('#'));
+  const seedSet = new Set(seedRepos.map(r => r.toLowerCase()));
+
+  // Load auto-discovered candidates (optional — skipped if file not found)
+  const discoveredPath = resolve(ROOT, 'data/discovered.json');
+  const discoveredCandidates: string[] = [];
+  if (existsSync(discoveredPath)) {
+    const disc = JSON.parse(readFileSync(discoveredPath, 'utf8')) as { candidates: string[] };
+    discoveredCandidates.push(...(disc.candidates ?? []));
+  }
+
+  // Vitality threshold for auto-discovered repos (seed always bypasses this)
+  const configPath = resolve(ROOT, 'data/discovery.config.json');
+  const vitalityThreshold: number = existsSync(configPath)
+    ? (JSON.parse(readFileSync(configPath, 'utf8')) as { vitalityThreshold: number }).vitalityThreshold
+    : 40;
+
+  // Merge: seed first, then discovered (deduplicated)
+  const repos = [
+    ...seedRepos,
+    ...discoveredCandidates.filter(r => !seedSet.has(r.toLowerCase())),
+  ];
+
+  console.log(`📋  ${seedRepos.length} seed repos + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
 
   // Load previous state for revived detection
   const latestPath = resolve(ROOT, 'data/latest.json');
@@ -455,6 +478,13 @@ async function main() {
       };
 
       results.push(data);
+
+      // Seed repos always get a content file; discovered repos need vitality >= threshold
+      const isFromSeed = seedSet.has(repoStr.toLowerCase());
+      if (!isFromSeed && vitalityScore < vitalityThreshold) {
+        console.log(`    skip (vitality ${vitalityScore} < ${vitalityThreshold}, discovered)`);
+        continue;
+      }
 
       // Write content file
       const slug = slugify(raw.nameWithOwner);

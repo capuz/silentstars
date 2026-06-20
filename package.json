@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "collect": "tsx scripts/collect.ts"
+    "discover": "tsx scripts/discover.ts",
+    "collect": "tsx scripts/collect.ts",
+    "pipeline": "tsx scripts/discover.ts && tsx scripts/collect.ts"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",

@@ -3,19 +3,19 @@ interface Props { score: number; }
 const { score } = Astro.props;
 
 const band =
-  score >= 80 ? { label: 'Healthy',  cls: 'healthy',  icon: '🟢' } :
-  score >= 60 ? { label: 'Stable',   cls: 'stable',   icon: '🟡' } :
-  score >= 40 ? { label: 'Quiet',    cls: 'quiet',    icon: '🟠' } :
-                { label: 'At Risk',  cls: 'at-risk',  icon: '🔴' };
+  score >= 80 ? { label: 'Healthy',  cls: 'healthy',  icon: '█' } :
+  score >= 60 ? { label: 'Stable',   cls: 'stable',   icon: '▓' } :
+  score >= 40 ? { label: 'Quiet',    cls: 'quiet',    icon: '▒' } :
+                { label: 'At Risk',  cls: 'at-risk',  icon: '░' };
 ---
-<div class="vitality-wrap" title={`Vitality Score: ${score}/100 · ${band.label}`}>
+<div class="vitality-wrap" title={`Vitality: ${score}/100 · ${band.label}`}>
   <div class="bar-track">
     <div class={`bar-fill bar-fill--${band.cls}`} style={`width:${score}%`}></div>
   </div>
   <span class="label">
-    <span aria-hidden="true">{band.icon}</span>
-    {score}
-    <span class="band-name">· {band.label}</span>
+    <span class="icon" aria-hidden="true">{band.icon}</span>
+    <span class="score">{score}</span>
+    <span class="band-name">/ {band.label}</span>
   </span>
 </div>
 
@@ -23,30 +23,33 @@ const band =
   .vitality-wrap {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
   }
   .bar-track {
     flex: 1;
-    height: 4px;
-    background: #2a2a2a;
-    border-radius: 2px;
+    height: 3px;
+    background: #2a2535;
     overflow: hidden;
-    min-width: 60px;
+    min-width: 50px;
   }
   .bar-fill {
     height: 100%;
-    border-radius: 2px;
     transition: width 0.3s;
   }
-  .bar-fill--healthy { background: #4ade80; }
-  .bar-fill--stable  { background: #facc15; }
-  .bar-fill--quiet   { background: #fb923c; }
-  .bar-fill--at-risk { background: #f87171; }
+  .bar-fill--healthy { background: var(--thriving); }
+  .bar-fill--stable  { background: var(--quiet); }
+  .bar-fill--quiet   { background: var(--at-risk); }
+  .bar-fill--at-risk { background: #ff4d4d; }
 
   .label {
-    font-size: 0.75rem;
-    color: var(--text-muted);
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     white-space: nowrap;
   }
+  .icon { font-size: 0.5rem; }
+  .score { color: var(--text-muted); }
   .band-name { color: var(--text-dim); }
 </style>

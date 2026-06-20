@@ -3,18 +3,18 @@ type Status = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archiv
 interface Props { status: Status; }
 const { status } = Astro.props;
 
-const map: Record<Status, { label: string; emoji: string; cls: string }> = {
-  thriving:  { label: 'Thriving',  emoji: '🟢', cls: 'thriving' },
-  quiet:     { label: 'Quiet',     emoji: '🟡', cls: 'quiet' },
-  at_risk:   { label: 'At Risk',   emoji: '🟠', cls: 'at-risk' },
-  newborn:   { label: 'Newborn',   emoji: '🔵', cls: 'newborn' },
-  revived:   { label: 'Revived',   emoji: '🟣', cls: 'revived' },
-  archived:  { label: 'Archived',  emoji: '⚫', cls: 'archived' },
+const map: Record<Status, { label: string; cls: string }> = {
+  thriving:  { label: 'Thriving',  cls: 'thriving' },
+  quiet:     { label: 'Quiet',     cls: 'quiet' },
+  at_risk:   { label: 'At Risk',   cls: 'at-risk' },
+  newborn:   { label: 'Newborn',   cls: 'newborn' },
+  revived:   { label: 'Revived',   cls: 'revived' },
+  archived:  { label: 'Archived',  cls: 'archived' },
 };
-const { label, emoji, cls } = map[status];
+const { label, cls } = map[status];
 ---
 <span class={`badge badge--${cls}`} title={label}>
-  <span class="dot" aria-hidden="true">{emoji}</span>
+  <span class={`px-sprite px-sprite--${cls}`} aria-hidden="true"></span>
   {label}
 </span>
 
@@ -22,16 +22,16 @@ const { label, emoji, cls } = map[status];
   .badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.3em;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
+    gap: 0.5em;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 0.2em 0.6em;
-    border-radius: 3px;
+    padding: 0.25em 0.6em 0.25em 0.5em;
+    border-radius: 2px;
     border: 1px solid currentColor;
   }
-  .dot { font-size: 0.6rem; }
 
   .badge--thriving { color: var(--thriving); }
   .badge--quiet    { color: var(--quiet); }
@@ -39,4 +39,152 @@ const { label, emoji, cls } = map[status];
   .badge--newborn  { color: var(--newborn); }
   .badge--revived  { color: var(--revived); }
   .badge--archived { color: var(--archived); }
+
+  /* ── Pixel art sprites via CSS box-shadow ──
+     Each unit = 2px. Element is 2×2px at top-left (col 0, row 0).
+     box-shadow entries: Xpx Ypx 0 0 COLOR where X = col*2, Y = row*2.
+     The element background = col 0, row 0 if filled, else transparent.
+     All coords below are (col, row) on a 5×5 grid.
+  */
+
+  .px-sprite {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    flex-shrink: 0;
+    /* shift up so the 5-row sprite (10px tall) centers on the text cap-height */
+    margin-bottom: 2px;
+    image-rendering: pixelated;
+  }
+
+  /* THRIVING — ⚡ lightning bolt
+     . # . . .
+     . # . . .
+     # # # . .
+     . . # # .
+     . . . # .
+  */
+  .px-sprite--thriving {
+    background: transparent;
+    box-shadow:
+      2px  0px 0 0 var(--thriving),
+      2px  2px 0 0 var(--thriving),
+      0px  4px 0 0 var(--thriving),
+      2px  4px 0 0 var(--thriving),
+      4px  4px 0 0 var(--thriving),
+      4px  6px 0 0 var(--thriving),
+      6px  6px 0 0 var(--thriving),
+      6px  8px 0 0 var(--thriving);
+  }
+
+  /* QUIET — 🌙 crescent moon
+     . # # # .
+     # . . . .
+     # . . . .
+     # . . . .
+     . # # # .
+  */
+  .px-sprite--quiet {
+    background: var(--quiet); /* (0,0) */
+    box-shadow:
+      2px 0px 0 0 var(--quiet),
+      4px 0px 0 0 var(--quiet),
+      6px 0px 0 0 var(--quiet),
+      0px 2px 0 0 var(--quiet),
+      0px 4px 0 0 var(--quiet),
+      0px 6px 0 0 var(--quiet),
+      2px 8px 0 0 var(--quiet),
+      4px 8px 0 0 var(--quiet),
+      6px 8px 0 0 var(--quiet);
+  }
+
+  /* AT_RISK — ⚠️ exclamation point in diamond
+     . . # . .
+     . # . # .
+     # . # . #
+     . # . # .
+     . . # . .
+  */
+  .px-sprite--at-risk {
+    background: transparent;
+    box-shadow:
+      4px 0px 0 0 var(--at-risk),
+      2px 2px 0 0 var(--at-risk),
+      6px 2px 0 0 var(--at-risk),
+      0px 4px 0 0 var(--at-risk),
+      4px 4px 0 0 var(--at-risk),
+      8px 4px 0 0 var(--at-risk),
+      2px 6px 0 0 var(--at-risk),
+      6px 6px 0 0 var(--at-risk),
+      4px 8px 0 0 var(--at-risk);
+  }
+
+  /* NEWBORN — 🌱 sprout
+     . . # . .
+     . # # # .
+     . . # . .
+     . # . # .
+     # . . . #
+  */
+  .px-sprite--newborn {
+    background: transparent;
+    box-shadow:
+      4px 0px 0 0 var(--newborn),
+      2px 2px 0 0 var(--newborn),
+      4px 2px 0 0 var(--newborn),
+      6px 2px 0 0 var(--newborn),
+      4px 4px 0 0 var(--newborn),
+      2px 6px 0 0 var(--newborn),
+      6px 6px 0 0 var(--newborn),
+      0px 8px 0 0 var(--newborn),
+      8px 8px 0 0 var(--newborn);
+  }
+
+  /* REVIVED — ✦ four-pointed star
+     . . # . .
+     . . # . .
+     # # # # #
+     . . # . .
+     . . # . .
+  */
+  .px-sprite--revived {
+    background: transparent;
+    box-shadow:
+      4px 0px 0 0 var(--revived),
+      4px 2px 0 0 var(--revived),
+      0px 4px 0 0 var(--revived),
+      2px 4px 0 0 var(--revived),
+      4px 4px 0 0 var(--revived),
+      6px 4px 0 0 var(--revived),
+      8px 4px 0 0 var(--revived),
+      4px 6px 0 0 var(--revived),
+      4px 8px 0 0 var(--revived);
+  }
+
+  /* ARCHIVED — □ broken/closed box
+     # # # # #
+     # . . . #
+     # . . . #
+     # . . . #
+     # # # # #
+  */
+  .px-sprite--archived {
+    background: var(--archived); /* (0,0) */
+    box-shadow:
+      2px 0px 0 0 var(--archived),
+      4px 0px 0 0 var(--archived),
+      6px 0px 0 0 var(--archived),
+      8px 0px 0 0 var(--archived),
+      0px 2px 0 0 var(--archived),
+      8px 2px 0 0 var(--archived),
+      0px 4px 0 0 var(--archived),
+      8px 4px 0 0 var(--archived),
+      0px 6px 0 0 var(--archived),
+      8px 6px 0 0 var(--archived),
+      0px 8px 0 0 var(--archived),
+      2px 8px 0 0 var(--archived),
+      4px 8px 0 0 var(--archived),
+      6px 8px 0 0 var(--archived),
+      8px 8px 0 0 var(--archived);
+  }
 </style>

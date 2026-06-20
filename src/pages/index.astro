@@ -19,37 +19,37 @@ const base = import.meta.env.BASE_URL;
 <Base title="Home">
   <section class="hero">
     <div class="container">
-      <p class="eyebrow">Open source is more than stars</p>
+      <p class="eyebrow">// open source is more than stars</p>
       <h1 class="headline">
-        Not famous.<br />
-        Not abandoned.<br />
-        <em>Just building.</em>
+        <span class="hl-line">Not famous.</span>
+        <span class="hl-line">Not abandoned.</span>
+        <span class="hl-line hl-accent">Just building.</span>
       </h1>
       <p class="tagline">
-        A directory of open source projects that are <strong>alive but invisible</strong> —
-        newborns finding their feet, solo builders shipping in silence, and projects
-        that came back from the edge. No vanity metrics. Ranked by how much they deserve
-        to be seen.
+        A directory of projects that are <strong>alive but invisible</strong> —
+        newborns finding their feet, solo builders shipping in silence, and
+        projects that came back from the edge.
+        <br />No vanity metrics. Ranked by how much they deserve to be seen.
       </p>
       <div class="hero-actions">
         <a href={`${base}projects`} class="btn-primary">Browse the directory</a>
-        <a href={`${base}at-risk`} class="btn-ghost">Projects at risk →</a>
+        <a href={`${base}at-risk`} class="btn-ghost">At risk projects →</a>
       </div>
+      <p class="hero-stat">
+        <span class="stat-num">{visible.length}</span> projects tracked
+      </p>
     </div>
   </section>
 
   {thriving.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2>Thriving Now</h2>
+        <h2><span class="mono-prefix">//</span> Thriving Now</h2>
         <p>Active projects shipping code — ranked by how undervalued they are.</p>
       </div>
       <div class="grid">
         {thriving.map(p => (
-          <ProjectCard
-            slug={p.slug}
-            {...p.data}
-          />
+          <ProjectCard slug={p.slug} {...p.data} />
         ))}
       </div>
     </section>
@@ -58,23 +58,20 @@ const base = import.meta.env.BASE_URL;
   {hiddenGems.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2>Hidden Gems 💎</h2>
+        <h2><span class="mono-prefix">//</span> Hidden Gems</h2>
         <p>Under 100 stars. Recent activity. Genuine craft. Look closer.</p>
       </div>
       <div class="grid">
         {hiddenGems.map(p => (
-          <ProjectCard
-            slug={p.slug}
-            {...p.data}
-          />
+          <ProjectCard slug={p.slug} {...p.data} />
         ))}
       </div>
     </section>
   )}
 
   <section class="section container cta-section">
-    <p>Discover all <strong>{visible.length}</strong> projects — filtered by state, sorted by attention gap.</p>
-    <a href={`${base}projects`} class="btn-primary">Open the directory</a>
+    <p class="cta-text">→ see all {visible.length} projects in the directory</p>
+    <a href={`${base}projects`} class="btn-primary">Open directory</a>
   </section>
 </Base>
 
@@ -85,74 +82,99 @@ const base = import.meta.env.BASE_URL;
     border-bottom: 1px solid var(--border);
   }
   .eyebrow {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
     color: var(--text-dim);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .headline {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    margin-bottom: 1.75rem;
+    letter-spacing: -0.03em;
   }
-  .headline em {
-    font-style: italic;
-    color: var(--text-muted);
-  }
+  .hl-line { display: block; }
+  .hl-accent { color: var(--revived); }
+
   .tagline {
-    max-width: 560px;
+    max-width: 520px;
     color: var(--text-muted);
-    line-height: 1.7;
+    font-size: 0.925rem;
+    line-height: 1.75;
     margin-bottom: 2rem;
   }
+  .tagline strong { color: var(--text); font-weight: 500; }
+
   .hero-actions {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 2rem;
   }
   .btn-primary {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     background: var(--text);
     color: var(--bg);
     padding: 0.6em 1.4em;
     border-radius: var(--radius);
-    font-weight: 600;
-    font-size: 0.9rem;
     transition: opacity 0.15s;
   }
   .btn-primary:hover { opacity: 0.85; text-decoration: none; }
   .btn-ghost {
-    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--text-muted);
     transition: color 0.15s;
+    letter-spacing: 0.02em;
   }
   .btn-ghost:hover { color: var(--text); text-decoration: none; }
 
-  /* Sections */
-  .section-header {
-    margin-bottom: 1.75rem;
+  .hero-stat {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.06em;
   }
-  .section-header h2 { font-size: 1.5rem; margin-bottom: 0.4rem; }
-  .section-header p { font-size: 0.875rem; color: var(--text-muted); }
+  .stat-num { color: var(--thriving); font-weight: 700; }
+
+  /* Sections */
+  .section-header { margin-bottom: 1.75rem; }
+  .section-header h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.01em;
+  }
+  .mono-prefix { color: var(--text-dim); }
+  .section-header p { font-size: 0.85rem; color: var(--text-muted); }
 
   /* Grid */
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.875rem;
   }
 
   /* CTA */
   .cta-section {
-    text-align: center;
     border-top: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
+    align-items: flex-start;
+    gap: 1rem;
   }
-  .cta-section p { color: var(--text-muted); }
+  .cta-text {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
 </style>

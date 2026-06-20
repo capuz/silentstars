@@ -14,12 +14,12 @@ const atRisk = all
 >
   <div class="container section">
     <header class="page-header">
-      <span class="eyebrow">🟠 At Risk</span>
+      <p class="eyebrow">// at_risk</p>
       <h1>Projects on the edge</h1>
       <p class="lead">
         These projects haven't seen a commit in months — but they're not abandoned.
-        Open issues, open PRs, a maintainer who got busy with life. They just need
-        someone to show up.
+        Open issues, open PRs, a maintainer who got busy with life.
+        They just need someone to show up.
       </p>
       <p class="lead">
         No drama. No obituary. This is an invitation: pick one, open a PR,
@@ -28,10 +28,10 @@ const atRisk = all
     </header>
 
     {atRisk.length === 0 ? (
-      <p class="empty">No projects currently at risk. That's a good sign.</p>
+      <p class="empty">// no projects currently at risk. good sign.</p>
     ) : (
       <>
-        <p class="count">{atRisk.length} project{atRisk.length > 1 ? 's' : ''} waiting</p>
+        <p class="count">// {atRisk.length} project{atRisk.length > 1 ? 's' : ''} waiting</p>
         <div class="grid">
           {atRisk.map(p => (
             <ProjectCard slug={p.slug} {...p.data} />
@@ -41,66 +41,83 @@ const atRisk = all
     )}
 
     <div class="cta-box">
-      <h2>How to help</h2>
+      <p class="cta-label">// how to help</p>
       <ol>
         <li>Find a project that matches your skills.</li>
         <li>Read the open issues — pick one labeled <code>good first issue</code> or <code>help wanted</code>.</li>
         <li>Leave a thoughtful comment or open a PR.</li>
         <li>If the maintainer is gone, ask about co-maintenance.</li>
       </ol>
-      <p>Sometimes all it takes is one person showing up.</p>
+      <p class="cta-close">Sometimes all it takes is one person showing up.</p>
     </div>
   </div>
 </Base>
 
 <style>
   .eyebrow {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--at-risk);
     margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
   }
-  .page-header { max-width: 680px; margin-bottom: 3rem; }
-  .page-header h1 { font-size: 2rem; margin-bottom: 1rem; }
+  .page-header { max-width: 660px; margin-bottom: 3rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
   .lead {
     color: var(--text-muted);
-    line-height: 1.7;
+    line-height: 1.75;
     margin-bottom: 0.75rem;
+    font-size: 0.925rem;
   }
   .count {
-    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     color: var(--text-dim);
     margin-bottom: 1.5rem;
+    letter-spacing: 0.04em;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.875rem;
     margin-bottom: 3rem;
   }
-  .empty { color: var(--text-dim); font-size: 0.9rem; }
+  .empty {
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+    letter-spacing: 0.04em;
+  }
 
   .cta-box {
     border: 1px solid var(--border);
+    border-left: 2px solid var(--at-risk);
     border-radius: var(--radius);
-    padding: 2rem;
-    max-width: 560px;
+    padding: 1.5rem;
+    max-width: 520px;
     background: var(--bg-card);
   }
-  .cta-box h2 { font-size: 1.25rem; margin-bottom: 1rem; }
+  .cta-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--at-risk);
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+  }
   .cta-box ol {
     padding-left: 1.25rem;
     color: var(--text-muted);
-    line-height: 1.8;
+    line-height: 1.9;
     margin-bottom: 1rem;
+    font-size: 0.875rem;
   }
-  .cta-box p { color: var(--text-muted); font-size: 0.875rem; }
+  .cta-close { color: var(--text-muted); font-size: 0.875rem; font-style: italic; }
   .cta-box code {
-    background: #1e1e1e;
+    font-family: var(--font-mono);
+    background: #1e1b27;
     padding: 0.1em 0.35em;
-    border-radius: 3px;
+    border-radius: 2px;
     font-size: 0.85em;
   }
 </style>
