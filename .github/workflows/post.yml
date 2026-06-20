@@ -7,6 +7,7 @@ jobs:
   post:
     name: Post daily highlight
     runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
     steps:
       - uses: actions/checkout@v4
         with:

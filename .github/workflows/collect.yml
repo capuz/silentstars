@@ -109,6 +109,7 @@ jobs:
     name: Post daily highlight
     runs-on: ubuntu-latest
     needs: [deploy]
+    environment: BSKY_IDENTIFIER
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout
