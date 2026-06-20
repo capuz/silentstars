@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
 import VitalityBar from '../../components/VitalityBar.astro';
+import LanguageIcon from '../../components/LanguageIcon.astro';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -52,7 +53,12 @@ const base = import.meta.env.BASE_URL;
     <header class="proj-header">
       <div class="proj-title-row">
         <h1 class="proj-name">{d.name}</h1>
-        {d.language && <span class="lang">{d.language}</span>}
+        {d.language && (
+          <span class="lang-row">
+            <LanguageIcon language={d.language} size={16} />
+            <span class="lang-text">{d.language}</span>
+          </span>
+        )}
       </div>
       <p class="proj-repo">
         <a href={d.url} target="_blank" rel="noopener">{d.repo}</a>
@@ -179,13 +185,18 @@ const base = import.meta.env.BASE_URL;
     font-size: 1.75rem;
     letter-spacing: -0.02em;
   }
-  .lang {
+  .lang-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 0.15em 0.5em;
+  }
+  .lang-text {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     color: var(--text-dim);
-    border: 1px solid var(--border);
-    padding: 0.15em 0.5em;
-    border-radius: 2px;
   }
   .proj-repo {
     font-family: var(--font-mono);
@@ -284,7 +295,7 @@ const base = import.meta.env.BASE_URL;
     border-left: 2px solid var(--revived);
     padding: 0.4em 0.75em;
     margin: 0;
-    background: rgba(199, 125, 255, 0.06);
+    background: rgba(124, 58, 237, 0.07);
   }
 
   /* Prose */
@@ -303,14 +314,14 @@ const base = import.meta.env.BASE_URL;
   }
   .prose :global(code) {
     font-family: var(--font-mono);
-    background: #1e1b27;
+    background: var(--bg-code);
     padding: 0.1em 0.4em;
     border-radius: 2px;
     font-size: 0.85em;
     color: var(--text);
   }
   .prose :global(pre) {
-    background: #1e1b27;
+    background: var(--bg-code);
     padding: 1rem;
     border-radius: var(--radius);
     overflow-x: auto;

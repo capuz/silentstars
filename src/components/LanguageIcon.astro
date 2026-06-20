@@ -1,0 +1,83 @@
+---
+interface Props {
+  language?: string;
+  size?: number;
+}
+
+const { language, size = 18 } = Astro.props;
+
+const deviconMap: Record<string, string> = {
+  TypeScript:  'typescript',
+  JavaScript:  'javascript',
+  Python:      'python',
+  Go:          'go',
+  Rust:        'rust',
+  Ruby:        'ruby',
+  Java:        'java',
+  Kotlin:      'kotlin',
+  Swift:       'swift',
+  C:           'c',
+  'C++':       'cplusplus',
+  'C#':        'csharp',
+  PHP:         'php',
+  Dart:        'dart',
+  Scala:       'scala',
+  Haskell:     'haskell',
+  Lua:         'lua',
+  Elixir:      'elixir',
+  Zig:         'zig',
+  Shell:       'bash',
+  HTML:        'html5',
+  CSS:         'css3',
+  Vue:         'vuejs',
+  Svelte:      'svelte',
+  Clojure:     'clojure',
+  Julia:       'julia',
+  Nim:         'nim',
+};
+
+const slug = language ? deviconMap[language] : undefined;
+const src = slug
+  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${slug}/${slug}-original.svg`
+  : null;
+---
+{src ? (
+  <img
+    class="lang-icon"
+    src={src}
+    width={size}
+    height={size}
+    alt={language}
+    title={language}
+    onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"
+  />
+) : null}
+<span
+  class="lang-fallback"
+  style={src ? 'display:none' : ''}
+  title={language ?? ''}
+>
+  {language ? language.slice(0, 2).toUpperCase() : '</>'}
+</span>
+
+<style>
+  .lang-icon {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+  .lang-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.5rem;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+  }
+</style>
