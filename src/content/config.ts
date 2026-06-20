@@ -15,6 +15,7 @@ const projects = defineCollection({
     language: z.string().optional(),
     languages: z.array(z.string()).default([]),
     languagePcts: z.array(z.number()).default([]),
+    topics: z.array(z.string()).default([]),
 
     // GitHub metrics
     stars: z.number().int().nonnegative(),

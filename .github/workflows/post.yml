@@ -2,6 +2,11 @@ name: Post to Bluesky
 
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — log post without sending to Bluesky"
+        type: boolean
+        default: true
 
 jobs:
   post:
@@ -25,3 +30,4 @@ jobs:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           BASE_URL:          https://capuz.github.io/silentstars
+          DRY_RUN:           ${{ inputs.dry_run }}
