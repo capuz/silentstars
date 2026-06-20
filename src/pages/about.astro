@@ -1,0 +1,167 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="About"
+  description="SilentStars tracks open source projects that are actively built but chronically undervalued. No hype. Just signal."
+>
+  <div class="container section">
+
+    <div class="about-hero">
+      <p class="eyebrow">// what is this</p>
+      <h1>The quiet part of open source</h1>
+      <p class="lead">
+        GitHub Trending shows you what's popular. SilentStars shows you what's <em>worth watching</em>.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <section class="about-card">
+        <h2>// the problem</h2>
+        <p>
+          Stars are a popularity signal, not a quality signal. A project can have 12 stars and ship daily.
+          Another can have 50k stars and be effectively abandoned. GitHub Trending, Hacker News, and most
+          discovery tools reward hype — not craft.
+        </p>
+        <p>
+          Thousands of maintainers build quietly: consistent commits, closed issues, steady releases.
+          No launch. No Product Hunt. No Twitter thread. Just code.
+        </p>
+      </section>
+
+      <section class="about-card">
+        <h2>// how it works</h2>
+        <p>
+          Every night, SilentStars collects data from GitHub and computes two scores per project:
+        </p>
+        <ul>
+          <li><strong>Undervalued Score</strong> — activity divided by visibility. High commits, low stars = undervalued.</li>
+          <li><strong>Health Score</strong> — weighted combination of commit cadence, issue resolution, releases, and community signals.</li>
+        </ul>
+        <p>
+          Projects are then classified: <em>Thriving</em>, <em>Newborn</em>, <em>Quiet</em>, <em>Watched</em>, <em>Revived</em>.
+          No editorial bias. Pure signal.
+        </p>
+        <a href={`${base}projects/`} class="about-link">→ See all projects</a>
+      </section>
+
+      <section class="about-card">
+        <h2>// who runs this</h2>
+        <p>
+          SilentStars is built and maintained by <a href="https://github.com/capuz" target="_blank" rel="noopener">capuz</a>.
+          It runs on GitHub Pages with zero backend — nightly GitHub Actions collect data, Astro builds the static site.
+        </p>
+        <p>
+          The Bluesky bot <a href="https://bsky.app/profile/opnbuild.bsky.social" target="_blank" rel="noopener">@opnbuild.bsky.social</a>
+          posts one undervalued project daily.
+        </p>
+        <p>
+          If SilentStars surfaces a project that changes how you work or think about open source, consider
+          <a href="https://www.paypal.com/paypalme/fcapuz" target="_blank" rel="noopener">supporting it</a>.
+          Coste: $0. Sin backend. Puro amor.
+        </p>
+      </section>
+
+      <section class="about-card">
+        <h2>// contribute</h2>
+        <p>
+          Know a project that deserves to be tracked? Submit it — projects are reviewed and added manually within 48h.
+        </p>
+        <a href={`${base}submit/`} class="btn-submit">Submit a project →</a>
+      </section>
+
+    </div>
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+  .about-hero {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2rem;
+  }
+  .about-hero h1 {
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.75rem;
+  }
+  .lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 55ch;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: 1.25rem;
+  }
+  @media (max-width: 520px) { .about-grid { grid-template-columns: 1fr; } }
+
+  .about-card {
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: 2px 2px 0 var(--shadow);
+    padding: 24px 28px;
+  }
+  .about-card h2 {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+  }
+  .about-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 0.85rem;
+  }
+  .about-card ul {
+    padding-left: 1.1rem;
+    margin-bottom: 0.85rem;
+  }
+  .about-card li {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+  .about-card strong { color: var(--ink); }
+  .about-card em { color: var(--accent); font-style: normal; font-weight: 600; }
+  .about-card a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+  .about-link {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent) !important;
+  }
+
+  .btn-submit {
+    display: inline-block;
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper) !important;
+    text-decoration: none !important;
+    transition: opacity .12s;
+  }
+  .btn-submit:hover { opacity: .8; }
+</style>

@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=submit-project.yml';
+---
+<Base
+  title="Submit a project"
+  description="Know an open source project that deserves more attention? Submit it to SilentStars."
+>
+  <div class="container section">
+
+    <div class="submit-hero">
+      <p class="eyebrow">// curated signal</p>
+      <h1>Submit a project</h1>
+      <p class="lead">
+        Know something that's actively built but flying under the radar?
+        Submit it — we review and add projects manually within 48h.
+      </p>
+    </div>
+
+    <div class="submit-grid">
+
+      <div class="criteria-card">
+        <h2>// what we look for</h2>
+        <ul>
+          <li><span class="check">✓</span> Commits in the last 90 days</li>
+          <li><span class="check">✓</span> Real code, not just a README</li>
+          <li><span class="check">✓</span> Under 5k stars (probably undervalued)</li>
+          <li><span class="check">✓</span> Open issues being responded to</li>
+          <li><span class="x">✗</span> No abandonware</li>
+          <li><span class="x">✗</span> No viral repos already trending</li>
+          <li><span class="x">✗</span> No self-promotion without substance</li>
+        </ul>
+      </div>
+
+      <div class="cta-card">
+        <h2>// ready?</h2>
+        <p>
+          Open a GitHub issue with the repo link and a short note on why it deserves to be tracked.
+          That's it.
+        </p>
+        <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-submit">
+          Open submission issue ↗
+        </a>
+        <p class="note">
+          You'll need a GitHub account. Submissions are reviewed by the maintainer — not automated.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    font-family: var(--f-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 0.5rem;
+  }
+  .submit-hero {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2rem;
+  }
+  .submit-hero h1 {
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.75rem;
+  }
+  .lead {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 52ch;
+  }
+
+  .submit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+  @media (max-width: 640px) { .submit-grid { grid-template-columns: 1fr; } }
+
+  .criteria-card, .cta-card {
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: 2px 2px 0 var(--shadow);
+    padding: 24px 28px;
+  }
+  .criteria-card h2, .cta-card h2 {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+  }
+  .criteria-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .criteria-card li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+  .check { color: #1f9d55; font-weight: 700; font-size: 1rem; }
+  .x     { color: #d8392b; font-weight: 700; font-size: 1rem; }
+
+  .cta-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+  }
+  .btn-submit {
+    display: inline-block;
+    font-family: var(--f-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    transition: opacity .12s;
+    margin-bottom: 1rem;
+  }
+  .btn-submit:hover { opacity: .8; text-decoration: none; }
+  .note {
+    font-family: var(--f-mono);
+    font-size: 0.65rem !important;
+    color: var(--text-dim) !important;
+    margin-bottom: 0 !important;
+  }
+</style>

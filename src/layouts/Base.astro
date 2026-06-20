@@ -5,9 +5,12 @@ import MetricsFAQ from '../components/MetricsFAQ.astro';
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
 }
-const { title, description = 'Not famous. Not abandoned. Just building.' } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const { title, description = 'Not famous. Not abandoned. Just building.', ogImage } = Astro.props;
+const base   = import.meta.env.BASE_URL;
+const ogUrl  = ogImage ?? new URL(`${base}og/index.png`, Astro.site).href;
+const pageUrl = Astro.url.href;
 ---
 <!doctype html>
 <html lang="en">
@@ -16,9 +19,17 @@ const base = import.meta.env.BASE_URL;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title === 'SilentStars' ? title : `${title} · SilentStars`}</title>
     <meta name="description" content={description} />
-    <meta property="og:title" content={`${title} · SilentStars`} />
+    <meta property="og:title"       content={`${title} · SilentStars`} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content={pageUrl} />
+    <meta property="og:image"       content={ogUrl} />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content={`${title} · SilentStars`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image"       content={ogUrl} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="alternate" type="application/rss+xml" title="SilentStars" href={`${base}rss.xml`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,8 +60,8 @@ const base = import.meta.env.BASE_URL;
         </a>
         <div class="ss-nav-links">
           <a href={`${base}projects/`} class="ss-nav-link">Directory</a>
-          <a href={`${base}at-risk/`} class="ss-nav-link">At Risk</a>
-          <a href={`${base}resurrections/`} class="ss-nav-link">Resurrections</a>
+          <a href={`${base}about/`} class="ss-nav-link">About</a>
+          <a href={`${base}submit/`} class="ss-nav-link ss-nav-submit">Submit ↗</a>
           <a href={`${base}rss.xml`} class="ss-nav-link" style="opacity:.6;">RSS</a>
           <button id="ss-theme-btn" class="ss-theme-btn">◐ Night</button>
         </div>
@@ -77,6 +88,8 @@ const base = import.meta.env.BASE_URL;
       </footer>
 
     </div>
+    <!-- Cloudflare Web Analytics — replace token when ready -->
+    <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"REPLACE_WITH_YOUR_TOKEN"}'></script> -->
   </body>
 </html>
 
@@ -165,6 +178,12 @@ const base = import.meta.env.BASE_URL;
     color: #fff;
     text-decoration: none;
   }
+  .ss-nav-submit {
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    padding: 4px 12px;
+  }
+  .ss-nav-submit:hover { background: var(--ink); color: var(--paper); }
 
   .ss-theme-btn {
     margin-left: 6px;

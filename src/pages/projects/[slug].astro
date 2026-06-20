@@ -90,9 +90,10 @@ const tagLabels: Record<string, string> = {
   community_watch:    'community watch',
 };
 
-const base = import.meta.env.BASE_URL;
+const base    = import.meta.env.BASE_URL;
+const ogImage = new URL(`${base}og/${project.slug}.png`, Astro.site).href;
 ---
-<Base title={d.name} description={d.description}>
+<Base title={d.name} description={d.description} ogImage={ogImage}>
   <div class="container section">
 
     <nav class="breadcrumb">
