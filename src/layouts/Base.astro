@@ -18,6 +18,7 @@ const pageUrl = Astro.url.href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title === 'SilentStars' ? title : `${title} · SilentStars`}</title>
+    <link rel="canonical" href={pageUrl} />
     <meta name="description" content={description} />
     <meta property="og:title"       content={`${title} · SilentStars`} />
     <meta property="og:description" content={description} />
@@ -32,6 +33,7 @@ const pageUrl = Astro.url.href;
     <meta name="twitter:image"       content={ogUrl} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="alternate" type="application/rss+xml" title="SilentStars" href={`${base}rss.xml`} />
+    <link rel="sitemap" type="application/xml" href={`${base}sitemap.xml`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
