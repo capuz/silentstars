@@ -27,7 +27,7 @@ interface Props {
 const {
   slug, name, description, repo, url, status, tags,
   vitalityScore, attentionGap, stars, language, lastCommitAt,
-  maintainers,
+  maintainers, createdAt,
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
@@ -84,6 +84,10 @@ const { color: healthColor, label: healthLabel } = healthMeta(vitalityScore);
 // ── Meta ───────────────────────────────────────────────────
 const daysSince = Math.floor((Date.now() - new Date(lastCommitAt).getTime()) / 86_400_000);
 const age = daysSince === 0 ? 'today' : daysSince === 1 ? '1d ago' : `${daysSince}d ago`;
+
+const since = createdAt
+  ? new Date(createdAt).toLocaleDateString('en', { month: 'short', year: 'numeric' })
+  : null;
 
 const author    = maintainers[0] ?? repo.split('/')[0];
 const authorUrl = `https://github.com/${author}`;
@@ -154,6 +158,12 @@ const tagLabels: Record<string, string> = {
   <!-- footer -->
   <div class="card-footer">
     <span class="footer-meta">
+      {since && (
+        <>
+          <span class="meta-since">since {since}</span>
+          <span class="meta-dot" aria-hidden="true">·</span>
+        </>
+      )}
       <span class="meta-age">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3 2"/></svg>
         {age}
@@ -350,6 +360,7 @@ const tagLabels: Record<string, string> = {
     align-items: center;
     gap: 4px;
   }
+  .meta-since { color: var(--muted); }
   .meta-dot { opacity: .45; }
   .meta-author {
     display: inline-flex;
