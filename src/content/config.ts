@@ -1,7 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 
-const VitalStatus = z.enum(['thriving', 'quiet', 'at_risk', 'newborn', 'revived', 'archived']);
-const Tag = z.enum(['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero']);
+const VitalStatus = z.enum(['thriving', 'quiet', 'at_risk', 'newborn', 'revived', 'archived', 'watched']);
+const Tag = z.enum(['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero', 'community_watch']);
 
 const projects = defineCollection({
   type: 'content',
@@ -18,6 +18,10 @@ const projects = defineCollection({
     stars: z.number().int().nonnegative(),
     forks: z.number().int().nonnegative(),
     openIssues: z.number().int().nonnegative(),
+    closedIssues: z.number().int().nonnegative().default(0),
+    watchers: z.number().int().nonnegative().default(0),
+    contributors: z.number().int().nonnegative().default(0),
+    recentReleases: z.number().int().nonnegative().default(0),
 
     // Dates (ISO strings)
     createdAt: z.string(),
@@ -31,8 +35,8 @@ const projects = defineCollection({
     tags: z.array(Tag).default([]),
 
     // Scores
-    vitalityScore: z.number().min(0).max(100),
-    attentionGap: z.number().nonnegative(),
+    healthScore: z.number().min(0).max(100),
+    undervaluedScore: z.number().nonnegative(),
 
     // People
     maintainers: z.array(z.string()).default([]),

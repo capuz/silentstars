@@ -6,14 +6,18 @@ url: "https://github.com/vouch-protocol/vouch"
 language: "Python"
 stars: 27
 forks: 13
-openIssues: 29
+openIssues: 27
+closedIssues: 17
+watchers: 1
+contributors: 7
+recentReleases: 1
 createdAt: "2025-11-30T15:09:55Z"
-lastCommitAt: "2026-06-20T05:10:02Z"
+lastCommitAt: "2026-06-20T14:04:03Z"
 lastReleaseAt: "2026-06-07T17:56:50Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-vitalityScore: 93
-attentionGap: 59.3
+healthScore: 87
+undervaluedScore: 49
 maintainers: ["rampyg", "github-actions[bot]", "dependabot[bot]"]
 ---
 

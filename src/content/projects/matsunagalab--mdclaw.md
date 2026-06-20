@@ -7,12 +7,16 @@ language: "Python"
 stars: 6
 forks: 1
 openIssues: 0
+closedIssues: 0
+watchers: 1
+contributors: 5
+recentReleases: 0
 createdAt: "2025-10-18T08:46:40Z"
-lastCommitAt: "2026-06-20T05:04:34Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T12:52:24Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 85
-attentionGap: 70.6
+healthScore: 89
+undervaluedScore: 61
 maintainers: ["ymatsunaga"]
 ---
 

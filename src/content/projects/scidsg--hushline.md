@@ -8,13 +8,17 @@ language: "Python"
 stars: 130
 forks: 24
 openIssues: 2
+closedIssues: 568
+watchers: 2
+contributors: 15
+recentReleases: 0
 createdAt: "2023-03-28T01:06:05Z"
 lastCommitAt: "2026-06-20T05:08:14Z"
-lastReleaseAt: "2026-06-20T00:38:55Z"
+lastReleaseAt: "2024-07-22T19:13:59Z"
 status: "thriving"
 tags: ["needs_contributors"]
-vitalityScore: 90
-attentionGap: 41.9
+healthScore: 100
+undervaluedScore: 39
 maintainers: ["glenn-sorrentino", "hushline-dev", "dependabot[bot]"]
 ---
 

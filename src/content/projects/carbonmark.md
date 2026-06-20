@@ -7,13 +7,17 @@ language: "Go"
 stars: 34
 forks: 4
 openIssues: 6
+closedIssues: 0
+watchers: 0
+contributors: 0
+recentReleases: 0
 createdAt: "2024-01-17T11:00:00Z"
 lastCommitAt: "2026-06-17T09:15:00Z"
 lastReleaseAt: "2026-06-10T08:00:00Z"
 status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 91
-attentionGap: 59.6
+healthScore: 91
+undervaluedScore: 59.6
 maintainers: ["amara-diallo"]
 ---
 

@@ -8,12 +8,16 @@ language: "TypeScript"
 stars: 60
 forks: 8
 openIssues: 1
+closedIssues: 1
+watchers: 1
+contributors: 1
+recentReleases: 0
 createdAt: "2025-12-24T14:54:18Z"
-lastCommitAt: "2026-06-20T05:09:11Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T13:52:53Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 72
-attentionGap: 39
+healthScore: 80
+undervaluedScore: 41
 maintainers: ["github-actions[bot]"]
 ---
 

@@ -8,7 +8,7 @@ const band =
   score >= 40 ? { label: 'Quiet',    cls: 'quiet',    icon: '▒' } :
                 { label: 'At Risk',  cls: 'at-risk',  icon: '░' };
 ---
-<div class="vitality-wrap" title={`Vitality: ${score}/100 · ${band.label}`}>
+<div class="vitality-wrap" title={`Health: ${score}/100 · ${band.label}`}>
   <div class="bar-track">
     <div class={`bar-fill bar-fill--${band.cls}`} style={`width:${score}%`}></div>
   </div>

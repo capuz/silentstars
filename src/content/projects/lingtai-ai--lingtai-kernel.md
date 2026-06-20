@@ -6,14 +6,18 @@ url: "https://github.com/Lingtai-AI/lingtai-kernel"
 language: "Python"
 stars: 5
 forks: 7
-openIssues: 24
+openIssues: 26
+closedIssues: 61
+watchers: 0
+contributors: 4
+recentReleases: 10
 createdAt: "2026-03-19T22:53:38Z"
-lastCommitAt: "2026-06-20T05:08:47Z"
-lastReleaseAt: "2026-06-20T01:04:22Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T10:20:35Z"
+lastReleaseAt: "2026-05-02T09:46:28Z"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 96
-attentionGap: 81.6
+healthScore: 91
+undervaluedScore: 80
 maintainers: ["huangzesen"]
 ---
 

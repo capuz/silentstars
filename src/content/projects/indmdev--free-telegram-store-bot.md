@@ -8,12 +8,16 @@ language: "Python"
 stars: 121
 forks: 60
 openIssues: 6
+closedIssues: 3
+watchers: 3
+contributors: 1
+recentReleases: 0
 createdAt: "2024-04-14T06:36:33Z"
-lastCommitAt: "2026-06-20T05:09:20Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T14:10:03Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 70
-attentionGap: 33.1
+healthScore: 67
+undervaluedScore: 34
 maintainers: ["indmdev"]
 ---
 

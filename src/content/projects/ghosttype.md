@@ -7,13 +7,17 @@ language: "TypeScript"
 stars: 156
 forks: 19
 openIssues: 8
+closedIssues: 0
+watchers: 0
+contributors: 0
+recentReleases: 0
 createdAt: "2018-09-05T07:00:00Z"
 lastCommitAt: "2026-06-01T14:00:00Z"
 lastReleaseAt: "2026-05-20T10:00:00Z"
 status: "thriving"
 tags: ["legacy_hero", "needs_contributors"]
-vitalityScore: 79
-attentionGap: 35.8
+healthScore: 79
+undervaluedScore: 35.8
 maintainers: ["tomasz-wiśniewski"]
 ---
 

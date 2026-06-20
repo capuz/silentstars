@@ -7,13 +7,17 @@ homepage: "https://mergeship.vercel.app"
 language: "TypeScript"
 stars: 14
 forks: 77
-openIssues: 38
+openIssues: 36
+closedIssues: 110
+watchers: 0
+contributors: 59
+recentReleases: 0
 createdAt: "2026-03-27T07:03:56Z"
-lastCommitAt: "2026-06-20T05:03:49Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T05:51:02Z"
+status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-vitalityScore: 95
-attentionGap: 68.8
+healthScore: 92
+undervaluedScore: 58
 maintainers: ["yush-1018", "diksha78dev", "Sujini-kudupudi"]
 ---
 

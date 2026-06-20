@@ -7,12 +7,16 @@ language: "Python"
 stars: 6
 forks: 1
 openIssues: 0
+closedIssues: 0
+watchers: 1
+contributors: 2
+recentReleases: 0
 createdAt: "2026-02-19T10:23:03Z"
 lastCommitAt: "2026-06-20T05:06:01Z"
-status: "quiet"
+status: "thriving"
 tags: []
-vitalityScore: 49
-attentionGap: 40.7
+healthScore: 63
+undervaluedScore: 61
 maintainers: ["claude", "giadaf-boosha"]
 ---
 

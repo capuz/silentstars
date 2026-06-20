@@ -7,12 +7,16 @@ language: "Python"
 stars: 15
 forks: 1
 openIssues: 1
+closedIssues: 0
+watchers: 4
+contributors: 5
+recentReleases: 0
 createdAt: "2023-11-23T11:34:09Z"
 lastCommitAt: "2026-06-20T04:59:02Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 65
-attentionGap: 46.5
+healthScore: 70
+undervaluedScore: 44
 maintainers: ["sadamov"]
 ---
 

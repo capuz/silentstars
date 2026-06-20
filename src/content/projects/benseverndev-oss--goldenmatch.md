@@ -8,13 +8,17 @@ language: "Python"
 stars: 117
 forks: 11
 openIssues: 44
+closedIssues: 102
+watchers: 2
+contributors: 5
+recentReleases: 9
 createdAt: "2026-03-16T20:13:08Z"
-lastCommitAt: "2026-06-20T04:47:13Z"
-lastReleaseAt: "2026-06-19T11:06:34Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T13:31:59Z"
+lastReleaseAt: "2026-03-25T19:12:41Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 99
-attentionGap: 47.1
+healthScore: 94
+undervaluedScore: 45
 maintainers: ["benzsevern", "dependabot[bot]"]
 ---
 

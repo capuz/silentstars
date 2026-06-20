@@ -7,13 +7,17 @@ language: "TypeScript"
 stars: 10
 forks: 7
 openIssues: 4
+closedIssues: 18
+watchers: 13
+contributors: 23
+recentReleases: 0
 createdAt: "2017-01-24T09:05:12Z"
-lastCommitAt: "2026-06-20T05:06:27Z"
-lastReleaseAt: "2026-04-02T03:10:39Z"
+lastCommitAt: "2026-06-20T08:39:40Z"
+lastReleaseAt: "2018-08-08T05:46:08Z"
 status: "thriving"
-tags: ["hidden_gem", "legacy_hero"]
-vitalityScore: 63
-attentionGap: 48.4
+tags: ["hidden_gem", "legacy_hero", "community_watch"]
+healthScore: 91
+undervaluedScore: 54
 maintainers: ["ShinobuTakahashi", "yu-ogi", "renovate[bot]"]
 ---
 

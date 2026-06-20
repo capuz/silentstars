@@ -7,14 +7,18 @@ homepage: "https://chmonitor.dev"
 language: "TypeScript"
 stars: 243
 forks: 39
-openIssues: 11
+openIssues: 9
+closedIssues: 83
+watchers: 2
+contributors: 6
+recentReleases: 0
 createdAt: "2023-11-16T13:18:24Z"
-lastCommitAt: "2026-06-20T05:06:53Z"
-lastReleaseAt: "2026-06-18T16:07:06Z"
+lastCommitAt: "2026-06-20T13:59:44Z"
+lastReleaseAt: "2024-09-16T09:15:33Z"
 status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 90
-attentionGap: 37.5
+healthScore: 98
+undervaluedScore: 35
 maintainers: ["duyet", "renovate[bot]", "github-actions[bot]"]
 ---
 

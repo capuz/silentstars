@@ -8,12 +8,16 @@ language: "TypeScript"
 stars: 30
 forks: 3
 openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 1
+recentReleases: 0
 createdAt: "2025-11-29T12:14:06Z"
-lastCommitAt: "2026-06-20T05:05:30Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T14:06:36Z"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 77
-attentionGap: 48.1
+healthScore: 80
+undervaluedScore: 47
 maintainers: ["stormsia"]
 ---
 

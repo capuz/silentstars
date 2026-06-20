@@ -8,13 +8,17 @@ language: "Python"
 stars: 17
 forks: 21
 openIssues: 1
+closedIssues: 21
+watchers: 3
+contributors: 18
+recentReleases: 0
 createdAt: "2023-05-13T13:46:25Z"
 lastCommitAt: "2026-06-20T05:06:37Z"
-lastReleaseAt: "2026-06-20T05:06:50Z"
+lastReleaseAt: "2023-05-17T20:30:40Z"
 status: "thriving"
 tags: []
-vitalityScore: 85
-attentionGap: 59.4
+healthScore: 99
+undervaluedScore: 57
 maintainers: ["renovate[bot]", "masterkain"]
 ---
 

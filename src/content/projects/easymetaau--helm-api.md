@@ -7,13 +7,17 @@ language: "TypeScript"
 stars: 11
 forks: 2
 openIssues: 0
+closedIssues: 21
+watchers: 0
+contributors: 3
+recentReleases: 10
 createdAt: "2026-05-29T12:32:18Z"
-lastCommitAt: "2026-06-20T05:05:12Z"
-lastReleaseAt: "2026-06-20T05:05:42Z"
+lastCommitAt: "2026-06-20T14:05:59Z"
+lastReleaseAt: "2026-06-06T13:42:49Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 90
-attentionGap: 68.1
+healthScore: 100
+undervaluedScore: 76
 maintainers: ["mylukin"]
 ---
 

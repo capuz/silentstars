@@ -7,12 +7,16 @@ language: "CSS"
 stars: 312
 forks: 28
 openIssues: 14
+closedIssues: 0
+watchers: 0
+contributors: 0
+recentReleases: 0
 createdAt: "2021-11-20T14:00:00Z"
 lastCommitAt: "2026-01-08T09:00:00Z"
 status: "at_risk"
 tags: ["needs_contributors"]
-vitalityScore: 31
-attentionGap: 12.4
+healthScore: 31
+undervaluedScore: 12.4
 maintainers: ["felicia-okonkwo"]
 ---
 

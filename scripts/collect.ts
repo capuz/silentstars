@@ -20,8 +20,8 @@ const ROOT = resolve(__dirname, '..');
 // Types
 // ──────────────────────────────────────────────────────────────────────────────
 
-type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived';
-type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero';
+type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived' | 'watched';
+type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch';
 
 interface RepoData {
   repo: string;
@@ -33,13 +33,17 @@ interface RepoData {
   stars: number;
   forks: number;
   openIssues: number;
+  closedIssues: number;
+  watchers: number;
+  contributors: number;
+  recentReleases: number;
   createdAt: string;
   lastCommitAt: string;
   lastReleaseAt?: string;
   status: VitalStatus;
   tags: Tag[];
-  vitalityScore: number;
-  attentionGap: number;
+  healthScore: number;
+  undervaluedScore: number;
   maintainers: string[];
   revivedAfterMonths?: number;
   revivedDaysAgo?: number;
@@ -81,6 +85,7 @@ interface GraphQLRepo {
   hasLicense: { id: string } | null;
   hasContributing: { id: string } | null;
   mentionableUsers: { totalCount: number };
+  watchers: { totalCount: number };
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -100,6 +105,7 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     forkCount
     isArchived
     createdAt
+    watchers { totalCount }
     defaultBranchRef {
       target {
         ... on Commit {
@@ -113,7 +119,7 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
         }
       }
     }
-    releases(first: 1, orderBy: { field: CREATED_AT, direction: DESC }) {
+    releases(last: 10, orderBy: { field: CREATED_AT, direction: DESC }) {
       nodes { publishedAt }
     }
     issues(states: OPEN)   { totalCount }
@@ -150,7 +156,6 @@ async function queryGitHub(
       });
 
       if (res.status === 429 || res.status === 503) {
-        // Rate-limit or transient error — wait with exponential backoff
         const wait = Math.pow(2, attempt) * 2000;
         console.warn(`  Rate limited, waiting ${wait / 1000}s…`);
         await new Promise(r => setTimeout(r, wait));
@@ -177,16 +182,6 @@ async function queryGitHub(
 
 const DAY_MS = 86_400_000;
 
-/** Exponential decay weights for commit recency. */
-function commitDecayWeight(committedDate: string, now: number): number {
-  const ageDays = (now - new Date(committedDate).getTime()) / DAY_MS;
-  if (ageDays <= 7)   return 1.0;
-  if (ageDays <= 30)  return 0.7;
-  if (ageDays <= 90)  return 0.3;
-  if (ageDays <= 180) return 0.1;
-  return 0;
-}
-
 /** Stddev of an array of numbers, normalised to [0,1] given a max. */
 function normalisedStddev(values: number[], maxVal: number): number {
   if (values.length < 2) return 0;
@@ -195,40 +190,98 @@ function normalisedStddev(values: number[], maxVal: number): number {
   return Math.min(Math.sqrt(variance) / maxVal, 1);
 }
 
-function computeVitalityScore(repo: GraphQLRepo, now: number): number {
+/**
+ * Health Score (0–100) — is the project alive and maintained right now?
+ *
+ * health = 0.35·recency       (days since last commit)
+ *        + 0.25·cadence       (commit rhythm regularity)
+ *        + 0.20·issue_health  (closed ÷ total issues)
+ *        + 0.20·pr_health     (merged ÷ total PRs)
+ */
+function computeHealthScore(repo: GraphQLRepo, lastCommitAt: string, now: number): number {
   const commits = repo.defaultBranchRef?.target.history.nodes ?? [];
+  const daysSinceLast = (now - new Date(lastCommitAt).getTime()) / DAY_MS;
 
-  // 45% — activity with exponential decay
-  const rawActivity = commits.reduce((s, c) => s + commitDecayWeight(c.committedDate, now), 0);
-  // Normalise: assume 50 recent weighted commits = 100%
-  const activityScore = Math.min(rawActivity / 50, 1) * 45;
+  // 35 pts — recency: linear decay over 90 days
+  const recencyScore = Math.max(0, 1 - daysSinceLast / 90) * 35;
 
-  // 25% — resolution ratio
-  const totalWork = (repo.closedIssues.totalCount + repo.mergedPRs.totalCount +
-                     repo.openIssues.totalCount + repo.pullRequests.totalCount);
-  const resolved  = repo.closedIssues.totalCount + repo.mergedPRs.totalCount;
-  const resolutionScore = totalWork > 0 ? (resolved / totalWork) * 25 : 12.5;
-
-  // 20% — documentation (README=5, LICENSE=5, CONTRIBUTING=10)
-  let docsRaw = 0;
-  if (repo.hasReadme)       docsRaw += 5;
-  if (repo.hasLicense)      docsRaw += 5;
-  if (repo.hasContributing) docsRaw += 10;
-  const docsScore = docsRaw; // already out of 20
-
-  // 10% — commit regularity (consistent interval = high score)
-  let continuityScore = 10;
+  // 25 pts — cadence: consistency of commit intervals
+  let cadenceScore = 25;
   if (commits.length >= 3) {
     const intervals = commits
       .slice(1)
       .map((c, i) => Math.abs(
         new Date(commits[i]!.committedDate).getTime() - new Date(c.committedDate).getTime()
       ) / DAY_MS);
-    const irregularity = normalisedStddev(intervals, 30);
-    continuityScore = (1 - irregularity) * 10;
+    cadenceScore = (1 - normalisedStddev(intervals, 30)) * 25;
   }
 
-  return Math.round(activityScore + resolutionScore + docsScore + continuityScore);
+  // 20 pts — issue health: closed ÷ total (neutral 10 if no issues)
+  const totalIssues = repo.closedIssues.totalCount + repo.openIssues.totalCount;
+  const issueScore = totalIssues > 0
+    ? (repo.closedIssues.totalCount / totalIssues) * 20
+    : 10;
+
+  // 20 pts — PR health: merged ÷ total (neutral 10 if no PRs)
+  const totalPRs = repo.mergedPRs.totalCount + repo.pullRequests.totalCount;
+  const prScore = totalPRs > 0
+    ? (repo.mergedPRs.totalCount / totalPRs) * 20
+    : 10;
+
+  return Math.min(Math.round(recencyScore + cadenceScore + issueScore + prScore), 100);
+}
+
+/**
+ * Undervalued Score (0–100) — signal ÷ reach.
+ * Above 50 means the project is outrunning its audience.
+ *
+ * signal = 0.40·commit_velocity  (commits in 90d, norm. 30=max)
+ *        + 0.25·contributor_work (people × activity proxy)
+ *        + 0.20·issue_response   (resolution rate)
+ *        + 0.15·release_cadence  (releases in 90d, norm. 3=max)
+ *
+ * reach  = log10(stars + watchers + 1)
+ *
+ * Calibration: signal=0.5, reach≈1.7 (~50 stars+watchers) → score≈50
+ */
+function computeUndervaluedScore(
+  repo: GraphQLRepo,
+  commits: Array<{ committedDate: string; author: { user: { login: string } | null } }>,
+  recentReleases: number,
+  now: number
+): number {
+  // commit_velocity: commits in last 90d, 30 commits = max signal
+  const commits90d = commits.filter(
+    c => (now - new Date(c.committedDate).getTime()) / DAY_MS <= 90
+  ).length;
+  const commitVelocity = Math.min(commits90d / 30, 1);
+
+  // contributor_work: unique active authors × velocity (proxy for people × lines)
+  const uniqueAuthors = new Set(
+    commits
+      .filter(c => (now - new Date(c.committedDate).getTime()) / DAY_MS <= 90)
+      .map(c => c.author?.user?.login ?? '__unknown__')
+  ).size;
+  const contributorWork = Math.min((uniqueAuthors * commits90d) / 100, 1);
+
+  // issue_response: closed issues resolution rate (proxy for median reply time)
+  const totalIssues = repo.closedIssues.totalCount + repo.openIssues.totalCount;
+  const issueResolution = totalIssues > 0
+    ? repo.closedIssues.totalCount / totalIssues
+    : 0.5;
+
+  // release_cadence: releases in last 90d (3 = max)
+  const releaseCadence = Math.min(recentReleases / 3, 1);
+
+  const signal = 0.40 * commitVelocity
+               + 0.25 * contributorWork
+               + 0.20 * issueResolution
+               + 0.15 * releaseCadence;
+
+  // +10 baseline prevents extreme values at near-zero star counts (same as original attentionGap)
+  const reach = Math.log10(repo.stargazerCount + repo.watchers.totalCount + 10);
+
+  return Math.min(Math.round((signal / reach) * 100), 100);
 }
 
 function computeStatus(
@@ -238,35 +291,35 @@ function computeStatus(
   now: number
 ): VitalStatus {
   const lastCommitMs = new Date(lastCommitAt).getTime();
-  const monthsSinceLast = (now - lastCommitMs) / (30 * DAY_MS);
+  const daysSinceLast = (now - lastCommitMs) / DAY_MS;
+  const monthsSinceLast = daysSinceLast / 30;
 
-  // 1. Archived
+  // 1. Archived: GitHub-archived or dormant > 18 months
   if (repo.isArchived || monthsSinceLast > 18) return 'archived';
 
-  // 2. Revived: was dormant >6 months, now has commit in last 30 days
+  // 2. Revived: was dormant > 6 months, now has commit in last 30 days
   if (previousLastCommit) {
     const prevMs = new Date(previousLastCommit).getTime();
     const gapMonths = (lastCommitMs - prevMs) / (30 * DAY_MS);
     if (gapMonths > 6 && monthsSinceLast < 1) return 'revived';
   }
 
-  // 3. Newborn: created <6 months + README + license + recent commit
+  // 3. Watched: more watchers than stars — devs tracking before the public notices
+  const watchers = repo.watchers.totalCount;
+  const watcherRatio = watchers / Math.max(repo.stargazerCount, 1);
+  if (watcherRatio >= 2.0 && watchers >= 5 && repo.stargazerCount <= 150) return 'watched';
+
+  // 4. Newborn: < 2 months old, docs present, active in last 2 weeks
   const createdMs = new Date(repo.createdAt).getTime();
   const monthsOld = (now - createdMs) / (30 * DAY_MS);
-  if (monthsOld < 6 && repo.hasReadme && repo.hasLicense && monthsSinceLast < 3) return 'newborn';
+  if (monthsOld < 2 && repo.hasReadme && repo.hasLicense && daysSinceLast < 14) return 'newborn';
 
-  // 4. At risk: 3-12 months quiet + open issues/PRs
+  // 5. At risk: 2–12 months quiet + open issues or PRs
   const hasOpenWork = repo.openIssues.totalCount > 0 || repo.pullRequests.totalCount > 0;
-  if (monthsSinceLast >= 3 && monthsSinceLast <= 12 && hasOpenWork) return 'at_risk';
+  if (monthsSinceLast >= 2 && monthsSinceLast <= 12 && hasOpenWork) return 'at_risk';
 
-  // 5. Quiet: last commit <3 months, no recent release
-  const lastReleaseAt = repo.releases.nodes[0]?.publishedAt;
-  const recentRelease = lastReleaseAt &&
-    (now - new Date(lastReleaseAt).getTime()) / (30 * DAY_MS) < 3;
-  if (monthsSinceLast < 3 && !recentRelease) return 'quiet';
-
-  // 6. Thriving: commit in last 30 days
-  if (monthsSinceLast < 1) return 'thriving';
+  // 6. Thriving: commit in last 2 weeks
+  if (daysSinceLast < 14) return 'thriving';
 
   return 'quiet';
 }
@@ -275,7 +328,7 @@ function computeTags(repo: GraphQLRepo, lastCommitAt: string, now: number): Tag[
   const tags: Tag[] = [];
   const commits = repo.defaultBranchRef?.target.history.nodes ?? [];
 
-  // solo_builder: one contributor holds >80% of visible commits
+  // solo_builder: one contributor holds > 80% of visible commits
   if (commits.length >= 5) {
     const counts: Record<string, number> = {};
     for (const c of commits) {
@@ -291,19 +344,24 @@ function computeTags(repo: GraphQLRepo, lastCommitAt: string, now: number): Tag[
     tags.push('needs_contributors');
   }
 
-  // hidden_gem: <100 stars + recent activity + README + license
+  // hidden_gem: < 100 stars + recent activity + docs
   const monthsSinceLast = (now - new Date(lastCommitAt).getTime()) / (30 * DAY_MS);
   if (repo.stargazerCount < 100 && monthsSinceLast < 3 && repo.hasReadme && repo.hasLicense) {
     tags.push('hidden_gem');
   }
 
-  // legacy_hero: >5 years old + commits this year
+  // legacy_hero: > 5 years old + commits this calendar year
   const yearsOld = (now - new Date(repo.createdAt).getTime()) / (365 * DAY_MS);
   const thisYear = new Date().getFullYear();
   const hasCommitThisYear = commits.some(
     c => new Date(c.committedDate).getFullYear() === thisYear
   );
   if (yearsOld > 5 && hasCommitThisYear) tags.push('legacy_hero');
+
+  // community_watch: more watchers than stars — people invested before hype arrives
+  if (repo.watchers.totalCount > repo.stargazerCount && repo.watchers.totalCount >= 10) {
+    tags.push('community_watch');
+  }
 
   return tags;
 }
@@ -323,13 +381,17 @@ function toFrontmatter(data: RepoData): string {
   lines.push(`stars: ${data.stars}`);
   lines.push(`forks: ${data.forks}`);
   lines.push(`openIssues: ${data.openIssues}`);
+  lines.push(`closedIssues: ${data.closedIssues}`);
+  lines.push(`watchers: ${data.watchers}`);
+  lines.push(`contributors: ${data.contributors}`);
+  lines.push(`recentReleases: ${data.recentReleases}`);
   lines.push(`createdAt: "${data.createdAt}"`);
   lines.push(`lastCommitAt: "${data.lastCommitAt}"`);
   if (data.lastReleaseAt) lines.push(`lastReleaseAt: "${data.lastReleaseAt}"`);
   lines.push(`status: "${data.status}"`);
   lines.push(`tags: [${data.tags.map(t => `"${t}"`).join(', ')}]`);
-  lines.push(`vitalityScore: ${data.vitalityScore}`);
-  lines.push(`attentionGap: ${data.attentionGap}`);
+  lines.push(`healthScore: ${data.healthScore}`);
+  lines.push(`undervaluedScore: ${data.undervaluedScore}`);
   lines.push(`maintainers: [${data.maintainers.map(m => `"${m}"`).join(', ')}]`);
   if (data.revivedAfterMonths != null) lines.push(`revivedAfterMonths: ${data.revivedAfterMonths}`);
   if (data.revivedDaysAgo != null) lines.push(`revivedDaysAgo: ${data.revivedDaysAgo}`);
@@ -352,7 +414,6 @@ async function main() {
     process.exit(1);
   }
 
-  // Load seed list (always included, never filtered by vitality)
   const seedPath = resolve(ROOT, 'data/seed.txt');
   if (!existsSync(seedPath)) {
     console.error('❌  data/seed.txt not found.');
@@ -364,7 +425,6 @@ async function main() {
     .filter(l => l && !l.startsWith('#'));
   const seedSet = new Set(seedRepos.map(r => r.toLowerCase()));
 
-  // Load auto-discovered candidates (optional — skipped if file not found)
   const discoveredPath = resolve(ROOT, 'data/discovered.json');
   const discoveredCandidates: string[] = [];
   if (existsSync(discoveredPath)) {
@@ -372,13 +432,11 @@ async function main() {
     discoveredCandidates.push(...(disc.candidates ?? []));
   }
 
-  // Vitality threshold for auto-discovered repos (seed always bypasses this)
   const configPath = resolve(ROOT, 'data/discovery.config.json');
-  const vitalityThreshold: number = existsSync(configPath)
+  const healthThreshold: number = existsSync(configPath)
     ? (JSON.parse(readFileSync(configPath, 'utf8')) as { vitalityThreshold: number }).vitalityThreshold
     : 40;
 
-  // Merge: seed first, then discovered (deduplicated)
   const repos = [
     ...seedRepos,
     ...discoveredCandidates.filter(r => !seedSet.has(r.toLowerCase())),
@@ -386,7 +444,6 @@ async function main() {
 
   console.log(`📋  ${seedRepos.length} seed repos + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
 
-  // Load previous state for revived detection
   const latestPath = resolve(ROOT, 'data/latest.json');
   const previous: LatestJson | null = existsSync(latestPath)
     ? JSON.parse(readFileSync(latestPath, 'utf8'))
@@ -395,7 +452,6 @@ async function main() {
     previous?.projects.map(p => [p.repo, p]) ?? []
   );
 
-  // Collect commits from last 180 days
   const now = Date.now();
   const since180d = new Date(now - 180 * DAY_MS).toISOString();
 
@@ -423,10 +479,14 @@ async function main() {
       const lastCommitAt = commits[0]?.committedDate ?? raw.createdAt;
       const lastReleaseAt = raw.releases.nodes[0]?.publishedAt;
 
+      // Count releases published in the last 90 days
+      const recentReleases = raw.releases.nodes.filter(
+        r => (now - new Date(r.publishedAt).getTime()) / DAY_MS <= 90
+      ).length;
+
       const prevRepo = prevMap.get(repoStr);
       const status = computeStatus(raw, lastCommitAt, prevRepo?.lastCommitAt, now);
 
-      // Revived metadata
       let revivedAfterMonths: number | undefined;
       let revivedDaysAgo: number | undefined;
       if (status === 'revived' && prevRepo) {
@@ -436,15 +496,10 @@ async function main() {
         revivedDaysAgo     = Math.floor((now - newMs) / DAY_MS);
       }
 
-      const vitalityScore = Math.min(computeVitalityScore(raw, now), 100);
-      // attentionGap: higher = more undervalued
-      const attentionGap = parseFloat(
-        (vitalityScore / Math.log10(raw.stargazerCount + 10)).toFixed(1)
-      );
-
+      const healthScore = computeHealthScore(raw, lastCommitAt, now);
+      const undervaluedScore = computeUndervaluedScore(raw, commits, recentReleases, now);
       const tags = computeTags(raw, lastCommitAt, now);
 
-      // Top maintainers: users appearing in recent commits
       const maintainerCounts: Record<string, number> = {};
       for (const c of commits) {
         const login = c.author?.user?.login;
@@ -465,13 +520,17 @@ async function main() {
         stars: raw.stargazerCount,
         forks: raw.forkCount,
         openIssues: raw.openIssues.totalCount,
+        closedIssues: raw.closedIssues.totalCount,
+        watchers: raw.watchers.totalCount,
+        contributors: raw.mentionableUsers.totalCount,
+        recentReleases,
         createdAt: raw.createdAt,
         lastCommitAt,
         lastReleaseAt,
         status,
         tags,
-        vitalityScore,
-        attentionGap,
+        healthScore,
+        undervaluedScore,
         maintainers,
         revivedAfterMonths,
         revivedDaysAgo,
@@ -479,27 +538,23 @@ async function main() {
 
       results.push(data);
 
-      // Seed repos always get a content file; discovered repos need vitality >= threshold
       const isFromSeed = seedSet.has(repoStr.toLowerCase());
-      if (!isFromSeed && vitalityScore < vitalityThreshold) {
-        console.log(`    skip (vitality ${vitalityScore} < ${vitalityThreshold}, discovered)`);
+      if (!isFromSeed && healthScore < healthThreshold) {
+        console.log(`    skip (healthScore ${healthScore} < ${healthThreshold}, discovered)`);
         continue;
       }
 
-      // Write content file
       const slug = slugify(raw.nameWithOwner);
       const mdPath = resolve(ROOT, `src/content/projects/${slug}.md`);
       const body = `${data.name} is tracked by SilentStars. ${data.description}`;
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
     }
 
-    // Brief pause between batches to stay well within 5 000 pts/h
     if (i + BATCH_SIZE < repos.length) {
       await new Promise(r => setTimeout(r, 500));
     }
   }
 
-  // Write latest.json
   const output: LatestJson = { collectedAt: new Date().toISOString(), projects: results };
   writeFileSync(latestPath, JSON.stringify(output, null, 2));
 

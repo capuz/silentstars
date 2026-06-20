@@ -8,13 +8,17 @@ language: "TypeScript"
 stars: 55
 forks: 7
 openIssues: 58
+closedIssues: 379
+watchers: 0
+contributors: 8
+recentReleases: 10
 createdAt: "2026-04-14T02:12:52Z"
-lastCommitAt: "2026-06-20T05:08:26Z"
-lastReleaseAt: "2026-06-18T04:14:58Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T14:03:41Z"
+lastReleaseAt: "2026-04-26T17:00:59Z"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 99
-attentionGap: 54.6
+healthScore: 97
+undervaluedScore: 54
 maintainers: ["Astro-Han"]
 ---
 

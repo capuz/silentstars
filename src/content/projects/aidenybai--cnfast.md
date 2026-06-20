@@ -4,15 +4,19 @@ name: "cnfast"
 description: "Fast drop in replacement for `cn`"
 url: "https://github.com/aidenybai/cnfast"
 language: "TypeScript"
-stars: 8
+stars: 23
 forks: 0
-openIssues: 0
+openIssues: 1
+closedIssues: 0
+watchers: 0
+contributors: 1
+recentReleases: 0
 createdAt: "2026-06-19T19:46:29Z"
-lastCommitAt: "2026-06-20T05:03:50Z"
+lastCommitAt: "2026-06-20T12:34:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 53
-attentionGap: 42.2
+healthScore: 70
+undervaluedScore: 17
 maintainers: ["aidenybai", "github-actions[bot]"]
 ---
 

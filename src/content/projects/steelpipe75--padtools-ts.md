@@ -7,14 +7,18 @@ homepage: "https://steelpipe75.github.io/padtools_ts/"
 language: "TypeScript"
 stars: 6
 forks: 0
-openIssues: 1
+openIssues: 0
+closedIssues: 56
+watchers: 0
+contributors: 1
+recentReleases: 2
 createdAt: "2025-07-25T12:22:52Z"
-lastCommitAt: "2026-06-20T05:09:07Z"
+lastCommitAt: "2026-06-20T10:27:02Z"
 lastReleaseAt: "2026-05-20T10:44:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 89
-attentionGap: 73.9
+healthScore: 99
+undervaluedScore: 79
 maintainers: ["steelpipe75", "dependabot[bot]"]
 ---
 

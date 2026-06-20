@@ -5,10 +5,10 @@ interface Props {
   description: string;
   repo: string;
   url: string;
-  status: 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived';
+  status: 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived' | 'watched';
   tags: string[];
-  vitalityScore: number;
-  attentionGap: number;
+  healthScore: number;
+  undervaluedScore: number;
   stars: number;
   language?: string;
   lastCommitAt: string;
@@ -26,7 +26,7 @@ interface Props {
 
 const {
   slug, name, description, repo, url, status, tags,
-  vitalityScore, attentionGap, stars, language, lastCommitAt,
+  healthScore, undervaluedScore, stars, language, lastCommitAt,
   maintainers, createdAt,
 } = Astro.props;
 
@@ -44,6 +44,8 @@ const catMap: Record<string, { label: string; bg: string; path: string }> = {
     path: '<path d="M12 9v4m0 3h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>' },
   revived:  { label: 'Revived',  bg: '#e8d5f5',
     path: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>' },
+  watched:  { label: 'Watched',  bg: '#d5eeff',
+    path: '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>' },
   archived: { label: 'Archived', bg: '#e2e0da',
     path: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
 };
@@ -79,7 +81,7 @@ function healthMeta(h: number): { color: string; label: string } {
   if (h >= 40) return { color: '#d4691e', label: 'Quiet' };
   return         { color: '#d8392b', label: 'At Risk' };
 }
-const { color: healthColor, label: healthLabel } = healthMeta(vitalityScore);
+const { color: healthColor, label: healthLabel } = healthMeta(healthScore);
 
 // ── Meta ───────────────────────────────────────────────────
 const daysSince = Math.floor((Date.now() - new Date(lastCommitAt).getTime()) / 86_400_000);
@@ -97,6 +99,7 @@ const tagLabels: Record<string, string> = {
   needs_contributors: 'help wanted',
   hidden_gem:         'hidden gem',
   legacy_hero:        'legacy hero',
+  community_watch:    'community watch',
 };
 ---
 <article class="card">
@@ -126,7 +129,7 @@ const tagLabels: Record<string, string> = {
     </div>
     <div class="card-score" title="Undervalued score — higher is more overlooked">
       <span class="score-arrow">↑</span>
-      <span class="score-num">{attentionGap.toFixed(1)}</span>
+      <span class="score-num">{undervaluedScore}</span>
     </div>
   </div>
 
@@ -141,10 +144,10 @@ const tagLabels: Record<string, string> = {
   <div class="health-wrap">
     <div class="health-header">
       <span class="health-label-text">HEALTH</span>
-      <span class="health-value" style={`color:${healthColor};`}>{vitalityScore} / {healthLabel}</span>
+      <span class="health-value" style={`color:${healthColor};`}>{healthScore} / {healthLabel}</span>
     </div>
     <div class="health-track">
-      <div class="health-fill" style={`width:${vitalityScore}%;background:${healthColor};`}></div>
+      <div class="health-fill" style={`width:${healthScore}%;background:${healthColor};`}></div>
     </div>
   </div>
 

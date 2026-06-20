@@ -7,13 +7,17 @@ language: "Python"
 stars: 10
 forks: 0
 openIssues: 2
+closedIssues: 1
+watchers: 0
+contributors: 2
+recentReleases: 0
 createdAt: "2025-08-14T12:04:44Z"
-lastCommitAt: "2026-06-20T05:08:55Z"
+lastCommitAt: "2026-06-20T10:40:03Z"
 lastReleaseAt: "2025-09-17T09:29:57Z"
-status: "quiet"
+status: "thriving"
 tags: ["hidden_gem"]
-vitalityScore: 89
-attentionGap: 68.4
+healthScore: 85
+undervaluedScore: 55
 maintainers: ["renovate[bot]", "golles", "dependabot[bot]"]
 ---
 

@@ -8,13 +8,17 @@ language: "Python"
 stars: 63
 forks: 44
 openIssues: 0
+closedIssues: 7
+watchers: 4
+contributors: 1
+recentReleases: 0
 createdAt: "2020-01-11T10:36:37Z"
 lastCommitAt: "2026-06-20T05:05:56Z"
 lastReleaseAt: "2026-03-04T16:24:11Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-vitalityScore: 89
-attentionGap: 47.8
+healthScore: 93
+undervaluedScore: 45
 maintainers: ["vietvudanh", "Copilot"]
 ---
 

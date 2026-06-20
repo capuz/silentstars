@@ -8,12 +8,16 @@ language: "TypeScript"
 stars: 155
 forks: 208
 openIssues: 34
+closedIssues: 165
+watchers: 11
+contributors: 69
+recentReleases: 0
 createdAt: "2021-04-14T21:01:49Z"
-lastCommitAt: "2026-06-20T05:07:45Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T06:23:28Z"
+status: "thriving"
 tags: ["legacy_hero"]
-vitalityScore: 76
-attentionGap: 34.3
+healthScore: 95
+undervaluedScore: 36
 maintainers: ["dependabot[bot]", "electron-website-docs-updater[bot]", "dsanders11"]
 ---
 

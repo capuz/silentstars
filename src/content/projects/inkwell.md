@@ -7,12 +7,16 @@ language: "Rust"
 stars: 47
 forks: 3
 openIssues: 2
+closedIssues: 0
+watchers: 0
+contributors: 0
+recentReleases: 0
 createdAt: "2022-08-14T10:00:00Z"
 lastCommitAt: "2026-06-10T18:32:00Z"
 status: "thriving"
 tags: ["hidden_gem", "solo_builder"]
-vitalityScore: 84
-attentionGap: 49.7
+healthScore: 84
+undervaluedScore: 49.7
 maintainers: ["marta-kowalski"]
 ---
 

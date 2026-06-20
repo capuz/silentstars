@@ -8,13 +8,17 @@ language: "Python"
 stars: 9
 forks: 7
 openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 1
+recentReleases: 10
 createdAt: "2026-04-16T11:35:08Z"
-lastCommitAt: "2026-06-20T05:04:41Z"
-lastReleaseAt: "2026-06-20T04:57:45Z"
-status: "newborn"
+lastCommitAt: "2026-06-20T05:39:38Z"
+lastReleaseAt: "2026-05-19T06:42:00Z"
+status: "thriving"
 tags: ["hidden_gem"]
-vitalityScore: 71
-attentionGap: 55.5
+healthScore: 78
+undervaluedScore: 70
 maintainers: ["liveqte", "github-actions[bot]"]
 ---
 

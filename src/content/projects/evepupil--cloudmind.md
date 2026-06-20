@@ -7,12 +7,16 @@ language: "TypeScript"
 stars: 18
 forks: 4
 openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 2
+recentReleases: 0
 createdAt: "2026-03-19T09:41:05Z"
-lastCommitAt: "2026-06-20T05:02:48Z"
-status: "quiet"
+lastCommitAt: "2026-06-20T11:41:34Z"
+status: "thriving"
 tags: ["solo_builder"]
-vitalityScore: 71
-attentionGap: 49.1
+healthScore: 77
+undervaluedScore: 52
 maintainers: ["evepupil"]
 ---
 

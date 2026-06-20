@@ -5,15 +5,19 @@ description: "The open-source alternative to Retell for AI phone agents."
 url: "https://github.com/allgpt-co/QuickVoice"
 homepage: "https://quickvoice.co"
 language: "TypeScript"
-stars: 9
+stars: 10
 forks: 0
 openIssues: 1
+closedIssues: 0
+watchers: 0
+contributors: 7
+recentReleases: 0
 createdAt: "2026-03-23T15:20:22Z"
 lastCommitAt: "2026-06-20T05:09:10Z"
-status: "newborn"
+status: "thriving"
 tags: ["hidden_gem"]
-vitalityScore: 87
-attentionGap: 68
+healthScore: 68
+undervaluedScore: 50
 maintainers: ["MohitBhalotia", "DebdipWritesCode", "deshmukh-anurag"]
 ---
 

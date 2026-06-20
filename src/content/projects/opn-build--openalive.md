@@ -8,13 +8,17 @@ language: "Go"
 stars: 1
 forks: 0
 openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 2
+recentReleases: 3
 createdAt: "2026-05-30T02:07:49Z"
 lastCommitAt: "2026-06-19T13:40:59Z"
 lastReleaseAt: "2026-06-19T11:24:49Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-vitalityScore: 52
-attentionGap: 49.9
+healthScore: 79
+undervaluedScore: 57
 maintainers: ["capuz"]
 ---
 

@@ -8,12 +8,16 @@ language: "TypeScript"
 stars: 9
 forks: 1
 openIssues: 24
+closedIssues: 212
+watchers: 0
+contributors: 2
+recentReleases: 0
 createdAt: "2025-12-26T22:48:46Z"
 lastCommitAt: "2026-06-20T05:08:01Z"
-status: "newborn"
+status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-vitalityScore: 89
-attentionGap: 69.6
+healthScore: 97
+undervaluedScore: 65
 maintainers: ["claude", "brendanlong", "dependabot[bot]"]
 ---
 
