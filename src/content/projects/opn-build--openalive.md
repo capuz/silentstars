@@ -21,7 +21,7 @@ lastReleaseAt: "2026-06-19T11:24:49Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
-undervaluedScore: 57
+undervaluedScore: 46
 maintainers: ["capuz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3977a1a8a70a7fa7a816943c02115597e924a5753949074aa67a2b388bdf007e/opn-build/OpenAlive"
 ---
