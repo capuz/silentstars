@@ -117,10 +117,14 @@ async function main() {
   }
   const config: DiscoveryConfig = JSON.parse(readFileSync(configPath, 'utf8'));
 
-  // Build "pushed after" date string
-  const pushedAfter = new Date(Date.now() - config.pushedWithinDays * 86_400_000)
-    .toISOString()
-    .slice(0, 10); // YYYY-MM-DD
+  // Build date strings for two activity windows:
+  // "fresh"  — pushed within pushedWithinDays (default 90d) → thriving/newborn candidates
+  // "deep"   — pushed 90..180d ago → at_risk/quiet candidates (currently invisible)
+  const toDate = (daysAgo: number) =>
+    new Date(Date.now() - daysAgo * 86_400_000).toISOString().slice(0, 10);
+
+  const pushedAfter     = toDate(config.pushedWithinDays);       // 90d ago
+  const pushedAfterDeep = toDate(config.pushedWithinDays * 2);   // 180d ago
 
   // Build known-repos Set from seed.txt + previous discovered.json
   // This prevents adding repos we already track
@@ -141,27 +145,25 @@ async function main() {
     prev.candidates.forEach(r => knownRepos.add(r.toLowerCase()));
   }
 
-  // Discover: one query per language, stop at cap
+  // Discover: two passes per language — "fresh" (last 90d) + "deep" (90-180d)
+  // Deep pass unblocks at_risk/quiet status by including less-recently-pushed repos.
   const newCandidates: string[] = [];
   const { min, max } = config.starsRange;
 
-  console.log(`🔍  Discovering repos: stars ${min}..${max}, pushed after ${pushedAfter}`);
-
-  for (const lang of config.languages) {
-    if (newCandidates.length >= config.maxCandidatesPerNight) break;
-
-    const query = [
+  const buildQuery = (lang: string, afterDate: string, beforeDate?: string) => {
+    const parts = [
       `stars:${min}..${max}`,
-      `pushed:>${pushedAfter}`,
+      `pushed:>${afterDate}`,
       `is:public`,
       `archived:false`,
       `fork:false`,
       `language:${lang}`,
-    ].join(' ');
+    ];
+    if (beforeDate) parts.push(`pushed:<${beforeDate}`);
+    return parts.join(' ');
+  };
 
-    console.log(`  lang=${lang} …`);
-    const items = await searchRepos(token, query);
-
+  const addItems = (items: SearchItem[], label: string) => {
     let added = 0;
     for (const item of items) {
       if (newCandidates.length >= config.maxCandidatesPerNight) break;
@@ -173,13 +175,25 @@ async function main() {
         added++;
       }
     }
+    console.log(`    → ${items.length} results, ${added} new (${label})`);
+  };
 
-    console.log(`    → ${items.length} results, ${added} new candidates`);
+  console.log(`🔍  Pass 1 (fresh): stars ${min}..${max}, pushed after ${pushedAfter}`);
+  for (const lang of config.languages) {
+    if (newCandidates.length >= config.maxCandidatesPerNight) break;
+    console.log(`  lang=${lang} …`);
+    const items = await searchRepos(token, buildQuery(lang, pushedAfter));
+    addItems(items, 'fresh');
+    if (lang !== config.languages.at(-1)) await new Promise(r => setTimeout(r, 2000));
+  }
 
-    // 2-second pause between language queries to stay well within 30 req/min
-    if (lang !== config.languages.at(-1)) {
-      await new Promise(r => setTimeout(r, 2000));
-    }
+  console.log(`\n🔍  Pass 2 (deep): stars ${min}..${max}, pushed ${pushedAfterDeep}..${pushedAfter}`);
+  for (const lang of config.languages) {
+    if (newCandidates.length >= config.maxCandidatesPerNight) break;
+    console.log(`  lang=${lang} …`);
+    const items = await searchRepos(token, buildQuery(lang, pushedAfterDeep, pushedAfter));
+    addItems(items, 'deep');
+    if (lang !== config.languages.at(-1)) await new Promise(r => setTimeout(r, 2000));
   }
 
   // Write discovered.json — replaces previous (nightly refresh)

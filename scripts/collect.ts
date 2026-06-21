@@ -22,7 +22,7 @@ const ROOT = resolve(__dirname, '..');
 
 type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived' | 'watched';
 type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch'
-         | 'funded' | 'release_machine' | 'under_pressure' | 'community_hub';
+         | 'funded' | 'release_machine' | 'under_pressure' | 'community_hub' | 'fork_magnet';
 
 interface RepoData {
   repo: string;
@@ -263,9 +263,13 @@ function computeHealthScore(repo: GraphQLRepo, lastCommitAt: string, now: number
  *        + 0.20·issue_response   (resolution rate)
  *        + 0.15·release_cadence  (releases in 90d, norm. 3=max)
  *
- * reach  = log10(stars + watchers + 1)
+ * reach  = log10(stars + watchers + 10)
  *
  * Calibration: signal=0.5, reach≈1.7 (~50 stars+watchers) → score≈50
+ *
+ * v2 weights: forkRatio replaces pure commitVelocity dominance to prevent
+ * vibe-coding repos (5 stars, 0 forks, many commits) from scoring 80+.
+ * ageBonus rewards maturity; hasHomepage rewards commitment to docs.
  */
 function computeUndervaluedScore(
   repo: GraphQLRepo,
@@ -296,12 +300,25 @@ function computeUndervaluedScore(
   // release_cadence: releases in last 90d (3 = max)
   const releaseCadence = Math.min(recentReleases / 3, 1);
 
-  const signal = 0.40 * commitVelocity
-               + 0.25 * contributorWork
-               + 0.20 * issueResolution
-               + 0.15 * releaseCadence;
+  // fork_ratio: forks relative to stars — proxy for "used as dependency" signal
+  const forkRatio = Math.min(repo.forkCount / Math.max(repo.stargazerCount, 1), 1);
 
-  // +10 baseline prevents extreme values at near-zero star counts (same as original attentionGap)
+  // age_bonus: maturity matters — fresh repos need forks/stars to prove themselves
+  const monthsOld = (now - new Date(repo.createdAt).getTime()) / (30 * DAY_MS);
+  const ageBonus = monthsOld > 6 ? Math.min((monthsOld - 6) / 24, 0.3) : 0;
+
+  // homepage_bonus: maintainer committed to documentation
+  const homepageBonus = repo.homepageUrl ? 0.05 : 0;
+
+  const signal = 0.25 * commitVelocity
+               + 0.20 * contributorWork
+               + 0.20 * issueResolution
+               + 0.20 * forkRatio
+               + 0.10 * releaseCadence
+               + ageBonus
+               + homepageBonus;
+
+  // +10 baseline prevents extreme values at near-zero star counts
   const reach = Math.log10(repo.stargazerCount + repo.watchers.totalCount + 10);
 
   return Math.min(Math.round((signal / reach) * 100), 100);
@@ -410,6 +427,12 @@ function computeTags(
   // community_hub: rich discussion culture beyond issues
   if (repo.hasDiscussionsEnabled && repo.discussions.totalCount > 20) {
     tags.push('community_hub');
+  }
+
+  // fork_magnet: used more than it's starred — dependency/template signal
+  const forkRatio = repo.forkCount / Math.max(repo.stargazerCount, 1);
+  if (forkRatio > 0.5 && repo.forkCount >= 5) {
+    tags.push('fork_magnet');
   }
 
   return tags;

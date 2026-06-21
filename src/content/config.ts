@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 
 const VitalStatus = z.enum(['thriving', 'quiet', 'at_risk', 'newborn', 'revived', 'archived', 'watched']);
 const Tag = z.enum(['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero', 'community_watch',
-                    'funded', 'release_machine', 'under_pressure', 'community_hub']);
+                    'funded', 'release_machine', 'under_pressure', 'community_hub', 'fork_magnet']);
 
 const projects = defineCollection({
   type: 'content',
