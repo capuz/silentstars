@@ -15,6 +15,7 @@ interface Props {
   lastCommitAt: string;
   maintainers: string[];
   promoted?: boolean;
+  openGraphImageUrl?: string;
   // passthrough fields from schema spread (unused but silences TS)
   createdAt?: string;
   lastReleaseAt?: string;
@@ -28,8 +29,11 @@ interface Props {
 const {
   slug, name, description, repo, url, status, tags,
   healthScore, undervaluedScore, stars, language, languages = [], lastCommitAt,
-  maintainers, createdAt,
+  maintainers, createdAt, openGraphImageUrl,
 } = Astro.props;
+
+const customImage = openGraphImageUrl?.includes('repository-images.githubusercontent.com')
+  ? openGraphImageUrl : null;
 
 const base = import.meta.env.BASE_URL;
 
@@ -111,6 +115,13 @@ const tagLabels: Record<string, string> = {
 };
 ---
 <article class="card">
+  <!-- custom OG thumbnail (only for repos with uploaded social preview) -->
+  {customImage && (
+    <a href={`${base}projects/${slug}/`} class="card-thumb" tabindex="-1" aria-hidden="true">
+      <img src={customImage} alt="" loading="lazy" decoding="async" />
+    </a>
+  )}
+
   <!-- top row: badges + score -->
   <div class="card-top">
     <div class="card-badges">
@@ -143,9 +154,9 @@ const tagLabels: Record<string, string> = {
     </div>
   </div>
 
-  <!-- title + repo slug -->
-  <a href={url} target="_blank" rel="noopener noreferrer" class="card-name">{name}</a>
-  <a href={url} target="_blank" rel="noopener noreferrer" class="card-slug">{repo}</a>
+  <!-- title + repo slug → detail page -->
+  <a href={`${base}projects/${slug}/`} class="card-name">{name}</a>
+  <a href={`${base}projects/${slug}/`} class="card-slug">{repo}</a>
 
   <!-- description -->
   <p class="card-desc">{description}</p>
@@ -194,6 +205,23 @@ const tagLabels: Record<string, string> = {
 </article>
 
 <style>
+  /* custom OG thumbnail */
+  .card-thumb {
+    display: block;
+    margin: -14px -14px 12px;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1.5px solid var(--faint);
+    aspect-ratio: 2 / 1;
+  }
+  .card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+  }
+  .card-thumb:hover img { transform: scale(1.03); }
+
   .card {
     position: relative;
     display: flex;
