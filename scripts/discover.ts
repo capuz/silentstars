@@ -36,6 +36,7 @@ interface SearchItem {
   full_name: string;
   archived: boolean;
   fork: boolean;
+  language: string | null;
 }
 
 interface SearchResponse {
@@ -166,7 +167,7 @@ async function main() {
     let added = 0;
     for (const item of items) {
       if (newCandidates.length >= config.maxCandidatesPerNight) break;
-      if (item.archived || item.fork) continue;
+      if (item.archived || item.fork || !item.language) continue;
       const fullName = item.full_name;
       if (!knownRepos.has(fullName.toLowerCase())) {
         newCandidates.push(fullName);
