@@ -52,9 +52,10 @@ interface SearchResponse {
 async function searchRepos(
   token: string,
   query: string,
+  page = 1,
   retries = 4
 ): Promise<SearchItem[]> {
-  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=updated&order=desc&per_page=100`;
+  const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=updated&order=desc&per_page=100&page=${page}`;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
     const res = await fetch(url, {
@@ -177,13 +178,21 @@ async function main() {
   };
 
   console.log(`🔍  Pass 1 (fresh): stars ${min}..${max}, pushed after ${pushedAfter}`);
-  const freshItems = await searchRepos(token, buildQuery(pushedAfter));
-  addItems(freshItems, 'fresh');
+  for (let page = 1; page <= 10 && newCandidates.length < config.maxCandidatesPerNight; page++) {
+    const items = await searchRepos(token, buildQuery(pushedAfter), page);
+    addItems(items, `fresh p${page}`);
+    if (items.length < 100) break;
+    await new Promise(r => setTimeout(r, 2000));
+  }
 
   if (newCandidates.length < config.maxCandidatesPerNight) {
     console.log(`\n🔍  Pass 2 (deep): stars ${min}..${max}, pushed ${pushedAfterDeep}..${pushedAfter}`);
-    const deepItems = await searchRepos(token, buildQuery(pushedAfterDeep, pushedAfter));
-    addItems(deepItems, 'deep');
+    for (let page = 1; page <= 10 && newCandidates.length < config.maxCandidatesPerNight; page++) {
+      const items = await searchRepos(token, buildQuery(pushedAfterDeep, pushedAfter), page);
+      addItems(items, `deep p${page}`);
+      if (items.length < 100) break;
+      await new Promise(r => setTimeout(r, 2000));
+    }
   }
 
   // Write discovered.json — replaces previous (nightly refresh)
