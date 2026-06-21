@@ -21,7 +21,8 @@ const ROOT = resolve(__dirname, '..');
 // ──────────────────────────────────────────────────────────────────────────────
 
 type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'archived' | 'watched';
-type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch';
+type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch'
+         | 'funded' | 'release_machine' | 'under_pressure' | 'community_hub';
 
 interface RepoData {
   repo: string;
@@ -346,7 +347,13 @@ function computeStatus(
   return 'quiet';
 }
 
-function computeTags(repo: GraphQLRepo, lastCommitAt: string, now: number): Tag[] {
+function computeTags(
+  repo: GraphQLRepo,
+  lastCommitAt: string,
+  now: number,
+  recentReleases: number,
+  healthScore: number,
+): Tag[] {
   const tags: Tag[] = [];
   const commits = repo.defaultBranchRef?.target.history.nodes ?? [];
 
@@ -383,6 +390,26 @@ function computeTags(repo: GraphQLRepo, lastCommitAt: string, now: number): Tag[
   // community_watch: more watchers than stars — people invested before hype arrives
   if (repo.watchers.totalCount > repo.stargazerCount && repo.watchers.totalCount >= 10) {
     tags.push('community_watch');
+  }
+
+  // funded: maintainer has active funding (Sponsors, Patreon, OpenCollective, etc.)
+  if (repo.fundingLinks?.length > 0) {
+    tags.push('funded');
+  }
+
+  // release_machine: 5+ releases in last 90 days — serious shipping cadence
+  if (recentReleases >= 5) {
+    tags.push('release_machine');
+  }
+
+  // under_pressure: active solo/micro team drowning in open issues
+  if (repo.openIssues.totalCount > 10 && repo.mentionableUsers.totalCount <= 2 && healthScore >= 60) {
+    tags.push('under_pressure');
+  }
+
+  // community_hub: rich discussion culture beyond issues
+  if (repo.hasDiscussionsEnabled && repo.discussions.totalCount > 20) {
+    tags.push('community_hub');
   }
 
   return tags;
@@ -537,7 +564,7 @@ async function main() {
 
       const healthScore = computeHealthScore(raw, lastCommitAt, now);
       const undervaluedScore = computeUndervaluedScore(raw, commits, recentReleases, now);
-      const tags = computeTags(raw, lastCommitAt, now);
+      const tags = computeTags(raw, lastCommitAt, now, recentReleases, healthScore);
 
       const maintainerCounts: Record<string, number> = {};
       for (const c of commits) {
