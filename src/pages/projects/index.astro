@@ -11,7 +11,11 @@ const promotedRepos = new Set(promotedEntries.map(e => e.repo.toLowerCase()));
 const all = await getCollection('projects');
 
 const projects = all
-  .filter(p => p.data.status !== 'archived')
+  .filter(p => {
+    if (p.data.status === 'archived') return false;
+    const d = p.data.description.trim();
+    return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
+  })
   .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore);
 
 const regular  = projects.filter(p => !promotedRepos.has(p.data.repo.toLowerCase()));
