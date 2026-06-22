@@ -90,7 +90,7 @@ interface GraphQLRepo {
   mergedPRs: { totalCount: number };
   helpWantedIssues: { totalCount: number };
   goodFirstIssues: { totalCount: number };
-  hasReadme: { id: string } | null;
+  readme: { text: string } | null;
   hasLicense: { id: string } | null;
   repositoryTopics: { nodes: Array<{ topic: { name: string } }> };
   mentionableUsers: { totalCount: number };
@@ -147,7 +147,7 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     mergedPRs: pullRequests(states: MERGED) { totalCount }
     helpWantedIssues: issues(states: OPEN, labels: ["help wanted"])  { totalCount }
     goodFirstIssues:  issues(states: OPEN, labels: ["good first issue"]) { totalCount }
-    hasReadme:        object(expression: "HEAD:README.md") { id }
+    readme:           object(expression: "HEAD:README.md") { ... on Blob { text } }
     hasLicense:       object(expression: "HEAD:LICENSE")   { id }
     repositoryTopics(first: 10) { nodes { topic { name } } }
     mentionableUsers(first: 5) { totalCount }
@@ -662,7 +662,19 @@ async function main() {
         if (existsSync(mdPath)) unlinkSync(mdPath);
         continue;
       }
-      const body = `${data.name} is tracked by SilentStars. ${data.description}`;
+      const body = (() => {
+        const raw_readme = raw.readme?.text ?? '';
+        if (!raw_readme) return data.description;
+        const cleaned = raw_readme
+          .split('\n')
+          .filter(l => !/^\s*\[!\[/.test(l))          // strip badge lines
+          .filter(l => !/^\s*<(img|a |div|p |span)/.test(l)) // strip HTML tags
+          .join('\n')
+          .replace(/<!--[\s\S]*?-->/g, '')             // strip HTML comments
+          .replace(/\n{3,}/g, '\n\n')                  // collapse blank lines
+          .trim();
+        return cleaned.length > 1200 ? cleaned.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : cleaned;
+      })();
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
       writtenSlugs.add(slug);
     }
