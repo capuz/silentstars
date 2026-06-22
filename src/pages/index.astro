@@ -174,11 +174,52 @@ const starsDisplay   = totalStars >= 1000
     </section>
   )}
 
+  <section class="section container newsletter-section">
+    <div class="newsletter-inner">
+      <div class="newsletter-copy">
+        <p class="newsletter-label"><span class="mono-prefix">//</span> stay in the loop</p>
+        <p class="newsletter-desc">Weekly hidden gems — one digest, no noise.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" name="email" required placeholder="your@email.com" class="newsletter-input" />
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" class="newsletter-msg" aria-live="polite"></p>
+    </div>
+  </section>
+
   <section class="section container cta-section">
     <p class="cta-text">→ see all {visible.length} projects in the directory</p>
     <a href={`${base}projects`} class="btn-primary">Open directory</a>
   </section>
 </Base>
+
+<script>
+  const form = document.getElementById('newsletter-form') as HTMLFormElement;
+  const msg  = document.getElementById('newsletter-msg') as HTMLParagraphElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
+    const btn   = form.querySelector('button') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      await fetch('https://buttondown.com/api/emails/embed-subscribe/silentstars', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ email, embed: '1' }),
+        mode: 'no-cors',
+      });
+      form.style.display = 'none';
+      msg.textContent = '✓ Check your inbox to confirm.';
+    } catch {
+      msg.textContent = 'Something went wrong. Try again.';
+      btn.disabled = false;
+      btn.textContent = 'Subscribe';
+    }
+  });
+</script>
 
 <style>
   /* Hero */
@@ -305,6 +346,70 @@ const starsDisplay   = totalStars >= 1000
     transition: opacity .15s;
   }
   .see-more a:hover { opacity: .7; text-decoration: none; }
+
+  /* Newsletter */
+  .newsletter-section {
+    border-top: 1px solid var(--border);
+  }
+  .newsletter-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .newsletter-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+  }
+  .newsletter-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .newsletter-input {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.55em 1em;
+    color: var(--text);
+    flex: 1;
+    min-width: 200px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .newsletter-input:focus { border-color: var(--accent); }
+  .newsletter-input::placeholder { color: var(--text-dim); }
+  .newsletter-btn {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: var(--accent);
+    color: var(--bg);
+    padding: 0.55em 1.4em;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .newsletter-btn:hover { opacity: 0.85; }
+  .newsletter-btn:disabled { opacity: 0.5; cursor: default; }
+  .newsletter-msg {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    min-height: 1.2em;
+  }
 
   /* CTA */
   .cta-section {
