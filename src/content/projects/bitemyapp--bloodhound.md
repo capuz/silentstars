@@ -3,7 +3,7 @@ repo: "bitemyapp/bloodhound"
 name: "bloodhound"
 description: "Haskell Elasticsearch client and query DSL"
 url: "https://github.com/bitemyapp/bloodhound"
-homepage: "bitemyapp.com"
+homepage: "https://bitemyapp.com"
 language: "Haskell"
 languages: ["Haskell"]
 languagePcts: [100]

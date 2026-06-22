@@ -604,7 +604,13 @@ async function main() {
         name: raw.name,
         description: raw.description ?? '',
         url: raw.url,
-        homepage: raw.homepageUrl ?? undefined,
+        homepage: (() => {
+          const h = raw.homepageUrl?.trim();
+          if (!h) return undefined;
+          try { new URL(h); return h; } catch {
+            try { new URL(`https://${h}`); return `https://${h}`; } catch { return undefined; }
+          }
+        })(),
         language: raw.primaryLanguage?.name,
         ...(() => {
           const total = raw.languages?.totalSize ?? 0;
