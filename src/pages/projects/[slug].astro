@@ -280,11 +280,16 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
         {d.fundingLinks && d.fundingLinks.length > 0 && (
           <div class="funding-block">
             <p class="panel-label">// funding</p>
-            {d.fundingLinks.map(f => (
-              <a href={f.url} target="_blank" rel="noopener" class="funding-link">
-                {f.platform.toLowerCase().replace('_', ' ')} ↗
-              </a>
-            ))}
+            {d.fundingLinks.map(f => {
+              const sep      = f.indexOf(':');
+              const platform = sep > -1 ? f.slice(0, sep).toLowerCase().replace(/_/g, ' ') : 'sponsor';
+              const url      = sep > -1 ? f.slice(sep + 1) : f;
+              return (
+                <a href={url} target="_blank" rel="noopener" class="funding-link">
+                  {platform} ↗
+                </a>
+              );
+            })}
           </div>
         )}
 
