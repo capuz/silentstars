@@ -270,6 +270,23 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
           <span class="stat-key">created</span>
           <span class="stat-val">{mmyyyy(d.createdAt)}</span>
         </div>
+        {d.discussionCount != null && (
+          <div class="stat-row">
+            <span class="stat-key">discussions</span>
+            <span class="stat-val">{d.discussionCount}</span>
+          </div>
+        )}
+
+        {d.fundingLinks && d.fundingLinks.length > 0 && (
+          <div class="funding-block">
+            <p class="panel-label">// funding</p>
+            {d.fundingLinks.map(f => (
+              <a href={f.url} target="_blank" rel="noopener" class="funding-link">
+                {f.platform.toLowerCase().replace('_', ' ')} ↗
+              </a>
+            ))}
+          </div>
+        )}
 
         {d.status === 'revived' && d.revivedAfterMonths && (
           <div class="revived-note">
@@ -567,6 +584,17 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
     padding: 6px 10px;
     background: rgba(124, 58, 237, 0.06);
   }
+
+  .funding-block { margin-top: 1.25rem; }
+  .funding-link {
+    display: block;
+    font-family: var(--f-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-top: 0.4rem;
+    transition: opacity 0.15s;
+  }
+  .funding-link:hover { opacity: 0.7; text-decoration: none; }
 
   /* ── Prose ── */
   .prose-panel { padding: 0; }
