@@ -180,8 +180,15 @@ const starsDisplay   = totalStars >= 1000
         <p class="newsletter-label"><span class="mono-prefix">//</span> stay in the loop</p>
         <p class="newsletter-desc">Weekly hidden gems — one digest, no noise.</p>
       </div>
-      <form id="newsletter-form" class="newsletter-form">
+      <form
+        id="newsletter-form"
+        class="newsletter-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/silentstars"
+        method="post"
+        target="popupwindow"
+      >
         <input type="email" name="email" required placeholder="your@email.com" class="newsletter-input" />
+        <input type="hidden" name="embed" value="1" />
         <button type="submit" class="newsletter-btn">Subscribe</button>
       </form>
       <p id="newsletter-msg" class="newsletter-msg" aria-live="polite"></p>
@@ -198,26 +205,9 @@ const starsDisplay   = totalStars >= 1000
   const form = document.getElementById('newsletter-form') as HTMLFormElement;
   const msg  = document.getElementById('newsletter-msg') as HTMLParagraphElement;
 
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = (form.elements.namedItem('email') as HTMLInputElement).value;
-    const btn   = form.querySelector('button') as HTMLButtonElement;
-    btn.disabled = true;
-    btn.textContent = '…';
-    try {
-      await fetch('https://buttondown.com/api/emails/embed-subscribe/silentstars', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ email, embed: '1' }),
-        mode: 'no-cors',
-      });
-      form.style.display = 'none';
-      msg.textContent = '✓ Check your inbox to confirm.';
-    } catch {
-      msg.textContent = 'Something went wrong. Try again.';
-      btn.disabled = false;
-      btn.textContent = 'Subscribe';
-    }
+  form?.addEventListener('submit', () => {
+    window.open('https://buttondown.com/silentstars', 'popupwindow');
+    msg.textContent = '✓ Complete the verification in the window that opened.';
   });
 </script>
 
