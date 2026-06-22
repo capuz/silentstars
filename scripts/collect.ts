@@ -650,6 +650,12 @@ async function main() {
 
       const slug = slugify(raw.nameWithOwner);
       const mdPath = resolve(ROOT, `src/content/projects/${slug}.md`);
+      const desc = data.description.trim();
+      if (!desc || desc.toLowerCase() === data.name.toLowerCase()) {
+        console.log(`    skip (no meaningful description)`);
+        if (existsSync(mdPath)) unlinkSync(mdPath);
+        continue;
+      }
       const body = `${data.name} is tracked by SilentStars. ${data.description}`;
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
       writtenSlugs.add(slug);

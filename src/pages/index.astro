@@ -4,7 +4,11 @@ import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 
 const all = await getCollection('projects');
-const visible = all.filter(p => p.data.status !== 'archived');
+const visible = all.filter(p => {
+  if (p.data.status === 'archived') return false;
+  const d = p.data.description.trim();
+  return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
+});
 
 const newborns = visible
   .filter(p => p.data.status === 'newborn')
