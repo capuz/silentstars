@@ -7,18 +7,21 @@ export const GET: APIRoute = async ({ site }) => {
   const root = `${origin}${base}`;
 
   const projects = await getCollection('projects');
-  const slugs = projects.map((p) => p.slug);
+  const today = new Date().toISOString().slice(0, 10);
 
   const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/'];
 
-  const urls = [
-    ...staticRoutes.map((r) => `${root}${r}`),
-    ...slugs.map((s) => `${root}projects/${s}/`),
+  const entries = [
+    ...staticRoutes.map((r) => ({ url: `${root}${r}`, lastmod: today })),
+    ...projects.map((p) => ({
+      url: `${root}projects/${p.slug}/`,
+      lastmod: p.data.lastCommitAt.slice(0, 10),
+    })),
   ];
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${url}</loc></url>`).join('\n')}
+${entries.map(({ url, lastmod }) => `  <url><loc>${url}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n')}
 </urlset>`;
 
   return new Response(xml, {
