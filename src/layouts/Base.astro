@@ -57,7 +57,7 @@ const pageUrl = Astro.url.href;
       <!-- NAV -->
       <nav class="ss-nav">
         <a href={`${base}`} class="ss-wordmark">
-          <span class="ss-star" style="color:var(--accent);font-size:22px;line-height:1;">★</span>
+          <img src={`${base}logo-star.png`} alt="SilentStars" class="ss-star-logo" width="24" height="24" />
           <span><span style="color:var(--ink);">Silent</span><span style="color:var(--accent);">Stars</span></span>
         </a>
         <div class="ss-nav-links">
@@ -97,18 +97,6 @@ const pageUrl = Astro.url.href;
 <!-- torch + theme toggle — after paint -->
 <script is:inline>
   (function(){
-    // star: spin once on load, then every 5s
-    var star = document.querySelector('.ss-star');
-    if (star) {
-      var spin = function() {
-        star.style.animation = 'none';
-        star.getBoundingClientRect();
-        star.style.animation = 'ss-coin 0.65s ease-in-out';
-      };
-      spin();
-      setInterval(spin, 5000);
-    }
-
     // torch
     var torch = document.getElementById('ss-torch');
     if (torch) {
