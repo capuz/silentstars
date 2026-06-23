@@ -49,8 +49,8 @@ const pageUrl = Astro.url.href;
     <!-- grain -->
     <div aria-hidden="true" style="position:fixed;inset:0;z-index:9;pointer-events:none;opacity:var(--grain-op,.35);mix-blend-mode:var(--grain-blend,multiply);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-repeat:repeat;background-size:140px 140px;"></div>
 
-    <!-- torch: lego stud pattern revealed under cursor -->
-    <div id="ss-torch" aria-hidden="true" style="position:fixed;inset:0;z-index:8;pointer-events:none;opacity:0.5;background-image:radial-gradient(circle,var(--ink) 1.4px,transparent 1.9px),radial-gradient(circle,var(--ink) 0.7px,transparent 1.1px);background-size:26px 26px,26px 26px;background-position:0 0,13px 13px;-webkit-mask-image:radial-gradient(170px circle at var(--mx,-300px) var(--my,-300px),#000 0%,rgba(0,0,0,.4) 42%,transparent 72%);mask-image:radial-gradient(170px circle at var(--mx,-300px) var(--my,-300px),#000 0%,rgba(0,0,0,.4) 42%,transparent 72%);"></div>
+    <!-- radar sonar -->
+    <div id="ss-radar" aria-hidden="true"></div>
 
     <div style="position:relative;z-index:1;display:flex;flex-direction:column;min-height:100dvh;">
 
@@ -110,12 +110,12 @@ const pageUrl = Astro.url.href;
       setInterval(spin, 10000);
     }
 
-    // torch
-    var torch = document.getElementById('ss-torch');
-    if (torch) {
+    // radar sonar
+    var radar = document.getElementById('ss-radar');
+    if (radar) {
       window.addEventListener('mousemove', function(e){
-        torch.style.setProperty('--mx', e.clientX + 'px');
-        torch.style.setProperty('--my', e.clientY + 'px');
+        radar.style.left = e.clientX + 'px';
+        radar.style.top  = e.clientY + 'px';
       }, { passive: true });
     }
 
@@ -137,6 +137,31 @@ const pageUrl = Astro.url.href;
 </script>
 
 <style is:global>
+  /* ── Radar sonar ── */
+  #ss-radar {
+    position: fixed;
+    pointer-events: none;
+    z-index: 8;
+    width: 0;
+    height: 0;
+    left: -300px;
+    top: -300px;
+  }
+  #ss-radar::before,
+  #ss-radar::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    transform: translate(-50%, -50%);
+    animation: ss-sonar 3s ease-out infinite;
+  }
+  #ss-radar::after { animation-delay: 1.5s; }
+  @keyframes ss-sonar {
+    0%   { width: 0;     height: 0;     opacity: 0.55; }
+    100% { width: 110px; height: 110px; opacity: 0;    }
+  }
+
   /* ── Nav ── */
   .ss-nav {
     position: sticky;
