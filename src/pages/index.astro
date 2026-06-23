@@ -10,46 +10,118 @@ const visible = all.filter(p => {
   return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
 });
 
-const newborns = visible
-  .filter(p => p.data.status === 'newborn')
-  .sort((a, b) => new Date(b.data.createdAt).getTime() - new Date(a.data.createdAt).getTime())
-  .slice(0, 9);
+// ── Deduplication ─────────────────────────────────────────────────────────────
+// Each project appears in at most one section (highest-priority wins).
+type Entry = typeof visible[number];
+const shown = new Set<string>();
 
-const thriving = visible
-  .filter(p => p.data.status === 'thriving')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
+function take(pool: Entry[], n: number): Entry[] {
+  const result: Entry[] = [];
+  for (const p of pool) {
+    if (result.length >= n) break;
+    if (!shown.has(p.slug)) { shown.add(p.slug); result.push(p); }
+  }
+  return result;
+}
 
-const watched = visible
-  .filter(p => p.data.status === 'watched')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
+// ── Sections (priority order — first match wins for dedup) ────────────────────
 
-const hiddenGems = visible
-  .filter(p => p.data.tags.includes('hidden_gem') && p.data.status !== 'thriving')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
+const topPicks = take(
+  visible.filter(() => true).sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
 
-const quiet = visible
-  .filter(p => p.data.status === 'quiet')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
+const shipping = take(
+  visible
+    .filter(p => p.data.tags.includes('release_machine'))
+    .sort((a, b) => (b.data.recentReleases ?? 0) - (a.data.recentReleases ?? 0)),
+  6
+);
 
-const revived = visible
-  .filter(p => p.data.status === 'revived')
-  .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore)
-  .slice(0, 9);
+const helpWanted = take(
+  visible
+    .filter(p => p.data.tags.includes('needs_contributors'))
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  14
+);
+
+const underPressure = take(
+  visible
+    .filter(p => p.data.tags.includes('under_pressure'))
+    .sort((a, b) => (b.data.openIssues ?? 0) - (a.data.openIssues ?? 0)),
+  9
+);
+
+const soloBuilders = take(
+  visible
+    .filter(p => p.data.tags.includes('solo_builder'))
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
+
+const legacyHeroes = take(
+  visible
+    .filter(p => p.data.tags.includes('legacy_hero'))
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
+
+const forkMagnets = take(
+  visible
+    .filter(p => p.data.tags.includes('fork_magnet'))
+    .sort((a, b) =>
+      (b.data.forks / Math.max(b.data.stars, 1)) -
+      (a.data.forks / Math.max(a.data.stars, 1))
+    ),
+  9
+);
+
+const watchedProjs = take(
+  visible
+    .filter(p => p.data.status === 'watched' || p.data.tags.includes('community_watch'))
+    .sort((a, b) =>
+      (b.data.watchers / Math.max(b.data.stars, 1)) -
+      (a.data.watchers / Math.max(a.data.stars, 1))
+    ),
+  9
+);
+
+const funded = take(
+  visible
+    .filter(p => p.data.tags.includes('funded'))
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
+
+const hiddenGems = take(
+  visible
+    .filter(p => p.data.tags.includes('hidden_gem'))
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
+
+const newborns = take(
+  visible
+    .filter(p => p.data.status === 'newborn')
+    .sort((a, b) => new Date(b.data.createdAt).getTime() - new Date(a.data.createdAt).getTime()),
+  9
+);
+
+const revived = take(
+  visible
+    .filter(p => p.data.status === 'revived')
+    .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  9
+);
 
 const base = import.meta.env.BASE_URL;
 
-// global stats
-const totalProjects  = visible.length;
-const totalThriving  = visible.filter(p => p.data.status === 'thriving').length;
-const totalNewborn   = visible.filter(p => p.data.status === 'newborn').length;
-const totalStars     = visible.reduce((sum, p) => sum + (p.data.stars ?? 0), 0);
-const starsDisplay   = totalStars >= 1000
-  ? `${(totalStars / 1000).toFixed(1)}k`
-  : String(totalStars);
+// ── Global stats ───────────────────────────────────────────────────────────────
+const totalProjects = visible.length;
+const totalActive   = visible.filter(p => ['thriving','newborn','revived','watched'].includes(p.data.status)).length;
+const totalSolo     = visible.filter(p => p.data.tags.includes('solo_builder')).length;
+const totalStars    = visible.reduce((sum, p) => sum + (p.data.stars ?? 0), 0);
+const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` : String(totalStars);
 ---
 <Base title="SilentStars">
   <section class="hero">
@@ -71,13 +143,13 @@ const starsDisplay   = totalStars >= 1000
         </div>
         <div class="stat-sep">·</div>
         <div class="stat">
-          <span class="stat-num">{totalThriving}</span>
-          <span class="stat-label">thriving now</span>
+          <span class="stat-num">{totalActive}</span>
+          <span class="stat-label">actively building</span>
         </div>
         <div class="stat-sep">·</div>
         <div class="stat">
-          <span class="stat-num">{totalNewborn}</span>
-          <span class="stat-label">newborn</span>
+          <span class="stat-num">{totalSolo}</span>
+          <span class="stat-label">solo builders</span>
         </div>
         <div class="stat-sep">·</div>
         <div class="stat">
@@ -88,46 +160,118 @@ const starsDisplay   = totalStars >= 1000
     </div>
   </section>
 
-  {newborns.length > 0 && (
+  {topPicks.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2><span class="mono-prefix">//</span> Newborn · just started</h2>
-        <p>Born in the last 2 months, committed in the last 2 weeks — fragile, alive, and worth watching.</p>
+        <h2><span class="mono-prefix">//</span> Top picks</h2>
+        <p>Highest signal-to-reach ratio — building more than their audience knows.</p>
       </div>
       <div class="grid">
-        {newborns.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {topPicks.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
   )}
 
-  {thriving.length > 0 && (
+  {shipping.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2><span class="mono-prefix">//</span> Thriving Now</h2>
-        <p>Committed in the last 2 weeks — ranked by undervalued score.</p>
+        <h2><span class="mono-prefix">//</span> Shipping</h2>
+        <p>5+ releases in 90 days — these teams don't stop.</p>
       </div>
       <div class="grid">
-        {thriving.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {shipping.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
   )}
 
-  {watched.length > 0 && (
+  {helpWanted.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Help wanted</h2>
+        <p>The maintainer labelled the door open. Time to walk in.</p>
+      </div>
+      <div class="grid">
+        {helpWanted.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {underPressure.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Under pressure</h2>
+        <p>Healthy project, overwhelmed solo team. Worth saving.</p>
+      </div>
+      <div class="grid">
+        {underPressure.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {soloBuilders.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Solo builders</h2>
+        <p>One person carrying it all. No team. No VC. Just commits.</p>
+      </div>
+      <div class="grid">
+        {soloBuilders.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {legacyHeroes.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Legacy heroes</h2>
+        <p>5+ years old and still committing. Resilience over hype.</p>
+      </div>
+      <div class="grid">
+        {legacyHeroes.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {forkMagnets.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Fork magnets</h2>
+        <p>More forks than stars — used as a building block, not just bookmarked.</p>
+      </div>
+      <div class="grid">
+        {forkMagnets.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {watchedProjs.length > 0 && (
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Watched</h2>
-        <p>More watchers than stars — devs are tracking these before the public notices.</p>
+        <p>Devs are tracking these before the public notices.</p>
       </div>
       <div class="grid">
-        {watched.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {watchedProjs.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+      </div>
+      <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
+    </section>
+  )}
+
+  {funded.length > 0 && (
+    <section class="section container">
+      <div class="section-header">
+        <h2><span class="mono-prefix">//</span> Funded</h2>
+        <p>Financially supported. Committed to shipping long-term.</p>
+      </div>
+      <div class="grid">
+        {funded.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -136,28 +280,24 @@ const starsDisplay   = totalStars >= 1000
   {hiddenGems.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2><span class="mono-prefix">//</span> Hidden Gems</h2>
-        <p>Under 100 stars. Recent activity. Genuine craft. Look closer.</p>
+        <h2><span class="mono-prefix">//</span> Hidden gems</h2>
+        <p>Under 100 stars. Documented. Alive. Look closer.</p>
       </div>
       <div class="grid">
-        {hiddenGems.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {hiddenGems.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
   )}
 
-  {quiet.length > 0 && (
+  {newborns.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2><span class="mono-prefix">//</span> Quiet</h2>
-        <p>Still alive, just not loud. Slow cadence, steady craft.</p>
+        <h2><span class="mono-prefix">//</span> Newborn</h2>
+        <p>Born in the last 2 months, committed in the last 2 weeks — fragile, alive, worth watching.</p>
       </div>
       <div class="grid">
-        {quiet.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {newborns.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -170,9 +310,7 @@ const starsDisplay   = totalStars >= 1000
         <p>Back from the dead. Someone cared enough to pick it up again.</p>
       </div>
       <div class="grid">
-        {revived.map(p => (
-          <ProjectCard slug={p.slug} {...p.data} />
-        ))}
+        {revived.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}resurrections/`}>see more →</a></div>
     </section>
