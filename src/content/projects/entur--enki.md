@@ -30,7 +30,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/d3f315a68f625cf53d800e674
 
 Frontend app for Nplan - a simple timetable editor. Backend is [Uttu](https://github.com/entur/uttu).
 
-![Screenshot of journey pattern editor](screenshots/journey-pattern.png)
+
 
 ## Development
 

@@ -32,7 +32,6 @@ discussionCount: 0
 
 A workflow execution platform built on top of the fantastic Cloudflare infrastructure.
 
-![Workflow](./images/workflow.png)
 
 ## 🔍 Overview
 

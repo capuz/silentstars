@@ -26,7 +26,7 @@ maintainers: ["a-linye", "Ambition9186", "silenceper"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8b4ca0a2f6be2c1622540a0fe93c98183cd54357370ef735ddc7dde7e36d5d47/TencentBlueKing/bk-bscp"
 ---
 
-![蓝鲸服务配置中心.png](./docs/logo/bscp_zh.png)
+
 
 ---
 

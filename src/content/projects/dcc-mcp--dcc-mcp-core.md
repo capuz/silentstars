@@ -29,7 +29,7 @@ discussionCount: 0
 
 # dcc-mcp-core
 
-![dcc-mcp-core logo](docs/assets/brand/dcc-mcp-logo.png)
+
 
 [中文](README_zh.md) | English
 

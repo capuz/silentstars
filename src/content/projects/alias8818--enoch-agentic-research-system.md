@@ -29,7 +29,7 @@ discussionCount: 0
 
 # Enoch Agentic Research System
 
-![Enoch — Agentic Research Control Plane](site/assets/social-card.svg)
+
 
 Enoch Control Plane is an agentic research control plane: it queues ideas, gates dispatch, supervises local AI runs, preserves evidence, and packages AI-generated research artifacts with provenance instead of pretending autonomous work is just a script.
 

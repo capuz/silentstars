@@ -39,7 +39,7 @@ More details at [sonarcloud](SONARCLOUD.md)
 |   2  |   Backend  |        Database, Cache, Messaging        |
 |   3  | Management |        Monitoring, CI/CD, Tracing        |
 
-![LayardArchitecturalOverview.png](docs/LayardArchitecturalOverview.png)
+
 
 ## Concepts
 
