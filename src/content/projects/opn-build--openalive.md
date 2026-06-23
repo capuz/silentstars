@@ -18,8 +18,8 @@ recentReleases: 3
 createdAt: "2026-05-30T02:07:49Z"
 lastCommitAt: "2026-06-19T13:40:59Z"
 lastReleaseAt: "2026-06-19T11:24:49Z"
-status: "thriving"
-tags: ["solo_builder"]
+status: "newborn"
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 78
 undervaluedScore: 46
 maintainers: ["capuz"]
