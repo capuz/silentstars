@@ -3,21 +3,24 @@ const items = [
   {
     glyph: '↑',
     q: 'The Undervalued Score',
-    a: 'How much attention a project earns versus how much it actually gets. Higher means more overlooked — real momentum that the star count hasn\'t caught up with yet. Normalised to 0–100; above 50 means the work is outrunning its audience.',
+    a: 'How much a project earns versus how much attention it actually gets. Above 50 means the work is outrunning its audience. Recomputed nightly from commit velocity, contributor effort, issue resolution, fork utility, release cadence, and project maturity — divided by a logarithmic reach factor.',
     body: `score  = signal / reach
 
-signal = 0.40·commit_velocity   // commits in last 90 days
-       + 0.25·contributor_work  // unique authors × activity
-       + 0.20·issue_response    // closed ÷ total issues
-       + 0.15·release_cadence   // tagged releases in 90 days
+signal = 0.25·commit_velocity   // commits in last 90 days (cap 30)
+       + 0.20·contributor_work  // unique authors × velocity (cap 100)
+       + 0.20·issue_resolution  // closed ÷ total issues
+       + 0.20·fork_ratio        // forks ÷ stars (proxy for real usage)
+       + 0.10·release_cadence   // releases in 90 days (cap 3)
+       + age_bonus              // +0 to +0.30 after 6 months
+       + homepage_bonus         // +0.05 if homepage is set
 
-reach  = log₁₀(stars + watchers + 1)`,
+reach  = log₁₀(stars + watchers + 10)`,
   },
   {
     glyph: '♥',
     q: 'The Health Score',
     a: 'Is the project alive and maintained right now? A 0–100 pulse recomputed nightly from commit recency, rhythm, how fast issues close, and how quickly PRs get merged.',
-    body: `health = 0.35·recency       // days since last commit
+    body: `health = 0.35·recency       // days since last commit (90d decay)
        + 0.25·cadence       // commit rhythm consistency
        + 0.20·issue_health  // closed ÷ total issues
        + 0.20·pr_health     // merged ÷ total PRs`,
@@ -30,6 +33,21 @@ reach  = log₁₀(stars + watchers + 1)`,
 Stable    60 – 79    maintained, steady, no alarms
 Quiet     40 – 59    slowing down — watch this one
 At Risk    0 – 39    going dark · candidate for rescue`,
+  },
+  {
+    glyph: '//',
+    q: 'Tags — what each label means',
+    a: 'Tags are independent behavioral signals computed nightly. A project can hold multiple at once. They drive the home page sections.',
+    body: `solo_builder      one person holds > 80% of commits (last 180d)
+needs_contributors has open "help wanted" or "good first issue" labels
+hidden_gem        < 100 stars · active in last 3 months · documented
+legacy_hero       repo > 5 years old · committed this year
+fork_magnet       forks/stars > 0.5 · used as template or dependency
+release_machine   5+ releases in the last 90 days
+under_pressure    > 10 open issues · ≤ 2 contributors · health ≥ 60
+community_watch   watchers > stars · devs tracking before the public
+community_hub     GitHub Discussions enabled · > 20 discussions
+funded            maintainer has active funding channel`,
   },
   {
     glyph: '★',
