@@ -481,7 +481,12 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
 
   /* Newsletter */
   .newsletter-section {
-    border-top: 1px solid var(--border);
+    border: 2px solid var(--accent);
+    border-radius: 12px;
+    background: var(--card);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    box-shadow: 4px 4px 0 var(--accent);
   }
   .newsletter-inner {
     display: flex;
