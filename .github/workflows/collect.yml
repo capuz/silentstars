@@ -3,9 +3,7 @@ name: Nightly collect + deploy
 on:
   schedule:
     - cron: '0 3 * * *'   # 03:00 UTC every night
-  push:
-    branches: [main]
-  workflow_dispatch:        # manual trigger
+  workflow_dispatch:        # manual trigger only — push never triggers this
 
 permissions:
   contents: write
