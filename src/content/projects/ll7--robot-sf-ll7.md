@@ -33,7 +33,7 @@ pedestrian-filled environments.
 > **Status:** Active development. Start here for a quick first touch, then use the linked docs for
 > detailed workflows, benchmarks, and contributor guidance.
 
-![Robot SF demo](docs/video/demo_01.gif)
+
 
 ## Start here
 

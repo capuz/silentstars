@@ -28,7 +28,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/62321848e02b7d31bdcebd308
 
 # Nucleus
 
-![stm32.toml example](stm32.toml.png)
+
 
 > A CLI-first STM32 developer platform: declarative hardware configuration,
 > a constraint solver that actually understands silicon, dual-backend

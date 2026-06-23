@@ -36,9 +36,9 @@ IoT система мониторинга почвы на базе ESP32.
 
 ## Схема подключения
 
-![Полная схема: ESP32 + SP3485E + JXCT + питание](habr_article/images/wiring_full_system.png)
 
-![Таблица пинов](habr_article/images/wiring_pin_table.png)
+
+
 
 ## Быстрый старт
 

@@ -670,6 +670,7 @@ async function main() {
           .filter(l => !/^\s*\[!\[/.test(l))          // strip badge lines
           .filter(l => !/^\s*<(img|a |div|p |span)/.test(l)) // strip HTML tags
           .join('\n')
+          .replace(/!\[[^\]]*\]\((?!https?:\/\/)[^)]+\)/g, '') // strip non-http markdown images (relative/bare paths break Vite)
           .replace(/<!--[\s\S]*?-->/g, '')             // strip HTML comments
           .replace(/\n{3,}/g, '\n\n')                  // collapse blank lines
           .trim();

@@ -39,7 +39,7 @@ Coding agents can produce plausible code that is still wrong. AgentOps helps ans
 
 ## See it work
 
-![The AgentOps loop in Claude Code: /discovery builds a bead graph, /crank fans sub-agents out in waves, /validate --mixed gets a Claude + Codex verdict](docs/assets/hero.gif)
+
 
 <sub><code>/discovery</code> → bead graph · <code>/crank</code> → sub-agents in waves · <code>/validate --mixed</code> → real Claude + Codex verdict. Live sessions. <a href="docs/assets/hero.mp4">MP4</a></sub>
 

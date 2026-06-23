@@ -36,7 +36,7 @@ discussionCount: 0
 
 <p> Database schema diagram for appblueprintdb </p>
 
-![Database Schema Diagram](docs/images/image.png)
+
 
 </h5>
 
