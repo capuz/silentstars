@@ -64,9 +64,9 @@ const pageUrl = Astro.url.href;
           <a href={`${base}projects/`} class="ss-nav-link">Directory</a>
           <a href={`${base}#subscribe`} class="ss-nav-link">Subscribe</a>
           <a href={`${base}submit/`} class="ss-nav-link ss-nav-submit">Submit ↗</a>
-          <a href={`${base}about/`} class="ss-nav-link">About</a>
-          <a href={`${base}rss.xml`} class="ss-nav-link" style="opacity:.6;">RSS</a>
-          <a href="https://github.com/capuz/silentstars" target="_blank" rel="noopener" class="ss-nav-link" style="opacity:.6;">GitHub</a>
+          <a href={`${base}about/`} class="ss-nav-link ss-nav-link-secondary">About</a>
+          <a href={`${base}rss.xml`} class="ss-nav-link ss-nav-link-secondary" style="opacity:.6;">RSS</a>
+          <a href="https://github.com/capuz/silentstars" target="_blank" rel="noopener" class="ss-nav-link ss-nav-link-secondary" style="opacity:.6;">GitHub</a>
           <button id="ss-theme-btn" class="ss-theme-btn">◐ Night</button>
         </div>
       </nav>
@@ -211,6 +211,13 @@ const pageUrl = Astro.url.href;
     padding: 4px 12px;
   }
   .ss-nav-submit:hover { background: var(--ink); color: var(--paper); }
+
+  @media (max-width: 680px) {
+    .ss-nav { padding: 8px 16px; gap: 8px; }
+    .ss-wordmark { font-size: 18px; }
+    .ss-nav-links { font-size: 11.5px; gap: 0; }
+    .ss-nav-link-secondary { display: none; }
+  }
 
   .ss-theme-btn {
     margin-left: 6px;
