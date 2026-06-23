@@ -63,6 +63,7 @@ const pageUrl = Astro.url.href;
         <div class="ss-nav-links">
           <a href={`${base}projects/`} class="ss-nav-link">Directory</a>
           <a href={`${base}about/`} class="ss-nav-link">About</a>
+          <a href={`${base}#subscribe`} class="ss-nav-link ss-nav-subscribe">Subscribe</a>
           <a href={`${base}submit/`} class="ss-nav-link ss-nav-submit">Submit ↗</a>
           <a href={`${base}rss.xml`} class="ss-nav-link" style="opacity:.6;">RSS</a>
           <a href="https://github.com/capuz/silentstars" target="_blank" rel="noopener" class="ss-nav-link" style="opacity:.6;">GitHub</a>
@@ -179,6 +180,15 @@ const pageUrl = Astro.url.href;
     color: #fff;
     text-decoration: none;
   }
+  .ss-nav-subscribe {
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    padding: 4px 12px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .ss-nav-subscribe:hover { background: var(--accent); color: #fff; }
+
   .ss-nav-submit {
     border: 1.5px solid var(--ink);
     border-radius: 999px;
