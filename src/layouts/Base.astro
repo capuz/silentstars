@@ -97,16 +97,15 @@ const pageUrl = Astro.url.href;
 <!-- torch + theme toggle — after paint -->
 <script is:inline>
   (function(){
-    // star: flip once on load, then every 10s
     // star spin
     var star = document.querySelector('.ss-star-logo');
     if (star) {
       var spin = function() {
         star.style.animation = 'none';
-        star.getBoundingClientRect();
-        star.style.animation = 'ss-coin 0.75s ease-in-out';
+        void star.offsetWidth;
+        star.style.animation = 'ss-coin-3d 0.8s ease-in-out';
       };
-      spin();
+      setTimeout(spin, 500);
       setInterval(spin, 10000);
     }
 
