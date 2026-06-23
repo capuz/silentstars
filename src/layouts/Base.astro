@@ -98,6 +98,18 @@ const pageUrl = Astro.url.href;
 <script is:inline>
   (function(){
     // star: flip once on load, then every 10s
+    // star spin
+    var star = document.querySelector('.ss-star-logo');
+    if (star) {
+      var spin = function() {
+        star.style.animation = 'none';
+        star.getBoundingClientRect();
+        star.style.animation = 'ss-coin 0.75s ease-in-out';
+      };
+      spin();
+      setInterval(spin, 10000);
+    }
+
     // torch
     var torch = document.getElementById('ss-torch');
     if (torch) {
