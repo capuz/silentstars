@@ -83,6 +83,14 @@ function mmyyyy(iso: string) {
   const d = new Date(iso);
   return `${String(d.getMonth()+1).padStart(2,'0')}-${d.getFullYear()}`;
 }
+function fullDateTime(iso: string) {
+  const dt = new Date(iso);
+  const date = `${dt.getUTCFullYear()}-${String(dt.getUTCMonth()+1).padStart(2,'0')}-${String(dt.getUTCDate()).padStart(2,'0')}`;
+  const h = dt.getUTCHours();
+  const m = dt.getUTCMinutes();
+  if (h === 0 && m === 0) return date;
+  return `${date} ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}`;
+}
 
 const daysSince = Math.floor((Date.now() - new Date(d.lastCommitAt).getTime()) / 86_400_000);
 const age       = daysSince === 0 ? 'today' : daysSince === 1 ? '1d ago' : `${daysSince}d ago`;
@@ -268,7 +276,7 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
         </div>
         <div class="stat-row">
           <span class="stat-key">created</span>
-          <span class="stat-val">{mmyyyy(d.createdAt)}</span>
+          <span class="stat-val">{fullDateTime(d.createdAt)}</span>
         </div>
         {d.discussionCount != null && (
           <div class="stat-row">
