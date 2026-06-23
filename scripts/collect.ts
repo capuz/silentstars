@@ -352,7 +352,7 @@ function computeStatus(
   // 4. Newborn: < 2 months old, docs present, active in last 2 weeks
   const createdMs = new Date(repo.createdAt).getTime();
   const monthsOld = (now - createdMs) / (30 * DAY_MS);
-  if (monthsOld < 2 && repo.hasReadme && repo.hasLicense && daysSinceLast < 14) return 'newborn';
+  if (monthsOld < 2 && repo.readme != null && repo.hasLicense != null && daysSinceLast < 14) return 'newborn';
 
   // 5. At risk: 2–12 months quiet + open issues or PRs
   const hasOpenWork = repo.openIssues.totalCount > 0 || repo.pullRequests.totalCount > 0;
@@ -392,7 +392,7 @@ function computeTags(
 
   // hidden_gem: < 100 stars + recent activity + docs
   const monthsSinceLast = (now - new Date(lastCommitAt).getTime()) / (30 * DAY_MS);
-  if (repo.stargazerCount < 100 && monthsSinceLast < 3 && repo.hasReadme && repo.hasLicense) {
+  if (repo.stargazerCount < 100 && monthsSinceLast < 3 && repo.readme != null && repo.hasLicense != null) {
     tags.push('hidden_gem');
   }
 
