@@ -204,18 +204,20 @@ const tagLabels: Record<string, string> = {
         {author}
       </a>
     </span>
-    <a href={url} target="_blank" rel="noopener noreferrer" class="footer-stars">
-      <span>★</span>{stars}
-    </a>
-    {(watchers ?? 0) > 0 && (
-      <span class="footer-watchers">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
-          <circle cx="12" cy="12" r="3"/>
-        </svg>
-        {watchers}
-      </span>
-    )}
+    <div class="footer-pills">
+      {(watchers ?? 0) > 0 && (
+        <span class="footer-watchers">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          {watchers}
+        </span>
+      )}
+      <a href={url} target="_blank" rel="noopener noreferrer" class="footer-stars">
+        <span>★</span>{stars}
+      </a>
+    </div>
   </div>
 </article>
 
@@ -440,10 +442,16 @@ const tagLabels: Record<string, string> = {
     border-radius: 999px;
     border: 1.5px solid var(--ink);
     color: var(--ink);
-    flex: none;
     transition: background .12s, color .12s;
   }
   .footer-stars:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .footer-pills {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    flex: none;
+  }
 
   .footer-watchers {
     display: inline-flex;
