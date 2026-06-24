@@ -129,8 +129,8 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
       <p class="hero-kicker">// open source is more than stars</p>
       <h1 class="hero-title">Not famous. Not abandoned. <span class="accent">Just building.</span></h1>
       <p class="hero-lede">
-        A nightly sky-survey of open source. We dig up the projects shipping real
-        code with too few eyes on them — and flag the ones quietly going dark.
+        SilentStars tracks <strong>{totalProjects}</strong> open source projects that are actively built but chronically undervalued.
+        No hype. No trending algorithms. Just signal.
       </p>
       <div class="hero-actions">
         <a href={`${base}projects/`} class="btn btn-primary">Browse the directory →</a>
@@ -379,6 +379,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     max-width: 62ch;
     margin: 14px 0 0;
   }
+  .hero-lede strong { color: var(--accent); font-weight: 700; }
 
   .hero-stats {
     display: flex;
