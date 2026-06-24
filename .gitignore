@@ -8,3 +8,7 @@ node_modules/
 # design reference files
 private/
 .atl/
+
+# agent skills
+.agents/
+skills-lock.json
