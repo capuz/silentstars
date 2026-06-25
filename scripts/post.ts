@@ -101,8 +101,24 @@ async function main(): Promise<void> {
 
   if (active.length === 0) throw new Error('No active projects found in latest.json');
 
-  const today   = new Date().toISOString().slice(0, 10);
-  const project = active[seededIndex(today, active.length)];
+  const projectArg = process.argv.find((_, i, a) => a[i - 1] === '--project')
+                  ?? process.env.PROJECT_SLUG
+                  ?? null;
+
+  let project: Project;
+  if (projectArg) {
+    const needle = projectArg.toLowerCase();
+    const found = data.projects.find(p =>
+      p.repo.toLowerCase() === needle ||
+      p.repo.toLowerCase().replace('/', '--') === needle,
+    );
+    if (!found) throw new Error(`Project not found: "${projectArg}"`);
+    project = found;
+  } else {
+    const today = new Date().toISOString().slice(0, 10);
+    project = active[seededIndex(today, active.length)];
+  }
+
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   const { text, facets, embed, siteUrl } = buildPost(project, baseUrl);
