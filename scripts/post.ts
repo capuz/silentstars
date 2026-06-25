@@ -126,7 +126,21 @@ async function main(): Promise<void> {
 
   const agent = new BskyAgent({ service: 'https://bsky.social' });
   await agent.login({ identifier, password });
-  await agent.post({ text, facets, embed, createdAt: new Date().toISOString() });
+
+  // Upload OG image as blob so the card thumbnail is always guaranteed
+  const slug   = project.repo.toLowerCase().replace('/', '--');
+  const ogUrl  = `${baseUrl}/og/${slug}.png`;
+  const ogRes  = await fetch(ogUrl);
+  if (!ogRes.ok) throw new Error(`Failed to fetch OG image: ${ogUrl} (${ogRes.status})`);
+  const ogBuf  = Buffer.from(await ogRes.arrayBuffer());
+  const { data: thumb } = await agent.uploadBlob(ogBuf, { encoding: 'image/png' });
+
+  const embedWithThumb = {
+    ...embed,
+    external: { ...embed.external, thumb: thumb.blob },
+  };
+
+  await agent.post({ text, facets, embed: embedWithThumb, createdAt: new Date().toISOString() });
   console.log(`✓ Posted: ${project.name} (undervalued ${project.undervaluedScore})`);
 }
 
