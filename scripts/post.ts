@@ -45,6 +45,22 @@ function byteLen(str: string): number {
   return new TextEncoder().encode(str).length;
 }
 
+function hashtagFacets(text: string) {
+  const encoder = new TextEncoder();
+  const result  = [];
+  const regex   = /#([a-zA-Z][a-zA-Z0-9]*)/g;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    const byteStart = encoder.encode(text.slice(0, match.index)).length;
+    const byteEnd   = byteStart + encoder.encode(match[0]).length;
+    result.push({
+      index: { byteStart, byteEnd },
+      features: [{ $type: 'app.bsky.richtext.facet#tag', tag: match[1] }],
+    });
+  }
+  return result;
+}
+
 function buildPost(p: Project, baseUrl: string) {
   const desc     = truncate(p.description ?? '', 180);
   const lang     = p.language ?? '';
@@ -68,10 +84,10 @@ function buildPost(p: Project, baseUrl: string) {
   const byteStart = byteLen(prefix);
   const byteEnd   = byteStart + byteLen(p.name);
 
-  const facets = [{
-    index: { byteStart, byteEnd },
-    features: [{ $type: 'app.bsky.richtext.facet#link', uri: p.url }],
-  }];
+  const facets = [
+    { index: { byteStart, byteEnd }, features: [{ $type: 'app.bsky.richtext.facet#link', uri: p.url }] },
+    ...hashtagFacets(text),
+  ];
 
   // External card → SilentStars project page
   const embed = {
