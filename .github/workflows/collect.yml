@@ -16,7 +16,7 @@ on:
       skip_post_x:
         description: "Saltar post a X.com"
         type: boolean
-        default: false
+        default: true
       dry_run:
         description: "Dry run — log post without sending to Bluesky or X.com"
         type: boolean
