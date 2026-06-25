@@ -1,0 +1,24 @@
+name: Study Bluesky Hashtags
+
+on:
+  workflow_dispatch:
+
+jobs:
+  study:
+    name: Hashtag study
+    runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - run: npx tsx scripts/study-hashtags.ts
+        env:
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
