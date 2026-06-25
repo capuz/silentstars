@@ -15,7 +15,8 @@
     "@atproto/api": "^0.20.16",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "^4.15.0",
-    "satori": "^0.26.0"
+    "satori": "^0.26.0",
+    "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
     "tsx": "^4.19.0",
