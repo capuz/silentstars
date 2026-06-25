@@ -13,8 +13,12 @@ on:
         description: "Saltar post a Bluesky"
         type: boolean
         default: false
+      skip_post_x:
+        description: "Saltar post a X.com"
+        type: boolean
+        default: false
       dry_run:
-        description: "Dry run — log post without sending to Bluesky"
+        description: "Dry run — log post without sending to Bluesky or X.com"
         type: boolean
         default: true
 
@@ -144,3 +148,38 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           BASE_URL:          https://capuz.github.io/silentstars
           DRY_RUN:           ${{ inputs.dry_run }}
+
+  # ─────────────────────────────────────────────────────────────
+  # Job 4: Post daily highlight to X.com
+  # Runs in parallel with Bluesky post after deploy
+  # Requires secrets: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
+  # ─────────────────────────────────────────────────────────────
+  post-x:
+    name: Post to X.com
+    runs-on: ubuntu-latest
+    needs: [deploy]
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_post_x != true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Post to X.com
+        run: npx tsx scripts/post-x.ts
+        env:
+          X_API_KEY:             ${{ secrets.X_API_KEY }}
+          X_API_SECRET:          ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN:        ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BASE_URL:              https://capuz.github.io/silentstars
+          DRY_RUN:               ${{ inputs.dry_run }}
