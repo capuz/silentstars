@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "og": "tsx scripts/og-screenshot.ts",
     "preview": "astro preview",
     "discover": "tsx scripts/discover.ts",
     "collect": "tsx scripts/collect.ts",
@@ -19,7 +20,11 @@
     "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
+    "playwright": "^1.61.1",
     "tsx": "^4.19.0",
     "typescript": "^5.5.0"
+  },
+  "allowScripts": {
+    "playwright@1.61.1": true
   }
 }
