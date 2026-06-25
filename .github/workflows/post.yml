@@ -3,6 +3,10 @@ name: Post to Bluesky
 on:
   workflow_dispatch:
     inputs:
+      project:
+        description: "Slug or repo to post (e.g. opn-build--openalive) — leave blank for daily pick"
+        type: string
+        default: ''
       dry_run:
         description: "Dry run — log post without sending to Bluesky"
         type: boolean
@@ -31,3 +35,4 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           BASE_URL:          https://capuz.github.io/silentstars
           DRY_RUN:           ${{ inputs.dry_run }}
+          PROJECT_SLUG:      ${{ inputs.project }}
