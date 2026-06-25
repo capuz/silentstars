@@ -19,7 +19,14 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Generate OG screenshots
+        run: npm run og
 
       - uses: actions/upload-artifact@v4
         with:
