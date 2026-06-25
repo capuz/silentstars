@@ -4,14 +4,6 @@ import { join } from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
-const LANG_EMOJI: Record<string, string> = {
-  TypeScript: '🟦', JavaScript: '🟨', Python: '🐍', Go: '🐹',
-  Rust: '🦀', Java: '☕', 'C#': '#️⃣', Ruby: '💎', PHP: '🐘',
-  'C++': '⚡', C: '⚡', Swift: '🍎', Kotlin: '🟣', Dart: '🎯',
-  Shell: '🐚', HTML: '🌐', CSS: '🎨', Nix: '❄️', Lua: '🌙',
-  Elixir: '💜', Haskell: '🟣', Scala: '🔴', Zig: '⚡',
-};
-
 // Languages with active Bluesky communities (from hashtag study 2026-06-25)
 const LANG_HASHTAG: Record<string, string> = {
   Rust: '#rust', Python: '#python', JavaScript: '#javascript',
@@ -54,10 +46,8 @@ function byteLen(str: string): number {
 }
 
 function buildPost(p: Project, baseUrl: string) {
-  const desc     = truncate(p.description ?? '', 90);
+  const desc     = truncate(p.description ?? '', 180);
   const lang     = p.language ?? '';
-  const emoji    = lang ? (LANG_EMOJI[lang] ?? '') : '';
-  const langStr  = lang ? ` · ${emoji ? emoji + ' ' : ''}${lang}` : '';
   const langTag  = lang ? (LANG_HASHTAG[lang] ?? '') : '';
   const tags     = ['#indiedev', '#opensource', langTag].filter(Boolean).join(' ');
   const slug     = p.repo.toLowerCase().replace('/', '--');
@@ -68,7 +58,6 @@ function buildPost(p: Project, baseUrl: string) {
     '★ Hidden build of the day',
     '',
     `${p.name} — ${desc}`,
-    `↑${p.undervaluedScore} undervalued · ♥${p.healthScore} health · ${p.stars} ★${langStr}`,
     '',
     tags,
   ];
