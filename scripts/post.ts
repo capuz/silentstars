@@ -12,6 +12,12 @@ const LANG_EMOJI: Record<string, string> = {
   Elixir: '💜', Haskell: '🟣', Scala: '🔴', Zig: '⚡',
 };
 
+// Languages with active Bluesky communities (from hashtag study 2026-06-25)
+const LANG_HASHTAG: Record<string, string> = {
+  Rust: '#rust', Python: '#python', JavaScript: '#javascript',
+  Go: '#golang', TypeScript: '#typescript',
+};
+
 interface Project {
   repo: string;
   name: string;
@@ -48,12 +54,14 @@ function byteLen(str: string): number {
 }
 
 function buildPost(p: Project, baseUrl: string) {
-  const desc    = truncate(p.description ?? '', 90);
-  const lang    = p.language ?? '';
-  const emoji   = lang ? (LANG_EMOJI[lang] ?? '') : '';
-  const langStr = lang ? ` · ${emoji ? emoji + ' ' : ''}${lang}` : '';
-  const slug    = p.repo.toLowerCase().replace('/', '--');
-  const siteUrl = `${baseUrl}/projects/${slug}/`;
+  const desc     = truncate(p.description ?? '', 90);
+  const lang     = p.language ?? '';
+  const emoji    = lang ? (LANG_EMOJI[lang] ?? '') : '';
+  const langStr  = lang ? ` · ${emoji ? emoji + ' ' : ''}${lang}` : '';
+  const langTag  = lang ? (LANG_HASHTAG[lang] ?? '') : '';
+  const tags     = ['#indiedev', '#opensource', langTag].filter(Boolean).join(' ');
+  const slug     = p.repo.toLowerCase().replace('/', '--');
+  const siteUrl  = `${baseUrl}/projects/${slug}/`;
 
   // Text without URL — card embed handles the link
   const lines = [
@@ -62,7 +70,7 @@ function buildPost(p: Project, baseUrl: string) {
     `${p.name} — ${desc}`,
     `↑${p.undervaluedScore} undervalued · ♥${p.healthScore} health · ${p.stars} ★${langStr}`,
     '',
-    '#opensource #buildinpublic',
+    tags,
   ];
   const text = lines.join('\n');
 
