@@ -192,28 +192,28 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
     .footer {
       display: flex;
       align-items: center;
-      gap: 6px;
-      padding-top: 16px;
-      border-top: 1.5px solid #c9c0af;
+      gap: 10px;
+      padding-top: 20px;
+      border-top: 2px solid #c9c0af;
       flex-wrap: nowrap;
     }
     .footer-sep {
       color: #c9c0af;
-      font-size: 16px;
+      font-size: 22px;
       margin: 0 2px;
     }
     /* Status pill */
     .status-pill {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       background: var(--pill-bg);
       color: #17150f;
-      font-size: 15px;
+      font-size: 22px;
       font-weight: 700;
-      padding: 4px 12px 4px 8px;
+      padding: 7px 18px 7px 12px;
       border-radius: 999px;
-      border: 1.5px solid #17150f;
+      border: 2px solid #17150f;
       letter-spacing: 0.03em;
       white-space: nowrap;
     }
@@ -224,22 +224,22 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
     .meta-item {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
       color: #6b6456;
-      font-size: 17px;
+      font-size: 22px;
       font-weight: 500;
       white-space: nowrap;
     }
     .meta-item svg {
       flex-shrink: 0;
-      opacity: 0.7;
+      opacity: 0.75;
     }
     .lang-pill {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 6px;
       color: #6b6456;
-      font-size: 17px;
+      font-size: 22px;
       font-weight: 500;
       white-space: nowrap;
     }
@@ -294,7 +294,7 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
 
       <!-- Status pill with icon -->
       <span class="status-pill" style={`--pill-bg: ${status.bg}`}>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
              stroke="#17150f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
              set:html={status.icon} />
         {status.label.toUpperCase()}
@@ -304,7 +304,7 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
 
       <!-- Created year -->
       <span class="meta-item">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
           <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
           <line x1="3" y1="10" x2="21" y2="10"/>
@@ -316,7 +316,7 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
         <>
           <span class="footer-sep">·</span>
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
             </svg>
             {d.watchers}
@@ -328,7 +328,7 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
         <>
           <span class="footer-sep">·</span>
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/>
               <circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/>
               <path d="M18 9a9 9 0 0 1-9 9"/>
@@ -342,7 +342,7 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
         <>
           <span class="footer-sep">·</span>
           <span class="meta-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
               <circle cx="9" cy="7" r="4"/>
               <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
