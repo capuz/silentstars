@@ -33,12 +33,13 @@ const STATUS_MAP: Record<string, { label: string; bg: string; icon: string }> = 
     icon: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
 };
 
-const LANG_EMOJI: Record<string, string> = {
-  TypeScript: '🟦', JavaScript: '🟨', Python: '🐍', Go: '🐹',
-  Rust: '🦀', Java: '☕', 'C#': '#️⃣', Ruby: '💎', PHP: '🐘',
-  'C++': '⚡', C: '⚡', Swift: '🍎', Kotlin: '🟣', Dart: '🎯',
-  Shell: '🐚', HTML: '🌐', CSS: '🎨', Lua: '🌙', Elixir: '💜',
-  Haskell: '🟣', Scala: '🔴', Zig: '⚡', Nix: '❄️',
+const deviconMap: Record<string, string> = {
+  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python',
+  Go: 'go', Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin',
+  Swift: 'swift', C: 'c', 'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php',
+  Dart: 'dart', Scala: 'scala', Haskell: 'haskell', Lua: 'lua',
+  Elixir: 'elixir', Zig: 'zig', Shell: 'bash', HTML: 'html5', CSS: 'css3',
+  Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure', Julia: 'julia', Nim: 'nim',
 };
 
 function healthColor(h: number) {
@@ -51,7 +52,10 @@ function healthColor(h: number) {
 const status      = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
 const hColor      = healthColor(d.healthScore);
 const createdDate = d.createdAt.slice(0, 10); // "2023-06-15"
-const langEmoji   = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
+const langIconSlug = d.language ? (deviconMap[d.language] ?? null) : null;
+const langIconUrl  = langIconSlug
+  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langIconSlug}/${langIconSlug}-original.svg`
+  : null;
 
 const now = new Date();
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -264,6 +268,12 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
       font-weight: 500;
       white-space: nowrap;
     }
+    .lang-pill img {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
@@ -380,7 +390,7 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
         <>
           <span class="footer-sep">·</span>
           <span class="lang-pill">
-            {langEmoji && <span>{langEmoji}</span>}
+            {langIconUrl && <img src={langIconUrl} alt={d.language} />}
             {d.language}
           </span>
         </>
