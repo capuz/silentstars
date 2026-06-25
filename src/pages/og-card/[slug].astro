@@ -13,21 +13,33 @@ const { data: d } = Astro.props;
 
 const ACCENT = '#e8452e';
 const INK    = '#17150f';
-const PAPER  = '#f7f5ef';
 const MUTED  = '#6b6456';
 const SHADOW = '#c9c0af';
 
-const STATUS_MAP: Record<string, { label: string; bg: string }> = {
-  newborn:  { label: 'Newborn',  bg: '#bdebd0' },
-  thriving: { label: 'Thriving', bg: '#ffe08a' },
-  quiet:    { label: 'Quiet',    bg: '#e6e0d2' },
-  at_risk:  { label: 'At Risk',  bg: '#ffd5cc' },
-  revived:  { label: 'Revived',  bg: '#e8d5f5' },
-  watched:  { label: 'Watched',  bg: '#d5eeff' },
-  archived: { label: 'Archived', bg: '#e2e0da' },
+const STATUS_MAP: Record<string, { label: string; bg: string; icon: string }> = {
+  newborn:  { label: 'Newborn',  bg: '#bdebd0',
+    icon: '<path d="M12 21v-8"/><path d="M12 13C12 9 9 6.5 5 6.5 5 10.5 8 13 12 13z"/><path d="M12 13.5c0-3.5 2.6-6 6-6 0 3.5-2.6 6-6 6z"/>' },
+  thriving: { label: 'Thriving', bg: '#ffe08a',
+    icon: '<path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/>' },
+  quiet:    { label: 'Quiet',    bg: '#e6e0d2',
+    icon: '<path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"/>' },
+  at_risk:  { label: 'At Risk',  bg: '#ffd5cc',
+    icon: '<path d="M12 9v4m0 3h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>' },
+  revived:  { label: 'Revived',  bg: '#e8d5f5',
+    icon: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>' },
+  watched:  { label: 'Watched',  bg: '#d5eeff',
+    icon: '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>' },
+  archived: { label: 'Archived', bg: '#e2e0da',
+    icon: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
 };
 
-const status = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
+const LANG_EMOJI: Record<string, string> = {
+  TypeScript: '🟦', JavaScript: '🟨', Python: '🐍', Go: '🐹',
+  Rust: '🦀', Java: '☕', 'C#': '#️⃣', Ruby: '💎', PHP: '🐘',
+  'C++': '⚡', C: '⚡', Swift: '🍎', Kotlin: '🟣', Dart: '🎯',
+  Shell: '🐚', HTML: '🌐', CSS: '🎨', Lua: '🌙', Elixir: '💜',
+  Haskell: '🟣', Scala: '🔴', Zig: '⚡', Nix: '❄️',
+};
 
 function healthColor(h: number) {
   if (h >= 80) return '#1f9d55';
@@ -36,8 +48,10 @@ function healthColor(h: number) {
   return '#d8392b';
 }
 
-const hColor = healthColor(d.healthScore);
-const base   = import.meta.env.BASE_URL;
+const status   = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
+const hColor   = healthColor(d.healthScore);
+const year     = d.createdAt.slice(0, 4);
+const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
 ---
 <!doctype html>
 <html lang="en">
@@ -47,12 +61,12 @@ const base   = import.meta.env.BASE_URL;
   <style>
     @font-face {
       font-family: 'Bricolage';
-      src: url('/silentstars/fonts/BricolageGrotesque-Bold.ttf') format('truetype');
+      src: url('../../fonts/BricolageGrotesque-Bold.ttf') format('truetype');
       font-weight: 700;
     }
     @font-face {
       font-family: 'Bricolage';
-      src: url('/silentstars/fonts/BricolageGrotesque-Medium.ttf') format('truetype');
+      src: url('../../fonts/BricolageGrotesque-Medium.ttf') format('truetype');
       font-weight: 500;
     }
 
@@ -71,12 +85,12 @@ const base   = import.meta.env.BASE_URL;
       height: 630px;
       background: #f7f5ef;
       border: 5px solid #17150f;
-      padding: 48px 64px 44px;
+      padding: 44px 64px 40px;
       display: flex;
       flex-direction: column;
     }
 
-    /* Top row */
+    /* ── Top row ── */
     .top {
       display: flex;
       align-items: center;
@@ -87,44 +101,44 @@ const base   = import.meta.env.BASE_URL;
       align-items: center;
       gap: 10px;
     }
+    .wordmark img {
+      width: 34px;
+      height: 34px;
+      image-rendering: pixelated;
+    }
     .wordmark-text {
       color: #17150f;
       font-size: 22px;
       font-weight: 700;
       letter-spacing: -0.02em;
     }
-    .badge {
-      background: var(--badge-bg);
-      color: #17150f;
+    .site-url {
+      color: #6b6456;
       font-size: 16px;
-      font-weight: 700;
-      padding: 5px 14px;
-      border-radius: 999px;
-      border: 1.5px solid #17150f;
-      letter-spacing: 0.03em;
+      font-weight: 500;
     }
 
-    /* Name */
+    /* ── Name ── */
     .name {
       color: #17150f;
       font-size: 68px;
       font-weight: 700;
       line-height: 1.0;
       letter-spacing: -0.03em;
-      margin-top: 36px;
+      margin-top: 32px;
       max-width: 1060px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
-    /* Description */
+    /* ── Description ── */
     .desc {
       color: #6b6456;
       font-size: 26px;
       font-weight: 500;
       line-height: 1.4;
-      margin-top: 14px;
+      margin-top: 12px;
       max-width: 960px;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -132,12 +146,12 @@ const base   = import.meta.env.BASE_URL;
       overflow: hidden;
     }
 
-    /* Stats */
+    /* ── Stats ── */
     .stats {
       display: flex;
       align-items: stretch;
       margin-top: auto;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       border: 1.5px solid #c9c0af;
       border-radius: 12px;
       overflow: hidden;
@@ -147,11 +161,9 @@ const base   = import.meta.env.BASE_URL;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 0 16px;
+      padding: 18px 0 14px;
     }
-    .stat + .stat {
-      border-left: 1.5px solid #c9c0af;
-    }
+    .stat + .stat { border-left: 1.5px solid #c9c0af; }
     .stat-value {
       display: flex;
       align-items: center;
@@ -173,42 +185,76 @@ const base   = import.meta.env.BASE_URL;
       color: #6b6456;
       font-size: 18px;
       font-weight: 500;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
-    /* Footer */
+    /* ── Footer ── */
     .footer {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding-top: 18px;
+      gap: 6px;
+      padding-top: 16px;
       border-top: 1.5px solid #c9c0af;
+      flex-wrap: nowrap;
     }
-    .footer-tagline {
-      color: #6b6456;
-      font-size: 18px;
-      font-weight: 500;
-      font-style: italic;
-    }
-    .footer-url {
-      color: #6b6456;
+    .footer-sep {
+      color: #c9c0af;
       font-size: 16px;
+      margin: 0 2px;
+    }
+    /* Status pill */
+    .status-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--pill-bg);
+      color: #17150f;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 4px 12px 4px 8px;
+      border-radius: 999px;
+      border: 1.5px solid #17150f;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    .status-pill svg {
+      flex-shrink: 0;
+    }
+    /* Meta items */
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #6b6456;
+      font-size: 17px;
       font-weight: 500;
+      white-space: nowrap;
+    }
+    .meta-item svg {
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+    .lang-pill {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #6b6456;
+      font-size: 17px;
+      font-weight: 500;
+      white-space: nowrap;
     }
   </style>
 </head>
 <body>
   <div class="card">
 
-    <!-- Top row -->
+    <!-- Top row: wordmark + site URL -->
     <div class="top">
       <div class="wordmark">
-        <svg width="30" height="30" viewBox="0 0 24 24">
-          <path fill={ACCENT} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-        </svg>
+        <img src="../../logo-star.png" alt="" />
         <span class="wordmark-text">SilentStars</span>
       </div>
-      <span class="badge" style={`--badge-bg: ${status.bg}`}>{status.label.toUpperCase()}</span>
+      <span class="site-url">capuz.github.io/silentstars</span>
     </div>
 
     <!-- Name -->
@@ -219,7 +265,6 @@ const base   = import.meta.env.BASE_URL;
 
     <!-- Stats -->
     <div class="stats">
-      <!-- Undervalued -->
       <div class="stat">
         <div class="stat-value">
           <span class="stat-arrow">↑</span>
@@ -227,17 +272,15 @@ const base   = import.meta.env.BASE_URL;
         </div>
         <span class="stat-label">undervalued</span>
       </div>
-      <!-- Health -->
       <div class="stat">
         <div class="stat-value">
           <span class="stat-num" style={`color: ${hColor}`}>{d.healthScore}</span>
         </div>
         <span class="stat-label">health</span>
       </div>
-      <!-- Stars -->
       <div class="stat">
         <div class="stat-value">
-          <svg width="48" height="48" viewBox="0 0 24 24">
+          <svg width="44" height="44" viewBox="0 0 24 24">
             <path fill={INK} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
           <span class="stat-num" style={`color: ${INK}`}>{d.stars}</span>
@@ -246,10 +289,79 @@ const base   = import.meta.env.BASE_URL;
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer: status + metadata -->
     <div class="footer">
-      <span class="footer-tagline">Not famous. Not abandoned. Just building.</span>
-      <span class="footer-url">capuz.github.io/silentstars</span>
+
+      <!-- Status pill with icon -->
+      <span class="status-pill" style={`--pill-bg: ${status.bg}`}>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="#17150f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+             set:html={status.icon} />
+        {status.label.toUpperCase()}
+      </span>
+
+      <span class="footer-sep">·</span>
+
+      <!-- Created year -->
+      <span class="meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        {year}
+      </span>
+
+      {d.watchers > 0 && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
+            </svg>
+            {d.watchers}
+          </span>
+        </>
+      )}
+
+      {d.forks > 0 && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/>
+              <circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/>
+              <path d="M18 9a9 9 0 0 1-9 9"/>
+            </svg>
+            {d.forks}
+          </span>
+        </>
+      )}
+
+      {d.contributors > 0 && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="meta-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            {d.contributors}
+          </span>
+        </>
+      )}
+
+      {d.language && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="lang-pill">
+            {langEmoji && <span>{langEmoji}</span>}
+            {d.language}
+          </span>
+        </>
+      )}
+
     </div>
 
   </div>
