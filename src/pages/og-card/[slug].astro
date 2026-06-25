@@ -48,10 +48,14 @@ function healthColor(h: number) {
   return '#d8392b';
 }
 
-const status   = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
-const hColor   = healthColor(d.healthScore);
-const year     = d.createdAt.slice(0, 4);
-const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
+const status      = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
+const hColor      = healthColor(d.healthScore);
+const createdDate = d.createdAt.slice(0, 10); // "2023-06-15"
+const langEmoji   = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
+
+const now = new Date();
+const pad = (n: number) => String(n).padStart(2, '0');
+const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(now.getUTCDate())} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
 ---
 <!doctype html>
 <html lang="en">
@@ -68,6 +72,11 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
       font-family: 'Bricolage';
       src: url('../../fonts/BricolageGrotesque-Medium.ttf') format('truetype');
       font-weight: 500;
+    }
+    @font-face {
+      font-family: 'Silkscreen';
+      src: url('../../fonts/Silkscreen-Regular.ttf') format('truetype');
+      font-weight: 400 700;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -102,30 +111,42 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
       gap: 10px;
     }
     .wordmark img {
-      width: 34px;
-      height: 34px;
+      width: 48px;
+      height: 48px;
       image-rendering: pixelated;
     }
     .wordmark-text {
       color: #17150f;
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 700;
       letter-spacing: -0.02em;
+    }
+    .site-url-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
     }
     .site-url {
       color: #6b6456;
       font-size: 16px;
       font-weight: 500;
     }
+    .generated-at {
+      color: #c9c0af;
+      font-size: 13px;
+      font-weight: 500;
+    }
 
     /* ── Name ── */
     .name {
       color: #17150f;
-      font-size: 68px;
-      font-weight: 700;
-      line-height: 1.0;
-      letter-spacing: -0.03em;
-      margin-top: 32px;
+      font-family: 'Silkscreen', monospace;
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0;
+      margin-top: 28px;
       max-width: 1060px;
       white-space: nowrap;
       overflow: hidden;
@@ -254,7 +275,10 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
         <img src="../../logo-star.png" alt="" />
         <span class="wordmark-text">SilentStars</span>
       </div>
-      <span class="site-url">capuz.github.io/silentstars</span>
+      <div class="site-url-block">
+        <span class="site-url">capuz.github.io/silentstars</span>
+        <span class="generated-at">{generatedAt}</span>
+      </div>
     </div>
 
     <!-- Name -->
@@ -302,14 +326,14 @@ const langEmoji = d.language ? (LANG_EMOJI[d.language] ?? '') : '';
 
       <span class="footer-sep">·</span>
 
-      <!-- Created year -->
+      <!-- Created date -->
       <span class="meta-item">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
           <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
           <line x1="3" y1="10" x2="21" y2="10"/>
         </svg>
-        {year}
+        {createdDate}
       </span>
 
       {d.watchers > 0 && (
