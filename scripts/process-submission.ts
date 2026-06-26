@@ -194,7 +194,7 @@ async function handleRejected(repo: string, slug: string, projectName: string, r
   setOutput('submitter_email', '');
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, this project doesn't meet the current criteria:\n\n> ${reason}\n\nFeel free to resubmit if the situation changes!`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have fewer than **5,000 stars** — we focus on undervalued projects the algorithm hasn't noticed yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
   );
   await labelIssue(['rejected']);
   await closeIssue('not_planned');
