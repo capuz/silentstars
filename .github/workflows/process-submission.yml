@@ -155,7 +155,7 @@ jobs:
             await github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,
-              body: `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n${postLine}\n_This project will be tracked for 30 days. After that, it stays if its vitality score remains strong enough._`,
+              body: `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n${postLine}`,
             });
             await github.rest.issues.addLabels({
               ...context.repo,
