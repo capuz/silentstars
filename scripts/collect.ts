@@ -503,6 +503,22 @@ async function main() {
     .filter(l => l && !l.startsWith('#'));
   const seedSet = new Set(seedRepos.map(r => r.toLowerCase()));
 
+  // Load promoted.json (user-submitted projects with optional expiry date)
+  const promotedPath = resolve(ROOT, 'data/promoted.json');
+  let promotedRepos: string[] = [];
+  if (existsSync(promotedPath)) {
+    const allPromoted = JSON.parse(readFileSync(promotedPath, 'utf8')) as Array<{ repo: string; until: string | null }>;
+    const nowDate = new Date();
+    const activePromoted = allPromoted.filter(p => !p.until || new Date(p.until) > nowDate);
+    // Write back without expired entries
+    if (activePromoted.length < allPromoted.length) {
+      writeFileSync(promotedPath, JSON.stringify(activePromoted, null, 2));
+      console.log(`🗑  Removed ${allPromoted.length - activePromoted.length} expired promoted repo(s)`);
+    }
+    promotedRepos = activePromoted.map(p => p.repo).filter(r => !seedSet.has(r.toLowerCase()));
+  }
+  const promotedSet = new Set(promotedRepos.map(r => r.toLowerCase()));
+
   const discoveredPath = resolve(ROOT, 'data/discovered.json');
   const discoveredCandidates: string[] = [];
   if (existsSync(discoveredPath)) {
@@ -517,10 +533,11 @@ async function main() {
 
   const repos = [
     ...seedRepos,
-    ...discoveredCandidates.filter(r => !seedSet.has(r.toLowerCase())),
+    ...promotedRepos,
+    ...discoveredCandidates.filter(r => !seedSet.has(r.toLowerCase()) && !promotedSet.has(r.toLowerCase())),
   ];
 
-  console.log(`📋  ${seedRepos.length} seed repos + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
+  console.log(`📋  ${seedRepos.length} seed + ${promotedRepos.length} promoted + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
 
   const latestPath = resolve(ROOT, 'data/latest.json');
   const previous: LatestJson | null = existsSync(latestPath)
@@ -648,7 +665,7 @@ async function main() {
 
       results.push(data);
 
-      const isFromSeed = seedSet.has(repoStr.toLowerCase());
+      const isFromSeed = seedSet.has(repoStr.toLowerCase()) || promotedSet.has(repoStr.toLowerCase());
       if (!isFromSeed && healthScore < healthThreshold) {
         console.log(`    skip (healthScore ${healthScore} < ${healthThreshold}, discovered)`);
         continue;

@@ -169,8 +169,13 @@ async function main(): Promise<void> {
     external: { ...embed.external, thumb: thumb.blob },
   };
 
-  await agent.post({ text, facets, embed: embedWithThumb, createdAt: new Date().toISOString() });
+  const posted = await agent.post({ text, facets, embed: embedWithThumb, createdAt: new Date().toISOString() });
+  const rkey = posted.uri.split('/').pop();
+  const bskyUrl = `https://bsky.app/profile/${identifier}/post/${rkey}`;
   console.log(`✓ Posted: ${project.name} (undervalued ${project.undervaluedScore})`);
+  // Emitted so the GitHub Actions workflow can capture these values
+  console.log(`BSKY_POST_URL=${bskyUrl}`);
+  console.log(`BSKY_POST_TEXT_B64=${Buffer.from(text).toString('base64')}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
