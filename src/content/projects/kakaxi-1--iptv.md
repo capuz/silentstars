@@ -1,0 +1,80 @@
+---
+repo: "kakaxi-1/IPTV"
+name: "IPTV"
+description: "📺IPTV 神源收集站"
+url: "https://github.com/kakaxi-1/IPTV"
+homepage: "http://kakaxi.indevs.in/"
+language: "JavaScript"
+languages: ["JavaScript"]
+languagePcts: [100]
+stars: 471
+forks: 100
+openIssues: 8
+closedIssues: 2
+watchers: 6
+contributors: 3
+recentReleases: 0
+createdAt: "2024-03-13T11:17:16Z"
+lastCommitAt: "2026-06-26T23:41:50Z"
+status: "thriving"
+tags: ["solo_builder"]
+healthScore: 74
+undervaluedScore: 33
+maintainers: []
+openGraphImageUrl: "https://opengraph.githubassets.com/d48ede070fb27f9e81db1111206d377453662bf016f05004bd4009b9f8168c55/kakaxi-1/IPTV"
+---
+
+# 📡 IPTV 神源收集站（仅供娱乐，切勿商用）  
+
+> **⚠️免责声明**：  
+> 本项目仅用于学习和技术研究，所有源均来自互联网公开资源，仅供个人娱乐使用。请勿商用，否则后果自负！  
+
+## 🎭 江湖 IPTV，大佬随缘收看  
+
+话说，有个好事的网友，整天研究 IPTV 源，终于悟出一个道理：  
+**能用的都是缘分，不能用的才是常态！** 🤣  
+
+所以，以下所有神秘江湖 IPTV 源 **随缘能用**，希望大家且行且珍惜！  
+
+---
+
+## 🌍 IPv6 神源（含 LOGO + EPG）  
+📜 [点击获取](http://kakaxi.indevs.in/ipv6.m3u) —— **适合拥有“六脉神剑”的 IPv6 高手！**  
+优先推荐配用app:Tivimate
+---
+
+## 🔥 IPv4 赛选源（每 2 小时更新）  
+⚔️ [点击获取](http://kakaxi.indevs.in/ipv4.txt) —— **港台频道秒播，需要台湾节点**  
+优先推荐配用app:酷9
+---
+
+## 🔥 IPTV 赛选源（每 4 小时更新）  
+⚔️ [点击获取](http://kakaxi.indevs.in/iptv.txt) —— **是否断流全凭感觉，切换试试**  
+优先推荐配用app:酷9
+---
+
+## 🗓️ EPG 电子节目表  
+📺 [一键召唤](http://kakaxi.indevs.in/epg.xml) —— **知天时，晓节目，运筹帷幄！**  
+
+---
+
+## 🎨 频道 LOGO 画卷  —— **逐步完善，终成大成！**  
+🖼️ LOGO 资源，使用时请替换 `频道名称` | `http://kakaxi.indevs.in/LOGO/` |
+
+📢 **频道 LOGO 示例：** `http://kakaxi.indevs.in/LOGO/CCTV1.png` 
+
+---
+
+##  ✈️机场推荐  (好用推荐，港台频道无压力，高峰期4k无压力)
+⚔️ [点击注册](https://biuuu.lat/register?code=EjZHyGjE)
+
+---
+
+## 📢 温馨提示  
+
+1. 该项目所有源均来自互联网公开收集，仅供技术学习和娱乐使用。  
+2. IPTV 玄学，源的存活时间不定，**能看多久全凭缘分！** 😆  
+3. **切勿商用**，否则后果自负！  
+4. 国内无机场用户订阅链接前添加加速链接。加速链接也有失效的时候，所以自己网上找不做推荐
+
+🙏 **如果觉得有用，欢迎点个 Star ⭐，感谢支持！**
