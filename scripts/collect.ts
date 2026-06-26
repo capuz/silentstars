@@ -52,6 +52,7 @@ interface RepoData {
   revivedAfterMonths?: number;
   revivedDaysAgo?: number;
   isFork?: boolean;
+  promoted?: boolean;
   openGraphImageUrl?: string;
   fundingLinks?: Array<{ platform: string; url: string }>;
   discussionCount?: number;
@@ -473,6 +474,7 @@ function toFrontmatter(data: RepoData): string {
   if (data.openGraphImageUrl) lines.push(`openGraphImageUrl: "${data.openGraphImageUrl}"`);
   if (data.fundingLinks?.length) lines.push(`fundingLinks: [${data.fundingLinks.map(f => `"${f.platform}:${f.url}"`).join(', ')}]`);
   if (data.discussionCount != null) lines.push(`discussionCount: ${data.discussionCount}`);
+  if (data.promoted) lines.push('promoted: true');
   lines.push('---');
   return lines.join('\n');
 }
@@ -658,6 +660,7 @@ async function main() {
         revivedAfterMonths,
         revivedDaysAgo,
         isFork: raw.isFork,
+        promoted: promotedSet.has(repoStr.toLowerCase()) || undefined,
         openGraphImageUrl: raw.openGraphImageUrl || undefined,
         fundingLinks: raw.fundingLinks?.length ? raw.fundingLinks : undefined,
         discussionCount: raw.hasDiscussionsEnabled ? raw.discussions.totalCount : undefined,

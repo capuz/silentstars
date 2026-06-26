@@ -24,10 +24,18 @@ function take(pool: Entry[], n: number): Entry[] {
   return result;
 }
 
+// promoted projects (community submissions) float above regular ones
+function promotedFirst(a: Entry, b: Entry): number {
+  const aP = a.data.promoted ? 1 : 0;
+  const bP = b.data.promoted ? 1 : 0;
+  if (aP !== bP) return bP - aP;
+  return b.data.undervaluedScore - a.data.undervaluedScore;
+}
+
 // ── Sections (priority order — first match wins for dedup) ────────────────────
 
 const topPicks = take(
-  visible.filter(() => true).sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore),
+  [...visible].sort(promotedFirst),
   9
 );
 
