@@ -44,6 +44,7 @@ const projects = defineCollection({
     // Scores
     healthScore: z.number().min(0).max(100),
     undervaluedScore: z.number().nonnegative(),
+    promoted: z.boolean().optional().default(false),
 
     // People
     maintainers: z.array(z.string()).default([]),
