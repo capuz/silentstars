@@ -283,17 +283,26 @@ async function main() {
 
   const { repo: rawRepo, email: templateEmail } = parseIssueBody(issueBody);
 
-  // Validate repo format: must be "owner/repo"
-  if (!rawRepo || !/^[\w.-]+\/[\w.-]+$/.test(rawRepo.trim())) {
+  // Normalize: accept full GitHub URLs (https://github.com/owner/repo) or bare owner/repo
+  const normalizeRepo = (raw: string): string | null => {
+    const trimmed = raw.trim().replace(/\/$/, '');
+    // Full URL: https://github.com/owner/repo or github.com/owner/repo
+    const urlMatch = trimmed.match(/(?:https?:\/\/)?github\.com\/([^/\s]+\/[^/\s]+)/i);
+    if (urlMatch) return urlMatch[1];
+    // Bare owner/repo
+    if (/^[\w.-]+\/[\w.-]+$/.test(trimmed)) return trimmed;
+    return null;
+  };
+
+  const repo = normalizeRepo(rawRepo ?? '');
+  if (!repo) {
     return handleRejected(
       rawRepo || '(empty)',
       '',
       rawRepo || '(empty)',
-      'Invalid repo format. Expected `owner/repo` (e.g. `torvalds/linux`).',
+      'Invalid repo format. Expected `owner/repo` or a full GitHub URL (e.g. `https://github.com/torvalds/linux`).',
     );
   }
-
-  const repo = rawRepo.trim();
   const slug = repoToSlug(repo);
 
   // Duplicate checks (cheap, no API call)

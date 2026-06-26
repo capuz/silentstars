@@ -1,3 +1,10 @@
 [
-  { "repo": "opn-build/OpenAlive", "until": null }
+  {
+    "repo": "opn-build/OpenAlive",
+    "until": null
+  },
+  {
+    "repo": "Shik3i/KoalaSync",
+    "until": "2026-07-26"
+  }
 ]
