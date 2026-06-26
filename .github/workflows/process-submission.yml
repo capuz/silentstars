@@ -1,0 +1,184 @@
+name: Process project submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: write
+  actions: write
+
+jobs:
+  # ─────────────────────────────────────────────────────────────
+  # Job 1: Parse, validate, and write promoted.json
+  # ─────────────────────────────────────────────────────────────
+  validate:
+    name: Validate submission
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.body, '### GitHub repo (owner/repo)')
+    outputs:
+      status:          ${{ steps.validate.outputs.status }}
+      repo:            ${{ steps.validate.outputs.repo }}
+      slug:            ${{ steps.validate.outputs.slug }}
+      project_name:    ${{ steps.validate.outputs.project_name }}
+      submitter_email: ${{ steps.validate.outputs.submitter_email }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ensure submission labels
+        run: |
+          gh label create "submission"     --color "0075ca" --description "Project submission"       --force
+          gh label create "accepted"       --color "2cbe4e" --description "Submission accepted"      --force
+          gh label create "rejected"       --color "e11d48" --description "Submission rejected"      --force
+          gh label create "already-listed" --color "e99b27" --description "Already in SilentStars"  --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Validates the repo, posts initial comment, and if accepted:
+      # writes data/promoted.json (workflow commits it below).
+      - name: Validate and respond
+        id: validate
+        run: npx tsx scripts/process-submission.ts
+        env:
+          GITHUB_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER:       ${{ github.event.issue.number }}
+          ISSUE_AUTHOR_LOGIN: ${{ github.event.issue.user.login }}
+          REPO_OWNER:         ${{ github.repository_owner }}
+          REPO_NAME:          ${{ github.event.repository.name }}
+          BASE_URL:           https://capuz.github.io/silentstars
+
+      - name: Commit promoted.json
+        if: steps.validate.outputs.status == 'accepted'
+        env:
+          SUBMISSION_REPO:  ${{ steps.validate.outputs.repo }}
+          ISSUE_NUMBER:     ${{ github.event.issue.number }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/promoted.json
+          git commit -m "feat(promoted): add ${SUBMISSION_REPO} via issue #${ISSUE_NUMBER} (30d)"
+          git push
+
+      # ── ALREADY LISTED (card exists, send email immediately) ──────────────
+      - name: Send email — already listed
+        if: steps.validate.outputs.status == 'already_listed' && steps.validate.outputs.submitter_email != ''
+        env:
+          RESEND_API_KEY:     ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL:  ${{ secrets.NOTIFY_FROM_EMAIL }}
+          TO_EMAIL:           ${{ steps.validate.outputs.submitter_email }}
+          EMAIL_TYPE:         already_listed
+          PROJECT_NAME:       ${{ steps.validate.outputs.project_name }}
+          PROJECT_SLUG:       ${{ steps.validate.outputs.slug }}
+          BASE_URL:           https://capuz.github.io/silentstars
+        run: npx tsx scripts/send-email.ts
+
+  # ─────────────────────────────────────────────────────────────
+  # Job 2: Run full pipeline immediately (only for accepted)
+  # ─────────────────────────────────────────────────────────────
+  collect-deploy-post:
+    name: Collect, deploy & post
+    needs: [validate]
+    if: needs.validate.outputs.status == 'accepted'
+    uses: ./.github/workflows/collect.yml
+    with:
+      skip_collect: false
+      skip_post: false
+      submission_repo: ${{ needs.validate.outputs.repo }}
+      submission_project_name: ${{ needs.validate.outputs.project_name }}
+    secrets: inherit
+
+  # ─────────────────────────────────────────────────────────────
+  # Job 3: Notify submitter — comment with all links + send email
+  # Runs after the full pipeline so we have the Bluesky post URL
+  # ─────────────────────────────────────────────────────────────
+  notify:
+    name: Notify submitter
+    needs: [validate, collect-deploy-post]
+    if: needs.validate.outputs.status == 'accepted'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Decode Bluesky post text
+        id: post_text
+        env:
+          TEXT_B64: ${{ needs.collect-deploy-post.outputs.bsky_post_text_b64 }}
+        run: |
+          if [ -n "$TEXT_B64" ]; then
+            TEXT=$(echo "$TEXT_B64" | base64 --decode)
+            # Escape for GITHUB_OUTPUT (multiline value)
+            printf 'value<<BSKY_TEXT_EOF\n%s\nBSKY_TEXT_EOF\n' "$TEXT" >> $GITHUB_OUTPUT
+          else
+            echo "value=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Comment on issue with links
+        uses: actions/github-script@v7
+        env:
+          BSKY_URL:  ${{ needs.collect-deploy-post.outputs.bsky_url }}
+          PROJ_SLUG: ${{ needs.validate.outputs.slug }}
+          PROJ_NAME: ${{ needs.validate.outputs.project_name }}
+        with:
+          script: |
+            const slug    = process.env.PROJ_SLUG;
+            const name    = process.env.PROJ_NAME;
+            const bskyUrl = process.env.BSKY_URL;
+            const cardUrl = `https://capuz.github.io/silentstars/projects/${slug}/`;
+            const postLine = bskyUrl ? `🦋 [Post on Bluesky](${bskyUrl})\n` : '';
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.issue.number,
+              body: `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n${postLine}\n_This project will be tracked for 30 days. After that, it stays if its vitality score remains strong enough._`,
+            });
+            await github.rest.issues.addLabels({
+              ...context.repo,
+              issue_number: context.issue.number,
+              labels: ['accepted'],
+            });
+            await github.rest.issues.update({
+              ...context.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed',
+            });
+
+      - name: Send acceptance email
+        if: needs.validate.outputs.submitter_email != ''
+        env:
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
+          TO_EMAIL:          ${{ needs.validate.outputs.submitter_email }}
+          EMAIL_TYPE:        accepted
+          PROJECT_NAME:      ${{ needs.validate.outputs.project_name }}
+          PROJECT_SLUG:      ${{ needs.validate.outputs.slug }}
+          BSKY_POST_URL:     ${{ needs.collect-deploy-post.outputs.bsky_url }}
+          BSKY_POST_TEXT:    ${{ steps.post_text.outputs.value }}
+          BASE_URL:          https://capuz.github.io/silentstars
+        run: npx tsx scripts/send-email.ts

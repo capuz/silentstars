@@ -27,6 +27,15 @@ body:
     validations:
       required: false
 
+  - type: input
+    id: email
+    attributes:
+      label: Contact email (optional)
+      description: We'll notify you when your project appears in SilentStars and when we post about it
+      placeholder: "you@example.com"
+    validations:
+      required: false
+
   - type: checkboxes
     id: criteria
     attributes:
