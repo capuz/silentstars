@@ -8,7 +8,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [97]
 topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "productivity", "system-tray", "windows"]
-stars: 1
+stars: 2
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-06-19T11:24:49Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 77
-undervaluedScore: 46
+undervaluedScore: 44
 maintainers: ["capuz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3977a1a8a70a7fa7a816943c02115597e924a5753949074aa67a2b388bdf007e/opn-build/OpenAlive"
+openGraphImageUrl: "https://opengraph.githubassets.com/ffd48301d04d49f3dd4ae9ed52d3a1b760e8bf50620deab23257a7b28e2e80c4/opn-build/OpenAlive"
 ---
 
 # OpenAlive
