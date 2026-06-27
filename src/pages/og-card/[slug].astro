@@ -57,6 +57,12 @@ const langIconUrl  = langIconSlug
   ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langIconSlug}/${langIconSlug}-original.svg`
   : null;
 
+const secondaryLang   = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
+const lang2IconSlug   = secondaryLang ? (deviconMap[secondaryLang] ?? null) : null;
+const lang2IconUrl    = lang2IconSlug
+  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2IconSlug}/${lang2IconSlug}-original.svg`
+  : null;
+
 const now = new Date();
 const pad = (n: number) => String(n).padStart(2, '0');
 const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(now.getUTCDate())} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
@@ -392,6 +398,16 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
           <span class="lang-pill">
             {langIconUrl && <img src={langIconUrl} alt={d.language} />}
             {d.language}
+          </span>
+        </>
+      )}
+
+      {secondaryLang && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="lang-pill">
+            {lang2IconUrl && <img src={lang2IconUrl} alt={secondaryLang} />}
+            {secondaryLang}
           </span>
         </>
       )}
