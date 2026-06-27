@@ -6,8 +6,9 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  showMetricsFAQ?: boolean;
 }
-const { title, description = 'Not famous. Not abandoned. Just building.', ogImage } = Astro.props;
+const { title, description = 'Not famous. Not abandoned. Just building.', ogImage, showMetricsFAQ = true } = Astro.props;
 const base   = import.meta.env.BASE_URL;
 const ogUrl  = ogImage ?? new URL(`${base}og/index.png`, Astro.site).href;
 const pageUrl = Astro.url.href;
@@ -76,7 +77,7 @@ const pageUrl = Astro.url.href;
       </main>
 
       <!-- METRICS FAQ -->
-      <MetricsFAQ />
+      {showMetricsFAQ && <MetricsFAQ />}
 
       <!-- FOOTER -->
       <footer class="ss-footer">

@@ -8,6 +8,10 @@ node_modules/
 # design reference files
 private/
 .atl/
+.github/
+data/*
+!data/discovered.json
+!data/discovery.config.json
 
 # agent skills
 .agents/
