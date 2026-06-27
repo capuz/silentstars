@@ -54,12 +54,13 @@ jobs:
         id: validate
         run: npx tsx scripts/process-submission.ts
         env:
-          GITHUB_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_NUMBER:       ${{ github.event.issue.number }}
-          ISSUE_AUTHOR_LOGIN: ${{ github.event.issue.user.login }}
-          REPO_OWNER:         ${{ github.repository_owner }}
-          REPO_NAME:          ${{ github.event.repository.name }}
-          BASE_URL:           https://capuz.github.io/silentstars
+          GITHUB_TOKEN:        ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER:        ${{ github.event.issue.number }}
+          ISSUE_AUTHOR_LOGIN:  ${{ github.event.issue.user.login }}
+          REPO_OWNER:          ${{ github.repository_owner }}
+          REPO_NAME:           ${{ github.event.repository.name }}
+          BASE_URL:            https://capuz.github.io/silentstars
+          BUTTONDOWN_API_KEY:  ${{ secrets.BUTTONDOWN_API_KEY }}
 
       - name: Commit promoted.json
         if: steps.validate.outputs.status == 'accepted'
