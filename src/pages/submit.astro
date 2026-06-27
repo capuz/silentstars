@@ -9,11 +9,11 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
   <div class="container section">
 
     <div class="submit-hero">
-      <p class="eyebrow">// curated signal</p>
+      <p class="eyebrow">// automated pipeline</p>
       <h1>Submit a project</h1>
       <p class="lead">
         Know something that's actively built but flying under the radar?
-        Submit it — we review and add projects manually within 48h.
+        Submit it — the bot validates instantly. If accepted, your project goes live in minutes.
       </p>
     </div>
 
@@ -25,8 +25,9 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
           <li><span class="check">✓</span> Commits in the last 90 days</li>
           <li><span class="check">✓</span> Real code, not just a README</li>
           <li><span class="check">✓</span> Open issues being responded to</li>
-          <li><span class="x">✗</span> No abandonware</li>
-          <li><span class="x">✗</span> No viral repos already trending</li>
+          <li><span class="check">✓</span> Fewer than 5,000 stars</li>
+          <li><span class="x">✗</span> No abandonware or archived repos</li>
+          <li><span class="x">✗</span> No repos already viral or trending</li>
           <li><span class="x">✗</span> No self-promotion without substance</li>
         </ul>
       </div>
@@ -34,14 +35,14 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
       <div class="cta-card">
         <h2>// ready?</h2>
         <p>
-          Open a GitHub issue with the repo link and a short note on why it deserves to be tracked.
-          That's it.
+          Open a GitHub issue with the repo link and a short note on why it deserves attention.
+          If accepted, we'll add it to the directory and post it on Bluesky automatically.
         </p>
         <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-submit">
           Open submission issue ↗
         </a>
         <p class="note">
-          You'll need a GitHub account. Submissions are reviewed by the maintainer — not automated.
+          You'll need a GitHub account. Leave your email to get notified when it goes live.
         </p>
       </div>
 
