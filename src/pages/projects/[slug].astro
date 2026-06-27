@@ -286,19 +286,22 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
         )}
 
         {d.fundingLinks && d.fundingLinks.length > 0 && (
-          <div class="funding-block">
-            <p class="panel-label">// funding</p>
+          <>
+            <div class="stat-row">
+              <span class="stat-key">funding</span>
+            </div>
             {d.fundingLinks.map(f => {
               const sep      = f.indexOf(':');
               const platform = sep > -1 ? f.slice(0, sep).toLowerCase().replace(/_/g, ' ') : 'sponsor';
               const url      = sep > -1 ? f.slice(sep + 1) : f;
               return (
-                <a href={url} target="_blank" rel="noopener" class="funding-link">
-                  {platform} ↗
-                </a>
+                <div class="stat-row">
+                  <span class="stat-key">{platform}</span>
+                  <a href={url} target="_blank" rel="noopener" class="funding-link">↗</a>
+                </div>
               );
             })}
-          </div>
+          </>
         )}
 
         {d.status === 'revived' && d.revivedAfterMonths && (
@@ -593,13 +596,11 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
     background: rgba(124, 58, 237, 0.06);
   }
 
-  .funding-block { margin-top: 1.25rem; }
   .funding-link {
-    display: block;
     font-family: var(--f-mono);
     font-size: 0.7rem;
+    font-weight: 700;
     color: var(--accent);
-    margin-top: 0.4rem;
     transition: opacity 0.15s;
   }
   .funding-link:hover { opacity: 0.7; text-decoration: none; }
