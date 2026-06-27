@@ -20,21 +20,21 @@ body:
       required: true
 
   - type: input
-    id: language
-    attributes:
-      label: Primary language
-      placeholder: "TypeScript, Go, Rust..."
-    validations:
-      required: false
-
-  - type: input
     id: email
     attributes:
       label: Contact email (optional)
-      description: We'll notify you when your project appears in SilentStars and when we post about it
+      description: We'll notify you when your project goes live and when we post about it on Bluesky
       placeholder: "you@example.com"
     validations:
       required: false
+
+  - type: checkboxes
+    id: newsletter
+    attributes:
+      label: Newsletter
+      options:
+        - label: Subscribe me to the SilentStars weekly digest (hidden gems, one email/week)
+          required: false
 
   - type: checkboxes
     id: criteria

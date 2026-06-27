@@ -54,7 +54,7 @@ function setOutput(key: string, value: string) {
 // Body parsing
 // ──────────────────────────────────────────────────────────────────────────────
 
-function parseIssueBody(body: string): { repo: string; email: string } {
+function parseIssueBody(body: string): { repo: string; email: string; subscribe: boolean } {
   const extract = (label: string): string => {
     // GitHub YAML template renders as:  ### Label\n\nvalue\n\n### Next...
     const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -62,8 +62,9 @@ function parseIssueBody(body: string): { repo: string; email: string } {
     return m ? m[1].trim() : '';
   };
   return {
-    repo:  extract('GitHub repo (owner/repo)'),
-    email: extract('Email de contacto (opcional)'),
+    repo:      extract('GitHub repo (owner/repo)'),
+    email:     extract('Contact email (optional)'),
+    subscribe: /- \[x\] Subscribe me to the SilentStars/i.test(body),
   };
 }
 
@@ -142,6 +143,36 @@ async function fetchUserEmail(login: string): Promise<string> {
   const { ok, data } = await ghFetch<{ email?: string | null }>(`/users/${login}`);
   if (!ok) return '';
   return data.email ?? '';
+}
+
+async function fetchProfileEmail(login: string): Promise<string> {
+  try {
+    const res = await fetch(`https://github.com/${login}`);
+    if (!res.ok) return '';
+    const html = await res.text();
+    const m = html.match(/itemprop="email"[^>]*>([^<\s]+)/);
+    return m ? m[1].trim() : '';
+  } catch { return ''; }
+}
+
+async function resolveEmail(templateEmail: string): Promise<string> {
+  if (templateEmail) return templateEmail;
+  const apiEmail = await fetchUserEmail(ISSUE_AUTHOR);
+  if (apiEmail) return apiEmail;
+  return fetchProfileEmail(ISSUE_AUTHOR);
+}
+
+async function subscribeToNewsletter(email: string): Promise<void> {
+  const key = process.env.BUTTONDOWN_API_KEY;
+  if (!key) { console.log('No BUTTONDOWN_API_KEY — skipping newsletter subscribe.'); return; }
+  if (DRY_RUN) { console.log(`[DRY RUN] subscribe: ${email}`); return; }
+  const res = await fetch('https://api.buttondown.email/v1/subscribers', {
+    method: 'POST',
+    headers: { Authorization: `Token ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, tags: ['submission'] }),
+  });
+  if (res.ok) console.log(`✓ Subscribed ${email} to newsletter`);
+  else console.log(`⚠ Newsletter subscribe failed: ${res.status}`);
 }
 
 async function fetchIssueBody(owner: string, repo: string, number: number): Promise<string> {
@@ -281,7 +312,7 @@ async function main() {
     return handleSkipped();
   }
 
-  const { repo: rawRepo, email: templateEmail } = parseIssueBody(issueBody);
+  const { repo: rawRepo, email: templateEmail, subscribe } = parseIssueBody(issueBody);
 
   // Normalize: accept full GitHub URLs (https://github.com/owner/repo) or bare owner/repo
   const normalizeRepo = (raw: string): string | null => {
@@ -307,7 +338,8 @@ async function main() {
 
   // Duplicate checks (cheap, no API call)
   if (isInLatestJson(repo)) {
-    const email = templateEmail || await fetchUserEmail(ISSUE_AUTHOR);
+    const email = await resolveEmail(templateEmail);
+    if (subscribe && email) await subscribeToNewsletter(email);
     return handleAlreadyListed(repo, slug, repo.split('/')[1] ?? repo, email, baseUrl);
   }
 
@@ -350,7 +382,8 @@ async function main() {
   }
 
   // All checks passed
-  const email = templateEmail || await fetchUserEmail(ISSUE_AUTHOR);
+  const email = await resolveEmail(templateEmail);
+  if (subscribe && email) await subscribeToNewsletter(email);
   return handleAccepted(repo, slug, ghRepo.name, email);
 }
 
