@@ -1,6 +1,6 @@
 {
   "starsRange": { "min": 5, "max": 500 },
   "pushedWithinDays": 90,
-  "maxCandidatesPerNight": 200,
+  "maxCandidatesPerNight": 250,
   "vitalityThreshold": 40
 }

@@ -43,7 +43,7 @@ Configure discovery in `data/discovery.config.json`:
 {
   "starsRange": { "min": 5, "max": 500 },
   "pushedWithinDays": 90,
-  "maxCandidatesPerNight": 200,
+  "maxCandidatesPerNight": 250,
   "vitalityThreshold": 40
 }
 ```
@@ -54,6 +54,10 @@ Configure discovery in `data/discovery.config.json`:
 | `pushedWithinDays` | Only considers repos pushed to recently |
 | `maxCandidatesPerNight` | Hard cap — prevents exhausting the 30 req/min rate limit |
 | `vitalityThreshold` | Discovered repos with `healthScore` below this won't appear in the directory |
+
+### 3. Community submissions (GitHub Issues)
+
+Open an issue using the **Submit a project** template. The workflow validates the repo against the GitHub API, adds it to `data/promoted.json` with a 30-day window, and immediately runs the full collect → build → deploy → Bluesky post pipeline. No manual steps needed.
 
 ---
 
