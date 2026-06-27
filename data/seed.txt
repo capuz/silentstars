@@ -1,4 +1,0 @@
-# SilentStars seed list — one owner/repo per line, lines starting with # are ignored
-# Add real GitHub repos you want to track here (owner/repo format).
-
-opn-build/OpenAlive
