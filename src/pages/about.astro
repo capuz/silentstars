@@ -68,7 +68,7 @@ const base = import.meta.env.BASE_URL;
       <section class="about-card">
         <h2>// contribute</h2>
         <p>
-          Know a project that deserves to be tracked? Submit it — projects are reviewed and added manually within 48h.
+          Know a project that deserves to be tracked? <a href={`${base}submit/`} class="about-link">Submit it via GitHub Issues</a> — the bot validates the repo instantly and, if accepted, adds it to the directory and posts it on Bluesky automatically.
         </p>
         <a href={`${base}submit/`} class="btn-submit">Submit a project →</a>
       </section>
