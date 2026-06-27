@@ -13,6 +13,7 @@ data/*
 !data/discovered.json
 !data/discovery.config.json
 !data/latest.json
+!data/promoted.json
 
 # agent skills
 .agents/
