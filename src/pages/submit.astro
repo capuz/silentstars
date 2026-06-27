@@ -1,6 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+import latestData from '../../data/latest.json';
+
 const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=submit-project.yml';
+const projectCount = latestData.projects.length;
+
+const SAMPLE_SLUGS = [
+  'kubernetes-sigs--karpenter-provider-ibm-cloud',
+  'hearth-project--hearth',
+  'sourcegraph--smoke-tests',
+];
+
+const all = await getCollection('projects');
+const samples = SAMPLE_SLUGS
+  .map(slug => all.find(p => p.slug === slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
 ---
 <Base
   title="Submit a project"
@@ -15,6 +31,33 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
         Know something that's actively built but flying under the radar?
         Submit it — the bot validates instantly. If accepted, your project goes live in minutes.
       </p>
+      <p class="count">Joining <strong>{projectCount}</strong> open-source projects already tracked.</p>
+    </div>
+
+    <div class="how-section">
+      <h2 class="section-label">// how it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-title">Open an issue</div>
+          <p class="step-desc">Fill in the template: repo link + why it deserves attention. No lengthy forms.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-title">Bot validates</div>
+          <p class="step-desc">We check activity, stars, open issues, and recent commits. Instant response.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-title">Goes live</div>
+          <p class="step-desc">Accepted projects appear in the directory and get posted on Bluesky automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-title">You're notified</div>
+          <p class="step-desc">Email with your project card + link to the Bluesky post. No need to check back.</p>
+        </div>
+      </div>
     </div>
 
     <div class="submit-grid">
@@ -47,6 +90,16 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
       </div>
 
     </div>
+
+    {samples.length > 0 && (
+      <div class="samples-section">
+        <h2 class="section-label">// what gets accepted</h2>
+        <div class="samples-grid">
+          {samples.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        </div>
+      </div>
+    )}
+
   </div>
 </Base>
 
@@ -74,13 +127,84 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
     color: var(--text-muted);
     line-height: 1.6;
     max-width: 52ch;
+    margin-bottom: 0.75rem;
+  }
+  .count {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+  .count strong {
+    color: var(--accent);
+    font-weight: 700;
   }
 
+  /* ── How it works ─────────────────────────────────────────── */
+  .how-section {
+    margin-bottom: 2.5rem;
+  }
+  .section-label {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    margin-bottom: 1.25rem;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .step {
+    background: var(--card);
+    padding: 20px 22px;
+  }
+  .step-num {
+    font-family: var(--f-mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .step-title {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+  .step-desc {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .steps {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 400px) {
+    .steps {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* ── Criteria + CTA ───────────────────────────────────────── */
   .submit-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
     align-items: start;
+    margin-bottom: 2.5rem;
   }
   @media (max-width: 640px) { .submit-grid { grid-template-columns: 1fr; } }
 
@@ -137,4 +261,17 @@ const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=subm
     color: var(--text-dim) !important;
     margin-bottom: 0 !important;
   }
+
+  /* ── Sample cards ─────────────────────────────────────────── */
+  .samples-section {
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+  .samples-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 800px) { .samples-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .samples-grid { grid-template-columns: 1fr; } }
 </style>
