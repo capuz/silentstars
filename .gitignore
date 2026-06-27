@@ -12,6 +12,7 @@ private/
 data/*
 !data/discovered.json
 !data/discovery.config.json
+!data/latest.json
 
 # agent skills
 .agents/
