@@ -154,7 +154,7 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
             <span class="lang-chip lang-chip--secondary"
                   title={lang2Pct ? `${secondaryLang} ${lang2Pct}%` : secondaryLang}>
               {lang2Icon && (
-                <img src={lang2Icon} alt={secondaryLang} width="14" height="14"
+                <img src={lang2Icon} alt={secondaryLang} width="16" height="16"
                   onerror="this.style.display='none'" />
               )}
               {lang2Code}
@@ -391,12 +391,7 @@ const bskyUrl  = `https://bsky.app/intent/compose?text=${bskyText}`;
     background: #fff;
     color: #17150f;
   }
-  .lang-chip--secondary {
-    font-size: 10px;
-    padding: 2px 8px 2px 3px;
-    opacity: 0.72;
-    border-style: dashed;
-  }
+  .lang-chip--secondary {}
 
   .card-score { display: flex; align-items: baseline; gap: 2px; font-family: var(--f-display); }
   .score-arrow { color: var(--accent); font-size: 14px; font-weight: 800; }
