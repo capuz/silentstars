@@ -14,13 +14,13 @@ watchers: 4
 contributors: 2
 recentReleases: 0
 createdAt: "2021-01-12T10:40:35Z"
-lastCommitAt: "2026-06-28T11:44:35Z"
+lastCommitAt: "2026-06-28T13:23:04Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 70
 undervaluedScore: 42
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e11c9ee12ba89bad50f59ecdaa9a4ebda45325b7791aa68344371f73552d3da4/lonnyzhang423/github-hot-hub"
+openGraphImageUrl: "https://opengraph.githubassets.com/d763222bb565465e7b0e7f7d5fa8117c9a3c50a5faa420198c6c5cc1d6c3e1f6/lonnyzhang423/github-hot-hub"
 ---
 
 # github-hot-hub
@@ -35,7 +35,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/e11c9ee12ba89bad50f59ecda
 - [抖音热榜](https://github.com/lonnyzhang423/douyin-hot-hub)
 - [v2ex热榜](https://github.com/lonnyzhang423/v2ex-hot-hub)
 
-`更新时间：2026-06-28 19:44:35 +0800`
+`更新时间：2026-06-28 21:23:04 +0800`
 
 ## 今日热门仓库
 

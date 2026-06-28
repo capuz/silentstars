@@ -15,14 +15,14 @@ watchers: 1
 contributors: 2
 recentReleases: 6
 createdAt: "2026-04-16T21:14:09Z"
-lastCommitAt: "2026-06-28T11:45:21Z"
+lastCommitAt: "2026-06-28T13:21:30Z"
 lastReleaseAt: "2026-06-17T21:44:51Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 73
 undervaluedScore: 60
 maintainers: ["github-actions[bot]", "Samy879"]
-openGraphImageUrl: "https://opengraph.githubassets.com/34015277a29554670534da1056086bbb9ce407fbb836b3a17e7ce3a21a55989f/Samy879/minimalist-animated-weather"
+openGraphImageUrl: "https://opengraph.githubassets.com/1ba95825532284444c5c7d5089b6dffc5970e7d201d0e9f660a37e1533ec68eb/Samy879/minimalist-animated-weather"
 ---
 
 # Minimalist Animated Weather 🌦️

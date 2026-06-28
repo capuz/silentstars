@@ -16,13 +16,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2023-04-06T05:36:43Z"
-lastCommitAt: "2026-06-28T11:44:19Z"
+lastCommitAt: "2026-06-28T13:18:31Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 68
 maintainers: ["samuraitruong"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fb9d88238667398c87985a1d4056c123b3e51cf637350e098cce6d20759e9765/samuraitruong/chess.com-daily-puzzle"
+openGraphImageUrl: "https://opengraph.githubassets.com/db121967108d421b9363bd19f0ca2970fa74c7fc3582871e89e071324387056e/samuraitruong/chess.com-daily-puzzle"
 ---
 
 The collection of all chess.com daily puzzle

@@ -7,7 +7,7 @@ homepage: "https://dark-hxx.github.io/"
 language: "TypeScript"
 languages: ["TypeScript", "Rust"]
 languagePcts: [63, 23]
-stars: 123
+stars: 124
 forks: 11
 openIssues: 5
 closedIssues: 27
@@ -22,7 +22,7 @@ tags: []
 healthScore: 97
 undervaluedScore: 37
 maintainers: ["dark-hxx", "charlexys"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bdb04a9a5a47cd4617427475713ba20ec62fbdd98c85cf9f6f5a82b9bafa50e2/dark-hxx/CLI-Manager"
+openGraphImageUrl: "https://opengraph.githubassets.com/192248db0504f28ad8d967ed4c0103e34bcc18bdf7ab12032cd4af68c638fff2/dark-hxx/CLI-Manager"
 ---
 
 # CLI-Manager

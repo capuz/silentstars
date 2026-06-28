@@ -15,14 +15,14 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2024-11-11T09:28:50Z"
-lastCommitAt: "2026-06-28T12:30:30Z"
-lastReleaseAt: "2026-06-28T12:32:44Z"
+lastCommitAt: "2026-06-28T13:23:17Z"
+lastReleaseAt: "2026-06-28T13:24:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 72
 maintainers: ["rmolives"]
-openGraphImageUrl: "https://opengraph.githubassets.com/847470b690bd59126665a35bcf20c98db30931b70e2f9e8ab2341132cb870bb5/rmolives/devore"
+openGraphImageUrl: "https://opengraph.githubassets.com/ebd8ac3ee0dc97dc9af76eff838d92012b495fa35f4085551c884262a179e654/rmolives/devore"
 ---
 
 # Devore Language

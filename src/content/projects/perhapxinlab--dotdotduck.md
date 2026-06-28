@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 3
 createdAt: "2026-05-19T14:32:57Z"
-lastCommitAt: "2026-06-28T07:39:30Z"
+lastCommitAt: "2026-06-28T13:22:55Z"
 lastReleaseAt: "2026-06-16T13:21:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
 undervaluedScore: 54
 maintainers: ["chenlunlun33"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6758a01aac3680fd3aa352dfde487ea5c3f1133b81326d6200fb96b26fed4d6f/PerhapxinLab/dotdotduck"
+openGraphImageUrl: "https://opengraph.githubassets.com/f0b969286dbdbd8e278adf318c47b69ef86d43ffff39da50105426d6c7f2d96d/PerhapxinLab/dotdotduck"
 discussionCount: 0
 ---
 

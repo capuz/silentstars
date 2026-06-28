@@ -16,13 +16,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-04-19T04:06:14Z"
-lastCommitAt: "2026-06-28T13:16:19Z"
+lastCommitAt: "2026-06-28T13:21:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 79
 undervaluedScore: 40
 maintainers: ["ZhangShengFan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7efb58bb3b0068ed42601e178840849805c38daa5796e5ca0284224ee6d06c09/ZhangShengFan/Pakr"
+openGraphImageUrl: "https://opengraph.githubassets.com/4590827b3c06deefc5c748e9cc8d5b207f872b13237b698d844f181cccf730c0/ZhangShengFan/Pakr"
 ---
 
 # Pakr — 网页一键打包 APK

@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-04-24T08:05:36Z"
-lastCommitAt: "2026-06-28T11:44:05Z"
+lastCommitAt: "2026-06-28T13:17:28Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 44
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0f3aa8d1a43dd0984314b916580ef68e22c403ba525b1df3fe4159532da70fac/brf153/linkedin-job-fetcher"
+openGraphImageUrl: "https://opengraph.githubassets.com/c795df157e872e9972b2063cc4408d98838e92763820006286f5deffdd8bc924/brf153/linkedin-job-fetcher"
 ---
 
 # Work Fetch: Jobs Scrapper
@@ -30,4 +30,4 @@ The data keeps updating every hour so you can always get the latest jobs and won
 
 ## SWE Internships
 
-| Company                                    | Title                                                                                                                                                  | Location                          | Link                                                                                                                                                                                                                                                                                                                         | Date Posted   | Description                                                                                                                                                                                                                                                                                                     |…
+| Company                                    | Title                                                                                                                                                  | Location                          | Link                                                                                                                                                                                                                                                                                                                     | Date Posted   | Description                                                                                                                                                                                                                                                                                                     |…

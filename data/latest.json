@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-06-28T13:18:49.219Z",
+  "collectedAt": "2026-06-28T13:26:06.438Z",
   "projects": [
     {
       "repo": "opn-build/OpenAlive",
@@ -133,7 +133,7 @@
       "contributors": 16,
       "recentReleases": 4,
       "createdAt": "2025-05-02T11:33:42Z",
-      "lastCommitAt": "2026-06-28T11:41:45Z",
+      "lastCommitAt": "2026-06-28T13:16:18Z",
       "lastReleaseAt": "2026-06-05T11:57:52Z",
       "status": "thriving",
       "tags": [
@@ -144,7 +144,7 @@
       "undervaluedScore": 79,
       "maintainers": [],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/49feb128a4ead0ac9448ba5d61d7ff8b47b90450e6d7b24c532294373cd367b0/UKNCSP/CDDS-CMIP7-mappings",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/3467b75fc68c388f00098bc81a03c39f8894ad34916706d2beba0259627d1872/UKNCSP/CDDS-CMIP7-mappings",
       "discussionCount": 0,
       "postedAt": "2026-06-28T07:04:35.686Z"
     },
@@ -587,7 +587,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2023-01-22T23:38:03Z",
-      "lastCommitAt": "2026-06-28T13:08:21Z",
+      "lastCommitAt": "2026-06-28T13:18:21Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -599,7 +599,7 @@
         "xsrazy"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/8ef9c0eb5df3a202c219c9f3472330012b063c49e8b671a182d73b238d461897/xsrazy/Discord-Bot",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/e12357dd9f1b81be50fe86bd2227547d79dea32e64a4522e6194fd013b11d5da/xsrazy/Discord-Bot",
       "postedAt": "2026-06-21T07:32:11.420Z"
     },
     {
@@ -746,13 +746,13 @@
       ],
       "stars": 93,
       "forks": 11,
-      "openIssues": 1,
-      "closedIssues": 81,
+      "openIssues": 0,
+      "closedIssues": 82,
       "watchers": 1,
       "contributors": 2,
       "recentReleases": 10,
       "createdAt": "2026-06-02T23:13:35Z",
-      "lastCommitAt": "2026-06-28T13:13:16Z",
+      "lastCommitAt": "2026-06-28T13:20:27Z",
       "lastReleaseAt": "2026-06-07T14:28:06Z",
       "status": "newborn",
       "tags": [
@@ -995,7 +995,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-06-15T07:36:16Z",
-      "lastCommitAt": "2026-06-28T11:46:14Z",
+      "lastCommitAt": "2026-06-28T13:22:31Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1006,7 +1006,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/9e268e49f3b318a2469f25172b9f213dbad6ff01d5694ebb82779abceeeb21cf/androtv4321-lab/rust-toolkit-pro-optimizer"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/d85112d05f7dfbc9e77b4707b43f571797da1b68655d012ae97bd0909e703532/androtv4321-lab/rust-toolkit-pro-optimizer"
     },
     {
       "repo": "indmdev/Free-Telegram-Store-Bot",
@@ -1041,7 +1041,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2024-04-14T06:36:33Z",
-      "lastCommitAt": "2026-06-28T13:15:00Z",
+      "lastCommitAt": "2026-06-28T13:22:46Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1052,7 +1052,7 @@
         "indmdev"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/85c94c650a5125439b2409da8cddd22007618c4be84bf4d26c987e190ce6e425/indmdev/Free-Telegram-Store-Bot"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/02dc8a5b6c78201a368d0c537c106f1b266c5bb24e8a4366da0598a409f4b097/indmdev/Free-Telegram-Store-Bot"
     },
     {
       "repo": "futuroptimist/token.place",
@@ -1209,7 +1209,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-06-25T18:50:27Z",
-      "lastCommitAt": "2026-06-28T11:45:57Z",
+      "lastCommitAt": "2026-06-28T13:22:06Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1221,7 +1221,7 @@
         "jorez1903"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/82e0cf6dbf6202f362af76fbbc73fd2dd70f75ebd35aa3e583250ef7056c4de9/jorez1903/Valex-Execut"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/5db1ce3756813c41d7af49691fc742fb5501c988bb4e27d9c2269a9557b2bf57/jorez1903/Valex-Execut"
     },
     {
       "repo": "ZclassiC23/zclassic",
@@ -1423,7 +1423,7 @@
       "contributors": 3,
       "recentReleases": 0,
       "createdAt": "2025-12-15T14:44:18Z",
-      "lastCommitAt": "2026-06-28T06:57:37Z",
+      "lastCommitAt": "2026-06-28T13:22:46Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -1435,7 +1435,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/1ed1bb339924d41d094af80e2ed15d0593eda0a375620cc6711f5ea5bda9c2f8/vmoranv-reborn/AstrBot_Plugins_Collection"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f04810e88bddb1b9603a606598b0abd3dcefb1cb9e904405b46c03a444b89a1f/vmoranv-reborn/AstrBot_Plugins_Collection"
     },
     {
       "repo": "nano-step/eval-harness",
@@ -1559,7 +1559,7 @@
       "contributors": 23,
       "recentReleases": 0,
       "createdAt": "2026-03-15T06:49:35Z",
-      "lastCommitAt": "2026-06-28T12:26:06Z",
+      "lastCommitAt": "2026-06-28T13:23:09Z",
       "lastReleaseAt": "2026-03-24T10:09:28Z",
       "status": "thriving",
       "tags": [
@@ -1574,7 +1574,7 @@
         "mergify[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/4f5da57cbfcf4f00fb2f9519961f39d02203fffd4a9ba35998227eabd64da08a/imbhargav5/open-recorder"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/8111454577e685c4dcbbab06c20f924003a1a6adbc6e04b654b27a2792216471/imbhargav5/open-recorder"
     },
     {
       "repo": "zhangzaibin/spagent",
@@ -1631,7 +1631,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-06-25T18:54:48Z",
-      "lastCommitAt": "2026-06-28T11:45:50Z",
+      "lastCommitAt": "2026-06-28T13:21:46Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1643,7 +1643,7 @@
         "SWhayhay"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/477101976beddec41488a821cff33a9b464745274b0b9a6296b9a07ebcb497a8/SWhayhay/Swift-Execut"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/b7f9138dff0910a20c87c0da082bf9ddbb800d0db3637a6818cdc7a44f0a372a/SWhayhay/Swift-Execut"
     },
     {
       "repo": "Jargrof/Arcadia-Execut",
@@ -1666,7 +1666,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-06-25T18:50:35Z",
-      "lastCommitAt": "2026-06-28T11:45:57Z",
+      "lastCommitAt": "2026-06-28T13:22:06Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1678,7 +1678,7 @@
         "Jargrof"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/82e0cf6dbf6202f362af76fbbc73fd2dd70f75ebd35aa3e583250ef7056c4de9/Jargrof/Arcadia-Execut"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/64733243d045e76a4f04b8dda509c03f58e7027ba4fa34b9c9fe6bf78e545113/Jargrof/Arcadia-Execut"
     },
     {
       "repo": "wiz-sec-public/SITF",
@@ -1860,7 +1860,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2021-01-12T10:40:35Z",
-      "lastCommitAt": "2026-06-28T11:44:35Z",
+      "lastCommitAt": "2026-06-28T13:23:04Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -1873,7 +1873,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/e11c9ee12ba89bad50f59ecdaa9a4ebda45325b7791aa68344371f73552d3da4/lonnyzhang423/github-hot-hub"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/d763222bb565465e7b0e7f7d5fa8117c9a3c50a5faa420198c6c5cc1d6c3e1f6/lonnyzhang423/github-hot-hub"
     },
     {
       "repo": "yogasw/wick",
@@ -1943,7 +1943,7 @@
       "contributors": 3,
       "recentReleases": 0,
       "createdAt": "2026-06-18T04:32:09Z",
-      "lastCommitAt": "2026-06-28T13:12:52Z",
+      "lastCommitAt": "2026-06-28T13:18:52Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -1955,7 +1955,7 @@
         "houleixx"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/58247f298ba777f50f3b6d26dface8a23a2f48b8b164666e11031464383a4969/jianshuo/voicedrop"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f377233cad7c9ab029cdcd5d282293c3d8a7b119bd2477dfb424b3304abea024/jianshuo/voicedrop"
     },
     {
       "repo": "aspect-build/aspect-workflows-template",
@@ -2080,7 +2080,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-06-15T07:42:19Z",
-      "lastCommitAt": "2026-06-28T11:45:31Z",
+      "lastCommitAt": "2026-06-28T13:21:53Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2091,7 +2091,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/b442a835be033f93ce592734e4d95c1791a718fd7e92362c66bfb141e4319a7d/miriamwambui659-wachira/FL-Studio-2026-Producer-Toolkit"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/90dc55f1ee94a253558e890df32a17e2410e60d408b8401a1eb20118b90f5480/miriamwambui659-wachira/FL-Studio-2026-Producer-Toolkit"
     },
     {
       "repo": "bhuism/home-ops",
@@ -2163,7 +2163,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-06-15T07:50:56Z",
-      "lastCommitAt": "2026-06-28T11:45:37Z",
+      "lastCommitAt": "2026-06-28T13:22:03Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2174,7 +2174,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/38d22793379fab6616e9aee1aedbefe94f342dda36b85153008c887fc7cb65d9/adnansamibd2007-lgtm/psn-collection-sync-manager"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/2a8bfd700efe488ceaa59a15aad2a5915c53736b2da0d40e8a21d0cab09bf64b/adnansamibd2007-lgtm/psn-collection-sync-manager"
     },
     {
       "repo": "cms-sw/cms-sw.github.io",
@@ -2572,7 +2572,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-03-26T10:05:35Z",
-      "lastCommitAt": "2026-06-28T11:44:56Z",
+      "lastCommitAt": "2026-06-28T13:22:37Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2581,7 +2581,7 @@
       "undervaluedScore": 46,
       "maintainers": [],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/2e6e2b0fb18b7c52e7dbe27cf6bcd9572649e1a9527178d3ba40d9be99a05874/ewecrow78-gif/whitelist1"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/9ffc892a6cb6026dc8ff0b71a0d828cbd385d373628fac1ee69b21c473a03510/ewecrow78-gif/whitelist1"
     },
     {
       "repo": "niuinyang/niuin-s-iptv",
@@ -2647,7 +2647,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2022-05-20T22:00:21Z",
-      "lastCommitAt": "2026-06-28T13:16:30Z",
+      "lastCommitAt": "2026-06-28T13:23:23Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2658,7 +2658,7 @@
         "algotables"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/c0dd0a9810765fbf717975fbcb9485b2e341f0bfac6793e23b4ecfae1167b270/algotables/algotables.github.io"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/4b13bf0c34134b5072563d105040c39d93f2b35bc036dd5db1bb452513955ad8/algotables/algotables.github.io"
     },
     {
       "repo": "jack2713/mynew",
@@ -2681,7 +2681,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2025-12-16T09:04:05Z",
-      "lastCommitAt": "2026-06-28T13:06:35Z",
+      "lastCommitAt": "2026-06-28T13:21:51Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2692,7 +2692,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/9edc45b50f6071386e21bb5fbbfdbbb184d97d4717411e3c5e5bb75562c35dde/jack2713/mynew"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/90dc55f1ee94a253558e890df32a17e2410e60d408b8401a1eb20118b90f5480/jack2713/mynew"
     },
     {
       "repo": "tanaybhomia/Whisp",
@@ -2781,7 +2781,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-06-15T07:52:28Z",
-      "lastCommitAt": "2026-06-28T11:45:33Z",
+      "lastCommitAt": "2026-06-28T13:21:41Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -2792,7 +2792,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/cd02793370921d0a0bb8b215f5acb9cbf5e9876a766b80af5e623000f18f905d/dovebedi-ux/rl-bumper-tactics"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/da8d757083ce7e14536672b9636ce2592f6dfba9884f533c9cbd280041f1c876/dovebedi-ux/rl-bumper-tactics"
     },
     {
       "repo": "OpusDelta/opusdelta",
@@ -2834,12 +2834,10 @@
       "url": "https://github.com/Lampe332/7dtd-survival-companion",
       "language": "HTML",
       "languages": [
-        "HTML",
-        "Rust"
+        "HTML"
       ],
       "languagePcts": [
-        80,
-        20
+        80
       ],
       "topics": [
         "7-days-to-die",
@@ -2858,7 +2856,7 @@
       "contributors": 1,
       "recentReleases": 10,
       "createdAt": "2026-06-19T00:58:39Z",
-      "lastCommitAt": "2026-06-28T13:06:08Z",
+      "lastCommitAt": "2026-06-28T13:16:55Z",
       "lastReleaseAt": "2026-06-19T23:56:53Z",
       "status": "newborn",
       "tags": [
@@ -2872,7 +2870,7 @@
         "Lampe332"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/642a7e1e689259c391745005d70719bc0d895ecea5e175eb488deb01f565ce96/Lampe332/7dtd-survival-companion"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/94acaa2049b629232c6f302ead56951af5135fbf08e2509b26d98bc7b38c1f26/Lampe332/7dtd-survival-companion"
     },
     {
       "repo": "rajudandigam/agent-inspect",
@@ -3023,7 +3021,7 @@
       "contributors": 2,
       "recentReleases": 6,
       "createdAt": "2026-04-16T21:14:09Z",
-      "lastCommitAt": "2026-06-28T11:45:21Z",
+      "lastCommitAt": "2026-06-28T13:21:30Z",
       "lastReleaseAt": "2026-06-17T21:44:51Z",
       "status": "thriving",
       "tags": [
@@ -3037,7 +3035,7 @@
         "Samy879"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/34015277a29554670534da1056086bbb9ce407fbb836b3a17e7ce3a21a55989f/Samy879/minimalist-animated-weather"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/1ba95825532284444c5c7d5089b6dffc5970e7d201d0e9f660a37e1533ec68eb/Samy879/minimalist-animated-weather"
     },
     {
       "repo": "clifordpereira/nuxt-auto-crud",
@@ -3149,7 +3147,7 @@
       "contributors": 2,
       "recentReleases": 1,
       "createdAt": "2026-02-05T10:53:07Z",
-      "lastCommitAt": "2026-06-28T13:12:17Z",
+      "lastCommitAt": "2026-06-28T13:17:17Z",
       "lastReleaseAt": "2026-06-27T23:59:09Z",
       "status": "thriving",
       "tags": [
@@ -3162,7 +3160,7 @@
         "tokuhirom-tagpr[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/d577a260ec7120327bfde45e0c1d5428b572a2ec8efaf607fa4e7dfef23d6646/tokuhirom/mutsu"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/e20a8dd368838240a1e79fd770eaa3e1d9b3d3912d0561ad09f76bdcae763919/tokuhirom/mutsu"
     },
     {
       "repo": "innovatorssoft/Baileys",
@@ -3313,7 +3311,7 @@
       "contributors": 7,
       "recentReleases": 0,
       "createdAt": "2026-02-12T20:59:03Z",
-      "lastCommitAt": "2026-06-28T13:15:36Z",
+      "lastCommitAt": "2026-06-28T13:18:40Z",
       "status": "thriving",
       "tags": [],
       "healthScore": 90,
@@ -3324,7 +3322,7 @@
         "EliSchleifer"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/f10ea9817363c84e7aec3a7b3cf6e3e36b3298570b12a7c08a8ba75719724568/merge-demo/mergequeue-bazel"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/8fca53fcba2d6f05373fc77a9442d430525afd0d54a82b269f37e5176d36889b/merge-demo/mergequeue-bazel"
     },
     {
       "repo": "Zer00n/z-cmdb",
@@ -3463,7 +3461,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-04-24T08:05:36Z",
-      "lastCommitAt": "2026-06-28T11:44:05Z",
+      "lastCommitAt": "2026-06-28T13:17:28Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -3474,7 +3472,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/0f3aa8d1a43dd0984314b916580ef68e22c403ba525b1df3fe4159532da70fac/brf153/linkedin-job-fetcher"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/c795df157e872e9972b2063cc4408d98838e92763820006286f5deffdd8bc924/brf153/linkedin-job-fetcher"
     },
     {
       "repo": "paperlesspaper/integrations",
@@ -3615,7 +3613,7 @@
       "contributors": 4,
       "recentReleases": 0,
       "createdAt": "2026-02-01T11:37:49Z",
-      "lastCommitAt": "2026-06-28T13:16:44Z",
+      "lastCommitAt": "2026-06-28T13:24:14Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -3627,7 +3625,7 @@
         "chenxi750328ai"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/70a946c1adb4598da39f9cf48d0dd35aa5f4394c6f98eaeb355370c56d2ec921/chenxi750328ai/agent-jianghu"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f0b969286dbdbd8e278adf318c47b69ef86d43ffff39da50105426d6c7f2d96d/chenxi750328ai/agent-jianghu"
     },
     {
       "repo": "Megus/chipnomad-tracker",
@@ -4087,7 +4085,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-04-19T04:06:14Z",
-      "lastCommitAt": "2026-06-28T13:16:19Z",
+      "lastCommitAt": "2026-06-28T13:21:20Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -4100,7 +4098,7 @@
         "ZhangShengFan"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/7efb58bb3b0068ed42601e178840849805c38daa5796e5ca0284224ee6d06c09/ZhangShengFan/Pakr"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/4590827b3c06deefc5c748e9cc8d5b207f872b13237b698d844f181cccf730c0/ZhangShengFan/Pakr"
     },
     {
       "repo": "KwanWaiPang/KwanWaiPang.github.io",
@@ -4128,7 +4126,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2020-12-05T14:30:20Z",
-      "lastCommitAt": "2026-06-28T08:37:51Z",
+      "lastCommitAt": "2026-06-28T13:20:57Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -4141,7 +4139,7 @@
         "KwanWaiPang"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/2adf7c99377cbb1bf5bc1ac19d731cb536f1cec1eb4934e1da4b1724876a15b5/KwanWaiPang/KwanWaiPang.github.io",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/336648179626dceb6c6eda9ba02272d5773659c792809cc8d37e0c9a39facbbd/KwanWaiPang/KwanWaiPang.github.io",
       "discussionCount": 1
     },
     {
@@ -4345,7 +4343,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2026-05-13T05:50:36Z",
-      "lastCommitAt": "2026-06-28T11:44:16Z",
+      "lastCommitAt": "2026-06-28T13:21:24Z",
       "status": "newborn",
       "tags": [
         "solo_builder",
@@ -4360,7 +4358,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/5848469a2e8e9132ff32e9f29400470a44a6b28c883eefc3cd552c02c86b43c5/UnsafeLabs/Bounty-Hunters"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/e14159fb7bafdc8a18a3cd8a45256d24c750d1d59bed97283318a4ec71026ff3/UnsafeLabs/Bounty-Hunters"
     },
     {
       "repo": "hew-lang/hew",
@@ -5325,7 +5323,7 @@
       "contributors": 6,
       "recentReleases": 0,
       "createdAt": "2026-04-20T10:16:21Z",
-      "lastCommitAt": "2026-06-28T13:09:03Z",
+      "lastCommitAt": "2026-06-28T13:18:03Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -5339,7 +5337,7 @@
         "dependabot[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/d3196050c6626f0d6c28baf0e9488d9b68ba96019b0767c09e56420b6dca5600/phnx-labs/agents-cli",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/8d265c1c471d62c707377c05eeece9f2f70f73af1b36bf4add44bc6a3fe03978/phnx-labs/agents-cli",
       "discussionCount": 2
     },
     {
@@ -5909,8 +5907,8 @@
       "contributors": 1,
       "recentReleases": 1,
       "createdAt": "2024-11-11T09:28:50Z",
-      "lastCommitAt": "2026-06-28T12:30:30Z",
-      "lastReleaseAt": "2026-06-28T12:32:44Z",
+      "lastCommitAt": "2026-06-28T13:23:17Z",
+      "lastReleaseAt": "2026-06-28T13:24:14Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -5922,7 +5920,7 @@
         "rmolives"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/847470b690bd59126665a35bcf20c98db30931b70e2f9e8ab2341132cb870bb5/rmolives/devore"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/ebd8ac3ee0dc97dc9af76eff838d92012b495fa35f4085551c884262a179e654/rmolives/devore"
     },
     {
       "repo": "hewm2008/fqcheck",
@@ -6024,7 +6022,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-02-27T10:43:59Z",
-      "lastCommitAt": "2026-06-28T11:43:21Z",
+      "lastCommitAt": "2026-06-28T13:19:04Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -6035,7 +6033,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/3e557bbbc6cc66ae3147423613054dd3ba4155c85de05f78ca663d874fd4688f/qopq1366/VlessConfig"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/460506d8d3e7a590889a91d12181b3e6aa2567db1c765aa4f45f88ade95af82b/qopq1366/VlessConfig"
     },
     {
       "repo": "samuraitruong/chess.com-daily-puzzle",
@@ -6065,7 +6063,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2023-04-06T05:36:43Z",
-      "lastCommitAt": "2026-06-28T11:44:19Z",
+      "lastCommitAt": "2026-06-28T13:18:31Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -6076,7 +6074,7 @@
         "samuraitruong"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/fb9d88238667398c87985a1d4056c123b3e51cf637350e098cce6d20759e9765/samuraitruong/chess.com-daily-puzzle"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/db121967108d421b9363bd19f0ca2970fa74c7fc3582871e89e071324387056e/samuraitruong/chess.com-daily-puzzle"
     },
     {
       "repo": "user-jiyichen/user-jiyichen.github.io",
@@ -6139,7 +6137,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-01-16T06:10:44Z",
-      "lastCommitAt": "2026-06-28T13:00:39Z",
+      "lastCommitAt": "2026-06-28T13:18:42Z",
       "status": "thriving",
       "tags": [
         "fork_magnet"
@@ -6150,7 +6148,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/7f484e12a93ca0db295ad09851ce72b7c8bbe705d6528b77cebdabd2c5950341/BuddyChewChew/sports"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/8fca53fcba2d6f05373fc77a9442d430525afd0d54a82b269f37e5176d36889b/BuddyChewChew/sports"
     },
     {
       "repo": "igdigitallab/cardloop",
@@ -6260,7 +6258,7 @@
       "contributors": 4,
       "recentReleases": 0,
       "createdAt": "2026-02-28T10:25:17Z",
-      "lastCommitAt": "2026-06-28T13:16:01Z",
+      "lastCommitAt": "2026-06-28T13:24:01Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -6271,7 +6269,7 @@
         "idanshimon"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/3e71979eb4b6e61da7a24c7a8f04fb692eda31e898b736f117876048cd3f0364/magen-yehuda-intel/magen-yehuda-bot"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/b3ff89067efafbc449be8d3f7a2330b39b44b92b812e6757f868f4f4ea438627/magen-yehuda-intel/magen-yehuda-bot"
     },
     {
       "repo": "thedoggybrad/easylist-mirror",
@@ -6306,7 +6304,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2023-07-03T05:12:00Z",
-      "lastCommitAt": "2026-06-28T13:16:21Z",
+      "lastCommitAt": "2026-06-28T13:21:31Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -6317,7 +6315,7 @@
         "updaterbot-easylistmirror"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/7efb58bb3b0068ed42601e178840849805c38daa5796e5ca0284224ee6d06c09/thedoggybrad/easylist-mirror"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/df6c9d6f92ce93b1bb2310d90e67f77f4cc93cf289aa05898204ee62baf2040a/thedoggybrad/easylist-mirror"
     },
     {
       "repo": "Gunnarguy/OpenIntelligence",
@@ -6519,7 +6517,7 @@
         23
       ],
       "topics": [],
-      "stars": 123,
+      "stars": 124,
       "forks": 11,
       "openIssues": 5,
       "closedIssues": 27,
@@ -6538,7 +6536,7 @@
         "charlexys"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/bdb04a9a5a47cd4617427475713ba20ec62fbdd98c85cf9f6f5a82b9bafa50e2/dark-hxx/CLI-Manager"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/192248db0504f28ad8d967ed4c0103e34bcc18bdf7ab12032cd4af68c638fff2/dark-hxx/CLI-Manager"
     },
     {
       "repo": "EmBitz/EBlink",
@@ -6670,7 +6668,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2021-01-07T10:23:09Z",
-      "lastCommitAt": "2026-06-28T11:43:02Z",
+      "lastCommitAt": "2026-06-28T13:18:31Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -6683,7 +6681,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/2dc95bfce9af9841ec2ce9528d23df3df6c66fde3f99f6e810a23bcf7cf535ca/lonnyzhang423/zhihu-hot-hub"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/77be268adda7de6b0f4833f6408f435fb6b39542b6ea10a3be5d16c5aa15351a/lonnyzhang423/zhihu-hot-hub"
     },
     {
       "repo": "zoranbosnjak/asterix-tool",
@@ -6743,7 +6741,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-06-25T18:52:09Z",
-      "lastCommitAt": "2026-06-28T11:42:44Z",
+      "lastCommitAt": "2026-06-28T13:18:17Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -6755,7 +6753,7 @@
         "kirawareta"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/3e01f8842b4486e3b1eea5d541aa7014951a1dfe3d1b2be7a099905dbd529c72/kirawareta/Seliware-Execut"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f343800c476f45d4fe87a2cff9d66237e4cb1f2f8456338b80e0c5e682f5f062/kirawareta/Seliware-Execut"
     },
     {
       "repo": "hotio/website",
@@ -6963,7 +6961,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-04-28T23:16:25Z",
-      "lastCommitAt": "2026-06-28T13:01:27Z",
+      "lastCommitAt": "2026-06-28T13:21:29Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -6975,7 +6973,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/215a86edb86651c59d7da414f58264a1bbc7f931d0c7387598d6be229e60d7f0/MohammadBahemmat/V2ray-Collector"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/da8d757083ce7e14536672b9636ce2592f6dfba9884f533c9cbd280041f1c876/MohammadBahemmat/V2ray-Collector"
     },
     {
       "repo": "defai-digital/ax-code",
@@ -7142,7 +7140,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2022-10-17T07:18:50Z",
-      "lastCommitAt": "2026-06-28T11:46:26Z",
+      "lastCommitAt": "2026-06-28T13:22:15Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -7272,18 +7270,18 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2022-11-03T10:22:55Z",
-      "lastCommitAt": "2026-06-28T08:43:08Z",
+      "lastCommitAt": "2026-06-28T13:21:28Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
       ],
       "healthScore": 93,
-      "undervaluedScore": 55,
+      "undervaluedScore": 56,
       "maintainers": [
         "Yasas1994"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/8bfb77ba035ed5f43b36f0dddb267edcb37df2322a8feac1306ef90d1f9ba957/Yasas1994/phage_contig_annotator"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/b13aa375cce2d8955471344fee4094e0269b822e270523eeca82551fecc67c7b/Yasas1994/phage_contig_annotator"
     },
     {
       "repo": "OpenAgentsInc/openagents",
@@ -7344,7 +7342,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2023-05-03T13:49:14Z",
-      "lastCommitAt": "2026-06-28T10:58:42Z",
+      "lastCommitAt": "2026-06-28T13:18:24Z",
       "status": "thriving",
       "tags": [
         "solo_builder"
@@ -7355,7 +7353,7 @@
         "mehdihoor"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/9f5f0c6cc2adc25a5c6e542e83016e3e33b8905c254bda4c2f5e69668379bac9/mehdihoore/TestVpnGateServers"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/ac724a1b56ae7171c91aae2b188bd5f65c912ad94252b39e8c6eccdbb1327107/mehdihoore/TestVpnGateServers"
     },
     {
       "repo": "luxus/pi-hindsight",
@@ -7512,7 +7510,7 @@
       "contributors": 3,
       "recentReleases": 0,
       "createdAt": "2025-07-31T09:25:30Z",
-      "lastCommitAt": "2026-06-28T13:13:44Z",
+      "lastCommitAt": "2026-06-28T13:18:39Z",
       "status": "thriving",
       "tags": [],
       "healthScore": 70,
@@ -7521,7 +7519,7 @@
         "abusaeeidx"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/40dba5d0745670b49757c9f09f70e45d04efba5b723ce7e47b259516b5d8f0db/abusaeeidx/IPTV-Scraper-Zilla"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f9384c2b54061a9afb6a434e11aa5ec5010460b5f0e8f664a63d957eae6c5817/abusaeeidx/IPTV-Scraper-Zilla"
     },
     {
       "repo": "lthoangg/OpenAgentd",
@@ -7760,7 +7758,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2023-12-28T17:57:55Z",
-      "lastCommitAt": "2026-06-28T11:42:17Z",
+      "lastCommitAt": "2026-06-28T13:18:08Z",
       "status": "thriving",
       "tags": [
         "solo_builder",
@@ -7772,7 +7770,7 @@
         "actions-user"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/9b1bfdedf95aa70703a5b2e99a5b1c4bfe91c670734dbd2a8ea38c124e7879b0/0zunu/Daily-Weather-Report",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/e5486684e4156577917b3fcc426d6f8fb6a29154c6ee2e6bd6e66a3217765dda/0zunu/Daily-Weather-Report",
       "fundingLinks": [
         {
           "platform": "KO_FI",
@@ -7801,7 +7799,7 @@
       "contributors": 1,
       "recentReleases": 0,
       "createdAt": "2023-10-15T13:07:59Z",
-      "lastCommitAt": "2026-06-28T11:42:48Z",
+      "lastCommitAt": "2026-06-28T13:18:42Z",
       "lastReleaseAt": "2025-06-14T09:16:46Z",
       "status": "thriving",
       "tags": [
@@ -7812,7 +7810,7 @@
       "undervaluedScore": 72,
       "maintainers": [],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/35eb5830753d72b29b7fea3abd49c35e06a0f81fb1a6c993b203a1a9b22153f6/cxyfreedom/v2ex-hot-hub"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/502642249b47f1526dc797d3d1017750e2facd7c1d809de4057227fb510da455/cxyfreedom/v2ex-hot-hub"
     },
     {
       "repo": "PerhapxinLab/dotdotduck",
@@ -7847,7 +7845,7 @@
       "contributors": 1,
       "recentReleases": 3,
       "createdAt": "2026-05-19T14:32:57Z",
-      "lastCommitAt": "2026-06-28T07:39:30Z",
+      "lastCommitAt": "2026-06-28T13:22:55Z",
       "lastReleaseAt": "2026-06-16T13:21:48Z",
       "status": "newborn",
       "tags": [
@@ -7860,7 +7858,7 @@
         "chenlunlun33"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/6758a01aac3680fd3aa352dfde487ea5c3f1133b81326d6200fb96b26fed4d6f/PerhapxinLab/dotdotduck",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/f0b969286dbdbd8e278adf318c47b69ef86d43ffff39da50105426d6c7f2d96d/PerhapxinLab/dotdotduck",
       "discussionCount": 0
     },
     {
@@ -8039,7 +8037,7 @@
         "github-actions[bot]"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/88499b8347e3e88a31c2c5315ca110ca7984fa6cc427536e050b64fe16f8074f/feelslikewave/mythic-game-vault"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/5d40ae249fa1aa8c8e4c090fc2fa7b5adc262d47ed901d129dc5884501758fc9/feelslikewave/mythic-game-vault"
     },
     {
       "repo": "Animenosekai/japanterebi-xmltv",
@@ -8350,7 +8348,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2020-03-27T01:02:19Z",
-      "lastCommitAt": "2026-06-28T11:42:34Z",
+      "lastCommitAt": "2026-06-28T13:18:06Z",
       "status": "thriving",
       "tags": [
         "legacy_hero"
@@ -8361,7 +8359,7 @@
         "rentianyu"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/4b591391f1eb3e4e620e2959cbc317b7a9417b1a1129f88cc47ba0e2f2025dd4/rentianyu/Ad-set-hosts",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/855d13e365d6d218479e0699386c9e211c04f29bad9a528f6fcd1fa0790e40e1/rentianyu/Ad-set-hosts",
       "discussionCount": 0
     },
     {
@@ -8999,7 +8997,7 @@
       "contributors": 9,
       "recentReleases": 0,
       "createdAt": "2024-06-02T00:58:27Z",
-      "lastCommitAt": "2026-06-28T13:06:12Z",
+      "lastCommitAt": "2026-06-28T13:18:44Z",
       "lastReleaseAt": "2025-12-30T18:29:35Z",
       "status": "thriving",
       "tags": [
@@ -9012,7 +9010,7 @@
         "mafreud"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/24e439b9fbf5a7ac89c8f7697feab8044d22f2b4911ea87cf31def51c9070173/openci-org/openci",
+      "openGraphImageUrl": "https://opengraph.githubassets.com/908cedeab1a8b58eaf2c65e50f488e0e6fb670ddf1b52293984e4abdce6b32c2/openci-org/openci",
       "discussionCount": 0
     },
     {
@@ -10654,7 +10652,7 @@
       "contributors": 2,
       "recentReleases": 0,
       "createdAt": "2026-06-17T16:03:59Z",
-      "lastCommitAt": "2026-06-28T13:03:30Z",
+      "lastCommitAt": "2026-06-28T13:24:58Z",
       "status": "newborn",
       "tags": [
         "solo_builder",
@@ -10666,7 +10664,7 @@
         "SHAJON-404"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/4ad125cc504c7ac855d65e0ca0e157366d58f52495dbd94a84ffe2e3e2b63bbf/SHAJON-404/iptv-playlist"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/5055e55d19f266da605fbb59e872c1c62a4c1c37d3a1e5b270bfc72df62f6c12/SHAJON-404/iptv-playlist"
     },
     {
       "repo": "davidmuma/EPG_dobleM",
@@ -10718,25 +10716,25 @@
       "topics": [],
       "stars": 488,
       "forks": 57,
-      "openIssues": 56,
-      "closedIssues": 156,
+      "openIssues": 55,
+      "closedIssues": 157,
       "watchers": 14,
       "contributors": 4,
       "recentReleases": 0,
       "createdAt": "2018-07-10T21:12:49Z",
-      "lastCommitAt": "2026-06-28T06:54:36Z",
+      "lastCommitAt": "2026-06-28T13:21:37Z",
       "lastReleaseAt": "2021-02-13T17:39:02Z",
       "status": "thriving",
       "tags": [
         "legacy_hero"
       ],
-      "healthScore": 90,
+      "healthScore": 91,
       "undervaluedScore": 36,
       "maintainers": [
         "kassambara"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/5f743a86c631edd0b8fa5db0c8c0c0a4618fbf00b76086481e744aeaeaeb9a9e/kassambara/rstatix"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/6c51b0b1f6143b5e346d7be9e2d4a5ae9b24743f2d8b2def54bfc30d862b629c/kassambara/rstatix"
     },
     {
       "repo": "jogemu/md3css",
@@ -10798,7 +10796,7 @@
       "contributors": 3,
       "recentReleases": 0,
       "createdAt": "2026-06-01T06:57:01Z",
-      "lastCommitAt": "2026-06-28T13:16:16Z",
+      "lastCommitAt": "2026-06-28T13:20:13Z",
       "status": "newborn",
       "tags": [
         "solo_builder",
@@ -10810,7 +10808,7 @@
         "hongdangmoo49"
       ],
       "isFork": false,
-      "openGraphImageUrl": "https://opengraph.githubassets.com/01bfaed6aa26bd94fef564302f5b53f43cf1cc3ed554a9160ad8ec7414ab128f/hongdangmoo49/Trinity"
+      "openGraphImageUrl": "https://opengraph.githubassets.com/afc337b46866320a6d1cb706c65804e88bfa638869645ecd32074ecc0128422f/hongdangmoo49/Trinity"
     },
     {
       "repo": "LuisRosado40/TBH-Task-Bar-Hero-Sync-Tool",

@@ -4,8 +4,8 @@ name: "7dtd-survival-companion"
 description: "Offline companion app for 7 Days to Die (V1.0/V3.0): 3D world map, 19-route gate-correct build & perk planner, 8-player squad board with party Game Stage, magazine tracker, real horde/threat reference, and a gameOptions.sdf settings editor with write-back. One self-contained Rust .exe, 100% local."
 url: "https://github.com/Lampe332/7dtd-survival-companion"
 language: "HTML"
-languages: ["HTML", "Rust"]
-languagePcts: [80, 20]
+languages: ["HTML"]
+languagePcts: [80]
 topics: ["7-days-to-die", "7dtd", "companion-app", "game-tools", "rust", "webgl", "windows"]
 stars: 5
 forks: 0
@@ -15,14 +15,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-06-19T00:58:39Z"
-lastCommitAt: "2026-06-28T13:06:08Z"
+lastCommitAt: "2026-06-28T13:16:55Z"
 lastReleaseAt: "2026-06-19T23:56:53Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 70
 undervaluedScore: 47
 maintainers: ["Lampe332"]
-openGraphImageUrl: "https://opengraph.githubassets.com/642a7e1e689259c391745005d70719bc0d895ecea5e175eb488deb01f565ce96/Lampe332/7dtd-survival-companion"
+openGraphImageUrl: "https://opengraph.githubassets.com/94acaa2049b629232c6f302ead56951af5135fbf08e2509b26d98bc7b38c1f26/Lampe332/7dtd-survival-companion"
 ---
 
 <br><br>

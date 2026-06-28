@@ -14,13 +14,13 @@ watchers: 5
 contributors: 2
 recentReleases: 0
 createdAt: "2020-03-27T01:02:19Z"
-lastCommitAt: "2026-06-28T11:42:34Z"
+lastCommitAt: "2026-06-28T13:18:06Z"
 status: "thriving"
 tags: ["legacy_hero"]
 healthScore: 89
 undervaluedScore: 20
 maintainers: ["rentianyu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4b591391f1eb3e4e620e2959cbc317b7a9417b1a1129f88cc47ba0e2f2025dd4/rentianyu/Ad-set-hosts"
+openGraphImageUrl: "https://opengraph.githubassets.com/855d13e365d6d218479e0699386c9e211c04f29bad9a528f6fcd1fa0790e40e1/rentianyu/Ad-set-hosts"
 discussionCount: 0
 ---
 

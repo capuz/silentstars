@@ -16,14 +16,14 @@ watchers: 0
 contributors: 23
 recentReleases: 0
 createdAt: "2026-03-15T06:49:35Z"
-lastCommitAt: "2026-06-28T12:26:06Z"
+lastCommitAt: "2026-06-28T13:23:09Z"
 lastReleaseAt: "2026-03-24T10:09:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 93
 undervaluedScore: 35
 maintainers: ["imbhargav5", "github-actions[bot]", "mergify[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4f5da57cbfcf4f00fb2f9519961f39d02203fffd4a9ba35998227eabd64da08a/imbhargav5/open-recorder"
+openGraphImageUrl: "https://opengraph.githubassets.com/8111454577e685c4dcbbab06c20f924003a1a6adbc6e04b654b27a2792216471/imbhargav5/open-recorder"
 ---
 
 # Open Recorder

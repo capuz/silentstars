@@ -21,7 +21,7 @@ tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 29
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/88499b8347e3e88a31c2c5315ca110ca7984fa6cc427536e050b64fe16f8074f/feelslikewave/mythic-game-vault"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d40ae249fa1aa8c8e4c090fc2fa7b5adc262d47ed901d129dc5884501758fc9/feelslikewave/mythic-game-vault"
 ---
 
 # 🚀 MetaLauncher: The Universal Game Bridge

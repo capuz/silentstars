@@ -14,13 +14,13 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2026-02-12T20:59:03Z"
-lastCommitAt: "2026-06-28T13:15:36Z"
+lastCommitAt: "2026-06-28T13:18:40Z"
 status: "thriving"
 tags: []
 healthScore: 90
 undervaluedScore: 46
 maintainers: ["pat-trunk-io", "phil-trunk", "EliSchleifer"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f10ea9817363c84e7aec3a7b3cf6e3e36b3298570b12a7c08a8ba75719724568/merge-demo/mergequeue-bazel"
+openGraphImageUrl: "https://opengraph.githubassets.com/8fca53fcba2d6f05373fc77a9442d430525afd0d54a82b269f37e5176d36889b/merge-demo/mergequeue-bazel"
 ---
 
 ### Welcome

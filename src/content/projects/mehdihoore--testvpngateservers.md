@@ -14,13 +14,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-05-03T13:49:14Z"
-lastCommitAt: "2026-06-28T10:58:42Z"
+lastCommitAt: "2026-06-28T13:18:24Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 67
 maintainers: ["mehdihoor"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9f5f0c6cc2adc25a5c6e542e83016e3e33b8905c254bda4c2f5e69668379bac9/mehdihoore/TestVpnGateServers"
+openGraphImageUrl: "https://opengraph.githubassets.com/ac724a1b56ae7171c91aae2b188bd5f65c912ad94252b39e8c6eccdbb1327107/mehdihoore/TestVpnGateServers"
 ---
 
 Server Speed Test
