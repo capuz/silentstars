@@ -16,6 +16,7 @@ interface Project {
   description: string;
   url: string;
   language: string | null;
+  languages?: string[];
   stars: number;
   healthScore: number;
   undervaluedScore: number;
@@ -64,14 +65,16 @@ function hashtagFacets(text: string) {
 function buildPost(p: Project, baseUrl: string) {
   const desc     = truncate(p.description ?? '', 180);
   const lang     = p.language ?? '';
-  const langTag  = lang ? (LANG_HASHTAG[lang] ?? '') : '';
-  const tags     = ['#indiedev', '#opensource', langTag].filter(Boolean).join(' ');
+  const langTags = (p.languages ?? (lang ? [lang] : []))
+    .map(l => LANG_HASHTAG[l] ?? '')
+    .filter(Boolean);
+  const tags     = ['#indiedev', '#opensource', ...langTags].join(' ');
   const slug     = p.repo.toLowerCase().replace('/', '--');
   const siteUrl  = `${baseUrl}/projects/${slug}/`;
 
   // Text without URL — card embed handles the link
   const lines = [
-    '★ Hidden build of the day',
+    '🌟 Silent star of the day',
     '',
     `${p.name} — ${desc}`,
     '',
@@ -80,7 +83,7 @@ function buildPost(p: Project, baseUrl: string) {
   const text = lines.join('\n');
 
   // Byte-offset facet: project name → GitHub repo link
-  const prefix   = '★ Hidden build of the day\n\n';
+  const prefix   = '🌟 Silent star of the day\n\n';
   const byteStart = byteLen(prefix);
   const byteEnd   = byteStart + byteLen(p.name);
 

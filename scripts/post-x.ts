@@ -4,12 +4,9 @@ import { join } from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
-const LANG_EMOJI: Record<string, string> = {
-  TypeScript: '🟦', JavaScript: '🟨', Python: '🐍', Go: '🐹',
-  Rust: '🦀', Java: '☕', 'C#': '#️⃣', Ruby: '💎', PHP: '🐘',
-  'C++': '⚡', C: '⚡', Swift: '🍎', Kotlin: '🟣', Dart: '🎯',
-  Shell: '🐚', HTML: '🌐', CSS: '🎨', Nix: '❄️', Lua: '🌙',
-  Elixir: '💜', Haskell: '🟣', Scala: '🔴', Zig: '⚡',
+const LANG_HASHTAG: Record<string, string> = {
+  Rust: '#rust', Python: '#python', JavaScript: '#javascript',
+  Go: '#golang', TypeScript: '#typescript',
 };
 
 interface Project {
@@ -18,6 +15,7 @@ interface Project {
   description: string;
   url: string;
   language: string | null;
+  languages?: string[];
   stars: number;
   healthScore: number;
   undervaluedScore: number;
@@ -44,20 +42,21 @@ function truncate(str: string, max: number): string {
 }
 
 function buildTweet(p: Project, baseUrl: string): string {
-  const desc    = truncate(p.description ?? '', 90);
-  const lang    = p.language ?? '';
-  const emoji   = lang ? (LANG_EMOJI[lang] ?? '') : '';
-  const langStr = lang ? ` · ${emoji ? emoji + ' ' : ''}${lang}` : '';
-  const slug    = p.repo.toLowerCase().replace('/', '--');
-  const siteUrl = `${baseUrl}/projects/${slug}/`;
+  const desc     = truncate(p.description ?? '', 200);
+  const lang     = p.language ?? '';
+  const langTags = (p.languages ?? (lang ? [lang] : []))
+    .map(l => LANG_HASHTAG[l] ?? '')
+    .filter(Boolean);
+  const slug     = p.repo.toLowerCase().replace('/', '--');
+  const siteUrl  = `${baseUrl}/projects/${slug}/`;
+  const tags     = ['#indiedev', '#opensource', ...langTags].join(' ');
 
   const lines = [
-    '★ Hidden build of the day',
+    '🌟 Silent star of the day',
     '',
     `${p.name} — ${desc}`,
-    `↑${p.undervaluedScore} undervalued · ♥${p.healthScore} health · ${p.stars} ★${langStr}`,
     '',
-    '#opensource #buildinpublic',
+    tags,
     '',
     siteUrl,
   ];
