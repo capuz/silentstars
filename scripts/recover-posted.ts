@@ -10,33 +10,11 @@
 
 import { BskyAgent } from '@atproto/api';
 import { TwitterApi } from 'twitter-api-v2';
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dirname, '..');
+import { type PostedEntry, loadPosted, savePosted } from './post-shared.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 const BASE_URL = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 const PROJECT_PREFIX = `${BASE_URL}/projects/`;
-
-interface PostedEntry {
-  repo: string;
-  slug: string;
-  postedAt: string;
-  platforms: Record<string, { url: string; postedAt: string }>;
-}
-
-const POSTED_PATH = resolve(ROOT, 'data/posted.json');
-
-function loadPosted(): PostedEntry[] {
-  return existsSync(POSTED_PATH) ? JSON.parse(readFileSync(POSTED_PATH, 'utf8')) : [];
-}
-
-function savePosted(entries: PostedEntry[]): void {
-  writeFileSync(POSTED_PATH, JSON.stringify(entries, null, 2));
-}
 
 function slugToRepo(slug: string): string {
   const parts = slug.split('--');
