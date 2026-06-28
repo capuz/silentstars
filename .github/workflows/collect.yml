@@ -264,7 +264,7 @@ jobs:
 
   # ─────────────────────────────────────────────────────────────
   # Job 4: Post daily highlight to X.com
-  # Runs in parallel with Bluesky post after deploy
+  # Runs after Bluesky post to avoid git conflict on posted.json
   # Requires secrets: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
   # ─────────────────────────────────────────────────────────────
   post-x:
@@ -289,9 +289,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium --with-deps
 
       - name: Compute submission slug
         id: submission_slug_x
