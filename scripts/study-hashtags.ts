@@ -1,9 +1,23 @@
 import { BskyAgent } from '@atproto/api';
+import { writeFileSync } from 'fs';
+import { join } from 'path';
 
 const HASHTAGS = [
-  'opensource', 'buildinpublic', 'programming', 'coding', 'developer',
-  'devs', 'github', 'softwaredev', 'webdev', 'indiedev',
-  'typescript', 'javascript', 'python', 'rust', 'golang',
+  // Identidad / comunidad
+  'opensource', 'indiedev', 'buildinpublic', 'sideproject',
+  'developer', 'softwaredev', 'webdev', 'devs',
+  'github', 'programming', 'coding',
+  // Lenguajes con Devicon — web
+  'html5', 'css3', 'javascript', 'typescript', 'sass', 'webassembly',
+  // Lenguajes con Devicon — general purpose
+  'python', 'rust', 'golang', 'java', 'kotlin',
+  'swift', 'csharp', 'cpp', 'c', 'ruby',
+  'php', 'scala', 'elixir', 'haskell', 'lua',
+  'dart', 'julia', 'ocaml', 'fsharp', 'erlang',
+  'clojure', 'groovy', 'crystal', 'nim', 'zig',
+  'coffeescript', 'elm', 'perl', 'bash', 'powershell',
+  'r', 'solidity', 'objectivec', 'fortran', 'cobol',
+  'd', 'haxe', 'matlab', 'processing', 'embeddedc',
 ];
 
 const LIMIT = 25;
@@ -109,3 +123,10 @@ for (const r of results) {
 
 console.log('─'.repeat(70));
 console.log(`\n★ Top 3 recomendados: ${results.slice(0, 3).map(r => '#' + r.tag).join('  ')}`);
+
+const output = {
+  updatedAt: new Date().toISOString(),
+  scores: results,
+};
+writeFileSync(join(process.cwd(), 'data', 'hashtag-scores.json'), JSON.stringify(output, null, 2));
+console.log('\nSaved → data/hashtag-scores.json');

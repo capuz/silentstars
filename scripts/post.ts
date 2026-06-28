@@ -1,14 +1,39 @@
 import { BskyAgent } from '@atproto/api';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
-// Languages with active Bluesky communities (from hashtag study 2026-06-25)
 const LANG_HASHTAG: Record<string, string> = {
-  Rust: '#rust', Python: '#python', JavaScript: '#javascript',
-  Go: '#golang', TypeScript: '#typescript',
+  // Web
+  HTML: '#html5', 'HTML5': '#html5', CSS: '#css3',
+  JavaScript: '#javascript', TypeScript: '#typescript',
+  Sass: '#sass', SCSS: '#sass', WebAssembly: '#webassembly',
+  // General purpose
+  Python: '#python', Rust: '#rust', Go: '#golang',
+  Java: '#java', Kotlin: '#kotlin', Swift: '#swift',
+  'C#': '#csharp', 'C++': '#cpp', C: '#c', Ruby: '#ruby',
+  PHP: '#php', Scala: '#scala', Elixir: '#elixir',
+  Haskell: '#haskell', Lua: '#lua', Dart: '#dart',
+  Julia: '#julia', OCaml: '#ocaml', 'F#': '#fsharp',
+  Erlang: '#erlang', Clojure: '#clojure', Groovy: '#groovy',
+  Crystal: '#crystal', Nim: '#nim', Zig: '#zig',
+  CoffeeScript: '#coffeescript', Elm: '#elm', Perl: '#perl',
+  Shell: '#bash', Bash: '#bash', PowerShell: '#powershell',
+  R: '#r', Solidity: '#solidity', 'Objective-C': '#objectivec',
+  Fortran: '#fortran', COBOL: '#cobol', D: '#d',
+  Haxe: '#haxe', MATLAB: '#matlab', Processing: '#processing',
 };
+
+function loadTopHashtags(n = 2): string[] {
+  const path = join(process.cwd(), 'data', 'hashtag-scores.json');
+  if (!existsSync(path)) return ['#indiedev', '#opensource'];
+  const { scores } = JSON.parse(readFileSync(path, 'utf8')) as { scores: { tag: string }[] };
+  const communityTags = scores.filter(s =>
+    !Object.values(LANG_HASHTAG).includes(`#${s.tag}`)
+  );
+  return communityTags.slice(0, n).map(s => `#${s.tag}`);
+}
 
 interface Project {
   repo: string;
@@ -68,7 +93,7 @@ function buildPost(p: Project, baseUrl: string) {
   const langTags = (p.languages ?? (lang ? [lang] : []))
     .map(l => LANG_HASHTAG[l] ?? '')
     .filter(Boolean);
-  const tags     = ['#indiedev', '#opensource', ...langTags].join(' ');
+  const tags     = [...loadTopHashtags(2), ...langTags].join(' ');
   const slug     = p.repo.toLowerCase().replace('/', '--');
   const siteUrl  = `${baseUrl}/projects/${slug}/`;
 
