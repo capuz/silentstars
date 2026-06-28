@@ -7,17 +7,26 @@ const HASHTAGS = [
   'opensource', 'indiedev', 'buildinpublic', 'sideproject',
   'developer', 'softwaredev', 'webdev', 'devs',
   'github', 'programming', 'coding',
-  // Lenguajes con Devicon — web
-  'html5', 'css3', 'javascript', 'typescript', 'sass', 'webassembly',
-  // Lenguajes con Devicon — general purpose
-  'python', 'rust', 'golang', 'java', 'kotlin',
-  'swift', 'csharp', 'cpp', 'c', 'ruby',
-  'php', 'scala', 'elixir', 'haskell', 'lua',
-  'dart', 'julia', 'ocaml', 'fsharp', 'erlang',
-  'clojure', 'groovy', 'crystal', 'nim', 'zig',
-  'coffeescript', 'elm', 'perl', 'bash', 'powershell',
-  'r', 'solidity', 'objectivec', 'fortran', 'cobol',
-  'd', 'haxe', 'matlab', 'processing', 'embeddedc',
+  // Frontend frameworks & UI
+  'react', 'nextjs', 'vuejs', 'nuxtjs', 'angular', 'svelte',
+  'astro', 'remix', 'vite', 'tailwindcss', 'storybook',
+  // Backend frameworks & runtimes
+  'nodejs', 'deno', 'bun', 'django', 'fastapi', 'rails',
+  'laravel', 'spring', 'express', 'nestjs', 'graphql', 'trpc',
+  // DevOps & infraestructura
+  'docker', 'kubernetes', 'terraform', 'ansible', 'linux',
+  'devops', 'cicd', 'serverless',
+  // Cloud
+  'aws', 'azure', 'vercel', 'netlify', 'cloudflare',
+  // Bases de datos
+  'postgresql', 'mongodb', 'redis', 'mysql', 'sqlite', 'supabase',
+  'prisma', 'drizzle',
+  // AI / ML
+  'ai', 'machinelearning', 'llm',
+  // Otras tecnologías
+  'webassembly', 'pwa', 'microservices',
+  // Cultura developer
+  'hacktoberfest', '100daysofcode', 'gamedev',
 ];
 
 const LIMIT = 25;

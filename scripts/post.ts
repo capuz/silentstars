@@ -1,6 +1,7 @@
 import { BskyAgent } from '@atproto/api';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { execSync } from 'child_process';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
@@ -184,17 +185,46 @@ async function main(): Promise<void> {
   const agent = new BskyAgent({ service: 'https://bsky.social' });
   await agent.login({ identifier, password });
 
-  // Upload OG image as blob so the card thumbnail is always guaranteed
-  const slug   = project.repo.toLowerCase().replace('/', '--');
-  const ogUrl  = `${baseUrl}/og/${slug}.png`;
-  const ogRes  = await fetch(ogUrl);
-  if (!ogRes.ok) throw new Error(`Failed to fetch OG image: ${ogUrl} (${ogRes.status})`);
-  const ogBuf  = Buffer.from(await ogRes.arrayBuffer());
-  const { data: thumb } = await agent.uploadBlob(ogBuf, { encoding: 'image/png' });
+  const slug = project.repo.toLowerCase().replace('/', '--');
+
+  // Try to generate a hashtag card with Devicons for the project's languages
+  let thumbBlob: Awaited<ReturnType<typeof agent.uploadBlob>>['data']['blob'] | undefined;
+  const lang     = project.language ?? '';
+  const langTags = (project.languages ?? (lang ? [lang] : []))
+    .map(l => LANG_HASHTAG[l] ?? '')
+    .filter(Boolean);
+
+  if (langTags.length > 0) {
+    try {
+      const cardOutput = execSync(
+        'npx tsx scripts/generate-hashtag-card.ts',
+        { env: { ...process.env, CARD_HASHTAGS: langTags.join(' '), CARD_LABEL: '🌟 SilentStars' }, encoding: 'utf8' },
+      );
+      const cardPath = cardOutput.match(/CARD_PATH=(.+)/)?.[1]?.trim();
+      if (cardPath) {
+        const cardBuf = readFileSync(cardPath);
+        const { data } = await agent.uploadBlob(cardBuf, { encoding: 'image/png' });
+        thumbBlob = data.blob;
+        console.log(`✓ Hashtag card generada: ${cardPath}`);
+      }
+    } catch (e) {
+      console.warn(`⚠ Hashtag card fallida, usando OG image: ${(e as Error).message}`);
+    }
+  }
+
+  // Fallback: use the project's OG image as thumbnail
+  if (!thumbBlob) {
+    const ogUrl = `${baseUrl}/og/${slug}.png`;
+    const ogRes = await fetch(ogUrl);
+    if (!ogRes.ok) throw new Error(`Failed to fetch OG image: ${ogUrl} (${ogRes.status})`);
+    const ogBuf = Buffer.from(await ogRes.arrayBuffer());
+    const { data } = await agent.uploadBlob(ogBuf, { encoding: 'image/png' });
+    thumbBlob = data.blob;
+  }
 
   const embedWithThumb = {
     ...embed,
-    external: { ...embed.external, thumb: thumb.blob },
+    external: { ...embed.external, thumb: thumbBlob },
   };
 
   const posted = await agent.post({ text, facets, embed: embedWithThumb, createdAt: new Date().toISOString() });
