@@ -106,8 +106,8 @@ async function main(): Promise<void> {
   }
 
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
-  await client.v1.tweet(text);
-  console.log(`✓ Posted to X: ${project.name} (undervalued ${project.undervaluedScore})`);
+  const { data: tweet } = await client.v2.tweet(text);
+  console.log(`✓ Posted to X: ${project.name} — https://x.com/i/web/status/${tweet.id}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
