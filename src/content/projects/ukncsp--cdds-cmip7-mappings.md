@@ -1,0 +1,39 @@
+---
+repo: "UKNCSP/CDDS-CMIP7-mappings"
+name: "CDDS-CMIP7-mappings"
+description: "Definition and review of CDDS mappings for CMIP7"
+url: "https://github.com/UKNCSP/CDDS-CMIP7-mappings"
+homepage: "https://ukncsp.github.io/CDDS-CMIP7-mappings/"
+language: "Jupyter Notebook"
+languages: ["Jupyter Notebook"]
+languagePcts: [95]
+stars: 5
+forks: 2
+openIssues: 1837
+closedIssues: 55
+watchers: 3
+contributors: 16
+recentReleases: 4
+createdAt: "2025-05-02T11:33:42Z"
+lastCommitAt: "2026-06-28T06:54:27Z"
+lastReleaseAt: "2026-06-05T11:57:52Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 81
+undervaluedScore: 79
+maintainers: []
+openGraphImageUrl: "https://opengraph.githubassets.com/7afcae4aec9d01473130b91e4d63c468aa909484eb14ef35d92949db8ae5b6e6/UKNCSP/CDDS-CMIP7-mappings"
+discussionCount: 0
+---
+
+# UKNCSP CDDS-CMIP7-mappings 
+
+**UPDATE 13/02/26: Initial Diagnostic Review data available via https://ukncsp.github.io/CDDS-CMIP7-mappings/**
+
+**UPDATE 28/01/26: UKESM only mappings: certain STASH variables are only produced by UKESM, e.g. those associated with the carbon cycle or atmospheric chemistry. I have removed the HadGEM entries from STASH dictionaries and mapping tables where we believe that the physical model HadGEM3/UKCM2 cannot produce them**
+
+**UPDATE 13/01/26: Update to Data Request v1.2.2.3 Completed. Most changes minor, see #1888 for full details**
+
+**UPDATE 24/11/25: Some changes were missed in last weeks update. I've now fixed this and confirmed consistency with the data request**
+
+**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data request, but this is expected to be far smaller in scope.…
