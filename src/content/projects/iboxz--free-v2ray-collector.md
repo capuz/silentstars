@@ -16,13 +16,13 @@ watchers: 3
 contributors: 1
 recentReleases: 0
 createdAt: "2023-08-05T19:06:47Z"
-lastCommitAt: "2026-06-28T12:55:39Z"
+lastCommitAt: "2026-06-28T13:05:39Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 90
 undervaluedScore: 45
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1ede5dd05b85a39c736ab0dc757e8a9f6dcf09510ad8838f2832e14b347b4edc/iboxz/free-v2ray-collector"
+openGraphImageUrl: "https://opengraph.githubassets.com/7fe673ae8555fcf0ffc37f4b313679a5c8f486fdcc1939c13ef7fd691c361b56/iboxz/free-v2ray-collector"
 ---
 
 # [Free V2ray Collector Website](https://iboxz.github.io/free-v2ray-collector/)

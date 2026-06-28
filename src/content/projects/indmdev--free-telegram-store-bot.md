@@ -16,13 +16,13 @@ watchers: 3
 contributors: 1
 recentReleases: 0
 createdAt: "2024-04-14T06:36:33Z"
-lastCommitAt: "2026-06-28T13:01:20Z"
+lastCommitAt: "2026-06-28T13:07:12Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 67
 undervaluedScore: 45
 maintainers: ["indmdev"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2ad77592dbff61f09378d664c54fd174e7e9b29d97d1002a4554bc2c256613d6/indmdev/Free-Telegram-Store-Bot"
+openGraphImageUrl: "https://opengraph.githubassets.com/094bbc46331d5016de68c3e25fc526017635d23b01a287e5003c7075b774e8ea/indmdev/Free-Telegram-Store-Bot"
 ---
 
 # Free-Telegram-Store-Bot

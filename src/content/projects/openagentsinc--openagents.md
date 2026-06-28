@@ -15,14 +15,14 @@ watchers: 7
 contributors: 20
 recentReleases: 0
 createdAt: "2023-11-07T16:16:46Z"
-lastCommitAt: "2026-06-28T13:01:23Z"
+lastCommitAt: "2026-06-28T13:10:33Z"
 lastReleaseAt: "2026-01-08T05:56:20Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 100
 undervaluedScore: 39
 maintainers: ["AtlantisPleb", "trigger-xyz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0fa5a207111eb350074c9e9347cb00b92d6e31ba35e8ab06e0094de95f068ddc/OpenAgentsInc/openagents"
+openGraphImageUrl: "https://opengraph.githubassets.com/56fee03135fb49184725d4e0ef5726a8f308c4549098db1a8269761976456571/OpenAgentsInc/openagents"
 discussionCount: 2
 ---
 

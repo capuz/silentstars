@@ -24,6 +24,7 @@ healthScore: 76
 undervaluedScore: 44
 maintainers: ["capuz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ffd48301d04d49f3dd4ae9ed52d3a1b760e8bf50620deab23257a7b28e2e80c4/opn-build/OpenAlive"
+postedAt: "2026-06-25T22:59:39.704Z"
 ---
 
 # OpenAlive
