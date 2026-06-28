@@ -1,7 +1,7 @@
 ---
 repo: "dotnet9/Vex"
 name: "Vex"
-description: "Markdown编辑器，仿Typora，使用.NET 10 + Avalonia 12实现，支持跨平台(Windows\Linux\macOS）"
+description: "Markdown编辑器，仿Typora，使用.NET 10 + Avalonia 12实现，支持跨平台(Windows\\Linux\\macOS）"
 url: "https://github.com/dotnet9/Vex"
 language: "C#"
 languages: ["C#"]

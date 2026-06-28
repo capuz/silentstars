@@ -447,7 +447,7 @@ function toFrontmatter(data: RepoData): string {
   const lines: string[] = ['---'];
   lines.push(`repo: "${data.repo}"`);
   lines.push(`name: "${data.name.replace(/"/g, '\\"')}"`);
-  lines.push(`description: "${(data.description ?? '').replace(/"/g, '\\"')}"`);
+  lines.push(`description: "${(data.description ?? '').replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`);
   lines.push(`url: "${data.url}"`);
   if (data.homepage) lines.push(`homepage: "${data.homepage}"`);
   if (data.language) lines.push(`language: "${data.language}"`);
