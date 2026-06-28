@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [92]
 topics: ["hardware", "linux", "rust", "ferrix", "profiler", "software", "system-monitor", "system-monitoring", "systemd", "iced"]
-stars: 40
+stars: 41
 forks: 0
 openIssues: 28
 closedIssues: 53
@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem", "funded", "under_pressure"]
 healthScore: 90
 undervaluedScore: 47
 maintainers: ["mskrasnov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4a975fc226d87b128889a4e5e3ba121f9e4c060791147fa9327fbc6069e50c3d/mskrasnov/FSM"
+openGraphImageUrl: "https://opengraph.githubassets.com/378605315d889df1cd435b2daed769e9c26b2bb9c945df41c4962faa5d2a4b3f/mskrasnov/FSM"
 fundingLinks: ["CUSTOM:boosty.to/mskrasnov"]
 ---
 

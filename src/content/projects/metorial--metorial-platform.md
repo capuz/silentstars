@@ -16,13 +16,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2025-05-03T17:46:38Z"
-lastCommitAt: "2026-06-28T06:58:38Z"
+lastCommitAt: "2026-06-28T13:12:10Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 100
 undervaluedScore: 43
 maintainers: ["herber", "vnxdev"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5ee6ca6c5e191b38acefcbcc8ffef9260d8ce89eb0dab07f2e7a6d1cd6a72cd5/metorial/metorial-platform"
+openGraphImageUrl: "https://opengraph.githubassets.com/8724e9c226cd541f4df732bb0f144716c1d9806e6d5e4521ac1c8ac58ce6e6be/metorial/metorial-platform"
 discussionCount: 0
 ---
 

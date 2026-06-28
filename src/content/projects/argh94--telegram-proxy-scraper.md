@@ -16,16 +16,16 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2025-07-11T00:19:27Z"
-lastCommitAt: "2026-06-28T11:00:40Z"
+lastCommitAt: "2026-06-28T13:15:52Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 77
 undervaluedScore: 49
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/448ed36ff5cc3443c8823ed6d526ad66c309a0144dee3a196fac18d8f6809482/Argh94/telegram-proxy-scraper"
+openGraphImageUrl: "https://opengraph.githubassets.com/ece09fff3c3db4e442c168a4f565026e8b424c0aa42fc163a2145a1a5c8c3181/Argh94/telegram-proxy-scraper"
 ---
 
-# 📊 نتایج استخراج: (آخرین بروزرسانی: 14:30 07-04-1405)
+# 📊 نتایج استخراج: (آخرین بروزرسانی: 16:45 07-04-1405)
 
 </p>
 

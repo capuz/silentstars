@@ -15,13 +15,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-26T21:39:02Z"
-lastCommitAt: "2026-06-28T11:42:19Z"
+lastCommitAt: "2026-06-28T13:17:10Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 30
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/258dcfa4bed913a490741aab32147e6073fe1946a20f82503eb148fbe84252e0/Youngcooper626/Descript-Edit-AI-Transcriptor"
+openGraphImageUrl: "https://opengraph.githubassets.com/e10440501b5f6ddcf21cbdb193e8f456876bf2e7d6f8d91d7a3ea9228d200910/Youngcooper626/Descript-Edit-AI-Transcriptor"
 ---
 
 # Descript Pro AI Editor: The Complete Guide to AI-Powered Video and Podcast Editing

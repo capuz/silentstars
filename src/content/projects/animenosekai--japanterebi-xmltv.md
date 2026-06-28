@@ -16,13 +16,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2024-03-21T21:55:46Z"
-lastCommitAt: "2026-06-28T11:33:45Z"
+lastCommitAt: "2026-06-28T13:12:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 91
 undervaluedScore: 49
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/a665e8f8a46730ad8ff5f5f0798b99613374bbfb21aaa29d8bd1e6e6c2ec65a7/Animenosekai/japanterebi-xmltv"
+openGraphImageUrl: "https://opengraph.githubassets.com/db77c92aadb1922a1f20ce78fefc85f92322b4d44de1661b980e497b2283887b/Animenosekai/japanterebi-xmltv"
 ---
 
 # japanterebi-xmltv
