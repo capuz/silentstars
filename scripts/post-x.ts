@@ -1,6 +1,7 @@
 import { TwitterApi } from 'twitter-api-v2';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { execSync } from 'child_process';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
@@ -138,7 +139,34 @@ async function main(): Promise<void> {
   }
 
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
-  const { data: tweet } = await client.v2.tweet(text);
+
+  // Generate hashtag card image and upload as media attachment
+  let mediaId: string | undefined;
+  try {
+    const lang     = project.language ?? '';
+    const langTags = (project.languages ?? (lang ? [lang] : []))
+      .map(l => LANG_HASHTAG[l] ?? '')
+      .filter(Boolean);
+    const allTags  = [...loadTopHashtags(2), ...langTags];
+
+    const cardOutput = execSync(
+      `npx tsx scripts/generate-hashtag-card.ts`,
+      { env: { ...process.env, CARD_HASHTAGS: allTags.join(' '), CARD_LABEL: '🌟 SilentStars' }, encoding: 'utf8' },
+    );
+    const cardPath = cardOutput.match(/CARD_PATH=(.+)/)?.[1]?.trim();
+    if (cardPath) {
+      mediaId = await client.v1.uploadMedia(cardPath, { mimeType: 'image/png' });
+      console.log(`✓ Hashtag card uploaded: ${cardPath}`);
+    }
+  } catch (e) {
+    console.warn(`⚠ Hashtag card generation skipped: ${(e as Error).message}`);
+  }
+
+  const tweetPayload = mediaId
+    ? { text, media: { media_ids: [mediaId] as [string] } }
+    : { text };
+
+  const { data: tweet } = await client.v2.tweet(tweetPayload);
   console.log(`✓ Posted to X: ${project.name} — https://x.com/i/web/status/${tweet.id}`);
   console.log(`X_POST_URL=https://x.com/i/web/status/${tweet.id}`);
 }
