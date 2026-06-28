@@ -10,6 +10,7 @@
 
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex } from './post-shared.ts';
 
 const platform = process.argv[2] as 'bsky' | 'x' | undefined;
 if (platform !== 'bsky' && platform !== 'x') {
@@ -17,42 +18,7 @@ if (platform !== 'bsky' && platform !== 'x') {
   process.exit(1);
 }
 
-interface PostedEntry {
-  repo: string;
-  slug: string;
-  postedAt: string;
-  platforms: Record<string, { url: string; postedAt: string }>;
-}
-
-interface Project {
-  repo: string;
-  name: string;
-  description: string;
-  url: string;
-  language: string | null;
-  languages?: string[];
-  stars: number;
-  healthScore: number;
-  undervaluedScore: number;
-  status: string;
-  tags: string[];
-}
-
-interface LatestData {
-  collectedAt: string;
-  projects: Project[];
-}
-
-function seededIndex(seed: string, max: number): number {
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) {
-    h = Math.imul(31, h) + seed.charCodeAt(i) | 0;
-  }
-  return Math.abs(h) % max;
-}
-
 const LATEST_PATH = join(process.cwd(), 'data', 'latest.json');
-const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
 
 if (!existsSync(LATEST_PATH)) {
   process.stderr.write('data/latest.json not found\n');
