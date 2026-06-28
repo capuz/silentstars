@@ -203,12 +203,16 @@ jobs:
       - name: Post to Bluesky
         id: post_bluesky
         run: |
+          set +e
           OUTPUT=$(npx tsx scripts/post.ts 2>&1)
+          EXIT_CODE=$?
+          set -e
           echo "$OUTPUT"
           BSKY_URL=$(echo "$OUTPUT" | grep "^BSKY_POST_URL=" | cut -d= -f2-)
           BSKY_TEXT=$(echo "$OUTPUT" | grep "^BSKY_POST_TEXT_B64=" | cut -d= -f2-)
           echo "bsky_url=${BSKY_URL}" >> $GITHUB_OUTPUT
           echo "bsky_post_text_b64=${BSKY_TEXT}" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
         env:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
