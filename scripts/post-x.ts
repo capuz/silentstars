@@ -1,4 +1,4 @@
-import { TwitterApi } from 'twitter-api-v2';
+import { TwitterApi, EUploadMimeType } from 'twitter-api-v2';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
@@ -171,7 +171,14 @@ async function main(): Promise<void> {
 
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
 
-  const { data: tweet } = await client.v2.tweet({ text });
+  const slug     = project.repo.toLowerCase().replace('/', '--');
+  const ogUrl    = `${baseUrl}/og/${slug}.png`;
+  const ogRes    = await fetch(ogUrl);
+  if (!ogRes.ok) throw new Error(`Failed to fetch OG image: ${ogUrl} (${ogRes.status})`);
+  const ogBuf    = Buffer.from(await ogRes.arrayBuffer());
+  const mediaId  = await client.v1.uploadMedia(ogBuf, { mimeType: EUploadMimeType.Png });
+
+  const { data: tweet } = await client.v2.tweet({ text, media: { media_ids: [mediaId] } });
   const xUrl = `https://x.com/i/web/status/${tweet.id}`;
   console.log(`✓ Posted to X: ${project.name} — ${xUrl}`);
 
