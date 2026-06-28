@@ -7,13 +7,23 @@ const distOg     = resolve('dist/og');
 
 mkdirSync(distOg, { recursive: true });
 
-const slugs = readdirSync(distOgCard);
-if (slugs.length === 0) {
+const allSlugs = readdirSync(distOgCard);
+if (allSlugs.length === 0) {
   console.error('No og-card pages found in dist/og-card/');
   process.exit(1);
 }
 
-console.log(`Screenshotting ${slugs.length} OG cards…`);
+// ONLY_SLUGS: comma-separated list of slugs to screenshot.
+// If set, only those slugs are processed; otherwise all are screenshotted.
+const onlyEnv = (process.env.ONLY_SLUGS ?? '').split(',').map(s => s.trim()).filter(Boolean);
+const slugs   = onlyEnv.length > 0 ? allSlugs.filter(s => onlyEnv.includes(s)) : allSlugs;
+
+if (slugs.length === 0) {
+  console.warn('No matching slugs found — check ONLY_SLUGS env var');
+  process.exit(0);
+}
+
+console.log(`Screenshotting ${slugs.length} OG cards${onlyEnv.length > 0 ? ` (filtered from ${allSlugs.length})` : ''}…`);
 
 const browser = await chromium.launch();
 const page    = await browser.newPage();

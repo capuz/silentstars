@@ -152,6 +152,32 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
+      - name: Select OG slugs
+        run: |
+          # All previously-posted slugs: their detail pages link og/<slug>.png directly
+          POSTED_SLUGS=$(node -e "
+            const fs = require('fs');
+            const p = 'data/posted.json';
+            if (!fs.existsSync(p)) { process.stdout.write(''); process.exit(0); }
+            const d = JSON.parse(fs.readFileSync(p, 'utf8'));
+            process.stdout.write(d.map(e => e.slug).join(','));
+          ")
+          # Today's picks — may be different per platform if posting histories diverge
+          if [ -n "${{ inputs.submission_repo }}" ]; then
+            KNOWN=$(echo "${{ inputs.submission_repo }}" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
+            BSKY_SLUG="$KNOWN"
+            X_SLUG="$KNOWN"
+          else
+            BSKY_SLUG=$(npx tsx scripts/select-post.ts bsky 2>/dev/null || true)
+            X_SLUG=$(npx tsx scripts/select-post.ts x 2>/dev/null || true)
+          fi
+          # Combine and deduplicate
+          ALL="${POSTED_SLUGS}${BSKY_SLUG:+,}${BSKY_SLUG}${X_SLUG:+,}${X_SLUG}"
+          ONLY_SLUGS=$(echo "$ALL" | tr ',' '\n' | grep -v '^$' | sort -u | paste -sd ',')
+          echo "ONLY_SLUGS=${ONLY_SLUGS}" >> $GITHUB_ENV
+          COUNT=$(echo "$ONLY_SLUGS" | tr ',' '\n' | grep -c '.' || echo 0)
+          echo "Screenshotting ${COUNT} OG cards (bsky: ${BSKY_SLUG:-none}, x: ${X_SLUG:-none})"
+
       - name: Generate OG screenshots
         run: npm run og
 
