@@ -15,6 +15,7 @@ data/*
 !data/discovery.config.json
 !data/hashtag-scores.json
 !data/latest.json
+!data/posted.json
 !data/promoted.json
 !data/seed.txt
 

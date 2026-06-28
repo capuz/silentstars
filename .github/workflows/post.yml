@@ -21,6 +21,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -36,3 +37,13 @@ jobs:
           BASE_URL:          https://capuz.github.io/silentstars
           DRY_RUN:           ${{ inputs.dry_run }}
           PROJECT_SLUG:      ${{ inputs.project }}
+
+      - name: Commit posted.json
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add data/posted.json
+          git diff --cached --quiet || git commit -m "chore: record bsky post [skip ci]"
+          git push

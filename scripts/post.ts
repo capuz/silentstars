@@ -1,8 +1,36 @@
 import { BskyAgent } from '@atproto/api';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
+
+interface PostedEntry {
+  repo: string;
+  slug: string;
+  postedAt: string;
+  platforms: Record<string, { url: string; postedAt: string }>;
+}
+
+const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
+
+function loadPosted(): PostedEntry[] {
+  return existsSync(POSTED_PATH) ? JSON.parse(readFileSync(POSTED_PATH, 'utf8')) : [];
+}
+
+function savePosted(entries: PostedEntry[]): void {
+  writeFileSync(POSTED_PATH, JSON.stringify(entries, null, 2));
+}
+
+function recordPost(repo: string, platform: string, url: string, entries: PostedEntry[]): PostedEntry[] {
+  const slug = repo.toLowerCase().replace('/', '--');
+  const now  = new Date().toISOString();
+  const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
+  if (existing) {
+    existing.platforms[platform] = { url, postedAt: now };
+    return entries;
+  }
+  return [...entries, { repo, slug, postedAt: now, platforms: { [platform]: { url, postedAt: now } } }];
+}
 
 const LANG_HASHTAG: Record<string, string> = {
   // Web
@@ -134,12 +162,18 @@ async function main(): Promise<void> {
     readFileSync(join(process.cwd(), 'data', 'latest.json'), 'utf8'),
   );
 
+  const posted = loadPosted();
+  const alreadyPostedBsky = new Set(
+    posted.filter(e => e.platforms.bsky).map(e => e.repo.toLowerCase())
+  );
+
   const active = data.projects
     .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
+    .filter(p => !alreadyPostedBsky.has(p.repo.toLowerCase()))
     .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
     .slice(0, 20);
 
-  if (active.length === 0) throw new Error('No active projects found in latest.json');
+  if (active.length === 0) throw new Error('No active projects available to post to Bluesky — all candidates already posted');
 
   const projectArg = process.argv.find((_, i, a) => a[i - 1] === '--project')
                   ?? process.env.PROJECT_SLUG
@@ -199,6 +233,10 @@ async function main(): Promise<void> {
   const rkey = posted.uri.split('/').pop();
   const bskyUrl = `https://bsky.app/profile/${identifier}/post/${rkey}`;
   console.log(`✓ Posted: ${project.name} (undervalued ${project.undervaluedScore})`);
+
+  const updatedPosted = recordPost(project.repo, 'bsky', bskyUrl, posted);
+  savePosted(updatedPosted);
+
   // Emitted so the GitHub Actions workflow can capture these values
   console.log(`BSKY_POST_URL=${bskyUrl}`);
   console.log(`BSKY_POST_TEXT_B64=${Buffer.from(text).toString('base64')}`);
