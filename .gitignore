@@ -10,6 +10,7 @@ private/
 .atl/
 .github/
 data/*
+!data/community-tags.txt
 !data/discovered.json
 !data/discovery.config.json
 !data/hashtag-scores.json

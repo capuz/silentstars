@@ -26,15 +26,13 @@ const LANG_HASHTAG: Record<string, string> = {
   Haxe: '#haxe', MATLAB: '#matlab', Processing: '#processing',
 };
 
-function loadTopHashtags(n = 2): string[] {
-  const path = join(process.cwd(), 'data', 'hashtag-scores.json');
-  if (!existsSync(path)) return ['#indiedev', '#opensource'];
-  const { scores } = JSON.parse(readFileSync(path, 'utf8')) as { scores: { tag: string }[] };
-  // Only return community tags, not language tags (those come from LANG_HASHTAG)
-  const communityTags = scores.filter(s =>
-    !Object.values(LANG_HASHTAG).includes(`#${s.tag}`)
-  );
-  return communityTags.slice(0, n).map(s => `#${s.tag}`);
+function loadCommunityTags(): string[] {
+  const p = join(process.cwd(), 'data', 'community-tags.txt');
+  if (!existsSync(p)) return ['#indiedev', '#opensource'];
+  return readFileSync(p, 'utf8')
+    .split('\n')
+    .map(l => l.trim())
+    .filter(l => l.startsWith('#'));
 }
 
 interface Project {
@@ -77,7 +75,7 @@ function buildTweet(p: Project, baseUrl: string): string {
     .filter(Boolean);
   const slug     = p.repo.toLowerCase().replace('/', '--');
   const siteUrl  = `${baseUrl}/projects/${slug}/`;
-  const tags     = [...loadTopHashtags(2), ...langTags].join(' ');
+  const tags     = [...loadCommunityTags(), ...langTags].join(' ');
 
   const lines = [
     '🌟 Silent star of the day',
