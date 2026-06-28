@@ -68,18 +68,21 @@ async function main(): Promise<void> {
     readFileSync(join(process.cwd(), 'data', 'latest.json'), 'utf8'),
   );
 
-  const active = data.projects
-    .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
+  const allActive = data.projects
+    .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status));
+
+  if (allActive.length === 0) throw new Error('No active projects found in latest.json');
+
+  const top20 = [...allActive]
     .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
     .slice(0, 20);
 
-  if (active.length === 0) throw new Error('No active projects found in latest.json');
-
   const today       = new Date().toISOString().slice(0, 10);
   const projectSlug = process.env.PROJECT_SLUG ?? '';
+  // When a specific project is requested, search all active (not just top-20)
   const project     = projectSlug
-    ? (active.find(p => p.repo.toLowerCase().replace('/', '--') === projectSlug) ?? active[seededIndex(today, active.length)])
-    : active[seededIndex(today, active.length)];
+    ? (allActive.find(p => p.repo.toLowerCase().replace('/', '--') === projectSlug) ?? top20[seededIndex(today, top20.length)])
+    : top20[seededIndex(today, top20.length)];
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   const text = buildTweet(project, baseUrl);
