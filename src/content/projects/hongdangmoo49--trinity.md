@@ -14,13 +14,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-06-01T06:57:01Z"
-lastCommitAt: "2026-06-28T13:08:01Z"
+lastCommitAt: "2026-06-28T13:16:16Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 90
 undervaluedScore: 38
 maintainers: ["hongdangmoo49"]
-openGraphImageUrl: "https://opengraph.githubassets.com/84704235d4502a8372cc6f9faa15edf0d4c4a817d0f868382f49a9dcafdbfe2c/hongdangmoo49/Trinity"
+openGraphImageUrl: "https://opengraph.githubassets.com/01bfaed6aa26bd94fef564302f5b53f43cf1cc3ed554a9160ad8ec7414ab128f/hongdangmoo49/Trinity"
 ---
 
 ◯ ─────────── ◯

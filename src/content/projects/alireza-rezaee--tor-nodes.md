@@ -15,13 +15,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2024-04-02T10:00:26Z"
-lastCommitAt: "2026-06-28T11:42:07Z"
+lastCommitAt: "2026-06-28T13:17:55Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 70
 undervaluedScore: 47
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8c261b646076c75dbf431f73f87889d8b9f74ac9bfac3c5f81a0f90e9298ef91/alireza-rezaee/tor-nodes"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d40ae249fa1aa8c8e4c090fc2fa7b5adc262d47ed901d129dc5884501758fc9/alireza-rezaee/tor-nodes"
 ---
 
 # Tor Node List

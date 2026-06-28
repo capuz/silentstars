@@ -16,14 +16,14 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-04-16T22:39:15Z"
-lastCommitAt: "2026-06-28T08:20:27Z"
+lastCommitAt: "2026-06-28T13:11:58Z"
 lastReleaseAt: "2026-04-19T23:04:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 66
 maintainers: ["yogasw", "github-actions[bot]", "yogaaja22"]
-openGraphImageUrl: "https://opengraph.githubassets.com/736249599bf62aa7ad9f39752b523a7002e6971d6011198714c3ad15b06d1abf/yogasw/wick"
+openGraphImageUrl: "https://opengraph.githubassets.com/8dcae3b80fb89467ec00839b78d34d221b41362dbd7045972230197e5abff628/yogasw/wick"
 ---
 
 # Wick

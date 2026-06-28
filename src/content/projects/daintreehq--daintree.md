@@ -16,14 +16,14 @@ watchers: 2
 contributors: 7
 recentReleases: 2
 createdAt: "2025-11-28T04:38:21Z"
-lastCommitAt: "2026-06-28T13:05:50Z"
+lastCommitAt: "2026-06-28T13:13:25Z"
 lastReleaseAt: "2026-04-16T13:35:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 48
 maintainers: ["gregpriday", "dev-en-m"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2358ba0b37b903681839f1f2384a68a3238cd0ce5d7b78bb9a2a058a92aecd9a/daintreehq/daintree"
+openGraphImageUrl: "https://opengraph.githubassets.com/9b3824e27d201fcbaf597cc1440fc6edde6f1d9a6aa08576fc1f6fddf38f3533/daintreehq/daintree"
 discussionCount: 3
 ---
 

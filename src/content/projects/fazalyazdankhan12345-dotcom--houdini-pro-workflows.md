@@ -15,13 +15,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-26T21:43:01Z"
-lastCommitAt: "2026-06-28T11:42:20Z"
+lastCommitAt: "2026-06-28T13:17:05Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 30
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a463d485de021132f3c97b1ba02988f2407bcb3265796d578fe05f45af262c39/fazalyazdankhan12345-dotcom/Houdini-Pro-Workflows"
+openGraphImageUrl: "https://opengraph.githubassets.com/d631c398330a313dcad9ee3c6e375fbaf37ea41948b9637ff6682b0a5506d6df/fazalyazdankhan12345-dotcom/Houdini-Pro-Workflows"
 ---
 
 # SideFX Houdini FlowBridge: The Procedural Pipeline Orchestrator for Next-Generation VFX

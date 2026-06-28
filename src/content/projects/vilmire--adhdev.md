@@ -16,13 +16,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-03-17T16:55:03Z"
-lastCommitAt: "2026-06-28T11:47:25Z"
+lastCommitAt: "2026-06-28T13:14:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 42
 maintainers: ["vilmire"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e9e0d626d9f2d6105a4dfa6d9440f8f43600721b56962e54642bd639fa9fd563/vilmire/adhdev"
+openGraphImageUrl: "https://opengraph.githubassets.com/476116a96a58b442bff94b5addabe66d5813c717a6e73ddff3dc1e80c72b26f9/vilmire/adhdev"
 discussionCount: 0
 ---
 

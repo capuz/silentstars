@@ -10,7 +10,7 @@ languagePcts: [89]
 topics: ["biginner-friendly", "css", "enhancement", "first-issue", "good", "good-first-issue", "motion", "open-source", "reactjs", "tailwindcss"]
 stars: 341
 forks: 1071
-openIssues: 545
+openIssues: 546
 closedIssues: 1645
 watchers: 3
 contributors: 608
