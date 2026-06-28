@@ -1,12 +1,15 @@
 /**
- * recover-posted.ts — scan Bluesky posts for SilentStars project URLs and
- * rebuild posted.json so the nightly collect re-creates any deleted .md files.
+ * recover-posted.ts — scan Bluesky AND X posts for SilentStars project URLs
+ * and rebuild posted.json so the nightly collect re-creates any deleted .md files.
  *
  * Run:  npx tsx scripts/recover-posted.ts [--dry-run]
- * Env:  BSKY_IDENTIFIER, BSKY_APP_PASSWORD, BASE_URL
+ * Env:  BSKY_IDENTIFIER, BSKY_APP_PASSWORD (required)
+ *       X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET (optional)
+ *       BASE_URL
  */
 
 import { BskyAgent } from '@atproto/api';
+import { TwitterApi } from 'twitter-api-v2';
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -42,7 +45,11 @@ function slugToRepo(slug: string): string {
   return `${owner}/${repo}`;
 }
 
-async function main(): Promise<void> {
+type ScannedPost = { slug: string; repo: string; url: string; postedAt: string };
+
+// ── Bluesky scanner ──────────────────────────────────────────────────────────
+
+async function scanBluesky(): Promise<ScannedPost[]> {
   const identifier = (process.env.BSKY_IDENTIFIER ?? '').replace(/^@/, '');
   const password   = process.env.BSKY_APP_PASSWORD;
   if (!identifier || !password) {
@@ -53,9 +60,8 @@ async function main(): Promise<void> {
   await agent.login({ identifier, password });
 
   console.log(`🔍  Scanning Bluesky posts for @${identifier}…`);
-  console.log(`    Looking for: ${PROJECT_PREFIX}{slug}/\n`);
 
-  const found: Array<{ slug: string; repo: string; url: string; postedAt: string }> = [];
+  const found: ScannedPost[] = [];
   let cursor: string | undefined;
   let page = 0;
 
@@ -75,7 +81,7 @@ async function main(): Promise<void> {
       if (!uri?.startsWith(PROJECT_PREFIX)) continue;
 
       const slug = uri.slice(PROJECT_PREFIX.length).replace(/\/$/, '');
-      if (!slug || slug.includes('/')) continue; // guard against unexpected URL shapes
+      if (!slug || slug.includes('/')) continue;
 
       const repo     = slugToRepo(slug);
       const rkey     = item.post.uri.split('/').pop() ?? '';
@@ -84,50 +90,128 @@ async function main(): Promise<void> {
 
       found.push({ slug, repo, url: postUrl, postedAt });
       console.log(`  ✓ ${repo}`);
-      console.log(`    ${postUrl}`);
     }
 
     cursor = res.data.cursor;
-    if (cursor) await new Promise(r => setTimeout(r, 200)); // be polite to the API
+    if (cursor) await new Promise(r => setTimeout(r, 200));
   } while (cursor);
 
-  console.log(`\n📋  Found ${found.length} SilentStars post(s) across ${page} page(s)`);
+  console.log(`    ${found.length} project post(s) found across ${page} page(s)\n`);
+  return found;
+}
 
-  if (found.length === 0) {
+// ── X scanner ────────────────────────────────────────────────────────────────
+
+async function scanX(): Promise<ScannedPost[]> {
+  const apiKey       = process.env.X_API_KEY;
+  const apiSecret    = process.env.X_API_SECRET;
+  const accessToken  = process.env.X_ACCESS_TOKEN;
+  const accessSecret = process.env.X_ACCESS_TOKEN_SECRET;
+
+  if (!apiKey || !apiSecret || !accessToken || !accessSecret) {
+    console.log('⚠   X credentials not set — skipping X scan\n');
+    return [];
+  }
+
+  const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
+  const me     = await client.v2.me();
+  const userId = me.data.id;
+
+  console.log(`🔍  Scanning X posts for @${me.data.username}…`);
+
+  const found: ScannedPost[] = [];
+  let paginationToken: string | undefined;
+  let page = 0;
+
+  do {
+    page++;
+    const timeline = await client.v2.userTimeline(userId, {
+      max_results: 100,
+      'tweet.fields': ['created_at', 'entities'],
+      pagination_token: paginationToken,
+    });
+
+    for (const tweet of timeline.data.data ?? []) {
+      const urls = (tweet.entities as Record<string, unknown> | undefined)?.urls as
+        Array<{ expanded_url?: string }> | undefined ?? [];
+
+      for (const { expanded_url } of urls) {
+        if (!expanded_url?.startsWith(PROJECT_PREFIX)) continue;
+
+        const slug = expanded_url.slice(PROJECT_PREFIX.length).replace(/\/$/, '');
+        if (!slug || slug.includes('/')) continue;
+
+        const repo     = slugToRepo(slug);
+        const postUrl  = `https://x.com/i/web/status/${tweet.id}`;
+        const postedAt = (tweet as Record<string, unknown>).created_at as string ?? new Date().toISOString();
+
+        found.push({ slug, repo, url: postUrl, postedAt });
+        console.log(`  ✓ ${repo}`);
+        break; // one project URL per tweet is enough
+      }
+    }
+
+    paginationToken = timeline.data.meta?.next_token;
+    if (paginationToken) await new Promise(r => setTimeout(r, 200));
+  } while (paginationToken);
+
+  console.log(`    ${found.length} project post(s) found across ${page} page(s)\n`);
+  return found;
+}
+
+// ── merge into posted.json ───────────────────────────────────────────────────
+
+function merge(
+  entries: PostedEntry[],
+  posts: ScannedPost[],
+  platform: 'bsky' | 'x',
+): { added: number; updated: number; skipped: number } {
+  let added = 0, updated = 0, skipped = 0;
+
+  for (const { slug, repo, url, postedAt } of posts) {
+    const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
+    if (existing) {
+      if (!existing.platforms[platform]) {
+        existing.platforms[platform] = { url, postedAt };
+        updated++;
+      } else {
+        skipped++;
+      }
+    } else {
+      entries.push({ repo, slug, postedAt, platforms: { [platform]: { url, postedAt } } });
+      added++;
+    }
+  }
+
+  return { added, updated, skipped };
+}
+
+// ── main ─────────────────────────────────────────────────────────────────────
+
+async function main(): Promise<void> {
+  const [bskyPosts, xPosts] = await Promise.all([scanBluesky(), scanX()]);
+
+  const total = bskyPosts.length + xPosts.length;
+  if (total === 0) {
     console.log('Nothing to recover.');
     return;
   }
 
   if (DRY_RUN) {
-    console.log('\nDry run — not updating posted.json.');
+    console.log(`📋  Dry run — found ${bskyPosts.length} Bluesky + ${xPosts.length} X post(s). No files written.`);
     return;
   }
 
   const entries = loadPosted();
-  let added   = 0;
-  let updated = 0;
-  let skipped = 0;
 
-  for (const { slug, repo, url, postedAt } of found) {
-    const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
-    if (existing) {
-      if (!existing.platforms.bsky) {
-        existing.platforms.bsky = { url, postedAt };
-        updated++;
-        console.log(`  ↑ Updated: ${repo}`);
-      } else {
-        skipped++;
-      }
-    } else {
-      entries.push({ repo, slug, postedAt, platforms: { bsky: { url, postedAt } } });
-      added++;
-      console.log(`  + Added:   ${repo}`);
-    }
-  }
+  const bsky = merge(entries, bskyPosts, 'bsky');
+  const x    = merge(entries, xPosts, 'x');
 
   savePosted(entries);
-  console.log(`\n✅  posted.json: ${added} added, ${updated} updated, ${skipped} already recorded`);
-  console.log('    Next: npm run collect will re-create any missing .md files');
+
+  console.log(`✅  posted.json updated`);
+  console.log(`    Bluesky: ${bsky.added} added, ${bsky.updated} updated, ${bsky.skipped} skipped`);
+  console.log(`    X:       ${x.added} added, ${x.updated} updated, ${x.skipped} skipped`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
