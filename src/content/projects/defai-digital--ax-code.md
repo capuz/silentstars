@@ -16,14 +16,14 @@ watchers: 0
 contributors: 4
 recentReleases: 10
 createdAt: "2026-03-24T21:47:42Z"
-lastCommitAt: "2026-06-28T06:55:23Z"
+lastCommitAt: "2026-06-28T10:58:33Z"
 lastReleaseAt: "2026-04-03T07:50:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 64
 maintainers: ["automatosx", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/89f9ce7ba81e7ef3dcaeb5c21b8a47a80d425d71951a24f9dcae9f750bb82092/defai-digital/ax-code"
+openGraphImageUrl: "https://opengraph.githubassets.com/6015b98746a88c94ef40efcea98b3e933ac31bbe75ca0073a885aee4023ba06e/defai-digital/ax-code"
 ---
 
 **A local-first agent runtime for serious software work.**

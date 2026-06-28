@@ -9,20 +9,20 @@ languages: ["TypeScript"]
 languagePcts: [97]
 stars: 435
 forks: 57
-openIssues: 36
-closedIssues: 4721
+openIssues: 45
+closedIssues: 4773
 watchers: 7
 contributors: 20
 recentReleases: 0
 createdAt: "2023-11-07T16:16:46Z"
-lastCommitAt: "2026-06-28T06:55:42Z"
+lastCommitAt: "2026-06-28T13:01:23Z"
 lastReleaseAt: "2026-01-08T05:56:20Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 39
 maintainers: ["AtlantisPleb", "trigger-xyz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/37549723aa6e49373342f65b845d1cca5aebfd56aa25bf83a76d7e9e88b69b87/OpenAgentsInc/openagents"
+openGraphImageUrl: "https://opengraph.githubassets.com/0fa5a207111eb350074c9e9347cb00b92d6e31ba35e8ab06e0094de95f068ddc/OpenAgentsInc/openagents"
 discussionCount: 2
 ---
 

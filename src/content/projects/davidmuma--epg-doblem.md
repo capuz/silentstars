@@ -14,13 +14,13 @@ watchers: 5
 contributors: 1
 recentReleases: 0
 createdAt: "2020-05-10T13:19:37Z"
-lastCommitAt: "2026-06-28T06:52:44Z"
+lastCommitAt: "2026-06-28T10:53:01Z"
 status: "thriving"
 tags: ["legacy_hero"]
 healthScore: 89
 undervaluedScore: 24
 maintainers: ["davidmuma"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b6e67a22828ef0495443d1c356a586e3f3c5174107ec2fd1955bc69a01ca3f7f/davidmuma/EPG_dobleM"
+openGraphImageUrl: "https://opengraph.githubassets.com/1c1bec0779d63621489167173be5546d17708857c02220b90cb5acf48486cfdb/davidmuma/EPG_dobleM"
 ---
 
 </p>

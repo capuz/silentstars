@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 2
 createdAt: "2026-01-31T09:58:09Z"
-lastCommitAt: "2026-06-28T06:56:59Z"
+lastCommitAt: "2026-06-28T07:07:41Z"
 lastReleaseAt: "2026-06-15T14:03:20Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 55
-maintainers: ["KrrishSR4", "dependabot[bot]", "lovable-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ce2e4017bdb19f2579de4c46f1a21d751ee42294e13d7b9124812dbebc87f6b4/KrrishSR4/WebMetricsX"
+maintainers: ["KrrishSR4", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/84f11f6be3699d61b7b651e76d047e6fe1387118dd854a09d1850514c41a1d32/KrrishSR4/WebMetricsX"
 discussionCount: 1
 ---
 

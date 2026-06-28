@@ -15,14 +15,14 @@ watchers: 0
 contributors: 380
 recentReleases: 1
 createdAt: "2026-06-09T19:20:49Z"
-lastCommitAt: "2026-06-28T06:51:46Z"
+lastCommitAt: "2026-06-28T09:28:11Z"
 lastReleaseAt: "2026-06-26T06:09:26Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 90
 undervaluedScore: 54
 maintainers: ["RhettCreighton"]
-openGraphImageUrl: "https://opengraph.githubassets.com/817de7d09bba31cb11f231409f991819bfc4b13c34ea0d96cad97c374a1a57fa/ZclassiC23/zclassic"
+openGraphImageUrl: "https://opengraph.githubassets.com/0279260d576577bcbdaf7f0b1cb1f852151671be628a6d256446dec2f10738e6/ZclassiC23/zclassic"
 discussionCount: 0
 ---
 

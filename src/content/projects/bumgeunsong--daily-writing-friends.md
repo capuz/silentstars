@@ -15,13 +15,13 @@ watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-10-19T09:13:28Z"
-lastCommitAt: "2026-06-28T06:54:42Z"
+lastCommitAt: "2026-06-28T07:54:53Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 95
 undervaluedScore: 72
 maintainers: ["BumgeunSong", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3f9770e40d7909dc82ebc73eff9feaa142b41db99555ae42cad176c9717ec338/BumgeunSong/daily-writing-friends"
+openGraphImageUrl: "https://opengraph.githubassets.com/eb7fae3e7ba789577adc128269a8c12ab92fbd6c35908de6aeee8cb04041431b/BumgeunSong/daily-writing-friends"
 ---
 
 # 매일 글쓰기 프렌즈 (Daily Writing Friends)

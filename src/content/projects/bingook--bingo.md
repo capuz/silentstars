@@ -6,7 +6,7 @@ url: "https://github.com/bingook/bingo"
 language: "Python"
 languages: ["Python"]
 languagePcts: [100]
-stars: 233
+stars: 234
 forks: 25
 openIssues: 0
 closedIssues: 1
@@ -14,14 +14,14 @@ watchers: 21
 contributors: 20
 recentReleases: 1
 createdAt: "2026-06-12T10:26:39Z"
-lastCommitAt: "2026-06-28T06:56:49Z"
+lastCommitAt: "2026-06-28T09:35:20Z"
 lastReleaseAt: "2026-06-15T12:14:12Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 90
 undervaluedScore: 29
 maintainers: ["bingook"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f7073aa70fc1b69130b0d4b9a6320fe6c0e1673f47e6eb232cadba6e39c8fc78/bingook/bingo"
+openGraphImageUrl: "https://opengraph.githubassets.com/80708ddc4d0faa121b8bf90342b44908026a2e10ea20d27a76d98bc4a438227d/bingook/bingo"
 ---
 
 # bingo

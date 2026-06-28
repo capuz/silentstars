@@ -14,13 +14,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-05T01:08:01Z"
-lastCommitAt: "2026-06-28T06:56:24Z"
+lastCommitAt: "2026-06-28T12:02:25Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 49
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b60296d9496b0c934598f5d5c3b4f87685010c936d9bd89283934d2d1a216dfb/liuqinh2s/stock_news"
+openGraphImageUrl: "https://opengraph.githubassets.com/f8d0898f2587705ec764c929fbe0960c448f4fadabb293a68c3acb7c376dc02a/liuqinh2s/stock_news"
 ---
 
 A股消息：https://liuqinh2s.github.io/stock_news/

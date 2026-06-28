@@ -4,8 +4,8 @@ name: "LankeOS"
 description: "The public repo of LankeOS."
 url: "https://github.com/Wtada233/LankeOS"
 language: "C++"
-languages: ["C++", "Shell"]
-languagePcts: [70, 20]
+languages: ["C++"]
+languagePcts: [72]
 stars: 6
 forks: 1
 openIssues: 0
@@ -14,14 +14,14 @@ watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2025-07-15T11:28:53Z"
-lastCommitAt: "2026-06-28T06:55:44Z"
+lastCommitAt: "2026-06-28T12:34:13Z"
 lastReleaseAt: "2026-06-27T07:55:15Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 76
 maintainers: ["Wtada233"]
-openGraphImageUrl: "https://opengraph.githubassets.com/492ebb1a8119a99ba8ca971dd3747e828e849529a0b17b2427b1c29ae2e4df5b/Wtada233/LankeOS"
+openGraphImageUrl: "https://opengraph.githubassets.com/6eb111315f36ae79b59b5fda481f397693786e2ca4a19fdfc713e1e52e2919fe/Wtada233/LankeOS"
 ---
 
 # LankeOS

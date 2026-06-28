@@ -8,7 +8,7 @@ language: "C++"
 languages: ["C++"]
 languagePcts: [83]
 stars: 135
-forks: 30
+forks: 31
 openIssues: 110
 closedIssues: 62
 watchers: 6

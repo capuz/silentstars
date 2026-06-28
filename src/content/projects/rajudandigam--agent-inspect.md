@@ -8,11 +8,11 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [94]
 topics: ["agent-observability", "agentic-ai", "ai", "ai-agent", "ai-debugging", "ai-logging-library", "ai-observability", "ai-systems", "braintrust", "langfuse"]
-stars: 95
+stars: 94
 forks: 82
 openIssues: 17
 closedIssues: 4
-watchers: 71
+watchers: 70
 contributors: 5
 recentReleases: 10
 createdAt: "2026-05-02T06:07:29Z"
@@ -23,7 +23,7 @@ tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "f
 healthScore: 83
 undervaluedScore: 36
 maintainers: ["rajudandigam", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f34823116822499ced18549cc1d1636b4e01fda483ba63ae4f725dc0ae96b0d1/rajudandigam/agent-inspect"
+openGraphImageUrl: "https://opengraph.githubassets.com/43beb92c78a627739b42c65edaa3b0882596732e0cbbc9ab40ad2e0ec5d2a33b/rajudandigam/agent-inspect"
 discussionCount: 4
 ---
 

@@ -11,18 +11,18 @@ topics: ["ai-agents", "claude", "cli", "codex", "cursor", "developer-tools", "ge
 stars: 8
 forks: 3
 openIssues: 46
-closedIssues: 68
+closedIssues: 69
 watchers: 0
 contributors: 6
 recentReleases: 0
 createdAt: "2026-04-20T10:16:21Z"
-lastCommitAt: "2026-06-28T06:56:25Z"
+lastCommitAt: "2026-06-28T12:52:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 91
 undervaluedScore: 55
 maintainers: ["muqsitnawaz", "taylorg009", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b60296d9496b0c934598f5d5c3b4f87685010c936d9bd89283934d2d1a216dfb/phnx-labs/agents-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/4a0861bdc5b178d54a4d0cbc3fa39325224f3f3f7664ba4f77f0b33f74e43453/phnx-labs/agents-cli"
 discussionCount: 2
 ---
 

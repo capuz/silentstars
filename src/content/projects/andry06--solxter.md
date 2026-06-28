@@ -15,13 +15,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2018-02-24T00:24:47Z"
-lastCommitAt: "2026-06-28T06:55:58Z"
+lastCommitAt: "2026-06-28T12:05:34Z"
 status: "thriving"
 tags: ["legacy_hero"]
 healthScore: 80
 undervaluedScore: 42
 maintainers: ["andry06"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b455ace644f98d56a93add0e74cc7af1aa2e2b65ea9ee8f1b28c090cd158948c/andry06/SoLXter"
+openGraphImageUrl: "https://opengraph.githubassets.com/19b95baee2ee305c38dc959f74a15ad72e803825d22c212b71f8d5c98731bf3c/andry06/SoLXter"
 ---
 
 # absensikehadiran

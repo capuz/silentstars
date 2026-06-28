@@ -14,13 +14,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-03-24T07:24:12Z"
-lastCommitAt: "2026-06-28T06:54:24Z"
+lastCommitAt: "2026-06-28T10:58:32Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 70
 undervaluedScore: 42
 maintainers: ["github-actions[bot]", "lanzm"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1f77502df37abe43321d438a7f4d2956cc27abff9d1c70492fce11922ff6c8db/lanzm/MetaFetch"
+openGraphImageUrl: "https://opengraph.githubassets.com/40f6bc872449d6ea2be4ee487962568b3d7ae57a9a6e9f91482adff1fd536078/lanzm/MetaFetch"
 ---
 
 # 🚀 MetaFetch Proxy Aggregator
@@ -55,8 +55,8 @@ MetaFetch 是一款高性能的自动化代理节点聚合工具。它能够从�
 
 ## 📊 节点分布统计
 
-> 更新时间：`2026-06-28 14:54:24`
-> 运行分析：从 `18` 个活跃源中抓取 `1070` 个节点，耗时 `2.81s`。去重后保留 `759` 个有效节点。
+> 更新时间：`2026-06-28 18:58:31`
+> 运行分析：从 `18` 个活跃源中抓取 `1070` 个节点，耗时 `2.64s`。去重后保留 `759` 个有效节点。
 
 | 地区分布 | 🇭🇰香港 | 🇯🇵日本 | 🇺🇸美国 | 🇸🇬新加坡 | 🇰🇷韩国 | 🇩🇪德国 | 🇬🇧英国 | 🇻🇳越南 | 🇳🇱荷兰 | 🇮🇩印尼 | 🌍其他 | **总计** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |

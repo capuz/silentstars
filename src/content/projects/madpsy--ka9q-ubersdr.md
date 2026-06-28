@@ -8,20 +8,20 @@ languages: ["JavaScript", "Go"]
 languagePcts: [33, 21]
 stars: 28
 forks: 8
-openIssues: 11
-closedIssues: 79
+openIssues: 9
+closedIssues: 82
 watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2025-10-08T17:05:06Z"
-lastCommitAt: "2026-06-28T06:59:29Z"
+lastCommitAt: "2026-06-28T10:46:23Z"
 lastReleaseAt: "2026-01-01T18:24:55Z"
 status: "thriving"
-tags: ["solo_builder", "under_pressure"]
+tags: ["solo_builder"]
 healthScore: 91
-undervaluedScore: 49
+undervaluedScore: 50
 maintainers: ["madpsy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/87326537c21b3ec60bc049ada83f1e902c57e9a7ad090a7a99e02ece5a31f4c3/madpsy/ka9q_ubersdr"
+openGraphImageUrl: "https://opengraph.githubassets.com/7dd50b66fc780506cc1eaf24497caac6d083d931656c04b9865e5cc9a0ff9a58/madpsy/ka9q_ubersdr"
 ---
 
 # ka9q_ubersdr

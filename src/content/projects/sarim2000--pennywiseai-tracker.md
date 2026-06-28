@@ -16,14 +16,14 @@ watchers: 5
 contributors: 8
 recentReleases: 0
 createdAt: "2025-07-18T15:07:31Z"
-lastCommitAt: "2026-06-28T06:55:36Z"
+lastCommitAt: "2026-06-28T07:31:54Z"
 lastReleaseAt: "2025-08-13T18:11:40Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 97
 undervaluedScore: 35
-maintainers: ["sarim2000", "rafi-ghanbari", "akshaynexus"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fc03175ff633cae750092f23faa73c73fda9f78849e2189bda312c9b5367c033/sarim2000/pennywiseai-tracker"
+maintainers: ["sarim2000", "rafi-ghanbari"]
+openGraphImageUrl: "https://opengraph.githubassets.com/5caaa95d90ae2cd60b5b531240433482c0296a71db89842a8f8f17185172e9fb/sarim2000/pennywiseai-tracker"
 discussionCount: 9
 ---
 

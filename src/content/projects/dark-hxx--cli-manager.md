@@ -3,53 +3,81 @@ repo: "dark-hxx/CLI-Manager"
 name: "CLI-Manager"
 description: "CLI-Manager: 用于集中管理基于CLI 的多个开发项目，解决多窗口切换、重复输入命令的痛点，提升开发工作流效率。"
 url: "https://github.com/dark-hxx/CLI-Manager"
+homepage: "https://dark-hxx.github.io/"
 language: "TypeScript"
 languages: ["TypeScript", "Rust"]
 languagePcts: [63, 23]
-stars: 120
+stars: 123
 forks: 11
-openIssues: 6
-closedIssues: 26
-watchers: 0
+openIssues: 5
+closedIssues: 27
+watchers: 1
 contributors: 4
 recentReleases: 4
 createdAt: "2026-03-12T12:18:12Z"
-lastCommitAt: "2026-06-28T06:54:07Z"
+lastCommitAt: "2026-06-28T12:44:32Z"
 lastReleaseAt: "2026-05-13T03:38:30Z"
 status: "thriving"
-tags: ["solo_builder"]
-healthScore: 96
-undervaluedScore: 35
+tags: []
+healthScore: 97
+undervaluedScore: 37
 maintainers: ["dark-hxx", "charlexys"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b44e7b2d8c86ed1a9440b7878c21b7985f21e0b13e11c6cf890edefabff0b912/dark-hxx/CLI-Manager"
+openGraphImageUrl: "https://opengraph.githubassets.com/bdb04a9a5a47cd4617427475713ba20ec62fbdd98c85cf9f6f5a82b9bafa50e2/dark-hxx/CLI-Manager"
 ---
 
 # CLI-Manager
 
-> **Language**: English | [简体中文](README.zh-CN.md)
+> **语言**：简体中文 | [English](README.en-US.md)
 
-**🚀 Cross-platform AI CLI workspace**
+**🚀 跨平台 AI CLI 增强工作台**
 
-A multi-project terminal manager deeply optimized for **Claude Code / Codex CLI**
+专为 **Claude Code / Codex CLI** 深度优化的多项目终端管理器
 
-[Features](#-core-features) • [Preview](#-preview) • [Quick Start](#-quick-start) • [Tech Stack](#-tech-stack) • [Community](#-community)
+[功能特性](#-核心特性) • [界面预览](#-界面预览) • [快速开始](#-快速开始) • [技术栈](#-技术栈) • [交流讨论](#-交流讨论)
 
 </div>
 
 ---
 
-## 💡 Overview
+## 💡 项目简介
 
-CLI-Manager is a desktop app focused on **AI CLI workflow enhancement**. It combines multi-project terminal management with deep Claude Code / Codex CLI integration.
+CLI-Manager 是一款专注于 **AI CLI 工作流增强**的桌面应用，将多项目终端管理与 Claude Code / Codex CLI 深度集成。
 
-> **Platform support**: Windows (fully tested) | macOS / Linux (experimental, feedback welcome)
+> **平台支持**：Windows（完整测试） | macOS / Linux（实验性支持，欢迎反馈）
 
-### 🎯 Why CLI-Manager?
+### 🎯 为什么选择 CLI-Manager？
 
-When developing across multiple projects, you may run into these problems:
+在多项目并行开发中，你可能遇到这些痛点：
 
-- ❌ You must keep watching the terminal while Claude / Codex runs, and one missed approval request can block the task
-- ❌ You want to review what code changed in a previous session, but Claude history has no Diff view
-- ❌ You do not know how many tokens you used this month or which project costs the most
-- ❌ You switch terminals across many projects and repeatedly type the same commands
-- ❌ You want different Claude backends for different projects (official / proxy /…
+- ❌ Claude / Codex 跑任务时得盯着终端，错过权限请求就卡住
+- ❌ 想回看某次会话改了什么代码，Claude 历史没有 Diff 视图
+- ❌ 不知道这个月用了多少 Token、哪个项目最费钱
+- ❌ 多个项目频繁切换终端，重复输入相同命令
+- ❌ 想给不同项目用不同的 Claude 后端（官方 / 中转），每次手动改环境变量
+
+**CLI-Manager 提供：**
+
+✅ **实时 Hook 通知** — Claude 需要审批时桌面弹窗提醒，点击直接跳转<br>
+✅ **会话实时统计** — 每个终端显示当前会话 Token 用量、费用、工具调用<br>
+✅ **历史 Diff 回看** — 统一查看所有历史会话的代码变更，支持跳回触发消息<br>
+✅ **用量分析看板** — 多维度统计（热力图、趋势图、效率散点）<br>
+✅ **项目级供应商切换** — 一键切换 Claude 后端（官方 / 中转 / 自建），无需手动改配置<br>
+✅ **灵活分屏布局** — 自由的终端分屏 + Tab 跨 pane 拖拽<br>
+✅ **命令面板 & 模板** — `Ctrl+P` 快速启动项目 / 执行常用命令
+
+---
+
+## ✨ 核心特性
+
+### 🔥 Claude Code / Codex CLI 深度集成
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔔 Hook 实时通知
+
+- **权限审批提醒** — Claude 需要审批时桌面弹窗，点击跳转
+- **任务状态同步** — 终端 Tab 实时显示运行中 / 待审批 / 完成 / 失败状态
+- **OSC 133 Shell 集成** — 标准化命令边界检测
+- **SessionStart 会话绑定** —…

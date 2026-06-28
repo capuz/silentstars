@@ -10,20 +10,20 @@ languagePcts: [41, 37]
 topics: ["c", "cpp", "solidity-contracts", "bmc", "incremental-learning", "k-induction", "smt-solver", "kotlin", "automated-testing", "automated-verification"]
 stars: 491
 forks: 138
-openIssues: 437
-closedIssues: 1452
+openIssues: 434
+closedIssues: 1455
 watchers: 17
 contributors: 67
 recentReleases: 0
 createdAt: "2015-06-20T19:35:34Z"
-lastCommitAt: "2026-06-28T06:54:46Z"
+lastCommitAt: "2026-06-28T07:07:13Z"
 lastReleaseAt: "2017-05-06T23:49:22Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero", "community_hub"]
 healthScore: 95
 undervaluedScore: 37
 maintainers: ["lucasccordeiro", "sergillam", "Yiannis128"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fa9d2348d32960951ac0037e779a94527905a3cd79b4210f659a77c3e1001821/esbmc/esbmc"
+openGraphImageUrl: "https://opengraph.githubassets.com/854db51061a1c385d86eaaeb41572dd42477747ef61cb7087f541bb1d02ea530/esbmc/esbmc"
 discussionCount: 75
 ---
 

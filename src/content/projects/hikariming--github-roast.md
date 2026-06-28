@@ -8,21 +8,21 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [99]
 topics: ["ai", "code-quality", "developer-tools", "github", "leaderboard", "nextjs", "openai", "roast"]
-stars: 23
-forks: 3
-openIssues: 3
-closedIssues: 1
+stars: 34
+forks: 4
+openIssues: 5
+closedIssues: 3
 watchers: 0
-contributors: 4
+contributors: 5
 recentReleases: 0
 createdAt: "2026-06-26T09:02:14Z"
-lastCommitAt: "2026-06-28T06:57:28Z"
+lastCommitAt: "2026-06-28T11:30:22Z"
 status: "newborn"
-tags: ["solo_builder", "hidden_gem"]
-healthScore: 84
-undervaluedScore: 38
-maintainers: ["hikariming", "KurosawaGeeker", "AsperforMias"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6252da2e8110b131f6d462c34e0766c80884d39fca6d90574792b0563b7b242/hikariming/github-roast"
+tags: ["hidden_gem"]
+healthScore: 86
+undervaluedScore: 36
+maintainers: ["hikariming", "KurosawaGeeker", "QGrain"]
+openGraphImageUrl: "https://opengraph.githubassets.com/feeb7f92fc1bea8c12d7189a337c25db8be37982a3c128f626c31b85b36a3eb7/hikariming/github-roast"
 ---
 
 # Savage GitHub Roast 🔥

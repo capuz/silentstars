@@ -15,14 +15,14 @@ watchers: 1
 contributors: 2
 recentReleases: 9
 createdAt: "2025-07-06T20:29:01Z"
-lastCommitAt: "2026-06-28T06:56:30Z"
+lastCommitAt: "2026-06-28T12:36:08Z"
 lastReleaseAt: "2026-06-12T02:40:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 72
 maintainers: ["blisspixel"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cd00c7cdf3269484aeabe14ccb208759c729d0ec835405629c9b9dc623ab1cdd/blisspixel/deepr"
+openGraphImageUrl: "https://opengraph.githubassets.com/091732dabdf0f0106b295480fd1ba237e0b820595460a4924e94058edfa84ba1/blisspixel/deepr"
 ---
 
 # Deepr

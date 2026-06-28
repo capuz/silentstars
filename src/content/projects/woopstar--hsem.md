@@ -11,18 +11,18 @@ stars: 30
 forks: 6
 openIssues: 3
 closedIssues: 200
-watchers: 2
+watchers: 3
 contributors: 3
 recentReleases: 0
 createdAt: "2024-10-15T12:18:38Z"
-lastCommitAt: "2026-06-28T06:56:49Z"
+lastCommitAt: "2026-06-28T07:36:53Z"
 lastReleaseAt: "2024-10-17T12:26:50Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
-undervaluedScore: 61
+undervaluedScore: 60
 maintainers: ["woopstar", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3c1103e5d105ac97c2d7a458738ed2c133502afb239b638fec30a92ed3766ae6/woopstar/hsem"
+openGraphImageUrl: "https://opengraph.githubassets.com/e5f493a27b6851edb7bd85469a6e1927f32a5f3cddb46de29ad0112cb5dfcfe3/woopstar/hsem"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/woopstar"]
 ---
 

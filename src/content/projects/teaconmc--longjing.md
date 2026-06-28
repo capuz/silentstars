@@ -14,13 +14,13 @@ watchers: 2
 contributors: 5
 recentReleases: 0
 createdAt: "2020-12-13T16:39:14Z"
-lastCommitAt: "2026-06-28T06:56:44Z"
+lastCommitAt: "2026-06-28T11:47:33Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 97
 undervaluedScore: 64
 maintainers: ["teacon-bot[bot]", "3TUSK"]
-openGraphImageUrl: "https://opengraph.githubassets.com/54e34413c3c7821c6bc3182cb5aaab3579a5a985f3f8960c718c17c592aded18/teaconmc/Longjing"
+openGraphImageUrl: "https://opengraph.githubassets.com/22bcf977ffed2c3208da0f3c1f51f3b94c978b975b7e86518d484b379912ec94/teaconmc/Longjing"
 ---
 
 # 龙井 - TeaCon Continuous Delivery Service

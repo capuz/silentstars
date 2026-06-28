@@ -14,13 +14,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-10-14T21:03:23Z"
-lastCommitAt: "2026-06-28T06:55:59Z"
+lastCommitAt: "2026-06-28T08:23:29Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 90
 undervaluedScore: 46
 maintainers: ["seifreed"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ec6c515bd35a086786bed3a8795381365b2f5a3fbf4532b31d61ec7f9fa25e2b/seifreed/CipherRun"
+openGraphImageUrl: "https://opengraph.githubassets.com/2cb64aa7af697f46b350d06a3bc8bc7344181f2e1c086cd147101eee5af01ee7/seifreed/CipherRun"
 ---
 
 </p>

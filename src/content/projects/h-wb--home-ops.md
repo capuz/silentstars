@@ -15,14 +15,14 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2022-01-21T17:28:01Z"
-lastCommitAt: "2026-06-28T06:54:26Z"
+lastCommitAt: "2026-06-28T09:54:01Z"
 lastReleaseAt: "2024-10-01T00:52:08Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 76
 maintainers: ["wlab-bot[bot]", "h-wb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/38010c791531b33bc69d1fff5531e72875e077c719d7433ef23e62e579d0722d/h-wb/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/8853957d26703e03fc99932e0093984078e4d5c033d5602e51c036ce2172d69c/h-wb/home-ops"
 ---
 
 ### My Homelab Repository

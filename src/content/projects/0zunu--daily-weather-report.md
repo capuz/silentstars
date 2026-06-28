@@ -15,23 +15,23 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-12-28T17:57:55Z"
-lastCommitAt: "2026-06-28T06:55:32Z"
+lastCommitAt: "2026-06-28T11:42:17Z"
 status: "thriving"
 tags: ["solo_builder", "funded"]
 healthScore: 90
 undervaluedScore: 75
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/31b8a80b1a290e9da1f8d85cb7619715b7e67eb2c3d903994f25b9bc23158c3d/0zunu/Daily-Weather-Report"
+openGraphImageUrl: "https://opengraph.githubassets.com/9b1bfdedf95aa70703a5b2e99a5b1c4bfe91c670734dbd2a8ea38c124e7879b0/0zunu/Daily-Weather-Report"
 fundingLinks: ["KO_FI:https://ko-fi.com/ozunu"]
 ---
 
 # <h1 align='center'><img height='35' src='images/cloud.png'> Daily Weather Report <img height='35' src='images/cloud.png'></h1>
 
-<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2026-06-28 13:55:30 WIB</u> (🤖Automated)</h3>
+<h3 align='center'>🕒 Indonesian Time(UTC+7.00): <u>2026-06-28 18:42:15 WIB</u> (🤖Automated)</h3>
 
 <table align='center'>
 <tr>
-<td align='center'><img src='images/placeholder.png' height='18'> <b>Pasir Gunung Selatan</b><br><b>Latitude: -6.3594 Longitude: 106.8461</b><br><img src='images/thermometer.png' height='18'> <b>32.72°C</b><br><img src='https://openweathermap.org/img/w/04d.png' height='50'><br><b>Clouds</b><br><b>(broken clouds)</b><br><b>Feels Like: 33.77°C<br><b>Wind Direction: North-Northwest</b></b></td>
+<td align='center'><img src='images/placeholder.png' height='18'> <b>Pasir Gunung Selatan</b><br><b>Latitude: -6.3594 Longitude: 106.8461</b><br><img src='images/thermometer.png' height='18'> <b>29.03°C</b><br><img src='https://openweathermap.org/img/w/04n.png' height='50'><br><b>Clouds</b><br><b>(broken clouds)</b><br><b>Feels Like: 32.25°C<br><b>Wind Direction: North-Northwest</b></b></td>
 </tr>
 <td>
 <table>
@@ -39,12 +39,12 @@ fundingLinks: ["KO_FI:https://ko-fi.com/ozunu"]
 
 </tr>
 <tr>
-<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>32.62°C</b></td>
-<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>34.08°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Minimum<br>Temperature:<br><b>28.56°C</b></td>
+<td align='center'><img src='images/fast.png' height='25'><br>Maximum<br>Temperature:<br><b>30.27°C</b></td>
 </tr>
 <tr>
-<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>42%</b></td>
-<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1009 hPa</b></td>
+<td align='center'><img src='images/humidity.png' height='25'><br>Humidity:<br><b>67%</b></td>
+<td align='center'><img src='images/atmospheric.png' height='25'><br>Atmospheric<br>Pressure:<br><b>1010 hPa</b></td>
 </tr>
 <tr>
 <td align='center'><img src='images/air-flow.png'…

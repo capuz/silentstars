@@ -10,20 +10,20 @@ languagePcts: [91]
 topics: ["hindsight", "hindsight-memory", "llm-memory", "memory", "pi-agent", "pi-agent-extension"]
 stars: 16
 forks: 2
-openIssues: 3
-closedIssues: 155
+openIssues: 4
+closedIssues: 158
 watchers: 0
 contributors: 3
 recentReleases: 6
 createdAt: "2026-04-25T15:16:43Z"
-lastCommitAt: "2026-06-28T06:55:42Z"
+lastCommitAt: "2026-06-28T07:36:55Z"
 lastReleaseAt: "2026-05-20T10:30:14Z"
 status: "thriving"
 tags: ["release_machine"]
 healthScore: 97
 undervaluedScore: 58
 maintainers: ["luxus", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/37549723aa6e49373342f65b845d1cca5aebfd56aa25bf83a76d7e9e88b69b87/luxus/pi-hindsight"
+openGraphImageUrl: "https://opengraph.githubassets.com/4c31db9080c9d28cbb7bcd3b604d84dfbade280a9f7638340e99f2352ad582b8/luxus/pi-hindsight"
 ---
 
 src="docs/assets/logos/pi-hindsight-logo-dark.webp"

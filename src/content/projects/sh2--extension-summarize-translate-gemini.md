@@ -8,19 +8,19 @@ languages: ["JavaScript"]
 languagePcts: [85]
 stars: 97
 forks: 23
-openIssues: 1
-closedIssues: 34
+openIssues: 0
+closedIssues: 35
 watchers: 4
 contributors: 2
 recentReleases: 0
 createdAt: "2024-02-18T12:40:11Z"
-lastCommitAt: "2026-06-28T06:54:52Z"
+lastCommitAt: "2026-06-28T09:07:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 97
-undervaluedScore: 48
+healthScore: 98
+undervaluedScore: 49
 maintainers: ["sh2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1d254c7db23d41ca55033b4c01b246b05644df780fca7f6e723707150d6cb263/sh2/extension-summarize-translate-gemini"
+openGraphImageUrl: "https://opengraph.githubassets.com/d1a174e46697e6a30c2329d01c9702e37a96854c084241fc14c912d05a97a6a1/sh2/extension-summarize-translate-gemini"
 fundingLinks: ["GITHUB:https://github.com/sh2"]
 ---
 

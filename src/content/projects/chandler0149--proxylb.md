@@ -12,16 +12,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 5
+recentReleases: 6
 createdAt: "2026-05-11T08:30:16Z"
-lastCommitAt: "2026-06-28T06:54:11Z"
-lastReleaseAt: "2026-06-22T03:39:54Z"
+lastCommitAt: "2026-06-28T07:07:39Z"
+lastReleaseAt: "2026-06-28T07:13:38Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
 undervaluedScore: 43
 maintainers: ["chandler0149"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7c184b895fbabd84d9605f0f9ebe8e7cd64fbcca24b17643fabd23c5d386a8d4/chandler0149/proxylb"
+openGraphImageUrl: "https://opengraph.githubassets.com/01d467238e23f289a57424cb20e77fd5780f8fc51a6a2ff0ca726f94aa16f9fd/chandler0149/proxylb"
 ---
 
 # ProxyLB

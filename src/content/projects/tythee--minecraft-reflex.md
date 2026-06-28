@@ -7,9 +7,9 @@ language: "Java"
 languages: ["Java"]
 languagePcts: [100]
 stars: 36
-forks: 2
-openIssues: 2
-closedIssues: 9
+forks: 1
+openIssues: 0
+closedIssues: 11
 watchers: 2
 contributors: 2
 recentReleases: 0
@@ -18,8 +18,8 @@ lastCommitAt: "2026-06-28T06:50:59Z"
 lastReleaseAt: "2025-02-06T11:02:27Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 96
-undervaluedScore: 29
+healthScore: 100
+undervaluedScore: 31
 maintainers: ["Tythee"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d611725c8523576c813acf322c76c8ef2acd434fc6545d5df883d6111d63f7ca/Tythee/Minecraft-Reflex"
 ---

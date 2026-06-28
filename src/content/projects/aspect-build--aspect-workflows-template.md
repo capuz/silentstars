@@ -12,18 +12,18 @@ stars: 8
 forks: 8
 openIssues: 4
 closedIssues: 16
-watchers: 3
+watchers: 2
 contributors: 29
 recentReleases: 10
 createdAt: "2024-04-30T04:25:35Z"
-lastCommitAt: "2026-06-28T06:57:29Z"
+lastCommitAt: "2026-06-28T09:10:21Z"
 lastReleaseAt: "2026-06-28T06:13:34Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "release_machine", "fork_magnet"]
 healthScore: 89
-undervaluedScore: 81
+undervaluedScore: 83
 maintainers: ["alexeagle", "renovate[bot]", "gregmagolan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a8831d44d133574e2e913771e5cc8bb312d2345b663a195e0ef05df81a64defc/aspect-build/aspect-workflows-template"
+openGraphImageUrl: "https://opengraph.githubassets.com/0972b34873df8323d498093f687fe77ce86e309022e0a717aa18275740013118/aspect-build/aspect-workflows-template"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/aspect-build"]
 ---
 

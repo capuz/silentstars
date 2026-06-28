@@ -1,27 +1,27 @@
 ---
 repo: "rayriffy/rayriffy-h"
 name: "rayriffy-h"
-description: "The missing piece of nhentai (Now powered by Bun)"
+description: "Self-hosted, decentralized manga reader (Now powered by Bun)"
 url: "https://github.com/rayriffy/rayriffy-h"
 homepage: "https://h.riffy.in.th"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [96]
-topics: ["nsfw", "hentai", "nhentai", "doujinshi", "nanostores", "bun"]
-stars: 118
-forks: 20
-openIssues: 2
-closedIssues: 10
+languagePcts: [95]
+topics: ["nsfw", "hentai", "nhentai", "doujinshi", "nanostores", "bun", "elysia", "niyaniya"]
+stars: 121
+forks: 21
+openIssues: 0
+closedIssues: 12
 watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2018-11-05T18:25:43Z"
-lastCommitAt: "2026-06-28T06:54:11Z"
+lastCommitAt: "2026-06-28T08:19:19Z"
 lastReleaseAt: "2019-12-12T18:23:40Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 91
-undervaluedScore: 41
+healthScore: 94
+undervaluedScore: 43
 maintainers: ["rayriffy"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/156263428/94f3b280-1691-11eb-8cd6-61bee90abcda"
 ---

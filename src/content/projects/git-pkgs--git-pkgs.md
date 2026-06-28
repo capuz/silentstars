@@ -10,20 +10,20 @@ languagePcts: [100]
 topics: ["dependencies", "git", "git-commands", "package-management"]
 stars: 163
 forks: 10
-openIssues: 12
-closedIssues: 54
+openIssues: 11
+closedIssues: 55
 watchers: 3
 contributors: 8
 recentReleases: 0
 createdAt: "2026-01-15T15:41:01Z"
-lastCommitAt: "2026-06-28T06:55:28Z"
+lastCommitAt: "2026-06-28T10:36:51Z"
 lastReleaseAt: "2026-01-26T16:03:10Z"
 status: "thriving"
 tags: ["needs_contributors", "funded"]
 healthScore: 94
 undervaluedScore: 30
 maintainers: ["andrew", "dependabot[bot]", "abhinavgautam01"]
-openGraphImageUrl: "https://opengraph.githubassets.com/37e26873765363e5f10e13910897f9755cd126249d7d12f2a610965253731a12/git-pkgs/git-pkgs"
+openGraphImageUrl: "https://opengraph.githubassets.com/91337f17d836666da3c35c6d5a9ba27e95d5f1159d1926d7e9de26092b040aba/git-pkgs/git-pkgs"
 fundingLinks: ["GITHUB:https://github.com/andrew", "KO_FI:https://ko-fi.com/andrewnez", "BUY_ME_A_COFFEE:https://buymeacoffee.com/andrewnez"]
 ---
 

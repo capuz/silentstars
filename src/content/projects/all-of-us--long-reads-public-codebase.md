@@ -14,14 +14,14 @@ watchers: 5
 contributors: 15
 recentReleases: 0
 createdAt: "2023-05-09T16:36:24Z"
-lastCommitAt: "2026-06-28T06:57:12Z"
+lastCommitAt: "2026-06-28T08:36:54Z"
 lastReleaseAt: "2024-02-14T17:41:17Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 28
+undervaluedScore: 31
 maintainers: ["Lqh09"]
-openGraphImageUrl: "https://opengraph.githubassets.com/05e75eccd87485d9a00c9fa4611132838fc32fc7c5cb0644209e2d25dcfa6290/all-of-us/long-reads-public-codebase"
+openGraphImageUrl: "https://opengraph.githubassets.com/ddac17508a0be6006da64f0b56ebb74f0f7cc8e559044fa20d815e7846d25fd4/all-of-us/long-reads-public-codebase"
 ---
 
 # All of Us Long Read Phase 1 Workflows

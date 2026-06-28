@@ -19,7 +19,7 @@ createdAt: "2025-12-25T13:47:49Z"
 lastCommitAt: "2026-06-28T06:57:40Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 72
+healthScore: 71
 undervaluedScore: 21
 maintainers: ["zeeshan020dev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/817de7d09bba31cb11f231409f991819bfc4b13c34ea0d96cad97c374a1a57fa/zeeshan020dev/Interactive-3D-Particle-System"

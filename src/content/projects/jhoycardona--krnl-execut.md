@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-25T18:54:40Z"
-lastCommitAt: "2026-06-28T06:54:50Z"
+lastCommitAt: "2026-06-28T11:42:07Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 38
 maintainers: ["actions-user", "JhoyCardona"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ec3ea04ced5c325a2a7b55318193de5417249755e0187770fa3fe235a4668264/JhoyCardona/KRNL-Execut"
+openGraphImageUrl: "https://opengraph.githubassets.com/6c096639a7f3995e2beb008610b44badd40d47e0c6fd9e43edf53b453e2f337e/JhoyCardona/KRNL-Execut"
 ---
 
 # KRNL - Roblox Script Executor 2026

@@ -14,13 +14,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2025-10-18T08:46:40Z"
-lastCommitAt: "2026-06-28T06:55:05Z"
+lastCommitAt: "2026-06-28T11:37:04Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 89
 undervaluedScore: 54
 maintainers: ["ymatsunaga"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e9ac827932891201be8e56a52d393f19fde8fed2d6a14300510202e7a1e563b5/matsunagalab/mdclaw"
+openGraphImageUrl: "https://opengraph.githubassets.com/0cca71720a20b355d46abf94e6a42779f62e93f1a9860aba11467ef86195173a/matsunagalab/mdclaw"
 ---
 
 </p>

@@ -16,14 +16,14 @@ watchers: 1
 contributors: 6
 recentReleases: 2
 createdAt: "2025-01-24T14:26:45Z"
-lastCommitAt: "2026-06-28T06:56:21Z"
+lastCommitAt: "2026-06-28T09:53:44Z"
 lastReleaseAt: "2026-05-17T09:51:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 66
 maintainers: ["Shangjin-Xiao", "sentry[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/84a1f5f39e551095369adde3fa0046dbb5b8dd48c9e36cfff6d0aa5a7c9bb350/Shangjin-Xiao/ThoughtEcho"
+openGraphImageUrl: "https://opengraph.githubassets.com/c94af911c7d65050dd30353c895e21a7acbd4ea54d44ef9992db82cd2c224e41/Shangjin-Xiao/ThoughtEcho"
 discussionCount: 4
 ---
 

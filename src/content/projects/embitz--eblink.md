@@ -14,13 +14,13 @@ watchers: 3
 contributors: 1
 recentReleases: 0
 createdAt: "2022-11-01T16:08:38Z"
-lastCommitAt: "2026-06-28T06:55:50Z"
+lastCommitAt: "2026-06-28T07:28:30Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 75
-undervaluedScore: 47
+undervaluedScore: 50
 maintainers: ["EmBitz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/16aeac946a3b6a454ec1bb54e67fef51c2109c2d2a79d720217388734f4e4c29/EmBitz/EBlink"
+openGraphImageUrl: "https://opengraph.githubassets.com/dae62a567b13d8f984d8c20c75ccd760639fc7706869f04ecdc6c783c9ab8878/EmBitz/EBlink"
 ---
 
 # Cortex-M Tool Support (e.g., STlink V2 & V3)

@@ -7,7 +7,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [100]
 topics: ["gtfs", "validation", "minimization", "tidy"]
-stars: 145
+stars: 146
 forks: 21
 openIssues: 10
 closedIssues: 16
@@ -15,14 +15,14 @@ watchers: 6
 contributors: 7
 recentReleases: 0
 createdAt: "2016-08-14T15:26:58Z"
-lastCommitAt: "2026-06-28T06:57:33Z"
+lastCommitAt: "2026-06-28T07:02:42Z"
 lastReleaseAt: "2021-05-20T14:48:25Z"
 status: "thriving"
 tags: ["legacy_hero"]
-healthScore: 75
-undervaluedScore: 30
+healthScore: 74
+undervaluedScore: 31
 maintainers: ["patrickbr", "PatrickSteil", "magnusburton"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f9895948f47aba4a2a13f19b51a32786431d9c25e03ea5322a2e363e2247ebdc/patrickbr/gtfstidy"
+openGraphImageUrl: "https://opengraph.githubassets.com/b4af2245a7db753ec9c23520482ebd1b6fe137b374ff19138db3001e0dbd804f/patrickbr/gtfstidy"
 ---
 
 # gtfstidy

@@ -15,14 +15,14 @@ watchers: 0
 contributors: 5
 recentReleases: 10
 createdAt: "2026-05-09T07:11:46Z"
-lastCommitAt: "2026-06-28T06:55:10Z"
+lastCommitAt: "2026-06-28T10:21:53Z"
 lastReleaseAt: "2026-06-21T09:35:28Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 55
 maintainers: ["narumiruna", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5c65c61db37535140c821b73adb008467a3ec74ebc737c030048363a29d752c3/narumiruna/kestrel"
+openGraphImageUrl: "https://opengraph.githubassets.com/fb339337e9d9bee452a2e15d0de9c4ded270ae260d3dfe9ae82c4a8d73e3feb5/narumiruna/kestrel"
 ---
 
 # 🦅 Kestrel

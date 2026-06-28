@@ -16,13 +16,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-17T16:03:59Z"
-lastCommitAt: "2026-06-28T06:54:38Z"
+lastCommitAt: "2026-06-28T13:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 51
 maintainers: ["SHAJON-404"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e3eb5dde466bd0a64d1a9d4c6840b85ec43c9c8d368710060ee344bb15491ed4/SHAJON-404/iptv-playlist"
+openGraphImageUrl: "https://opengraph.githubassets.com/4ad125cc504c7ac855d65e0ca0e157366d58f52495dbd94a84ffe2e3e2b63bbf/SHAJON-404/iptv-playlist"
 ---
 
 # 🌍 IPTV Playlists Hub

@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-06-25T18:50:02Z"
-lastCommitAt: "2026-06-28T06:54:54Z"
+lastCommitAt: "2026-06-28T07:07:05Z"
 lastReleaseAt: "2025-10-06T20:23:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 79
 undervaluedScore: 67
 maintainers: ["ShayanTheNerd"]
-openGraphImageUrl: "https://opengraph.githubassets.com/549760363a4f1ea22025c625cc0e5a6a5b9a58c53bf1e949c3b7483ccac4452e/ShayanTheNerd/eslint-config"
+openGraphImageUrl: "https://opengraph.githubassets.com/af578ddb6afb49861e27e5208f661919150f57d4e049be8147aba09cb7f72546/ShayanTheNerd/eslint-config"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/shayanthenerd"]
 ---
 

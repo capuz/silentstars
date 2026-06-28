@@ -7,7 +7,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["automation", "config-collector", "free-internet", "github-actions", "hysteria2", "iran", "juicity", "proxy", "python", "shadowsocks"]
-stars: 56
+stars: 57
 forks: 60
 openIssues: 2
 closedIssues: 0
@@ -15,13 +15,13 @@ watchers: 4
 contributors: 2
 recentReleases: 0
 createdAt: "2026-04-28T23:16:25Z"
-lastCommitAt: "2026-06-28T06:55:48Z"
+lastCommitAt: "2026-06-28T13:01:27Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
 healthScore: 70
 undervaluedScore: 35
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/96bebb995290d0b38b3d98c1890def8dfbc4aaec476e9e8d4cdd9d207795b230/MohammadBahemmat/V2ray-Collector"
+openGraphImageUrl: "https://opengraph.githubassets.com/215a86edb86651c59d7da414f58264a1bbc7f931d0c7387598d6be229e60d7f0/MohammadBahemmat/V2ray-Collector"
 ---
 
 </a>

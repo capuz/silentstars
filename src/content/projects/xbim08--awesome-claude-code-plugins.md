@@ -15,13 +15,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-10-30T13:19:43Z"
-lastCommitAt: "2026-06-28T06:54:57Z"
+lastCommitAt: "2026-06-28T12:04:27Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 45
 undervaluedScore: 17
 maintainers: ["xbim08"]
-openGraphImageUrl: "https://opengraph.githubassets.com/91ba5b589afa7d411aafcd925ee47a33c9bf2f684c7f16556be8f8c835e41e93/xbim08/awesome-claude-code-plugins"
+openGraphImageUrl: "https://opengraph.githubassets.com/95660c52b218378f01cb5a052b5c21b37764baf458fc807000c2607f66b3989c/xbim08/awesome-claude-code-plugins"
 ---
 
 # 🌟 awesome-claude-code-plugins - Enhance Your Claude Code Experience

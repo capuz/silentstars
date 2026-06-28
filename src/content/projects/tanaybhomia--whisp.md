@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["flatpak", "gnome", "libadwaita", "markdown", "note-taking", "note-taking-app", "notes", "productivity", "python"]
-stars: 157
+stars: 158
 forks: 6
 openIssues: 3
 closedIssues: 18
@@ -16,13 +16,13 @@ watchers: 0
 contributors: 6
 recentReleases: 0
 createdAt: "2026-05-02T11:18:53Z"
-lastCommitAt: "2026-06-28T06:57:17Z"
+lastCommitAt: "2026-06-28T07:28:12Z"
 status: "newborn"
 tags: ["funded"]
 healthScore: 97
 undervaluedScore: 31
 maintainers: ["tanaybhomia", "carlosjdelgado", "sugarycandybar"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7f106b4a527e1d1b15df2dbf6542866fe417d427b6f94abb17a2da34a9399dde/tanaybhomia/Whisp"
+openGraphImageUrl: "https://opengraph.githubassets.com/34d3c635f95a14f68156b684e35c67a0dfe27af3a4ec73d1280698d618ef563f/tanaybhomia/Whisp"
 fundingLinks: ["GITHUB:https://github.com/tanaybhomia", "KO_FI:https://ko-fi.com/tanaybhomia"]
 discussionCount: 2
 ---

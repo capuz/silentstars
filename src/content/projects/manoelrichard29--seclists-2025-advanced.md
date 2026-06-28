@@ -15,13 +15,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-01T22:18:29Z"
-lastCommitAt: "2026-06-28T06:55:45Z"
+lastCommitAt: "2026-06-28T12:05:20Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 55
 undervaluedScore: 33
 maintainers: ["manoelrichard29"]
-openGraphImageUrl: "https://opengraph.githubassets.com/89f9ce7ba81e7ef3dcaeb5c21b8a47a80d425d71951a24f9dcae9f750bb82092/manoelrichard29/SecLists-2025-advanced"
+openGraphImageUrl: "https://opengraph.githubassets.com/3c13a5dc8ab07d0f67739eb695bf5d269d3e5faf5ce5683e6a669faae8ddd9a3/manoelrichard29/SecLists-2025-advanced"
 ---
 
 # 🔐 SecLists-2025-advanced - Access Essential Security Wordlists Easily

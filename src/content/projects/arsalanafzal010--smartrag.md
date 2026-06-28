@@ -15,13 +15,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-11-02T01:40:37Z"
-lastCommitAt: "2026-06-28T06:56:43Z"
+lastCommitAt: "2026-06-28T12:06:21Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 55
 undervaluedScore: 16
 maintainers: ["arsalanafzal010"]
-openGraphImageUrl: "https://opengraph.githubassets.com/88cc046bf99a373d8548f12d085c4be40696e25aac830546da7ba17c61fea747/arsalanafzal010/SmartRAG"
+openGraphImageUrl: "https://opengraph.githubassets.com/5c10bae48093ab5ba394e890b6b66e98fdc31cc1586b30efe5da20b8289fc37b/arsalanafzal010/SmartRAG"
 ---
 
 # 🌟 SmartRAG - Chat Intelligently with Your Files

@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-01-16T06:10:44Z"
-lastCommitAt: "2026-06-28T06:56:03Z"
+lastCommitAt: "2026-06-28T13:00:39Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 80
 undervaluedScore: 48
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/52f4dbefc6ae2d84e4b0baa271a6dabc9dd381599079fdd78ec2da0b32d1de60/BuddyChewChew/sports"
+openGraphImageUrl: "https://opengraph.githubassets.com/7f484e12a93ca0db295ad09851ce72b7c8bbe705d6528b77cebdabd2c5950341/BuddyChewChew/sports"
 ---
 
 ## LIVE EVENTS 

@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-25T18:52:46Z"
-lastCommitAt: "2026-06-28T06:54:29Z"
+lastCommitAt: "2026-06-28T11:41:28Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 38
 maintainers: ["actions-user", "LeNurse"]
-openGraphImageUrl: "https://opengraph.githubassets.com/06bc2123314f3591a31cf717194ace08fbe2fa950351ebe5f6b860aa1df91cbd/LeNurse/Solara-Execut"
+openGraphImageUrl: "https://opengraph.githubassets.com/d5fe78aa70822ad3eb9aaa5d8fdc282da8a78dc717369e7233ae35503120d557/LeNurse/Solara-Execut"
 ---
 
 # Solara - Roblox Script Executor 2026

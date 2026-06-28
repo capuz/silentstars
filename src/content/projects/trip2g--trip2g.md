@@ -6,7 +6,7 @@ url: "https://github.com/trip2g/trip2g"
 homepage: "https://trip2g.com"
 language: "Go"
 languages: ["Go"]
-languagePcts: [67]
+languagePcts: [66]
 topics: ["knowledge-base", "obsidian", "publishing-platform", "self-hosted", "static-site-generator", "telegrambot", "ai-agents", "digitalgarden", "mcp", "second-brain"]
 stars: 17
 forks: 0
@@ -16,13 +16,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-03-05T06:36:25Z"
-lastCommitAt: "2026-06-28T06:57:40Z"
+lastCommitAt: "2026-06-28T12:54:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 45
 maintainers: ["alexesDev"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d7bdc5957b07b74909cfe0bb4cc77ebe4833ebe24b8d5b8a759f68ec58d826c8/trip2g/trip2g"
+openGraphImageUrl: "https://opengraph.githubassets.com/22edbbbd95acff807c859e2b13b1544061ef2c8f8aba1abc62532058878c3dcc/trip2g/trip2g"
 ---
 
 # trip2g

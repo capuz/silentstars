@@ -23,7 +23,7 @@ tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "u
 healthScore: 63
 undervaluedScore: 57
 maintainers: ["hoainho"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1ed1bb339924d41d094af80e2ed15d0593eda0a375620cc6711f5ea5bda9c2f8/nano-step/eval-harness"
+openGraphImageUrl: "https://opengraph.githubassets.com/671a2b9750b530827db81f2685c176278c4852dbaac937a43c1ad4f4d0dc6fc8/nano-step/eval-harness"
 discussionCount: 3
 ---
 

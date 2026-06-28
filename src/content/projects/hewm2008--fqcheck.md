@@ -12,16 +12,16 @@ openIssues: 2
 closedIssues: 3
 watchers: 2
 contributors: 1
-recentReleases: 0
+recentReleases: 1
 createdAt: "2022-02-17T01:46:49Z"
-lastCommitAt: "2026-06-28T06:55:31Z"
-lastReleaseAt: "2023-08-27T04:44:50Z"
+lastCommitAt: "2026-06-28T07:01:42Z"
+lastReleaseAt: "2026-06-28T07:05:18Z"
 status: "thriving"
 tags: []
 healthScore: 72
-undervaluedScore: 39
+undervaluedScore: 41
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/99a0113261008a03514804dbb128ad0ab3caa0c2bb549ba3be22580978e14e91/hewm2008/fqcheck"
+openGraphImageUrl: "https://opengraph.githubassets.com/d581c44c3fea2f0cf06b209a5d36eec4d4749a0801d1f2d3167bf9fc803516d3/hewm2008/fqcheck"
 ---
 
 # fqcheck

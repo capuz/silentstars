@@ -14,14 +14,14 @@ watchers: 0
 contributors: 7
 recentReleases: 6
 createdAt: "2026-02-19T16:24:59Z"
-lastCommitAt: "2026-06-28T06:56:48Z"
+lastCommitAt: "2026-06-28T07:26:09Z"
 lastReleaseAt: "2026-06-13T20:53:04Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 79
 undervaluedScore: 47
 maintainers: ["yisding", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5e69fe47a8ec54fe56e5c2d19adb531006baa5af29897c24843fb4dfe18daa44/yisding/sentencesplit"
+openGraphImageUrl: "https://opengraph.githubassets.com/ec9ca3803322173d32eca4f0197d8b594babcb8194fca998541773024a820b8e/yisding/sentencesplit"
 ---
 
 # sentencesplit

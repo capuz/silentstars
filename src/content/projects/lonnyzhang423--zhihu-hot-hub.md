@@ -14,13 +14,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-01-07T10:23:09Z"
-lastCommitAt: "2026-06-28T06:55:53Z"
+lastCommitAt: "2026-06-28T11:43:02Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 80
 undervaluedScore: 45
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cb821f10d0a5bae096ebed6212fe360c8ab8a36ecedeb31f722c0f01eb4c7bec/lonnyzhang423/zhihu-hot-hub"
+openGraphImageUrl: "https://opengraph.githubassets.com/2dc95bfce9af9841ec2ce9528d23df3df6c66fde3f99f6e810a23bcf7cf535ca/lonnyzhang423/zhihu-hot-hub"
 ---
 
 # zhihu-hot-hub
@@ -35,11 +35,10 @@ openGraphImageUrl: "https://opengraph.githubassets.com/cb821f10d0a5bae096ebed621
 - [GitHub热榜](https://github.com/lonnyzhang423/github-hot-hub)
 - [v2ex热榜](https://github.com/lonnyzhang423/v2ex-hot-hub)
 
-`更新时间：2026-06-28 14:55:53 +0800`
+`更新时间：2026-06-28 19:43:02 +0800`
 
 ## 热门搜索
 
-1. [河南高考出分](https://www.zhihu.com/search?q=%E6%B2%B3%E5%8D%97%E9%AB%98%E8%80%83%E5%87%BA%E5%88%86)
 1. [广东高考分数线公布](https://www.zhihu.com/search?q=%E5%B9%BF%E4%B8%9C%E9%AB%98%E8%80%83%E5%88%86%E6%95%B0%E7%BA%BF%E5%85%AC%E5%B8%83)
 1. [四川高考分数线公布](https://www.zhihu.com/search?q=%E5%9B%9B%E5%B7%9D%E9%AB%98%E8%80%83%E5%88%86%E6%95%B0%E7%BA%BF%E5%85%AC%E5%B8%83)
 1. [山西高考分数线公布](https://www.zhihu.com/search?q=%E5%B1%B1%E8%A5%BF%E9%AB%98%E8%80%83%E5%88%86%E6%95%B0%E7%BA%BF%E5%85%AC%E5%B8%83)

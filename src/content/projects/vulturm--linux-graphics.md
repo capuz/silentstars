@@ -16,13 +16,13 @@ watchers: 0
 contributors: 6
 recentReleases: 0
 createdAt: "2019-07-03T21:39:46Z"
-lastCommitAt: "2026-06-28T07:10:05Z"
+lastCommitAt: "2026-06-28T12:10:05Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
 healthScore: 100
 undervaluedScore: 100
 maintainers: ["vulturm"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f46d458fca9394cdd72ee42d27605c16df3e27e9951c6093495770cbcd08bb69/vulturm/linux-graphics"
+openGraphImageUrl: "https://opengraph.githubassets.com/e76d59a736d52d7b91819c74fd130b98aedb58d1332460639abe0323575eeec8/vulturm/linux-graphics"
 ---
 
 Fedora Spec for mesa with Valve's Radeon ACO compiler patches

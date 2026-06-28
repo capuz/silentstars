@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [95]
 topics: ["agenticsfoundation", "agents", "quality-engineering", "agenticqe"]
-stars: 402
+stars: 403
 forks: 77
 openIssues: 10
 closedIssues: 219
@@ -23,7 +23,7 @@ tags: ["solo_builder", "funded"]
 healthScore: 99
 undervaluedScore: 34
 maintainers: ["proffesor-for-testing", "nagoodman", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/89f9ce7ba81e7ef3dcaeb5c21b8a47a80d425d71951a24f9dcae9f750bb82092/proffesor-for-testing/agentic-qe"
+openGraphImageUrl: "https://opengraph.githubassets.com/f8fd5c2ba72430a83f7a164e40125bad8f67f80de985a5eceee9632702c1f8c0/proffesor-for-testing/agentic-qe"
 fundingLinks: ["CUSTOM:https://github.com/proffesor-for-testing/agentic-qe/blob/main/FUNDING.md"]
 ---
 

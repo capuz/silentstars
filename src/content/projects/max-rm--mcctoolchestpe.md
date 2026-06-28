@@ -6,22 +6,22 @@ url: "https://github.com/Max-RM/MCCToolChestPE"
 language: "C#"
 languages: ["C#"]
 languagePcts: [86]
-stars: 5
+stars: 6
 forks: 0
 openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 2
+recentReleases: 3
 createdAt: "2026-06-14T11:58:50Z"
-lastCommitAt: "2026-06-28T06:51:30Z"
-lastReleaseAt: "2026-06-14T13:52:13Z"
+lastCommitAt: "2026-06-28T07:10:56Z"
+lastReleaseAt: "2026-06-28T07:57:06Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 79
-undervaluedScore: 30
+undervaluedScore: 33
 maintainers: ["Max-RM"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dfa1ce98b22fbcaad51590f4e6b3d478a33090ae3003d5c2a1c8b3c8948aa734/Max-RM/MCCToolChestPE"
+openGraphImageUrl: "https://opengraph.githubassets.com/c3176a0eb1934121d8746349128324516d5721e67b1bfd21d616e530753a957e/Max-RM/MCCToolChestPE"
 ---
 
 EN

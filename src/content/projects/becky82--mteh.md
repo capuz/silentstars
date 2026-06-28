@@ -9,20 +9,20 @@ languagePcts: [70, 25]
 topics: ["chinese-characters", "chinese-simplified", "hsk"]
 stars: 31
 forks: 5
-openIssues: 30
-closedIssues: 323
+openIssues: 34
+closedIssues: 325
 watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2025-10-14T07:22:31Z"
-lastCommitAt: "2026-06-28T06:54:24Z"
+lastCommitAt: "2026-06-28T10:25:00Z"
 lastReleaseAt: "2026-02-12T10:58:17Z"
 status: "thriving"
 tags: ["solo_builder", "under_pressure"]
 healthScore: 98
 undervaluedScore: 47
 maintainers: ["becky82"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fa7f9477b6ad6a8e3c8c8e2c5290f96006463fdabb37c6231d27f9635d7ee9c8/becky82/mteh"
+openGraphImageUrl: "https://opengraph.githubassets.com/63d23f05f61282d14ac183b1015fc78699d88c90d006c685f05bcd4c8f210cbd/becky82/mteh"
 ---
 
 # More than enough Hanzi (MteH)
