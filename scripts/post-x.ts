@@ -147,7 +147,7 @@ async function main(): Promise<void> {
     const langTags = (project.languages ?? (lang ? [lang] : []))
       .map(l => LANG_HASHTAG[l] ?? '')
       .filter(Boolean);
-    const allTags  = [...loadTopHashtags(2), ...langTags];
+    const allTags  = langTags; // solo lenguajes del proyecto — los community tags van en el texto
 
     const cardOutput = execSync(
       `npx tsx scripts/generate-hashtag-card.ts`,
