@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [97]
 topics: ["rust", "vcs", "git", "jj", "pijul"]
-stars: 74
+stars: 75
 forks: 161
 openIssues: 10
 closedIssues: 104
@@ -16,14 +16,14 @@ watchers: 2
 contributors: 84
 recentReleases: 0
 createdAt: "2025-09-12T14:23:27Z"
-lastCommitAt: "2026-06-28T12:29:23Z"
+lastCommitAt: "2026-06-28T13:03:53Z"
 lastReleaseAt: "2026-03-28T13:40:15Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 53
 maintainers: ["genedna"]
-openGraphImageUrl: "https://opengraph.githubassets.com/513f41f7eef52c12901171d7868397e86fe9b0ae55aadfba43b6b639deb3dcf5/web3infra-foundation/libra"
+openGraphImageUrl: "https://opengraph.githubassets.com/337cb10addb3c027bebe99337b0f6b461e79e4582ddc9a0a4d87615eb06b6a1f/web3infra-foundation/libra"
 ---
 
 Libra is a partial implementation of a **Git** client, developed in **Rust**. The goal is **not** to build a perfect, 100% feature-complete reimplementation of Git (if you want that, take a look at [gitoxide](https://github.com/Byron/gitoxide)). Instead, Libra is evolving into an **AI agent–native version control system**.

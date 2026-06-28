@@ -17,7 +17,7 @@ createdAt: "2025-08-07T21:23:30Z"
 lastCommitAt: "2026-06-28T06:55:06Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 35
 maintainers: ["camerons", "jennynz", "hawkfish"]
 openGraphImageUrl: "https://opengraph.githubassets.com/62ee329f0562c02786fbad067852a478b8ec4f41d2990a5f6210cf77ad69a2a3/rewiring-nz/solar-estimates"

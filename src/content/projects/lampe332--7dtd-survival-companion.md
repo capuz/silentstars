@@ -15,14 +15,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-06-19T00:58:39Z"
-lastCommitAt: "2026-06-28T12:55:28Z"
+lastCommitAt: "2026-06-28T13:06:08Z"
 lastReleaseAt: "2026-06-19T23:56:53Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 70
 undervaluedScore: 47
 maintainers: ["Lampe332"]
-openGraphImageUrl: "https://opengraph.githubassets.com/eae6eb30cfa5bcf1cd53d0c7e9efaadc9e90b5f3937d1d549c9a79d21c4a6f80/Lampe332/7dtd-survival-companion"
+openGraphImageUrl: "https://opengraph.githubassets.com/642a7e1e689259c391745005d70719bc0d895ecea5e175eb488deb01f565ce96/Lampe332/7dtd-survival-companion"
 ---
 
 <br><br>

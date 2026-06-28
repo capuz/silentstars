@@ -10,20 +10,20 @@ languagePcts: [98]
 topics: ["ai-agents", "claude", "codex", "developer-tools", "electron", "gemini", "git-worktrees", "ide"]
 stars: 43
 forks: 6
-openIssues: 9
-closedIssues: 5487
+openIssues: 8
+closedIssues: 5488
 watchers: 2
 contributors: 7
 recentReleases: 2
 createdAt: "2025-11-28T04:38:21Z"
-lastCommitAt: "2026-06-28T11:28:28Z"
+lastCommitAt: "2026-06-28T13:05:50Z"
 lastReleaseAt: "2026-04-16T13:35:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 48
 maintainers: ["gregpriday", "dev-en-m"]
-openGraphImageUrl: "https://opengraph.githubassets.com/18fd8fee7bab312bdc391f2075988da7b091b49750513474e73a9af2fdf316a7/daintreehq/daintree"
+openGraphImageUrl: "https://opengraph.githubassets.com/2358ba0b37b903681839f1f2384a68a3238cd0ce5d7b78bb9a2a058a92aecd9a/daintreehq/daintree"
 discussionCount: 3
 ---
 

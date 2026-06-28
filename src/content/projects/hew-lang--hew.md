@@ -6,7 +6,7 @@ url: "https://github.com/hew-lang/hew"
 homepage: "https://hew.sh"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [94]
+languagePcts: [95]
 topics: ["actors", "compiler", "hew", "llvm", "mlir", "programming-language", "actor-model", "concurrency", "language", "rust"]
 stars: 7
 forks: 2
@@ -16,7 +16,7 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-02-23T03:46:40Z"
-lastCommitAt: "2026-06-28T10:07:19Z"
+lastCommitAt: "2026-06-28T13:07:48Z"
 lastReleaseAt: "2026-03-16T11:03:16Z"
 status: "thriving"
 tags: ["solo_builder", "under_pressure"]
