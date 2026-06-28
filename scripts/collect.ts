@@ -24,6 +24,16 @@ type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'a
 type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch'
          | 'funded' | 'release_machine' | 'under_pressure' | 'community_hub' | 'fork_magnet';
 
+interface PostedEntry {
+  repo: string;
+  slug: string;
+  postedAt: string;
+  platforms: {
+    bsky?: { url: string; postedAt: string };
+    x?:    { url: string; postedAt: string };
+  };
+}
+
 interface RepoData {
   repo: string;
   name: string;
@@ -53,6 +63,7 @@ interface RepoData {
   revivedDaysAgo?: number;
   isFork?: boolean;
   promoted?: boolean;
+  postedAt?: string;
   openGraphImageUrl?: string;
   fundingLinks?: Array<{ platform: string; url: string }>;
   discussionCount?: number;
@@ -475,6 +486,7 @@ function toFrontmatter(data: RepoData): string {
   if (data.fundingLinks?.length) lines.push(`fundingLinks: [${data.fundingLinks.map(f => `"${f.platform}:${f.url}"`).join(', ')}]`);
   if (data.discussionCount != null) lines.push(`discussionCount: ${data.discussionCount}`);
   if (data.promoted) lines.push('promoted: true');
+  if (data.postedAt) lines.push(`postedAt: "${data.postedAt}"`);
   lines.push('---');
   return lines.join('\n');
 }
@@ -521,6 +533,14 @@ async function main() {
   }
   const promotedSet = new Set(promotedRepos.map(r => r.toLowerCase()));
 
+  const postedPath = resolve(ROOT, 'data/posted.json');
+  const postedEntries: PostedEntry[] = existsSync(postedPath)
+    ? JSON.parse(readFileSync(postedPath, 'utf8'))
+    : [];
+  const postedRepoSet = new Set(postedEntries.map(e => e.repo.toLowerCase()));
+  const postedSlugSet = new Set(postedEntries.map(e => e.slug));
+  const postedByRepo  = new Map(postedEntries.map(e => [e.repo.toLowerCase(), e]));
+
   const discoveredPath = resolve(ROOT, 'data/discovered.json');
   const discoveredCandidates: string[] = [];
   if (existsSync(discoveredPath)) {
@@ -533,13 +553,23 @@ async function main() {
     ? (JSON.parse(readFileSync(configPath, 'utf8')) as { vitalityThreshold: number }).vitalityThreshold
     : 40;
 
+  const postedRepos = postedEntries
+    .map(e => e.repo)
+    .filter(r => !seedSet.has(r.toLowerCase()) && !promotedSet.has(r.toLowerCase()));
+  const postedReposSet = new Set(postedRepos.map(r => r.toLowerCase()));
+
   const repos = [
     ...seedRepos,
     ...promotedRepos,
-    ...discoveredCandidates.filter(r => !seedSet.has(r.toLowerCase()) && !promotedSet.has(r.toLowerCase())),
+    ...postedRepos,
+    ...discoveredCandidates.filter(r =>
+      !seedSet.has(r.toLowerCase()) &&
+      !promotedSet.has(r.toLowerCase()) &&
+      !postedReposSet.has(r.toLowerCase())
+    ),
   ];
 
-  console.log(`📋  ${seedRepos.length} seed + ${promotedRepos.length} promoted + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
+  console.log(`📋  ${seedRepos.length} seed + ${promotedRepos.length} promoted + ${postedRepos.length} posted + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
 
   const latestPath = resolve(ROOT, 'data/latest.json');
   const previous: LatestJson | null = existsSync(latestPath)
@@ -573,12 +603,17 @@ async function main() {
         continue;
       }
       if (!raw) {
-        console.warn(`  ⚠  Could not fetch ${owner}/${name} — removing stale content if present`);
         const staleSlug = `${owner}--${name}`.toLowerCase();
-        const stalePath = resolve(ROOT, `src/content/projects/${staleSlug}.md`);
-        if (existsSync(stalePath)) {
-          unlinkSync(stalePath);
-          console.warn(`  🗑  Deleted ${stalePath}`);
+        if (postedSlugSet.has(staleSlug)) {
+          console.warn(`  ⚠  Could not fetch posted repo ${owner}/${name} — keeping existing MD`);
+          writtenSlugs.add(staleSlug);
+        } else {
+          console.warn(`  ⚠  Could not fetch ${owner}/${name} — removing stale content if present`);
+          const stalePath = resolve(ROOT, `src/content/projects/${staleSlug}.md`);
+          if (existsSync(stalePath)) {
+            unlinkSync(stalePath);
+            console.warn(`  🗑  Deleted ${stalePath}`);
+          }
         }
         continue;
       }
@@ -669,7 +704,8 @@ async function main() {
       results.push(data);
 
       const isFromSeed = seedSet.has(repoStr.toLowerCase()) || promotedSet.has(repoStr.toLowerCase());
-      if (!isFromSeed && healthScore < healthThreshold) {
+      const isPosted   = postedRepoSet.has(repoStr.toLowerCase());
+      if (!isFromSeed && !isPosted && healthScore < healthThreshold) {
         console.log(`    skip (healthScore ${healthScore} < ${healthThreshold}, discovered)`);
         continue;
       }
@@ -679,7 +715,7 @@ async function main() {
       const desc = data.description.trim();
       if (!desc || desc.toLowerCase() === data.name.toLowerCase()) {
         console.log(`    skip (no meaningful description)`);
-        if (existsSync(mdPath)) unlinkSync(mdPath);
+        if (!isPosted && existsSync(mdPath)) unlinkSync(mdPath);
         continue;
       }
       const body = (() => {
@@ -696,6 +732,9 @@ async function main() {
           .trim();
         return cleaned.length > 1200 ? cleaned.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : cleaned;
       })();
+      const postedEntry = postedByRepo.get(repoStr.toLowerCase());
+      if (postedEntry) data.postedAt = postedEntry.postedAt;
+
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
       writtenSlugs.add(slug);
     }
@@ -707,9 +746,16 @@ async function main() {
 
   // Remove orphan MDs whose repo is no longer in the active set
   const projectsDir = resolve(ROOT, 'src/content/projects');
+
+  // Fallback: scan existing MDs for postedAt in frontmatter — protects pages even if posted.json is lost
+  for (const file of readdirSync(projectsDir).filter(f => f.endsWith('.md'))) {
+    const content = readFileSync(resolve(projectsDir, file), 'utf8');
+    if (content.includes('postedAt:')) postedSlugSet.add(file.slice(0, -3));
+  }
+
   for (const file of readdirSync(projectsDir).filter(f => f.endsWith('.md'))) {
     const fileSlug = file.slice(0, -3);
-    if (!writtenSlugs.has(fileSlug)) {
+    if (!writtenSlugs.has(fileSlug) && !postedSlugSet.has(fileSlug)) {
       unlinkSync(resolve(projectsDir, file));
       console.log(`  🗑  Removed orphan MD: ${file}`);
     }

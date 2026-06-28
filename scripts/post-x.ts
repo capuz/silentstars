@@ -1,8 +1,36 @@
 import { TwitterApi } from 'twitter-api-v2';
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
+
+interface PostedEntry {
+  repo: string;
+  slug: string;
+  postedAt: string;
+  platforms: Record<string, { url: string; postedAt: string }>;
+}
+
+const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
+
+function loadPosted(): PostedEntry[] {
+  return existsSync(POSTED_PATH) ? JSON.parse(readFileSync(POSTED_PATH, 'utf8')) : [];
+}
+
+function savePosted(entries: PostedEntry[]): void {
+  writeFileSync(POSTED_PATH, JSON.stringify(entries, null, 2));
+}
+
+function recordPost(repo: string, platform: string, url: string, entries: PostedEntry[]): PostedEntry[] {
+  const slug = repo.toLowerCase().replace('/', '--');
+  const now  = new Date().toISOString();
+  const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
+  if (existing) {
+    existing.platforms[platform] = { url, postedAt: now };
+    return entries;
+  }
+  return [...entries, { repo, slug, postedAt: now, platforms: { [platform]: { url, postedAt: now } } }];
+}
 
 const LANG_HASHTAG: Record<string, string> = {
   // Web
@@ -93,10 +121,16 @@ async function main(): Promise<void> {
     readFileSync(join(process.cwd(), 'data', 'latest.json'), 'utf8'),
   );
 
-  const allActive = data.projects
-    .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status));
+  const posted = loadPosted();
+  const alreadyPostedX = new Set(
+    posted.filter(e => e.platforms.x).map(e => e.repo.toLowerCase())
+  );
 
-  if (allActive.length === 0) throw new Error('No active projects found in latest.json');
+  const allActive = data.projects
+    .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
+    .filter(p => !alreadyPostedX.has(p.repo.toLowerCase()));
+
+  if (allActive.length === 0) throw new Error('No active projects available to post to X — all candidates already posted');
 
   const top20 = [...allActive]
     .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
@@ -138,8 +172,13 @@ async function main(): Promise<void> {
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
 
   const { data: tweet } = await client.v2.tweet({ text });
-  console.log(`✓ Posted to X: ${project.name} — https://x.com/i/web/status/${tweet.id}`);
-  console.log(`X_POST_URL=https://x.com/i/web/status/${tweet.id}`);
+  const xUrl = `https://x.com/i/web/status/${tweet.id}`;
+  console.log(`✓ Posted to X: ${project.name} — ${xUrl}`);
+
+  const updatedPosted = recordPost(project.repo, 'x', xUrl, posted);
+  savePosted(updatedPosted);
+
+  console.log(`X_POST_URL=${xUrl}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
