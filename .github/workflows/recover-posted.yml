@@ -1,0 +1,59 @@
+name: Recover posted pages
+
+# One-time manual workflow: scans Bluesky for SilentStars posts, rebuilds
+# posted.json, re-fetches those repos from GitHub, and deploys.
+# The push at the end triggers the deploy job in collect.yml automatically.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — scan and log without writing files or deploying"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    name: Scan Bluesky and recover pages
+    runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scan Bluesky posts and update posted.json
+        run: npx tsx scripts/recover-posted.ts
+        env:
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          DRY_RUN:           ${{ inputs.dry_run }}
+
+      - name: Re-collect posted repos from GitHub
+        if: inputs.dry_run != 'true'
+        run: npm run collect
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        if: inputs.dry_run != 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted.json data/latest.json src/content/projects/
+          git diff --cached --quiet || git commit -m "chore: recover posted pages"
+          git push
