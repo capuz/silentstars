@@ -1,0 +1,45 @@
+---
+repo: "Tythee/Minecraft-Reflex"
+name: "Minecraft-Reflex"
+description: "Minecraft Reflex模组"
+url: "https://github.com/Tythee/Minecraft-Reflex"
+language: "Java"
+languages: ["Java"]
+languagePcts: [100]
+stars: 36
+forks: 2
+openIssues: 2
+closedIssues: 9
+watchers: 2
+contributors: 2
+recentReleases: 0
+createdAt: "2025-02-06T10:36:46Z"
+lastCommitAt: "2026-06-28T06:50:59Z"
+lastReleaseAt: "2025-02-06T11:02:27Z"
+status: "thriving"
+tags: ["hidden_gem"]
+healthScore: 96
+undervaluedScore: 29
+maintainers: ["Tythee"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d611725c8523576c813acf322c76c8ef2acd434fc6545d5df883d6111d63f7ca/Tythee/Minecraft-Reflex"
+---
+
+# Minecraft-Reflex
+
+此mod在Minecraft中参考Nvidia Reflex原理降低渲染延迟，通过估计cpu以及gpu时间从而自动锁帧。（允许任意gpu使用）
+
+选项中有两个选项，一个是切换开关，一个是减少等待时间。
+减少等待时间以纳秒为单位，如果启用reflex后gpu占有率下降，可增加一些数值使gpu占用率上升，使得gpu占用率刚刚好达到100%，如果增加数值过头会增加延迟。
+有时可能算法估计错误导致延迟过短造成渲染队列堆积，渲染延迟上升，可使用负数数值增加等待时间，减少延迟。
+
+存在问题：测量cpu时间的终点本应在gpu命令进入渲染队列的时间点前面一点，但是cpu时间的终点的时间戳却在进入渲染队列的时间点后面，导致延迟上升，我打了个不完美的补丁解决这个问题，会的人可以解决下这个问题
+
+# Minecraft-Reflex
+
+This mod uses the Nvidia Reflex principle to reduce rendering latency in Minecraft, automatically locking the frame by estimating the CPU and GPU time.（Allow any GPU to use）
+
+There are two options in the settings: one is a toggle switch, and the other is to reduce waiting time.
+The waiting time is reduced in nanoseconds. If enabling Reflex causes a drop in GPU utilization, you can increase the value slightly to raise the GPU usage to around 100%. However, increasing the value too much will lead to higher latency.
+Sometimes, the algorithm may estimate incorrectly, resulting in latency being too short and causing rendering queues to pile up, which increases rendering latency. In such cases, you can use negative values to increase the waiting time and reduce the latency.
+
+Problem: The end point of measuring…
