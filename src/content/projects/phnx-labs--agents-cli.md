@@ -16,13 +16,13 @@ watchers: 0
 contributors: 6
 recentReleases: 0
 createdAt: "2026-04-20T10:16:21Z"
-lastCommitAt: "2026-06-28T13:09:03Z"
+lastCommitAt: "2026-06-28T13:18:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 91
 undervaluedScore: 55
 maintainers: ["muqsitnawaz", "taylorg009", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d3196050c6626f0d6c28baf0e9488d9b68ba96019b0767c09e56420b6dca5600/phnx-labs/agents-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/8d265c1c471d62c707377c05eeece9f2f70f73af1b36bf4add44bc6a3fe03978/phnx-labs/agents-cli"
 discussionCount: 2
 ---
 

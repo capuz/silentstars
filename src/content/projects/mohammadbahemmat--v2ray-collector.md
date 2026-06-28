@@ -15,13 +15,13 @@ watchers: 4
 contributors: 2
 recentReleases: 0
 createdAt: "2026-04-28T23:16:25Z"
-lastCommitAt: "2026-06-28T13:01:27Z"
+lastCommitAt: "2026-06-28T13:21:29Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
 healthScore: 70
 undervaluedScore: 35
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/215a86edb86651c59d7da414f58264a1bbc7f931d0c7387598d6be229e60d7f0/MohammadBahemmat/V2ray-Collector"
+openGraphImageUrl: "https://opengraph.githubassets.com/da8d757083ce7e14536672b9636ce2592f6dfba9884f533c9cbd280041f1c876/MohammadBahemmat/V2ray-Collector"
 ---
 
 </a>

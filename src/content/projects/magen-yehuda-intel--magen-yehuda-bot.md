@@ -14,13 +14,13 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2026-02-28T10:25:17Z"
-lastCommitAt: "2026-06-28T13:16:01Z"
+lastCommitAt: "2026-06-28T13:24:01Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 46
 maintainers: ["idanshimon"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3e71979eb4b6e61da7a24c7a8f04fb692eda31e898b736f117876048cd3f0364/magen-yehuda-intel/magen-yehuda-bot"
+openGraphImageUrl: "https://opengraph.githubassets.com/b3ff89067efafbc449be8d3f7a2330b39b44b92b812e6757f868f4f4ea438627/magen-yehuda-intel/magen-yehuda-bot"
 ---
 
 # 🛡️ Magen Yehuda Bot — Iran-Israel Real-Time Intelligence Monitor

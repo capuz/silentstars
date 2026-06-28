@@ -15,13 +15,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-12-15T14:44:18Z"
-lastCommitAt: "2026-06-28T06:57:37Z"
+lastCommitAt: "2026-06-28T13:22:46Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 89
 undervaluedScore: 60
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1ed1bb339924d41d094af80e2ed15d0593eda0a375620cc6711f5ea5bda9c2f8/vmoranv-reborn/AstrBot_Plugins_Collection"
+openGraphImageUrl: "https://opengraph.githubassets.com/f04810e88bddb1b9603a606598b0abd3dcefb1cb9e904405b46c03a444b89a1f/vmoranv-reborn/AstrBot_Plugins_Collection"
 ---
 
 # AstrBot Plugins Collection

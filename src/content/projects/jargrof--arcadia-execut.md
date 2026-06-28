@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-25T18:50:35Z"
-lastCommitAt: "2026-06-28T11:45:57Z"
+lastCommitAt: "2026-06-28T13:22:06Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 38
 maintainers: ["actions-user", "Jargrof"]
-openGraphImageUrl: "https://opengraph.githubassets.com/82e0cf6dbf6202f362af76fbbc73fd2dd70f75ebd35aa3e583250ef7056c4de9/Jargrof/Arcadia-Execut"
+openGraphImageUrl: "https://opengraph.githubassets.com/64733243d045e76a4f04b8dda509c03f58e7027ba4fa34b9c9fe6bf78e545113/Jargrof/Arcadia-Execut"
 ---
 
 # Arcadia - Roblox Script Executor 2026

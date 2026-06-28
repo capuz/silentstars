@@ -14,13 +14,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-01-07T10:23:09Z"
-lastCommitAt: "2026-06-28T11:43:02Z"
+lastCommitAt: "2026-06-28T13:18:31Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 80
 undervaluedScore: 45
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2dc95bfce9af9841ec2ce9528d23df3df6c66fde3f99f6e810a23bcf7cf535ca/lonnyzhang423/zhihu-hot-hub"
+openGraphImageUrl: "https://opengraph.githubassets.com/77be268adda7de6b0f4833f6408f435fb6b39542b6ea10a3be5d16c5aa15351a/lonnyzhang423/zhihu-hot-hub"
 ---
 
 # zhihu-hot-hub
@@ -35,7 +35,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/2dc95bfce9af9841ec2ce9528
 - [GitHub热榜](https://github.com/lonnyzhang423/github-hot-hub)
 - [v2ex热榜](https://github.com/lonnyzhang423/v2ex-hot-hub)
 
-`更新时间：2026-06-28 19:43:02 +0800`
+`更新时间：2026-06-28 21:18:31 +0800`
 
 ## 热门搜索
 

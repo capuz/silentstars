@@ -9,20 +9,20 @@ languages: ["R"]
 languagePcts: [100]
 stars: 488
 forks: 57
-openIssues: 56
-closedIssues: 156
+openIssues: 55
+closedIssues: 157
 watchers: 14
 contributors: 4
 recentReleases: 0
 createdAt: "2018-07-10T21:12:49Z"
-lastCommitAt: "2026-06-28T06:54:36Z"
+lastCommitAt: "2026-06-28T13:21:37Z"
 lastReleaseAt: "2021-02-13T17:39:02Z"
 status: "thriving"
 tags: ["legacy_hero"]
-healthScore: 90
+healthScore: 91
 undervaluedScore: 36
 maintainers: ["kassambara"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5f743a86c631edd0b8fa5db0c8c0c0a4618fbf00b76086481e744aeaeaeb9a9e/kassambara/rstatix"
+openGraphImageUrl: "https://opengraph.githubassets.com/6c51b0b1f6143b5e346d7be9e2d4a5ae9b24743f2d8b2def54bfc30d862b629c/kassambara/rstatix"
 ---
 
 status](https://github.com/kassambara/rstatix/workflows/R-CMD-check/badge.svg)](https://github.com/kassambara/rstatix/actions)
