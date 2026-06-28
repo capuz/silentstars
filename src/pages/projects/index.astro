@@ -95,11 +95,18 @@ const tagLabels: Record<string, string> = {
     </p>
 
     {promoted.length > 0 && (
-      <div class="promoted-block">
+      <div class="promoted-block" id="promoted-block">
         <p class="promoted-label">// promoted</p>
         <div class="grid">
           {promoted.map(p => (
-            <ProjectCard slug={p.slug} {...p.data} promoted={true} />
+            <div
+              class="grid-item"
+              data-status={p.data.status}
+              data-tags={p.data.tags.join(',')}
+              data-search={`${p.data.name} ${p.data.repo} ${p.data.description ?? ''} ${p.data.language ?? ''}`.toLowerCase()}
+            >
+              <ProjectCard slug={p.slug} {...p.data} promoted={true} />
+            </div>
           ))}
         </div>
       </div>
@@ -108,31 +115,38 @@ const tagLabels: Record<string, string> = {
 </Base>
 
 <script>
-  const grid      = document.getElementById('project-grid')!;
-  const emptyState = document.getElementById('empty-state')!;
-  const resetBtn  = document.getElementById('filter-reset')!;
-  const searchEl  = document.getElementById('search') as HTMLInputElement;
+  const grid         = document.getElementById('project-grid')!;
+  const emptyState   = document.getElementById('empty-state')!;
+  const resetBtn     = document.getElementById('filter-reset')!;
+  const searchEl     = document.getElementById('search') as HTMLInputElement;
+  const promotedBlock = document.getElementById('promoted-block') as HTMLElement | null;
 
   let activeStatuses = new Set<string>();
   let activeTags     = new Set<string>();
   let searchQuery    = '';
 
   function applyFilters() {
-    const items = grid.querySelectorAll<HTMLElement>('.grid-item');
+    const items = document.querySelectorAll<HTMLElement>('.grid-item');
     let visible = 0;
     const q = searchQuery.length >= 3 ? searchQuery : '';
     items.forEach(item => {
-      const status  = item.dataset.status ?? '';
-      const tags    = (item.dataset.tags ?? '').split(',').filter(Boolean);
+      const status   = item.dataset.status ?? '';
+      const tags     = (item.dataset.tags ?? '').split(',').filter(Boolean);
       const haystack = item.dataset.search ?? '';
-      const matchSearch  = !q || haystack.includes(q);
-      const matchStatus  = activeStatuses.size === 0 || activeStatuses.has(status);
-      const matchTag     = activeTags.size === 0 || tags.some(t => activeTags.has(t));
+      const matchSearch = !q || haystack.includes(q);
+      const matchStatus = activeStatuses.size === 0 || activeStatuses.has(status);
+      const matchTag    = activeTags.size === 0 || tags.some(t => activeTags.has(t));
       const show = matchSearch && matchStatus && matchTag;
       item.style.display = show ? '' : 'none';
       if (show) visible++;
     });
     emptyState.style.display = visible === 0 ? '' : 'none';
+    if (promotedBlock) {
+      const anyPromotedVisible = Array.from(
+        promotedBlock.querySelectorAll<HTMLElement>('.grid-item')
+      ).some(el => el.style.display !== 'none');
+      promotedBlock.style.display = anyPromotedVisible ? '' : 'none';
+    }
   }
 
   searchEl.addEventListener('input', () => {
