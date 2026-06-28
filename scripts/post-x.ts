@@ -75,8 +75,11 @@ async function main(): Promise<void> {
 
   if (active.length === 0) throw new Error('No active projects found in latest.json');
 
-  const today   = new Date().toISOString().slice(0, 10);
-  const project = active[seededIndex(today, active.length)];
+  const today       = new Date().toISOString().slice(0, 10);
+  const projectSlug = process.env.PROJECT_SLUG ?? '';
+  const project     = projectSlug
+    ? (active.find(p => p.repo.toLowerCase().replace('/', '--') === projectSlug) ?? active[seededIndex(today, active.length)])
+    : active[seededIndex(today, active.length)];
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   const text = buildTweet(project, baseUrl);
@@ -107,6 +110,7 @@ async function main(): Promise<void> {
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
   const { data: tweet } = await client.v2.tweet(text);
   console.log(`✓ Posted to X: ${project.name} — https://x.com/i/web/status/${tweet.id}`);
+  console.log(`X_POST_URL=https://x.com/i/web/status/${tweet.id}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

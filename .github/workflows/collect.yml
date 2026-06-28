@@ -13,6 +13,9 @@ on:
       skip_post:
         type: boolean
         default: false
+      skip_post_x:
+        type: boolean
+        default: false
       submission_repo:
         type: string
         default: ''
@@ -26,6 +29,9 @@ on:
       bsky_post_text_b64:
         description: "Base64-encoded Bluesky post text"
         value: ${{ jobs.post.outputs.bsky_post_text_b64 }}
+      x_post_url:
+        description: "X.com post URL"
+        value: ${{ jobs.post-x.outputs.x_post_url }}
   workflow_dispatch:
     inputs:
       skip_collect:
@@ -171,7 +177,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [deploy]
     environment: BSKY_IDENTIFIER
-    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_post != 'true'
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post != 'true'
     outputs:
       bsky_url: ${{ steps.post_bluesky.outputs.bsky_url }}
       bsky_post_text_b64: ${{ steps.post_bluesky.outputs.bsky_post_text_b64 }}
@@ -229,8 +235,10 @@ jobs:
     name: Post to X.com
     runs-on: ubuntu-latest
     needs: [deploy]
-    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_post_x != 'true'
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post_x != 'true'
     continue-on-error: true
+    outputs:
+      x_post_url: ${{ steps.post_x.outputs.x_post_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -246,8 +254,26 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Compute submission slug
+        id: submission_slug_x
+        if: inputs.submission_repo != ''
+        env:
+          SUBMISSION_REPO: ${{ inputs.submission_repo }}
+        run: |
+          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
+          echo "value=$SLUG" >> $GITHUB_OUTPUT
+
       - name: Post to X.com
-        run: npx tsx scripts/post-x.ts
+        id: post_x
+        run: |
+          set +e
+          OUTPUT=$(npx tsx scripts/post-x.ts 2>&1)
+          EXIT_CODE=$?
+          set -e
+          echo "$OUTPUT"
+          X_URL=$(echo "$OUTPUT" | grep "^X_POST_URL=" | cut -d= -f2-)
+          echo "x_post_url=${X_URL}" >> $GITHUB_OUTPUT
+          exit $EXIT_CODE
         env:
           X_API_KEY:             ${{ secrets.X_API_KEY }}
           X_API_SECRET:          ${{ secrets.X_API_SECRET }}
@@ -255,3 +281,4 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           BASE_URL:              https://capuz.github.io/silentstars
           DRY_RUN:               ${{ inputs.dry_run }}
+          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value }}
