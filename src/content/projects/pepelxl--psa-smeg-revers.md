@@ -14,13 +14,13 @@ watchers: 4
 contributors: 1
 recentReleases: 0
 createdAt: "2022-01-07T09:12:07Z"
-lastCommitAt: "2026-06-28T06:55:26Z"
+lastCommitAt: "2026-06-28T09:17:10Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 78
 undervaluedScore: 57
 maintainers: ["pepelxl"]
-openGraphImageUrl: "https://opengraph.githubassets.com/634a9fc24ab4ab804579688bf6bf7c1caa424f140716c2be9cb741ea4835695f/pepelxl/psa-smeg-revers"
+openGraphImageUrl: "https://opengraph.githubassets.com/0b20a824687ef65d56ab3b894a52cdaee2f2694453f49a24e9bf66ebca90d2c7/pepelxl/psa-smeg-revers"
 ---
 
 # psa-smeg-revers

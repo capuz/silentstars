@@ -5,7 +5,7 @@ description: "Offline companion app for 7 Days to Die (V1.0/V3.0): 3D world map,
 url: "https://github.com/Lampe332/7dtd-survival-companion"
 language: "HTML"
 languages: ["HTML", "Rust"]
-languagePcts: [78, 21]
+languagePcts: [80, 20]
 topics: ["7-days-to-die", "7dtd", "companion-app", "game-tools", "rust", "webgl", "windows"]
 stars: 5
 forks: 0
@@ -15,14 +15,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-06-19T00:58:39Z"
-lastCommitAt: "2026-06-28T06:57:17Z"
+lastCommitAt: "2026-06-28T12:55:28Z"
 lastReleaseAt: "2026-06-19T23:56:53Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 70
 undervaluedScore: 47
 maintainers: ["Lampe332"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f34823116822499ced18549cc1d1636b4e01fda483ba63ae4f725dc0ae96b0d1/Lampe332/7dtd-survival-companion"
+openGraphImageUrl: "https://opengraph.githubassets.com/eae6eb30cfa5bcf1cd53d0c7e9efaadc9e90b5f3937d1d549c9a79d21c4a6f80/Lampe332/7dtd-survival-companion"
 ---
 
 <br><br>

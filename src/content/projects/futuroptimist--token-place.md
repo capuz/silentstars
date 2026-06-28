@@ -16,14 +16,14 @@ watchers: 1
 contributors: 2
 recentReleases: 3
 createdAt: "2023-07-28T04:45:12Z"
-lastCommitAt: "2026-06-28T06:57:40Z"
+lastCommitAt: "2026-06-28T10:20:12Z"
 lastReleaseAt: "2026-06-25T18:38:44Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "under_pressure"]
 healthScore: 82
 undervaluedScore: 78
 maintainers: ["futuroptimist"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6a6747e8f9ebf03959e8a72207630fe72d457c88782919715635a8cb449e5561/futuroptimist/token.place"
+openGraphImageUrl: "https://opengraph.githubassets.com/fcd8539da66266bf9117fcffd24a4e84fba198133899c8136a412d6aa05c743b/futuroptimist/token.place"
 ---
 
 # token.place

@@ -10,19 +10,19 @@ languagePcts: [89]
 topics: ["ffxiv", "rust"]
 stars: 8
 forks: 3
-openIssues: 18
-closedIssues: 112
+openIssues: 13
+closedIssues: 118
 watchers: 2
 contributors: 5
 recentReleases: 0
 createdAt: "2022-08-01T20:47:50Z"
-lastCommitAt: "2026-06-28T06:57:29Z"
+lastCommitAt: "2026-06-28T11:49:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 96
-undervaluedScore: 80
+healthScore: 97
+undervaluedScore: 81
 maintainers: ["akarras", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e793d327dc55ed28e4aa7b87d394f73417efce8c0a1988dd11ae44ee99a46126/akarras/ultros"
+openGraphImageUrl: "https://opengraph.githubassets.com/8ba22a2b4a1ec21167776f171227c2c1c1ccf76137e08a8b9a882580ee3f7315/akarras/ultros"
 ---
 
 # Ultros

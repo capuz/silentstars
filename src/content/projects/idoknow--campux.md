@@ -13,17 +13,17 @@ forks: 15
 openIssues: 3
 closedIssues: 44
 watchers: 3
-contributors: 8
+contributors: 9
 recentReleases: 2
 createdAt: "2024-04-01T06:48:20Z"
-lastCommitAt: "2026-06-28T06:56:52Z"
+lastCommitAt: "2026-06-28T11:23:55Z"
 lastReleaseAt: "2026-06-22T10:25:52Z"
 status: "thriving"
 tags: ["needs_contributors"]
 healthScore: 98
 undervaluedScore: 49
-maintainers: ["MrWoods1692", "RockChinQ", "fhzit"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cd00c7cdf3269484aeabe14ccb208759c729d0ec835405629c9b9dc623ab1cdd/idoknow/Campux"
+maintainers: ["MrWoods1692", "fhzit", "RockChinQ"]
+openGraphImageUrl: "https://opengraph.githubassets.com/501a6466faed2d0293d53a57f897250bd3e8b6e780753583e21721800aaef324/idoknow/Campux"
 ---
 
 </p>

@@ -15,13 +15,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-06-15T07:45:08Z"
-lastCommitAt: "2026-06-28T06:55:28Z"
+lastCommitAt: "2026-06-28T11:42:34Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 29
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/373a52734b53c16efc0192da0184dc71a69dcff21f229a0cdbc369ee2df26cae/feelslikewave/mythic-game-vault"
+openGraphImageUrl: "https://opengraph.githubassets.com/88499b8347e3e88a31c2c5315ca110ca7984fa6cc427536e050b64fe16f8074f/feelslikewave/mythic-game-vault"
 ---
 
 # 🚀 MetaLauncher: The Universal Game Bridge

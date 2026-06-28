@@ -15,13 +15,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-06T19:28:58Z"
-lastCommitAt: "2026-06-28T06:55:56Z"
+lastCommitAt: "2026-06-28T09:25:27Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 77
-undervaluedScore: 19
+healthScore: 78
+undervaluedScore: 25
 maintainers: ["douglasmun"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a63041a11c705be5ebc193423c3b9b2ac7072e7a1016be3261384877df9438ea/douglasmun/macos-endptsec101"
+openGraphImageUrl: "https://opengraph.githubassets.com/d76b7152dce281063e481ea7e3f3b31fb0e595633a9c84971ef00f4e884b9333/douglasmun/macos-endptsec101"
 ---
 
 # macos-endptsec101

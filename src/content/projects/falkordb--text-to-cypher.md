@@ -15,14 +15,14 @@ watchers: 1
 contributors: 6
 recentReleases: 10
 createdAt: "2025-07-14T13:59:57Z"
-lastCommitAt: "2026-06-28T06:59:29Z"
-lastReleaseAt: "2026-06-21T12:35:34Z"
+lastCommitAt: "2026-06-28T07:06:08Z"
+lastReleaseAt: "2026-06-28T07:09:11Z"
 status: "thriving"
 tags: ["release_machine"]
 healthScore: 97
 undervaluedScore: 72
 maintainers: ["barakb", "dependabot[bot]", "Naseem77"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f5c14d9517e86cf9871284aecfca199f44505f1f19fa01c07e26677fb965c603/FalkorDB/text-to-cypher"
+openGraphImageUrl: "https://opengraph.githubassets.com/5174065cd6f5b84cbd3879e23aa9c826abf7396a938bd86d9542b9a069e913ab/FalkorDB/text-to-cypher"
 ---
 
 Text To Cypher Backend

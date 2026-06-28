@@ -15,13 +15,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-11-01T15:22:14Z"
-lastCommitAt: "2026-06-28T06:56:28Z"
+lastCommitAt: "2026-06-28T12:06:01Z"
 status: "thriving"
 tags: []
 healthScore: 55
 undervaluedScore: 19
 maintainers: ["sarkercomputer2022"]
-openGraphImageUrl: "https://opengraph.githubassets.com/462fbb06bed37dc329e9fdc505ff16362b7713b6831c17aa9fe2dda7d9a3f4ce/sarkercomputer2022/rtcamp-24week-journey"
+openGraphImageUrl: "https://opengraph.githubassets.com/fdc62c4edf37b7cf12762033fe72339cb4ed1d5e2506967bb72ba5f5ca55c16a/sarkercomputer2022/rtcamp-24week-journey"
 ---
 
 # 🛠️ rtcamp-24week-journey - Master Coding in Just 24 Weeks

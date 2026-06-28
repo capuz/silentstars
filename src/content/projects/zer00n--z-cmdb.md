@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-05-20T12:48:21Z"
-lastCommitAt: "2026-06-28T06:57:08Z"
+lastCommitAt: "2026-06-28T07:06:50Z"
 status: "newborn"
 tags: ["hidden_gem"]
 healthScore: 87
 undervaluedScore: 34
 maintainers: ["Zer00n"]
-openGraphImageUrl: "https://opengraph.githubassets.com/05e75eccd87485d9a00c9fa4611132838fc32fc7c5cb0644209e2d25dcfa6290/Zer00n/z-cmdb"
+openGraphImageUrl: "https://opengraph.githubassets.com/c0dfb899e7a551337689079774eb7adebcbd948335cb05153ac17a6176962e42/Zer00n/z-cmdb"
 ---
 
 **English** | [中文](README_zh.md)

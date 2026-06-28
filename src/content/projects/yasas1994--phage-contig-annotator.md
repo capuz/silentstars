@@ -14,13 +14,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-11-03T10:22:55Z"
-lastCommitAt: "2026-06-28T06:55:41Z"
+lastCommitAt: "2026-06-28T08:43:08Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 93
-undervaluedScore: 48
+undervaluedScore: 55
 maintainers: ["Yasas1994"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bea03f5e0f5e099966fb8528510bf6f545f73e5a0af2b49dbf1ac8b892d4d1c8/Yasas1994/phage_contig_annotator"
+openGraphImageUrl: "https://opengraph.githubassets.com/8bfb77ba035ed5f43b36f0dddb267edcb37df2322a8feac1306ef90d1f9ba957/Yasas1994/phage_contig_annotator"
 ---
 
 ```

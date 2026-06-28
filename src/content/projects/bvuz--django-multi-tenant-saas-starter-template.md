@@ -15,13 +15,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-10-31T21:19:06Z"
-lastCommitAt: "2026-06-28T06:55:59Z"
+lastCommitAt: "2026-06-28T12:05:29Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 55
 undervaluedScore: 16
 maintainers: ["bvuz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/357760aaa6fb9225a3424282bebef63c7f06178aa6e25a6312c4075f99364b9c/bvuz/Django-Multi-Tenant-SaaS-Starter-Template"
+openGraphImageUrl: "https://opengraph.githubassets.com/d8171230f10eb73dd633218bd6a9aede7abde7cd5390560c51746d6da803d46b/bvuz/Django-Multi-Tenant-SaaS-Starter-Template"
 ---
 
 # 🎉 Django-Multi-Tenant-SaaS-Starter-Template - Build Your SaaS Application Effortlessly

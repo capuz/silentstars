@@ -8,21 +8,21 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["biginner-friendly", "css", "enhancement", "first-issue", "good", "good-first-issue", "motion", "open-source", "reactjs", "tailwindcss"]
-stars: 340
-forks: 1063
-openIssues: 558
-closedIssues: 1622
+stars: 341
+forks: 1071
+openIssues: 545
+closedIssues: 1645
 watchers: 3
-contributors: 602
+contributors: 608
 recentReleases: 0
 createdAt: "2025-02-18T09:34:15Z"
-lastCommitAt: "2026-06-28T06:56:39Z"
+lastCommitAt: "2026-06-28T07:39:36Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "fork_magnet"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 45
-maintainers: ["ronisarkarexe", "Goutam-2702"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dd69007aa3c1fac67402bfc976c0e24fb0042bda65f8089fca901a8dec5498f3/ronisarkarexe/story-spark-ai"
+maintainers: ["ronisarkarexe"]
+openGraphImageUrl: "https://opengraph.githubassets.com/1b914bcfeb796ad18fe5ea22a96929123b01e311746cb9afb75e979ed7ba00a1/ronisarkarexe/story-spark-ai"
 ---
 
 <h1>👩‍💻 StorySparkAI</h1>

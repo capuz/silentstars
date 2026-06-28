@@ -14,13 +14,13 @@ watchers: 9
 contributors: 32
 recentReleases: 0
 createdAt: "2014-06-04T12:25:03Z"
-lastCommitAt: "2026-06-28T06:57:25Z"
+lastCommitAt: "2026-06-28T12:41:19Z"
 status: "thriving"
 tags: ["legacy_hero", "fork_magnet"]
-healthScore: 75
-undervaluedScore: 53
+healthScore: 79
+undervaluedScore: 63
 maintainers: ["cmsbuild", "smuzaffar", "makortel"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e793d327dc55ed28e4aa7b87d394f73417efce8c0a1988dd11ae44ee99a46126/cms-sw/cms-sw.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/4a975fc226d87b128889a4e5e3ba121f9e4c060791147fa9327fbc6069e50c3d/cms-sw/cms-sw.github.io"
 ---
 
 CMSSW work pages

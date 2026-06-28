@@ -16,13 +16,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-05-20T22:00:21Z"
-lastCommitAt: "2026-06-28T06:57:52Z"
+lastCommitAt: "2026-06-28T13:01:45Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 87
 undervaluedScore: 70
 maintainers: ["algotables"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6a97f8c439cf699ff3d9dd8627f23b9221944af704ae9d84a89e4ac251351a2b/algotables/algotables.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/18c35c7da4ce79ef949f292249fcbca8ed8135f050ffb401589f521f0c8a14aa/algotables/algotables.github.io"
 ---
 
 # algotables.github.io

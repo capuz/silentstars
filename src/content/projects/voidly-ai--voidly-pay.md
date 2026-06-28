@@ -16,13 +16,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-04-20T13:45:45Z"
-lastCommitAt: "2026-06-28T06:55:19Z"
+lastCommitAt: "2026-06-28T13:02:37Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 85
 undervaluedScore: 50
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/7c184b895fbabd84d9605f0f9ebe8e7cd64fbcca24b17643fabd23c5d386a8d4/voidly-ai/voidly-pay"
+openGraphImageUrl: "https://opengraph.githubassets.com/8c0b6da0ad7b7100fc860c0561e24910d6f3daca012bb3127d4b0b61490ce652/voidly-ai/voidly-pay"
 discussionCount: 0
 ---
 

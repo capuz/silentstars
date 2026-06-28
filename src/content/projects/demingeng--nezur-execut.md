@@ -14,13 +14,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-25T18:51:07Z"
-lastCommitAt: "2026-06-28T06:54:29Z"
+lastCommitAt: "2026-06-28T11:41:26Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 38
 maintainers: ["actions-user", "demingeng"]
-openGraphImageUrl: "https://opengraph.githubassets.com/06bc2123314f3591a31cf717194ace08fbe2fa950351ebe5f6b860aa1df91cbd/demingeng/Nezur-Execut"
+openGraphImageUrl: "https://opengraph.githubassets.com/b8c75bed873165278f85cabe0ca300995650c84ac503e3682fa4833b20e8ce6e/demingeng/Nezur-Execut"
 ---
 
 # Nezur - Roblox Script Executor 2026

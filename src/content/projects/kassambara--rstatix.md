@@ -11,7 +11,7 @@ stars: 488
 forks: 57
 openIssues: 56
 closedIssues: 156
-watchers: 15
+watchers: 14
 contributors: 4
 recentReleases: 0
 createdAt: "2018-07-10T21:12:49Z"
@@ -19,10 +19,10 @@ lastCommitAt: "2026-06-28T06:54:36Z"
 lastReleaseAt: "2021-02-13T17:39:02Z"
 status: "thriving"
 tags: ["legacy_hero"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 36
 maintainers: ["kassambara"]
-openGraphImageUrl: "https://opengraph.githubassets.com/794520664a8c203bcf52993de1244640e919844d57fbc70d1f9e64252e1bb84f/kassambara/rstatix"
+openGraphImageUrl: "https://opengraph.githubassets.com/5f743a86c631edd0b8fa5db0c8c0c0a4618fbf00b76086481e744aeaeaeb9a9e/kassambara/rstatix"
 ---
 
 status](https://github.com/kassambara/rstatix/workflows/R-CMD-check/badge.svg)](https://github.com/kassambara/rstatix/actions)

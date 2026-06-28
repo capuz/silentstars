@@ -15,13 +15,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-23T15:36:31Z"
-lastCommitAt: "2026-06-28T06:57:24Z"
+lastCommitAt: "2026-06-28T08:59:24Z"
 status: "thriving"
 tags: ["solo_builder", "funded"]
-healthScore: 76
-undervaluedScore: 27
+healthScore: 77
+undervaluedScore: 38
 maintainers: ["programmersd21", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/65cf09f9fc27e918acea2fdb4dc29ebea30a00519779ab27eca1f44aaf373768/programmersd21/nimble"
+openGraphImageUrl: "https://opengraph.githubassets.com/7bc2b067a40535ba9f39ccf1e8b2ed29b8928eed017083ff7c8706fd888e5742/programmersd21/nimble"
 fundingLinks: ["GITHUB:https://github.com/programmersd21"]
 ---
 
@@ -31,7 +31,7 @@ A statically typed language with Python-style indentation, LLVM-based code gener
 
 ## Features at a Glance
 
-- **Pythonic syntax** — indentation-based blocks, no curly braces or semicolons
+- **Pythonic syntax** - indentation-based blocks, no curly braces or semicolons
 - **Static type system** with Hindley-Milner type inference, generics, enums, and interfaces
 - **Enums (sum types)** with tagged union representation and pattern matching
 - **Generic functions, structs, and interfaces** with monomorphization
@@ -44,5 +44,5 @@ A statically typed language with Python-style indentation, LLVM-based code gener
 - **Async/concurrency primitives** (future, channel, mutex, thread, atomic)
 - **Option[T] / Result[T, E]** algebraic types in stdlib
 - **LLVM codegen** with optional debug info emission
-- **Cross-platform linker** — auto-discovers `cc`, `clang`, `gcc`, or `link.exe`
-- **Standard library** with 23 modules covering I/O, math,…
+- **Cross-platform linker** - auto-discovers `cc`, `clang`, `gcc`, or `link.exe`
+- **Standard library** with 28 modules covering I/O, math,…

@@ -16,13 +16,13 @@ watchers: 3
 contributors: 4
 recentReleases: 0
 createdAt: "2019-05-31T21:47:26Z"
-lastCommitAt: "2026-06-28T06:56:39Z"
+lastCommitAt: "2026-06-28T08:02:05Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 90
-undervaluedScore: 43
-maintainers: ["gadingnst", "nouva-ai", "ImgBotApp"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dd69007aa3c1fac67402bfc976c0e24fb0042bda65f8089fca901a8dec5498f3/gadingnst/gading.dev"
+undervaluedScore: 45
+maintainers: ["nouva-ai", "gadingnst", "ImgBotApp"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b142cecf46526964a7dc5174dd2a6278c5ec9423524f1ec2ff3544067800814c/gadingnst/gading.dev"
 fundingLinks: ["GITHUB:https://github.com/gadingnst", "KO_FI:https://ko-fi.com/gadingnst", "CUSTOM:https://trakteer.id/gadingnst", "CUSTOM:https://karyakarsa.com/gadingnst"]
 discussionCount: 0
 ---

@@ -6,7 +6,7 @@ url: "https://github.com/pritush/syano"
 homepage: "https://pritush.com.np/"
 language: "Vue"
 languages: ["Vue", "TypeScript"]
-languagePcts: [47, 40]
+languagePcts: [46, 41]
 topics: ["marketing", "marketing-tools", "martech", "nuxt", "shortener-url"]
 stars: 12
 forks: 1
@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 2
 createdAt: "2026-04-12T11:44:38Z"
-lastCommitAt: "2026-06-28T06:54:30Z"
+lastCommitAt: "2026-06-28T10:37:34Z"
 lastReleaseAt: "2026-05-11T15:10:33Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 70
-undervaluedScore: 34
+healthScore: 71
+undervaluedScore: 38
 maintainers: ["pritush"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6c7789df9e0300395e489ec0d4399cfafcfc2f4804c3f9f60cdd40409fa20f8/pritush/syano"
+openGraphImageUrl: "https://opengraph.githubassets.com/730edfc6f4e33622d7eb2d6eb72d177061422038549add6c055220f102b4ed43/pritush/syano"
 ---
 
 # Syano - Self-Hosted URL Shortener | Open Source Link Management Platform

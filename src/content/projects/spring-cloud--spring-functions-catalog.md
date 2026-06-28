@@ -18,7 +18,7 @@ lastCommitAt: "2026-06-28T06:55:24Z"
 lastReleaseAt: "2026-03-27T20:15:56Z"
 status: "thriving"
 tags: []
-healthScore: 93
+healthScore: 92
 undervaluedScore: 42
 maintainers: ["dependabot[bot]", "spring-builds", "artembilan"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e9ac827932891201be8e56a52d393f19fde8fed2d6a14300510202e7a1e563b5/spring-cloud/spring-functions-catalog"

@@ -6,7 +6,7 @@ url: "https://github.com/hanlinwenyuan/hlwy-ai-checker"
 language: "HTML"
 languages: ["HTML"]
 languagePcts: [100]
-stars: 129
+stars: 137
 forks: 8
 openIssues: 0
 closedIssues: 0
@@ -19,9 +19,9 @@ lastReleaseAt: "2026-06-28T04:39:14Z"
 status: "newborn"
 tags: ["solo_builder"]
 healthScore: 79
-undervaluedScore: 13
+undervaluedScore: 12
 maintainers: ["hanlinwenyuan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2c634ab8d738aef8c110d405f21581e7f88093368c40768d322fd7cec1455ea9/hanlinwenyuan/hlwy-ai-checker"
+openGraphImageUrl: "https://opengraph.githubassets.com/e75ffcd9c6a8da56dbd09e296dd2505851046815c4a510fbf00cc0c1bef409b7/hanlinwenyuan/hlwy-ai-checker"
 ---
 
 # hlwy-ai-checker

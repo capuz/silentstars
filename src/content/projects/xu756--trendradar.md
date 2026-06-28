@@ -6,7 +6,7 @@ url: "https://github.com/xu756/TrendRadar"
 homepage: "http://trend.xu756.top/"
 language: "Python"
 languages: ["Python", "HTML"]
-languagePcts: [70, 27]
+languagePcts: [72, 25]
 stars: 26
 forks: 13
 openIssues: 0
@@ -15,13 +15,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-11-13T02:22:30Z"
-lastCommitAt: "2026-06-28T06:55:11Z"
+lastCommitAt: "2026-06-28T11:42:17Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 49
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5c65c61db37535140c821b73adb008467a3ec74ebc737c030048363a29d752c3/xu756/TrendRadar"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d8eb172eea8cd930221e41d1373af4be2228e3c5b491a34687da4f8f339df38/xu756/TrendRadar"
 discussionCount: 0
 ---
 

@@ -14,20 +14,20 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-01-14T15:09:41Z"
-lastCommitAt: "2026-06-28T06:57:30Z"
+lastCommitAt: "2026-06-28T07:47:59Z"
 status: "thriving"
 tags: []
 healthScore: 90
 undervaluedScore: 72
 maintainers: ["ArthurSrz", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f9895948f47aba4a2a13f19b51a32786431d9c25e03ea5322a2e363e2247ebdc/ArthurSrz/knowledge_glossary"
+openGraphImageUrl: "https://opengraph.githubassets.com/2e73050bd53f9c2c3d89aa828166ebef8969b24094d82f3976179287bf9b5087/ArthurSrz/knowledge_glossary"
 ---
 
 # Data knowledge graph
 
 ### Daily Stats
 
-A personal knowledge graph containing **803 interconnected concepts** in data science, machine learning, and AI. Built as an [Obsidian](https://obsidian.md/) vault with typed relationships, this graph can serve as the foundation for a **data ontology**.
+A personal knowledge graph containing **836 interconnected concepts** in data science, machine learning, and AI. Built as an [Obsidian](https://obsidian.md/) vault with typed relationships, this graph can serve as the foundation for a **data ontology**.
 
 ## Structure
 

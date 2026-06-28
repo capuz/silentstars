@@ -6,7 +6,7 @@ url: "https://github.com/shreeve/rip-lang"
 homepage: "https://shreeve.github.io/rip-lang/"
 language: "CoffeeScript"
 languages: ["CoffeeScript", "JavaScript"]
-languagePcts: [47, 45]
+languagePcts: [48, 45]
 stars: 28
 forks: 0
 openIssues: 0
@@ -15,7 +15,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2026-02-07T13:50:06Z"
-lastCommitAt: "2026-06-28T06:55:30Z"
+lastCommitAt: "2026-06-28T07:55:01Z"
 lastReleaseAt: "2026-03-17T21:08:41Z"
 status: "thriving"
 tags: ["hidden_gem"]

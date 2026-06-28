@@ -15,13 +15,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2022-10-12T04:45:42Z"
-lastCommitAt: "2026-06-28T06:55:02Z"
+lastCommitAt: "2026-06-28T11:41:59Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 75
 undervaluedScore: 44
 maintainers: ["Setiawan007"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e90d4d2ff8998712c21637d431031045381d8a9c87e996dc81636557dda1ba1a/Setiawan007/Sistem-Informasi-Keuangan"
+openGraphImageUrl: "https://opengraph.githubassets.com/f86cca90e1102ebaf887202a4a596e9044b0415c5aca8dda4087d2b85ee2ae6d/Setiawan007/Sistem-Informasi-Keuangan"
 ---
 
 # Sistem Informasi Keuangan

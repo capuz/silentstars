@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 5
 createdAt: "2025-10-11T07:43:11Z"
-lastCommitAt: "2026-06-28T06:55:56Z"
+lastCommitAt: "2026-06-28T07:06:23Z"
 lastReleaseAt: "2026-06-13T21:59:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 82
 undervaluedScore: 63
 maintainers: ["Gunnarguy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/357760aaa6fb9225a3424282bebef63c7f06178aa6e25a6312c4075f99364b9c/Gunnarguy/OpenIntelligence"
+openGraphImageUrl: "https://opengraph.githubassets.com/235d60c1523b8fb5b90b2574d908bd9d991933f0333563cd3339a88c02535c08/Gunnarguy/OpenIntelligence"
 discussionCount: 0
 ---
 

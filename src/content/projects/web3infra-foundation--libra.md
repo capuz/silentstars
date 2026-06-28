@@ -16,14 +16,14 @@ watchers: 2
 contributors: 84
 recentReleases: 0
 createdAt: "2025-09-12T14:23:27Z"
-lastCommitAt: "2026-06-28T06:55:47Z"
+lastCommitAt: "2026-06-28T12:29:23Z"
 lastReleaseAt: "2026-03-28T13:40:15Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 53
 maintainers: ["genedna"]
-openGraphImageUrl: "https://opengraph.githubassets.com/357760aaa6fb9225a3424282bebef63c7f06178aa6e25a6312c4075f99364b9c/web3infra-foundation/libra"
+openGraphImageUrl: "https://opengraph.githubassets.com/513f41f7eef52c12901171d7868397e86fe9b0ae55aadfba43b6b639deb3dcf5/web3infra-foundation/libra"
 ---
 
 Libra is a partial implementation of a **Git** client, developed in **Rust**. The goal is **not** to build a perfect, 100% feature-complete reimplementation of Git (if you want that, take a look at [gitoxide](https://github.com/Byron/gitoxide)). Instead, Libra is evolving into an **AI agent–native version control system**.

@@ -15,13 +15,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2023-04-03T17:26:43Z"
-lastCommitAt: "2026-06-28T06:55:52Z"
+lastCommitAt: "2026-06-28T11:37:55Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 75
-undervaluedScore: 44
+undervaluedScore: 46
 maintainers: ["zoranbosnjak"]
-openGraphImageUrl: "https://opengraph.githubassets.com/009ca50ea9457d3160314c979674270a70109049fdda57d43b6f2cc1328d3b20/zoranbosnjak/asterix-tool"
+openGraphImageUrl: "https://opengraph.githubassets.com/0a4c5679f428bc7ac9e2727c322a5943c370b6ad210034193ba960ba28b24bb8/zoranbosnjak/asterix-tool"
 discussionCount: 1
 ---
 

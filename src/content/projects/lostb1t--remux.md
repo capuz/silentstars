@@ -6,22 +6,22 @@ url: "https://github.com/lostb1t/remux"
 language: "Rust"
 languages: ["Rust"]
 languagePcts: [98]
-stars: 101
-forks: 5
-openIssues: 15
-closedIssues: 19
+stars: 102
+forks: 6
+openIssues: 14
+closedIssues: 21
 watchers: 5
 contributors: 7
 recentReleases: 10
 createdAt: "2026-02-27T13:26:15Z"
-lastCommitAt: "2026-06-28T06:57:01Z"
+lastCommitAt: "2026-06-28T10:58:01Z"
 lastReleaseAt: "2026-06-24T09:56:09Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 89
+healthScore: 91
 undervaluedScore: 33
 maintainers: ["lostb1t", "semantic-release-bot", "Bobbls"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a2624d174f1af159465a8c4df1100b535b8583b066416bc0a785df4ab5a18afe/lostb1t/remux"
+openGraphImageUrl: "https://opengraph.githubassets.com/5cb394c51b079ae445197684e38c16135881b7d0c4b467470dd482f882cce77b/lostb1t/remux"
 ---
 
 </div>

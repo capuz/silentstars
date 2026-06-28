@@ -15,13 +15,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-11-03T03:52:16Z"
-lastCommitAt: "2026-06-28T06:57:24Z"
+lastCommitAt: "2026-06-28T12:07:06Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 55
 undervaluedScore: 16
 maintainers: ["binetsimonscaletourtiere90"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0837875cc23ab83213dac9128bb57d3f816c1e5352639262c521e5ed40b2ea67/binetsimonscaletourtiere90/AES67_macos_Driver"
+openGraphImageUrl: "https://opengraph.githubassets.com/cc66d78680a6731f45efecaafdcfdd1278639baf7be9c772254d0c1abaeec1d2/binetsimonscaletourtiere90/AES67_macos_Driver"
 ---
 
 # 🎧 AES67_macos_Driver - Effortless Audio Streaming for macOS

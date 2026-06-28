@@ -10,20 +10,20 @@ languagePcts: [65, 35]
 topics: ["infrastructure"]
 stars: 31
 forks: 4
-openIssues: 23
-closedIssues: 261
+openIssues: 22
+closedIssues: 262
 watchers: 3
 contributors: 4
 recentReleases: 10
 createdAt: "2022-05-20T20:32:47Z"
-lastCommitAt: "2026-06-28T06:56:34Z"
+lastCommitAt: "2026-06-28T11:52:35Z"
 lastReleaseAt: "2026-05-26T10:39:45Z"
 status: "thriving"
 tags: ["release_machine"]
 healthScore: 98
 undervaluedScore: 68
 maintainers: ["devantler", "renovate[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/07fc4307f799d63c3610aa4d11765988414b64ca17fb06dce6160292f670e306/devantler-tech/platform"
+openGraphImageUrl: "https://opengraph.githubassets.com/87fe88a7ffe7ebee520067e23850380cf6d2f780686a67a2b59eab8d43254036/devantler-tech/platform"
 ---
 
 # Devantler Tech Platform ☸️⛴️

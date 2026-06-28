@@ -6,7 +6,7 @@ url: "https://github.com/homaaio/HomRec"
 homepage: "https://homaaio.github.io/HomRec/"
 language: "Python"
 languages: ["Python", "C++"]
-languagePcts: [57, 36]
+languagePcts: [57, 37]
 topics: ["recorder", "screen-capture", "ffmpeg", "video-recording"]
 stars: 6
 forks: 0
@@ -16,7 +16,7 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-03-11T14:32:34Z"
-lastCommitAt: "2026-06-28T06:54:53Z"
+lastCommitAt: "2026-06-28T07:21:12Z"
 lastReleaseAt: "2026-06-04T10:46:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]

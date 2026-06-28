@@ -16,13 +16,13 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2026-02-01T11:37:49Z"
-lastCommitAt: "2026-06-28T06:58:20Z"
+lastCommitAt: "2026-06-28T13:01:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 78
 undervaluedScore: 47
 maintainers: ["chenxi750328ai"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0419985039c49190c256d06f5fe5f1fa6c0ab5262d96510ed52cb10109ce3891/chenxi750328ai/agent-jianghu"
+openGraphImageUrl: "https://opengraph.githubassets.com/04a3d5e44b39c0971b859916ec38c1d8da1c061393e8c385052732b8b1d16930/chenxi750328ai/agent-jianghu"
 ---
 
 # 项目总览

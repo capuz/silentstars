@@ -15,14 +15,14 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2024-11-11T09:28:50Z"
-lastCommitAt: "2026-06-28T06:56:05Z"
-lastReleaseAt: "2026-06-28T06:57:00Z"
+lastCommitAt: "2026-06-28T12:30:30Z"
+lastReleaseAt: "2026-06-28T12:32:44Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 72
 maintainers: ["rmolives"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6ed6f424d99f488dfa9a07912b65a8d798e296ff7c639325d27bec23bc148a7a/rmolives/devore"
+openGraphImageUrl: "https://opengraph.githubassets.com/847470b690bd59126665a35bcf20c98db30931b70e2f9e8ab2341132cb870bb5/rmolives/devore"
 ---
 
 # Devore Language
@@ -30,6 +30,8 @@ openGraphImageUrl: "https://opengraph.githubassets.com/6ed6f424d99f488dfa9a07912
 ## 关于
 
 这是Devore语言（一种Lisp方言）的解释器，运行于JVM平台。
+
+[文档](docs/README.md)
 
 ## 示例
 
@@ -83,5 +85,4 @@ openGraphImageUrl: "https://opengraph.githubassets.com/6ed6f424d99f488dfa9a07912
         xs
         (++ (qsort (filter
                 (lambda (x) (< x (head xs))) (tail xs)))
-            (list (head xs))
-            (qsort (filter…
+            (list (head xs))…

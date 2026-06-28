@@ -16,13 +16,13 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2023-07-03T05:12:00Z"
-lastCommitAt: "2026-06-28T06:55:59Z"
+lastCommitAt: "2026-06-28T13:02:00Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 64
 maintainers: ["updaterbot-easylistmirror"]
-openGraphImageUrl: "https://opengraph.githubassets.com/16aeac946a3b6a454ec1bb54e67fef51c2109c2d2a79d720217388734f4e4c29/thedoggybrad/easylist-mirror"
+openGraphImageUrl: "https://opengraph.githubassets.com/7fc563308072fb9582817a95c40fccd6b386d695294c700b9d5c64d6473232f5/thedoggybrad/easylist-mirror"
 ---
 
 # EasyList Mirror (Unofficial)

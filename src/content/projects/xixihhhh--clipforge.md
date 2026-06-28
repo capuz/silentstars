@@ -7,7 +7,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [96]
 topics: ["aigc", "ecommerce", "ffmpeg", "nextjs", "short-video", "text-to-video", "tiktok", "ai-ugc", "ai-video-creator", "ai-video-generator"]
-stars: 172
+stars: 174
 forks: 36
 openIssues: 0
 closedIssues: 4
@@ -15,14 +15,14 @@ watchers: 0
 contributors: 1
 recentReleases: 6
 createdAt: "2026-03-23T09:55:39Z"
-lastCommitAt: "2026-06-28T06:58:04Z"
+lastCommitAt: "2026-06-28T07:31:37Z"
 lastReleaseAt: "2026-06-27T08:57:47Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 90
 undervaluedScore: 35
 maintainers: ["xixihhhh"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a0c396fa0204beb6c6c37e03423636b6ff039206ffec715e66c5502f479d2df6/xixihhhh/clipforge"
+openGraphImageUrl: "https://opengraph.githubassets.com/9215298ebc4af87fae436ae66ee67f2696d567cb2ca72e952244c60d7c0a383d/xixihhhh/clipforge"
 discussionCount: 0
 ---
 

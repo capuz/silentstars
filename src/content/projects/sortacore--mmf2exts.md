@@ -15,13 +15,13 @@ watchers: 11
 contributors: 15
 recentReleases: 0
 createdAt: "2012-06-04T13:35:21Z"
-lastCommitAt: "2026-06-28T06:55:35Z"
+lastCommitAt: "2026-06-28T07:08:15Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
-healthScore: 86
-undervaluedScore: 54
-maintainers: ["SortaCore", "nasiratif", "MCorbo7"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6f9019dda3b97bc72c143f26f87dd70c795bdee7029fc8d999b1b848f5b41db2/SortaCore/MMF2Exts"
+healthScore: 89
+undervaluedScore: 55
+maintainers: ["SortaCore", "nasiratif", "kapi1525"]
+openGraphImageUrl: "https://opengraph.githubassets.com/f41795c11d9642821a0ef0fd2715b730960b3ae57b268eb6f42362662e49e6d1/SortaCore/MMF2Exts"
 ---
 
 MMF2/CF2.5 Open Source Extension Repository
