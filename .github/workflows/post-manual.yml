@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       project_repo:
-        description: "Repo a destacar — owner/repo (ej: Shik3i/KoalaSync). Vacío = pick diario"
+        description: "Repo a destacar — owner/repo (ej: opn-build/openalive). Vacío = pick diario"
         type: string
         default: ''
       post_to_x:
