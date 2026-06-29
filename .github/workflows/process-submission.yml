@@ -8,6 +8,8 @@ permissions:
   issues: write
   contents: write
   actions: write
+  pages: write
+  id-token: write
 
 jobs:
   # ─────────────────────────────────────────────────────────────
