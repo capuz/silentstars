@@ -11,15 +11,15 @@ forks: 7
 openIssues: 1
 closedIssues: 56
 watchers: 3
-contributors: 10
+contributors: 11
 recentReleases: 0
 createdAt: "2022-02-08T14:15:47Z"
-lastCommitAt: "2026-06-26T06:37:18Z"
+lastCommitAt: "2026-06-29T06:18:27Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 84
-undervaluedScore: 79
+healthScore: 85
+undervaluedScore: 80
 maintainers: ["ddbrown30", "SalieriC"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]

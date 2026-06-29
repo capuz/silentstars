@@ -6,7 +6,7 @@ url: "https://github.com/sricola/drydock"
 homepage: "https://sricola.github.io/drydock/"
 language: "Go"
 languages: ["Go"]
-languagePcts: [90]
+languagePcts: [86]
 topics: ["ai-agents", "anthropic", "apple-silicon", "claude", "coding-agent", "containers", "credential-management", "golang", "isolation", "macos"]
 stars: 6
 forks: 0
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-15T21:04:55Z"
-lastCommitAt: "2026-06-27T18:21:07Z"
+lastCommitAt: "2026-06-29T03:38:08Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 58
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3edec359ca380972c9c84a2d81a0baddcc39e594bdc9faf6bee600c132ec8b10/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/b9efcd3754184765380bf97359caaee8ee8d9c1cab872bfa48c5e7dd6646fdb2/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
@@ -36,8 +36,8 @@ postedAt: "2026-06-21T00:00:54.805Z"
 
 </p>
 
-drydock runs **Claude Code** or **OpenAI Codex** full-throttle on your own
-repos, on your own Mac — no permission prompts, no babysitting. Each task runs
+drydock runs **Claude Code**, **OpenAI Codex**, or **any OpenAI-compatible model**
+(Gemini, OpenRouter, local) full-throttle on your own repos, on your own Mac — no permission prompts, no babysitting. Each task runs
 sealed in a throwaway VM, so the agent **can't touch your API key, can't reach
 the open internet, and can't write to anything but a disposable copy**. The only
 thing that ever comes back is a `git diff` — and nothing reaches your real code
@@ -53,5 +53,4 @@ until you approve it.
 
 Most agent tooling tries to keep the agent *well-behaved* — permission
 prompts, output filters, policy. drydock takes the opposite stance: **contain
-the blast radius** so a hostile agent (a poisoned repo, a malicious
-dependency,…
+the blast…
