@@ -10,6 +10,7 @@ permissions:
   actions: write
   pages: write
   id-token: write
+  models: read
 
 jobs:
   # ─────────────────────────────────────────────────────────────
@@ -66,6 +67,7 @@ jobs:
 
       - name: AI opinion on submitted project
         if: always() && steps.validate.outputs.repo != ''
+        continue-on-error: true
         env:
           GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
           SUBMISSION_REPO:  ${{ steps.validate.outputs.repo }}
