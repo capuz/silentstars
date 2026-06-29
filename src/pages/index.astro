@@ -181,6 +181,11 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     </section>
   )}
 
+  <div class="submit-nudge container">
+    <span class="nudge-text">Know a project that belongs here?</span>
+    <a href={`${base}submit/`} class="nudge-link">Submit it →</a>
+  </div>
+
   {shipping.length > 0 && (
     <section class="section container">
       <div class="section-header">
@@ -347,7 +352,10 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
 
   <section class="section container cta-section">
     <p class="cta-text">→ see all {visible.length} projects in the directory</p>
-    <a href={`${base}projects/`} class="btn-primary">Open directory</a>
+    <div class="cta-actions">
+      <a href={`${base}projects/`} class="btn btn-primary">Open directory</a>
+      <a href={`${base}submit/`} class="btn btn-ghost">Submit a project →</a>
+    </div>
   </section>
 </Base>
 
@@ -564,4 +572,35 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     color: var(--text-muted);
     letter-spacing: 0.02em;
   }
+  .cta-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* Submit nudge */
+  .submit-nudge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+    margin-bottom: 0.5rem;
+  }
+  .nudge-text {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+  .nudge-link {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.03em;
+    transition: opacity .15s;
+  }
+  .nudge-link:hover { opacity: .7; text-decoration: none; }
 </style>
