@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/posted.json
           git diff --cached --quiet || git commit -m "chore: record bsky post [skip ci]"
+          git pull --rebase origin main
           git push
