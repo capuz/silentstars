@@ -58,12 +58,12 @@ async function fetchReadme(): Promise<string> {
 async function getAIOpinion(name: string, description: string, language: string, readme: string): Promise<string> {
   const prompt = `You are a curator for SilentStars, a site that highlights undervalued open-source projects ("alive but invisible" — good work with little reach).
 
-Analyze this project and write 2-3 sentences assessing:
-- Is the README clear about what the project does?
-- Does it feel genuinely undervalued (good quality, low visibility)?
-- What makes it interesting or worth featuring?
+Write exactly 3 short sentences. Max 20 words each. No corporate language. Be direct.
+Sentence 1: What the project does (one crisp sentence).
+Sentence 2: Why it feels undervalued or interesting.
+Sentence 3: One specific detail that stands out.
 
-Be direct and specific. Do not mention star counts or metrics — focus on qualitative aspects only.
+Do not mention star counts or metrics. Focus on qualitative aspects only.
 
 Project: ${name}
 Description: ${description || '(none)'}
@@ -128,7 +128,8 @@ async function main() {
     return;
   }
 
-  const comment = `🤖 **AI take:** ${opinion}`;
+  const formatted = opinion.split(/(?<=[.!?])\s+/).join('\n\n');
+  const comment = `🤖 **AI take:**\n\n${formatted}`;
   console.log(`Posting comment:\n${comment}`);
   await postComment(comment);
   console.log('Done.');
