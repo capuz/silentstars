@@ -35,7 +35,7 @@ const base = import.meta.env.BASE_URL;
         {revived.map(p => (
           <li class="revival-item">
             <div class="revival-header">
-              <a href={`${base}projects/${p.slug}`} class="revival-name">
+              <a href={`${base}projects/${p.slug}/`} class="revival-name">
                 {p.data.name}
               </a>
               <StatusBadge status="revived" />
