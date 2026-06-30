@@ -9,17 +9,17 @@ languagePcts: [100]
 topics: ["dashboard", "fixtures", "football", "hacs", "home-assistant", "lovelace", "predictions", "soccer", "sports", "standings"]
 stars: 94
 forks: 11
-openIssues: 1
+openIssues: 4
 closedIssues: 83
 watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-02T23:13:35Z"
-lastCommitAt: "2026-06-29T06:31:18Z"
+lastCommitAt: "2026-06-30T05:56:43Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 38
 maintainers: ["Adya84"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/ac39ada8-69a8-45c0-b58f-c2a400f4a4e0"

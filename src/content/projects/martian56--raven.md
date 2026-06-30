@@ -14,14 +14,14 @@ openIssues: 3
 closedIssues: 385
 watchers: 2
 contributors: 2
-recentReleases: 2
+recentReleases: 0
 createdAt: "2025-04-12T08:49:07Z"
 lastCommitAt: "2026-06-28T18:06:11Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
-undervaluedScore: 70
+healthScore: 99
+undervaluedScore: 66
 maintainers: ["martian56"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5071571177ccac8b603f6848423761293bb6a5299b7aaf85a7ec253ddc083806/martian56/raven"
 discussionCount: 1
