@@ -11,16 +11,16 @@ forks: 7
 openIssues: 1
 closedIssues: 56
 watchers: 3
-contributors: 11
+contributors: 12
 recentReleases: 0
 createdAt: "2022-02-08T14:15:47Z"
-lastCommitAt: "2026-06-29T06:18:27Z"
+lastCommitAt: "2026-06-30T16:21:22Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 85
+healthScore: 86
 undervaluedScore: 80
-maintainers: ["ddbrown30", "SalieriC"]
+maintainers: ["ddbrown30", "SalieriC", "SantosSi"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]
 postedAt: "2026-06-25T02:12:49.344Z"
