@@ -10,20 +10,20 @@ languagePcts: [87]
 topics: ["6800", "8bit", "mc6800", "motorola", "c", "compiler"]
 stars: 10
 forks: 2
-openIssues: 5
-closedIssues: 47
+openIssues: 6
+closedIssues: 48
 watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-06-30T19:41:13Z"
+lastCommitAt: "2026-07-01T08:06:59Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 95
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0d7a5d435c38fbf68aa1feec31e05f9e8ee41d07faebd66aa93942b0d3659e58/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/ce32980c487ece69f97cab07c86184f2b245ea22aeea5534910660ac5276b3d7/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 

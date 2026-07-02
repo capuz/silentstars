@@ -15,17 +15,19 @@ watchers: 3
 contributors: 16
 recentReleases: 4
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-01T03:39:17Z"
+lastCommitAt: "2026-07-02T06:30:21Z"
 lastReleaseAt: "2026-06-05T11:57:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 81
 undervaluedScore: 79
-maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/25234055202c34f207ffaaa1faaf08f9c273cd42b412ee1bf28b1920b2cab24b/UKNCSP/CDDS-CMIP7-mappings"
+maintainers: ["matthew-mizielinski"]
+openGraphImageUrl: "https://opengraph.githubassets.com/e17e6f5142ca5f4057cbbbbdfb962556b355bacc250c89314f220286b8cf48c7/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---
+
+**WARNING: MAINTENANCE WORK IN PROGRESS**
 
 # UKNCSP CDDS-CMIP7-mappings 
 
@@ -37,4 +39,4 @@ postedAt: "2026-06-28T07:04:35.686Z"
 
 **UPDATE 24/11/25: Some changes were missed in last weeks update. I've now fixed this and confirmed consistency with the data request**
 
-**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data request, but this is expected to be far smaller in scope.…
+**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data request, but this is…
