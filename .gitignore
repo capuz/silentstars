@@ -17,7 +17,6 @@ data/*
 !data/latest.json
 !data/posted.json
 !data/promoted.json
-!data/seed.txt
 
 # agent skills
 .agents/
