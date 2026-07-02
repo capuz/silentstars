@@ -257,21 +257,24 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/posted.json
           git diff --cached --quiet || git commit -m "chore: record bsky post [skip ci]"
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            git push && break
+            sleep $((RANDOM % 5 + 1))
+          done
 
   # ─────────────────────────────────────────────────────────────
   # Job 4: Post daily highlight to X.com
-  # Runs after Bluesky post to avoid git conflict on posted.json
+  # Runs in parallel with the Bluesky post job — independent and optional (relies on X API credits)
   # Requires secrets: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
   # ─────────────────────────────────────────────────────────────
   post-x:
     name: Post to X.com
     runs-on: ubuntu-latest
-    needs: [post]
-    if: always() && (needs.post.result == 'success' || needs.post.result == 'skipped') && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post_x != 'true'
+    needs: [deploy]
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post_x != 'true'
     continue-on-error: true
     outputs:
       x_post_url: ${{ steps.post_x.outputs.x_post_url }}
@@ -324,7 +327,10 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add data/posted.json
           git diff --cached --quiet || git commit -m "chore: record x post [skip ci]"
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            git push && break
+            sleep $((RANDOM % 5 + 1))
+          done

@@ -1,5 +1,50 @@
 [
   {
+    "repo": "AlexWaygood/typeshed-stats",
+    "slug": "alexwaygood--typeshed-stats",
+    "postedAt": "2026-07-01T07:12:26.962Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpkxoz24x22j",
+        "postedAt": "2026-07-01T07:12:26.962Z"
+      },
+      "x": {
+        "url": "https://x.com/silentstars_dev/status/2072492009525518598",
+        "postedAt": "2026-07-01T07:12:26.962Z"
+      }
+    }
+  },
+  {
+    "repo": "JSONbored/metagraphed",
+    "slug": "jsonbored--metagraphed",
+    "postedAt": "2026-06-30T06:57:31.003Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpigff6lqv2g",
+        "postedAt": "2026-06-30T06:57:31.003Z"
+      },
+      "x": {
+        "url": "https://x.com/silentstars_dev/status/2071959780512485567",
+        "postedAt": "2026-06-30T06:57:31.003Z"
+      }
+    }
+  },
+  {
+    "repo": "PlaceOS/drivers",
+    "slug": "placeos--drivers",
+    "postedAt": "2026-06-29T07:29:31.581Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpfxppaq4f24",
+        "postedAt": "2026-06-29T07:29:31.581Z"
+      },
+      "x": {
+        "url": "https://x.com/silentstars_dev/status/2071608880186957848",
+        "postedAt": "2026-06-29T07:29:31.581Z"
+      }
+    }
+  },
+  {
     "repo": "ukncsp/cdds-cmip7-mappings",
     "slug": "ukncsp--cdds-cmip7-mappings",
     "postedAt": "2026-06-28T07:04:35.686Z",
