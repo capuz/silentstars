@@ -1,8 +1,8 @@
 /**
  * collect.ts — SilentStars nightly data collector
  *
- * Reads data/seed.txt (owner/repo per line), queries GitHub GraphQL API,
- * computes vitality metrics, writes data/latest.json and
+ * Reads data/promoted.json (owner/repo + optional expiry), queries GitHub
+ * GraphQL API, computes vitality metrics, writes data/latest.json and
  * src/content/projects/*.md (one file per project).
  *
  * Run:  npm run collect
@@ -506,31 +506,22 @@ async function main() {
     process.exit(1);
   }
 
-  const seedPath = resolve(ROOT, 'data/seed.txt');
-  if (!existsSync(seedPath)) {
-    console.error('❌  data/seed.txt not found.');
+  // Load promoted.json — repos to always track, permanent (until: null) or
+  // temporarily boosted (until: <date>, from accepted submissions).
+  const promotedPath = resolve(ROOT, 'data/promoted.json');
+  if (!existsSync(promotedPath)) {
+    console.error('❌  data/promoted.json not found.');
     process.exit(1);
   }
-  const seedRepos = readFileSync(seedPath, 'utf8')
-    .split('\n')
-    .map(l => l.trim())
-    .filter(l => l && !l.startsWith('#'));
-  const seedSet = new Set(seedRepos.map(r => r.toLowerCase()));
-
-  // Load promoted.json (user-submitted projects with optional expiry date)
-  const promotedPath = resolve(ROOT, 'data/promoted.json');
-  let promotedRepos: string[] = [];
-  if (existsSync(promotedPath)) {
-    const allPromoted = JSON.parse(readFileSync(promotedPath, 'utf8')) as Array<{ repo: string; until: string | null }>;
-    const nowDate = new Date();
-    const activePromoted = allPromoted.filter(p => !p.until || new Date(p.until) > nowDate);
-    // Write back without expired entries
-    if (activePromoted.length < allPromoted.length) {
-      writeFileSync(promotedPath, JSON.stringify(activePromoted, null, 2));
-      console.log(`🗑  Removed ${allPromoted.length - activePromoted.length} expired promoted repo(s)`);
-    }
-    promotedRepos = activePromoted.map(p => p.repo).filter(r => !seedSet.has(r.toLowerCase()));
+  const allPromoted = JSON.parse(readFileSync(promotedPath, 'utf8')) as Array<{ repo: string; until: string | null }>;
+  const nowDate = new Date();
+  const activePromoted = allPromoted.filter(p => !p.until || new Date(p.until) > nowDate);
+  // Write back without expired entries
+  if (activePromoted.length < allPromoted.length) {
+    writeFileSync(promotedPath, JSON.stringify(activePromoted, null, 2));
+    console.log(`🗑  Removed ${allPromoted.length - activePromoted.length} expired promoted repo(s)`);
   }
+  const promotedRepos = activePromoted.map(p => p.repo);
   const promotedSet = new Set(promotedRepos.map(r => r.toLowerCase()));
 
   const postedPath = resolve(ROOT, 'data/posted.json');
@@ -555,21 +546,19 @@ async function main() {
 
   const postedRepos = postedEntries
     .map(e => e.repo)
-    .filter(r => !seedSet.has(r.toLowerCase()) && !promotedSet.has(r.toLowerCase()));
+    .filter(r => !promotedSet.has(r.toLowerCase()));
   const postedReposSet = new Set(postedRepos.map(r => r.toLowerCase()));
 
   const repos = [
-    ...seedRepos,
     ...promotedRepos,
     ...postedRepos,
     ...discoveredCandidates.filter(r =>
-      !seedSet.has(r.toLowerCase()) &&
       !promotedSet.has(r.toLowerCase()) &&
       !postedReposSet.has(r.toLowerCase())
     ),
   ];
 
-  console.log(`📋  ${seedRepos.length} seed + ${promotedRepos.length} promoted + ${postedRepos.length} posted + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
+  console.log(`📋  ${promotedRepos.length} promoted + ${postedRepos.length} posted + ${discoveredCandidates.length} discovered → ${repos.length} total (after dedup)`);
 
   const latestPath = resolve(ROOT, 'data/latest.json');
   const previous: LatestJson | null = existsSync(latestPath)
@@ -703,9 +692,9 @@ async function main() {
 
       results.push(data);
 
-      const isFromSeed = seedSet.has(repoStr.toLowerCase()) || promotedSet.has(repoStr.toLowerCase());
-      const isPosted   = postedRepoSet.has(repoStr.toLowerCase());
-      if (!isFromSeed && !isPosted && healthScore < healthThreshold) {
+      const isPromoted = promotedSet.has(repoStr.toLowerCase());
+      const isPosted    = postedRepoSet.has(repoStr.toLowerCase());
+      if (!isPromoted && !isPosted && healthScore < healthThreshold) {
         console.log(`    skip (healthScore ${healthScore} < ${healthThreshold}, discovered)`);
         continue;
       }

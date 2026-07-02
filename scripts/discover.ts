@@ -127,17 +127,17 @@ async function main() {
   const pushedAfter     = toDate(config.pushedWithinDays);       // 90d ago
   const pushedAfterDeep = toDate(config.pushedWithinDays * 2);   // 180d ago
 
-  // Build known-repos Set from seed.txt + previous discovered.json
+  // Build known-repos Set from promoted.json (active entries) + previous discovered.json
   // This prevents adding repos we already track
   const knownRepos = new Set<string>();
 
-  const seedPath = resolve(ROOT, 'data/seed.txt');
-  if (existsSync(seedPath)) {
-    readFileSync(seedPath, 'utf8')
-      .split('\n')
-      .map(l => l.trim().toLowerCase())
-      .filter(l => l && !l.startsWith('#'))
-      .forEach(r => knownRepos.add(r));
+  const promotedPath = resolve(ROOT, 'data/promoted.json');
+  if (existsSync(promotedPath)) {
+    const allPromoted = JSON.parse(readFileSync(promotedPath, 'utf8')) as Array<{ repo: string; until: string | null }>;
+    const now = new Date();
+    allPromoted
+      .filter(p => !p.until || new Date(p.until) > now)
+      .forEach(p => knownRepos.add(p.repo.toLowerCase()));
   }
 
   const discoveredPath = resolve(ROOT, 'data/discovered.json');

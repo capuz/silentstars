@@ -76,14 +76,6 @@ function repoToSlug(repo: string): string {
 // Duplicate checks (reads local data files)
 // ──────────────────────────────────────────────────────────────────────────────
 
-function isInSeedTxt(repo: string): boolean {
-  const p = resolve(ROOT, 'data', 'seed.txt');
-  if (!existsSync(p)) return false;
-  return readFileSync(p, 'utf8')
-    .split('\n')
-    .some(l => l.trim().toLowerCase() === repo.toLowerCase());
-}
-
 function isInPromotedJson(repo: string): boolean {
   const p = resolve(ROOT, 'data', 'promoted.json');
   if (!existsSync(p)) return false;
@@ -343,7 +335,7 @@ async function main() {
     return handleAlreadyListed(repo, slug, repo.split('/')[1] ?? repo, email, baseUrl);
   }
 
-  if (isInSeedTxt(repo) || isInPromotedJson(repo)) {
+  if (isInPromotedJson(repo)) {
     return handleAlreadySeeded(repo, slug);
   }
 
