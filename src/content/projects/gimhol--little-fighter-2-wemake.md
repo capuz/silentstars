@@ -16,15 +16,16 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-25T04:40:13Z"
-lastCommitAt: "2026-07-03T12:22:41Z"
+lastCommitAt: "2026-07-03T12:30:31Z"
 lastReleaseAt: "2026-01-31T06:12:59Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 100
 undervaluedScore: 74
 maintainers: ["gimhol"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4a465c10705b6f4b433a91c3936928038cbaf682c38540aa548c31a8ac718ee8/gimhol/little-fighter-2-WEMAKE"
+openGraphImageUrl: "https://opengraph.githubassets.com/093ec97e3654c95f9f052e4ce4f365a95b97d4083b4d09a687000b9d566468ec/gimhol/little-fighter-2-WEMAKE"
 discussionCount: 3
+postedAt: "2026-07-03T12:28:26.382Z"
 ---
 
 play at https://lf.gim.ink/

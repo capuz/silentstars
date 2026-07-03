@@ -1,0 +1,95 @@
+---
+repo: "ritogk/speedio"
+name: "speedio"
+description: "オープンデータからイニシャルDっぽい峠道を抽出するスクリプト"
+url: "https://github.com/ritogk/speedio"
+homepage: "https://zenn.dev/homing/articles/a1f4c292a469b8"
+language: "Python"
+languages: ["Python", "JavaScript"]
+languagePcts: [35, 25]
+topics: ["osm", "pytyhon"]
+stars: 6
+forks: 0
+openIssues: 0
+closedIssues: 0
+watchers: 1
+contributors: 4
+recentReleases: 0
+createdAt: "2023-06-30T06:25:22Z"
+lastCommitAt: "2026-07-03T12:40:49Z"
+status: "thriving"
+tags: ["solo_builder"]
+healthScore: 80
+undervaluedScore: 73
+maintainers: []
+openGraphImageUrl: "https://opengraph.githubassets.com/bfb51c48c9837db8da4eadc0c66f8cf21132dd013ac9110852f07a0c27318e54/ritogk/speedio"
+---
+
+# speedio
+
+峠道を抽出するスクリプト
+
+## 抽出したワインディング
+
+## directory
+
+```
+pipeline/   # 峠抽出パイプライン (run.py, analyzer, centerline, postprocess)
+product/    # Webアプリ (app, lp)
+infra/      # CDK (S3 + CloudFront)
+data/       # 生成データ置き場 (gitignore)
+tools/      # viewer(開発用ビュワー), rcc(道幅目視チェック), video_work
+```
+
+## app setup
+
+```
+cd pipeline
+cp .base.env .env
+conda env create -f environment.yml
+```
+
+## conda run
+
+```
+conda activate touge-searcher
+```
+
+## data setup
+
+```
+# 1. 基盤地図情報DLページから全国のdem10DL(gml)をDLする。
+# 2. gmlはjpd2000とjpd2011が混じってる状態なのでスクリプトで仕分ける
+```
+
+grep -rl '<gml:Envelope srsName="fguuid:jgd2011.bl">' . | xargs -I {} mv {} ./jgd2011
+grep -rl '<gml:Envelope srsName="fguuid:jgd2000.bl">' . | xargs -I {} mv {} ./jgd2000
+
+```
+# 3. 株式会社エコリスのソフトで全国のtifに変換する。
+# 4. tifをepsg:4326に変換
+```
+
+python3 convert_tif_epsg_4326.py
+
+```
+# 5. tifをマージ
+```
+
+python3 merge_tif.py
+
+```
+# 6. elevation.tifにリネームして data/ におく
+```
+
+## run
+```
+cd pipeline
+python3 run.py
+```
+
+## conda env update
+
+```
+conda env export -n touge-searcher > environment.yml
+```
