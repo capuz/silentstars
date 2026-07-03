@@ -9,7 +9,7 @@ languages: ["JavaScript"]
 languagePcts: [95]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
 stars: 9
-forks: 53
+forks: 54
 openIssues: 130
 closedIssues: 606
 watchers: 0

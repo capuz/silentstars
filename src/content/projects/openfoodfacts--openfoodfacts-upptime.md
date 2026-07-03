@@ -24,6 +24,7 @@ undervaluedScore: 79
 maintainers: ["upptime-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/659325d999f4ca98ccae4a3b82214d4b8a68c2dd10443a20ee541374901826ee/openfoodfacts/openfoodfacts-upptime"
 fundingLinks: ["GITHUB:https://github.com/openfoodfacts", "OPEN_COLLECTIVE:https://opencollective.com/openfoodfacts-server", "CUSTOM:https://donate.openfoodfacts.org"]
+postedAt: "2026-07-03T12:38:00.517Z"
 ---
 
 # [📈 Live Status](https://status.openfoodfacts.org/):  **🟧 Partial outage**
