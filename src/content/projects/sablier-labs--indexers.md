@@ -20,7 +20,7 @@ lastCommitAt: "2026-07-03T00:25:46Z"
 lastReleaseAt: "2026-04-16T14:12:34Z"
 status: "thriving"
 tags: ["community_hub"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 80
 maintainers: ["github-actions[bot]", "PaulRBerg"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/581801142/00017717-05a6-4534-9660-06e5d3422c1b"
@@ -28,7 +28,7 @@ discussionCount: 28
 postedAt: "2026-06-24T00:29:57.102Z"
 ---
 
-# Sablier Indexers [![GitHub Actions][gha-badge]][gha] [![Discord][discord-badge]][discord] [![X][x-badge]][x]
+# Sablier Indexers [][gha] [][discord] [][x]
 
 [gha]: https://github.com/sablier-labs/indexers/actions
 [gha-badge]: https://github.com/sablier-labs/indexers/actions/workflows/ci.yml/badge.svg
@@ -49,4 +49,6 @@ preferred hosted provider; The Graph subgraphs remain available for multi-vendor
 - [Airdrops indexer docs](https://docs.sablier.com/api/airdrops/indexers)
 - [Flow indexer docs](https://docs.sablier.com/api/flow/indexers)
 - [Lockup indexer docs](https://docs.sablier.com/api/lockup/indexers)
-- [Package on…
+- [Package on npm](https://www.npmjs.com/package/@sablier/indexers)
+- [Changelog](CHANGELOG.md)
+-…
