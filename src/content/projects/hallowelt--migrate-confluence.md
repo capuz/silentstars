@@ -38,24 +38,14 @@ This is a command line tool to convert the contents of a Confluence space into a
 
 Step 1:
 
-<kbd>![Export 1][c001]</kbd>
-
 Step 2:
 
-<kbd>![Export 2][c002]</kbd>
-
 Step 3:
-
-<kbd>![Export 3][c003]</kbd>
 
 2. Save it to a location that is accessbile by this tool (e.g. `/tmp/confluence/input/Confluence-export.zip`)
 3. Create the input directory (e.g. `/tmp/confluence/input`)
 4. Extract the ZIP file (e.g. `/tmp/confluence/input/Confluence-export`)
 	1. The folder should contain the files `entities.xml` and `exportDescriptor.properties`, as well as the folder `attachments`
-
-[c001]: doc/images/Confluence_export_space_001.png
-[c002]: doc/images/Confluence_export_space_002.png
-[c003]: doc/images/Confluence_export_space_003.png
 
 ### Migrate the contents
 1. Create the "workspace" directory (e.g.…
