@@ -4,7 +4,7 @@ import { join } from 'path';
 import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
-  loadPosted, savePosted, recordPost,
+  loadPosted, savePosted, recordPost, fetchOgImage,
   loadCommunityTags, seededIndex, truncate,
 } from './post-shared.ts';
 
@@ -89,9 +89,7 @@ async function main(): Promise<void> {
 
   const slug     = project.repo.toLowerCase().replace('/', '--');
   const ogUrl    = `${baseUrl}/og/${slug}.png`;
-  const ogRes    = await fetch(ogUrl);
-  if (!ogRes.ok) throw new Error(`Failed to fetch OG image: ${ogUrl} (${ogRes.status})`);
-  const ogBuf    = Buffer.from(await ogRes.arrayBuffer());
+  const ogBuf    = await fetchOgImage(ogUrl);
   const mediaId  = await client.v1.uploadMedia(ogBuf, { mimeType: EUploadMimeType.Png });
 
   const { data: tweet } = await client.v2.tweet({ text, media: { media_ids: [mediaId] } });
