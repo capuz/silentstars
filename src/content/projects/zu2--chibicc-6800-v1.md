@@ -10,20 +10,20 @@ languagePcts: [87]
 topics: ["6800", "8bit", "mc6800", "motorola", "c", "compiler"]
 stars: 10
 forks: 2
-openIssues: 6
-closedIssues: 48
+openIssues: 5
+closedIssues: 50
 watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-07-01T08:06:59Z"
+lastCommitAt: "2026-07-02T22:11:33Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ce32980c487ece69f97cab07c86184f2b245ea22aeea5534910660ac5276b3d7/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/5f0524ad4b84bf3107b44c500bbd2c9aba924296b7e8db7ff67f31673f307bdb/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 
@@ -47,5 +47,4 @@ Dhrystone and Whetstone benchmarks now run successfully on the MC6800.
 # Topics
 
 - **Data types:** `int` and pointers are 16-bit; `long` and `float` are 32-bit. `double` and `long long` (64-bit or more) are unsupported.
-- **Structs/unions:** Passing/returning by value and bit fields are implemented.
--…
+- **Structs/unions:** Passing/returning by value are implemented. but this increases…
