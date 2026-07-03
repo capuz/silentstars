@@ -715,7 +715,8 @@ async function main() {
           .filter(l => !/^\s*\[!\[/.test(l))          // strip badge lines
           .filter(l => !/^\s*<(img|a |div|p |span)/.test(l)) // strip HTML tags
           .join('\n')
-          .replace(/!\[[^\]]*\]\([^)]*\)/g, '')                 // strip all markdown images (malformed URIs break Vite/rehype)
+          .replace(/!\[[^\]]*\]\([^)]*\)/g, '')                 // strip inline markdown images (malformed URIs break Vite/rehype)
+          .replace(/!\[[^\]]*\]\[[^\]]*\]/g, '')                // strip reference-style markdown images (same reason)
           .replace(/<!--[\s\S]*?-->/g, '')             // strip HTML comments
           .replace(/\n{3,}/g, '\n\n')                  // collapse blank lines
           .trim();
