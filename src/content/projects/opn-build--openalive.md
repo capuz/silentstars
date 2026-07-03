@@ -6,7 +6,7 @@ url: "https://github.com/opn-build/OpenAlive"
 homepage: "https://opn-build.github.io/"
 language: "Go"
 languages: ["Go"]
-languagePcts: [93]
+languagePcts: [92]
 topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "productivity", "system-tray", "windows"]
 stars: 2
 forks: 0
@@ -14,16 +14,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 4
+recentReleases: 5
 createdAt: "2026-05-30T02:07:49Z"
-lastCommitAt: "2026-06-29T01:38:12Z"
-lastReleaseAt: "2026-06-29T01:38:33Z"
+lastCommitAt: "2026-07-02T23:24:36Z"
+lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "newborn"
-tags: ["solo_builder", "hidden_gem"]
-healthScore: 77
-undervaluedScore: 47
+tags: ["solo_builder", "hidden_gem", "release_machine"]
+healthScore: 78
+undervaluedScore: 49
 maintainers: ["capuz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2bb9eb6852d9d6e2a3983c8d4f681c5ab5b9d5d691f7d48ff71ae5b87be12716/opn-build/OpenAlive"
+openGraphImageUrl: "https://opengraph.githubassets.com/e09bb16e465a66393ff52fd53f5e1288cddb1fd93037f706284383240c033984/opn-build/OpenAlive"
 promoted: true
 postedAt: "2026-06-25T22:59:39.704Z"
 ---

@@ -7,23 +7,23 @@ homepage: "https://raven.ufazien.com"
 language: "Rust"
 languages: ["Rust"]
 languagePcts: [97]
-topics: ["new-programming-language", "programming-language"]
+topics: ["new-programming-language", "programming-language", "compiler"]
 stars: 35
 forks: 17
-openIssues: 12
-closedIssues: 385
+openIssues: 3
+closedIssues: 401
 watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2025-04-12T08:49:07Z"
-lastCommitAt: "2026-06-28T18:06:11Z"
+lastCommitAt: "2026-07-03T06:13:29Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "under_pressure"]
-healthScore: 98
-undervaluedScore: 65
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 100
+undervaluedScore: 66
 maintainers: ["martian56"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5071571177ccac8b603f6848423761293bb6a5299b7aaf85a7ec253ddc083806/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/5c65fdb2156a8d53f042c14487acff1a99ff5e8a957a7d5b07b57eb8cc2e480a/martian56/raven"
 discussionCount: 1
 postedAt: "2026-06-25T06:46:44.859Z"
 ---

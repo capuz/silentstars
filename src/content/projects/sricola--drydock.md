@@ -6,7 +6,7 @@ url: "https://github.com/sricola/drydock"
 homepage: "https://sricola.github.io/drydock/"
 language: "Go"
 languages: ["Go"]
-languagePcts: [86]
+languagePcts: [87]
 topics: ["ai-agents", "anthropic", "apple-silicon", "claude", "coding-agent", "containers", "credential-management", "golang", "isolation", "macos"]
 stars: 6
 forks: 0
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-15T21:04:55Z"
-lastCommitAt: "2026-07-02T00:26:43Z"
+lastCommitAt: "2026-07-03T00:02:00Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 58
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0be34bad88bbcd39a93259608ba22a5293bf511bb2851414e3ab9a5e599467a8/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/c7cf97d6b77c572a7fe2d8e7b68a0f4055cfef07de878f90ad4c8c7dbdc348f8/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
