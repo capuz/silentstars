@@ -29,6 +29,19 @@ export interface LatestData {
 
 export const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
 
+// Right after a GitHub Pages deploy, a just-published asset can 404 for a few
+// seconds while the CDN edge catches up — retry before giving up.
+export async function fetchOgImage(url: string): Promise<Buffer> {
+  const attempts = 5;
+  for (let i = 1; i <= attempts; i++) {
+    const res = await fetch(url);
+    if (res.ok) return Buffer.from(await res.arrayBuffer());
+    if (i === attempts) throw new Error(`Failed to fetch OG image: ${url} (${res.status})`);
+    await new Promise(r => setTimeout(r, i * 3000));
+  }
+  throw new Error(`Failed to fetch OG image: ${url}`);
+}
+
 export function loadPosted(): PostedEntry[] {
   return existsSync(POSTED_PATH) ? JSON.parse(readFileSync(POSTED_PATH, 'utf8')) : [];
 }
