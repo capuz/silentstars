@@ -17,14 +17,14 @@ watchers: 0
 contributors: 51
 recentReleases: 10
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-07-04T22:18:21Z"
+lastCommitAt: "2026-07-04T22:46:00Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "newborn"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine", "fork_magnet"]
 healthScore: 97
 undervaluedScore: 76
-maintainers: ["glorydavid03023", "luciferlive112116", "dhgoal"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6982089326420dbb5a89dbd9459fc8a901cc1f536757769574ff5daf041abc47/JSONbored/metagraphed"
+maintainers: ["glorydavid03023", "dhgoal", "luciferlive112116"]
+openGraphImageUrl: "https://opengraph.githubassets.com/bba9165efc0db67b1dab37dcb978d531934e4995a2e1cff2f2f8224c9bc97ec7/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
 discussionCount: 0
 postedAt: "2026-06-30T06:57:31.003Z"
