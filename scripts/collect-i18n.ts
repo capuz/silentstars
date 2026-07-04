@@ -53,7 +53,7 @@ fences, no commentary, in this exact shape:
 {"lang":"<ISO 639-1 code of the ORIGINAL text>","description":"<English translation>","body":"<English translation>"}
 
 Rules:
-- Preserve technical terms, proper nouns, code identifiers, and inline code exactly as written.
+- Preserve technical terms, proper nouns, code identifiers, inline code, and full URLs (including markdown link targets) exactly as written.
 - If a field is already in English, return it unchanged and still report the detected lang.
 - If a field is empty, return it as an empty string.
 

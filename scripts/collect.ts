@@ -519,6 +519,18 @@ function stripReadmeNoise(rawReadmeText: string): string {
     .trim();
 }
 
+/** Rewrite relative markdown links to point at the source repo on GitHub instead of
+ *  this site's domain (README links to docs/other files 404 otherwise). */
+function rewriteRelativeLinks(markdown: string, repoUrl: string): string {
+  return markdown.replace(
+    /\[([^\]]+)\]\((?!https?:\/\/|mailto:|tel:|#)([^)\s]+)(\s+"[^"]*")?\)/g,
+    (_match, text, path, title = '') => {
+      const cleanPath = path.replace(/^\.?\//, '');
+      return `[${text}](${repoUrl}/blob/HEAD/${cleanPath}${title})`;
+    }
+  );
+}
+
 // ──────────────────────────────────────────────────────────────────────────────
 // Main
 // ──────────────────────────────────────────────────────────────────────────────
@@ -669,7 +681,9 @@ async function main() {
 
       // README quality is judged on the untranslated text, so the gate doesn't depend on
       // whether the translation call below succeeds.
-      const cleanedReadme = raw.readme?.text ? stripReadmeNoise(raw.readme.text) : '';
+      const cleanedReadme = raw.readme?.text
+        ? rewriteRelativeLinks(stripReadmeNoise(raw.readme.text), raw.url)
+        : '';
       const readmeQualityOk = cleanedReadme.length >= README_MIN_PROSE_CHARS;
 
       let description = raw.description ?? '';
