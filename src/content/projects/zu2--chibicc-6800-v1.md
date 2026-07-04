@@ -2,6 +2,7 @@
 repo: "zu2/chibicc-6800-v1"
 name: "chibicc-6800-v1"
 description: "A Small C Compiler for MC6800 (fork from chibicc)"
+readmeQualityOk: true
 url: "https://github.com/zu2/chibicc-6800-v1"
 homepage: "https://www.zukeran.org/shin/d/"
 language: "C"

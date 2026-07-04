@@ -2,6 +2,7 @@
 repo: "EchoTools/nakama"
 name: "nakama"
 description: "Nakama, with EchoVR protocol support"
+readmeQualityOk: true
 url: "https://github.com/EchoTools/nakama"
 language: "Go"
 languages: ["Go"]

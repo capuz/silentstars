@@ -2,6 +2,7 @@
 repo: "axonivy/process-editor"
 name: "process-editor"
 description: "Axon Ivy Process Editor Client"
+readmeQualityOk: true
 url: "https://github.com/axonivy/process-editor"
 language: "TypeScript"
 languages: ["TypeScript"]

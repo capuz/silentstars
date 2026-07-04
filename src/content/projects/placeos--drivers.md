@@ -2,6 +2,7 @@
 repo: "PlaceOS/drivers"
 name: "drivers"
 description: "PlaceOS integrations and automations."
+readmeQualityOk: true
 url: "https://github.com/PlaceOS/drivers"
 homepage: "https://placeos.com"
 language: "Crystal"

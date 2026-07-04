@@ -2,6 +2,7 @@
 repo: "openfoodfacts/openfoodfacts-upptime"
 name: "openfoodfacts-upptime"
 description: "📈 Uptime monitor and status page for Open Food Facts, powered by @upptime"
+readmeQualityOk: true
 url: "https://github.com/openfoodfacts/openfoodfacts-upptime"
 homepage: "https://status.openfoodfacts.org/"
 language: "Markdown"

@@ -2,6 +2,7 @@
 repo: "sablier-labs/indexers"
 name: "indexers"
 description: "EVM data indexers for the Sablier Protocol"
+readmeQualityOk: true
 url: "https://github.com/sablier-labs/indexers"
 homepage: "https://sablier.com"
 language: "TypeScript"

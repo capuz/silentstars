@@ -2,6 +2,7 @@
 repo: "AlexWaygood/typeshed-stats"
 name: "typeshed-stats"
 description: "Library and command-line tool to gather stats on typeshed packages"
+readmeQualityOk: true
 url: "https://github.com/AlexWaygood/typeshed-stats"
 homepage: "https://alexwaygood.github.io/typeshed-stats/"
 language: "Python"

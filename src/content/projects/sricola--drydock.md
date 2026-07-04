@@ -2,6 +2,7 @@
 repo: "sricola/drydock"
 name: "drydock"
 description: "Hardware-isolated sandbox for running coding agents on your repos, on macOS. The agent never sees your real API key; egress is deny-by-default; only a diff you approve leaves the sandbox."
+readmeQualityOk: true
 url: "https://github.com/sricola/drydock"
 homepage: "https://sricola.github.io/drydock/"
 language: "Go"

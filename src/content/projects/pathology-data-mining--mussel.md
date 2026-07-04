@@ -2,6 +2,7 @@
 repo: "pathology-data-mining/Mussel"
 name: "Mussel"
 description: "Computational pathology toolkit: tiling, feature extraction, and annotation for whole-slide images using foundation models"
+readmeQualityOk: true
 url: "https://github.com/pathology-data-mining/Mussel"
 homepage: "https://pypi.org/project/mussel-pathology/"
 language: "Python"

@@ -2,6 +2,7 @@
 repo: "myfriendqaz/LiveTVCollector"
 name: "LiveTVCollector"
 description: "World LiveTV auto m3u collections"
+readmeQualityOk: true
 url: "https://github.com/myfriendqaz/LiveTVCollector"
 language: "Python"
 languages: ["Python"]

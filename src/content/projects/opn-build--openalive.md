@@ -2,6 +2,7 @@
 repo: "opn-build/OpenAlive"
 name: "OpenAlive"
 description: "Prevent Windows from sleeping with silent mouse and keyboard simulation. Lightweight, no-telemetry, 8 languages."
+readmeQualityOk: true
 url: "https://github.com/opn-build/OpenAlive"
 homepage: "https://opn-build.github.io/"
 language: "Go"

@@ -2,6 +2,7 @@
 repo: "corpora-inc/encorpora"
 name: "encorpora"
 description: "Corpora for k-12 and beyond"
+readmeQualityOk: true
 url: "https://github.com/corpora-inc/encorpora"
 language: "TypeScript"
 languages: ["TypeScript"]
@@ -21,6 +22,7 @@ healthScore: 88
 undervaluedScore: 78
 maintainers: ["skyl", "Umanistan"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5bfcdb4f1a272a9042490112a02d976d204b54536e24afd1e0247a397623ea67/corpora-inc/encorpora"
+postedAt: "2026-07-04T19:31:10.093Z"
 ---
 
 # encorpora

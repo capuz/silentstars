@@ -2,6 +2,7 @@
 repo: "EasyData/expired-cn-domains"
 name: "expired-cn-domains"
 description: "Expired CN Domains"
+readmeQualityOk: false
 url: "https://github.com/EasyData/expired-cn-domains"
 homepage: "https://www.cnnic.cn/2/3/55/70/172/index.html"
 topics: ["china", "dns"]
