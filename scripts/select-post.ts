@@ -10,7 +10,7 @@
 
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex } from './post-shared.ts';
+import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex, selectTop20 } from './post-shared.ts';
 
 const platform = process.argv[2] as 'bsky' | 'x' | undefined;
 if (platform !== 'bsky' && platform !== 'x') {
@@ -34,13 +34,13 @@ const alreadyPosted = new Set(
   posted.filter(e => e.platforms[platform]).map(e => e.repo.toLowerCase()),
 );
 
+// Unfiltered by README quality — an explicit PROJECT_SLUG override should still work
+// even if the project wouldn't organically qualify for the daily pick.
 const allActive = data.projects
   .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
   .filter(p => !alreadyPosted.has(p.repo.toLowerCase()));
 
-const top20 = [...allActive]
-  .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
-  .slice(0, 20);
+const top20 = selectTop20(data.projects, posted, platform);
 
 const projectSlug = process.env.PROJECT_SLUG ?? '';
 

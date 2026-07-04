@@ -4,7 +4,7 @@ import { join } from 'path';
 import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
-  loadPosted, savePosted, recordPost, fetchOgImage,
+  loadPosted, savePosted, recordPost, fetchOgImage, selectTop20,
   loadCommunityTags, seededIndex, truncate,
 } from './post-shared.ts';
 
@@ -42,22 +42,25 @@ async function main(): Promise<void> {
     posted.filter(e => e.platforms.x).map(e => e.repo.toLowerCase())
   );
 
+  // Unfiltered by README quality — an explicit PROJECT_SLUG override should still work
+  // even if the project wouldn't organically qualify for the daily pick.
   const allActive = data.projects
     .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
     .filter(p => !alreadyPostedX.has(p.repo.toLowerCase()));
 
   if (allActive.length === 0) throw new Error('No active projects available to post to X — all candidates already posted');
 
-  const top20 = [...allActive]
-    .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
-    .slice(0, 20);
+  const top20 = selectTop20(data.projects, posted, 'x');
 
   const today       = new Date().toISOString().slice(0, 10);
   const projectSlug = process.env.PROJECT_SLUG ?? '';
   // When a specific project is requested, search all active (not just top-20)
   const project     = projectSlug
     ? (allActive.find(p => p.repo.toLowerCase().replace('/', '--') === projectSlug) ?? top20[seededIndex(today, top20.length)])
-    : top20[seededIndex(today, top20.length)];
+    : (() => {
+        if (top20.length === 0) throw new Error('No candidates with a quality README available to post to X');
+        return top20[seededIndex(today, top20.length)];
+      })();
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   const text = buildTweet(project, baseUrl);

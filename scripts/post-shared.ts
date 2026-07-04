@@ -20,6 +20,7 @@ export interface Project {
   undervaluedScore: number;
   status: string;
   tags: string[];
+  readmeQualityOk: boolean;
 }
 
 export interface LatestData {
@@ -50,6 +51,23 @@ export function loadPosted(): PostedEntry[] {
 
 export function savePosted(entries: PostedEntry[]): void {
   writeFileSync(POSTED_PATH, JSON.stringify(entries, null, 2));
+}
+
+const ACTIVE_STATUSES = ['thriving', 'newborn', 'revived', 'watched'];
+
+// Shared by select-post.ts, post.ts, post-x.ts — the candidate pool for the daily highlight:
+// active status, a README with enough real prose, not already posted on this platform,
+// ranked by undervaluedScore.
+export function selectTop20(projects: Project[], posted: PostedEntry[], platform: 'bsky' | 'x'): Project[] {
+  const alreadyPosted = new Set(
+    posted.filter(e => e.platforms[platform]).map(e => e.repo.toLowerCase()),
+  );
+  return projects
+    .filter(p => ACTIVE_STATUSES.includes(p.status))
+    .filter(p => p.readmeQualityOk)
+    .filter(p => !alreadyPosted.has(p.repo.toLowerCase()))
+    .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
+    .slice(0, 20);
 }
 
 export function recordPost(repo: string, platform: string, url: string, entries: PostedEntry[]): PostedEntry[] {
