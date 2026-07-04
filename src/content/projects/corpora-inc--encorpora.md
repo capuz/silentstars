@@ -64,10 +64,9 @@ Visit **http://localhost:8000** - all changes auto-rebuild:
 - Corpan pages (auto rebuild)
 - Packs (auto rebuild)
 
-See [DEVELOPMENT.md](DEVELOPMENT.md) for detailed development guide.
+See [DEVELOPMENT.md](https://github.com/corpora-inc/encorpora/blob/HEAD/DEVELOPMENT.md) for detailed development guide.
 
 ### Production Build
 
 ```bash
-npm run build  # Builds to web/io/out/
-npm run serve  # Test…
+npm run…

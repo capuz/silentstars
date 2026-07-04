@@ -36,7 +36,7 @@ postedAt: "2026-06-25T22:59:39.704Z"
 
 > Keep your PC active. Automatically.
 
-**[Website](https://opn-build.github.io/) · [Download](https://github.com/opn-build/OpenAlive/releases) · [License](LICENSE)**
+**[Website](https://opn-build.github.io/) · [Download](https://github.com/opn-build/OpenAlive/releases) · [License](https://github.com/opn-build/OpenAlive/blob/HEAD/LICENSE)**
 
 OpenAlive prevents your workstation from going idle by simulating subtle mouse movements and optional keystrokes at configurable intervals — so your status stays green and your screen stays on while you work.
 
@@ -53,5 +53,4 @@ Working remotely or in a monitored environment, your PC going to sleep or showin
 ## Features
 
 - **Mouse activity simulation** — moves the cursor by a configurable number of pixels and returns it to the exact position, imperceptibly
-- **Keystroke simulation** — optionally sends a configurable key (e.g. Shift) alongside the mouse movement
-- **Work schedule** — activates only…
+- **Keystroke simulation** — optionally sends a configurable key (e.g. Shift) alongside the…
