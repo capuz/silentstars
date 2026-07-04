@@ -12,6 +12,7 @@
 import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { looksNonEnglish, translateToEnglish } from './collect-i18n.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -38,6 +39,9 @@ interface RepoData {
   repo: string;
   name: string;
   description: string;
+  originalDescription?: string;
+  descriptionLang?: string;
+  readmeQualityOk: boolean;
   url: string;
   homepage?: string;
   language?: string;
@@ -216,6 +220,9 @@ async function queryGitHub(
 // ──────────────────────────────────────────────────────────────────────────────
 
 const DAY_MS = 86_400_000;
+// Minimum length (chars) of cleaned README prose to count as a "good README" —
+// below this a project is excluded from daily-post selection (still listed on the site).
+const README_MIN_PROSE_CHARS = 200;
 
 /** Stddev of an array of numbers, normalised to [0,1] given a max. */
 function normalisedStddev(values: number[], maxVal: number): number {
@@ -459,6 +466,9 @@ function toFrontmatter(data: RepoData): string {
   lines.push(`repo: "${data.repo}"`);
   lines.push(`name: "${data.name.replace(/"/g, '\\"')}"`);
   lines.push(`description: "${(data.description ?? '').replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`);
+  if (data.originalDescription) lines.push(`originalDescription: "${data.originalDescription.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`);
+  if (data.descriptionLang) lines.push(`descriptionLang: "${data.descriptionLang}"`);
+  lines.push(`readmeQualityOk: ${data.readmeQualityOk}`);
   lines.push(`url: "${data.url}"`);
   if (data.homepage) lines.push(`homepage: "${data.homepage}"`);
   if (data.language) lines.push(`language: "${data.language}"`);
@@ -493,6 +503,19 @@ function toFrontmatter(data: RepoData): string {
 
 function slugify(nameWithOwner: string): string {
   return nameWithOwner.replace('/', '--').toLowerCase().replace(/[^a-z0-9-]/g, '-');
+}
+
+function stripReadmeNoise(rawReadmeText: string): string {
+  return rawReadmeText
+    .split('\n')
+    .filter(l => !/^\s*\[!\[/.test(l))                    // strip badge lines
+    .filter(l => !/^\s*<(img|a |div|p |span)/.test(l))    // strip HTML tags
+    .join('\n')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')                 // strip inline markdown images (malformed URIs break Vite/rehype)
+    .replace(/!\[[^\]]*\]\[[^\]]*\]/g, '')                // strip reference-style markdown images (same reason)
+    .replace(/<!--[\s\S]*?-->/g, '')                      // strip HTML comments
+    .replace(/\n{3,}/g, '\n\n')                           // collapse blank lines
+    .trim();
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -632,6 +655,26 @@ async function main() {
       const undervaluedScore = computeUndervaluedScore(raw, commits, recentReleases, now);
       const tags = computeTags(raw, lastCommitAt, now, recentReleases, healthScore);
 
+      // README quality is judged on the untranslated text, so the gate doesn't depend on
+      // whether the translation call below succeeds.
+      const cleanedReadme = raw.readme?.text ? stripReadmeNoise(raw.readme.text) : '';
+      const readmeQualityOk = cleanedReadme.length >= README_MIN_PROSE_CHARS;
+
+      let description = raw.description ?? '';
+      let translatedBody = cleanedReadme;
+      let originalDescription: string | undefined;
+      let descriptionLang: string | undefined;
+
+      if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
+        const translation = await translateToEnglish(token, { description, body: cleanedReadme });
+        if (translation && translation.lang !== 'en') {
+          originalDescription = description;
+          descriptionLang = translation.lang;
+          description = translation.description;
+          translatedBody = translation.body;
+        }
+      }
+
       const maintainerCounts: Record<string, number> = {};
       for (const c of commits) {
         const login = c.author?.user?.login;
@@ -645,7 +688,10 @@ async function main() {
       const data: RepoData = {
         repo: raw.nameWithOwner,
         name: raw.name,
-        description: raw.description ?? '',
+        description,
+        originalDescription,
+        descriptionLang,
+        readmeQualityOk,
         url: raw.url,
         homepage: (() => {
           const h = raw.homepageUrl?.trim();
@@ -707,21 +753,9 @@ async function main() {
         if (!isPosted && existsSync(mdPath)) unlinkSync(mdPath);
         continue;
       }
-      const body = (() => {
-        const raw_readme = raw.readme?.text ?? '';
-        if (!raw_readme) return data.description;
-        const cleaned = raw_readme
-          .split('\n')
-          .filter(l => !/^\s*\[!\[/.test(l))          // strip badge lines
-          .filter(l => !/^\s*<(img|a |div|p |span)/.test(l)) // strip HTML tags
-          .join('\n')
-          .replace(/!\[[^\]]*\]\([^)]*\)/g, '')                 // strip inline markdown images (malformed URIs break Vite/rehype)
-          .replace(/!\[[^\]]*\]\[[^\]]*\]/g, '')                // strip reference-style markdown images (same reason)
-          .replace(/<!--[\s\S]*?-->/g, '')             // strip HTML comments
-          .replace(/\n{3,}/g, '\n\n')                  // collapse blank lines
-          .trim();
-        return cleaned.length > 1200 ? cleaned.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : cleaned;
-      })();
+      const body = translatedBody
+        ? (translatedBody.length > 1200 ? translatedBody.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : translatedBody)
+        : data.description;
       const postedEntry = postedByRepo.get(repoStr.toLowerCase());
       if (postedEntry) data.postedAt = postedEntry.postedAt;
 

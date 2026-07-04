@@ -4,7 +4,7 @@ import { join } from 'path';
 import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
-  loadPosted, savePosted, recordPost, fetchOgImage,
+  loadPosted, savePosted, recordPost, fetchOgImage, selectTop20,
   loadCommunityTags, seededIndex, truncate,
 } from './post-shared.ts';
 
@@ -79,15 +79,7 @@ async function main(): Promise<void> {
   );
 
   const posted = loadPosted();
-  const alreadyPostedBsky = new Set(
-    posted.filter(e => e.platforms.bsky).map(e => e.repo.toLowerCase())
-  );
-
-  const active = data.projects
-    .filter(p => ['thriving', 'newborn', 'revived', 'watched'].includes(p.status))
-    .filter(p => !alreadyPostedBsky.has(p.repo.toLowerCase()))
-    .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
-    .slice(0, 20);
+  const active = selectTop20(data.projects, posted, 'bsky');
 
   if (active.length === 0) throw new Error('No active projects available to post to Bluesky — all candidates already posted');
 
