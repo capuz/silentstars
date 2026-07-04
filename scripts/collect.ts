@@ -194,9 +194,10 @@ async function queryGitHub(
         body: JSON.stringify({ query: REPO_QUERY, variables: { owner, name, since } }),
       });
 
-      if (res.status === 429 || res.status === 503) {
-        const wait = Math.pow(2, attempt) * 2000;
-        console.warn(`  Rate limited, waiting ${wait / 1000}s…`);
+      if (res.status === 429 || res.status === 503 || res.status === 403) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = retryAfter > 0 ? retryAfter * 1000 : Math.pow(2, attempt) * 2000;
+        console.warn(`  Rate limited (${res.status}), waiting ${wait / 1000}s…`);
         await new Promise(r => setTimeout(r, wait));
         continue;
       }
@@ -601,7 +602,18 @@ async function main() {
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
     const batch = repos.slice(i, i + BATCH_SIZE);
 
-    for (const repoStr of batch) {
+    // Fetch the batch concurrently; processing stays sequential so translation
+    // calls (GitHub Models free tier) never run in parallel.
+    const raws = await Promise.all(
+      batch.map(repoStr => {
+        const [owner, name] = repoStr.split('/');
+        if (!owner || !name) return Promise.resolve(null);
+        return queryGitHub(token, owner, name, since180d);
+      })
+    );
+
+    for (let j = 0; j < batch.length; j++) {
+      const repoStr = batch[j]!;
       const [owner, name] = repoStr.split('/');
       if (!owner || !name) {
         console.warn(`  ⚠  Skipping invalid entry: ${repoStr}`);
@@ -609,7 +621,7 @@ async function main() {
       }
 
       console.log(`  → ${owner}/${name}`);
-      const raw = await queryGitHub(token, owner, name, since180d);
+      const raw = raws[j] ?? null;
       if (raw?.isFork) {
         console.log(`    skip (fork)`);
         continue;
@@ -666,7 +678,12 @@ async function main() {
       let descriptionLang: string | undefined;
 
       if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
-        const translation = await translateToEnglish(token, { description, body: cleanedReadme });
+        // Pages only render the first 1200 chars of the body; translating more than
+        // that can overflow max_tokens and truncate the JSON response mid-string.
+        const bodyForTranslation = cleanedReadme.length > 1200
+          ? cleanedReadme.slice(0, 1200).replace(/\s+\S*$/, '') + '…'
+          : cleanedReadme;
+        const translation = await translateToEnglish(token, { description, body: bodyForTranslation });
         if (translation && translation.lang !== 'en') {
           originalDescription = description;
           descriptionLang = translation.lang;
@@ -761,10 +778,6 @@ async function main() {
 
       writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
       writtenSlugs.add(slug);
-    }
-
-    if (i + BATCH_SIZE < repos.length) {
-      await new Promise(r => setTimeout(r, 500));
     }
   }
 
