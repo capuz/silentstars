@@ -1,7 +1,7 @@
 ---
 repo: "iTaoPu/iCloud"
 name: "iCloud"
-description: "\"Leisure\" is the punctuation of life, responsible for cutting long days into poetry!"
+description: "\"闲\" is the punctuation of life, responsible for cutting long days into poetry!"
 originalDescription: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
 descriptionLang: "zh"
 readmeQualityOk: false
