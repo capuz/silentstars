@@ -2,6 +2,7 @@
 repo: "mrhenrike/WordListsForHacking"
 name: "WordListsForHacking"
 description: "The most comprehensive wordlist generation toolkit for pentest, red team, and security research. 25 subcommands: charset, profile, corp-users, default-creds, password-dna, DNS fuzzing, web scraping, ISP keygen, ICS/SCADA credentials, ML training, pipal analysis, and more. Python 3.8+ | pip install wfh-wordlist"
+readmeQualityOk: true
 url: "https://github.com/mrhenrike/WordListsForHacking"
 homepage: "https://github.com/mrhenrike/WordListsForHacking/releases/tag/v2.0.0"
 language: "Python"

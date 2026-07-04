@@ -2,13 +2,14 @@
 repo: "Shik3i/KoalaSync"
 name: "KoalaSync"
 description: "Minimalist, privacy-first synchronized video playback for YouTube, Netflix, Emby, and general HTML5. Built with pure Vanilla JS and a Node.js relay."
+readmeQualityOk: true
 url: "https://github.com/Shik3i/KoalaSync"
 homepage: "https://sync.koalastuff.net"
 language: "JavaScript"
 languages: ["JavaScript", "HTML"]
 languagePcts: [61, 28]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
-stars: 36
+stars: 37
 forks: 3
 openIssues: 1
 closedIssues: 5

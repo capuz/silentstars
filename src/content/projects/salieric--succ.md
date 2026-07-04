@@ -2,6 +2,7 @@
 repo: "SalieriC/SUCC"
 name: "SUCC"
 description: "SWADE Ultimate Condition Changer"
+readmeQualityOk: true
 url: "https://github.com/SalieriC/SUCC"
 language: "JavaScript"
 languages: ["JavaScript"]

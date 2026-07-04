@@ -2,6 +2,7 @@
 repo: "UKNCSP/CDDS-CMIP7-mappings"
 name: "CDDS-CMIP7-mappings"
 description: "Definition and review of CDDS mappings for CMIP7"
+readmeQualityOk: true
 url: "https://github.com/UKNCSP/CDDS-CMIP7-mappings"
 homepage: "https://ukncsp.github.io/CDDS-CMIP7-mappings/"
 language: "Jupyter Notebook"
@@ -15,14 +16,14 @@ watchers: 3
 contributors: 16
 recentReleases: 4
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-04T18:58:54Z"
+lastCommitAt: "2026-07-04T21:48:20Z"
 lastReleaseAt: "2026-06-05T11:57:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 81
 undervaluedScore: 79
 maintainers: ["mo-laurenboon", "matthew-mizielinski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d7e447bb8dc3851f21b371432aff4890d5e8b846f3beb63725061b1cb899886a/UKNCSP/CDDS-CMIP7-mappings"
+openGraphImageUrl: "https://opengraph.githubassets.com/c7e714838f267de985e0e82ea97159cb6b833f1158226687adc941c2179edc46/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---

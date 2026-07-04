@@ -2,6 +2,7 @@
 repo: "zitadel/astro-auth"
 name: "astro-auth"
 description: "Official Zitadel auth integration for Astro."
+readmeQualityOk: true
 url: "https://github.com/zitadel/astro-auth"
 homepage: "https://www.npmjs.com/package/@zitadel/astro-auth"
 language: "TypeScript"

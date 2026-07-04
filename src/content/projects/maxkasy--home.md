@@ -2,6 +2,7 @@
 repo: "maxkasy/home"
 name: "home"
 description: "Academic homepage"
+readmeQualityOk: false
 url: "https://github.com/maxkasy/home"
 language: "HTML"
 languages: ["HTML"]

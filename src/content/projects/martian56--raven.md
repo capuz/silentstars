@@ -2,6 +2,7 @@
 repo: "martian56/raven"
 name: "raven"
 description: "Raven is a new systems and application programming language designed to combine the performance and control of C++, the safety and modern features of Rust, the readability of Python, the structure of Java, and the simplicity of Go."
+readmeQualityOk: true
 url: "https://github.com/martian56/raven"
 homepage: "https://raven.ufazien.com"
 language: "Rust"
