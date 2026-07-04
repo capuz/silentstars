@@ -7,7 +7,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["dashboard", "fixtures", "football", "hacs", "home-assistant", "lovelace", "predictions", "soccer", "sports", "standings"]
-stars: 94
+stars: 93
 forks: 11
 openIssues: 2
 closedIssues: 90
@@ -15,7 +15,7 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-02T23:13:35Z"
-lastCommitAt: "2026-07-04T05:51:26Z"
+lastCommitAt: "2026-07-04T19:21:35Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
