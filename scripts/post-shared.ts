@@ -29,15 +29,17 @@ export interface LatestData {
 
 export const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
 
-// Right after a GitHub Pages deploy, a just-published asset can 404 for a few
-// seconds while the CDN edge catches up — retry before giving up.
+// Right after a GitHub Pages deploy, a just-published asset can 404 while the
+// CDN edge catches up. Observed lag has exceeded 30s of retrying (5 attempts,
+// 3s-step backoff), so this budgets ~2min (8 attempts, 5s-step backoff) before
+// giving up.
 export async function fetchOgImage(url: string): Promise<Buffer> {
-  const attempts = 5;
+  const attempts = 8;
   for (let i = 1; i <= attempts; i++) {
     const res = await fetch(url);
     if (res.ok) return Buffer.from(await res.arrayBuffer());
     if (i === attempts) throw new Error(`Failed to fetch OG image: ${url} (${res.status})`);
-    await new Promise(r => setTimeout(r, i * 3000));
+    await new Promise(r => setTimeout(r, i * 5000));
   }
   throw new Error(`Failed to fetch OG image: ${url}`);
 }
