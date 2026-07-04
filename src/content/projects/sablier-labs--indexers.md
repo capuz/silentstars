@@ -51,5 +51,4 @@ preferred hosted provider; The Graph subgraphs remain available for multi-vendor
 - [Flow indexer docs](https://docs.sablier.com/api/flow/indexers)
 - [Lockup indexer docs](https://docs.sablier.com/api/lockup/indexers)
 - [Package on npm](https://www.npmjs.com/package/@sablier/indexers)
-- [Changelog](CHANGELOG.md)
 -…
