@@ -76,6 +76,7 @@ ${input.body || '(empty)'}`;
         messages: [{ role: 'user', content: prompt }],
         max_tokens: 900,
         temperature: 0,
+        response_format: { type: 'json_object' },
       }),
       signal: controller.signal,
     });
@@ -86,7 +87,9 @@ ${input.body || '(empty)'}`;
     }
 
     const json = await res.json() as { choices: Array<{ message: { content: string } }> };
-    const raw = json.choices[0]?.message?.content?.trim() ?? '';
+    const raw = (json.choices[0]?.message?.content?.trim() ?? '')
+      .replace(/^```(?:json)?\s*/i, '')
+      .replace(/\s*```$/, '');
 
     let parsed: unknown;
     try {
