@@ -132,6 +132,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      post_slug: ${{ steps.og_slugs.outputs.post_slug }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -165,7 +167,10 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
+      # Single source of truth for today's pick: post/post-x consume post_slug
+      # instead of re-running the selection and hoping it agrees.
       - name: Select OG slugs
+        id: og_slugs
         run: |
           # All previously-posted slugs: their detail pages link og/<slug>.png directly
           POSTED_SLUGS=$(node -e "
@@ -188,11 +193,22 @@ jobs:
           ALL="${POSTED_SLUGS}${BSKY_SLUG:+,}${BSKY_SLUG}${X_SLUG:+,}${X_SLUG}"
           ONLY_SLUGS=$(echo "$ALL" | tr ',' '\n' | grep -v '^$' | sort -u | paste -sd ',')
           echo "ONLY_SLUGS=${ONLY_SLUGS}" >> $GITHUB_ENV
+          echo "post_slug=${BSKY_SLUG}" >> $GITHUB_OUTPUT
           COUNT=$(echo "$ONLY_SLUGS" | tr ',' '\n' | grep -c '.' || echo 0)
           echo "Screenshotting ${COUNT} OG cards (bsky: ${BSKY_SLUG:-none}, x: ${X_SLUG:-none})"
 
       - name: Generate OG screenshots
         run: npm run og
+
+      # Hand the PNGs to the post jobs directly — fetching them back through the
+      # Pages CDN is unreliable right after a deploy (propagation lag, and Fastly
+      # caches the interim 404s, poisoning every retry).
+      - name: Upload OG images artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: og-images
+          path: dist/og/
+          retention-days: 1
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
@@ -220,7 +236,6 @@ jobs:
     outputs:
       bsky_url: ${{ steps.post_bluesky.outputs.bsky_url }}
       bsky_post_text_b64: ${{ steps.post_bluesky.outputs.bsky_post_text_b64 }}
-      picked_slug: ${{ steps.post_bluesky.outputs.picked_slug }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -246,6 +261,12 @@ jobs:
           SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
+      - name: Download OG images
+        uses: actions/download-artifact@v8
+        with:
+          name: og-images
+          path: og-images
+
       - name: Post to Bluesky
         id: post_bluesky
         run: |
@@ -256,17 +277,16 @@ jobs:
           echo "$OUTPUT"
           BSKY_URL=$(echo "$OUTPUT" | grep "^BSKY_POST_URL=" | cut -d= -f2-)
           BSKY_TEXT=$(echo "$OUTPUT" | grep "^BSKY_POST_TEXT_B64=" | cut -d= -f2-)
-          PICKED_SLUG=$(echo "$OUTPUT" | grep "^PROJECT_SLUG=" | cut -d= -f2-)
           echo "bsky_url=${BSKY_URL}" >> $GITHUB_OUTPUT
           echo "bsky_post_text_b64=${BSKY_TEXT}" >> $GITHUB_OUTPUT
-          echo "picked_slug=${PICKED_SLUG}" >> $GITHUB_OUTPUT
           exit $EXIT_CODE
         env:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           BASE_URL:          https://capuz.github.io/silentstars
           DRY_RUN:           ${{ inputs.dry_run }}
-          PROJECT_SLUG:      ${{ steps.submission_slug.outputs.value }}
+          OG_DIR:            og-images
+          PROJECT_SLUG:      ${{ steps.submission_slug.outputs.value || needs.deploy.outputs.post_slug }}
 
       - name: Commit posted.json
         if: inputs.dry_run != 'true'
@@ -324,6 +344,12 @@ jobs:
           SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
+      - name: Download OG images
+        uses: actions/download-artifact@v8
+        with:
+          name: og-images
+          path: og-images
+
       - name: Post to X.com
         id: post_x
         run: |
@@ -342,7 +368,8 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           BASE_URL:              https://capuz.github.io/silentstars
           DRY_RUN:               ${{ inputs.dry_run }}
-          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value || needs.post.outputs.picked_slug }}
+          OG_DIR:                og-images
+          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value || needs.deploy.outputs.post_slug }}
 
       - name: Commit posted.json
         if: inputs.dry_run != 'true'

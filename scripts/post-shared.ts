@@ -31,14 +31,28 @@ export interface LatestData {
 
 export const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
 
+// Local-first: in CI the deploy job hands the PNGs to the post jobs via a
+// workflow artifact (OG_DIR), so the image never round-trips the Pages CDN.
+// The CDN fetch below is the fallback for local/manual runs.
+export async function loadOgImage(slug: string, baseUrl: string): Promise<Buffer> {
+  const ogDir = process.env.OG_DIR;
+  if (ogDir) {
+    const path = join(ogDir, `${slug}.png`);
+    if (existsSync(path)) return readFileSync(path);
+    console.warn(`OG image not found at ${path}, falling back to CDN fetch`);
+  }
+  return fetchOgImage(`${baseUrl}/og/${slug}.png`);
+}
+
 // Right after a GitHub Pages deploy, a just-published asset can 404 while the
-// CDN edge catches up. Observed lag has exceeded 30s of retrying (5 attempts,
-// 3s-step backoff), so this budgets ~2min (8 attempts, 5s-step backoff) before
-// giving up.
+// CDN edge catches up — and Fastly caches those interim 404s, so plain retries
+// keep hitting the same poisoned entry forever (observed: 8 attempts / ~3min,
+// all served the cached 404). Each attempt uses a unique cache-busting query
+// param to get a fresh cache key.
 export async function fetchOgImage(url: string): Promise<Buffer> {
   const attempts = 8;
   for (let i = 1; i <= attempts; i++) {
-    const res = await fetch(url);
+    const res = await fetch(`${url}?cb=${Date.now()}`);
     if (res.ok) return Buffer.from(await res.arrayBuffer());
     if (i === attempts) throw new Error(`Failed to fetch OG image: ${url} (${res.status})`);
     await new Promise(r => setTimeout(r, i * 5000));

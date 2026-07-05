@@ -4,7 +4,7 @@ import { join } from 'path';
 import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
-  loadPosted, savePosted, recordPost, fetchOgImage, selectTop20,
+  loadPosted, savePosted, recordPost, loadOgImage, selectTop20,
   loadCommunityTags, seededIndex, truncate,
 } from './post-shared.ts';
 
@@ -74,6 +74,12 @@ async function main(): Promise<void> {
   console.log(text);
   console.log(`─── ${twitterLen} Twitter chars (${[...text].length} actual) ───`);
 
+  const slug = project.repo.toLowerCase().replace('/', '--');
+
+  // Loaded before the dry-run gate so dry runs verify image availability too
+  const ogBuf = await loadOgImage(slug, baseUrl);
+  console.log(`─── OG image: ${ogBuf.length} bytes`);
+
   if (DRY_RUN) {
     console.log('Dry run — not posting.');
     return;
@@ -90,9 +96,6 @@ async function main(): Promise<void> {
 
   const client = new TwitterApi({ appKey: apiKey, appSecret: apiSecret, accessToken, accessSecret });
 
-  const slug     = project.repo.toLowerCase().replace('/', '--');
-  const ogUrl    = `${baseUrl}/og/${slug}.png`;
-  const ogBuf    = await fetchOgImage(ogUrl);
   const mediaId  = await client.v1.uploadMedia(ogBuf, { mimeType: EUploadMimeType.Png });
 
   const { data: tweet } = await client.v2.tweet({ text, media: { media_ids: [mediaId] } });
