@@ -86,7 +86,10 @@ jobs:
   collect:
     name: Collect data
     runs-on: ubuntu-latest
-    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_collect != 'true'
+    # Boolean inputs must be compared as booleans: `!= 'true'` never matches a
+    # typed boolean input (GHA coerces true→1 vs 'true'→NaN), silently disabling
+    # the skip flags on manual dispatches.
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_collect != true
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -232,7 +235,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [deploy]
     environment: BSKY_IDENTIFIER
-    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post != 'true'
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post != true
     outputs:
       bsky_url: ${{ steps.post_bluesky.outputs.bsky_url }}
       bsky_post_text_b64: ${{ steps.post_bluesky.outputs.bsky_post_text_b64 }}
@@ -289,7 +292,7 @@ jobs:
           PROJECT_SLUG:      ${{ steps.submission_slug.outputs.value || needs.deploy.outputs.post_slug }}
 
       - name: Commit posted.json
-        if: inputs.dry_run != 'true'
+        if: inputs.dry_run != true
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -316,7 +319,13 @@ jobs:
     name: Post to X.com
     runs-on: ubuntu-latest
     needs: [deploy, post]
-    if: always() && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.skip_post_x != 'true'
+    # Tolerates a failed post job (X is independent of Bluesky's outcome) but
+    # requires a successful deploy — posting a project whose page never went
+    # live puts a dead link on X.
+    if: >-
+      !cancelled() && needs.deploy.result == 'success' &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') &&
+      inputs.skip_post_x != true
     continue-on-error: true
     outputs:
       x_post_url: ${{ steps.post_x.outputs.x_post_url }}
@@ -372,7 +381,7 @@ jobs:
           PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value || needs.deploy.outputs.post_slug }}
 
       - name: Commit posted.json
-        if: inputs.dry_run != 'true'
+        if: inputs.dry_run != true
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
