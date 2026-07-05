@@ -13,16 +13,16 @@ openIssues: 24
 closedIssues: 101
 watchers: 1
 contributors: 89
-recentReleases: 8
+recentReleases: 7
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-07-04T14:57:39Z"
+lastCommitAt: "2026-07-05T19:17:47Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 94
+healthScore: 95
 undervaluedScore: 97
-maintainers: ["metis-sprock", "thesprockee"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7a53696012342d2aad22981a2f9d9e664f00545c1148cba5770dde147151dba8/EchoTools/nakama"
+maintainers: ["thesprockee", "metis-sprock"]
+openGraphImageUrl: "https://opengraph.githubassets.com/9e39baca88db693584227037d86357a7c6d435aa08de56d35a27d479145b5dcf/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
 ---
 
