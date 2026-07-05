@@ -42,6 +42,7 @@ interface RepoData {
   originalDescription?: string;
   descriptionLang?: string;
   readmeQualityOk: boolean;
+  hasPage: boolean;
   url: string;
   homepage?: string;
   language?: string;
@@ -723,6 +724,7 @@ async function main() {
         originalDescription,
         descriptionLang,
         readmeQualityOk,
+        hasPage: false,
         url: raw.url,
         homepage: (() => {
           const h = raw.homepageUrl?.trim();
@@ -810,6 +812,10 @@ async function main() {
       unlinkSync(resolve(projectsDir, file));
       console.log(`  🗑  Removed orphan MD: ${file}`);
     }
+  }
+
+  for (const data of results) {
+    data.hasPage = writtenSlugs.has(slugify(data.repo));
   }
 
   const output: LatestJson = { collectedAt: new Date().toISOString(), projects: results };

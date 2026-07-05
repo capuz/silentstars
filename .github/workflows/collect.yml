@@ -220,6 +220,7 @@ jobs:
     outputs:
       bsky_url: ${{ steps.post_bluesky.outputs.bsky_url }}
       bsky_post_text_b64: ${{ steps.post_bluesky.outputs.bsky_post_text_b64 }}
+      picked_slug: ${{ steps.post_bluesky.outputs.picked_slug }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -255,8 +256,10 @@ jobs:
           echo "$OUTPUT"
           BSKY_URL=$(echo "$OUTPUT" | grep "^BSKY_POST_URL=" | cut -d= -f2-)
           BSKY_TEXT=$(echo "$OUTPUT" | grep "^BSKY_POST_TEXT_B64=" | cut -d= -f2-)
+          PICKED_SLUG=$(echo "$OUTPUT" | grep "^PROJECT_SLUG=" | cut -d= -f2-)
           echo "bsky_url=${BSKY_URL}" >> $GITHUB_OUTPUT
           echo "bsky_post_text_b64=${BSKY_TEXT}" >> $GITHUB_OUTPUT
+          echo "picked_slug=${PICKED_SLUG}" >> $GITHUB_OUTPUT
           exit $EXIT_CODE
         env:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
@@ -339,7 +342,7 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           BASE_URL:              https://capuz.github.io/silentstars
           DRY_RUN:               ${{ inputs.dry_run }}
-          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value }}
+          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value || needs.post.outputs.picked_slug }}
 
       - name: Commit posted.json
         if: inputs.dry_run != 'true'

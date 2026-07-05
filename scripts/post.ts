@@ -111,6 +111,9 @@ async function main(): Promise<void> {
   console.log(`─── card → ${siteUrl}`);
   console.log(`─── name link → ${project.url}`);
 
+  // Emitted so the X.com job can be pinned to the same project (same OG image)
+  console.log(`PROJECT_SLUG=${project.repo.toLowerCase().replace('/', '--')}`);
+
   if (DRY_RUN) {
     console.log('Dry run — not posting.');
     return;
