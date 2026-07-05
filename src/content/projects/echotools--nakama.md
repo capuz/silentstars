@@ -19,7 +19,7 @@ lastCommitAt: "2026-07-04T14:57:39Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 97
 maintainers: ["metis-sprock", "thesprockee"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7a53696012342d2aad22981a2f9d9e664f00545c1148cba5770dde147151dba8/EchoTools/nakama"
