@@ -21,6 +21,7 @@ export interface Project {
   status: string;
   tags: string[];
   readmeQualityOk: boolean;
+  hasPage: boolean;
 }
 
 export interface LatestData {
@@ -65,6 +66,7 @@ export function selectTop20(projects: Project[], posted: PostedEntry[], platform
   return projects
     .filter(p => ACTIVE_STATUSES.includes(p.status))
     .filter(p => p.readmeQualityOk)
+    .filter(p => p.hasPage)
     .filter(p => !alreadyPosted.has(p.repo.toLowerCase()))
     .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
     .slice(0, 20);
