@@ -4,7 +4,7 @@ import { join } from 'path';
 import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
-  loadPosted, savePosted, recordPost, fetchOgImage, selectTop20,
+  loadPosted, savePosted, recordPost, loadOgImage, selectTop20,
   loadCommunityTags, seededIndex, truncate,
 } from './post-shared.ts';
 
@@ -111,8 +111,12 @@ async function main(): Promise<void> {
   console.log(`─── card → ${siteUrl}`);
   console.log(`─── name link → ${project.url}`);
 
-  // Emitted so the X.com job can be pinned to the same project (same OG image)
-  console.log(`PROJECT_SLUG=${project.repo.toLowerCase().replace('/', '--')}`);
+  const slug = project.repo.toLowerCase().replace('/', '--');
+  console.log(`PROJECT_SLUG=${slug}`);
+
+  // Loaded before the dry-run gate so dry runs verify image availability too
+  const ogBuf = await loadOgImage(slug, baseUrl);
+  console.log(`─── OG image: ${ogBuf.length} bytes`);
 
   if (DRY_RUN) {
     console.log('Dry run — not posting.');
@@ -128,9 +132,6 @@ async function main(): Promise<void> {
   const agent = new BskyAgent({ service: 'https://bsky.social' });
   await agent.login({ identifier, password });
 
-  const slug   = project.repo.toLowerCase().replace('/', '--');
-  const ogUrl  = `${baseUrl}/og/${slug}.png`;
-  const ogBuf  = await fetchOgImage(ogUrl);
   const { data: thumb } = await agent.uploadBlob(ogBuf, { encoding: 'image/png' });
 
   const embedWithThumb = {
