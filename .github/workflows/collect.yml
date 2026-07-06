@@ -186,13 +186,17 @@ jobs:
           echo "X_SLUG=${X_SLUG}" >> $GITHUB_ENV
           echo "post_slug=${BSKY_SLUG}" >> $GITHUB_OUTPUT
           echo "Today's picks — bsky: ${BSKY_SLUG:-none}, x: ${X_SLUG:-none}"
+          # Feature today's pick on the home page only when this run will actually
+          # publish it (schedule always posts; dispatch/call only without dry-run
+          # and without skip_post). Otherwise the home falls back to the most
+          # recent entry in posted.json.
+          WILL_POST="${{ github.event_name == 'schedule' || ((github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') && inputs.dry_run != true && inputs.skip_post != true) }}"
+          if [ "$WILL_POST" = "true" ]; then
+            echo "FEATURED_SLUG=${BSKY_SLUG}" >> $GITHUB_ENV
+          fi
 
       - name: Build Astro site
         run: npm run build
-        env:
-          # Only feature today's pick when the post jobs will actually publish it;
-          # on skip_post deploys the home falls back to the latest real post.
-          FEATURED_SLUG: ${{ inputs.skip_post != true && env.BSKY_SLUG || '' }}
 
       - name: Select OG slugs
         run: |
