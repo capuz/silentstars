@@ -9,6 +9,9 @@
  *   PROJECT_NAME        — required
  *   PROJECT_SLUG        — required (e.g. shik3i--koalasync)
  *   BSKY_POST_URL       — optional (Bluesky post URL, only for "accepted")
+ *   BSKY_POST_TEXT      — optional (Bluesky post text, only for "accepted")
+ *   X_POST_URL          — optional (X.com post URL, only for "accepted")
+ *   X_POST_TEXT         — optional (X.com post text, only for "accepted")
  *   BASE_URL            — optional (default: https://capuz.github.io/silentstars)
  *   DRY_RUN             — optional
  */
@@ -24,17 +27,33 @@ const PROJECT_NAME    = process.env.PROJECT_NAME ?? '';
 const PROJECT_SLUG    = process.env.PROJECT_SLUG ?? '';
 const BSKY_POST_URL   = process.env.BSKY_POST_URL ?? '';
 const BSKY_POST_TEXT  = process.env.BSKY_POST_TEXT ?? '';
+const X_POST_URL      = process.env.X_POST_URL ?? '';
+const X_POST_TEXT     = process.env.X_POST_TEXT ?? '';
 
 function cardUrl() { return `${BASE_URL}/projects/${PROJECT_SLUG}/`; }
 function ogImageUrl() { return `${BASE_URL}/og/${PROJECT_SLUG}.png`; }
+function esc(s: string) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 // ──────────────────────────────────────────────────────────────────────────────
 // Email templates
 // ──────────────────────────────────────────────────────────────────────────────
 
+function postQuote(label: string, accentColor: string, text: string): string {
+  return `
+          <tr><td style="padding-bottom:20px;">
+            <div style="border-left:3px solid ${accentColor};padding:14px 16px;background:#0a0f18;border-radius:0 8px 8px 0;">
+              <p style="margin:0 0 8px 0;color:#7d8590;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">${label}</p>
+              <p style="margin:0;color:#c9d1d9;font-size:14px;line-height:1.7;font-family:'SF Mono','Fira Code',monospace;white-space:pre-wrap;">${esc(text)}</p>
+            </div>
+          </td></tr>`;
+}
+
 function acceptedHtml(): string {
   const bskyCta = BSKY_POST_URL
-    ? `<a href="${BSKY_POST_URL}" style="display:inline-block;background:#0085ff;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin-left:10px;">See the post on Bluesky →</a>`
+    ? `<a href="${BSKY_POST_URL}" style="display:inline-block;background:#0085ff;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">See the post on Bluesky →</a>`
+    : '';
+  const xCta = X_POST_URL
+    ? `<a href="${X_POST_URL}" style="display:inline-block;background:#000000;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;border:1px solid #30363d;margin:0 10px 10px 0;">See the post on X →</a>`
     : '';
 
   return `<!DOCTYPE html>
@@ -77,17 +96,11 @@ function acceptedHtml(): string {
             </p>
           </td></tr>
 
-          ${BSKY_POST_TEXT ? `
-          <tr><td style="padding-bottom:32px;">
-            <div style="border-left:3px solid #1185fe;padding:14px 16px;background:#0a0f18;border-radius:0 8px 8px 0;">
-              <p style="margin:0 0 8px 0;color:#7d8590;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">Posted on Bluesky</p>
-              <p style="margin:0;color:#c9d1d9;font-size:14px;line-height:1.7;font-family:'SF Mono','Fira Code',monospace;white-space:pre-wrap;">${BSKY_POST_TEXT.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>
-            </div>
-          </td></tr>
-          ` : ''}
+          ${BSKY_POST_TEXT ? postQuote('Posted on Bluesky', '#1185fe', BSKY_POST_TEXT) : ''}
+          ${X_POST_TEXT ? postQuote('Posted on X', '#71767b', X_POST_TEXT) : ''}
 
-          <tr><td style="padding-bottom:40px;">
-            <a href="${cardUrl()}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;">View your card →</a>${bskyCta}
+          <tr><td style="padding-top:12px;padding-bottom:30px;">
+            <a href="${cardUrl()}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">View your card →</a>${bskyCta}${xCta}
           </td></tr>
 
           <tr><td style="border-top:1px solid #21262d;padding-top:24px;">
@@ -196,8 +209,14 @@ async function main() {
   console.log(`Sending "${EMAIL_TYPE}" email to ${TO_EMAIL}`);
   console.log(`Subject: ${subject}`);
   if (BSKY_POST_URL) console.log(`Bluesky post: ${BSKY_POST_URL}`);
+  if (X_POST_URL) console.log(`X post: ${X_POST_URL}`);
 
   if (DRY_RUN) {
+    if (process.env.EMAIL_PREVIEW_PATH) {
+      const { writeFileSync } = await import('node:fs');
+      writeFileSync(process.env.EMAIL_PREVIEW_PATH, html);
+      console.log(`[DRY RUN] Preview written to ${process.env.EMAIL_PREVIEW_PATH}`);
+    }
     console.log('[DRY RUN] Not sending.');
     return;
   }

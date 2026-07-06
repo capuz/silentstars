@@ -32,6 +32,9 @@ on:
       x_post_url:
         description: "X.com post URL"
         value: ${{ jobs.post-x.outputs.x_post_url }}
+      x_post_text_b64:
+        description: "Base64-encoded X.com post text"
+        value: ${{ jobs.post-x.outputs.x_post_text_b64 }}
   workflow_dispatch:
     inputs:
       skip_collect:
@@ -350,6 +353,7 @@ jobs:
     continue-on-error: true
     outputs:
       x_post_url: ${{ steps.post_x.outputs.x_post_url }}
+      x_post_text_b64: ${{ steps.post_x.outputs.x_post_text_b64 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -389,7 +393,9 @@ jobs:
           set -e
           echo "$OUTPUT"
           X_URL=$(echo "$OUTPUT" | grep "^X_POST_URL=" | cut -d= -f2-)
+          X_TEXT=$(echo "$OUTPUT" | grep "^X_POST_TEXT_B64=" | cut -d= -f2-)
           echo "x_post_url=${X_URL}" >> $GITHUB_OUTPUT
+          echo "x_post_text_b64=${X_TEXT}" >> $GITHUB_OUTPUT
           exit $EXIT_CODE
         env:
           X_API_KEY:             ${{ secrets.X_API_KEY }}
