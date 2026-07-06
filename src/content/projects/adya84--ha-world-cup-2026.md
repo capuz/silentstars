@@ -10,13 +10,13 @@ languagePcts: [100]
 topics: ["dashboard", "fixtures", "football", "hacs", "home-assistant", "lovelace", "predictions", "soccer", "sports", "standings"]
 stars: 93
 forks: 11
-openIssues: 2
-closedIssues: 90
+openIssues: 1
+closedIssues: 91
 watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-02T23:13:35Z"
-lastCommitAt: "2026-07-05T21:01:09Z"
+lastCommitAt: "2026-07-06T04:15:21Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
