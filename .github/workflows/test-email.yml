@@ -1,0 +1,61 @@
+name: Test notification email
+
+on:
+  workflow_dispatch:
+    inputs:
+      to_email:
+        description: "Recipient email"
+        type: string
+        required: true
+      email_type:
+        description: "Template to test"
+        type: choice
+        options: [accepted, already_listed]
+        default: accepted
+      project_slug:
+        description: "Project slug (must exist for the OG image to load)"
+        type: string
+        default: shik3i--koalasync
+      project_name:
+        description: "Project name"
+        type: string
+        default: KoalaSync
+
+jobs:
+  send:
+    name: Send test email
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Send test email
+        env:
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
+          TO_EMAIL:          ${{ inputs.to_email }}
+          EMAIL_TYPE:        ${{ inputs.email_type }}
+          PROJECT_NAME:      ${{ inputs.project_name }}
+          PROJECT_SLUG:      ${{ inputs.project_slug }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          BSKY_POST_URL:     https://bsky.app/profile/silentstars.bsky.social
+          BSKY_POST_TEXT: |
+            [TEST] KoalaSync — minimalist, privacy-first synchronized video playback 🐨
+
+            No accounts, 100% free
+            https://github.com/Shik3i/KoalaSync
+          X_POST_URL: https://x.com/silentstars
+          X_POST_TEXT: |
+            [TEST] KoalaSync — watch movies & shows in perfect sync
+
+            #opensource #selfhosted
+        run: npx tsx scripts/send-email.ts

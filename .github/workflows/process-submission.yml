@@ -155,6 +155,19 @@ jobs:
             echo "value=" >> $GITHUB_OUTPUT
           fi
 
+      - name: Decode X post text
+        id: x_post_text
+        env:
+          TEXT_B64: ${{ needs.collect-deploy-post.outputs.x_post_text_b64 }}
+        run: |
+          if [ -n "$TEXT_B64" ]; then
+            TEXT=$(echo "$TEXT_B64" | base64 --decode)
+            # Escape for GITHUB_OUTPUT (multiline value)
+            printf 'value<<X_TEXT_EOF\n%s\nX_TEXT_EOF\n' "$TEXT" >> $GITHUB_OUTPUT
+          else
+            echo "value=" >> $GITHUB_OUTPUT
+          fi
+
       - name: Comment on issue with links
         uses: actions/github-script@v7
         env:
@@ -197,5 +210,7 @@ jobs:
           PROJECT_SLUG:      ${{ needs.validate.outputs.slug }}
           BSKY_POST_URL:     ${{ needs.collect-deploy-post.outputs.bsky_url }}
           BSKY_POST_TEXT:    ${{ steps.post_text.outputs.value }}
+          X_POST_URL:        ${{ needs.collect-deploy-post.outputs.x_post_url }}
+          X_POST_TEXT:       ${{ steps.x_post_text.outputs.value }}
           BASE_URL:          https://capuz.github.io/silentstars
         run: npx tsx scripts/send-email.ts
