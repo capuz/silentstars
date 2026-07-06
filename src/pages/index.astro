@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { loadPosted } from '../../scripts/post-shared.ts';
 
 const all = await getCollection('projects');
 const visible = all.filter(p => {
@@ -35,12 +36,13 @@ function promotedFirst(a: Entry, b: Entry): number {
 // ── Sections (priority order — first match wins for dedup) ────────────────────
 
 // Today's daily-highlight pick, pinned first in Top picks. CI sets FEATURED_SLUG
-// (computed by select-post.ts before the build); local builds fall back to the
-// most recently posted project.
+// (computed by select-post.ts before the build); otherwise fall back to the most
+// recently published post. posted.json is the source here, not the frontmatter
+// postedAt — that one only refreshes on the next collect, so it lags behind
+// posts published after the last collect ran.
 const featuredSlug = process.env.FEATURED_SLUG
-  || [...visible]
-       .filter(p => p.data.postedAt)
-       .sort((a, b) => new Date(b.data.postedAt!).getTime() - new Date(a.data.postedAt!).getTime())[0]?.slug;
+  || [...loadPosted()]
+       .sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime())[0]?.slug;
 const featured = visible.find(p => p.slug === featuredSlug);
 
 const topPicks = take(
