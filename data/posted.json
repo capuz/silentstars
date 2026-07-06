@@ -365,5 +365,20 @@
         "postedAt": "2026-07-05T21:15:30.361Z"
       }
     }
+  },
+  {
+    "repo": "Ultimate-Hosts-Blacklist/justdomains_mirror1.malwaredomains.com",
+    "slug": "ultimate-hosts-blacklist--justdomains-mirror1-malwaredomains-com",
+    "postedAt": "2026-07-06T09:35:20.998Z",
+    "platforms": {
+      "x": {
+        "url": "https://x.com/i/web/status/2074064647083470857",
+        "postedAt": "2026-07-06T09:35:20.998Z"
+      },
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpxrzb6gqj2d",
+        "postedAt": "2026-07-06T09:35:25.107Z"
+      }
+    }
   }
 ]
