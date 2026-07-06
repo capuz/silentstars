@@ -23,6 +23,7 @@ healthScore: 97
 undervaluedScore: 93
 maintainers: ["Amr-Bendary", "abubakr-itqan", "semantic-release-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/37cd7f2fa9a3ac8135760200caa836fb5a9098fc6a821f28b6e1c1aeb49759b2/Itqan-community/cms-frontend"
+postedAt: "2026-07-05T21:04:50.552Z"
 ---
 
 # Itqan CMS Frontend
