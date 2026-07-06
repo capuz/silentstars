@@ -5,7 +5,7 @@ import {
   type PostedEntry, type Project, type LatestData,
   LANG_HASHTAG,
   loadPosted, savePosted, recordPost, loadOgImage, selectTop20,
-  loadCommunityTags, seededIndex, truncate,
+  loadCommunityTags, seededIndex, truncate, slugify,
 } from './post-shared.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
@@ -37,7 +37,7 @@ function buildPost(p: Project, baseUrl: string) {
     .map(l => LANG_HASHTAG[l] ?? '')
     .filter(Boolean);
   const tags     = [...loadCommunityTags(), ...langTags].join(' ');
-  const slug     = p.repo.toLowerCase().replace('/', '--');
+  const slug     = slugify(p.repo);
   const siteUrl  = `${baseUrl}/projects/${slug}/`;
 
   // Text without URL — card embed handles the link
@@ -92,7 +92,7 @@ async function main(): Promise<void> {
     const needle = projectArg.toLowerCase();
     const found = data.projects.find(p =>
       p.repo.toLowerCase() === needle ||
-      p.repo.toLowerCase().replace('/', '--') === needle,
+      slugify(p.repo) === needle,
     );
     if (!found) throw new Error(`Project not found: "${projectArg}"`);
     project = found;
@@ -111,7 +111,7 @@ async function main(): Promise<void> {
   console.log(`─── card → ${siteUrl}`);
   console.log(`─── name link → ${project.url}`);
 
-  const slug = project.repo.toLowerCase().replace('/', '--');
+  const slug = slugify(project.repo);
   console.log(`PROJECT_SLUG=${slug}`);
 
   // Loaded before the dry-run gate so dry runs verify image availability too
