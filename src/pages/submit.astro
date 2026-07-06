@@ -14,9 +14,21 @@ const SAMPLE_SLUGS = [
 ];
 
 const all = await getCollection('projects');
-const samples = SAMPLE_SLUGS
+const curated = SAMPLE_SLUGS
   .map(slug => all.find(p => p.slug === slug))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+// Fill up to 3 cards when curated slugs have rotated out of the collection:
+// promoted (accepted community submissions) first, then most undervalued.
+const fallback = all
+  .filter(p => p.data.status !== 'archived' && !curated.some(c => c.slug === p.slug))
+  .sort((a, b) => {
+    const aP = a.data.promoted ? 1 : 0;
+    const bP = b.data.promoted ? 1 : 0;
+    if (aP !== bP) return bP - aP;
+    return b.data.undervaluedScore - a.data.undervaluedScore;
+  });
+const samples = [...curated, ...fallback].slice(0, 3);
 ---
 <Base
   title="Submit a project"
@@ -32,6 +44,12 @@ const samples = SAMPLE_SLUGS
         Know something that's actively built but flying under the radar?
         Submit it — the bot validates instantly. If accepted, your project goes live in minutes.
       </p>
+      <div class="hero-actions">
+        <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-cta">
+          Submit your project →
+        </a>
+        <span class="hero-hint">~1 min · 2 required fields</span>
+      </div>
       <p class="count">Joining <strong>{projectCount}</strong> open-source projects already tracked.</p>
     </div>
 
@@ -39,22 +57,50 @@ const samples = SAMPLE_SLUGS
       <h2 class="section-label">// how it works</h2>
       <div class="steps">
         <div class="step">
-          <div class="step-num">01</div>
-          <div class="step-title">Open an issue</div>
-          <p class="step-desc">Fill in the template: repo link + why it deserves attention. No lengthy forms.</p>
+          <div class="step-head">
+            <div class="step-num">01</div>
+            <svg class="step-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="14" height="17" rx="2" />
+              <line x1="7" y1="9" x2="13" y2="9" />
+              <line x1="7" y1="13" x2="13" y2="13" />
+              <path d="M15.5 17.5l5-5 2 2-5 5-2.5.5z" />
+            </svg>
+          </div>
+          <div class="step-title">Fill a short form</div>
+          <p class="step-desc">Repo link + one sentence on why it deserves attention. GitHub hosts the form.</p>
         </div>
         <div class="step">
-          <div class="step-num">02</div>
+          <div class="step-head">
+            <div class="step-num">02</div>
+            <svg class="step-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="13 2 3 14 11 14 10 22 21 9 13 9 13 2" />
+            </svg>
+          </div>
           <div class="step-title">Bot validates</div>
           <p class="step-desc">We check activity, stars, open issues, and recent commits. Instant response.</p>
         </div>
         <div class="step">
-          <div class="step-num">03</div>
+          <div class="step-head">
+            <div class="step-num">03</div>
+            <svg class="step-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2" />
+              <path d="M12 15l-3-3c.8-2.1 2-4.1 3.5-5.6C15 3.9 18.5 2.5 21.5 2.5c0 3-1.4 6.5-3.9 9-1.5 1.5-3.5 2.7-5.6 3.5z" />
+              <path d="M9 12H5.5l2-3.5" />
+              <path d="M12 15v3.5l3.5-2" />
+              <circle cx="15.5" cy="8.5" r="1" />
+            </svg>
+          </div>
           <div class="step-title">Goes live</div>
           <p class="step-desc">Accepted projects appear in the directory and get posted on X automatically.</p>
         </div>
         <div class="step">
-          <div class="step-num">04</div>
+          <div class="step-head">
+            <div class="step-num">04</div>
+            <svg class="step-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="5" width="19" height="14" rx="2" />
+              <path d="M3 6.5l9 7 9-7" />
+            </svg>
+          </div>
           <div class="step-title">You're notified</div>
           <p class="step-desc">Email with your project card + link to the X post. No need to check back.</p>
         </div>
@@ -77,16 +123,19 @@ const samples = SAMPLE_SLUGS
       </div>
 
       <div class="cta-card">
-        <h2>// submit</h2>
+        <h2>// ready?</h2>
         <p>
-          Open a GitHub issue with the repo link and a short note on why it deserves attention.
-          If accepted, we'll add it to the directory and post it on X automatically.
+          No gatekeeping — if the project is real and active, it gets in.
+          Accepted projects join the directory and get posted on X automatically.
         </p>
-        <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-submit">
-          Open submission issue ↗
+        <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-cta btn-cta-lg">
+          Submit your project →
         </a>
         <p class="note">
-          You'll need a GitHub account. Leave your email to get notified when it goes live.
+          Opens a short pre-filled form on GitHub — just the repo link + one sentence. Takes about a minute.
+        </p>
+        <p class="note">
+          Leave your email to get notified when it goes live.
         </p>
       </div>
 
@@ -139,6 +188,46 @@ const samples = SAMPLE_SLUGS
     color: var(--accent);
     font-weight: 700;
   }
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 1rem;
+  }
+  .hero-hint {
+    font-family: var(--f-mono);
+    font-size: 0.7rem;
+    color: var(--text-dim);
+  }
+
+  /* ── CTA button (matches home .btn btn-primary) ───────────── */
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: 1.5px solid var(--ink);
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--f-body);
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 3px 3px 0 var(--shadow);
+    transition: transform .1s, box-shadow .1s;
+    text-decoration: none;
+  }
+  .btn-cta:hover {
+    box-shadow: 1px 1px 0 var(--shadow);
+    transform: translate(2px, 2px);
+    text-decoration: none;
+  }
+  .btn-cta-lg {
+    padding: 12px 26px;
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
 
   /* ── How it works ─────────────────────────────────────────── */
   .how-section {
@@ -165,14 +254,23 @@ const samples = SAMPLE_SLUGS
     background: var(--card);
     padding: 20px 22px;
   }
+  .step-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
   .step-num {
     font-family: var(--f-mono);
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent);
     letter-spacing: -0.04em;
-    margin-bottom: 8px;
     line-height: 1;
+  }
+  .step-icon {
+    color: var(--accent);
+    flex-shrink: 0;
   }
   .step-title {
     font-family: var(--f-mono);
@@ -242,26 +340,13 @@ const samples = SAMPLE_SLUGS
     color: var(--text-muted);
     margin-bottom: 1.25rem;
   }
-  .btn-submit {
-    display: inline-block;
-    font-family: var(--f-mono);
-    font-size: 0.8rem;
-    font-weight: 700;
-    padding: 10px 22px;
-    border-radius: 999px;
-    background: var(--ink);
-    color: var(--paper);
-    text-decoration: none;
-    transition: opacity .12s;
-    margin-bottom: 1rem;
-  }
-  .btn-submit:hover { opacity: .8; text-decoration: none; }
   .note {
     font-family: var(--f-mono);
     font-size: 0.65rem !important;
     color: var(--text-dim) !important;
     margin-bottom: 0 !important;
   }
+  .note + .note { margin-top: 6px; }
 
   /* ── Sample cards ─────────────────────────────────────────── */
   .samples-section {
