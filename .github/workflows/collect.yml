@@ -136,7 +136,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     outputs:
-      post_slug: ${{ steps.og_slugs.outputs.post_slug }}
+      post_slug: ${{ steps.picks.outputs.post_slug }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -167,13 +167,32 @@ jobs:
         if: steps.pw-cache.outputs.cache-hit != 'true'
         run: npx playwright install chromium --with-deps
 
+      # Single source of truth for today's pick: post/post-x consume post_slug
+      # instead of re-running the selection and hoping it agrees. Runs before the
+      # build so the home page can feature today's pick (FEATURED_SLUG).
+      - name: Select today's picks
+        id: picks
+        run: |
+          # Today's picks — may be different per platform if posting histories diverge
+          if [ -n "${{ inputs.submission_repo }}" ]; then
+            KNOWN=$(echo "${{ inputs.submission_repo }}" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
+            BSKY_SLUG="$KNOWN"
+            X_SLUG="$KNOWN"
+          else
+            BSKY_SLUG=$(npx tsx scripts/select-post.ts bsky 2>/dev/null || true)
+            X_SLUG=$(npx tsx scripts/select-post.ts x 2>/dev/null || true)
+          fi
+          echo "BSKY_SLUG=${BSKY_SLUG}" >> $GITHUB_ENV
+          echo "X_SLUG=${X_SLUG}" >> $GITHUB_ENV
+          echo "post_slug=${BSKY_SLUG}" >> $GITHUB_OUTPUT
+          echo "Today's picks — bsky: ${BSKY_SLUG:-none}, x: ${X_SLUG:-none}"
+
       - name: Build Astro site
         run: npm run build
+        env:
+          FEATURED_SLUG: ${{ env.BSKY_SLUG }}
 
-      # Single source of truth for today's pick: post/post-x consume post_slug
-      # instead of re-running the selection and hoping it agrees.
       - name: Select OG slugs
-        id: og_slugs
         run: |
           # All previously-posted slugs: their detail pages link og/<slug>.png directly
           POSTED_SLUGS=$(node -e "
@@ -183,22 +202,12 @@ jobs:
             const d = JSON.parse(fs.readFileSync(p, 'utf8'));
             process.stdout.write(d.map(e => e.slug).join(','));
           ")
-          # Today's picks — may be different per platform if posting histories diverge
-          if [ -n "${{ inputs.submission_repo }}" ]; then
-            KNOWN=$(echo "${{ inputs.submission_repo }}" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
-            BSKY_SLUG="$KNOWN"
-            X_SLUG="$KNOWN"
-          else
-            BSKY_SLUG=$(npx tsx scripts/select-post.ts bsky 2>/dev/null || true)
-            X_SLUG=$(npx tsx scripts/select-post.ts x 2>/dev/null || true)
-          fi
-          # Combine and deduplicate
+          # Combine today's picks with the backlog and deduplicate
           ALL="${POSTED_SLUGS}${BSKY_SLUG:+,}${BSKY_SLUG}${X_SLUG:+,}${X_SLUG}"
           ONLY_SLUGS=$(echo "$ALL" | tr ',' '\n' | grep -v '^$' | sort -u | paste -sd ',')
           echo "ONLY_SLUGS=${ONLY_SLUGS}" >> $GITHUB_ENV
-          echo "post_slug=${BSKY_SLUG}" >> $GITHUB_OUTPUT
           COUNT=$(echo "$ONLY_SLUGS" | tr ',' '\n' | grep -c '.' || echo 0)
-          echo "Screenshotting ${COUNT} OG cards (bsky: ${BSKY_SLUG:-none}, x: ${X_SLUG:-none})"
+          echo "Screenshotting ${COUNT} OG cards"
 
       - name: Generate OG screenshots
         run: npm run og
@@ -267,7 +276,7 @@ jobs:
         env:
           SUBMISSION_REPO: ${{ inputs.submission_repo }}
         run: |
-          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
+          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
       - name: Download OG images
@@ -356,7 +365,7 @@ jobs:
         env:
           SUBMISSION_REPO: ${{ inputs.submission_repo }}
         run: |
-          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
+          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
       - name: Download OG images

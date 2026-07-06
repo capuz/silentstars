@@ -34,8 +34,17 @@ function promotedFirst(a: Entry, b: Entry): number {
 
 // ── Sections (priority order — first match wins for dedup) ────────────────────
 
+// Today's daily-highlight pick, pinned first in Top picks. CI sets FEATURED_SLUG
+// (computed by select-post.ts before the build); local builds fall back to the
+// most recently posted project.
+const featuredSlug = process.env.FEATURED_SLUG
+  || [...visible]
+       .filter(p => p.data.postedAt)
+       .sort((a, b) => new Date(b.data.postedAt!).getTime() - new Date(a.data.postedAt!).getTime())[0]?.slug;
+const featured = visible.find(p => p.slug === featuredSlug);
+
 const topPicks = take(
-  [...visible].sort(promotedFirst),
+  [...(featured ? [featured] : []), ...[...visible].sort(promotedFirst)],
   9
 );
 
@@ -175,7 +184,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Highest signal-to-reach ratio — building more than their audience knows.</p>
       </div>
       <div class="grid">
-        {topPicks.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {topPicks.map(p => <ProjectCard slug={p.slug} featured={p.slug === featured?.slug} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>

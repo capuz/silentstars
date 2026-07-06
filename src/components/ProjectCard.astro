@@ -15,6 +15,7 @@ interface Props {
   lastCommitAt: string;
   maintainers: string[];
   promoted?: boolean;
+  featured?: boolean;
   openGraphImageUrl?: string;
   // passthrough fields from schema spread (unused but silences TS)
   createdAt?: string;
@@ -30,7 +31,7 @@ interface Props {
 const {
   slug, name, description, repo, url, status, tags,
   healthScore, undervaluedScore, stars, watchers, language, languages = [], lastCommitAt,
-  maintainers, createdAt, openGraphImageUrl,
+  maintainers, createdAt, openGraphImageUrl, featured = false,
 } = Astro.props;
 
 const customImage = openGraphImageUrl?.includes('repository-images.githubusercontent.com')
@@ -131,6 +132,10 @@ const tagLabels: Record<string, string> = {
   <!-- top row: badges + score -->
   <div class="card-top">
     <div class="card-badges">
+      <!-- daily highlight badge -->
+      {featured && (
+        <span class="star-badge">🌟 Star of the day</span>
+      )}
       <!-- category badge -->
       <span class="cat-badge" style={`background:${cat.bg};`}>
         <img src={catIconSrc} alt={cat.label} width="16" height="16" />
@@ -272,6 +277,23 @@ const tagLabels: Record<string, string> = {
     align-items: center;
     gap: 7px;
     flex-wrap: wrap;
+  }
+
+  /* daily highlight badge */
+  .star-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    background: var(--accent);
+    color: #fff;
+    transform: rotate(-2deg);
+    flex-shrink: 0;
   }
 
   /* category badge */
