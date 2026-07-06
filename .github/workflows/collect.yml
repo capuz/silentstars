@@ -190,7 +190,9 @@ jobs:
       - name: Build Astro site
         run: npm run build
         env:
-          FEATURED_SLUG: ${{ env.BSKY_SLUG }}
+          # Only feature today's pick when the post jobs will actually publish it;
+          # on skip_post deploys the home falls back to the latest real post.
+          FEATURED_SLUG: ${{ inputs.skip_post != true && env.BSKY_SLUG || '' }}
 
       - name: Select OG slugs
         run: |

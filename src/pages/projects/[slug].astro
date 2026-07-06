@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { loadPosted } from '../../../scripts/post-shared.ts';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -119,6 +120,11 @@ const customImage = d.openGraphImageUrl?.includes('repository-images.githubuserc
 const pageUrl = new URL(`${base}projects/${project.slug}/`, Astro.site).href;
 const xText = encodeURIComponent(`★ ${d.name} — ${d.description}\n\n${pageUrl}`);
 const xUrl  = `https://x.com/intent/tweet?text=${xText}`;
+
+// Daily-highlight posts published for this project (recorded by the post jobs)
+const postedEntry = loadPosted().find(e => e.slug === project.slug);
+const xPostUrl    = postedEntry?.platforms.x?.url;
+const bskyPostUrl = postedEntry?.platforms.bsky?.url;
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage}>
   <div class="container section">
@@ -224,6 +230,18 @@ const xUrl  = `https://x.com/intent/tweet?text=${xText}`;
           <a href={d.url} target="_blank" rel="noopener noreferrer" class="footer-stars">
             <span>★</span>{d.stars}
           </a>
+          {xPostUrl && (
+            <a href={xPostUrl} target="_blank" rel="noopener noreferrer" class="btn-x" title="View the daily highlight post on X">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Post ↗
+            </a>
+          )}
+          {bskyPostUrl && (
+            <a href={bskyPostUrl} target="_blank" rel="noopener noreferrer" class="btn-bsky" title="View the daily highlight post on Bluesky">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+              Post ↗
+            </a>
+          )}
           <a href={xUrl} target="_blank" rel="noopener noreferrer" class="btn-x" title="Share on X">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             Share
@@ -520,6 +538,23 @@ const xUrl  = `https://x.com/intent/tweet?text=${xText}`;
     transition: background .12s, color .12s;
   }
   .btn-x:hover { background: #000; border-color: #000; color: #fff; text-decoration: none; }
+
+  .btn-bsky {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 999px;
+    border: 1.5px solid var(--ink);
+    color: var(--ink);
+    background: transparent;
+    letter-spacing: 0.02em;
+    transition: background .12s, border-color .12s, color .12s;
+  }
+  .btn-bsky:hover { background: #1185fe; border-color: #1185fe; color: #fff; text-decoration: none; }
 
   .btn-gh {
     font-family: var(--f-mono);
