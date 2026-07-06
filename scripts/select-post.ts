@@ -10,7 +10,7 @@
 
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex, selectTop20 } from './post-shared.ts';
+import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex, selectTop20, slugify } from './post-shared.ts';
 
 const platform = process.argv[2] as 'bsky' | 'x' | undefined;
 if (platform !== 'bsky' && platform !== 'x') {
@@ -47,7 +47,7 @@ const projectSlug = process.env.PROJECT_SLUG ?? '';
 let project: Project | undefined;
 if (projectSlug) {
   project = allActive.find(
-    p => p.repo.toLowerCase().replace('/', '--') === projectSlug ||
+    p => slugify(p.repo) === projectSlug ||
          p.repo.toLowerCase() === projectSlug,
   );
 }
@@ -60,4 +60,4 @@ if (!project) {
   project = top20[seededIndex(today, top20.length)];
 }
 
-process.stdout.write(project.repo.toLowerCase().replace('/', '--'));
+process.stdout.write(slugify(project.repo));

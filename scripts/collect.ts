@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { looksNonEnglish, translateToEnglish } from './collect-i18n.ts';
+import { slugify } from './post-shared.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -501,10 +502,6 @@ function toFrontmatter(data: RepoData): string {
   if (data.postedAt) lines.push(`postedAt: "${data.postedAt}"`);
   lines.push('---');
   return lines.join('\n');
-}
-
-function slugify(nameWithOwner: string): string {
-  return nameWithOwner.replace('/', '--').toLowerCase().replace(/[^a-z0-9-]/g, '-');
 }
 
 function stripReadmeNoise(rawReadmeText: string): string {

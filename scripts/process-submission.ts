@@ -17,6 +17,7 @@
 import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { slugify } from './post-shared.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -69,7 +70,7 @@ function parseIssueBody(body: string): { repo: string; email: string; subscribe:
 }
 
 function repoToSlug(repo: string): string {
-  return repo.toLowerCase().replace('/', '--');
+  return slugify(repo);
 }
 
 // ──────────────────────────────────────────────────────────────────────────────

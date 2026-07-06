@@ -50,7 +50,7 @@ jobs:
         env:
           REPO: ${{ inputs.project_repo }}
         run: |
-          SLUG=$(echo "$REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|')
+          SLUG=$(echo "$REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
       - name: Post to X.com

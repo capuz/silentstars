@@ -31,6 +31,13 @@ export interface LatestData {
 
 export const POSTED_PATH = join(process.cwd(), 'data', 'posted.json');
 
+// Single source of truth for repo → slug: collect.ts (page/OG filenames) and
+// every posting script import this one, so the OG filename a post requests
+// always matches the one the build produced.
+export function slugify(nameWithOwner: string): string {
+  return nameWithOwner.replace('/', '--').toLowerCase().replace(/[^a-z0-9-]/g, '-');
+}
+
 // Local-first: in CI the deploy job hands the PNGs to the post jobs via a
 // workflow artifact (OG_DIR), so the image never round-trips the Pages CDN.
 // The CDN fetch below is the fallback for local/manual runs.
@@ -87,7 +94,7 @@ export function selectTop20(projects: Project[], posted: PostedEntry[], platform
 }
 
 export function recordPost(repo: string, platform: string, url: string, entries: PostedEntry[]): PostedEntry[] {
-  const slug = repo.toLowerCase().replace('/', '--');
+  const slug = slugify(repo);
   const now  = new Date().toISOString();
   const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
   if (existing) {
