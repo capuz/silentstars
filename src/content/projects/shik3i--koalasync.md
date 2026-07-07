@@ -7,9 +7,9 @@ url: "https://github.com/Shik3i/KoalaSync"
 homepage: "https://sync.koalastuff.net"
 language: "JavaScript"
 languages: ["JavaScript", "HTML"]
-languagePcts: [61, 28]
+languagePcts: [60, 27]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
-stars: 41
+stars: 42
 forks: 3
 openIssues: 1
 closedIssues: 5
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 5
 recentReleases: 10
 createdAt: "2026-04-21T04:12:57Z"
-lastCommitAt: "2026-07-03T21:50:05Z"
+lastCommitAt: "2026-07-07T05:10:24Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
@@ -50,6 +50,6 @@ postedAt: "2026-06-26T21:38:25.211Z"
 
 - **Global Synchronization**: Synchronize Play, Pause, and Seeking on any website with a `<video>` tag.
 - **Episode Auto-Sync**: Perfectly sync series binges. All peers wait until everyone has loaded the next episode before starting together.
+- **Host Control & Co-Hosts**: Room hosts can lock playback control to trusted controllers while guests keep watching in sync.
 - **Smart Matching**: Automatically highlights tabs containing matching video titles.
-- **Dual Heartbeat Architecture**: Robust session tracking that prevents ghost rooms and stale connections.
-- **Efficient Relay**: Minimal overhead WebSocket message…
+- **Dual Heartbeat Architecture**: Robust…
