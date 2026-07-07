@@ -7,8 +7,8 @@ url: "https://github.com/opn-build/OpenAlive"
 homepage: "https://opn-build.github.io/"
 language: "Go"
 languages: ["Go"]
-languagePcts: [92]
-topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "productivity", "system-tray", "windows"]
+languagePcts: [93]
+topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "system-tray", "windows", "keypress", "open-source"]
 stars: 2
 forks: 0
 openIssues: 0
@@ -17,20 +17,23 @@ watchers: 0
 contributors: 2
 recentReleases: 5
 createdAt: "2026-05-30T02:07:49Z"
-lastCommitAt: "2026-07-02T23:24:36Z"
+lastCommitAt: "2026-07-07T03:41:27Z"
 lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 77
-undervaluedScore: 49
-maintainers: ["capuz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e09bb16e465a66393ff52fd53f5e1288cddb1fd93037f706284383240c033984/opn-build/OpenAlive"
+healthScore: 78
+undervaluedScore: 58
+maintainers: ["capuz", "opn-build"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
 promoted: true
 postedAt: "2026-06-25T22:59:39.704Z"
 ---
 
 # OpenAlive
 
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://opn-build.github.io/og-image-light.png" />
+    </picture>
   </a>
 </p>
 
@@ -52,5 +55,4 @@ Working remotely or in a monitored environment, your PC going to sleep or showin
 
 ## Features
 
-- **Mouse activity simulation** — moves the cursor by a configurable number of pixels and returns it to the exact position, imperceptibly
-- **Keystroke simulation** — optionally sends a configurable key (e.g. Shift) alongside the…
+- **Mouse activity simulation** — moves the cursor by a configurable number of pixels and…

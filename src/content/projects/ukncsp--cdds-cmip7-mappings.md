@@ -14,21 +14,21 @@ openIssues: 1837
 closedIssues: 56
 watchers: 3
 contributors: 16
-recentReleases: 4
+recentReleases: 5
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-06T07:01:48Z"
-lastReleaseAt: "2026-06-05T11:57:52Z"
+lastCommitAt: "2026-07-07T04:41:59Z"
+lastReleaseAt: "2026-07-06T08:54:53Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 81
 undervaluedScore: 79
-maintainers: ["mo-laurenboon", "matthew-mizielinski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/41835c42caaacd6b59174f9761d30068051430a723c2b5a0891e39e0572d07bd/UKNCSP/CDDS-CMIP7-mappings"
+maintainers: ["matthew-mizielinski", "mo-laurenboon"]
+openGraphImageUrl: "https://opengraph.githubassets.com/041441c5ec8c57608be5f8afa700c3ee2ef2a025b3e95258beadeef3a84cedc9/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---
 
-**WARNING: MAINTENANCE WORK IN PROGRESS**
+**WARNING: UPDATE TO DATA REQUEST v1.2.2.4/5 DUE BY MID JULY** 
 
 # UKNCSP CDDS-CMIP7-mappings 
 
@@ -40,4 +40,4 @@ postedAt: "2026-06-28T07:04:35.686Z"
 
 **UPDATE 24/11/25: Some changes were missed in last weeks update. I've now fixed this and confirmed consistency with the data request**
 
-**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data request, but this is…
+**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data…
