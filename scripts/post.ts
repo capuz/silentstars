@@ -147,9 +147,8 @@ async function main(): Promise<void> {
   const updatedPosted = recordPost(project.repo, 'bsky', bskyUrl, posted);
   savePosted(updatedPosted);
 
-  // Emitted so the GitHub Actions workflow can capture these values
+  // Emitted so the GitHub Actions workflow can capture this value
   console.log(`BSKY_POST_URL=${bskyUrl}`);
-  console.log(`BSKY_POST_TEXT_B64=${Buffer.from(text).toString('base64')}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

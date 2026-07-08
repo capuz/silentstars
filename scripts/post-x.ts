@@ -116,7 +116,6 @@ async function main(): Promise<void> {
   savePosted(updatedPosted);
 
   console.log(`X_POST_URL=${xUrl}`);
-  console.log(`X_POST_TEXT_B64=${Buffer.from(text).toString('base64')}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

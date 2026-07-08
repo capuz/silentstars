@@ -151,3 +151,27 @@ export function truncate(str: string, max: number): string {
   if (str.length <= max) return str;
   return str.slice(0, max - 1).trimEnd() + '…';
 }
+
+// Shared by process-submission.ts (submitter fallback) and notify-owners.ts
+// (repo owner outreach) — public email first, then the profile page scrape
+// GitHub still renders for users who opted in via "Public email on profile".
+export async function resolveGithubPublicEmail(login: string, token: string): Promise<string> {
+  const res = await fetch(`https://api.github.com/users/${login}`, {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+    },
+  });
+  if (res.ok) {
+    const data = await res.json() as { email?: string | null };
+    if (data.email) return data.email;
+  }
+  try {
+    const profile = await fetch(`https://github.com/${login}`);
+    if (!profile.ok) return '';
+    const html = await profile.text();
+    const m = html.match(/itemprop="email"[^>]*>([^<\s]+)/);
+    return m ? m[1].trim() : '';
+  } catch { return ''; }
+}
