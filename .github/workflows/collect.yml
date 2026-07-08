@@ -465,3 +465,59 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # ─────────────────────────────────────────────────────────────
+  # Job 6: Notify tonight's featured project owner (organic picks only).
+  # Skipped for submission-triggered runs — that submitter already gets
+  # their own acceptance email from process-submission.yml, and emailing
+  # the repo owner too (often the same person) would be a redundant
+  # second email with different wording. Silent no-op if the owner has
+  # no public GitHub email (see scripts/notify-owners.ts).
+  # ─────────────────────────────────────────────────────────────
+  notify-owner:
+    name: Notify featured project owner
+    runs-on: ubuntu-latest
+    needs: [deploy, post, post-x]
+    if: >-
+      !cancelled() && needs.deploy.result == 'success' &&
+      inputs.dry_run != true && inputs.submission_repo == '' &&
+      needs.deploy.outputs.post_slug != '' &&
+      (needs.post.result == 'success' || needs.post-x.result == 'success')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Notify owner
+        env:
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
+          NOTIFY_BCC:        fcapuz@gmail.com
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          SLUGS:             ${{ needs.deploy.outputs.post_slug }}
+        run: npx tsx scripts/notify-owners.ts
+
+      - name: Commit posted.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted.json
+          git diff --cached --quiet || git commit -m "chore: record owner outreach email [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done
