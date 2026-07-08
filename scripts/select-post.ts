@@ -2,7 +2,9 @@
  * select-post.ts — determine which project would be posted today for a given platform,
  * without making any API calls or posting anything.
  *
- * Usage: npx tsx scripts/select-post.ts <bsky|x>
+ * Usage: npx tsx scripts/select-post.ts <bsky|x|any>
+ *        ("any" picks from projects not yet posted on any platform — the shared
+ *         nightly pick that both platforms must honor)
  * Env:   PROJECT_SLUG (optional — forces a specific slug, same as post.ts/post-x.ts)
  * Output: slug written to stdout (no newline), e.g. "owner--repo"
  * Exit 1: no candidates found
@@ -12,9 +14,9 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex, selectTop20, slugify } from './post-shared.ts';
 
-const platform = process.argv[2] as 'bsky' | 'x' | undefined;
-if (platform !== 'bsky' && platform !== 'x') {
-  process.stderr.write('Usage: select-post.ts <bsky|x>\n');
+const platform = process.argv[2] as 'bsky' | 'x' | 'any' | undefined;
+if (platform !== 'bsky' && platform !== 'x' && platform !== 'any') {
+  process.stderr.write('Usage: select-post.ts <bsky|x|any>\n');
   process.exit(1);
 }
 
@@ -31,7 +33,11 @@ const posted: PostedEntry[] = existsSync(POSTED_PATH)
   : [];
 
 const alreadyPosted = new Set(
-  posted.filter(e => e.platforms[platform]).map(e => e.repo.toLowerCase()),
+  posted
+    .filter(e => platform === 'any'
+      ? Object.keys(e.platforms).length > 0
+      : e.platforms[platform])
+    .map(e => e.repo.toLowerCase()),
 );
 
 // Unfiltered by README quality — an explicit PROJECT_SLUG override should still work
