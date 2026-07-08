@@ -356,6 +356,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpzyyucyjx2v",
         "postedAt": "2026-07-07T06:45:47.253Z"
+      },
+      "ownerEmail": {
+        "url": "team@corpora.inc",
+        "postedAt": "2026-07-08T22:45:47.184Z"
       }
     }
   },
@@ -371,6 +375,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpwio6vfef2v",
         "postedAt": "2026-07-05T21:15:30.361Z"
+      },
+      "ownerEmail": {
+        "url": "connect@itqan.dev",
+        "postedAt": "2026-07-08T22:45:47.446Z"
       }
     }
   },
@@ -386,6 +394,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpxrzb6gqj2d",
         "postedAt": "2026-07-06T09:35:25.107Z"
+      },
+      "ownerEmail": {
+        "url": "hosts@ubuntu101.co.za",
+        "postedAt": "2026-07-08T22:45:47.655Z"
       }
     }
   },
