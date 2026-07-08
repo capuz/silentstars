@@ -124,7 +124,12 @@ jobs:
   notify:
     name: Notify submitter
     needs: [validate, collect-deploy-post]
-    if: needs.validate.outputs.status == 'accepted'
+    # An X-only failure fails collect-deploy-post (its post-x job no longer
+    # hides errors), but the project still deployed and posted to Bluesky —
+    # bsky_url being set proves it, so the acceptance flow must still notify.
+    if: >-
+      !cancelled() && needs.validate.outputs.status == 'accepted' &&
+      (needs.collect-deploy-post.result == 'success' || needs.collect-deploy-post.outputs.bsky_url != '')
     runs-on: ubuntu-latest
     permissions:
       issues: write

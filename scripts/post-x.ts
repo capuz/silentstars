@@ -54,13 +54,23 @@ async function main(): Promise<void> {
 
   const today       = new Date().toISOString().slice(0, 10);
   const projectSlug = process.env.PROJECT_SLUG ?? '';
-  // When a specific project is requested, search all active (not just top-20)
-  const project     = projectSlug
-    ? (allActive.find(p => slugify(p.repo) === projectSlug) ?? top20[seededIndex(today, top20.length)])
-    : (() => {
-        if (top20.length === 0) throw new Error('No candidates with a quality README available to post to X');
-        return top20[seededIndex(today, top20.length)];
-      })();
+  // A requested project is an order, not a hint: search all projects (same
+  // semantics as post.ts) and fail loudly rather than silently picking another
+  // repo — that fallback is how X and Bluesky ended up posting different
+  // projects on the same night.
+  let project: Project;
+  if (projectSlug) {
+    const needle = projectSlug.toLowerCase();
+    const found = data.projects.find(p =>
+      p.repo.toLowerCase() === needle ||
+      slugify(p.repo) === needle,
+    );
+    if (!found) throw new Error(`Project not found: "${projectSlug}"`);
+    project = found;
+  } else {
+    if (top20.length === 0) throw new Error('No candidates with a quality README available to post to X');
+    project = top20[seededIndex(today, top20.length)];
+  }
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   const text = buildTweet(project, baseUrl);

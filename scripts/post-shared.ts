@@ -78,11 +78,16 @@ export function savePosted(entries: PostedEntry[]): void {
 const ACTIVE_STATUSES = ['thriving', 'newborn', 'revived', 'watched'];
 
 // Shared by select-post.ts, post.ts, post-x.ts — the candidate pool for the daily highlight:
-// active status, a README with enough real prose, not already posted on this platform,
+// active status, a README with enough real prose, not already posted on this platform
+// ('any' excludes repos posted on any platform, so both platforms share one pick),
 // ranked by undervaluedScore.
-export function selectTop20(projects: Project[], posted: PostedEntry[], platform: 'bsky' | 'x'): Project[] {
+export function selectTop20(projects: Project[], posted: PostedEntry[], platform: 'bsky' | 'x' | 'any'): Project[] {
   const alreadyPosted = new Set(
-    posted.filter(e => e.platforms[platform]).map(e => e.repo.toLowerCase()),
+    posted
+      .filter(e => platform === 'any'
+        ? Object.keys(e.platforms).length > 0
+        : e.platforms[platform])
+      .map(e => e.repo.toLowerCase()),
   );
   return projects
     .filter(p => ACTIVE_STATUSES.includes(p.status))
