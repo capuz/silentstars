@@ -1,0 +1,63 @@
+---
+repo: "notrinos/NotrinosERP"
+name: "NotrinosERP"
+description: "A web-based ERP, Accounting system that written in PHP and MySql includes CRM, Sales, Purchasing, Warehousing, Manufacturing, Payroll & Human Resource... It supports multi user, multi currencies, multi languages, multi level approval workflow."
+readmeQualityOk: true
+url: "https://github.com/notrinos/NotrinosERP"
+homepage: "https://notrinos.com"
+language: "PHP"
+languages: ["PHP"]
+languagePcts: [95]
+topics: ["php", "accounting", "erp", "pos", "sales", "purchasing", "inventory", "mysql", "human-resources", "manufacturing-process"]
+stars: 150
+forks: 67
+openIssues: 9
+closedIssues: 8
+watchers: 9
+contributors: 1
+recentReleases: 2
+createdAt: "2021-01-03T04:38:58Z"
+lastCommitAt: "2026-07-08T05:42:00Z"
+lastReleaseAt: "2026-06-07T01:24:19Z"
+status: "thriving"
+tags: ["solo_builder", "legacy_hero"]
+healthScore: 69
+undervaluedScore: 47
+maintainers: ["notrinos"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/326328343/fa33a300-551e-11eb-8d16-56997597fcc9"
+discussionCount: 5
+---
+
+# NotrinosERP 1.0
+
+[<img src="https://github.com/notrinos/NotrinosERP/raw/master/themes/default/images/notrinos_erp.jpg" width="350" />](http://notrinos.com)
+
+NotrinosERP is an open-source, web-based Enterprise Resource Planning (ERP) system written in PHP and MySQL. Version 1.0 adds a full **CRM**, **HRM/Payroll**, and **multi-level Approval Workflow** module — everything a small-to-medium business needs in a single, self-hosted application.
+
+| | |
+|---|---|
+| **Demo** | [demo.notrinos.com/erp1.0](https://demo.notrinos.com/erp1.0) |
+| **Forum** | [forums.notrinos.com](https://forums.notrinos.com) |
+| **Wiki / Docs** | [support.notrinos.com/1.0](https://support.notrinos.com/1.0/index.php?n=Help.Help) |
+| **License** | GNU GPL v3 or later |
+
+---
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Requirements](#requirements)
+3. [Installation](#installation)
+4. [Configuration](#configuration)
+5. [Modules Overview](#modules-overview)
+6. [Optional Modules](#optional-modules)
+7. [Debugging](#debugging)
+8. [Security](#security)
+9. [Contributing](#contributing)
+
+---
+
+## Features
+
+- **Multi-company** — manage multiple companies from a single installation
+- **Multi-currency** — full…
