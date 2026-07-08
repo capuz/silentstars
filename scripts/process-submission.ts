@@ -17,7 +17,7 @@
 import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { slugify } from './post-shared.ts';
+import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -132,27 +132,9 @@ async function fetchRepo(repo: string): Promise<GitHubRepo | null> {
   return data;
 }
 
-async function fetchUserEmail(login: string): Promise<string> {
-  const { ok, data } = await ghFetch<{ email?: string | null }>(`/users/${login}`);
-  if (!ok) return '';
-  return data.email ?? '';
-}
-
-async function fetchProfileEmail(login: string): Promise<string> {
-  try {
-    const res = await fetch(`https://github.com/${login}`);
-    if (!res.ok) return '';
-    const html = await res.text();
-    const m = html.match(/itemprop="email"[^>]*>([^<\s]+)/);
-    return m ? m[1].trim() : '';
-  } catch { return ''; }
-}
-
 async function resolveEmail(templateEmail: string): Promise<string> {
   if (templateEmail) return templateEmail;
-  const apiEmail = await fetchUserEmail(ISSUE_AUTHOR);
-  if (apiEmail) return apiEmail;
-  return fetchProfileEmail(ISSUE_AUTHOR);
+  return resolveGithubPublicEmail(ISSUE_AUTHOR, process.env.GITHUB_TOKEN ?? '');
 }
 
 async function subscribeToNewsletter(email: string): Promise<void> {

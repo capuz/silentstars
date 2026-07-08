@@ -1,0 +1,59 @@
+name: Notify featured project owners
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: "Comma-separated project slugs to target (leave empty for the 5 most recently posted)"
+        type: string
+        default: ''
+      dry_run:
+        description: "Dry run — log what would be sent without emailing or committing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    name: Send owner outreach emails
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Notify owners
+        env:
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
+          NOTIFY_BCC:        fcapuz@gmail.com
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          SLUGS:             ${{ inputs.slugs }}
+          DRY_RUN:           ${{ inputs.dry_run }}
+        run: npx tsx scripts/notify-owners.ts
+
+      - name: Commit posted.json
+        if: inputs.dry_run != true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted.json
+          git diff --cached --quiet || git commit -m "chore: record owner outreach emails [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              break
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done

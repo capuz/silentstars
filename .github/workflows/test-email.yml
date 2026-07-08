@@ -15,11 +15,11 @@ on:
       project_slug:
         description: "Project slug (must exist for the OG image to load)"
         type: string
-        default: shik3i--koalasync
+        default: corpora-inc--encorpora
       project_name:
         description: "Project name"
         type: string
-        default: KoalaSync
+        default: encorpora
 
 jobs:
   send:
@@ -47,15 +47,6 @@ jobs:
           PROJECT_NAME:      ${{ inputs.project_name }}
           PROJECT_SLUG:      ${{ inputs.project_slug }}
           BASE_URL:          https://capuz.github.io/silentstars
-          BSKY_POST_URL:     https://bsky.app/profile/silentstars.bsky.social
-          BSKY_POST_TEXT: |
-            [TEST] KoalaSync — minimalist, privacy-first synchronized video playback 🐨
-
-            No accounts, 100% free
-            https://github.com/Shik3i/KoalaSync
-          X_POST_URL: https://x.com/silentstars
-          X_POST_TEXT: |
-            [TEST] KoalaSync — watch movies & shows in perfect sync
-
-            #opensource #selfhosted
+          BSKY_POST_URL:     https://bsky.app/profile/silentstars-radar.bsky.social/post/3mpzyyucyjx2v
+          X_POST_URL:        https://x.com/i/web/status/2073489813890547864
         run: npx tsx scripts/send-email.ts

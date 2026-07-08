@@ -12,10 +12,11 @@ export interface SendEmailOptions {
   to: string;
   subject: string;
   html: string;
+  bcc?: string;
 }
 
-export async function sendEmail({ apiKey, from, to, subject, html }: SendEmailOptions): Promise<void> {
+export async function sendEmail({ apiKey, from, to, subject, html, bcc }: SendEmailOptions): Promise<void> {
   const resend = new Resend(apiKey);
-  const { error } = await resend.emails.send({ from, to, subject, html });
+  const { error } = await resend.emails.send({ from, to, subject, html, ...(bcc ? { bcc } : {}) });
   if (error) throw new Error(`Resend error: ${JSON.stringify(error)}`);
 }
