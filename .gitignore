@@ -8,7 +8,6 @@ node_modules/
 # design reference files
 private/
 .atl/
-.github/
 data/*
 !data/community-tags.txt
 !data/discovered.json
