@@ -122,7 +122,18 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/discovered.json src/content/projects/ data/posted.json
           git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
-          git push
+          # pull --rebase before pushing: reruns are pinned to the original
+          # commit, so main may have moved and a bare push is rejected as
+          # non-fast-forward (attempt 2 of run 28999134437). Same loop as the
+          # post/notify jobs — but fail loudly if all attempts lose the race,
+          # or the night's collected data would silently evaporate.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Failed to push collected data after 5 attempts" >&2
+          exit 1
 
   # ─────────────────────────────────────────────────────────────
   # Job 2: Astro build + deploy to GitHub Pages
