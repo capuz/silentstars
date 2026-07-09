@@ -21,8 +21,8 @@ lastCommitAt: "2026-06-21T22:33:00Z"
 lastReleaseAt: "2026-06-20T23:36:31Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
-undervaluedScore: 75
+healthScore: 79
+undervaluedScore: 76
 maintainers: ["mridang", "dependabot[bot]", "semantic-release-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3321567688e45aa71775c46e658a0fa3a3c6dcd8c81759698d890114c737fd4d/zitadel/astro-auth"
 postedAt: "2026-06-20T23:46:36.407Z"

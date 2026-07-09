@@ -1,0 +1,52 @@
+---
+repo: "d77void/d77void"
+name: "d77void"
+description: "d77void iso creator"
+readmeQualityOk: true
+url: "https://github.com/d77void/d77void"
+homepage: "https://d77void.sourceforge.io"
+language: "CSS"
+languages: ["CSS"]
+languagePcts: [62]
+stars: 10
+forks: 4
+openIssues: 0
+closedIssues: 1
+watchers: 2
+contributors: 3
+recentReleases: 0
+createdAt: "2025-05-26T18:19:53Z"
+lastCommitAt: "2026-07-09T20:44:02Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 99
+undervaluedScore: 80
+maintainers: ["dani-77"]
+openGraphImageUrl: "https://opengraph.githubassets.com/39cc4a7b258df1034e335e6eef3f355c36ac2b395ec6edb52ef67019614a44ea/d77void/d77void"
+---
+
+# d77void - iso creator d77void
+
+## Overview
+
+This repository is a fork of void-mklive, heavily modified to include skel for a huge amount of WM and DE.
+
+It is possible to build ISOs with and without Calamares.
+
+## Usage
+
+Clone repository
+
+```
+git clone https://github.com/d77void/d77void
+```
+
+Clone submodules
+
+```
+git submodule update --init --checkout
+```
+
+Read carefully the INSTALL.md file to know how to use it.
+
+Happy hacking.

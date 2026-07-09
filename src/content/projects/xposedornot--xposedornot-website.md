@@ -7,7 +7,7 @@ url: "https://github.com/XposedOrNot/XposedOrNot-Website"
 homepage: "https://XposedOrNot.com"
 language: "HTML"
 languages: ["HTML"]
-languagePcts: [97]
+languagePcts: [96]
 stars: 8
 forks: 2
 openIssues: 0
@@ -16,13 +16,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2023-12-04T09:43:01Z"
-lastCommitAt: "2026-07-08T05:41:26Z"
+lastCommitAt: "2026-07-09T16:07:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 82
 maintainers: ["DevaOnBreaches"]
-openGraphImageUrl: "https://opengraph.githubassets.com/440b703f7287b52c3437ca6318eb2fd97a77a8ab6617eff80c552e1100f8448e/XposedOrNot/XposedOrNot-Website"
+openGraphImageUrl: "https://opengraph.githubassets.com/49a299a911a21c8f2595bb6dfc26d67fb56c8e0cbc8d3605f092ef0ec5366b51/XposedOrNot/XposedOrNot-Website"
+postedAt: "2026-07-08T05:49:30.374Z"
 ---
 
 🚀 Your interactive platform for real-time data breach insights and user engagement. <br>
