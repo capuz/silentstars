@@ -2,7 +2,11 @@ name: Nightly collect + deploy
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # 03:00 UTC every night
+    # 03:37 UTC every night. Off the top of the hour on purpose: GitHub's
+    # hosted-runner pool is most congested at :00, which delays scheduled
+    # runs for hours and can starve jobs entirely ("job was not acquired
+    # by Runner", run 28999134437).
+    - cron: '37 3 * * *'
   push:
     branches: [main]
   workflow_call:
