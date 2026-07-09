@@ -472,14 +472,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
+      # Distinct artifact name: deploy already uploaded "github-pages" in this
+      # same run, and deploy-pages@v5 refuses when two artifacts share a name
+      # ("Multiple artifacts named github-pages", run 29048959396).
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist/
+          name: github-pages-redeploy
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-redeploy
 
   # ─────────────────────────────────────────────────────────────
   # Job 6: Notify tonight's featured project owner (organic picks only).
