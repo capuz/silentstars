@@ -11,20 +11,20 @@ languagePcts: [88]
 topics: ["ai-agents", "anthropic", "apple-silicon", "claude", "coding-agent", "containers", "credential-management", "golang", "isolation", "macos"]
 stars: 7
 forks: 0
-openIssues: 0
+openIssues: 2
 closedIssues: 0
 watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-15T21:04:55Z"
-lastCommitAt: "2026-07-09T20:38:04Z"
+lastCommitAt: "2026-07-10T03:47:35Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
-undervaluedScore: 57
+healthScore: 80
+undervaluedScore: 49
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/51879eec26cb27a4173fe8328617c9bf616d28ba20a006dfb60c05108932b688/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/d08e24b5a5aafcf59bd86a72e068782b7c5ff915fb3d5eb0ecfa599a5c16388a/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
@@ -38,20 +38,20 @@ postedAt: "2026-06-21T00:00:54.805Z"
 </p>
 
 drydock runs **Claude Code**, **OpenAI Codex**, or **any OpenAI-compatible model**
-(Gemini, OpenRouter, local) full-throttle on your own repos, on your own Mac — no permission prompts, no babysitting. Each task runs
+(Gemini, OpenRouter, local) full-throttle on your own repos, on your own Mac, no permission prompts, no babysitting. Each task runs
 sealed in a throwaway VM, so the agent **can't touch your API key, can't reach
 the open internet, and can't write to anything but a disposable copy**. The only
-thing that ever comes back is a `git diff` — and nothing reaches your real code
+thing that ever comes back is a `git diff`, and nothing reaches your real code
 until you approve it.
 
 - **It never gets your key.** Your real API key stays on the host; the agent
   only ever sees a short-lived, budget-capped token.
-- **It can't smuggle anything out.** The internet is deny-by-default — no
+- **It can't smuggle anything out.** The internet is deny-by-default: no
   exfiltrating your code, no calling home (you allow the package registries it
   needs, nothing else).
 - **Nothing touches your repo until you say so.** You read the diff and approve
   it before it ever reaches `origin`.
 
-Most agent tooling tries to keep the agent *well-behaved* — permission
+Most agent tooling tries to keep the agent *well-behaved*: permission
 prompts, output filters, policy. drydock takes the opposite stance: **contain
-the blast…
+the blast radius** so…
