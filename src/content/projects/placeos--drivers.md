@@ -20,7 +20,7 @@ lastCommitAt: "2026-07-10T06:52:00Z"
 lastReleaseAt: "2020-11-12T00:40:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 78
 maintainers: ["stakach", "chillfox", "naqvis"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/176226062/b3725100-952a-11ea-9c15-2e54f8559a77"
