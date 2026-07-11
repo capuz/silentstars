@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [99]
 topics: ["wordlist", "hacking", "pentest", "brute-force", "cybersecurity", "offensive-security", "osint", "password-generator", "python", "red-team"]
-stars: 9
+stars: 10
 forks: 3
 openIssues: 0
 closedIssues: 2
@@ -21,10 +21,10 @@ lastCommitAt: "2026-06-30T01:11:41Z"
 lastReleaseAt: "2026-06-25T20:52:18Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 91
-undervaluedScore: 76
+healthScore: 90
+undervaluedScore: 74
 maintainers: ["mrhenrike"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3f8496157e0850faddc977408e221b3066b5da477fe0cf5b301e76bc4c596d5c/mrhenrike/WordListsForHacking"
+openGraphImageUrl: "https://opengraph.githubassets.com/cc3d4cb149ada8f07c0bc58ca1ecb8bfea295ae1c718a07538049576722b517d/mrhenrike/WordListsForHacking"
 postedAt: "2026-06-23T23:34:18.877Z"
 ---
 
