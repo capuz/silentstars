@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["dashboard", "fixtures", "football", "hacs", "home-assistant", "lovelace", "predictions", "soccer", "sports", "standings"]
-stars: 94
+stars: 95
 forks: 11
 openIssues: 1
 closedIssues: 92
@@ -16,15 +16,16 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-06-02T23:13:35Z"
-lastCommitAt: "2026-07-11T03:20:29Z"
+lastCommitAt: "2026-07-12T05:48:05Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
 healthScore: 100
 undervaluedScore: 38
 maintainers: ["Adya84"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/ac39ada8-69a8-45c0-b58f-c2a400f4a4e0"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/b94ca4b3-75d3-4059-a8b9-adab11ac7224"
 fundingLinks: ["CUSTOM:https://paypal.me/graffidoodle"]
+discussionCount: 1
 postedAt: "2026-06-21T02:12:50.330Z"
 ---
 
