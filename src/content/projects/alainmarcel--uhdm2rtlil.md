@@ -15,14 +15,15 @@ watchers: 3
 contributors: 3
 recentReleases: 0
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-07-12T06:17:08Z"
+lastCommitAt: "2026-07-13T06:10:26Z"
 lastReleaseAt: "2025-08-30T04:18:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 97
 undervaluedScore: 74
 maintainers: ["alaindargelas", "Thomasb81"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fe919fa553de4e89f29b69cf333e2ac3b7c8c436a0940583aec2dd5967606026/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/c49338ca607e56179a7b5992b9261d99995115345c46d0380cf6c92bf354d22c/alainmarcel/uhdm2rtlil"
+postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
 # UHDM to RTLIL Frontend
