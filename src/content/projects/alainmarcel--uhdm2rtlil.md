@@ -15,14 +15,14 @@ watchers: 3
 contributors: 3
 recentReleases: 0
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-07-13T06:10:26Z"
+lastCommitAt: "2026-07-14T03:52:41Z"
 lastReleaseAt: "2025-08-30T04:18:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 97
 undervaluedScore: 74
 maintainers: ["alaindargelas", "Thomasb81"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c49338ca607e56179a7b5992b9261d99995115345c46d0380cf6c92bf354d22c/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/a1d086cfc802ab732b6722b7faf111c93de3958c8ed6bb5ee64bffd1a4c727d6/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
@@ -44,8 +44,8 @@ This enables full SystemVerilog synthesis capability in Yosys, including advance
 Run via `make test-all --all` (the internal SystemVerilog suite **plus** the
 upstream Yosys test suite under `third_party/yosys/tests/`):
 
-- **Total Tests**: 1190
-- **Success Rate**: 96% (1147/1190 tests functional), 1 crash, **0 Miter-Formal (UHDM≠Verilog) failures**
-- **Passing**: 840 tests with formal equivalence verified between the UHDM and Verilog frontends
-- **UHDM-Only Success**: 307 tests verified end-to-end against Verilator (the UHDM frontend handles SystemVerilog the Verilog frontend can't, so formal equivalence isn't possible — see below)
+- **Total Tests**: 1247
+- **Success Rate**: 96% (1203/1247 tests functional), 1 crash, **0 Miter-Formal (UHDM≠Verilog) failures**
+- **Passing**: 853 tests with formal equivalence verified between the UHDM and Verilog frontends
+- **UHDM-Only Success**: 350 tests verified end-to-end against Verilator (the UHDM frontend handles SystemVerilog the Verilog frontend can't, so formal equivalence isn't possible — see below)
 -…
