@@ -19,9 +19,9 @@ recentReleases: 7
 createdAt: "2022-08-23T21:28:01Z"
 lastCommitAt: "2026-06-30T01:11:41Z"
 lastReleaseAt: "2026-06-25T20:52:18Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 74
 maintainers: ["mrhenrike"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cc3d4cb149ada8f07c0bc58ca1ecb8bfea295ae1c718a07538049576722b517d/mrhenrike/WordListsForHacking"

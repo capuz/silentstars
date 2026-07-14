@@ -24,6 +24,7 @@ healthScore: 89
 undervaluedScore: 75
 maintainers: ["axax"]
 openGraphImageUrl: "https://opengraph.githubassets.com/69bcab2d27745c456d999921b810843b0997a2c3ebd3b15f94d4886182dbf29b/axax/lunuc"
+postedAt: "2026-07-13T06:46:08.589Z"
 ---
 
 # Lunuc Framework
