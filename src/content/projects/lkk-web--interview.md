@@ -1,7 +1,9 @@
 ---
 repo: "Lkk-Web/interview"
 name: "interview"
-description: "博客，总结，每日小push"
+description: "Blog, summary, daily small push"
+originalDescription: "博客，总结，每日小push"
+descriptionLang: "zh"
 readmeQualityOk: true
 url: "https://github.com/Lkk-Web/interview"
 language: "Go"
@@ -15,46 +17,46 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-12T05:38:39Z"
-lastCommitAt: "2026-07-13T08:17:48Z"
+lastCommitAt: "2026-07-14T07:02:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 85
 undervaluedScore: 76
 maintainers: ["Lkk-Web"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2372d51e83628c45ea9e038b0419133076d709fa1c4b3d25318489814a13df93/Lkk-Web/interview"
+openGraphImageUrl: "https://opengraph.githubassets.com/1fa245b2fa5e6a1302d46909f10de5c96196c96d52633c617e5d625411bfed80/Lkk-Web/interview"
 postedAt: "2026-07-10T07:05:06.177Z"
 ---
 
 # 📘 Personal Tech Blog / Knowledge Base
 
-Hi~ 👋 我是醒来就想躺，这是我的开源博客，欢迎提 PR😉
+Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my open-source blog, welcome to submit PR😉
 
-👋 关于我 | About Me
+👋 About Me
 
-- 👨‍💻 职业：React / Node.js / Golang / Mysql / MongoDB / ...
-- 🌱 关注方向：
-  - Web 全栈架构
-  - 工程化 & 性能优化
-  - 后端 / 数据库 / 分布式
-  - AI 在业务中的落地
+- 👨‍💻 Profession: React / Node.js / Golang / Mysql / MongoDB / ...
+- 🌱 Focus Areas:
+  - Full Stack Web Architecture
+  - Engineering & Performance Optimization
+  - Backend / Database / Distributed
+  - AI Implementation in Business
 
-✍️ 写作目的 | Writing Purpose
+✍️ Writing Purpose
 
-- 把学习过程变成长期资产
-- 多输入多输出
-- 记录职业生涯
+- Turn the learning process into a long-term asset
+- More input, more output
+- Record my career
 
-📮 联系我 | Contact
+📮 Contact Me
 
 - GitHub: https://github.com/Lkk-Web
 - Blog: https://stb.kying.org/blog/index.html
 - Email: workhardcl@icloud.com
 
-如果这些内容对你有帮助，欢迎 Star 🌟正在持续维护...
+If this content is helpful to you, feel free to Star 🌟 and it is continuously maintained...
 
-## iOS App 维护
+## iOS App Maintenance
 
-免费 Apple ID 签名通常 7 天过期。过期后 App 打不开时，重新连接 iPhone 并在 Xcode 里 `Cmd + R` 安装即可续签 7 天：
+Free Apple ID signatures usually expire after 7 days. After expiration, when the app cannot be opened, reconnect the iPhone and install in Xcode with `Cmd + R` to renew for 7 days:
 
 ```bash
 cd /Users/max/Desktop/github/interview
@@ -62,25 +64,6 @@ source ~/.nvm/nvm.sh && nvm use 22
 npx cap open ios
 ```
 
-如果只是续签、不改内容，不需要重新构建 Web 产物。
+If you are just renewing without changing content, you do not need to rebuild the web product.
 
-如果改了博客内容，需要先重新构建并同步：
-
-```bash
-cd /Users/max/Desktop/github/interview
-
-source ~/.nvm/nvm.sh && nvm use 16.19.1
-MOBILE=1 npm run docs:build
-
-source ~/.nvm/nvm.sh && nvm use 22.22.2
-npx cap sync ios
-npx cap open ios
-```
-
-然后在 Xcode 里选择 iPhone，按 `Cmd + R` 安装。
-
-🚀 最近更新 | Recent Updates
-
-- ✅ tag v1.0.1 2026-05-14 增加ios app 浏览
-
-- ✅ tag v1.0.0 2026-02-04 - 2026-02-07《MongoDB Schema设计、聚合管道（Aggregation Pipeline）、事务与一致性、索引》
+If you have changed the blog content, you need…

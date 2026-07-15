@@ -21,10 +21,11 @@ lastCommitAt: "2026-07-14T05:53:35Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 97
-undervaluedScore: 79
+undervaluedScore: 78
 maintainers: ["koushik369mondal", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/59e4ddb7c5b7d3c398f1f044db0c2b0c91e6befcbd22bbc105dc34ec55cab1c9/koushik369mondal/WanderLust"
+openGraphImageUrl: "https://opengraph.githubassets.com/0d1c86b134b70c0bf09aa07cee14f9c706c96c52a93941a97c69e57524918aaa/koushik369mondal/WanderLust"
 discussionCount: 1
+postedAt: "2026-07-14T06:02:00.094Z"
 ---
 
 # 🌍 Wanderlust - Travel Experience Sharing Platform
