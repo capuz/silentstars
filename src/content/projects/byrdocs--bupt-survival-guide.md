@@ -1,0 +1,84 @@
+---
+repo: "byrdocs/bupt-survival-guide"
+name: "bupt-survival-guide"
+description: "北京邮电大学生存指南，从沙河到本部，从入学到毕业的全程陪伴"
+readmeQualityOk: true
+url: "https://github.com/byrdocs/bupt-survival-guide"
+homepage: "https://guide.byrdocs.org/"
+language: "JavaScript"
+languages: ["JavaScript", "CSS"]
+languagePcts: [44, 21]
+topics: ["bupt"]
+stars: 48
+forks: 42
+openIssues: 0
+closedIssues: 1
+watchers: 3
+contributors: 23
+recentReleases: 0
+createdAt: "2025-07-18T18:44:12Z"
+lastCommitAt: "2026-07-15T05:53:41Z"
+status: "thriving"
+tags: ["hidden_gem", "fork_magnet"]
+healthScore: 99
+undervaluedScore: 63
+maintainers: ["byr-docs[bot]", "YouXam", "cppHusky"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b8495880198364e7b3af105daba8602891072a0e19f21061383e1b01cedf3991/byrdocs/bupt-survival-guide"
+---
+
+# BUPT 生存指南
+
+> 北京邮电大学生存指南，从沙河到本部，从入学到毕业的全程陪伴
+
+## 项目简介
+
+BUPT 生存指南是一个开源的北京邮电大学学生生活指南，旨在帮助新老同学更好地适应校园生活。本指南覆盖了沙河校区和本部校区的详细信息，包含住宿、餐饮、学习、交通、生活服务等方方面面的实用指南。
+
+## 本地开发
+
+### 环境要求
+
+- Node.js 18+ 
+- pnpm（推荐）或 npm
+
+### 常用命令
+
+| 命令 | 说明 |
+| :--- | :--- |
+| `pnpm install` | 安装依赖 |
+| `pnpm dev` | 启动开发服务器 (`localhost:4321`) |
+| `pnpm build` | 构建生产版本到 `./dist/` |
+| `pnpm preview` | 预览构建结果 |
+| `pnpm astro ...` | 运行 Astro CLI 命令 |
+
+## 参与贡献
+
+我们欢迎所有 BUPT 同学为这个项目贡献内容！
+
+### 如何贡献
+
+1. Fork 本仓库
+2. 编辑文档
+3. 提交更改 (`git commit -m 'Add something'`)
+4. 推送到分支 (`git push origin main`)
+5. 创建 Pull Request
+
+详细的贡献指南请参考：[贡献指南](https://github.com/byrdocs/bupt-survival-guide/blob/HEAD/src/content/docs/contributing.md)
+
+## 内容来源
+
+### 致谢
+
+本指南的内容来源于多个项目和众多同学的无私贡献：
+
+- **沙河校区部分**：主要来源于 [BUPTSE/welcome](https://github.com/BUPTSE/welcome) 开源项目
+- **本部校区部分**：来源于同学们在腾讯在线文档中的集体创作
+- **宿舍对比图**：来源于 [BUPT-freshatlas](https://github.com/ArtveFlinaInBupt/freshatlas)（CC BY-NC-SA 4.0），在本项目中经过拆分/裁剪等修改
+
+感谢所有贡献者的无私分享！完整的致谢名单请查看：[致谢页面](https://github.com/byrdocs/bupt-survival-guide/blob/HEAD/src/content/docs/acknowledgments.md)
+
+## 技术栈
+
+- [Astro](https://astro.build/) - 静态站点生成器
+- [Starlight](https://starlight.astro.build/) - 文档主题
+-…

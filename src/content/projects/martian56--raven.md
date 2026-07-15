@@ -11,20 +11,20 @@ languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler"]
 stars: 35
 forks: 21
-openIssues: 9
-closedIssues: 406
-watchers: 2
+openIssues: 3
+closedIssues: 413
+watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-04-12T08:49:07Z"
-lastCommitAt: "2026-07-12T06:34:13Z"
+lastCommitAt: "2026-07-14T15:38:57Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 67
 maintainers: ["martian56"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4a4fc983c82033c0ba3a85fd3ff8d4642e7b5fb0745e125dd225bc80bf99667f/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/bea7e6a2a5ebe5cdb4dd9a231029a40727dbf5fd87981d15b1ff47787ddbc4e9/martian56/raven"
 discussionCount: 1
 postedAt: "2026-06-25T06:46:44.859Z"
 ---
@@ -37,9 +37,9 @@ postedAt: "2026-06-25T06:46:44.859Z"
 
 </p>
 
-  ·
-  ·
-  ·
+  &middot;
+  &middot;
+  &middot;
 </p>
 
 ## Why Raven
@@ -75,4 +75,4 @@ Download the installer or archive for your platform from the [releases page](htt
 - Linux: `.deb`, `.rpm`, or `.tar.gz`
 - Windows: `.msi` or `.zip`
 
-This installs the `raven` compiler and the `rvpm` package manager and adds them to your…
+This installs the `raven` compiler and the `rvpm` package manager…
