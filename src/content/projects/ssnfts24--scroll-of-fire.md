@@ -17,16 +17,17 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-07-15T05:55:02Z"
+lastCommitAt: "2026-07-16T04:57:12Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
-tags: ["solo_builder", "funded"]
+tags: ["funded"]
 healthScore: 90
 undervaluedScore: 75
-maintainers: ["ssnfts24"]
+maintainers: ["ssnfts24", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/7cf167c8-40e4-4bbc-9a1a-21a1928a2871"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
+postedAt: "2026-07-15T06:00:03.090Z"
 ---
 
 # ⚖️ Scroll of Fire — Codex of Reality

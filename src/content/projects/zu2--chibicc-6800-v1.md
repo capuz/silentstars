@@ -7,7 +7,7 @@ url: "https://github.com/zu2/chibicc-6800-v1"
 homepage: "https://www.zukeran.org/shin/d/"
 language: "C"
 languages: ["C"]
-languagePcts: [87]
+languagePcts: [88]
 topics: ["6800", "8bit", "mc6800", "motorola", "c", "compiler"]
 stars: 10
 forks: 2
@@ -17,14 +17,14 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-07-14T16:29:30Z"
+lastCommitAt: "2026-07-16T03:10:18Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3b94d7d4614beb401a73663cf6e9efc6ab3b133c04a8b7db1781b36e048de58b/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/7c5b1dbc61399c30ce9e2dd37828bb91dda6c3ba8e506ae6bc5f5738c2e43c50/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 
