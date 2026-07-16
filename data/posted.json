@@ -533,6 +533,10 @@
       "x": {
         "url": "https://x.com/i/web/status/2077636194146340960",
         "postedAt": "2026-07-16T06:07:24.207Z"
+      },
+      "ownerEmail": {
+        "url": "me@dehero.site",
+        "postedAt": "2026-07-16T06:07:44.343Z"
       }
     }
   }
