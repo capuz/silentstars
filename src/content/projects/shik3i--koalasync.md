@@ -7,7 +7,7 @@ url: "https://github.com/Shik3i/KoalaSync"
 homepage: "https://sync.koalastuff.net"
 language: "JavaScript"
 languages: ["JavaScript", "HTML", "CSS"]
-languagePcts: [47, 31, 22]
+languagePcts: [48, 31, 21]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
 stars: 51
 forks: 3
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 5
 recentReleases: 10
 createdAt: "2026-04-21T04:12:57Z"
-lastCommitAt: "2026-07-15T04:16:17Z"
+lastCommitAt: "2026-07-15T11:37:32Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]

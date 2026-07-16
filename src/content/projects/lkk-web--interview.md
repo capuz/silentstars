@@ -17,19 +17,19 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-12T05:38:39Z"
-lastCommitAt: "2026-07-14T07:02:52Z"
+lastCommitAt: "2026-07-15T09:44:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 85
 undervaluedScore: 76
 maintainers: ["Lkk-Web"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1fa245b2fa5e6a1302d46909f10de5c96196c96d52633c617e5d625411bfed80/Lkk-Web/interview"
+openGraphImageUrl: "https://opengraph.githubassets.com/65138b8692b94dc7cd2ab901c15e960d5613d6f5313751ac5706304d75fbc802/Lkk-Web/interview"
 postedAt: "2026-07-10T07:05:06.177Z"
 ---
 
 # 📘 Personal Tech Blog / Knowledge Base
 
-Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my open-source blog, welcome to submit PR😉
+Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my open-source blog, welcome to submit PRs 😉
 
 👋 About Me
 
@@ -52,7 +52,7 @@ Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my ope
 - Blog: https://stb.kying.org/blog/index.html
 - Email: workhardcl@icloud.com
 
-If this content is helpful to you, feel free to Star 🌟 and it is continuously maintained...
+If this content is helpful to you, feel free to Star 🌟 and it will be continuously maintained...
 
 ## iOS App Maintenance
 
@@ -66,4 +66,4 @@ npx cap open ios
 
 If you are just renewing without changing content, you do not need to rebuild the web product.
 
-If you have changed the blog content, you need…
+If you have changed the blog content,…
