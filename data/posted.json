@@ -548,6 +548,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mqt3ho45c22y",
         "postedAt": "2026-07-17T06:06:24.975Z"
+      },
+      "ownerEmail": {
+        "url": "info@kuestenlogik.com",
+        "postedAt": "2026-07-17T06:07:12.564Z"
       }
     }
   }
