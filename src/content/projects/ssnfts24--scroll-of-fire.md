@@ -5,9 +5,9 @@ description: "Living architecture of resonance. The Scroll of Fire Codex. A self
 readmeQualityOk: true
 url: "https://github.com/ssnfts24/scroll-of-fire"
 homepage: "https://ssnfts24.github.io/scroll-of-fire/"
-language: "HTML"
-languages: ["HTML", "JavaScript"]
-languagePcts: [60, 38]
+language: "JavaScript"
+languages: ["JavaScript", "HTML"]
+languagePcts: [49, 49]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
 stars: 5
 forks: 0
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-07-16T04:57:12Z"
+lastCommitAt: "2026-07-17T05:48:17Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
 healthScore: 90
 undervaluedScore: 75
-maintainers: ["ssnfts24", "Copilot"]
+maintainers: ["Copilot", "ssnfts24"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/7cf167c8-40e4-4bbc-9a1a-21a1928a2871"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
