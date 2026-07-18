@@ -7,24 +7,24 @@ url: "https://github.com/JSONbored/metagraphed"
 homepage: "https://metagraph.sh"
 language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
-languagePcts: [73, 23]
+languagePcts: [72, 23]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
-stars: 10
-forks: 88
-openIssues: 60
-closedIssues: 1633
+stars: 12
+forks: 90
+openIssues: 59
+closedIssues: 1744
 watchers: 0
-contributors: 69
+contributors: 71
 recentReleases: 10
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-07-17T05:57:17Z"
+lastCommitAt: "2026-07-18T00:28:27Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "newborn"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 76
-maintainers: ["JSONbored", "tryeverything24", "jaytbarimbao-collab"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c8a0641c5062c6cf53113b8884640568223e57c7d6a34b7a50550ac8e522b4ae/JSONbored/metagraphed"
+undervaluedScore: 74
+maintainers: ["JSONbored", "davion-knight", "luciferlive112116"]
+openGraphImageUrl: "https://opengraph.githubassets.com/0cd561c5e474b8d9f2632d84fc25f2eb1bfb8aaf004f8a50443711ef6efab919/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
 postedAt: "2026-06-30T06:57:31.003Z"
 ---
