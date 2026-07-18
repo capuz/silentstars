@@ -1,34 +1,43 @@
 ---
 repo: "alainmarcel/uhdm2rtlil"
 name: "uhdm2rtlil"
-description: "Yosys SystemVerilog Parser - UHDM 2 RTLIL Yosys Pass"
+description: "Yosys SystemVerilog Parser - UHDM 2 RTLIL Yosys Pass. Highest ranking complex SystemVerilog 2 functional gate-level netlist flow for Yosys compilation"
 readmeQualityOk: true
 url: "https://github.com/alainmarcel/uhdm2rtlil"
 language: "IL Assembly"
 languages: ["IL Assembly", "Verilog"]
-languagePcts: [47, 42]
+languagePcts: [45, 40]
 stars: 6
 forks: 1
-openIssues: 1
-closedIssues: 6
+openIssues: 0
+closedIssues: 7
 watchers: 3
 contributors: 3
 recentReleases: 0
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-07-17T05:26:36Z"
+lastCommitAt: "2026-07-18T01:23:36Z"
 lastReleaseAt: "2025-08-30T04:18:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 97
-undervaluedScore: 74
+healthScore: 100
+undervaluedScore: 77
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/93cd221b5f1b760d72eb2dd1caa68950788c3503084a9c9971f654f249ad1e5e/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/2ecab57562e72abd8c75c087e3fe20c8bbf9dc0ce4f974cd8bc4b4196a505379/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
 # UHDM to RTLIL Frontend
 
 A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language).
+
+> ### ✅ Every result is verified
+> Nothing here is counted as "working" on a read-only or vacuous pass. Every
+> synthesized netlist is proven correct by **formal equivalence** — Yosys
+> `equiv_induct` plus a sound **SAT-from-reset miter** against the Yosys
+> Verilog-frontend golden — **and/or** by **high-activity randomized Verilator
+> co-simulation** against the original RTL. A SAT miter also adjudicates every
+> divergence so an inductive-proof gap is never mistaken for a real bug.
+> See **[Verification Methodology](#verification-methodology)** below.
 
 ## Overview
 
@@ -39,13 +48,4 @@ This project bridges the gap between SystemVerilog source code and Yosys synthes
 
 This enables full SystemVerilog synthesis capability in Yosys, including advanced features not available in Yosys's built-in Verilog frontend.
 
-### Test Suite Status
-
-Run via `make test-all --all` (the internal SystemVerilog suite **plus** the
-upstream Yosys test suite under `third_party/yosys/tests/`):
-
-- **Total Tests**: 1247
-- **Success Rate**: 96% (1203/1247 tests functional), 1 crash, **0 Miter-Formal (UHDM≠Verilog) failures**
-- **Passing**: 853 tests with formal equivalence verified between the UHDM and Verilog frontends
-- **UHDM-Only Success**: 350 tests verified end-to-end against Verilator (the UHDM frontend handles SystemVerilog the Verilog frontend can't, so formal equivalence isn't possible — see below)
--…
+## Verification Methodology…
