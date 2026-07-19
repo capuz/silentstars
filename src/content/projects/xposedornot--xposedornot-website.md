@@ -7,7 +7,7 @@ url: "https://github.com/XposedOrNot/XposedOrNot-Website"
 homepage: "https://XposedOrNot.com"
 language: "HTML"
 languages: ["HTML"]
-languagePcts: [96]
+languagePcts: [97]
 stars: 8
 forks: 2
 openIssues: 0
@@ -16,13 +16,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2023-12-04T09:43:01Z"
-lastCommitAt: "2026-07-17T10:12:31Z"
+lastCommitAt: "2026-07-19T01:48:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 82
 maintainers: ["DevaOnBreaches"]
-openGraphImageUrl: "https://opengraph.githubassets.com/20a5b4f2835636388bfbd1acdfb43a19bc5dbdca634e792c19bbca79a181f3e1/XposedOrNot/XposedOrNot-Website"
+openGraphImageUrl: "https://opengraph.githubassets.com/ceb9c1ce7d70fd823b1430ed4f5fef9ad972eb7b62bb191253151e22f307c76b/XposedOrNot/XposedOrNot-Website"
 postedAt: "2026-07-08T05:49:30.374Z"
 ---
 
