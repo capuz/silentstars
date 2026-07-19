@@ -569,5 +569,16 @@
         "postedAt": "2026-07-18T05:54:04.259Z"
       }
     }
+  },
+  {
+    "repo": "bykaj/home-ops",
+    "slug": "bykaj--home-ops",
+    "postedAt": "2026-07-19T06:19:37.500Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mqy554o52z2a",
+        "postedAt": "2026-07-19T06:19:37.500Z"
+      }
+    }
   }
 ]
