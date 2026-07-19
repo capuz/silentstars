@@ -23,6 +23,7 @@ healthScore: 99
 undervaluedScore: 72
 maintainers: ["renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/843e57a81fbbf88bfe38e84577a5c1ceadd6aab5c002dd62fc1e2d02240d0519/robertlinde/next-nest-turbo-boilerplate"
+postedAt: "2026-07-18T05:53:42.749Z"
 ---
 
 # 🚀 Fullstack Turborepo

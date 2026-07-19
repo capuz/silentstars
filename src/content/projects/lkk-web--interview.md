@@ -64,6 +64,6 @@ source ~/.nvm/nvm.sh && nvm use 22
 npx cap open ios
 ```
 
-If you are just renewing without changing content, you do not need to rebuild the web product.
+If you are just renewing without changing content, there is no need to rebuild the web product.
 
-If you have changed the blog content, you need…
+If you have changed the blog content, you…
