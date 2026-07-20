@@ -17,13 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-07-19T06:13:07Z"
+lastCommitAt: "2026-07-20T06:01:41Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 80
 undervaluedScore: 70
 maintainers: ["bykaj", "renovate[bot]", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7642657eb4e1fd5992531c08196e517d0f05db4cf1f5ea548d76aa99215eacb7/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/b0ddea0a02fb8f5db29e0e49717c4caf6a807c246386fba0997b8d1dda874de5/bykaj/home-ops"
+postedAt: "2026-07-19T06:19:37.500Z"
 ---
 
 ## HOME OPERATIONS REPOSITORY

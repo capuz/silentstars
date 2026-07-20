@@ -13,11 +13,11 @@ openIssues: 23
 closedIssues: 102
 watchers: 1
 contributors: 89
-recentReleases: 6
+recentReleases: 5
 createdAt: "2024-04-17T00:08:11Z"
 lastCommitAt: "2026-07-06T01:58:34Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
-status: "thriving"
+status: "quiet"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 97

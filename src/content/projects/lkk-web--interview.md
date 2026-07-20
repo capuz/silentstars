@@ -17,13 +17,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-12T05:38:39Z"
-lastCommitAt: "2026-07-16T07:02:39Z"
+lastCommitAt: "2026-07-20T02:11:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 84
+healthScore: 85
 undervaluedScore: 76
 maintainers: ["Lkk-Web"]
-openGraphImageUrl: "https://opengraph.githubassets.com/13ae0324de067f154c73e6d4d8b46e4bffa87dac40d6330a1e4766754f575a51/Lkk-Web/interview"
+openGraphImageUrl: "https://opengraph.githubassets.com/b7fec8403eafd88707e5ceacfeb6dbd401c59de042467a3b9b4e76133aab7448/Lkk-Web/interview"
 postedAt: "2026-07-10T07:05:06.177Z"
 ---
 
@@ -64,6 +64,6 @@ source ~/.nvm/nvm.sh && nvm use 22
 npx cap open ios
 ```
 
-If you are just renewing without changing content, there is no need to rebuild the web product.
+If you are just renewing without changing content, you do not need to rebuild the web product.
 
-If you have changed the blog content, you…
+If you have changed the blog content, you need…
