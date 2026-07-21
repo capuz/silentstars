@@ -612,6 +612,10 @@
       "x": {
         "url": "https://x.com/i/web/status/2079451237682978981",
         "postedAt": "2026-07-21T06:19:44.294Z"
+      },
+      "ownerEmail": {
+        "url": "support@reloop.sh",
+        "postedAt": "2026-07-21T06:20:02.954Z"
       }
     }
   }
