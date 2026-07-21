@@ -16,14 +16,14 @@ watchers: 3
 contributors: 16
 recentReleases: 7
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-20T05:59:18Z"
+lastCommitAt: "2026-07-21T04:59:00Z"
 lastReleaseAt: "2026-07-16T12:24:16Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 78
+healthScore: 77
 undervaluedScore: 79
-maintainers: ["mo-laurenboon"]
-openGraphImageUrl: "https://opengraph.githubassets.com/42b7a42f977d01852ee578b3cbba983b57fbbd2f8944a11d561925a0a8629139/UKNCSP/CDDS-CMIP7-mappings"
+maintainers: ["mo-laurenboon", "matthew-mizielinski"]
+openGraphImageUrl: "https://opengraph.githubassets.com/6e9759b67692c89c866d2222ab0726c8d813678bbb2d22e9ad056154a8c36789/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---
@@ -31,6 +31,8 @@ postedAt: "2026-06-28T07:04:35.686Z"
 **WARNING: UPDATE TO DATA REQUEST v1.2.2.4/5 DUE BY MID JULY** 
 
 # UKNCSP CDDS-CMIP7-mappings 
+
+**UPDATE 20/07/26: All references to 'HadGEM3-GC5' in variable issues updated to 'UKCM2'.**
 
 **UPDATE 13/02/26: Initial Diagnostic Review data available via https://ukncsp.github.io/CDDS-CMIP7-mappings/**
 
@@ -40,4 +42,4 @@ postedAt: "2026-06-28T07:04:35.686Z"
 
 **UPDATE 24/11/25: Some changes were missed in last weeks update. I've now fixed this and confirmed consistency with the data request**
 
-**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in the next few days.  Note: there will be another update to match version v1.2.2.3 of the data…
+**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in…

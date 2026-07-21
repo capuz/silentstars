@@ -7,7 +7,7 @@ url: "https://github.com/d77void/d77void"
 homepage: "https://d77void.sourceforge.io"
 language: "CSS"
 languages: ["CSS"]
-languagePcts: [61]
+languagePcts: [63]
 stars: 10
 forks: 4
 openIssues: 0
@@ -16,13 +16,13 @@ watchers: 2
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-07-18T20:23:34Z"
+lastCommitAt: "2026-07-21T01:14:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 80
 maintainers: ["dani-77", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9cd973e59933bcac83b641420e24cb242c02559433bd32eeab141b4d682ddb4c/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/ed4b45ebfe4d6d0aadd429d12098e853ae85cc14027baa8a2a7511c53dff080a/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 
