@@ -15,13 +15,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2023-01-22T23:38:03Z"
-lastCommitAt: "2026-07-21T05:15:40Z"
+lastCommitAt: "2026-07-22T05:15:41Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
 healthScore: 80
 undervaluedScore: 78
 maintainers: ["xsrazy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d6a0ef74bef8e22e5c8f7ee4b3cea077894f0e496a266585a1355554e203991a/xsrazy/Discord-Bot"
+openGraphImageUrl: "https://opengraph.githubassets.com/18d219e6be0368785218fc14b0eae1af4e6c1298b49256ddb90e81c22cd20237/xsrazy/Discord-Bot"
 postedAt: "2026-06-21T07:32:11.420Z"
 ---
 

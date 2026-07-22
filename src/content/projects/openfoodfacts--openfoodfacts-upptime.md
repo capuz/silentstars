@@ -11,24 +11,24 @@ languagePcts: [58, 36]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 11
 forks: 3
-openIssues: 9
-closedIssues: 11899
+openIssues: 3
+closedIssues: 11907
 watchers: 1
 contributors: 16
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-07-21T03:43:45Z"
+lastCommitAt: "2026-07-22T00:32:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100
 undervaluedScore: 79
 maintainers: ["upptime-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4acca01dab5048ffbe7a3d8884ec70df9bf1f324bfe5e9f438b656500ebe47d8/openfoodfacts/openfoodfacts-upptime"
+openGraphImageUrl: "https://opengraph.githubassets.com/49eb15550ce9fb191c8a9df789c30cd11963ce66ed5abc1a902caa3ba1d3f59b/openfoodfacts/openfoodfacts-upptime"
 fundingLinks: ["GITHUB:https://github.com/openfoodfacts", "OPEN_COLLECTIVE:https://opencollective.com/openfoodfacts-server", "CUSTOM:https://donate.openfoodfacts.org"]
 postedAt: "2026-07-03T12:38:00.517Z"
 ---
 
-# [📈 Live Status](https://status.openfoodfacts.org/):  **🟧 Partial outage**
+# [📈 Live Status](https://status.openfoodfacts.org/):  **🟩 All systems operational**
 
 This repository contains the open-source uptime [monitor and status page for Open Food Facts](https://github.com/openfoodfacts/openfoodfacts-upptime/blob/HEAD/<[https://upptime.js.org](https://status.openfoodfacts.org/)>), powered by [Upptime](https://github.com/upptime/upptime).
 
