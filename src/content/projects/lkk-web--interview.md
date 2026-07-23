@@ -20,7 +20,7 @@ createdAt: "2022-10-12T05:38:39Z"
 lastCommitAt: "2026-07-21T07:02:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 85
+healthScore: 84
 undervaluedScore: 76
 maintainers: ["Lkk-Web"]
 openGraphImageUrl: "https://opengraph.githubassets.com/91eff0e2e06c656a2e40dacb2cce330c0c6d3647a409e1e592785b41d5d0b987/Lkk-Web/interview"
@@ -56,7 +56,7 @@ If this content is helpful to you, feel free to Star 🌟 and it is continuously
 
 ## iOS App Maintenance
 
-Free Apple ID signatures usually expire after 7 days. When the app cannot be opened after expiration, reconnect the iPhone and install in Xcode with `Cmd + R` to renew for 7 days:
+Free Apple ID signatures usually expire after 7 days. After expiration, when the app cannot be opened, reconnect the iPhone and install in Xcode with `Cmd + R` to renew for 7 days:
 
 ```bash
 cd /Users/max/Desktop/github/interview
@@ -64,6 +64,6 @@ source ~/.nvm/nvm.sh && nvm use 22
 npx cap open ios
 ```
 
-If you are just renewing without changing content, there is no need to rebuild the web product.
+If you are just renewing without changing content, you do not need to rebuild the web product.
 
 If you have changed the blog content, you need…
