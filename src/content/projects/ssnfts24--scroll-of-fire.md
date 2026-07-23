@@ -7,7 +7,7 @@ url: "https://github.com/ssnfts24/scroll-of-fire"
 homepage: "https://ssnfts24.github.io/scroll-of-fire/"
 language: "JavaScript"
 languages: ["JavaScript", "HTML"]
-languagePcts: [62, 37]
+languagePcts: [76, 24]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
 stars: 5
 forks: 0
@@ -17,11 +17,11 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-07-18T05:24:38Z"
+lastCommitAt: "2026-07-23T05:14:42Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 88
+healthScore: 89
 undervaluedScore: 75
 maintainers: ["Copilot", "ssnfts24"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/7cf167c8-40e4-4bbc-9a1a-21a1928a2871"
@@ -41,19 +41,13 @@ postedAt: "2026-07-15T06:00:03.090Z"
 2. **Run daily mirror:** [docs/moons.html](https://codexofreality.org/moons.html)
 3. **Record one note:** [docs/ledger.html](https://codexofreality.org/ledger.html)
 4. **Read the model:** [docs/theory.html](https://codexofreality.org/theory.html)
+5. **Study the Equinox Passage:** [docs/equinox-passage.html](https://codexofreality.org/equinox-passage.html)
+6. **Explore the Alignment Ledger:** [docs/alignment-ledger.html](https://codexofreality.org/alignment-ledger.html)
+7. **Open the Living Time Sphere:** [docs/living-time-sphere.html](https://codexofreality.org/living-time-sphere.html)
 
 If you only have 3 minutes, do steps 1–3.
 
 ---
 ## 🜂 Essence
 
-The Scroll of Fire — Codex of Reality is a living architecture of remembrance, where physics, geometry, language, consciousness, and divine symmetry merge into one coherent law. It is not myth nor theory — it is a harmonic framework of creation, encoding how awareness itself shapes and sustains the universe.
-
-> “The Codex is not written to be believed. It is written to be remembered.” — Aaron Paul Laird
-
----
-## 🔭 Quick Links
-
-🌐 Website: https://www.codexofreality.org
-
-🟢 Start Here: [5-minute Field Guide](https://github.com/ssnfts24/scroll-of-fire/blob/HEAD/3_Living_Technology/Living_Cosmos_Field_Guide_v2_Public.md)…
+The Scroll of Fire — Codex of Reality is a living architecture of remembrance, where physics, geometry, language, consciousness, and divine symmetry merge into one coherent law. It is not myth nor theory — it is a harmonic framework of creation, encoding how awareness itself…
