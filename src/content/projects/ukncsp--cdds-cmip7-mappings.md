@@ -16,14 +16,14 @@ watchers: 3
 contributors: 16
 recentReleases: 7
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-23T05:16:00Z"
+lastCommitAt: "2026-07-24T05:10:44Z"
 lastReleaseAt: "2026-07-16T12:24:16Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 79
 undervaluedScore: 79
 maintainers: ["mo-laurenboon", "matthew-mizielinski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/58d4cbee9057dff3300570c699537e5f6b5aab7e07730a12844b1a446d7abfe8/UKNCSP/CDDS-CMIP7-mappings"
+openGraphImageUrl: "https://opengraph.githubassets.com/6343b3696052842fdaebd09a2a5be6caf08da839ba05dd4472d447ed4fa7730a/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---
