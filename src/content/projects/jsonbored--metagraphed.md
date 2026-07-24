@@ -5,26 +5,26 @@ description: "Operational metadata, health, schemas, and public interface discov
 readmeQualityOk: true
 url: "https://github.com/JSONbored/metagraphed"
 homepage: "https://metagraph.sh"
-language: "JavaScript"
-languages: ["JavaScript", "TypeScript"]
-languagePcts: [55, 40]
+language: "TypeScript"
+languages: ["TypeScript"]
+languagePcts: [77]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
 stars: 12
-forks: 95
-openIssues: 34
-closedIssues: 2173
+forks: 96
+openIssues: 59
+closedIssues: 2206
 watchers: 0
 contributors: 79
 recentReleases: 10
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-07-23T05:39:02Z"
+lastCommitAt: "2026-07-24T01:16:12Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "newborn"
-tags: ["hidden_gem", "funded", "release_machine", "fork_magnet"]
-healthScore: 100
+tags: ["solo_builder", "hidden_gem", "funded", "release_machine", "fork_magnet"]
+healthScore: 99
 undervaluedScore: 74
-maintainers: ["JSONbored", "tryeverything24", "andriypolanski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e2317cf8d556bfd15fdb8011624f1f6a80177393c19c224f3eaea0fdbbe5b478/JSONbored/metagraphed"
+maintainers: ["JSONbored", "github-actions[bot]", "cleanjunc"]
+openGraphImageUrl: "https://opengraph.githubassets.com/16a82d5ca4a574625a463abb9cea1196c325d7abf3d82a73b7d12d4e14b9bbd9/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
 postedAt: "2026-06-30T06:57:31.003Z"
 ---

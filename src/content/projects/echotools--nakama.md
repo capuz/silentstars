@@ -13,14 +13,14 @@ openIssues: 23
 closedIssues: 102
 watchers: 1
 contributors: 89
-recentReleases: 3
+recentReleases: 2
 createdAt: "2024-04-17T00:08:11Z"
 lastCommitAt: "2026-07-06T01:58:34Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "quiet"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 89
-undervaluedScore: 97
+healthScore: 88
+undervaluedScore: 94
 maintainers: ["thesprockee", "metis-sprock"]
 openGraphImageUrl: "https://opengraph.githubassets.com/982cacb5f7cbee09e9a80815a6d49540c224526a8d9f2901f75a8a44a4d02d8b/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
