@@ -676,6 +676,10 @@
       "x": {
         "url": "https://x.com/i/web/status/2080897657925509254",
         "postedAt": "2026-07-25T06:07:17.774Z"
+      },
+      "ownerEmail": {
+        "url": "hello@protolabs.consulting",
+        "postedAt": "2026-07-25T06:07:44.692Z"
       }
     }
   }
