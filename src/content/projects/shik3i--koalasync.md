@@ -15,14 +15,14 @@ openIssues: 2
 closedIssues: 5
 watchers: 0
 contributors: 5
-recentReleases: 2
+recentReleases: 0
 createdAt: "2026-04-21T04:12:57Z"
 lastCommitAt: "2026-07-23T01:04:20Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 92
-undervaluedScore: 39
+undervaluedScore: 35
 maintainers: ["Shik3i", "actions-user"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"
 fundingLinks: ["KO_FI:https://ko-fi.com/koaladev"]
