@@ -663,5 +663,16 @@
         "postedAt": "2026-07-24T06:16:22.854Z"
       }
     }
+  },
+  {
+    "repo": "protoLabsAI/protoAgent",
+    "slug": "protolabsai--protoagent",
+    "postedAt": "2026-07-25T06:06:56.645Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mrh77xyarl2m",
+        "postedAt": "2026-07-25T06:06:56.645Z"
+      }
+    }
   }
 ]
