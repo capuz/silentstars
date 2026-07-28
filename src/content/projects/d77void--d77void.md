@@ -12,17 +12,17 @@ stars: 10
 forks: 4
 openIssues: 0
 closedIssues: 1
-watchers: 2
+watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-07-24T21:42:08Z"
+lastCommitAt: "2026-07-25T20:07:20Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
-undervaluedScore: 80
+tags: ["hidden_gem"]
+healthScore: 98
+undervaluedScore: 82
 maintainers: ["dani-77", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/120ade5299d2c8ae7a8895ef962d07643c42f1682acdaf73897dbedd90c0b379/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/0e9d2b73cd82eeda80fdf37919e624d261e754a1b13a10933215df5902a2abb7/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 

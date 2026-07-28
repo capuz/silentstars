@@ -9,23 +9,24 @@ language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [70, 24]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "fastapi", "langgraph", "llm-agent", "mcp"]
-stars: 5
+stars: 6
 forks: 7
-openIssues: 36
-closedIssues: 456
+openIssues: 23
+closedIssues: 479
 watchers: 0
 contributors: 4
 recentReleases: 8
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-07-25T06:00:54Z"
+lastCommitAt: "2026-07-28T03:55:46Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 98
-undervaluedScore: 84
+healthScore: 99
+undervaluedScore: 82
 maintainers: ["mabry1985", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
 discussionCount: 0
+postedAt: "2026-07-25T06:06:56.645Z"
 ---
 
 </p>

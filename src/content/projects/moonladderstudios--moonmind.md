@@ -9,17 +9,17 @@ languages: ["Python"]
 languagePcts: [83]
 stars: 12
 forks: 5
-openIssues: 47
-closedIssues: 228
+openIssues: 59
+closedIssues: 230
 watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-07-25T00:50:22Z"
+lastCommitAt: "2026-07-28T13:57:06Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 96
-undervaluedScore: 71
+undervaluedScore: 70
 maintainers: ["nsticco", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
 postedAt: "2026-07-22T06:20:57.914Z"
@@ -36,10 +36,4 @@ MoonMind is an open-source framework that makes Claude Code and Codex CLI **safe
 
 For now, MoonMind is focused on software engineering use cases, but can be used for other use cases as well and this will be made easier in the future (e.g. not requiring a git repo).
 
-UPDATE: MoonMind is in the process of incorporating [Omnigent-host](https://github.com/omnigent-ai/omnigent) as a supported managed agent, which will make MoonMind compatible with Claude Code, Codex, Antigravity, Cursor, OpenCode, Hermes, Pi, and other agents. This should be finished by the end of July 2026.
-
-## Quick Start
-
-1. [Install Docker Desktop](https://docs.docker.com/get-started/get-docker/)
-2. Install git
-3. `git clone…
+MoonMind includes a Codex-through-[Omnigent](https://github.com/omnigent-ai/omnigent) managed-runtime path with profile and policy readiness gating, static and on-demand hosts, durable event replay, controls, and artifact harvesting. It is currently an explicit opt-in path while the protected live support matrix is completed; direct Codex remains a truthfully labeled migration fallback and historical-read substrate. See the [versioned support and cutover…

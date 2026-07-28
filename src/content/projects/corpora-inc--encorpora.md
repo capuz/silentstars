@@ -6,67 +6,43 @@ readmeQualityOk: true
 url: "https://github.com/corpora-inc/encorpora"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [61]
+languagePcts: [69]
 stars: 5
 forks: 3
-openIssues: 98
+openIssues: 99
 closedIssues: 90
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-07-14T06:50:29Z"
+lastCommitAt: "2026-07-28T09:04:38Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 84
+healthScore: 88
 undervaluedScore: 78
 maintainers: ["skyl", "Umanistan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f3568e68da6ac38a046bdafeb9b8e81a2ff7ae9d5055c5366632c6eca64671c1/corpora-inc/encorpora"
+openGraphImageUrl: "https://opengraph.githubassets.com/652612d1edea88d742fe889816496d2989bcef4a1aac892249e0a23c63e794c9/corpora-inc/encorpora"
 postedAt: "2026-07-04T19:31:10.093Z"
 ---
 
 # encorpora
 
-**encorpora** (“on corpora”) is Corpora Inc’s experimental lab.
-The core software lives at `https://github.com/corpora-inc/corpora`.
+**encorpora** (“on corpora”) is Corpora Inc’s monorepo. Products, packs, content,
+infrastructure and the marketing site all live here and ship from one trunk.
 
-This repo houses experiments that depend on Corpora. When something becomes stable and broadly useful, it graduates to the main `corpora` monorepo.
+Development is trunk-based: short-lived branch → PR → automated adversarial review →
+squash-merge to `main`. See [AGENTS.md](https://github.com/corpora-inc/encorpora/blob/HEAD/AGENTS.md) for the worker loop and the gates.
 
-## Current focus
+## What's in here
 
-- **Corpán app**: the main product experience.
-- **Corpán Packs**: SDK experiments + new interactive learning formats.
-- **Hover Runner**: 3D fun that locks in correct translations with the All-Hearing Ear.
-- **Books & publishing**
-
-## Live Demos
-
-Browse packs and content at:
-**https://encorpora.io/**
-
-- [Corpán Packs](https://encorpora.io/corpan/packs/)
-- [Hover Runner](https://encorpora.io/corpan/packs/hover-runner/)
-
-## Local Development
-
-### Quick Start
-
-```bash
-# One-command setup
-./web/scripts/setup.sh
-
-# Start development server with hot reload
-npm run dev
-```
-
-Visit **http://localhost:8000** - all changes auto-rebuild:
-- web/io/ site (Next.js hot reload)
-- Corpan pages (auto rebuild)
-- Packs (auto rebuild)
-
-See [DEVELOPMENT.md](https://github.com/corpora-inc/encorpora/blob/HEAD/DEVELOPMENT.md) for detailed development guide.
-
-### Production Build
-
-```bash
-npm run…
+- **Corpán** (`corpan/`) — the language-learning app. Tauri (Rust) + React,
+  shipping on iOS, Android and desktop. 54 interface locales
+  (`corpan/corpan-app/public/locales/`) over a corpus of narrated, translated content.
+- **Corpán Packs** (`corpan/packs/`) — the pack system and the packs themselves:
+  games, readers, an on-device LLM tutor, a multiplayer city. Packs deploy
+  over-the-air on merge to `main` and are versioned against app floors.
+- **Dynawalla: Apprentice of Numbers** (`dynawalla/`, planned — not yet on `main`)
+  — the newest product: children's mathematics, grades 1–6 plus an introduction
+  to pre-algebra, set in an ancient-futurist world of astrolabes, gears and
+  mechanical computers.
+- **Books & publishing** (`books/`) — the authored source for…

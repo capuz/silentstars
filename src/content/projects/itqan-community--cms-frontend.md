@@ -19,8 +19,8 @@ lastCommitAt: "2026-07-23T07:46:32Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 97
-undervaluedScore: 95
+healthScore: 95
+undervaluedScore: 96
 maintainers: ["Amr-Bendary", "semantic-release-bot", "abubakr-itqan"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cd17f85b3982d7cfa038df102cef489d16914e9a7b51b03f9512b8412ceb33ce/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"

@@ -10,20 +10,20 @@ languages: ["Jupyter Notebook"]
 languagePcts: [95]
 stars: 5
 forks: 2
-openIssues: 1837
-closedIssues: 56
+openIssues: 1836
+closedIssues: 57
 watchers: 3
 contributors: 16
-recentReleases: 7
+recentReleases: 8
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-07-25T04:56:23Z"
-lastReleaseAt: "2026-07-16T12:24:16Z"
+lastCommitAt: "2026-07-28T12:47:28Z"
+lastReleaseAt: "2026-07-26T20:35:31Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 79
 undervaluedScore: 79
-maintainers: ["mo-laurenboon", "matthew-mizielinski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/eb66932c76e96e19a3224258f4542a0f67d7e444843c2d66e6728ae856cbfb79/UKNCSP/CDDS-CMIP7-mappings"
+maintainers: ["mo-laurenboon"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d93e4a0612569b6324d7a4cb49f82f33652b04d3ba12c0a6508266a328ae4b17/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---
