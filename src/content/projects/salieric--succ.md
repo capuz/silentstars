@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/SalieriC/SUCC"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [86]
+languagePcts: [87]
 stars: 10
 forks: 7
 openIssues: 1
@@ -15,11 +15,11 @@ watchers: 3
 contributors: 13
 recentReleases: 0
 createdAt: "2022-02-08T14:15:47Z"
-lastCommitAt: "2026-07-17T04:55:23Z"
+lastCommitAt: "2026-07-26T21:04:09Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 95
+healthScore: 97
 undervaluedScore: 80
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"

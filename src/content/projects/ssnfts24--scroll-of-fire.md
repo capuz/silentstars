@@ -21,7 +21,7 @@ lastCommitAt: "2026-07-24T20:07:07Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 75
 maintainers: ["Copilot", "ssnfts24"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"

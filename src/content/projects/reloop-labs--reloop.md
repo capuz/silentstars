@@ -9,21 +9,21 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [88]
 topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email"]
-stars: 17
-forks: 1
+stars: 19
+forks: 2
 openIssues: 0
 closedIssues: 22
 watchers: 0
-contributors: 4
+contributors: 5
 recentReleases: 0
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-07-24T17:08:20Z"
+lastCommitAt: "2026-07-28T14:00:35Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
-undervaluedScore: 68
-maintainers: ["pranavp10", "twinkalp10"]
-openGraphImageUrl: "https://opengraph.githubassets.com/465c7461c2360b6667d1eb078b700f444b482005edc8ae3abbb802d2b5884a3b/reloop-labs/reloop"
+undervaluedScore: 67
+maintainers: ["pranavp10", "twinkalp10", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/408cdd338789d61d86dfb5ad346275b739460d3e3d38938ddc2c24b8eff1ed64/reloop-labs/reloop"
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
 ---
@@ -49,7 +49,7 @@ Reloop gives you the same capabilities as SendGrid, Mailchimp, Resend, and Loops
 - **Email campaigns** — broadcast and sequence campaigns with audience segmentation
 - **Inbound email** — receive, parse, and process incoming mail at your own domain
 - **Email templates** — a visual drag-and-drop editor built for developers and marketers
-- **Real-time analytics** — open rates, click rates, bounces, and delivery events powered by ClickHouse
+- **Real-time analytics** — open rates, click rates, bounces, and delivery events stored in PostgreSQL
 - **Webhooks** — push delivery events to your own endpoints the moment they happen
 - **Contacts & lists** — manage subscribers, tags, and suppression lists
 - **Workflows** — automate…
