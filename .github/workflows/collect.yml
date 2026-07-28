@@ -124,7 +124,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json data/discovered.json src/content/projects/ data/posted.json
+          # promoted.json must be staged too: collect.ts prunes expired entries
+          # from it, and any file it touches but we don't stage blocks the
+          # pull --rebase below ("You have unstaged changes", 3 nights of
+          # failures starting when KoalaSync's 30-day entry expired 2026-07-26).
+          git add data/latest.json data/discovered.json data/promoted.json src/content/projects/ data/posted.json
           git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
           # pull --rebase before pushing: reruns are pinned to the original
           # commit, so main may have moved and a bare push is rejected as
