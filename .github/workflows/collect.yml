@@ -90,7 +90,11 @@ jobs:
     # Boolean inputs must be compared as booleans: `!= 'true'` never matches a
     # typed boolean input (GHA coerces true→1 vs 'true'→NaN), silently disabling
     # the skip flags on manual dispatches.
-    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && inputs.skip_collect != true
+    # inputs.submission_repo is only set when process-submission.yml calls this
+    # workflow via workflow_call — github.event_name can't detect that case: it
+    # retains the ORIGINAL event that triggered the calling workflow ('issues'
+    # here), never becomes 'workflow_call' (github/actions/runner#3146).
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || inputs.submission_repo != '') && inputs.skip_collect != true
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -262,9 +266,12 @@ jobs:
     # !cancelled() breaks GHA's transitive skip propagation: with skip_collect,
     # collect's skip would otherwise cascade past a successful deploy and skip
     # this job too.
+    # github.event_name == 'workflow_call' never matches here — see the collect
+    # job's comment above — so submission-triggered runs are detected via
+    # inputs.submission_repo instead.
     if: >-
       !cancelled() && needs.deploy.result == 'success' &&
-      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || inputs.submission_repo != '') &&
       inputs.skip_post != true
     outputs:
       bsky_url: ${{ steps.post_bluesky.outputs.bsky_url }}
@@ -351,9 +358,12 @@ jobs:
     # Tolerates a failed post job (X is independent of Bluesky's outcome) but
     # requires a successful deploy — posting a project whose page never went
     # live puts a dead link on X.
+    # github.event_name == 'workflow_call' never matches here — see the collect
+    # job's comment above — so submission-triggered runs are detected via
+    # inputs.submission_repo instead.
     if: >-
       !cancelled() && needs.deploy.result == 'success' &&
-      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_call') &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || inputs.submission_repo != '') &&
       inputs.skip_post_x != true
     outputs:
       x_post_url: ${{ steps.post_x.outputs.x_post_url }}
