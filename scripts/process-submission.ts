@@ -28,7 +28,12 @@ const ISSUE_AUTHOR     = process.env.ISSUE_AUTHOR_LOGIN ?? '';
 const REPO_OWNER       = process.env.REPO_OWNER ?? '';
 const REPO_NAME_GH     = process.env.REPO_NAME ?? '';
 
-type SubmissionStatus = 'accepted' | 'already_listed' | 'already_seeded' | 'rejected' | 'skipped';
+// A repo this young with zero stars/forks has no external signal at all —
+// hold it for a human instead of auto-rejecting (SilentStars exists to
+// surface legitimate 0-star projects, so 0 stars alone must never reject).
+const NEW_REPO_DAYS = 7;
+
+type SubmissionStatus = 'accepted' | 'already_listed' | 'already_seeded' | 'needs_review' | 'rejected' | 'skipped';
 
 interface GitHubRepo {
   full_name: string;
@@ -37,7 +42,9 @@ interface GitHubRepo {
   private: boolean;
   archived: boolean;
   stargazers_count: number;
+  forks_count: number;
   pushed_at: string;
+  created_at: string;
 }
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -243,6 +250,22 @@ async function handleAlreadyListed(
   await closeIssue('completed');
 }
 
+async function handleNeedsReview(repo: string, slug: string, projectName: string, reason: string) {
+  setOutput('status', 'needs_review');
+  setOutput('repo', repo);
+  setOutput('slug', slug);
+  setOutput('project_name', projectName);
+  setOutput('reason', reason);
+  setOutput('submitter_email', '');
+
+  await commentIssue(
+    `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** passes the automated criteria, but ${reason} — so it needs a quick manual look before it goes live. Hang tight, we'll follow up here!`,
+  );
+  await labelIssue(['needs-review']);
+  // Issue stays OPEN — a human decides (accept manually or close as rejected).
+  // promoted.json is untouched, so nothing to revert either way.
+}
+
 async function handleAccepted(
   repo: string,
   slug: string,
@@ -353,6 +376,13 @@ async function main() {
   if (daysSinceLastPush > 90) {
     return handleRejected(repo, slug, ghRepo.name,
       `The last commit was ${Math.round(daysSinceLastPush)} days ago. SilentStars requires at least one commit in the last 90 days.`,
+    );
+  }
+
+  const daysSinceRepoCreated = (Date.now() - new Date(ghRepo.created_at).getTime()) / 86_400_000;
+  if (daysSinceRepoCreated < NEW_REPO_DAYS && ghRepo.stargazers_count === 0 && ghRepo.forks_count === 0) {
+    return handleNeedsReview(repo, slug, ghRepo.name,
+      `the repo was created ${Math.round(daysSinceRepoCreated)} day(s) ago with 0 stars and 0 forks — no external signal yet to weigh against the submission`,
     );
   }
 
