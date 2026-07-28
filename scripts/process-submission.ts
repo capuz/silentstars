@@ -67,7 +67,12 @@ function parseIssueBody(body: string): { repo: string; email: string; subscribe:
     // GitHub YAML template renders as:  ### Label\n\nvalue\n\n### Next...
     const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const m = body.match(new RegExp(`###\\s+${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n###|$)`));
-    return m ? m[1].trim() : '';
+    const value = m ? m[1].trim() : '';
+    // Empty optional field: \n+ eats the blank lines, so the lazy group starts
+    // right on the next "###" heading and the (?=\n###) lookahead can no longer
+    // stop it — it swallows that whole section (issue #8: TO_EMAIL became the
+    // "### Newsletter" block). A capture starting with ### means "field empty".
+    return value.startsWith('###') ? '' : value;
   };
   return {
     repo:      extract('GitHub repo (owner/repo)'),
@@ -140,7 +145,9 @@ async function fetchRepo(repo: string): Promise<GitHubRepo | null> {
 }
 
 async function resolveEmail(templateEmail: string): Promise<string> {
-  if (templateEmail) return templateEmail;
+  // Only trust template input that actually looks like an email — anything
+  // else (parsing artifacts, prose) would bounce off Resend with a 422.
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(templateEmail)) return templateEmail;
   return resolveGithubPublicEmail(ISSUE_AUTHOR, process.env.GITHUB_TOKEN ?? '');
 }
 
