@@ -48,6 +48,7 @@ jobs:
           gh label create "accepted"       --color "2cbe4e" --description "Submission accepted"      --force
           gh label create "rejected"       --color "e11d48" --description "Submission rejected"      --force
           gh label create "already-listed" --color "e99b27" --description "Already in SilentStars"  --force
+          gh label create "needs-review"   --color "fbca04" --description "Needs manual review before publishing" --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
