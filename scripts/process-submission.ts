@@ -284,7 +284,7 @@ async function handleAccepted(
 
   // Initial acknowledgement — final comment with card + post links comes from the notify job
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! ✅\n\n**${projectName}** looks great and has been accepted!\n\nWe're building your card and preparing the <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" width="14" height="14"> X post right now — this usually takes a few minutes. We'll update this issue with the links when everything is live. Thanks for the awesome submission! ⭐`,
+    `Hey @${ISSUE_AUTHOR}! ✅\n\n**${projectName}** looks great and has been accepted!\n\nWe're building your card and preparing the 🦋 Bluesky post right now — this usually takes a few minutes. We'll update this issue with the links when everything is live. Thanks for the awesome submission! ⭐`,
   );
   await labelIssue(['submission']);
   // Issue stays OPEN — the notify job closes it after the pipeline finishes
