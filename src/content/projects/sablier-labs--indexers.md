@@ -17,14 +17,14 @@ watchers: 2
 contributors: 10
 recentReleases: 1
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-07-28T00:21:51Z"
+lastCommitAt: "2026-07-29T00:21:12Z"
 lastReleaseAt: "2026-07-15T14:14:21Z"
 status: "thriving"
 tags: ["community_hub"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 75
 maintainers: ["github-actions[bot]", "PaulRBerg"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/581801142/00017717-05a6-4534-9660-06e5d3422c1b"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/581801142/00017717-05a6-4534-9660-06e5d3422c1b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061609Z&X-Amz-Expires=300&X-Amz-Signature=fc70b14557cf5350654a6ccbae9657edaf5898a7837f48267c22b4a02aab1a7e&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA2OSwibmJmIjoxNzg1MzA1NzY5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.5pp2aItcxGZtNdrkB8r8CWhEQ3jxkQXk3HMY66CHM7s"
 discussionCount: 28
 postedAt: "2026-06-24T00:29:57.102Z"
 ---
