@@ -11,9 +11,9 @@ languagePcts: [70, 24]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "fastapi", "langgraph", "llm-agent", "mcp"]
 stars: 6
 forks: 7
-openIssues: 23
+openIssues: 24
 closedIssues: 479
-watchers: 0
+watchers: 1
 contributors: 4
 recentReleases: 8
 createdAt: "2026-04-17T16:45:59Z"
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 82
+undervaluedScore: 80
 maintainers: ["mabry1985", "github-actions[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061625Z&X-Amz-Expires=300&X-Amz-Signature=b16c8fad19a613167039690b4727d3fe623f252a5a6383b05078df5a4d6ca102&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA4NSwibmJmIjoxNzg1MzA1Nzg1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.DujjhT62tne-oWljHwsrAIMgVGxqXzKS3KdajWIyU70"
 discussionCount: 0
 postedAt: "2026-07-25T06:06:56.645Z"
 ---

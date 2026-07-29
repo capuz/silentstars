@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript", "HTML"]
 languagePcts: [51, 29]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
-stars: 63
+stars: 66
 forks: 3
 openIssues: 0
 closedIssues: 7
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 38
 maintainers: ["Shik3i", "actions-user"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061604Z&X-Amz-Expires=300&X-Amz-Signature=44a7e807443dea8de9a9fbfb68b4ac4650b135b788b1cbd17361ce1f9bbf776e&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA2NCwibmJmIjoxNzg1MzA1NzY0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0._JMyt_hdiqTNMGY3PjGAMhlLBtIMgbJEGvf889YEWX4"
 fundingLinks: ["KO_FI:https://ko-fi.com/koaladev"]
 discussionCount: 1
 postedAt: "2026-06-26T21:38:25.211Z"

@@ -24,7 +24,7 @@ tags: ["funded"]
 healthScore: 88
 undervaluedScore: 75
 maintainers: ["Copilot", "ssnfts24"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061616Z&X-Amz-Expires=300&X-Amz-Signature=6c667921439f44794edccc5b03d57aa5449c06a731988f3d29f3312b2f226744&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA3NiwibmJmIjoxNzg1MzA1Nzc2LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.H3odZFmbmAX_PEw3qF43Mw7RVXYdZnB2LUZ_9p9jLgs"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
 postedAt: "2026-07-15T06:00:03.090Z"
