@@ -14,16 +14,17 @@ openIssues: 0
 closedIssues: 16
 watchers: 2
 contributors: 19
-recentReleases: 5
+recentReleases: 6
 createdAt: "2025-09-21T12:19:40Z"
-lastCommitAt: "2026-07-29T06:14:25Z"
-lastReleaseAt: "2026-07-25T09:19:53Z"
+lastCommitAt: "2026-07-29T06:24:32Z"
+lastReleaseAt: "2026-07-29T06:27:41Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 80
 maintainers: ["genedna", "NJUWallSpider", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e6a6890fb4dbce935badbf97475bae5dacb14cc27b1dc990af2a11f2aba8d9f3/libra-tools/git-internal"
+openGraphImageUrl: "https://opengraph.githubassets.com/0a18cc5c18d9c16d53b3eaeca4c00a4358104426e18e112d48c0f895e900685f/libra-tools/git-internal"
+postedAt: "2026-07-29T06:18:55.015Z"
 ---
 
 ## Git Internal Module

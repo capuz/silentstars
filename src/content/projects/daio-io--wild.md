@@ -7,7 +7,7 @@ url: "https://github.com/Daio-io/wild"
 homepage: "https://daio-io.github.io/wild/"
 language: "Kotlin"
 languages: ["Kotlin"]
-languagePcts: [100]
+languagePcts: [97]
 topics: ["android", "androidtv", "compose-multiplatform", "designsystem"]
 stars: 5
 forks: 0
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-08-11T19:21:07Z"
-lastCommitAt: "2026-07-28T19:11:18Z"
+lastCommitAt: "2026-07-30T05:35:34Z"
 lastReleaseAt: "2026-04-10T23:15:51Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 87
 undervaluedScore: 75
 maintainers: ["Daio-io", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8819ad30b2f8a8e3834ca2b81097e69d1ad7c3579e895b079e932b2066147bbb/Daio-io/wild"
+openGraphImageUrl: "https://opengraph.githubassets.com/b5ea66c6435b782584e51d321993916a5be8dd015b7de3c92d813981ca34849a/Daio-io/wild"
 postedAt: "2026-07-20T06:40:12.930Z"
 ---
 

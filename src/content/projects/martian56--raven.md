@@ -21,7 +21,7 @@ lastCommitAt: "2026-07-24T08:15:31Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 65
 maintainers: ["martian56"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9b66471aaad6a75b22539467357e700121a1803f18a89c86555247bd7051430c/martian56/raven"

@@ -16,14 +16,14 @@ watchers: 8
 contributors: 23
 recentReleases: 0
 createdAt: "2019-03-18T07:21:25Z"
-lastCommitAt: "2026-07-28T04:44:30Z"
+lastCommitAt: "2026-07-30T00:55:16Z"
 lastReleaseAt: "2020-11-12T00:40:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 94
+healthScore: 95
 undervaluedScore: 78
 maintainers: ["stakach", "chillfox", "naqvis"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/176226062/b3725100-952a-11ea-9c15-2e54f8559a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061604Z&X-Amz-Expires=300&X-Amz-Signature=20a4c8622ca0a1da23f4ee52f8401875e4b9b13f60b3e57fcfce572dd7424b7d&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA2NCwibmJmIjoxNzg1MzA1NzY0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0._JMyt_hdiqTNMGY3PjGAMhlLBtIMgbJEGvf889YEWX4"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/176226062/b3725100-952a-11ea-9c15-2e54f8559a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260730T060924Z&X-Amz-Expires=300&X-Amz-Signature=99c97b7d6bdef4a325cb312bf2c7d799e42dadf623e9ab5b4b5af9205b1b69f2&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTM5MjA2NCwibmJmIjoxNzg1MzkxNzY0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.WAztw2eRVlnGJf546Qc9_RS-Vq9JUqj2AzJKIOm7jkI"
 postedAt: "2026-06-29T07:29:31.581Z"
 ---
 

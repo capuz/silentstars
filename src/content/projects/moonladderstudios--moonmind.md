@@ -9,19 +9,19 @@ languages: ["Python"]
 languagePcts: [83]
 stars: 12
 forks: 5
-openIssues: 59
-closedIssues: 230
-watchers: 5
+openIssues: 61
+closedIssues: 236
+watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-07-28T17:21:05Z"
+lastCommitAt: "2026-07-29T22:41:10Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 96
-undervaluedScore: 69
+undervaluedScore: 70
 maintainers: ["nsticco", "dependabot[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061625Z&X-Amz-Expires=300&X-Amz-Signature=d3ba83f3482d406ad4cf81abe753068df206d1b473f5d075aa0bc0e1a5cf0071&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA4NSwibmJmIjoxNzg1MzA1Nzg1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.DujjhT62tne-oWljHwsrAIMgVGxqXzKS3KdajWIyU70"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260730T060944Z&X-Amz-Expires=300&X-Amz-Signature=35b35d6741176ffb28d37dbb7425d09864320e6adf89cf620f6e08dd040fa0a1&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTM5MjA4NCwibmJmIjoxNzg1MzkxNzg0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.JnAdOHm0QfsbnRB1pApllNAmtrofP2eJcfnZM8RCuw8"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 

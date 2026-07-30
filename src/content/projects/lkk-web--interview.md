@@ -29,7 +29,7 @@ postedAt: "2026-07-10T07:05:06.177Z"
 
 # 📘 Personal Tech Blog / Knowledge Base
 
-Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my open-source blog, welcome to submit PRs 😉
+Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my open-source blog, welcome to submit PR😉
 
 👋 About Me
 
@@ -52,7 +52,7 @@ Hi~ 👋 I am someone who wants to lie down as soon as I wake up, this is my ope
 - Blog: https://stb.kying.org/blog/index.html
 - Email: workhardcl@icloud.com
 
-If this content is helpful to you, feel free to Star 🌟 and it will be continuously maintained...
+If this content is helpful to you, feel free to Star 🌟 and it is continuously maintained...
 
 ## iOS App Maintenance
 
@@ -66,4 +66,4 @@ npx cap open ios
 
 If you are just renewing without changing content, you do not need to rebuild the web product.
 
-If you have changed the blog content,…
+If you have changed the blog content, you need…
