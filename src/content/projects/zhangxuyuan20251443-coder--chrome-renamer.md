@@ -35,10 +35,19 @@ promoted: true
 
   <strong>Rename visible Google, YouTube, and Chrome labels—locally.</strong>
 
+  <strong>Customize the visible names of Google, YouTube, and Chrome pages on your machine.</strong>
+
   A privacy-first Manifest V3 Chrome extension for personalized brand labels and a custom new tab page.
 
   ⭐ If Chrome Renamer is useful, use GitHub's <strong>Star</strong> button to save it and help others discover it.<br>
+  If it is helpful to you, feel free to click the <strong>Star</strong> button at the top of the GitHub page to save it and help more people discover it.
 
-## Make the web feel like yours
+## Introduction in Chinese
 
-Chrome Renamer replaces supported visible brand labels on ordinary web pages and keeps the same names on its custom new tab page.
+Chrome Renamer is a locally running Chrome extension that customizes the visible brand names of Google, YouTube, and Chrome on web pages and provides a personalized new tab page.
+
+- Name settings are only saved in the local Chrome extension storage.
+- Supports dynamically loaded web content and common accessibility labels.
+- Can pause or resume name replacement for the current website with one click.
+- Email addresses, URLs, and domain names remain unchanged and will not be renamed.
+- No account is required, and it does not include analytics, ads, or developer…

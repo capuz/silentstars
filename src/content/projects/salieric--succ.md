@@ -19,10 +19,10 @@ lastCommitAt: "2026-07-26T21:04:09Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 80
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260729%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260729T061609Z&X-Amz-Expires=300&X-Amz-Signature=ce90afefa3e78183a50e99192f18e4772cb0087c175d86750e8e8092ebb8253b&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTMwNjA2OSwibmJmIjoxNzg1MzA1NzY5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.5pp2aItcxGZtNdrkB8r8CWhEQ3jxkQXk3HMY66CHM7s"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260730T060931Z&X-Amz-Expires=300&X-Amz-Signature=e620fb3be7bec4c41cdd3ce7a856250da250ee2d7ef4dc16cb31c7a534cb12a2&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTM5MjA3MSwibmJmIjoxNzg1MzkxNzcxLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.J3SIXZQjd0AQTTOT3j_ONuxpKdC0u3EYNaWuUcLh7sQ"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]
 postedAt: "2026-06-25T02:12:49.344Z"
 ---
