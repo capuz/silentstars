@@ -697,5 +697,16 @@
         "postedAt": "2026-07-29T06:19:24.156Z"
       }
     }
+  },
+  {
+    "repo": "ericcornelissen/js-regex-security-scanner",
+    "slug": "ericcornelissen--js-regex-security-scanner",
+    "postedAt": "2026-07-30T06:14:34.980Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mrtryaei7t2v",
+        "postedAt": "2026-07-30T06:14:34.980Z"
+      }
+    }
   }
 ]
