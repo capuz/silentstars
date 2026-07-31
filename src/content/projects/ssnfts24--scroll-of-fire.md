@@ -7,7 +7,7 @@ url: "https://github.com/ssnfts24/scroll-of-fire"
 homepage: "https://ssnfts24.github.io/scroll-of-fire/"
 language: "JavaScript"
 languages: ["JavaScript", "HTML"]
-languagePcts: [76, 23]
+languagePcts: [77, 23]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
 stars: 5
 forks: 0
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-07-29T22:25:56Z"
+lastCommitAt: "2026-07-31T04:42:39Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
 healthScore: 89
 undervaluedScore: 75
 maintainers: ["Copilot", "ssnfts24"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260730T060936Z&X-Amz-Expires=300&X-Amz-Signature=fcfddaf6826c8465f2548b9dd1d4f32c5162defd39c639b55799c0f7cb4365c6&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTM5MjA3NiwibmJmIjoxNzg1MzkxNzc2LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.HlK8UoJVZPzpZs8RixMuvlj9Qli0VaqQcnFLKLKNyeY"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063151Z&X-Amz-Expires=300&X-Amz-Signature=237f89b798ebdd409300d996e68901bba224256288131b6a8d175403714a9bcb&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgxMSwibmJmIjoxNzg1NDc5NTExLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.inqK57FfU0vLHhz3AZE8A1MUzsU6wu9tJAJUDpXzYGg"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
 postedAt: "2026-07-15T06:00:03.090Z"

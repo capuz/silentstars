@@ -1,9 +1,7 @@
 ---
 repo: "iTaoPu/iCloud"
 name: "iCloud"
-description: "\"Leisure\" is the punctuation of life, responsible for cutting long days into poetry!"
-originalDescription: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
-descriptionLang: "zh"
+description: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
 readmeQualityOk: false
 url: "https://github.com/iTaoPu/iCloud"
 homepage: "https://iCloud.uGreen.hidns.co"
@@ -18,23 +16,26 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-03-29T03:05:27Z"
-lastCommitAt: "2026-07-29T14:05:09Z"
+lastCommitAt: "2026-07-31T01:52:38Z"
 status: "thriving"
 tags: []
-healthScore: 79
+healthScore: 80
 undervaluedScore: 76
 maintainers: ["github-actions[bot]", "iTaoPu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2b15c4a16e5f19dd69dd18ecac2a786b810d452628a6fa480b52f925962cbb6b/iTaoPu/iCloud"
+openGraphImageUrl: "https://opengraph.githubassets.com/614ee35fc05969318edfe1eb25d98c3d9fcfde22a965adf478806cee6553937a/iTaoPu/iCloud"
 postedAt: "2026-07-04T19:30:50.124Z"
 ---
 
-### 📖Description
-All playback sources are collected from the internet🌐, for **testing and research use only**, and not for **commercial use**.
+### 📖说明
+所有播放源均收集于互联网🌐，仅供**测试研究使用**，不得**商用**。
 
-This project does not store any streaming content, and all legal responsibilities and consequences shall be borne by the user.
+
+本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
 
 <p>
 </p>
 
-### 💡Acknowledgments:
-- Special thanks to GitHub and other internet resources[`Special Thanks`]
+### 💡致谢：
+- GitHub及互联网其他资源[`特别感谢`]
+
+</p>
