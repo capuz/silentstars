@@ -716,5 +716,16 @@
         "postedAt": "2026-07-30T06:15:18.177Z"
       }
     }
+  },
+  {
+    "repo": "YunoHost-Apps/wekan_ynh",
+    "slug": "yunohost-apps--wekan-ynh",
+    "postedAt": "2026-07-31T06:34:08.391Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mrwdk4vazi2d",
+        "postedAt": "2026-07-31T06:34:08.391Z"
+      }
+    }
   }
 ]
