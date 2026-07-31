@@ -1,9 +1,7 @@
 ---
 repo: "zhangxuyuan20251443-coder/Chrome-Renamer"
 name: "Chrome-Renamer"
-description: "Privacy-first Chrome extension to rename Google, YouTube, and Chrome labels locally."
-originalDescription: "Privacy-first Chrome extension to rename Google, YouTube, and Chrome labels locally. 本地网页品牌改名与自定义新标签页扩展。"
-descriptionLang: "zh"
+description: "Privacy-first Chrome extension to rename Google, YouTube, and Chrome labels locally. 本地网页品牌改名与自定义新标签页扩展。"
 readmeQualityOk: true
 url: "https://github.com/zhangxuyuan20251443-coder/Chrome-Renamer"
 homepage: "https://zhangxuyuan20251443-coder.github.io/Chrome-Renamer/"
@@ -31,23 +29,48 @@ discussionCount: 1
 promoted: true
 ---
 
+</p>
+
 <h1 align="center">Chrome Renamer</h1>
 
   <strong>Rename visible Google, YouTube, and Chrome labels—locally.</strong>
+</p>
 
-  <strong>Customize the visible names of Google, YouTube, and Chrome pages on your machine.</strong>
+  <strong>在本机自定义 Google、YouTube 和 Chrome 页面中的可见名称。</strong>
+</p>
 
   A privacy-first Manifest V3 Chrome extension for personalized brand labels and a custom new tab page.
+</p>
+
+</p>
+
+  ·
+  ·
+  ·
+</p>
 
   ⭐ If Chrome Renamer is useful, use GitHub's <strong>Star</strong> button to save it and help others discover it.<br>
-  If it is helpful to you, feel free to click the <strong>Star</strong> button at the top of the GitHub page to save it and help more people discover it.
+  如果它对你有帮助，欢迎点击 GitHub 页面顶部的 <strong>Star</strong> 收藏并帮助更多人发现它。
+</p>
 
-## Introduction in Chinese
+## 中文简介
 
-Chrome Renamer is a locally running Chrome extension that customizes the visible brand names of Google, YouTube, and Chrome on web pages and provides a personalized new tab page.
+Chrome Renamer 是一款本地运行的 Chrome 扩展，可自定义网页中可见的 Google、YouTube 和 Chrome 品牌名称，并提供个性化新标签页。
 
-- Name settings are only saved in the local Chrome extension storage.
-- Supports dynamically loaded web content and common accessibility labels.
-- Can pause or resume name replacement for the current website with one click.
-- Email addresses, URLs, and domain names remain unchanged and will not be renamed.
-- No account is required, and it does not include analytics, ads, or developer…
+- 名称设置只保存在本机 Chrome 扩展存储中
+- 支持动态加载的网页内容和常见无障碍标签
+- 可对当前网站一键暂停或恢复名称替换
+- 邮箱地址、网址和域名保持原样，不会被改名
+- 不需要账号，不包含分析、广告或开发者服务器
+
+[下载 Chrome Renamer 1.1.2](https://github.com/zhangxuyuan20251443-coder/Chrome-Renamer/releases/latest/download/chrome-renamer-1.1.2.zip) · [查看 30 秒安装步骤](#30-second-install)
+
+扩展只能修改普通 HTTP/HTTPS 网页中的内容以及自己的新标签页，不能修改 Chrome 地址栏、菜单、设置页或操作系统界面。
+
+## Make the web feel like yours
+
+Chrome Renamer replaces supported visible brand labels on ordinary web pages and keeps the same names on its custom new tab page.
+
+| Before | After—you choose the names |
+| --- | --- |
+| Google…

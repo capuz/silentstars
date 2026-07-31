@@ -16,13 +16,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2023-12-04T09:43:01Z"
-lastCommitAt: "2026-07-30T03:49:17Z"
+lastCommitAt: "2026-07-31T03:14:49Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 82
 maintainers: ["DevaOnBreaches"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c294cc66d89e39150e101db6880502939cc6a999dc5f96413d19748bfa8903f1/XposedOrNot/XposedOrNot-Website"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d543fcc1f920b9c0fe79a90a7b4a601c00c19ae69d5db84abbabd4a20ddfa11/XposedOrNot/XposedOrNot-Website"
 postedAt: "2026-07-08T05:49:30.374Z"
 ---
 

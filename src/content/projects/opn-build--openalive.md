@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 69
 undervaluedScore: 58
 maintainers: ["capuz", "opn-build"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260730T060924Z&X-Amz-Expires=300&X-Amz-Signature=2402ad0f65e910706f7463f11f711fea38fa2d8412fa57d8e21045242ea355e5&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTM5MjA2NCwibmJmIjoxNzg1MzkxNzY0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.WAztw2eRVlnGJf546Qc9_RS-Vq9JUqj2AzJKIOm7jkI"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063141Z&X-Amz-Expires=300&X-Amz-Signature=30297f5aac7d26321541878b079d0dc3c0d63aa9bf383a979b1f08a19625c6f4&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgwMSwibmJmIjoxNzg1NDc5NTAxLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.bMjl2ZySbwbVKUj95MTO2EGjxJcUyHsX3qa0r1170SI"
 promoted: true
 postedAt: "2026-06-25T22:59:39.704Z"
 ---

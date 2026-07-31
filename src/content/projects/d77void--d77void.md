@@ -19,7 +19,7 @@ createdAt: "2025-05-26T18:19:53Z"
 lastCommitAt: "2026-07-25T20:07:20Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 82
 maintainers: ["dani-77", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0e9d2b73cd82eeda80fdf37919e624d261e754a1b13a10933215df5902a2abb7/d77void/d77void"
