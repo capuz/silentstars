@@ -744,6 +744,10 @@
       "x": {
         "url": "https://x.com/i/web/status/2083437427272647049",
         "postedAt": "2026-08-01T06:19:25.966Z"
+      },
+      "ownerEmail": {
+        "url": "anthony@profullstack.com",
+        "postedAt": "2026-08-01T06:19:46.656Z"
       }
     }
   }
