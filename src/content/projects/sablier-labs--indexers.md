@@ -11,20 +11,20 @@ languagePcts: [97]
 topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "the-graph", "token-streaming", "decentralized-finance", "defi", "real-time-finance"]
 stars: 16
 forks: 6
-openIssues: 11
-closedIssues: 180
+openIssues: 9
+closedIssues: 183
 watchers: 1
-contributors: 10
+contributors: 11
 recentReleases: 2
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-07-31T00:24:24Z"
+lastCommitAt: "2026-08-01T00:22:09Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 79
-maintainers: ["github-actions[bot]", "PaulRBerg"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/581801142/00017717-05a6-4534-9660-06e5d3422c1b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063148Z&X-Amz-Expires=300&X-Amz-Signature=9f1dca234b0724f68bcf8f0b92819c885fa751d73a46bd862105d943227a8da5&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgwOCwibmJmIjoxNzg1NDc5NTA4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.CkdhHgRTXoq0LZhE326Edw9xaizunxhC5kswV6Sz9yo"
+maintainers: ["github-actions[bot]", "PaulRBerg", "latent-9"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/581801142/00017717-05a6-4534-9660-06e5d3422c1b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061700Z&X-Amz-Expires=300&X-Amz-Signature=9cfe1b0f77cb7f0f0740dc89ee7f235e0bfbaa1f3eab27adb798a8c95892b54e&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMCwibmJmIjoxNzg1NTY1MDIwLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.wErK6Y3NKHpwMKwv8YOM2PR220VBUiobVH18Y3lm7GQ"
 discussionCount: 28
 postedAt: "2026-06-24T00:29:57.102Z"
 ---

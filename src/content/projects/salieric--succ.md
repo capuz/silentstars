@@ -22,7 +22,7 @@ tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
 healthScore: 96
 undervaluedScore: 80
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063148Z&X-Amz-Expires=300&X-Amz-Signature=4b06e4bd464ed9340e83f63a6112591ec0a15b9feeafddd0b0531f8891c810ca&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgwOCwibmJmIjoxNzg1NDc5NTA4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.CkdhHgRTXoq0LZhE326Edw9xaizunxhC5kswV6Sz9yo"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061700Z&X-Amz-Expires=300&X-Amz-Signature=d406ee5124f7b655b7863fb925957a1fe0f447553b145b9db1b443dced40b734&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMCwibmJmIjoxNzg1NTY1MDIwLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.wErK6Y3NKHpwMKwv8YOM2PR220VBUiobVH18Y3lm7GQ"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]
 postedAt: "2026-06-25T02:12:49.344Z"
 ---
