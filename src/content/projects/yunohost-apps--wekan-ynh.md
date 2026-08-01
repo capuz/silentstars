@@ -23,6 +23,7 @@ healthScore: 91
 undervaluedScore: 76
 maintainers: ["yunohost-bot", "Thovi98", "ericgaspar"]
 openGraphImageUrl: "https://opengraph.githubassets.com/49e02dc8fc2497f543cb66eac466c685d38f5d445996a8e730466c3f5473bda9/YunoHost-Apps/wekan_ynh"
+postedAt: "2026-07-31T06:34:08.391Z"
 ---
 
 <h1>

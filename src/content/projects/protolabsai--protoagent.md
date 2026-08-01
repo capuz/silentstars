@@ -11,20 +11,20 @@ languagePcts: [70, 24]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "fastapi", "langgraph", "llm-agent", "mcp"]
 stars: 5
 forks: 7
-openIssues: 24
+openIssues: 25
 closedIssues: 479
 watchers: 0
 contributors: 4
 recentReleases: 8
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-07-30T22:48:07Z"
+lastCommitAt: "2026-07-31T17:41:22Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 84
 maintainers: ["mabry1985", "github-actions[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063152Z&X-Amz-Expires=300&X-Amz-Signature=b66c9acd5091608031ae75a0d846cba56b790c905125258d2c17a7a5291a2c1e&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgxMiwibmJmIjoxNzg1NDc5NTEyLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.7jlbqbUSy3cq3HHe9hwN4Ej9RN4orBVuP8hdSmxleVQ"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061703Z&X-Amz-Expires=300&X-Amz-Signature=0b1745ee7321abcca89d74aaac8cfb95f1475b35d9a92788fa96dbcc1a550bd5&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMywibmJmIjoxNzg1NTY1MDIzLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.PKo_fLN65dQtvrC7MgC_3LNhRWQwkYJ-sAka7GGBaXU"
 discussionCount: 0
 postedAt: "2026-07-25T06:06:56.645Z"
 ---

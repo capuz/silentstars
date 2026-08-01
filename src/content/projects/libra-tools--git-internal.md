@@ -13,17 +13,17 @@ forks: 115
 openIssues: 0
 closedIssues: 16
 watchers: 2
-contributors: 19
+contributors: 20
 recentReleases: 6
 createdAt: "2025-09-21T12:19:40Z"
-lastCommitAt: "2026-07-29T06:24:32Z"
+lastCommitAt: "2026-07-31T17:10:27Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 92
+healthScore: 94
 undervaluedScore: 80
 maintainers: ["genedna", "NJUWallSpider", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0a18cc5c18d9c16d53b3eaeca4c00a4358104426e18e112d48c0f895e900685f/libra-tools/git-internal"
+openGraphImageUrl: "https://opengraph.githubassets.com/cc28303bb72e80611f1c8459f2ff3018c26cc4ae7bf27bb8019f805796cfad86/libra-tools/git-internal"
 postedAt: "2026-07-29T06:18:55.015Z"
 ---
 

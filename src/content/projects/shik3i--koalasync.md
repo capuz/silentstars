@@ -17,14 +17,14 @@ watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-21T04:12:57Z"
-lastCommitAt: "2026-07-29T20:31:40Z"
+lastCommitAt: "2026-07-31T08:55:06Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 38
 maintainers: ["Shik3i", "actions-user"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063141Z&X-Amz-Expires=300&X-Amz-Signature=1103296026c3f5a106cd3fc77d6da8ecb128fc92135956d94521d53993fac925&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgwMSwibmJmIjoxNzg1NDc5NTAxLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.bMjl2ZySbwbVKUj95MTO2EGjxJcUyHsX3qa0r1170SI"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061659Z&X-Amz-Expires=300&X-Amz-Signature=b93ea206e7a9cb8b06c2eb231cd53101957a4208e07e2fdc01e05f28af353ac0&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMxOSwibmJmIjoxNzg1NTY1MDE5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.ndIE8bMxIJKmBbbGHrwG1mapWjEBs0JZ-pPZR_Q2C50"
 fundingLinks: ["KO_FI:https://ko-fi.com/koaladev"]
 discussionCount: 1
 postedAt: "2026-06-26T21:38:25.211Z"

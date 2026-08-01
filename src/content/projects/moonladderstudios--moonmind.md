@@ -21,7 +21,7 @@ tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 96
 undervaluedScore: 71
 maintainers: ["nsticco", "dependabot[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260731%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260731T063152Z&X-Amz-Expires=300&X-Amz-Signature=dde4ce32cc13bd0e94f4f308b57c6e58ef76dfd87b464805edba913d05019e42&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTQ3OTgxMiwibmJmIjoxNzg1NDc5NTEyLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.7jlbqbUSy3cq3HHe9hwN4Ej9RN4orBVuP8hdSmxleVQ"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061703Z&X-Amz-Expires=300&X-Amz-Signature=826393696bbdc851e205bee052eb31286496d06aa844c46a223e04b9f0570f2f&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMywibmJmIjoxNzg1NTY1MDIzLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.PKo_fLN65dQtvrC7MgC_3LNhRWQwkYJ-sAka7GGBaXU"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
