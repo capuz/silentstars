@@ -750,5 +750,16 @@
         "postedAt": "2026-08-01T06:19:46.656Z"
       }
     }
+  },
+  {
+    "repo": "keiretsu-labs/kubernetes-manifests",
+    "slug": "keiretsu-labs--kubernetes-manifests",
+    "postedAt": "2026-08-03T06:48:22.019Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3ms5vqdeu6s27",
+        "postedAt": "2026-08-03T06:48:22.019Z"
+      }
+    }
   }
 ]
