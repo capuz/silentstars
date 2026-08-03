@@ -1,7 +1,7 @@
 ---
 repo: "zu2/chibicc-6800-v1"
 name: "chibicc-6800-v1"
-description: "A Small C Compiler for MC6800 (fork from chibicc)"
+description: "C Compiler for MC6800 (fork from chibicc)"
 readmeQualityOk: true
 url: "https://github.com/zu2/chibicc-6800-v1"
 homepage: "https://www.zukeran.org/shin/d/"
@@ -17,35 +17,33 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-07-31T19:58:06Z"
+lastCommitAt: "2026-08-03T05:07:16Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1cbe424af4c2c7f559eff908c39523605810be3be573c1dc0a74c19006a12b61/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/c6a16116b0a9ccb05657dd151c9c41aedfd5582b3d6b97232109f0d2dea7fade/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 
-# chibicc-6800-v1: A small C Compiler for MC6800
+# chibicc-6800-v1: C Compiler for MC6800
 
 ## Overview
 
-This project is a fork of [@rui314](https://www.sigbus.info/)'s [chibicc](https://github.com/rui314/chibicc/), modified to create a C compiler for the Motorola MC6800 architecture.
+This is a Motorola MC6800 cross-compiler based on [@rui314](https://www.sigbus.info/)'s [chibicc](https://github.com/rui314/chibicc/).
 
-This project was created as a tool for studying compilers for the MC6800, and while it includes extra code and comments that may not be essential, they reflect the learning process and experimentation involved in developing the compiler.
+The compiler targets the MC6800 and is designed to generate efficient code. It works well on the MC6800 and provides good performance.
 
-A lot of things about object code generation and performance only became clear once I actually implemented it. Some parts of the code may be there just for testing.
+Many C programs, including Dhrystone and Whetstone benchmarks, now run on the MC6800. The compiler also supports IEEE 754 32-bit floating-point operations through an assembly implementation.
 
-However, it works reasonably well on the MC6800. I hope it may still be of some use.
+Some test code or implementation notes may still remain. Feedback and bug reports are always welcome.
 
-Dhrystone and Whetstone benchmarks now run successfully on the MC6800.
-
-- https://github.com/z88dk/z88dk/tree/master/support/benchmarks/dhrystone21
-- https://github.com/z88dk/z88dk/tree/master/support/benchmarks/whetstone
 ----
 # Topics
 
 - **Data types:** `int` and pointers are 16-bit; `long` and `float` are 32-bit. `double` and `long long` (64-bit or more) are unsupported.
-- **Structs/unions:** Passing/returning by value are implemented. but this increases…
+- **Function parameters:** Only the first parameter is passed via registers (A/B/@long). If the first parameter is a struct/union, all parameters are passed via the stack.
+- **Return values:** Struct/union return values pass their address as an implicit first argument in a register. All other normal arguments are passed on the stack.
+- **IEEE 754 floating-point:** 32-bit floating-point arithmetic is implemented in…

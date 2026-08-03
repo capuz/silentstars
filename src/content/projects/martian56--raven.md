@@ -11,7 +11,7 @@ languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler"]
 stars: 39
 forks: 22
-openIssues: 5
+openIssues: 7
 closedIssues: 413
 watchers: 1
 contributors: 2
@@ -21,7 +21,7 @@ lastCommitAt: "2026-07-24T08:15:31Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 65
 maintainers: ["martian56"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9b66471aaad6a75b22539467357e700121a1803f18a89c86555247bd7051430c/martian56/raven"

@@ -21,10 +21,10 @@ lastCommitAt: "2026-07-31T22:06:50Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 75
 maintainers: ["ssnfts24", "Copilot"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061702Z&X-Amz-Expires=300&X-Amz-Signature=41b4688b5ef1e4b0f35dd8cb6ea6125a8711457e3c8b28bcbbf9bdb368ae7640&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMiwibmJmIjoxNzg1NTY1MDIyLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.WuujBQul9znAvwpvKMQJUWD9uX4F8aFVzRj4ig56PZw"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260803T064604Z&X-Amz-Expires=300&X-Amz-Signature=c2eb0514edd8c8e016d690a8309d81bda6886ac1d98889e02db721f50c451de5&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTczOTg2NCwibmJmIjoxNzg1NzM5NTY0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.uKvzG3LMoW0f-P6Pu_oFzLSswfzXqZCcUliu45qN_lk"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
 postedAt: "2026-07-15T06:00:03.090Z"
