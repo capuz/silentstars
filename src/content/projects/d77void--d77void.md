@@ -8,21 +8,21 @@ homepage: "https://d77void.sourceforge.io"
 language: "CSS"
 languages: ["CSS"]
 languagePcts: [63]
-stars: 10
+stars: 11
 forks: 4
-openIssues: 0
+openIssues: 1
 closedIssues: 1
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-07-31T20:00:00Z"
+lastCommitAt: "2026-08-02T09:36:45Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 99
-undervaluedScore: 82
-maintainers: ["dani-77", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a11223eaf3b70c74724deb26c6d0f86ffd8be72d7cf7108fb9a679f644f0dfd2/d77void/d77void"
+healthScore: 88
+undervaluedScore: 72
+maintainers: ["claude", "dani-77"]
+openGraphImageUrl: "https://opengraph.githubassets.com/06ce172459755a5fc3b8acfe20730035e7cbaee8118ca2b8d778e0ef21399dc0/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 

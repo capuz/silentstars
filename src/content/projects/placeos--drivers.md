@@ -16,14 +16,14 @@ watchers: 8
 contributors: 23
 recentReleases: 0
 createdAt: "2019-03-18T07:21:25Z"
-lastCommitAt: "2026-07-31T08:01:22Z"
+lastCommitAt: "2026-08-03T05:05:28Z"
 lastReleaseAt: "2020-11-12T00:40:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 94
+healthScore: 95
 undervaluedScore: 78
-maintainers: ["stakach", "chillfox", "naqvis"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/176226062/b3725100-952a-11ea-9c15-2e54f8559a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061659Z&X-Amz-Expires=300&X-Amz-Signature=0af4952156e89643762a5451e3c29081bff2dbb3bb7e9fef1a91406afa541e58&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMxOSwibmJmIjoxNzg1NTY1MDE5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.ndIE8bMxIJKmBbbGHrwG1mapWjEBs0JZ-pPZR_Q2C50"
+maintainers: ["stakach", "chillfox", "MrYuion"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/176226062/b3725100-952a-11ea-9c15-2e54f8559a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260803T064600Z&X-Amz-Expires=300&X-Amz-Signature=a73e27475af7b9ae5c9e5ea34da72b7c04ff5dd8c7c04e1697d90050f2bd4fd5&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTczOTg2MCwibmJmIjoxNzg1NzM5NTYwLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.L7qq434dDtsQC9HPFJJ-MlJLT9CSRoMN5wzsedzryKs"
 postedAt: "2026-06-29T07:29:31.581Z"
 ---
 

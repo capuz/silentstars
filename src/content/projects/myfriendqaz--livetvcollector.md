@@ -7,7 +7,7 @@ url: "https://github.com/myfriendqaz/LiveTVCollector"
 language: "Python"
 languages: ["Python"]
 languagePcts: [95]
-stars: 7
+stars: 8
 forks: 2
 openIssues: 0
 closedIssues: 0
@@ -15,13 +15,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-10T21:08:04Z"
-lastCommitAt: "2026-08-01T03:43:11Z"
+lastCommitAt: "2026-08-03T03:45:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 74
+undervaluedScore: 72
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4bdebbfe4200621b47d9e3f45b4561ec920b2145825f02cfccdabbfdb0777845/myfriendqaz/LiveTVCollector"
+openGraphImageUrl: "https://opengraph.githubassets.com/bc48af84b504899b4b63a48c74b54d00c29717dc58f37715b7b2d62170da39c5/myfriendqaz/LiveTVCollector"
 postedAt: "2026-06-28T02:10:40.289Z"
 ---
 

@@ -6,22 +6,22 @@ readmeQualityOk: true
 url: "https://github.com/MoonLadderStudios/MoonMind"
 language: "Python"
 languages: ["Python"]
-languagePcts: [83]
+languagePcts: [84]
 stars: 12
 forks: 5
-openIssues: 51
-closedIssues: 246
+openIssues: 47
+closedIssues: 250
 watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-07-31T05:18:03Z"
+lastCommitAt: "2026-08-03T06:07:19Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 96
+healthScore: 97
 undervaluedScore: 71
 maintainers: ["nsticco", "dependabot[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260801%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260801T061703Z&X-Amz-Expires=300&X-Amz-Signature=826393696bbdc851e205bee052eb31286496d06aa844c46a223e04b9f0570f2f&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTU2NTMyMywibmJmIjoxNzg1NTY1MDIzLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.PKo_fLN65dQtvrC7MgC_3LNhRWQwkYJ-sAka7GGBaXU"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260803T064605Z&X-Amz-Expires=300&X-Amz-Signature=8fc0fe207a273146ea5cd6fee7f509593af0172b968d240e00f701387f79618d&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTczOTg2NSwibmJmIjoxNzg1NzM5NTY1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.W9mFTflAjqKcHfgqiRwMck4J8Xn_yX_y4u3RHETOrqE"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
