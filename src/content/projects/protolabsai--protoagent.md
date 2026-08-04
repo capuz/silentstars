@@ -21,10 +21,10 @@ lastCommitAt: "2026-08-03T02:20:06Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 84
 maintainers: ["mabry1985", "github-actions[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260803T064605Z&X-Amz-Expires=300&X-Amz-Signature=6f026e6b6430314e9996471d8b65d056eeaabcca9dfe44ed97e616d05cb9bd74&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTczOTg2NSwibmJmIjoxNzg1NzM5NTY1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.W9mFTflAjqKcHfgqiRwMck4J8Xn_yX_y4u3RHETOrqE"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260804T061315Z&X-Amz-Expires=300&X-Amz-Signature=5173452d51280b04378e91a65171ef48520a06e89ed340fc31bc5e7036c085eb&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTgyNDI5NSwibmJmIjoxNzg1ODIzOTk1LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.u-S-1PKGv5i1v-AcjIhqsPFsR-gwkhWCgZwUZFS9oqg"
 discussionCount: 0
 postedAt: "2026-07-25T06:06:56.645Z"
 ---
