@@ -765,5 +765,16 @@
         "postedAt": "2026-08-03T06:48:46.224Z"
       }
     }
+  },
+  {
+    "repo": "motoki317/manifest",
+    "slug": "motoki317--manifest",
+    "postedAt": "2026-08-04T06:15:28.702Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3msaeegulng2s",
+        "postedAt": "2026-08-04T06:15:28.702Z"
+      }
+    }
   }
 ]
