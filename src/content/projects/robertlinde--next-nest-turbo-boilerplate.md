@@ -16,13 +16,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2025-05-06T19:07:44Z"
-lastCommitAt: "2026-08-04T03:14:26Z"
+lastCommitAt: "2026-08-04T15:49:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 71
 maintainers: ["renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/befdc56bcd09ac91515d112aca6c0ae13ccb8ec0ea8b7195c8745c4ae74dcf9e/robertlinde/next-nest-turbo-boilerplate"
+openGraphImageUrl: "https://opengraph.githubassets.com/6960e0a3ced726151d813c809e4752b8ed702a5dc2033b7bb314ceb9a51e5635/robertlinde/next-nest-turbo-boilerplate"
 postedAt: "2026-07-18T05:53:42.749Z"
 ---
 

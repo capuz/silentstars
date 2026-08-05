@@ -7,7 +7,7 @@ url: "https://github.com/snowykami/snowykami"
 language: "Python"
 languages: ["Python"]
 languagePcts: [100]
-stars: 6
+stars: 5
 forks: 2
 openIssues: 0
 closedIssues: 0
@@ -15,13 +15,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-02-04T11:54:02Z"
-lastCommitAt: "2026-08-04T06:10:52Z"
+lastCommitAt: "2026-08-05T05:57:42Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
-undervaluedScore: 74
+undervaluedScore: 77
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2eaee2fe32a2d4bd0192059eddd366d0e2fe1f4a29ffc4d166e672c857df06cd/snowykami/snowykami"
+openGraphImageUrl: "https://opengraph.githubassets.com/d7fb1a2d1cdf0c016bbd98e927e8b58957e59ea3ec8085e2172967878eadbf9d/snowykami/snowykami"
 postedAt: "2026-07-11T06:04:09.099Z"
 ---
 

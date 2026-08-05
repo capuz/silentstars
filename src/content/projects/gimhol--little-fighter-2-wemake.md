@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-02T02:07:50Z"
 lastReleaseAt: "2026-01-31T06:12:59Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 70
 maintainers: ["gimhol"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8b18e131b9edec0940c63dc1d6045d53ad95e89436a7df2dcc070b30dbec4048/gimhol/little-fighter-2-WEMAKE"
