@@ -17,9 +17,6 @@ on:
       skip_post:
         type: boolean
         default: false
-      skip_post_x:
-        type: boolean
-        default: false
       submission_repo:
         type: string
         default: ''
@@ -30,9 +27,6 @@ on:
       bsky_url:
         description: "Bluesky post URL"
         value: ${{ jobs.post.outputs.bsky_url }}
-      x_post_url:
-        description: "X.com post URL"
-        value: ${{ jobs.post-x.outputs.x_post_url }}
   workflow_dispatch:
     inputs:
       skip_collect:
@@ -43,12 +37,8 @@ on:
         description: "Saltar post a Bluesky"
         type: boolean
         default: false
-      skip_post_x:
-        description: "Saltar post a X.com"
-        type: boolean
-        default: false
       dry_run:
-        description: "Dry run — log post without sending to Bluesky or X.com"
+        description: "Dry run — log post without sending to Bluesky"
         type: boolean
         default: true
       # Submission flow — set by process-submission.yml when a new project is accepted
@@ -187,14 +177,14 @@ jobs:
         if: steps.pw-cache.outputs.cache-hit != 'true'
         run: npx playwright install chromium --with-deps
 
-      # Single source of truth for today's pick: post/post-x consume post_slug
+      # Single source of truth for today's pick: the post job consumes post_slug
       # instead of re-running the selection and hoping it agrees. Runs before the
       # build so the home page can feature today's pick (FEATURED_SLUG).
       - name: Select today's picks
         id: picks
         run: |
-          # One pick for both platforms: chosen from projects not yet posted
-          # anywhere, so X and Bluesky can never diverge on the same night.
+          # 'any' excludes projects already posted on any platform, including
+          # the historical X posts still recorded in posted.json.
           if [ -n "${{ inputs.submission_repo }}" ]; then
             POST_SLUG=$(echo "${{ inputs.submission_repo }}" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
           else
@@ -345,115 +335,22 @@ jobs:
           done
 
   # ─────────────────────────────────────────────────────────────
-  # Job 4: Post daily highlight to X.com
-  # Runs after the Bluesky post job (sequenced only to avoid both jobs
-  # appending to data/posted.json at once — a real merge conflict, not
-  # a fast-forward race that `pull --rebase` retries can resolve).
-  # Still independent of its outcome: runs even if post failed/skipped.
-  # A failure here fails the run on purpose: continue-on-error used to hide
-  # X API rejections (e.g. 403s) for days. Downstream jobs tolerate it via
-  # their own if: conditions.
-  # Requires secrets: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET
-  # ─────────────────────────────────────────────────────────────
-  post-x:
-    name: Post to X.com
-    runs-on: ubuntu-latest
-    needs: [deploy, post]
-    # Tolerates a failed post job (X is independent of Bluesky's outcome) but
-    # requires a successful deploy — posting a project whose page never went
-    # live puts a dead link on X.
-    # github.event_name == 'workflow_call' never matches here — see the collect
-    # job's comment above — so submission-triggered runs are detected via
-    # inputs.submission_repo instead.
-    if: >-
-      !cancelled() && needs.deploy.result == 'success' &&
-      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || inputs.submission_repo != '') &&
-      inputs.skip_post_x != true
-    outputs:
-      x_post_url: ${{ steps.post_x.outputs.x_post_url }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-        with:
-          ref: main
-
-      - name: Setup Node 24
-        uses: actions/setup-node@v6
-        with:
-          node-version: '24'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Compute submission slug
-        id: submission_slug_x
-        if: inputs.submission_repo != ''
-        env:
-          SUBMISSION_REPO: ${{ inputs.submission_repo }}
-        run: |
-          SLUG=$(echo "$SUBMISSION_REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
-          echo "value=$SLUG" >> $GITHUB_OUTPUT
-
-      - name: Download OG images
-        uses: actions/download-artifact@v8
-        with:
-          name: og-images
-          path: og-images
-
-      - name: Post to X.com
-        id: post_x
-        run: |
-          set +e
-          OUTPUT=$(npx tsx scripts/post-x.ts 2>&1)
-          EXIT_CODE=$?
-          set -e
-          echo "$OUTPUT"
-          X_URL=$(echo "$OUTPUT" | grep "^X_POST_URL=" | cut -d= -f2-)
-          echo "x_post_url=${X_URL}" >> $GITHUB_OUTPUT
-          exit $EXIT_CODE
-        env:
-          X_API_KEY:             ${{ secrets.X_API_KEY }}
-          X_API_SECRET:          ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN:        ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          BASE_URL:              https://capuz.github.io/silentstars
-          DRY_RUN:               ${{ inputs.dry_run }}
-          OG_DIR:                og-images
-          PROJECT_SLUG:          ${{ steps.submission_slug_x.outputs.value || needs.deploy.outputs.post_slug }}
-
-      - name: Commit posted.json
-        if: inputs.dry_run != true
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/posted.json
-          git diff --cached --quiet || git commit -m "chore: record x post [skip ci]"
-          for i in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push; then
-              break
-            fi
-            git rebase --abort 2>/dev/null || true
-            sleep $((RANDOM % 5 + 1))
-          done
-
-  # ─────────────────────────────────────────────────────────────
-  # Job 5: Rebuild + redeploy so tonight's project page shows the
-  # post URLs. posted.json is written by the post jobs AFTER the
-  # first deploy — without this pass, the X/Bluesky pills on the
-  # project page always lag one night behind. Reuses the OG artifact
+  # Job 4: Rebuild + redeploy so tonight's project page shows the
+  # post URL. posted.json is written by the post job AFTER the
+  # first deploy — without this pass, the Bluesky pill on the
+  # project page always lags one night behind. Reuses the OG artifact
   # from deploy instead of regenerating (no Playwright).
   # ─────────────────────────────────────────────────────────────
   redeploy:
     name: Redeploy with post URLs
     runs-on: ubuntu-latest
-    needs: [deploy, post, post-x]
-    # Runs when at least one platform actually published (its record commit
-    # is what the rebuild picks up); tolerates the other platform failing.
+    needs: [deploy, post]
+    # Runs only when the post actually published (its record commit
+    # is what the rebuild picks up).
     if: >-
       !cancelled() && needs.deploy.result == 'success' &&
       inputs.dry_run != true &&
-      (needs.post.result == 'success' || needs.post-x.result == 'success')
+      needs.post.result == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -461,7 +358,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          ref: main   # includes the record bsky/x post commits
+          ref: main   # includes the record bsky post commit
 
       - name: Setup Node 24
         uses: actions/setup-node@v6
@@ -502,7 +399,7 @@ jobs:
           artifact_name: github-pages-redeploy
 
   # ─────────────────────────────────────────────────────────────
-  # Job 6: Notify tonight's featured project owner (organic picks only).
+  # Job 5: Notify tonight's featured project owner (organic picks only).
   # Skipped for submission-triggered runs — that submitter already gets
   # their own acceptance email from process-submission.yml, and emailing
   # the repo owner too (often the same person) would be a redundant
@@ -512,12 +409,12 @@ jobs:
   notify-owner:
     name: Notify featured project owner
     runs-on: ubuntu-latest
-    needs: [deploy, post, post-x]
+    needs: [deploy, post]
     if: >-
       !cancelled() && needs.deploy.result == 'success' &&
       inputs.dry_run != true && inputs.submission_repo == '' &&
       needs.deploy.outputs.post_slug != '' &&
-      (needs.post.result == 'success' || needs.post-x.result == 'success')
+      needs.post.result == 'success'
     steps:
       - name: Checkout
         uses: actions/checkout@v7

@@ -113,7 +113,6 @@ jobs:
     with:
       skip_collect: false
       skip_post: false
-      skip_post_x: false
       submission_repo: ${{ needs.validate.outputs.repo }}
       submission_project_name: ${{ needs.validate.outputs.project_name }}
     secrets: inherit
@@ -125,9 +124,9 @@ jobs:
   notify:
     name: Notify submitter
     needs: [validate, collect-deploy-post]
-    # An X-only failure fails collect-deploy-post (its post-x job no longer
-    # hides errors), but the project still deployed and posted to Bluesky —
-    # bsky_url being set proves it, so the acceptance flow must still notify.
+    # A downstream job failure fails collect-deploy-post, but the project may
+    # still have deployed and posted to Bluesky — bsky_url being set proves it,
+    # so the acceptance flow must still notify.
     if: >-
       !cancelled() && needs.validate.outputs.status == 'accepted' &&
       (needs.collect-deploy-post.result == 'success' || needs.collect-deploy-post.outputs.bsky_url != '')
@@ -188,6 +187,5 @@ jobs:
           PROJECT_NAME:      ${{ needs.validate.outputs.project_name }}
           PROJECT_SLUG:      ${{ needs.validate.outputs.slug }}
           BSKY_POST_URL:     ${{ needs.collect-deploy-post.outputs.bsky_url }}
-          X_POST_URL:        ${{ needs.collect-deploy-post.outputs.x_post_url }}
           BASE_URL:          https://capuz.github.io/silentstars
         run: npx tsx scripts/send-email.ts

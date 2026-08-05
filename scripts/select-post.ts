@@ -2,10 +2,10 @@
  * select-post.ts — determine which project would be posted today for a given platform,
  * without making any API calls or posting anything.
  *
- * Usage: npx tsx scripts/select-post.ts <bsky|x|any>
- *        ("any" picks from projects not yet posted on any platform — the shared
- *         nightly pick that both platforms must honor)
- * Env:   PROJECT_SLUG (optional — forces a specific slug, same as post.ts/post-x.ts)
+ * Usage: npx tsx scripts/select-post.ts <bsky|any>
+ *        ("any" excludes projects already posted on any platform, including
+ *         historical X posts recorded in posted.json)
+ * Env:   PROJECT_SLUG (optional — forces a specific slug, same as post.ts)
  * Output: slug written to stdout (no newline), e.g. "owner--repo"
  * Exit 1: no candidates found
  */
@@ -14,9 +14,9 @@ import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { type PostedEntry, type Project, type LatestData, POSTED_PATH, seededIndex, selectTop20, slugify } from './post-shared.ts';
 
-const platform = process.argv[2] as 'bsky' | 'x' | 'any' | undefined;
-if (platform !== 'bsky' && platform !== 'x' && platform !== 'any') {
-  process.stderr.write('Usage: select-post.ts <bsky|x|any>\n');
+const platform = process.argv[2] as 'bsky' | 'any' | undefined;
+if (platform !== 'bsky' && platform !== 'any') {
+  process.stderr.write('Usage: select-post.ts <bsky|any>\n');
   process.exit(1);
 }
 

@@ -77,11 +77,11 @@ export function savePosted(entries: PostedEntry[]): void {
 
 const ACTIVE_STATUSES = ['thriving', 'newborn', 'revived', 'watched'];
 
-// Shared by select-post.ts, post.ts, post-x.ts — the candidate pool for the daily highlight:
-// active status, a README with enough real prose, not already posted on this platform
-// ('any' excludes repos posted on any platform, so both platforms share one pick),
-// ranked by undervaluedScore.
-export function selectTop20(projects: Project[], posted: PostedEntry[], platform: 'bsky' | 'x' | 'any'): Project[] {
+// Shared by select-post.ts and post.ts — the candidate pool for the daily highlight:
+// active status, a README with enough real prose, not already posted
+// ('any' excludes repos posted on any platform, including the historical X posts
+// still recorded in posted.json), ranked by undervaluedScore.
+export function selectTop20(projects: Project[], posted: PostedEntry[], platform: 'bsky' | 'any'): Project[] {
   const alreadyPosted = new Set(
     posted
       .filter(e => platform === 'any'

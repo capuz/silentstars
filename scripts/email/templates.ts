@@ -9,7 +9,6 @@ export interface EmailData {
   projectSlug: string;
   baseUrl: string;
   bskyPostUrl: string;
-  xPostUrl: string;
 }
 
 function cardUrl(d: EmailData) { return `${d.baseUrl}/projects/${d.projectSlug}/`; }
@@ -18,9 +17,6 @@ function ogImageUrl(d: EmailData) { return `${d.baseUrl}/og/${d.projectSlug}.png
 export function acceptedHtml(d: EmailData): string {
   const bskyCta = d.bskyPostUrl
     ? `<a href="${d.bskyPostUrl}" style="display:inline-block;background:#0085ff;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">See the post on Bluesky →</a>`
-    : '';
-  const xCta = d.xPostUrl
-    ? `<a href="${d.xPostUrl}" style="display:inline-block;background:#000000;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;border:1px solid #30363d;margin:0 10px 10px 0;">See the post on X →</a>`
     : '';
 
   return `<!DOCTYPE html>
@@ -64,7 +60,7 @@ export function acceptedHtml(d: EmailData): string {
           </td></tr>
 
           <tr><td style="padding-top:12px;padding-bottom:30px;">
-            <a href="${cardUrl(d)}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">View your card →</a>${bskyCta}${xCta}
+            <a href="${cardUrl(d)}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">View your card →</a>${bskyCta}
           </td></tr>
 
           <tr><td style="border-top:1px solid #21262d;padding-top:24px;">
@@ -85,9 +81,6 @@ export function acceptedHtml(d: EmailData): string {
 export function featuredHtml(d: EmailData): string {
   const bskyCta = d.bskyPostUrl
     ? `<a href="${d.bskyPostUrl}" style="display:inline-block;background:#0085ff;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">See the post on Bluesky →</a>`
-    : '';
-  const xCta = d.xPostUrl
-    ? `<a href="${d.xPostUrl}" style="display:inline-block;background:#000000;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;border:1px solid #30363d;margin:0 10px 10px 0;">See the post on X →</a>`
     : '';
 
   return `<!DOCTYPE html>
@@ -131,7 +124,7 @@ export function featuredHtml(d: EmailData): string {
           </td></tr>
 
           <tr><td style="padding-top:12px;padding-bottom:30px;">
-            <a href="${cardUrl(d)}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">View your card →</a>${bskyCta}${xCta}
+            <a href="${cardUrl(d)}" style="display:inline-block;background:#238636;color:#ffffff;padding:11px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600;margin:0 10px 10px 0;">View your card →</a>${bskyCta}
           </td></tr>
 
           <tr><td style="border-top:1px solid #21262d;padding-top:24px;">
