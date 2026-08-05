@@ -1,8 +1,7 @@
 name: Recover posted pages
 
-# One-time manual workflow: scans Bluesky AND X for SilentStars posts,
+# One-time manual workflow: scans Bluesky for SilentStars posts,
 # rebuilds posted.json, re-fetches those repos from GitHub, and deploys.
-# X credentials are optional — if omitted, only Bluesky is scanned.
 
 on:
   workflow_dispatch:
@@ -41,17 +40,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Scan Bluesky and X — update posted.json
+      - name: Scan Bluesky — update posted.json
         run: npx tsx scripts/recover-posted.ts
         env:
-          BSKY_IDENTIFIER:       ${{ secrets.BSKY_IDENTIFIER }}
-          BSKY_APP_PASSWORD:     ${{ secrets.BSKY_APP_PASSWORD }}
-          X_API_KEY:             ${{ secrets.X_API_KEY }}
-          X_API_SECRET:          ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN:        ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          BASE_URL:              https://capuz.github.io/silentstars
-          DRY_RUN:               ${{ inputs.dry_run }}
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          DRY_RUN:           ${{ inputs.dry_run }}
 
       - name: Re-collect posted repos from GitHub
         if: inputs.dry_run != 'true'

@@ -32,7 +32,7 @@ jobs:
           # Starvation signature (verified against real runs): the starved job
           # ends "cancelled" with 0 steps and everything downstream is skipped,
           # so no failed/cancelled job has any executed step. A code failure
-          # (e.g. an X API 403) always leaves a failed job WITH steps — those
+          # (e.g. a Bluesky API 401) always leaves a failed job WITH steps — those
           # must stay red for a human, not be retried blindly.
           INFRA=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$RUN_ID/attempts/$ATTEMPT/jobs?per_page=100" \
             --jq '[.jobs[] | select(.conclusion == "failure" or .conclusion == "cancelled")] | length > 0 and all(.steps | length == 0)')

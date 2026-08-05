@@ -7,14 +7,10 @@ on:
         description: "Repo a destacar — owner/repo (ej: opn-build/openalive). Vacío = pick diario"
         type: string
         default: ''
-      post_to_x:
-        description: "✅ Publicar en X.com"
-        type: boolean
-        default: true
       post_to_bluesky:
         description: "🦋 Publicar en Bluesky"
         type: boolean
-        default: false
+        default: true
       dry_run:
         description: "Dry run — previsualizar sin publicar"
         type: boolean
@@ -53,27 +49,6 @@ jobs:
           SLUG=$(echo "$REPO" | tr '[:upper:]' '[:lower:]' | sed 's|/|--|; s|[^a-z0-9-]|-|g')
           echo "value=$SLUG" >> $GITHUB_OUTPUT
 
-      - name: Post to X.com
-        if: inputs.post_to_x == true
-        id: post_x
-        run: |
-          set +e
-          OUTPUT=$(npx tsx scripts/post-x.ts 2>&1)
-          EXIT_CODE=$?
-          set -e
-          echo "$OUTPUT"
-          X_URL=$(echo "$OUTPUT" | grep "^X_POST_URL=" | cut -d= -f2-)
-          echo "x_post_url=${X_URL}" >> $GITHUB_OUTPUT
-          exit $EXIT_CODE
-        env:
-          X_API_KEY:             ${{ secrets.X_API_KEY }}
-          X_API_SECRET:          ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN:        ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          BASE_URL:              https://capuz.github.io/silentstars
-          DRY_RUN:               ${{ inputs.dry_run }}
-          PROJECT_SLUG:          ${{ steps.slug.outputs.value }}
-
       - name: Post to Bluesky
         if: inputs.post_to_bluesky == true
         id: post_bluesky
@@ -106,6 +81,5 @@ jobs:
           echo "### Manual post summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- **Repo**: ${{ inputs.project_repo || '(daily pick)' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **X.com**: ${{ inputs.post_to_x }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Bluesky**: ${{ inputs.post_to_bluesky }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Dry run**: ${{ inputs.dry_run }}" >> $GITHUB_STEP_SUMMARY

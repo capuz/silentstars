@@ -79,7 +79,6 @@ async function main() {
       projectSlug: entry.slug,
       baseUrl: BASE_URL,
       bskyPostUrl: entry.platforms.bsky?.url ?? '',
-      xPostUrl: entry.platforms.x?.url ?? '',
     };
 
     const subject = `${projectName} was featured on SilentStars ⭐`;
