@@ -15,13 +15,13 @@ watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-08-03T15:13:46Z"
+lastCommitAt: "2026-08-05T00:39:03Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 97
 undervaluedScore: 71
 maintainers: ["nsticco", "dependabot[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260804T061316Z&X-Amz-Expires=300&X-Amz-Signature=df20e30ad62d09fbafd2fd588371bb4d469ba15d333501438345ea18595de4da&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTgyNDI5NiwibmJmIjoxNzg1ODIzOTk2LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.CBLYuP-b4hNcQ2zyKs8bSIf9jpfolrn326EyFwcFKoc"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060923Z&X-Amz-Expires=300&X-Amz-Signature=0dd99c2514aca089477878f61b617d2aa0b82d58c21dcf08cd12e46d12d4c427&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ2MywibmJmIjoxNzg1OTEwMTYzLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.rsdUWdZPSTrfePxqLov_-JmIgWwQg6XZpUXCVNY59hI"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
@@ -36,4 +36,4 @@ MoonMind is an open-source framework that makes Claude Code and Codex CLI **safe
 
 For now, MoonMind is focused on software engineering use cases, but can be used for other use cases as well and this will be made easier in the future (e.g. not requiring a git repo).
 
-MoonMind includes a Codex-through-[Omnigent](https://github.com/omnigent-ai/omnigent) managed-runtime path with profile and policy readiness gating, static and on-demand hosts, durable event replay, controls, and artifact harvesting. It is currently an explicit opt-in path while the protected live support matrix is completed; direct Codex remains a truthfully labeled migration fallback and historical-read substrate. See the [versioned support and cutover…
+MoonMind includes a first-class Codex-through-[Omnigent](https://github.com/omnigent-ai/omnigent) managed-runtime path with profile and policy readiness gating, an on-demand default host, optional static hosting, durable event replay, controls, and artifact harvesting. It is available for normal explicit selection; making it the preselected Codex default remains gated by the protected live support matrix. Direct Codex remains a truthfully labeled migration fallback and…

@@ -21,10 +21,10 @@ lastCommitAt: "2026-07-31T22:06:50Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 75
 maintainers: ["ssnfts24", "Copilot"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260804T061314Z&X-Amz-Expires=300&X-Amz-Signature=ed97897917ea369599ac675d53abc490ecfc0ef4aef8426df06cd7adeeb12097&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTgyNDI5NCwibmJmIjoxNzg1ODIzOTk0LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.KYaQNCgATUjwH6v0XJm_C7cXzyRYKo32K_QyHvMvd2I"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060921Z&X-Amz-Expires=300&X-Amz-Signature=90071e6ed889bc83a453d4466fe8959421efbed94e00d55fa6b40f315beae8b1&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ2MSwibmJmIjoxNzg1OTEwMTYxLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.DWQ8t6SCJlspjfPnEhuChMY-UYV29j7ZRIsrGqypfx4"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
 postedAt: "2026-07-15T06:00:03.090Z"
