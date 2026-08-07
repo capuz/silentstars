@@ -795,5 +795,16 @@
         "postedAt": "2026-08-05T06:12:02.948Z"
       }
     }
+  },
+  {
+    "repo": "DecimalTurn/toml-patch",
+    "slug": "decimalturn--toml-patch",
+    "postedAt": "2026-08-07T05:19:39.636Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mshsnfecem2s",
+        "postedAt": "2026-08-07T05:19:39.636Z"
+      }
+    }
   }
 ]
