@@ -15,13 +15,13 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-08-03T10:02:22Z"
+lastCommitAt: "2026-08-06T11:55:02Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 92
-maintainers: ["GelatoGenesis", "prxt6529", "punk6529"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b84f3c7ab5bd480725bd5c7a180af44cba0103995f9c42949e36cb02549475d0/6529-Collections/6529seize-backend"
+maintainers: ["prxt6529", "GelatoGenesis", "punk6529"]
+openGraphImageUrl: "https://opengraph.githubassets.com/3d7e636a034631de3358a5359a2e1c6e12f8790c7c202e2779cb82d60be694b4/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 
@@ -37,7 +37,11 @@ This is a 2-part repository for
 
 This repo includes a `.envrc` for `direnv`.
 
-It is only used for repo-local shell helpers. Right now it adds the repo `bin/` directory to your `PATH`, which makes commands like `ghruns` and `ghdeploy` available anywhere inside this repository.
+It is only used for repo-local shell helpers. Right now it adds the repo `bin/`
+directory to your `PATH`, which makes commands like `6529`, `ghruns`, and
+`ghdeploy` available anywhere inside this repository. Direct package-manager
+commands are blocked there; `6529` runs the npm version pinned by the current
+package through Corepack without replacing your machine-wide npm.
 
 It does not load `.env.local` and it does not set `NODE_ENV`.
 
@@ -82,17 +86,4 @@ again to approve the updated file.
 
 ### 0.3 Verify
 
-From the repo root, you should be able to run:
-
-```bash
-which ghruns
-ghruns
-```
-
-`ghruns` is a shortcut for:
-
-```bash
-gh run list -R "6529-Collections/6529seize-backend"
-```
-
-In an interactive terminal, `ghruns` opens a live…
+From the repo root, you should be able to run:…

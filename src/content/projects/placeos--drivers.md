@@ -20,10 +20,10 @@ lastCommitAt: "2026-08-03T22:25:45Z"
 lastReleaseAt: "2020-11-12T00:40:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 78
 maintainers: ["stakach", "chillfox", "MrYuion"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/176226062/b3725100-952a-11ea-9c15-2e54f8559a77?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060918Z&X-Amz-Expires=300&X-Amz-Signature=36a3b444a7cc1b8a99c5f62eb737502c3f6f1cc9e17780fe24e9a81914ff06fe&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ1OCwibmJmIjoxNzg1OTEwMTU4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.IfS57a8ZTGE5ysqEcDK41BbMPTbWNoXJOazj-kltKkk"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/176226062/b3725100-952a-11ea-9c15-2e54f8559a77"
 postedAt: "2026-06-29T07:29:31.581Z"
 ---
 

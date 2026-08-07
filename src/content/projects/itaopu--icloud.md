@@ -4,7 +4,6 @@ name: "iCloud"
 description: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
 readmeQualityOk: false
 url: "https://github.com/iTaoPu/iCloud"
-homepage: "https://iCloud.uGreen.hidns.co"
 language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [72]
@@ -16,13 +15,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-03-29T03:05:27Z"
-lastCommitAt: "2026-08-05T01:42:05Z"
+lastCommitAt: "2026-08-07T02:07:36Z"
 status: "thriving"
 tags: []
 healthScore: 80
-undervaluedScore: 76
-maintainers: ["github-actions[bot]", "iTaoPu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/018f4398fdcede83395eb20d9e6db2ff961613f5bf80f02d1b135d095d0c2b35/iTaoPu/iCloud"
+undervaluedScore: 72
+maintainers: ["iTaoPu", "github-actions[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b626ef097d9bc1354255d79907990ba33fa9ffbf95208272556d18678cb1935c/iTaoPu/iCloud"
 postedAt: "2026-07-04T19:30:50.124Z"
 ---
 

@@ -21,10 +21,10 @@ lastCommitAt: "2026-07-07T03:41:27Z"
 lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 67
+healthScore: 66
 undervaluedScore: 58
 maintainers: ["capuz", "opn-build"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060918Z&X-Amz-Expires=300&X-Amz-Signature=cb4c613557ba5c37c5f783ab312921f1ef60cb1ad60b129c926a30c24f0a014c&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ1OCwibmJmIjoxNzg1OTEwMTU4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.IfS57a8ZTGE5ysqEcDK41BbMPTbWNoXJOazj-kltKkk"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
 promoted: true
 postedAt: "2026-06-25T22:59:39.704Z"
 ---

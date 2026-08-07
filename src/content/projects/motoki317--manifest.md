@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/motoki317/manifest"
 language: "Shell"
 languages: ["Shell"]
-languagePcts: [68]
+languagePcts: [67]
 topics: ["k8s-at-home", "homelab"]
 stars: 8
 forks: 1
@@ -16,13 +16,13 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2023-04-07T10:50:06Z"
-lastCommitAt: "2026-08-04T21:28:29Z"
+lastCommitAt: "2026-08-07T01:00:41Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 98
 undervaluedScore: 75
 maintainers: ["moto-renovate[bot]", "motoki317"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9335b6d5a2305f5756882aa85b96c96c23ae00b956958e248756f2f93595fe64/motoki317/manifest"
+openGraphImageUrl: "https://opengraph.githubassets.com/bdc1908e0428232742365ddc823c4309be2ec1cb849bfd1732f82d949a0d1fce/motoki317/manifest"
 postedAt: "2026-08-04T06:15:28.702Z"
 ---
 

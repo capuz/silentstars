@@ -10,21 +10,21 @@ languages: ["TypeScript"]
 languagePcts: [97]
 topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "the-graph", "token-streaming", "decentralized-finance", "defi", "real-time-finance"]
 stars: 16
-forks: 6
+forks: 5
 openIssues: 9
 closedIssues: 183
 watchers: 1
 contributors: 11
 recentReleases: 2
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-08-05T00:24:03Z"
+lastCommitAt: "2026-08-07T01:10:43Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
 healthScore: 99
-undervaluedScore: 79
+undervaluedScore: 78
 maintainers: ["github-actions[bot]", "PaulRBerg", "gavriliumircea"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/581801142/00017717-05a6-4534-9660-06e5d3422c1b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060919Z&X-Amz-Expires=300&X-Amz-Signature=0c2e061286d356ae7a4c5a05c309808adff0d5db001d33f0aad944b27f879f01&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ1OSwibmJmIjoxNzg1OTEwMTU5LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.qL5oEvq8NPeIpySUw3SK7BPZGl42oIp0XgeSGJTqitE"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/581801142/00017717-05a6-4534-9660-06e5d3422c1b"
 discussionCount: 28
 postedAt: "2026-06-24T00:29:57.102Z"
 ---
