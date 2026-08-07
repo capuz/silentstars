@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 98
 undervaluedScore: 37
 maintainers: ["Shik3i", "actions-user"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060918Z&X-Amz-Expires=300&X-Amz-Signature=8f053a17cd99c84f71bad1233bb9a0a335badedc323e0a2126a85078b5c3f722&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ1OCwibmJmIjoxNzg1OTEwMTU4LCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0.IfS57a8ZTGE5ysqEcDK41BbMPTbWNoXJOazj-kltKkk"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"
 fundingLinks: ["KO_FI:https://ko-fi.com/koaladev"]
 discussionCount: 1
 postedAt: "2026-06-26T21:38:25.211Z"

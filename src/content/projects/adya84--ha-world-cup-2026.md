@@ -20,10 +20,10 @@ lastCommitAt: "2026-07-20T13:39:06Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 38
 maintainers: ["Adya84"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/github-production-repository-image-32fea6/1257686312/b94ca4b3-75d3-4059-a8b9-adab11ac7224?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260805%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260805T060920Z&X-Amz-Expires=300&X-Amz-Signature=c21a7e0016a0e4031b44e923d01ae8bd87e209af69b31c3516c3913b6bbfc416&X-Amz-SignedHeaders=host&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoiaHR0cHM6Ly9yZXBvc2l0b3J5LWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NTkxMDQ2MCwibmJmIjoxNzg1OTEwMTYwLCJwYXRoIjoicmVwb3NpdG9yeS1pbWFnZXMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIn0._jqWcUl3YX-LtU-zivNk8yvFsxNcvK9SPRoyQiidUvY"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/b94ca4b3-75d3-4059-a8b9-adab11ac7224"
 fundingLinks: ["CUSTOM:https://paypal.me/graffidoodle"]
 discussionCount: 1
 postedAt: "2026-06-21T02:12:50.330Z"
