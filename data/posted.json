@@ -806,5 +806,16 @@
         "postedAt": "2026-08-07T05:19:39.636Z"
       }
     }
+  },
+  {
+    "repo": "klutchell/balena-tailscale",
+    "slug": "klutchell--balena-tailscale",
+    "postedAt": "2026-08-08T04:39:00.044Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mskatm4lyn2h",
+        "postedAt": "2026-08-08T04:39:00.044Z"
+      }
+    }
   }
 ]
