@@ -815,6 +815,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mskatm4lyn2h",
         "postedAt": "2026-08-08T04:39:00.044Z"
+      },
+      "ownerEmail": {
+        "url": "kyle@balena.io",
+        "postedAt": "2026-08-08T04:39:22.366Z"
       }
     }
   }
