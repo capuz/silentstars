@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript", "HTML"]
 languagePcts: [52, 29]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
-stars: 68
+stars: 71
 forks: 3
 openIssues: 0
 closedIssues: 7
@@ -17,11 +17,11 @@ watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-21T04:12:57Z"
-lastCommitAt: "2026-08-02T04:00:41Z"
+lastCommitAt: "2026-08-07T15:32:13Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 37
 maintainers: ["Shik3i", "actions-user"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"
