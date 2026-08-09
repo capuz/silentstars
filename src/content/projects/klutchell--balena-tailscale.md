@@ -22,6 +22,7 @@ healthScore: 92
 undervaluedScore: 72
 maintainers: ["klutchell-renovate[bot]", "klutchell"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ce7474ba7dc8601d559eee3b5a4fc4fa4830de81bac18280003314a0877b950f/klutchell/balena-tailscale"
+postedAt: "2026-08-08T04:39:00.044Z"
 ---
 
 # balena-tailscale

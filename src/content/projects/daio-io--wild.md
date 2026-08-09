@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-08T01:02:17Z"
 lastReleaseAt: "2026-04-10T23:15:51Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 87
+healthScore: 86
 undervaluedScore: 75
 maintainers: ["Daio-io", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b5366cc3e62dfe3936e8e44c44ecb2ef97b67abb1c3b1c7f0129910198e3a96f/Daio-io/wild"

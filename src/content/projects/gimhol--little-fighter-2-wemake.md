@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-25T04:40:13Z"
-lastCommitAt: "2026-08-08T03:27:35Z"
+lastCommitAt: "2026-08-09T04:37:14Z"
 lastReleaseAt: "2026-01-31T06:12:59Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 69
 maintainers: ["gimhol"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ac823565aec7cce3a80d7e1002465a6d66382e4dfb7601ba21f5f684c6365015/gimhol/little-fighter-2-WEMAKE"
+openGraphImageUrl: "https://opengraph.githubassets.com/54327e37363ba708dc988abc01bb4ee09e12c48dafadc03150eec34f17785191/gimhol/little-fighter-2-WEMAKE"
 discussionCount: 3
 postedAt: "2026-07-03T12:28:26.382Z"
 ---

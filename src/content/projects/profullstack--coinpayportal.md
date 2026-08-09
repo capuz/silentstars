@@ -11,7 +11,7 @@ languagePcts: [86]
 topics: ["api", "blockchain", "cryptocurrency", "payments", "webhooks"]
 stars: 17
 forks: 17
-openIssues: 0
+openIssues: 1
 closedIssues: 84
 watchers: 0
 contributors: 16
@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-04T11:19:52Z"
 lastReleaseAt: "2026-07-26T09:36:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 77
 maintainers: ["ralyodio", "rissrice2105-agent", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0e71f712c3b52bbe8ebda80fbf33eb8fbe228b8a2e4dd452b52dfa8af3f4f79d/profullstack/coinpayportal"
