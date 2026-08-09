@@ -17,13 +17,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2017-04-04T20:13:45Z"
-lastCommitAt: "2026-08-07T20:47:20Z"
+lastCommitAt: "2026-08-08T14:52:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 89
 undervaluedScore: 75
 maintainers: ["axax"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0bd832cc7bb44bf267f91738d2258202e242a7b5e78d7f6491574c315dc123b2/axax/lunuc"
+openGraphImageUrl: "https://opengraph.githubassets.com/a2b5f5805b8a4011cd4be5cb753e6cc2562817438b9ac468c9dd0e8724d06ed6/axax/lunuc"
 postedAt: "2026-07-13T06:46:08.589Z"
 ---
 

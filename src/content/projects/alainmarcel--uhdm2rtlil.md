@@ -17,9 +17,9 @@ recentReleases: 1
 createdAt: "2025-06-19T04:57:46Z"
 lastCommitAt: "2026-07-25T21:59:17Z"
 lastReleaseAt: "2026-07-20T04:44:24Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 80
 maintainers: ["alaindargelas"]
 openGraphImageUrl: "https://opengraph.githubassets.com/84c88bcf4e44bf513310ca01e9917d046ca4cd3bd0ebc4ecd7a5374e98c421bb/alainmarcel/uhdm2rtlil"
