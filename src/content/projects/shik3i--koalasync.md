@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-07T15:32:13Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 37
 maintainers: ["Shik3i", "actions-user"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"

@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/Itqan-community/cms-frontend"
 language: "TypeScript"
 languages: ["TypeScript", "HTML"]
-languagePcts: [66, 25]
+languagePcts: [66, 24]
 stars: 6
 forks: 22
 openIssues: 15
@@ -15,14 +15,14 @@ watchers: 0
 contributors: 17
 recentReleases: 10
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-08-04T15:17:01Z"
+lastCommitAt: "2026-08-10T02:49:06Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 93
+healthScore: 95
 undervaluedScore: 95
 maintainers: ["Amr-Bendary", "semantic-release-bot", "abubakr-itqan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/064ac9722ac7418201cef5045ed5fdafaa0be7ed1ee6ef31c1ff655ddb9d8b22/Itqan-community/cms-frontend"
+openGraphImageUrl: "https://opengraph.githubassets.com/90880a79dd49166eccd86a1474a3f6528b0ebdace7245d99d20a2354969ea3fb/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---
 

@@ -11,20 +11,20 @@ languagePcts: [58, 30]
 topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tools", "dotnet", "graphql", "grpc", "http-client", "mcp"]
 stars: 6
 forks: 1
-openIssues: 73
-closedIssues: 285
+openIssues: 72
+closedIssues: 286
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-08-09T00:06:34Z"
+lastCommitAt: "2026-08-09T13:09:03Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 96
 undervaluedScore: 58
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8b97859d6a338423af8725311a268695ce85f60435acc8e9e025b106a4a30d12/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/9a59597c102c3f5ff0d51e3c07e92e4490fea5fe6a54bf7b4956990977de7eaa/Kuestenlogik/Bowire"
 discussionCount: 5
 postedAt: "2026-07-17T06:06:24.975Z"
 ---
@@ -42,7 +42,7 @@ postedAt: "2026-07-17T06:06:24.975Z"
 dotnet tool install -g Kuestenlogik.Bowire.Tool
 ```
 
-Windows MSIs, portable ZIPs, Docker images, and pending winget / Homebrew / Chocolatey distributions — all listed on the [Downloads page](https://bowire.io/downloads.html). It's the source of truth for what's available right now.
+Windows MSIs, portable ZIPs, Docker images, `winget install Kuestenlogik.Bowire`, and `choco install bowire` — with a Homebrew tap still pending — all listed on the [Downloads page](https://bowire.io/downloads.html). It's the source of truth for what's available right now.
 
 → **[5-minute Quickstart](https://bowire.io/quickstart.html)** for the first call against your own service.
 
@@ -56,6 +56,4 @@ dotnet add package Kuestenlogik.Bowire
 
 ```csharp
 var app = WebApplication.Create(args);
-app.MapBowire();   // workbench at /bowire
-app.Run();
-```…
+app.MapBowire();…
