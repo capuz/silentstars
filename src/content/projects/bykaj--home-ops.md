@@ -20,7 +20,7 @@ createdAt: "2025-06-09T15:23:13Z"
 lastCommitAt: "2026-08-08T06:42:02Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 70
 maintainers: ["bykaj", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1ee9a5fcd7aae6538fe3bf8f9817956f257d75e308f2724c8a038d773e023c26/bykaj/home-ops"
