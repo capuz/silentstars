@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/alainmarcel/uhdm2rtlil"
 language: "IL Assembly"
 languages: ["IL Assembly", "Verilog"]
-languagePcts: [45, 39]
+languagePcts: [48, 46]
 stars: 6
 forks: 1
 openIssues: 0
@@ -15,14 +15,14 @@ watchers: 3
 contributors: 3
 recentReleases: 1
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-07-25T21:59:17Z"
+lastCommitAt: "2026-08-11T03:14:16Z"
 lastReleaseAt: "2026-07-20T04:44:24Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 94
+healthScore: 99
 undervaluedScore: 80
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/84c88bcf4e44bf513310ca01e9917d046ca4cd3bd0ebc4ecd7a5374e98c421bb/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/de39190531572bf8241c088c0ce957b5d04970eec275f05c44de643931faa06b/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
