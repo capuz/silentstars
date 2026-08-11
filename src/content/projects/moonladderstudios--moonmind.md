@@ -15,9 +15,9 @@ watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-08-10T04:08:28Z"
+lastCommitAt: "2026-08-11T00:37:21Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 97
 undervaluedScore: 71
 maintainers: ["nsticco", "dependabot[bot]"]
