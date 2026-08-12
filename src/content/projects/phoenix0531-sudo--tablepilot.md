@@ -17,14 +17,15 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-11T04:49:28Z"
+lastCommitAt: "2026-08-11T05:30:42Z"
 lastReleaseAt: "2026-06-01T07:16:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 85
+healthScore: 84
 undervaluedScore: 70
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/40ad3f8e8646c6023318375e70be08f559fd4b05888e98c03152f51a38aed026/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/dc5f157f4b8f78b5e1e0d2b0a32ba82cc775061c0cde83cbccd3284c5aa4c333/Phoenix0531-sudo/TablePilot"
+postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
 <picture>

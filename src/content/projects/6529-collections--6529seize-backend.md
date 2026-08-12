@@ -18,7 +18,7 @@ createdAt: "2022-12-16T12:19:28Z"
 lastCommitAt: "2026-08-10T13:09:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 95
 maintainers: ["prxt6529", "punk6529"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1700737abd920df25e07aa1405232042f5526fbfae7cfb05c2a79639c7a656b9/6529-Collections/6529seize-backend"

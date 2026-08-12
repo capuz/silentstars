@@ -8,21 +8,21 @@ language: "IL Assembly"
 languages: ["IL Assembly", "Verilog"]
 languagePcts: [48, 46]
 stars: 6
-forks: 1
+forks: 2
 openIssues: 0
 closedIssues: 7
 watchers: 3
 contributors: 3
 recentReleases: 1
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-08-11T03:14:16Z"
+lastCommitAt: "2026-08-12T04:56:56Z"
 lastReleaseAt: "2026-07-20T04:44:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
-undervaluedScore: 80
+undervaluedScore: 82
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/de39190531572bf8241c088c0ce957b5d04970eec275f05c44de643931faa06b/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/691a02016676687cc5bcee77fd645b3f138853b52775df640e5c6af51fa4f72b/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
