@@ -10,23 +10,30 @@ languages: ["CSS"]
 languagePcts: [63]
 stars: 12
 forks: 4
-openIssues: 1
-closedIssues: 1
+openIssues: 0
+closedIssues: 2
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-08-10T15:16:34Z"
+lastCommitAt: "2026-08-11T12:17:40Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 89
-undervaluedScore: 71
+healthScore: 99
+undervaluedScore: 78
 maintainers: ["claude", "dani-77"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d0aafb2e0cdef3eb03f0f0cfa288bfaf242217b30431f37414141cb6b4d2e70e/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/ce340f2aaa5e7e02b363a88eb539269b157d894b6221a8987973baff4e1214cf/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 
-# d77void - iso creator d77void
+</p>
+
+<h1 align="center">d77void</h1>
+
+  ISO creator for d77void.
+</p>
+
+---
 
 ## Overview
 

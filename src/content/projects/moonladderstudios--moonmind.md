@@ -9,13 +9,13 @@ languages: ["Python"]
 languagePcts: [84]
 stars: 12
 forks: 5
-openIssues: 50
+openIssues: 51
 closedIssues: 265
 watchers: 4
 contributors: 8
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-08-11T00:37:21Z"
+lastCommitAt: "2026-08-12T01:52:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 97
