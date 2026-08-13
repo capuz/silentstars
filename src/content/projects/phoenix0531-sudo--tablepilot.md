@@ -15,21 +15,21 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 1
+recentReleases: 4
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-11T05:30:42Z"
-lastReleaseAt: "2026-06-01T07:16:14Z"
+lastCommitAt: "2026-08-13T05:02:11Z"
+lastReleaseAt: "2026-08-13T05:06:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 84
-undervaluedScore: 70
+healthScore: 85
+undervaluedScore: 74
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dc5f157f4b8f78b5e1e0d2b0a32ba82cc775061c0cde83cbccd3284c5aa4c333/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/16c51aafb1a903c05a76fd2219827bf6b32bd6367686f949c926d57ed7a2cd9c/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
 <picture>
-    <source srcset="docs/screenshots/banner.png, docs/screenshots/banner@2x.png" type="image/png">
+    <source srcset="docs/screenshots/banner.png 1x, docs/screenshots/banner@2x.png 2x" type="image/png">
   </picture>
 </p>
 
@@ -54,4 +54,4 @@ It is a hybrid stack. A **Python FastAPI analysis service** (`analysis_service/`
 
 Real capabilities wired into `analysis_service/app/main.py` (service `v0.5.0`):
 
-- **Dataset directory** — `GET /api/datasets`…
+- **Dataset directory** — `GET…
