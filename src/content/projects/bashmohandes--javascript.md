@@ -7,7 +7,7 @@ url: "https://github.com/bashmohandes/Javascript"
 homepage: "https://bashmohandes.github.io/Javascript/index.html"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [75]
+languagePcts: [76]
 stars: 11
 forks: 5
 openIssues: 0
@@ -16,13 +16,14 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2016-12-17T17:18:51Z"
-lastCommitAt: "2026-08-12T05:14:46Z"
+lastCommitAt: "2026-08-13T04:36:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 100
-undervaluedScore: 75
+undervaluedScore: 80
 maintainers: ["bashmohandes"]
-openGraphImageUrl: "https://opengraph.githubassets.com/aad865cab8dc03fcb8de9a551e5987d7ca37f46b1dc52a641d326b67b568e74a/bashmohandes/Javascript"
+openGraphImageUrl: "https://opengraph.githubassets.com/594b8005a5688ebb7a24a844ad3a1d1a844d207761e9bf0e3406ce6934d52f09/bashmohandes/Javascript"
+postedAt: "2026-08-12T05:19:16.661Z"
 ---
 
 # JavaScript Playground
