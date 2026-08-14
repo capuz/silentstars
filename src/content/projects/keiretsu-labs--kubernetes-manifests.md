@@ -7,23 +7,23 @@ url: "https://github.com/keiretsu-labs/kubernetes-manifests"
 homepage: "https://keiretsu.top/"
 language: "Shell"
 languages: ["Shell"]
-languagePcts: [50]
+languagePcts: [51]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 9
 forks: 3
-openIssues: 3
-closedIssues: 22
+openIssues: 6
+closedIssues: 44
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-08-12T23:35:41Z"
+lastCommitAt: "2026-08-14T05:06:58Z"
 status: "thriving"
 tags: []
-healthScore: 97
+healthScore: 98
 undervaluedScore: 80
 maintainers: ["rajsinghtech", "renovate[bot]", "rajsinghtechbot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/851a1f9c04fc8823c965905bb574b257d4e44e522c61cc74205382082b9f7c12/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/e6885546ce5bf68df3ea29e6ec4ab7a414f75126d969578b9b3c174398696cf1/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
@@ -47,19 +47,14 @@ _Managed with Flux, Tailscale, and GitHub Actions_
 
 ---
 
-Multi-cluster Kubernetes infrastructure managed with FluxCD GitOps. This repository manages three geographically distributed Talos Linux clusters connected via Tailscale mesh networking.
+Multi-cluster Kubernetes infrastructure managed with FluxCD GitOps. The three
+Talos Linux clusters are connected by a Tailscale mesh and share the same
+repository, platform conventions, and observability stack.
 
-## Architecture Overview
+## Clusters
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              Tailscale Mesh                                 │
-│                             (keiretsu.ts.net)                               │
-└─────────────────────────────────────────────────────────────────────────────┘
-         │                         │                         │
-         ▼                         ▼                         ▼
-┌─────────────────┐       ┌─────────────────┐       ┌──────────────────┐
-│  talos-ottawa   │       │talos-robbinsdale│       │talos-stpetersburg│
-│    (Ontario)    │       │   (Minnesota)   │       │    (Florida)     │
-│                 │       │                 │       │                  │
-│ • 3 nodes       │       │ • Multi-node    │…
+| Cluster | Site and nodes | Primary role | Storage | <code>${CLUSTER_DOMAIN}</code> |
+|---------|----------------|--------------|---------|-------------------------|
+| <code>talos-ottawa</code> | Ontario, Canada; 3 control planes (<code>rei</code>, <code>asuka</code>, <code>kaji</code>) plus worker <code>shiro</code> | Primary media, databases, and general workloads | Rook-Ceph, SMB, and local Garage pools | <code>killinit.cc</code> |
+| <code>talos-robbinsdale</code> | Minnesota, US; 3 control planes (<code>tank</code>, <code>stone</code>, <code>titan</code>) and no workers | Home automation, media, and general workloads | Rook-Ceph, SMB, and local Garage pools | <code>lukehouge.com</code> |
+| <code>talos-stpetersburg</code> | Florida, US; control plane…

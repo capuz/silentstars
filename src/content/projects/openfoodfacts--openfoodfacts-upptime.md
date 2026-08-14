@@ -11,19 +11,19 @@ languagePcts: [59, 36]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 12
 forks: 3
-openIssues: 8
-closedIssues: 12057
+openIssues: 3
+closedIssues: 12065
 watchers: 1
 contributors: 16
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-08-13T00:39:37Z"
+lastCommitAt: "2026-08-14T00:38:48Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100
 undervaluedScore: 77
 maintainers: ["upptime-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b07a1c4c16689aa5c4f2224e6a0d2a83c784368acca5123697ac9bfa19cbfb4f/openfoodfacts/openfoodfacts-upptime"
+openGraphImageUrl: "https://opengraph.githubassets.com/f5baeb02d7e4e81966c9284c6dfd3e109aca429f678089e74725b30ab1109855/openfoodfacts/openfoodfacts-upptime"
 fundingLinks: ["GITHUB:https://github.com/openfoodfacts", "OPEN_COLLECTIVE:https://opencollective.com/openfoodfacts-server", "CUSTOM:https://donate.openfoodfacts.org"]
 postedAt: "2026-07-03T12:38:00.517Z"
 ---
@@ -36,4 +36,4 @@ With [Upptime](https://upptime.js.org), you can get your own unlimited and free 
 
 | URL | Status | History | Response Time | Uptime |
 | --- | ------ | ------- | ------------- | ------ |
-| <img alt="" src="https://icons.duckduckgo.com/ip3/world.openfoodfacts.org.ico" height="13"> [Main website (Open Food Facts)](https://world.openfoodfacts.org) | 🟥 Down | [main-website-open-food-facts.yml](https://github.com/openfoodfacts/openfoodfacts-upptime/commits/HEAD/history/main-website-open-food-facts.yml) |…
+| <img alt="" src="https://icons.duckduckgo.com/ip3/world.openfoodfacts.org.ico" height="13"> [Main website (Open Food Facts)](https://world.openfoodfacts.org) | 🟩 Up | [main-website-open-food-facts.yml](https://github.com/openfoodfacts/openfoodfacts-upptime/commits/HEAD/history/main-website-open-food-facts.yml) |…
