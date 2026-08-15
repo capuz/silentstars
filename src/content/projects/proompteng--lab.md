@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-08-14T05:01:58Z"
+lastCommitAt: "2026-08-14T07:06:44Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 74
 maintainers: ["gregkonush"]
-openGraphImageUrl: "https://opengraph.githubassets.com/42dbd1b7f8dcf0abae9bad1296ffe2755d43c6730d646911b21638cc6fcf866e/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/565f0dfe445b84529812abe813aac33ef099ff9aea28e4488e434e6354fcdaec/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 
