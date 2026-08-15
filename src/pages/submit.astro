@@ -6,6 +6,7 @@ import latestData from '../../data/latest.json';
 
 const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=submit-project.yml';
 const projectCount = latestData.projects.length;
+const base = import.meta.env.BASE_URL;
 
 const SAMPLE_SLUGS = [
   'kubernetes-sigs--karpenter-provider-ibm-cloud',
@@ -135,7 +136,7 @@ const samples = [...curated, ...fallback].slice(0, 3);
           Opens a short pre-filled form on GitHub — just the repo link + one sentence. Takes about a minute.
         </p>
         <p class="note">
-          Leave your email to get notified when it goes live.
+          <a href={`${base}#subscribe`}>Leave your email</a> to get notified when it goes live.
         </p>
       </div>
 
