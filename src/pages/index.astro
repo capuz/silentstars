@@ -353,7 +353,8 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         method="post"
         target="popupwindow"
       >
-        <input type="email" name="email" required placeholder="your@email.com" class="newsletter-input" />
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input id="newsletter-email" type="email" name="email" required placeholder="your@email.com" class="newsletter-input" />
         <input type="hidden" name="embed" value="1" />
         <button type="submit" class="newsletter-btn">Subscribe</button>
       </form>
@@ -530,6 +531,17 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
   .newsletter-input {
     font-family: var(--font-mono);

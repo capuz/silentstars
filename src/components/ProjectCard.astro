@@ -386,8 +386,12 @@ const tagLabels: Record<string, string> = {
     line-height: 1.5;
     color: var(--ink);
     margin: 0 0 13px;
-    flex: 1;
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 4.5em;
   }
 
   /* health bar */
@@ -434,6 +438,7 @@ const tagLabels: Record<string, string> = {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    margin-top: auto;
     padding-top: 12px;
     border-top: 1.5px solid var(--faint);
     font-family: var(--f-mono);
