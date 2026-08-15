@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript", "HTML"]
 languagePcts: [74, 26]
 topics: ["browser-extension", "chrome-extension", "customization", "google", "local-first", "manifest-v3", "new-tab", "privacy", "productivity", "youtube"]
-stars: 0
+stars: 1
 forks: 0
 openIssues: 1
 closedIssues: 1
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-07-28T08:44:15Z"
 status: "quiet"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 83
-undervaluedScore: 36
+undervaluedScore: 35
 maintainers: ["zhangxuyuan20251443-coder"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4fd7f6e0e508a0867a1fd0a13ad7bf6f4d3589216aec3a422ddbe9b81af4e793/zhangxuyuan20251443-coder/Chrome-Renamer"
+openGraphImageUrl: "https://opengraph.githubassets.com/16faf420ff00392ed7a00a72b3f1b15863d5cdbab5a36b88b959f2bdcacd822e/zhangxuyuan20251443-coder/Chrome-Renamer"
 discussionCount: 1
 promoted: true
 ---
