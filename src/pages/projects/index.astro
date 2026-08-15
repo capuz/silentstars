@@ -21,6 +21,12 @@ const projects = all
 const regular  = projects.filter(p => !promotedRepos.has(p.data.repo.toLowerCase()));
 const promoted = projects.filter(p =>  promotedRepos.has(p.data.repo.toLowerCase()));
 
+// Initial paint only ships the first batch visible; the rest ships in the
+// same HTML (no-JS still gets a working, capped directory) but starts
+// display:none so first paint isn't 283 cards / ~39,000px tall. The script
+// below reveals more as the sentinel scrolls into view.
+const BATCH_SIZE = 30;
+
 const statuses = ['thriving', 'watched', 'quiet', 'at_risk', 'newborn', 'revived'] as const;
 const tags = ['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero', 'community_watch'] as const;
 
@@ -77,10 +83,10 @@ const tagLabels: Record<string, string> = {
       <button class="filter-reset" id="filter-reset">reset</button>
     </div>
 
-    <div class="grid" id="project-grid">
-      {regular.map(p => (
+    <div class="grid" id="project-grid" data-batch-size={BATCH_SIZE}>
+      {regular.map((p, i) => (
         <div
-          class="grid-item"
+          class={i < BATCH_SIZE ? 'grid-item' : 'grid-item is-paginated'}
           data-status={p.data.status}
           data-tags={p.data.tags.join(',')}
           data-search={`${p.data.name} ${p.data.repo} ${p.data.description ?? ''} ${p.data.language ?? ''}`.toLowerCase()}
@@ -89,6 +95,7 @@ const tagLabels: Record<string, string> = {
         </div>
       ))}
     </div>
+    <div id="scroll-sentinel" aria-hidden="true"></div>
 
     <p class="empty-state" id="empty-state" style="display:none">
       No projects match the selected filters.
@@ -101,6 +108,7 @@ const tagLabels: Record<string, string> = {
           {promoted.map(p => (
             <div
               class="grid-item"
+              data-promoted="true"
               data-status={p.data.status}
               data-tags={p.data.tags.join(',')}
               data-search={`${p.data.name} ${p.data.repo} ${p.data.description ?? ''} ${p.data.language ?? ''}`.toLowerCase()}
@@ -120,24 +128,44 @@ const tagLabels: Record<string, string> = {
   const resetBtn     = document.getElementById('filter-reset')!;
   const searchEl     = document.getElementById('search') as HTMLInputElement;
   const promotedBlock = document.getElementById('promoted-block') as HTMLElement | null;
+  const sentinel     = document.getElementById('scroll-sentinel');
+
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.grid-item'));
+  const BATCH_SIZE = Number(grid.dataset.batchSize) || 30;
 
   let activeStatuses = new Set<string>();
   let activeTags     = new Set<string>();
   let searchQuery    = '';
+  let revealedCount  = BATCH_SIZE;
+  let hasMoreToReveal = false;
 
   function applyFilters() {
-    const items = document.querySelectorAll<HTMLElement>('.grid-item');
-    let visible = 0;
     const q = searchQuery.length >= 3 ? searchQuery : '';
+    const filtering = activeStatuses.size > 0 || activeTags.size > 0 || q !== '';
+    let visible = 0;
+    let regularMatchIndex = 0;
     items.forEach(item => {
-      const status   = item.dataset.status ?? '';
-      const tags     = (item.dataset.tags ?? '').split(',').filter(Boolean);
-      const haystack = item.dataset.search ?? '';
+      const status     = item.dataset.status ?? '';
+      const tags       = (item.dataset.tags ?? '').split(',').filter(Boolean);
+      const haystack   = item.dataset.search ?? '';
+      const isPromoted = item.dataset.promoted === 'true';
       const matchSearch = !q || haystack.includes(q);
       const matchStatus = activeStatuses.size === 0 || activeStatuses.has(status);
       const matchTag    = activeTags.size === 0 || tags.some(t => activeTags.has(t));
-      const show = matchSearch && matchStatus && matchTag;
-      item.style.display = show ? '' : 'none';
+      const matches = matchSearch && matchStatus && matchTag;
+      let show = false;
+      if (matches) {
+        if (isPromoted || filtering) {
+          show = true;
+        } else {
+          regularMatchIndex++;
+          show = regularMatchIndex <= revealedCount;
+        }
+      }
+      // 'block' (not '') so the inline style actually beats the
+      // .is-paginated { display:none } class once an item is revealed —
+      // clearing the inline style falls back to the class, not the default.
+      item.style.display = show ? 'block' : 'none';
       if (show) visible++;
     });
     emptyState.style.display = visible === 0 ? '' : 'none';
@@ -147,6 +175,20 @@ const tagLabels: Record<string, string> = {
       ).some(el => el.style.display !== 'none');
       promotedBlock.style.display = anyPromotedVisible ? '' : 'none';
     }
+    hasMoreToReveal = !filtering && regularMatchIndex > revealedCount;
+  }
+
+  // Infinite scroll: reveal the next batch (already in the DOM, just
+  // display:none) as the sentinel below the grid comes into view. Disabled
+  // while filtering/searching — a filtered match set is small enough to
+  // show in full, so pagination would just hide results the user asked for.
+  if (sentinel) {
+    const io = new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting || !hasMoreToReveal) return;
+      revealedCount += BATCH_SIZE;
+      applyFilters();
+    }, { rootMargin: '800px 0px' });
+    io.observe(sentinel);
   }
 
   searchEl.addEventListener('input', () => {
@@ -180,6 +222,12 @@ const tagLabels: Record<string, string> = {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     applyFilters();
   });
+
+  // Server already rendered the correct display:none split for BATCH_SIZE,
+  // but hasMoreToReveal (read by the sentinel observer above) is only
+  // computed inside applyFilters — run it once so scrolling works before
+  // any filter/search interaction happens.
+  applyFilters();
 </script>
 
 <style>
@@ -265,6 +313,12 @@ const tagLabels: Record<string, string> = {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     gap: 0.875rem;
+  }
+  .is-paginated {
+    display: none;
+  }
+  #scroll-sentinel {
+    height: 1px;
   }
   .empty-state {
     text-align: center;
