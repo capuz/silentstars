@@ -20,7 +20,7 @@ lastCommitAt: "2026-07-20T13:39:06Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 38
 maintainers: ["Adya84"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/b94ca4b3-75d3-4059-a8b9-adab11ac7224"

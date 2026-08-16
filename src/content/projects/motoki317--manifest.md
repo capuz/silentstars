@@ -19,7 +19,7 @@ createdAt: "2023-04-07T10:50:06Z"
 lastCommitAt: "2026-08-14T21:23:47Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 75
 maintainers: ["moto-renovate[bot]", "motoki317"]
 openGraphImageUrl: "https://opengraph.githubassets.com/66b2bb22beef8eee70bd015cb80fb60e03dc13a5cdeb2d690187526a9690c290/motoki317/manifest"
