@@ -17,23 +17,22 @@ watchers: 1
 contributors: 1
 recentReleases: 7
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-14T14:28:05Z"
+lastCommitAt: "2026-08-16T03:58:28Z"
 lastReleaseAt: "2026-08-14T11:24:28Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 86
 undervaluedScore: 74
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d7a7a7afb693fa369a4cd0d6167063b0b00367086da2499fffd11740b6b9cbcf/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/678c243bb1aa71154691bd3cd8bdb4cb58c90589c6c4e6a4ff57a43264ebe7cc/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
 <picture>
-    <source srcset="docs/screenshots/banner.png 1x, docs/screenshots/banner@2x.png 2x" type="image/png">
   </picture>
 </p>
 
-  <strong>TablePilot — local-first messy-table workbench.<br>Profile, clean, plan, and report over Excel / CSV / TXT.</strong>
+  <strong>Local-first messy-table workbench — profile, clean, plan, and report over Excel / CSV / TXT, without shipping your data to the cloud.</strong>
 </p>
 
 </p>
@@ -54,4 +53,4 @@ It is a hybrid stack. A **Python FastAPI analysis service** (`analysis_service/`
 
 Real capabilities wired into `analysis_service/app/main.py` (service `v0.5.0`):
 
-- **Dataset directory** — `GET…
+- **Dataset directory** — `GET /api/datasets` lists the local data dir; `POST /api/analyze` (and `-upload`) load a table by…
