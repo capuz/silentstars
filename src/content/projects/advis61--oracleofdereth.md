@@ -15,21 +15,22 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2024-08-09T18:35:02Z"
-lastCommitAt: "2026-08-16T04:08:57Z"
+lastCommitAt: "2026-08-16T20:09:52Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["advis61", "porranlc"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b354f9762d560ba872c011ea89ebbbe6ad96e3b29c5b151fdab799839c991458/advis61/OracleOfDereth"
+openGraphImageUrl: "https://opengraph.githubassets.com/4fc50a8b79956b8447910f0dc53982f9da13b054b14376c86ce036ea49684435/advis61/OracleOfDereth"
+postedAt: "2026-08-16T04:13:25.726Z"
 ---
 
 # Oracle Of Dereth
 
 An [Asheron's Call](https://emulator.ac/how-to-play/) [Decal](https://decaldev.com/) plugin.
 
-Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/1.18.0/OracleOfDerethInstaller-1.18.0.0.exe)
+Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/1.19.0/OracleOfDerethInstaller-1.19.0.0.exe)
 
 To upgrade from a previous version, just download and re-run the .exe file.
 
@@ -102,4 +103,6 @@ Fship List
 
 Top Players
 
-## Quest…
+Decal plugins
+
+##…

@@ -15,16 +15,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 7
+recentReleases: 9
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-16T03:58:28Z"
-lastReleaseAt: "2026-08-14T11:24:28Z"
+lastCommitAt: "2026-08-17T03:58:36Z"
+lastReleaseAt: "2026-08-17T04:02:53Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 86
 undervaluedScore: 74
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/678c243bb1aa71154691bd3cd8bdb4cb58c90589c6c4e6a4ff57a43264ebe7cc/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/8023c8871489e4455ff797f4dc6ccf25109378c67a56ab8982c452fcd5eb4d8b/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
