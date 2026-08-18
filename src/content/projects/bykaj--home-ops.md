@@ -11,19 +11,19 @@ languagePcts: [72]
 topics: ["flux", "gitops", "home-operations", "k8s", "k8s-at-home", "kubernetes", "renovate", "mise", "taskfile", "justfile"]
 stars: 7
 forks: 2
-openIssues: 3
+openIssues: 4
 closedIssues: 0
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-08-16T19:14:24Z"
+lastCommitAt: "2026-08-17T19:57:18Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 80
 undervaluedScore: 70
 maintainers: ["bykaj", "renovate[bot]", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/293cc644f9cbb1019beea154c9b499bbaff616f8b7baededa4dcf7fd74478679/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/34e3d73453e137fd11a8cfbd45f14718009e0440f7087e1969d901dc40a1c148/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 

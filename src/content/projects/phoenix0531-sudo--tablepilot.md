@@ -12,26 +12,30 @@ topics: ["cpp", "data-analysis", "data-profiling", "data-quality", "desktop-app"
 stars: 11
 forks: 0
 openIssues: 0
-closedIssues: 0
+closedIssues: 1
 watchers: 1
 contributors: 1
 recentReleases: 9
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-17T03:58:36Z"
+lastCommitAt: "2026-08-18T00:28:52Z"
 lastReleaseAt: "2026-08-17T04:02:53Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 86
-undervaluedScore: 74
+healthScore: 96
+undervaluedScore: 82
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8023c8871489e4455ff797f4dc6ccf25109378c67a56ab8982c452fcd5eb4d8b/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/b8b1e099b515110fecd87be00941ffad4089588d7076739270d890f95c3a9794/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
 <picture>
+    <source type="image/svg+xml" srcset="docs/screenshots/banner.svg">
   </picture>
 </p>
 
+  <picture>
+    <source type="image/svg+xml" srcset="docs/screenshots/avatar.svg">
+  </picture>
   <strong>Local-first messy-table workbench — profile, clean, plan, and report over Excel / CSV / TXT, without shipping your data to the cloud.</strong>
 </p>
 
@@ -51,6 +55,4 @@ It is a hybrid stack. A **Python FastAPI analysis service** (`analysis_service/`
 
 ## Features
 
-Real capabilities wired into `analysis_service/app/main.py` (service `v0.5.0`):
-
-- **Dataset directory** — `GET /api/datasets` lists the local data dir; `POST /api/analyze` (and `-upload`) load a table by…
+Real capabilities wired into…

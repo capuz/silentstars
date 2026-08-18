@@ -15,13 +15,13 @@ watchers: 3
 contributors: 20
 recentReleases: 0
 createdAt: "2021-05-03T12:09:20Z"
-lastCommitAt: "2026-08-14T12:35:08Z"
+lastCommitAt: "2026-08-17T05:12:47Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 78
 undervaluedScore: 76
 maintainers: ["ivy-lli", "renovate[bot]", "ivy-rew"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4695784330e2c2a322810e7c9960ff4ce8be40c406e554fc9cc32dcdbacb96bc/axonivy/process-editor"
+openGraphImageUrl: "https://opengraph.githubassets.com/7e6936676c3df4cff06e22376bdef098f80f4a457638da666367fdde0042956c/axonivy/process-editor"
 postedAt: "2026-06-22T08:57:21.717Z"
 ---
 
