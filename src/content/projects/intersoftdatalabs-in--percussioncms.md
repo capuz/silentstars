@@ -9,22 +9,22 @@ language: "Java"
 languages: ["Java"]
 languagePcts: [59]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
-stars: 5
+stars: 6
 forks: 0
-openIssues: 125
-closedIssues: 1263
+openIssues: 116
+closedIssues: 1303
 watchers: 0
 contributors: 15
 recentReleases: 1
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-08-17T01:27:10Z"
+lastCommitAt: "2026-08-18T01:36:29Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 98
-undervaluedScore: 86
+undervaluedScore: 84
 maintainers: ["natechadwick-intsof", "natechadwick"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e3b18732a6d8bb24033d2ce4d243d5aaa6111d2b03c9a053984ee133e0e8fa5a/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/3958958abed6b3ecb06783a775be0d2e65f112341b4a9ee06be5e87c2fa6aca0/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---

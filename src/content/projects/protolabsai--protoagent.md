@@ -12,12 +12,12 @@ topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "auto
 stars: 6
 forks: 8
 openIssues: 10
-closedIssues: 647
+closedIssues: 668
 watchers: 0
 contributors: 5
 recentReleases: 8
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-08-17T04:08:03Z"
+lastCommitAt: "2026-08-18T03:47:34Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
