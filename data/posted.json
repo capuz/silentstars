@@ -936,5 +936,16 @@
         "postedAt": "2026-08-17T04:24:22.049Z"
       }
     }
+  },
+  {
+    "repo": "speced/bikeshed-data",
+    "slug": "speced--bikeshed-data",
+    "postedAt": "2026-08-18T04:13:16.671Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mtde2syt7c2s",
+        "postedAt": "2026-08-18T04:13:16.671Z"
+      }
+    }
   }
 ]
