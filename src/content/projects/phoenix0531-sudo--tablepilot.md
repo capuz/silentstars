@@ -7,7 +7,7 @@ url: "https://github.com/Phoenix0531-sudo/TablePilot"
 homepage: "https://phoenix0531-sudo.github.io/TablePilot/"
 language: "C++"
 languages: ["C++"]
-languagePcts: [92]
+languagePcts: [90]
 topics: ["cpp", "data-analysis", "data-profiling", "data-quality", "desktop-app", "docker", "executive-brief", "fastapi", "python", "qt"]
 stars: 11
 forks: 0
@@ -15,16 +15,16 @@ openIssues: 0
 closedIssues: 1
 watchers: 1
 contributors: 1
-recentReleases: 9
+recentReleases: 10
 createdAt: "2024-05-22T10:40:51Z"
-lastCommitAt: "2026-08-18T00:28:52Z"
-lastReleaseAt: "2026-08-17T04:02:53Z"
+lastCommitAt: "2026-08-18T13:49:04Z"
+lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 96
+healthScore: 100
 undervaluedScore: 82
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b8b1e099b515110fecd87be00941ffad4089588d7076739270d890f95c3a9794/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/e1eccafbcda473ecf98358ec5456ad132ab2c58f47f9fb350483bf18191d236d/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
