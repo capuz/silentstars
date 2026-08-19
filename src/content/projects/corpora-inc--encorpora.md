@@ -18,7 +18,7 @@ createdAt: "2024-11-10T17:05:23Z"
 lastCommitAt: "2026-08-16T16:07:41Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 78
 maintainers: ["skyl"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7398288c5c9e516e8a9c27e688d299a846c086eafcf5835b86b6ca19fc28847c/corpora-inc/encorpora"

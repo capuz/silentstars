@@ -20,7 +20,7 @@ lastCommitAt: "2026-08-17T08:25:39Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 91
 maintainers: ["AvatarSD"]
 openGraphImageUrl: "https://opengraph.githubassets.com/31f139cff517ec359f0b81b9528637440fda753a155857a4e767bc3b65acabac/avatarsd-llc/libtracer"
