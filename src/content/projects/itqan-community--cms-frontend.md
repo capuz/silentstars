@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript", "HTML"]
 languagePcts: [66, 24]
 stars: 17
-forks: 27
+forks: 29
 openIssues: 11
 closedIssues: 70
 watchers: 0

@@ -7,9 +7,9 @@ url: "https://github.com/DecimalTurn/toml-patch"
 homepage: "https://www.npmjs.com/package/@decimalturn/toml-patch"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [84]
+languagePcts: [87]
 topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsing", "toml-edit", "toml-patch", "comments", "toml-format", "toml-formatter"]
-stars: 8
+stars: 9
 forks: 0
 openIssues: 2
 closedIssues: 11
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-08-16T01:51:46Z"
+lastCommitAt: "2026-08-19T19:21:15Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 95
-undervaluedScore: 76
-maintainers: ["DecimalTurn", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/232a89ef18bf09bd1c15b91048dc6956aeabe39eefa8ae74872fdc9f76019fe5/DecimalTurn/toml-patch"
+healthScore: 97
+undervaluedScore: 74
+maintainers: ["DecimalTurn"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b541b70d616072b55914e4d0654348195f7fe9cb5421ee4d2a9e9386a6716077/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---

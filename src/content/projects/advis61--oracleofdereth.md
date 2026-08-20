@@ -15,14 +15,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2024-08-09T18:35:02Z"
-lastCommitAt: "2026-08-19T03:48:28Z"
+lastCommitAt: "2026-08-19T16:20:56Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["advis61"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a77ca4134e0fd51eaec50c36a114403711caf85464254e70ffe521cb018c9267/advis61/OracleOfDereth"
+openGraphImageUrl: "https://opengraph.githubassets.com/212bb745bf4ac0a0fc1ca6c784e591f3b31d55750b4662db344efae72b2cf711/advis61/OracleOfDereth"
 postedAt: "2026-08-16T04:13:25.726Z"
 ---
 

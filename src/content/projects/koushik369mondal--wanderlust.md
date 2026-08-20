@@ -9,7 +9,7 @@ language: "HTML"
 languages: ["HTML"]
 languagePcts: [64]
 topics: ["bootstrap", "cloudinary", "ejs", "express", "fullstack", "gssoc25", "mapbox", "mongodb", "nodejs", "open-source"]
-stars: 19
+stars: 20
 forks: 40
 openIssues: 12
 closedIssues: 202
@@ -20,10 +20,10 @@ createdAt: "2025-04-01T12:25:32Z"
 lastCommitAt: "2026-08-18T17:53:47Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 97
-undervaluedScore: 79
+healthScore: 96
+undervaluedScore: 78
 maintainers: ["koushik369mondal", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/83817cc9560132f521dd28dc879585bf45e099a187a16fa13946a6db9ddf4eaf/koushik369mondal/WanderLust"
+openGraphImageUrl: "https://opengraph.githubassets.com/7df7ac68d3f5e665f57f6ec1b9b399ec6c521c17d6c7a55ddac555bfa751c856/koushik369mondal/WanderLust"
 discussionCount: 1
 postedAt: "2026-07-14T06:02:00.094Z"
 ---

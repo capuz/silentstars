@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-18T13:49:04Z"
 lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 82
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e1eccafbcda473ecf98358ec5456ad132ab2c58f47f9fb350483bf18191d236d/Phoenix0531-sudo/TablePilot"
