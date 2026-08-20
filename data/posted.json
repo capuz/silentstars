@@ -958,5 +958,16 @@
         "postedAt": "2026-08-19T04:12:56.778Z"
       }
     }
+  },
+  {
+    "repo": "morooi/homebrew-xray",
+    "slug": "morooi--homebrew-xray",
+    "postedAt": "2026-08-20T04:13:07.390Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mtieyf2jwz2f",
+        "postedAt": "2026-08-20T04:13:07.390Z"
+      }
+    }
   }
 ]
