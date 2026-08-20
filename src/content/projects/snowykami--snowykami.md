@@ -15,13 +15,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-02-04T11:54:02Z"
-lastCommitAt: "2026-08-19T03:57:06Z"
+lastCommitAt: "2026-08-20T04:10:18Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 80
 undervaluedScore: 77
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3be1c075bf160894b224e618ee1351d70ddfa218da87ca554b3963edef18bd67/snowykami/snowykami"
+openGraphImageUrl: "https://opengraph.githubassets.com/192d76f7d7b5beb51ffbd8a82d2ebcb19c68559e81c55f7f3815fcee2013ca26/snowykami/snowykami"
 postedAt: "2026-07-11T06:04:09.099Z"
 ---
 

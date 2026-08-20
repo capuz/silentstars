@@ -12,18 +12,18 @@ topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "auto
 stars: 6
 forks: 8
 openIssues: 11
-closedIssues: 670
+closedIssues: 681
 watchers: 0
 contributors: 5
 recentReleases: 8
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-08-19T03:32:39Z"
+lastCommitAt: "2026-08-20T03:58:49Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 100
 undervaluedScore: 83
-maintainers: ["mabry1985", "RomeoRaven"]
+maintainers: ["mabry1985"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
 discussionCount: 0
 postedAt: "2026-07-25T06:06:56.645Z"
