@@ -16,13 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2021-01-25T13:21:46Z"
-lastCommitAt: "2026-08-20T04:08:51Z"
+lastCommitAt: "2026-08-20T22:33:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 80
 undervaluedScore: 76
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e90c4cd7bb155c305adb5b6c30cb9e8443a4b4c14b0d8741e5e97a7bd9a4d0b7/morooi/homebrew-xray"
+openGraphImageUrl: "https://opengraph.githubassets.com/ba63cececdd4a17e467658aee729926a52afe6f4073f781c428d6069608c090c/morooi/homebrew-xray"
+postedAt: "2026-08-20T04:13:07.390Z"
 ---
 
 # homebrew-Xray

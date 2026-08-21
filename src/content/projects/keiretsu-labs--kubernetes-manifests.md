@@ -7,7 +7,7 @@ url: "https://github.com/keiretsu-labs/kubernetes-manifests"
 homepage: "https://keiretsu.top/"
 language: "Shell"
 languages: ["Shell"]
-languagePcts: [51]
+languagePcts: [58]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 9
 forks: 3
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-08-20T00:38:17Z"
+lastCommitAt: "2026-08-21T03:28:25Z"
 status: "thriving"
 tags: []
 healthScore: 97
 undervaluedScore: 80
-maintainers: ["renovate[bot]", "rajsinghtechbot", "rajsinghtech"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5466c15a97be3a3d11bcbce4d695bbea74e0b1d6447afb00ed8ef5628a4f4639/keiretsu-labs/kubernetes-manifests"
+maintainers: ["renovate[bot]", "rajsinghtech", "rajsinghtechbot"]
+openGraphImageUrl: "https://opengraph.githubassets.com/6c03fbcbadb4440a2e71e6ed38e4ad93ea92a076dbc6ea223875ed2efc6ef148/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
@@ -51,10 +51,21 @@ Multi-cluster Kubernetes infrastructure managed with FluxCD GitOps. The three
 Talos Linux clusters are connected by a Tailscale mesh and share the same
 repository, platform conventions, and observability stack.
 
-## Clusters
+## Architecture
 
-| Cluster | Site and nodes | Primary role | Storage | <code>${CLUSTER_DOMAIN}</code> |
-|---------|----------------|--------------|---------|-------------------------|
-| <code>talos-ottawa</code> | Ontario, Canada; 3 control planes (<code>rei</code>, <code>asuka</code>, <code>kaji</code>) plus worker <code>shiro</code> | Primary media, databases, and general workloads | Rook-Ceph, SMB, and local Garage pools | <code>killinit.cc</code> |
-| <code>talos-robbinsdale</code> | Minnesota, US; 3 control planes (<code>tank</code>, <code>stone</code>, <code>titan</code>) and no workers | Home automation, media, and general workloads | Rook-Ceph, SMB, and local Garage pools | <code>lukehouge.com</code> |
-| <code>talos-stpetersburg</code> | Florida, US; control plane…
+Three diagrams, each answering one question. They are meant to be read in
+order, but each stands on its own. Click any of them for the full-size SVG —
+GitHub scales them down to fit the page, and the labels are only legible at
+full size. Each is committed in a light and a dark rendering, and served
+through a `<picture>` element, so they follow your GitHub theme.
+
+### 1 · Delivery — how a commit becomes running infrastructure
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/1-delivery.dark.svg">
+  </picture>
+</a>
+
+The `main` branch is the only durable state. Flux polls it, decrypts the SOPS
+material, and reconciles three top-level Kustomizations per cluster. The two
+things worth internalising: an app is deployed to a cluster…

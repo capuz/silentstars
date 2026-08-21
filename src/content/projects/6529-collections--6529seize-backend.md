@@ -15,13 +15,13 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-08-18T21:37:22Z"
+lastCommitAt: "2026-08-20T22:37:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 95
-maintainers: ["prxt6529", "punk6529", "GelatoGenesis"]
-openGraphImageUrl: "https://opengraph.githubassets.com/00bf2ea3a461ec77dc09ec95c2edc6ef786aa572bfd8cb001e1e646c9075e619/6529-Collections/6529seize-backend"
+maintainers: ["prxt6529", "GelatoGenesis"]
+openGraphImageUrl: "https://opengraph.githubassets.com/5dabba17500a731b09098b43cd6a709811be5aada065f2ec4076c1ab195e33ab/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 
