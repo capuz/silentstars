@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 94
 undervaluedScore: 65
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f9a321b5d2cc2cc0803a40e57d2585b3e38313be26cf92991ea3c61de6b13ac5/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/197c95d6498b14fd9fa86a0ac589035728e058b92e6a2fb76772a34c566d0c19/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
