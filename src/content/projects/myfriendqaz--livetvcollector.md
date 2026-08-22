@@ -15,13 +15,13 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-10T21:08:04Z"
-lastCommitAt: "2026-08-21T01:49:04Z"
+lastCommitAt: "2026-08-22T01:42:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 68
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ae52299ea9f8f5cc9edbce592244dba676696a46f917ee2f3fb1524e2a3cec21/myfriendqaz/LiveTVCollector"
+openGraphImageUrl: "https://opengraph.githubassets.com/646180a85a75502f78b2d08397eff4ef9f4ed99a62a693f8c00c7073d3962bf8/myfriendqaz/LiveTVCollector"
 postedAt: "2026-06-28T02:10:40.289Z"
 ---
 

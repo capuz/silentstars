@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-08-19T19:21:15Z"
+lastCommitAt: "2026-08-21T07:01:49Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 96
 undervaluedScore: 74
 maintainers: ["DecimalTurn"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b541b70d616072b55914e4d0654348195f7fe9cb5421ee4d2a9e9386a6716077/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/57c00154fbd6238b2897e38bf3ab4664be8c240ad0a3d53e7b5bba42a550a141/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---

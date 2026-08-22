@@ -17,14 +17,14 @@ watchers: 0
 contributors: 7
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-08-20T19:40:23Z"
+lastCommitAt: "2026-08-21T16:18:31Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 65
-maintainers: ["pranavp10", "twinkalp10"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8a25abc9af1f57857d73f21387d44deb6bed59969eab9e49f49bb05fe72dcb03/reloop-labs/reloop"
+maintainers: ["pranavp10", "twinkalp10", "aryanspv"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d56029af373c2e3a4081ebad372b53cf28ee394bdd19ae95fb185ff390fca593/reloop-labs/reloop"
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
 ---

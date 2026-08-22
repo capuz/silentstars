@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-08-21T03:28:25Z"
+lastCommitAt: "2026-08-22T03:35:12Z"
 status: "thriving"
 tags: []
 healthScore: 97
 undervaluedScore: 80
 maintainers: ["renovate[bot]", "rajsinghtech", "rajsinghtechbot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6c03fbcbadb4440a2e71e6ed38e4ad93ea92a076dbc6ea223875ed2efc6ef148/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/6845c367a341c16d31b5306d39798793cd9e2113b1bb08fdb58526a0c4089516/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
