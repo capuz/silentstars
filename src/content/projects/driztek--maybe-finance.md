@@ -16,14 +16,15 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-06-17T21:09:39Z"
-lastCommitAt: "2026-08-22T04:05:47Z"
+lastCommitAt: "2026-08-23T03:54:16Z"
 lastReleaseAt: "2025-06-17T21:17:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 79
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/614658ce40328dcf4466c76b835445da6a0b688ef788369f6114cdc82d5ea42a/Driztek/maybe-finance"
+openGraphImageUrl: "https://opengraph.githubassets.com/f73cc36eb58fc21530f1d9fc0d18ebf005647f0906e784cc6bd85e2764c7e0dc/Driztek/maybe-finance"
+postedAt: "2026-08-22T04:11:12.783Z"
 ---
 
 # Maybe: The personal finance app for everyone

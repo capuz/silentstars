@@ -17,7 +17,7 @@ contributors: 1
 recentReleases: 0
 createdAt: "2025-05-06T19:07:44Z"
 lastCommitAt: "2026-08-08T05:18:02Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 93
 undervaluedScore: 71
