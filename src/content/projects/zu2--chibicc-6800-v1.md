@@ -17,14 +17,14 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-08-23T02:33:04Z"
+lastCommitAt: "2026-08-23T22:50:50Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fadf2d45e62abedda1a1015c14ccd34e9de823cbffa24f6762871a953b9198f0/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/0e43793268956fc0a08ca697a86c54f2f980da8d9bb9f66a8891c8f74547f7ef/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 
