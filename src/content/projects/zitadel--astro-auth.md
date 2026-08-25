@@ -15,14 +15,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 24
-recentReleases: 4
+recentReleases: 3
 createdAt: "2025-08-12T12:26:32Z"
 lastCommitAt: "2026-07-21T09:36:52Z"
 lastReleaseAt: "2026-06-20T23:36:31Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 72
-undervaluedScore: 72
+healthScore: 71
+undervaluedScore: 71
 maintainers: ["mridang", "dependabot[bot]", "semantic-release-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/28e60653bb3b39e8e407eeeebf1c09a4abdb6da916fd78309e9e28893de757bc/zitadel/astro-auth"
 postedAt: "2026-06-20T23:46:36.407Z"

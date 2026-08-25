@@ -15,13 +15,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-03-29T03:05:27Z"
-lastCommitAt: "2026-08-23T12:34:14Z"
+lastCommitAt: "2026-08-25T00:40:34Z"
 status: "thriving"
 tags: []
-healthScore: 79
+healthScore: 80
 undervaluedScore: 72
 maintainers: ["github-actions[bot]", "iTaoPu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5c20597329424d8f351dc0ea8a0296d56dc0f816993b33d83bdf3018cb5a6a1a/iTaoPu/iCloud"
+openGraphImageUrl: "https://opengraph.githubassets.com/0c0ec7f2f883034a08b9217891c3444a442e2111dce04c4809a1cb78efd4441e/iTaoPu/iCloud"
 postedAt: "2026-07-04T19:30:50.124Z"
 ---
 

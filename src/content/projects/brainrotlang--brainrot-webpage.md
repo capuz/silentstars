@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-14T18:36:58Z"
-lastCommitAt: "2026-08-24T02:16:12Z"
+lastCommitAt: "2026-08-24T06:46:52Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 94
 undervaluedScore: 88
 maintainers: ["leo-aa88", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/19c9770f2a71bfd4c7e65840f8d4851b042257c16c73627d59b1f03b7e615635/Brainrotlang/brainrot-webpage"
+openGraphImageUrl: "https://opengraph.githubassets.com/d8662b09a3ef68c9b09e6a90fc1cb3cf477aef3d90f32e5c9ac4ffc0a50262d8/Brainrotlang/brainrot-webpage"
 postedAt: "2026-08-21T04:15:39.689Z"
 ---
 

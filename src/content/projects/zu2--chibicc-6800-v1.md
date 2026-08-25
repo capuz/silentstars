@@ -7,7 +7,7 @@ url: "https://github.com/zu2/chibicc-6800-v1"
 homepage: "https://www.zukeran.org/shin/d/"
 language: "C"
 languages: ["C"]
-languagePcts: [90]
+languagePcts: [89]
 topics: ["6800", "8bit", "mc6800", "motorola", "c", "compiler", "basicmaster", "jr100", "jr200"]
 stars: 11
 forks: 2
@@ -17,14 +17,14 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2024-12-31T19:32:54Z"
-lastCommitAt: "2026-08-23T22:50:50Z"
+lastCommitAt: "2026-08-25T03:41:06Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 76
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0e43793268956fc0a08ca697a86c54f2f980da8d9bb9f66a8891c8f74547f7ef/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/f91c64cb2e4730b6496a0b7d8bf368e7ffab1df91b9f9c8e54ebb12bd61220e7/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 
