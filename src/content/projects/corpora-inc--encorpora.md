@@ -15,13 +15,13 @@ watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-08-21T21:36:05Z"
+lastCommitAt: "2026-08-24T23:28:12Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 88
+healthScore: 89
 undervaluedScore: 79
 maintainers: ["skyl", "Umanistan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9a768d44740134b2bbe47bb1d06ecad7d92cfa496c63ceb6f1854871ababdab8/corpora-inc/encorpora"
+openGraphImageUrl: "https://opengraph.githubassets.com/4703c5fddcdaab0d6fb10be4947f7f7649779c5143cd47fe49e1303b5979b374/corpora-inc/encorpora"
 postedAt: "2026-07-04T19:31:10.093Z"
 ---
 

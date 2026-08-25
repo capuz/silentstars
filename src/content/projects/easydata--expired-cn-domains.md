@@ -14,13 +14,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2023-11-09T10:13:56Z"
-lastCommitAt: "2026-08-24T01:13:29Z"
+lastCommitAt: "2026-08-25T01:12:00Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 72
+undervaluedScore: 73
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/b8ab344161be310970470aae2e8a5c79680c2a233ed79ebebb840a8e36c8c7fb/EasyData/expired-cn-domains"
+openGraphImageUrl: "https://opengraph.githubassets.com/0975564f0563a0e99c299723eed433cc288044fba3ac52afb33bf492f1e2ffe6/EasyData/expired-cn-domains"
 postedAt: "2026-06-21T04:14:27.566Z"
 ---
 

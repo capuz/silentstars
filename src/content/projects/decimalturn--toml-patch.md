@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-08-23T03:23:11Z"
+lastCommitAt: "2026-08-24T21:26:36Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 96
 undervaluedScore: 74
 maintainers: ["DecimalTurn", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4b1fa646529b11c813490666d912d30a6996ecb09c084e3569e40b48ea7499a6/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/bae73223b7246f455477c140d828e2128cc9684328a403beb006f16fd5f86b9c/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---
@@ -37,20 +37,18 @@ This project started as a fork of the [original toml-patch](https://github.com/t
 
 We hope that these improvements can be incorporated upstream one day if the original author returns, but until then, this project is the actively maintained version.
 
-## Table of Contents
+## Documentation
 
 - [Installation](#installation)
 - [API](#api)
-  - [Functional API](#functional-api)
-    - [patch](#patch)
-      - [Example 1](#example-1)
-      - [Example 2](#example-2)
-    - [parse](#parse)
-      - [Example](#example)
-    - [stringify](#stringify)
-      - [Example](#example-1)
-  - [TomlDocument Class ](#tomldocument-class)
-    - [Constructor](#constructor)
-      - [Basic Usage Example](#basic-usage-example)
-    - [Properties](#properties)
-    - [Methods](#methods)…
+- [Comment ownership](#comment-ownership)
+- [Date/time handling and Temporal](#datetime-handling--temporal)
+- [Formatting](#formatting)
+- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.0.4/CHANGELOG.md)
+- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.0.4/CONTRIBUTING.md)
+
+## Installation
+
+toml-patch is dependency-free and can be installed via your favorite package manager.
+
+*Example with NPM*…

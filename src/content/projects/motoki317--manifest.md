@@ -16,13 +16,13 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2023-04-07T10:50:06Z"
-lastCommitAt: "2026-08-24T03:53:32Z"
+lastCommitAt: "2026-08-24T21:27:35Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 98
 undervaluedScore: 75
 maintainers: ["moto-renovate[bot]", "motoki317"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e9215405ad2bd82331da9d78393f3e7cc51160db7f89f131c3d24bbd23fd137d/motoki317/manifest"
+openGraphImageUrl: "https://opengraph.githubassets.com/d4af0e9f8ea7176d8b80bcdfed83a8d9def522040e410bf9767e0a537402b696/motoki317/manifest"
 postedAt: "2026-08-04T06:15:28.702Z"
 ---
 
