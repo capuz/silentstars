@@ -21,7 +21,7 @@ lastCommitAt: "2026-07-28T12:44:11Z"
 lastReleaseAt: "2026-07-28T08:44:15Z"
 status: "quiet"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 79
+healthScore: 78
 undervaluedScore: 35
 maintainers: ["zhangxuyuan20251443-coder"]
 openGraphImageUrl: "https://opengraph.githubassets.com/16faf420ff00392ed7a00a72b3f1b15863d5cdbab5a36b88b959f2bdcacd822e/zhangxuyuan20251443-coder/Chrome-Renamer"
