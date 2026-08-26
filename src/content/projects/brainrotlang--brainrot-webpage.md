@@ -6,24 +6,24 @@ readmeQualityOk: true
 url: "https://github.com/Brainrotlang/brainrot-webpage"
 homepage: "https://brainrotlang.com/"
 language: "TypeScript"
-languages: ["TypeScript"]
-languagePcts: [87]
+languages: ["TypeScript", "JavaScript"]
+languagePcts: [77, 20]
 topics: ["brainrot", "brainrot-meme", "react", "reactjs", "wasm", "tailwind", "tailwind-css", "tailwindcss"]
 stars: 5
 forks: 2
 openIssues: 1
 closedIssues: 7
 watchers: 1
-contributors: 5
+contributors: 6
 recentReleases: 0
 createdAt: "2024-12-14T18:36:58Z"
-lastCommitAt: "2026-08-24T06:46:52Z"
+lastCommitAt: "2026-08-25T09:16:23Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 94
+tags: ["needs_contributors", "hidden_gem"]
+healthScore: 95
 undervaluedScore: 88
-maintainers: ["leo-aa88", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d8662b09a3ef68c9b09e6a90fc1cb3cf477aef3d90f32e5c9ac4ffc0a50262d8/Brainrotlang/brainrot-webpage"
+maintainers: ["leo-aa88", "cursoragent", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/20c5c7a145ca09dc0cbff2a6eac23343025758eb670e799002d9d7a854388f88/Brainrotlang/brainrot-webpage"
 postedAt: "2026-08-21T04:15:39.689Z"
 ---
 
@@ -81,15 +81,7 @@ yarn build
 
 - Outputs a production-ready build in the `build/` folder.
 
-## Project Structure
+## Deploying: the host must fall back to `index.html`
 
-```
-brainrot-webpage/
-├─ public/
-│  └─ favicon.ico
-├─ src/
-│  ├─ App.tsx
-│  ├─ index.css
-│  ├─ brainrot-logo.png
-│  └─ ...other components...
-├─…
+This is a single-page app with real client-side routes (`/tour/...`), so any
+URL that is not a file on disk has to be…

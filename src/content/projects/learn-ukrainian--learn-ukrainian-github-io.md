@@ -11,20 +11,20 @@ languagePcts: [57, 36]
 topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "ukrainian-state-standard-2024"]
 stars: 9
 forks: 4
-openIssues: 106
-closedIssues: 2387
+openIssues: 118
+closedIssues: 2397
 watchers: 0
 contributors: 7
 recentReleases: 6
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-08-25T03:41:39Z"
+lastCommitAt: "2026-08-25T23:39:36Z"
 lastReleaseAt: "2026-08-02T15:28:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["krisztiankoos", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/79a0f81cbb07457e1ccf0e0c571ed50f24efb61800eed0e3a03ff6336d0adc83/learn-ukrainian/learn-ukrainian.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/fd1939624d6fb7c18529d736b3e7cfee5258fda002861a511256693bb0d8a8b3/learn-ukrainian/learn-ukrainian.github.io"
 discussionCount: 1
 postedAt: "2026-08-24T04:26:39.846Z"
 ---
