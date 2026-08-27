@@ -16,13 +16,13 @@ watchers: 8
 contributors: 23
 recentReleases: 0
 createdAt: "2019-03-18T07:21:25Z"
-lastCommitAt: "2026-08-24T00:02:03Z"
+lastCommitAt: "2026-08-27T08:18:58Z"
 lastReleaseAt: "2020-11-12T00:40:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 94
 undervaluedScore: 78
-maintainers: ["stakach", "chillfox", "w-le"]
+maintainers: ["stakach", "chillfox", "viv-4"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/176226062/b3725100-952a-11ea-9c15-2e54f8559a77"
 postedAt: "2026-06-29T07:29:31.581Z"
 ---
