@@ -2,9 +2,5 @@
   {
     "repo": "opn-build/OpenAlive",
     "until": null
-  },
-  {
-    "repo": "zhangxuyuan20251443-coder/Chrome-Renamer",
-    "until": "2026-08-27"
   }
 ]

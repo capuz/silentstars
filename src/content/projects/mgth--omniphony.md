@@ -1,0 +1,59 @@
+---
+repo: "mgth/Omniphony"
+name: "Omniphony"
+description: "Real-time spatial / object-based audio rendering engine (VBAP + binaural) for multichannel and 3D audio — speakers or headphones."
+readmeQualityOk: true
+url: "https://github.com/mgth/Omniphony"
+language: "Rust"
+languages: ["Rust", "JavaScript"]
+languagePcts: [72, 24]
+topics: ["3d-audio", "ambisonics", "binaural", "rust", "spatial-audio", "surround-sound", "vbap", "object-audio"]
+stars: 62
+forks: 5
+openIssues: 7
+closedIssues: 24
+watchers: 2
+contributors: 3
+recentReleases: 10
+createdAt: "2026-03-17T22:29:57Z"
+lastCommitAt: "2026-08-27T14:26:36Z"
+lastReleaseAt: "2026-07-24T23:52:52Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
+healthScore: 95
+undervaluedScore: 39
+maintainers: ["mgth"]
+openGraphImageUrl: "https://opengraph.githubassets.com/aa266a96ffc02cd39b526dcc05ff996a7a97be7ab65a91802db14e1d6e299a04/mgth/Omniphony"
+fundingLinks: ["GITHUB:https://github.com/mgth", "KO_FI:https://ko-fi.com/G5X022D1RW", "LIBERAPAY:https://liberapay.com/mgth"]
+---
+
+# Omniphony
+
+**A real-time spatial / object-based audio rendering engine.** Omniphony takes
+multichannel and object audio and renders it — with VBAP — to any speaker layout
+or to **binaural headphones**, in real time. Open source, GPL-3.0.
+
+- 🎧 **Hear it on headphones** — binaural output (HRTF + ITD + live head-tracking),
+  no surround rig required.
+- 🔊 **Render to any layout** — stereo, 5.1, 7.1, 7.1.4 and beyond, via VBAP.
+- 🧩 **Pluggable decoders** — a small, stable ABI (`bridge_api`) loads decoder
+  bridges at runtime; bring your own format.
+- 🛰️ **Live control + 3D visualization** — Omniphony Studio supervises the engine
+  over OSC.
+
+## Hear it in 2 minutes — no media player needed
+
+The engine ships a self-contained demo: a reference WAV decoder bridge plus a
+short multichannel clip. From a fresh clone:
+
+```sh
+cd omniphony-renderer
+./scripts/demo.sh            # builds the engine, then plays the demo on your headphones
+```
+
+`scripts/demo.sh` binaurally renders `assets/demo/spatial-demo.wav` — a source
+sweeping around you with an overhead tone — straight to your headphones. No
+external player, no proprietary decoder. Other modes:
+
+```sh
+./scripts/demo.sh speakers   # 7.1.4…
