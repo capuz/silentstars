@@ -10,5 +10,9 @@
   {
     "repo": "omoika-institute/omoika",
     "until": "2026-09-27"
+  },
+  {
+    "repo": "Code-Society-Lab/matrixpy",
+    "until": "2026-09-27"
   }
 ]
