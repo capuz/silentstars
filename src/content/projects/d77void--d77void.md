@@ -16,13 +16,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-08-26T00:11:02Z"
+lastCommitAt: "2026-08-28T15:17:08Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 77
 maintainers: ["claude", "dani-77"]
-openGraphImageUrl: "https://opengraph.githubassets.com/63d88778dd913936383fb6dcdb30d8993e2f2178a59ecfef4dfe7f08d9077045/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/5717815ee9697653418c7c3097deedc848849f22b61a39ad7d3f4cd933f77856/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 
