@@ -11,7 +11,7 @@ languagePcts: [59, 36]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 12
 forks: 3
-openIssues: 3
+openIssues: 4
 closedIssues: 12287
 watchers: 1
 contributors: 16
