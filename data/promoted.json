@@ -2,5 +2,9 @@
   {
     "repo": "opn-build/OpenAlive",
     "until": null
+  },
+  {
+    "repo": "carlos-menezes/caravan",
+    "until": "2026-09-27"
   }
 ]
