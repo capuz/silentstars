@@ -1046,5 +1046,16 @@
         "postedAt": "2026-08-27T14:36:22.780Z"
       }
     }
+  },
+  {
+    "repo": "camunda/camunda-distributions",
+    "slug": "camunda--camunda-distributions",
+    "postedAt": "2026-08-28T15:40:10.930Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mu5p4cheyp2d",
+        "postedAt": "2026-08-28T15:40:10.930Z"
+      }
+    }
   }
 ]
