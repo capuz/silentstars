@@ -12,12 +12,12 @@ topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "th
 stars: 16
 forks: 5
 openIssues: 9
-closedIssues: 181
+closedIssues: 183
 watchers: 1
-contributors: 10
+contributors: 11
 recentReleases: 2
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-08-27T01:12:17Z"
+lastCommitAt: "2026-08-28T02:34:33Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
