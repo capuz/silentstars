@@ -16,13 +16,13 @@ watchers: 4
 contributors: 38
 recentReleases: 0
 createdAt: "2017-02-10T16:11:36Z"
-lastCommitAt: "2026-08-24T10:16:31Z"
+lastCommitAt: "2026-08-28T05:53:27Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 90
+healthScore: 92
 undervaluedScore: 76
-maintainers: ["yunohost-bot", "ericgaspar", "Thovi98"]
-openGraphImageUrl: "https://opengraph.githubassets.com/51dc4929fff403f7fedbdcf8021cb0b704592ecf51b1ea447a900b3d0d5af16f/YunoHost-Apps/wekan_ynh"
+maintainers: ["yunohost-bot", "Thovi98", "ericgaspar"]
+openGraphImageUrl: "https://opengraph.githubassets.com/3d68b4a37fb0b964343cc21fda645ff90a9997261dd61c28f5d03f2aaecc7f97/YunoHost-Apps/wekan_ynh"
 postedAt: "2026-07-31T06:34:08.391Z"
 ---
 
