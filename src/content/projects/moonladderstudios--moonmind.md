@@ -9,13 +9,13 @@ languages: ["Python"]
 languagePcts: [85]
 stars: 12
 forks: 5
-openIssues: 50
-closedIssues: 295
+openIssues: 51
+closedIssues: 313
 watchers: 4
 contributors: 9
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-08-28T04:36:34Z"
+lastCommitAt: "2026-08-29T09:04:43Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 97
@@ -25,15 +25,19 @@ openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/18
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
-# 🌙 MoonMind — Safety, resiliency, and observability for Claude Code and Codex CLI
+# 🌙 MoonMind — Safety, resiliency, and observability for AI coding agents
 
     <picture>
         <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MoonLadderStudios/MoonMind/main/docs/assets/moonmindlogo.png">
     </picture>
 </p>
 
-MoonMind is an open-source framework that makes Claude Code and Codex CLI **safer**, more **resilient**, and more **observable** by wrapping agent CLI runs in Docker containers, using Temporal-based durable workflows, and providing a powerful UI dashboard.
+MoonMind is an open-source framework that makes AI coding agents **safer**, more **resilient**, and more **observable** through Temporal-based durable workflows, explicit Provider Profiles and policies, controlled runtime and container boundaries, and an operational dashboard.
 
-For now, MoonMind is focused on software engineering use cases, but can be used for other use cases as well and this will be made easier in the future (e.g. not requiring a git repo).
+For now, MoonMind is focused on software engineering use cases, but it can be used for other use cases as well. Support for workflows that do not require a Git repository will become easier over time.
 
-MoonMind includes a first-class Codex-through-[Omnigent](https://github.com/omnigent-ai/omnigent) managed-runtime path with profile and policy readiness gating, an on-demand default host, optional static hosting, durable event replay, controls, and artifact harvesting. It is available for normal explicit selection; making it the preselected Codex default remains gated by the protected live support matrix. Direct Codex remains a truthfully labeled migration fallback and…
+## Runtime direction
+
+**Omnigent is to become MoonMind's primary runtime provider over time.** Codex, Claude Code, OpenCode, and future approved harnesses should converge on one generic Omnigent execution plane rather than accumulating separate MoonMind runtime architectures.
+
+MoonMind will continue to own Temporal orchestration, Provider Profiles, OAuth enrollment, secret references, workspaces, Skills, model and policy selection, publication,…

@@ -14,17 +14,17 @@ forks: 8
 openIssues: 0
 closedIssues: 24
 watchers: 0
-contributors: 7
+contributors: 8
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-08-28T14:54:24Z"
+lastCommitAt: "2026-08-29T09:44:19Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 61
 maintainers: ["pranavp10", "twinkalp10", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/93e53a31375781dc5a90b92748301606ed3600d71e0da091cebca0c04d9fe6e8/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/64c97b4b0fc33935887a061fc815e291a168dba8b72774b24db8e6acb794d4dd/reloop-labs/reloop"
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
 ---
