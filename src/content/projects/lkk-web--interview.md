@@ -18,7 +18,7 @@ createdAt: "2022-10-12T05:38:39Z"
 lastCommitAt: "2026-08-28T07:42:17Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 85
+healthScore: 84
 undervaluedScore: 76
 maintainers: ["Lkk-Web"]
 openGraphImageUrl: "https://opengraph.githubassets.com/71ff55d8aee09723a84df23428c4909e4f9dec433082a902f0b869a55735af67/Lkk-Web/interview"

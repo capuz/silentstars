@@ -17,14 +17,15 @@ watchers: 6
 contributors: 60
 recentReleases: 6
 createdAt: "2024-09-12T15:02:30Z"
-lastCommitAt: "2026-08-28T15:33:24Z"
-lastReleaseAt: "2026-08-28T11:38:45Z"
+lastCommitAt: "2026-08-29T08:37:14Z"
+lastReleaseAt: "2026-08-28T17:29:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 74
 maintainers: ["renovate[bot]", "aabouzaid", "bkenez"]
-openGraphImageUrl: "https://opengraph.githubassets.com/671046dd4519ce648cd532b26bd915a890006aff6cd630a342768102839ddba1/camunda/camunda-distributions"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d40d4bb7874059a11131fbd7f3815d9f424f4a145e0bcaefc4a7c874610f9c0/camunda/camunda-distributions"
+postedAt: "2026-08-28T15:40:10.930Z"
 ---
 
 # Camunda 8 Self-Managed

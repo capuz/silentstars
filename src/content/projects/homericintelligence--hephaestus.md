@@ -10,20 +10,20 @@ languages: ["Python"]
 languagePcts: [98]
 stars: 6
 forks: 0
-openIssues: 48
-closedIssues: 1337
+openIssues: 53
+closedIssues: 1339
 watchers: 0
 contributors: 4
 recentReleases: 2
 createdAt: "2025-12-29T19:05:37Z"
-lastCommitAt: "2026-08-27T03:16:12Z"
+lastCommitAt: "2026-08-29T01:00:01Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 70
 maintainers: ["mvillmow", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5b307251e73cd47c4609853b5e25da244507eebed65512a7abef458c254e929f/HomericIntelligence/Hephaestus"
+openGraphImageUrl: "https://opengraph.githubassets.com/b7d4591da8276e90dd56310780c3c4045640b053eeed45eb79667e3c5b688bff/HomericIntelligence/Hephaestus"
 postedAt: "2026-08-23T04:14:00.397Z"
 ---
 
