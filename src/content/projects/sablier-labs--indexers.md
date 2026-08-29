@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-29T00:07:13Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 78
 maintainers: ["github-actions[bot]", "PaulRBerg", "gavriliumircea"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/581801142/00017717-05a6-4534-9660-06e5d3422c1b"
