@@ -89,6 +89,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
+          # ref: main — on the submission flow this workflow is reached via
+          # workflow_call, so github.sha is the caller's commit, which predates
+          # the "Commit promoted.json" push that process-submission.yml's
+          # validate job just made. Without ref, collect.ts would read a stale
+          # promoted.json, never query the submitted repo, and post.ts would
+          # then throw "Project not found" (issues #9-#12). deploy/post/redeploy
+          # already pin ref: main for the same class of race (issue #8).
+          ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node 24
