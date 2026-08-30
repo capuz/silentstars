@@ -25,6 +25,7 @@ maintainers: ["carlos-menezes"]
 openGraphImageUrl: "https://opengraph.githubassets.com/906332e76f65b3ab28c80a6c384c71893795f22651a750ed6eaf99d032db28c0/carlos-menezes/caravan"
 discussionCount: 2
 promoted: true
+postedAt: "2026-08-30T00:54:20.535Z"
 ---
 
 /ˈkærəvæn/

@@ -20,7 +20,7 @@ createdAt: "2025-03-31T03:23:06Z"
 lastCommitAt: "2026-08-29T04:12:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 80
 maintainers: ["github-actions[bot]", "lumikeiju", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/957738433/0e00116c-6e41-41a5-bd13-dfd0a6d4b907"

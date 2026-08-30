@@ -1,7 +1,7 @@
 ---
 repo: "MoonLadderStudios/MoonMind"
 name: "MoonMind"
-description: "Run Claude Code and Codex with superior safety, resiliency, and observability."
+description: "Run Claude Code, Codex, and any Omnigent agent with superior security, resiliency, and observability."
 readmeQualityOk: true
 url: "https://github.com/MoonLadderStudios/MoonMind"
 language: "Python"
@@ -9,13 +9,13 @@ languages: ["Python"]
 languagePcts: [85]
 stars: 12
 forks: 5
-openIssues: 50
-closedIssues: 315
+openIssues: 48
+closedIssues: 317
 watchers: 4
 contributors: 9
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-08-29T18:11:59Z"
+lastCommitAt: "2026-08-30T09:03:51Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 97
@@ -25,14 +25,14 @@ openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/18
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
-# 🌙 MoonMind — Safety, resiliency, and observability for AI coding agents
+# 🌙 MoonMind — Security, resilience, and observability for AI coding agents
 
     <picture>
         <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MoonLadderStudios/MoonMind/main/docs/assets/moonmindlogo.png">
     </picture>
 </p>
 
-MoonMind is an open-source framework that makes AI coding agents **safer**, more **resilient**, and more **observable** through Temporal-based durable workflows, explicit Provider Profiles and policies, controlled runtime and container boundaries, and an operational dashboard.
+MoonMind is an open-source framework that gives AI coding agents stronger **security**, more **resilient** execution, and more **observable** operations through Temporal-based durable workflows, explicit Provider Profiles and policies, controlled runtime and container boundaries, and an operational dashboard.
 
 For now, MoonMind is focused on software engineering use cases, but it can be used for other use cases as well. Support for workflows that do not require a Git repository will become easier over time.
 
@@ -40,4 +40,4 @@ For now, MoonMind is focused on software engineering use cases, but it can be us
 
 **Omnigent is to become MoonMind's primary runtime provider over time.** Codex, Claude Code, OpenCode, and future approved harnesses should converge on one generic Omnigent execution plane rather than accumulating separate MoonMind runtime architectures.
 
-MoonMind will continue to own Temporal orchestration, Provider Profiles, OAuth enrollment, secret references, workspaces, Skills, model and policy selection, publication,…
+MoonMind will continue to own Temporal orchestration, Provider Profiles, OAuth enrollment, secret references, workspaces, Skills, model…
