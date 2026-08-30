@@ -26,6 +26,7 @@ undervaluedScore: 70
 maintainers: ["PenguinBoi12", "dependabot[bot]", "chrisdedman"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9cbc650857dc90ff2ecd5b26e682a7f03f1b41760dad914abc8a74e3457c0432/Code-Society-Lab/matrixpy"
 promoted: true
+postedAt: "2026-08-30T01:01:32.547Z"
 ---
 
 <em>A simple, developer-friendly library to create powerful <a href="https://matrix.org">Matrix</a> bots.</em>

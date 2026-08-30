@@ -7,7 +7,7 @@ url: "https://github.com/ONSdigital/dis-wagtail"
 language: "Python"
 languages: ["Python"]
 languagePcts: [93]
-stars: 12
+stars: 13
 forks: 4
 openIssues: 0
 closedIssues: 3
@@ -20,9 +20,9 @@ lastReleaseAt: "2026-02-23T11:32:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
-undervaluedScore: 72
+undervaluedScore: 71
 maintainers: ["BJacksonONS", "dependabot[bot]", "MebinAbraham"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ccfe09adac802af1e0b6fb5c24509767f8b9792e670c20ad33cbadbd9cfd4b44/ONSdigital/dis-wagtail"
+openGraphImageUrl: "https://opengraph.githubassets.com/205c10cde8619bc98d10d09702f21f48b1da054c8415098b6f5f3132c0b19f11/ONSdigital/dis-wagtail"
 postedAt: "2026-08-27T14:36:22.780Z"
 ---
 

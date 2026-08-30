@@ -10,8 +10,8 @@ languagePcts: [100]
 topics: ["wekan", "yunohost-apps", "yunohost", "kanban"]
 stars: 18
 forks: 19
-openIssues: 3
-closedIssues: 62
+openIssues: 0
+closedIssues: 65
 watchers: 4
 contributors: 38
 recentReleases: 0
@@ -19,7 +19,7 @@ createdAt: "2017-02-10T16:11:36Z"
 lastCommitAt: "2026-08-28T05:53:27Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 76
 maintainers: ["yunohost-bot", "Thovi98", "ericgaspar"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3d68b4a37fb0b964343cc21fda645ff90a9997261dd61c28f5d03f2aaecc7f97/YunoHost-Apps/wekan_ynh"

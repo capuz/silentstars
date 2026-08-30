@@ -23,6 +23,7 @@ undervaluedScore: 19
 maintainers: ["jerlendds"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8d8ab1af562e789d845e4805cff47ab01ac6994dbd1dc6a718c2141dd94d9f9f/omoika-institute/omoika"
 promoted: true
+postedAt: "2026-08-30T00:57:49.523Z"
 ---
 
 <details>   <summary>📼 <i>Click here to watch the <b>OMOIKA</b> demo.</i> </summary>
