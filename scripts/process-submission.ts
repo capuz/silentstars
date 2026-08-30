@@ -172,12 +172,13 @@ async function fetchIssueBody(owner: string, repo: string, number: number): Prom
   return data.body ?? '';
 }
 
-async function commentIssue(body: string) {
-  if (DRY_RUN) { console.log(`[DRY RUN] comment: ${body.slice(0, 80)}...`); return; }
-  await ghFetch(`/repos/${REPO_OWNER}/${REPO_NAME_GH}/issues/${ISSUE_NUMBER}/comments`, {
-    method: 'POST',
-    body: JSON.stringify({ body }),
-  });
+async function commentIssue(body: string): Promise<number | null> {
+  if (DRY_RUN) { console.log(`[DRY RUN] comment: ${body.slice(0, 80)}...`); return null; }
+  const { data } = await ghFetch<{ id?: number }>(
+    `/repos/${REPO_OWNER}/${REPO_NAME_GH}/issues/${ISSUE_NUMBER}/comments`,
+    { method: 'POST', body: JSON.stringify({ body }) },
+  );
+  return data.id ?? null;
 }
 
 async function labelIssue(labels: string[]) {
@@ -289,10 +290,13 @@ async function handleAccepted(
   // Write to promoted.json with 30-day expiry (workflow will git commit this)
   if (!DRY_RUN) appendToPromotedJson(repo);
 
-  // Initial acknowledgement — final comment with card + post links comes from the notify job
-  await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! ✅\n\n**${projectName}** looks great and has been accepted!\n\nWe're building your card and preparing the 🦋 Bluesky post right now — this usually takes a few minutes. We'll update this issue with the links when everything is live. Thanks for the awesome submission! ⭐`,
+  // Initial acknowledgement. The notify job EDITS this same comment in place
+  // once the pipeline finishes, swapping the "building right now" line for the
+  // card + Bluesky post links — so the id must be handed downstream.
+  const ackCommentId = await commentIssue(
+    `Hey @${ISSUE_AUTHOR}! ✅\n\n**${projectName}** looks great and has been accepted!\n\nWe're building your card and preparing the 🦋 Bluesky post right now — this usually takes a few minutes. We'll update this comment with the links when everything is live. Thanks for the awesome submission! ⭐`,
   );
+  if (ackCommentId != null) setOutput('ack_comment_id', String(ackCommentId));
   await labelIssue(['submission']);
   // Issue stays OPEN — the notify job closes it after the pipeline finishes
 }
