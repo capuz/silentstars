@@ -1129,6 +1129,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3muc3dsrhf22q",
         "postedAt": "2026-08-30T09:29:46.843Z"
+      },
+      "ownerEmail": {
+        "url": "contact@injectivelabs.org",
+        "postedAt": "2026-08-30T09:30:07.079Z"
       }
     }
   }
