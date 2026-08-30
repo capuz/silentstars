@@ -49,6 +49,7 @@ jobs:
           gh label create "rejected"       --color "e11d48" --description "Submission rejected"      --force
           gh label create "already-listed" --color "e99b27" --description "Already in SilentStars"  --force
           gh label create "needs-review"   --color "fbca04" --description "Needs manual review before publishing" --force
+          gh label create "bsky-pending"   --color "8b5cf6" --description "Card live, Bluesky post pending"       --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -87,7 +88,17 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/promoted.json
           git commit -m "feat(promoted): add ${SUBMISSION_REPO} via issue #${ISSUE_NUMBER} (30d)"
-          git push
+          # rebase-retry: a nightly collect or a second submission can move main
+          # between this job's checkout and here; a bare push would be rejected
+          # non-fast-forward, failing validate and skipping collect-deploy-post.
+          # Same loop as collect.yml's commit steps.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Failed to push promoted.json after 5 attempts" >&2
+          exit 1
 
       # ── ALREADY LISTED (card exists, send email immediately) ──────────────
       - name: Send email — already listed
@@ -124,12 +135,13 @@ jobs:
   notify:
     name: Notify submitter
     needs: [validate, collect-deploy-post]
-    # A downstream job failure fails collect-deploy-post, but the project may
-    # still have deployed and posted to Bluesky — bsky_url being set proves it,
-    # so the acceptance flow must still notify.
+    # Run whenever a submission was accepted and the run wasn't cancelled — even
+    # if collect-deploy-post concluded 'failure'. A reusable workflow's outputs
+    # come back empty on a failed conclusion, so this job can't trust
+    # needs.collect-deploy-post.outputs.*; instead it inspects ground truth
+    # (the built card file + the live URL + posted.json) in the step below.
     if: >-
-      !cancelled() && needs.validate.outputs.status == 'accepted' &&
-      (needs.collect-deploy-post.result == 'success' || needs.collect-deploy-post.outputs.bsky_url != '')
+      !cancelled() && needs.validate.outputs.status == 'accepted'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -137,6 +149,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main   # includes the post job's "record bsky post" commit
 
       - name: Setup Node 24
         uses: actions/setup-node@v4
@@ -147,38 +161,92 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Comment on issue with links
+      # Establish what actually shipped, independent of the reusable workflow's
+      # (unreliable-on-failure) outputs.
+      - name: Resolve pipeline state
+        id: state
+        env:
+          SLUG:              ${{ needs.validate.outputs.slug }}
+          BASE_URL:          https://capuz.github.io/silentstars
+          FALLBACK_BSKY_URL: ${{ needs.collect-deploy-post.outputs.bsky_url }}
+        run: |
+          set -u
+          CARD_BUILT=false
+          [ -f "src/content/projects/${SLUG}.md" ] && CARD_BUILT=true
+          echo "card_built=${CARD_BUILT}" >> "$GITHUB_OUTPUT"
+
+          CARD_LIVE=false
+          curl -sfL -o /dev/null "${BASE_URL}/projects/${SLUG}/" && CARD_LIVE=true
+          echo "card_live=${CARD_LIVE}" >> "$GITHUB_OUTPUT"
+
+          # posted.json is the source of truth (committed by collect.yml's post
+          # job); fall back to the reusable-workflow output only if it's absent.
+          BSKY_URL=$(SLUG="$SLUG" node -e '
+            const fs = require("fs");
+            let url = "";
+            try {
+              const arr = JSON.parse(fs.readFileSync("data/posted.json", "utf8"));
+              const e = arr.find(x => x.slug === process.env.SLUG);
+              url = (e && e.platforms && e.platforms.bsky && e.platforms.bsky.url) || "";
+            } catch (_) {}
+            process.stdout.write(url);
+          ')
+          [ -z "$BSKY_URL" ] && BSKY_URL="${FALLBACK_BSKY_URL:-}"
+          echo "bsky_url=${BSKY_URL}" >> "$GITHUB_OUTPUT"
+          echo "card_built=${CARD_BUILT} card_live=${CARD_LIVE} bsky_url=${BSKY_URL:-<none>}"
+
+      - name: Comment, label and close
         uses: actions/github-script@v7
         env:
-          BSKY_URL:   ${{ needs.collect-deploy-post.outputs.bsky_url }}
           PROJ_SLUG:  ${{ needs.validate.outputs.slug }}
           PROJ_NAME:  ${{ needs.validate.outputs.project_name }}
+          BSKY_URL:   ${{ steps.state.outputs.bsky_url }}
+          CARD_BUILT: ${{ steps.state.outputs.card_built }}
+          CARD_LIVE:  ${{ steps.state.outputs.card_live }}
         with:
           script: |
             const slug    = process.env.PROJ_SLUG;
             const name    = process.env.PROJ_NAME;
             const bskyUrl = process.env.BSKY_URL;
+            const cardOk  = process.env.CARD_BUILT === 'true' || process.env.CARD_LIVE === 'true';
             const cardUrl = `https://capuz.github.io/silentstars/projects/${slug}/`;
-            const postLine = bskyUrl ? `🦋 [Post on Bluesky](${bskyUrl})\n` : '';
-            await github.rest.issues.createComment({
-              ...context.repo,
-              issue_number: context.issue.number,
-              body: `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n${postLine}`,
-            });
-            await github.rest.issues.addLabels({
-              ...context.repo,
-              issue_number: context.issue.number,
-              labels: ['accepted'],
-            });
-            await github.rest.issues.update({
-              ...context.repo,
-              issue_number: context.issue.number,
-              state: 'closed',
-              state_reason: 'completed',
-            });
+            const issue_number = context.issue.number;
+
+            let body, labels, close;
+            if (cardOk && bskyUrl) {
+              body   = `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n🦋 [Post on Bluesky](${bskyUrl})\n`;
+              labels = ['accepted'];
+              close  = true;
+            } else if (cardOk) {
+              body   = `🎉 **${name}** is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n\nThe Bluesky post didn't go out automatically — I'll post it manually and drop the link here shortly.`;
+              labels = ['accepted', 'bsky-pending'];
+              close  = false;
+            } else {
+              body   = `Hit a snag building the card for **${name}** — I'm on it, will follow up here.`;
+              labels = ['needs-review'];
+              close  = false;
+            }
+
+            // Each call is isolated: a transient createComment/addLabels failure
+            // must not stop the issue from being closed.
+            const failures = [];
+            try {
+              await github.rest.issues.createComment({ ...context.repo, issue_number, body });
+            } catch (e) { core.warning(`createComment failed: ${e.message}`); failures.push('comment'); }
+            try {
+              await github.rest.issues.addLabels({ ...context.repo, issue_number, labels });
+            } catch (e) { core.warning(`addLabels failed: ${e.message}`); failures.push('labels'); }
+            if (close) {
+              try {
+                await github.rest.issues.update({ ...context.repo, issue_number, state: 'closed', state_reason: 'completed' });
+              } catch (e) { core.warning(`close failed: ${e.message}`); failures.push('close'); }
+            }
+            if (failures.length) core.setFailed(`notify: ${failures.join(', ')} failed`);
 
       - name: Send acceptance email
-        if: needs.validate.outputs.submitter_email != ''
+        if: >-
+          needs.validate.outputs.submitter_email != '' &&
+          steps.state.outputs.card_live == 'true' && steps.state.outputs.bsky_url != ''
         env:
           RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
           NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
@@ -186,6 +254,6 @@ jobs:
           EMAIL_TYPE:        accepted
           PROJECT_NAME:      ${{ needs.validate.outputs.project_name }}
           PROJECT_SLUG:      ${{ needs.validate.outputs.slug }}
-          BSKY_POST_URL:     ${{ needs.collect-deploy-post.outputs.bsky_url }}
+          BSKY_POST_URL:     ${{ steps.state.outputs.bsky_url }}
           BASE_URL:          https://capuz.github.io/silentstars
         run: npx tsx scripts/send-email.ts
