@@ -1109,5 +1109,16 @@
         "postedAt": "2026-08-30T01:01:32.547Z"
       }
     }
+  },
+  {
+    "repo": "Southclaws/storyden",
+    "slug": "southclaws--storyden",
+    "postedAt": "2026-08-30T01:05:03.111Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mub75bb57g2v",
+        "postedAt": "2026-08-30T01:05:03.111Z"
+      }
+    }
   }
 ]
