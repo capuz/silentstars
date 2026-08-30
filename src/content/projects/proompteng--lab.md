@@ -4,9 +4,9 @@ name: "lab"
 description: "Experimentation Lab"
 readmeQualityOk: true
 url: "https://github.com/proompteng/lab"
-language: "TypeScript"
-languages: ["TypeScript", "Python"]
-languagePcts: [48, 47]
+language: "Python"
+languages: ["Python", "TypeScript"]
+languagePcts: [49, 45]
 stars: 8
 forks: 0
 openIssues: 10
@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-08-29T17:19:15Z"
+lastCommitAt: "2026-08-30T00:03:35Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 74
 maintainers: ["gregkonush", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/071228eff9f1fb9ac34df7f9113a553569677db67d90a5a2eb4c38c9f4924afa/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/23b0ac25b745e1ca371992dfd2f94e72e076b44f71c17fac9c3d72ff2d13d2e0/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 

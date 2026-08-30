@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-29T13:44:09Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 61
 maintainers: ["pranavp10", "twinkalp10", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/645bd0f0999f9fcf44314d8f34d71aa038bbee9488367ad441670466f47595fe/reloop-labs/reloop"

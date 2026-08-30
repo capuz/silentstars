@@ -15,14 +15,14 @@ watchers: 1
 contributors: 1
 recentReleases: 5
 createdAt: "2024-12-22T18:32:40Z"
-lastCommitAt: "2026-08-28T12:58:49Z"
+lastCommitAt: "2026-08-29T21:04:45Z"
 lastReleaseAt: "2026-08-28T00:45:47Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 95
-undervaluedScore: 40
+healthScore: 93
+undervaluedScore: 43
 maintainers: ["carlos-menezes"]
-openGraphImageUrl: "https://opengraph.githubassets.com/44dccf1885cbeb76e83efcbf80abc7cec2f604fb7e0d1b25e2f4ce12b84b00ff/carlos-menezes/caravan"
+openGraphImageUrl: "https://opengraph.githubassets.com/906332e76f65b3ab28c80a6c384c71893795f22651a750ed6eaf99d032db28c0/carlos-menezes/caravan"
 discussionCount: 2
 promoted: true
 ---

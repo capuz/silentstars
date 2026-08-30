@@ -10,7 +10,7 @@ languages: ["TypeScript"]
 languagePcts: [86]
 topics: ["api", "blockchain", "cryptocurrency", "payments", "webhooks"]
 stars: 18
-forks: 20
+forks: 21
 openIssues: 0
 closedIssues: 91
 watchers: 0
