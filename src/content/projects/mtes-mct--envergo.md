@@ -19,7 +19,7 @@ createdAt: "2021-07-05T07:55:49Z"
 lastCommitAt: "2026-08-25T09:15:22Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 94
 maintainers: ["thibault", "numahell", "pyDez"]
 openGraphImageUrl: "https://opengraph.githubassets.com/40d44b43578fe8368a5144d64c1b6eee0e82cf1723b73ab2fc9710942fe8ef79/MTES-MCT/envergo"

@@ -7,24 +7,24 @@ url: "https://github.com/learn-ukrainian/learn-ukrainian.github.io"
 homepage: "https://learn-ukrainian.github.io"
 language: "Python"
 languages: ["Python", "MDX"]
-languagePcts: [58, 36]
+languagePcts: [58, 35]
 topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "ukrainian-state-standard-2024"]
 stars: 9
 forks: 4
-openIssues: 105
-closedIssues: 2430
+openIssues: 112
+closedIssues: 2457
 watchers: 0
 contributors: 7
 recentReleases: 6
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-08-30T06:46:54Z"
+lastCommitAt: "2026-08-31T08:09:26Z"
 lastReleaseAt: "2026-08-02T15:28:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 77
-maintainers: ["krisztiankoos"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a53b1fe64bd438eb164456cedce2545c5e0cb4f71200a5d4f79d577523368f8b/learn-ukrainian/learn-ukrainian.github.io"
+maintainers: ["krisztiankoos", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b1fee25415b0e35dd0220040ca86ea5981d61c080d66270e1484e59b9b12f279/learn-ukrainian/learn-ukrainian.github.io"
 discussionCount: 1
 postedAt: "2026-08-24T04:26:39.846Z"
 ---

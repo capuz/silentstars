@@ -12,18 +12,18 @@ topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 12
 forks: 3
 openIssues: 5
-closedIssues: 12311
+closedIssues: 12329
 watchers: 1
 contributors: 16
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-08-30T08:07:14Z"
+lastCommitAt: "2026-08-31T09:53:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100
 undervaluedScore: 77
 maintainers: ["upptime-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/adec8a5c1fc2e66894e5f39526841571f18325cf6ac703be86091085990bcb8d/openfoodfacts/openfoodfacts-upptime"
+openGraphImageUrl: "https://opengraph.githubassets.com/8a54e6cbc95bae1309c9d7645f22480ce054803126b982e60af88ea8b7e725f5/openfoodfacts/openfoodfacts-upptime"
 fundingLinks: ["GITHUB:https://github.com/openfoodfacts", "OPEN_COLLECTIVE:https://opencollective.com/openfoodfacts-server", "CUSTOM:https://donate.openfoodfacts.org"]
 postedAt: "2026-07-03T12:38:00.517Z"
 ---

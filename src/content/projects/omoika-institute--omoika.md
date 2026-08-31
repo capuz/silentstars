@@ -18,7 +18,7 @@ lastCommitAt: "2026-07-04T23:05:48Z"
 lastReleaseAt: "2026-07-03T14:53:34Z"
 status: "quiet"
 tags: ["solo_builder", "needs_contributors"]
-healthScore: 48
+healthScore: 47
 undervaluedScore: 19
 maintainers: ["jerlendds"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8d8ab1af562e789d845e4805cff47ab01ac6994dbd1dc6a718c2141dd94d9f9f/omoika-institute/omoika"
