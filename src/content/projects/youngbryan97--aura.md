@@ -1,0 +1,51 @@
+---
+repo: "youngbryan97/aura"
+name: "aura"
+description: "A cognitive architecture that runs on your own machine. Internal state reaches generation through the model's activations, not the system prompt — and every consequential action leaves a receipt you can audit. Not an assistant. IIT 4.0 φ, CAA steering, 136 consciousness modules, local on Apple Silicon."
+readmeQualityOk: true
+url: "https://github.com/youngbryan97/aura"
+language: "Python"
+languages: ["Python"]
+languagePcts: [98]
+topics: ["affective-computing", "apple-silicon", "embodied-ai", "global-workspace-theory", "identity-persistence", "long-term-memory", "self-repair", "sovereign-ai", "iit-4", "local-llm-agent"]
+stars: 75
+forks: 16
+openIssues: 2
+closedIssues: 1
+watchers: 3
+contributors: 4
+recentReleases: 0
+createdAt: "2026-04-06T00:59:35Z"
+lastCommitAt: "2026-08-31T10:01:44Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 83
+undervaluedScore: 29
+maintainers: ["codex"]
+openGraphImageUrl: "https://opengraph.githubassets.com/e8cc3c3dfb474b7202e00e7fd9d2b562093394df220da61dcae4511510459e8b/youngbryan97/aura"
+discussionCount: 2
+---
+
+# Aura
+
+DEMO: https://youtu.be/iTyxeugcZtI?si=B91No0Hjz3eKLMwz
+
+A local cognitive-architecture research runtime for testing continuous-state
+agency, receipt-based governance, memory persistence, activation steering, and
+long-run self-maintenance.
+
+Aura is not proof of life, personhood, or phenomenal consciousness. Nothing
+in here settles that, and the parts of the repo that sound like they might
+are named after mechanisms, not achievements.
+
+The actual claim is narrower and testable: internal state causally affects
+generation, memory writes, tool authorization, initiative selection, and
+runtime repair, through code paths that leave receipts you can audit.
+
+That's a smaller claim than the vocabulary suggests. It's also one you can
+check.
+
+For the technical deep dive, read [ARCHITECTURE.md](https://github.com/youngbryan97/aura/blob/HEAD/ARCHITECTURE.md). If you
+want the same ideas without the math, read [HOW_IT_WORKS.md](https://github.com/youngbryan97/aura/blob/HEAD/HOW_IT_WORKS.md). If
+you want the evidence standard for autonomy and novel output claims, read
+[docs/BEHAVIORAL_PROOF_STANDARD.md](https://github.com/youngbryan97/aura/blob/HEAD/docs/BEHAVIORAL_PROOF_STANDARD.md).…

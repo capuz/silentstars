@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [53, 45]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "hacktoberfest"]
-stars: 334
+stars: 335
 forks: 36
 openIssues: 59
 closedIssues: 163
@@ -21,7 +21,7 @@ lastCommitAt: "2026-08-29T18:27:05Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["needs_contributors"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl", "claude"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
