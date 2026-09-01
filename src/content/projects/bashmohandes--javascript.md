@@ -19,7 +19,7 @@ createdAt: "2016-12-17T17:18:51Z"
 lastCommitAt: "2026-08-31T04:45:49Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 78
 maintainers: ["bashmohandes"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4cdd3ceab19301c8bd00fba067691d477c542882ddd3bdfe3907e17e26cd0ff3/bashmohandes/Javascript"

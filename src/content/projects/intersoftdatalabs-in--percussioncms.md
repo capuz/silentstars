@@ -12,19 +12,19 @@ topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-m
 stars: 6
 forks: 0
 openIssues: 46
-closedIssues: 1602
+closedIssues: 1627
 watchers: 0
 contributors: 15
 recentReleases: 1
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-08-30T19:21:21Z"
+lastCommitAt: "2026-08-31T21:41:36Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4ecf6d03a5949f20de2f79833087ee09004a58b97263985c3ad084302688655a/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/6ab9e36cf02bdeef663675cc621fdacdc29abe607b89eb6c4b89fa6cd0ce2194/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---
