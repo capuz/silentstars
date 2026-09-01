@@ -1146,5 +1146,16 @@
         "postedAt": "2026-08-31T10:05:29.134Z"
       }
     }
+  },
+  {
+    "repo": "funfair-tech/BuildBot",
+    "slug": "funfair-tech--buildbot",
+    "postedAt": "2026-09-01T08:56:05.310Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3muh2ffvbik2v",
+        "postedAt": "2026-09-01T08:56:05.310Z"
+      }
+    }
   }
 ]
