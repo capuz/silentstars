@@ -7,23 +7,23 @@ url: "https://github.com/bykaj/home-ops"
 homepage: "https://bykaj.com"
 language: "YAML"
 languages: ["YAML"]
-languagePcts: [71]
-topics: ["flux", "gitops", "home-operations", "k8s", "k8s-at-home", "kubernetes", "renovate", "mise", "taskfile", "justfile"]
+languagePcts: [66]
+topics: ["flux", "gitops", "home-operations", "k8s", "k8s-at-home", "kubernetes", "renovate", "mise", "justfile"]
 stars: 7
 forks: 2
-openIssues: 4
-closedIssues: 0
+openIssues: 3
+closedIssues: 1
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-08-31T09:11:11Z"
+lastCommitAt: "2026-09-01T06:48:56Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 80
-undervaluedScore: 70
+healthScore: 85
+undervaluedScore: 74
 maintainers: ["bykaj", "renovate[bot]", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5dbd5f109c51db0aa0d95e051b2d8ae284c7f16dec33eec4bf3596b184ad8017/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/250e5dcfa266065f9a6d6340916327b8126aeb9d69d0ec2bd29b5348aea1c0aa/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 
@@ -40,10 +40,10 @@ _Managed with Flux, Renovate, and GitHub Actions_
 
 1. [Overview](#-overview)
 2. [Kubernetes](#-kubernetes)
-    - [Core Components](#core-components)
-    - [GitOps](#gitops)
-    - [Folder Structure](#folder-structure)
-    - [Flux Workflow](#flux-workflow)
+   - [Core Components](#core-components)
+   - [GitOps](#gitops)
+   - [Folder Structure](#folder-structure)
+   - [Flux Workflow](#flux-workflow)
 3. [Cloud Dependencies](#-cloud-dependencies)
 4. [DNS](#-dns)
 5. [Hardware](#-hardware)

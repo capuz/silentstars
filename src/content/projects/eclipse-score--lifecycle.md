@@ -7,23 +7,24 @@ url: "https://github.com/eclipse-score/lifecycle"
 homepage: "https://eclipse-score.github.io/lifecycle"
 language: "C++"
 languages: ["C++"]
-languagePcts: [68]
+languagePcts: [69]
 stars: 5
 forks: 32
 openIssues: 94
 closedIssues: 135
 watchers: 2
-contributors: 250
-recentReleases: 3
+contributors: 252
+recentReleases: 4
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-08-31T09:58:38Z"
-lastReleaseAt: "2026-08-27T18:45:56Z"
+lastCommitAt: "2026-09-01T07:59:41Z"
+lastReleaseAt: "2026-08-31T14:43:53Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
 healthScore: 90
-undervaluedScore: 94
-maintainers: ["NicolasFussberger", "danth", "MaciejKaszynski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5584e0c299c943e1dc5879dd4de6917dc1304865644ea1782d8449084fc75fc0/eclipse-score/lifecycle"
+undervaluedScore: 95
+maintainers: ["NicolasFussberger", "MaciejKaszynski", "danth"]
+openGraphImageUrl: "https://opengraph.githubassets.com/571a1baf424f73d05b323fbcb122fd7d311831315461a1b9fbf1866efad0c451/eclipse-score/lifecycle"
+postedAt: "2026-08-31T10:05:29.134Z"
 ---
 
 # Lifecycle & Health
