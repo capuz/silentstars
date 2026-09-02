@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-09-01T06:48:56Z"
+lastCommitAt: "2026-09-02T06:47:52Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 85
 undervaluedScore: 74
-maintainers: ["bykaj", "renovate[bot]", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/250e5dcfa266065f9a6d6340916327b8126aeb9d69d0ec2bd29b5348aea1c0aa/bykaj/home-ops"
+maintainers: ["bykaj", "bykaj-assistant[bot]", "renovate[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/a86d93ff82335a89ddba1cd188bd72f86a01156b53cda5186ac776c6d80e2eec/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 
@@ -49,8 +49,7 @@ _Managed with Flux, Renovate, and GitHub Actions_
 5. [Hardware](#-hardware)
 6. [Future Plans](#-future-plans)
 7. [Gratitude and Thanks](#-gratitude-and-thanks)
-8. [Stargazers](#-stargazers)
-9. [License](#-license)
+8. [License](#-license)
 
 </details>
 
@@ -58,4 +57,4 @@ _Managed with Flux, Renovate, and GitHub Actions_
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="20" height="20"> Overview
 
-This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2), [Renovate](https://github.com/renovatebot/renovate) and [GitHub…
+This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2), [Renovate](https://github.com/renovatebot/renovate) and [GitHub Actions](https://github.com/features/actions)—you know, the same stack…

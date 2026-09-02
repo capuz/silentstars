@@ -14,16 +14,16 @@ openIssues: 1835
 closedIssues: 58
 watchers: 3
 contributors: 16
-recentReleases: 9
+recentReleases: 8
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-09-01T05:51:45Z"
+lastCommitAt: "2026-09-02T06:49:54Z"
 lastReleaseAt: "2026-08-18T15:29:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 78
 undervaluedScore: 79
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/b683b5005b5dbafee7d76fe6b0090e8f1a9571ab019473b66779eee3df7fb7dd/UKNCSP/CDDS-CMIP7-mappings"
+openGraphImageUrl: "https://opengraph.githubassets.com/12f4224862b7eecb033a93ef86520c7dc5d0e8b28ea8df0035c21e9b2d66601f/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---

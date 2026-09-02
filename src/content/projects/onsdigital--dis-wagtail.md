@@ -15,14 +15,14 @@ watchers: 4
 contributors: 60
 recentReleases: 0
 createdAt: "2024-10-15T13:27:57Z"
-lastCommitAt: "2026-09-01T08:29:21Z"
+lastCommitAt: "2026-09-01T09:37:20Z"
 lastReleaseAt: "2026-02-23T11:32:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 71
-maintainers: ["BJacksonONS", "dependabot[bot]", "MebinAbraham"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7fd13c5a82ab663aba324bca1b832eee5336312aa414975627fe6b2459c53dd2/ONSdigital/dis-wagtail"
+maintainers: ["BJacksonONS", "dependabot[bot]", "MaciekBaron"]
+openGraphImageUrl: "https://opengraph.githubassets.com/a2152277fb1b4bfdc1e7131981dad9755c6022df38bdd3c9d40c9ea1245df219/ONSdigital/dis-wagtail"
 postedAt: "2026-08-27T14:36:22.780Z"
 ---
 

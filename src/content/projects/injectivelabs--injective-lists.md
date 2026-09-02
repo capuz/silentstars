@@ -12,16 +12,16 @@ forks: 30
 openIssues: 0
 closedIssues: 10
 watchers: 17
-contributors: 52
+contributors: 53
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-09-01T08:38:40Z"
+lastCommitAt: "2026-09-02T07:51:07Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 100
 undervaluedScore: 71
-maintainers: ["actions-user", "ThomasRalee"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b21cf902dce7e7b37aed7cf201a3b4e3dc77c88a3ffec6597b21eacc149c05d6/InjectiveLabs/injective-lists"
+maintainers: ["actions-user"]
+openGraphImageUrl: "https://opengraph.githubassets.com/18150280459f76d4f4dd1cd033655ebf0e8bd9efe90078a5e1578b83125e54b3/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 
