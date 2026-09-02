@@ -12,7 +12,7 @@ topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "
 stars: 12
 forks: 93
 openIssues: 45
-closedIssues: 4100
+closedIssues: 4107
 watchers: 0
 contributors: 83
 recentReleases: 10
