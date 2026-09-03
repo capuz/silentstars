@@ -11,20 +11,20 @@ languagePcts: [60, 29]
 topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tools", "dotnet", "graphql", "grpc", "http-client", "mcp"]
 stars: 8
 forks: 1
-openIssues: 60
-closedIssues: 330
+openIssues: 61
+closedIssues: 331
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-09-01T15:10:04Z"
+lastCommitAt: "2026-09-03T08:09:11Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 96
+healthScore: 97
 undervaluedScore: 55
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/668d0c806fac6913a6539ac25afbd5f2f68541ce69e9ca9165437a30a03b10bc/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/b48d20764bcea2d48040b8e8a3ed8e154ff01e8b413cecdf604c34cc36d67570/Kuestenlogik/Bowire"
 discussionCount: 6
 postedAt: "2026-07-17T06:06:24.975Z"
 ---
