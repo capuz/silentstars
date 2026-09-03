@@ -14,13 +14,13 @@ openIssues: 1
 closedIssues: 92
 watchers: 1
 contributors: 2
-recentReleases: 6
+recentReleases: 5
 createdAt: "2026-06-02T23:13:35Z"
 lastCommitAt: "2026-07-20T13:39:06Z"
 lastReleaseAt: "2026-06-07T14:28:06Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
-healthScore: 83
+healthScore: 82
 undervaluedScore: 38
 maintainers: ["Adya84"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1257686312/b94ca4b3-75d3-4059-a8b9-adab11ac7224"

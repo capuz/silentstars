@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript", "CSS"]
 languagePcts: [56, 25]
 topics: ["freeproxies", "http-proxy", "proxies", "proxy", "proxy-checker", "proxy-server", "socks5", "web-scraping"]
-stars: 7
+stars: 6
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -17,13 +17,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-08-20T08:53:44Z"
-lastCommitAt: "2026-09-02T06:56:34Z"
+lastCommitAt: "2026-09-03T07:04:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 73
+undervaluedScore: 76
 maintainers: ["Ian-Lusule"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c5eba19cb0e9d14125c485b72fff55a511943a2b7017ef297b72f1149a7994bf/Ian-Lusule/Proxies-GUI"
+openGraphImageUrl: "https://opengraph.githubassets.com/2c3419d4330b678195d1d003e2c7e03f8ca497739d2b48f8b0030f701af38615/Ian-Lusule/Proxies-GUI"
 postedAt: "2026-08-25T04:14:18.099Z"
 ---
 

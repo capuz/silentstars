@@ -11,19 +11,19 @@ languagePcts: [59]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 10
 forks: 3
-openIssues: 8
+openIssues: 15
 closedIssues: 51
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-09-02T06:34:10Z"
+lastCommitAt: "2026-09-03T07:11:19Z"
 status: "thriving"
 tags: []
-healthScore: 97
-undervaluedScore: 78
+healthScore: 95
+undervaluedScore: 77
 maintainers: ["rajsinghtech", "renovate[bot]", "rajsinghtechbot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/53dda3f5b457ea96f7e5b6e9eef2c3b3f49872c6ff328695d61641d805347023/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/4626dc0aafe40f3e1ddc867ac81523bf1adeb1813955e2f412ec401434fdb089/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
