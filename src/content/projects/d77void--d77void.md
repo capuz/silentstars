@@ -9,7 +9,7 @@ language: "CSS"
 languages: ["CSS"]
 languagePcts: [63]
 stars: 13
-forks: 4
+forks: 5
 openIssues: 0
 closedIssues: 2
 watchers: 1
@@ -19,8 +19,8 @@ createdAt: "2025-05-26T18:19:53Z"
 lastCommitAt: "2026-08-31T13:18:29Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
-undervaluedScore: 77
+healthScore: 97
+undervaluedScore: 78
 maintainers: ["claude", "dani-77"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d6b6aa652ad8093454d011b5682b549516d63141aee6dceab88ff3fd22ac132a/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"

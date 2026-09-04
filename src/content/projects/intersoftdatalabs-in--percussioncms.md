@@ -7,24 +7,24 @@ url: "https://github.com/intersoftdatalabs-in/percussioncms"
 homepage: "https://intsof.com/services/percussion-cms/"
 language: "Java"
 languages: ["Java"]
-languagePcts: [59]
+languagePcts: [58]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
 stars: 6
 forks: 0
-openIssues: 55
-closedIssues: 1667
+openIssues: 44
+closedIssues: 1712
 watchers: 0
 contributors: 15
 recentReleases: 1
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-09-02T23:22:37Z"
+lastCommitAt: "2026-09-04T00:52:54Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8c52d10d7c35562a40624884898dc0d9a9fdb5ca72ac480897ccffbe70690eee/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/5f9954bc2726a0eef1e2a60f6544b7a758fe7825d2066dacd51aff8298b500b2/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---

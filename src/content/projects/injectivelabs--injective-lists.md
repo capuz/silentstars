@@ -10,18 +10,18 @@ languagePcts: [100]
 stars: 15
 forks: 30
 openIssues: 0
-closedIssues: 10
+closedIssues: 0
 watchers: 17
 contributors: 53
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-09-02T07:51:07Z"
+lastCommitAt: "2026-09-04T07:50:02Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
-healthScore: 100
-undervaluedScore: 71
+healthScore: 90
+undervaluedScore: 65
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/18150280459f76d4f4dd1cd033655ebf0e8bd9efe90078a5e1578b83125e54b3/InjectiveLabs/injective-lists"
+openGraphImageUrl: "https://opengraph.githubassets.com/e0e22f408c589fda3a96eb1e71a4b8893ed6defde87635f6729a9b5cb8563460/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 

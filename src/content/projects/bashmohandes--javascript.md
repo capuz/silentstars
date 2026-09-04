@@ -7,23 +7,23 @@ url: "https://github.com/bashmohandes/Javascript"
 homepage: "https://bashmohandes.github.io/Javascript/index.html"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [82]
+languagePcts: [84]
 stars: 20
 forks: 8
 openIssues: 0
 closedIssues: 1
 watchers: 2
 contributors: 1
-recentReleases: 2
+recentReleases: 4
 createdAt: "2016-12-17T17:18:51Z"
-lastCommitAt: "2026-09-03T07:21:35Z"
-lastReleaseAt: "2026-09-03T07:40:44Z"
+lastCommitAt: "2026-09-03T23:59:29Z"
+lastReleaseAt: "2026-09-04T00:59:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 100
-undervaluedScore: 76
-maintainers: ["bashmohandes", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/89176eefc8b9b88f335bc29d9d0245379e0fd66c64c633918008c51e091578dd/bashmohandes/Javascript"
+undervaluedScore: 78
+maintainers: ["bashmohandes"]
+openGraphImageUrl: "https://opengraph.githubassets.com/fa8a9f86c498959488c411b80d4f3c633af96f6f0f972de714d400f874b9296c/bashmohandes/Javascript"
 postedAt: "2026-08-12T05:19:16.661Z"
 ---
 
