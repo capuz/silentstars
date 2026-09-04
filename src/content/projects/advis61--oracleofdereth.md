@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/advis61/OracleOfDereth"
 language: "C#"
 languages: ["C#"]
-languagePcts: [98]
+languagePcts: [99]
 stars: 6
 forks: 3
 openIssues: 0
@@ -15,14 +15,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2024-08-09T18:35:02Z"
-lastCommitAt: "2026-08-28T18:51:31Z"
+lastCommitAt: "2026-09-04T03:05:10Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 97
+healthScore: 99
 undervaluedScore: 85
 maintainers: ["advis61"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c843d6bfaf3b535e112853b569d1dffbc95aa7a32f8ef43e70924d31f6007cc1/advis61/OracleOfDereth"
+openGraphImageUrl: "https://opengraph.githubassets.com/a1a571b6a6a3ddee4cee29a6dd1f75c04317447c76808044d94eb8e4a08e5a44/advis61/OracleOfDereth"
 postedAt: "2026-08-16T04:13:25.726Z"
 ---
 
