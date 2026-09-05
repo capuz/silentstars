@@ -7,22 +7,22 @@ url: "https://github.com/MTES-MCT/envergo"
 homepage: "https://envergo.beta.gouv.fr"
 language: "Python"
 languages: ["Python", "HTML"]
-languagePcts: [75, 20]
-stars: 7
+languagePcts: [76, 20]
+stars: 8
 forks: 10
 openIssues: 0
 closedIssues: 2
-watchers: 2
+watchers: 1
 contributors: 21
 recentReleases: 0
 createdAt: "2021-07-05T07:55:49Z"
-lastCommitAt: "2026-09-03T09:58:41Z"
+lastCommitAt: "2026-09-04T13:08:27Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 94
 maintainers: ["thibault", "pyDez", "numahell"]
-openGraphImageUrl: "https://opengraph.githubassets.com/633c0e6ae90a3355c47636eb9a40c25130cfce657e35785664e543a441ede3c5/MTES-MCT/envergo"
+openGraphImageUrl: "https://opengraph.githubassets.com/16c15c3c8423b90259c19af339e8b316a53dc837b9221e5ba8a241f54ee0d7b0/MTES-MCT/envergo"
 postedAt: "2026-08-13T05:22:15.856Z"
 ---
 
