@@ -19,7 +19,7 @@ lastCommitAt: "2026-08-29T21:04:45Z"
 lastReleaseAt: "2026-08-28T00:45:47Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 43
 maintainers: ["carlos-menezes"]
 openGraphImageUrl: "https://opengraph.githubassets.com/906332e76f65b3ab28c80a6c384c71893795f22651a750ed6eaf99d032db28c0/carlos-menezes/caravan"

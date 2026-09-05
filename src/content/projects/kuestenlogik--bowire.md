@@ -7,25 +7,25 @@ url: "https://github.com/Kuestenlogik/Bowire"
 homepage: "https://bowire.io"
 language: "C#"
 languages: ["C#", "JavaScript"]
-languagePcts: [60, 29]
+languagePcts: [61, 29]
 topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tools", "dotnet", "graphql", "grpc", "http-client", "mcp"]
 stars: 8
 forks: 1
-openIssues: 60
-closedIssues: 338
+openIssues: 58
+closedIssues: 344
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-09-04T06:02:18Z"
+lastCommitAt: "2026-09-04T22:29:13Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 97
 undervaluedScore: 55
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c056ba5240e03164028fa79d2107b93eca532c065d9fecb14193fe7cfb25988c/Kuestenlogik/Bowire"
-discussionCount: 7
+openGraphImageUrl: "https://opengraph.githubassets.com/955c38ed4bd840e30bb2d6951fff5e156edb17b6697611c48bfd2c24baebc3d5/Kuestenlogik/Bowire"
+discussionCount: 9
 postedAt: "2026-07-17T06:06:24.975Z"
 ---
 
