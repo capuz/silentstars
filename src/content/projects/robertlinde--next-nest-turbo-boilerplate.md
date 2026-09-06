@@ -20,7 +20,7 @@ lastCommitAt: "2026-08-08T05:18:02Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 88
-undervaluedScore: 69
+undervaluedScore: 68
 maintainers: ["renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/076c30140c2ecb3439d7803ac6c22790acca6cdd5393dbfbdfe018d2a48fd1c6/robertlinde/next-nest-turbo-boilerplate"
 postedAt: "2026-07-18T05:53:42.749Z"

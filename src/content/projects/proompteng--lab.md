@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-09-05T06:08:18Z"
+lastCommitAt: "2026-09-06T07:51:08Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 74
 maintainers: ["gregkonush", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4ff9dabea14083ae2ca01d59c04463ca01faff666c33b7b49ae231739e2eb602/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/99d3414e20c61061e820a680658ef3e19773c211b8d9b34eb79bed0a90afc393/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 
@@ -47,12 +47,10 @@ The repository centers on:
 - `apps/app`: TanStack Start control-plane UI
 - `apps/cms`: Payload CMS for landing content
 - `apps/docs`: Fumadocs-based documentation app
+- `apps/orbit-salvage`: Godot space-salvage game with a native desktop and browser build
+- `apps/ricochet-rush`: Godot 3D survival shooter with native desktop and browser builds
 - `apps/froussard`: Bun webhook bridge service in `apps/`
 - `apps/reestr`, `apps/reviseur`, `apps/kabina`, `apps/nata`, `apps/kitty-krew`, `apps/alchimie`, `apps/discourse`:
   additional product and experiment surfaces
 
-### Shared packages
-
-- `packages/backend`: Convex backend, codegen, and seed flows used by frontend apps
-- `packages/scripts`: typed Bun deploy/build/reseal automation used across services
--…
+### Shared…

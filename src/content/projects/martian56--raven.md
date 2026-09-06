@@ -21,10 +21,10 @@ lastCommitAt: "2026-08-17T16:52:37Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "quiet"
 tags: ["solo_builder"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 50
 maintainers: ["martian56", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e7fba277d71a961d98e3c3fbff64587ba1f2986de28e38e674c3de0b472889ab/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/25a1c1106331fe20c36d38c97e6971e52befea99d4c55b171d5bdcda428e6cb9/martian56/raven"
 discussionCount: 2
 postedAt: "2026-06-25T06:46:44.859Z"
 ---
