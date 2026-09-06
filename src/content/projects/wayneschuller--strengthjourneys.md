@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [99]
 topics: ["fitness", "powerlifting", "strength", "visualization"]
-stars: 14
+stars: 15
 forks: 2
 openIssues: 1
 closedIssues: 3
@@ -17,13 +17,13 @@ watchers: 2
 contributors: 4
 recentReleases: 0
 createdAt: "2022-10-06T08:45:24Z"
-lastCommitAt: "2026-09-04T11:32:29Z"
+lastCommitAt: "2026-09-06T02:21:04Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 85
-undervaluedScore: 69
+undervaluedScore: 68
 maintainers: ["wayneschuller", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bc96683547316d092181f9a26de6daa9a5093c911ef0212ce44d854ad8b6ffcd/wayneschuller/strengthjourneys"
+openGraphImageUrl: "https://opengraph.githubassets.com/64c91289abf7addf94a7601c8a94572063a89275b73dfba38753691d89e3bdc0/wayneschuller/strengthjourneys"
 postedAt: "2026-08-29T10:26:28.549Z"
 ---
 
