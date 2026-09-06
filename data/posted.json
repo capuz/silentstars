@@ -1209,5 +1209,16 @@
         "postedAt": "2026-09-05T07:53:50.587Z"
       }
     }
+  },
+  {
+    "repo": "masumi-network/sokosumi",
+    "slug": "masumi-network--sokosumi",
+    "postedAt": "2026-09-06T08:08:53.944Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mutk3n3kcu2t",
+        "postedAt": "2026-09-06T08:08:53.944Z"
+      }
+    }
   }
 ]
