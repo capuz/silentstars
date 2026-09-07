@@ -1229,6 +1229,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3muw4afa7l72g",
         "postedAt": "2026-09-07T08:39:00.385Z"
+      },
+      "ownerEmail": {
+        "url": "info@arcadedata.com",
+        "postedAt": "2026-09-07T08:39:20.896Z"
       }
     }
   }
