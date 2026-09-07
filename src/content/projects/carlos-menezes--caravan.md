@@ -7,7 +7,7 @@ url: "https://github.com/carlos-menezes/caravan"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [100]
-stars: 69
+stars: 70
 forks: 4
 openIssues: 2
 closedIssues: 8
@@ -20,9 +20,9 @@ lastReleaseAt: "2026-08-28T00:45:47Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 90
-undervaluedScore: 43
+undervaluedScore: 42
 maintainers: ["carlos-menezes"]
-openGraphImageUrl: "https://opengraph.githubassets.com/906332e76f65b3ab28c80a6c384c71893795f22651a750ed6eaf99d032db28c0/carlos-menezes/caravan"
+openGraphImageUrl: "https://opengraph.githubassets.com/c14f1eef8ef1dbda3b73ae01c47c25c5b365211b80cc4317c99f44e66470ae40/carlos-menezes/caravan"
 discussionCount: 2
 promoted: true
 postedAt: "2026-08-30T00:54:20.535Z"

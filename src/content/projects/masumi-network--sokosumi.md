@@ -16,13 +16,14 @@ watchers: 1
 contributors: 12
 recentReleases: 0
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-06T08:05:14Z"
+lastCommitAt: "2026-09-07T08:16:20Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 83
-maintainers: ["mrosberghaus", "PatrickTobler", "cursor[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d1f36d07d14a9bbaabc94bf864efb52cf0d82216fdfd226102d89802b2c39f89/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "schaier-io", "cursor[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/226ef33c90a118715b3bbeaebf2226227181463b36473f762a054677c2b9079a/masumi-network/sokosumi"
+postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
 # Sokosumi Monorepo
