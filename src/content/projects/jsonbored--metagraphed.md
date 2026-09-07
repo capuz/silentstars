@@ -11,20 +11,20 @@ languagePcts: [96]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
 stars: 12
 forks: 92
-openIssues: 71
-closedIssues: 4182
+openIssues: 75
+closedIssues: 4186
 watchers: 0
 contributors: 83
 recentReleases: 10
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-09-06T07:09:44Z"
+lastCommitAt: "2026-09-06T11:09:34Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 74
 maintainers: ["JSONbored", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8d0fe66af5761ce185f8ae3c469d7cd2cacd661e743dcd28efe17d67f9d61608/JSONbored/metagraphed"
+openGraphImageUrl: "https://opengraph.githubassets.com/4b80358969ff61d0aa298d548b1d4163da57ae8e5fabf79b5758956036222707/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
 postedAt: "2026-06-30T06:57:31.003Z"
 ---

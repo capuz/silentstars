@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-09-01T22:05:53Z"
+lastCommitAt: "2026-09-07T02:04:23Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 74
 maintainers: ["DecimalTurn"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d438309f5cef2045c1c69cdc69f8093feb00ceaa20ba138bfaf508fab596a8c5/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/0fa197619949df246ffa192fcdda37103878635688d53a344812f12af0f6fb6d/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---
@@ -46,9 +46,8 @@ We hope that these improvements can be incorporated upstream one day if the orig
 - [Formatting](#formatting)
 - [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/CHANGELOG.md)
 - [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/CONTRIBUTING.md)
+- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/LICENSE)
 
 ## Installation
 
-toml-patch is dependency-free and can be installed via your favorite package manager.
-
-*Example with NPM*…
+toml-patch is…
