@@ -1235,5 +1235,16 @@
         "postedAt": "2026-09-07T08:39:20.896Z"
       }
     }
+  },
+  {
+    "repo": "matzegebbe/k8s-copycat",
+    "slug": "matzegebbe--k8s-copycat",
+    "postedAt": "2026-09-08T08:21:00.449Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3muylp4tyjq2g",
+        "postedAt": "2026-09-08T08:21:00.449Z"
+      }
+    }
   }
 ]
