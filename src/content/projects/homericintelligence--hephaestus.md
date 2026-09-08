@@ -8,22 +8,22 @@ homepage: "https://homericintelligence.github.io/Hephaestus/"
 language: "Python"
 languages: ["Python"]
 languagePcts: [98]
-stars: 6
+stars: 7
 forks: 1
-openIssues: 74
-closedIssues: 1411
+openIssues: 78
+closedIssues: 1440
 watchers: 0
 contributors: 4
 recentReleases: 1
 createdAt: "2025-12-29T19:05:37Z"
-lastCommitAt: "2026-09-07T05:33:32Z"
+lastCommitAt: "2026-09-08T07:38:53Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
-undervaluedScore: 71
+undervaluedScore: 69
 maintainers: ["mvillmow", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/49e0a6824091e0d67376a72922f6ddeea4d77ec6f186025e3bb7f04eee39d5b6/HomericIntelligence/Hephaestus"
+openGraphImageUrl: "https://opengraph.githubassets.com/4a3eeb8694ad6e55438bc342a697adb52d89dfedafc887646611ded47be95ec7/HomericIntelligence/Hephaestus"
 postedAt: "2026-08-23T04:14:00.397Z"
 ---
 

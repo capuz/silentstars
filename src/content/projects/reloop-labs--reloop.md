@@ -11,20 +11,20 @@ languagePcts: [90]
 topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email"]
 stars: 61
 forks: 10
-openIssues: 0
+openIssues: 1
 closedIssues: 24
 watchers: 0
 contributors: 8
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-09-07T07:57:08Z"
+lastCommitAt: "2026-09-08T07:50:22Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 100
-undervaluedScore: 58
+healthScore: 99
+undervaluedScore: 57
 maintainers: ["pranavp10", "twinkalp10", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/82fd553dc73902cf84c4103df3406003c99e231a12c3375948a728702943e9b0/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/351a21719c8c5e70a9b087848ba6233ef56b528fc1b7b6db21d1f1b3cda944b6/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"

@@ -19,7 +19,7 @@ lastCommitAt: "2026-09-04T12:58:34Z"
 lastReleaseAt: "2026-02-23T11:32:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 71
 maintainers: ["BJacksonONS", "dependabot[bot]", "MaciekBaron"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b33179720f7d6b685e30b8eb69ddf636a746b518294defe28b5776314086142f/ONSdigital/dis-wagtail"

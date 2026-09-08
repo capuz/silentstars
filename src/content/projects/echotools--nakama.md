@@ -15,14 +15,14 @@ watchers: 1
 contributors: 89
 recentReleases: 0
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-08-20T22:03:38Z"
+lastCommitAt: "2026-09-08T03:43:05Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
-status: "quiet"
-tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 89
+status: "thriving"
+tags: ["hidden_gem", "fork_magnet"]
+healthScore: 94
 undervaluedScore: 87
 maintainers: ["thesprockee"]
-openGraphImageUrl: "https://opengraph.githubassets.com/07f707d5553d41ff49001509bbfcfea6e693e1d58ff987fc15e70761c6159701/EchoTools/nakama"
+openGraphImageUrl: "https://opengraph.githubassets.com/059d4e931dc1bcde78f595966b2fc18e6ad7be6f20f4bdede315cf6e0a904cc3/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
 ---
 
