@@ -16,14 +16,14 @@ watchers: 5
 contributors: 11
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-09-07T04:27:53Z"
+lastCommitAt: "2026-09-08T05:08:38Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 100
 undervaluedScore: 74
 maintainers: ["credfeto", "dnyw4l3n13"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9ab9d5da16b63a1acc5554ce42f0433ef2e19005c82d748080e4aade3b6809c6/funfair-tech/BuildBot"
+openGraphImageUrl: "https://opengraph.githubassets.com/df252b3b909262a50393c4d6bc8b5c3c20343d76de6a35fea6b67ea14bddc440/funfair-tech/BuildBot"
 postedAt: "2026-09-01T08:56:05.310Z"
 ---
 
