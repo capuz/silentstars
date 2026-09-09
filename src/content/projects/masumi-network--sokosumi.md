@@ -7,22 +7,22 @@ url: "https://github.com/masumi-network/sokosumi"
 homepage: "https://sokosumi.com"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [97]
-stars: 12
+languagePcts: [96]
+stars: 13
 forks: 8
 openIssues: 2
 closedIssues: 84
 watchers: 1
-contributors: 12
+contributors: 13
 recentReleases: 0
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-08T08:18:13Z"
+lastCommitAt: "2026-09-09T08:10:59Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 83
-maintainers: ["mrosberghaus", "schaier-io", "cursor[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b6a20d177a64dfaee9b92161144b23ec9e730974012f37d4727eedec75223021/masumi-network/sokosumi"
+undervaluedScore: 81
+maintainers: ["mrosberghaus", "schaier-io", "francisluz"]
+openGraphImageUrl: "https://opengraph.githubassets.com/9aa0e10d787cc31d9f9430b11f6a81870c24d14db532d37b39ff3943769551c0/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -37,6 +37,7 @@ sokosumi/
 ├── apps/
 │   ├── web/         # Next.js 16 web app (TypeScript, Tailwind, Shadcn UI)
 │   ├── core/        # Hono API — owns all Postgres/Prisma access
+│   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
 │   └── cli/         # Developer CLI — VISION.md only until specced
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma client, helpers, repositories
@@ -50,5 +51,4 @@ sokosumi/
 ├── docs/            # Agent, domain, coworker, and design docs
 ├── scripts/         # local-env, cloud-agent-db, CI helpers
 ├── skills/          # First-party agent skill sources
-├── biome.jsonc      # Root Biome configuration
-├── package.json     # Monorepo root…
+├──…

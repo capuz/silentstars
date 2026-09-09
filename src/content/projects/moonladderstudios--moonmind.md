@@ -9,16 +9,16 @@ languages: ["Python"]
 languagePcts: [86]
 stars: 12
 forks: 6
-openIssues: 111
-closedIssues: 373
+openIssues: 104
+closedIssues: 380
 watchers: 3
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-09-08T07:29:21Z"
+lastCommitAt: "2026-09-09T07:48:55Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 72
 maintainers: ["nsticco", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
