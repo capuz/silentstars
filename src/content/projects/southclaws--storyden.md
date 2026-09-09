@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [53, 45]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "hacktoberfest"]
-stars: 335
+stars: 336
 forks: 37
 openIssues: 59
 closedIssues: 163

@@ -8,21 +8,21 @@ language: "TypeScript"
 languages: ["TypeScript", "HTML"]
 languagePcts: [68, 23]
 stars: 18
-forks: 32
+forks: 33
 openIssues: 10
 closedIssues: 71
 watchers: 0
 contributors: 18
 recentReleases: 10
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-09-06T13:50:28Z"
+lastCommitAt: "2026-09-08T14:46:47Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 83
 maintainers: ["Amr-Bendary", "abubakr-itqan", "AbdelrhmanMuhamed978"]
-openGraphImageUrl: "https://opengraph.githubassets.com/019f83b5eaffcf020bd3b79359a144c9b274a77205550942253e518e324e66d3/Itqan-community/cms-frontend"
+openGraphImageUrl: "https://opengraph.githubassets.com/b99a5c1fbc844e95af8d14169731b86c23fa5d337443c6a30a958b4f557d640b/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---
 

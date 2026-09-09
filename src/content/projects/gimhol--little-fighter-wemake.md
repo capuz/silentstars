@@ -17,14 +17,14 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-25T04:40:13Z"
-lastCommitAt: "2026-09-07T11:59:02Z"
+lastCommitAt: "2026-09-09T08:04:22Z"
 lastReleaseAt: "2026-01-31T06:12:59Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 100
 undervaluedScore: 73
 maintainers: ["gimhol"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6d4878d21765d45bc9003c531d99cf0923037789d3473ff3281643a032cc50d/gimhol/Little-Fighter-Wemake"
+openGraphImageUrl: "https://opengraph.githubassets.com/1d3633d6c80ebecfe323026486a033683cfb25b6b4badabfa49a672677497c1f/gimhol/Little-Fighter-Wemake"
 discussionCount: 3
 postedAt: "2026-07-03T12:28:26.382Z"
 ---
