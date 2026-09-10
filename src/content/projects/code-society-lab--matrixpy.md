@@ -17,14 +17,14 @@ watchers: 1
 contributors: 9
 recentReleases: 0
 createdAt: "2025-05-24T22:14:01Z"
-lastCommitAt: "2026-08-04T03:37:36Z"
+lastCommitAt: "2026-09-09T21:00:53Z"
 lastReleaseAt: "2026-04-07T00:45:05Z"
-status: "quiet"
+status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-healthScore: 66
-undervaluedScore: 69
+healthScore: 80
+undervaluedScore: 70
 maintainers: ["PenguinBoi12", "dependabot[bot]", "chrisdedman"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9cbc650857dc90ff2ecd5b26e682a7f03f1b41760dad914abc8a74e3457c0432/Code-Society-Lab/matrixpy"
+openGraphImageUrl: "https://opengraph.githubassets.com/9cd09cee686104f7756d5b080f4ed1f5710971c23531e23b38e3ac1e9bbf091f/Code-Society-Lab/matrixpy"
 promoted: true
 postedAt: "2026-08-30T01:01:32.547Z"
 ---

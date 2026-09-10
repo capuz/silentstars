@@ -10,19 +10,19 @@ languagePcts: [94]
 stars: 8
 forks: 13
 openIssues: 29
-closedIssues: 119
+closedIssues: 120
 watchers: 1
 contributors: 89
 recentReleases: 0
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-09-09T07:56:33Z"
+lastCommitAt: "2026-09-09T18:36:21Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 87
 maintainers: ["thesprockee"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1b40993174860bd651e9df0d29ae83f814678da80c8cac819868d41166d4f45c/EchoTools/nakama"
+openGraphImageUrl: "https://opengraph.githubassets.com/814102125372f4d81fdf7a933af8c53af81953cadf98fc76edc4cdb223138f1e/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
 ---
 

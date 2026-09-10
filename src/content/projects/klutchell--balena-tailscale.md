@@ -18,7 +18,7 @@ createdAt: "2022-07-03T21:20:35Z"
 lastCommitAt: "2026-09-05T04:32:51Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 69
 maintainers: ["klutchell-renovate[bot]", "klutchell"]
 openGraphImageUrl: "https://opengraph.githubassets.com/95aa042421f076345f7daf60c34f0d09b57991b03ea8e04f479f5eabfd81ebae/klutchell/balena-tailscale"
