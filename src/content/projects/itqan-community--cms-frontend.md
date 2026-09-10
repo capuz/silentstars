@@ -9,7 +9,7 @@ languages: ["TypeScript", "HTML"]
 languagePcts: [68, 23]
 stars: 18
 forks: 33
-openIssues: 10
+openIssues: 11
 closedIssues: 71
 watchers: 0
 contributors: 18

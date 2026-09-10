@@ -5,25 +5,25 @@ description: "GitOps Monorepo"
 readmeQualityOk: true
 url: "https://github.com/keiretsu-labs/kubernetes-manifests"
 homepage: "https://keiretsu.top/"
-language: "Shell"
-languages: ["Shell", "Python"]
-languagePcts: [47, 33]
+language: "Python"
+languages: ["Python", "Shell"]
+languagePcts: [43, 41]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 10
 forks: 3
-openIssues: 18
-closedIssues: 61
+openIssues: 24
+closedIssues: 62
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-09-09T07:03:37Z"
+lastCommitAt: "2026-09-10T06:32:35Z"
 status: "thriving"
-tags: []
-healthScore: 95
-undervaluedScore: 77
+tags: ["solo_builder"]
+healthScore: 94
+undervaluedScore: 76
 maintainers: ["rajsinghtech", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0fa3d6168d6cdab7e4f960deee1e1492a5da9f841919a93419e59a8c20de3291/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/21e9532195d35792cc6ddce7e14c26b6e780047181c3a67ad0380065d52bec71/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
