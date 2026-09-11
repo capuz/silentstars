@@ -11,17 +11,17 @@ languagePcts: [69, 26]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "fastapi", "langgraph", "llm-agent", "mcp"]
 stars: 10
 forks: 8
-openIssues: 19
-closedIssues: 845
+openIssues: 12
+closedIssues: 854
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-09-10T07:47:50Z"
+lastCommitAt: "2026-09-11T08:08:03Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 66
 maintainers: ["mabry1985", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"

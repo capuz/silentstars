@@ -11,20 +11,20 @@ languagePcts: [96]
 topics: ["python", "python-typing", "typeshed", "typing"]
 stars: 14
 forks: 6
-openIssues: 3
+openIssues: 4
 closedIssues: 165
 watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-09T23:59:17Z"
-lastCommitAt: "2026-09-10T06:56:57Z"
+lastCommitAt: "2026-09-11T04:10:11Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f496a304fa19ec0bdc385acefb9e3ca212943bf6c3a6dea4761377a6f0cd721f/AlexWaygood/typeshed-stats"
+openGraphImageUrl: "https://opengraph.githubassets.com/158043fc0582817338fe89e524d34d58d0488c41048d575f91bdfc173bc2309f/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"
 ---
 

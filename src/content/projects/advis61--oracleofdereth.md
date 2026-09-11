@@ -15,14 +15,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2024-08-09T18:35:02Z"
-lastCommitAt: "2026-09-10T02:54:23Z"
+lastCommitAt: "2026-09-11T01:19:12Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["advis61"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9887c1aad41d0f0cb8f1d2d91b4f52ffa436f8647491f5c5131a54f207719129/advis61/OracleOfDereth"
+openGraphImageUrl: "https://opengraph.githubassets.com/cf0e0543ae243a84b7821639cf7ea6e1ef125e115beea9cdd28c8f3aa536aea6/advis61/OracleOfDereth"
 postedAt: "2026-08-16T04:13:25.726Z"
 ---
 
@@ -30,7 +30,7 @@ postedAt: "2026-08-16T04:13:25.726Z"
 
 An [Asheron's Call](https://emulator.ac/how-to-play/) [Decal](https://decaldev.com/) plugin.
 
-Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/2.1.1/OracleOfDerethInstaller-2.1.1.0.exe)
+Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/2.2.0/OracleOfDerethInstaller-2.2.0.0.exe)
 
 To upgrade from a previous version, just download and re-run the .exe file.
 
@@ -62,6 +62,8 @@ Buffs
 Nearby
 
 Fellowship
+
+Inventory
 
 Items
 
@@ -103,6 +105,4 @@ Fship List
 
 Top Players
 
-Decal plugins
-
-##…
+Decal…
