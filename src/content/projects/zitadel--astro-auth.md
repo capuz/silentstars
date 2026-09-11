@@ -17,14 +17,14 @@ watchers: 0
 contributors: 24
 recentReleases: 1
 createdAt: "2025-08-12T12:26:32Z"
-lastCommitAt: "2026-07-21T09:36:52Z"
+lastCommitAt: "2026-09-11T04:46:09Z"
 lastReleaseAt: "2026-06-20T23:36:31Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 65
-undervaluedScore: 52
-maintainers: ["mridang", "dependabot[bot]", "semantic-release-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/28e60653bb3b39e8e407eeeebf1c09a4abdb6da916fd78309e9e28893de757bc/zitadel/astro-auth"
+healthScore: 84
+undervaluedScore: 62
+maintainers: ["mridang", "semantic-release-bot", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/fa60668889d37d3f3218b4b636d983683875d642854883423e6d17ede2eb8414/zitadel/astro-auth"
 postedAt: "2026-06-20T23:46:36.407Z"
 ---
 

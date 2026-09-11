@@ -10,12 +10,12 @@ languages: ["TypeScript"]
 languagePcts: [96]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
 stars: 12
-forks: 91
-openIssues: 77
+forks: 92
+openIssues: 78
 closedIssues: 4187
 watchers: 0
 contributors: 83
-recentReleases: 9
+recentReleases: 8
 createdAt: "2026-06-06T00:29:04Z"
 lastCommitAt: "2026-09-07T13:15:03Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
