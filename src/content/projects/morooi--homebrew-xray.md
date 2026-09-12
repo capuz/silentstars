@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/morooi/homebrew-xray"
 language: "Shell"
 languages: ["Shell", "Ruby"]
-languagePcts: [62, 38]
+languagePcts: [63, 37]
 topics: ["xray", "xray-core", "homebrew", "homebrew-tap", "v2ray", "v2ray-core"]
 stars: 5
 forks: 1
@@ -16,13 +16,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2021-01-25T13:21:46Z"
-lastCommitAt: "2026-09-11T06:33:45Z"
+lastCommitAt: "2026-09-12T00:31:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 80
 undervaluedScore: 76
-maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/86ead8beacdd6702e5ec6eda4ac1ca3c82688500dee2efce7d7e7e9419d88329/morooi/homebrew-xray"
+maintainers: ["actions-user", "morooi"]
+openGraphImageUrl: "https://opengraph.githubassets.com/8461f819ffc1a957a89950dc41a55d7d34b29aa2f2eeafbc97872b801b4efffe/morooi/homebrew-xray"
 postedAt: "2026-08-20T04:13:07.390Z"
 ---
 

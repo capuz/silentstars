@@ -10,7 +10,7 @@ languages: ["TypeScript"]
 languagePcts: [88]
 topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsing", "toml-edit", "toml-patch", "comments", "toml-format", "toml-formatter"]
 stars: 9
-forks: 1
+forks: 0
 openIssues: 2
 closedIssues: 11
 watchers: 1
@@ -21,8 +21,8 @@ lastCommitAt: "2026-09-07T02:04:23Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 95
-undervaluedScore: 76
+healthScore: 94
+undervaluedScore: 74
 maintainers: ["DecimalTurn"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0fa197619949df246ffa192fcdda37103878635688d53a344812f12af0f6fb6d/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]

@@ -6,18 +6,18 @@ readmeQualityOk: true
 url: "https://github.com/MoonLadderStudios/MoonMind"
 language: "Python"
 languages: ["Python"]
-languagePcts: [86]
+languagePcts: [87]
 stars: 12
 forks: 6
-openIssues: 109
-closedIssues: 402
+openIssues: 104
+closedIssues: 422
 watchers: 3
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-09-11T06:08:55Z"
+lastCommitAt: "2026-09-12T07:49:31Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 96
 undervaluedScore: 72
 maintainers: ["nsticco", "dependabot[bot]", "natesticcog3"]
