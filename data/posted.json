@@ -1287,5 +1287,16 @@
         "postedAt": "2026-09-11T08:19:17.827Z"
       }
     }
+  },
+  {
+    "repo": "michigandaily/dte-outage-tracker",
+    "slug": "michigandaily--dte-outage-tracker",
+    "postedAt": "2026-09-12T08:09:30.085Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mvcmwaaflf2g",
+        "postedAt": "2026-09-12T08:09:30.085Z"
+      }
+    }
   }
 ]
