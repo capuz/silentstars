@@ -14,17 +14,17 @@ forks: 0
 openIssues: 2
 closedIssues: 11
 watchers: 1
-contributors: 2
+contributors: 3
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-09-07T02:04:23Z"
+lastCommitAt: "2026-09-13T02:32:02Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 94
+healthScore: 96
 undervaluedScore: 74
-maintainers: ["DecimalTurn"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0fa197619949df246ffa192fcdda37103878635688d53a344812f12af0f6fb6d/DecimalTurn/toml-patch"
+maintainers: ["DecimalTurn", "jleme", "renovate[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/c357f4a098d1bda7fa90634877dcb786f3a3135f2848dc13eca7d282832dae7c/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---
@@ -44,9 +44,9 @@ We hope that these improvements can be incorporated upstream one day if the orig
 - [Comment ownership](#comment-ownership)
 - [Date/time handling and Temporal](#datetime-handling--temporal)
 - [Formatting](#formatting)
-- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/CHANGELOG.md)
-- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/CONTRIBUTING.md)
-- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.0.5/LICENSE)
+- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/CHANGELOG.md)
+- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/CONTRIBUTING.md)
+- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/LICENSE)
 
 ## Installation
 

@@ -15,12 +15,12 @@ openIssues: 78
 closedIssues: 4187
 watchers: 0
 contributors: 83
-recentReleases: 8
+recentReleases: 4
 createdAt: "2026-06-06T00:29:04Z"
 lastCommitAt: "2026-09-07T13:15:03Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "funded", "release_machine", "fork_magnet"]
+tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
 healthScore: 97
 undervaluedScore: 74
 maintainers: ["JSONbored", "github-actions[bot]", "dependabot[bot]"]
