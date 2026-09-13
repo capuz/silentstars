@@ -7,7 +7,7 @@ url: "https://github.com/SkyEye-FAST/unicucumber"
 homepage: "https://uni.skyeyefast.top"
 language: "TypeScript"
 languages: ["TypeScript", "Vue"]
-languagePcts: [50, 45]
+languagePcts: [49, 45]
 topics: ["unifont", "vue", "vue3"]
 stars: 8
 forks: 2
@@ -15,16 +15,16 @@ openIssues: 0
 closedIssues: 15
 watchers: 1
 contributors: 3
-recentReleases: 7
+recentReleases: 10
 createdAt: "2024-10-26T16:39:27Z"
-lastCommitAt: "2026-09-12T07:50:36Z"
-lastReleaseAt: "2026-09-12T07:51:08Z"
+lastCommitAt: "2026-09-12T12:29:54Z"
+lastReleaseAt: "2026-09-12T11:32:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 90
-maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8487636cd632d4c8f819c6cfafa16f9eac3b04ee009495bcee04c09fb2a1d769/SkyEye-FAST/unicucumber"
+maintainers: ["SkyEye-FAST", "Kaohaaa", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/ca7ac153ca550594a6a6b5132163c149677a1d560e845c6da79f5d4f4262eb6f/SkyEye-FAST/unicucumber"
 postedAt: "2026-09-05T07:53:50.587Z"
 ---
 

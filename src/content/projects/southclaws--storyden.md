@@ -7,7 +7,7 @@ url: "https://github.com/Southclaws/storyden"
 homepage: "https://www.storyden.org/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [53, 45]
+languagePcts: [52, 46]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "hacktoberfest"]
 stars: 336
 forks: 37
@@ -17,11 +17,11 @@ watchers: 10
 contributors: 17
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-09-06T18:59:23Z"
+lastCommitAt: "2026-09-12T16:07:29Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["needs_contributors"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl", "claude"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"

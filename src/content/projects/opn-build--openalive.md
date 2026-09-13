@@ -15,14 +15,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 5
+recentReleases: 4
 createdAt: "2026-05-30T02:07:49Z"
 lastCommitAt: "2026-07-07T03:41:27Z"
 lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "quiet"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 52
-undervaluedScore: 58
+undervaluedScore: 56
 maintainers: ["capuz", "opn-build"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
 promoted: true
