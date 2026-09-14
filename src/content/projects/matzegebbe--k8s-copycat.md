@@ -16,14 +16,14 @@ watchers: 2
 contributors: 3
 recentReleases: 0
 createdAt: "2025-08-28T20:32:37Z"
-lastCommitAt: "2026-09-08T11:57:34Z"
+lastCommitAt: "2026-09-14T07:57:15Z"
 lastReleaseAt: "2025-09-25T07:02:34Z"
 status: "thriving"
 tags: []
-healthScore: 96
+healthScore: 98
 undervaluedScore: 78
 maintainers: ["dependabot[bot]", "matzegebbe"]
-openGraphImageUrl: "https://opengraph.githubassets.com/901e824b35afd06435bb7654d6e3559bb6e40aff490c57afd75b9ef274ca5c3b/matzegebbe/k8s-copycat"
+openGraphImageUrl: "https://opengraph.githubassets.com/95dfb7e461713c13a772db4c8e565958185b606f52c941f48a2baf95340b1f33/matzegebbe/k8s-copycat"
 postedAt: "2026-09-08T08:21:00.449Z"
 ---
 
