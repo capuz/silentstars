@@ -18,10 +18,11 @@ createdAt: "2024-08-31T20:29:49Z"
 lastCommitAt: "2026-09-13T08:30:15Z"
 status: "thriving"
 tags: []
-healthScore: 97
+healthScore: 96
 undervaluedScore: 77
 maintainers: ["aussedatlo", "dependabot[bot]", "Jason954"]
 openGraphImageUrl: "https://opengraph.githubassets.com/533397598d15475b3dc4826506ab3313fd6bb1102a87a1f6ae95d2b41702c16b/aussedatlo/banalize"
+postedAt: "2026-09-13T08:33:41.998Z"
 ---
 
 **A lightweight intrusion prevention system written in Rust.**

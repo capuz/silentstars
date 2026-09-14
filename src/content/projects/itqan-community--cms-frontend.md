@@ -9,20 +9,20 @@ languages: ["TypeScript", "HTML"]
 languagePcts: [68, 23]
 stars: 18
 forks: 34
-openIssues: 11
-closedIssues: 71
+openIssues: 10
+closedIssues: 72
 watchers: 0
-contributors: 18
+contributors: 19
 recentReleases: 10
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-09-08T14:46:47Z"
+lastCommitAt: "2026-09-13T15:11:53Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 93
-undervaluedScore: 83
+healthScore: 95
+undervaluedScore: 84
 maintainers: ["Amr-Bendary", "abubakr-itqan", "AbdelrhmanMuhamed978"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b99a5c1fbc844e95af8d14169731b86c23fa5d337443c6a30a958b4f557d640b/Itqan-community/cms-frontend"
+openGraphImageUrl: "https://opengraph.githubassets.com/a768ca39eeb1099fc6d97ab3d8950c98b2737cfdf1c5fa064187c5c62af637d7/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---
 

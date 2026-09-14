@@ -16,19 +16,19 @@ watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-13T08:04:11Z"
+lastCommitAt: "2026-09-14T09:10:18Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 81
-maintainers: ["mrosberghaus", "schaier-io", "francisluz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4f271de8c65b6b539e8a788e0846eb08b80bad57ffd3891f68ec180fcd199eaf/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "schaier-io", "enjojoy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/9cf37c5b6f504a90c4b52e3396b9de7a75bc0bee3e6965cc636563c9a8830844/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
 # Sokosumi Monorepo
 
-Sokosumi is a marketplace platform. This monorepo is the web app, the Core API, and shared packages.
+Sokosumi is a marketplace platform. This monorepo is the web app, the Core API, native Apple apps, the developer CLI, and shared packages.
 
 ## Project Structure
 
@@ -50,5 +50,4 @@ sokosumi/
 │   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (runtime is in Core)
 ├── docs/            # Agent, domain, coworker, and design docs
 ├── scripts/         # local-env, cloud-agent-db, CI helpers
-├── skills/          # First-party agent skill sources
-├──…
+├── skills/          #…

@@ -9,18 +9,18 @@ languages: ["Python"]
 languagePcts: [87]
 stars: 12
 forks: 6
-openIssues: 104
-closedIssues: 422
+openIssues: 97
+closedIssues: 429
 watchers: 3
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-09-13T07:33:57Z"
+lastCommitAt: "2026-09-14T08:40:12Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 96
 undervaluedScore: 72
-maintainers: ["nsticco", "natesticcog3"]
+maintainers: ["nsticco", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
@@ -36,8 +36,8 @@ MoonMind is an open-source framework that gives AI coding agents stronger **secu
 
 For now, MoonMind is focused on software engineering use cases, but it can be used for other use cases as well. Support for workflows that do not require a Git repository will become easier over time.
 
-## Runtime direction
+## Start here: the supported first path
 
-**Omnigent is to become MoonMind's primary runtime provider over time.** Codex, Claude Code, OpenCode, and future approved harnesses should converge on one generic Omnigent execution plane rather than accumulating separate MoonMind runtime architectures.
+MoonMind coordinates provider-maintained coding agents with security, durable execution, and inspectable results. It is built for engineers who want to direct an agent (Codex, Claude Code, OpenCode, or a future approved harness) without handing it ambient credentials, the host Docker socket, or an unscoped network.
 
-MoonMind will continue to own Temporal orchestration, Provider Profiles, OAuth enrollment, secret references, workspaces, Skills, model…
+The supported first path is local-first: `docker…

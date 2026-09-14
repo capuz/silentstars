@@ -15,14 +15,14 @@ openIssues: 78
 closedIssues: 4187
 watchers: 0
 contributors: 83
-recentReleases: 4
+recentReleases: 0
 createdAt: "2026-06-06T00:29:04Z"
 lastCommitAt: "2026-09-07T13:15:03Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
 healthScore: 97
-undervaluedScore: 74
+undervaluedScore: 67
 maintainers: ["JSONbored", "github-actions[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7207be0b9ccc8c4ec3025b87466215c873ec261f6027de44c5eb5d30a75f585a/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
