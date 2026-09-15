@@ -15,30 +15,30 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-02-04T11:54:02Z"
-lastCommitAt: "2026-09-04T16:52:25Z"
+lastCommitAt: "2026-09-15T02:05:16Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 76
+healthScore: 79
 undervaluedScore: 77
-maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6efd4ebe1c542982ca9baa5a23cadb0bb1fc8fe7cea368d23f4ba29e682d37e/snowykami/snowykami"
+maintainers: ["github-actions[bot]", "snowykami"]
+openGraphImageUrl: "https://opengraph.githubassets.com/0fc1399b883a03d3b6369be83d4dbdfadb9a4e4734f890983b15c4b652d4c335/snowykami/snowykami"
 postedAt: "2026-07-11T06:04:09.099Z"
 ---
 
-## Interests & Hobbies 兴趣爱好
+## Interests & 感兴趣的
 
-- 🏠 喜欢折腾 HomeLab 和各种自建服务
-- ⛏️ 喜欢玩 Minecraft，运营/运维过一些服务器，可以来一起玩
-- 💡 热爱开源技术，喜欢折腾各种新技术，可以一起交流
-- 📚 有精力的话想学习更多的技术，持续积累开发经验
+- 🏠 HomeLab & Selfhost
+- ⛏️ Minecraft
+- 💡 Opensource / 开源
 
-## Skills & Technologies 技能与技术
+## 技术栈
 
 - 🧩 语言：`Python` `Go` `TypeScript` `JavaScript` `C` `C++` `Rust`
 - 🛠️ 常用技术栈：`React` `Next.js` `React Native` `Node.js` `Django` `FastAPI` `Gin` `Docker` `Kubernetes` `PostgreSQL` `Redis` `GraphQL`
 - 🎯 方向：`后端` `前端` `移动端` `DevOps` `云原生` `运维` `自动化`
+- 正在从事 DevOps、CICDCO、可观测等领域的组件开发工作
 
-## Contacts & Links 联系与其他链接
+## Contacts & Links 联系方式
 
 - 📧 Email: [snowykami@outlook.com](mailto:snowykami@outlook.com)
 - 🏡 主页：[https://www.sfkm.me](https://www.sfkm.me)
@@ -64,4 +64,6 @@ postedAt: "2026-07-11T06:04:09.099Z"
 🌞 Morning                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 🌆 Daytime                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 🌃 Evening                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-🌙 Night                  0 commits…
+🌙 Night                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+```
+📅 **I'm Most…

@@ -13,12 +13,12 @@ openIssues: 10
 closedIssues: 72
 watchers: 0
 contributors: 19
-recentReleases: 10
+recentReleases: 4
 createdAt: "2025-08-26T17:37:40Z"
 lastCommitAt: "2026-09-13T15:11:53Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
-tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
+tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 84
 maintainers: ["Amr-Bendary", "abubakr-itqan", "AbdelrhmanMuhamed978"]

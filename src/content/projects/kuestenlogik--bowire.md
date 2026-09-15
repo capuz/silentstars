@@ -12,19 +12,19 @@ topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tool
 stars: 9
 forks: 1
 openIssues: 67
-closedIssues: 371
+closedIssues: 372
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-09-14T06:39:51Z"
+lastCommitAt: "2026-09-14T21:01:32Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 97
 undervaluedScore: 54
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7d3e831e0eb081bd1bac7207b213a1f7cf22962841dc43c049e6374f4301990c/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/2113d9918842f32f39cb590e7d50dd878b7c3fc3282615f86b78bd748bd6c79d/Kuestenlogik/Bowire"
 discussionCount: 10
 postedAt: "2026-07-17T06:06:24.975Z"
 ---

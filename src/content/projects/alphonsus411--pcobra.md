@@ -15,7 +15,7 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-10-08T17:21:01Z"
-lastCommitAt: "2026-09-14T09:12:20Z"
+lastCommitAt: "2026-09-15T08:50:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
@@ -23,6 +23,7 @@ undervaluedScore: 76
 maintainers: ["Alphonsus411"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/869667402/d398500f-a3a6-40d2-9e97-7ecddfb5fcdb"
 discussionCount: 1
+postedAt: "2026-09-14T09:16:57.024Z"
 ---
 
 # Proyecto Cobra
