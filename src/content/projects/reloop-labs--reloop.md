@@ -9,22 +9,22 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [90]
 topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email"]
-stars: 66
+stars: 68
 forks: 11
-openIssues: 4
-closedIssues: 31
+openIssues: 2
+closedIssues: 33
 watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-09-13T20:04:04Z"
+lastCommitAt: "2026-09-15T06:21:12Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 96
-undervaluedScore: 55
+healthScore: 98
+undervaluedScore: 56
 maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b86b5bb68b559263b4d19672dae2882fb77d74bd2c871212bbfcc0497d8a7ee0/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/000b670531a4830038e650b896dde793549c7049ed31f74160cbf9b8693dcf34/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
@@ -37,7 +37,7 @@ postedAt: "2026-07-21T06:19:24.167Z"
 Self-host on your own servers or use the hosted service from Reloop Labs.\
 No vendor lock-in. Full transparency. No proprietary black boxes.
 
-[Website](https://reloop.sh) · [Documentation](https://reloop.sh/docs) · [Hosted Sign-up](https://reloop.sh/dashboard/signup) · [Discord](https://discord.gg/bHnkBcp7xR)
+[Website](https://reloop.sh) · [Documentation](https://reloop.sh/docs) · [Hosted Sign-up](https://reloop.sh/dashboard/signup) · [Discord](https://discord.gg/ZBYwWKY96U)
 
 </div>
 

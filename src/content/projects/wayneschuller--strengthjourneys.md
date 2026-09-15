@@ -11,19 +11,19 @@ languagePcts: [99]
 topics: ["fitness", "powerlifting", "strength", "visualization"]
 stars: 15
 forks: 2
-openIssues: 1
-closedIssues: 3
+openIssues: 0
+closedIssues: 4
 watchers: 2
 contributors: 4
 recentReleases: 0
 createdAt: "2022-10-06T08:45:24Z"
-lastCommitAt: "2026-09-14T08:20:42Z"
+lastCommitAt: "2026-09-15T07:30:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
-undervaluedScore: 68
+healthScore: 93
+undervaluedScore: 72
 maintainers: ["wayneschuller"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c27ba3c181d6db9ec8ca6fdb47e536534d857423256a4ff0633f146dea62317b/wayneschuller/strengthjourneys"
+openGraphImageUrl: "https://opengraph.githubassets.com/501635bab7005f503bd38ef632c9a087962075d7b5f3979f5caaf5071152e612/wayneschuller/strengthjourneys"
 postedAt: "2026-08-29T10:26:28.549Z"
 ---
 
