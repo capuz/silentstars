@@ -12,16 +12,16 @@ forks: 32
 openIssues: 0
 closedIssues: 0
 watchers: 17
-contributors: 36
+contributors: 37
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-09-15T08:55:04Z"
+lastCommitAt: "2026-09-16T08:38:30Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 65
-maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ee9919135fc6eaf3842c7359184c940ba77b2b84693f8be2fcc843603eb52cf9/InjectiveLabs/injective-lists"
+maintainers: ["actions-user", "ThomasRalee", "t42coin"]
+openGraphImageUrl: "https://opengraph.githubassets.com/c8f5938e66573d7b5d68f9c6a4ad1e83e776295050c46a51bf32699dadfe54bc/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 

@@ -1,7 +1,7 @@
 ---
 repo: "DecimalTurn/toml-patch"
 name: "toml-patch"
-description: "Patch, parse, and stringify TOML while preserving comments, whitespace and formatting."
+description: "Patch, parse and stringify TOML while preserving comments, whitespace and formatting."
 readmeQualityOk: true
 url: "https://github.com/DecimalTurn/toml-patch"
 homepage: "https://www.npmjs.com/package/@decimalturn/toml-patch"
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-09-15T06:17:48Z"
+lastCommitAt: "2026-09-15T14:22:59Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 96
 undervaluedScore: 74
 maintainers: ["DecimalTurn", "renovate[bot]", "jleme"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8b66c72c0544fcced36af348032f947bd36be5caccea2fd1d8c4ebf0edd32883/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/5c8e9996f0ee3cc6c219c9aa37c17a283306baa0363a9f589dadb4b4ec3f978d/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---

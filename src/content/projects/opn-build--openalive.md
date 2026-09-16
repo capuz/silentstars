@@ -22,7 +22,7 @@ lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 51
-undervaluedScore: 49
+undervaluedScore: 41
 maintainers: ["capuz", "opn-build"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
 promoted: true
