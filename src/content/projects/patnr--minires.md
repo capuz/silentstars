@@ -13,18 +13,19 @@ stars: 12
 forks: 3
 openIssues: 0
 closedIssues: 0
-watchers: 1
+watchers: 0
 contributors: 2
-recentReleases: 4
+recentReleases: 6
 createdAt: "2022-11-04T16:06:51Z"
-lastCommitAt: "2026-09-15T08:54:58Z"
-lastReleaseAt: "2026-09-15T08:37:14Z"
+lastCommitAt: "2026-09-16T05:49:00Z"
+lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 80
-undervaluedScore: 77
+undervaluedScore: 78
 maintainers: ["patnr"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d01db27ce1d8230eff2181a35afb9e4c1b62bfd808d71e8ec943fd3e2ad865c2/patnr/MiniRes"
+openGraphImageUrl: "https://opengraph.githubassets.com/4e15e72616f19d5d870e73c7cb498998f11319ec8a54f5488a132406ea155542/patnr/MiniRes"
+postedAt: "2026-09-15T08:59:38.490Z"
 ---
 
 # MiniRes

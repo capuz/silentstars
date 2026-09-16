@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-12T18:17:32Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 86
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d29417e944314a7a3111898b9814a0ff9cb3f4861f1450f86b44952698f4fd52/intersoftdatalabs-in/percussioncms"

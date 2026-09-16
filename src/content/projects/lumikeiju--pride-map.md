@@ -17,12 +17,12 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-31T03:23:06Z"
-lastCommitAt: "2026-09-15T06:50:34Z"
+lastCommitAt: "2026-09-16T06:49:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 80
-maintainers: ["github-actions[bot]", "lumikeiju", "dependabot[bot]"]
+maintainers: ["github-actions[bot]", "lumikeiju"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/957738433/0e00116c-6e41-41a5-bd13-dfd0a6d4b907"
 postedAt: "2026-08-26T04:21:23.537Z"
 ---

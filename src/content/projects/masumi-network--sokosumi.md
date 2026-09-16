@@ -9,20 +9,20 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [93]
 stars: 13
-forks: 8
+forks: 7
 openIssues: 3
 closedIssues: 84
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-15T08:45:40Z"
+lastCommitAt: "2026-09-16T08:40:47Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "fork_magnet"]
+tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 81
+undervaluedScore: 80
 maintainers: ["mrosberghaus", "schaier-io", "enjojoy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b6701221d48fde8a884de40453cbc526543df73aa743874ffbe5421ef3ec181b/masumi-network/sokosumi"
+openGraphImageUrl: "https://opengraph.githubassets.com/47b073db8ca794466174fff3d8b279309bcab5ceeaac03e192850171a040b530/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -38,7 +38,7 @@ sokosumi/
 │   ├── web/         # Next.js 16 web app (TypeScript, Tailwind, Shadcn UI)
 │   ├── core/        # Hono API — owns all Postgres/Prisma access
 │   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
-│   └── cli/         # Developer CLI — VISION.md only until specced
+│   └── cli/         # Developer CLI — private sokosumi package (SPEC + VISION)
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma client, helpers, repositories
 │   ├── masumi/      # @sokosumi/masumi — protocol clients, hash, schemas
@@ -50,4 +50,4 @@ sokosumi/
 │   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (runtime is in Core)
 ├── docs/            # Agent, domain, coworker, and design docs
 ├── scripts/         # local-env, cloud-agent-db, CI helpers
-├── skills/          #…
+├── skills/…

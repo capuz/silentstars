@@ -11,19 +11,19 @@ languagePcts: [77, 20]
 topics: ["brainrot", "brainrot-meme", "react", "reactjs", "wasm", "tailwind", "tailwind-css", "tailwindcss"]
 stars: 5
 forks: 2
-openIssues: 1
-closedIssues: 7
+openIssues: 0
+closedIssues: 8
 watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2024-12-14T18:36:58Z"
-lastCommitAt: "2026-09-09T06:05:45Z"
+lastCommitAt: "2026-09-15T10:01:55Z"
 status: "thriving"
-tags: ["needs_contributors", "hidden_gem"]
-healthScore: 92
-undervaluedScore: 88
+tags: ["hidden_gem"]
+healthScore: 96
+undervaluedScore: 90
 maintainers: ["leo-aa88", "cursoragent", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/60fb5e9d3675843b07c647fa9595fb82287159fc760d0c80f934ae433a06f48c/Brainrotlang/brainrot-webpage"
+openGraphImageUrl: "https://opengraph.githubassets.com/ff40ff1a1bd60f174d496ecff086042e9609fe2cd7989c6a96600e5299f77736/Brainrotlang/brainrot-webpage"
 postedAt: "2026-08-21T04:15:39.689Z"
 ---
 
