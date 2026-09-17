@@ -1354,5 +1354,16 @@
         "postedAt": "2026-09-16T08:51:55.843Z"
       }
     }
+  },
+  {
+    "repo": "coderaiser/putout-editor",
+    "slug": "coderaiser--putout-editor",
+    "postedAt": "2026-09-17T08:55:51.523Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mvpbtqagam2g",
+        "postedAt": "2026-09-17T08:55:51.523Z"
+      }
+    }
   }
 ]
