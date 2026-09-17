@@ -11,7 +11,7 @@ languagePcts: [74]
 topics: ["aec", "lidar", "reuse"]
 stars: 8
 forks: 1
-openIssues: 16
+openIssues: 19
 closedIssues: 255
 watchers: 0
 contributors: 3
@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-10T15:01:22Z"
 lastReleaseAt: "2025-06-04T16:42:06Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 81
 maintainers: ["pfmephisto"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/707678990/a747bd6b-c265-419f-a7a6-e5f0f22fa2b4"

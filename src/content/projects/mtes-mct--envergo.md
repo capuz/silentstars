@@ -13,13 +13,13 @@ forks: 10
 openIssues: 0
 closedIssues: 2
 watchers: 1
-contributors: 21
+contributors: 22
 recentReleases: 0
 createdAt: "2021-07-05T07:55:49Z"
 lastCommitAt: "2026-09-15T12:21:01Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 94
 maintainers: ["pyDez", "thibault", "tut-tuuut"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6c7b1e704d955743ff82020256bac7872b05525a8dd09fdcf3175d60f1e5999e/MTES-MCT/envergo"

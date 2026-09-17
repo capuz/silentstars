@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 6
 createdAt: "2022-11-04T16:06:51Z"
-lastCommitAt: "2026-09-16T05:49:00Z"
+lastCommitAt: "2026-09-17T08:15:50Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 80
 undervaluedScore: 78
 maintainers: ["patnr"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4e15e72616f19d5d870e73c7cb498998f11319ec8a54f5488a132406ea155542/patnr/MiniRes"
+openGraphImageUrl: "https://opengraph.githubassets.com/e5364e797eebfaa77a174107454d16e8de0d09b40e1f0e8625a83adea18f7831/patnr/MiniRes"
 postedAt: "2026-09-15T08:59:38.490Z"
 ---
 
