@@ -9,19 +9,19 @@ languages: ["TypeScript"]
 languagePcts: [98]
 stars: 6
 forks: 6
-openIssues: 11
-closedIssues: 104
+openIssues: 7
+closedIssues: 109
 watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-09-16T06:21:27Z"
+lastCommitAt: "2026-09-16T18:45:36Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 98
-undervaluedScore: 94
-maintainers: ["punk6529", "GelatoGenesis", "ragnep"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d13b1626a94d130077bb308fd4533ea9f58e34f931bb43a4034565c5c7165744/6529-Collections/6529seize-backend"
+undervaluedScore: 95
+maintainers: ["GelatoGenesis", "prxt6529", "punk6529"]
+openGraphImageUrl: "https://opengraph.githubassets.com/23cc003c7fddc2eb0b756cfd5e83754702f62054c8adf709dde91c7a90df6408/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 

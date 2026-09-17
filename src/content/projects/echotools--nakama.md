@@ -9,7 +9,7 @@ languages: ["Go"]
 languagePcts: [94]
 stars: 8
 forks: 13
-openIssues: 27
+openIssues: 28
 closedIssues: 119
 watchers: 1
 contributors: 88

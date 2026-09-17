@@ -5,9 +5,9 @@ description: "GitOps Monorepo"
 readmeQualityOk: true
 url: "https://github.com/keiretsu-labs/kubernetes-manifests"
 homepage: "https://keiretsu.top/"
-language: "Python"
-languages: ["Python", "Shell"]
-languagePcts: [43, 41]
+language: "Shell"
+languages: ["Shell", "Python"]
+languagePcts: [45, 37]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 11
 forks: 3
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-09-16T03:07:12Z"
+lastCommitAt: "2026-09-17T05:56:43Z"
 status: "thriving"
-tags: []
+tags: ["solo_builder"]
 healthScore: 94
 undervaluedScore: 74
 maintainers: ["rajsinghtech", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/170a7b36cacf165339982779e23998c80502985ec3e27cf4c1752a7d216aa5ea/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/d327389782f6624705b5c4f1d0cca2a7ab922ef7133b172e831f843ca685108e/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
@@ -48,8 +48,9 @@ _Managed with Flux, Tailscale, and GitHub Actions_
 ---
 
 Multi-cluster Kubernetes infrastructure managed with FluxCD GitOps. The three
-Talos Linux clusters are connected by a Tailscale mesh and share the same
-repository, platform conventions, and observability stack.
+Talos Linux clusters are connected by a UniFi-routed Cilium ClusterMesh as the
+primary inter-cluster path, with Tailscale as the access and fallback overlay,
+and share the same repository, platform conventions, and observability stack.
 
 ## Architecture
 
@@ -67,5 +68,4 @@ through a `<picture>` element, so they follow your GitHub theme.
 </a>
 
 The `main` branch is the only durable state. Flux polls it, decrypts the SOPS
-material, and reconciles three top-level Kustomizations per cluster. The two
-things worth internalising: an app is deployed to a cluster…
+material, and reconciles three…
