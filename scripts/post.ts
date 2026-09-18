@@ -8,7 +8,7 @@ import {
   loadCommunityTags, seededIndex, truncate, slugify,
   pickOpener, pickCta, topicHashtags,
 } from './post-shared.ts';
-import { buildPitch, readmeExcerpt } from './post-pitch.ts';
+import { buildPitch, generatePitch, llmPitchEnabled, readmeExcerpt } from './post-pitch.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
@@ -121,15 +121,19 @@ async function main(): Promise<void> {
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   // The raw GitHub description is often status text ("Work in progress …"), so
-  // the post leads with what the project does, taken from its README if needed.
-  const pitch = buildPitch({
-    description: project.description ?? '',
-    readme: readmeExcerpt(slugify(project.repo)),
-  });
+  // the post leads with what the project does: written by Claude from the README
+  // when available, otherwise taken from the README/description deterministically.
+  const description = project.description ?? '';
+  const readme      = readmeExcerpt(slugify(project.repo));
+  const claudePitch = llmPitchEnabled()
+    ? await generatePitch({ name: project.name, description, readme })
+    : null;
+  const pitch = claudePitch ?? buildPitch({ description, readme });
 
   const { text, facets, embed, siteUrl } = buildPost(project, baseUrl, pitch);
 
   console.log('─── post preview ───');
+  console.log(`─── pitch (${claudePitch ? 'claude' : 'fallback'}): ${pitch}`);
   console.log(text);
   console.log(`─── ${[...text].length} graphemes ───`);
   console.log(`─── card → ${siteUrl}`);
