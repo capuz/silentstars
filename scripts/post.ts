@@ -6,6 +6,7 @@ import {
   LANG_HASHTAG,
   loadPosted, savePosted, recordPost, loadOgImage, selectTop20,
   loadCommunityTags, seededIndex, truncate, slugify,
+  pickOpener, pickCta, narrativeHook, topicHashtags,
 } from './post-shared.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
@@ -31,27 +32,43 @@ function hashtagFacets(text: string) {
 }
 
 function buildPost(p: Project, baseUrl: string) {
-  const desc     = truncate(p.description ?? '', 180);
-  const lang     = p.language ?? '';
-  const langTags = (p.languages ?? (lang ? [lang] : []))
+  const lang      = p.language ?? '';
+  const langTags  = (p.languages ?? (lang ? [lang] : []))
     .map(l => LANG_HASHTAG[l] ?? '')
     .filter(Boolean);
-  const tags     = [...loadCommunityTags(), ...langTags].join(' ');
-  const slug     = slugify(p.repo);
-  const siteUrl  = `${baseUrl}/projects/${slug}/`;
+  const topicTags = topicHashtags(p.topics ?? [], langTags);
+  const tags      = [...loadCommunityTags(), ...langTags, ...topicTags].join(' ');
+  const slug      = slugify(p.repo);
+  const siteUrl   = `${baseUrl}/projects/${slug}/`;
+
+  // Opener/CTA rotate by date (not by project — only one post goes out per
+  // day), decorrelated from the project pick in main() via distinct seeds.
+  const today  = new Date().toISOString().slice(0, 10);
+  const opener = pickOpener(`${today}-opener`);
+  const cta    = pickCta(`${today}-cta`);
+  const hook   = narrativeHook(p);
+
+  // Bluesky's hard 300-grapheme cap: work out what's left for the
+  // description after every other line is accounted for, with a safety
+  // margin for multi-byte emoji graphemes.
+  const skeleton   = [opener, '', `${p.name} — `, ...(hook ? [hook] : []), '', tags, '', cta].join('\n');
+  const descBudget = Math.max(60, 300 - [...skeleton].length - 5);
+  const desc       = truncate(p.description ?? '', descBudget);
 
   // Text without URL — card embed handles the link
   const lines = [
-    '🌟 Silent star of the day',
+    opener,
     '',
-    `${p.name} — ${desc}`,
+    hook ? `${p.name} — ${desc}\n${hook}` : `${p.name} — ${desc}`,
     '',
     tags,
+    '',
+    cta,
   ];
   const text = lines.join('\n');
 
   // Byte-offset facet: project name → GitHub repo link
-  const prefix   = '🌟 Silent star of the day\n\n';
+  const prefix   = `${opener}\n\n`;
   const byteStart = byteLen(prefix);
   const byteEnd   = byteStart + byteLen(p.name);
 
