@@ -42,6 +42,15 @@ const deviconMap: Record<string, string> = {
   Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure', Julia: 'julia', Nim: 'nim',
 };
 
+// Same "why this one" tags shown on ProjectCard.astro's tagLabels — only the
+// three used to prioritize a single narrative pill here, most specific first.
+const NARRATIVE_TAG_LABEL: Record<string, string> = {
+  legacy_hero: 'legacy hero',
+  solo_builder: 'solo',
+  hidden_gem: 'hidden gem',
+};
+const NARRATIVE_TAG_PRIORITY = ['legacy_hero', 'solo_builder', 'hidden_gem'] as const;
+
 function healthColor(h: number) {
   if (h >= 80) return '#1f9d55';
   if (h >= 60) return '#c98a1e';
@@ -56,6 +65,8 @@ const langIconSlug = d.language ? (deviconMap[d.language] ?? null) : null;
 const langIconUrl  = langIconSlug
   ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langIconSlug}/${langIconSlug}-original.svg`
   : null;
+
+const narrativeTag = NARRATIVE_TAG_PRIORITY.find(t => d.tags.includes(t)) ?? null;
 
 const secondaryLang   = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
 const lang2IconSlug   = secondaryLang ? (deviconMap[secondaryLang] ?? null) : null;
@@ -339,6 +350,13 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
              set:html={status.icon} />
         {status.label.toUpperCase()}
       </span>
+
+      {narrativeTag && (
+        <>
+          <span class="footer-sep">·</span>
+          <span class="meta-item">{NARRATIVE_TAG_LABEL[narrativeTag]}</span>
+        </>
+      )}
 
       <span class="footer-sep">·</span>
 
