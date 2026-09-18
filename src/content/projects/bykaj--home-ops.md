@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-09-18T08:12:34Z"
+lastCommitAt: "2026-09-18T08:57:50Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 90
 undervaluedScore: 78
 maintainers: ["bykaj", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/de69a11d5dfbce432b2407ca2522950cc01e87076c9967084f4f0a56aae7262e/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/2dc973ff9be85a0f9d8b41082fad7d2ad2f745f6a468f031cd415f3995d6d10f/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 

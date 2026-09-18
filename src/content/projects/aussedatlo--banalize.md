@@ -15,13 +15,13 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-08-31T20:29:49Z"
-lastCommitAt: "2026-09-17T08:30:15Z"
+lastCommitAt: "2026-09-18T08:30:16Z"
 status: "thriving"
 tags: []
 healthScore: 96
 undervaluedScore: 77
 maintainers: ["aussedatlo", "dependabot[bot]", "Jason954"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ac0278cfcbc7a97523765acad1525af6017eeac7acf5aaea33ee543cb0c8fa6b/aussedatlo/banalize"
+openGraphImageUrl: "https://opengraph.githubassets.com/d9e11efdc35550bb0fabd800e905dacef2e818a445c83af758dd99f440785b1b/aussedatlo/banalize"
 postedAt: "2026-09-13T08:33:41.998Z"
 ---
 

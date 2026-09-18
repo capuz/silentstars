@@ -18,7 +18,7 @@ recentReleases: 4
 createdAt: "2025-09-21T12:19:40Z"
 lastCommitAt: "2026-09-04T13:51:47Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
-status: "thriving"
+status: "quiet"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 91
 undervaluedScore: 85
