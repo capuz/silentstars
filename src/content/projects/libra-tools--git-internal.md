@@ -14,12 +14,12 @@ openIssues: 0
 closedIssues: 16
 watchers: 2
 contributors: 20
-recentReleases: 5
+recentReleases: 4
 createdAt: "2025-09-21T12:19:40Z"
 lastCommitAt: "2026-09-04T13:51:47Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
 status: "thriving"
-tags: ["hidden_gem", "release_machine", "fork_magnet"]
+tags: ["hidden_gem", "fork_magnet"]
 healthScore: 91
 undervaluedScore: 85
 maintainers: ["genedna", "NJUWallSpider", "jiatianbo666"]

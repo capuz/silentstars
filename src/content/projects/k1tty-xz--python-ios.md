@@ -20,7 +20,7 @@ lastReleaseAt: "2026-09-14T23:48:05Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 89
-undervaluedScore: 69
+undervaluedScore: 70
 maintainers: ["k1tty-xz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/54fe674ed7461b746806398bbaf3c592457806553cc57543332f8d6dd8c7d475/k1tty-xz/python-ios"
 postedAt: "2026-09-16T08:51:55.843Z"

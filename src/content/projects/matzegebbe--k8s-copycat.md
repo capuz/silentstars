@@ -16,39 +16,33 @@ watchers: 2
 contributors: 3
 recentReleases: 0
 createdAt: "2025-08-28T20:32:37Z"
-lastCommitAt: "2026-09-17T05:34:50Z"
+lastCommitAt: "2026-09-18T06:08:00Z"
 lastReleaseAt: "2025-09-25T07:02:34Z"
 status: "thriving"
 tags: []
 healthScore: 98
-undervaluedScore: 79
+undervaluedScore: 80
 maintainers: ["dependabot[bot]", "matzegebbe"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fc492f2b8fd1b7b9dbb7ac6cde12876ec4dea22d1d377a849798e2dccfec2b29/matzegebbe/k8s-copycat"
+openGraphImageUrl: "https://opengraph.githubassets.com/839b44e833355bfde070e3ab19f46926b13d7d9a989f48429fe1db802aeaff98/matzegebbe/k8s-copycat"
 postedAt: "2026-09-08T08:21:00.449Z"
 ---
 
 # k8s-copycat
 
-> Your cluster’s insurance policy: A non-invasive controller that preserves and replicates every container image your workloads need to a registry you control.
+k8s-copycat watches the container images referenced by Kubernetes workloads and copies them into a registry you control. It keeps a mirror of your runtime dependencies in AWS ECR or another Docker-compatible registry, without changing your workloads.
 
-## Table of Contents
+[Quick start](#quick-start) · [Configuration](#configuration-reference) · [Example configuration](#example-configuration) · [Troubleshooting](#observability-and-troubleshooting) · [Optional Kyverno use case](#use-case-copycat--kyverno-image-replacement)
 
-- [Overview](#overview)
-- [Why k8s-copycat?](#why-k8s-copycat)
-- [Key Capabilities](#key-capabilities)
-- [Getting Started](#getting-started)
-  - [Deploy with Kubernetes manifests](#deploy-with-kubernetes-manifests)
-- [Configuration](#configuration)
-  - [Environment variables](#environment-variables)
-  - [Digest-based mirroring](#digest-based-mirroring)
-  - [Watching workloads](#watching-workloads)
-  - [Repository prefix templating](#repository-prefix-templating)
-  - [Lifecycle policies](#lifecycle-policies)
-  - [Example configuration](#example-configuration)
-  - [Registry credentials](#registry-credentials)
-- [Troubleshooting mirrors](#troubleshooting-mirrors)
-- [Inspiration](#inspiration)
+## What does it do?
 
-## Overview
+An upstream image can disappear, a tag can be deleted or changed, and a public registry can become unavailable, overloaded, or rate-limited. k8s-copycat provides an insurance policy: preserve the images your cluster uses while they are still available, so you have your own copy when you need it.
 
-k8s-copycat monitors **Deployments**, **StatefulSets**, **DaemonSets**, **Jobs**, **CronJobs**, and **Pods** to mirror their container images into **AWS ECR** or any other Docker-compatible registry. It keeps your recovery registry in sync with what is actively running—no image swaps,…
+```mermaid
+flowchart LR
+    W[Kubernetes workloads] -->|reference images in| U[Upstream registry]
+    W -->|observed by| C[k8s-copycat]
+    U -->|image manifests and layers| C
+    C -->|copies images| R[Your registry]
+```
+
+The controller watches **Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, and Pods**, including regular, init, and ephemeral…
