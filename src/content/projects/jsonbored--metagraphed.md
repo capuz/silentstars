@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-14T13:35:02Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 67
 maintainers: ["JSONbored", "github-actions[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/bfb0cc440ffa21da5c30485d9e1be0fd930e17bdda36c832ab2d272b7f94a0f0/JSONbored/metagraphed"

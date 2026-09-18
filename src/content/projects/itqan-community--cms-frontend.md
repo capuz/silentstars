@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript", "HTML"]
 languagePcts: [67, 23]
 stars: 18
-forks: 34
+forks: 35
 openIssues: 9
 closedIssues: 73
 watchers: 0
@@ -19,7 +19,7 @@ lastCommitAt: "2026-09-16T13:47:11Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 84
 maintainers: ["Amr-Bendary", "AbdelrhmanMuhamed978", "hassaanalansary"]
 openGraphImageUrl: "https://opengraph.githubassets.com/500294bc74a050a5012ddad8d2e2beca94112f27455d66eb17bf45a164730c64/Itqan-community/cms-frontend"
