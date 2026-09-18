@@ -147,19 +147,6 @@ export function pickCta(seed: string): string {
   return CTAS[seededIndex(seed, CTAS.length)]!;
 }
 
-// One-line "why this one" pulled from the accumulative tags collect.ts already
-// computes (see src/components/ProjectCard.astro's tagLabels for the same
-// semantics) — first match wins, most specific first.
-export function narrativeHook(p: Project): string | null {
-  if (p.tags.includes('legacy_hero')) {
-    return `alive since ${new Date(p.createdAt).getFullYear()} and still shipping`;
-  }
-  if (p.revivedAfterMonths != null) return `revived after ${p.revivedAfterMonths} months of silence`;
-  if (p.tags.includes('solo_builder')) return 'built and maintained solo';
-  if (p.tags.includes('hidden_gem')) return `only ${p.stars} ⭐ so far`;
-  return null;
-}
-
 // GitHub topics as extra hashtags, skipping anything already covered by the
 // language tags and capped so the post doesn't turn into a hashtag wall.
 export function topicHashtags(topics: string[], langTags: string[], max = 2): string[] {
