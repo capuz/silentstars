@@ -311,6 +311,15 @@ jobs:
           name: og-images
           path: og-images
 
+      # The post's hook line is written by Claude Code on the maintainer's
+      # subscription. Without the secret the step is skipped and post.ts falls
+      # back to the README/description pitch.
+      - name: Install Claude Code CLI
+        env:
+          HAS_CLAUDE_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: |
+          if [ "$HAS_CLAUDE_TOKEN" = "true" ]; then npm install -g @anthropic-ai/claude-code; fi
+
       - name: Post to Bluesky
         id: post_bluesky
         run: |
@@ -325,6 +334,7 @@ jobs:
         env:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           BASE_URL:          https://capuz.github.io/silentstars
           DRY_RUN:           ${{ inputs.dry_run }}
           OG_DIR:            og-images
