@@ -16,6 +16,7 @@ data/*
 !data/latest.json
 !data/posted.json
 !data/promoted.json
+!data/translations.json
 
 # agent skills
 .agents/
