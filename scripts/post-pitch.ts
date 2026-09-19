@@ -6,25 +6,26 @@
  * description when it describes the project and otherwise leads with the first prose
  * sentence of the README, so the post says what the project does, not where it's at.
  *
- * generatePitch() is the upgrade: Claude Code (`claude -p`, on the maintainer's
- * subscription via CLAUDE_CODE_OAUTH_TOKEN) writes the hook from the README. Callers
- * fall back to buildPitch() whenever it returns null (no token, CLI missing, expired
- * login, unusable output), so the post never depends on it.
+ * generatePitch() is the last resort for weak cases (see needsLlmPitch): Claude Code
+ * (`claude -p`, on the maintainer's subscription via CLAUDE_CODE_OAUTH_TOKEN, see
+ * claude-cli.ts) writes the hook from whatever the project offers. Callers fall back to
+ * buildPitch() whenever it returns null (no token, CLI missing, expired login, unusable
+ * output), so the post never depends on it.
  */
 
-import { execFile } from 'node:child_process';
-import { readFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs';
-import { tmpdir } from 'node:os';
+import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { runClaude } from './claude-cli.ts';
 
 const CONTENT_DIR = join(process.cwd(), 'src', 'content', 'projects');
-const CLAUDE_TIMEOUT_MS = 90_000;
 
-type Env = Record<string, string | undefined>;
 type PitchInput = { name: string; description: string; readme: string };
 
 // Below this, a README sentence is a tagline fragment ("Fast and tiny.") that needs the next one.
 const MIN_SENTENCE_CHARS = 40;
+
+// A shorter description ("Self hosted PaaS") is too thin to carry the post on its own.
+const MIN_DESCRIPTION_CHARS = 30;
 
 // Says where the project is at, or where it lives, instead of what it does.
 const STATUS_RE = /\b(work[- ]in[- ]progress|wip|under (construction|development)|early (stage|development)|in development|not (yet )?ready|mirror of)\b/i;
@@ -83,10 +84,13 @@ export function buildPitch({ description, readme }: { description: string; readm
   return desc;
 }
 
-// On in CI once the subscription secret exists; PITCH_LLM=1 opts a local run in
-// (it then uses the local `claude` login instead of the token).
-export function llmPitchEnabled(env: Env = process.env): boolean {
-  return Boolean(env.CLAUDE_CODE_OAUTH_TOKEN) || env.PITCH_LLM === '1';
+// Claude is only worth calling when the deterministic pitch would be weak: a status,
+// empty, pointer-style or very short description AND no clear sentence in the README
+// to lead with. Everything else is served by buildPitch() without touching the CLI.
+export function needsLlmPitch({ description, readme }: { description: string; readme: string }): boolean {
+  const desc = description.trim();
+  const weakDescription = !isDescriptive(desc) || desc.length < MIN_DESCRIPTION_CHARS;
+  return weakDescription && readmeLead(readme) === '';
 }
 
 export function sanitizePitch(raw: string): string | null {
@@ -124,47 +128,9 @@ ${fenced || '(empty)'}
 </readme>`;
 }
 
-// Text-only call. The README is third-party content and the result gets published,
-// so the model gets no tools and the child process only sees what the CLI needs: the
-// Bluesky/GitHub secrets of the post step never reach it, and ANTHROPIC_API_KEY is
-// dropped so the call bills the subscription, not an API account.
-export function claudeInvocation(prompt: string, source: Env): { args: string[]; env: Record<string, string> } {
-  const env: Record<string, string> = {};
-  for (const key of ['PATH', 'HOME', 'CLAUDE_CODE_OAUTH_TOKEN']) {
-    if (source[key]) env[key] = source[key]!;
-  }
-  return {
-    args: [
-      '-p', prompt,
-      '--tools', '',
-      '--output-format', 'text',
-      '--model', 'haiku',
-      '--max-turns', '1',
-      '--no-session-persistence',
-      '--disable-slash-commands',
-      // No settings sources: a local run would otherwise load the user's hooks, language
-      // and CLAUDE.md, which eat the single turn or change the output language.
-      '--setting-sources', '',
-    ],
-    env,
-  };
-}
-
-function runClaude(prompt: string): Promise<string> {
-  const { args, env } = claudeInvocation(prompt, process.env);
-  // Scratch cwd: keeps the repo's CLAUDE.md, hooks and MCP config out of the call.
-  const cwd = mkdtempSync(join(tmpdir(), 'pitch-'));
-  return new Promise((resolve, reject) => {
-    execFile('claude', args, { env, cwd, timeout: CLAUDE_TIMEOUT_MS, maxBuffer: 1024 * 1024 }, (err, stdout) => {
-      rmSync(cwd, { recursive: true, force: true });
-      if (err) reject(err); else resolve(stdout);
-    });
-  });
-}
-
 export async function generatePitch(
   input: PitchInput,
-  run: (prompt: string) => Promise<string> = runClaude,
+  run: (prompt: string) => Promise<string> = prompt => runClaude(prompt),
 ): Promise<string | null> {
   try {
     const pitch = sanitizePitch(await run(buildPitchPrompt(input)));
