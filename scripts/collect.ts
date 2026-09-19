@@ -534,6 +534,17 @@ function rewriteRelativeLinks(markdown: string, repoUrl: string): string {
 // Main
 // ──────────────────────────────────────────────────────────────────────────────
 
+// Pages only render the first 1200 chars of the body; translating more would only make
+// each call slower and the cached entry bigger.
+function clipBody(text: string): string {
+  return text.length > 1200 ? text.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : text;
+}
+
+function writeProjectPage(mdPath: string, data: RepoData, source: string): void {
+  const body = source ? clipBody(source) : data.description;
+  writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
+}
+
 async function main() {
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
@@ -614,6 +625,8 @@ async function main() {
 
   const results: RepoData[] = [];
   const writtenSlugs = new Set<string>();
+  // Non-English pages wait here and are translated together after the loop.
+  const pendingTranslation: Array<{ repoStr: string; data: RepoData; slug: string; mdPath: string; cleanedReadme: string }> = [];
   const BATCH_SIZE = 10;
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
@@ -691,25 +704,7 @@ async function main() {
         : '';
       const readmeQualityOk = cleanedReadme.length >= README_MIN_PROSE_CHARS;
 
-      let description = raw.description ?? '';
-      let translatedBody = cleanedReadme;
-      let originalDescription: string | undefined;
-      let descriptionLang: string | undefined;
-
-      if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
-        // Pages only render the first 1200 chars of the body; translating more would
-        // only make each call slower and the cached entry bigger.
-        const bodyForTranslation = cleanedReadme.length > 1200
-          ? cleanedReadme.slice(0, 1200).replace(/\s+\S*$/, '') + '…'
-          : cleanedReadme;
-        const translation = await translator.translate(repoStr, { description, body: bodyForTranslation });
-        if (translation && translation.lang !== 'en') {
-          originalDescription = description;
-          descriptionLang = translation.lang;
-          description = translation.description;
-          translatedBody = translation.body;
-        }
-      }
+      const description = raw.description ?? '';
 
       const maintainerCounts: Record<string, number> = {};
       for (const c of commits) {
@@ -725,8 +720,6 @@ async function main() {
         repo: raw.nameWithOwner,
         name: raw.name,
         description,
-        originalDescription,
-        descriptionLang,
         readmeQualityOk,
         hasPage: false,
         url: raw.url,
@@ -790,16 +783,37 @@ async function main() {
         if (!isPosted && existsSync(mdPath)) unlinkSync(mdPath);
         continue;
       }
-      const body = translatedBody
-        ? (translatedBody.length > 1200 ? translatedBody.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : translatedBody)
-        : data.description;
       const postedEntry = postedByRepo.get(repoStr.toLowerCase());
       if (postedEntry) data.postedAt = postedEntry.postedAt;
 
-      writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
+      // Only pages that pass the checks above get translated: candidates discarded for
+      // low health used to be translated too, ~25 calls a night for nothing. The rest
+      // are translated together after the loop, a few calls at a time.
+      if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
+        pendingTranslation.push({ repoStr, data, slug, mdPath, cleanedReadme });
+        continue;
+      }
+
+      writeProjectPage(mdPath, data, cleanedReadme);
       writtenSlugs.add(slug);
     }
   }
+
+  const translations = await translator.translateAll(
+    pendingTranslation.map(p => ({ repo: p.repoStr, input: { description: p.data.description, body: clipBody(p.cleanedReadme) } })),
+  );
+  pendingTranslation.forEach((p, k) => {
+    const translation = translations[k];
+    let source = p.cleanedReadme;
+    if (translation && translation.lang !== 'en') {
+      p.data.originalDescription = p.data.description;
+      p.data.descriptionLang = translation.lang;
+      p.data.description = translation.description;
+      source = translation.body;
+    }
+    writeProjectPage(p.mdPath, p.data, source);
+    writtenSlugs.add(p.slug);
+  });
 
   // Remove orphan MDs whose repo is no longer in the active set
   const projectsDir = resolve(ROOT, 'src/content/projects');
