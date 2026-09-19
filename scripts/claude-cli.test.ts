@@ -74,3 +74,27 @@ test('runClaude gives up on a hung CLI at the timeout', async () => {
   await assert.rejects(runClaude('p', 300, base));
   assert.ok(Date.now() - t0 < 5_000, 'should have been killed near the 300ms timeout');
 });
+
+test('runClaude failure names the exit code and the CLI output, never the prompt', async () => {
+  const base = fakeClaude('echo "auth failed: token expired" >&2; exit 3');
+  await assert.rejects(runClaude('SECRET-README-TEXT', 5_000, base), (err: Error) => {
+    assert.match(err.message, /code 3/);
+    assert.match(err.message, /auth failed: token expired/);
+    assert.doesNotMatch(err.message, /SECRET-README-TEXT/);
+    return true;
+  });
+});
+
+test('runClaude failure includes what the CLI printed on stdout (it reports run errors there)', async () => {
+  const base = fakeClaude('echo "Error: Reached max turns (1)"; exit 1');
+  await assert.rejects(runClaude('p', 5_000, base), /Reached max turns/);
+});
+
+test('runClaude timeout says it timed out and does not echo the prompt', async () => {
+  const base = fakeClaude('exec sleep 10');
+  await assert.rejects(runClaude('SECRET-README-TEXT', 300, base), (err: Error) => {
+    assert.match(err.message, /timed out/i);
+    assert.doesNotMatch(err.message, /SECRET-README-TEXT/);
+    return true;
+  });
+});

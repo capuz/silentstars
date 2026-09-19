@@ -64,7 +64,9 @@ type Run = (prompt: string) => Promise<string>;
 // Bump when the prompt or the result shape changes: it invalidates every cached entry.
 export const TRANSLATION_PROMPT_VERSION = 1;
 
-const TRANSLATION_TIMEOUT_MS = 60_000;
+// In CI a call averages ~35 s (a 60 s cap timed one out); 3 failures in a row at this cap
+// still bound the damage to ~6 min.
+const TRANSLATION_TIMEOUT_MS = 120_000;
 const MAX_CONSECUTIVE_FAILURES = 3;
 
 // The description and README are third-party text: strip our own fence tags from them
