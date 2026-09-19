@@ -9,7 +9,7 @@ language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
 stars: 7
-forks: 115
+forks: 116
 openIssues: 0
 closedIssues: 2
 watchers: 3
@@ -20,7 +20,7 @@ lastCommitAt: "2026-09-18T09:36:48Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 92
 maintainers: ["m00nyONE", "SoulHagans", "TransplantDude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/287fb5edc54d8e8b4f91694ea9e01b1d119cf3a38709f071c502eb6309347795/m00nyONE/LibCustomIcons"

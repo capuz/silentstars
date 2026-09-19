@@ -20,7 +20,7 @@ lastCommitAt: "2026-09-18T02:39:10Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 73
 maintainers: ["credfeto"]
 openGraphImageUrl: "https://opengraph.githubassets.com/60d8520a33da942fdb26f22d377f0eb454a4fd4a1a5fd9839a7788381bd5e4e7/funfair-tech/BuildBot"
