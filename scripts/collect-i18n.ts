@@ -68,6 +68,7 @@ export const TRANSLATION_PROMPT_VERSION = 1;
 // still bound the damage to ~6 min.
 const TRANSLATION_TIMEOUT_MS = 120_000;
 const MAX_CONSECUTIVE_FAILURES = 3;
+const DEFAULT_CONCURRENCY = 4;
 
 // The description and README are third-party text: strip our own fence tags from them
 // so they can't close a fence early and smuggle instructions outside of it.
@@ -151,35 +152,55 @@ export function createTranslator({
   const stats = { hits: 0, calls: 0, failures: 0 };
   let consecutiveFailures = 0;
 
+  async function translate(repo: string, input: TranslationInput): Promise<TranslationResult | null> {
+    const hash = translationHash(input);
+    const cached = used[repo] ?? cache[repo];
+    if (cached && cached.hash === hash) {
+      used[repo] = cached;
+      stats.hits++;
+      return { lang: cached.lang, description: cached.description, body: cached.body };
+    }
+
+    if (!enabled || consecutiveFailures >= maxConsecutiveFailures) return null;
+
+    stats.calls++;
+    const result = await translateToEnglish(input, run);
+    if (!result) {
+      stats.failures++;
+      consecutiveFailures++;
+      if (consecutiveFailures === maxConsecutiveFailures) {
+        console.warn(`  ⚠ translation: ${maxConsecutiveFailures} failures in a row, skipping it for the rest of this run`);
+      }
+      return null;
+    }
+
+    consecutiveFailures = 0;
+    used[repo] = { hash, ...result };
+    return result;
+  }
+
+  // A call takes ~20-60 s in CI, so a nightly with dozens of them has to overlap a few.
+  // Results come back in the order of `items`; the circuit breaker is checked before each start.
+  async function translateAll(
+    items: Array<{ repo: string; input: TranslationInput }>,
+    concurrency = DEFAULT_CONCURRENCY,
+  ): Promise<Array<TranslationResult | null>> {
+    const results: Array<TranslationResult | null> = new Array(items.length).fill(null);
+    let next = 0;
+    const worker = async () => {
+      while (next < items.length) {
+        const i = next++;
+        results[i] = await translate(items[i]!.repo, items[i]!.input);
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(Math.max(concurrency, 1), items.length) }, worker));
+    return results;
+  }
+
   return {
     stats,
-
-    async translate(repo: string, input: TranslationInput): Promise<TranslationResult | null> {
-      const hash = translationHash(input);
-      const cached = used[repo] ?? cache[repo];
-      if (cached && cached.hash === hash) {
-        used[repo] = cached;
-        stats.hits++;
-        return { lang: cached.lang, description: cached.description, body: cached.body };
-      }
-
-      if (!enabled || consecutiveFailures >= maxConsecutiveFailures) return null;
-
-      stats.calls++;
-      const result = await translateToEnglish(input, run);
-      if (!result) {
-        stats.failures++;
-        consecutiveFailures++;
-        if (consecutiveFailures === maxConsecutiveFailures) {
-          console.warn(`  ⚠ translation: ${maxConsecutiveFailures} failures in a row, skipping it for the rest of this run`);
-        }
-        return null;
-      }
-
-      consecutiveFailures = 0;
-      used[repo] = { hash, ...result };
-      return result;
-    },
+    translate,
+    translateAll,
 
     // Only what this run needed: entries for repos that dropped out are pruned on save.
     entries(): TranslationCache {

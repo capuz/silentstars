@@ -206,3 +206,71 @@ test('cache file round-trips, is written with sorted keys, and a missing or corr
   writeFileSync(path, '{ this is not json');
   assert.deepEqual(loadTranslationCache(path), {});
 });
+
+// ── translateAll: bounded concurrency ────────────────────────────────────────
+
+function delayed(outputs: Array<string | Error>, ms = 15) {
+  let active = 0;
+  let peak = 0;
+  let n = 0;
+  const run = async (_prompt: string) => {
+    const out = outputs[Math.min(n++, outputs.length - 1)]!;
+    active++;
+    peak = Math.max(peak, active);
+    await new Promise(r => setTimeout(r, ms));
+    active--;
+    if (out instanceof Error) throw out;
+    return out;
+  };
+  return { run, peak: () => peak, calls: () => n };
+}
+
+const items = (n: number) => Array.from({ length: n }, (_, i) => ({
+  repo: `r/${i}`,
+  input: { description: `描述 ${i} 的内容文字`, body: `正文 ${i}` },
+}));
+
+test('translateAll returns one result per item, in the same order', async () => {
+  const outputs = Array.from({ length: 6 }, (_, i) => `{"lang":"zh","description":"d${i}","body":"b${i}"}`);
+  // the fake hands out outputs by call order, so map them back through the prompt instead
+  const run = async (prompt: string) => {
+    const idx = Number(prompt.match(/描述 (\d+) 的/)![1]);
+    await new Promise(r => setTimeout(r, 30 - idx * 4));   // later items finish first
+    return outputs[idx]!;
+  };
+  const t = createTranslator({ enabled: true, cache: {}, run });
+  const results = await t.translateAll(items(6), 3);
+  assert.deepEqual(results.map(r => r?.description), ['d0', 'd1', 'd2', 'd3', 'd4', 'd5']);
+});
+
+test('translateAll never runs more than the given concurrency at once, but does run in parallel', async () => {
+  const { run, peak, calls } = delayed([zhJson]);
+  const t = createTranslator({ enabled: true, cache: {}, run });
+  await t.translateAll(items(9), 4);
+  assert.equal(calls(), 9);
+  assert.equal(peak(), 4);
+});
+
+test('translateAll serves cached items without calling Claude', async () => {
+  const its = items(4);
+  const cache = Object.fromEntries(its.slice(0, 3).map(i => [i.repo, { hash: translationHash(i.input), lang: 'zh', description: 'c', body: 'c' }]));
+  const { run, calls } = delayed([zhJson]);
+  const t = createTranslator({ enabled: true, cache, run });
+  const results = await t.translateAll(its, 4);
+  assert.equal(calls(), 1);
+  assert.deepEqual(results.slice(0, 3).map(r => r?.description), ['c', 'c', 'c']);
+  assert.equal(results[3]?.lang, 'zh');
+});
+
+test('translateAll keeps the circuit breaker: with concurrency 1, three failures stop the rest', async () => {
+  const { run, calls } = delayed([new Error('down')]);
+  const t = createTranslator({ enabled: true, cache: {}, run });
+  const results = await t.translateAll(items(8), 1);
+  assert.equal(calls(), 3);
+  assert.ok(results.every(r => r === null));
+});
+
+test('translateAll handles an empty list', async () => {
+  const t = createTranslator({ enabled: true, cache: {}, run: async () => zhJson });
+  assert.deepEqual(await t.translateAll([], 4), []);
+});
