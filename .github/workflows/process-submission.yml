@@ -10,7 +10,6 @@ permissions:
   actions: write
   pages: write
   id-token: write
-  models: read
 
 jobs:
   # ─────────────────────────────────────────────────────────────
@@ -68,11 +67,24 @@ jobs:
           BASE_URL:            https://capuz.github.io/silentstars
           BUTTONDOWN_API_KEY:  ${{ secrets.BUTTONDOWN_API_KEY }}
 
+      # The AI take is written by Claude Code on the maintainer's subscription.
+      # Without the secret the step is skipped and ai-opinion.ts posts nothing.
+      # Only for accepted submissions: any outsider can open an issue, and each
+      # take spends the maintainer's quota.
+      - name: Install Claude Code CLI
+        if: always() && steps.validate.outputs.status == 'accepted'
+        continue-on-error: true
+        env:
+          HAS_CLAUDE_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: |
+          if [ "$HAS_CLAUDE_TOKEN" = "true" ]; then npm install -g @anthropic-ai/claude-code; fi
+
       - name: AI opinion on submitted project
-        if: always() && steps.validate.outputs.repo != ''
+        if: always() && steps.validate.outputs.status == 'accepted'
         continue-on-error: true
         env:
           GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           SUBMISSION_REPO:  ${{ steps.validate.outputs.repo }}
           ISSUE_NUMBER:     ${{ github.event.issue.number }}
           REPO_OWNER:       ${{ github.repository_owner }}
