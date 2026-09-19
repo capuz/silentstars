@@ -11,7 +11,7 @@ languagePcts: [71, 25]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "fastapi", "langgraph", "llm-agent", "mcp"]
 stars: 10
 forks: 8
-openIssues: 19
+openIssues: 20
 closedIssues: 873
 watchers: 0
 contributors: 5
