@@ -8,7 +8,8 @@ import {
   loadCommunityTags, seededIndex, truncate, slugify,
   pickOpener, pickCta, topicHashtags,
 } from './post-shared.ts';
-import { buildPitch, generatePitch, llmPitchEnabled, readmeExcerpt } from './post-pitch.ts';
+import { claudeEnabled } from './claude-cli.ts';
+import { buildPitch, generatePitch, needsLlmPitch, readmeExcerpt } from './post-pitch.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
@@ -121,19 +122,22 @@ async function main(): Promise<void> {
   const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
 
   // The raw GitHub description is often status text ("Work in progress …"), so
-  // the post leads with what the project does: written by Claude from the README
-  // when available, otherwise taken from the README/description deterministically.
+  // the post leads with what the project does, taken from its README/description.
+  // Claude only writes it when that would come out weak (needsLlmPitch): a status,
+  // empty or very short description and no clear sentence in the README.
   const description = project.description ?? '';
   const readme      = readmeExcerpt(slugify(project.repo));
-  const claudePitch = llmPitchEnabled()
+  const weak        = needsLlmPitch({ description, readme });
+  const claudePitch = weak && claudeEnabled()
     ? await generatePitch({ name: project.name, description, readme })
     : null;
-  const pitch = claudePitch ?? buildPitch({ description, readme });
+  const pitch  = claudePitch ?? buildPitch({ description, readme });
+  const source = claudePitch ? 'claude' : weak ? 'fallback: weak pitch, claude unavailable' : 'readme/description';
 
   const { text, facets, embed, siteUrl } = buildPost(project, baseUrl, pitch);
 
   console.log('─── post preview ───');
-  console.log(`─── pitch (${claudePitch ? 'claude' : 'fallback'}): ${pitch}`);
+  console.log(`─── pitch (${source}): ${pitch}`);
   console.log(text);
   console.log(`─── ${[...text].length} graphemes ───`);
   console.log(`─── card → ${siteUrl}`);

@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
   buildPitch, readmeExcerpt,
-  llmPitchEnabled, sanitizePitch, buildPitchPrompt, claudeInvocation, generatePitch,
+  needsLlmPitch, sanitizePitch, buildPitchPrompt, generatePitch,
 } from './post-pitch.ts';
 
 test('readmeExcerpt drops frontmatter and caps length', () => {
@@ -99,14 +99,41 @@ test('buildPitch returns empty string when there is nothing at all', () => {
   assert.equal(buildPitch({ description: '', readme: '' }), '');
 });
 
-// ── Claude pitch (subscription, via `claude -p`) ─────────────────────────────
+// ── When Claude is worth calling: only if the deterministic pitch would be weak ──
 
-test('llmPitchEnabled is on with a subscription token or an explicit local opt-in, off otherwise', () => {
-  assert.equal(llmPitchEnabled({ CLAUDE_CODE_OAUTH_TOKEN: 'tok' }), true);
-  assert.equal(llmPitchEnabled({ PITCH_LLM: '1' }), true);
-  assert.equal(llmPitchEnabled({}), false);
-  assert.equal(llmPitchEnabled({ CLAUDE_CODE_OAUTH_TOKEN: '', PITCH_LLM: '0' }), false);
+const CLEAR_README = '# x\n\nSacrecant is a co-op dungeon crawler where you and three friends descend into procedurally generated crypts.';
+
+test('needsLlmPitch is false when the description already says what the project does', () => {
+  assert.equal(needsLlmPitch({ description: 'A simple gold based Economy plugin that just works', readme: '' }), false);
 });
+
+test('needsLlmPitch is false when the description is status text but the README has a clear sentence', () => {
+  assert.equal(needsLlmPitch({ description: 'Work in progress dungeon romp', readme: CLEAR_README }), false);
+});
+
+test('needsLlmPitch is false when the description is very short but the README has a clear sentence', () => {
+  assert.equal(needsLlmPitch({ description: 'Self hosted PaaS', readme: CLEAR_README }), false);
+});
+
+test('needsLlmPitch is true when the description is status text and the README has nothing usable', () => {
+  assert.equal(needsLlmPitch({ description: 'Work in progress dungeon romp', readme: '# x\n\n## Usage\n' }), true);
+});
+
+test('needsLlmPitch is true when the README lead is itself status text', () => {
+  const readme = '# x\n\nThis project is a work in progress and not ready for use yet, so expect breakage everywhere.';
+  assert.equal(needsLlmPitch({ description: 'WIP', readme }), true);
+});
+
+test('needsLlmPitch is true for an empty description or a bare pointer with no README', () => {
+  assert.equal(needsLlmPitch({ description: '', readme: '' }), true);
+  assert.equal(needsLlmPitch({ description: 'Mirror of https://git.fsfe.org/x', readme: '' }), true);
+});
+
+test('needsLlmPitch is true when the description is very short and the README has nothing usable', () => {
+  assert.equal(needsLlmPitch({ description: 'Self hosted PaaS', readme: '# x' }), true);
+});
+
+// ── Claude pitch (subscription, via `claude -p`) ─────────────────────────────
 
 test('sanitizePitch collapses whitespace and strips wrapping quotes', () => {
   assert.equal(
@@ -151,40 +178,9 @@ test('buildPitchPrompt does not let the README close its own fence early', () =>
   assert.equal(prompt.split('<readme>').length - 1, 1);
 });
 
-test('claudeInvocation runs text-only: every tool disabled, no session kept, no slash commands', () => {
-  const { args } = claudeInvocation('the prompt', {});
-  assert.deepEqual(args.slice(0, 2), ['-p', 'the prompt']);
-  const tools = args.indexOf('--tools');
-  assert.notEqual(tools, -1);
-  assert.equal(args[tools + 1], '');
-  assert.ok(args.includes('--no-session-persistence'));
-  assert.ok(args.includes('--disable-slash-commands'));
-  assert.equal(args[args.indexOf('--output-format') + 1], 'text');
-});
-
-test('claudeInvocation loads no settings sources, so user hooks/language/CLAUDE.md cannot leak into the call', () => {
-  const { args } = claudeInvocation('the prompt', {});
-  const i = args.indexOf('--setting-sources');
-  assert.notEqual(i, -1);
-  assert.equal(args[i + 1], '');
-});
-
 test('buildPitchPrompt asks for English whatever language the project is written in', () => {
   const french = { ...input, description: "Dépôt contenant les ressources d'un cours en IA", readme: 'Un cours pratique.' };
   assert.match(buildPitchPrompt(french), /in English/i);
-});
-
-test('claudeInvocation env keeps only what the CLI needs and drops every other secret', () => {
-  const { env } = claudeInvocation('p', {
-    PATH: '/bin', HOME: '/home/x', CLAUDE_CODE_OAUTH_TOKEN: 'sub-token',
-    BSKY_APP_PASSWORD: 'secret', BSKY_IDENTIFIER: 'me', GITHUB_TOKEN: 'ghs', ANTHROPIC_API_KEY: 'sk-ant',
-  });
-  assert.deepEqual(env, { PATH: '/bin', HOME: '/home/x', CLAUDE_CODE_OAUTH_TOKEN: 'sub-token' });
-});
-
-test('claudeInvocation omits the token from env when there is none (local subscription login)', () => {
-  const { env } = claudeInvocation('p', { PATH: '/bin', HOME: '/home/x', ANTHROPIC_API_KEY: 'sk-ant' });
-  assert.deepEqual(env, { PATH: '/bin', HOME: '/home/x' });
 });
 
 test('generatePitch returns the sanitized model text and sends the built prompt', async () => {
