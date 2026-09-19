@@ -8,20 +8,20 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [100]
 stars: 15
-forks: 32
+forks: 33
 openIssues: 0
 closedIssues: 0
 watchers: 17
 contributors: 37
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-09-18T13:49:47Z"
+lastCommitAt: "2026-09-19T01:06:33Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 65
-maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c127db675b76eb592547c193c39585a2837beceabe970cfcb818c25f5e57cccf/InjectiveLabs/injective-lists"
+maintainers: ["actions-user", "ThomasRalee"]
+openGraphImageUrl: "https://opengraph.githubassets.com/4e7e58efefbf51462bcf825a76d7f502dddec377bfc959a3d03317dbe6200d97/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 

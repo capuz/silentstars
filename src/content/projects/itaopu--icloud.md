@@ -1,7 +1,9 @@
 ---
 repo: "iTaoPu/iCloud"
 name: "iCloud"
-description: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
+description: "'Leisure' is the punctuation of life, responsible for cutting long days into poetry!"
+originalDescription: "“閒“是生活的標點， 負責把冗長的日子切割成詩！"
+descriptionLang: "zh"
 readmeQualityOk: false
 url: "https://github.com/iTaoPu/iCloud"
 language: "JavaScript"
@@ -25,16 +27,16 @@ openGraphImageUrl: "https://opengraph.githubassets.com/e02d19a7fd95ddffd69f13317
 postedAt: "2026-07-04T19:30:50.124Z"
 ---
 
-### 📖说明
-所有播放源均收集于互联网🌐，仅供**测试研究使用**，不得**商用**。
+### 📖 Instructions
+All playback sources are collected from the Internet 🌐, for **testing and research use only**, **commercial use is prohibited**.
 
 
-本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
+This project does not store any streaming media content. All legal responsibilities and consequences should be borne by the users themselves.
 
 <p>
 </p>
 
-### 💡致谢：
-- GitHub及互联网其他资源[`特别感谢`]
+### 💡 Acknowledgments:
+- GitHub and other Internet resources [`Special thanks`]
 
 </p>
