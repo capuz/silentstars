@@ -50,14 +50,30 @@ export function claudeInvocation(prompt: string, source: Env): { args: string[];
   };
 }
 
+type ExecError = Error & { code?: number | string; killed?: boolean; signal?: string };
+
+// Node's own message is "Command failed: claude -p <the whole prompt>": it hides the
+// cause and copies third-party README text into (public) CI logs. The CLI reports run
+// errors on stdout ("Error: Reached max turns"), so the tail of either stream is the cause.
+function describeFailure(err: ExecError, stdout: string, stderr: string, timeoutMs: number): string {
+  const detail = (stderr.trim() || stdout.trim()).replace(/\s+/g, ' ').slice(-300);
+  const why = err.killed
+    ? `timed out after ${Math.round(timeoutMs / 1000)}s`
+    : err.code === 'ENOENT'
+      ? 'is not installed (ENOENT)'
+      : `exited with code ${err.code ?? err.signal ?? 'unknown'}`;
+  return `claude ${why}${detail ? `: ${detail}` : ''}`;
+}
+
 export function runClaude(prompt: string, timeoutMs = DEFAULT_TIMEOUT_MS, source: Env = process.env): Promise<string> {
   const { args, env } = claudeInvocation(prompt, source);
   // Scratch cwd: keeps the repo's CLAUDE.md, hooks and MCP config out of the call.
   const cwd = mkdtempSync(join(tmpdir(), 'claude-cli-'));
   return new Promise((resolve, reject) => {
-    execFile('claude', args, { env, cwd, timeout: timeoutMs, maxBuffer: 1024 * 1024 }, (err, stdout) => {
+    execFile('claude', args, { env, cwd, timeout: timeoutMs, maxBuffer: 1024 * 1024 }, (err, stdout, stderr) => {
       rmSync(cwd, { recursive: true, force: true });
-      if (err) reject(err); else resolve(stdout);
+      if (err) reject(new Error(describeFailure(err as ExecError, stdout, stderr, timeoutMs)));
+      else resolve(stdout);
     });
   });
 }
