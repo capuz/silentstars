@@ -12,7 +12,8 @@
 import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { looksNonEnglish, translateToEnglish } from './collect-i18n.ts';
+import { claudeEnabled } from './claude-cli.ts';
+import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify } from './post-shared.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -605,6 +606,12 @@ async function main() {
   const now = Date.now();
   const since180d = new Date(now - 180 * DAY_MS).toISOString();
 
+  // Translations are cached by repo + source text (data/translations.json), so a
+  // project only costs a Claude call the first time or when its text changes.
+  const translationsPath = resolve(ROOT, 'data/translations.json');
+  const translator = createTranslator({ enabled: claudeEnabled(), cache: loadTranslationCache(translationsPath) });
+  if (!claudeEnabled()) console.log('ℹ️  Claude CLI not configured: translations are served from cache only');
+
   const results: RepoData[] = [];
   const writtenSlugs = new Set<string>();
   const BATCH_SIZE = 10;
@@ -613,7 +620,7 @@ async function main() {
     const batch = repos.slice(i, i + BATCH_SIZE);
 
     // Fetch the batch concurrently; processing stays sequential so translation
-    // calls (GitHub Models free tier) never run in parallel.
+    // calls never run in parallel.
     const raws = await Promise.all(
       batch.map(repoStr => {
         const [owner, name] = repoStr.split('/');
@@ -690,12 +697,12 @@ async function main() {
       let descriptionLang: string | undefined;
 
       if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
-        // Pages only render the first 1200 chars of the body; translating more than
-        // that can overflow max_tokens and truncate the JSON response mid-string.
+        // Pages only render the first 1200 chars of the body; translating more would
+        // only make each call slower and the cached entry bigger.
         const bodyForTranslation = cleanedReadme.length > 1200
           ? cleanedReadme.slice(0, 1200).replace(/\s+\S*$/, '') + '…'
           : cleanedReadme;
-        const translation = await translateToEnglish(token, { description, body: bodyForTranslation });
+        const translation = await translator.translate(repoStr, { description, body: bodyForTranslation });
         if (translation && translation.lang !== 'en') {
           originalDescription = description;
           descriptionLang = translation.lang;
@@ -814,6 +821,11 @@ async function main() {
   for (const data of results) {
     data.hasPage = writtenSlugs.has(slugify(data.repo));
   }
+
+  // Always written (even empty) so the workflow's `git add data/translations.json` has a file.
+  saveTranslationCache(translationsPath, translator.entries());
+  const { hits, calls, failures } = translator.stats;
+  console.log(`🌐  Translations: ${hits} from cache, ${calls - failures} translated, ${failures} failed`);
 
   const output: LatestJson = { collectedAt: new Date().toISOString(), projects: results };
   writeFileSync(latestPath, JSON.stringify(output, null, 2));
