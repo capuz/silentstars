@@ -1395,5 +1395,16 @@
         "postedAt": "2026-09-19T08:22:57.857Z"
       }
     }
+  },
+  {
+    "repo": "xima-media/xima-typo3-frontend-edit",
+    "slug": "xima-media--xima-typo3-frontend-edit",
+    "postedAt": "2026-09-20T08:56:12.336Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mvwtb4fin62g",
+        "postedAt": "2026-09-20T08:56:12.336Z"
+      }
+    }
   }
 ]
