@@ -16,14 +16,14 @@ watchers: 2
 contributors: 20
 recentReleases: 4
 createdAt: "2025-09-21T12:19:40Z"
-lastCommitAt: "2026-09-04T13:51:47Z"
+lastCommitAt: "2026-09-20T06:02:43Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
-status: "quiet"
+status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 90
+healthScore: 96
 undervaluedScore: 85
 maintainers: ["genedna", "NJUWallSpider", "jiatianbo666"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dde4561a283956d4899eb64f4dd450d0f2b630567c80165483c231317ec91e9e/libra-tools/git-internal"
+openGraphImageUrl: "https://opengraph.githubassets.com/ca133555b8960bd1c197a28d423abfe0b687ea211017ea666abd0094b4afd7df/libra-tools/git-internal"
 postedAt: "2026-07-29T06:18:55.015Z"
 ---
 

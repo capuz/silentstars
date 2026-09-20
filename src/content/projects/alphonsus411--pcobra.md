@@ -7,7 +7,7 @@ url: "https://github.com/Alphonsus411/pCobra"
 language: "Python"
 languages: ["Python"]
 languagePcts: [98]
-stars: 10
+stars: 12
 forks: 3
 openIssues: 0
 closedIssues: 1
@@ -15,11 +15,11 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-10-08T17:21:01Z"
-lastCommitAt: "2026-09-19T06:35:43Z"
+lastCommitAt: "2026-09-20T08:24:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
-undervaluedScore: 76
+undervaluedScore: 73
 maintainers: ["Alphonsus411"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/869667402/d398500f-a3a6-40d2-9e97-7ecddfb5fcdb"
 discussionCount: 1

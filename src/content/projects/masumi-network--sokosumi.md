@@ -14,15 +14,16 @@ openIssues: 3
 closedIssues: 84
 watchers: 1
 contributors: 13
-recentReleases: 0
+recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-19T07:55:25Z"
+lastCommitAt: "2026-09-20T08:35:04Z"
+lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 80
+undervaluedScore: 82
 maintainers: ["mrosberghaus", "schaier-io", "francisluz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4b491aca6efe3f914f6d5ecef00c65d0a8812eab559383744b74b4ec2b5e13e1/masumi-network/sokosumi"
+openGraphImageUrl: "https://opengraph.githubassets.com/7ff40d044f85cb2395cb65dba7f69b627fc633fa4167e152b2f54c9be5710d08/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -45,9 +46,9 @@ sokosumi/
 │   ├── utils/       # @sokosumi/utils — client-safe helpers
 │   ├── net/         # @sokosumi/net — SSRF-safe fetch
 │   ├── email/       # @sokosumi/email — renderers and locales
-│   ├── chat/        # @sokosumi/chat — chat types
 │   ├── ai-provider/ # @sokosumi/ai-provider — Sokosumi AI SDK provider
 │   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (runtime is in Core)
 ├── docs/            # Agent, domain, coworker, and design docs
 ├── scripts/         # local-env, cloud-agent-db, CI helpers
-├── skills/…
+├── skills/          # First-party agent skill sources
+├──…

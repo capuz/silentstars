@@ -1,0 +1,59 @@
+---
+repo: "Matroska-Org/libebml"
+name: "libebml"
+description: "a C++ library to parse EBML files"
+readmeQualityOk: true
+url: "https://github.com/Matroska-Org/libebml"
+language: "C++"
+languages: ["C++"]
+languagePcts: [95]
+stars: 164
+forks: 49
+openIssues: 28
+closedIssues: 45
+watchers: 10
+contributors: 21
+recentReleases: 0
+createdAt: "2013-01-02T12:55:31Z"
+lastCommitAt: "2026-09-20T08:47:23Z"
+status: "thriving"
+tags: ["legacy_hero"]
+healthScore: 74
+undervaluedScore: 29
+maintainers: ["robUx4", "mbunkus", "ConstrictM"]
+openGraphImageUrl: "https://opengraph.githubassets.com/e190f1f4c2b198860cd6e096e224815f396e62be4d7096912be4bad639994eb7/Matroska-Org/libebml"
+---
+
+# libebml
+a C++ library to parse EBML files
+
+Specifications may be rendered at http://matroska-org.github.io/libebml/
+
+# Building and installing
+
+## Building and installing the library
+
+libebml is based on `cmake` and requires only a C++ compiler
+supporting at least the C++17 standard. This means that the normal
+build process consists of the usual steps:
+
+1. Create a build directory: `mkdir build ; cd build`
+2. Generate the make file: `cmake ..`
+3. Compilation: `make`
+4. Installation (run this as root): `make install`
+
+## Customizing what's build with options
+
+By default only a static library is built.
+
+This library supports the usual `cmake` options for specifying
+installation paths (e.g. `-DCMAKE_INSTALL_PREFIX=/opt/libebml`). The
+following additional `cmake` options are supported:
+
+* `-DDISABLE_PKGCONFIG=YES` — don't generate and install the
+  `libebml.pc` package configuration module for `pkg-config`
+* `-DDISABLE_CMAKE_CONFIG=YES` — don't generate and install the
+  package configuration module for `cmake`. Note that building
+  `libebml` requires that the `cmake` configuration is available.
+* `-DBUILD_SHARED_LIBS=YES` — build the shared library instead of the
+  static one…
