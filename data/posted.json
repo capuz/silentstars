@@ -1415,6 +1415,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mvzf6cbfdn24",
         "postedAt": "2026-09-21T09:22:04.623Z"
+      },
+      "ownerEmail": {
+        "url": "etalab@modernisation.gouv.fr",
+        "postedAt": "2026-09-21T09:22:28.772Z"
       }
     }
   }
