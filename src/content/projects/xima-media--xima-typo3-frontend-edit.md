@@ -25,6 +25,7 @@ healthScore: 97
 undervaluedScore: 71
 maintainers: ["konradmichalik", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/32ead856d19dc2d7665ab6cdcb1e9dc6350bdfdd1ffcb3dd718ed2bb7c956f94/xima-media/xima-typo3-frontend-edit"
+postedAt: "2026-09-20T08:56:12.336Z"
 ---
 
 # TYPO3 extension `xima_typo3_frontend_edit`

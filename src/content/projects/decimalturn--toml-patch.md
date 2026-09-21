@@ -11,7 +11,7 @@ languagePcts: [88]
 topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsing", "toml-edit", "toml-patch", "comments", "toml-format", "toml-formatter"]
 stars: 9
 forks: 0
-openIssues: 2
+openIssues: 3
 closedIssues: 11
 watchers: 1
 contributors: 3
@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-15T14:22:59Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 95
+healthScore: 93
 undervaluedScore: 74
 maintainers: ["DecimalTurn", "renovate[bot]", "jleme"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5c8e9996f0ee3cc6c219c9aa37c17a283306baa0363a9f589dadb4b4ec3f978d/DecimalTurn/toml-patch"

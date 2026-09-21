@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-18T16:13:50Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]
 openGraphImageUrl: "https://opengraph.githubassets.com/20e287f8c2f60ec7ee903a711636524c49655e815eb347e8c466117641a97868/AlexWaygood/typeshed-stats"

@@ -9,21 +9,21 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [67, 33]
 stars: 54
-forks: 134
+forks: 137
 openIssues: 0
 closedIssues: 1
 watchers: 1
 contributors: 6
 recentReleases: 10
 createdAt: "2025-09-18T01:24:53Z"
-lastCommitAt: "2026-09-20T04:48:02Z"
+lastCommitAt: "2026-09-21T05:19:38Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 69
+undervaluedScore: 70
 maintainers: ["SN-Abdullah-Al-Noman"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9b325bdc7a52581572a813a111b64ecbbc3d679aa375c22135b6c290a4ebbb15/SN-Abdullah-Al-Noman/QuantumROM"
+openGraphImageUrl: "https://opengraph.githubassets.com/5b9a3d4c60a66c3d3754803c51891ada4336333779aec9948b2f67ef736bc9ff/SN-Abdullah-Al-Noman/QuantumROM"
 postedAt: "2026-09-19T08:22:57.857Z"
 ---
 
@@ -38,7 +38,7 @@ This Custom ROM is built by combining and refining features from multiple projec
 
 ### ✨ Key Features.
 - System Optimization.
-- Heavy debloated system (removed unnecessary apps & services).
+- Heavy debloated system (removed unnecessary apps & services). Custom debloat like samsung dex, samsung bixby.
 - Improved performance and smoother UI experience.
 - Optimized background processes.
 - Better battery efficiency.
@@ -56,5 +56,4 @@ This Custom ROM is built by combining and refining features from multiple projec
 - [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher) integrated
 
 ### 🔐 Security & Privacy.
-- Secure Folder support.
-- Essential security components…
+- Secure…

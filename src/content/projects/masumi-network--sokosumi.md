@@ -16,14 +16,14 @@ watchers: 1
 contributors: 13
 recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-20T08:35:04Z"
+lastCommitAt: "2026-09-21T09:09:56Z"
 lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 82
-maintainers: ["mrosberghaus", "schaier-io", "francisluz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7ff40d044f85cb2395cb65dba7f69b627fc633fa4167e152b2f54c9be5710d08/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "schaier-io", "Sarthib7"]
+openGraphImageUrl: "https://opengraph.githubassets.com/2f23dbb7cd2a1a14ebcbf65a1f12d3099c5aa5e844afc17f81373a1209770ddd/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -39,7 +39,7 @@ sokosumi/
 │   ├── web/         # Next.js 16 web app (TypeScript, Tailwind, Shadcn UI)
 │   ├── core/        # Hono API — owns all Postgres/Prisma access
 │   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
-│   └── cli/         # Developer CLI — private sokosumi package (SPEC + VISION)
+│   └── cli/         # Developer CLI — Ink TUI and headless commands (SPEC + VISION)
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma client, helpers, repositories
 │   ├── masumi/      # @sokosumi/masumi — protocol clients, hash, schemas

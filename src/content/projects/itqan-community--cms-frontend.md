@@ -13,14 +13,14 @@ openIssues: 9
 closedIssues: 73
 watchers: 0
 contributors: 19
-recentReleases: 2
+recentReleases: 0
 createdAt: "2025-08-26T17:37:40Z"
 lastCommitAt: "2026-09-16T13:47:11Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
 healthScore: 94
-undervaluedScore: 82
+undervaluedScore: 77
 maintainers: ["Amr-Bendary", "AbdelrhmanMuhamed978", "hassaanalansary"]
 openGraphImageUrl: "https://opengraph.githubassets.com/500294bc74a050a5012ddad8d2e2beca94112f27455d66eb17bf45a164730c64/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"

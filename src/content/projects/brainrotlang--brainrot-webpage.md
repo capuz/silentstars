@@ -20,7 +20,7 @@ createdAt: "2024-12-14T18:36:58Z"
 lastCommitAt: "2026-09-15T10:01:55Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 90
 maintainers: ["leo-aa88", "cursoragent", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ff40ff1a1bd60f174d496ecff086042e9609fe2cd7989c6a96600e5299f77736/Brainrotlang/brainrot-webpage"
