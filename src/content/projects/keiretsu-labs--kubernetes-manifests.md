@@ -7,7 +7,7 @@ url: "https://github.com/keiretsu-labs/kubernetes-manifests"
 homepage: "https://keiretsu.top/"
 language: "Shell"
 languages: ["Shell", "Python"]
-languagePcts: [47, 35]
+languagePcts: [53, 26]
 topics: ["argocd", "helm", "kubernetes", "kubernetes-cluster", "kustomization", "kustomize"]
 stars: 11
 forks: 3
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-09-21T08:47:23Z"
+lastCommitAt: "2026-09-22T08:26:58Z"
 status: "thriving"
 tags: []
 healthScore: 94
 undervaluedScore: 74
-maintainers: ["rajsinghtech", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/761cf18b39f07f24147645a9cb9d05ad0d472e2419251b71df58c56f5e493742/keiretsu-labs/kubernetes-manifests"
+maintainers: ["renovate[bot]", "rajsinghtech"]
+openGraphImageUrl: "https://opengraph.githubassets.com/6bb0a5b1459205085f8db4e38832cbf98b391b458ffef218fb85024a49befade/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 

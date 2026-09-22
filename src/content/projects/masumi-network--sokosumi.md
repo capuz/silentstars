@@ -16,14 +16,14 @@ watchers: 1
 contributors: 13
 recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-21T09:09:56Z"
+lastCommitAt: "2026-09-22T08:44:02Z"
 lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
-tags: ["hidden_gem", "fork_magnet"]
+tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 82
-maintainers: ["mrosberghaus", "schaier-io", "Sarthib7"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2f23dbb7cd2a1a14ebcbf65a1f12d3099c5aa5e844afc17f81373a1209770ddd/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "schaier-io", "enjojoy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b5b3103e5cce948e04db568e1d4453a7aee54a54ea992e40bbcb69d5a2c3fcd3/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -41,7 +41,7 @@ sokosumi/
 │   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
 │   └── cli/         # Developer CLI — Ink TUI and headless commands (SPEC + VISION)
 ├── packages/
-│   ├── database/    # @sokosumi/database — Prisma client, helpers, repositories
+│   ├── database/    # @sokosumi/database — Prisma schema, client, helpers
 │   ├── masumi/      # @sokosumi/masumi — protocol clients, hash, schemas
 │   ├── utils/       # @sokosumi/utils — client-safe helpers
 │   ├── net/         # @sokosumi/net — SSRF-safe fetch

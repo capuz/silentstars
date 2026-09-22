@@ -11,20 +11,20 @@ languagePcts: [88]
 topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsing", "toml-edit", "toml-patch", "comments", "toml-format", "toml-formatter"]
 stars: 9
 forks: 0
-openIssues: 3
-closedIssues: 11
+openIssues: 2
+closedIssues: 12
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-09-15T14:22:59Z"
+lastCommitAt: "2026-09-22T04:37:53Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 93
-undervaluedScore: 74
+healthScore: 96
+undervaluedScore: 75
 maintainers: ["DecimalTurn", "renovate[bot]", "jleme"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5c8e9996f0ee3cc6c219c9aa37c17a283306baa0363a9f589dadb4b4ec3f978d/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/92f11bf01cada1a89e8173eb93b86706283d474f1cac4b24a9838e0ac7b0036b/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---
@@ -44,9 +44,9 @@ We hope that these improvements can be incorporated upstream one day if the orig
 - [Comment ownership](#comment-ownership)
 - [Date/time handling and Temporal](#datetime-handling--temporal)
 - [Formatting](#formatting)
-- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/CHANGELOG.md)
-- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/CONTRIBUTING.md)
-- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.1.0/LICENSE)
+- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.1.2/CHANGELOG.md)
+- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.1.2/CONTRIBUTING.md)
+- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.1.2/LICENSE)
 
 ## Installation
 

@@ -9,7 +9,7 @@ language: "C"
 languages: ["C"]
 languagePcts: [90]
 topics: ["6800", "8bit", "mc6800", "motorola", "c", "compiler", "basicmaster", "jr100", "jr200"]
-stars: 12
+stars: 13
 forks: 3
 openIssues: 1
 closedIssues: 63
@@ -22,9 +22,9 @@ lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 99
-undervaluedScore: 76
+undervaluedScore: 75
 maintainers: ["zu2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b0365c1c81577f13942376bb7311faf789a6a87b48e3952bfba000672ba55e3d/zu2/chibicc-6800-v1"
+openGraphImageUrl: "https://opengraph.githubassets.com/205dfcefb9c040810c9db6c3fd550fc1a801457b3930706f9c6ad00f429ac4a6/zu2/chibicc-6800-v1"
 postedAt: "2026-06-26T06:54:23.801Z"
 ---
 

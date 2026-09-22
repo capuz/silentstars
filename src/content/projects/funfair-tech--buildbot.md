@@ -8,22 +8,22 @@ language: "C#"
 languages: ["C#"]
 languagePcts: [99]
 topics: ["discord-bot", "buildbot", "discord"]
-stars: 6
+stars: 7
 forks: 1
 openIssues: 1
 closedIssues: 13
 watchers: 5
-contributors: 11
+contributors: 12
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-09-21T02:51:15Z"
+lastCommitAt: "2026-09-22T07:00:26Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 98
-undervaluedScore: 73
+undervaluedScore: 72
 maintainers: ["credfeto", "dnyw4l3n13"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8a03b4625d40f78a00b9b18112995a1221f9034e939ed503ab0a3d95a859f766/funfair-tech/BuildBot"
+openGraphImageUrl: "https://opengraph.githubassets.com/38a5749ebf9818677b3d069f969731ddea9d7ed09ad3bfc773be02e65b562258/funfair-tech/BuildBot"
 postedAt: "2026-09-01T08:56:05.310Z"
 ---
 

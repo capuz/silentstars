@@ -16,13 +16,14 @@ watchers: 4
 contributors: 22
 recentReleases: 0
 createdAt: "2023-11-30T11:30:20Z"
-lastCommitAt: "2026-09-21T09:15:06Z"
+lastCommitAt: "2026-09-21T10:40:23Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 99
 undervaluedScore: 94
 maintainers: ["Isalafont", "jbfeldis", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/59879a638e1358abb72ddab3c750bbbc5dadd042e8cf9286889eb244e33f06f7/etalab/data_pass"
+openGraphImageUrl: "https://opengraph.githubassets.com/4b95c7b40e8152dd7c6e0e62ac0caa9007c14ce7d306749088bf4220fc75acc1/etalab/data_pass"
+postedAt: "2026-09-21T09:22:04.623Z"
 ---
 
 # DataPass

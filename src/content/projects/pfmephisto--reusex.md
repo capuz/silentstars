@@ -7,21 +7,21 @@ url: "https://github.com/pfmephisto/ReUseX"
 homepage: "https://pfmephisto.github.io/ReUseX/"
 language: "C++"
 languages: ["C++"]
-languagePcts: [74]
+languagePcts: [73]
 topics: ["aec", "lidar", "reuse"]
 stars: 9
 forks: 1
-openIssues: 20
-closedIssues: 255
+openIssues: 9
+closedIssues: 276
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2023-10-20T12:24:17Z"
-lastCommitAt: "2026-09-10T15:01:22Z"
+lastCommitAt: "2026-09-22T07:37:09Z"
 lastReleaseAt: "2025-06-04T16:42:06Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 94
+healthScore: 99
 undervaluedScore: 79
 maintainers: ["pfmephisto"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/707678990/a747bd6b-c265-419f-a7a6-e5f0f22fa2b4"
