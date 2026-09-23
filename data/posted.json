@@ -1432,5 +1432,16 @@
         "postedAt": "2026-09-22T08:53:36.022Z"
       }
     }
+  },
+  {
+    "repo": "integry/propr",
+    "slug": "integry--propr",
+    "postedAt": "2026-09-23T08:56:00.034Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mw6enj3aat2j",
+        "postedAt": "2026-09-23T08:56:00.034Z"
+      }
+    }
   }
 ]
