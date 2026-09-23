@@ -19,7 +19,7 @@ createdAt: "2023-12-04T09:43:01Z"
 lastCommitAt: "2026-09-21T13:19:50Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 82
 maintainers: ["DevaOnBreaches"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2ec3d1c5c4e24ea3c6ba058a3dc314826438cf64cb6340d638e24b90eedc8645/XposedOrNot/XposedOrNot-Website"

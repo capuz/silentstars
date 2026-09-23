@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2022-12-18T09:37:43Z"
-lastCommitAt: "2026-09-22T07:08:15Z"
+lastCommitAt: "2026-09-23T06:27:14Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 97
 undervaluedScore: 82
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d4c9b6e708ca324789a4ecd43e40255a5ada463ce8a1796db610504c0cf4edb1/IIUMstudent/Awesome-IIUM"
+openGraphImageUrl: "https://opengraph.githubassets.com/3520a4d82efd6c1bb33a4d9cd6e31691faf1b800abc8058b0e2af14de78e3298/IIUMstudent/Awesome-IIUM"
 discussionCount: 2
 postedAt: "2026-08-19T04:12:56.778Z"
 ---

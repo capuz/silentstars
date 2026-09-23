@@ -8,7 +8,7 @@ homepage: "https://www.storyden.org/"
 language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [52, 45]
-topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "hacktoberfest"]
+topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 337
 forks: 37
 openIssues: 59
