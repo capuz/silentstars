@@ -1,28 +1,29 @@
 ---
 repo: "k1tty-xz/python-ios"
 name: "python-ios"
-description: "Standalone CPython for iOS"
+description: "Standalone Python for iOS"
 readmeQualityOk: true
 url: "https://github.com/k1tty-xz/python-ios"
-language: "Shell"
-languages: ["Shell"]
-languagePcts: [100]
+homepage: "https://k1tty-xz.github.io/python-ios/"
+language: "HTML"
+languages: ["HTML", "Shell"]
+languagePcts: [61, 39]
 stars: 12
 forks: 3
 openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 1
+recentReleases: 2
 createdAt: "2025-08-17T19:14:08Z"
-lastCommitAt: "2026-09-23T07:35:59Z"
-lastReleaseAt: "2026-09-14T23:48:05Z"
+lastCommitAt: "2026-09-23T22:05:18Z"
+lastReleaseAt: "2026-09-23T20:30:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 89
-undervaluedScore: 70
+undervaluedScore: 76
 maintainers: ["k1tty-xz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ff27e22279a0eea04087820edea60663694197581e8d4478748f2d0722fea086/k1tty-xz/python-ios"
+openGraphImageUrl: "https://opengraph.githubassets.com/ea25970c1ef186786847525e909584e02ade94dcbc1daba48660094b99166f71/k1tty-xz/python-ios"
 postedAt: "2026-09-16T08:51:55.843Z"
 ---
 
@@ -40,16 +41,14 @@ Download and install the package that matches your jailbreak:
 | Rootful | `_iphoneos-arm.deb` | `/usr/local` |
 | Rootless (iOS 15+) | `_iphoneos-arm64.deb` | `/var/jb/usr/local` |
 
-Run Python or pip with its full path:
+Run Python with its full path:
 
 ```sh
 # Rootful
 /usr/local/bin/python3
-/usr/local/bin/pip
 
 # Rootless
 /var/jb/usr/local/bin/python3
-/var/jb/usr/local/bin/pip
 ```
 
 Check pip with the path for your jailbreak:
@@ -63,8 +62,7 @@ Check pip with the path for your jailbreak:
 ```
 
 > **Warning:** Add the corresponding `bin` directory to `PATH` only if you
-> want this installation's `python3` and `pip` commands to be the defaults
-> on your device.
+> want this installation's `python3` command to be the default on your device.
 
 ## Build
 
@@ -81,4 +79,4 @@ Packages are written to `dist/`.
 
 ## License
 
-Maintained…
+Maintained by k1tty-xz. Build scripts are [MIT…

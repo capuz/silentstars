@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/feenkcom/gt4gemstone"
 language: "Smalltalk"
 languages: ["Smalltalk", "JavaScript"]
-languagePcts: [66, 31]
+languagePcts: [67, 30]
 stars: 8
 forks: 8
 openIssues: 7
@@ -15,13 +15,13 @@ watchers: 9
 contributors: 12
 recentReleases: 0
 createdAt: "2021-07-07T08:15:38Z"
-lastCommitAt: "2026-09-22T10:49:14Z"
+lastCommitAt: "2026-09-24T08:38:35Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 85
+healthScore: 86
 undervaluedScore: 73
 maintainers: ["chisandrei", "akgrant43", "JurajKubelka"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0ba126ce2a107aabccb0cc33a8dfd1bf6ab43643d2bca77e9eba1b0166b32a30/feenkcom/gt4gemstone"
+openGraphImageUrl: "https://opengraph.githubassets.com/34f7ef56e8623952b2081e230937353afbba44357d830683f4a0572a89cf8851/feenkcom/gt4gemstone"
 postedAt: "2026-09-18T08:31:33.689Z"
 ---
 

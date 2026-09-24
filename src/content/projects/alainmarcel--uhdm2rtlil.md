@@ -1,7 +1,7 @@
 ---
 repo: "alainmarcel/uhdm2rtlil"
 name: "uhdm2rtlil"
-description: "Yosys SystemVerilog Parser - UHDM 2 RTLIL Yosys Pass. Highest ranking complex SystemVerilog 2 functional gate-level netlist flow for Yosys compilation"
+description: "Yosys SystemVerilog Synthesis that matches Verilator (RTL matches gate-level simulation)"
 readmeQualityOk: true
 url: "https://github.com/alainmarcel/uhdm2rtlil"
 language: "IL Assembly"
@@ -15,20 +15,20 @@ watchers: 2
 contributors: 3
 recentReleases: 3
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-09-23T03:51:17Z"
+lastCommitAt: "2026-09-24T05:01:43Z"
 lastReleaseAt: "2026-08-24T16:42:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f103f716b9173b6a6b9c4391efd32e6872498361d206cb1c4400f648c6ee8171/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/9702c2a6e875b9b85c77c4770141d117037053e20805f945f0b336cd3ba4a907/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
 # UHDM to RTLIL Frontend
 
-A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language).
+A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language). Focused on creating post-synthesis (Gate-level) netlists that matches RTL simulation using Verilator as the golden standard.
 
 > ### ✅ Every result is verified
 > Nothing here is counted as "working" on a read-only or vacuous pass. Every
@@ -46,6 +46,4 @@ This project bridges the gap between SystemVerilog source code and Yosys synthes
 1. **Surelog** - Parses SystemVerilog and generates UHDM
 2. **UHDM Frontend** - Converts UHDM to Yosys RTLIL
 
-This enables full SystemVerilog synthesis capability in Yosys, including advanced features not available in Yosys's built-in Verilog frontend.
-
-## Verification Methodology…
+This enables full SystemVerilog synthesis…

@@ -17,7 +17,7 @@ watchers: 1
 contributors: 1
 recentReleases: 3
 createdAt: "2025-01-27T15:56:30Z"
-lastCommitAt: "2026-09-22T20:25:37Z"
+lastCommitAt: "2026-09-23T19:04:30Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "thriving"
 tags: ["solo_builder"]
@@ -31,27 +31,35 @@ postedAt: "2026-09-11T08:19:17.827Z"
 
 # Tomba2Edit
 
-**Tomba! 2 modding, translation, extraction, editing, repacking and asset-export toolkit for PlayStation.**
+**A modding, translation and asset-extraction toolkit for _Tomba! 2: The Evil Swine Return_ (PlayStation).**
 
-Tomba2Edit is an open-source tool for exploring and modifying **Tomba! 2: The Evil Swine Return** game data. It provides a graphical interface for viewing and editing game assets and includes tools for working with the game's **DAT/IDX archives, ISO images, levels, 3D models, textures, sprites, animations, collision data, background maps, text and audio**.
+Tomba2Edit opens a disc image of the game and shows you what is inside it:
+levels, collision, 3D models, animations, sprites, textures, dialogue,
+music, sound effects and movies — each in a viewer that understands the
+format, and most of them editable. Changes are staged, repacked and
+written back out as a playable disc.
 
-The project is based on reverse-engineering research by the **Tomba Club** community.
+The project is built on reverse-engineering work by the
+**[Tomba Club](https://tomba.club/wiki/Tomba!_2:_The_Evil_Swine_Return/Technical_information)**
+community.
 
-> **Goal:** make Tomba! 2's internal game data accessible to modders, translators, researchers and preservationists.
+> **Goal:** make Tomba! 2's internal game data accessible to modders,
+> translators, researchers and preservationists.
 
-## What can Tomba2Edit do?
+---
 
-### Game data & archives
+## What it looks like
 
-* Read and analyze Tomba! 2 `DAT` / `IDX` game archives
-* Extract and replace files inside game data
-* Repack modified game data
-* Batch multiple file modifications into a single repacking operation
-* Work with the game's internal data structures and file offsets
-* Handle sector alignment and pointer relocation when data changes size
+### Level editor — a whole area, as the game builds it
 
-### PlayStation disc images
+The level editor runs the area's own code on a MIPS interpreter, so what
+you see is what the game would place: the level, its background, every
+object, every animation.
 
-* Read PlayStation CD/ISO data
-* Work with BIN/CUE disc images
-* Extract game data for…
+### Level geometry (MDAT), with its drawmap and textures
+
+### Collision (SCLD)
+
+### Text and translation, with the in-game dialogue box previewed live
+
+### The font page — every character the game can draw,…
