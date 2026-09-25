@@ -15,13 +15,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2017-08-24T21:26:04Z"
-lastCommitAt: "2026-09-24T04:25:06Z"
+lastCommitAt: "2026-09-25T05:24:06Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 100
 undervaluedScore: 81
 maintainers: ["tabatkins"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dee4231b80563b8bc6699fef3412dabc455308d29b6609916065c52413abdf00/speced/bikeshed-data"
+openGraphImageUrl: "https://opengraph.githubassets.com/89e737441ca6a62866abcdb7c2b3ebb4c385d5e27fb30df75766299191f39e7b/speced/bikeshed-data"
 postedAt: "2026-08-18T04:13:16.671Z"
 ---
 

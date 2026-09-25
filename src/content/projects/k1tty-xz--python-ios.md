@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 2
 createdAt: "2025-08-17T19:14:08Z"
-lastCommitAt: "2026-09-23T22:05:18Z"
+lastCommitAt: "2026-09-24T11:48:33Z"
 lastReleaseAt: "2026-09-23T20:30:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 89
 undervaluedScore: 76
 maintainers: ["k1tty-xz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ea25970c1ef186786847525e909584e02ade94dcbc1daba48660094b99166f71/k1tty-xz/python-ios"
+openGraphImageUrl: "https://opengraph.githubassets.com/959d8c3c693d1fba76471cc65df516d023de39424b2c2185513ddc9240657199/k1tty-xz/python-ios"
 postedAt: "2026-09-16T08:51:55.843Z"
 ---
 

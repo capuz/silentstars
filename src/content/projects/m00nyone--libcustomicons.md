@@ -13,17 +13,17 @@ forks: 118
 openIssues: 0
 closedIssues: 2
 watchers: 3
-contributors: 104
+contributors: 105
 recentReleases: 0
 createdAt: "2025-05-05T17:13:44Z"
-lastCommitAt: "2026-09-22T15:52:03Z"
+lastCommitAt: "2026-09-24T13:05:46Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 92
 maintainers: ["m00nyONE", "SoulHagans", "TransplantDude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9ca8e1faa5758a55e1feacb04fcc50b581eecb3e4836850eac6c3f4114d7c681/m00nyONE/LibCustomIcons"
+openGraphImageUrl: "https://opengraph.githubassets.com/15d955ca95b353204422c04f269d53b6ba0d236b3db660b63c345a7088629fac/m00nyONE/LibCustomIcons"
 postedAt: "2026-09-03T08:19:41.539Z"
 ---
 
