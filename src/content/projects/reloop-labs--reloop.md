@@ -12,19 +12,19 @@ topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", 
 stars: 83
 forks: 12
 openIssues: 0
-closedIssues: 35
+closedIssues: 36
 watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-09-24T19:54:21Z"
+lastCommitAt: "2026-09-25T16:44:14Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 54
 maintainers: ["pranavp10", "twinkalp10", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e1e9095d89b3cdb1f14ae03e333e03a167c6d746bb57076a129fc5b4d377b4c0/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/5c99c8fe142e1195ccd9022fd2e98aaa99bcbe6644d81f4938f6d46c1a24cb27/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
@@ -38,6 +38,11 @@ Self-host on your own servers or use the hosted service from Reloop Labs.\
 No vendor lock-in. Full transparency. No proprietary black boxes.
 
 [Website](https://reloop.sh) · [Documentation](https://reloop.sh/docs) · [Hosted Sign-up](https://reloop.sh/dashboard/signup) · [Discord](https://discord.gg/ZBYwWKY96U)
+
+<br/>
+<br/>
+
+</a>
 
 </div>
 
@@ -54,4 +59,4 @@ Reloop gives you the same capabilities as SendGrid, Mailchimp, Resend, and Loops
 - **Real-time analytics** — open rates, click rates, bounces, and delivery events stored in PostgreSQL
 - **Webhooks** — push delivery events to your own endpoints the moment they happen
 - **Contacts & lists** — manage subscribers, tags, and suppression lists
-- **Workflows** — automate…
+-…

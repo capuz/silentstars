@@ -18,7 +18,7 @@ createdAt: "2024-08-31T20:29:49Z"
 lastCommitAt: "2026-09-23T08:50:29Z"
 status: "thriving"
 tags: []
-healthScore: 96
+healthScore: 95
 undervaluedScore: 77
 maintainers: ["aussedatlo", "dependabot[bot]", "Jason954"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0d3a1d4aba6e1818db2fa29358fdf14c57cc397f873734535d162fd1cec57c9c/aussedatlo/banalize"

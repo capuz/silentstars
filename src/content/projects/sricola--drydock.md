@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-06-15T21:04:55Z"
-lastCommitAt: "2026-08-07T17:15:12Z"
+lastCommitAt: "2026-09-25T12:55:35Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 96
 undervaluedScore: 56
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e5f7f6025d28e36d34565d63f6f34a3aa307dcce1c0b95dabad613b1bc4b72ac/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/5fb0014fe5e19445a890f8cf6aaf7fefd42f14caeef9b4e49a1fc200a5c7f384/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
@@ -39,7 +39,7 @@ postedAt: "2026-06-21T00:00:54.805Z"
 
 drydock runs **Claude Code**, **OpenAI Codex**, or **any OpenAI-compatible
 model** (Gemini, OpenRouter, local) full-throttle on your own repos, on your
-own Mac — no permission prompts, no babysitting. Each task runs sealed in a
+own Mac, with no permission prompts and no babysitting. Each task runs sealed in a
 throwaway VM. The only thing that ever comes back is a `git diff`, and nothing
 reaches your real code until you approve it.
 
@@ -54,4 +54,4 @@ reaches your real code until you approve it.
 
 Most agent tooling tries to keep the agent *well-behaved*: permission
 prompts, output filters, policy. drydock takes the opposite stance: **contain
-the blast radius**. A hostile agent — a poisoned repo, a malicious dependency,…
+the blast radius**. A hostile agent (a poisoned repo, a malicious…

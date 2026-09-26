@@ -7,7 +7,7 @@ url: "https://github.com/lucca180/itemdb"
 homepage: "https://itemdb.com.br"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [96]
+languagePcts: [97]
 topics: ["neopets", "nextjs", "reactjs"]
 stars: 23
 forks: 4
@@ -17,7 +17,7 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2023-02-27T23:11:14Z"
-lastCommitAt: "2026-09-24T20:24:07Z"
+lastCommitAt: "2026-09-26T05:41:10Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99

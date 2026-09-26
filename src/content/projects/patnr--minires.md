@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 6
 createdAt: "2022-11-04T16:06:51Z"
-lastCommitAt: "2026-09-18T05:43:41Z"
+lastCommitAt: "2026-09-25T13:40:52Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 77
+healthScore: 79
 undervaluedScore: 77
 maintainers: ["patnr"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0897b15dd7e4a77ef1a1cdcb43ff46d3bfed359322b43002f891ec40ec35d019/patnr/MiniRes"
+openGraphImageUrl: "https://opengraph.githubassets.com/d38964a550d11d69ef00d1826dfb959f5d1d4039d1cd20d30cf8625f0435bfd5/patnr/MiniRes"
 postedAt: "2026-09-15T08:59:38.490Z"
 ---
 
@@ -35,7 +35,7 @@ using TPFA (two-point flux approximation).
 [**Documentation**](https://patnr.github.io/MiniRes/minires.html).
 
 - **Small**: all of its physics fit in `core.py`'s 400 lines of code.
-- **Capable**: two-phase, slight compressibility, BHP control, well paths, irregular outlines and faults (inactive cells), aquifers –
+- **Capable**: two-phase, slight compressibility, BHP control, lateral well paths, irregular outlines and faults (inactive cells), aquifers –
   **but** a toy: 2D uniform grid, immiscible, isothermal, and simple well models and operation.
 - **Adjoint** model included; verified against finite differences.
 - **Python**: [](https://pypi.org/project/minires/) (`pip install minires`), or demo it in a web browser via
@@ -44,4 +44,4 @@ using TPFA (two-point flux approximation).
 - **Reliable**: reproduces the numbers of the [Matlab code (2007)](http://folk.ntnu.no/andreas/papers/ResSimMatlab.pdf) from NTNU/Sintef by Jørg E. Aarnes, Tore Gimse, and Knut–Andreas Lie.
   Further validated against Buckley–Leverett's
   analytic solution, ECLIPSE's numbers on the Egg model
-  and JutulDarcy's on quarter…
+  and JutulDarcy's on…

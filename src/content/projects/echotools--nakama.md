@@ -19,9 +19,9 @@ lastCommitAt: "2026-09-21T21:05:24Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 87
-maintainers: ["thesprockee"]
+maintainers: ["thesprockee", "metis-sprock"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4c715a13af23f966006cc68730203cbf4173c29823a3fcfb7ed94118ff683db0/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
 ---
