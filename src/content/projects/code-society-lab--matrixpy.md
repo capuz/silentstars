@@ -25,7 +25,6 @@ healthScore: 74
 undervaluedScore: 70
 maintainers: ["PenguinBoi12", "dependabot[bot]", "chrisdedman"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9cd09cee686104f7756d5b080f4ed1f5710971c23531e23b38e3ac1e9bbf091f/Code-Society-Lab/matrixpy"
-promoted: true
 postedAt: "2026-08-30T01:01:32.547Z"
 ---
 

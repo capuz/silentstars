@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-09-14T20:17:04Z"
-lastCommitAt: "2026-09-23T05:13:01Z"
+lastCommitAt: "2026-09-26T14:36:49Z"
 lastReleaseAt: "2026-03-29T16:38:45Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 97
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["ericcornelissen", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/05995a601ff9234e3377fcbecd2f7db37abfd7f926469d01ad94ca46af647561/ericcornelissen/js-regex-security-scanner"
+openGraphImageUrl: "https://opengraph.githubassets.com/5de38df55fb9534fb6715d1e7c8a38365bdcb71dc9f431d54e298e8482c219ad/ericcornelissen/js-regex-security-scanner"
 postedAt: "2026-07-30T06:14:34.980Z"
 ---
 
@@ -56,7 +56,7 @@ Now you can use it to scan a JavaScript or TypeScript project. For example, to
 scan the current directory:
 
 ```shell
-docker run --rm -v $(pwd):/project docker.io/ericornelissen/js-re-scan:latest
+docker run --rm -v $(pwd):/project:ro docker.io/ericornelissen/js-re-scan:latest
 ```
 
 To use [Podman] instead of [Docker] you can replace `docker` by `podman` in any

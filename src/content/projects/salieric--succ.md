@@ -9,7 +9,7 @@ languages: ["JavaScript"]
 languagePcts: [87]
 stars: 10
 forks: 7
-openIssues: 1
+openIssues: 2
 closedIssues: 57
 watchers: 3
 contributors: 13
@@ -19,7 +19,7 @@ lastCommitAt: "2026-09-25T11:54:29Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 80
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"

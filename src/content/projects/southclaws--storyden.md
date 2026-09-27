@@ -7,23 +7,23 @@ url: "https://github.com/Southclaws/storyden"
 homepage: "https://www.storyden.org/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [52, 45]
+languagePcts: [53, 45]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 339
 forks: 37
-openIssues: 59
-closedIssues: 163
+openIssues: 61
+closedIssues: 164
 watchers: 10
 contributors: 17
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-09-20T19:01:54Z"
+lastCommitAt: "2026-09-26T18:52:13Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["needs_contributors"]
-healthScore: 90
+healthScore: 92
 undervaluedScore: 38
-maintainers: ["Southclaws", "ricardoofnl", "claude"]
+maintainers: ["Southclaws", "ricardoofnl", "renatomotorline"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
 discussionCount: 8
 promoted: true
