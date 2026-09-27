@@ -1497,6 +1497,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mwiipt32u32d",
         "postedAt": "2026-09-27T09:35:29.945Z"
+      },
+      "ownerEmail": {
+        "url": "lucio.tarantino@gmail.com",
+        "postedAt": "2026-09-27T09:35:48.268Z"
       }
     }
   }
