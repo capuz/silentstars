@@ -1,117 +1,125 @@
 {
-  "updatedAt": "2026-09-14T09:20:09.192Z",
+  "updatedAt": "2026-09-28T10:15:06.047Z",
   "scores": [
     {
       "tag": "gamedev",
-      "avgLikes": 5801,
-      "avgReposts": 910.52,
-      "maxLikes": 18944,
+      "avgLikes": 6033.32,
+      "avgReposts": 948.56,
+      "maxLikes": 18986,
       "recent24h": 25,
-      "score": 4286.28
+      "score": 4459.5
     },
     {
       "tag": "indiedev",
-      "avgLikes": 3497.52,
-      "avgReposts": 609.08,
-      "maxLikes": 7988,
+      "avgLikes": 3584.52,
+      "avgReposts": 636.72,
+      "maxLikes": 8002,
       "recent24h": 25,
-      "score": 2682.38
+      "score": 2767.34
     },
     {
       "tag": "ai",
-      "avgLikes": 2362.12,
-      "avgReposts": 744.8,
-      "maxLikes": 13237,
+      "avgLikes": 2314.88,
+      "avgReposts": 789.8,
+      "maxLikes": 13240,
       "recent24h": 25,
-      "score": 2318.2599999999998
+      "score": 2362.14
     },
     {
       "tag": "spring",
-      "avgLikes": 3396.76,
-      "avgReposts": 392.6,
-      "maxLikes": 6628,
-      "recent24h": 17,
-      "score": 2300.88
+      "avgLikes": 3396.28,
+      "avgReposts": 392.32,
+      "maxLikes": 6622,
+      "recent24h": 25,
+      "score": 2306.62
     },
     {
       "tag": "astro",
-      "avgLikes": 1260.92,
-      "avgReposts": 121.68,
-      "maxLikes": 4275,
+      "avgLikes": 1294.24,
+      "avgReposts": 124.2,
+      "maxLikes": 4274,
       "recent24h": 9,
-      "score": 820.1800000000001
+      "score": 840.6200000000001
     },
     {
       "tag": "linux",
-      "avgLikes": 867.9166666666666,
-      "avgReposts": 142.91666666666666,
-      "maxLikes": 2421,
-      "recent24h": 25,
-      "score": 668.3333333333333
+      "avgLikes": 845.5,
+      "avgReposts": 140.95833333333334,
+      "maxLikes": 2420,
+      "recent24h": 24,
+      "score": 653.3875
     },
     {
       "tag": "cloudflare",
-      "avgLikes": 683.92,
-      "avgReposts": 202.04,
-      "maxLikes": 12814,
-      "recent24h": 9,
-      "score": 652.22
+      "avgLikes": 683.56,
+      "avgReposts": 201.76,
+      "maxLikes": 12805,
+      "recent24h": 10,
+      "score": 652.42
     },
     {
       "tag": "programming",
-      "avgLikes": 602.4583333333334,
-      "avgReposts": 59.083333333333336,
-      "maxLikes": 3137,
+      "avgLikes": 560.88,
+      "avgReposts": 54.72,
+      "maxLikes": 3139,
       "recent24h": 25,
-      "score": 409.8541666666667
+      "score": 382.52
     },
     {
       "tag": "buildinpublic",
-      "avgLikes": 473.9583333333333,
-      "avgReposts": 56.416666666666664,
+      "avgLikes": 465.25,
+      "avgReposts": 56.5,
       "maxLikes": 6310,
       "recent24h": 25,
-      "score": 341.60416666666663
+      "score": 337.375
     },
     {
       "tag": "opensource",
-      "avgLikes": 362.8333333333333,
-      "avgReposts": 64.625,
-      "maxLikes": 809,
+      "avgLikes": 378.9166666666667,
+      "avgReposts": 68.08333333333333,
+      "maxLikes": 808,
       "recent24h": 25,
-      "score": 298.35416666666663
+      "score": 311.58333333333337
     },
     {
       "tag": "bun",
-      "avgLikes": 309.28,
-      "avgReposts": 69.56,
-      "maxLikes": 3297,
-      "recent24h": 1,
-      "score": 259.78000000000003
+      "avgLikes": 316.64,
+      "avgReposts": 71.12,
+      "maxLikes": 3294,
+      "recent24h": 3,
+      "score": 267.4
     },
     {
       "tag": "coding",
-      "avgLikes": 369.6666666666667,
-      "avgReposts": 29.291666666666668,
-      "maxLikes": 3137,
+      "avgLikes": 374.375,
+      "avgReposts": 29.958333333333332,
+      "maxLikes": 3139,
       "recent24h": 25,
-      "score": 248.77083333333334
+      "score": 252.125
+    },
+    {
+      "tag": "llm",
+      "avgLikes": 182.5,
+      "avgReposts": 40.68181818181818,
+      "maxLikes": 627,
+      "recent24h": 25,
+      "score": 172.27272727272725
     },
     {
       "tag": "github",
-      "avgLikes": 153.5,
-      "avgReposts": 50.375,
-      "maxLikes": 953,
+      "avgLikes": 151.5,
+      "avgReposts": 49.958333333333336,
+      "maxLikes": 952,
       "recent24h": 25,
-      "score": 172.3125
+      "score": 170.6875
     },
     {
       "tag": "webdev",
-      "avgLikes": 194.2,
-      "avgReposts": 23.44,
-      "maxLikes": 699,
+      "avgLikes": 193.52,
+      "avgReposts": 23.04,
+      "maxLikes": 697,
       "recent24h": 25,
-      "score": 152.26
+      "score": 151.32
     },
     {
       "tag": "machinelearning",
@@ -123,379 +131,371 @@
     },
     {
       "tag": "aws",
-      "avgLikes": 158.12,
-      "avgReposts": 28.88,
+      "avgLikes": 158.56,
+      "avgReposts": 28.84,
       "maxLikes": 825,
       "recent24h": 25,
-      "score": 142.38
-    },
-    {
-      "tag": "llm",
-      "avgLikes": 159.2173913043478,
-      "avgReposts": 27.652173913043477,
-      "maxLikes": 627,
-      "recent24h": 25,
-      "score": 141.08695652173913
-    },
-    {
-      "tag": "devops",
-      "avgLikes": 96.36,
-      "avgReposts": 15.12,
-      "maxLikes": 309,
-      "recent24h": 25,
-      "score": 90.86
-    },
-    {
-      "tag": "azure",
-      "avgLikes": 82.36,
-      "avgReposts": 14.64,
-      "maxLikes": 171,
-      "recent24h": 25,
-      "score": 83.14
+      "score": 142.54
     },
     {
       "tag": "remix",
-      "avgLikes": 110.28,
-      "avgReposts": 15.56,
-      "maxLikes": 421,
-      "recent24h": 5,
-      "score": 82.48
+      "avgLikes": 129.4,
+      "avgReposts": 16.36,
+      "maxLikes": 531,
+      "recent24h": 10,
+      "score": 97.24000000000001
+    },
+    {
+      "tag": "devops",
+      "avgLikes": 92.16,
+      "avgReposts": 14.52,
+      "maxLikes": 310,
+      "recent24h": 25,
+      "score": 87.86
+    },
+    {
+      "tag": "azure",
+      "avgLikes": 101.88,
+      "avgReposts": 17.96,
+      "maxLikes": 228,
+      "recent24h": 8,
+      "score": 84.28
     },
     {
       "tag": "rails",
-      "avgLikes": 100.6,
-      "avgReposts": 14.04,
+      "avgLikes": 94.72,
+      "avgReposts": 12.92,
       "maxLikes": 263,
-      "recent24h": 3,
-      "score": 73.76
-    },
-    {
-      "tag": "storybook",
-      "avgLikes": 76,
-      "avgReposts": 15.16,
-      "maxLikes": 244,
       "recent24h": 1,
-      "score": 61.54
-    },
-    {
-      "tag": "django",
-      "avgLikes": 63.6,
-      "avgReposts": 16.6,
-      "maxLikes": 764,
-      "recent24h": 6,
-      "score": 61.5
+      "score": 67.53999999999999
     },
     {
       "tag": "devs",
-      "avgLikes": 70.33333333333333,
-      "avgReposts": 16.666666666666668,
+      "avgLikes": 70.20833333333333,
+      "avgReposts": 17.041666666666668,
       "maxLikes": 1079,
-      "recent24h": 1,
-      "score": 60.96666666666666
-    },
-    {
-      "tag": "drizzle",
-      "avgLikes": 86.88,
-      "avgReposts": 10.24,
-      "maxLikes": 187,
-      "recent24h": 1,
-      "score": 59.599999999999994
+      "recent24h": 4,
+      "score": 63.86666666666667
     },
     {
       "tag": "react",
-      "avgLikes": 68.48,
-      "avgReposts": 13.92,
+      "avgLikes": 67.36,
+      "avgReposts": 13.72,
       "maxLikes": 191,
+      "recent24h": 8,
+      "score": 60.660000000000004
+    },
+    {
+      "tag": "drizzle",
+      "avgLikes": 87.24,
+      "avgReposts": 10.28,
+      "maxLikes": 187,
+      "recent24h": 0,
+      "score": 59.03999999999999
+    },
+    {
+      "tag": "storybook",
+      "avgLikes": 70.76,
+      "avgReposts": 13.76,
+      "maxLikes": 243,
       "recent24h": 3,
-      "score": 57.52
+      "score": 58.42
     },
     {
       "tag": "100daysofcode",
-      "avgLikes": 69.2,
-      "avgReposts": 3.44,
-      "maxLikes": 431,
-      "recent24h": 20,
-      "score": 55.760000000000005
+      "avgLikes": 66.92,
+      "avgReposts": 3.24,
+      "maxLikes": 437,
+      "recent24h": 25,
+      "score": 58.32
+    },
+    {
+      "tag": "django",
+      "avgLikes": 63.72,
+      "avgReposts": 16.64,
+      "maxLikes": 765,
+      "recent24h": 1,
+      "score": 57.62
     },
     {
       "tag": "trpc",
-      "avgLikes": 75.28,
+      "avgLikes": 75.32,
       "avgReposts": 11.72,
       "maxLikes": 140,
       "recent24h": 0,
-      "score": 55.22
+      "score": 55.239999999999995
     },
     {
       "tag": "kubernetes",
-      "avgLikes": 45.88,
-      "avgReposts": 5.88,
-      "maxLikes": 180,
-      "recent24h": 25,
-      "score": 51.760000000000005
+      "avgLikes": 48.68,
+      "avgReposts": 6.52,
+      "maxLikes": 182,
+      "recent24h": 14,
+      "score": 45.32
     },
     {
       "tag": "nodejs",
-      "avgLikes": 34.08,
-      "avgReposts": 9.64,
+      "avgLikes": 35.12,
+      "avgReposts": 9.92,
       "maxLikes": 161,
-      "recent24h": 25,
-      "score": 51.5
+      "recent24h": 15,
+      "score": 44.44
     },
     {
       "tag": "angular",
-      "avgLikes": 66.125,
-      "avgReposts": 7.875,
-      "maxLikes": 163,
-      "recent24h": 8,
-      "score": 51.275
-    },
-    {
-      "tag": "terraform",
-      "avgLikes": 48,
-      "avgReposts": 4.36,
-      "maxLikes": 825,
-      "recent24h": 14,
-      "score": 41.74
+      "avgLikes": 64,
+      "avgReposts": 7.75,
+      "maxLikes": 162,
+      "recent24h": 1,
+      "score": 44.425
     },
     {
       "tag": "laravel",
-      "avgLikes": 50.36,
+      "avgLikes": 51.4,
       "avgReposts": 8.32,
       "maxLikes": 209,
-      "recent24h": 4,
-      "score": 40.86
+      "recent24h": 6,
+      "score": 42.980000000000004
     },
     {
       "tag": "svelte",
-      "avgLikes": 56.65217391304348,
-      "avgReposts": 6.782608695652174,
+      "avgLikes": 56.17391304347826,
+      "avgReposts": 6.695652173913044,
       "maxLikes": 135,
       "recent24h": 1,
-      "score": 39.3
-    },
-    {
-      "tag": "docker",
-      "avgLikes": 29.47826086956522,
-      "avgReposts": 2.652173913043478,
-      "maxLikes": 129,
-      "recent24h": 25,
-      "score": 38.71739130434783
-    },
-    {
-      "tag": "express",
-      "avgLikes": 53.28,
-      "avgReposts": 6.92,
-      "maxLikes": 239,
-      "recent24h": 1,
-      "score": 37.81999999999999
+      "score": 38.93043478260869
     },
     {
       "tag": "developer",
-      "avgLikes": 44.08695652173913,
-      "avgReposts": 4.913043478260869,
+      "avgLikes": 42.21739130434783,
+      "avgReposts": 5.434782608695652,
       "maxLikes": 127,
-      "recent24h": 9,
-      "score": 36.61304347826087
+      "recent24h": 12,
+      "score": 38.86086956521739
+    },
+    {
+      "tag": "terraform",
+      "avgLikes": 49.32,
+      "avgReposts": 4.64,
+      "maxLikes": 825,
+      "recent24h": 8,
+      "score": 38.019999999999996
     },
     {
       "tag": "prisma",
-      "avgLikes": 47.16,
-      "avgReposts": 8.44,
+      "avgLikes": 46.84,
+      "avgReposts": 8.52,
       "maxLikes": 95,
-      "recent24h": 0,
-      "score": 36.239999999999995
+      "recent24h": 1,
+      "score": 37
     },
     {
-      "tag": "serverless",
-      "avgLikes": 20.84,
-      "avgReposts": 2.64,
-      "maxLikes": 259,
-      "recent24h": 25,
-      "score": 34.379999999999995
+      "tag": "express",
+      "avgLikes": 51.96,
+      "avgReposts": 6.72,
+      "maxLikes": 239,
+      "recent24h": 0,
+      "score": 36.06
     },
     {
       "tag": "webassembly",
-      "avgLikes": 41.8,
-      "avgReposts": 8,
+      "avgLikes": 40.8,
+      "avgReposts": 7.68,
       "maxLikes": 139,
-      "recent24h": 1,
-      "score": 33.699999999999996
+      "recent24h": 3,
+      "score": 34.32
+    },
+    {
+      "tag": "serverless",
+      "avgLikes": 20.8,
+      "avgReposts": 2.52,
+      "maxLikes": 260,
+      "recent24h": 25,
+      "score": 34.18
     },
     {
       "tag": "deno",
-      "avgLikes": 30.84,
-      "avgReposts": 10.48,
+      "avgLikes": 30.76,
+      "avgReposts": 10.4,
       "maxLikes": 260,
       "recent24h": 0,
-      "score": 31.14
+      "score": 30.980000000000004
+    },
+    {
+      "tag": "docker",
+      "avgLikes": 30.652173913043477,
+      "avgReposts": 2.652173913043478,
+      "maxLikes": 129,
+      "recent24h": 14,
+      "score": 30.504347826086956
     },
     {
       "tag": "postgresql",
-      "avgLikes": 16.08,
-      "avgReposts": 3.4,
+      "avgLikes": 17.84,
+      "avgReposts": 3.8,
       "maxLikes": 47,
-      "recent24h": 17,
-      "score": 26.740000000000002
+      "recent24h": 13,
+      "score": 25.02
     },
     {
       "tag": "nextjs",
       "avgLikes": 40.916666666666664,
       "avgReposts": 1.9583333333333333,
-      "maxLikes": 259,
+      "maxLikes": 260,
       "recent24h": 2,
       "score": 24.995833333333334
     },
     {
       "tag": "sideproject",
-      "avgLikes": 27.56,
-      "avgReposts": 5.24,
+      "avgLikes": 28.416666666666668,
+      "avgReposts": 5.333333333333333,
       "maxLikes": 130,
       "recent24h": 1,
-      "score": 22.44
+      "score": 23.008333333333336
     },
     {
       "tag": "softwaredev",
-      "avgLikes": 28.16,
-      "avgReposts": 3.92,
-      "maxLikes": 130,
-      "recent24h": 1,
-      "score": 20.76
-    },
-    {
-      "tag": "redis",
-      "avgLikes": 15.24,
-      "avgReposts": 3.64,
-      "maxLikes": 72,
-      "recent24h": 8,
-      "score": 19.48
+      "avgLikes": 28.08,
+      "avgReposts": 4,
+      "maxLikes": 129,
+      "recent24h": 2,
+      "score": 21.64
     },
     {
       "tag": "graphql",
-      "avgLikes": 12.294117647058824,
-      "avgReposts": 2.0588235294117645,
+      "avgLikes": 19.76923076923077,
+      "avgReposts": 3.5384615384615383,
       "maxLikes": 79,
-      "recent24h": 10,
-      "score": 17.235294117647058
+      "recent24h": 2,
+      "score": 16.792307692307695
+    },
+    {
+      "tag": "redis",
+      "avgLikes": 17,
+      "avgReposts": 4.32,
+      "maxLikes": 72,
+      "recent24h": 1,
+      "score": 15.780000000000001
     },
     {
       "tag": "sqlite",
-      "avgLikes": 20.96,
-      "avgReposts": 3.64,
+      "avgLikes": 20.2,
+      "avgReposts": 3.6,
       "maxLikes": 71,
-      "recent24h": 1,
-      "score": 16.740000000000002
-    },
-    {
-      "tag": "mysql",
-      "avgLikes": 10.8,
-      "avgReposts": 1.6,
-      "maxLikes": 44,
-      "recent24h": 9,
-      "score": 15
+      "recent24h": 0,
+      "score": 15.5
     },
     {
       "tag": "vuejs",
-      "avgLikes": 18.210526315789473,
-      "avgReposts": 2.6315789473684212,
+      "avgLikes": 20.157894736842106,
+      "avgReposts": 3,
       "maxLikes": 97,
-      "recent24h": 2,
-      "score": 14.652631578947368
-    },
-    {
-      "tag": "tailwindcss",
-      "avgLikes": 18.96,
-      "avgReposts": 1.8,
-      "maxLikes": 112,
-      "recent24h": 2,
-      "score": 13.78
-    },
-    {
-      "tag": "vite",
-      "avgLikes": 16.56,
-      "avgReposts": 2.48,
-      "maxLikes": 70,
-      "recent24h": 1,
-      "score": 12.8
-    },
-    {
-      "tag": "vercel",
-      "avgLikes": 19.25,
-      "avgReposts": 1.2916666666666667,
-      "maxLikes": 259,
-      "recent24h": 1,
-      "score": 12.3625
-    },
-    {
-      "tag": "cicd",
-      "avgLikes": 13.64,
-      "avgReposts": 3.36,
-      "maxLikes": 32,
       "recent24h": 0,
-      "score": 11.86
-    },
-    {
-      "tag": "hacktoberfest",
-      "avgLikes": 13.28,
-      "avgReposts": 3.48,
-      "maxLikes": 66,
-      "recent24h": 0,
-      "score": 11.86
+      "score": 14.578947368421053
     },
     {
       "tag": "pwa",
-      "avgLikes": 16.44,
-      "avgReposts": 2.2,
+      "avgLikes": 16.56,
+      "avgReposts": 2.28,
       "maxLikes": 77,
-      "recent24h": 0,
-      "score": 11.520000000000001
+      "recent24h": 2,
+      "score": 13.299999999999999
     },
     {
-      "tag": "microservices",
-      "avgLikes": 6.36,
-      "avgReposts": 1.32,
-      "maxLikes": 27,
-      "recent24h": 6,
-      "score": 9.96
+      "tag": "vite",
+      "avgLikes": 17.08,
+      "avgReposts": 2.52,
+      "maxLikes": 70,
+      "recent24h": 1,
+      "score": 13.120000000000001
+    },
+    {
+      "tag": "vercel",
+      "avgLikes": 19.565217391304348,
+      "avgReposts": 1.3478260869565217,
+      "maxLikes": 260,
+      "recent24h": 1,
+      "score": 12.604347826086958
+    },
+    {
+      "tag": "tailwindcss",
+      "avgLikes": 19.44,
+      "avgReposts": 1.88,
+      "maxLikes": 112,
+      "recent24h": 0,
+      "score": 12.540000000000001
+    },
+    {
+      "tag": "cicd",
+      "avgLikes": 12.24,
+      "avgReposts": 3,
+      "maxLikes": 32,
+      "recent24h": 2,
+      "score": 12.22
+    },
+    {
+      "tag": "hacktoberfest",
+      "avgLikes": 13.24,
+      "avgReposts": 3.44,
+      "maxLikes": 66,
+      "recent24h": 0,
+      "score": 11.780000000000001
+    },
+    {
+      "tag": "mysql",
+      "avgLikes": 13.52,
+      "avgReposts": 2,
+      "maxLikes": 44,
+      "recent24h": 2,
+      "score": 11.36
     },
     {
       "tag": "ansible",
-      "avgLikes": 9.56,
-      "avgReposts": 2.04,
-      "maxLikes": 14,
-      "recent24h": 2,
-      "score": 9.44
-    },
-    {
-      "tag": "mongodb",
-      "avgLikes": 10.92,
+      "avgLikes": 9.28,
       "avgReposts": 1.92,
-      "maxLikes": 29,
-      "recent24h": 1,
-      "score": 9.14
+      "maxLikes": 14,
+      "recent24h": 3,
+      "score": 9.92
     },
     {
       "tag": "supabase",
-      "avgLikes": 11,
-      "avgReposts": 0.84,
+      "avgLikes": 10.08,
+      "avgReposts": 0.68,
       "maxLikes": 48,
-      "recent24h": 2,
-      "score": 8.36
+      "recent24h": 4,
+      "score": 9.260000000000002
+    },
+    {
+      "tag": "mongodb",
+      "avgLikes": 11.2,
+      "avgReposts": 1.92,
+      "maxLikes": 30,
+      "recent24h": 0,
+      "score": 8.48
+    },
+    {
+      "tag": "microservices",
+      "avgLikes": 8.52,
+      "avgReposts": 2.24,
+      "maxLikes": 27,
+      "recent24h": 1,
+      "score": 8.42
     },
     {
       "tag": "fastapi",
-      "avgLikes": 7.6,
-      "avgReposts": 0.52,
+      "avgLikes": 7.44,
+      "avgReposts": 0.56,
       "maxLikes": 40,
       "recent24h": 0,
-      "score": 4.58
+      "score": 4.5600000000000005
     },
     {
       "tag": "netlify",
-      "avgLikes": 5.4,
-      "avgReposts": 0.84,
+      "avgLikes": 5,
+      "avgReposts": 0.88,
       "maxLikes": 27,
       "recent24h": 0,
-      "score": 3.96
+      "score": 3.8200000000000003
     },
     {
       "tag": "nestjs",
@@ -507,11 +507,11 @@
     },
     {
       "tag": "nuxtjs",
-      "avgLikes": 5.08,
-      "avgReposts": 0.44,
+      "avgLikes": 5.24,
+      "avgReposts": 0.36,
       "maxLikes": 24,
       "recent24h": 0,
-      "score": 3.2
+      "score": 3.16
     }
   ]
 }
