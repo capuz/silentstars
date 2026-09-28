@@ -7,7 +7,7 @@ url: "https://github.com/DecimalTurn/toml-patch"
 homepage: "https://www.npmjs.com/package/@decimalturn/toml-patch"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [87]
+languagePcts: [88]
 topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsing", "toml-edit", "toml-patch", "comments", "toml-format", "toml-formatter"]
 stars: 9
 forks: 0
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-09-27T04:30:08Z"
+lastCommitAt: "2026-09-27T15:04:32Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 96
 undervaluedScore: 74
 maintainers: ["DecimalTurn"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8644a9d4ed5fc0d508cb84c48729cf5ec945b06807977391d528b004deb274b1/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/c1806fcf4fe136f2e740307fa57fbdf16717516ea99641dcbbd21645f687d027/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 postedAt: "2026-08-07T05:19:39.636Z"
 ---
@@ -45,8 +45,8 @@ We hope that these improvements can be incorporated upstream one day if the orig
 - [Comment ownership](#comment-ownership)
 - [Date/time handling and Temporal](#datetime-handling--temporal)
 - [Formatting](#formatting)
-- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.2.1/CHANGELOG.md)
-- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.2.1/CONTRIBUTING.md)
-- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.2.1/LICENSE)
+- [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.3.0/CHANGELOG.md)
+- [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.3.0/CONTRIBUTING.md)
+- [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.3.0/LICENSE)
 
 ##…

@@ -26,7 +26,6 @@ undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl", "renatomotorline"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
 discussionCount: 8
-promoted: true
 postedAt: "2026-08-30T01:05:03.111Z"
 ---
 

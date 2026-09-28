@@ -9,20 +9,20 @@ languages: ["TypeScript", "Python"]
 languagePcts: [47, 46]
 stars: 8
 forks: 0
-openIssues: 0
+openIssues: 1
 closedIssues: 457
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-09-27T08:57:12Z"
+lastCommitAt: "2026-09-28T01:12:00Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 74
 maintainers: ["gregkonush", "tuslagch"]
-openGraphImageUrl: "https://opengraph.githubassets.com/00507eeb6e202f0467201aefe4ca3f4b1776bd7b3e5936df24f5e4450744a9d5/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/3984f410dbb831b4af86e167ff88ab52ea1169ff8e2aa77691f79e5ac3603262/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 

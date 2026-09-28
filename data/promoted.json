@@ -2,9 +2,5 @@
   {
     "repo": "opn-build/OpenAlive",
     "until": null
-  },
-  {
-    "repo": "Southclaws/storyden",
-    "until": "2026-09-28"
   }
 ]

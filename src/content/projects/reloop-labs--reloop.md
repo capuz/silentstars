@@ -9,22 +9,22 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [90]
 topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email"]
-stars: 83
+stars: 85
 forks: 12
-openIssues: 0
+openIssues: 1
 closedIssues: 36
 watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-09-27T06:14:50Z"
+lastCommitAt: "2026-09-28T08:24:46Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
-undervaluedScore: 54
-maintainers: ["pranavp10", "twinkalp10", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a60e21c2bc6698037fc69e6ab26064a125f4493046ec20da2630881cb2f77fb1/reloop-labs/reloop"
+undervaluedScore: 53
+maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/3f341bec144f861a7fe9ed7e3b83942052ae4356a61618e7e7e6acfcbd047237/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"

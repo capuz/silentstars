@@ -15,14 +15,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2024-08-09T18:35:02Z"
-lastCommitAt: "2026-09-25T00:28:28Z"
+lastCommitAt: "2026-09-27T20:23:12Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 88
 maintainers: ["advis61"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9cb54774bd4a10dedce74e9e0ed643083dc64217d10a6fcef52ff5f19aeb1b80/advis61/OracleOfDereth"
+openGraphImageUrl: "https://opengraph.githubassets.com/9199b62c46ddf8c097e6930c6530fd7a07be4b63e920d3a61d1b7fe568d1a509/advis61/OracleOfDereth"
 postedAt: "2026-08-16T04:13:25.726Z"
 ---
 
@@ -30,7 +30,7 @@ postedAt: "2026-08-16T04:13:25.726Z"
 
 An [Asheron's Call](https://emulator.ac/how-to-play/) [Decal](https://decaldev.com/) plugin.
 
-Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/2.2.0/OracleOfDerethInstaller-2.2.0.0.exe)
+Download the latest version: [Download Oracle of Dereth](https://github.com/advis61/OracleOfDereth/releases/download/2.3.0/OracleOfDerethInstaller-2.3.0.0.exe)
 
 To upgrade from a previous version, just download and re-run the .exe file.
 

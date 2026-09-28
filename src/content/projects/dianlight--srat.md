@@ -11,22 +11,23 @@ languagePcts: [59, 37]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 9
 forks: 1
-openIssues: 10
-closedIssues: 251
+openIssues: 14
+closedIssues: 252
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-09-27T09:28:08Z"
+lastCommitAt: "2026-09-28T01:42:55Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 78
 maintainers: ["dianlight", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b44b1aa0a85841cc6fdbd909fe1d58f89cb314d1ad2bdb62fadeb08eb05c5ef7/dianlight/srat"
+openGraphImageUrl: "https://opengraph.githubassets.com/1e378cb12d5b2cd22f91fb5e1955a0550aafa0df74a04457a3a9464c1c9a3ef8/dianlight/srat"
 fundingLinks: ["GITHUB:https://github.com/dianlight", "BUY_ME_A_COFFEE:https://buymeacoffee.com/ypKZ2I0"]
 discussionCount: 7
+postedAt: "2026-09-27T09:35:29.945Z"
 ---
 
 # SambaNAS Rest Administration Tool 

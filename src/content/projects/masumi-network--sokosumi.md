@@ -16,14 +16,14 @@ watchers: 1
 contributors: 13
 recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-09-27T09:04:33Z"
+lastCommitAt: "2026-09-28T09:31:53Z"
 lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 82
 maintainers: ["mrosberghaus", "PatrickTobler", "schaier-io"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a3540f90afa54e1e80e1fc4adcfc5fabcb6d7b5a0e932b5fef6e9f296b179789/masumi-network/sokosumi"
+openGraphImageUrl: "https://opengraph.githubassets.com/865799a63c7a44761c7505882ad51092bf74e4ddacb83f579c9113844cbae981/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -47,8 +47,7 @@ sokosumi/
 │   ├── net/         # @sokosumi/net — SSRF-safe fetch
 │   ├── email/       # @sokosumi/email — renderers and locales
 │   ├── ai-provider/ # @sokosumi/ai-provider — Sokosumi AI SDK provider
-│   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (runtime is in Core)
+│   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (loop runs in per-bot Vercel Sandboxes; Core is the control plane)
 ├── docs/            # Agent, domain, coworker, and design docs
 ├── scripts/         # local-env, cloud-agent-db, CI helpers
-├── skills/          # First-party agent skill sources
-├──…
+├── skills/…
