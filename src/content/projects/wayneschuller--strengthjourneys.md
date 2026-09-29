@@ -7,7 +7,7 @@ url: "https://github.com/wayneschuller/strengthjourneys"
 homepage: "https://www.strengthjourneys.xyz"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [99]
+languagePcts: [98]
 topics: ["fitness", "powerlifting", "strength", "visualization"]
 stars: 15
 forks: 2
@@ -17,13 +17,13 @@ watchers: 2
 contributors: 4
 recentReleases: 0
 createdAt: "2022-10-06T08:45:24Z"
-lastCommitAt: "2026-09-28T08:13:40Z"
+lastCommitAt: "2026-09-29T06:55:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 72
-maintainers: ["wayneschuller"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5751dcf620a0b5a0e00c3420094d66078426905b702a16600bfd5ba6851e7468/wayneschuller/strengthjourneys"
+maintainers: ["wayneschuller", "claude"]
+openGraphImageUrl: "https://opengraph.githubassets.com/73afe5e7134fa9b72af07dcbef3a1bc63b2517a6e7724494b9c4f19e950c730c/wayneschuller/strengthjourneys"
 postedAt: "2026-08-29T10:26:28.549Z"
 ---
 

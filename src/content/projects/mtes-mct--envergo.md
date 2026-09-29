@@ -16,13 +16,13 @@ watchers: 1
 contributors: 22
 recentReleases: 0
 createdAt: "2021-07-05T07:55:49Z"
-lastCommitAt: "2026-09-25T12:43:37Z"
+lastCommitAt: "2026-09-29T07:04:09Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 94
-maintainers: ["thibault", "tut-tuuut", "pyDez"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ef17b7b5039e2fa1f35325f8e184655a1625f37e2519dda71e811fb70bac627c/MTES-MCT/envergo"
+maintainers: ["pyDez", "tut-tuuut", "thibault"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b9ffe64228add64ee111b2d33022dc01f1337d0e68198ff1aa2f777bfe462002/MTES-MCT/envergo"
 postedAt: "2026-08-13T05:22:15.856Z"
 ---
 
