@@ -2,5 +2,9 @@
   {
     "repo": "opn-build/OpenAlive",
     "until": null
+  },
+  {
+    "repo": "Peon-sh/Peon",
+    "until": "2026-10-29"
   }
 ]
