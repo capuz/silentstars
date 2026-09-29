@@ -17,15 +17,16 @@ watchers: 0
 contributors: 11
 recentReleases: 10
 createdAt: "2026-07-10T11:34:59Z"
-lastCommitAt: "2026-09-28T13:37:09Z"
+lastCommitAt: "2026-09-29T09:39:18Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 97
 undervaluedScore: 41
 maintainers: ["arpit-advant", "parth-advant019", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ca23f9218e9edfaf6b118599aebedcafcf220845137305d0fb4357a8a4782e95/Peon-sh/Peon"
+openGraphImageUrl: "https://opengraph.githubassets.com/a982ed24a1781f5301226b902674343fe1f4e8ac59752edd814f517619bde7bd/Peon-sh/Peon"
 promoted: true
+postedAt: "2026-09-29T08:20:14.976Z"
 ---
 
 # Peon

@@ -19,7 +19,7 @@ lastCommitAt: "2026-09-28T16:36:19Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 74
 maintainers: ["gregkonush", "tuslagch"]
 openGraphImageUrl: "https://opengraph.githubassets.com/671c8282d4105d49734d758ca806c57a5650ef77581589a85be43bcb6d18b438/proompteng/lab"

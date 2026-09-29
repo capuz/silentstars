@@ -18,7 +18,7 @@ contributors: 6
 recentReleases: 0
 createdAt: "2024-12-14T18:36:58Z"
 lastCommitAt: "2026-09-15T10:01:55Z"
-status: "thriving"
+status: "quiet"
 tags: ["hidden_gem"]
 healthScore: 91
 undervaluedScore: 90
