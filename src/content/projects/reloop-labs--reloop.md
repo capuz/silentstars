@@ -1,15 +1,15 @@
 ---
 repo: "reloop-labs/reloop"
 name: "reloop"
-description: "An open-source & self-hostable AWS SES / SendGrid / Mailchimp / Resend / Loops alternative."
+description: "Open-source transactional email API and self-hostable Resend alternative. SMTP, inbound mail, webhooks, and campaigns for developers."
 readmeQualityOk: true
 url: "https://github.com/reloop-labs/reloop"
 homepage: "https://reloop.sh"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [90]
-topics: ["email", "mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email"]
-stars: 89
+topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email", "bun", "developer-tools", "docker", "email-api"]
+stars: 90
 forks: 12
 openIssues: 2
 closedIssues: 36
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-09-29T05:46:35Z"
+lastCommitAt: "2026-09-29T19:18:58Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 99
-undervaluedScore: 53
+healthScore: 98
+undervaluedScore: 52
 maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/961b617550184dcbbda8a684ddb4692b1c57d670f567709ef376d9c4f88ceb5f/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/007da1357103f341a4ca1b579d6368c81c8b0519ba9a596b42944156c107e2f5/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"

@@ -7,24 +7,24 @@ url: "https://github.com/xima-media/xima-typo3-frontend-edit"
 homepage: "https://docs.typo3.org/p/xima/xima-typo3-frontend-edit/main/en-us/Index.html"
 language: "PHP"
 languages: ["PHP", "JavaScript"]
-languagePcts: [60, 22]
+languagePcts: [59, 22]
 topics: ["typo3", "typo3-cms-extension", "typo3-extension"]
 stars: 16
 forks: 4
-openIssues: 4
-closedIssues: 50
+openIssues: 3
+closedIssues: 51
 watchers: 3
 contributors: 4
 recentReleases: 0
 createdAt: "2024-08-08T07:42:29Z"
-lastCommitAt: "2026-09-20T08:45:10Z"
+lastCommitAt: "2026-09-30T08:52:47Z"
 lastReleaseAt: "2025-05-25T11:43:10Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 94
+healthScore: 97
 undervaluedScore: 71
 maintainers: ["konradmichalik", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/32ead856d19dc2d7665ab6cdcb1e9dc6350bdfdd1ffcb3dd718ed2bb7c956f94/xima-media/xima-typo3-frontend-edit"
+openGraphImageUrl: "https://opengraph.githubassets.com/ec64859bc2b377b12fc3c458912442a28fea13a839b770a55580bc8d0880d415/xima-media/xima-typo3-frontend-edit"
 postedAt: "2026-09-20T08:56:12.336Z"
 ---
 

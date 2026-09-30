@@ -11,7 +11,7 @@ languagePcts: [96]
 topics: ["python", "python-typing", "typeshed", "typing"]
 stars: 14
 forks: 6
-openIssues: 3
+openIssues: 4
 closedIssues: 171
 watchers: 3
 contributors: 7
