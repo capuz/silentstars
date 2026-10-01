@@ -9,33 +9,33 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [96]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
-stars: 13
+stars: 11
 forks: 89
-openIssues: 69
+openIssues: 72
 closedIssues: 4358
 watchers: 0
 contributors: 83
 recentReleases: 0
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-09-30T06:49:01Z"
+lastCommitAt: "2026-10-01T10:17:27Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
 healthScore: 100
-undervaluedScore: 66
+undervaluedScore: 68
 maintainers: ["JSONbored", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ebac2d08ffee5ede3c966fc6aecba5a144d160b955597129e5266c43d4c3f67a/JSONbored/metagraphed"
+openGraphImageUrl: "https://opengraph.githubassets.com/33f57be84e29b01bc6a7c2d04b2283dd0438276eb739b760ba9a889690c5453e/JSONbored/metagraphed"
 fundingLinks: ["GITHUB:https://github.com/JSONbored", "KO_FI:https://ko-fi.com/jsonbored", "BUY_ME_A_COFFEE:https://buymeacoffee.com/jsonbored"]
 postedAt: "2026-06-30T06:57:31.003Z"
 ---
 
 ### Every subnet, metagraphed.
 
-**The open registry and block explorer for Bittensor.** All 128 subnets, the APIs and schemas each one publishes, whether those endpoints answered our last probe, and how to call them — as REST, GraphQL, MCP tools and CSV.
+**The open registry and block explorer for Bittensor.** All 128 subnets, the APIs and schemas each one publishes, whether those endpoints answered our last probe, and how to call them — as REST, MCP tools and CSV.
 
 Bittensor didn't ship with a map, so we drew one. Every health figure here is probe-derived on a 15-minute cycle; none of it is self-reported.
 
-**[Website](https://metagraph.sh)** &nbsp;·&nbsp; [API](https://api.metagraph.sh) &nbsp;·&nbsp; [OpenAPI](https://api.metagraph.sh/metagraph/openapi.json) &nbsp;·&nbsp; [GraphQL](https://api.metagraph.sh/api/v1/graphql) &nbsp;·&nbsp; [MCP](https://api.metagraph.sh/mcp) &nbsp;·&nbsp; [Agent docs](https://api.metagraph.sh/llms.txt) &nbsp;·&nbsp; [Agent workflows](https://api.metagraph.sh/agent-workflows.md) &nbsp;·&nbsp; [Feeds](https://api.metagraph.sh/api/v1/feeds/registry) &nbsp;·&nbsp; [npm](https://www.npmjs.com/package/@jsonbored/metagraphed) &nbsp;·&nbsp; [PyPI](https://pypi.org/project/metagraphed/)
+**[Website](https://metagraph.sh)** &nbsp;·&nbsp; [API](https://api.metagraph.sh) &nbsp;·&nbsp; [OpenAPI](https://api.metagraph.sh/metagraph/openapi.json) &nbsp;·&nbsp; [MCP](https://api.metagraph.sh/mcp) &nbsp;·&nbsp; [Agent docs](https://api.metagraph.sh/llms.txt) &nbsp;·&nbsp; [Agent workflows](https://api.metagraph.sh/agent-workflows.md) &nbsp;·&nbsp; [Feeds](https://api.metagraph.sh/api/v1/feeds/registry) &nbsp;·&nbsp; [npm](https://www.npmjs.com/package/@jsonbored/metagraphed) &nbsp;·&nbsp; [PyPI](https://pypi.org/project/metagraphed/)
 
 </div>
 
@@ -43,4 +43,4 @@ Bittensor didn't ship with a map, so we drew one. Every health figure here is pr
 
 ## What it is
 
-The native Bittensor metagraph tells you what's happening at the protocol layer. Metagraphed adds the **builder-facing layer it lacks**: a chain-direct block…
+The native Bittensor metagraph tells you what's happening at the protocol layer. Metagraphed adds the **builder-facing layer it lacks**: a chain-direct block explorer (its own Rust indexer, no third-party RPC dependency), a…

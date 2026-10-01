@@ -11,20 +11,20 @@ languagePcts: [86]
 topics: ["ai", "ai-agents", "antigravity", "automation", "claude", "code-review", "codex", "coding-agent", "devtools", "docker"]
 stars: 13
 forks: 6
-openIssues: 42
-closedIssues: 1043
+openIssues: 17
+closedIssues: 1070
 watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-09-29T20:45:06Z"
+lastCommitAt: "2026-10-01T09:08:06Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 86
-maintainers: ["integry", "proprdev", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/99039ffc638f28689aa571f5ffe5e58b15356ef71c14159f6d51977294e765ff/integry/propr"
+maintainers: ["integry", "propr-dev[bot]", "proprdev"]
+openGraphImageUrl: "https://opengraph.githubassets.com/db8b8ecf1c9b1d74a8a0a830998da4b2562c6d9be842049d63290a10814ad2c5/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
 ---

@@ -16,14 +16,14 @@ watchers: 2
 contributors: 16
 recentReleases: 9
 createdAt: "2025-02-17T14:20:03Z"
-lastCommitAt: "2026-09-30T05:27:25Z"
+lastCommitAt: "2026-10-01T07:46:23Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 98
 undervaluedScore: 89
 maintainers: ["dspachos", "dan2k3k4", "amazee-ai-automation[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/18cacd6cc635bcc114c9d3340f42ca06ed3ff949a3565959c5165b00aef83e29/amazeeio/amazee.ai"
+openGraphImageUrl: "https://opengraph.githubassets.com/fc616c81cee79c55c29f4244dce4e9bf0c73d51c1680ba3393b0a6724c9622b3/amazeeio/amazee.ai"
 postedAt: "2026-09-22T08:53:36.022Z"
 ---
 

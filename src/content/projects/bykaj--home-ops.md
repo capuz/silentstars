@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-09-30T06:02:28Z"
+lastCommitAt: "2026-09-30T23:23:51Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 90
 undervaluedScore: 78
 maintainers: ["bykaj", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7325210f3fc9204e10c83c5201bb61c19195a0b02371cfc78c0322b2cde87da6/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/1d6630a891c18dad526b23dbd5eb49d63a97f716276fd5272d8b20f1c876eae4/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 
@@ -47,6 +47,11 @@ _Managed with Flux, Renovate, and GitHub Actions_
 3. [Cloud Dependencies](#-cloud-dependencies)
 4. [DNS](#-dns)
 5. [Hardware](#-hardware)
+   - [Compute](#compute)
+   - [Storage](#storage)
+   - [Networking](#networking)
+   - [Power](#power)
+   - [Eye candy](#eye-candy)
 6. [Future Plans](#-future-plans)
 7. [Gratitude and Thanks](#-gratitude-and-thanks)
 8. [License](#-license)
@@ -57,4 +62,4 @@ _Managed with Flux, Renovate, and GitHub Actions_
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="20" height="20"> Overview
 
-This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2), [Renovate](https://github.com/renovatebot/renovate) and [GitHub Actions](https://github.com/features/actions)—you know, the same stack…
+This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2),…

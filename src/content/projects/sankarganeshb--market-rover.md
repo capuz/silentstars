@@ -7,7 +7,7 @@ url: "https://github.com/SankarGaneshb/Market-Rover"
 homepage: "https://market-rover.streamlit.app/"
 language: "Python"
 languages: ["Python", "JavaScript"]
-languagePcts: [62, 33]
+languagePcts: [64, 32]
 topics: ["ai-agents-framework", "bse", "crewai", "financial-intelligence", "fintech", "indian-stocks", "multi-agent-systems", "nse", "portfolio-management", "quantitative-finance"]
 stars: 5
 forks: 3
@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-12-18T15:03:32Z"
-lastCommitAt: "2026-09-25T11:59:03Z"
+lastCommitAt: "2026-09-30T20:36:00Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 76
+healthScore: 78
 undervaluedScore: 82
 maintainers: ["SankarGaneshb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cb98f4e5dd61f119557dbe6c2acb468eda94b4c630c316857fabd2e35203e1f1/SankarGaneshb/Market-Rover"
+openGraphImageUrl: "https://opengraph.githubassets.com/4c3add533c567d97a16097246e76fa6d71e3a2da1d2ee777eb11b3412a27e851/SankarGaneshb/Market-Rover"
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---
