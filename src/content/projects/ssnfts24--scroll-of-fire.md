@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [88]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
-stars: 6
+stars: 7
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -21,8 +21,8 @@ lastCommitAt: "2026-08-21T12:55:55Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
 status: "quiet"
 tags: ["funded"]
-healthScore: 73
-undervaluedScore: 73
+healthScore: 72
+undervaluedScore: 72
 maintainers: ["ssnfts24", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]

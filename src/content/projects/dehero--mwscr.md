@@ -7,22 +7,22 @@ url: "https://github.com/dehero/mwscr"
 homepage: "https://mwscr.dehero.site"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [93]
+languagePcts: [94]
 stars: 11
 forks: 2
-openIssues: 1
+openIssues: 2
 closedIssues: 434
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-10-01T08:22:56Z"
+lastCommitAt: "2026-10-02T08:34:41Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 77
 maintainers: ["mwscr-bot", "dehero"]
-openGraphImageUrl: "https://opengraph.githubassets.com/04384de738047b6c6335c28e34294cbc157ca9c252b67d23c3bc3bd116eeb0ef/dehero/mwscr"
+openGraphImageUrl: "https://opengraph.githubassets.com/bbab7d80a7f8225c7dce31c8a52839e6fe7704738cf64a1c2e40a34dcafaf902/dehero/mwscr"
 postedAt: "2026-07-16T06:07:04.741Z"
 ---
 

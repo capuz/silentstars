@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/yzerlaut/physion"
 language: "Python"
 languages: ["Python", "Jupyter Notebook"]
-languagePcts: [62, 37]
+languagePcts: [63, 37]
 topics: ["electrophysiology", "imaging", "neuroscience", "vision"]
 stars: 6
 forks: 9
@@ -16,10 +16,10 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-18T08:41:57Z"
-lastCommitAt: "2026-09-30T12:58:53Z"
+lastCommitAt: "2026-10-02T09:38:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 85
 maintainers: ["yzerlaut"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/553456112/31a0f3db-e676-4770-af95-098239c21eea"

@@ -11,19 +11,19 @@ languagePcts: [67]
 stars: 6
 forks: 34
 openIssues: 97
-closedIssues: 177
+closedIssues: 179
 watchers: 1
 contributors: 51
 recentReleases: 6
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-10-01T05:35:04Z"
+lastCommitAt: "2026-10-02T08:30:15Z"
 lastReleaseAt: "2026-09-17T12:24:40Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 91
 undervaluedScore: 99
 maintainers: ["NicolasFussberger", "danth", "eclipse-score-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c5cc4aff65e94e49c498b657437cd884e9f00c9d9c0afcf44271c2648028974c/eclipse-score/lifecycle"
+openGraphImageUrl: "https://opengraph.githubassets.com/f04fae0de6c60c81685dc10d46fbd1ec0e9b2822ffbbf366e28b6d992bafa1dd/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

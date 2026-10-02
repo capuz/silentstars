@@ -10,21 +10,21 @@ languages: ["Go", "TypeScript"]
 languagePcts: [59, 36]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 9
-forks: 1
-openIssues: 10
-closedIssues: 263
+forks: 2
+openIssues: 6
+closedIssues: 268
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-10-01T05:08:01Z"
+lastCommitAt: "2026-10-01T22:33:54Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
-undervaluedScore: 78
+undervaluedScore: 80
 maintainers: ["dianlight", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6243385364fbcdc1b8018b14b0dd416808cace33159cf18383916193d28d3839/dianlight/srat"
+openGraphImageUrl: "https://opengraph.githubassets.com/a355261cebed5e9c4d4d4a7278bf55abefd5fac6a582c773ded05d2111848b3c/dianlight/srat"
 fundingLinks: ["GITHUB:https://github.com/dianlight", "BUY_ME_A_COFFEE:https://buymeacoffee.com/ypKZ2I0"]
 discussionCount: 7
 postedAt: "2026-09-27T09:35:29.945Z"

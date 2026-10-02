@@ -10,21 +10,21 @@ languages: ["TypeScript"]
 languagePcts: [85]
 topics: ["api", "blockchain", "cryptocurrency", "payments", "webhooks"]
 stars: 20
-forks: 22
+forks: 23
 openIssues: 0
 closedIssues: 91
 watchers: 0
-contributors: 18
+contributors: 19
 recentReleases: 8
 createdAt: "2025-11-26T13:29:53Z"
-lastCommitAt: "2026-09-30T07:46:35Z"
+lastCommitAt: "2026-10-01T17:34:18Z"
 lastReleaseAt: "2026-07-26T09:36:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 80
-maintainers: ["ralyodio", "phucnguyen1707", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5dc279c8bcfa28fc8c56b002e7953237f9e26b53cdaf9a6eebe0615aaaec9ea1/profullstack/coinpayportal"
+maintainers: ["ralyodio", "dependabot[bot]", "phucnguyen1707"]
+openGraphImageUrl: "https://opengraph.githubassets.com/be535a413c061e1b1b4533f154f6f9f5a95c16aacae73aab4e68bfa2954cb7f0/profullstack/coinpayportal"
 postedAt: "2026-08-01T06:19:05.392Z"
 ---
 

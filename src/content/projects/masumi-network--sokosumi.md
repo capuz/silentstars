@@ -7,7 +7,7 @@ url: "https://github.com/masumi-network/sokosumi"
 homepage: "https://sokosumi.com"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [90]
+languagePcts: [89]
 stars: 13
 forks: 7
 openIssues: 3
@@ -16,14 +16,14 @@ watchers: 1
 contributors: 13
 recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-10-01T10:23:41Z"
+lastCommitAt: "2026-10-02T09:20:45Z"
 lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 82
-maintainers: ["mrosberghaus", "PatrickTobler", "enjojoy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/94e9edf357f6d6533ff06e682c054d70b0bc9f94fafc2e5541689662be3a9904/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "PatrickTobler"]
+openGraphImageUrl: "https://opengraph.githubassets.com/af5b893233ff69e9a8b89f5437c3b47ea3a997f7e5c6176d4c1ab46fe6673cf0/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 

@@ -12,19 +12,19 @@ topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid
 stars: 92
 forks: 12
 openIssues: 2
-closedIssues: 36
+closedIssues: 37
 watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-10-01T10:09:14Z"
+lastCommitAt: "2026-10-02T07:33:23Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 52
 maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b751a23c2a84995a7c8225adadf85a044b1233a3a45e38d7579293a8d01667ef/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/b9bb2318378a5cb202ff90fada91c7e3eed7639b0b2748b68542d27ff48e702d/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
