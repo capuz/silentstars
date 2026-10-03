@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { claudeEnabled } from './claude-cli.ts';
+import { stripReadmeNoise } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify } from './post-shared.ts';
 
@@ -503,19 +504,6 @@ function toFrontmatter(data: RepoData): string {
   if (data.postedAt) lines.push(`postedAt: "${data.postedAt}"`);
   lines.push('---');
   return lines.join('\n');
-}
-
-function stripReadmeNoise(rawReadmeText: string): string {
-  return rawReadmeText
-    .split('\n')
-    .filter(l => !/^\s*\[!\[/.test(l))                    // strip badge lines
-    .filter(l => !/^\s*<(img|a |div|p |span)/.test(l))    // strip HTML tags
-    .join('\n')
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')                 // strip inline markdown images (malformed URIs break Vite/rehype)
-    .replace(/!\[[^\]]*\]\[[^\]]*\]/g, '')                // strip reference-style markdown images (same reason)
-    .replace(/<!--[\s\S]*?-->/g, '')                      // strip HTML comments
-    .replace(/\n{3,}/g, '\n\n')                           // collapse blank lines
-    .trim();
 }
 
 /** Rewrite relative markdown links to point at the source repo on GitHub instead of
