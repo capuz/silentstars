@@ -1586,6 +1586,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mwxl7vokv62l",
         "postedAt": "2026-10-03T09:30:13.458Z"
+      },
+      "ownerEmail": {
+        "url": "jbernal@etsisi.upm.es",
+        "postedAt": "2026-10-03T09:30:30.946Z"
       }
     }
   }
