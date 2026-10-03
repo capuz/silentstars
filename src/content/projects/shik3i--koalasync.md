@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-07T21:12:34Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 34
 maintainers: ["Shik3i", "actions-user", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"
@@ -29,12 +29,6 @@ fundingLinks: ["KO_FI:https://ko-fi.com/koaladev"]
 discussionCount: 1
 postedAt: "2026-06-26T21:38:25.211Z"
 ---
-
-</p>
-
-<h1 align="center">KoalaSync</h1>
-
-</p>
 
 ### 🌟 Why KoalaSync?
 
@@ -51,4 +45,4 @@ postedAt: "2026-06-26T21:38:25.211Z"
 - **Episode Auto-Sync**: Perfectly sync series binges. All peers wait until everyone has loaded the next episode before starting together.
 - **Host Control & Co-Hosts**: Room hosts can lock playback control to trusted controllers while guests keep watching in sync.
 - **Smart Matching**: Automatically highlights tabs containing matching video titles.
-- **Dual Heartbeat Architecture**: Robust…
+- **Dual Heartbeat Architecture**: Robust session tracking that prevents ghost rooms and stale…

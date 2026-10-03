@@ -29,24 +29,16 @@ discussionCount: 8
 postedAt: "2026-08-30T01:05:03.111Z"
 ---
 
-</a>
-</p>
-
-  <em>a modern community platform</em>
-</p>
-
-  <a
+<a
     href="https://storyden.org/docs"
   >Documentation</a>
   |
   <a
     href="https://makeroom.club"
   >Friends</a>
-</p>
 
   With a fresh new take on traditional bulletin board web forum software,
   Storyden is a modern, secure and extensible platform for building communities.
-</p>
 
 # Storyden
 
@@ -62,4 +54,4 @@ docker run -p 8000:8000 ghcr.io/southclaws/storyden
 
 ## Releases and versions
 
-Storyden releases tagged versions using a simple version number which applies to the product _as a whole_ not the API surface. For this reason, we do not use "semantic versioning" and breaking API changes are avoided as much as possible. Sometimes breaking changes may occur but…
+Storyden releases tagged versions using a simple version number which applies to the product _as a whole_ not the API surface. For this reason, we do not use "semantic versioning" and breaking API changes are avoided as much as possible. Sometimes breaking changes may occur but these will always be documented and called out in release notes as…

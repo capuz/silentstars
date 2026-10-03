@@ -34,25 +34,21 @@ postedAt: "2026-07-14T06:02:00.094Z"
 
 **🔗 [Live Preview](https://wanderlust-fofm.onrender.com/listings)**
 
-</div>
-
 ## 📊 Project Insights
 
-<table align="center">
-    <thead align="center">
-        <tr>
-            <td><b>🌟 Stars</b></td>
-            <td><b>🍴 Forks</b></td>
-            <td><b>🐛 Issues</b></td>
-            <td><b>🔔 Open PRs</b></td>
-            <td><b>🔕 Closed PRs</b></td>
-            <td><b>🛠️ Languages</b></td>
-            <td><b>👥 Contributors</b></td>
-        </tr>
-     </thead>
-    <tbody>
-         <tr>
-            <td><img alt="Stars" src="https://img.shields.io/github/stars/koushik369mondal/WanderLust?style=flat&logo=github"/></td>
-            <td><img alt="Forks" src="https://img.shields.io/github/forks/koushik369mondal/WanderLust?style=flat&logo=github"/></td>
-            <td><img alt="Issues" src="https://img.shields.io/github/issues/koushik369mondal/WanderLust?style=flat&logo=github"/></td>
-            <td><img alt="Open PRs"…
+## 🚀 Features
+
+### Core Features
+- 🌐 **Browse Destinations** - Explore amazing travel locations with detailed information
+- 📝 **Add New Places** - Share your favorite destinations with photos and descriptions
+- ⭐ **Reviews & Ratings** - Rate and review places you've visited (1-5 stars)
+- 🗺️ **Interactive Maps** - Powered by Mapbox with precise location markers
+- 📸 **Photo Uploads** - Upload multiple images via Cloudinary integration
+- 📱 **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- 🔐 **User Authentication** - Secure login/signup system with Passport.js
+- ✏️ **Full CRUD Operations** - Create, Read, Update, Delete listings and reviews
+
+### Advanced Features
+- 🤖 **AI-Powered Packing List Generator** - Smart travel packing lists with weather integration
+- 🌤️ **Real-Time Weather Integration** - Live weather data for all destinations
+- 📅 **Holiday…

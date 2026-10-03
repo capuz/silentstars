@@ -31,12 +31,6 @@ postedAt: "2026-06-25T22:59:39.704Z"
 
 # OpenAlive
 
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="https://opn-build.github.io/og-image-light.png" />
-    </picture>
-  </a>
-</p>
-
 > Keep your PC active. Automatically.
 
 **[Website](https://opn-build.github.io/) · [Download](https://github.com/opn-build/OpenAlive/releases) · [License](https://github.com/opn-build/OpenAlive/blob/HEAD/LICENSE)**
@@ -55,4 +49,6 @@ Working remotely or in a monitored environment, your PC going to sleep or showin
 
 ## Features
 
-- **Mouse activity simulation** — moves the cursor by a configurable number of pixels and…
+- **Mouse activity simulation** — moves the cursor by a configurable number of pixels and returns it to the exact position, imperceptibly
+- **Keystroke simulation** — optionally sends a configurable key (e.g. Shift) alongside the mouse movement
+-…

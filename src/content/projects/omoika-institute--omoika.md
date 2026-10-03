@@ -25,23 +25,12 @@ openGraphImageUrl: "https://opengraph.githubassets.com/010b445d58bcb089edb3a8d75
 postedAt: "2026-08-30T00:57:49.523Z"
 ---
 
-<details>   <summary>📼 <i>Click here to watch the <b>OMOIKA</b> demo.</i> </summary>
-
 [demo.mp4](https://github.com/user-attachments/assets/c3b9eee4-927b-46b1-bd6b-6aee5b624825)
-
-</details>
 
 ---
 
-<p>
-  </a>
-
 > _I have no data yet. It is a capital mistake to theorize before one has data. Insensibly
 > one begins to twist facts to suit theories, instead of theories to suit facts._
-
-<details>   <summary> <i>Click here to view <b>OMOIKA</b> screenshots.</i> </summary>
-
-</details>
 
 ---
 
@@ -57,4 +46,8 @@ Welcome to the **OMOIKA** project where you can connect, combine, and get insigh
 ## Community
 
 OMOIKA is currently developed by an individual aiming to grow into a small focused team.  
-There is no open contribution process as of now however you may contribute…
+There is no open contribution process as of now however you may contribute plugins to this repo or in time, themes too.
+
+- **Website**: https://omoika.institute
+- **Email**: omoika-institute@proton.me
+- **Discord**: [Join our community](https://discord.gg/b8vW4J4skv) for discussions…

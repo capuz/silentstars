@@ -16,22 +16,17 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-09-29T15:13:53Z"
+lastCommitAt: "2026-10-03T14:23:41Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 90
+healthScore: 91
 undervaluedScore: 72
 maintainers: ["claude", "dani-77"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1f24005b55efd0c0b521932d3e7dd6bfa5d3e9c5dca4cd6a1b63352541ff6b1f/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/ae82b4807bb8cc1aef6a4f61525c832823ade5702d42c33170d7fd329ae8482b/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 
-</p>
-
-<h1 align="center">d77void</h1>
-
-  ISO creator for d77void.
-</p>
+ISO creator for d77void.
 
 ---
 
@@ -40,6 +35,15 @@ postedAt: "2026-07-09T20:49:35.337Z"
 This repository is a fork of void-mklive, heavily modified to include skel for a huge amount of WM and DE.
 
 It is possible to build ISOs with and without Calamares.
+
+Builds with Calamares use the d77void logo throughout the installer and a
+four-image slideshow presenting d77void, Void Linux, the available desktop
+choices and the project community. The slideshow images fill the available
+area and the installer window adapts to smaller screens.
+
+Every variant identifies itself as `d77void GNU/Linux` through
+`/etc/os-release`, while `ID_LIKE=void` records its Void Linux base. The file
+uses the project website and the `d77void` icon installed with the image.
 
 ## Usage
 

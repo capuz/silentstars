@@ -17,13 +17,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-16T01:23:26Z"
-lastCommitAt: "2026-10-03T01:37:52Z"
+lastCommitAt: "2026-10-03T22:04:37Z"
 status: "thriving"
 tags: []
 healthScore: 94
 undervaluedScore: 75
 maintainers: ["renovate[bot]", "rajsinghtech"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0f1809fbfb172b8ff09cc7b3ec4a41a47f90deca0417e5f2dc2d1721e8be4eb3/keiretsu-labs/kubernetes-manifests"
+openGraphImageUrl: "https://opengraph.githubassets.com/f9ccb1b72cc9e38bfa79ab896957a702cd96c738a941dda168b00c750f4adaeb/keiretsu-labs/kubernetes-manifests"
 postedAt: "2026-08-03T06:48:22.019Z"
 ---
 
@@ -31,19 +31,11 @@ postedAt: "2026-08-03T06:48:22.019Z"
 
 _Managed with Flux, Tailscale, and GitHub Actions_
 
-</div>
-
 #### Ottawa
-
-</div>
 
 #### Robbinsdale
 
-</div>
-
 #### St. Petersburg
-
-</div>
 
 ---
 
@@ -61,10 +53,7 @@ through a `<picture>` element, so they follow your GitHub theme.
 
 ### 1 · Delivery — how a commit becomes running infrastructure
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/diagrams/1-delivery.dark.svg">
-  </picture>
-</a>
-
 The `main` branch is the only durable state. Flux polls it, decrypts the SOPS
-material, and reconciles three top-level Kustomizations per…
+material, and reconciles three top-level Kustomizations per cluster. The two
+things worth internalising: an app is deployed to a cluster **because a pointer
+file exists** in that cluster's location tree, and one…

@@ -19,7 +19,7 @@ createdAt: "2022-10-18T08:41:57Z"
 lastCommitAt: "2026-10-02T14:33:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 85
 maintainers: ["yzerlaut", "claude"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/553456112/31a0f3db-e676-4770-af95-098239c21eea"
@@ -35,7 +35,6 @@ postedAt: "2026-09-25T09:10:20.328Z"
 The software is organized into several modules to perform the acquisition, the preprocessing, the standardization, the visualization, the analysis and the sharing of multimodal neurophysiological recordings.
 
 The different modules are detailed in the [documentation below](https://github.com/yzerlaut/physion/blob/HEAD/README.md#modules-and-documentation) and their integration is summarized on the drawing below:
-</p>
 
 
 --------------------
@@ -63,4 +62,4 @@ pip install "physion[ephys,acquisition]"
 git clone https://github.com/yzerlaut/physion --recurse-submodules
 ```
 
-- For an installation on an…
+- For an installation on an acquisition…

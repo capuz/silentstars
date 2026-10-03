@@ -17,14 +17,14 @@ watchers: 0
 contributors: 9
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-10-03T07:42:29Z"
+lastCommitAt: "2026-10-03T15:44:42Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 98
 undervaluedScore: 52
 maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/817192459e53448cc7c0c459b43f77273ac10290fa41167c63191690f1e38364/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/54a5bcd19f83b56ce3024ebf3f908f194308f95009195263deb627375e78cbcd/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
@@ -39,13 +39,6 @@ No vendor lock-in. Full transparency. No proprietary black boxes.
 
 [Website](https://reloop.sh) · [Documentation](https://reloop.sh/docs) · [Hosted Sign-up](https://reloop.sh/dashboard/signup) · [Discord](https://discord.gg/ZBYwWKY96U)
 
-<br/>
-<br/>
-
-</a>
-
-</div>
-
 ---
 
 ## What is Reloop?
@@ -59,4 +52,4 @@ Reloop gives you the same capabilities as SendGrid, Mailchimp, Resend, and Loops
 - **Real-time analytics** — open rates, click rates, bounces, and delivery events stored in PostgreSQL
 - **Webhooks** — push delivery events to your own endpoints the moment they happen
 - **Contacts & lists** — manage subscribers, tags, and suppression lists
--…
+- **Workflows** — automate…

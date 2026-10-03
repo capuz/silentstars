@@ -32,8 +32,6 @@ postedAt: "2026-09-20T08:56:12.336Z"
 
 Edit, hide, delete, reorder and create TYPO3 content, without leaving the frontend.
 
-</div>
-
 It adds an edit button to every content element, a page-level toolbar, and optional inline editing and drag & drop, all rendered directly on top of the live frontend.
 
 > [!NOTE]

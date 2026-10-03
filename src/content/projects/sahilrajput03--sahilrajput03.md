@@ -19,35 +19,14 @@ createdAt: "2020-07-25T09:11:03Z"
 lastCommitAt: "2026-10-03T06:21:04Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 98
 maintainers: ["sahilrajput03"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5c82cc2b3af23becf325cdafadc5bf00634f46693bc6c8391cc71e0127547c5c/sahilrajput03/sahilrajput03"
 postedAt: "2026-10-01T10:30:31.668Z"
 ---
 
-<br>
-	</div>
-</div>
-
-<h1 align="center">Sahil Rajput</h1>
-
-<h6 align="center">Crazy Spirit, Namer, Live in heart, Finalizer, Dangerously insatiable curiosity, Writer, Introspector, Illusion Dispeller</h6>
-
-	
-	<ul id="search-results"></ul>
-</div>
-
-<h6 align="center">
-</h6>
-
-<h6 align="center">
-</h6>
-
-<h6 align="center">
-</h6>
-
-	Website: <a href="https://sahilrajput.com">sahilrajput.com</a><br/>
+Website: <a href="https://sahilrajput.com">sahilrajput.com</a><br/>
 	Github: <a href="https://github.com/sahilrajput03/sahilrajput03">github.com/sahilrajput03/sahilrajput03</a><br/>
 	Android App:  <a href="/apk/Tech_Blog_by_Sahil_Rajput_base.apk">Tech Blog by Sahil Rajput</a><br/>
 	YouTube:  <a href="https://www.youtube.com/@SahilRajput03/playlists">youtube.com/@sahilrajput03/playlists</a><br/>
@@ -55,10 +34,6 @@ postedAt: "2026-10-01T10:30:31.668Z"
 
 	
 	
-</div>
-
-<br />
-<br />
 
 ## Notes
 
@@ -66,4 +41,6 @@ postedAt: "2026-10-01T10:30:31.668Z"
 	- [freeproxy.io](https://freeproxy.io/) (earlier `sitenable.com`)
 		- 1337x: [proxied](https://freeproxy.io/o.php?u=http://1337x.to), [https://1337x.to](https://1337x.to/)
 		- thepiratebay: [proxied](https://freeproxy.io/o.php?u=https://thepiratebay.org), [https://thepiratebay.org](https://thepiratebay.org)
-		- torrentgalaxy:…
+		- torrentgalaxy: [proxied](https://freeproxy.io/o.php?u=https://torrentgalaxy.to/), [https://torrentgalaxy.to/](https://torrentgalaxy.to/)
+	- [https://uflix.cc](https://uflix.cc/) (for tor browser only)
+- **Tech Journal & Blogging:** [Click here](https://github.com/sahilrajput03/sahilrajput03/blob/HEAD/tech.html) \| [Old…

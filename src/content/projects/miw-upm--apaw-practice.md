@@ -13,16 +13,17 @@ forks: 12
 openIssues: 307
 closedIssues: 1063
 watchers: 2
-contributors: 134
+contributors: 133
 recentReleases: 0
 createdAt: "2021-09-08T13:47:07Z"
-lastCommitAt: "2026-10-03T09:22:51Z"
+lastCommitAt: "2026-10-03T19:36:11Z"
 status: "thriving"
 tags: ["legacy_hero", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 81
-maintainers: ["gbrisc427", "JulianaDiasMayrink", "juancturcios"]
-openGraphImageUrl: "https://opengraph.githubassets.com/747792236613b85d8967bdce978472d5306685a05813c5db39ef57a7615f256c/miw-upm/apaw-practice"
+maintainers: ["davidpaz06", "gbrisc427", "Jingyi-Shu"]
+openGraphImageUrl: "https://opengraph.githubassets.com/005bd467fc183cf7e2553a53a27a56b1e8dca20ebf4a95e12723291e65650c22/miw-upm/apaw-practice"
+postedAt: "2026-10-03T09:30:13.458Z"
 ---
 
 ## [Máster en Ingeniería Web por la Universidad Politécnica de Madrid (miw-upm)](http://miw.etsisi.upm.es)

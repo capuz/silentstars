@@ -15,10 +15,10 @@ watchers: 2
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-10-03T09:22:22Z"
+lastCommitAt: "2026-10-03T09:26:14Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 73
 maintainers: ["nsticco", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
@@ -26,11 +26,6 @@ postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
 # 🌙 MoonMind — Security, resilience, and observability for AI coding agents
-
-    <picture>
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MoonLadderStudios/MoonMind/main/docs/assets/moonmindlogo.png">
-    </picture>
-</p>
 
 MoonMind is an open-source framework that gives AI coding agents stronger **security**, more **resilient** execution, and more **observable** operations through Temporal-based durable workflows, explicit Provider Profiles and policies, controlled runtime and container boundaries, and an operational dashboard.
 
@@ -40,4 +35,4 @@ For now, MoonMind is focused on software engineering use cases, but it can be us
 
 MoonMind coordinates provider-maintained coding agents with security, durable execution, and inspectable results. It is built for engineers who want to direct an agent (Codex, Claude Code, OpenCode, or a future approved harness) without handing it ambient credentials, the host Docker socket, or an unscoped network.
 
-The supported first path is local-first: `docker…
+The supported first path is local-first: `docker compose up -d`, open the dashboard at `http://localhost:7000`, add a provider credential to a Provider Profile, then create a workflow and submit it. The first result appears as outputs and artifacts…

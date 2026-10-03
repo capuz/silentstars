@@ -29,18 +29,12 @@ discussionCount: 2
 postedAt: "2026-06-25T06:46:44.859Z"
 ---
 
-</p>
-
-  A modern programming language built with Rust.<br/>
+A modern programming language built with Rust.<br/>
   Fast, safe, expressive, and easy to read.
-</p>
-
-</p>
 
   &middot;
   &middot;
   &middot;
-</p>
 
 ## Why Raven
 
@@ -75,4 +69,4 @@ Download the installer or archive for your platform from the [releases page](htt
 - Linux: `.deb`, `.rpm`, or `.tar.gz`
 - Windows: `.msi` or `.zip`
 
-This installs the `raven` compiler and the `rvpm` package manager…
+This installs the `raven` compiler and the `rvpm` package manager and adds them to your…

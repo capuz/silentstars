@@ -27,10 +27,6 @@ postedAt: "2026-07-08T05:49:30.374Z"
 ---
 
 🚀 Your interactive platform for real-time data breach insights and user engagement. <br>
-</p>
-</p> <br>  
-</p>  
-</p>
 
 ## What is XposedOrNot Website?
 
@@ -50,4 +46,4 @@ The website is a key part of our commitment to making data breach information ac
 
 🌟 Give us a star if you like what we're doing! 🍴 Fork it and make it your own!
 
-🤝 And…
+🤝 And hey, why not contribute? We…

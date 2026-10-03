@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2022-12-18T09:37:43Z"
-lastCommitAt: "2026-10-03T08:08:12Z"
+lastCommitAt: "2026-10-03T20:06:18Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 97
 undervaluedScore: 82
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b9173cc1629ae7d94f41c3edb01623e7a8e9c78f93cbb4a1c1cc957244e8fa7b/IIUMstudent/Awesome-IIUM"
+openGraphImageUrl: "https://opengraph.githubassets.com/182cb019adb90ded5ce7b3ce9f380f7f3a35bf4b1b0eb4e26aa8e2771d00f5a4/IIUMstudent/Awesome-IIUM"
 discussionCount: 2
 postedAt: "2026-08-19T04:12:56.778Z"
 ---
@@ -36,9 +36,6 @@ postedAt: "2026-08-19T04:12:56.778Z"
 _Read this in other languages: [Bahasa Melayu](https://iiumstudent.github.io/Awesome-IIUM/ms/),
 [中文](https://iiumstudent.github.io/Awesome-IIUM/zh/), [العربية](https://iiumstudent.github.io/Awesome-IIUM/ar/),
 [日本語](https://iiumstudent.github.io/Awesome-IIUM/ja/)_
-
-  <br>
-</div>
 
 ## Table of Contents
 

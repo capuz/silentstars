@@ -15,13 +15,13 @@ watchers: 0
 contributors: 8
 recentReleases: 0
 createdAt: "2018-07-27T16:10:13Z"
-lastCommitAt: "2026-10-01T09:23:26Z"
+lastCommitAt: "2026-10-03T09:35:02Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
-healthScore: 63
-undervaluedScore: 57
+healthScore: 64
+undervaluedScore: 58
 maintainers: ["maxkasy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/36efad7c3e78bd7be383e86dc30d3780efc6c5b7ff0df39be3949b5a9e79a961/maxkasy/home"
+openGraphImageUrl: "https://opengraph.githubassets.com/d202e0172d41d719e1e1d2e1975f735287f90c89046a0c46bd4beb7d724172b4/maxkasy/home"
 postedAt: "2026-06-27T06:32:04.060Z"
 ---
 

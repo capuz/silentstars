@@ -28,21 +28,6 @@ openGraphImageUrl: "https://opengraph.githubassets.com/852ad9f09802c308dca19829f
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 
-<picture>
-    <source type="image/svg+xml" srcset="docs/screenshots/banner.svg">
-  </picture>
-</p>
-
-  <picture>
-    <source type="image/svg+xml" srcset="docs/screenshots/avatar.svg">
-  </picture>
-  <strong>Local-first messy-table workbench — profile, clean, plan, and report over Excel / CSV / TXT, without shipping your data to the cloud.</strong>
-</p>
-
-</p>
-
-</p>
-
 ---
 
 ## Overview
@@ -55,4 +40,8 @@ It is a hybrid stack. A **Python FastAPI analysis service** (`analysis_service/`
 
 ## Features
 
-Real capabilities wired into…
+Real capabilities wired into `analysis_service/app/main.py` (service `v0.5.0`):
+
+- **Dataset directory** — `GET /api/datasets` lists the local data dir; `POST /api/analyze` (and `-upload`) load a table by name or by file upload, with optional Excel `sheet`.
+- **Table profiling** — `profile_dataset` / `profile_table` produce a schema- and quality-oriented profile per table.
+- **Cleaning preview &…

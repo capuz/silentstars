@@ -27,8 +27,6 @@ postedAt: "2026-09-13T08:33:41.998Z"
 
 **A lightweight intrusion prevention system written in Rust.**
 
-</div>
-
 ---
 
 Banalize tails log files, extracts IP addresses via configurable regex patterns, and blocks offenders using `iptables` after a configurable number of matches within a time window.

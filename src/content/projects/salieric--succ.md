@@ -20,7 +20,7 @@ lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
 healthScore: 93
-undervaluedScore: 80
+undervaluedScore: 75
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]

@@ -28,17 +28,8 @@ openGraphImageUrl: "https://opengraph.githubassets.com/9cd09cee686104f7756d5b080
 postedAt: "2026-08-30T01:01:32.547Z"
 ---
 
-<em>A simple, developer-friendly library to create powerful <a href="https://matrix.org">Matrix</a> bots.</em>
-</div>
-
-</div>
-
 [<img src="https://img.shields.io/badge/Get%20Started-black?style=for-the-badge" />](https://matrixpy.codesociety.xyz/guides/introduction/)
 [<img src="https://img.shields.io/badge/Reference-555555?style=for-the-badge" />](https://matrixpy.codesociety.xyz/reference/bot/)
-
-</div>
-
-</div>
 
 ---
 
@@ -63,4 +54,16 @@ Using a virtual environment is strongly recommended:
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate…
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install matrix-python
+```
+
+Create a `config.yml`:
+
+```yaml
+USERNAME: "@yourbot:matrix.org"
+PASSWORD: "your_password"
+```
+
+```python
+from…

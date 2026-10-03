@@ -28,14 +28,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/5fb0014fe5e19445a890f8cf6
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="site/logo-512-dark.png">
-  </picture>
-</p>
-
 # drydock
-
-</p>
 
 drydock runs **Claude Code**, **OpenAI Codex**, or **any OpenAI-compatible
 model** (Gemini, OpenRouter, local) full-throttle on your own repos, on your
@@ -54,4 +47,6 @@ reaches your real code until you approve it.
 
 Most agent tooling tries to keep the agent *well-behaved*: permission
 prompts, output filters, policy. drydock takes the opposite stance: **contain
-the blast radius**. A hostile agent (a poisoned repo, a malicious…
+the blast radius**. A hostile agent (a poisoned repo, a malicious dependency,
+a prompt injection that turns a fetched URL into a shell command) can't reach
+your key, your filesystem, your…

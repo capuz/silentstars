@@ -16,44 +16,19 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-10-03T09:15:57Z"
+lastCommitAt: "2026-10-03T21:04:29Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
 undervaluedScore: 79
 maintainers: ["github-actions[bot]", "jimbrig", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7e81996cbd5c3af511bc16ca88acfbcbb5bc71bc6d7282a360ddf052ef3f0784/jimbrig/jimbrig"
+openGraphImageUrl: "https://opengraph.githubassets.com/e7ed31b3e4f4f520dbd8c98a9dba8e67708199c483e402fef95402664c3390f2/jimbrig/jimbrig"
 fundingLinks: ["GITHUB:https://github.com/jimbrig"]
 discussionCount: 1
 postedAt: "2026-08-17T04:24:00.451Z"
 ---
 
-<h1 align="center">Jimmy Briggs   <a href="#" target="blank"><img alt="Image of profile-views" src="https://github.com/jimbrig/profile-views/blob/master/graph/427463930/small/week.png" height="30" /></a></h1>
-
-  <br>
-  <br>
-</p>
-
 ***
-
-  </a> | 
-  </a> | 
-  </a> | 
-  </a> | 
-  </a> | 
-  </a> | 
-  </a> | 
-  </a> |
-   </a> |
-</p>
-
-<hr>
-
-<h4 align="center">Software Engineer Developer from Atlanta, Georgia.</h4>
-
-<h5 align="center">Striving to be a modern day <em><strong><a href="https://en.wikipedia.org/wiki/Polymath">Polymath</strong></a>.</em></h5>
-
-<h2 align="center">🧬 About Me</h2>
 
 Creative and entrepreneurial Software Engineer and Actuarial Scientist with background working in dynamic and progressive environments as both an actuary and a developer in large and small organizations.
 
@@ -63,7 +38,14 @@ Collaborative team player focused on scoping projects and achieving objectives w
 
 Successful history of identifying patterns, making interpretations, and producing results.
 
-<h2 align="center">💪 Developer Stats</h2>
-
   Last refresh: 
-  <b>Saturday,…
+
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=jimbrig&theme=react-dark"
+      alt="GitHub Streak" data-canonical-src="https://github-readme-activity-graph.vercel.app/graph?username=jimbrig&theme=react-dark"
+      style="max-width:100%;"
+    >
+
+| 💻 **Technology** | 🚀 **Projects** |
+| - | - |
+| [](https://www.r-project.org/) | [](https://github.com/rinterface/shinydashboardplus) [](https://github.com/o2r-project/containerit) [](https://github.com/tychobra/polished) [](https://github.com/jimbrig/rtraining) [](https://github.com/jimbrig/jimstaskviews) [](https://github.com/jimbrig/github-issue-table)…

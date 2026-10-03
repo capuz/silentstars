@@ -10,20 +10,20 @@ languages: ["C++"]
 languagePcts: [83]
 stars: 5
 forks: 0
-openIssues: 97
-closedIssues: 528
+openIssues: 89
+closedIssues: 536
 watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2025-03-03T13:50:36Z"
-lastCommitAt: "2026-10-03T08:38:00Z"
+lastCommitAt: "2026-10-03T19:55:51Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
-healthScore: 96
+healthScore: 97
 undervaluedScore: 89
 maintainers: ["AvatarSD"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8332c7ca4af9e6c19be74299d93494b2a14d4846e488a761e79d1c1cfd5ad3be/avatarsd-llc/libtracer"
+openGraphImageUrl: "https://opengraph.githubassets.com/dc21d7554126138d3a35d37b18b236fd6afe283267d33ba646a8f306a9d3c587/avatarsd-llc/libtracer"
 discussionCount: 0
 postedAt: "2026-08-14T05:19:31.863Z"
 ---

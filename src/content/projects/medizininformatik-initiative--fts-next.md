@@ -21,18 +21,13 @@ lastCommitAt: "2026-10-01T09:57:16Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 71
 maintainers: ["renovate[bot]", "trobanga", "knoppiks"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0f5f798bf7a14962b927a0c654026867277813a93c1f32e33521a1a2838ed5a9/medizininformatik-initiative/fts-next"
 discussionCount: 18
 postedAt: "2026-08-10T05:09:50.501Z"
 ---
-
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/public/logo-dark.svg">
-  </picture>
-</p>
 
 # SMITH FHIR Transfer Services (FTSnext)
 
@@ -54,4 +49,5 @@ enables valuable research while robustly protecting patient privacy.
 
 The CDA is designed to handle the secure deidentification, pseudonymization and transfer of clinical
 FHIR resources. It ensures that sensitive patient information is appropriately anonymized before
-being transferred…
+being transferred between systems, supporting interoperability in healthcare while safeguarding
+patient privacy. It plays a crucial…

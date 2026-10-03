@@ -32,8 +32,6 @@ postedAt: "2026-09-05T07:53:50.587Z"
 
 # UniCucumber
 
-</div>
-
 This is a project for editing Unifont glyphs in browsers.
 
 See [_Unifoundry.com_ Unifont Utilities](https://unifoundry.com/unifont/unifont-utilities.html) for more information.
@@ -58,4 +56,5 @@ You can try the demo at the following links:
 - Glyph library and Unicode
   - [x] Manage multiple glyphs with search by code point, character, bitmap data, or Unicode name
   - [x] Filter by source, Unicode plane, and block, with compact/comfortable/large density modes
-  - [x] Add, edit, duplicate, delete, and batch-manage glyphs with conflict-aware…
+  - [x] Add, edit, duplicate, delete, and batch-manage glyphs with conflict-aware import
+  -…

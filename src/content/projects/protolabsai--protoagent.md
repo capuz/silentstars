@@ -9,36 +9,29 @@ language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [71, 25]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
-stars: 10
-forks: 8
+stars: 11
+forks: 9
 openIssues: 6
 closedIssues: 1011
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-10-03T08:00:04Z"
+lastCommitAt: "2026-10-03T16:38:21Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 100
-undervaluedScore: 66
+undervaluedScore: 65
 maintainers: ["mabry1985", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
 discussionCount: 0
 postedAt: "2026-07-25T06:06:56.645Z"
 ---
 
-</p>
-
-<h3 align="center">Your local agent, handing real coding work to Claude Code and Codex.</h3>
-
-  A private, plugin-extensible desktop agent. It plans and remembers, and it gives the coding
+A private, plugin-extensible desktop agent. It plans and remembers, and it gives the coding
   to the CLI agents you already use, over the Agent Client Protocol. Your chats, memory and
   tasks stay in SQLite on your disk. No analytics, tracking or telemetry — <a href="./docs/explanation/network-egress.md">what it does call out to</a>.
-</p>
-
-</p>
 
 ## Get it running
 
@@ -62,4 +55,5 @@ uv sync && uv run python -m server
 ```
 
 Whichever you pick, the setup wizard connects any OpenAI-compatible endpoint — a hosted
-provider, a…
+provider, a LiteLLM gateway, or a local Ollama — then names your agent and picks an
+archetype. The [first-agent…

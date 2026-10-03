@@ -17,34 +17,24 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-09T23:59:17Z"
-lastCommitAt: "2026-10-03T04:53:00Z"
+lastCommitAt: "2026-10-03T16:04:28Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]
-openGraphImageUrl: "https://opengraph.githubassets.com/75b4b6eaa1033a79fc7e8c330da214da13effdfdf58f7e7dd6b32db43e1a0ef1/AlexWaygood/typeshed-stats"
+openGraphImageUrl: "https://opengraph.githubassets.com/ecdcfd8571fbae6e05585d35112182cb01d9bd5b5d73cc42261a602c3df33f42/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"
 ---
 
 # typeshed-stats
 
-<br>
-
 ---
 
 ## A CLI tool and library to gather stats on [typeshed](https://github.com/python/typeshed)
 
-<br>
-
-<br>
-<br>
-
 ---
-
-<br>
-</div>
 
 ## What's this project for?
 
@@ -56,4 +46,4 @@ Some examples of things you can do from the command line:
 
 - Create a `.csv` file with stats on all typeshed stubs: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.csv` (the `.csv` file extension will be automatically detected by the script to identify the format required).
 - Pretty-print stats on typeshed stubs for emoji and redis to the terminal, in JSON format: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-json emoji redis`
-- Generate a MarkDown file detailing stats on typeshed's stubs for protobuf and the stdlib: `typeshed-stats --typeshed-dir…
+- Generate a MarkDown file detailing stats on typeshed's stubs for protobuf and the stdlib: `typeshed-stats --typeshed-dir <PATH_TO_TYPESHED_CLONE> --to-file stats.md…

@@ -26,13 +26,9 @@ openGraphImageUrl: "https://opengraph.githubassets.com/51391d3ffc495a8f4098a3c76
 postedAt: "2026-07-31T06:34:08.391Z"
 ---
 
-<h1>
-  Wekan, packaged for YunoHost
-</h1>
+Wekan, packaged for YunoHost
 
 Trello-like kanban
-
-</div>
 
 ## Screenshots
 

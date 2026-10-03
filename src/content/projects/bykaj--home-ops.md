@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-10-02T19:33:07Z"
+lastCommitAt: "2026-10-03T20:15:17Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 90
 undervaluedScore: 78
 maintainers: ["bykaj", "bykaj-assistant[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7edf25a2b5be4f68040cf5a07105d90f8003a017a2437909bcf1fe99c71cf3c8/bykaj/home-ops"
+openGraphImageUrl: "https://opengraph.githubassets.com/3cba5b9a33b2e0467f701661f8db24523f0f8dd0309682ec20cd6d0a7f801a42/bykaj/home-ops"
 postedAt: "2026-07-19T06:19:37.500Z"
 ---
 
@@ -31,12 +31,7 @@ postedAt: "2026-07-19T06:19:37.500Z"
 
 _Managed with Flux, Renovate, and GitHub Actions_
 
-</div>
-
 ---
-
-<details>
-<summary><strong>Table of Contents</strong> (click to expand)</summary>
 
 1. [Overview](#-overview)
 2. [Kubernetes](#-kubernetes)
@@ -56,10 +51,8 @@ _Managed with Flux, Renovate, and GitHub Actions_
 7. [Gratitude and Thanks](#-gratitude-and-thanks)
 8. [License](#-license)
 
-</details>
-
 ---
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="20" height="20"> Overview
 
-This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2),…
+This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2), [Renovate](https://github.com/renovatebot/renovate) and [GitHub…

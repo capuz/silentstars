@@ -11,20 +11,20 @@ languagePcts: [57]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
 stars: 6
 forks: 0
-openIssues: 35
-closedIssues: 2089
+openIssues: 37
+closedIssues: 2102
 watchers: 0
 contributors: 15
 recentReleases: 0
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-10-03T08:50:28Z"
+lastCommitAt: "2026-10-03T20:50:42Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 83
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/71cdd526529d84d5fbe1ddb82127e30aac0d00fab2db673f3d767063a34e6fc8/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/b354f214928b036b2c54f0344dda7a0e8df77f65e7142ecd6edd4c793a2b0c29/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---
@@ -32,8 +32,6 @@ postedAt: "2026-08-15T04:08:55.111Z"
 # Percussion CMS
 
 **Actively maintained by [Intersoft Data Labs](https://www.intsof.com)** · Apache 2.0 · Formerly Percussion CM1 / Rhythmyx / CM System
-
-</p>
 
 *The refreshed login experience in the current development line (heading toward 8.2).*
 
@@ -53,4 +51,4 @@ Intersoft Data Labs assumed full responsibility for support, maintenance, and on
 
 ## Current Status (August 2026)
 
-| Version / line | Status…
+| Version / line | Status |…

@@ -17,14 +17,14 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-10-03T08:44:26Z"
+lastCommitAt: "2026-10-03T21:29:22Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 80
 maintainers: ["dianlight", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ca85eb7a6e111a49a3759d44893b7b2e9d6fa79853ca40a67ec858e7630d0d3d/dianlight/srat"
+openGraphImageUrl: "https://opengraph.githubassets.com/d44a9e2c325e84ac7f89439af53aa4b64c7b8aad52258d22f1bfdc54ad61b882/dianlight/srat"
 fundingLinks: ["GITHUB:https://github.com/dianlight", "BUY_ME_A_COFFEE:https://buymeacoffee.com/ypKZ2I0"]
 discussionCount: 8
 postedAt: "2026-09-27T09:35:29.945Z"
