@@ -11,18 +11,18 @@ languagePcts: [94]
 stars: 11
 forks: 2
 openIssues: 2
-closedIssues: 434
+closedIssues: 436
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-10-02T08:34:41Z"
+lastCommitAt: "2026-10-03T04:00:52Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 77
 maintainers: ["mwscr-bot", "dehero"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bbab7d80a7f8225c7dce31c8a52839e6fe7704738cf64a1c2e40a34dcafaf902/dehero/mwscr"
+openGraphImageUrl: "https://opengraph.githubassets.com/921484d7ceb510e5cf2296bbb775af6937bf4d3999d2fd6c99898fcf02108cef/dehero/mwscr"
 postedAt: "2026-07-16T06:07:04.741Z"
 ---
 

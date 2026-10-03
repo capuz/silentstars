@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-01T11:59:55Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 41
 maintainers: ["hironate", "arpit-advant", "parth-advant019"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9bf9a111295f4838bf0a8b0b09fa3fe8f02fd048111dfd2c034c98139bd65e15/Peon-sh/Peon"

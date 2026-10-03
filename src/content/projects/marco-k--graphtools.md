@@ -14,16 +14,17 @@ openIssues: 0
 closedIssues: 3
 watchers: 1
 contributors: 1
-recentReleases: 6
+recentReleases: 7
 createdAt: "2024-12-20T12:30:03Z"
-lastCommitAt: "2026-10-02T09:59:57Z"
-lastReleaseAt: "2026-10-01T17:11:23Z"
+lastCommitAt: "2026-10-02T16:58:16Z"
+lastReleaseAt: "2026-10-02T16:59:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 87
 maintainers: ["MARCO-K", "google-labs-jules[bot]", "Copilot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/07151ed3a3654bc43e3f68b26ac52c1343de77ab3c67ebd3a41c6f0f6ce2c39d/MARCO-K/GraphTools"
+openGraphImageUrl: "https://opengraph.githubassets.com/3a0b6a1235d7429737437e6c3f52054859dc69e583475ff290058eef09e34d6a/MARCO-K/GraphTools"
+postedAt: "2026-10-02T10:06:49.533Z"
 ---
 
 # GraphTools

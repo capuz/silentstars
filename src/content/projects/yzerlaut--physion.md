@@ -16,12 +16,12 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-18T08:41:57Z"
-lastCommitAt: "2026-10-02T09:38:41Z"
+lastCommitAt: "2026-10-02T14:33:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 85
-maintainers: ["yzerlaut"]
+maintainers: ["yzerlaut", "claude"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/553456112/31a0f3db-e676-4770-af95-098239c21eea"
 postedAt: "2026-09-25T09:10:20.328Z"
 ---

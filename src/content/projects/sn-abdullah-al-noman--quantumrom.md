@@ -16,14 +16,14 @@ watchers: 1
 contributors: 6
 recentReleases: 10
 createdAt: "2025-09-18T01:24:53Z"
-lastCommitAt: "2026-10-02T07:31:56Z"
+lastCommitAt: "2026-10-03T08:27:00Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 94
 undervaluedScore: 70
 maintainers: ["SN-Abdullah-Al-Noman"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8930efefe5a00b1e731b39d19ea50cc685cf6cffd1ebbf409b85e21374863c33/SN-Abdullah-Al-Noman/QuantumROM"
+openGraphImageUrl: "https://opengraph.githubassets.com/fe89512c4a943c60c8b256f5e299b523f688e6750f7939ec55269d04a2414219/SN-Abdullah-Al-Noman/QuantumROM"
 postedAt: "2026-09-19T08:22:57.857Z"
 ---
 
@@ -33,6 +33,7 @@ This Custom ROM is built by combining and refining features from multiple projec
 
 ### 🛠️ Tools features.
 - Download firmware directly from samsung server.
+- Custom firmwqre release version download support.
 - File config and file contexts generate.
 - Extract and img build ( erofs, f2fs, ext4 supported).
 
@@ -53,7 +54,4 @@ This Custom ROM is built by combining and refining features from multiple projec
 - Multi user support.
 - Camera privacy toggle support.
 - JDM device support.
-- [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher) integrated
-
-### 🔐 Security & Privacy.
-- Secure…
+- [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher)…

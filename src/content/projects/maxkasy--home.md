@@ -18,7 +18,7 @@ createdAt: "2018-07-27T16:10:13Z"
 lastCommitAt: "2026-10-01T09:23:26Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
-healthScore: 64
+healthScore: 63
 undervaluedScore: 57
 maintainers: ["maxkasy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/36efad7c3e78bd7be383e86dc30d3780efc6c5b7ff0df39be3949b5a9e79a961/maxkasy/home"

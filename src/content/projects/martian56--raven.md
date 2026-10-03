@@ -10,7 +10,7 @@ languages: ["Rust"]
 languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler"]
 stars: 64
-forks: 25
+forks: 26
 openIssues: 5
 closedIssues: 415
 watchers: 2
