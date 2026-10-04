@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/proompteng/lab"
 language: "TypeScript"
 languages: ["TypeScript", "Python"]
-languagePcts: [47, 46]
+languagePcts: [48, 45]
 stars: 8
 forks: 0
 openIssues: 0
@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-10-03T21:56:36Z"
+lastCommitAt: "2026-10-04T08:59:53Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 74
 maintainers: ["gregkonush"]
-openGraphImageUrl: "https://opengraph.githubassets.com/24713de70a31b18a7d522c5a54636f366709ca0f9cc177a3e31e93b675e807a9/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/5651d5436b17c2c3542f6205636a4fd985f5b4066f5026ac7f95fc8410667767/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 

@@ -16,13 +16,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-26T18:19:53Z"
-lastCommitAt: "2026-10-03T14:23:41Z"
+lastCommitAt: "2026-10-04T09:15:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 91
 undervaluedScore: 72
 maintainers: ["claude", "dani-77"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ae82b4807bb8cc1aef6a4f61525c832823ade5702d42c33170d7fd329ae8482b/d77void/d77void"
+openGraphImageUrl: "https://opengraph.githubassets.com/52b195563695a78716913aa5e5f6e16db79b1a64be88151bd8d00fad865f0a37/d77void/d77void"
 postedAt: "2026-07-09T20:49:35.337Z"
 ---
 
@@ -44,6 +44,8 @@ area and the installer window adapts to smaller screens.
 Every variant identifies itself as `d77void GNU/Linux` through
 `/etc/os-release`, while `ID_LIKE=void` records its Void Linux base. The file
 uses the project website and the `d77void` icon installed with the image.
+An XBPS `noextract` rule keeps this symlink when `base-files` is updated;
+`xbps-pkgdb -a` reports it as a modified symlink, which is expected.
 
 ## Usage
 

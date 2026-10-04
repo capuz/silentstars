@@ -10,20 +10,20 @@ languagePcts: [100]
 topics: ["rust", "git", "vcs"]
 stars: 14
 forks: 114
-openIssues: 0
+openIssues: 1
 closedIssues: 16
 watchers: 2
 contributors: 20
-recentReleases: 4
+recentReleases: 3
 createdAt: "2025-09-21T12:19:40Z"
-lastCommitAt: "2026-09-20T06:02:43Z"
+lastCommitAt: "2026-10-04T08:36:42Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 91
-undervaluedScore: 87
+healthScore: 95
+undervaluedScore: 86
 maintainers: ["genedna", "NJUWallSpider", "jiatianbo666"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ca133555b8960bd1c197a28d423abfe0b687ea211017ea666abd0094b4afd7df/libra-tools/git-internal"
+openGraphImageUrl: "https://opengraph.githubassets.com/7b23af11e020eca30dbc3d9c3fe9b950ec91113a22eec0523a70237a336b06bd/libra-tools/git-internal"
 postedAt: "2026-07-29T06:18:55.015Z"
 ---
 

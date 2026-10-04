@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-08-11T19:21:07Z"
-lastCommitAt: "2026-10-03T21:26:31Z"
+lastCommitAt: "2026-10-04T07:31:51Z"
 lastReleaseAt: "2026-04-10T23:15:51Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 87
 undervaluedScore: 75
 maintainers: ["renovate[bot]", "Daio-io"]
-openGraphImageUrl: "https://opengraph.githubassets.com/654857a269b750bde93f3426625ed323d00d078751c535a0456ea3c37234cb99/Daio-io/wild"
+openGraphImageUrl: "https://opengraph.githubassets.com/eaf6bb78862cdab90e4e63204a3b0de5090d40a461dd1c9bd547991514d7a750/Daio-io/wild"
 postedAt: "2026-07-20T06:40:12.930Z"
 ---
 
@@ -33,6 +33,12 @@ Building blocks for your Compose Multiplatform Design System.
 Primitive components and utilities for Mobile 📱, Tv 📺, Desktop 🖥️, and Web 🕸️.
 
 More information: https://daio-io.github.io/wild/
+
+## Contributing
+
+Start with the [contributor guide](https://github.com/Daio-io/wild/blob/HEAD/docs/contributing.md) for module ownership, gallery
+wiring, API signature updates, and PR review commands. See
+[screenshot testing](https://github.com/Daio-io/wild/blob/HEAD/docs/screenshot-testing.md) for visual change verification.
 
 ## License
 
