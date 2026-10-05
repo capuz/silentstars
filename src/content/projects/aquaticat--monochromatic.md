@@ -6,24 +6,24 @@ readmeQualityOk: true
 url: "https://github.com/Aquaticat/Monochromatic"
 language: "HTML"
 languages: ["HTML", "TypeScript"]
-languagePcts: [69, 25]
+languagePcts: [74, 20]
 topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise", "monorepo", "oxlint", "pnpm", "wayland"]
 stars: 5
 forks: 2
-openIssues: 329
-closedIssues: 226
+openIssues: 343
+closedIssues: 230
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-10-04T09:57:21Z"
+lastCommitAt: "2026-10-05T08:26:48Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 87
 undervaluedScore: 76
 maintainers: ["Aquaticat"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6d221fa9109dd627dc0c6c974b91add952911a0df63bab48840b9d59db49b61c/Aquaticat/Monochromatic"
+openGraphImageUrl: "https://opengraph.githubassets.com/e92c3cc65a68232107e66de0dd325ae197c7005f1ea0e315587ab25a4ea142fc/Aquaticat/Monochromatic"
 postedAt: "2026-09-30T10:05:46.857Z"
 ---
 

@@ -11,7 +11,7 @@ languagePcts: [90]
 topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email", "bun", "developer-tools", "docker", "email-api"]
 stars: 92
 forks: 11
-openIssues: 3
+openIssues: 4
 closedIssues: 37
 watchers: 0
 contributors: 9
@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-03T15:44:42Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 52
 maintainers: ["pranavp10", "twinkalp10", "ohemilyy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/54a5bcd19f83b56ce3024ebf3f908f194308f95009195263deb627375e78cbcd/reloop-labs/reloop"

@@ -7,7 +7,7 @@ url: "https://github.com/k1tty-xz/python-ios"
 homepage: "https://k1tty-xz.github.io/python-ios/"
 language: "HTML"
 languages: ["HTML", "Shell"]
-languagePcts: [61, 39]
+languagePcts: [56, 44]
 stars: 12
 forks: 3
 openIssues: 0
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 2
 createdAt: "2025-08-17T19:14:08Z"
-lastCommitAt: "2026-09-24T11:48:33Z"
+lastCommitAt: "2026-10-05T09:03:38Z"
 lastReleaseAt: "2026-09-23T20:30:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 85
+healthScore: 89
 undervaluedScore: 76
 maintainers: ["k1tty-xz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/959d8c3c693d1fba76471cc65df516d023de39424b2c2185513ddc9240657199/k1tty-xz/python-ios"
+openGraphImageUrl: "https://opengraph.githubassets.com/41f74d0e3cb3736e3c5690addd37f4c3e2ca98c644d66d9ea325d81bb5ad9d85/k1tty-xz/python-ios"
 postedAt: "2026-09-16T08:51:55.843Z"
 ---
 

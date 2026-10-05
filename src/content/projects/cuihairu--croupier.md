@@ -17,15 +17,16 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-04T10:01:59Z"
+lastCommitAt: "2026-10-05T05:14:40Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 86
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/56b94c05c1479bb2241668ca758d126b69ac3f885f6446551571367d37672cf7/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/19ee74f7b012027fc90f128a0216ad78d5229f0d2f72d570184eeb95fc9d9a1c/cuihairu/croupier"
 discussionCount: 1
+postedAt: "2026-10-04T10:09:15.128Z"
 ---
 
 Croupier 是面向游戏运营与控制场景的 Server / Agent / SDK 平台，默认服务于单一游戏公司内部的多个游戏与多个环境。当前架构已经收敛到“统一 session 传输”方向：

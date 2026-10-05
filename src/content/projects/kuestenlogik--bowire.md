@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-10-03T10:28:46Z"
+lastCommitAt: "2026-10-04T13:03:40Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 97
 undervaluedScore: 55
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4e983c9af063e51c30a653cd0153b855127d24527a3e3b385b0b4960548fc139/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/672e066b913219d1450384955116393848d49b25a1196fa5c74df00c40d382d0/Kuestenlogik/Bowire"
 discussionCount: 13
 postedAt: "2026-07-17T06:06:24.975Z"
 ---

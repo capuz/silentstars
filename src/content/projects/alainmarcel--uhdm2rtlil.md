@@ -15,14 +15,14 @@ watchers: 2
 contributors: 3
 recentReleases: 5
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-10-04T09:44:58Z"
+lastCommitAt: "2026-10-05T07:26:44Z"
 lastReleaseAt: "2026-09-29T17:02:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/71eda506fc73cfbca93d815526417e5376d019daf49e24b744f8a6f5388b1382/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/cdf771ccb72c02deb624320e38cefb3492d8a37b93538a56d7cac1405381eb9f/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 

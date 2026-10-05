@@ -16,14 +16,14 @@ watchers: 1
 contributors: 13
 recentReleases: 1
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-10-04T09:56:09Z"
+lastCommitAt: "2026-10-05T10:37:59Z"
 lastReleaseAt: "2026-09-19T20:34:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 82
-maintainers: ["mrosberghaus", "PatrickTobler", "francisluz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dc1894473233ec605ab68fdc4bebbf450a30d1177d967791c6431bb1efaf9f6a/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "PatrickTobler", "enjojoy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/89e48b42f37510c5a9418d709218009b261fc48d83a67fc062706e956ffd01a2/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -38,16 +38,15 @@ sokosumi/
 ├── apps/
 │   ├── web/         # Next.js 16 web app (TypeScript, Tailwind, Shadcn UI)
 │   ├── core/        # Hono API — owns all Postgres/Prisma access
+│   ├── cmo/         # Next.js 16 CMO app at app.cmo.xyz (Sign in with Sokosumi; no database)
 │   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
 │   └── cli/         # Developer CLI — Ink TUI and headless commands (SPEC + VISION)
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma schema, client, helpers
+│   ├── core-client/ # @sokosumi/core-client — generated TypeScript client for Core's /v1 API
 │   ├── masumi/      # @sokosumi/masumi — protocol clients, hash, schemas
 │   ├── utils/       # @sokosumi/utils — client-safe helpers
-│   ├── net/         # @sokosumi/net — SSRF-safe fetch
+│   ├── net/         # @sokosumi/net — SSRF-safe fetch and outbound webhook transport
 │   ├── email/       # @sokosumi/email — renderers and locales
 │   ├── ai-provider/ # @sokosumi/ai-provider — Sokosumi AI SDK provider
-│   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot contracts (loop runs in per-bot Vercel Sandboxes; Core is the control plane)
-├── docs/            # Agent, domain, coworker, and design docs
-├── scripts/         # local-env, cloud-agent-db, CI helpers
-├── skills/…
+│   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot…

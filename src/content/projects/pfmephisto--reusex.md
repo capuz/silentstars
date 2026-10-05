@@ -6,8 +6,8 @@ readmeQualityOk: true
 url: "https://github.com/pfmephisto/ReUseX"
 homepage: "https://pfmephisto.github.io/ReUseX/"
 language: "C++"
-languages: ["C++"]
-languagePcts: [66]
+languages: ["C++", "TypeScript"]
+languagePcts: [66, 20]
 topics: ["aec", "lidar", "reuse"]
 stars: 9
 forks: 1
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2023-10-20T12:24:17Z"
-lastCommitAt: "2026-10-02T16:26:43Z"
+lastCommitAt: "2026-10-02T17:58:20Z"
 lastReleaseAt: "2026-09-30T14:43:42Z"
 status: "thriving"
 tags: ["solo_builder"]

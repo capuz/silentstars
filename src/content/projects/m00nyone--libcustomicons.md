@@ -16,14 +16,14 @@ watchers: 3
 contributors: 107
 recentReleases: 0
 createdAt: "2025-05-05T17:13:44Z"
-lastCommitAt: "2026-10-03T08:59:59Z"
+lastCommitAt: "2026-10-04T10:35:09Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 99
 undervaluedScore: 92
 maintainers: ["m00nyONE", "Cote2Go", "SoulHagans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b1cd31d97992ed6638401dcead7b33f78374f6d98db7417daa61b65a5336f6a1/m00nyONE/LibCustomIcons"
+openGraphImageUrl: "https://opengraph.githubassets.com/2814c2211cf506be12fa05d6dbdbdf65ed297d7a425348d439682fb1c4a7a111/m00nyONE/LibCustomIcons"
 postedAt: "2026-09-03T08:19:41.539Z"
 ---
 
