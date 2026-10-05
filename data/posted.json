@@ -1607,5 +1607,16 @@
         "postedAt": "2026-10-04T10:09:31.302Z"
       }
     }
+  },
+  {
+    "repo": "NodeSpaceAI/nodespace-core",
+    "slug": "nodespaceai--nodespace-core",
+    "postedAt": "2026-10-05T10:53:35.128Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mx4qsslsbk2d",
+        "postedAt": "2026-10-05T10:53:35.128Z"
+      }
+    }
   }
 ]
