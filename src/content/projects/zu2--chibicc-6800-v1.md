@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-28T11:09:01Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 73
 maintainers: ["zu2"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e081d1d65370c6866c639222b3d832629176f424142f429d47c1a8e81f9f7641/zu2/chibicc-6800-v1"

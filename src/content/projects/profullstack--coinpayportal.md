@@ -17,14 +17,14 @@ watchers: 0
 contributors: 19
 recentReleases: 6
 createdAt: "2025-11-26T13:29:53Z"
-lastCommitAt: "2026-10-04T19:49:50Z"
+lastCommitAt: "2026-10-06T02:18:10Z"
 lastReleaseAt: "2026-07-26T09:36:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 80
 maintainers: ["ralyodio", "dependabot[bot]", "phucnguyen1707"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c886177cec0f85429f3a6ea16b57bf05f02f974c56b14cf387893b0c147968fd/profullstack/coinpayportal"
+openGraphImageUrl: "https://opengraph.githubassets.com/46c9ab1aa373873d27bd4c07c7f761d9addc72365b90e10181cf42000d8b57dd/profullstack/coinpayportal"
 postedAt: "2026-08-01T06:19:05.392Z"
 ---
 

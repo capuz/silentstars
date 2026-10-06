@@ -21,10 +21,10 @@ lastCommitAt: "2026-09-25T13:40:52Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 76
+healthScore: 75
 undervaluedScore: 77
 maintainers: ["patnr"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d38964a550d11d69ef00d1826dfb959f5d1d4039d1cd20d30cf8625f0435bfd5/patnr/MiniRes"
+openGraphImageUrl: "https://opengraph.githubassets.com/03929c97a1ae5d43f17a5f27b05692030a3c78ab865c9028e70a46b1984bf815/patnr/MiniRes"
 postedAt: "2026-09-15T08:59:38.490Z"
 ---
 

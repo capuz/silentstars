@@ -7,31 +7,32 @@ url: "https://github.com/NodeSpaceAI/nodespace-core"
 homepage: "https://nodespace.ai"
 language: "Rust"
 languages: ["Rust", "TypeScript"]
-languagePcts: [63, 32]
+languagePcts: [62, 32]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 34
-closedIssues: 1817
+openIssues: 26
+closedIssues: 1853
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-10-05T10:47:27Z"
+lastCommitAt: "2026-10-06T10:29:17Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 84
 maintainers: ["malibio", "mstomar125"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2771a8077c58413a9bd87b9a88871e6d291763d3fcf02e55ebd8263e9d3a4ef3/NodeSpaceAI/nodespace-core"
+openGraphImageUrl: "https://opengraph.githubassets.com/0830dc9e9324ed5e981a9101c15bdcbeed3760532cb6d1cf7c998ff41eb68950/NodeSpaceAI/nodespace-core"
+postedAt: "2026-10-05T10:53:35.128Z"
 ---
 
 # NodeSpace
 
-> **Faster context. Fewer tokens.**
+> **Your repo knows what you built. NodeSpace knows why.**
 
-AI coding assistants forget everything between sessions. NodeSpace gives them persistent, searchable access to your project knowledge — so you stop re-explaining your codebase every time you start a conversation.
+The workspace for agentic development. Specs, plans, decisions and your team's conventions live in one local graph, and every coding agent works from it: what to build, what governs it, and how your team does it.
 
 **[nodespace.ai](https://nodespace.ai)** · **[Download](https://github.com/NodeSpaceAI/nodespace-core/releases)** · **[Discord](https://discord.gg/UHFZKzH9)**
 
@@ -39,20 +40,11 @@ AI coding assistants forget everything between sessions. NodeSpace gives them pe
 
 ---
 
-## Why NodeSpace
+## The context ladder
 
-Developers using AI assistants waste time copying files, re-explaining architecture, and watching context degrade mid-session. NodeSpace fixes this by sitting between your knowledge and your AI tools:
+How good an agent is depends on the context it starts with. Every team climbs the same ladder, and most stop at step three.
 
-- **80% fewer roundtrips** — AI agents query your knowledge base via the NodeSpace skill instead of scanning files with grep/ripgrep
-- **Runs entirely on your machine** — no cloud accounts, no API calls, no data leaving localhost
-- **Works offline** — on planes, behind VPNs, anywhere
-
-You write things down once. Every AI tool you use can find them instantly.
-
----
-
-## Installation
-
-### macOS (Apple Silicon) — Homebrew
-
-```bash…
+1. **Prompting.** Copy, paste and re-explain every session. The context lives in your head.
+2. **Connecting.** MCP into Jira, Linear or Notion. The context lives in tools built for people, and the agent has to know what to search for.
+3. **Documenting.** Specs, decisions and conventions live as markdown in the repo, starting with CLAUDE.md. The agent greps for them, and they are only as current as each checkout's last pull. Following them is optional.
+4. **Assembling.** Each…

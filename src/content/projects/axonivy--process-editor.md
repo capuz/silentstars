@@ -16,7 +16,7 @@ contributors: 20
 recentReleases: 0
 createdAt: "2021-05-03T12:09:20Z"
 lastCommitAt: "2026-09-22T07:32:54Z"
-status: "thriving"
+status: "quiet"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 74
 undervaluedScore: 76

@@ -1,45 +1,46 @@
 ---
 repo: "integry/propr"
 name: "propr"
-description: "Manage AI coding agents like human engineers. The open-source, self-hosted PR layer for AI software development."
+description: "Open source, self-hosted GitHub orchestration for AI coding agents. Runs Claude Code, Codex, Antigravity, OpenCode and Mistral Vibe on your server and ships every change as a reviewed pull request: issue to PR, AI code review, automated fix loops."
 readmeQualityOk: true
 url: "https://github.com/integry/propr"
 homepage: "https://propr.dev"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [87]
-topics: ["ai", "ai-agents", "antigravity", "automation", "claude", "code-review", "codex", "coding-agent", "devtools", "docker"]
+languagePcts: [86]
+topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 14
 forks: 6
-openIssues: 8
-closedIssues: 1107
+openIssues: 24
+closedIssues: 1124
 watchers: 1
 contributors: 4
 recentReleases: 5
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-10-04T22:14:25Z"
+lastCommitAt: "2026-10-06T10:18:05Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 85
-maintainers: ["integry", "proprdev", "propr-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ff2b0218244f58d40f620c11ec817d6bd0f5101542ea6f031eb67e5cfc471649/integry/propr"
+maintainers: ["integry", "propr-dev[bot]", "proprdev"]
+openGraphImageUrl: "https://opengraph.githubassets.com/35c55f6cd1641456e24fe2cef7ff918cacf2f9d38286067a9a1f9a8c49e9ef7c/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
 ---
 
----
+Run Claude Code, Codex and other coding agents on your own server.<br />
+  Every task runs in an isolated workspace and lands as a pull request you refine in GitHub.
 
-ProPR is a **self-hosted platform** that runs AI coding agents like Claude Code and Codex through the GitHub pull-request workflow. It monitors issues and PRs, runs your choice of agents in isolated Docker containers and Git worktrees on your own server, and drives the complete path from an issue to a reviewed pull request — with a Web UI available for configuration and monitoring and a CLI that doubles as the local control plane. You bring your existing AI subscriptions or API keys; ProPR never marks up tokens.
+  &nbsp;&nbsp;·&nbsp;&nbsp;
 
-ProPR builds itself: since May 2025, [2,100+ merged pull requests](https://propr.dev/proof/) across its author's products have shipped through it — including [690+ merged pull requests in this repository](https://github.com/integry/propr/pulls?q=is%3Apr+is%3Amerged).
+## What is ProPR?
 
-## Adopt one stage or all of them
+ProPR is an **open-source, self-hosted platform** that manages AI coding agents the way you manage engineers: through issues, pull requests and code review. Claude Code, Codex and other agents write the code. ProPR gives them a shared engineering process — a plan, an isolated workspace, a pull request, and a review loop — on your own server, with the AI subscriptions or API keys you already have.
 
-ProPR is a set of stages you can adopt independently — use one or all:
+**Label a GitHub issue and get a pull request back.**
 
-- **Plan** — turn an issue or idea into a reviewable implementation plan (Planner Studio)
-- **Implement** — add label to an issue and let an agent open a PR for it
-- **Review & fix** — drive existing PRs with slash commands (`/review`, `/fix`, `/ultrafix`, model routing)
-- **Operate** — monitor…
+|        | Step                        | What happens                                                                                             |
+| ------ | --------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **01** | Label an issue              | Add the `AI` label to a normal GitHub issue. Add a model label such as `llm-claude-opus55` to pick the agent. |
+| **02** | Get a pull request          | The agent works in its own Docker…

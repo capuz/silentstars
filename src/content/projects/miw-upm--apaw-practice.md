@@ -16,13 +16,13 @@ watchers: 2
 contributors: 133
 recentReleases: 0
 createdAt: "2021-09-08T13:47:07Z"
-lastCommitAt: "2026-10-04T22:22:41Z"
+lastCommitAt: "2026-10-06T09:52:35Z"
 status: "thriving"
 tags: ["legacy_hero", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 81
-maintainers: ["RRay616", "bq0463", "zuribehobide23"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7740096f413bc4d7ca184aa6dbe8eaf16b883970b2f7d659f99d6c26e00669b2/miw-upm/apaw-practice"
+maintainers: ["JulianaMayrink", "Oscar-Blasco", "Jingyi-Shu"]
+openGraphImageUrl: "https://opengraph.githubassets.com/4b841f3c0de3f42b4c2530dc6df2f9769b93180c514e0b5e69fba60789bc2d76/miw-upm/apaw-practice"
 postedAt: "2026-10-03T09:30:13.458Z"
 ---
 

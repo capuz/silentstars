@@ -9,14 +9,14 @@ languages: ["Python", "Jupyter Notebook"]
 languagePcts: [63, 37]
 topics: ["electrophysiology", "imaging", "neuroscience", "vision"]
 stars: 6
-forks: 9
+forks: 10
 openIssues: 1
 closedIssues: 2
 watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-18T08:41:57Z"
-lastCommitAt: "2026-10-05T10:05:09Z"
+lastCommitAt: "2026-10-06T09:01:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 93
