@@ -1638,6 +1638,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mxbquezwho2n",
         "postedAt": "2026-10-07T10:37:46.775Z"
+      },
+      "ownerEmail": {
+        "url": "amedee-github@amedee.be",
+        "postedAt": "2026-10-07T10:38:03.612Z"
       }
     }
   }
