@@ -9,15 +9,15 @@ languages: ["Python"]
 languagePcts: [88]
 stars: 13
 forks: 6
-openIssues: 62
-closedIssues: 520
+openIssues: 59
+closedIssues: 523
 watchers: 2
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-10-06T10:17:55Z"
+lastCommitAt: "2026-10-07T09:42:15Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 73
 maintainers: ["nsticco", "dependabot[bot]"]

@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/coderaiser/putout-editor"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [90]
+languagePcts: [89]
 topics: ["putout", "javascript", "nodejs", "react", "editor", "ast", "parser"]
 stars: 7
 forks: 1
@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 2
 createdAt: "2019-08-30T08:14:24Z"
-lastCommitAt: "2026-10-02T06:32:13Z"
+lastCommitAt: "2026-10-06T11:02:44Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "funded"]
-healthScore: 78
+healthScore: 89
 undervaluedScore: 75
 maintainers: ["coderaiser"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d3c220a44dfadfd4e7ee3d9d5c7c109bad7eac200efd99a3bdcc1b5153961647/coderaiser/putout-editor"
+openGraphImageUrl: "https://opengraph.githubassets.com/007a770b41022958c95f9b14fc6d7f971ba215f2ce56826323ef5b8f1dfeac07/coderaiser/putout-editor"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/cloudcmd"]
 postedAt: "2026-09-17T08:55:51.523Z"
 ---
@@ -32,8 +32,8 @@ postedAt: "2026-09-17T08:55:51.523Z"
 
 [BuildStatusURL]: https://github.com/coderaiser/putout-editor/actions "Build Status"
 [BuildStatusIMGURL]: https://github.com/coderaiser/putout-editor/workflows/Node%20CI/badge.svg
-[CoverageURL]: https://coveralls.io/github/coderaiser/putout?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/putout/badge.svg?branch=master&service=github
+[CoverageURL]: https://coveralls.io/github/coderaiser/putout-editor?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/putout-editor/badge.svg?branch=master&service=github
 
 Web editor for the simplest declarative plugins for 🐊[**Putout**](https://github.com/coderaiser/putout), pluggable code transformer of your dreams 🤫.
 
