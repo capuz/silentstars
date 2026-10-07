@@ -1629,5 +1629,16 @@
         "postedAt": "2026-10-06T10:54:19.559Z"
       }
     }
+  },
+  {
+    "repo": "amedee/ansible-servers",
+    "slug": "amedee--ansible-servers",
+    "postedAt": "2026-10-07T10:37:46.775Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/silentstars-radar.bsky.social/post/3mxbquezwho2n",
+        "postedAt": "2026-10-07T10:37:46.775Z"
+      }
+    }
   }
 ]
