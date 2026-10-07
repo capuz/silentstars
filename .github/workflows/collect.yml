@@ -23,6 +23,11 @@ on:
       submission_project_name:
         type: string
         default: ''
+      # Issue author of an accepted submission — post.ts labels the post
+      # "Community pick" and mentions them if they have a Bluesky account.
+      submitter_login:
+        type: string
+        default: ''
     outputs:
       bsky_url:
         description: "Bluesky post URL"
@@ -348,6 +353,8 @@ jobs:
           DRY_RUN:           ${{ inputs.dry_run }}
           OG_DIR:            og-images
           PROJECT_SLUG:      ${{ steps.submission_slug.outputs.value || needs.deploy.outputs.post_slug }}
+          SUBMITTER_LOGIN:   ${{ inputs.submitter_login }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit posted.json
         if: inputs.dry_run != true

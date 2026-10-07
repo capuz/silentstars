@@ -206,3 +206,38 @@ export async function resolveGithubPublicEmail(login: string, token: string): Pr
     return m ? m[1].trim() : '';
   } catch { return ''; }
 }
+
+export interface BskyAccount { handle: string; did: string }
+
+// GitHub profiles can link a Bluesky account (provider "bluesky"); older or
+// hand-entered links show up as "generic" with a bsky.app URL.
+export function blueskyHandleFromSocialAccounts(accounts: Array<{ provider: string; url: string }>): string | null {
+  for (const a of accounts) {
+    const m = a.url.match(/^https?:\/\/bsky\.app\/profile\/([^/?#]+)/i);
+    if (m && (a.provider === 'bluesky' || a.provider === 'generic')) return decodeURIComponent(m[1]).replace(/^@/, '');
+  }
+  return null;
+}
+
+// Best-effort: any failure means "no mention", never a failed post.
+export async function resolveBlueskyAccount(login: string, token?: string): Promise<BskyAccount | null> {
+  try {
+    const res = await fetch(`https://api.github.com/users/${encodeURIComponent(login)}/social_accounts`, {
+      headers: {
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        Accept: 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+      },
+    });
+    if (!res.ok) return null;
+    const handle = blueskyHandleFromSocialAccounts(await res.json() as Array<{ provider: string; url: string }>);
+    if (!handle) return null;
+    // Profile URLs can carry a DID instead of a handle; getProfile accepts both
+    // and returns the canonical pair, confirming the account still exists.
+    const prof = await fetch(`https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${encodeURIComponent(handle)}`);
+    if (!prof.ok) return null;
+    const data = await prof.json() as { handle?: string; did?: string };
+    if (!data.did || !data.handle || data.handle === 'handle.invalid') return null;
+    return { handle: data.handle, did: data.did };
+  } catch { return null; }
+}

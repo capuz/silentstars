@@ -2,94 +2,15 @@ import { BskyAgent } from '@atproto/api';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import {
-  type PostedEntry, type Project, type LatestData,
-  LANG_HASHTAG,
+  type Project, type LatestData,
   loadPosted, savePosted, recordPost, loadOgImage, selectTop20,
-  loadCommunityTags, seededIndex, truncate, slugify,
-  pickOpener, pickCta, topicHashtags,
+  seededIndex, slugify, resolveBlueskyAccount,
 } from './post-shared.ts';
+import { buildPost } from './post-build.ts';
 import { claudeEnabled } from './claude-cli.ts';
 import { buildPitch, generatePitch, needsLlmPitch, readmeExcerpt } from './post-pitch.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
-
-function byteLen(str: string): number {
-  return new TextEncoder().encode(str).length;
-}
-
-function hashtagFacets(text: string) {
-  const encoder = new TextEncoder();
-  const result  = [];
-  const regex   = /#([a-zA-Z][a-zA-Z0-9]*)/g;
-  let match;
-  while ((match = regex.exec(text)) !== null) {
-    const byteStart = encoder.encode(text.slice(0, match.index)).length;
-    const byteEnd   = byteStart + encoder.encode(match[0]).length;
-    result.push({
-      index: { byteStart, byteEnd },
-      features: [{ $type: 'app.bsky.richtext.facet#tag', tag: match[1] }],
-    });
-  }
-  return result;
-}
-
-function buildPost(p: Project, baseUrl: string, pitch: string) {
-  const lang      = p.language ?? '';
-  const langTags  = (p.languages ?? (lang ? [lang] : []))
-    .map(l => LANG_HASHTAG[l] ?? '')
-    .filter(Boolean);
-  const topicTags = topicHashtags(p.topics ?? [], langTags);
-  const tags      = [...loadCommunityTags(), ...langTags, ...topicTags].join(' ');
-  const slug      = slugify(p.repo);
-  const siteUrl   = `${baseUrl}/projects/${slug}/`;
-
-  // Opener/CTA rotate by date (not by project — only one post goes out per
-  // day), decorrelated from the project pick in main() via distinct seeds.
-  const today  = new Date().toISOString().slice(0, 10);
-  const opener = pickOpener(`${today}-opener`);
-  const cta    = pickCta(`${today}-cta`);
-
-  // Bluesky's hard 300-grapheme cap: work out what's left for the
-  // pitch after every other line is accounted for, with a safety
-  // margin for multi-byte emoji graphemes.
-  const skeleton   = [opener, '', `${p.name} — `, '', tags, '', cta].join('\n');
-  const descBudget = Math.max(60, 300 - [...skeleton].length - 5);
-  const desc       = truncate(pitch, descBudget);
-
-  // Text without URL — card embed handles the link
-  const lines = [
-    opener,
-    '',
-    `${p.name} — ${desc}`,
-    '',
-    tags,
-    '',
-    cta,
-  ];
-  const text = lines.join('\n');
-
-  // Byte-offset facet: project name → GitHub repo link
-  const prefix   = `${opener}\n\n`;
-  const byteStart = byteLen(prefix);
-  const byteEnd   = byteStart + byteLen(p.name);
-
-  const facets = [
-    { index: { byteStart, byteEnd }, features: [{ $type: 'app.bsky.richtext.facet#link', uri: p.url }] },
-    ...hashtagFacets(text),
-  ];
-
-  // External card → SilentStars project page
-  const embed = {
-    $type: 'app.bsky.embed.external',
-    external: {
-      uri: siteUrl,
-      title: `${p.name} · SilentStars`,
-      description: pitch,
-    },
-  };
-
-  return { text, facets, embed, siteUrl };
-}
 
 async function main(): Promise<void> {
   const data: LatestData = JSON.parse(
@@ -134,7 +55,18 @@ async function main(): Promise<void> {
   const pitch  = claudePitch ?? buildPitch({ description, readme });
   const source = claudePitch ? 'claude' : weak ? 'fallback: weak pitch, claude unavailable' : 'readme/description';
 
-  const { text, facets, embed, siteUrl } = buildPost(project, baseUrl, pitch);
+  // Mentions notify the owner (and the submitter, for community picks) so the
+  // post reaches people who will actually repost it. Both are best-effort.
+  const githubToken    = process.env.GITHUB_TOKEN || undefined;
+  const submitterLogin = process.env.SUBMITTER_LOGIN?.trim() || '';
+  const [owner, submitter] = await Promise.all([
+    resolveBlueskyAccount(project.repo.split('/')[0]!, githubToken),
+    submitterLogin ? resolveBlueskyAccount(submitterLogin, githubToken) : Promise.resolve(null),
+  ]);
+
+  const { text, facets, embed, siteUrl } = buildPost(project, baseUrl, pitch, {
+    owner, submitter, communityPick: Boolean(submitterLogin),
+  });
 
   console.log('─── post preview ───');
   console.log(`─── pitch (${source}): ${pitch}`);
@@ -142,6 +74,7 @@ async function main(): Promise<void> {
   console.log(`─── ${[...text].length} graphemes ───`);
   console.log(`─── card → ${siteUrl}`);
   console.log(`─── name link → ${project.url}`);
+  console.log(`─── owner bsky → ${owner ? `@${owner.handle}` : 'none'}${submitterLogin ? ` · submitter ${submitterLogin} bsky → ${submitter ? `@${submitter.handle}` : 'none'}` : ''}`);
 
   const slug = slugify(project.repo);
   console.log(`PROJECT_SLUG=${slug}`);
