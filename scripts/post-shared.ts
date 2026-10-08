@@ -137,7 +137,18 @@ export const LANG_HASHTAG: Record<string, string> = {
 // picked, so the post shape varies day to day instead of always reading
 // "Silent star of the day".
 const OPENERS = ['🌟 Silent star of the day', "🔭 Today's find", '💎 Underrated pick'];
-const CTAS    = ['⭐ give it a star', '👀 worth a look', '🔗 check it out'];
+const CTAS    = [
+  '⭐ give it a star',
+  '👀 worth a look',
+  '🔗 check it out',
+  '🧭 go explore it',
+  '🛠️ try it out',
+  '🍴 fork it, poke at it',
+  '💬 say hi to the maintainers',
+  '📌 bookmark this one',
+  '🌱 small repo, real work',
+  '🚀 take it for a spin',
+];
 
 export function pickOpener(seed: string): string {
   return OPENERS[seededIndex(seed, OPENERS.length)]!;
