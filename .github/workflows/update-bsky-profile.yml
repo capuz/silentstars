@@ -1,0 +1,41 @@
+name: Update Bluesky profile
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — mostrar el diff sin escribir nada"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    name: Update profile
+    runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Display name, bio and the pinned "how to submit" post live in
+      # scripts/update-bsky-profile.ts. Idempotent: re-runs reuse the pinned post.
+      - name: Update profile
+        run: npx tsx scripts/update-bsky-profile.ts
+        env:
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          DRY_RUN:           ${{ inputs.dry_run }}
