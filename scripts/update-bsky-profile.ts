@@ -98,7 +98,7 @@ async function main(): Promise<void> {
 
   if (!pinned) {
     pinned = await agent.post(record);
-    console.log(`✓ Published: https://bsky.app/profile/${identifier}/post/${pinned.uri.split('/').pop()}`);
+    console.log(`✓ Published: https://bsky.app/profile/${did}/post/${pinned.uri.split('/').pop()}`);
   }
 
   await agent.upsertProfile(existing => buildProfile(existing, pinned!));

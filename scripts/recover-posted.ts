@@ -61,7 +61,7 @@ async function scanBluesky(): Promise<ScannedPost[]> {
 
       const repo     = slugToRepo(slug);
       const rkey     = item.post.uri.split('/').pop() ?? '';
-      const postUrl  = `https://bsky.app/profile/${identifier}/post/${rkey}`;
+      const postUrl  = `https://bsky.app/profile/${agent.session!.did}/post/${rkey}`;
       const postedAt = (record.createdAt as string) ?? new Date().toISOString();
 
       found.push({ slug, repo, url: postUrl, postedAt });

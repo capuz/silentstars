@@ -106,7 +106,8 @@ async function main(): Promise<void> {
 
   const bskyPost = await agent.post({ text, facets, embed: embedWithThumb, createdAt: new Date().toISOString() });
   const rkey = bskyPost.uri.split('/').pop();
-  const bskyUrl = `https://bsky.app/profile/${identifier}/post/${rkey}`;
+  // DID, not handle: stays valid if the account handle ever changes.
+  const bskyUrl = `https://bsky.app/profile/${agent.session!.did}/post/${rkey}`;
   console.log(`✓ Posted: ${project.name} (undervalued ${project.undervaluedScore})`);
 
   const updatedPosted = recordPost(project.repo, 'bsky', bskyUrl, posted);
