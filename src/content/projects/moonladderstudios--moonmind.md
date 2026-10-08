@@ -9,30 +9,36 @@ languages: ["Python"]
 languagePcts: [88]
 stars: 13
 forks: 6
-openIssues: 59
-closedIssues: 523
+openIssues: 54
+closedIssues: 528
 watchers: 2
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-10-07T09:42:15Z"
+lastCommitAt: "2026-10-08T10:41:24Z"
 status: "thriving"
-tags: ["needs_contributors", "hidden_gem"]
+tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 73
-maintainers: ["nsticco", "dependabot[bot]"]
+maintainers: ["nsticco"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
 
-# 🌙 MoonMind — Security, resilience, and observability for AI coding agents
+# 🌙 MoonMind
 
-MoonMind is an open-source framework that gives AI coding agents stronger **security**, more **resilient** execution, and more **observable** operations through Temporal-based durable workflows, explicit Provider Profiles and policies, controlled runtime and container boundaries, and an operational dashboard.
+MoonMind is a self-hosted app for running AI coding workflows. Give it a task, choose an agent, and follow the work from your browser. Each instance is built for one operator, with concurrent workflows and multiple provider accounts.
 
-For now, MoonMind is focused on software engineering use cases, but it can be used for other use cases as well. Support for workflows that do not require a Git repository will become easier over time.
+**Omnigent is MoonMind's primary agent backend.** It runs harnesses such as Codex, Claude Code, and OpenCode. MoonMind manages the workflows, credentials, workspaces, and results around them.
 
-## Start here: the supported first path
+## What it does
 
-MoonMind coordinates provider-maintained coding agents with security, durable execution, and inspectable results. It is built for engineers who want to direct an agent (Codex, Claude Code, OpenCode, or a future approved harness) without handing it ambient credentials, the host Docker socket, or an unscoped network.
+- **Runs durable workflows.** Temporal tracks steps, retries, and schedules. Work can resume after a worker restart, with checkpoint recovery where supported.
+- **Controls access.** Provider Profiles select credentials and model settings. Agents run inside container boundaries and submit build and test jobs without receiving the host Docker socket.
+- **Keeps results inspectable.** The dashboard shows progress, logs, diagnostics, and artifacts. You can review a run, intervene when needed, or return to its saved results later.
 
-The supported first path is local-first: `docker compose up -d`, open the dashboard at `http://localhost:7000`, add a provider credential to a Provider Profile, then create a workflow and submit it. The first result appears as outputs and artifacts…
+MoonMind currently focuses on software engineering. Start with a repository task or a reusable Skill.
+
+## Dashboard
+
+These are captures of the current dashboard with synthetic example data. They show the…

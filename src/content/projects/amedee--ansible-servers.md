@@ -12,18 +12,19 @@ topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "em
 stars: 6
 forks: 1
 openIssues: 9
-closedIssues: 195
+closedIssues: 196
 watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-10-07T10:16:59Z"
+lastCommitAt: "2026-10-07T22:28:59Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
 undervaluedScore: 83
 maintainers: ["amedee", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f1beeb0310aeb6b89c08aef92e58ba24d762c49fe3d3c515e0646d6366ff254d/amedee/ansible-servers"
+openGraphImageUrl: "https://opengraph.githubassets.com/b98ee90b7eeec1a33c7872ab93f3ca776f774d54c6480168630ee6fd42bd12ff/amedee/ansible-servers"
+postedAt: "2026-10-07T10:37:46.775Z"
 ---
 
 # ansible-servers

@@ -9,21 +9,21 @@ language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
 stars: 7
-forks: 119
+forks: 120
 openIssues: 0
 closedIssues: 2
 watchers: 3
-contributors: 107
+contributors: 108
 recentReleases: 0
 createdAt: "2025-05-05T17:13:44Z"
-lastCommitAt: "2026-10-06T20:04:52Z"
+lastCommitAt: "2026-10-08T08:27:07Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 99
 undervaluedScore: 92
 maintainers: ["m00nyONE", "Cote2Go", "SoulHagans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6b7a359fb28c45cdba3c90f898ea66e35770b7795052524c44ed3a7b69964ad7/m00nyONE/LibCustomIcons"
+openGraphImageUrl: "https://opengraph.githubassets.com/186d450d1238315cfcede0ae7bd41f5e89085ee1fafe70ffb0936dc46dc0b3d9/m00nyONE/LibCustomIcons"
 postedAt: "2026-09-03T08:19:41.539Z"
 ---
 

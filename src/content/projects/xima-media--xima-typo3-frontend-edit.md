@@ -17,14 +17,14 @@ watchers: 3
 contributors: 4
 recentReleases: 0
 createdAt: "2024-08-08T07:42:29Z"
-lastCommitAt: "2026-10-07T06:09:16Z"
+lastCommitAt: "2026-10-08T07:50:01Z"
 lastReleaseAt: "2025-05-25T11:43:10Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 98
 undervaluedScore: 71
 maintainers: ["konradmichalik", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2ade0348c57735ba6e72d68b0bb856e636646fd22a7be595ba6e9cbd97cf8708/xima-media/xima-typo3-frontend-edit"
+openGraphImageUrl: "https://opengraph.githubassets.com/53628ff77375c82bccc8194731563f7f5dcff6a8884804b699b64eaaef55c3fc/xima-media/xima-typo3-frontend-edit"
 postedAt: "2026-09-20T08:56:12.336Z"
 ---
 
