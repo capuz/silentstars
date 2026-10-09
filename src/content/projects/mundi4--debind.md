@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-08T12:51:55Z"
 lastReleaseAt: "2024-07-25T06:56:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 86
 maintainers: ["mundi4"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6e4ad81f80973033e1456314ef560075ddcf89fc3831562fd771e390a51b01d6/mundi4/debind"

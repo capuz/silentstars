@@ -19,7 +19,7 @@ lastCommitAt: "2026-10-09T04:14:10Z"
 lastReleaseAt: "2025-09-08T00:01:56Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 88
 maintainers: ["advis61"]
 openGraphImageUrl: "https://opengraph.githubassets.com/649e47a360ff83fb613ee55f504eabc3f847153e9498094353a66dabfe67ee26/advis61/OracleOfDereth"

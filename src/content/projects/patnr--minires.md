@@ -19,7 +19,7 @@ recentReleases: 6
 createdAt: "2022-11-04T16:06:51Z"
 lastCommitAt: "2026-09-25T13:40:52Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 74
 undervaluedScore: 77

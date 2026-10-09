@@ -7,7 +7,7 @@ url: "https://github.com/omoika-institute/omoika"
 homepage: "https://omoika.institute/"
 topics: ["data-mining", "data-visualization", "information-gathering", "node-graph", "osint", "osint-python", "plugin-system", "python3", "reconnaissance", "network-graph"]
 stars: 11
-forks: 3
+forks: 2
 openIssues: 7
 closedIssues: 1
 watchers: 0
@@ -19,7 +19,7 @@ lastReleaseAt: "2026-07-03T14:53:34Z"
 status: "at_risk"
 tags: ["solo_builder", "needs_contributors"]
 healthScore: 35
-undervaluedScore: 10
+undervaluedScore: 8
 maintainers: ["jerlendds"]
 openGraphImageUrl: "https://opengraph.githubassets.com/010b445d58bcb089edb3a8d75efe57addc6733d3291318230e99837deca16155/omoika-institute/omoika"
 postedAt: "2026-08-30T00:57:49.523Z"

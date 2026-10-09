@@ -16,13 +16,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-10-09T10:51:51Z"
+lastCommitAt: "2026-10-09T18:54:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 82
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c86bcb3f2b04e3752147d46e5c8d56caef6d3e89118aee1fc948c33b180f53c2/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/840a076d7eec71e3880dcc85ab9a563c8db3c7f3cc6285681a7c5f311cb7b976/hankhsu1996/lyra"
+postedAt: "2026-10-09T10:56:38.881Z"
 ---
 
 # Lyra: A Modern SystemVerilog Simulation Toolchain
