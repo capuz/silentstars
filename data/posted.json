@@ -1674,5 +1674,16 @@
         "postedAt": "2026-10-09T10:56:53.738Z"
       }
     }
+  },
+  {
+    "repo": "Shaisolaris/solaris-dev-shop",
+    "slug": "shaisolaris--solaris-dev-shop",
+    "postedAt": "2026-10-09T19:21:03.485Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxhozw6byr22",
+        "postedAt": "2026-10-09T19:21:03.485Z"
+      }
+    }
   }
 ]
