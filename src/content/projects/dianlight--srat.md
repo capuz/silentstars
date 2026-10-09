@@ -7,24 +7,24 @@ url: "https://github.com/dianlight/srat"
 homepage: "https://deepwiki.com/dianlight/srat/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [59, 37]
+languagePcts: [59, 36]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 10
 forks: 2
-openIssues: 8
-closedIssues: 278
+openIssues: 7
+closedIssues: 282
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-10-08T09:55:42Z"
+lastCommitAt: "2026-10-09T10:34:19Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 78
 maintainers: ["dianlight", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b5567a4d8d1e8ffb81b2c135af981f6e25606ae0d34f201fee18a1c855048c54/dianlight/srat"
+openGraphImageUrl: "https://opengraph.githubassets.com/1aec1e104b9461f7211389260abaea563cab02d269b49de898f913b1020e8efc/dianlight/srat"
 fundingLinks: ["GITHUB:https://github.com/dianlight", "BUY_ME_A_COFFEE:https://buymeacoffee.com/ypKZ2I0"]
 discussionCount: 9
 postedAt: "2026-09-27T09:35:29.945Z"

@@ -1,0 +1,52 @@
+---
+repo: "speakeasy-api/gram"
+name: "gram"
+description: "Securely scale AI usage across your organization. A single stack to Connect, Secure, Observe and Distribute agents, MCPs, and Skills within your company."
+readmeQualityOk: true
+url: "https://github.com/speakeasy-api/gram"
+homepage: "https://www.speakeasy.com"
+language: "Go"
+languages: ["Go", "TypeScript"]
+languagePcts: [70, 26]
+topics: ["mcp", "openapi", "agents", "golang", "serverless", "typescript", "aisdk", "openrouter", "mcp-servers", "clis"]
+stars: 273
+forks: 35
+openIssues: 5
+closedIssues: 33
+watchers: 0
+contributors: 41
+recentReleases: 0
+createdAt: "2025-08-06T19:24:20Z"
+lastCommitAt: "2026-10-09T10:42:16Z"
+lastReleaseAt: "2025-10-10T17:10:54Z"
+status: "thriving"
+tags: []
+healthScore: 97
+undervaluedScore: 41
+maintainers: ["adaam2", "daviddanialy", "bflad"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1033414384/7b99e13a-4019-4005-8b32-70abea3d6a2e"
+discussionCount: 1
+---
+
+# Introduction
+
+This repository is the open source stack behind Speakeasy's AI control plane. Secure and centrally manage MCPs, Skills, and Assistants your whole company to access, with fine-grained permissions, threat detection, and full observability of token use and costs. Every tool call, permission change, and access event logged and searchable. SOC 2 Type II and ISO 27001 certified.
+
+To get started on the hosted platform you can [Sign up](https://app.getgram.ai/), or check out the [Quickstart guide](https://www.getgram.ai/docs/introduction).
+
+### Supports popular AI providers
+
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+## Observe
+
+Track AI usage across teams and measure impact with either tokens or cost. Deep dive expensive sessions, create budgets and measure tool effectiveness. Built on a foundation of Opentelemetry. Exportable and interactive via platform MCP and a built in assistant.
+
+## Secure
+
+Every prompt, response, and agent action is inspected and enforced in real time. Sensitive data is blocked, redacted, or logged before it leaves your…

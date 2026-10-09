@@ -11,20 +11,20 @@ languagePcts: [63, 32]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 17
-closedIssues: 1870
+openIssues: 21
+closedIssues: 1872
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-10-07T22:23:04Z"
+lastCommitAt: "2026-10-08T15:25:38Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 84
 maintainers: ["malibio", "mstomar125"]
-openGraphImageUrl: "https://opengraph.githubassets.com/26dce23ed3f763b4c3130ba0786aaef7b5d21016e2310260152810eebf75aa4c/NodeSpaceAI/nodespace-core"
+openGraphImageUrl: "https://opengraph.githubassets.com/86be34bce09e94a0a5d6cf487aa8c33cc2a47095b4afabf91dfe5e5769fdb6f2/NodeSpaceAI/nodespace-core"
 postedAt: "2026-10-05T10:53:35.128Z"
 ---
 

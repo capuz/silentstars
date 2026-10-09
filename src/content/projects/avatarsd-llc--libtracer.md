@@ -7,23 +7,23 @@ url: "https://github.com/avatarsd-llc/libtracer"
 homepage: "https://libtracer.avatarsd.com/"
 language: "C++"
 languages: ["C++"]
-languagePcts: [83]
+languagePcts: [82]
 stars: 5
 forks: 0
-openIssues: 80
-closedIssues: 635
+openIssues: 70
+closedIssues: 657
 watchers: 1
 contributors: 2
 recentReleases: 8
 createdAt: "2025-03-03T13:50:36Z"
-lastCommitAt: "2026-10-08T09:13:34Z"
+lastCommitAt: "2026-10-09T10:03:31Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
 healthScore: 98
-undervaluedScore: 89
+undervaluedScore: 90
 maintainers: ["AvatarSD"]
-openGraphImageUrl: "https://opengraph.githubassets.com/45c0769804668100e5ff790752a54109706b985f142be7af36bec59f3c755d53/avatarsd-llc/libtracer"
+openGraphImageUrl: "https://opengraph.githubassets.com/c66e25ff33f9508b366d34eebc9b0a3218b4b70a017d4f04bdbb7987c30ff96c/avatarsd-llc/libtracer"
 discussionCount: 0
 postedAt: "2026-08-14T05:19:31.863Z"
 ---

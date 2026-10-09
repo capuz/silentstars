@@ -15,14 +15,14 @@ watchers: 2
 contributors: 3
 recentReleases: 5
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-10-08T03:57:08Z"
+lastCommitAt: "2026-10-09T09:18:58Z"
 lastReleaseAt: "2026-09-29T17:02:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0c6627a849bfb6ff018a8d763aab79490836605fe4dd158e334566d118905a0b/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/17524a861bfcea5a2a99d84be7d0cd670b8448f6ec4778102abf62bec76d6c30/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
@@ -30,7 +30,7 @@ postedAt: "2026-07-12T06:25:03.412Z"
 
 **Gates** (every PR + nightly) — a PR lands only on a clean run:
 
-**Nightly IP sweeps** — one badge per family; each links to its per-module report:
+**Nightly IP sweeps** — one badge per sweep workflow, in the order the [Supported Core IP](#supported-core-ip) table lists them; each links to its per-module report:
 
 A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language). Focused on creating post-synthesis (Gate-level) netlists that matches RTL simulation using Verilator as the golden standard.
 
@@ -45,6 +45,4 @@ A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Ha
 
 ## Overview
 
-This project bridges the gap between SystemVerilog source code and Yosys synthesis by leveraging two key components:
-
-1.…
+This project bridges the gap between…

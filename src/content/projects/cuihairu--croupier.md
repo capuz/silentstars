@@ -17,54 +17,38 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-08T05:54:33Z"
+lastCommitAt: "2026-10-09T09:00:16Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 86
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a5b497a95314ad5b17661357fd8d72374aff21610f5856c5c0d9c3c0f266c4d6/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/4ef008cd2dee00fed31970ef627f1e3035dd0c94794fd63aee7bda0932d728b7/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
 
-Croupier 是面向游戏运营与控制场景的 Server / Agent / SDK 平台，默认服务于单一游戏公司内部的多个游戏与多个环境。当前架构已经收敛到“统一 session 传输”方向：
+[English](https://github.com/cuihairu/croupier/blob/HEAD/README.md) | [中文](https://github.com/cuihairu/croupier/blob/HEAD/README.zh.md)
 
-- `Agent <-> Server`：默认采用 `TCP session`，默认启用 `TLS`
-- `SDK <-> Agent`：默认采用 `TCP session`，默认不启用 `TLS`，按需开启
-- 两条链路共享同一套 session 传输基座，只在首条握手消息和业务语义上区分子协议
+Croupier is a Server / Agent / SDK platform for game operations and control, intended by default for multiple games and multiple environments within a single game company. The architecture has converged on a unified session transport:
 
-## 在线演示
+- `Agent <-> Server`: TCP session by default, with TLS enabled by default
+- `SDK <-> Agent`: TCP session by default, TLS off by default and enabled on demand
+- Both links share the same session transport foundation and differ only in the first handshake message and business semantics
 
-地址：https://croupier.cuihairu.site/
+## Online Demo
 
-| 账号    | 密码       |
-| ------- | ---------- |
-| `admin` | `admin123` |
+URL: https://croupier.cuihairu.site/
 
-> [演示环境，全部为假数据，会不定期重置。请勿填写任何真实信息。]
+| Account | Password  |
+| ------- | --------- |
+| `admin` | `admin123`|
+
+> [Demo environment: all data is fake and is reset from time to time. Do not enter any real information.]
 
 ## Highlights
 
-- 单公司、多游戏、多环境作用域模型：标准业务边界是 `gameId + env`
-- 业务作用域与运行目标分离：`scope` 表达归属，`target` 表达部署与执行位置
-- 统一的函数注册、调度、调用与作业模型
-- 轻量 session 传输：单连接、双向请求、可重连、可背压、可摘流
-- JSON payload + protobuf 信封，兼顾跨语言一致性与接入成本
-- JSON Schema 能力契约 + Ant Design Pro/ProComponents 驱动的生成式控制台 UI
-
-## 支持的数据库
-
-| 数据库     | 驱动                       | 适用场景             |
-| ---------- | -------------------------- | -------------------- |
-| SQLite     | `glebarez/sqlite`          | 开发、测试、小型部署 |
-| MySQL      | `gorm.io/driver/mysql`     | 生产环境（推荐）     |
-| PostgreSQL | `gorm.io/driver/postgres`  | 生产环境             |
-| SQL Server | `gorm.io/driver/sqlserver` | 企业环境             |
-
-各库 DSN 配置示例见[服务端配置说明](https://github.com/cuihairu/croupier/blob/HEAD/docs/operations/config-server.md)。
-
-## SDK 生态
-
-所有官方 SDK 已整合到 monorepo 的…
+- Single-company, multi-game, multi-environment scope model: the standard business boundary is `gameId + env`
+- Separation of business scope and run target: `scope` expresses ownership, `target` expresses deployment and execution location
+- Unified function registration, dispatch,…

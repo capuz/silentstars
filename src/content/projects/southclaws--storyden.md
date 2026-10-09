@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-06T19:19:31Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-07T21:51:27Z"
 lastReleaseAt: "2019-08-09T09:07:02Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 80
 maintainers: ["unional", "renovate[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1c513593112390084f75306390647f57090c4037d865a78112c14b27845479f3/cyberuni/standard-log"

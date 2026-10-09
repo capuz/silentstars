@@ -9,7 +9,7 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [67, 33]
 stars: 55
-forks: 145
+forks: 144
 openIssues: 0
 closedIssues: 1
 watchers: 1
@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-03T08:27:00Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 71
 maintainers: ["SN-Abdullah-Al-Noman"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fe89512c4a943c60c8b256f5e299b523f688e6750f7939ec55269d04a2414219/SN-Abdullah-Al-Noman/QuantumROM"
