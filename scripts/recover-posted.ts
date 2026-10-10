@@ -11,7 +11,7 @@ import { BskyAgent } from '@atproto/api';
 import { type PostedEntry, loadPosted, savePosted } from './post-shared.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
-const BASE_URL = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
+const BASE_URL = (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, '');
 const PROJECT_PREFIX = `${BASE_URL}/projects/`;
 
 function slugToRepo(slug: string): string {

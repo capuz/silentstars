@@ -9,7 +9,8 @@ const graphemes = (s: string) => [...new Intl.Segmenter().segment(s)].length;
 
 test('bio fits the 256-grapheme profile limit and points at /submit', () => {
   assert.ok(graphemes(DESCRIPTION) <= 256, `bio is ${graphemes(DESCRIPTION)}`);
-  assert.ok(DESCRIPTION.includes('capuz.github.io/silentstars/submit'));
+  assert.ok(DESCRIPTION.includes('silentstars.dev/submit'));
+  assert.ok(SUBMIT_URL.startsWith('https://silentstars.dev/'));
 });
 
 test('display name fits the 64-grapheme limit', () => {
@@ -38,6 +39,7 @@ test('pinned post fits 300 graphemes and links the submit URL at the right bytes
   assert.equal(links.length, 1);
   const bytes = new TextEncoder().encode(rec.text);
   const shown = new TextDecoder().decode(bytes.slice(links[0]!.index.byteStart, links[0]!.index.byteEnd));
+  // The pinned post keeps its pre-custom-domain link on purpose (see PINNED_TEXT).
   assert.equal(shown, 'capuz.github.io/silentstars/submit');
-  assert.equal((links[0]!.features[0] as any).uri, SUBMIT_URL);
+  assert.equal((links[0]!.features[0] as any).uri, 'https://capuz.github.io/silentstars/submit');
 });

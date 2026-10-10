@@ -4,11 +4,11 @@
 
 [![License](https://img.shields.io/github/license/capuz/silentstars)](LICENSE)
 [![Nightly collect + deploy](https://github.com/capuz/silentstars/actions/workflows/collect.yml/badge.svg)](https://github.com/capuz/silentstars/actions/workflows/collect.yml)
-[![Live site](https://img.shields.io/badge/site-live-brightgreen)](https://capuz.github.io/silentstars/)
+[![Live site](https://img.shields.io/badge/site-live-brightgreen)](https://silentstars.dev/)
 
 A static site that surfaces open source projects that are **alive but invisible** — newborns, solo builders, projects that came back from the edge. Ranked by how much they deserve attention, not by star count.
 
-**Live:** https://capuz.github.io/silentstars/?ref=githubrepo
+**Live:** https://silentstars.dev/?ref=githubrepo
 
 ---
 

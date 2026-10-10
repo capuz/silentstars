@@ -14,7 +14,7 @@
 import { BskyAgent, RichText, type AppBskyActorProfile, type AppBskyFeedPost } from '@atproto/api';
 import { pathToFileURL } from 'node:url';
 
-export const SUBMIT_URL = 'https://capuz.github.io/silentstars/submit';
+export const SUBMIT_URL = 'https://silentstars.dev/submit';
 
 export const DISPLAY_NAME = 'SilentStars · OSS radar';
 
@@ -22,9 +22,11 @@ export const DESCRIPTION = [
   'Daily pick of open-source projects that are alive but invisible. Not famous. Not abandoned. Just building.',
   '',
   'Built one? Submit it 👇',
-  'capuz.github.io/silentstars/submit',
+  'silentstars.dev/submit',
 ].join('\n');
 
+// Keeps the pre-custom-domain link on purpose: editing this text publishes a
+// brand-new pinned post, and GitHub Pages 301s the old URL to silentstars.dev.
 export const PINNED_TEXT = [
   "📡 SilentStars finds open-source projects that are actively built but nobody's noticed yet. One pick a day, right here.",
   '',

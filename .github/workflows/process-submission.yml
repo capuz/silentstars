@@ -64,7 +64,7 @@ jobs:
           ISSUE_AUTHOR_LOGIN:  ${{ github.event.issue.user.login }}
           REPO_OWNER:          ${{ github.repository_owner }}
           REPO_NAME:           ${{ github.event.repository.name }}
-          BASE_URL:            https://capuz.github.io/silentstars
+          BASE_URL:            https://silentstars.dev
           BUTTONDOWN_API_KEY:  ${{ secrets.BUTTONDOWN_API_KEY }}
 
       # The AI take is written by Claude Code on the maintainer's subscription.
@@ -123,7 +123,7 @@ jobs:
           EMAIL_TYPE:         already_listed
           PROJECT_NAME:       ${{ steps.validate.outputs.project_name }}
           PROJECT_SLUG:       ${{ steps.validate.outputs.slug }}
-          BASE_URL:           https://capuz.github.io/silentstars
+          BASE_URL:           https://silentstars.dev
         run: npx tsx scripts/send-email.ts
 
   # ─────────────────────────────────────────────────────────────
@@ -181,7 +181,7 @@ jobs:
         id: state
         env:
           SLUG:              ${{ needs.validate.outputs.slug }}
-          BASE_URL:          https://capuz.github.io/silentstars
+          BASE_URL:          https://silentstars.dev
           FALLBACK_BSKY_URL: ${{ needs.collect-deploy-post.outputs.bsky_url }}
         run: |
           set -u
@@ -227,7 +227,7 @@ jobs:
             const bskyUrl = process.env.BSKY_URL;
             const ackId   = process.env.ACK_COMMENT_ID ? Number(process.env.ACK_COMMENT_ID) : null;
             const cardOk  = process.env.CARD_BUILT === 'true' || process.env.CARD_LIVE === 'true';
-            const cardUrl = `https://capuz.github.io/silentstars/projects/${slug}/`;
+            const cardUrl = `https://silentstars.dev/projects/${slug}/`;
             const issue_number = context.issue.number;
 
             let body, labels, close;
@@ -278,5 +278,5 @@ jobs:
           PROJECT_NAME:      ${{ needs.validate.outputs.project_name }}
           PROJECT_SLUG:      ${{ needs.validate.outputs.slug }}
           BSKY_POST_URL:     ${{ steps.state.outputs.bsky_url }}
-          BASE_URL:          https://capuz.github.io/silentstars
+          BASE_URL:          https://silentstars.dev
         run: npx tsx scripts/send-email.ts

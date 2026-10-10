@@ -40,7 +40,7 @@ async function main(): Promise<void> {
     project = active[seededIndex(today, active.length)];
   }
 
-  const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
+  const baseUrl = (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, '');
 
   // The raw GitHub description is often status text ("Work in progress …"), so
   // the post leads with what the project does, taken from its README/description.

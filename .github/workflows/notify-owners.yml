@@ -38,7 +38,7 @@ jobs:
           NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
           NOTIFY_BCC:        fcapuz@gmail.com
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
-          BASE_URL:          https://capuz.github.io/silentstars
+          BASE_URL:          https://silentstars.dev
           SLUGS:             ${{ inputs.slugs }}
           DRY_RUN:           ${{ inputs.dry_run }}
         run: npx tsx scripts/notify-owners.ts

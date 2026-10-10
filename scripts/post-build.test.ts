@@ -4,7 +4,7 @@ import { buildPost, isSubmitCtaDay } from './post-build.ts';
 import { blueskyHandleFromSocialAccounts } from './post-shared.ts';
 import type { Project } from './post-shared.ts';
 
-const BASE = 'https://capuz.github.io/silentstars';
+const BASE = 'https://silentstars.dev';
 
 const project: Project = {
   repo: 'Peon-sh/Peon',

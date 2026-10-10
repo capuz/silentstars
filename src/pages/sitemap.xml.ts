@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 export const GET: APIRoute = async ({ site }) => {
   const base = import.meta.env.BASE_URL;
-  const origin = site ? site.origin : 'https://capuz.github.io';
+  const origin = site ? site.origin : 'https://silentstars.dev';
   const root = `${origin}${base}`;
 
   const projects = await getCollection('projects');

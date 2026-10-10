@@ -12,7 +12,7 @@
  *   PROJECT_NAME        — required
  *   PROJECT_SLUG        — required (e.g. shik3i--koalasync)
  *   BSKY_POST_URL       — optional (Bluesky post URL, only for "accepted")
- *   BASE_URL            — optional (default: https://capuz.github.io/silentstars)
+ *   BASE_URL            — optional (default: https://silentstars.dev)
  *   DRY_RUN             — optional
  */
 
@@ -27,7 +27,7 @@ const FROM_EMAIL = process.env.NOTIFY_FROM_EMAIL ?? '';
 const data: EmailData = {
   projectName:  process.env.PROJECT_NAME ?? '',
   projectSlug:  process.env.PROJECT_SLUG ?? '',
-  baseUrl:      (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, ''),
+  baseUrl:      (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, ''),
   bskyPostUrl:  process.env.BSKY_POST_URL ?? '',
 };
 

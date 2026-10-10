@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://capuz.github.io',
-  base: '/silentstars/',
+  site: 'https://silentstars.dev',
+  base: '/',
   output: 'static',
 });

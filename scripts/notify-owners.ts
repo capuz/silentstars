@@ -19,7 +19,7 @@
  *   SLUGS               — optional, comma-separated project slugs to target
  *                          instead of the 5 most recently posted
  *   LIMIT               — optional, default 5 (ignored if SLUGS is set)
- *   BASE_URL            — optional (default: https://capuz.github.io/silentstars)
+ *   BASE_URL            — optional (default: https://silentstars.dev)
  *   DRY_RUN             — optional
  */
 
@@ -33,7 +33,7 @@ const DRY_RUN   = process.argv.includes('--dry-run') || process.env.DRY_RUN === 
 const FROM      = process.env.NOTIFY_FROM_EMAIL ?? '';
 const BCC       = process.env.NOTIFY_BCC ?? '';
 const TOKEN     = process.env.GITHUB_TOKEN ?? '';
-const BASE_URL  = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
+const BASE_URL  = (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, '');
 const LIMIT     = Number(process.env.LIMIT ?? '5');
 
 async function main() {

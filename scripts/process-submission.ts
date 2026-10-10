@@ -311,7 +311,7 @@ async function main() {
   if (!ISSUE_NUMBER) throw new Error('ISSUE_NUMBER is required');
   if (!REPO_OWNER || !REPO_NAME_GH) throw new Error('REPO_OWNER and REPO_NAME are required');
 
-  const baseUrl = (process.env.BASE_URL ?? 'https://capuz.github.io/silentstars').replace(/\/$/, '');
+  const baseUrl = (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, '');
 
   // Fetch issue body from API (more reliable than env var for multiline content)
   const issueBody = await fetchIssueBody(REPO_OWNER, REPO_NAME_GH, ISSUE_NUMBER);
