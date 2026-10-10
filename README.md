@@ -14,7 +14,7 @@ A static site that surfaces open source projects that are **alive but invisible*
 
 ## What this is
 
-A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars-radar.bsky.social](https://bsky.app/profile/silentstars-radar.bsky.social)). ~280 projects are tracked as of this writing.
+A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars.dev](https://bsky.app/profile/silentstars.dev)). ~280 projects are tracked as of this writing.
 
 ---
 
