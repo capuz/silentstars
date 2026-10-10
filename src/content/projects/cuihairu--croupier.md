@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [55, 29]
 topics: ["clickhouse", "game", "game-analytics", "game-backend", "game-telemetry", "golang", "jaeger", "liveops", "logging", "metrics"]
-stars: 9
+stars: 10
 forks: 1
 openIssues: 0
 closedIssues: 1
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-09T18:48:27Z"
+lastCommitAt: "2026-10-10T08:35:09Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
-undervaluedScore: 86
+undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f2e856c1e625e9c8facf64734d3e033cff799f5e88b3fdd3f24a78b0c151f4d1/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/4e9895a405c4b12f1b04394392ebcae44fe896456eb345f13989b8a86d735ef5/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---

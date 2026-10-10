@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-09T08:35:48Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 60
 maintainers: ["dspachos", "dan2k3k4", "amazee-ai-automation[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/88bb86c6381eb2c47345034dca22c12c9ca7c1b23af16e4d17b54b1432343d69/amazeeio/amazee.ai"

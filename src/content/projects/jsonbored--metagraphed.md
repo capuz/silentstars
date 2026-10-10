@@ -12,7 +12,7 @@ topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "
 stars: 11
 forks: 89
 openIssues: 85
-closedIssues: 4372
+closedIssues: 4373
 watchers: 0
 contributors: 83
 recentReleases: 0
@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-02T03:49:41Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 68
 maintainers: ["JSONbored", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/dade3fdbc97eff9c41b31a321b2c95e4eab00a0971bd5d19e8cebea0ab7dd990/JSONbored/metagraphed"

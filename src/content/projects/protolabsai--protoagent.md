@@ -9,20 +9,20 @@ language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [71, 25]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
-stars: 11
+stars: 12
 forks: 9
-openIssues: 21
+openIssues: 22
 closedIssues: 1014
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-10-09T09:26:06Z"
+lastCommitAt: "2026-10-10T07:45:46Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 65
+undervaluedScore: 63
 maintainers: ["mabry1985", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
 discussionCount: 0
@@ -35,25 +35,22 @@ A private, plugin-extensible desktop agent. It plans and remembers, and it gives
 
 ## Get it running
 
-**Desktop app (beta)** — [download for macOS, Windows or Linux](https://agent.protolabs.studio/download).
-About 100 MB installed with the server bundled; no Python, Node or other runtime is downloaded at first launch. The macOS
-build (Apple Silicon) is signed and notarized; the Windows and Linux builds are unsigned for now.
+[Download the desktop app](https://agent.protolabs.studio/download) for macOS,
+Windows, or Linux, then follow the setup wizard.
 
-**One command** — with [uv](https://docs.astral.sh/uv/) installed:
+With [uv](https://docs.astral.sh/uv/) installed, you can also run the published package:
 
 ```bash
 uvx --from protolabs-agent protoagent serve
 ```
 
-then open <http://localhost:7870>.
+Open <http://localhost:7870>. Connect a model endpoint or sign in to a supported
+Claude or ChatGPT subscription, choose **Basic**, name your agent, and finish setup.
+The [first-agent tutorial](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/tutorials/first-agent.md) covers installation,
+connection testing, and your first chat.
 
-**From source:**
+## Watch it
 
-```bash
-git clone https://github.com/protoLabsAI/protoAgent.git && cd protoAgent
-uv sync && uv run python -m server
-```
-
-Whichever you pick, the setup wizard connects any OpenAI-compatible endpoint — a hosted
-provider, a LiteLLM gateway, or a local Ollama — then names your agent and picks an
-archetype. The [first-agent…
+| Your agent drives Claude Code / Codex | An autonomous dev team | A private desktop agent |
+| --- | --- | --- |
+| <a href="docs/public/readme/hero-code-pane.gif"><img…

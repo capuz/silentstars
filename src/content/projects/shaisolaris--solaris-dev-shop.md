@@ -21,12 +21,13 @@ lastCommitAt: "2026-09-26T17:43:26Z"
 lastReleaseAt: "2026-09-26T09:06:38Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
-healthScore: 65
+healthScore: 64
 undervaluedScore: 47
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"
 discussionCount: 5
 promoted: true
+postedAt: "2026-10-09T19:21:03.485Z"
 ---
 
 # Solaris Dev Shop
