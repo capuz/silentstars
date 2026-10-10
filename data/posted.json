@@ -1694,6 +1694,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxjarc7sif22",
         "postedAt": "2026-10-10T10:11:01.128Z"
+      },
+      "ownerEmail": {
+        "url": "Spigelly@gmail.com",
+        "postedAt": "2026-10-10T10:11:18.737Z"
       }
     }
   }
