@@ -1685,5 +1685,16 @@
         "postedAt": "2026-10-09T19:21:03.485Z"
       }
     }
+  },
+  {
+    "repo": "spigell/pulumi-talos-cluster",
+    "slug": "spigell--pulumi-talos-cluster",
+    "postedAt": "2026-10-10T10:11:01.128Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxjarc7sif22",
+        "postedAt": "2026-10-10T10:11:01.128Z"
+      }
+    }
   }
 ]
