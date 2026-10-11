@@ -17,14 +17,14 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2024-02-03T15:23:41Z"
-lastCommitAt: "2026-10-08T12:51:55Z"
+lastCommitAt: "2026-10-11T03:34:45Z"
 lastReleaseAt: "2024-07-25T06:56:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 86
 maintainers: ["mundi4"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6e4ad81f80973033e1456314ef560075ddcf89fc3831562fd771e390a51b01d6/mundi4/debind"
+openGraphImageUrl: "https://opengraph.githubassets.com/4db0db70a8c1ee31272b978a2bc9ac707be0129f42c109bb4b2f6fb67f6c15e8/mundi4/debind"
 postedAt: "2026-10-08T10:57:51.451Z"
 ---
 

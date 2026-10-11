@@ -8,7 +8,7 @@ readmeQualityOk: false
 url: "https://github.com/iTaoPu/iCloud"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [72]
+languagePcts: [71]
 stars: 6
 forks: 1
 openIssues: 0
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-03-29T03:05:27Z"
-lastCommitAt: "2026-10-09T03:40:13Z"
+lastCommitAt: "2026-10-11T06:17:22Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 79
+healthScore: 80
 undervaluedScore: 72
 maintainers: ["github-actions[bot]", "iTaoPu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/009b17dc481e440dd829a74e9e073ecb7b6599361cd75e0098da86409e8f3b23/iTaoPu/iCloud"
+openGraphImageUrl: "https://opengraph.githubassets.com/48ff4be8c69551d0133d1d0c291fe8caae7aca9dec51f5f0786432da68f38deb/iTaoPu/iCloud"
 postedAt: "2026-07-04T19:30:50.124Z"
 ---
 

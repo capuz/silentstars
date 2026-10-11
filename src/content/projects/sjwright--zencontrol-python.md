@@ -15,16 +15,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 2
 contributors: 1
-recentReleases: 6
+recentReleases: 7
 createdAt: "2024-12-29T10:06:18Z"
-lastCommitAt: "2026-10-01T13:58:16Z"
-lastReleaseAt: "2026-08-04T03:18:28Z"
+lastCommitAt: "2026-10-11T00:29:44Z"
+lastReleaseAt: "2026-10-11T00:30:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 72
+healthScore: 75
 undervaluedScore: 79
 maintainers: ["sjwright"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6cad8433672a21685f779bccffb6d0c84d6c736a03a4b98031bd88f54a9f7bed/sjwright/zencontrol-python"
+openGraphImageUrl: "https://opengraph.githubassets.com/9679ccea2ba2a4b8f323bf35805ffd505b8d3a1abb14b1d69e06deb5fb353a1f/sjwright/zencontrol-python"
 postedAt: "2026-09-26T08:56:13.611Z"
 ---
 

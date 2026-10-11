@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [99]
 topics: ["ai", "coolify", "coolify-alternative", "coolify-compatible", "deplo", "docker", "docker-compose", "dokploy-alternative", "open", "paas"]
-stars: 99
+stars: 100
 forks: 25
 openIssues: 1
 closedIssues: 8
@@ -20,11 +20,11 @@ createdAt: "2026-07-10T11:34:59Z"
 lastCommitAt: "2026-10-08T08:03:23Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
-tags: ["hidden_gem", "release_machine"]
+tags: ["release_machine"]
 healthScore: 96
 undervaluedScore: 41
 maintainers: ["hironate", "arpit-advant", "parth-advant019"]
-openGraphImageUrl: "https://opengraph.githubassets.com/db8deb9fb0bf5a1afd211ea63e4b4bf09e60b2ddb972d14919462db4da8e7bed/Peon-sh/Peon"
+openGraphImageUrl: "https://opengraph.githubassets.com/975c5a93e651aa6a084ec5a1d4bd8bf037c925991cf8261edb7c4df40817a5b2/Peon-sh/Peon"
 promoted: true
 postedAt: "2026-09-29T08:20:14.976Z"
 ---

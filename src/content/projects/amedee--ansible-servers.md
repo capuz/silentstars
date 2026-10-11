@@ -12,7 +12,7 @@ topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "em
 stars: 6
 forks: 1
 openIssues: 9
-closedIssues: 198
+closedIssues: 199
 watchers: 1
 contributors: 1
 recentReleases: 0

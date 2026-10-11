@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [53, 45]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
-stars: 340
+stars: 339
 forks: 38
 openIssues: 61
 closedIssues: 164
@@ -17,11 +17,11 @@ watchers: 10
 contributors: 17
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-10-06T19:19:31Z"
+lastCommitAt: "2026-10-10T21:43:09Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"

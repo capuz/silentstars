@@ -11,7 +11,7 @@ languagePcts: [96]
 topics: ["python", "python-typing", "typeshed", "typing"]
 stars: 14
 forks: 6
-openIssues: 3
+openIssues: 5
 closedIssues: 172
 watchers: 3
 contributors: 7
@@ -21,8 +21,8 @@ lastCommitAt: "2026-10-09T18:14:58Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
-undervaluedScore: 76
+healthScore: 98
+undervaluedScore: 75
 maintainers: ["renovate[bot]", "AlexWaygood"]
 openGraphImageUrl: "https://opengraph.githubassets.com/afe303ab11b2f41ce141ac8353a290b5877075f014a916ce17fe8c2d0452353d/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"

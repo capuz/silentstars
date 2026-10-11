@@ -23,6 +23,7 @@ healthScore: 87
 undervaluedScore: 73
 maintainers: ["spigell-renovate[bot]", "ik-gemini-bot", "spigell"]
 openGraphImageUrl: "https://opengraph.githubassets.com/44f33d48b25e8a91fc69887e0aba3778c23f81169489d5c5430c365d4d4845af/spigell/pulumi-talos-cluster"
+postedAt: "2026-10-10T10:11:01.128Z"
 ---
 
 # pulumi-talos-cluster (WIP)
