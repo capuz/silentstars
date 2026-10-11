@@ -1709,6 +1709,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxlrsjfwyn24",
         "postedAt": "2026-10-11T10:21:15.448Z"
+      },
+      "ownerEmail": {
+        "url": "ops@runs-on.com",
+        "postedAt": "2026-10-11T10:21:30.876Z"
       }
     }
   }
