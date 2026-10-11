@@ -16,6 +16,7 @@ import { claudeEnabled } from './claude-cli.ts';
 import { stripReadmeNoise } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify } from './post-shared.ts';
+import { isExcludedRepo } from './discovery-filter.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -574,9 +575,10 @@ async function main() {
   }
 
   const configPath = resolve(ROOT, 'data/discovery.config.json');
-  const healthThreshold: number = existsSync(configPath)
-    ? (JSON.parse(readFileSync(configPath, 'utf8')) as { vitalityThreshold: number }).vitalityThreshold
-    : 40;
+  const discoveryConfig = existsSync(configPath)
+    ? JSON.parse(readFileSync(configPath, 'utf8')) as { vitalityThreshold: number; excludeRepos?: string[] }
+    : undefined;
+  const healthThreshold: number = discoveryConfig?.vitalityThreshold ?? 40;
 
   const postedRepos = postedEntries
     .map(e => e.repo)
@@ -587,6 +589,7 @@ async function main() {
     ...promotedRepos,
     ...postedRepos,
     ...discoveredCandidates.filter(r =>
+      !isExcludedRepo(r, discoveryConfig?.excludeRepos) &&
       !promotedSet.has(r.toLowerCase()) &&
       !postedReposSet.has(r.toLowerCase())
     ),

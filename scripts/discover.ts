@@ -25,6 +25,7 @@ interface DiscoveryConfig {
   pushedWithinDays: number;
   maxCandidatesPerNight: number;
   vitalityThreshold: number; // used by collect.ts, stored here as canonical source
+  excludeRepos?: string[];   // never discovered (e.g. SilentStars itself)
 }
 
 interface DiscoveredJson {
@@ -130,6 +131,7 @@ async function main() {
   // Build known-repos Set from promoted.json (active entries) + previous discovered.json
   // This prevents adding repos we already track
   const knownRepos = new Set<string>();
+  config.excludeRepos?.forEach(r => knownRepos.add(r.toLowerCase()));
 
   const promotedPath = resolve(ROOT, 'data/promoted.json');
   if (existsSync(promotedPath)) {
