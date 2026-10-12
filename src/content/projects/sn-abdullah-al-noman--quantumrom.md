@@ -8,7 +8,7 @@ homepage: "https://t.me/FlameOSGroupOrg"
 language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [67, 33]
-stars: 55
+stars: 56
 forks: 144
 openIssues: 0
 closedIssues: 1
@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 71
 maintainers: ["SN-Abdullah-Al-Noman"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fe89512c4a943c60c8b256f5e299b523f688e6750f7939ec55269d04a2414219/SN-Abdullah-Al-Noman/QuantumROM"
+openGraphImageUrl: "https://opengraph.githubassets.com/82463abde2673a310f3b9ebcd9dbe00522a1390d2d1f44a45a940015d0ef0566/SN-Abdullah-Al-Noman/QuantumROM"
 postedAt: "2026-09-19T08:22:57.857Z"
 ---
 

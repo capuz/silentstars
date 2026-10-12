@@ -7,7 +7,7 @@ url: "https://github.com/michigandaily/dte-outage-tracker"
 language: "JavaScript"
 languages: ["JavaScript", "Shell"]
 languagePcts: [73, 27]
-stars: 7
+stars: 6
 forks: 3
 openIssues: 0
 closedIssues: 0
@@ -15,13 +15,13 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2023-02-23T03:36:50Z"
-lastCommitAt: "2026-10-11T08:22:08Z"
+lastCommitAt: "2026-10-12T10:20:59Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 90
-undervaluedScore: 76
+undervaluedScore: 79
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b8c99aa417cfe636946e43dae7fb3acf2115fb643e7f4f9bb464d0ef0e98b521/michigandaily/dte-outage-tracker"
+openGraphImageUrl: "https://opengraph.githubassets.com/d9c81f0f2850ab2d4f44e8e01ef5c0da8cc23938a2fce08425b9541d00bf10fb/michigandaily/dte-outage-tracker"
 postedAt: "2026-09-12T08:09:30.085Z"
 ---
 

@@ -8,20 +8,20 @@ language: "Python"
 languages: ["Python", "HTML"]
 languagePcts: [72, 26]
 stars: 10
-forks: 28
+forks: 29
 openIssues: 8
 closedIssues: 48
-watchers: 4
+watchers: 3
 contributors: 31
 recentReleases: 0
 createdAt: "2021-07-06T16:18:56Z"
-lastCommitAt: "2026-10-11T04:34:25Z"
+lastCommitAt: "2026-10-12T06:02:02Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 97
-undervaluedScore: 81
+undervaluedScore: 82
 maintainers: ["lvca", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9efcda9c803fb65848b6f21d880d50b7f9b0b68e09079ec6c6b595495c79f256/ArcadeData/arcadedb-docs"
+openGraphImageUrl: "https://opengraph.githubassets.com/4828840a191ebc20936cc2e21816adc4818cb68f3a456cd6d99bafeef7a0ae99/ArcadeData/arcadedb-docs"
 postedAt: "2026-09-07T08:39:00.385Z"
 ---
 

@@ -9,8 +9,8 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler"]
-stars: 64
-forks: 26
+stars: 63
+forks: 25
 openIssues: 5
 closedIssues: 415
 watchers: 2
@@ -21,10 +21,10 @@ lastCommitAt: "2026-09-12T07:38:07Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 86
-undervaluedScore: 54
+healthScore: 85
+undervaluedScore: 42
 maintainers: ["martian56", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/450be2e414c77a7ee53939bfa12f6fe790d83a8c4735405041b33278e7ec875d/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/52a9b3e5c4a74d18f1564725a2e78ad0b764fb5ffb66bf4365257b0936ba8acb/martian56/raven"
 discussionCount: 2
 postedAt: "2026-06-25T06:46:44.859Z"
 ---

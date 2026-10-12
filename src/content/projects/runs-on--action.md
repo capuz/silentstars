@@ -25,6 +25,7 @@ healthScore: 88
 undervaluedScore: 73
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c948a896c03251e081aabdae93eb4a238ad87041613f3d3f2bd5f3c5dfb92ab7/runs-on/action"
+postedAt: "2026-10-11T10:21:15.448Z"
 ---
 
 # runs-on/action
