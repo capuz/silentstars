@@ -1715,5 +1715,16 @@
         "postedAt": "2026-10-11T10:21:30.876Z"
       }
     }
+  },
+  {
+    "repo": "schubergphilis/claude-docker",
+    "slug": "schubergphilis--claude-docker",
+    "postedAt": "2026-10-12T11:21:10.066Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxofmkxhod22",
+        "postedAt": "2026-10-12T11:21:10.066Z"
+      }
+    }
   }
 ]
