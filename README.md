@@ -8,7 +8,7 @@
 
 A static site that surfaces open source projects that are **alive but invisible** — newborns, solo builders, projects that came back from the edge. Ranked by how much they deserve attention, not by star count.
 
-**Live:** https://silentstars.dev/?ref=githubrepo
+**Live:** https://silentstars.dev
 
 ---
 
