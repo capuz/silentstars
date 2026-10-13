@@ -1,7 +1,7 @@
 ---
 repo: "cuihairu/croupier"
 name: "croupier"
-description: "Croupier is a universal GM (Game Master) backend system designed for game operations. It supports integration with multi-language game servers and provides a unified management interface along with powerful extensibility."
+description: "Croupier is a Server / Agent / SDK platform for game operations and control, designed for multiple games and multiple environments within a single game company."
 readmeQualityOk: true
 url: "https://github.com/cuihairu/croupier"
 homepage: "https://cuihairu.github.io/croupier/"
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-12T02:50:10Z"
+lastCommitAt: "2026-10-13T10:34:33Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/225d087e20bf49a11333d554133926619f20f750806e72ee6b5430eca87a4f4c/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/6dc79386612feb3958d96c034c69f0cc13b0a7cb10f6d0a8d8836542778e6652/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---

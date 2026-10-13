@@ -11,7 +11,7 @@ languagePcts: [50, 45]
 topics: ["unifont", "vue", "vue3"]
 stars: 8
 forks: 2
-openIssues: 0
+openIssues: 1
 closedIssues: 15
 watchers: 1
 contributors: 3
@@ -21,8 +21,8 @@ lastCommitAt: "2026-09-28T05:00:44Z"
 lastReleaseAt: "2026-09-12T11:32:21Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 93
-undervaluedScore: 90
+healthScore: 92
+undervaluedScore: 89
 maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
 openGraphImageUrl: "https://opengraph.githubassets.com/39f224bad77a9e8504058c2770993395f5f793f988c63dc1f04c85bcf68a58c6/SkyEye-FAST/unicucumber"
 postedAt: "2026-09-05T07:53:50.587Z"

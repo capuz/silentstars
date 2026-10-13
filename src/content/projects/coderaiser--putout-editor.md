@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/coderaiser/putout-editor"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [89]
+languagePcts: [90]
 topics: ["putout", "javascript", "nodejs", "react", "editor", "ast", "parser"]
 stars: 7
 forks: 1
@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 2
 createdAt: "2019-08-30T08:14:24Z"
-lastCommitAt: "2026-10-06T11:02:44Z"
+lastCommitAt: "2026-10-12T11:30:22Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "funded"]
-healthScore: 87
+healthScore: 89
 undervaluedScore: 75
 maintainers: ["coderaiser"]
-openGraphImageUrl: "https://opengraph.githubassets.com/007a770b41022958c95f9b14fc6d7f971ba215f2ce56826323ef5b8f1dfeac07/coderaiser/putout-editor"
+openGraphImageUrl: "https://opengraph.githubassets.com/7cd9208dd89ede6d8ec375c4ef1f591776106a7c764d5a7da58ee10189c0e664/coderaiser/putout-editor"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/cloudcmd"]
 postedAt: "2026-09-17T08:55:51.523Z"
 ---

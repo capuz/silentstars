@@ -7,22 +7,23 @@ url: "https://github.com/schubergphilis/claude-docker"
 language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [57, 35]
-stars: 6
+stars: 7
 forks: 6
-openIssues: 20
-closedIssues: 30
+openIssues: 21
+closedIssues: 31
 watchers: 0
 contributors: 14
 recentReleases: 10
 createdAt: "2026-07-13T11:55:02Z"
-lastCommitAt: "2026-10-12T11:15:58Z"
+lastCommitAt: "2026-10-12T17:53:37Z"
 lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 90
-undervaluedScore: 72
+healthScore: 89
+undervaluedScore: 68
 maintainers: ["sbp-bvanb", "OnnoJan-SBP", "stefanwb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f55109ada8d3f865f0e70bdc46f425fbdfe689c724d2fc97b7ce959e7a166d2a/schubergphilis/claude-docker"
+openGraphImageUrl: "https://opengraph.githubassets.com/e45d02429650273484ea582702a8cdb52ed1f9a6bf0b883b52970a64eb97992f/schubergphilis/claude-docker"
+postedAt: "2026-10-12T11:21:10.066Z"
 ---
 
 # claude-docker

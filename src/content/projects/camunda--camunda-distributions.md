@@ -12,19 +12,19 @@ topics: ["camunda", "camunda-8", "hacktoberfest", "hacktoberfest2024"]
 stars: 30
 forks: 23
 openIssues: 1
-closedIssues: 77
+closedIssues: 78
 watchers: 6
 contributors: 60
 recentReleases: 3
 createdAt: "2024-09-12T15:02:30Z"
-lastCommitAt: "2026-10-12T10:30:48Z"
-lastReleaseAt: "2026-10-12T10:28:31Z"
+lastCommitAt: "2026-10-13T10:36:00Z"
+lastReleaseAt: "2026-10-13T10:29:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 75
-maintainers: ["renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/15dceb64284f0472a9e5d5e3b4fef118a58a2726e996c2839cd3f81c9bb2ffdf/camunda/camunda-distributions"
+maintainers: ["renovate[bot]", "wollefitz"]
+openGraphImageUrl: "https://opengraph.githubassets.com/65306d8f27ef982b53fccd21fe1300edcf1fdee14b700168b1f0fee7ebb63bc1/camunda/camunda-distributions"
 postedAt: "2026-08-28T15:40:10.930Z"
 ---
 

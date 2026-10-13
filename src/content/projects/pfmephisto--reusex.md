@@ -11,13 +11,13 @@ languagePcts: [85]
 topics: ["aec", "lidar", "reuse"]
 stars: 10
 forks: 1
-openIssues: 11
+openIssues: 31
 closedIssues: 350
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2023-10-20T12:24:17Z"
-lastCommitAt: "2026-10-09T13:38:18Z"
+lastCommitAt: "2026-10-13T08:21:49Z"
 lastReleaseAt: "2026-09-30T14:43:42Z"
 status: "thriving"
 tags: ["solo_builder"]

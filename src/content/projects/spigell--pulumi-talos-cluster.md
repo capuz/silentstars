@@ -5,8 +5,8 @@ description: "Create a talos cluster with pulumi!"
 readmeQualityOk: true
 url: "https://github.com/spigell/pulumi-talos-cluster"
 language: "Go"
-languages: ["Go", "Shell"]
-languagePcts: [61, 21]
+languages: ["Go"]
+languagePcts: [65]
 stars: 10
 forks: 0
 openIssues: 1
@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-11-11T01:51:17Z"
-lastCommitAt: "2026-10-10T10:04:44Z"
+lastCommitAt: "2026-10-13T10:25:21Z"
 lastReleaseAt: "2026-07-14T11:12:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 87
+healthScore: 88
 undervaluedScore: 68
-maintainers: ["spigell-renovate[bot]", "ik-gemini-bot", "spigell"]
-openGraphImageUrl: "https://opengraph.githubassets.com/44f33d48b25e8a91fc69887e0aba3778c23f81169489d5c5430c365d4d4845af/spigell/pulumi-talos-cluster"
+maintainers: ["spigell-renovate[bot]", "ik-gemini-bot", "spigell-codex-bot2"]
+openGraphImageUrl: "https://opengraph.githubassets.com/cc0547cf360ca07fec6abae01011ac92eae6b510c4c73075dabdd66a44a47030/spigell/pulumi-talos-cluster"
 postedAt: "2026-10-10T10:11:01.128Z"
 ---
 

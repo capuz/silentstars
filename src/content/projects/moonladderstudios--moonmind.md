@@ -15,12 +15,12 @@ watchers: 2
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-10-12T06:29:39Z"
+lastCommitAt: "2026-10-13T07:03:59Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+tags: ["needs_contributors", "hidden_gem"]
 healthScore: 98
 undervaluedScore: 72
-maintainers: ["nsticco"]
+maintainers: ["nsticco", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/916785816/183489af-83d3-4d80-b5af-5a5a1c39656b"
 postedAt: "2026-07-22T06:20:57.914Z"
 ---
