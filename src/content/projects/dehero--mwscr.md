@@ -16,13 +16,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-10-13T10:13:58Z"
+lastCommitAt: "2026-10-14T07:11:49Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 100
 undervaluedScore: 77
 maintainers: ["mwscr-bot", "dehero"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9d1b2863dced65212a6fe9201c02c62d5a9c48ead86ec260ff4e8fbcd4b3f095/dehero/mwscr"
+openGraphImageUrl: "https://opengraph.githubassets.com/a452ded2bcd15f850fecb24b4b2056df16790a715177444bb387dabba15bbd18/dehero/mwscr"
 postedAt: "2026-07-16T06:07:04.741Z"
 ---
 
@@ -48,12 +48,13 @@ game from [Bethesda Softworks](https://elderscrolls.bethesda.net/en/morrowind). 
 
 - [Posts](https://mwscr.dehero.site/posts/)
 - [Extras](https://mwscr.dehero.site/extras/)
-- [Drafts](https://mwscr.dehero.site/drafts/)
-- [Rejects](https://mwscr.dehero.site/rejects/)
 - [Members](https://mwscr.dehero.site/users/)
 
-If you want to participate in the project, please read the [contributing guidelines](https://github.com/dehero/mwscr/blob/HEAD/CONTRIBUTING.md).
+Full information about the project is available in the [guide](https://github.com/dehero/mwscr/blob/HEAD/CONTRIBUTING.md). If you want to participate in the
+project, please read it.
 
-### Main post types
+## About the repository
 
--…
+### Data
+
+Information about main…

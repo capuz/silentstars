@@ -7,24 +7,24 @@ url: "https://github.com/integry/propr"
 homepage: "https://propr.dev"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [88]
+languagePcts: [87]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 17
 forks: 7
-openIssues: 24
-closedIssues: 1257
+openIssues: 13
+closedIssues: 1282
 watchers: 1
 contributors: 4
 recentReleases: 5
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-10-13T10:42:01Z"
+lastCommitAt: "2026-10-14T08:13:44Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 99
-undervaluedScore: 81
-maintainers: ["integry", "propr-dev[bot]", "proprdev"]
-openGraphImageUrl: "https://opengraph.githubassets.com/77d5b7a3de0b833e39608b1060804abf73695e9098b2f94c556f23fd66c34c9f/integry/propr"
+healthScore: 100
+undervaluedScore: 82
+maintainers: ["integry", "proprdev"]
+openGraphImageUrl: "https://opengraph.githubassets.com/858ba7a6dea2c26b720deb617c0b20a7ce2a2b1185a7ea9be42c53a00c92afa1/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
 ---

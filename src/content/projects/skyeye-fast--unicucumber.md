@@ -7,24 +7,24 @@ url: "https://github.com/SkyEye-FAST/unicucumber"
 homepage: "https://uni.skyeyefast.top"
 language: "TypeScript"
 languages: ["TypeScript", "Vue"]
-languagePcts: [50, 45]
+languagePcts: [48, 47]
 topics: ["unifont", "vue", "vue3"]
 stars: 8
 forks: 2
-openIssues: 1
-closedIssues: 15
+openIssues: 0
+closedIssues: 17
 watchers: 1
 contributors: 3
 recentReleases: 10
 createdAt: "2024-10-26T16:39:27Z"
-lastCommitAt: "2026-09-28T05:00:44Z"
+lastCommitAt: "2026-10-13T15:41:06Z"
 lastReleaseAt: "2026-09-12T11:32:21Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 92
-undervaluedScore: 89
+healthScore: 98
+undervaluedScore: 90
 maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
-openGraphImageUrl: "https://opengraph.githubassets.com/39f224bad77a9e8504058c2770993395f5f793f988c63dc1f04c85bcf68a58c6/SkyEye-FAST/unicucumber"
+openGraphImageUrl: "https://opengraph.githubassets.com/30375bd1666faf890e1fb0f69359551795a9b711d57d079e85575d3bb6137acb/SkyEye-FAST/unicucumber"
 postedAt: "2026-09-05T07:53:50.587Z"
 ---
 
@@ -51,10 +51,9 @@ You can try the demo at the following links:
   - [x] Pointer Events editing for mouse, touch, and pen, including pinch zoom and two-finger pan
   - [x] Pencil, eraser, fill, line, rectangle, selection, transforms, and grid shifting tools
   - [x] Select, move, nudge, cut, copy, paste preview, duplicate, delete, undo, and redo
-  - [x] Keyboard shortcuts, zoom controls, fit-to-screen, and optional cursor previews
+  - [x] Configurable keyboard shortcuts, including Ctrl+[ / Ctrl+] (Command on macOS) for previous/next character, zoom controls, fit-to-screen, and optional cursor previews
   - [x] Text preview using the current glyphs and the bundled Unifont catalog
 - Glyph library and Unicode
   - [x] Manage multiple glyphs with search by code point, character, bitmap data, or Unicode name
   - [x] Filter by source, Unicode plane, and block, with compact/comfortable/large density modes
-  - [x] Add, edit, duplicate, delete, and batch-manage glyphs with conflict-aware import
-  -…
+  - [x]…

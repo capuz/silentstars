@@ -7,7 +7,7 @@ url: "https://github.com/amazeeio/amazee.ai"
 homepage: "https://api.amazee.ai"
 language: "Python"
 languages: ["Python"]
-languagePcts: [84]
+languagePcts: [85]
 stars: 54
 forks: 3
 openIssues: 2
@@ -16,14 +16,14 @@ watchers: 2
 contributors: 17
 recentReleases: 9
 createdAt: "2025-02-17T14:20:03Z"
-lastCommitAt: "2026-10-09T08:35:48Z"
+lastCommitAt: "2026-10-14T08:24:38Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
-tags: ["hidden_gem", "release_machine"]
-healthScore: 96
+tags: ["solo_builder", "hidden_gem", "release_machine"]
+healthScore: 98
 undervaluedScore: 60
-maintainers: ["dspachos", "dan2k3k4", "amazee-ai-automation[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/88bb86c6381eb2c47345034dca22c12c9ca7c1b23af16e4d17b54b1432343d69/amazeeio/amazee.ai"
+maintainers: ["dspachos", "amazee-ai-automation[bot]", "dan2k3k4"]
+openGraphImageUrl: "https://opengraph.githubassets.com/af0349b79f1aa238dc43d27b052aeca055d6c5b4e1629d6974396eb0827eec11/amazeeio/amazee.ai"
 postedAt: "2026-09-22T08:53:36.022Z"
 ---
 

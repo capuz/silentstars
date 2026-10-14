@@ -7,7 +7,7 @@ url: "https://github.com/cuihairu/croupier"
 homepage: "https://cuihairu.github.io/croupier/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [55, 29]
+languagePcts: [56, 29]
 topics: ["clickhouse", "game", "game-analytics", "game-backend", "game-telemetry", "golang", "jaeger", "liveops", "logging", "metrics"]
 stars: 10
 forks: 1
@@ -17,17 +17,19 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-13T10:34:33Z"
+lastCommitAt: "2026-10-14T08:23:40Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6dc79386612feb3958d96c034c69f0cc13b0a7cb10f6d0a8d8836542778e6652/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/9bc5a931aa30fd05ebc9c0dad3b01916eb755c0d17c6d100960afcd027811cc4/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
+
+> **English** | [中文](https://github.com/cuihairu/croupier/blob/HEAD/README.zh.md)
 
 [English](https://github.com/cuihairu/croupier/blob/HEAD/README.md) | [中文](https://github.com/cuihairu/croupier/blob/HEAD/README.zh.md)
 
@@ -50,5 +52,4 @@ URL: https://croupier.cuihairu.site/
 ## Highlights
 
 - Single-company, multi-game, multi-environment scope model: the standard business boundary is `gameId + env`
-- Separation of business scope and run target: `scope` expresses ownership, `target` expresses deployment and execution location
-- Unified function registration, dispatch,…
+- Separation of business scope and run target: `scope` expresses ownership, `target` expresses…
