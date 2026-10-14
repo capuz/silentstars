@@ -1737,5 +1737,16 @@
         "postedAt": "2026-10-13T11:03:34.841Z"
       }
     }
+  },
+  {
+    "repo": "palasthotel/blockX",
+    "slug": "palasthotel--blockx",
+    "postedAt": "2026-10-14T09:04:45.239Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxt6wi56ad24",
+        "postedAt": "2026-10-14T09:04:45.239Z"
+      }
+    }
   }
 ]
