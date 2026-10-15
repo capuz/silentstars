@@ -13,16 +13,16 @@ stars: 1
 forks: 0
 openIssues: 20
 closedIssues: 0
-watchers: 0
+watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-14T08:54:46Z"
+lastCommitAt: "2026-10-14T23:03:01Z"
 lastReleaseAt: "2026-09-26T09:06:38Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
-healthScore: 68
-undervaluedScore: 47
+healthScore: 78
+undervaluedScore: 46
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"
 discussionCount: 5

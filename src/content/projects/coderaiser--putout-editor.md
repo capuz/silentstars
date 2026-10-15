@@ -14,14 +14,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 2
+recentReleases: 0
 createdAt: "2019-08-30T08:14:24Z"
 lastCommitAt: "2026-10-12T11:30:22Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "funded"]
-healthScore: 89
-undervaluedScore: 75
+healthScore: 88
+undervaluedScore: 70
 maintainers: ["coderaiser"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7cd9208dd89ede6d8ec375c4ef1f591776106a7c764d5a7da58ee10189c0e664/coderaiser/putout-editor"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/cloudcmd"]

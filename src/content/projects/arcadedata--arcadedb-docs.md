@@ -9,19 +9,19 @@ languages: ["Python", "HTML"]
 languagePcts: [72, 26]
 stars: 10
 forks: 29
-openIssues: 8
+openIssues: 15
 closedIssues: 48
 watchers: 3
 contributors: 31
 recentReleases: 0
 createdAt: "2021-07-06T16:18:56Z"
-lastCommitAt: "2026-10-14T03:13:47Z"
+lastCommitAt: "2026-10-15T02:57:53Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 97
-undervaluedScore: 82
+tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
+healthScore: 95
+undervaluedScore: 81
 maintainers: ["lvca", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7bbbebda484725776a79d1656fc3170a2e0bd5704f3f1879137bc4a6629fabda/ArcadeData/arcadedb-docs"
+openGraphImageUrl: "https://opengraph.githubassets.com/a818711a38d7d01a7ba55e818dffb477b175b3ed4151bdf858363c877b172c14/ArcadeData/arcadedb-docs"
 postedAt: "2026-09-07T08:39:00.385Z"
 ---
 

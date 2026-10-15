@@ -1,7 +1,7 @@
 ---
 repo: "Kuestenlogik/Bowire"
 name: "Bowire"
-description: "Multi-protocol API workbench for .NET — discover, invoke, record, mock, replay across gRPC, REST, GraphQL, MQTT, SignalR, WebSocket, SSE, MCP, OData, Socket.IO, and more... including your custom protocol."
+description: "The API workbench that embeds in your own service. gRPC, REST, GraphQL, MQTT, SignalR, WebSocket, MCP and more - embedded in ASP.NET or as a standalone CLI."
 readmeQualityOk: true
 url: "https://github.com/Kuestenlogik/Bowire"
 homepage: "https://bowire.io"
@@ -9,29 +9,29 @@ language: "C#"
 languages: ["C#", "JavaScript"]
 languagePcts: [60, 30]
 topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tools", "dotnet", "graphql", "grpc", "http-client", "mcp"]
-stars: 9
+stars: 10
 forks: 1
 openIssues: 49
-closedIssues: 419
+closedIssues: 423
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-10-14T07:11:30Z"
+lastCommitAt: "2026-10-14T18:12:21Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
-undervaluedScore: 55
+healthScore: 97
+undervaluedScore: 54
 maintainers: ["thomas-stegemann", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/41cd149da6ca9460e6233af2f2ed2d13f30e7d2d5be09c0f11bfa3d71d512746/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/5f991707d7ffe1333ad3dc6ac1380554bcac15b43b8361d36e41accc4d626d92/Kuestenlogik/Bowire"
 discussionCount: 13
 postedAt: "2026-07-17T06:06:24.975Z"
 ---
 
 # Bowire
 
-**The multi-protocol API workbench.** gRPC, REST, GraphQL, JSON-RPC, SignalR, WebSocket, SSE, MQTT, Socket.IO, MCP, OData, AsyncAPI, AMQP, Kafka, Akka.NET, NATS, SOAP, Pulsar — run against any service URL with zero code changes.
+**The API workbench that embeds in your own service.** gRPC, REST, GraphQL, JSON-RPC, SignalR, WebSocket, SSE, MQTT, Socket.IO, MCP, OData, AsyncAPI, AMQP, Kafka, Akka.NET, NATS, SOAP, Pulsar — run against any service URL with zero code changes.
 
 [Quickstart](https://bowire.io/quickstart.html) · [Features](https://bowire.io/features.html) · [Why Bowire](https://bowire.io/why-bowire.html) · [Docs](https://bowire.io/docs/) · [Downloads](https://bowire.io/downloads.html) · [Bootcamp](https://bowire.io/bootcamp/)
 
@@ -55,5 +55,4 @@ dotnet add package Kuestenlogik.Bowire
 ```
 
 ```csharp
-var app = WebApplication.Create(args);
-app.MapBowire();…
+var app = WebApplication.Create(args);…

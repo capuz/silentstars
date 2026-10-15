@@ -19,7 +19,7 @@ lastCommitAt: "2026-10-14T08:27:49Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 78
 maintainers: ["hassaanalansary", "mohamed97-cloud", "Amr-Bendary"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cf511fc31b0f26d0048e1399dc8f106db69da16281f28d84ec92cffa79041739/Itqan-community/cms-frontend"

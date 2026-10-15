@@ -17,14 +17,14 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-05-04T10:01:09Z"
-lastCommitAt: "2026-10-13T09:48:22Z"
+lastCommitAt: "2026-10-15T05:20:43Z"
 lastReleaseAt: "2025-05-29T21:11:35Z"
 status: "thriving"
-tags: ["funded"]
-healthScore: 97
+tags: ["solo_builder", "funded"]
+healthScore: 98
 undervaluedScore: 84
 maintainers: ["jakob-bagterp", "dependabot[bot]", "pre-commit-ci[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a35400faef8f5c5c54e624f1eb82df8068cb9f8fa259195734c61845919e9a93/jakob-bagterp/index-now-for-python"
+openGraphImageUrl: "https://opengraph.githubassets.com/a3caa05df5fb1ddfffd541216da21e88f184b58145249e28c8e4fdde9e10c79b/jakob-bagterp/index-now-for-python"
 fundingLinks: ["GITHUB:https://github.com/jakob-bagterp"]
 postedAt: "2026-10-06T10:54:19.559Z"
 ---

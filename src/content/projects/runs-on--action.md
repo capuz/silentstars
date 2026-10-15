@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-14T05:32:02Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 73
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7ec9159000af28785bf97a83f496e93a26c84abaa31b097df357fb7626b8b4a6/runs-on/action"

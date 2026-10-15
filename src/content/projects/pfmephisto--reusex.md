@@ -11,8 +11,8 @@ languagePcts: [84]
 topics: ["aec", "lidar", "reuse"]
 stars: 10
 forks: 1
-openIssues: 11
-closedIssues: 370
+openIssues: 0
+closedIssues: 381
 watchers: 0
 contributors: 3
 recentReleases: 1
