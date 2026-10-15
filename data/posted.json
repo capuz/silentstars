@@ -1761,6 +1761,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mxvnvgz5hk2g",
         "postedAt": "2026-10-15T08:37:55.895Z"
+      },
+      "ownerEmail": {
+        "url": "grchombo@gmail.com",
+        "postedAt": "2026-10-15T08:38:17.803Z"
       }
     }
   }
