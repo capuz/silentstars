@@ -25,6 +25,7 @@ undervaluedScore: 75
 maintainers: ["AdamG412", "AreefW", "llibert94"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5e30d42d5f8b0ef80fa5568b5a4d48acb50c077414fecfe12385dc6fbc032021/GRTLCollaboration/GRTeclyn"
 discussionCount: 0
+postedAt: "2026-10-15T08:37:55.895Z"
 ---
 
 # GRTeclyn

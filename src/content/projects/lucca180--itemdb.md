@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [97]
 topics: ["neopets", "nextjs", "reactjs"]
-stars: 23
+stars: 24
 forks: 4
 openIssues: 0
 closedIssues: 11
@@ -17,11 +17,11 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2023-02-27T23:11:14Z"
-lastCommitAt: "2026-10-14T23:29:56Z"
+lastCommitAt: "2026-10-16T02:34:09Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
-undervaluedScore: 68
+undervaluedScore: 67
 maintainers: ["lucca180"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/607410224/e73030f0-bca4-4e15-b4ba-2688fd0ceef9"
 postedAt: "2026-08-09T04:51:00.476Z"

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-11T00:29:44Z"
 lastReleaseAt: "2026-10-11T00:30:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 74
+healthScore: 73
 undervaluedScore: 79
 maintainers: ["sjwright"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9679ccea2ba2a4b8f323bf35805ffd505b8d3a1abb14b1d69e06deb5fb353a1f/sjwright/zencontrol-python"

@@ -13,16 +13,16 @@ openIssues: 0
 closedIssues: 7
 watchers: 2
 contributors: 3
-recentReleases: 5
+recentReleases: 6
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-10-15T04:28:31Z"
-lastReleaseAt: "2026-09-29T17:02:23Z"
+lastCommitAt: "2026-10-16T07:39:22Z"
+lastReleaseAt: "2026-10-15T16:31:22Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2b1902e3b57352d987e4d1c4dddadbdef37864da741f6c31c02a898abe8128ed/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/c27f56c8b0baf619872d00a31b95689d5803b8bda3ae590253421d886220b486/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 

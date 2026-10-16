@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-15T08:21:27Z"
+lastCommitAt: "2026-10-15T23:27:33Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3cc08f276873ff83e93d7d61e232064778413077cedf7d92aae54d0e13d1a645/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/8c6e43b670bdbcb560f7d85aee6067412c037059b299a713bbb072291a62fbc9/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---

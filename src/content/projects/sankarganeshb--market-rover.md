@@ -20,10 +20,10 @@ createdAt: "2025-12-18T15:03:32Z"
 lastCommitAt: "2026-10-02T12:37:43Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 74
-undervaluedScore: 83
+healthScore: 73
+undervaluedScore: 84
 maintainers: ["SankarGaneshb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/44b2b9ef2a53ee451110586c185ebd02833b80b844c5b6d4a591c5d6fe0bd794/SankarGaneshb/Market-Rover"
+openGraphImageUrl: "https://opengraph.githubassets.com/eff8a048064586a4ea9a7b9bb4c7cdd0e32811ebb651d433723f9ba9a64d4732/SankarGaneshb/Market-Rover"
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---

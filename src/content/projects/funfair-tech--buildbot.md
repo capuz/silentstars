@@ -10,20 +10,20 @@ languagePcts: [99]
 topics: ["discord-bot", "buildbot", "discord"]
 stars: 7
 forks: 1
-openIssues: 3
-closedIssues: 14
+openIssues: 10
+closedIssues: 17
 watchers: 5
 contributors: 12
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-10-13T17:40:09Z"
+lastCommitAt: "2026-10-15T17:59:11Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 95
-undervaluedScore: 70
-maintainers: ["credfeto"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2787e9c30da45a12b6bc419248dc24b432c241b7c2d501b8b7639ab05c3022b9/funfair-tech/BuildBot"
+healthScore: 92
+undervaluedScore: 67
+maintainers: ["credfeto", "dnyw4l3n13"]
+openGraphImageUrl: "https://opengraph.githubassets.com/f264ffaabf52d5dd545be6185be89004b9c699d7435fb3431e08e1c0c79f4e39/funfair-tech/BuildBot"
 postedAt: "2026-09-01T08:56:05.310Z"
 ---
 
@@ -37,6 +37,6 @@ FunFair's Build Discord Bot
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | main   | [](https://github.com/funfair-tech/BuildBot/actions/workflows/build-and-publish-pre-release.yml) |
 
-## Changelog
+## Configuration
 
-View [changelog](https://github.com/funfair-tech/BuildBot/blob/HEAD/CHANGELOG.md)
+| Setting                | Environment variable    | Type   | Default | Description                                                                                                                                                                                                                                                                                                                                                  |…

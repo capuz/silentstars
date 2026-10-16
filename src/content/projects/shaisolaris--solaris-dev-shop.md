@@ -1,28 +1,28 @@
 ---
 repo: "Shaisolaris/solaris-dev-shop"
 name: "solaris-dev-shop"
-description: "61 specialist employees and one chief of staff. Free MIT skill library with a deterministic intake router. Version 0.53."
+description: "61 portable specialist skills with searchable discovery and an explainable deterministic task router. Free under MIT. Version 0.57."
 readmeQualityOk: true
 url: "https://github.com/Shaisolaris/solaris-dev-shop"
 homepage: "https://github.com/Shaisolaris/solaris-dev-shop"
 language: "Python"
 languages: ["Python"]
-languagePcts: [92]
+languagePcts: [93]
 topics: ["ai-agents", "developer-tools", "agent-skills", "ai-workforce", "claude-skills", "llm-agents", "multi-agent-systems", "prompt-engineering"]
 stars: 1
 forks: 0
-openIssues: 20
-closedIssues: 0
+openIssues: 10
+closedIssues: 15
 watchers: 1
 contributors: 1
-recentReleases: 1
+recentReleases: 7
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-14T23:03:01Z"
-lastReleaseAt: "2026-09-26T09:06:38Z"
+lastCommitAt: "2026-10-15T17:45:25Z"
+lastReleaseAt: "2026-10-15T17:45:36Z"
 status: "newborn"
-tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
-healthScore: 78
-undervaluedScore: 46
+tags: ["needs_contributors", "hidden_gem", "release_machine"]
+healthScore: 90
+undervaluedScore: 67
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"
 discussionCount: 5
@@ -32,22 +32,29 @@ postedAt: "2026-10-09T19:21:03.485Z"
 
 # Solaris Dev Shop
 
-61 specialist employees and one chief of staff. Free. MIT.
+**Find the right specialist skill, route a task, and carry its evidence requirements into your own agent.**
 
-You send a task. The chief of staff assigns exactly one accountable specialist. That specialist does the work. You still decide.
+61 portable specialist skills across 12 departments, plus a chief-of-staff skill and an optional deterministic Python router. Free under MIT. No model calls, account or API key is needed to try the router.
 
-## Try it (30 seconds)
+The router produces an assignment packet with one accountable lead and, when needed, multiple supporting specialists. To do the work, open those skills in your own agent or agents with the tools and permissions that task needs. The router does not start agents or grant access to your accounts.
+
+## Try it
+
+Requires Git and Python 3.10+. This first run leaves your PATH unchanged:
 
 ```bash
-./install.sh
-solaris-intake intake "Write a test plan for the client portal login regression"
+git clone https://github.com/Shaisolaris/solaris-dev-shop.git
+cd solaris-dev-shop
+python3 control-plane/meta_control_plane.py skills playwright
+python3 control-plane/meta_control_plane.py intake --explain "Write a test plan for the client portal login regression"
 ```
 
-That command routes the request. It names `solaris.qa-engineer` as accountable and performs no work of its own. The test plan itself is written by the qa-engineer, but only after you invoke that skill in your own agent. Routing is deterministic: the same request always lands on the same specialist. A saved run is in [`examples/route-a-task/`](https://github.com/Shaisolaris/solaris-dev-shop/blob/HEAD/examples/route-a-task/).
+On Windows, use `python` in place of `python3`.
 
-## What you get
+The intake selects `solaris.qa-engineer` and returns:
 
-| You get | Details |
-|---|---|
-| 61 employees | 12 departments: engineering, design, data, marketing, sales, leadership, and more. Full list: [`docs/employees.md`](https://github.com/Shaisolaris/solaris-dev-shop/blob/HEAD/docs/employees.md) |
-| 1 chief of staff | Reads your request, emits one typed assignment packet: accountable owner, primary specialist, supporting list, authority bounds, evidence required…
+```json
+{
+  "decision": "assign",
+  "assignment": {
+    "primary_capability": "solaris.qa-engineer",…

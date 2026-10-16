@@ -6,22 +6,22 @@ readmeQualityOk: true
 url: "https://github.com/ArcadeData/arcadedb-docs"
 language: "Python"
 languages: ["Python", "HTML"]
-languagePcts: [72, 26]
+languagePcts: [75, 23]
 stars: 10
 forks: 29
-openIssues: 15
-closedIssues: 48
+openIssues: 7
+closedIssues: 56
 watchers: 3
 contributors: 31
 recentReleases: 0
 createdAt: "2021-07-06T16:18:56Z"
-lastCommitAt: "2026-10-15T02:57:53Z"
+lastCommitAt: "2026-10-16T03:18:06Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 95
-undervaluedScore: 81
-maintainers: ["lvca", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a818711a38d7d01a7ba55e818dffb477b175b3ed4151bdf858363c877b172c14/ArcadeData/arcadedb-docs"
+healthScore: 97
+undervaluedScore: 83
+maintainers: ["lvca", "github-actions[bot]", "robfrank"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d4ef592d771eb16647673dcc143aa57a54e0a27a13aa3ba095d4d01352e009fa/ArcadeData/arcadedb-docs"
 postedAt: "2026-09-07T08:39:00.385Z"
 ---
 

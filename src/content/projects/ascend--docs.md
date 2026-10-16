@@ -7,7 +7,7 @@ url: "https://github.com/Ascend/docs"
 homepage: "https://ascend.github.io/docs/"
 language: "Python"
 languages: ["Python", "Shell"]
-languagePcts: [60, 36]
+languagePcts: [58, 38]
 topics: ["ascend", "docs", "npu", "pytorch"]
 stars: 18
 forks: 27
@@ -17,13 +17,13 @@ watchers: 4
 contributors: 27
 recentReleases: 0
 createdAt: "2024-05-24T11:19:03Z"
-lastCommitAt: "2026-10-14T09:22:07Z"
+lastCommitAt: "2026-10-16T06:10:55Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 78
-maintainers: ["licy666", "hipudding", "Devin-DC-Huang"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a071562d14e4dddec1f865aa24f4e763efcb17f9079a7ff9fcae8c4fa8bca292/Ascend/docs"
+maintainers: ["hipudding", "licy666", "Devin-DC-Huang"]
+openGraphImageUrl: "https://opengraph.githubassets.com/4d29e113dbcaab858d24a0d463142af2106e58b1b2b78f56a6460c2f48245a8d/Ascend/docs"
 postedAt: "2026-09-29T10:12:56.376Z"
 ---
 
