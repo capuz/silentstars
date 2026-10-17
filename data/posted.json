@@ -1778,5 +1778,16 @@
         "postedAt": "2026-10-16T08:33:31.631Z"
       }
     }
+  },
+  {
+    "repo": "ndcbe/optimization",
+    "slug": "ndcbe--optimization",
+    "postedAt": "2026-10-17T08:05:51.284Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3my2mzwfjqi26",
+        "postedAt": "2026-10-17T08:05:51.284Z"
+      }
+    }
   }
 ]
