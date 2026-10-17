@@ -16,13 +16,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-10-16T05:30:30Z"
+lastCommitAt: "2026-10-17T06:37:24Z"
 status: "thriving"
-tags: ["hidden_gem"]
-healthScore: 100
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 99
 undervaluedScore: 77
 maintainers: ["mwscr-bot", "dehero"]
-openGraphImageUrl: "https://opengraph.githubassets.com/88f02ba1fb97750e47dde742a45b089dd98c2d540c40ff17ef8bd9ed49e8debd/dehero/mwscr"
+openGraphImageUrl: "https://opengraph.githubassets.com/b3ba7bda2cc31b29eb56118276eae8e24d4928f9279fb428b724dcbf9fe4649f/dehero/mwscr"
 postedAt: "2026-07-16T06:07:04.741Z"
 ---
 

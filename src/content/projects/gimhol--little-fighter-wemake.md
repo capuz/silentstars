@@ -7,7 +7,7 @@ url: "https://github.com/gimhol/Little-Fighter-Wemake"
 homepage: "https://lf.gim.ink/"
 language: "C++"
 languages: ["C++", "TypeScript", "JavaScript"]
-languagePcts: [40, 32, 26]
+languagePcts: [42, 31, 26]
 topics: ["lf2", "classic", "classic-game", "indie-game", "indiegame", "littlefighter2", "old-school-game", "remake-games", "indie-game-dev"]
 stars: 3
 forks: 1
@@ -17,14 +17,14 @@ watchers: 2
 contributors: 2
 recentReleases: 4
 createdAt: "2025-06-25T04:40:13Z"
-lastCommitAt: "2026-10-16T07:27:27Z"
+lastCommitAt: "2026-10-17T07:56:19Z"
 lastReleaseAt: "2026-09-29T16:07:28Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 100
 undervaluedScore: 99
 maintainers: ["gimhol"]
-openGraphImageUrl: "https://opengraph.githubassets.com/33296728e4aab04c6cfe7b8e741eeb6faa50169eafa49a6a330cf97f51f8baa3/gimhol/Little-Fighter-Wemake"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d69e2932ac7d0c0437d85a89750621609cb272981372eda77160913a2806c3b/gimhol/Little-Fighter-Wemake"
 discussionCount: 3
 postedAt: "2026-07-03T12:28:26.382Z"
 ---

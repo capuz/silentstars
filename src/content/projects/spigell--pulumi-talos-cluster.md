@@ -15,14 +15,14 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-11-11T01:51:17Z"
-lastCommitAt: "2026-10-16T06:07:50Z"
+lastCommitAt: "2026-10-17T03:29:08Z"
 lastReleaseAt: "2026-07-14T11:12:58Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 87
+healthScore: 88
 undervaluedScore: 68
 maintainers: ["spigell-renovate[bot]", "ik-gemini-bot", "spigell-codex-bot2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8e45411be0fbb2ac6aee2be2be569ee377e20c66e0fbe36c820987ab5463f59f/spigell/pulumi-talos-cluster"
+openGraphImageUrl: "https://opengraph.githubassets.com/4c0b40e28afa76bb7566e739b2135cc1b610fddc795efc2f10b376524bd2fb6c/spigell/pulumi-talos-cluster"
 postedAt: "2026-10-10T10:11:01.128Z"
 ---
 

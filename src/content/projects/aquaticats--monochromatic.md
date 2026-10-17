@@ -10,21 +10,20 @@ languagePcts: [72]
 topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise", "monorepo", "oxlint", "pnpm", "wayland"]
 stars: 5
 forks: 2
-openIssues: 783
-closedIssues: 266
+openIssues: 826
+closedIssues: 274
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-10-16T04:06:58Z"
+lastCommitAt: "2026-10-17T08:00:27Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 84
 undervaluedScore: 73
 maintainers: ["Aquaticat"]
-openGraphImageUrl: "https://opengraph.githubassets.com/436affc469c4f96e8fe82458877db575de0251c03e6097dc1675c2bdcc0ad12f/Aquaticats/Monochromatic"
-postedAt: "2026-09-30T10:05:46.857Z"
+openGraphImageUrl: "https://opengraph.githubassets.com/644a61df4c26f29af2312add56dd994d20167803459aedf78e8516a7128f42fe/Aquaticats/Monochromatic"
 ---
 
 # Monochromatic

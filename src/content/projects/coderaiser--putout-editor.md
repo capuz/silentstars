@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-12T11:30:22Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "funded"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 70
 maintainers: ["coderaiser"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7cd9208dd89ede6d8ec375c4ef1f591776106a7c764d5a7da58ee10189c0e664/coderaiser/putout-editor"

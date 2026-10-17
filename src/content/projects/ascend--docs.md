@@ -14,16 +14,16 @@ forks: 27
 openIssues: 3
 closedIssues: 18
 watchers: 4
-contributors: 27
+contributors: 28
 recentReleases: 0
 createdAt: "2024-05-24T11:19:03Z"
-lastCommitAt: "2026-10-16T06:10:55Z"
+lastCommitAt: "2026-10-16T08:58:16Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 96
 undervaluedScore: 78
-maintainers: ["hipudding", "licy666", "Devin-DC-Huang"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4d29e113dbcaab858d24a0d463142af2106e58b1b2b78f56a6460c2f48245a8d/Ascend/docs"
+maintainers: ["hipudding", "licy666", "yzeyu71"]
+openGraphImageUrl: "https://opengraph.githubassets.com/2c6aebefc938f5b924495f5828083b6f00c530c840482e0f72ef2b992e62c088/Ascend/docs"
 postedAt: "2026-09-29T10:12:56.376Z"
 ---
 

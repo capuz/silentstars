@@ -19,7 +19,7 @@ createdAt: "2021-09-08T13:47:07Z"
 lastCommitAt: "2026-10-09T13:41:27Z"
 status: "thriving"
 tags: ["legacy_hero", "fork_magnet"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 81
 maintainers: ["yueqixia0912", "cesarasdf", "BenjaminLopezSalcedo"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f56173db8ba47306e7505bb2cca0d48c60ba626dc9abc604a907b312b6b89066/miw-upm/apaw-practice"

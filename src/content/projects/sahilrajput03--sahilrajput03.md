@@ -7,7 +7,7 @@ url: "https://github.com/sahilrajput03/sahilrajput03"
 homepage: "https://sahilrajput.com"
 language: "HTML"
 languages: ["HTML", "JavaScript"]
-languagePcts: [65, 27]
+languagePcts: [69, 24]
 stars: 7
 forks: 8
 openIssues: 0
@@ -16,13 +16,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2020-07-25T09:11:03Z"
-lastCommitAt: "2026-10-15T19:38:41Z"
+lastCommitAt: "2026-10-17T07:57:07Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
 healthScore: 89
 undervaluedScore: 98
 maintainers: ["sahilrajput03"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9e3004be2b00b69568557cd0478b8a435a72ac495b9d39bcadb51f2690f6cf1e/sahilrajput03/sahilrajput03"
+openGraphImageUrl: "https://opengraph.githubassets.com/f638099439416e33ad253ac39b6dd04991a17d5bed0e89e39876bad15e62d8d1/sahilrajput03/sahilrajput03"
 postedAt: "2026-10-01T10:30:31.668Z"
 ---
 

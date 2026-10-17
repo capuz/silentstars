@@ -11,17 +11,17 @@ languagePcts: [93]
 topics: ["ai-agents", "developer-tools", "agent-skills", "ai-workforce", "claude-skills", "llm-agents", "multi-agent-systems", "prompt-engineering"]
 stars: 1
 forks: 0
-openIssues: 10
-closedIssues: 15
+openIssues: 9
+closedIssues: 16
 watchers: 1
 contributors: 1
-recentReleases: 7
+recentReleases: 8
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-15T17:45:25Z"
-lastReleaseAt: "2026-10-15T17:45:36Z"
+lastCommitAt: "2026-10-16T13:21:52Z"
+lastReleaseAt: "2026-10-16T13:23:32Z"
 status: "newborn"
 tags: ["needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 91
 undervaluedScore: 67
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"

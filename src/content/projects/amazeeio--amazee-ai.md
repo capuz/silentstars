@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [85]
 stars: 54
-forks: 3
+forks: 1
 openIssues: 2
 closedIssues: 22
 watchers: 2
@@ -20,10 +20,10 @@ lastCommitAt: "2026-10-14T09:00:18Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 60
 maintainers: ["dspachos", "amazee-ai-automation[bot]", "dan2k3k4"]
-openGraphImageUrl: "https://opengraph.githubassets.com/930d5b3e8d755c8d2fe3d7f2aa3d056d64eaf541817b233c8e8564037203e58a/amazeeio/amazee.ai"
+openGraphImageUrl: "https://opengraph.githubassets.com/a11bfdc503c180a30dde699355ba21429d3f0b61780b25884520be3432926f80/amazeeio/amazee.ai"
 postedAt: "2026-09-22T08:53:36.022Z"
 ---
 

@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-15T23:27:33Z"
+lastCommitAt: "2026-10-17T07:20:24Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
-maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8c6e43b670bdbcb560f7d85aee6067412c037059b299a713bbb072291a62fbc9/cuihairu/croupier"
+maintainers: ["cuihairu", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/73681e3ff10f56e803435fcedf9757bb2a3c4e1ef49aaf37372df44bad86456d/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
@@ -35,20 +35,13 @@ Croupier is a Server / Agent / SDK platform for game operations and control, int
 - `SDK <-> Agent`: TCP session by default, TLS off by default and enabled on demand
 - Both links share the same session transport foundation and differ only in the first handshake message and business semantics
 
-## Online Demo
+## Agent Roles
 
-URL: https://croupier.cuihairu.site/
+| Role | Responsibility | Delivery status |
+| --- | --- | --- |
+| sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor configuration/startup wiring still needs completion |
+| devops | Allowlisted internal remote access with audit | `devops-agent` skeleton; real session channels pending |
+| capture | Database CDC, change rules and alerts | `capture-agent`; checkpoint and alert delivery reliability still need work |
+| synthetics | External game/service checks with developer plugins | Planned; no executable or package yet |
 
-| Account | Password  |
-| ------- | --------- |
-| `admin` | `admin123`|
-
-> [Demo environment: all data is fake and is reset from time to time. Do not enter any real information.]
-
-## Highlights
-
-- Single-company, multi-game, multi-environment scope model: the standard business boundary is `gameId + env`
-- Separation of business scope and run target: `scope` expresses ownership, `target` expresses deployment and execution location
-- Unified function registration, dispatch, invocation, and job model
-- Lightweight session transport: single connection, bidirectional requests, reconnect, backpressure, stream detach
--…
+Each instance explicitly belongs to one `gameId/env`. See the [Agent…

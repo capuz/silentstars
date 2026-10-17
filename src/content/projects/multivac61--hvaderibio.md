@@ -1,0 +1,53 @@
+---
+repo: "multivac61/hvaderibio"
+name: "hvaderibio"
+description: "Fljótlegt yfirlit yfir bíódagskrá kvöldsins á öllu landinu."
+readmeQualityOk: true
+url: "https://github.com/multivac61/hvaderibio"
+homepage: "https://www.hvaderibio.is"
+language: "TypeScript"
+languages: ["TypeScript", "Svelte"]
+languagePcts: [66, 29]
+stars: 6
+forks: 3
+openIssues: 0
+closedIssues: 3
+watchers: 1
+contributors: 5
+recentReleases: 0
+createdAt: "2023-02-07T13:48:07Z"
+lastCommitAt: "2026-10-17T07:58:30Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 100
+undervaluedScore: 89
+maintainers: ["multivac61", "github-actions[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/ddf7506de2b153c7011d4218dbdbdfa94659e938b9c5e1dc1927d9d233d50ecf/multivac61/hvaderibio"
+---
+
+Fljótlegt yfirlit yfir bíódagskrá kvöldsins á öllu landinu.
+
+## Development
+
+Requires Node.js 24 or newer. `nix develop` provides the version pinned by
+`flake.lock`.
+
+```sh
+nix develop
+npm ci
+npm run scrape
+npm run dev
+```
+
+Run `npm run check` and `npm test` while iterating; `nix flake check` runs both
+plus the site build, as CI does. Scraping provides the movie data required by the
+app; for checks without live data, create `static/movies.json` containing `[]`.
+
+`nix build` produces the Cloudflare Pages output with an empty catalog, since the
+scraped `static/movies.json` and posters are gitignored and invisible to the
+flake. To build with them, pass the catalog directory explicitly:
+
+```sh
+nix build --impure --expr \
+  "(builtins.getFlake \"git+file://$PWD\").packages.x86_64-linux.default.override { catalog = $PWD/static; }"
+```
