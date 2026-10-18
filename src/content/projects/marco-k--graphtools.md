@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-09T16:17:40Z"
 lastReleaseAt: "2026-10-02T16:59:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 85
 maintainers: ["MARCO-K", "google-labs-jules[bot]", "Copilot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/bcec072013e45f31eb37f5d3a092e5630cee99473029aaa94dfdaa44e6869192/MARCO-K/GraphTools"

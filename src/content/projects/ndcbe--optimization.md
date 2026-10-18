@@ -15,13 +15,14 @@ watchers: 3
 contributors: 27
 recentReleases: 0
 createdAt: "2023-01-13T16:31:32Z"
-lastCommitAt: "2026-10-17T08:00:00Z"
+lastCommitAt: "2026-10-17T18:34:23Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
-healthScore: 87
+healthScore: 88
 undervaluedScore: 72
 maintainers: ["adowling2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ed1116178ad59fac1498e90789755d6f8851d815e48dde9ab53a3ba4eacbcc4e/ndcbe/optimization"
+openGraphImageUrl: "https://opengraph.githubassets.com/71dcb59a53f27a01e3258136b224dbf312dbe383a4fe35ecf6621c7b7c4b171a/ndcbe/optimization"
+postedAt: "2026-10-17T08:05:51.284Z"
 ---
 
 # Optimization for Decision Science

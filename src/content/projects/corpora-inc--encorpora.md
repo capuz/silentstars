@@ -6,22 +6,22 @@ readmeQualityOk: true
 url: "https://github.com/corpora-inc/encorpora"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [73]
+languagePcts: [74]
 stars: 5
 forks: 3
-openIssues: 120
-closedIssues: 165
+openIssues: 118
+closedIssues: 185
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-10-17T07:47:30Z"
+lastCommitAt: "2026-10-18T04:51:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 91
-undervaluedScore: 80
+undervaluedScore: 81
 maintainers: ["skyl"]
-openGraphImageUrl: "https://opengraph.githubassets.com/08cce1e2309bedd1a0f3e840b9d29b79485a9c0a52b8c0ce0fa09b73c1f925a5/corpora-inc/encorpora"
+openGraphImageUrl: "https://opengraph.githubassets.com/f75fc361f8ecc2a32417605556ab8dde9f813db4859955e5e7b542703166f923/corpora-inc/encorpora"
 postedAt: "2026-07-04T19:31:10.093Z"
 ---
 

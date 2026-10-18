@@ -9,7 +9,7 @@ language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
 stars: 7
-forks: 122
+forks: 123
 openIssues: 0
 closedIssues: 2
 watchers: 3
@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-15T15:50:09Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 92
 maintainers: ["m00nyONE", "Cote2Go", "haaidandb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/49cc269d36e2457d71ad1470624a922cfa833d3ee5dc8b7da38d02c73abc87ab/m00nyONE/LibCustomIcons"

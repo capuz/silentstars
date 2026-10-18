@@ -10,19 +10,19 @@ languages: ["TypeScript"]
 languagePcts: [94]
 stars: 11
 forks: 2
-openIssues: 1
+openIssues: 2
 closedIssues: 440
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-10-17T06:37:24Z"
+lastCommitAt: "2026-10-18T08:00:22Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 77
 maintainers: ["mwscr-bot", "dehero"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b3ba7bda2cc31b29eb56118276eae8e24d4928f9279fb428b724dcbf9fe4649f/dehero/mwscr"
+openGraphImageUrl: "https://opengraph.githubassets.com/51594dcb0bdec952642e45fb132405170e0972c391814230a2d400f8fe6994c2/dehero/mwscr"
 postedAt: "2026-07-16T06:07:04.741Z"
 ---
 
