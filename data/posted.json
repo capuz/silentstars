@@ -1800,5 +1800,16 @@
         "postedAt": "2026-10-18T08:23:38.923Z"
       }
     }
+  },
+  {
+    "repo": "metal-stack/metal-roles",
+    "slug": "metal-stack--metal-roles",
+    "postedAt": "2026-10-19T09:20:39.406Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3my7s5jklgd2s",
+        "postedAt": "2026-10-19T09:20:39.406Z"
+      }
+    }
   }
 ]
