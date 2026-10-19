@@ -7,18 +7,18 @@ url: "https://github.com/Shaisolaris/solaris-dev-shop"
 homepage: "https://github.com/Shaisolaris/solaris-dev-shop"
 language: "Python"
 languages: ["Python"]
-languagePcts: [93]
+languagePcts: [94]
 topics: ["ai-agents", "developer-tools", "agent-skills", "ai-workforce", "claude-skills", "llm-agents", "multi-agent-systems", "prompt-engineering"]
 stars: 1
 forks: 0
-openIssues: 9
-closedIssues: 16
+openIssues: 10
+closedIssues: 15
 watchers: 1
 contributors: 1
-recentReleases: 8
+recentReleases: 9
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-16T13:21:52Z"
-lastReleaseAt: "2026-10-16T13:23:32Z"
+lastCommitAt: "2026-10-18T15:53:50Z"
+lastReleaseAt: "2026-10-18T15:55:28Z"
 status: "newborn"
 tags: ["needs_contributors", "hidden_gem", "release_machine"]
 healthScore: 90

@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["3d-engine-editor", "3d-models", "3d-viewer", "animation", "animations", "binary", "collision", "iso-builder", "level-editor", "modding"]
-stars: 18
+stars: 16
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -21,8 +21,8 @@ lastCommitAt: "2026-10-08T18:30:17Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 86
-undervaluedScore: 69
+healthScore: 85
+undervaluedScore: 71
 maintainers: ["SiergiejW"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/923078276/6b9b9202-9a46-4423-b9bd-d29b90de0b8d"
 discussionCount: 1

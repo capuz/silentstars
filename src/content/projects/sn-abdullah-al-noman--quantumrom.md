@@ -16,14 +16,14 @@ watchers: 1
 contributors: 6
 recentReleases: 10
 createdAt: "2025-09-18T01:24:53Z"
-lastCommitAt: "2026-10-16T06:54:41Z"
+lastCommitAt: "2026-10-18T14:47:00Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 91
+healthScore: 94
 undervaluedScore: 70
-maintainers: ["SN-Abdullah-Al-Noman"]
-openGraphImageUrl: "https://opengraph.githubassets.com/508aa14a2f881d54394f6844a79f388bc23b00c1c79f5461b834f448e11199fd/SN-Abdullah-Al-Noman/QuantumROM"
+maintainers: ["SN-Abdullah-Al-Noman", "AlfCraft07"]
+openGraphImageUrl: "https://opengraph.githubassets.com/05c8b51c68c38d1af72b6f25977ea0fa04185d5048b183b20b41d828b79acccb/SN-Abdullah-Al-Noman/QuantumROM"
 postedAt: "2026-09-19T08:22:57.857Z"
 ---
 

@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 7
 createdAt: "2024-12-20T12:30:03Z"
-lastCommitAt: "2026-10-09T16:17:40Z"
+lastCommitAt: "2026-10-19T08:12:06Z"
 lastReleaseAt: "2026-10-02T16:59:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 95
+healthScore: 99
 undervaluedScore: 85
 maintainers: ["MARCO-K", "google-labs-jules[bot]", "Copilot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bcec072013e45f31eb37f5d3a092e5630cee99473029aaa94dfdaa44e6869192/MARCO-K/GraphTools"
+openGraphImageUrl: "https://opengraph.githubassets.com/24e002fd3cc901f008827aa22a8f46ffc2a53967b6b2bf49fe7311e60d908f17/MARCO-K/GraphTools"
 postedAt: "2026-10-02T10:06:49.533Z"
 ---
 
