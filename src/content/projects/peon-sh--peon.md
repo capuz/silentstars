@@ -21,10 +21,10 @@ lastCommitAt: "2026-10-16T10:01:59Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: ["release_machine"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 40
 maintainers: ["arpit-advant", "hironate", "kuldip-advant"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7e0935a0acd15f549977a661b11b1ee05f0206d5ff2e24118cfc5cb9c1a83946/Peon-sh/Peon"
+openGraphImageUrl: "https://opengraph.githubassets.com/2fa9b61330bccbdef10bde1892dcd19a2ad9a1136acdcc9b9e0f916be64a29eb/Peon-sh/Peon"
 promoted: true
 postedAt: "2026-09-29T08:20:14.976Z"
 ---

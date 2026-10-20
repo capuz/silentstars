@@ -23,7 +23,7 @@ tags: ["hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 85
 maintainers: ["MARCO-K", "google-labs-jules[bot]", "Copilot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/24e002fd3cc901f008827aa22a8f46ffc2a53967b6b2bf49fe7311e60d908f17/MARCO-K/GraphTools"
+openGraphImageUrl: "https://opengraph.githubassets.com/37ee35664d27257201e2415d7c7e73b59af050fa54ab2f51f232394d1dd2b3f8/MARCO-K/GraphTools"
 postedAt: "2026-10-02T10:06:49.533Z"
 ---
 

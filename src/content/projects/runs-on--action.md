@@ -17,14 +17,14 @@ watchers: 2
 contributors: 8
 recentReleases: 0
 createdAt: "2024-12-19T12:16:33Z"
-lastCommitAt: "2026-10-14T05:32:02Z"
+lastCommitAt: "2026-10-19T14:23:40Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 86
+healthScore: 87
 undervaluedScore: 73
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7ec9159000af28785bf97a83f496e93a26c84abaa31b097df357fb7626b8b4a6/runs-on/action"
+openGraphImageUrl: "https://opengraph.githubassets.com/d8da2f94cc11124eaafc5bbda32f7d74f46455e5f7b4734aeebfc5a9881cfca3/runs-on/action"
 postedAt: "2026-10-11T10:21:15.448Z"
 ---
 

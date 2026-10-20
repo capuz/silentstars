@@ -5,8 +5,8 @@ description: "A Gtoolkit interface to GemStone"
 readmeQualityOk: true
 url: "https://github.com/feenkcom/gt4gemstone"
 language: "JavaScript"
-languages: ["JavaScript"]
-languagePcts: [82]
+languages: ["JavaScript", "Smalltalk"]
+languagePcts: [79, 20]
 stars: 8
 forks: 8
 openIssues: 7
@@ -15,13 +15,13 @@ watchers: 9
 contributors: 12
 recentReleases: 0
 createdAt: "2021-07-07T08:15:38Z"
-lastCommitAt: "2026-10-17T15:51:55Z"
+lastCommitAt: "2026-10-20T06:21:14Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 86
 undervaluedScore: 73
 maintainers: ["akgrant43", "chisandrei"]
-openGraphImageUrl: "https://opengraph.githubassets.com/478b1c9dd0cec3133f2d1146ab9165129b0210e66b8f28e8e07a118f39ed69fe/feenkcom/gt4gemstone"
+openGraphImageUrl: "https://opengraph.githubassets.com/cb132087534efd2d6059ad8de5da304144d81a914cafffa44d2dcd2ef21f9569/feenkcom/gt4gemstone"
 postedAt: "2026-09-18T08:31:33.689Z"
 ---
 

@@ -7,7 +7,7 @@ url: "https://github.com/cuihairu/croupier"
 homepage: "https://cuihairu.github.io/croupier/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [56, 29]
+languagePcts: [57, 28]
 topics: ["clickhouse", "game", "game-analytics", "game-backend", "game-telemetry", "golang", "jaeger", "liveops", "logging", "metrics"]
 stars: 10
 forks: 1
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-19T08:58:49Z"
+lastCommitAt: "2026-10-20T08:48:36Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7d5aacb2099f2c72faa998920e83152ab57b0077558b0f833daa3acb7c9209e7/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/1a84e3f3a23cc5db8d47ea88350b931fd64494737d27150ecc47652b198da292/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
@@ -42,6 +42,6 @@ Croupier is a Server / Agent / SDK platform for game operations and control, int
 | sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor configuration/startup wiring still needs completion |
 | devops | Allowlisted internal remote access with audit | `devops-agent` skeleton; real session channels pending |
 | capture | Database CDC, change rules and alerts | `capture-agent`; checkpoint and alert delivery reliability still need work |
-| synthetics | External game/service checks with developer plugins | Planned; no executable or package yet |
+| synthetics | External game/service checks with developer plugins | `synthetics-agent`; probe plugins included, native probe kernel migration pending |
 
-Each instance explicitly belongs to one `gameId/env`. See the [Agent…
+Each instance explicitly belongs to…

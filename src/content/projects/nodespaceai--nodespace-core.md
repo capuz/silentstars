@@ -12,19 +12,19 @@ topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemi
 stars: 8
 forks: 1
 openIssues: 27
-closedIssues: 1940
+closedIssues: 1942
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-10-19T08:33:53Z"
+lastCommitAt: "2026-10-19T10:13:50Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 84
 maintainers: ["malibio", "mstomar125"]
-openGraphImageUrl: "https://opengraph.githubassets.com/47bb1b6f1a20912dc72da559767c9ad13727b8c22f3724a28b5909705bc4c4bd/NodeSpaceAI/nodespace-core"
+openGraphImageUrl: "https://opengraph.githubassets.com/9f90695a81602df38f3efb6d8c65dbdf77b95ba47c78e996102042f877ab27c4/NodeSpaceAI/nodespace-core"
 postedAt: "2026-10-05T10:53:35.128Z"
 ---
 

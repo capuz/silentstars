@@ -20,8 +20,8 @@ createdAt: "2014-07-02T12:07:59Z"
 lastCommitAt: "2026-10-12T12:55:44Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 75
-undervaluedScore: 77
+healthScore: 74
+undervaluedScore: 76
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"
 postedAt: "2026-09-10T08:25:04.835Z"
