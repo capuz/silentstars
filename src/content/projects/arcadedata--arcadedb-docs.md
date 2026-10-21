@@ -15,13 +15,13 @@ watchers: 3
 contributors: 31
 recentReleases: 0
 createdAt: "2021-07-06T16:18:56Z"
-lastCommitAt: "2026-10-21T17:16:25Z"
+lastCommitAt: "2026-10-21T19:47:44Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 97
 undervaluedScore: 82
 maintainers: ["lvca", "github-actions[bot]", "robfrank"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e96b794ac8681a91786925f603b1f858b3b005da1a31865dcd18499819e5b484/ArcadeData/arcadedb-docs"
+openGraphImageUrl: "https://opengraph.githubassets.com/ffb8f6184e4139ce60413bc7198545d43de75e5f6ff35c2973ea244f0f40a785/ArcadeData/arcadedb-docs"
 postedAt: "2026-09-07T08:39:00.385Z"
 ---
 

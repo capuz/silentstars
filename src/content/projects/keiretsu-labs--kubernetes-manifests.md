@@ -20,7 +20,7 @@ createdAt: "2024-04-16T01:23:26Z"
 lastCommitAt: "2026-10-21T15:20:15Z"
 status: "thriving"
 tags: []
-healthScore: 98
+healthScore: 97
 undervaluedScore: 77
 maintainers: ["renovate[bot]", "keiretsu-kman-bot[bot]", "kbpersonal"]
 openGraphImageUrl: "https://opengraph.githubassets.com/973ff69621218affe11253f381819c6f70dfb5d351dd2ea00054757890b9fd53/keiretsu-labs/kubernetes-manifests"

@@ -9,7 +9,7 @@ language: "C++"
 languages: ["C++"]
 languagePcts: [42]
 topics: ["dccp", "ip", "ipv4", "ipv6", "measurements", "mptcp", "performance", "quic", "sctp", "tcp"]
-stars: 14
+stars: 15
 forks: 6
 openIssues: 0
 closedIssues: 5
@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-12T12:55:44Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 74
-undervaluedScore: 76
+undervaluedScore: 75
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"
 postedAt: "2026-09-10T08:25:04.835Z"

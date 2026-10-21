@@ -7,7 +7,7 @@ url: "https://github.com/pathology-data-mining/Mussel"
 homepage: "https://pypi.org/project/mussel-pathology/"
 language: "Python"
 languages: ["Python"]
-languagePcts: [97]
+languagePcts: [98]
 topics: ["computational-pathology", "feature-extraction", "foundation-models", "nextflow", "pathology", "python", "pytorch", "whole-slide-imaging", "wsi"]
 stars: 8
 forks: 0
@@ -17,14 +17,14 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2024-02-08T14:53:11Z"
-lastCommitAt: "2026-10-21T14:32:22Z"
+lastCommitAt: "2026-10-21T18:21:25Z"
 lastReleaseAt: "2026-05-04T21:26:21Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 92
-undervaluedScore: 48
+undervaluedScore: 49
 maintainers: ["raylim"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a3c60a07dfe577392698d65dfadb1d60bbede243eb4282637c0465c04b0da8da/pathology-data-mining/Mussel"
+openGraphImageUrl: "https://opengraph.githubassets.com/084fcb7d16f7c2748db7124314433b8dc7857b4b5be0e24dfcc0997acd836f6e/pathology-data-mining/Mussel"
 postedAt: "2026-06-21T02:28:52.953Z"
 ---
 
