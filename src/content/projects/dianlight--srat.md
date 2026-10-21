@@ -12,48 +12,33 @@ topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 10
 forks: 2
 openIssues: 8
-closedIssues: 291
+closedIssues: 292
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-10-21T07:48:32Z"
+lastCommitAt: "2026-10-21T15:46:14Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
 healthScore: 99
 undervaluedScore: 78
 maintainers: ["renovate[bot]", "github-actions[bot]", "dianlight"]
-openGraphImageUrl: "https://opengraph.githubassets.com/409428db034e2e4f328dbc02bf26074d8546c9a780efa9b6f223673f8a11f611/dianlight/srat"
+openGraphImageUrl: "https://opengraph.githubassets.com/f582e02b941934ee457885b5fc6dbbe4a13f0dc92bec74f70281e82da8f15761/dianlight/srat"
 fundingLinks: ["GITHUB:https://github.com/dianlight", "BUY_ME_A_COFFEE:https://buymeacoffee.com/ypKZ2I0"]
-discussionCount: 10
+discussionCount: 11
 postedAt: "2026-09-27T09:35:29.945Z"
 ---
 
 # SambaNAS Rest Administration Tool 
 
-SRAT (SambaNAS REST Administration Tool) is a new system designed to provide a simplified user interface for configuring SAMBA. It has been developed to work within Home Assistant, specifically for this addon, but can also be used in other contexts.
+SRAT (SambaNAS Rest Administration Tool) is a system designed to provide a simplified user interface for configuring SAMBA. It has been developed to work within Home Assistant, specifically for this addon, and provides Samba share, user, and configuration management via a modern web UI and REST API.
 
-Currently under development and in an alpha state, SRAT is set to become the preferred system for configuring and using this addon, eventually "retiring" the YAML configuration.
+2026.10.1 is the first stable release of SRAT. The generally available surface covers disks and partitionless volumes, mounts, Samba shares and users, the dashboard, Home Assistant integration, and SMART/health monitoring. Some features remain behind the `experimental_lab_mode` setting on a per-tier basis:
 
-- [Installation](#installation)
-  - [Local Development](#local-development)
-- [Home Assistant Custom Component](#home-assistant-custom-component)
-  - [Install via HACS (recommended)](#install-via-hacs-recommended)
-  - [Manual Install](#manual-install)
-- [Usage](#usage)
-  - [Feature Documentation](#feature-documentation)
-- [Database](#database)
-- [Sponsor](#sponsor)
-  - [Referral](#referral)
-- [Contribute](#contribute)
-  - [Release process](#release-process)
-- [License](#license)
+- **Beta** — visible when `experimental_lab_mode` is enabled: HDIdle per-disk control, the smb.conf view, Use NFS for Home Assistant, SMB over QUIC, and addon-side mDNS registration.
+- **Alpha** — Home Assistant custom-component tools (install/upgrade/uninstall of the SRAT custom component); excluded from release builds entirely, so not part of 2026.10.1.
 
-:construction_worker: This is a part for new SambaNas2 Home Assistant Addon. :construction_worker:
+Legacy SambaNAS YAML configuration is retired progressively — SRAT is set to become the preferred way to configure and use this addon, eventually "retiring" the YAML configuration.
 
-## Installation
-
-The installation of this add-on is straightforward and similar to any other Home Assistant add-on.
-
-[Add our Home Assistant…
+-…

@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-19T06:55:30Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 92
 maintainers: ["m00nyONE", "Cote2Go", "haaidandb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6fc638c7a4c37665492b8e8dc2b18510d68fccd7b70409ac2e4a08b83f25faa8/m00nyONE/LibCustomIcons"
