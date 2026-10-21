@@ -1826,5 +1826,16 @@
         "postedAt": "2026-10-20T08:55:47.145Z"
       }
     }
+  },
+  {
+    "repo": "risingwavelabs/risingwave-docs",
+    "slug": "risingwavelabs--risingwave-docs",
+    "postedAt": "2026-10-21T08:55:48.443Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myerowkn3o2h",
+        "postedAt": "2026-10-21T08:55:48.443Z"
+      }
+    }
   }
 ]
