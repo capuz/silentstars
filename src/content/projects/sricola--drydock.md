@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [95]
 topics: ["ai-agents", "anthropic", "apple-silicon", "claude", "coding-agent", "containers", "credential-management", "golang", "isolation", "macos"]
-stars: 9
+stars: 8
 forks: 0
 openIssues: 0
 closedIssues: 6
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 95
-undervaluedScore: 49
+undervaluedScore: 50
 maintainers: ["sricola"]
-openGraphImageUrl: "https://opengraph.githubassets.com/de888ed254203e646b4170d3e596d376281860753d08b8eb12b2d817bfa53b0a/sricola/drydock"
+openGraphImageUrl: "https://opengraph.githubassets.com/b51b5928b21b1600b221794935af6c70e5187b8d16aca0cf716d8826cb65f7c6/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"
 ---
 

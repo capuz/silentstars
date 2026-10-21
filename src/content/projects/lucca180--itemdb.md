@@ -20,7 +20,7 @@ createdAt: "2023-02-27T23:11:14Z"
 lastCommitAt: "2026-10-20T04:29:31Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 67
 maintainers: ["lucca180"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/607410224/e73030f0-bca4-4e15-b4ba-2688fd0ceef9"

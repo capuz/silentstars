@@ -11,8 +11,8 @@ languagePcts: [96]
 topics: ["amrex", "numerical-relativity"]
 stars: 18
 forks: 21
-openIssues: 37
-closedIssues: 75
+openIssues: 36
+closedIssues: 76
 watchers: 5
 contributors: 30
 recentReleases: 0

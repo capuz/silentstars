@@ -18,7 +18,7 @@ createdAt: "2023-01-13T16:31:32Z"
 lastCommitAt: "2026-10-17T18:34:23Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
-healthScore: 87
+healthScore: 86
 undervaluedScore: 72
 maintainers: ["adowling2"]
 openGraphImageUrl: "https://opengraph.githubassets.com/71dcb59a53f27a01e3258136b224dbf312dbe383a4fe35ecf6621c7b7c4b171a/ndcbe/optimization"

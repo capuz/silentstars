@@ -5,9 +5,9 @@ description: "Wanderlust is an open-source travel sharing platform where users e
 readmeQualityOk: true
 url: "https://github.com/koushik369mondal/WanderLust"
 homepage: "https://wanderlust-fofm.onrender.com/listings"
-language: "HTML"
-languages: ["HTML"]
-languagePcts: [64]
+language: "EJS"
+languages: ["EJS", "JavaScript"]
+languagePcts: [46, 38]
 topics: ["bootstrap", "cloudinary", "ejs", "express", "fullstack", "gssoc25", "mapbox", "mongodb", "nodejs", "open-source"]
 stars: 20
 forks: 40
@@ -17,13 +17,13 @@ watchers: 2
 contributors: 28
 recentReleases: 0
 createdAt: "2025-04-01T12:25:32Z"
-lastCommitAt: "2026-10-20T01:40:50Z"
+lastCommitAt: "2026-10-20T11:11:14Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 79
 maintainers: ["koushik369mondal", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4f02b8bde88cfbe3126424053c09768f6ce96eefed4d5086fcfc48e9258c57b2/koushik369mondal/WanderLust"
+openGraphImageUrl: "https://opengraph.githubassets.com/08be22f09c830f24aa81d17ae5efd27f877308f498d03b87508b500df846e872/koushik369mondal/WanderLust"
 discussionCount: 1
 postedAt: "2026-07-14T06:02:00.094Z"
 ---

@@ -15,13 +15,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2022-07-01T17:25:49Z"
-lastCommitAt: "2026-10-18T08:17:19Z"
+lastCommitAt: "2026-10-20T17:27:42Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 72
+healthScore: 73
 undervaluedScore: 67
 maintainers: ["come880412"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d3e4425d3df67ae1343bef14e427be178ffb7a4e0398859c206aca91f243789a/come880412/Leetcode_practice"
+openGraphImageUrl: "https://opengraph.githubassets.com/a097e2f852c172a67adb123339889c5915aae572509ff04861b0af40aadfd54e/come880412/Leetcode_practice"
 postedAt: "2026-10-18T08:23:38.923Z"
 ---
 
