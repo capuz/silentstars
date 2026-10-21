@@ -10,5 +10,9 @@
   {
     "repo": "Shaisolaris/solaris-dev-shop",
     "until": "2026-11-08"
+  },
+  {
+    "repo": "linqingzi/btc-dashboard-open-source",
+    "until": "2026-11-20"
   }
 ]
