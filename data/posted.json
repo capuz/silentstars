@@ -1863,5 +1863,16 @@
         "postedAt": "2026-10-21T20:06:46.664Z"
       }
     }
+  },
+  {
+    "repo": "Orkas-AI/Orkas",
+    "slug": "orkas-ai--orkas",
+    "postedAt": "2026-10-21T21:20:39.948Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myg3ctpohu2b",
+        "postedAt": "2026-10-21T21:20:39.948Z"
+      }
+    }
   }
 ]
