@@ -1,13 +1,13 @@
 ---
 repo: "Shaisolaris/solaris-dev-shop"
 name: "solaris-dev-shop"
-description: "61 portable specialist skills with searchable discovery and an explainable deterministic task router. Free under MIT. Version 0.57."
+description: "61 specialist workflows with executable local tools, evidence checks and an explainable task router. Free under MIT."
 readmeQualityOk: true
 url: "https://github.com/Shaisolaris/solaris-dev-shop"
 homepage: "https://github.com/Shaisolaris/solaris-dev-shop"
 language: "Python"
 languages: ["Python"]
-languagePcts: [94]
+languagePcts: [99]
 topics: ["ai-agents", "developer-tools", "agent-skills", "ai-workforce", "claude-skills", "llm-agents", "multi-agent-systems", "prompt-engineering"]
 stars: 1
 forks: 0
@@ -15,13 +15,13 @@ openIssues: 10
 closedIssues: 15
 watchers: 1
 contributors: 1
-recentReleases: 9
+recentReleases: 10
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-18T15:53:50Z"
-lastReleaseAt: "2026-10-18T15:55:28Z"
+lastCommitAt: "2026-10-21T22:30:11Z"
+lastReleaseAt: "2026-10-21T22:45:02Z"
 status: "newborn"
-tags: ["needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 88
+tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
+healthScore: 92
 undervaluedScore: 67
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"

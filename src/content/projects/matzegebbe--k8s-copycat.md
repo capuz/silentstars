@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-20T07:27:49Z"
 lastReleaseAt: "2025-09-25T07:02:34Z"
 status: "thriving"
 tags: []
-healthScore: 98
+healthScore: 97
 undervaluedScore: 79
 maintainers: ["dependabot[bot]", "matzegebbe"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ce03c28291c14ce741bcdabafa21d4e87517d950d72654ac1f478d94f03a5ae7/matzegebbe/k8s-copycat"
