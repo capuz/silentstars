@@ -26,6 +26,7 @@ undervaluedScore: 25
 maintainers: ["linqingzi"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a9ff61e6e8ea042ec5beec58900193cf18f82b926a2af083772ca8c869515592/linqingzi/candle-audit-kit"
 promoted: true
+postedAt: "2026-10-21T20:06:46.664Z"
 ---
 
 # Candle Audit Kit
