@@ -14,5 +14,9 @@
   {
     "repo": "linqingzi/btc-dashboard-open-source",
     "until": "2026-11-20"
+  },
+  {
+    "repo": "linqingzi/candle-audit-kit",
+    "until": "2026-11-20"
   }
 ]
