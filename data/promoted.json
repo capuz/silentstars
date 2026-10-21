@@ -18,5 +18,9 @@
   {
     "repo": "linqingzi/candle-audit-kit",
     "until": "2026-11-20"
+  },
+  {
+    "repo": "Orkas-AI/Orkas",
+    "until": "2026-11-20"
   }
 ]
