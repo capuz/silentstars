@@ -10,7 +10,7 @@ languages: ["MDX"]
 languagePcts: [100]
 stars: 6
 forks: 19
-openIssues: 160
+openIssues: 161
 closedIssues: 486
 watchers: 7
 contributors: 56
@@ -19,7 +19,7 @@ createdAt: "2024-10-21T02:01:43Z"
 lastCommitAt: "2026-10-21T09:27:40Z"
 status: "thriving"
 tags: ["needs_contributors", "fork_magnet"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 84
 maintainers: ["rw-jarvis-bot[bot]", "wjf3121", "cyliu0"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/875864923/75401980-9a68-47bb-b0d8-4c7874e52b4c"

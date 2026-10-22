@@ -11,7 +11,7 @@ languagePcts: [96]
 topics: ["bittensor", "bittensor-subnets", "endpoint-monitoring", "metagraph", "openapi", "public-infrastructure", "registry", "schema-registry", "status-page", "subtensor"]
 stars: 11
 forks: 89
-openIssues: 106
+openIssues: 108
 closedIssues: 4472
 watchers: 0
 contributors: 83

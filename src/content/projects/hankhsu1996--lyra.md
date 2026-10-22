@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/hankhsu1996/lyra"
 language: "C++"
 languages: ["C++", "SystemVerilog"]
-languagePcts: [77, 20]
+languagePcts: [77, 21]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog"]
 stars: 5
 forks: 1
@@ -16,13 +16,13 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-10-21T23:36:13Z"
+lastCommitAt: "2026-10-22T07:30:17Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 82
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c0c576f70f466190a7e8463ea64f221b58bb1608ba019f72f0c3dab441c31b8e/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/a14c416d516e7df1caafcb671a15b91bff5c273ebbc7e6564e4516c0db301e36/hankhsu1996/lyra"
 postedAt: "2026-10-09T10:56:38.881Z"
 ---
 
