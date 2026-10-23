@@ -30,5 +30,9 @@
   {
     "repo": "molimao/iota",
     "until": "2026-11-22"
+  },
+  {
+    "repo": "DMS-Menula/developer-starter-pack-2026",
+    "until": "2026-11-22"
   }
 ]
