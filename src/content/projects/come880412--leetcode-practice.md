@@ -18,7 +18,7 @@ createdAt: "2022-07-01T17:25:49Z"
 lastCommitAt: "2026-10-20T17:27:42Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 73
+healthScore: 72
 undervaluedScore: 67
 maintainers: ["come880412"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a097e2f852c172a67adb123339889c5915aae572509ff04861b0af40aadfd54e/come880412/Leetcode_practice"

@@ -15,14 +15,14 @@ watchers: 2
 contributors: 3
 recentReleases: 5
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-10-22T03:54:55Z"
+lastCommitAt: "2026-10-23T08:08:54Z"
 lastReleaseAt: "2026-10-15T16:31:22Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/792e72f65ed939538594b2532ab8ab47bcd036ef1be03562dc9996e2eff4ee92/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/645f704e713aa94d4d9a80ac8acbc4334d116aba9a8aa7f56d4fae8c66a107ff/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
@@ -30,7 +30,7 @@ postedAt: "2026-07-12T06:25:03.412Z"
 
 **Gates** (every PR + nightly) — a PR lands only on a clean run:
 
-**Nightly IP sweeps** — one badge per sweep workflow, in the order the [Supported Core IP](#supported-core-ip) table lists them; each links to its per-module report:
+**Nightly IP sweeps** — one badge per sweep workflow, in the order [docs/supported_ip.md](https://github.com/alainmarcel/uhdm2rtlil/blob/HEAD/docs/supported_ip.md) lists them; each links to its per-module report:
 
 A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language). Focused on creating post-synthesis (Gate-level) netlists that matches RTL simulation using Verilator as the golden standard.
 
@@ -41,8 +41,4 @@ A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Ha
 > Verilog-frontend golden — **and/or** by **high-activity randomized Verilator
 > co-simulation** against the original RTL. A SAT miter also adjudicates every
 > divergence so an inductive-proof gap is never mistaken for a real bug.
-> See **[Verification Methodology](#verification-methodology)** below.
-
-## Overview
-
-This project bridges the gap between…
+> See…

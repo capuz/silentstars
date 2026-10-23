@@ -16,13 +16,13 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-10-22T08:21:08Z"
+lastCommitAt: "2026-10-23T08:20:37Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
 undervaluedScore: 79
 maintainers: ["github-actions[bot]", "jimbrig", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f843edb4bca6d5021ebde6a0921460fd3b61660ea12ad7f57620a98a7f336672/jimbrig/jimbrig"
+openGraphImageUrl: "https://opengraph.githubassets.com/86ff295e1b39f3c7a4d657717bb71b3ee666164102322cdaa982a687eebc3429/jimbrig/jimbrig"
 fundingLinks: ["GITHUB:https://github.com/jimbrig"]
 discussionCount: 1
 postedAt: "2026-08-17T04:24:00.451Z"

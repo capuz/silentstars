@@ -11,20 +11,20 @@ languagePcts: [99]
 topics: ["ai-agents", "developer-tools", "agent-skills", "ai-workforce", "claude-skills", "llm-agents", "multi-agent-systems", "prompt-engineering"]
 stars: 1
 forks: 0
-openIssues: 10
-closedIssues: 15
+openIssues: 9
+closedIssues: 16
 watchers: 1
 contributors: 1
 recentReleases: 10
 createdAt: "2026-09-24T16:26:47Z"
-lastCommitAt: "2026-10-22T04:10:13Z"
+lastCommitAt: "2026-10-22T21:24:40Z"
 lastReleaseAt: "2026-10-21T22:45:02Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 67
 maintainers: ["Shaisolaris"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5f6ca8ce-baf8-437d-8f76-8d02abcae7d5"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5701f724-4e19-4664-855c-8934296afc26"
 discussionCount: 5
 promoted: true
 postedAt: "2026-10-09T19:21:03.485Z"
@@ -40,11 +40,8 @@ The router produces an assignment packet with one accountable lead and, when nee
 
 ## Native plugins
 
-Use the [native plugin repository](https://github.com/Shaisolaris/solaris-dev-shop-plugins) for Codex/OpenAI, Claude Code and OpenCode V2 installation instructions. It keeps the same canonical workflows and companion resources together and records the exact source revision. Repository installation does not imply provider-directory approval, model-driven activation quality or support for every helper on every operating system.
+Use the [native plugin repository](https://github.com/Shaisolaris/solaris-dev-shop-plugins) for host-specific installation instructions, tested client versions and publication status. The packages keep the same canonical workflows and companion resources together and record their exact source revision. Native format support, model-driven results and provider-directory approval have separate evidence; check the recorded scope for your client and operating system.
 
 ## Try it
 
-Requires Git and Python 3.10+. This first run leaves your PATH unchanged:
-
-```bash
-git clone…
+Requires Git and Python 3.10+. This first run leaves your PATH…

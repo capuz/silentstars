@@ -22,7 +22,7 @@ createdAt: "2026-10-21T13:15:15Z"
 lastCommitAt: "2026-10-21T18:32:29Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 20
 maintainers: ["linqingzi"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1428408539/c0a34952-a2c4-4d38-bf9b-29f78189788a"

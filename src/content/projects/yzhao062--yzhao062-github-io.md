@@ -16,14 +16,15 @@ watchers: 1
 contributors: 21
 recentReleases: 0
 createdAt: "2023-05-18T02:24:55Z"
-lastCommitAt: "2026-10-22T08:51:56Z"
+lastCommitAt: "2026-10-23T05:04:39Z"
 status: "thriving"
 tags: ["funded", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 83
 maintainers: ["yzhao062", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/096ffc41b6283ddaffb186d8452f5936577bae73e154a08df57e59633bee3a04/yzhao062/yzhao062.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/3a2f49958b80323daba2de74fab27e4f397871c7184d66a707034b09037f9888/yzhao062/yzhao062.github.io"
 fundingLinks: ["GITHUB:https://github.com/yzhao062"]
+postedAt: "2026-10-22T08:59:44.936Z"
 ---
 
 # FORTIS Lab Website and CV

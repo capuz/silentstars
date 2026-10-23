@@ -20,7 +20,7 @@ createdAt: "2022-12-18T09:37:43Z"
 lastCommitAt: "2026-10-14T04:41:53Z"
 status: "thriving"
 tags: []
-healthScore: 85
+healthScore: 84
 undervaluedScore: 74
 maintainers: ["github-actions[bot]", "claude", "2217441"]
 openGraphImageUrl: "https://opengraph.githubassets.com/da195ffeabc1182dbd2cb293f4cc8845f37b7d2360ccab3494ca269af7833fcb/IIUMstudent/Awesome-IIUM"

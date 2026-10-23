@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [93]
 stars: 13
-forks: 5
+forks: 4
 openIssues: 0
 closedIssues: 3
 watchers: 4
@@ -20,7 +20,7 @@ lastReleaseAt: "2026-02-23T11:32:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
-undervaluedScore: 72
+undervaluedScore: 71
 maintainers: ["BJacksonONS", "dependabot[bot]", "MaciekBaron"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e7c72a6b61b9d2732f9706bfd2fada402a7f89fc584186ae494e34b73db08b53/ONSdigital/dis-wagtail"
 postedAt: "2026-08-27T14:36:22.780Z"
