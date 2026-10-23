@@ -1918,5 +1918,16 @@
         "postedAt": "2026-10-23T09:39:25.066Z"
       }
     }
+  },
+  {
+    "repo": "DMS-Menula/developer-starter-pack-2026",
+    "slug": "dms-menula--developer-starter-pack-2026",
+    "postedAt": "2026-10-23T12:35:25.143Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myk6vhmnt22i",
+        "postedAt": "2026-10-23T12:35:25.143Z"
+      }
+    }
   }
 ]
