@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-10-23T08:43:13Z"
+lastCommitAt: "2026-10-23T09:13:57Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 84
 maintainers: ["malibio", "mstomar125"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f8a4d2ffe3e1dc162d7f66715a978ae7ba5fc4853061c03de4a365b8cf1fbc5b/NodeSpaceAI/nodespace-core"
+openGraphImageUrl: "https://opengraph.githubassets.com/ccbe77cf1bf98cc21bf29af04d4dfe0d730ca858d877706df64b8896ad252bfc/NodeSpaceAI/nodespace-core"
 postedAt: "2026-10-05T10:53:35.128Z"
 ---
 

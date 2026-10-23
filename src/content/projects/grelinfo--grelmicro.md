@@ -11,20 +11,21 @@ languagePcts: [99]
 topics: ["fastapi", "faststream", "leader-election", "lock", "microservice", "pydantic", "python", "anyio", "asyncio", "circuit-breaker"]
 stars: 5
 forks: 0
-openIssues: 44
-closedIssues: 315
+openIssues: 42
+closedIssues: 317
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-10-23T08:46:36Z"
+lastCommitAt: "2026-10-23T09:23:20Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 97
 undervaluedScore: 81
 maintainers: ["grelinfo", "dependabot[bot]", "pre-commit-ci[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9b1fbceb3fa57893682800c80a180567bb5e017cbf1efc00d3fa9dbfa70a1bcd/grelinfo/grelmicro"
+openGraphImageUrl: "https://opengraph.githubassets.com/87a37b46823b9a3d004ba7c28a2e3a92a1fd2e638c898d4b2085e2e757c11944/grelinfo/grelmicro"
+postedAt: "2026-10-23T08:52:59.686Z"
 ---
 
 Run a second copy of your app and things break quietly. The cron job runs twice. The rate limit lets through twice the traffic. One replica keeps calling a dead service the other already gave up on.
