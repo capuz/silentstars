@@ -11,20 +11,20 @@ languagePcts: [99]
 topics: ["fastapi", "faststream", "leader-election", "lock", "microservice", "pydantic", "python", "anyio", "asyncio", "circuit-breaker"]
 stars: 5
 forks: 0
-openIssues: 42
-closedIssues: 317
+openIssues: 41
+closedIssues: 318
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-10-23T09:23:20Z"
+lastCommitAt: "2026-10-23T11:41:59Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 97
 undervaluedScore: 81
 maintainers: ["grelinfo", "dependabot[bot]", "pre-commit-ci[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/87a37b46823b9a3d004ba7c28a2e3a92a1fd2e638c898d4b2085e2e757c11944/grelinfo/grelmicro"
+openGraphImageUrl: "https://opengraph.githubassets.com/c7a8a0b7b881078b488b4a304805248359250fb7dca91ba8ac4bf69435abe486/grelinfo/grelmicro"
 postedAt: "2026-10-23T08:52:59.686Z"
 ---
 

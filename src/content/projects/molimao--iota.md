@@ -1,8 +1,8 @@
 ---
 repo: "molimao/iota"
 name: "iota"
-description: "Open-source five-language dashboard for IOTA Train at Home, xCoin XID / MMM and Quantus QTC: read-only status, rewards and network visualization."
-originalDescription: "Open-source five-language dashboard for IOTA Train at Home, xCoin XID / MMM and Quantus QTC: read-only status, rewards and network visualization."
+description: "Open-source, five-language mining dashboard for IOTA Train at Home, PRL, BNT, XMR, ERG, ZEPH and more: saved addresses, worker status, available rewards and optional Mac agent controls."
+originalDescription: "Open-source, five-language mining dashboard for IOTA Train at Home, PRL, BNT, XMR, ERG, ZEPH and more: saved addresses, worker status, available rewards and optional Mac agent controls."
 descriptionLang: "zh"
 readmeQualityOk: true
 url: "https://github.com/molimao/iota"
@@ -22,21 +22,20 @@ createdAt: "2026-09-12T02:21:10Z"
 lastCommitAt: "2026-10-23T02:20:51Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 58
 maintainers: ["molimao", "lovable-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8f464e9d5038eddc89cc9452e7c13c7643f5834590257ef0d378d958b25cb425/molimao/iota"
+openGraphImageUrl: "https://opengraph.githubassets.com/8f6b9ab96758a964144f77634212fb0465aa3cda912be7f36cdca5f6ccacfa44/molimao/iota"
 promoted: true
+postedAt: "2026-10-23T09:39:25.066Z"
 ---
 
 # IOTA Watch
 
-An open-source, multi-project monitoring dashboard in five languages, centered on **IOTA Train at Home**. Supports IOTA, XID / MMM, Quantus, fly.ai, Nosana, Gonka, Akash, io.net, Vast.ai and Golem; each project's inputs, cycles and data coverage are explained separately.
+An open-source, five-language, multi-project monitoring dashboard centered on **IOTA Train at Home**. It supports IOTA, XID / MMM, Quantus, fly.ai, Nosana, Gonka, Akash, io.net, Vast.ai and Golem; each project's inputs, cycles, and data coverage are described separately.
 
-**[官网](https://iotahome.site) · [我的设备](https://iotahome.site/zh/devices) · [IOTA 查询](https://iotahome.site/zh/app) · [全网现况](https://iotahome.site/zh/network) · [博客](https://iotahome.site/zh/blog) · [English](https://iotahome.site/en)**
+**[Official site](https://iotahome.site) · [My Devices](https://iotahome.site/zh/devices) · [IOTA Lookup](https://iotahome.site/zh/app) · [Network Status](https://iotahome.site/zh/network) · [Blog](https://iotahome.site/zh/blog) · [English](https://iotahome.site/en)**
 
 IOTA Watch is an independent MIT-licensed monitor in English, Simplified Chinese, Traditional Chinese, Korean and Japanese. IOTA Train at Home (Macrocosmos / Bittensor SN9) is the core project, with ten project pages covering training, mining and compute. Tool pages query records; separate tutorials explain identifiers, fields and troubleshooting. Public projects use public identifiers; io.net and Vast.ai require account connections with read credentials. Those two integrations have mocked validation; real-account validation remains pending.
 
-The screenshot shows miner distribution and network capacity; the figures are the official data at the time of capture.
-
-##…
+The screenshot shows miner distribution and network capacity; the figures are official data…

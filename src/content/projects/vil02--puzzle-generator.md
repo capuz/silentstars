@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-18T10:59:48Z"
 lastReleaseAt: "2024-08-02T06:56:56Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 84
 maintainers: ["renovate[bot]", "vil02", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6999b9e14d0645fa79c24867fb58f16e66e437091fb98f4bdd44127c48be32eb/vil02/puzzle_generator"
