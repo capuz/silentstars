@@ -189,6 +189,27 @@ export function seededIndex(seed: string, max: number): number {
   return Math.abs(h) % max;
 }
 
+// Bluesky facets index UTF-8 bytes, not JS string positions.
+export function byteLen(str: string): number {
+  return new TextEncoder().encode(str).length;
+}
+
+export function hashtagFacets(text: string) {
+  const encoder = new TextEncoder();
+  const result  = [];
+  const regex   = /#([a-zA-Z][a-zA-Z0-9]*)/g;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    const byteStart = encoder.encode(text.slice(0, match.index)).length;
+    const byteEnd   = byteStart + encoder.encode(match[0]).length;
+    result.push({
+      index: { byteStart, byteEnd },
+      features: [{ $type: 'app.bsky.richtext.facet#tag', tag: match[1] }],
+    });
+  }
+  return result;
+}
+
 export function truncate(str: string, max: number): string {
   if (str.length <= max) return str;
   return str.slice(0, max - 1).trimEnd() + '…';

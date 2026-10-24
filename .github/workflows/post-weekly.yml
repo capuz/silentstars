@@ -1,0 +1,74 @@
+name: Weekly thread
+
+# Posts the latest closed /weekly/ edition to Bluesky as a thread
+# (scripts/post-weekly.ts). Monday 13:17 UTC — morning in the Americas,
+# afternoon in Europe — well after the Monday nightly (03:37 UTC) has
+# deployed the edition and written its Claude notes. Off the top of the
+# hour for the same runner-congestion reason as collect.yml.
+on:
+  schedule:
+    - cron: '17 13 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — previsualizar el hilo sin publicar"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: post-weekly
+  cancel-in-progress: false
+
+jobs:
+  post:
+    name: Post weekly thread
+    runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Idempotent: an edition already in data/posted-weekly.json is a no-op.
+      # On schedule inputs.dry_run is empty, so the thread is really posted.
+      - name: Post to Bluesky
+        run: npx tsx scripts/post-weekly.ts
+        env:
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          BASE_URL:          https://silentstars.dev
+          DRY_RUN:           ${{ inputs.dry_run }}
+
+      # always(): the root is recorded before the replies go out, so a failed
+      # reply must still commit the record or a re-run would post a second root.
+      - name: Commit posted-weekly.json
+        if: always() && inputs.dry_run != true
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted-weekly.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: record weekly thread [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "::error::Could not push posted-weekly.json — record it by hand before re-running"
+          exit 1

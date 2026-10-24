@@ -12,6 +12,7 @@ const base = import.meta.env.BASE_URL;
 ---
 <Base
   title="This week"
+  ogImage={latest && new URL(`${base}og/weekly/${latest.week}.png`, Astro.site).href}
   description="What moved in small open source this week: projects rising, newly featured, coming back, and cooling off."
 >
   <div class="container section">
