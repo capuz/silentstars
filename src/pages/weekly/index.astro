@@ -1,0 +1,85 @@
+---
+import Base from '../../layouts/Base.astro';
+import WeeklyEdition from '../../components/WeeklyEdition.astro';
+import { listEditions, formatWeekRange } from '../../../scripts/weekly.ts';
+import type { History } from '../../../scripts/weekly.ts';
+import historyJson from '../../../data/history.json';
+
+const editions = listEditions(historyJson as History, new Date());
+const latest = editions.at(-1);
+const archive = editions.slice(0, -1).reverse();
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title="This week"
+  description="What moved in small open source this week: projects rising, newly featured, coming back, and cooling off."
+>
+  <div class="container section">
+    <header class="page-header">
+      <p class="eyebrow">// weekly</p>
+      <h1>This week on SilentStars</h1>
+      <p class="lead">
+        Every Monday: which small projects shipped, closed issues and gained stars,
+        which ones came back from a long silence, and which are going quiet.
+      </p>
+      {latest && (
+        <p class="latest-meta">
+          <a href={`${base}weekly/${latest.week}/`}>Issue #{latest.issue}</a> · {formatWeekRange(latest.week)}
+        </p>
+      )}
+    </header>
+
+    {latest ? <WeeklyEdition edition={latest} /> : <p class="empty">// first edition coming Monday.</p>}
+
+    {archive.length > 0 && (
+      <section class="archive">
+        <h2>Past weeks</h2>
+        <ul>
+          {archive.map(e => (
+            <li>
+              <a href={`${base}weekly/${e.week}/`}>
+                <span class="issue">#{e.issue}</span>
+                <span class="range">{formatWeekRange(e.week)}</span>
+                <span class="counts">🔥 {e.rising.length} · 🌱 {e.newcomers.length} · ⚡ {e.revived.length} · 🧊 {e.cooling.length}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .page-header { max-width: 660px; margin-bottom: 2.5rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+  .lead { color: var(--text-muted); line-height: 1.75; font-size: 0.925rem; margin-bottom: 0.75rem; }
+  .latest-meta { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); }
+
+  .archive { max-width: 720px; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  .archive h2 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+  .archive ul { list-style: none; display: flex; flex-direction: column; }
+  .archive a {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0.55rem 0;
+    border-bottom: 1px dashed var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+  .archive a:hover { text-decoration: none; color: var(--accent); }
+  .issue { font-weight: 700; min-width: 2.5rem; }
+  .range { flex: 1; min-width: 12rem; }
+  .counts { color: var(--text-dim); }
+
+  .empty { font-family: var(--font-mono); color: var(--text-dim); font-size: 0.75rem; }
+</style>

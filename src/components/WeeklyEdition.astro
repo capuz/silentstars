@@ -1,0 +1,136 @@
+---
+import { getCollection } from 'astro:content';
+import type { NumberedEdition, EditionItem } from '../../scripts/weekly.ts';
+
+interface Props {
+  edition: NumberedEdition;
+}
+const { edition } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+// Discovered projects rotate out of the directory, so an old edition may
+// mention a project whose page no longer exists: link to GitHub instead.
+const pages = new Map((await getCollection('projects')).map(p => [p.slug, p.data]));
+
+const sections: Array<{ key: string; icon: string; title: string; blurb: string; items: EditionItem[] }> = [
+  { key: 'rising',    icon: '🔥', title: 'Rising',        blurb: 'Busiest week of the bunch: releases, issues closed, stars.', items: edition.rising },
+  { key: 'newcomers', icon: '🌱', title: 'New this week', blurb: 'Freshly featured or submitted.',                               items: edition.newcomers },
+  { key: 'revived',   icon: '⚡', title: 'Came back',     blurb: 'Back to work after a long silence.',                           items: edition.revived },
+  { key: 'cooling',   icon: '🧊', title: 'Cooling off',   blurb: 'Going quiet. A star, an issue or a PR might help.',            items: edition.cooling },
+];
+---
+{sections.filter(s => s.items.length > 0).map(s => (
+  <section class={`wk-section wk-${s.key}`}>
+    <h2 class="wk-title"><span aria-hidden="true">{s.icon}</span> {s.title} <span class="wk-count">{s.items.length}</span></h2>
+    <p class="wk-blurb">{s.blurb}</p>
+    <ol class="wk-list">
+      {s.items.map(i => {
+        const page = pages.get(i.slug);
+        const href = page ? `${base}projects/${i.slug}/` : `https://github.com/${i.repo}`;
+        return (
+          <li class="wk-item">
+            <div class="wk-head">
+              <a href={href} class="wk-name" {...(page ? {} : { target: '_blank', rel: 'noopener' })}>{i.name}</a>
+              <span class="wk-repo">{i.repo}</span>
+              <span class="wk-stars">★ {i.stars}</span>
+            </div>
+            <p class="wk-reason">{i.reason}</p>
+            {page?.description && <p class="wk-desc">{page.description}</p>}
+          </li>
+        );
+      })}
+    </ol>
+  </section>
+))}
+
+<style>
+  .wk-section {
+    --wk-color: var(--accent);
+    margin-bottom: 2.75rem;
+    max-width: 720px;
+  }
+  .wk-newcomers { --wk-color: var(--newborn); }
+  .wk-revived   { --wk-color: var(--revived); }
+  .wk-cooling   { --wk-color: var(--quiet); }
+
+  .wk-title {
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .wk-count {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--wk-color);
+    border: 1.5px solid var(--wk-color);
+    border-radius: 999px;
+    padding: 0 0.5rem;
+  }
+  .wk-blurb {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .wk-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .wk-item {
+    padding: 1rem 1.15rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--wk-color);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+  }
+  .wk-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+  .wk-name {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+  .wk-name:hover { color: var(--wk-color); text-decoration: none; }
+  .wk-repo {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    overflow-wrap: anywhere;
+  }
+  .wk-stars {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-dim);
+  }
+  .wk-reason {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--wk-color);
+  }
+  .wk-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

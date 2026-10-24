@@ -1,0 +1,72 @@
+---
+import Base from '../../layouts/Base.astro';
+import WeeklyEdition from '../../components/WeeklyEdition.astro';
+import { listEditions, formatWeekRange } from '../../../scripts/weekly.ts';
+import type { History, NumberedEdition } from '../../../scripts/weekly.ts';
+import historyJson from '../../../data/history.json';
+
+export function getStaticPaths() {
+  const editions = listEditions(historyJson as History, new Date());
+  return editions.map((edition, i) => ({
+    params: { week: edition.week },
+    props: { edition, prev: editions[i - 1], next: editions[i + 1] },
+  }));
+}
+
+interface Props {
+  edition: NumberedEdition;
+  prev?: NumberedEdition;
+  next?: NumberedEdition;
+}
+const { edition, prev, next } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const range = formatWeekRange(edition.week);
+const total = edition.rising.length + edition.newcomers.length + edition.revived.length + edition.cooling.length;
+---
+<Base
+  title={`Week #${edition.issue}`}
+  description={`What moved in small open source, ${range}: ${edition.rising.length} rising, ${edition.newcomers.length} new, ${edition.revived.length} back, ${edition.cooling.length} cooling off.`}
+>
+  <div class="container section">
+    <header class="page-header">
+      <p class="eyebrow">// issue #{edition.issue} · {edition.week}</p>
+      <h1>This week on SilentStars</h1>
+      <p class="lead">{range} · {total} projects moved.</p>
+    </header>
+
+    <WeeklyEdition edition={edition} />
+
+    <nav class="wk-pager" aria-label="Editions">
+      {prev ? <a href={`${base}weekly/${prev.week}/`}>← #{prev.issue} · {formatWeekRange(prev.week)}</a> : <span />}
+      <a href={`${base}weekly/`} class="wk-all">All weeks</a>
+      {next ? <a href={`${base}weekly/${next.week}/`}>#{next.issue} · {formatWeekRange(next.week)} →</a> : <span />}
+    </nav>
+  </div>
+</Base>
+
+<style>
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .page-header { max-width: 660px; margin-bottom: 2.5rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+  .lead { color: var(--text-muted); font-size: 0.925rem; }
+
+  .wk-pager {
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+  .wk-all { font-weight: 700; }
+</style>

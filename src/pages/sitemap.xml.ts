@@ -1,5 +1,8 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { listEditions } from '../../scripts/weekly.ts';
+import type { History } from '../../scripts/weekly.ts';
+import historyJson from '../../data/history.json';
 
 export const GET: APIRoute = async ({ site }) => {
   const base = import.meta.env.BASE_URL;
@@ -9,13 +12,17 @@ export const GET: APIRoute = async ({ site }) => {
   const projects = await getCollection('projects');
   const today = new Date().toISOString().slice(0, 10);
 
-  const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/'];
+  const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/', 'weekly/'];
 
   const entries = [
     ...staticRoutes.map((r) => ({ url: `${root}${r}`, lastmod: today })),
     ...projects.map((p) => ({
       url: `${root}projects/${p.slug}/`,
       lastmod: p.data.lastCommitAt.slice(0, 10),
+    })),
+    ...listEditions(historyJson as History, new Date()).map((e) => ({
+      url: `${root}weekly/${e.week}/`,
+      lastmod: e.end.slice(0, 10),
     })),
   ];
 
