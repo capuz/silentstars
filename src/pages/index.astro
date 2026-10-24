@@ -400,6 +400,8 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     margin: 0;
     white-space: nowrap;
   }
+  /* At its 10px floor the one-liner no longer fits inside the 16px gutters. */
+  @media (max-width: 359px) { .hero-title { white-space: normal; } }
   .hero-title .accent { color: var(--accent); }
   .hero-lede {
     font-size: 16px; line-height: 1.5; font-weight: 500;

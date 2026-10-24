@@ -370,6 +370,8 @@ const tagLabels: Record<string, string> = {
     line-height: 1.1;
     margin-bottom: 2px;
     transition: color .12s;
+    /* Some repo names have no break points (justdomains_mirror1.malwaredomains…). */
+    overflow-wrap: anywhere;
   }
   .card-name::after {
     content: '';

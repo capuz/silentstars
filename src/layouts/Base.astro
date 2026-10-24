@@ -64,7 +64,7 @@ const pageUrl = Astro.url.href;
           <a href={`${base}projects/`} class="ss-nav-link">Directory</a>
           <a href={`${base}weekly/`} class="ss-nav-link">This week</a>
           <a href={`${base}#subscribe`} class="ss-nav-link">Subscribe</a>
-          <a href={`${base}submit/`} class="ss-nav-link ss-nav-submit">Submit your project 🚀</a>
+          <a href={`${base}submit/`} class="ss-nav-link ss-nav-submit">Submit<span class="ss-nav-long"> your project</span> 🚀</a>
           <a href={`${base}about/`} class="ss-nav-link ss-nav-link-secondary">About</a>
           <a href="https://github.com/capuz/silentstars" target="_blank" rel="noopener" class="ss-nav-link ss-nav-link-secondary" style="opacity:.6;">GitHub</a>
           <button id="ss-theme-btn" class="ss-theme-btn">◐ Night</button>
@@ -213,10 +213,22 @@ const pageUrl = Astro.url.href;
   .ss-nav-submit:hover { background: var(--ink); color: var(--paper); }
 
   @media (max-width: 680px) {
-    .ss-nav { padding: 8px 16px; gap: 8px; }
+    /* Two rows: the wordmark alone, then the links, which scroll sideways
+       rather than pushing the whole page wider than the viewport. */
+    .ss-nav { padding: 8px 16px; gap: 6px; flex-wrap: wrap; }
     .ss-wordmark { font-size: 18px; }
-    .ss-nav-links { font-size: 11.5px; gap: 0; }
-    .ss-nav-link-secondary { display: none; }
+    .ss-nav-links {
+      width: 100%;
+      font-size: 11.5px;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .ss-nav-links > :first-child { padding-left: 0; }
+    .ss-nav-link-secondary, .ss-nav-long { display: none; }
+    /* The first row has room to spare: park the theme toggle beside the wordmark
+       (the sticky nav is its containing block). */
+    .ss-theme-btn { position: absolute; top: 9px; right: 16px; margin-left: 0; }
   }
 
   .ss-theme-btn {
