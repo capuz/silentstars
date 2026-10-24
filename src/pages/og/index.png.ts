@@ -1,17 +1,10 @@
 import { getCollection } from 'astro:content';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import { readFileSync } from 'fs';
-import { resolve } from 'path';
+import { fonts, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../og/shared.ts';
 
-const fontBold   = readFileSync(resolve('public/fonts/BricolageGrotesque-Bold.ttf'));
-const fontMedium = readFileSync(resolve('public/fonts/BricolageGrotesque-Medium.ttf'));
-
-const ACCENT = '#e8452e';
-const INK    = '#17150f';
-const PAPER  = '#f7f5ef';
-const MUTED  = '#6b6456';
-const SHADOW = '#c9c0af';
+// Astro emits this as /og.png (an index route with an extension), the default
+// og:image of every page without its own card — see Base.astro.
 
 export async function GET() {
   const projects = await getCollection('projects');
@@ -36,16 +29,7 @@ export async function GET() {
         },
         children: [
           // ── Wordmark ──
-          {
-            type: 'div',
-            props: {
-              style: { display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '40px' },
-              children: [
-                { type: 'span', props: { style: { color: ACCENT, fontSize: 36, fontWeight: 700 }, children: '★' } },
-                { type: 'span', props: { style: { color: INK, fontSize: 30, fontWeight: 700, letterSpacing: '-0.02em' }, children: 'SilentStars' } },
-              ],
-            },
-          },
+          wordmark('40px'),
 
           // ── Headline ──
           {
@@ -81,7 +65,7 @@ export async function GET() {
                 { type: 'span', props: { style: { color: SHADOW, fontSize: 28 }, children: '·' } },
                 stat(String(thriving), 'thriving now'),
                 { type: 'span', props: { style: { color: SHADOW, fontSize: 28 }, children: '·' } },
-                stat(`★ ${starsK}`,   'combined stars'),
+                stat(starsK,           'combined stars'),
               ],
             },
           },
@@ -91,10 +75,7 @@ export async function GET() {
     {
       width: 1200,
       height: 630,
-      fonts: [
-        { name: 'Bricolage', data: fontBold,   weight: 700, style: 'normal' },
-        { name: 'Bricolage', data: fontMedium, weight: 500, style: 'normal' },
-      ],
+      fonts,
     },
   );
 
@@ -104,15 +85,3 @@ export async function GET() {
   });
 }
 
-function stat(value: string, label: string) {
-  return {
-    type: 'div',
-    props: {
-      style: { display: 'flex', flexDirection: 'column', gap: '2px' },
-      children: [
-        { type: 'span', props: { style: { color: ACCENT, fontSize: 36, fontWeight: 700, letterSpacing: '-0.02em' }, children: value } },
-        { type: 'span', props: { style: { color: MUTED, fontSize: 15, fontWeight: 500 }, children: label } },
-      ],
-    },
-  };
-}

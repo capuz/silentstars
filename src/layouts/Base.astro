@@ -10,7 +10,7 @@ interface Props {
 }
 const { title, description = 'Not famous. Not abandoned. Just building.', ogImage, showMetricsFAQ = true } = Astro.props;
 const base   = import.meta.env.BASE_URL;
-const ogUrl  = ogImage ?? new URL(`${base}og/index.png`, Astro.site).href;
+const ogUrl  = ogImage ?? new URL(`${base}og.png`, Astro.site).href;
 const pageUrl = Astro.url.href;
 ---
 <!doctype html>
