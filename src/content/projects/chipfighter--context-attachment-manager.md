@@ -25,6 +25,7 @@ undervaluedScore: 30
 maintainers: ["chipfighter", "lin-coco"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
 promoted: true
+postedAt: "2026-10-24T08:14:50.030Z"
 ---
 
 ## Why I made this
