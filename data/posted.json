@@ -1940,5 +1940,16 @@
         "postedAt": "2026-10-24T00:21:33.516Z"
       }
     }
+  },
+  {
+    "repo": "chipfighter/context-attachment-manager",
+    "slug": "chipfighter--context-attachment-manager",
+    "postedAt": "2026-10-24T08:14:50.030Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mymasg7cdf2a",
+        "postedAt": "2026-10-24T08:14:50.030Z"
+      }
+    }
   }
 ]
