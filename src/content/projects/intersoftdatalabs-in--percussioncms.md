@@ -17,14 +17,14 @@ watchers: 0
 contributors: 15
 recentReleases: 0
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-10-17T01:57:21Z"
+lastCommitAt: "2026-10-23T13:23:40Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 97
+healthScore: 99
 undervaluedScore: 83
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4a13aa7932d960ad8e66f547707e6c7e7f7f8e68cb7200d8a94d8247cfe2cf18/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/e9da32ae7b084745b36bc293d490fe2811ffe2f99e139b50f99606f92eda733f/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---

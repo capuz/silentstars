@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-23T05:18:03Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 78
 maintainers: ["propr-dev[bot]", "integry", "proprdev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/dab9355f4c2f57562407d26da86d8ecf7421bcbd9632fbe2297ae61b38785c6e/integry/propr"

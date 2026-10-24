@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript", "HTML"]
 languagePcts: [67, 20]
 topics: ["chrome-extension", "video-sync", "privacy-first", "socket-io", "video-synchronization", "watch-party", "websocket", "emby", "firefox-addon", "jellyfin"]
-stars: 96
+stars: 97
 forks: 7
 openIssues: 3
 closedIssues: 7

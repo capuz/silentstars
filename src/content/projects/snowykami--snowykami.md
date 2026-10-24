@@ -18,7 +18,7 @@ createdAt: "2024-02-04T11:54:02Z"
 lastCommitAt: "2026-10-23T03:18:33Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 77
 maintainers: ["github-actions[bot]", "snowykami"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fd2682b4c9691f0b072abdee804019e94b9a6a2815923eb358af69f7b7b24ceb/snowykami/snowykami"

@@ -15,7 +15,7 @@ openIssues: 0
 closedIssues: 0
 watchers: 2
 contributors: 1
-recentReleases: 6
+recentReleases: 5
 createdAt: "2024-12-29T10:06:18Z"
 lastCommitAt: "2026-10-23T03:14:05Z"
 lastReleaseAt: "2026-10-11T00:30:13Z"

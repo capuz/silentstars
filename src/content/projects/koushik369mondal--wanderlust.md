@@ -20,7 +20,7 @@ createdAt: "2025-04-01T12:25:32Z"
 lastCommitAt: "2026-10-20T11:11:14Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 79
 maintainers: ["koushik369mondal", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/08be22f09c830f24aa81d17ae5efd27f877308f498d03b87508b500df846e872/koushik369mondal/WanderLust"
