@@ -1951,5 +1951,16 @@
         "postedAt": "2026-10-24T08:14:50.030Z"
       }
     }
+  },
+  {
+    "repo": "findmydoc-platform/website",
+    "slug": "findmydoc-platform--website",
+    "postedAt": "2026-10-24T08:27:41.607Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mymbjgbhpn2i",
+        "postedAt": "2026-10-24T08:27:41.607Z"
+      }
+    }
   }
 ]
