@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import type { NumberedEdition, EditionItem } from '../../scripts/weekly.ts';
+import type { NotesCache } from '../../scripts/weekly-notes.ts';
+import notesJson from '../../data/weekly-notes.json';
 
 interface Props {
   edition: NumberedEdition;
@@ -11,6 +13,9 @@ const base = import.meta.env.BASE_URL;
 // Discovered projects rotate out of the directory, so an old edition may
 // mention a project whose page no longer exists: link to GitHub instead.
 const pages = new Map((await getCollection('projects')).map(p => [p.slug, p.data]));
+// Claude's one-liners from the week's commits and releases (scripts/weekly-notes.ts);
+// missing for an edition that hasn't been written yet.
+const notes = (notesJson as NotesCache)[edition.week] ?? {};
 
 const sections: Array<{ key: string; icon: string; title: string; blurb: string; items: EditionItem[] }> = [
   { key: 'rising',    icon: '🔥', title: 'Rising',        blurb: 'Busiest week of the bunch: releases, issues closed, stars.', items: edition.rising },
@@ -34,8 +39,9 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
               <span class="wk-repo">{i.repo}</span>
               <span class="wk-stars">★ {i.stars}</span>
             </div>
+            {notes[i.repo] && <p class="wk-note">{notes[i.repo]}</p>}
             <p class="wk-reason">{i.reason}</p>
-            {page?.description && <p class="wk-desc">{page.description}</p>}
+            {!notes[i.repo] && page?.description && <p class="wk-desc">{page.description}</p>}
           </li>
         );
       })}
@@ -118,9 +124,14 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
     font-size: 0.7rem;
     color: var(--text-dim);
   }
+  .wk-note {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text);
+  }
   .wk-reason {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: var(--wk-color);
   }

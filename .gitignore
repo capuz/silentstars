@@ -18,6 +18,7 @@ data/*
 !data/posted.json
 !data/promoted.json
 !data/translations.json
+!data/weekly-notes.json
 
 # agent skills
 .agents/

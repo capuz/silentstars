@@ -10,6 +10,7 @@
     "discover": "tsx scripts/discover.ts",
     "collect": "tsx scripts/collect.ts",
     "history": "tsx scripts/history-snapshot.ts",
+    "weekly-notes": "tsx scripts/weekly-notes.ts",
     "pipeline": "tsx scripts/discover.ts && tsx scripts/collect.ts"
   },
   "dependencies": {
