@@ -33,6 +33,12 @@ const REPO_NAME_GH     = process.env.REPO_NAME ?? '';
 // surface legitimate 0-star projects, so 0 stars alone must never reject).
 const NEW_REPO_DAYS = 7;
 
+// Same star ceiling as automatic discovery: past it a project has already been noticed.
+const discoveryConfigPath = resolve(ROOT, 'data/discovery.config.json');
+const MAX_STARS: number = existsSync(discoveryConfigPath)
+  ? (JSON.parse(readFileSync(discoveryConfigPath, 'utf8')) as { starsRange?: { max?: number } }).starsRange?.max ?? 500
+  : 500;
+
 type SubmissionStatus = 'accepted' | 'already_listed' | 'already_seeded' | 'needs_review' | 'rejected' | 'skipped';
 
 interface GitHubRepo {
@@ -215,7 +221,7 @@ async function handleRejected(repo: string, slug: string, projectName: string, r
   setOutput('submitter_email', '');
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have fewer than **5,000 stars** — we focus on undervalued projects the algorithm hasn't noticed yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on undervalued projects the algorithm hasn't noticed yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
   );
   await labelIssue(['rejected']);
   await closeIssue('not_planned');
@@ -377,9 +383,9 @@ async function main() {
     );
   }
 
-  if (ghRepo.stargazers_count >= 5000) {
+  if (ghRepo.stargazers_count > MAX_STARS) {
     return handleRejected(repo, slug, ghRepo.name,
-      `The repository has ${ghRepo.stargazers_count.toLocaleString()} stars. SilentStars focuses on projects under 5,000 stars — the ones the algorithm hasn't noticed yet.`,
+      `The repository has ${ghRepo.stargazers_count.toLocaleString()} stars. SilentStars focuses on projects with ${MAX_STARS} stars or fewer — the ones the algorithm hasn't noticed yet.`,
     );
   }
 

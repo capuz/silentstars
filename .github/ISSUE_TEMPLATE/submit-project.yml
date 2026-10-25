@@ -44,7 +44,7 @@ body:
       options:
         - label: The repo has commits in the last 90 days
           required: true
-        - label: It has fewer than 5k stars
+        - label: It has 500 stars or fewer
           required: false
         - label: It's not already trending on GitHub
           required: false

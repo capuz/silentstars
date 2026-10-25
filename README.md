@@ -74,7 +74,7 @@ has no relationship to the `watched` status.
 ### 3. Community submissions (GitHub Issues)
 
 Open an issue using the **Submit a project** template. `process-submission.yml` validates
-the repo against the GitHub API (public, not archived, fewer than 5,000 stars, at least
+the repo against the GitHub API (public, not archived, 500 stars or fewer, at least
 one commit in the last 90 days), adds it to `data/promoted.json` with a 30-day window, and
 runs the full collect → build → deploy → Bluesky post pipeline. The submitter gets an
 acceptance email (see [Email notifications](#email-notifications)), and Claude posts a
