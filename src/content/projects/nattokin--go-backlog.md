@@ -25,6 +25,7 @@ healthScore: 89
 undervaluedScore: 83
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1668b1041f28ccd426b427b014d4e114b219c02ae8830ee3e653b0dc62941a90/nattokin/go-backlog"
+postedAt: "2026-10-25T08:46:46.552Z"
 ---
 
 go-backlog
