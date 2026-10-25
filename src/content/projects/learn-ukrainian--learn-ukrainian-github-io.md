@@ -12,19 +12,19 @@ topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "
 stars: 11
 forks: 5
 openIssues: 538
-closedIssues: 3755
+closedIssues: 3756
 watchers: 0
 contributors: 7
 recentReleases: 5
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-10-25T02:20:10Z"
+lastCommitAt: "2026-10-25T08:23:46Z"
 lastReleaseAt: "2026-10-20T12:59:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 97
 undervaluedScore: 79
 maintainers: ["krisztiankoos"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0e59f2f0bce5827ab7803f5acb746b952422684af0590390550026e9b5df4c97/learn-ukrainian/learn-ukrainian.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/7109261138289b58a7aeaeb3f98c7f751adda617683e05d424dfc38f4312b5a2/learn-ukrainian/learn-ukrainian.github.io"
 discussionCount: 1
 postedAt: "2026-08-24T04:26:39.846Z"
 ---

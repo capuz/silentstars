@@ -25,7 +25,6 @@ healthScore: 43
 undervaluedScore: 14
 maintainers: ["capuz", "opn-build"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
-promoted: true
 postedAt: "2026-06-25T22:59:39.704Z"
 ---
 

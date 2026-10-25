@@ -24,6 +24,7 @@ undervaluedScore: 12
 maintainers: ["AniChikage"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b7cb33fe499fe0d1208735ea333ddb059c694d584f939204a7f96dc16d10f329/AniChikage/open-resume"
 promoted: true
+postedAt: "2026-10-25T02:53:35.126Z"
 ---
 
 English · <a href="README.zh-CN.md">简体中文</a><br>

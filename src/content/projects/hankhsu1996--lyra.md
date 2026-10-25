@@ -16,13 +16,13 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-10-24T23:33:47Z"
+lastCommitAt: "2026-10-25T07:41:56Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 82
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6878f46ffcb70125c2eac33ede14a7b46a6e89749fdfbedabb1773ca01f1dbc8/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/500175ac1dfc6dda2a2b36a43a20b39cd6ba635c15690cb2a2d91f6d62a566ee/hankhsu1996/lyra"
 postedAt: "2026-10-09T10:56:38.881Z"
 ---
 
