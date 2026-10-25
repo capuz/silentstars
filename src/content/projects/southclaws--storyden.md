@@ -13,15 +13,15 @@ stars: 342
 forks: 39
 openIssues: 62
 closedIssues: 165
-watchers: 10
+watchers: 9
 contributors: 17
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-10-20T08:44:36Z"
+lastCommitAt: "2026-10-24T17:04:46Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 38
 maintainers: ["Southclaws", "ricardoofnl"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"

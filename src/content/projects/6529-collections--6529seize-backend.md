@@ -18,7 +18,7 @@ createdAt: "2022-12-16T12:19:28Z"
 lastCommitAt: "2026-10-22T17:23:36Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 95
 maintainers: ["GelatoGenesis", "prxt6529"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1ea2e3e6ff7e85886be7716c0f8a8caccc39da43b564ee65137e5f6d071f4b2e/6529-Collections/6529seize-backend"

@@ -10,18 +10,18 @@ languagePcts: [75]
 stars: 5
 forks: 3
 openIssues: 145
-closedIssues: 344
+closedIssues: 347
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-10-24T07:49:19Z"
+lastCommitAt: "2026-10-25T00:34:36Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 94
 undervaluedScore: 82
 maintainers: ["skyl"]
-openGraphImageUrl: "https://opengraph.githubassets.com/063efa421e94205816ac7900508a485286cfbca58ece03deb4383d2fbb4a5ccf/corpora-inc/encorpora"
+openGraphImageUrl: "https://opengraph.githubassets.com/f18900e6ce72e91191aba00dd734da1b1fa24e62b10767f552e7c3d9c9a0b49d/corpora-inc/encorpora"
 postedAt: "2026-07-04T19:31:10.093Z"
 ---
 

@@ -9,20 +9,20 @@ languages: ["Go"]
 languagePcts: [94]
 stars: 8
 forks: 13
-openIssues: 44
-closedIssues: 138
+openIssues: 45
+closedIssues: 139
 watchers: 1
 contributors: 88
 recentReleases: 0
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-10-23T08:52:24Z"
+lastCommitAt: "2026-10-25T01:15:54Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 94
 undervaluedScore: 86
 maintainers: ["thesprockee", "metis-sprock"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c203b1d4a59f5fba81fa44cae28c626099e5c92ffb096489f91ac15bc9373b18/EchoTools/nakama"
+openGraphImageUrl: "https://opengraph.githubassets.com/1e23504f9c625076f0d9df2f7789db28ff012bff366063af4b2d354f3e3ceb75/EchoTools/nakama"
 postedAt: "2026-06-20T19:53:48.072Z"
 ---
 

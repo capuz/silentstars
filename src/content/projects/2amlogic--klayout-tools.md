@@ -10,20 +10,20 @@ languages: ["Python", "Shell"]
 languagePcts: [65, 30]
 stars: 5
 forks: 2
-openIssues: 68
-closedIssues: 2070
+openIssues: 65
+closedIssues: 2078
 watchers: 0
 contributors: 3
 recentReleases: 3
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-10-24T08:03:14Z"
+lastCommitAt: "2026-10-24T21:58:56Z"
 lastReleaseAt: "2026-09-15T02:19:49Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 74
-maintainers: ["loom-fleet-dispatch[bot]", "rjwalters"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d6dbd8d4635fe2a3d49b7d4fcf99b93c33462fbc130afb53f0513354f3784ad6/2AMLogic/klayout-tools"
+maintainers: ["loom-fleet-dispatch[bot]", "claude", "rjwalters"]
+openGraphImageUrl: "https://opengraph.githubassets.com/013c02e77b4cd19dfa804753621353b8cf6f6c377566f10aec26f9d463f2bcbc/2AMLogic/klayout-tools"
 postedAt: "2026-10-16T08:33:31.631Z"
 ---
 

@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-10-24T04:21:55Z"
+lastCommitAt: "2026-10-24T14:42:31Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b564bf02cccfe1b4af7b4d7088d7e1cd63650b73c5a71a9bcbb07525b9cfdabc/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/b1bf15e296465c9532fb68b14dc5150efa04047814fbbaa72a83751e703b62c4/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
@@ -39,9 +39,7 @@ Croupier is a Server / Agent / SDK platform for game operations and control, int
 
 | Role | Responsibility | Delivery status |
 | --- | --- | --- |
-| sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor configuration/startup wiring still needs completion |
-| devops | Allowlisted internal remote access with audit | `devops-agent` skeleton; real session channels pending |
-| capture | Database CDC, change rules and alerts | `capture-agent`; checkpoint and alert delivery reliability still need work |
-| synthetics | External game/service checks with developer plugins | `synthetics-agent`; probe plugins included, native probe kernel migration pending |
-
-Each instance explicitly belongs to…
+| sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor wiring, schedule/update lifecycle and function plugins shipped |
+| devops | Allowlisted internal remote access with audit | `devops-agent`; SSH sessions with replay archive shipped; RDP/VNC pending |
+| capture | Database CDC, change rules and alerts | `capture-agent`; MySQL/Mongo/PostgreSQL connectors and checkpoint/alert reliability shipped; source schema history pending |
+| synthetics | External game/service checks with developer plugins | `synthetics-agent`; HTTP/TCP probes with…
