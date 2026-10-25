@@ -46,5 +46,9 @@
   {
     "repo": "macalbert/envilder",
     "until": "2026-11-24"
+  },
+  {
+    "repo": "rootasjey/tronche",
+    "until": "2026-11-24"
   }
 ]
