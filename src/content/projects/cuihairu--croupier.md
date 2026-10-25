@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-24T14:42:31Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 85
 maintainers: ["cuihairu"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b1bf15e296465c9532fb68b14dc5150efa04047814fbbaa72a83751e703b62c4/cuihairu/croupier"

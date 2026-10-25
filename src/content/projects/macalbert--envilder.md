@@ -6,8 +6,8 @@ readmeQualityOk: true
 url: "https://github.com/macalbert/envilder"
 homepage: "https://envilder.com"
 language: "TypeScript"
-languages: ["TypeScript", "Astro"]
-languagePcts: [62, 20]
+languages: ["TypeScript"]
+languagePcts: [64]
 topics: ["automation", "devops", "dotenv", "secrets", "ci-cd", "azure", "aws-ssm", "azure-keyvault", "configuration", "developer-tools"]
 stars: 138
 forks: 5
@@ -17,7 +17,7 @@ watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-10-25T07:25:02Z"
+lastCommitAt: "2026-10-25T19:10:45Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
@@ -28,6 +28,7 @@ openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/cf
 fundingLinks: ["GITHUB:https://github.com/macalbert"]
 discussionCount: 3
 promoted: true
+postedAt: "2026-10-25T09:07:05.933Z"
 ---
 
 # 🗝️ Envilder ☁️
@@ -45,6 +46,9 @@ them from AWS SSM or Azure Key Vault. The same mapping file works in local dev (
 CI/CD (GitHub Action), and application startup (runtime SDKs).
 
 ```bash
+# Push a secret: it is stored in your cloud and mapped in envilder.json
+npx envilder --key=API_KEY --value=s3cret --secret-path=/my-app/api-key
+
 # Zero-config: uses envilder.json and .env by default
 npx envilder
 
@@ -59,7 +63,4 @@ No SaaS middleman. One versioned mapping contract. Secrets stay in your cloud.
 
 ## The problem
 
-- **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which
-  secrets go where. Keys get shared over Slack, pasted from wikis, or copied from a colleague's
-  machine. It's slow, error-prone, and insecure.
--…
+- **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which…

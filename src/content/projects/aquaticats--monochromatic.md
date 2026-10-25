@@ -8,22 +8,22 @@ language: "HTML"
 languages: ["HTML", "TypeScript"]
 languagePcts: [60, 28]
 topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise", "monorepo", "oxlint", "pnpm", "wayland"]
-stars: 5
+stars: 6
 forks: 2
-openIssues: 1312
+openIssues: 1313
 closedIssues: 448
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-10-25T08:05:15Z"
+lastCommitAt: "2026-10-25T21:51:06Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 84
-undervaluedScore: 73
+undervaluedScore: 71
 maintainers: ["Aquaticat"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1a4b71d16579cc380b11a253d5fc10da768af27fbca3a798b144cc15b70e95d7/Aquaticats/Monochromatic"
+openGraphImageUrl: "https://opengraph.githubassets.com/65fb92d3cdf546e48ee44b8fa669936d3d18c3572c7d3afa32e581cb0fea8e0c/Aquaticats/Monochromatic"
 postedAt: "2026-09-30T10:05:46.857Z"
 ---
 
