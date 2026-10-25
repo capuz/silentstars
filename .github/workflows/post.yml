@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       project:
-        description: "Slug or repo to post (e.g. opn-build--openalive) — leave blank for daily pick"
+        description: "Slug or repo to post (e.g. richie-rich90454--fast-balance) — leave blank for daily pick"
         type: string
         default: ''
       dry_run:

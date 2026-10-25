@@ -58,7 +58,7 @@ An array of `{ repo, until }` entries:
 
 ```json
 [
-  { "repo": "opn-build/OpenAlive", "until": null },
+  { "repo": "Code-Society-Lab/matrixpy", "until": null },
   { "repo": "carlos-menezes/caravan", "until": "2026-09-27" }
 ]
 ```
