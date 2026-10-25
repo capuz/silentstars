@@ -1,4 +1,5 @@
 ---
+import ScoreHelp from './ScoreHelp.astro';
 import { loadPosted } from '../../scripts/post-shared.ts';
 
 interface Props {
@@ -169,6 +170,7 @@ const tagLabels: Record<string, string> = {
     <div class="card-score" title="Undervalued score — higher is more overlooked">
       <span class="score-arrow">↑</span>
       <span class="score-num">{undervaluedScore}</span>
+      <ScoreHelp topic="undervalued" label="What is the Undervalued Score?" />
     </div>
   </div>
 
@@ -182,7 +184,7 @@ const tagLabels: Record<string, string> = {
   <!-- health bar -->
   <div class="health-wrap">
     <div class="health-header">
-      <span class="health-label-text">HEALTH</span>
+      <span class="health-label-text">HEALTH <ScoreHelp topic="health" label="What is the Health Score?" /></span>
       <span class="health-value" style={`color:${healthColor};`}>{healthScore} / {healthLabel}</span>
     </div>
     <div class="health-track">

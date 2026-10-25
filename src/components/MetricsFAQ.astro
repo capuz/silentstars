@@ -2,6 +2,7 @@
 const items = [
   {
     glyph: '↑',
+    id: 'undervalued',
     q: 'The Undervalued Score',
     a: 'How much a project earns versus how much attention it actually gets. Above 50 means the work is outrunning its audience. Recomputed nightly from commit velocity, contributor effort, issue resolution, fork utility, release cadence, and project maturity — divided by a logarithmic reach factor.',
     body: `score  = signal / reach
@@ -18,6 +19,7 @@ reach  = log₁₀(stars + watchers + 10)`,
   },
   {
     glyph: '♥',
+    id: 'health',
     q: 'The Health Score',
     a: 'Is the project alive and maintained right now? A 0–100 pulse recomputed nightly from commit recency, rhythm, how fast issues close, and how quickly PRs get merged.',
     body: `health = 0.35·recency       // days since last commit (90d decay)
@@ -27,6 +29,7 @@ reach  = log₁₀(stars + watchers + 10)`,
   },
   {
     glyph: '◷',
+    id: 'bands',
     q: 'Health bands',
     a: 'The colour and label on every card come straight from the health score.',
     body: `Healthy   80 – 100   active, responsive, regular releases
@@ -36,6 +39,7 @@ At Risk    0 – 39    going dark · candidate for rescue`,
   },
   {
     glyph: '//',
+    id: 'tags',
     q: 'Tags — what each label means',
     a: 'Tags are independent behavioral signals computed nightly. A project can hold multiple at once. They drive the home page sections.',
     body: `solo_builder      one person holds > 80% of commits (last 180d)
@@ -51,6 +55,7 @@ funded            maintainer has active funding channel`,
   },
   {
     glyph: '★',
+    id: 'why-stars',
     q: 'Why rank against stars at all?',
     a: 'Stars are an outcome, not effort. A project with 8 stars and daily commits is doing more interesting work than one coasting on 8k. We measure the building, then divide by the attention already received — so the genuinely undervalued rise to the top.',
     body: `// stars   = lagging indicator
@@ -63,7 +68,7 @@ funded            maintainer has active funding channel`,
 <div class="faq-wrap">
 <div class="faq">
   {items.map(it => (
-    <details>
+    <details id={it.id}>
       <summary>
         <span class="faq-head">
           <span class="faq-glyph">{it.glyph}</span>
@@ -97,6 +102,7 @@ funded            maintainer has active funding channel`,
   }
 
   details {
+    scroll-margin-top: 80px; /* clear the sticky nav when opened from a ScoreHelp link */
     border: 1.5px solid var(--ink);
     border-radius: 7px;
     background: var(--paper);
@@ -185,3 +191,16 @@ funded            maintainer has active funding channel`,
     50%, 100% { opacity: 0; }
   }
 </style>
+
+<!-- open the item a ScoreHelp link points at (/about/#health etc.) -->
+<script>
+  function openFromHash() {
+    const el = location.hash && document.getElementById(location.hash.slice(1));
+    if (el instanceof HTMLDetailsElement) {
+      el.open = true;
+      el.scrollIntoView({ block: 'start' });
+    }
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+</script>

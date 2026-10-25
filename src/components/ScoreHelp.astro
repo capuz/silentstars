@@ -1,0 +1,38 @@
+---
+// Small "?" next to a score that links to its explanation in the /about/ FAQ.
+interface Props {
+  topic: 'undervalued' | 'health' | 'tags';
+  label: string;
+}
+const { topic, label } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<a href={`${base}about/#${topic}`} class="score-help" aria-label={label} title={label}>?</a>
+
+<style>
+  .score-help {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border: 1.2px solid currentColor;
+    border-radius: 50%;
+    color: var(--muted);
+    font-family: var(--f-mono);
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    vertical-align: middle;
+    align-self: center;
+    flex-shrink: 0;
+    transition: color .15s;
+    /* ProjectCard's .card-name::after is a full-card click overlay; stay above it */
+    position: relative;
+    z-index: 1;
+  }
+  .score-help:hover,
+  .score-help:focus-visible { color: var(--accent); }
+  .score-help:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
