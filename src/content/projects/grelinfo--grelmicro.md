@@ -12,19 +12,19 @@ topics: ["fastapi", "faststream", "leader-election", "lock", "microservice", "py
 stars: 5
 forks: 0
 openIssues: 38
-closedIssues: 325
+closedIssues: 326
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-10-26T00:08:20Z"
+lastCommitAt: "2026-10-26T08:50:51Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 97
 undervaluedScore: 81
 maintainers: ["grelinfo", "dependabot[bot]", "pre-commit-ci[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f3fd89a3d57c5b0b5d552e4f537bf644ab84ee7e69d436ada0343352c4bd211b/grelinfo/grelmicro"
+openGraphImageUrl: "https://opengraph.githubassets.com/3bc64777ed1f6d00076ef7ce1a0d54a8299a8e1b7e7b753e052acfb23cab99ad/grelinfo/grelmicro"
 postedAt: "2026-10-23T08:52:59.686Z"
 ---
 

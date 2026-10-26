@@ -9,7 +9,7 @@ languages: ["Go"]
 languagePcts: [94]
 stars: 8
 forks: 13
-openIssues: 47
+openIssues: 49
 closedIssues: 139
 watchers: 1
 contributors: 88
@@ -19,7 +19,7 @@ lastCommitAt: "2026-10-25T01:15:54Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 86
 maintainers: ["thesprockee", "metis-sprock"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1e23504f9c625076f0d9df2f7789db28ff012bff366063af4b2d354f3e3ceb75/EchoTools/nakama"

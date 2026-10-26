@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-25T00:32:24Z"
 lastReleaseAt: "2026-10-21T22:45:02Z"
 status: "newborn"
 tags: ["needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 67
 maintainers: ["Shaisolaris"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1385916880/5701f724-4e19-4664-855c-8934296afc26"

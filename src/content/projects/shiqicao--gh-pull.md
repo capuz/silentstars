@@ -26,6 +26,7 @@ maintainers: ["shiqicao"]
 openGraphImageUrl: "https://opengraph.githubassets.com/42daaff722b81662b976187dc9c6833cc65453a382f57f9b96c21e6df7820a52/shiqicao/gh-pull"
 discussionCount: 0
 promoted: true
+postedAt: "2026-10-26T03:11:03.556Z"
 ---
 
 # <img src="docs/favicon.png" width="32" height="32" align="absmiddle" alt=""> gh-pull

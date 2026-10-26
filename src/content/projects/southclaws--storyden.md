@@ -11,13 +11,13 @@ languagePcts: [51, 47]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 343
 forks: 39
-openIssues: 60
+openIssues: 61
 closedIssues: 167
 watchers: 9
 contributors: 17
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-10-25T20:06:43Z"
+lastCommitAt: "2026-10-26T08:32:48Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]

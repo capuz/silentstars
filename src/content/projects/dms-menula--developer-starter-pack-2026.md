@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/DMS-Menula/developer-starter-pack-2026"
 homepage: "https://dms-menula.github.io/"
 topics: ["2026", "ai-tools", "beginners", "developer", "javascript", "learning", "opensource", "react", "resources", "starter-kit"]
-stars: 24
+stars: 25
 forks: 3
 openIssues: 0
 closedIssues: 0

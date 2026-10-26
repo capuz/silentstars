@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-07-01T01:49:35Z"
-lastCommitAt: "2026-10-26T02:38:40Z"
+lastCommitAt: "2026-10-26T05:06:23Z"
 lastReleaseAt: "2026-07-20T14:43:05Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 74
-undervaluedScore: 25
+undervaluedScore: 26
 maintainers: ["rootasjey", "semantic-release-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2131a174ae0feb426acce771e5f6f4412b44e37f4290f7539593c4a1248fdd11/rootasjey/tronche"
+openGraphImageUrl: "https://opengraph.githubassets.com/8bc9efcfc665b666e85a18005846e23aa7e65c0f13a63b7161753080134c45e3/rootasjey/tronche"
 promoted: true
 postedAt: "2026-10-25T22:16:55.952Z"
 ---

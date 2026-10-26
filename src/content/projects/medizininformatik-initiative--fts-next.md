@@ -11,20 +11,20 @@ languagePcts: [99]
 topics: ["deidentification", "fhir", "transfer"]
 stars: 14
 forks: 2
-openIssues: 23
-closedIssues: 427
+openIssues: 22
+closedIssues: 428
 watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-10-24T21:50:48Z"
+lastCommitAt: "2026-10-26T08:50:00Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
 undervaluedScore: 71
 maintainers: ["renovate[bot]", "trobanga", "knoppiks"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6ebc620849611c8922e87838cee22eb92cab765c32a986e89cf7412c6091438/medizininformatik-initiative/fts-next"
+openGraphImageUrl: "https://opengraph.githubassets.com/e573aec7087b4b193653b508cd86e779c72f4a9157a8548261c5cfb395e1d7c9/medizininformatik-initiative/fts-next"
 discussionCount: 18
 postedAt: "2026-08-10T05:09:50.501Z"
 ---

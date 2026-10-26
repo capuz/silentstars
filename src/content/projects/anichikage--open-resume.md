@@ -8,7 +8,7 @@ homepage: "https://justcv.org"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [94]
-stars: 17
+stars: 18
 forks: 1
 openIssues: 1
 closedIssues: 0
@@ -20,9 +20,9 @@ lastCommitAt: "2026-10-22T12:23:08Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 68
-undervaluedScore: 12
+undervaluedScore: 11
 maintainers: ["AniChikage"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b7cb33fe499fe0d1208735ea333ddb059c694d584f939204a7f96dc16d10f329/AniChikage/open-resume"
+openGraphImageUrl: "https://opengraph.githubassets.com/0a056723095a950dbc8f1113b4e8adcc8218d032ea9db4242e5a1c9e46c0ac23/AniChikage/open-resume"
 promoted: true
 postedAt: "2026-10-25T02:53:35.126Z"
 ---
