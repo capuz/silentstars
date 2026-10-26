@@ -1,0 +1,51 @@
+---
+repo: "Casper-Tech-ke/sportify-api"
+name: "sportify-api"
+description: "Free public Spotify data API — tracks, albums, artists, playlists and search. No API key or OAuth required. Built by CASPER TECH."
+readmeQualityOk: true
+url: "https://github.com/Casper-Tech-ke/sportify-api"
+homepage: "https://sportify.xcasper.space"
+language: "HTML"
+languages: ["HTML", "JavaScript"]
+languagePcts: [55, 45]
+stars: 9
+forks: 4
+openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 1
+recentReleases: 0
+createdAt: "2026-04-02T13:53:03Z"
+lastCommitAt: "2026-10-26T21:00:01Z"
+lastReleaseAt: "2026-04-02T17:20:45Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 80
+undervaluedScore: 57
+maintainers: ["Casper-Tech-ke"]
+openGraphImageUrl: "https://opengraph.githubassets.com/98fed574855a244d058badcd8cb23e2e16a25890c34ecb2035843d08b8e1ef76/Casper-Tech-ke/sportify-api"
+---
+
+# Sportify API
+
+> **Free, unlimited Spotify music data API. No API key, no OAuth, no sign-up required.**
+
+**Live API:** [https://sportify.xcasper.space](https://sportify.xcasper.space)
+
+---
+
+## What Is This?
+
+Sportify API is a free public REST API that gives developers instant access to Spotify music catalogue data — tracks, albums, artists, playlists and search — without needing a Spotify developer account, API key, or OAuth flow.
+
+It works by combining three data sources, falling through them in order until a result is found:
+
+1. **Spotify Embed Scraping** — parses the open embed pages which are publicly accessible and carry full metadata including thumbnails, track lists, and preview URLs
+2. **Spotify Partner GraphQL** — calls the internal Spotify GraphQL API using a TOTP-generated web-player token, used for search and richer playlist data (followers, owner info)
+3. **MusicBrainz + Wikidata fallback** — for artist and album lookups, queries the MusicBrainz URL API and Wikidata SPARQL (properties P1902 for artists, P1729 for albums) to resolve IDs when direct embeds are unavailable
+
+Built and maintained by **TRABY CASPER** under the **CASPER TECH** umbrella.
+
+---
+
+## Owner &…

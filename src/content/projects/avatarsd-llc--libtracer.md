@@ -11,7 +11,7 @@ languagePcts: [83]
 stars: 5
 forks: 0
 openIssues: 105
-closedIssues: 770
+closedIssues: 773
 watchers: 1
 contributors: 2
 recentReleases: 6

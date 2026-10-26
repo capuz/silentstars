@@ -17,14 +17,14 @@ watchers: 1
 contributors: 14
 recentReleases: 0
 createdAt: "2022-09-22T09:16:41Z"
-lastCommitAt: "2026-10-26T06:54:32Z"
+lastCommitAt: "2026-10-26T19:14:49Z"
 lastReleaseAt: "2023-08-09T09:31:07Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 90
 maintainers: ["joshiste", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0b8ae2f94580db9e88715ecf0c4db1c206d5a8746e68695ecd0e57617b762b7a/steadybit/extension-kubernetes"
+openGraphImageUrl: "https://opengraph.githubassets.com/0ebc9b20c25ef7f608c2096abb316cbafb054c064515dd16a26e48373b1d260b/steadybit/extension-kubernetes"
 postedAt: "2026-10-20T08:55:27.629Z"
 ---
 

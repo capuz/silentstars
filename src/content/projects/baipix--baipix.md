@@ -21,12 +21,13 @@ lastCommitAt: "2026-10-26T18:01:05Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 72
 maintainers: ["Todo-bai", "mykola-lp", "robertoponcepaniagua"]
 openGraphImageUrl: "https://opengraph.githubassets.com/14897d39f4ba453c8145133da5c6878ed86f971e10eb01d01ebe8632a0d06e11/baipix/baipix"
 discussionCount: 2
 promoted: true
+postedAt: "2026-10-26T18:14:02.761Z"
 ---
 
 # Baipix
