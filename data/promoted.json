@@ -54,5 +54,9 @@
   {
     "repo": "shiqicao/gh-pull",
     "until": "2026-11-25"
+  },
+  {
+    "repo": "baipix/baipix",
+    "until": "2026-11-25"
   }
 ]
