@@ -50,5 +50,9 @@
   {
     "repo": "rootasjey/tronche",
     "until": "2026-11-24"
+  },
+  {
+    "repo": "shiqicao/gh-pull",
+    "until": "2026-11-25"
   }
 ]
