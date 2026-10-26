@@ -17,14 +17,14 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2024-02-08T14:53:11Z"
-lastCommitAt: "2026-10-23T18:20:44Z"
+lastCommitAt: "2026-10-26T17:44:51Z"
 lastReleaseAt: "2026-05-04T21:26:21Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 91
-undervaluedScore: 51
+healthScore: 92
+undervaluedScore: 53
 maintainers: ["raylim"]
-openGraphImageUrl: "https://opengraph.githubassets.com/60d7e3d2b2922d87dc5422a2cdaef06ae298de7e9dae0afa7225f8ff9f8ac90e/pathology-data-mining/Mussel"
+openGraphImageUrl: "https://opengraph.githubassets.com/d12b6e0b2dda59a4add6ec948a88115bae7acb4cf6b93a17e9e4a74335b28b2e/pathology-data-mining/Mussel"
 postedAt: "2026-06-21T02:28:52.953Z"
 ---
 

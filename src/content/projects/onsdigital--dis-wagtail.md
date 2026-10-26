@@ -8,21 +8,21 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [93]
 stars: 13
-forks: 4
+forks: 5
 openIssues: 0
 closedIssues: 3
 watchers: 4
 contributors: 19
 recentReleases: 0
 createdAt: "2024-10-15T13:27:57Z"
-lastCommitAt: "2026-10-21T14:01:40Z"
+lastCommitAt: "2026-10-26T11:04:43Z"
 lastReleaseAt: "2026-02-23T11:32:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 97
-undervaluedScore: 71
+healthScore: 98
+undervaluedScore: 72
 maintainers: ["BJacksonONS", "dependabot[bot]", "MaciekBaron"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e7c72a6b61b9d2732f9706bfd2fada402a7f89fc584186ae494e34b73db08b53/ONSdigital/dis-wagtail"
+openGraphImageUrl: "https://opengraph.githubassets.com/6945e70689d172952fadff211e424fbf3a8230b98a75bfda7d47747e72687e03/ONSdigital/dis-wagtail"
 postedAt: "2026-08-27T14:36:22.780Z"
 ---
 

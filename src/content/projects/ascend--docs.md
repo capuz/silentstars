@@ -17,13 +17,13 @@ watchers: 4
 contributors: 28
 recentReleases: 0
 createdAt: "2024-05-24T11:19:03Z"
-lastCommitAt: "2026-10-26T08:04:05Z"
+lastCommitAt: "2026-10-26T12:45:42Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 96
 undervaluedScore: 78
-maintainers: ["hipudding", "licy666", "Devin-DC-Huang"]
-openGraphImageUrl: "https://opengraph.githubassets.com/87e08bea905bab3b9aa9402a8cc4cc2b7b337911ccf3160fdb44064ae8b17ecc/Ascend/docs"
+maintainers: ["hipudding", "Devin-DC-Huang", "licy666"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b9b554e4c551e13dd966222bd9dd212bf754dc9269e100eae94032722355c61c/Ascend/docs"
 postedAt: "2026-09-29T10:12:56.376Z"
 ---
 

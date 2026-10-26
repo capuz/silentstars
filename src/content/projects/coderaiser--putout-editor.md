@@ -18,7 +18,7 @@ recentReleases: 0
 createdAt: "2019-08-30T08:14:24Z"
 lastCommitAt: "2026-10-12T11:30:22Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "legacy_hero", "funded"]
 healthScore: 84
 undervaluedScore: 70

@@ -13,7 +13,7 @@ stars: 97
 forks: 7
 openIssues: 3
 closedIssues: 7
-watchers: 0
+watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-21T04:12:57Z"

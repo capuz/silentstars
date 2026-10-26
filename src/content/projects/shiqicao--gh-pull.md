@@ -8,7 +8,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [93]
 topics: ["gh-extension", "code-review", "code-reviews", "dashboard", "developer-tools", "github-cli", "github-cli-extension", "pr-dashboard", "pull-requests"]
-stars: 3
+stars: 4
 forks: 1
 openIssues: 0
 closedIssues: 2
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-10-24T22:55:18Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
-undervaluedScore: 73
+undervaluedScore: 70
 maintainers: ["shiqicao"]
-openGraphImageUrl: "https://opengraph.githubassets.com/42daaff722b81662b976187dc9c6833cc65453a382f57f9b96c21e6df7820a52/shiqicao/gh-pull"
+openGraphImageUrl: "https://opengraph.githubassets.com/ccc4267ac7207c4b85cb43cdc47af8695cc8ffed4d3df57b0b644bbb6dc2cefa/shiqicao/gh-pull"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-26T03:11:03.556Z"
