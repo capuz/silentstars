@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { graduateCandidates, buildTrails, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS } from './star-trails.ts';
+import { graduateCandidates, buildTrails, countGraduates, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS } from './star-trails.ts';
 import type { WeekEntry, History } from './weekly.ts';
 
 function entry(stars: number, status = 'quiet'): WeekEntry {
@@ -75,4 +75,13 @@ test('starsQuery: one aliased repository field per repo, names JSON-quoted', () 
 test('readStars: maps aliases back to repos, skipping missing (renamed/deleted) ones', () => {
   const stars = readStars(['o/a', 'o/b', 'o/c'], { r0: { stargazerCount: 7 }, r1: null, r2: { stargazerCount: 600 } });
   assert.deepEqual(stars, { 'o/a': 7, 'o/c': 600 });
+});
+
+test('countGraduates: counts only repos that pass the graduation rule', () => {
+  const h = history({
+    'a/rocket': [12, 40, null, null, null, null],
+    'a/near': [80, GRAD_FROM_MAX, null, null, null, null],
+    'a/long': [1, 2, 3, 4, 5, 6],
+  });
+  assert.equal(countGraduates(h, { checkedAt: '', stars: { 'a/rocket': 900, 'a/near': 2000 } }), 1);
 });

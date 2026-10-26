@@ -2,18 +2,12 @@
 // Star trails: each project is a point of light at the height of its GitHub stars,
 // trailing its weekly history (data/history.json). Graduates come from data/graduates.json.
 import { getCollection } from 'astro:content';
-import { existsSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
-import { buildTrails, MIN_WEEKS } from '../../scripts/star-trails.ts';
-import type { Graduates } from '../../scripts/star-trails.ts';
+import { buildTrails, loadGraduates, MIN_WEEKS } from '../../scripts/star-trails.ts';
 import type { History } from '../../scripts/weekly.ts';
 import historyJson from '../../data/history.json';
 
 const base = import.meta.env.BASE_URL;
-const graduatesPath = resolve('data/graduates.json');
-const graduates: Graduates = existsSync(graduatesPath)
-  ? JSON.parse(readFileSync(graduatesPath, 'utf8'))
-  : { checkedAt: '', stars: {} };
+const graduates = loadGraduates();
 // Discovered projects rotate out of the directory: link to GitHub when the page is gone.
 const slugs = new Map((await getCollection('projects')).map(p => [p.data.repo, p.slug]));
 const trails = buildTrails(historyJson as History, graduates, new Set(slugs.keys()));

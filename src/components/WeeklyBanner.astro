@@ -1,0 +1,79 @@
+---
+// Home teaser for /weekly/: the latest edition and how many projects graduated.
+import { listEditions, formatWeekRange } from '../../scripts/weekly.ts';
+import type { History } from '../../scripts/weekly.ts';
+import { countGraduates, loadGraduates, GRAD_STARS } from '../../scripts/star-trails.ts';
+import historyJson from '../../data/history.json';
+
+const history = historyJson as History;
+const latest = listEditions(history, new Date()).at(-1);
+const n = countGraduates(history, loadGraduates());
+const base = import.meta.env.BASE_URL;
+---
+{latest && (
+  <a class="wb" href={`${base}weekly/`}>
+    <p class="wb-kicker"><span aria-hidden="true">🗞️</span> This week · Issue #{latest.issue} · {formatWeekRange(latest.week)}</p>
+    <p class="wb-line">
+      {n === 1
+        ? `We spotted it under the radar. Now it flies past ${GRAD_STARS} ★.`
+        : `We spotted them under the radar. Now ${n} fly past ${GRAD_STARS} ★.`}
+    </p>
+    <p class="wb-sub">Find your project's star trail.</p>
+    <span class="wb-cta">See the trails →</span>
+  </a>
+)}
+
+<style>
+  .wb {
+    --st-ink: #070b18;
+    --st-line: #222c4d;
+    --st-fg: #e7e9f4;
+    --st-muted: #8e97b9;
+    --st-gold: #ffe4aa;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'kicker kicker' 'line cta' 'sub cta';
+    align-items: center;
+    gap: 4px 24px;
+    margin-block: 1.5rem 0.5rem;
+    padding: 20px 24px;
+    border: 1px solid var(--st-line);
+    border-radius: var(--radius);
+    color: var(--st-fg);
+    text-decoration: none;
+    background:
+      radial-gradient(1px 1px at 8% 22%, rgba(220,226,255,.7), transparent 60%),
+      radial-gradient(1px 1px at 23% 78%, rgba(220,226,255,.5), transparent 60%),
+      radial-gradient(1.5px 1.5px at 41% 15%, rgba(255,228,170,.8), transparent 60%),
+      radial-gradient(1px 1px at 57% 64%, rgba(220,226,255,.5), transparent 60%),
+      radial-gradient(1px 1px at 71% 30%, rgba(220,226,255,.6), transparent 60%),
+      radial-gradient(1.5px 1.5px at 86% 82%, rgba(220,226,255,.7), transparent 60%),
+      radial-gradient(1px 1px at 94% 12%, rgba(255,228,170,.7), transparent 60%),
+      linear-gradient(180deg, #05081a, #0a1029 55%, #101a38);
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .wb:hover, .wb:focus-visible {
+    text-decoration: none;
+    border-color: var(--st-gold);
+    box-shadow: 0 0 22px rgba(255,200,90,.22);
+  }
+  .wb:focus-visible { outline: 2px solid var(--st-gold); outline-offset: 2px; }
+  .wb p { margin: 0; }
+  .wb-kicker { grid-area: kicker; font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--st-gold); margin-bottom: 4px !important; }
+  .wb-line { grid-area: line; font-family: var(--f-display); font-style: italic; font-weight: 600; font-size: clamp(1.15rem, 2.4vw, 1.5rem); line-height: 1.25; text-wrap: balance; }
+  .wb-sub { grid-area: sub; font-size: 0.85rem; color: var(--st-muted); }
+  .wb-cta {
+    grid-area: cta;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--st-gold);
+    color: var(--st-ink);
+    font: 600 0.9rem var(--f-body);
+    white-space: nowrap;
+  }
+  @media (max-width: 680px) {
+    .wb { grid-template-columns: 1fr; grid-template-areas: 'kicker' 'line' 'sub' 'cta'; padding: 18px 16px; }
+    .wb-cta { margin-top: 10px; text-align: center; }
+  }
+  @media (prefers-reduced-motion: reduce) { .wb { transition: none; } }
+</style>

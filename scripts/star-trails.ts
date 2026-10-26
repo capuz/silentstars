@@ -2,6 +2,8 @@
 // at the height of its GitHub stars. Graduates are the ones we last measured small
 // that have since crossed GRAD_STARS; their stars today come from data/graduates.json
 // (scripts/graduates.ts, nightly), since they left the directory long ago.
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import type { History } from './weekly.ts';
 
 export const GRAD_STARS = 500;
@@ -76,6 +78,16 @@ export function buildTrails(history: History, graduates: Graduates, withPage: Se
     repos.push(trail);
   }
   return { weeks, gradStars: GRAD_STARS, repos };
+}
+
+export function countGraduates(history: History, graduates: Graduates): number {
+  return buildTrails(history, graduates, new Set()).repos.filter(r => r.g).length;
+}
+
+/** data/graduates.json, relative to the working directory (the build runs from the repo root). */
+export function loadGraduates(): Graduates {
+  const path = resolve('data/graduates.json');
+  return existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : { checkedAt: '', stars: {} };
 }
 
 /** One GraphQL query asking the star count of every repo, aliased r0..rN. */
