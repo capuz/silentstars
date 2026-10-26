@@ -1,0 +1,494 @@
+---
+// Star trails: each project is a point of light at the height of its GitHub stars,
+// trailing its weekly history (data/history.json). Graduates come from data/graduates.json.
+import { getCollection } from 'astro:content';
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { buildTrails, MIN_WEEKS } from '../../scripts/star-trails.ts';
+import type { Graduates } from '../../scripts/star-trails.ts';
+import type { History } from '../../scripts/weekly.ts';
+import historyJson from '../../data/history.json';
+
+const base = import.meta.env.BASE_URL;
+const graduatesPath = resolve('data/graduates.json');
+const graduates: Graduates = existsSync(graduatesPath)
+  ? JSON.parse(readFileSync(graduatesPath, 'utf8'))
+  : { checkedAt: '', stars: {} };
+// Discovered projects rotate out of the directory: link to GitHub when the page is gone.
+const slugs = new Map((await getCollection('projects')).map(p => [p.data.repo, p.slug]));
+const trails = buildTrails(historyJson as History, graduates, new Set(slugs.keys()));
+const data = {
+  ...trails,
+  repos: trails.repos.map(t => ({ ...t, h: t.p ? `${base}projects/${slugs.get(t.r)}/` : `https://github.com/${t.r}` })),
+};
+const first = trails.weeks[0]?.replace(/^\d+-/, '');
+const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
+---
+<section class="st" aria-labelledby="st-title" data-min-weeks={MIN_WEEKS}>
+  <header class="st-head">
+    <h2 id="st-title">Star <em>trails</em></h2>
+    <p class="st-sub">Flying high, under the radar.</p>
+  </header>
+
+  <div class="st-stage" id="st-stage">
+    <canvas id="st-sky" role="img" aria-label={`Animation: each project is a point of light at the height of its GitHub stars, leaving a trail as the weeks pass from ${first} to ${last}.`}></canvas>
+    <div class="st-tip" id="st-tip" hidden></div>
+  </div>
+
+  <div class="st-caption" aria-live="polite">
+    <div class="st-age" id="st-age"></div>
+    <div class="st-text" id="st-text"></div>
+  </div>
+
+  <div class="st-controls">
+    <button class="primary" id="st-play" type="button">Pause</button>
+    <button id="st-restart" type="button">Restart</button>
+    <div class="st-speed" role="group" aria-label="Speed">
+      <button type="button" data-s="0.5" aria-pressed="false">0.5×</button>
+      <button type="button" data-s="1" aria-pressed="true">1×</button>
+      <button type="button" data-s="2" aria-pressed="false">2×</button>
+    </div>
+    <input id="st-scrub" type="range" min="0" step="0.01" value="0" aria-label="Timeline">
+  </div>
+
+  <form class="st-find" id="st-find" role="search">
+    <label for="st-q">Find your project</label>
+    <input id="st-q" list="st-repos" placeholder="owner/repo" autocomplete="off" spellcheck="false">
+    <datalist id="st-repos">{data.repos.map(t => <option value={t.r} />)}</datalist>
+    <button type="submit">Show trail</button>
+    <p class="st-found" id="st-found" hidden></p>
+  </form>
+
+  <div class="st-legend" id="st-legend"></div>
+  <script type="application/json" id="st-data" set:html={JSON.stringify(data)} />
+</section>
+
+<style>
+  .st {
+    --st-ink: #070b18;
+    --st-ink-2: #0e1631;
+    --st-line: #222c4d;
+    --st-fg: #e7e9f4;
+    --st-muted: #8e97b9;
+    --st-gold: #ffe4aa;
+    display: grid;
+    gap: 14px;
+    margin-bottom: 2.5rem;
+    padding: 20px;
+    border-radius: var(--radius);
+    background: var(--st-ink);
+    color: var(--st-fg);
+  }
+  @media (max-width: 680px) { .st { padding: 14px; } }
+  .st-head { display: grid; gap: 2px; }
+  .st h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.05; margin: 0; color: var(--st-fg); }
+  .st h2 em { color: var(--st-gold); font-style: italic; }
+  .st-sub { margin: 0; font-family: var(--f-display); font-style: italic; font-size: 17px; color: var(--st-muted); }
+  .st-stage { position: relative; border-radius: 6px; overflow: hidden; border: 1px solid var(--st-line); background: var(--st-ink); }
+  canvas { display: block; width: 100%; touch-action: none; }
+  .st-tip { position: absolute; pointer-events: none; background: var(--st-ink-2); border: 1px solid var(--st-line); color: var(--st-fg); font: 12px/1.45 var(--f-mono); padding: 7px 10px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 12px)); }
+  .st-caption { display: flex; align-items: baseline; gap: 16px; min-height: 2.4em; flex-wrap: wrap; }
+  .st-age { font-family: var(--f-mono); font-size: 13px; color: var(--st-gold); font-variant-numeric: tabular-nums; min-width: 6.5em; letter-spacing: .02em; }
+  .st-text { font-family: var(--f-display); font-style: italic; font-size: clamp(18px, 2.4vw, 22px); line-height: 1.25; min-width: 0; flex: 1; text-wrap: balance; }
+  .st-text.in { animation: st-rise .9s ease both; }
+  @keyframes st-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  .st-controls, .st-find { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .st button { font: 500 14px var(--f-body); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+  .st button:hover { border-color: var(--st-muted); }
+  .st button:focus-visible, .st input:focus-visible, .st a:focus-visible { outline: 2px solid var(--st-gold); outline-offset: 2px; }
+  .st button.primary { background: var(--st-gold); color: var(--st-ink); border-color: var(--st-gold); min-width: 8.5em; }
+  .st-speed { display: inline-flex; border: 1px solid var(--st-line); border-radius: 999px; overflow: hidden; }
+  .st-speed button { border: 0; border-radius: 0; padding: 8px 12px; background: transparent; color: var(--st-muted); font-family: var(--f-mono); font-size: 13px; }
+  .st-speed button[aria-pressed="true"] { background: var(--st-ink-2); color: var(--st-gold); }
+  #st-scrub { flex: 1 1 200px; min-width: 0; accent-color: var(--st-gold); }
+  .st-find label { font-family: var(--f-mono); font-size: 12px; color: var(--st-muted); }
+  .st-find input { flex: 1 1 220px; min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
+  .st-found { flex-basis: 100%; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
+  .st-found a { color: var(--st-gold); }
+  .st-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--st-muted); border-top: 1px solid var(--st-line); padding-block: 12px 0; }
+  .st-legend :global(span) { display: inline-flex; align-items: center; gap: 7px; }
+  .st-legend :global(i) { width: 7px; height: 7px; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px currentColor; }
+  @media (prefers-reduced-motion: reduce) { .st-text.in { animation: none; } }
+</style>
+
+<script>
+  const root = document.querySelector('.st') as HTMLElement;
+  const DATA = JSON.parse(document.getElementById('st-data')!.textContent!);
+  const MIN_WEEKS = Number(root.dataset.minWeeks);
+  const $ = (id: string) => document.getElementById(id) as any;
+  const cvs = $('st-sky') as HTMLCanvasElement, ctx = cvs.getContext('2d')!, stage = $('st-stage');
+  const tip = $('st-tip');
+  const NW = DATA.weeks.length, LAST = NW - 1, T_END = LAST + 1.2;
+  const wk = (i: number) => DATA.weeks[Math.max(0, Math.min(LAST, Math.round(i)))].replace(/^\d+-/, '');
+
+  const STATUS = ['thriving', 'newborn', 'quiet', 'at_risk', 'watched', 'graduated'];
+  const C: Record<string, number[]> = { thriving: [150, 240, 200], newborn: [150, 200, 255], quiet: [235, 215, 175], at_risk: [255, 150, 160], watched: [196, 176, 255], graduated: [255, 200, 90] };
+  // the graduation rule itself lives in scripts/star-trails.ts; this only draws it
+  const GRAD_STARS = DATA.gradStars;
+  const CLIMB_MIN = 5, SOAR_MIN = 50; // weekly gains worth a caption: climbs / soars
+  const LABEL: Record<string, string> = { thriving: 'Thriving', newborn: 'Newborn', quiet: 'Quiet', at_risk: 'At risk', watched: 'Watched', graduated: `Graduated (past ${GRAD_STARS} ★)` };
+  const rgba = (c: number[], a: number) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
+  const sIdx = (s: string) => Math.max(0, STATUS.indexOf(s));
+  $('st-legend').innerHTML = STATUS.map(k => `<span><i style="color:${rgba(C[k], 1)};background:${rgba(C[k], 1)}"></i>${LABEL[k]}</span>`).join('');
+
+  function rng(seed: number) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  const R = rng(7);
+
+  // g = graduate: m = the weeks we actually measured it, its last point is today's
+  // GitHub count, and nothing was measured in between.
+  const repos = DATA.repos.map(({ r, s, g, m, h }: any) => {
+    const pts = Array.from({ length: NW }, (_, i) => s[i] ? { stars: s[i][0], status: s[i][1] } : null);
+    const idx = pts.map((p, i) => p ? i : -1).filter(i => i >= 0);
+    const measured = m || idx, lastSeen = measured[measured.length - 1];
+    return { repo: r, name: r.split('/')[1], href: h, pts, first: idx[0], last: idx[idx.length - 1], wob: R() * 6.283, lastSeen,
+      grad: !!g, seenStars: pts[lastSeen]!.stars, gain: pts[idx[idx.length - 1]]!.stars - pts[idx[0]]!.stars } as any;
+  });
+  const byRepo = new Map(repos.map((p: any) => [p.repo.toLowerCase(), p]));
+  const maxStars = Math.max(...repos.flatMap((r: any) => r.pts.filter(Boolean).map((p: any) => p.stars)));
+  const grads = repos.filter((r: any) => r.grad);
+  const named = new Set([...[...grads].sort((a, b) => b.gain - a.gain).slice(0, 8), ...repos.filter((r: any) => !r.grad).sort((a: any, b: any) => b.gain - a.gain).slice(0, 3)]);
+
+  // captions: the week's biggest climber, plus arrivals
+  const events: string[] = [];
+  for (let i = 0; i < NW; i++) {
+    let best: any = null, bd = 0, arrivals = 0;
+    for (const r of repos) {
+      if (r.first === i && i > 0) arrivals++;
+      const a = r.pts[i - 1], b = r.pts[i];
+      if (a && b && b.status !== 'graduated' && b.stars - a.stars > bd) { bd = b.stars - a.stars; best = r; }
+    }
+    let txt = i === 0 ? `The sky so far: ${repos.filter((r: any) => r.first === 0).length} projects already shining.` :
+      best && bd >= SOAR_MIN ? `${best.name} soars ${bd} stars this week.` :
+      best && bd >= CLIMB_MIN ? `${best.name} climbs ${bd} stars this week.` :
+      arrivals ? `${arrivals} new ${arrivals === 1 ? 'project joins' : 'projects join'} the sky.` : 'A quiet week. Most stars hold their place.';
+    if (i > 0 && best && bd >= CLIMB_MIN && arrivals) txt += ` ${arrivals} new ${arrivals === 1 ? 'arrival' : 'arrivals'}.`;
+    if (i === LAST) txt = grads.length === 1
+      ? `We spotted it under the radar. Now it flies past ${GRAD_STARS} ★.`
+      : `We spotted them under the radar. Now ${grads.length} fly past ${GRAD_STARS} ★.`;
+    events.push(txt);
+  }
+
+  // ---- per-project functions of time (used only to precompute paths) ----
+  const smooth = (u: number) => u * u * (3 - 2 * u);
+  function starsAt(p: any, t: number) {
+    if (t < p.first || t > p.last + .999) return null;
+    let i = Math.min(Math.floor(t), p.last), j = i + 1;
+    while (i > p.first && !p.pts[i]) i--;
+    while (j <= p.last && !p.pts[j]) j++;
+    const a = p.pts[i], b = p.pts[j] || a;
+    const u = j > p.last ? 0 : smooth(Math.max(0, Math.min(1, (t - i) / (j - i))));
+    // interpolate in log space so long gaps look straight on the log axis
+    const la = Math.log10(Math.max(1, a.stars)), lb = Math.log10(Math.max(1, b.stars));
+    return 10 ** (la + (lb - la) * u);
+  }
+  function statusAt(p: any, t: number) {
+    if (p.grad && starsAt(p, t)! >= GRAD_STARS) return 'graduated';
+    for (let i = Math.min(p.lastSeen, Math.floor(t)); i >= p.first; i--) if (p.pts[i]) return p.pts[i].status;
+    return p.pts[p.first].status;
+  }
+  function aAt(p: any, t: number) {
+    let a = 1;
+    if (p.first > 0) a = Math.min(a, (t - p.first) / .6);
+    if (p.last < LAST) a = Math.min(a, (p.last + 1 - t) / .6);
+    return Math.max(0, Math.min(1, a));
+  }
+  const jit = (p: any, t: number) => 3 * Math.sin(t * 1.3 + p.wob * 3);
+  const wav = (p: any, t: number) => 1.6 * Math.sin(t * 2.1 + p.wob);
+
+  // ---- geometry + precomputed paths ----
+  const STEP = .125, BANDS = 6, MOVED = 2;
+  const MONO = '10px "Space Mono", ui-monospace, monospace';
+  let W = 0, H = 0, dpr = 1, headX = 0, ppw = 0, win = 0, top = 0, bot = 0, bgCanvas: HTMLCanvasElement;
+  const yS = (s: number) => { const v = Math.log10(Math.max(1, s)) / Math.log10(maxStars * 1.3); return bot - v * (bot - top); };
+
+  const bg: any[] = [];
+  for (let i = 0; i < 190; i++) bg.push({ x: R(), y: R(), s: R() * 1.1 + .3, ph: R() * 6.28, sp: .6 + R() * 1.6 });
+  const twinkle = bg.slice(0, 30);
+
+  // one pre-rendered glow sprite per status colour
+  const sprites = STATUS.map(k => {
+    const c = document.createElement('canvas'); c.width = c.height = 64;
+    const g = c.getContext('2d')!, gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    gr.addColorStop(0, rgba(C[k], 1)); gr.addColorStop(1, rgba(C[k], 0));
+    g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+    return c;
+  });
+
+  function layout() {
+    const w = stage.clientWidth;
+    let h = w < 640 ? w * 1.15 : w * 0.56;
+    h = Math.max(340, Math.min(h, innerHeight * 0.78));
+    W = w; H = h; dpr = Math.min(1.5, devicePixelRatio || 1);
+    cvs.width = Math.round(w * dpr); cvs.height = Math.round(h * dpr); cvs.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    headX = W * (W < 640 ? 0.66 : 0.62);
+    ppw = W < 640 ? W / 9 : W / 18;
+    win = headX / ppw;
+    top = 26; bot = H - 30;
+
+    // static sky: gradient, still stars, star-count guides
+    bgCanvas = document.createElement('canvas');
+    bgCanvas.width = cvs.width; bgCanvas.height = cvs.height;
+    const b = bgCanvas.getContext('2d')!; b.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const g = b.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, '#05081a'); g.addColorStop(.45, '#0a1029'); g.addColorStop(1, '#101a38');
+    b.fillStyle = g; b.fillRect(0, 0, W, H);
+    b.fillStyle = 'rgba(220,226,255,0.2)';
+    for (const s of bg.slice(30)) b.fillRect(s.x * W, s.y * H, s.s, s.s);
+    b.font = MONO; b.textAlign = 'left'; b.textBaseline = 'middle';
+    for (const s of [1, 10, 100, 1000, 10000]) {
+      if (s > maxStars * 1.3) continue;
+      const y = yS(s);
+      b.strokeStyle = 'rgba(140,150,190,0.10)'; b.lineWidth = 1;
+      b.beginPath(); b.moveTo(0, y); b.lineTo(W, y); b.stroke();
+      b.fillStyle = 'rgba(160,170,205,0.55)'; b.fillText((s >= 1000 ? s / 1000 + 'k' : s) + ' ★', 8, y - 7);
+    }
+    // the graduation line
+    const gy = yS(GRAD_STARS);
+    b.strokeStyle = rgba(C.graduated, .45); b.setLineDash([6, 6]);
+    b.beginPath(); b.moveTo(0, gy); b.lineTo(W, gy); b.stroke(); b.setLineDash([]);
+    b.fillStyle = rgba(C.graduated, .85); b.fillText(`graduated · ${GRAD_STARS} ★`, 8, gy - 7);
+
+    for (const p of repos) {
+      const n = Math.floor((p.last + .999 - p.first) / STEP) + 1;
+      p.ys = new Float32Array(n); p.js = new Float32Array(n); p.as = new Float32Array(n); p.cs = new Uint8Array(n);
+      p.gap = new Uint8Array(n); // 1 = between our last sighting and today: no measurements
+      for (let k = 0; k < n; k++) {
+        const tt = p.first + k * STEP;
+        p.ys[k] = yS(starsAt(p, tt)!) + wav(p, tt); p.js[k] = jit(p, tt); p.as[k] = aAt(p, tt); p.cs[k] = sIdx(statusAt(p, tt));
+        p.gap[k] = p.grad && tt > p.lastSeen ? 1 : 0;
+      }
+    }
+  }
+  // fonts change text metrics in the static layer
+  document.fonts?.ready.then(layout);
+
+  // a project "moved" if its stars changed by MOVED+ within the visible window
+  function moved(p: any, t: number) {
+    let lo = Infinity, hi = -Infinity;
+    for (let i = Math.max(p.first, Math.floor(t - win)); i <= Math.min(p.last, Math.floor(t)); i++) {
+      const q = p.pts[i]; if (!q) continue;
+      if (q.stars < lo) lo = q.stars; if (q.stars > hi) hi = q.stars;
+    }
+    return hi - lo >= MOVED;
+  }
+
+  // head position at exact time t (between samples)
+  function head(p: any, t: number) {
+    if (t < p.first || t > p.last + .999) return null;
+    const f = (t - p.first) / STEP, k = Math.min(p.ys.length - 1, Math.floor(f)), k2 = Math.min(p.ys.length - 1, k + 1), u = f - k;
+    return { x: headX + p.js[k] + (p.js[k2] - p.js[k]) * u, y: p.ys[k] + (p.ys[k2] - p.ys[k]) * u, a: p.as[k], c: p.cs[k] };
+  }
+
+  function drawTrail(p: any, t: number, hl: boolean, h: any) {
+    const kEnd = Math.min(p.ys.length - 1, Math.floor((t - p.first) / STEP));
+    const kStart = Math.max(0, Math.ceil((t - win - p.first) / STEP));
+    if (kEnd - kStart < 1) return;
+    const X = (k: number) => headX + p.js[k] + (p.first + k * STEP - t) * ppw;
+    if (!hl && !moved(p, t)) {
+      ctx.strokeStyle = rgba(C[STATUS[p.cs[kEnd]]], .16 * h.a); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(X(kStart), p.ys[kStart]);
+      for (let k = kStart + 4; k < kEnd; k += 4) ctx.lineTo(X(k), p.ys[k]);
+      ctx.lineTo(h.x, h.y); ctx.stroke();
+      return;
+    }
+    const span = kEnd - kStart;
+    ctx.lineWidth = hl ? 2 : 1.1;
+    for (let b = 0; b < BANDS; b++) {
+      const from = kStart + Math.floor(span * b / BANDS), to = b === BANDS - 1 ? kEnd : kStart + Math.floor(span * (b + 1) / BANDS);
+      if (to <= from && b < BANDS - 1) continue;
+      const mid = (from + to) >> 1, age = (t - (p.first + mid * STEP)) / win;
+      const a = Math.pow(Math.max(0, 1 - age), 1.4) * p.as[mid] * (hl ? .95 : .55);
+      if (a < .01) continue;
+      ctx.strokeStyle = rgba(C[STATUS[p.cs[to]]], a);
+      // split the band into runs: solid where measured, dotted across the unmeasured gap
+      let k = from;
+      while (k < to) {
+        const g = p.gap[k + 1];
+        ctx.setLineDash(g ? [2, 5] : []);
+        ctx.globalAlpha = g ? .7 : 1;
+        ctx.beginPath(); ctx.moveTo(X(k), p.ys[k]);
+        while (k < to && p.gap[k + 1] === g) { k++; ctx.lineTo(X(k), p.ys[k]); }
+        if (k === to && b === BANDS - 1) ctx.lineTo(h.x, h.y);
+        ctx.stroke();
+      }
+      ctx.setLineDash([]); ctx.globalAlpha = 1;
+    }
+  }
+
+  // hover follows the pointer; pinned is the project picked in "Find your project"
+  let heads: any[] = [], hover: any = null, pinned: any = null;
+  function draw(t: number, clock: number) {
+    ctx.drawImage(bgCanvas, 0, 0, W, H);
+    for (const s of twinkle) {
+      ctx.fillStyle = `rgba(220,226,255,${(.12 + .2 * (.5 + .5 * Math.sin(clock * s.sp + s.ph)))})`;
+      ctx.fillRect(s.x * W, s.y * H, s.s, s.s);
+    }
+
+    // week ticks
+    ctx.font = MONO;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+    ctx.strokeStyle = 'rgba(140,150,190,0.12)'; ctx.lineWidth = 1; ctx.setLineDash([2, 5]);
+    ctx.fillStyle = 'rgba(160,170,205,0.5)';
+    const step = W < 640 ? 2 : 1;
+    ctx.beginPath();
+    for (let i = Math.max(0, Math.ceil(t - win)); i <= Math.min(LAST, t); i++) {
+      if (i % step) continue;
+      const x = headX + (i - t) * ppw;
+      ctx.moveTo(x, top - 10); ctx.lineTo(x, H - 20);
+      ctx.fillText(wk(i), x, H - 8);
+    }
+    ctx.stroke(); ctx.setLineDash([]);
+
+    heads = [];
+    for (const p of repos) { const h = head(p, t); if (h && h.a > 0) heads.push({ p, ...h }); }
+
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    const focus = new Set([hover, pinned].filter(Boolean));
+    const fhs: any[] = [];
+    for (const h of heads) { if (focus.has(h.p)) fhs.push(h); else drawTrail(h.p, t, false, h); }
+    for (const fh of fhs) drawTrail(fh.p, t, true, fh);
+
+    // arrivals: a ring where a project first appears
+    ctx.lineWidth = 1.2;
+    for (const h of heads) {
+      const p = h.p;
+      if (!(p.first > 0 && t < p.first + 1.2)) continue;
+      const u = (t - p.first) / 1.2;
+      ctx.strokeStyle = rgba(C[STATUS[h.c]], .6 * (1 - u));
+      ctx.beginPath(); ctx.arc(headX + p.js[0] + (p.first - t) * ppw, p.ys[0], 3 + u * 22, 0, 6.2832); ctx.stroke();
+    }
+
+    // glows (sprites) then dots, batched per colour
+    ctx.globalCompositeOperation = 'lighter';
+    for (const h of heads) {
+      const r = focus.has(h.p) ? 14 : 8, tw = .85 + .15 * Math.sin(clock * 1.7 + h.p.wob * 5);
+      ctx.globalAlpha = .35 * h.a * tw;
+      ctx.drawImage(sprites[h.c], h.x - r, h.y - r, r * 2, r * 2);
+    }
+    ctx.globalAlpha = 1;
+    for (let c = 0; c < STATUS.length; c++) {
+      ctx.fillStyle = rgba(C[STATUS[c]], 1);
+      ctx.beginPath();
+      for (const h of heads) {
+        if (h.c !== c) continue;
+        if (h.a < 1) { ctx.globalAlpha = h.a; ctx.fill(); ctx.beginPath(); }
+        const r = focus.has(h.p) ? 2.8 : 2;
+        ctx.moveTo(h.x + r, h.y); ctx.arc(h.x, h.y, r, 0, 6.2832);
+        if (h.a < 1) { ctx.fill(); ctx.globalAlpha = 1; ctx.beginPath(); }
+      }
+      ctx.fill();
+    }
+    ctx.globalCompositeOperation = 'source-over';
+
+    ctx.font = '500 11px "Hanken Grotesk", system-ui, sans-serif'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    // skip a label that would sit on top of one already drawn
+    let lastLabelY = -Infinity;
+    for (const h of heads.filter(h => named.has(h.p) || focus.has(h.p)).sort((a, b) => a.y - b.y)) {
+      if (!focus.has(h.p) && h.y - lastLabelY < 12) continue;
+      lastLabelY = h.y;
+      ctx.fillStyle = rgba(C[STATUS[h.c]], .85 * h.a);
+      ctx.fillText(h.p.name, Math.min(h.x + 9, W - ctx.measureText(h.p.name).width - 6), h.y);
+    }
+  }
+
+  // ---- clock & UI ----
+  const playBtn = $('st-play'), scrub = $('st-scrub');
+  const ageEl = $('st-age'), textEl = $('st-text');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  scrub.max = T_END;
+  let t = reduce ? LAST : 0, playing = !reduce, speed = 1, last: number | null = null, clock = 0, dragging = false, evIdx = -1;
+
+  function setPlaying(v: boolean) { playing = v; playBtn.textContent = t >= T_END ? 'Watch again' : (playing ? 'Pause' : 'Play'); }
+  playBtn.addEventListener('click', () => { if (t >= T_END) { t = 0; setPlaying(true); return; } setPlaying(!playing); });
+  $('st-restart').addEventListener('click', () => { t = 0; setPlaying(true); });
+  root.querySelectorAll<HTMLButtonElement>('.st-speed button').forEach(b => b.addEventListener('click', () => {
+    speed = +b.dataset.s!;
+    root.querySelectorAll('.st-speed button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+  }));
+  let wasPlaying = false;
+  scrub.addEventListener('pointerdown', () => { dragging = true; wasPlaying = playing; setPlaying(false); });
+  scrub.addEventListener('input', () => { t = +scrub.value; setPlaying(false); });
+  scrub.addEventListener('change', () => { dragging = false; setPlaying(wasPlaying && t < T_END); });
+
+  function nearest(e: PointerEvent | MouseEvent) {
+    const rect = cvs.getBoundingClientRect(), mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    let best = null, bd = 16 * 16;
+    for (const h of heads) { const d = (h.x - mx) ** 2 + (h.y - my) ** 2; if (d < bd) { bd = d; best = h; } }
+    return best;
+  }
+  cvs.addEventListener('pointermove', e => {
+    const best = nearest(e);
+    hover = best && best.p;
+    cvs.style.cursor = best ? 'pointer' : '';
+    if (best) {
+      const rect = cvs.getBoundingClientRect();
+      const now = Math.min(LAST, Math.floor(t)), prev = best.p.pts[now - 1], cur = best.p.pts[now];
+      const d = prev && cur ? cur.stars - prev.stars : null;
+      const s = starsAt(best.p, Math.min(t, best.p.last + .999))!;
+      tip.innerHTML = best.p.grad
+        ? `${best.p.repo}<br>seen at ${best.p.seenStars} ★ in ${wk(best.p.lastSeen)} · today ${best.p.pts[best.p.last].stars} ★`
+        : `${best.p.repo}<br>${Math.round(s)} ★${d != null ? ` · ${d >= 0 ? '+' : ''}${d} this week` : ''} · ${LABEL[STATUS[best.c]]}`;
+      tip.hidden = false; tip.style.left = Math.max(130, Math.min(rect.width - 130, best.x)) + 'px'; tip.style.top = best.y + 'px';
+    } else tip.hidden = true;
+  });
+  cvs.addEventListener('pointerleave', () => { hover = null; tip.hidden = true; cvs.style.cursor = ''; });
+  // a dot opens its project page (GitHub when the page has rotated out)
+  cvs.addEventListener('click', e => { const best = nearest(e); if (best) location.href = best.p.href; });
+
+  // ---- "Find your project": #trail=owner/repo highlights one trail, shareable ----
+  const found = $('st-found'), q = $('st-q');
+  function esc(s: string) { return s.replace(/[&<>"']/g, c => `&#${c.charCodeAt(0)};`); }
+  function pin(repo: string) {
+    const key = repo.trim().replace(/^https?:\/\/github\.com\//i, '').replace(/\/+$/, '');
+    if (!key) return;
+    const p: any = byRepo.get(key.toLowerCase());
+    pinned = p || null;
+    found.hidden = false;
+    if (!p) {
+      found.textContent = `${key} is not on the chart yet: a trail needs ${MIN_WEEKS} weeks of measurements.`;
+      return;
+    }
+    q.value = p.repo;
+    history.replaceState(null, '', `#trail=${p.repo}`);
+    const lastPt = p.pts[p.last];
+    const story = p.grad
+      ? `seen at ${p.seenStars} ★ in ${wk(p.lastSeen)}, ${lastPt.stars} ★ today`
+      : `${p.pts[p.first].stars} ★ in ${wk(p.first)} → ${lastPt.stars} ★ in ${wk(p.last)}`;
+    found.innerHTML = `${esc(p.repo)}: ${story} · <a href="${esc(p.href)}">open project</a>`;
+    // play its whole trail again, unless motion is reduced
+    if (!reduce) { t = Math.max(0, p.first - .5); setPlaying(true); }
+  }
+  $('st-find').addEventListener('submit', (e: Event) => { e.preventDefault(); pin(q.value); });
+  const fromHash = () => { const m = location.hash.match(/^#trail=(.+)$/); if (m) pin(decodeURIComponent(m[1])); };
+
+  function syncUI() {
+    if (!dragging) scrub.value = t;
+    const i = Math.min(LAST, Math.floor(t));
+    ageEl.textContent = wk(i);
+    if (i !== evIdx) { evIdx = i; textEl.textContent = events[i]; textEl.classList.remove('in'); void textEl.offsetWidth; textEl.classList.add('in'); }
+  }
+
+  // don't burn frames while the chart is scrolled out of view
+  let visible = true, rafId = 0;
+  function frame(ts: number) {
+    if (last == null) last = ts;
+    const raw = (ts - last) / 1000, dt = Math.min(.05, raw); last = ts;
+    clock += dt;
+    if (playing) { t += dt * .55 * speed; if (t >= T_END) { t = T_END; setPlaying(false); } }
+    draw(Math.min(t, LAST + .999), clock);
+    syncUI();
+    rafId = visible ? requestAnimationFrame(frame) : 0;
+  }
+  new IntersectionObserver(([en]) => {
+    visible = en.isIntersecting;
+    if (visible && !rafId) { last = null; rafId = requestAnimationFrame(frame); }
+  }).observe(stage);
+
+  layout();
+  addEventListener('resize', layout);
+  setPlaying(playing);
+  fromHash();
+  addEventListener('hashchange', fromHash);
+  rafId = requestAnimationFrame(frame);
+</script>

@@ -12,6 +12,7 @@ data/*
 !data/community-tags.txt
 !data/discovered.json
 !data/discovery.config.json
+!data/graduates.json
 !data/hashtag-scores.json
 !data/history.json
 !data/latest.json

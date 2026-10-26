@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import WeeklyEdition from '../../components/WeeklyEdition.astro';
+import StarTrails from '../../components/StarTrails.astro';
 import { listEditions, formatWeekRange } from '../../../scripts/weekly.ts';
 import type { History } from '../../../scripts/weekly.ts';
 import historyJson from '../../../data/history.json';
@@ -29,6 +30,8 @@ const base = import.meta.env.BASE_URL;
         </p>
       )}
     </header>
+
+    <StarTrails />
 
     {latest ? <WeeklyEdition edition={latest} /> : <p class="empty">// first edition coming Monday.</p>}
 

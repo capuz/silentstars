@@ -137,6 +137,15 @@ jobs:
       - name: Update weekly history
         run: npm run history
 
+      # Today's stars for projects we last measured small and no longer track,
+      # for the graduates in the /weekly/ star trails (data/graduates.json).
+      - name: Check graduates
+        run: npm run graduates
+        # A nicety like the notes below: a failed night keeps yesterday's file.
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # One Claude call per closed edition still missing its one-line notes
       # (data/weekly-notes.json); skipped without the subscription secret.
       - name: Write weekly notes
@@ -156,7 +165,7 @@ jobs:
           # from it, and any file it touches but we don't stage blocks the
           # pull --rebase below ("You have unstaged changes", 3 nights of
           # failures starting when KoalaSync's 30-day entry expired 2026-07-26).
-          git add data/latest.json data/discovered.json data/promoted.json data/translations.json src/content/projects/ data/posted.json data/history.json data/weekly-notes.json
+          git add data/latest.json data/discovered.json data/promoted.json data/translations.json src/content/projects/ data/posted.json data/history.json data/weekly-notes.json data/graduates.json
           git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
           # pull --rebase before pushing: reruns are pinned to the original
           # commit, so main may have moved and a bare push is rejected as
