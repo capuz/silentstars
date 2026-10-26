@@ -11,20 +11,20 @@ languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 1
-openIssues: 27
-closedIssues: 123
+openIssues: 29
+closedIssues: 124
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-10-25T14:31:37Z"
+lastCommitAt: "2026-10-26T01:15:13Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 89
 undervaluedScore: 83
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9932161a6acde94a5710228548f1aeeb0d3c3e5a87531085b953453781d93544/nattokin/go-backlog"
+openGraphImageUrl: "https://opengraph.githubassets.com/2817fd21c3db9496188a63102941c49103c3049af0808527e406f8e19eb96905/nattokin/go-backlog"
 postedAt: "2026-10-25T08:46:46.552Z"
 ---
 
@@ -52,14 +52,12 @@ go get github.com/nattokin/go-backlog
 
 ## Examples
 
+The client authenticates with a Backlog [API key](https://developer.nulab.com/docs/backlog/auth/#api-key), which is sent in the `Backlog-API-Key` request header. OAuth 2.0 access tokens are not supported.
+
 ```go
 c, err := backlog.NewClient(
     os.Getenv("BACKLOG_BASE_URL"),
-    os.Getenv("BACKLOG_TOKEN"),
+    os.Getenv("BACKLOG_API_KEY"),
 )
 
-// Get all Wiki pages in a project.
-wikis, err := c.Wiki.List(context.Background(), "MYPROJECT")
-
-// Filter by keyword using an option.
-wikis, err = c.Wiki.List(context.Background(), "MYPROJECT",…
+// Get all…

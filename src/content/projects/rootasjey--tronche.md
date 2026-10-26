@@ -7,7 +7,7 @@ url: "https://github.com/rootasjey/tronche"
 homepage: "https://tronche.cc/"
 language: "TypeScript"
 languages: ["TypeScript", "Vue"]
-languagePcts: [61, 32]
+languagePcts: [62, 32]
 topics: ["avatars", "cloudflare-workers", "nuxt"]
 stars: 1
 forks: 0
@@ -17,15 +17,16 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-07-01T01:49:35Z"
-lastCommitAt: "2026-08-13T17:33:31Z"
+lastCommitAt: "2026-10-26T02:38:40Z"
 lastReleaseAt: "2026-07-20T14:43:05Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 50
-undervaluedScore: 18
+healthScore: 74
+undervaluedScore: 25
 maintainers: ["rootasjey", "semantic-release-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/75f5a7ff6966e3aefd6ca942ea6658fa3578b734c56cccc32c282dd2a0a08b7b/rootasjey/tronche"
+openGraphImageUrl: "https://opengraph.githubassets.com/2131a174ae0feb426acce771e5f6f4412b44e37f4290f7539593c4a1248fdd11/rootasjey/tronche"
 promoted: true
+postedAt: "2026-10-25T22:16:55.952Z"
 ---
 
 # tronche

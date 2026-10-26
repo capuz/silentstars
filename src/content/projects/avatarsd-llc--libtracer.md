@@ -11,19 +11,19 @@ languagePcts: [83]
 stars: 5
 forks: 0
 openIssues: 107
-closedIssues: 761
+closedIssues: 762
 watchers: 1
 contributors: 2
 recentReleases: 6
 createdAt: "2025-03-03T13:50:36Z"
-lastCommitAt: "2026-10-25T22:10:58Z"
+lastCommitAt: "2026-10-26T02:50:06Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
 healthScore: 97
 undervaluedScore: 89
 maintainers: ["AvatarSD"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3a602db58150b1a218a9f142c43097f9111ab4fb89d99f219450c42d5f86ee0b/avatarsd-llc/libtracer"
+openGraphImageUrl: "https://opengraph.githubassets.com/ec27f1dbaef1c014fb8bd32c987cf25bb8a4d68bae5153362eb19203637e0f66/avatarsd-llc/libtracer"
 discussionCount: 0
 postedAt: "2026-08-14T05:19:31.863Z"
 ---

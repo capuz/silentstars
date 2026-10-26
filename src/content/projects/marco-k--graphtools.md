@@ -8,7 +8,7 @@ language: "PowerShell"
 languages: ["PowerShell"]
 languagePcts: [100]
 topics: ["azure", "graph", "m365"]
-stars: 6
+stars: 7
 forks: 0
 openIssues: 0
 closedIssues: 3
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-10-02T16:59:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 96
-undervaluedScore: 85
+undervaluedScore: 84
 maintainers: ["MARCO-K", "google-labs-jules[bot]", "Copilot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/37ee35664d27257201e2415d7c7e73b59af050fa54ab2f51f232394d1dd2b3f8/MARCO-K/GraphTools"
+openGraphImageUrl: "https://opengraph.githubassets.com/c158cad9c29d23fb2f33f089e9277a307784d0ddf55ac04bb78e89494a4cbc8c/MARCO-K/GraphTools"
 postedAt: "2026-10-02T10:06:49.533Z"
 ---
 
