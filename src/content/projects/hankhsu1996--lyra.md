@@ -8,7 +8,7 @@ language: "C++"
 languages: ["C++", "SystemVerilog"]
 languagePcts: [77, 21]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog"]
-stars: 5
+stars: 6
 forks: 1
 openIssues: 0
 closedIssues: 1
@@ -20,9 +20,9 @@ lastCommitAt: "2026-10-27T09:15:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
-undervaluedScore: 82
+undervaluedScore: 80
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5697c70f30d8f1e3c783442dfabf1357e55ecc62e45a57ce69a294e8e37116cd/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/b5ebdc5f38a9e183a2781fb6ec5f04dbeee1fa4fedb0c6b5ea18882bac6911f5/hankhsu1996/lyra"
 postedAt: "2026-10-09T10:56:38.881Z"
 ---
 

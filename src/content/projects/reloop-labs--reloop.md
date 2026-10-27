@@ -10,7 +10,7 @@ languages: ["TypeScript"]
 languagePcts: [85]
 topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email", "bun", "developer-tools", "docker", "email-api"]
 stars: 171
-forks: 30
+forks: 31
 openIssues: 5
 closedIssues: 37
 watchers: 1

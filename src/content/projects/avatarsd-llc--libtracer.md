@@ -10,7 +10,7 @@ languages: ["C++"]
 languagePcts: [83]
 stars: 5
 forks: 0
-openIssues: 103
+openIssues: 105
 closedIssues: 775
 watchers: 1
 contributors: 2

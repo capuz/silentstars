@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
 undervaluedScore: 38
 maintainers: ["martian56", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5800b7629d86f01880b4ba9a4bcd1a714cf5fe260410039053bc5ff0676cc7c3/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/45ac2e4e29e4d8e9d1ab8be93b794b0fcbb32a633e6686068025f35746f23280/martian56/raven"
 discussionCount: 2
 postedAt: "2026-06-25T06:46:44.859Z"
 ---
