@@ -312,12 +312,42 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
 
   // hover follows the pointer; pinned is the project picked in "Find your project"
   let heads: any[] = [], hover: any = null, pinned: any = null;
+
+  // ---- the ending: once the story is over, tour the graduates one by one ----
+  const TOUR_SECS = 3.5;
+  const tour: any[] = []; // null = the closing line, every few graduates
+  [...grads].sort((a: any, b: any) => b.gain - a.gain).forEach((g: any, i: number) => { if (i % 4 === 0) tour.push(null); tour.push(g); });
+  let tourIdx = 0, tourAt = 0;
+  const idle = () => !playing && !dragging && t >= LAST + .9;
+  // the tour's current stop: undefined while playing; the caption keeps it while the
+  // visitor hovers or pins a project, but only an untouched tour highlights it
+  const tourStop = () => idle() && tour.length ? tour[tourIdx % tour.length] : undefined;
+  const fmt = (n: number) => n.toLocaleString('en-US');
+
+  // a shooting star now and then
+  let shoot: any = null, nextShoot = 4;
+  function drawShoot(clock: number) {
+    if (!shoot && clock >= nextShoot) {
+      const x = W * (.15 + R() * .6), y = H * (.05 + R() * .3), ang = .35 + R() * .3;
+      shoot = { x, y, vx: Math.cos(ang) * 260, vy: Math.sin(ang) * 260, at: clock };
+    }
+    if (!shoot) return;
+    const u = (clock - shoot.at) / .8;
+    if (u >= 1) { shoot = null; nextShoot = clock + 6 + R() * 6; return; }
+    const hx = shoot.x + shoot.vx * u * .8, hy = shoot.y + shoot.vy * u * .8;
+    const g = ctx.createLinearGradient(hx - shoot.vx * .18, hy - shoot.vy * .18, hx, hy);
+    g.addColorStop(0, 'rgba(220,226,255,0)'); g.addColorStop(1, `rgba(220,226,255,${.55 * Math.sin(u * Math.PI)})`);
+    ctx.strokeStyle = g; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(hx - shoot.vx * .18, hy - shoot.vy * .18); ctx.lineTo(hx, hy); ctx.stroke();
+  }
+
   function draw(t: number, clock: number) {
     ctx.drawImage(bgCanvas, 0, 0, W, H);
     for (const s of twinkle) {
       ctx.fillStyle = `rgba(220,226,255,${(.12 + .2 * (.5 + .5 * Math.sin(clock * s.sp + s.ph)))})`;
       ctx.fillRect(s.x * W, s.y * H, s.s, s.s);
     }
+    if (!reduce) drawShoot(clock);
 
     // week ticks
     ctx.font = MONO;
@@ -334,11 +364,19 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     }
     ctx.stroke(); ctx.setLineDash([]);
 
+    // at rest the stars keep breathing, so the ending doesn't freeze
+    const breathe = idle() && !reduce;
     heads = [];
-    for (const p of repos) { const h = head(p, t); if (h && h.a > 0) heads.push({ p, ...h }); }
+    for (const p of repos) {
+      const h = head(p, t);
+      if (!h || h.a <= 0) continue;
+      if (breathe) h.y += 1.2 * Math.sin(clock * 1.4 + p.wob * 4);
+      heads.push({ p, ...h });
+    }
 
     ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-    const focus = new Set([hover, pinned].filter(Boolean));
+    const spot = hover || pinned ? null : tourStop() || null;
+    const focus = new Set([hover, pinned, spot].filter(Boolean));
     const fhs: any[] = [];
     for (const h of heads) { if (focus.has(h.p)) fhs.push(h); else drawTrail(h.p, t, false, h); }
     for (const fh of fhs) drawTrail(fh.p, t, true, fh);
@@ -351,6 +389,13 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
       const u = (t - p.first) / 1.2;
       ctx.strokeStyle = rgba(C[STATUS[h.c]], .6 * (1 - u));
       ctx.beginPath(); ctx.arc(headX + p.js[0] + (p.first - t) * ppw, p.ys[0], 3 + u * 22, 0, 6.2832); ctx.stroke();
+    }
+    // the toured graduate gets one ring when its turn starts
+    const sh = spot && !reduce && heads.find(h => h.p === spot);
+    if (sh && clock - tourAt < 1.2) {
+      const u = (clock - tourAt) / 1.2;
+      ctx.strokeStyle = rgba(C.graduated, .7 * (1 - u));
+      ctx.beginPath(); ctx.arc(sh.x, sh.y, 3 + u * 22, 0, 6.2832); ctx.stroke();
     }
 
     // glows (sprites) then dots, batched per colour
@@ -391,7 +436,7 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   const ageEl = $('st-age'), textEl = $('st-text');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   scrub.max = T_END;
-  let t = reduce ? LAST : 0, playing = !reduce, speed = 1, last: number | null = null, clock = 0, dragging = false, evIdx = -1;
+  let t = reduce ? T_END : 0, playing = !reduce, speed = 1, last: number | null = null, clock = 0, dragging = false, shown = '';
 
   function setPlaying(v: boolean) { playing = v; playBtn.textContent = t >= T_END ? 'Watch again' : (playing ? 'Pause' : 'Play'); }
   playBtn.addEventListener('click', () => { if (t >= T_END) { t = 0; setPlaying(true); return; } setPlaying(!playing); });
@@ -460,7 +505,10 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     if (!dragging) scrub.value = t;
     const i = Math.min(LAST, Math.floor(t));
     ageEl.textContent = wk(i);
-    if (i !== evIdx) { evIdx = i; textEl.textContent = events[i]; textEl.classList.remove('in'); void textEl.offsetWidth; textEl.classList.add('in'); }
+    const stop = tourStop();
+    const txt = stop === undefined ? events[i] : stop === null ? events[LAST]
+      : `${stop.name} · seen at ${fmt(stop.seenStars)} ★ in ${wk(stop.lastSeen)} → ${fmt(stop.pts[stop.last].stars)} ★ today`;
+    if (txt !== shown) { shown = txt; textEl.textContent = txt; textEl.classList.remove('in'); void textEl.offsetWidth; textEl.classList.add('in'); }
   }
 
   // don't burn frames while the chart is scrolled out of view
@@ -470,6 +518,9 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     const raw = (ts - last) / 1000, dt = Math.min(.05, raw); last = ts;
     clock += dt;
     if (playing) { t += dt * .55 * speed; if (t >= T_END) { t = T_END; setPlaying(false); } }
+    if (!idle()) { tourIdx = 0; tourAt = clock; }
+    else if (hover || pinned) tourAt = clock; // the visitor's pick holds the tour
+    else if (clock - tourAt >= TOUR_SECS) { tourIdx++; tourAt = clock; }
     draw(Math.min(t, LAST + .999), clock);
     syncUI();
     rafId = visible ? requestAnimationFrame(frame) : 0;
