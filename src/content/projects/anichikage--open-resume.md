@@ -8,21 +8,23 @@ homepage: "https://justcv.org"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [94]
-stars: 18
+topics: ["cv", "docker", "react", "resume-builder", "resume-template", "self-hosted", "typescript"]
+stars: 19
 forks: 1
-openIssues: 1
-closedIssues: 0
+openIssues: 0
+closedIssues: 1
 watchers: 0
 contributors: 2
-recentReleases: 0
+recentReleases: 1
 createdAt: "2026-10-19T13:50:59Z"
-lastCommitAt: "2026-10-22T12:23:08Z"
+lastCommitAt: "2026-10-27T03:07:33Z"
+lastReleaseAt: "2026-10-27T03:10:16Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 68
-undervaluedScore: 11
+healthScore: 89
+undervaluedScore: 28
 maintainers: ["AniChikage"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0a056723095a950dbc8f1113b4e8adcc8218d032ea9db4242e5a1c9e46c0ac23/AniChikage/open-resume"
+openGraphImageUrl: "https://opengraph.githubassets.com/eb1c86fa1ebf3fe7a0f9dcf0604b5cb49fc079dabbfa272127e49383d896e083/AniChikage/open-resume"
 promoted: true
 postedAt: "2026-10-25T02:53:35.126Z"
 ---

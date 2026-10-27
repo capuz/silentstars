@@ -17,13 +17,13 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-20T20:16:10Z"
-lastCommitAt: "2026-10-20T21:08:15Z"
+lastCommitAt: "2026-10-27T08:36:38Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 86
-undervaluedScore: 76
+healthScore: 88
+undervaluedScore: 77
 maintainers: ["ilpersi"]
-openGraphImageUrl: "https://opengraph.githubassets.com/06a77b87078ff26e517fc8be20debd96a2e5bf7905e3fa7b415205252e8af520/ilpersi/Popmundo-Utils"
+openGraphImageUrl: "https://opengraph.githubassets.com/c3560c6976a556c2b8a00dc8e66b84aecefb8e3f79eb9f9f928b6d27ae951c4b/ilpersi/Popmundo-Utils"
 discussionCount: 3
 postedAt: "2026-10-13T11:03:34.841Z"
 ---

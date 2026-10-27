@@ -16,14 +16,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-10-26T11:28:43Z"
+lastCommitAt: "2026-10-26T23:44:06Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 84
 undervaluedScore: 71
 maintainers: ["Aquaticat"]
-openGraphImageUrl: "https://opengraph.githubassets.com/782f2c1b9ad1839a4080ccdc4402f6590222cc1612fb1f6988a52c6c19383955/Aquaticats/Monochromatic"
+openGraphImageUrl: "https://opengraph.githubassets.com/0a1a3e872e8a01adb33abfdc3457de5f31ab0ad1c3c5ca50f95507b5d4a1c0d0/Aquaticats/Monochromatic"
 postedAt: "2026-09-30T10:05:46.857Z"
 ---
 

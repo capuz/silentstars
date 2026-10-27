@@ -14,16 +14,16 @@ openIssues: 0
 closedIssues: 2
 watchers: 0
 contributors: 1
-recentReleases: 9
+recentReleases: 10
 createdAt: "2026-10-09T03:33:14Z"
-lastCommitAt: "2026-10-24T22:31:17Z"
-lastReleaseAt: "2026-10-24T22:55:18Z"
+lastCommitAt: "2026-10-27T04:59:16Z"
+lastReleaseAt: "2026-10-27T01:05:18Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 70
 maintainers: ["shiqicao"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ccc4267ac7207c4b85cb43cdc47af8695cc8ffed4d3df57b0b644bbb6dc2cefa/shiqicao/gh-pull"
+openGraphImageUrl: "https://opengraph.githubassets.com/f2723004707ab866632b423cb22c2bc41739ecff05580e60c26e03bfcd3d4700/shiqicao/gh-pull"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-26T03:11:03.556Z"
