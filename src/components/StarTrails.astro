@@ -120,7 +120,7 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   // the graduation rule itself lives in scripts/star-trails.ts; this only draws it
   const GRAD_STARS = DATA.gradStars;
   const CLIMB_MIN = 5, SOAR_MIN = 50; // weekly gains worth a caption: climbs / soars
-  const LABEL: Record<string, string> = { thriving: 'Thriving', newborn: 'Newborn', quiet: 'Quiet', at_risk: 'At risk', watched: 'Watched', graduated: `Graduated (past ${GRAD_STARS} ★)` };
+  const LABEL: Record<string, string> = { thriving: 'Thriving', newborn: 'Newborn', quiet: 'Quiet', at_risk: 'At risk', watched: 'Watched', graduated: `Lit up (${GRAD_STARS}+ ★)` };
   const rgba = (c: number[], a: number) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
   const sIdx = (s: string) => Math.max(0, STATUS.indexOf(s));
   $('st-legend').innerHTML = STATUS.map(k => `<span><i style="color:${rgba(C[k], 1)};background:${rgba(C[k], 1)}"></i>${LABEL[k]}</span>`).join('');
@@ -241,7 +241,7 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     const gy = yS(GRAD_STARS);
     b.strokeStyle = rgba(C.graduated, .45); b.setLineDash([6, 6]);
     b.beginPath(); b.moveTo(0, gy); b.lineTo(W, gy); b.stroke(); b.setLineDash([]);
-    b.fillStyle = rgba(C.graduated, .85); b.fillText(`graduated · ${GRAD_STARS} ★`, 8, gy - 7);
+    b.fillStyle = rgba(C.graduated, .85); b.fillText(`lit up · ${GRAD_STARS} ★`, 8, gy - 7);
 
     for (const p of repos) {
       const n = Math.floor((p.last + .999 - p.first) / STEP) + 1;
