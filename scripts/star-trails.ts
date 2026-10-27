@@ -10,6 +10,8 @@ export const GRAD_STARS = 500;
 export const GRAD_FROM_MAX = 100;
 // fewer measured weeks than this is a dot, not a trail
 export const MIN_WEEKS = 4;
+// kept off the chart at the maintainer's request
+export const HIDDEN = new Set(['opn-build/OpenAlive']);
 
 export interface Graduates {
   checkedAt: string;
@@ -47,7 +49,7 @@ function lastSeen(history: History): Map<string, { week: number; stars: number }
 export function graduateCandidates(history: History): string[] {
   const latest = Object.keys(history).length - 1;
   return [...lastSeen(history)]
-    .filter(([, v]) => v.week < latest && v.stars < GRAD_FROM_MAX)
+    .filter(([repo, v]) => !HIDDEN.has(repo) && v.week < latest && v.stars < GRAD_FROM_MAX)
     .map(([repo]) => repo)
     .sort();
 }
@@ -66,6 +68,7 @@ export function buildTrails(history: History, graduates: Graduates, withPage: Se
 
   const repos: Trail[] = [];
   for (const [r, s] of points) {
+    if (HIDDEN.has(r)) continue;
     const measured = Object.keys(s).map(Number);
     const today = graduates.stars[r];
     const trail: Trail = { r, s };

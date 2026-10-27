@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { graduateCandidates, buildTrails, countGraduates, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS } from './star-trails.ts';
+import { graduateCandidates, buildTrails, countGraduates, HIDDEN, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS } from './star-trails.ts';
 import type { WeekEntry, History } from './weekly.ts';
 
 function entry(stars: number, status = 'quiet'): WeekEntry {
@@ -84,4 +84,12 @@ test('countGraduates: counts only repos that pass the graduation rule', () => {
     'a/long': [1, 2, 3, 4, 5, 6],
   });
   assert.equal(countGraduates(h, { checkedAt: '', stars: { 'a/rocket': 900, 'a/near': 2000 } }), 1);
+});
+
+test('buildTrails: repos in HIDDEN never show, as a trail or as a graduate', () => {
+  const [hidden] = [...HIDDEN];
+  const h = history({ [hidden]: [1, 2, 3, 4, 5, 6], 'a/gone': [10, null, null, null, null, null] });
+  const d = buildTrails(h, { checkedAt: '', stars: { [hidden]: 900 } }, new Set());
+  assert.deepEqual(d.repos.map(r => r.r), []);
+  assert.ok(!graduateCandidates(history({ [hidden]: [10, null, null, null, null, null] })).includes(hidden));
 });
