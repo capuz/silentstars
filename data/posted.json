@@ -2054,5 +2054,16 @@
         "postedAt": "2026-10-26T21:15:22.508Z"
       }
     }
+  },
+  {
+    "repo": "adobe/da-nx",
+    "slug": "adobe--da-nx",
+    "postedAt": "2026-10-27T09:24:29.168Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mytw3qa7yd2i",
+        "postedAt": "2026-10-27T09:24:29.168Z"
+      }
+    }
   }
 ]
