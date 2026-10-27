@@ -5,10 +5,13 @@
  * checks for duplicates, posts a comment, labels, and closes the issue.
  * Writes structured outputs to $GITHUB_OUTPUT for the workflow to act on.
  *
+ * Also re-run (workflow_dispatch) by standby-recheck for submissions parked in
+ * data/standby.json — see standby.ts. It is the single place that decides.
+ *
  * Env vars:
  *   GITHUB_TOKEN       — required
  *   ISSUE_NUMBER       — required (GitHub issue number)
- *   ISSUE_AUTHOR_LOGIN — required (GitHub login of submitter)
+ *   ISSUE_AUTHOR_LOGIN — optional (GitHub login of submitter; read from the issue if absent)
  *   REPO_OWNER         — required (e.g. capuz)
  *   REPO_NAME          — required (e.g. silentstars)
  *   DRY_RUN            — optional, skip GitHub API writes
@@ -18,18 +21,19 @@ import { appendFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
+import { addEntry, fetchSignal, findEntry, hasExternalSignal, readStandby, removeEntry, writeStandby } from './standby.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
 const ISSUE_NUMBER     = Number(process.env.ISSUE_NUMBER ?? '0');
-const ISSUE_AUTHOR     = process.env.ISSUE_AUTHOR_LOGIN ?? '';
+let   ISSUE_AUTHOR     = process.env.ISSUE_AUTHOR_LOGIN ?? '';
 const REPO_OWNER       = process.env.REPO_OWNER ?? '';
 const REPO_NAME_GH     = process.env.REPO_NAME ?? '';
 
 // A repo this young with zero stars/forks has no external signal at all —
-// hold it for a human instead of auto-rejecting (SilentStars exists to
+// park it in standby instead of auto-rejecting (SilentStars exists to
 // surface legitimate 0-star projects, so 0 stars alone must never reject).
 const NEW_REPO_DAYS = 7;
 
@@ -39,7 +43,7 @@ const MAX_STARS: number = existsSync(discoveryConfigPath)
   ? (JSON.parse(readFileSync(discoveryConfigPath, 'utf8')) as { starsRange?: { max?: number } }).starsRange?.max ?? 500
   : 500;
 
-type SubmissionStatus = 'accepted' | 'already_listed' | 'already_seeded' | 'needs_review' | 'rejected' | 'skipped';
+type SubmissionStatus = 'accepted' | 'already_listed' | 'already_seeded' | 'standby' | 'still_standby' | 'rejected' | 'skipped';
 
 interface GitHubRepo {
   full_name: string;
@@ -170,12 +174,12 @@ async function subscribeToNewsletter(email: string): Promise<void> {
   else console.log(`⚠ Newsletter subscribe failed: ${res.status}`);
 }
 
-async function fetchIssueBody(owner: string, repo: string, number: number): Promise<string> {
-  const { ok, data } = await ghFetch<{ body?: string | null }>(
+async function fetchIssue(owner: string, repo: string, number: number): Promise<{ body: string; author: string }> {
+  const { ok, data } = await ghFetch<{ body?: string | null; user?: { login: string } }>(
     `/repos/${owner}/${repo}/issues/${number}`,
   );
   if (!ok) throw new Error(`Could not fetch issue #${number}`);
-  return data.body ?? '';
+  return { body: data.body ?? '', author: data.user?.login ?? '' };
 }
 
 async function commentIssue(body: string): Promise<number | null> {
@@ -193,6 +197,30 @@ async function labelIssue(labels: string[]) {
     method: 'POST',
     body: JSON.stringify({ labels }),
   });
+}
+
+async function unlabelIssue(label: string) {
+  if (DRY_RUN) { console.log(`[DRY RUN] unlabel: ${label}`); return; }
+  await ghFetch(`/repos/${REPO_OWNER}/${REPO_NAME_GH}/issues/${ISSUE_NUMBER}/labels/${encodeURIComponent(label)}`, {
+    method: 'DELETE',
+  });
+}
+
+async function reopenIssue() {
+  if (DRY_RUN) { console.log('[DRY RUN] reopen'); return; }
+  await ghFetch(`/repos/${REPO_OWNER}/${REPO_NAME_GH}/issues/${ISSUE_NUMBER}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ state: 'open' }),
+  });
+}
+
+// Any final outcome (accepted, rejected, already listed) takes the repo out of
+// standby; the workflow commits data/standby.json when this flags a change.
+function dropFromStandby(repo: string) {
+  const entries = readStandby();
+  if (!findEntry(entries, repo)) return;
+  setOutput('standby_changed', 'true');
+  if (!DRY_RUN) writeStandby(removeEntry(entries, repo));
 }
 
 async function closeIssue(reason: 'completed' | 'not_planned') {
@@ -223,6 +251,7 @@ async function handleRejected(repo: string, slug: string, projectName: string, r
   await commentIssue(
     `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on undervalued projects the algorithm hasn't noticed yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
   );
+  if (repo) dropFromStandby(repo);
   await labelIssue(['rejected']);
   await closeIssue('not_planned');
 }
@@ -256,6 +285,7 @@ async function handleAlreadyListed(
   setOutput('reason', '');
   setOutput('submitter_email', submitterEmail);
 
+  dropFromStandby(repo);
   const cardUrl = `${baseUrl}/projects/${slug}/`;
   await commentIssue(
     `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** is already on SilentStars! Check out its live card:\n\n🔗 ${cardUrl}\n\nThanks for the submission — we'll send a notification if we have your email.`,
@@ -264,20 +294,24 @@ async function handleAlreadyListed(
   await closeIssue('completed');
 }
 
-async function handleNeedsReview(repo: string, slug: string, projectName: string, reason: string) {
-  setOutput('status', 'needs_review');
+async function handleStandby(repo: string, slug: string, projectName: string, reason: string) {
+  setOutput('status', 'standby');
   setOutput('repo', repo);
   setOutput('slug', slug);
   setOutput('project_name', projectName);
   setOutput('reason', reason);
   setOutput('submitter_email', '');
+  setOutput('standby_changed', 'true');
+
+  const entries = addEntry(readStandby(), repo, ISSUE_NUMBER, new Date());
+  if (!DRY_RUN) writeStandby(entries);
+  const until = findEntry(entries, repo)!.until;
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** passes the automated criteria, but ${reason} — so it needs a quick manual look before it goes live. Hang tight, we'll follow up here!`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** passes the automated criteria, but ${reason}.\n\nSo it's going on **standby** instead of live right away: we check it every day, and as soon as someone other than you stars or forks the repo, this issue reopens on its own, the card goes live and it gets its 🦋 Bluesky post. The standby lasts until **${until}** — after that it's dropped from the queue and you're welcome to resubmit.\n\nClosing this for now — no need to do anything else. ⭐`,
   );
-  await labelIssue(['needs-review']);
-  // Issue stays OPEN — a human decides (accept manually or close as rejected).
-  // promoted.json is untouched, so nothing to revert either way.
+  await labelIssue(['standby']);
+  await closeIssue('not_planned');
 }
 
 async function handleAccepted(
@@ -295,6 +329,7 @@ async function handleAccepted(
 
   // Write to promoted.json with 30-day expiry (workflow will git commit this)
   if (!DRY_RUN) appendToPromotedJson(repo);
+  dropFromStandby(repo);
 
   // Initial acknowledgement. The notify job EDITS this same comment in place
   // once the pipeline finishes, swapping the "building right now" line for the
@@ -320,7 +355,12 @@ async function main() {
   const baseUrl = (process.env.BASE_URL ?? 'https://silentstars.dev').replace(/\/$/, '');
 
   // Fetch issue body from API (more reliable than env var for multiline content)
-  const issueBody = await fetchIssueBody(REPO_OWNER, REPO_NAME_GH, ISSUE_NUMBER);
+  const issue = await fetchIssue(REPO_OWNER, REPO_NAME_GH, ISSUE_NUMBER);
+  const issueBody = issue.body;
+  // A workflow_dispatch re-run (standby recheck) has no event issue to read it from.
+  if (!ISSUE_AUTHOR) ISSUE_AUTHOR = issue.author;
+  setOutput('issue_number', String(ISSUE_NUMBER));
+  setOutput('issue_author', ISSUE_AUTHOR);
 
   // Guard: only process submission template issues
   if (!issueBody.includes('### GitHub repo (owner/repo)')) {
@@ -396,11 +436,24 @@ async function main() {
     );
   }
 
-  const daysSinceRepoCreated = (Date.now() - new Date(ghRepo.created_at).getTime()) / 86_400_000;
-  if (daysSinceRepoCreated < NEW_REPO_DAYS && ghRepo.stargazers_count === 0 && ghRepo.forks_count === 0) {
-    return handleNeedsReview(repo, slug, ghRepo.name,
-      `the repo was created ${Math.round(daysSinceRepoCreated)} day(s) ago with 0 stars and 0 forks — no external signal yet to weigh against the submission`,
-    );
+  // Already parked: it only goes live once someone other than the owner stars
+  // or forks it — getting older alone is not signal.
+  if (findEntry(readStandby(), repo)) {
+    if (!hasExternalSignal(repo, await fetchSignal(repo, token))) {
+      setOutput('status', 'still_standby');
+      setOutput('repo', repo);
+      console.log(`${repo} still has no external signal — staying on standby.`);
+      return;
+    }
+    await reopenIssue();
+    await unlabelIssue('standby');
+  } else {
+    const daysSinceRepoCreated = (Date.now() - new Date(ghRepo.created_at).getTime()) / 86_400_000;
+    if (daysSinceRepoCreated < NEW_REPO_DAYS && ghRepo.stargazers_count === 0 && ghRepo.forks_count === 0) {
+      return handleStandby(repo, slug, ghRepo.name,
+        `the repo was created ${Math.round(daysSinceRepoCreated)} day(s) ago with 0 stars and 0 forks — no external signal yet to weigh against the submission`,
+      );
+    }
   }
 
   // All checks passed

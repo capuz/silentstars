@@ -3,6 +3,13 @@ name: Process project submission
 on:
   issues:
     types: [opened]
+  # Re-run for a submission parked on standby (dispatched by standby-recheck.yml).
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Submission issue to re-process"
+        type: string
+        required: true
 
 permissions:
   issues: write
@@ -18,8 +25,11 @@ jobs:
   validate:
     name: Validate submission
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, '### GitHub repo (owner/repo)')
+    # On dispatch there is no event issue; the script itself skips non-submissions.
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.body, '### GitHub repo (owner/repo)')
     outputs:
+      issue_number:    ${{ steps.validate.outputs.issue_number }}
+      issue_author:    ${{ steps.validate.outputs.issue_author }}
       status:          ${{ steps.validate.outputs.status }}
       repo:            ${{ steps.validate.outputs.repo }}
       slug:            ${{ steps.validate.outputs.slug }}
@@ -49,6 +59,7 @@ jobs:
           gh label create "rejected"       --color "e11d48" --description "Submission rejected"      --force
           gh label create "already-listed" --color "e99b27" --description "Already in SilentStars"  --force
           gh label create "needs-review"   --color "fbca04" --description "Needs manual review before publishing" --force
+          gh label create "standby"        --color "c5def5" --description "Waiting for external signal (90 days)"  --force
           gh label create "bsky-pending"   --color "8b5cf6" --description "Card live, Bluesky post pending"       --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +71,7 @@ jobs:
         run: npx tsx scripts/process-submission.ts
         env:
           GITHUB_TOKEN:        ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_NUMBER:        ${{ github.event.issue.number }}
+          ISSUE_NUMBER:        ${{ github.event.issue.number || inputs.issue_number }}
           ISSUE_AUTHOR_LOGIN:  ${{ github.event.issue.user.login }}
           REPO_OWNER:          ${{ github.repository_owner }}
           REPO_NAME:           ${{ github.event.repository.name }}
@@ -86,21 +97,27 @@ jobs:
           GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           SUBMISSION_REPO:  ${{ steps.validate.outputs.repo }}
-          ISSUE_NUMBER:     ${{ github.event.issue.number }}
+          ISSUE_NUMBER:     ${{ steps.validate.outputs.issue_number }}
           REPO_OWNER:       ${{ github.repository_owner }}
           REPO_NAME:        ${{ github.event.repository.name }}
         run: npx tsx scripts/ai-opinion.ts
 
-      - name: Commit promoted.json
-        if: steps.validate.outputs.status == 'accepted'
+      - name: Commit promoted.json / standby.json
+        if: steps.validate.outputs.status == 'accepted' || steps.validate.outputs.standby_changed == 'true'
         env:
+          STATUS:           ${{ steps.validate.outputs.status }}
           SUBMISSION_REPO:  ${{ steps.validate.outputs.repo }}
-          ISSUE_NUMBER:     ${{ github.event.issue.number }}
+          ISSUE_NUMBER:     ${{ steps.validate.outputs.issue_number }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/promoted.json
-          git commit -m "feat(promoted): add ${SUBMISSION_REPO} via issue #${ISSUE_NUMBER} (30d)"
+          git add data/promoted.json data/standby.json
+          case "$STATUS" in
+            accepted) MSG="feat(promoted): add ${SUBMISSION_REPO} via issue #${ISSUE_NUMBER} (30d)" ;;
+            standby)  MSG="chore(standby): park ${SUBMISSION_REPO} from issue #${ISSUE_NUMBER} (90d) [skip ci]" ;;
+            *)        MSG="chore(standby): drop ${SUBMISSION_REPO} (issue #${ISSUE_NUMBER}, ${STATUS}) [skip ci]" ;;
+          esac
+          git commit -m "$MSG"
           # rebase-retry: a nightly collect or a second submission can move main
           # between this job's checkout and here; a bare push would be rejected
           # non-fast-forward, failing validate and skipping collect-deploy-post.
@@ -139,7 +156,7 @@ jobs:
       skip_post: false
       submission_repo: ${{ needs.validate.outputs.repo }}
       submission_project_name: ${{ needs.validate.outputs.project_name }}
-      submitter_login: ${{ github.event.issue.user.login }}
+      submitter_login: ${{ needs.validate.outputs.issue_author }}
     secrets: inherit
 
   # ─────────────────────────────────────────────────────────────
@@ -214,7 +231,8 @@ jobs:
         env:
           PROJ_SLUG:      ${{ needs.validate.outputs.slug }}
           PROJ_NAME:      ${{ needs.validate.outputs.project_name }}
-          ISSUE_AUTHOR:   ${{ github.event.issue.user.login }}
+          ISSUE_AUTHOR:   ${{ needs.validate.outputs.issue_author }}
+          ISSUE_NUMBER:   ${{ needs.validate.outputs.issue_number }}
           ACK_COMMENT_ID: ${{ needs.validate.outputs.ack_comment_id }}
           BSKY_URL:       ${{ steps.state.outputs.bsky_url }}
           CARD_BUILT:     ${{ steps.state.outputs.card_built }}
@@ -228,7 +246,8 @@ jobs:
             const ackId   = process.env.ACK_COMMENT_ID ? Number(process.env.ACK_COMMENT_ID) : null;
             const cardOk  = process.env.CARD_BUILT === 'true' || process.env.CARD_LIVE === 'true';
             const cardUrl = `https://silentstars.dev/projects/${slug}/`;
-            const issue_number = context.issue.number;
+            // context.issue is empty on a workflow_dispatch (standby) re-run.
+            const issue_number = Number(process.env.ISSUE_NUMBER);
 
             let body, labels, close;
             if (cardOk && bskyUrl) {

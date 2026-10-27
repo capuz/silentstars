@@ -19,6 +19,7 @@ data/*
 !data/posted.json
 !data/posted-weekly.json
 !data/promoted.json
+!data/standby.json
 !data/translations.json
 !data/weekly-notes.json
 
