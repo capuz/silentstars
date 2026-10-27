@@ -62,5 +62,9 @@
   {
     "repo": "haoming-luo/agentfem",
     "until": "2026-11-25"
+  },
+  {
+    "repo": "cpys/codex-quota-overlay",
+    "until": "2026-11-26"
   }
 ]
