@@ -2065,5 +2065,16 @@
         "postedAt": "2026-10-27T09:24:29.168Z"
       }
     }
+  },
+  {
+    "repo": "cpys/codex-quota-overlay",
+    "slug": "cpys--codex-quota-overlay",
+    "postedAt": "2026-10-27T12:47:25.041Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myubgly56527",
+        "postedAt": "2026-10-27T12:47:25.041Z"
+      }
+    }
   }
 ]
