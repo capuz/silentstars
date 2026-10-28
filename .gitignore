@@ -26,3 +26,6 @@ data/*
 # agent skills
 .agents/
 skills-lock.json
+
+# Playwright MCP snapshots/screenshots
+.playwright-mcp/
