@@ -224,4 +224,7 @@ In the repo settings, set **Pages source** to **GitHub Actions**.
 
 ## License
 
-GPLv3 — see [LICENSE](LICENSE).
+- The code is licensed under the [Apache License 2.0](LICENSE).
+- Forks and derivative works must keep the [NOTICE](NOTICE) file and display its attribution.
+- The "SilentStars" name, logo and pixel-art assets are not covered by the code license and must not be used to identify forks.
+- Generated data snapshots (`data/`) are published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

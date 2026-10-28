@@ -83,6 +83,8 @@ const pageUrl = Astro.url.href;
         <div class="ss-footer-inner">
           <div class="ss-footer-copy">
             <span style="color:#c9c6bc;">★ SilentStars</span>
+            · <a href="https://github.com/capuz/silentstars/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+            · <a href="https://github.com/capuz/silentstars/blob/main/NOTICE" target="_blank" rel="noopener">Notice</a>
           </div>
           <a href="https://www.paypal.com/donate/?hosted_button_id=US7WTVC7ZDW6Q" target="_blank" rel="noopener" class="ss-donate">
             <img src="https://img.shields.io/badge/Donate-PayPal-blue" alt="Donate with PayPal" height="20" style="display:block;" />
@@ -272,6 +274,8 @@ const pageUrl = Astro.url.href;
     color: #8b877b;
     letter-spacing: .01em;
   }
+  .ss-footer-copy a { color: inherit; }
+  .ss-footer-copy a:hover { color: #c9c6bc; }
   .ss-donate {
     display: inline-flex;
     align-items: center;
