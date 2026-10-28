@@ -10,11 +10,15 @@ A static site that surfaces open source projects that are **alive but invisible*
 
 **Live:** https://silentstars.dev
 
+| Home | Project page | Weekly edition |
+|---|---|---|
+| [![SilentStars home page: hero, stats and top picks](docs/screenshots/home.jpg)](https://silentstars.dev/) | [![Project page for haoming-luo/agentfem with health bar, signals and README](docs/screenshots/project.jpg)](https://silentstars.dev/projects/haoming-luo--agentfem/) | [![Weekly edition 2026-W43 listing the projects that moved that week](docs/screenshots/weekly.jpg)](https://silentstars.dev/weekly/2026-W43/) |
+
 ---
 
 ## What this is
 
-A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars.dev](https://bsky.app/profile/silentstars.dev)). ~280 projects are tracked as of this writing.
+A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars.dev](https://bsky.app/profile/silentstars.dev)), and every Monday a [weekly edition](https://silentstars.dev/weekly/) rounds up the projects that moved — rising, shipping, lighting up — and goes out as a Bluesky thread. About 375 projects are listed as of October 2026.
 
 ---
 
@@ -41,7 +45,8 @@ Configure discovery in `data/discovery.config.json`:
   "starsRange": { "min": 5, "max": 500 },
   "pushedWithinDays": 90,
   "maxCandidatesPerNight": 250,
-  "vitalityThreshold": 40
+  "vitalityThreshold": 40,
+  "excludeRepos": ["capuz/silentstars"]
 }
 ```
 
@@ -51,6 +56,7 @@ Configure discovery in `data/discovery.config.json`:
 | `pushedWithinDays` | Only considers repos pushed to recently |
 | `maxCandidatesPerNight` | Hard cap — prevents exhausting the 30 req/min rate limit |
 | `vitalityThreshold` | Discovered repos with `healthScore` below this won't appear in the directory |
+| `excludeRepos` | Repos never picked up by discovery (e.g. this one) |
 
 ### 2. Manual curation — `data/promoted.json`
 
@@ -79,6 +85,12 @@ one commit in the last 90 days), adds it to `data/promoted.json` with a 30-day w
 runs the full collect → build → deploy → Bluesky post pipeline. The submitter gets an
 acceptance email (see [Email notifications](#email-notifications)), and Claude posts a
 short take on the project as an issue comment (see below).
+
+Brand-new repos with no outside signal yet (0 stars and 0 forks) aren't rejected — they're
+parked on a **90-day standby** in `data/standby.json`, the submitter is told why, and the issue
+is closed. `standby-recheck.yml` checks them daily: once a repo gets a star or fork from
+someone other than its owner, the submission is reprocessed and published; entries still
+silent after 90 days are dropped.
 
 ---
 
@@ -133,7 +145,7 @@ Requires `RESEND_API_KEY` and `NOTIFY_FROM_EMAIL` secrets.
 
 ```bash
 npm install
-npm run dev       # http://localhost:4321/silentstars
+npm run dev       # http://localhost:4321/
 npm run build     # static output in dist/
 npm run preview   # serve dist/ locally
 ```
@@ -198,6 +210,10 @@ inclusion, not `status`).
 | `process-submission.yml` | Issue opened | Validates a community submission, adds it to `data/promoted.json`, runs the full pipeline, notifies the submitter |
 | `post-manual.yml` | Manual (`workflow_dispatch`) | Re-post a specific project or the daily pick to Bluesky, with a dry-run option |
 | `retry-nightly.yml` | On completion of `collect.yml` | Reruns the nightly job if GitHub never assigned it a hosted runner |
+| `post-weekly.yml` | Mondays 13:17 UTC | Posts the latest closed `/weekly/` edition to Bluesky as a thread |
+| `standby-recheck.yml` | Daily | Drops expired standby submissions and reprocesses those that gained outside signal |
+
+A handful of other `workflow_dispatch`-only workflows (OG previews, test emails, Bluesky profile updates, recovery) are maintenance tools.
 
 ---
 

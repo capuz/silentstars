@@ -2,20 +2,22 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+SilentStars is continuously deployed from `main`. Only the current `main` branch and the live site at
+https://silentstars.dev receive security fixes; there are no versioned releases.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please **do not open a public issue** for security problems.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Report it privately through GitHub's private vulnerability reporting:
+https://github.com/capuz/silentstars/security/advisories/new
+
+Include what you found, where (file, URL or workflow), and steps to reproduce if you have them.
+
+What to expect:
+
+- An acknowledgement within 7 days.
+- If the report is accepted, a fix as soon as practical, and credit in the advisory unless you prefer otherwise.
+- If it is declined, a short explanation of why.
+
+This is a solo-maintained project, so response times are best effort.
