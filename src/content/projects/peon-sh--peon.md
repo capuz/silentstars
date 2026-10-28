@@ -17,14 +17,14 @@ watchers: 0
 contributors: 11
 recentReleases: 6
 createdAt: "2026-07-10T11:34:59Z"
-lastCommitAt: "2026-10-27T07:30:28Z"
+lastCommitAt: "2026-10-28T05:49:35Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: ["release_machine"]
 healthScore: 97
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]
-openGraphImageUrl: "https://opengraph.githubassets.com/eab746293b103e1c2b9ef598699290ed1510c1b733b78bbd8281a7eb9ed77d14/Peon-sh/Peon"
+openGraphImageUrl: "https://opengraph.githubassets.com/c57fe2b17ab75d5f1d876774bf14939b3d2c6835d832b30beeb48b1401931e6a/Peon-sh/Peon"
 promoted: true
 postedAt: "2026-09-29T08:20:14.976Z"
 ---

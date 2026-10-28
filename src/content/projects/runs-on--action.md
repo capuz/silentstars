@@ -12,19 +12,19 @@ topics: ["caching", "github-actions", "runners", "aws", "cloudwatch", "metrics",
 stars: 18
 forks: 9
 openIssues: 2
-closedIssues: 16
+closedIssues: 17
 watchers: 2
 contributors: 8
 recentReleases: 0
 createdAt: "2024-12-19T12:16:33Z"
-lastCommitAt: "2026-10-21T08:38:39Z"
+lastCommitAt: "2026-10-27T15:04:45Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 86
+healthScore: 88
 undervaluedScore: 73
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e5f3edb8ef698246fcefe9fdff60605db9b765ccf1c4071ec60035c1ce35e640/runs-on/action"
+openGraphImageUrl: "https://opengraph.githubassets.com/e5dec90bc23d53ac668db72d6d681a1d77f04009dc736f87f0e33894a64a6f32/runs-on/action"
 postedAt: "2026-10-11T10:21:15.448Z"
 ---
 

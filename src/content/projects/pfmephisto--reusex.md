@@ -10,7 +10,7 @@ languages: ["C++"]
 languagePcts: [84]
 topics: ["aec", "lidar", "reuse"]
 stars: 11
-forks: 1
+forks: 2
 openIssues: 0
 closedIssues: 381
 watchers: 0
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-09-30T14:43:42Z"
 status: "quiet"
 tags: ["solo_builder"]
 healthScore: 94
-undervaluedScore: 80
+undervaluedScore: 81
 maintainers: ["pfmephisto"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/707678990/a747bd6b-c265-419f-a7a6-e5f0f22fa2b4"
 discussionCount: 2

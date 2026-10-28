@@ -16,13 +16,13 @@ watchers: 1
 contributors: 21
 recentReleases: 0
 createdAt: "2023-05-18T02:24:55Z"
-lastCommitAt: "2026-10-26T16:03:52Z"
+lastCommitAt: "2026-10-28T07:33:46Z"
 status: "thriving"
 tags: ["funded", "fork_magnet"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 83
 maintainers: ["yzhao062", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f0ae9923ffef529ee95d3e0cb1e6b951cba929653f099c21c4c9f4f2e676a0e3/yzhao062/yzhao062.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/225346a82cd6e9016d38b2a9814ea76bfba29f479edaf2eacf45d1b38b059811/yzhao062/yzhao062.github.io"
 fundingLinks: ["GITHUB:https://github.com/yzhao062"]
 postedAt: "2026-10-22T08:59:44.936Z"
 ---
@@ -38,6 +38,7 @@ Member sections are data-driven. Update JSON files instead of editing `lab.html`
 ### Files to edit
 
 - `data/lab-current-phd.json` for current Ph.D. students
+- `data/lab-phd-alumni.json` for Ph.D. alumni (same card layout as current students)
 - `data/lab-members.json` for current Master/Undergrad members and all past members
 
 ### Workflow
@@ -60,7 +61,4 @@ Member sections are data-driven. Update JSON files instead of editing `lab.html`
   "image": "images/others/jane_doe.webp",
   "alt": "Jane Doe",
   "year_info": "1st year, Joined Fortis in Aug 2026",
-  "research": "LLM Safety, Robustness",
-  "awards": ["Example Fellowship"],
-  "email": "janedoe@usc.edu",
-  "co_advised_by":…
+  "research": "LLM Safety, Robustness",…

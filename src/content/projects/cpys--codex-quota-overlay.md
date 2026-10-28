@@ -27,6 +27,7 @@ maintainers: ["cpys", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/33d346331c03e202863a64bab4e254ea12bcc107a40cbe16021a8d8b05ddbce0/cpys/codex-quota-overlay"
 discussionCount: 3
 promoted: true
+postedAt: "2026-10-27T12:47:25.041Z"
 ---
 
 # Codex Quota Overlay (Windows)

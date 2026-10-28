@@ -14,7 +14,7 @@ forks: 4
 openIssues: 2
 closedIssues: 53
 watchers: 3
-contributors: 4
+contributors: 9
 recentReleases: 0
 createdAt: "2024-08-08T07:42:29Z"
 lastCommitAt: "2026-10-26T13:22:41Z"

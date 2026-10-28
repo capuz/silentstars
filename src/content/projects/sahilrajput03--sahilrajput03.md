@@ -19,7 +19,7 @@ createdAt: "2020-07-25T09:11:03Z"
 lastCommitAt: "2026-10-26T07:21:02Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 98
 maintainers: ["sahilrajput03"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4ad662331d830d2c8ef21d145956a2720de488b513b0680447a767258eda3ea4/sahilrajput03/sahilrajput03"

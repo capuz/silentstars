@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/shiqicao/gh-pull"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [93]
+languagePcts: [92]
 topics: ["gh-extension", "code-review", "code-reviews", "dashboard", "developer-tools", "github-cli", "github-cli-extension", "pr-dashboard", "pull-requests"]
 stars: 4
 forks: 1
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-09T03:33:14Z"
-lastCommitAt: "2026-10-27T04:59:16Z"
+lastCommitAt: "2026-10-28T05:17:13Z"
 lastReleaseAt: "2026-10-27T01:05:18Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 70
 maintainers: ["shiqicao"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f2723004707ab866632b423cb22c2bc41739ecff05580e60c26e03bfcd3d4700/shiqicao/gh-pull"
+openGraphImageUrl: "https://opengraph.githubassets.com/ef4d11f2996194f2170ea29669e5d35c9629df086ceddc13072e78bd0ed7284b/shiqicao/gh-pull"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-26T03:11:03.556Z"

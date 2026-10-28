@@ -15,14 +15,14 @@ watchers: 9
 contributors: 283
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-10-27T11:14:24Z"
+lastCommitAt: "2026-10-27T17:11:25Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 83
 maintainers: ["semantic-release-bot", "dicagno", "hannessolo"]
-openGraphImageUrl: "https://opengraph.githubassets.com/be869c783c5a047cc7ce3147f0c0cfe14be511401f7e03690250055839d7d7b4/adobe/da-nx"
+openGraphImageUrl: "https://opengraph.githubassets.com/988260b22240ed9a878f30c13c95295fb05ad23f5121773fd4ea2518dabc774d/adobe/da-nx"
 postedAt: "2026-10-27T09:24:29.168Z"
 ---
 
