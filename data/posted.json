@@ -2085,6 +2085,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mywivpcoof2p",
         "postedAt": "2026-10-28T10:06:27.573Z"
+      },
+      "ownerEmail": {
+        "url": "system@coorpacademy.com",
+        "postedAt": "2026-10-28T10:06:49.836Z"
       }
     }
   }
