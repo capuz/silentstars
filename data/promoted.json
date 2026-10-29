@@ -66,5 +66,9 @@
   {
     "repo": "artabramov/hidden",
     "until": "2026-11-28"
+  },
+  {
+    "repo": "MeshLive/meshlive-android",
+    "until": "2026-11-28"
   }
 ]
