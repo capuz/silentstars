@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-26T13:22:41Z"
 lastReleaseAt: "2025-05-25T11:43:10Z"
 status: "thriving"
 tags: []
-healthScore: 97
+healthScore: 96
 undervaluedScore: 71
 maintainers: ["konradmichalik", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/41bd20fa77d6f22bbb05d45996c5e443f5ba7bdaabbf7933fb84cf744c9ce326/xima-media/xima-typo3-frontend-edit"

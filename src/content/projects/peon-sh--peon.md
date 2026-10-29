@@ -25,7 +25,6 @@ healthScore: 97
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c57fe2b17ab75d5f1d876774bf14939b3d2c6835d832b30beeb48b1401931e6a/Peon-sh/Peon"
-promoted: true
 postedAt: "2026-09-29T08:20:14.976Z"
 ---
 

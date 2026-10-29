@@ -11,19 +11,19 @@ languagePcts: [53, 31]
 topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "email", "github-actions", "mail-in-a-box"]
 stars: 6
 forks: 1
-openIssues: 9
-closedIssues: 216
+openIssues: 8
+closedIssues: 219
 watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-10-26T14:34:39Z"
+lastCommitAt: "2026-10-28T16:13:17Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 97
+healthScore: 98
 undervaluedScore: 83
 maintainers: ["amedee", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ef2f91d6ab4d8d1ade0f74a089b3543fc23e63933e8399ea7cbb67048b554a0d/amedee/ansible-servers"
+openGraphImageUrl: "https://opengraph.githubassets.com/dd5c786efb5aa708be9988281dc2157eadfe16c24fe1f4b44262242fdc3442cb/amedee/ansible-servers"
 postedAt: "2026-10-07T10:37:46.775Z"
 ---
 

@@ -5,8 +5,8 @@ description: "Itqan CMS — Quranic Content Management System — Frontend"
 readmeQualityOk: true
 url: "https://github.com/Itqan-community/cms-frontend"
 language: "TypeScript"
-languages: ["TypeScript", "HTML"]
-languagePcts: [72, 20]
+languages: ["TypeScript"]
+languagePcts: [73]
 stars: 18
 forks: 36
 openIssues: 9
@@ -15,14 +15,14 @@ watchers: 0
 contributors: 20
 recentReleases: 0
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-10-28T00:01:16Z"
+lastCommitAt: "2026-10-28T23:40:20Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 96
+healthScore: 97
 undervaluedScore: 78
-maintainers: ["hassaanalansary", "semantic-release-bot", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cad71c210da04e4cdb0cff97bf5474c2c86df44262b54a7c16e2c26edbda32df/Itqan-community/cms-frontend"
+maintainers: ["hassaanalansary", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d7d6c8e7239dc6c41726230ecd172e9c3a42439037a76192d523b74ec85991b8/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---
 

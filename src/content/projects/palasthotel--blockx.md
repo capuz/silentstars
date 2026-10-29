@@ -7,7 +7,7 @@ url: "https://github.com/palasthotel/blockX"
 homepage: "https://wordpress.org/plugins/blockx/"
 language: "PHP"
 languages: ["PHP", "JavaScript"]
-languagePcts: [58, 38]
+languagePcts: [57, 38]
 topics: ["gutenberg-blocks", "npm-package", "wordpress", "wordpress-plugin", "dx"]
 stars: 6
 forks: 2
@@ -17,13 +17,13 @@ watchers: 10
 contributors: 4
 recentReleases: 0
 createdAt: "2020-10-08T15:42:19Z"
-lastCommitAt: "2026-10-21T06:32:21Z"
+lastCommitAt: "2026-10-28T15:12:19Z"
 lastReleaseAt: "2021-06-23T14:29:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "community_watch"]
-healthScore: 90
+healthScore: 94
 undervaluedScore: 75
-maintainers: ["JanaME", "palasthotel-release-bot[bot]", "dependabot[bot]"]
+maintainers: ["JanaME", "dependabot[bot]", "palasthotel-release-bot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/302388213/9325b644-8df1-4611-9412-4835c5b8e771"
 postedAt: "2026-10-14T09:04:45.239Z"
 ---

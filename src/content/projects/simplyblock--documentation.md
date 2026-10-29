@@ -19,7 +19,7 @@ createdAt: "2025-03-04T08:42:06Z"
 lastCommitAt: "2026-10-27T15:15:51Z"
 status: "thriving"
 tags: []
-healthScore: 97
+healthScore: 96
 undervaluedScore: 77
 maintainers: ["noctarius", "michixs", "boddumanohar"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ab95d454cc2253a13799428a92378be8a060df365329dd4effc84de1ba63fa83/simplyblock/documentation"

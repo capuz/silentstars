@@ -11,7 +11,7 @@ languagePcts: [82]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript"]
 stars: 6
 forks: 4
-openIssues: 67
+openIssues: 68
 closedIssues: 246
 watchers: 1
 contributors: 5
