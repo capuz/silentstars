@@ -17,7 +17,7 @@ createdAt: "2023-11-09T10:13:56Z"
 lastCommitAt: "2026-10-28T22:14:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 74
 maintainers: ["vimagick"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e1405b563cf9ddfc36a33dd3d0f641ad9373f146fd7e090bf7c908d7a2778495/EasyData/expired-cn-domains"

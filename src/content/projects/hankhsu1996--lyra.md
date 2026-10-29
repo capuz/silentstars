@@ -10,19 +10,19 @@ languagePcts: [77, 21]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog"]
 stars: 6
 forks: 1
-openIssues: 0
+openIssues: 33
 closedIssues: 1
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-10-29T10:03:09Z"
+lastCommitAt: "2026-10-29T19:36:42Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
-undervaluedScore: 80
+healthScore: 80
+undervaluedScore: 64
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e70f85216f0e1dfdac9f68cf6346d928d4ffa5e6e8d0898d2046b521da5847fe/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/216ee938b5e464d8c7f8837b58858ce82311c623f0c4d6445ebc19fd12b72c31/hankhsu1996/lyra"
 postedAt: "2026-10-09T10:56:38.881Z"
 ---
 

@@ -11,7 +11,7 @@ languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 1
-openIssues: 23
+openIssues: 24
 closedIssues: 139
 watchers: 1
 contributors: 3

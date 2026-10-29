@@ -10,22 +10,21 @@ languagePcts: [59, 29]
 topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise", "monorepo", "oxlint", "pnpm", "wayland"]
 stars: 7
 forks: 2
-openIssues: 1324
-closedIssues: 453
+openIssues: 1327
+closedIssues: 455
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-10-29T14:08:04Z"
+lastCommitAt: "2026-10-29T21:25:43Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 84
 undervaluedScore: 68
 maintainers: ["Aquaticat"]
-openGraphImageUrl: "https://opengraph.githubassets.com/de044d1114dbe5195b323426c5dca1fa4fd9076da44f073520feb076d7c4d8db/Aquaticats/Monochromatic"
+openGraphImageUrl: "https://opengraph.githubassets.com/d3ab23ad28a87a8058d77be06f5a8e012ee3ccba2cb6081d105ad325014c3fa2/Aquaticats/Monochromatic"
 discussionCount: 0
-postedAt: "2026-09-30T10:05:46.857Z"
 ---
 
 # Monochromatic
@@ -69,5 +68,4 @@ housekeeping),
 and [`pi-plugin`](https://github.com/Aquaticats/Monochromatic/blob/HEAD/package/pi-plugin/) does the same for the Pi coding agent
 (advisor,
 guardrail,
-morph-compact,
-model…
+model selection).…

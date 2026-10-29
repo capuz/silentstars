@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-28T07:22:18Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 42
 maintainers: ["macalbert", "dependabot[bot]", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/cf3a417f-d3c4-4689-8921-72b74112ff28"

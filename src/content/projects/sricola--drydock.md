@@ -21,8 +21,8 @@ lastCommitAt: "2026-10-18T22:49:04Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 92
-undervaluedScore: 41
+healthScore: 91
+undervaluedScore: 40
 maintainers: ["sricola"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b51b5928b21b1600b221794935af6c70e5187b8d16aca0cf716d8826cb65f7c6/sricola/drydock"
 postedAt: "2026-06-21T00:00:54.805Z"

@@ -7,21 +7,21 @@ url: "https://github.com/protoLabsAI/protoAgent"
 homepage: "https://agent.protolabs.studio"
 language: "Python"
 languages: ["Python", "TypeScript"]
-languagePcts: [69, 26]
+languagePcts: [70, 26]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
 stars: 14
 forks: 9
-openIssues: 12
-closedIssues: 1159
+openIssues: 23
+closedIssues: 1165
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-10-29T11:40:42Z"
+lastCommitAt: "2026-10-29T21:23:35Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 61
 maintainers: ["mabry1985", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
@@ -35,22 +35,22 @@ A private, plugin-extensible desktop agent. It plans and remembers, and it gives
 
 ## Get it running
 
-[Download the desktop app](https://agent.protolabs.studio/download) for macOS,
-Windows, or Linux, then follow the setup wizard.
+**What you need:** a Claude Pro/Max or ChatGPT Plus/Pro plan, an API key
+(OpenAI, OpenRouter, …), or a local model (Ollama / LM Studio).
+Or nothing, to just explore.
 
-With [uv](https://docs.astral.sh/uv/) installed, you can also run the published package:
+**[Download the desktop app](https://agent.protolabs.studio/download)** for macOS,
+Windows, or Linux.
 
-```bash
-uvx --from protolabs-agent protoagent serve
-```
-
-Open <http://localhost:7870>. Connect a model endpoint or sign in to a supported
-Claude or ChatGPT subscription, choose **Basic**, name your agent, and finish setup.
+On first run, click **Next** on the welcome screen, connect and test a model (or
+choose **Explore without a model**), choose **Basic** and name your agent, then
+review your choices and click **Finish**.
 The [first-agent tutorial](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/tutorials/first-agent.md) covers installation,
 connection testing, and your first chat.
 
-## Watch it
+macOS builds are **Apple Silicon only**. Windows and Linux builds are unsigned;
+expect an OS warning on first launch.
 
-| Your agent drives Claude Code / Codex | An autonomous dev team | A private desktop agent |
-| --- | --- | --- |
-| <a href="docs/public/readme/hero-code-pane.webp"><img…
+### Run the Python package
+
+With [uv](https://docs.astral.sh/uv/) installed,…
