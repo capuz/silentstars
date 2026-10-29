@@ -7,24 +7,24 @@ url: "https://github.com/NodeSpaceAI/nodespace-core"
 homepage: "https://nodespace.ai"
 language: "Rust"
 languages: ["Rust", "TypeScript"]
-languagePcts: [64, 32]
+languagePcts: [63, 32]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 118
-closedIssues: 2041
+openIssues: 110
+closedIssues: 2049
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-10-29T10:37:02Z"
+lastCommitAt: "2026-10-29T12:20:16Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 83
-maintainers: ["mstomar125", "malibio"]
-openGraphImageUrl: "https://opengraph.githubassets.com/aa519a38799199b2951a07728da36e321fed4f8271a3fee1f7abefba6e25072f/NodeSpaceAI/nodespace-core"
+maintainers: ["mstomar125"]
+openGraphImageUrl: "https://opengraph.githubassets.com/63b34255d45dbb102c1b2e2b5a2eab8c666c15262d564a75bc11475a2cf8abfd/NodeSpaceAI/nodespace-core"
 postedAt: "2026-10-05T10:53:35.128Z"
 ---
 

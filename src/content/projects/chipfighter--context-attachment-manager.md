@@ -6,22 +6,22 @@ readmeQualityOk: true
 url: "https://github.com/chipfighter/context-attachment-manager"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [87]
+languagePcts: [86]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 559
+stars: 560
 forks: 64
-openIssues: 4
-closedIssues: 8
+openIssues: 2
+closedIssues: 10
 watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"
-lastCommitAt: "2026-10-29T07:12:18Z"
+lastCommitAt: "2026-10-29T11:53:41Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "release_machine"]
-healthScore: 93
-undervaluedScore: 26
+healthScore: 96
+undervaluedScore: 27
 maintainers: ["chipfighter", "lin-coco", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
 promoted: true
@@ -41,6 +41,4 @@ So I made a panel that keeps the conversation and drops the weight.
 - **It remembers every image.** The model quietly notes what each image shows and what you said about it ("too dark", "best face"). Even far into a long chat, or after the chat is compacted, it picks the right one.
 - **Your chat stays light.** No more slowdowns or endless reconnecting. In a 15-image task, a request that carried 24.9 MB went out at 212 KB.
 
-## How to use
-
-- **Codex**:…
+## Watch the 30-second tour…

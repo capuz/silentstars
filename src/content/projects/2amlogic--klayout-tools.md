@@ -16,14 +16,14 @@ watchers: 0
 contributors: 3
 recentReleases: 3
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-10-29T09:25:04Z"
+lastCommitAt: "2026-10-29T11:58:33Z"
 lastReleaseAt: "2026-09-15T02:19:49Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 71
 maintainers: ["loom-fleet-dispatch[bot]", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1c9727a343213c8cfd0b5f006fa2825c66e0709df8f8024f41e93c8e1ec26747/2AMLogic/klayout-tools"
+openGraphImageUrl: "https://opengraph.githubassets.com/8661ec1bdc7afe0acfd9ab37849e98e297bb5e357743bb51375f8d9844d4097e/2AMLogic/klayout-tools"
 postedAt: "2026-10-16T08:33:31.631Z"
 ---
 

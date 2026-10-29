@@ -15,13 +15,13 @@ watchers: 17
 contributors: 38
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-10-29T10:36:10Z"
+lastCommitAt: "2026-10-29T12:11:36Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 65
-maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0cfe57db57eea5c1086c9ab38426de883c56e94bc8b28e0f318be6cfdbf5c573/InjectiveLabs/injective-lists"
+maintainers: ["actions-user", "ThomasRalee"]
+openGraphImageUrl: "https://opengraph.githubassets.com/7547c699c0baa47f43227ce0890badd18d27a22edac1b81e36c5ec993220ef88/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 
