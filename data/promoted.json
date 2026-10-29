@@ -78,5 +78,9 @@
   {
     "repo": "MaxJafar/monolith",
     "until": "2026-11-28"
+  },
+  {
+    "repo": "aichance/business-ai-recipes",
+    "until": "2026-11-28"
   }
 ]
