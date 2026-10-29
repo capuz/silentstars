@@ -24,6 +24,7 @@ healthScore: 95
 undervaluedScore: 77
 maintainers: ["kevbarns", "alanlr", "hlaugier"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1bbdcb95718d23fc60dd6ca9ab6c06bfff85d1109f3a843866de04bc119506b7/mission-apprentissage/labonnealternance"
+postedAt: "2026-10-29T10:27:48.379Z"
 ---
 
 # LBA - La bonne alternance
