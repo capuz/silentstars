@@ -11,7 +11,7 @@ languagePcts: [88]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 25
 forks: 7
-openIssues: 13
+openIssues: 14
 closedIssues: 1418
 watchers: 1
 contributors: 4

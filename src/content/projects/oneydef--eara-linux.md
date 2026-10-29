@@ -28,6 +28,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/8ec258d2a0e07e6041d90a520
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true
+postedAt: "2026-10-29T12:34:03.259Z"
 ---
 
 **Unofficial GTK companion for Nothing / CMF earbuds on Linux**

@@ -14,16 +14,16 @@ openIssues: 92
 closedIssues: 205
 watchers: 1
 contributors: 54
-recentReleases: 6
+recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-10-29T10:50:20Z"
-lastReleaseAt: "2026-10-23T08:48:02Z"
+lastCommitAt: "2026-10-29T12:27:43Z"
+lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 100
 maintainers: ["NicolasFussberger", "cameron-craig-etas", "MaciejKaszynski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f337a2ae28eb97e764db05203cf7f7843bfe925eeee62e9a42f7ad795362b504/eclipse-score/lifecycle"
+openGraphImageUrl: "https://opengraph.githubassets.com/17ca29a6e97076736b1861617774b9a3095fe73341f49164d1ce835966239daf/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

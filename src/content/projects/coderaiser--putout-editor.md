@@ -16,14 +16,14 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2019-08-30T08:14:24Z"
-lastCommitAt: "2026-10-12T11:30:22Z"
+lastCommitAt: "2026-10-29T12:59:29Z"
 lastReleaseAt: "2026-07-16T13:07:00Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "legacy_hero", "funded"]
-healthScore: 83
+healthScore: 88
 undervaluedScore: 70
 maintainers: ["coderaiser"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7cd9208dd89ede6d8ec375c4ef1f591776106a7c764d5a7da58ee10189c0e664/coderaiser/putout-editor"
+openGraphImageUrl: "https://opengraph.githubassets.com/1f4af5e897eda39e1d58663879581a380eb797b52955c3054e825b783114f5dc/coderaiser/putout-editor"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/cloudcmd"]
 postedAt: "2026-09-17T08:55:51.523Z"
 ---

@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-27T15:46:18Z"
 lastReleaseAt: "2026-07-29T06:27:41Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 66
 maintainers: ["genedna", "NJUWallSpider", "jiatianbo666"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cc1779cb3fc5c00e4da9c2735abccb7e8d6e2b36987acd4b45188829ea3f2f22/libra-tools/git-internal"
