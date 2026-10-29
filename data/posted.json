@@ -2124,5 +2124,16 @@
         "postedAt": "2026-10-29T10:44:16.566Z"
       }
     }
+  },
+  {
+    "repo": "oneydef/EarA-linux",
+    "slug": "oneydef--eara-linux",
+    "postedAt": "2026-10-29T12:34:03.259Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myzbmj3xeq2p",
+        "postedAt": "2026-10-29T12:34:03.259Z"
+      }
+    }
   }
 ]
