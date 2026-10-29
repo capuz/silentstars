@@ -2146,5 +2146,16 @@
         "postedAt": "2026-10-29T14:15:09.633Z"
       }
     }
+  },
+  {
+    "repo": "aichance/business-ai-recipes",
+    "slug": "aichance--business-ai-recipes",
+    "postedAt": "2026-10-29T21:31:28.009Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mz27njfwn32z",
+        "postedAt": "2026-10-29T21:31:28.009Z"
+      }
+    }
   }
 ]
