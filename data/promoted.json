@@ -74,5 +74,9 @@
   {
     "repo": "oneydef/EarA-linux",
     "until": "2026-11-28"
+  },
+  {
+    "repo": "MaxJafar/monolith",
+    "until": "2026-11-28"
   }
 ]
