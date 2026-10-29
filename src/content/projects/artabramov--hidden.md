@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["encryption", "fastapi", "gocryptfs", "python", "self-hosted", "versitygw", "s3"]
-stars: 41
+stars: 44
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -24,8 +24,9 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 71
 undervaluedScore: 32
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/437603e9b64fd968a883bd1798c6fc69ef32a1c018f4498e9f3d8fcbfa0ec4da/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/14f38d1c4f62e613d53a75dd6db219c08694cd4ab49d6b5fa2848f06df7d5a30/artabramov/hidden"
 promoted: true
+postedAt: "2026-10-29T05:58:03.283Z"
 ---
 
 # Hidden S3 — encrypted self-hosted S3 storage

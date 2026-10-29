@@ -17,14 +17,14 @@ watchers: 0
 contributors: 7
 recentReleases: 4
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-10-29T05:07:02Z"
+lastCommitAt: "2026-10-29T09:47:45Z"
 lastReleaseAt: "2026-10-20T12:59:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 81
 maintainers: ["krisztiankoos"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a2d488664ccab9ea536cbcb986c490bbf9855edca19571127506a6d9a193677e/learn-ukrainian/learn-ukrainian.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/9b3e5e67a12aa59332476f13a2cc4a96b216f26c9d9b59fc34dd60c03189aa68/learn-ukrainian/learn-ukrainian.github.io"
 discussionCount: 1
 postedAt: "2026-08-24T04:26:39.846Z"
 ---

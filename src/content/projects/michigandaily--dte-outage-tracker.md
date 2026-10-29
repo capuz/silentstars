@@ -15,13 +15,13 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2023-02-23T03:36:50Z"
-lastCommitAt: "2026-10-29T01:35:23Z"
+lastCommitAt: "2026-10-29T08:06:46Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 90
 undervaluedScore: 79
 maintainers: ["github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f40a19e851469912bcf863231d074ec851373e63c02f260cb9645595cd649422/michigandaily/dte-outage-tracker"
+openGraphImageUrl: "https://opengraph.githubassets.com/ba5f0a3118729ed7b69a04bc71396e2c467a9ddc9a66708e6d67b0717ad78d90/michigandaily/dte-outage-tracker"
 postedAt: "2026-09-12T08:09:30.085Z"
 ---
 

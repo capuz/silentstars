@@ -16,13 +16,13 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-10-29T05:12:35Z"
+lastCommitAt: "2026-10-29T10:12:17Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
 undervaluedScore: 79
 maintainers: ["github-actions[bot]", "jimbrig", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/66d24bf8016e7de2b3dd07ade915b526990ba530e3cb62a74578e47f28fd2f38/jimbrig/jimbrig"
+openGraphImageUrl: "https://opengraph.githubassets.com/2b19c7686aff7b8e462538207f6244f0021f8f01d93bfb09511f3a7818f3b05f/jimbrig/jimbrig"
 fundingLinks: ["GITHUB:https://github.com/jimbrig"]
 discussionCount: 1
 postedAt: "2026-08-17T04:24:00.451Z"
@@ -46,6 +46,8 @@ Successful history of identifying patterns, making interpretations, and producin
       style="max-width:100%;"
     >
 
-| 💻 **Technology** | 🚀 **Projects** |
-| - | - |
-| [](https://www.r-project.org/) | [](https://github.com/rinterface/shinydashboardplus) [](https://github.com/o2r-project/containerit) [](https://github.com/tychobra/polished) [](https://github.com/jimbrig/rtraining) [](https://github.com/jimbrig/jimstaskviews) [](https://github.com/jimbrig/github-issue-table)…
+- Portfolio: [Devfolio](https://devfolio.jimbrig.com)
+- Knowledge as a Service (Official): [KaaS - Obsidian Pubish](https://publish.obsidian.md/kaas-published/) 
+- Knowledge as a Service (GitHub Pages): [KaaS - GitHub Pages](https://kaas.jimbrig.com/)  
+- Distill Blog: [JimsDocs](https://jimbrig.github.io/jimsdocs/)
+- R Blog: [The R…
