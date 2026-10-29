@@ -2091,5 +2091,16 @@
         "postedAt": "2026-10-28T10:06:49.836Z"
       }
     }
+  },
+  {
+    "repo": "artabramov/hidden",
+    "slug": "artabramov--hidden",
+    "postedAt": "2026-10-29T05:58:03.283Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myylifxajw2n",
+        "postedAt": "2026-10-29T05:58:03.283Z"
+      }
+    }
   }
 ]
