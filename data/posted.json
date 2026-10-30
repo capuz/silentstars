@@ -2168,5 +2168,16 @@
         "postedAt": "2026-10-30T10:31:15.033Z"
       }
     }
+  },
+  {
+    "repo": "seifip/kilobat-cli",
+    "slug": "seifip--kilobat-cli",
+    "postedAt": "2026-10-30T11:11:14.626Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mz3nhfixlp2z",
+        "postedAt": "2026-10-30T11:11:14.626Z"
+      }
+    }
   }
 ]
