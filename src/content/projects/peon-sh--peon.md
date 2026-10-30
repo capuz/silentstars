@@ -15,13 +15,13 @@ openIssues: 1
 closedIssues: 8
 watchers: 0
 contributors: 11
-recentReleases: 6
+recentReleases: 5
 createdAt: "2026-07-10T11:34:59Z"
 lastCommitAt: "2026-10-28T05:49:35Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: ["release_machine"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c57fe2b17ab75d5f1d876774bf14939b3d2c6835d832b30beeb48b1401931e6a/Peon-sh/Peon"

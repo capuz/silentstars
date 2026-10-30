@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-29T14:24:06Z"
 lastReleaseAt: "2025-07-04T06:43:15Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["SebastianSchuetze", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b1f64fbe241259cd52091bb9beaf9396415cedd9df886e38737df6c900abb81d/findmydoc-platform/website"

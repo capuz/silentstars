@@ -10,7 +10,7 @@ languages: ["TypeScript"]
 languagePcts: [94]
 stars: 11
 forks: 6
-openIssues: 444
+openIssues: 446
 closedIssues: 1707
 watchers: 3
 contributors: 18

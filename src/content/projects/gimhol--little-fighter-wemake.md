@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-26T17:06:12Z"
 lastReleaseAt: "2026-09-29T16:07:28Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 99
 maintainers: ["gimhol"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cc8f7c4956f9e57499c753849b0549fdd8c0e633b85fb6474c84006e0dff6a37/gimhol/Little-Fighter-Wemake"

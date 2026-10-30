@@ -17,14 +17,14 @@ watchers: 6
 contributors: 60
 recentReleases: 3
 createdAt: "2024-09-12T15:02:30Z"
-lastCommitAt: "2026-10-29T18:15:30Z"
-lastReleaseAt: "2026-10-29T16:05:21Z"
+lastCommitAt: "2026-10-30T10:04:30Z"
+lastReleaseAt: "2026-10-30T10:04:31Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 75
 maintainers: ["renovate[bot]", "distro-ci[bot]", "leiicamundi"]
-openGraphImageUrl: "https://opengraph.githubassets.com/01ca33df1149976cc248d13ddb203ba6acb9e5ed0cd05d3d958951d0b57feb8e/camunda/camunda-distributions"
+openGraphImageUrl: "https://opengraph.githubassets.com/fe9397d41aef3c8b2e8710c6d4d2a7fa98b73fdaca6989f16921db9ec2079b23/camunda/camunda-distributions"
 postedAt: "2026-08-28T15:40:10.930Z"
 ---
 

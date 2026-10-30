@@ -6,23 +6,24 @@ readmeQualityOk: true
 url: "https://github.com/hankhsu1996/lyra"
 language: "C++"
 languages: ["C++", "SystemVerilog"]
-languagePcts: [77, 21]
-topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog"]
+languagePcts: [76, 20]
+topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda", "hdl", "llvm", "verification"]
 stars: 6
 forks: 1
-openIssues: 33
-closedIssues: 1
+openIssues: 319
+closedIssues: 11
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-10-29T19:36:42Z"
+lastCommitAt: "2026-10-30T09:37:08Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 64
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/216ee938b5e464d8c7f8837b58858ce82311c623f0c4d6445ebc19fd12b72c31/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/cbf0f74624aa170c44f2be763574c7ae222750966b72312dfa24fbad086345ba/hankhsu1996/lyra"
+discussionCount: 0
 postedAt: "2026-10-09T10:56:38.881Z"
 ---
 
@@ -43,4 +44,4 @@ Those commitments, and the constraints that follow from them, are stated in
 this repository answers to that one.
 
 Coverage is measured rather than described. Every construct Lyra handles is claimed by a case under
-`tests/conformance/` stating what IEEE 1800 requires of a program and checking itself…
+`conformance/` stating what IEEE 1800 requires of a program and checking itself against…

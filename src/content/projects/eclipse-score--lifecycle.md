@@ -13,17 +13,17 @@ forks: 37
 openIssues: 95
 closedIssues: 205
 watchers: 1
-contributors: 53
+contributors: 54
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-10-29T12:27:43Z"
+lastCommitAt: "2026-10-30T09:14:36Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 100
 maintainers: ["NicolasFussberger", "cameron-craig-etas", "MaciejKaszynski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/29dfec5abcf689d59412320e2663d091a7c9674ce7bfade5751bebddf3510173/eclipse-score/lifecycle"
+openGraphImageUrl: "https://opengraph.githubassets.com/2043b9581c6db0a72756f6889a8eb0b958adb9c8a04f1e4006ceeb97a49ab0b4/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

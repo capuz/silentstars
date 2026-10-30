@@ -1,15 +1,15 @@
 ---
 repo: "chipfighter/context-attachment-manager"
 name: "context-attachment-manager"
-description: "Long image chats in Codex and Claude, without the lag. The model manages its own images, pulling back only what it needs, and any image you made before is one search away: just describe what you remember."
+description: "Turn Codex and Claude Code into your AI assistant director. Pair them with your favorite image-generation tools, keep image-heavy chats lightweight, and find the right image from a rough description—even after repeated context compaction."
 readmeQualityOk: true
 url: "https://github.com/chipfighter/context-attachment-manager"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [86]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 564
-forks: 64
+stars: 593
+forks: 65
 openIssues: 2
 closedIssues: 10
 watchers: 1

@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-06T12:10:36Z"
-lastCommitAt: "2026-10-29T20:28:53Z"
+lastCommitAt: "2026-10-30T09:42:18Z"
 lastReleaseAt: "2026-10-10T06:28:19Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
@@ -26,6 +26,7 @@ undervaluedScore: 54
 maintainers: ["aichance"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1407239185/796433cc-bab5-472b-a6b8-03386a14475e"
 promoted: true
+postedAt: "2026-10-29T21:31:28.009Z"
 ---
 
 # aichance's developer tools
@@ -36,14 +37,12 @@ Put selected **localStorage / sessionStorage / IndexedDB values, field changes a
 beside the actions in your existing Playwright test. Open one local HTML report
 when a save/reload flow fails. Experimental, MIT, no account or API key.
 
-[**Replay the recorded example**](https://aichance.github.io/business-ai-recipes/state-lens.html) · [**Copy one file into your Playwright test**](https://github.com/aichance/business-ai-recipes/blob/HEAD/docs/state-lens-install.md) · [**26-second measured replay**](https://aichance.github.io/business-ai-recipes/state-lens-demo.mp4)
+[**Replay the recorded example**](https://aichance.github.io/business-ai-recipes/state-lens.html) · [**Copy one file into your Playwright test**](https://github.com/aichance/business-ai-recipes/blob/HEAD/docs/state-lens-install.md) · [**26-second replay (original0.1 recording)**](https://aichance.github.io/business-ai-recipes/state-lens-demo.mp4)
 
-Download the [versioned library](https://aichance.github.io/business-ai-recipes/state-lens-v0.3.0-experimental.1.mjs) ([SHA256](https://aichance.github.io/business-ai-recipes/state-lens-v0.3.0-experimental.1.mjs.sha256)) next to your existing test, then:
+Download the [versioned library](https://aichance.github.io/business-ai-recipes/state-lens-v0.4.1-experimental.1.mjs) ([SHA256](https://aichance.github.io/business-ai-recipes/state-lens-v0.4.1-experimental.1.mjs.sha256)) next to your existing test, then:
 
 ```js
-import { createStateLens } from './state-lens-v0.3.0-experimental.1.mjs';
+import { createStateLens } from './state-lens-v0.4.1-experimental.1.mjs';
 ```
 
-Use this from a Node22+ project that already has Playwright. Select a known
-storage key, wrap the test's actions with `lens.step`, and keep its normal
-assertions. No new npm dependency is…
+**TypeScript:** 0.4.1 fixes the inferred `probes` option. Projects that need declarations can also copy the matching [`.d.mts`…
