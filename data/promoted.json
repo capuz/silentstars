@@ -82,5 +82,9 @@
   {
     "repo": "aichance/business-ai-recipes",
     "until": "2026-11-28"
+  },
+  {
+    "repo": "seifip/kilobat-cli",
+    "until": "2026-11-29"
   }
 ]
