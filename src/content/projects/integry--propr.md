@@ -11,20 +11,20 @@ languagePcts: [88]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 26
 forks: 7
-openIssues: 12
-closedIssues: 1425
+openIssues: 11
+closedIssues: 1426
 watchers: 1
 contributors: 4
 recentReleases: 5
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-10-30T07:51:38Z"
+lastCommitAt: "2026-10-30T10:30:50Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 73
-maintainers: ["integry", "proprdev", "propr-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/09b96bdb87bf4be0c74832d692806989891430541bf154268823b90a1fb07620/integry/propr"
+maintainers: ["integry", "proprdev", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/8cdef35cb4dc0e0d0f905ee7c8fb562f9d5f775e59c5e42257305ca27852ecb1/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
 ---

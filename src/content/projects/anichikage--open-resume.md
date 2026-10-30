@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-27T03:07:33Z"
 lastReleaseAt: "2026-10-27T03:10:16Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 28
 maintainers: ["AniChikage"]
 openGraphImageUrl: "https://opengraph.githubassets.com/eb1c86fa1ebf3fe7a0f9dcf0604b5cb49fc079dabbfa272127e49383d896e083/AniChikage/open-resume"

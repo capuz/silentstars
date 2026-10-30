@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-10-29T12:18:56Z"
+lastCommitAt: "2026-10-30T11:02:34Z"
 lastReleaseAt: "2026-10-27T10:43:13Z"
 status: "newborn"
 tags: ["hidden_gem", "funded", "release_machine"]
-healthScore: 80
+healthScore: 81
 undervaluedScore: 49
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cf8f886f38c0dc3a354a1ba9bf98f8bdf0696d031dac5927e50a74674566f0ad/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/39609f963d27159ba33923264e235ea7aa87e59220fac261fda48b518f5dfdc1/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true
@@ -47,10 +47,7 @@ EarA brings battery, ANC, EQ, gestures, find-my, and Bluetooth audio routing to 
 
   &nbsp;
 
-## Features
+## In the press
 
-| Audio | Device | Extras |
-|-------|--------|--------|
-| A2DP music & Discord | Battery L / R / case | Pinch remapping |
-| Optional HFP mic (`eara audio hfp`) | ANC + transparency | Find my earbuds |
-| Host codec list (LHDC if adapter supports) | EQ presets + 8-band…
+- [OMG! Ubuntu — This app lets you manage Nothing & CMF earbuds on Linux](https://www.omgubuntu.co.uk/2026/10/cmf-nothing-earbuds-linux-companion-app)
+- [FOSSWire — EarA: Open-Source GTK4 App Manages Nothing and CMF Earbuds on…

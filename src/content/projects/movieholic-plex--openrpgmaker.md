@@ -17,14 +17,15 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-10-30T10:23:33Z"
+lastCommitAt: "2026-10-30T10:53:11Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["release_machine"]
 healthScore: 100
 undervaluedScore: 71
 maintainers: ["MovieHolic-Plex"]
-openGraphImageUrl: "https://opengraph.githubassets.com/10dedd902d9a24c57011480d4c2bbb314054db55fa7f2192d0dff9ff75ca4f14/MovieHolic-Plex/OpenRPGMaker"
+openGraphImageUrl: "https://opengraph.githubassets.com/7ccedd4f64cee4a040fb4a9225fe6cf74fee2d9ae1cd721139845abc168ab408/MovieHolic-Plex/OpenRPGMaker"
+postedAt: "2026-10-30T10:31:15.033Z"
 ---
 
 # OPRN Studio
