@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-10-31T15:09:10Z"
+lastCommitAt: "2026-10-31T17:45:17Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -27,6 +27,7 @@ maintainers: ["farena-ai", "Guilsc", "Ehsan-hash"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"
 discussionCount: 1
 promoted: true
+postedAt: "2026-10-31T16:06:55.950Z"
 ---
 
 # Sara
@@ -36,7 +37,7 @@ She talks, remembers, plans your day and reads your books; she writes, runs and 
 sandboxed workspace. All on your own server, with the models you pick, in one app for the web,
 Windows, Mac and phones.
 
-> **Status:** 2.33, MIT licensed, with forty-four feature releases since 1.0 (all below). 2.5 to 2.8
+> **Status:** 2.35, MIT licensed, with forty-six feature releases since 1.0 (all below). 2.5 to 2.8
 > gave the whole app a new look. The [Android app](https://play.google.com/store/apps/details?id=com.backstagecoding.sara)
 > is on Google Play; the iPhone app and the Mac App Store version are coming as soon as Apple approves them.
 > Read [docs/DISCLOSURES.md](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing Sara.

@@ -9,8 +9,8 @@ language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [70, 26]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
-stars: 16
-forks: 10
+stars: 17
+forks: 11
 openIssues: 21
 closedIssues: 1177
 watchers: 1
