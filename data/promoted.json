@@ -90,5 +90,9 @@
   {
     "repo": "YOLOW92/pagesift",
     "until": "2026-11-30"
+  },
+  {
+    "repo": "suirindo/agent-role-contracts",
+    "until": "2026-11-30"
   }
 ]
