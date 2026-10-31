@@ -10,33 +10,48 @@ languagePcts: [99]
 topics: ["discord-bot", "buildbot", "discord"]
 stars: 7
 forks: 1
-openIssues: 8
-closedIssues: 21
+openIssues: 5
+closedIssues: 24
 watchers: 5
 contributors: 11
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-10-30T10:29:55Z"
+lastCommitAt: "2026-10-30T22:14:41Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 94
-undervaluedScore: 69
+healthScore: 96
+undervaluedScore: 70
 maintainers: ["credfeto", "dnyw4l3n13"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b7d456d5f75b5ca5d681469b6b43c06ac12589c6632bf26c27c4b4cb0c77438e/funfair-tech/BuildBot"
+openGraphImageUrl: "https://opengraph.githubassets.com/d2902129c9906797e17a1d631c374d30b3196dfc0c7d1b37f52e0fa956da2e96/funfair-tech/BuildBot"
 postedAt: "2026-09-01T08:56:05.310Z"
 ---
 
 # BuildBot
 
-FunFair's Build Discord Bot
+FunFair's build notification bot: receives GitHub, Watchtower and CloudFormation webhooks and posts the results to Discord.
 
 ## Build Status
 
-| Branch | Status                                                                                                                                                                                                                             |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| main   | [](https://github.com/funfair-tech/BuildBot/actions/workflows/build-and-publish-pre-release.yml) |
+| Branch  | Status                                                     |
+|---------|------------------------------------------------------------|
+| main    | [][pre-release] |
+| release | [][release]             |
 
-## Configuration
+## Overview
 
-| Setting                | Environment variable    | Type   | Default | Description                                                                                                                                                                                                                                                                                                                                                  |…
+BuildBot is an ASP.NET Core service that listens for webhooks from GitHub (pushes and commit statuses), Watchtower (container updates) and CloudFormation (stack deployments via SNS). It turns each notification into a Discord embed and posts it to a single channel webhook, so build, deployment and container activity shows up in one place. GitHub requests are verified against the webhook's HMAC-SHA256 signature when a secret is configured.
+
+## Quick Start
+
+```shell
+export GITHUB__WEBHOOKSECRET="<github-webhook-secret>"
+export DISCORD__WEBHOOKURL="https://discord.com/api/webhooks/<id>/<token>"
+dotnet run --project src/BuildBot/BuildBot.csproj
+```
+
+The service listens on port 8080; `curl http://localhost:8080/ping` checks that it is running.
+
+## Installation
+
+BuildBot is not published as a NuGet package. It…

@@ -12,12 +12,12 @@ topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react",
 stars: 6
 forks: 5
 openIssues: 71
-closedIssues: 246
+closedIssues: 250
 watchers: 1
 contributors: 5
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-10-29T19:37:17Z"
+lastCommitAt: "2026-10-30T21:32:52Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
@@ -25,7 +25,7 @@ healthScore: 95
 undervaluedScore: 75
 maintainers: ["Todo-bai", "mykola-lp", "robertoponcepaniagua"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
-discussionCount: 2
+discussionCount: 3
 promoted: true
 postedAt: "2026-10-26T18:14:02.761Z"
 ---

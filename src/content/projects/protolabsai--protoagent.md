@@ -9,15 +9,15 @@ language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [70, 26]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
-stars: 15
-forks: 9
-openIssues: 22
-closedIssues: 1176
+stars: 16
+forks: 10
+openIssues: 21
+closedIssues: 1177
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-10-30T10:28:33Z"
+lastCommitAt: "2026-10-30T23:27:22Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]

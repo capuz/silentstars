@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-28T15:12:19Z"
 lastReleaseAt: "2021-06-23T14:29:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "community_watch"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 75
 maintainers: ["JanaME", "dependabot[bot]", "palasthotel-release-bot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/302388213/9325b644-8df1-4611-9412-4835c5b8e771"

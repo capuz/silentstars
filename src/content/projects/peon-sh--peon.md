@@ -15,12 +15,12 @@ openIssues: 1
 closedIssues: 8
 watchers: 0
 contributors: 11
-recentReleases: 5
+recentReleases: 4
 createdAt: "2026-07-10T11:34:59Z"
 lastCommitAt: "2026-10-28T05:49:35Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
-tags: ["release_machine"]
+tags: []
 healthScore: 96
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]

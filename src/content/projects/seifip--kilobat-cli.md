@@ -14,17 +14,18 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 2
+recentReleases: 9
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-10-30T11:02:02Z"
-lastReleaseAt: "2026-10-30T11:02:36Z"
+lastCommitAt: "2026-10-31T01:51:22Z"
+lastReleaseAt: "2026-10-31T01:51:26Z"
 status: "newborn"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 80
-undervaluedScore: 28
+undervaluedScore: 38
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9070120a13a183dd29bdfd720a4c0b8e035e33e7fecf28bfbccd93d02dc843d1/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/00b8c617cd4f0e6d928ffa6d24a24a7002a93e97ba6414a40441b53108fc4619/seifip/kilobat-cli"
 promoted: true
+postedAt: "2026-10-30T11:11:14.626Z"
 ---
 
 # Kilobat CLI

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-29T04:55:53Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 84
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
 openGraphImageUrl: "https://opengraph.githubassets.com/45b6678ca7322833b9048d2f3e840b1f39467c1b4d2834b23d142765315ad2d2/nattokin/go-backlog"

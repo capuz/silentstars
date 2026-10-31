@@ -18,8 +18,8 @@ lastCommitAt: "2026-10-29T13:59:04Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 89
-undervaluedScore: 52
+healthScore: 88
+undervaluedScore: 53
 maintainers: ["DMS-Menula", "DMS-ranil", "f-o-x11"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"
 discussionCount: 1

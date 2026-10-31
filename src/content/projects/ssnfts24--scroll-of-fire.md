@@ -7,7 +7,7 @@ url: "https://github.com/ssnfts24/scroll-of-fire"
 homepage: "https://ssnfts24.github.io/scroll-of-fire/"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [88]
+languagePcts: [89]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
 stars: 7
 forks: 0
@@ -17,11 +17,11 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-08-21T12:55:55Z"
+lastCommitAt: "2026-10-30T23:30:30Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
-status: "at_risk"
+status: "thriving"
 tags: ["funded"]
-healthScore: 61
+healthScore: 84
 undervaluedScore: 72
 maintainers: ["ssnfts24", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"

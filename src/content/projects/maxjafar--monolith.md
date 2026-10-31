@@ -8,7 +8,7 @@ homepage: "https://monolith-site-maxjafars-projects.vercel.app"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [87]
-stars: 4
+stars: 5
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-10-21T15:52:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 79
-undervaluedScore: 51
+undervaluedScore: 50
 maintainers: ["MaxJafar"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fc76d2a37735d6decccad2a39f35b274e5013ac35550c961f29bcbb0bb8be44a/MaxJafar/monolith"
+openGraphImageUrl: "https://opengraph.githubassets.com/aa6884f8606c3e9e9bf9dce7442e13f20bb13df7c40b79c2c322db1152f3504f/MaxJafar/monolith"
 promoted: true
 postedAt: "2026-10-29T14:15:09.633Z"
 ---

@@ -7,7 +7,7 @@ url: "https://github.com/sablier-labs/indexers"
 homepage: "https://sablier.com"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [97]
+languagePcts: [98]
 topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "the-graph", "token-streaming", "decentralized-finance", "defi", "real-time-finance"]
 stars: 16
 forks: 5
@@ -17,7 +17,7 @@ watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-10-30T00:04:45Z"
+lastCommitAt: "2026-10-31T00:03:30Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["solo_builder", "community_hub"]
