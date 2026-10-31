@@ -15,16 +15,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 2
+recentReleases: 3
 createdAt: "2026-06-07T05:35:30Z"
-lastCommitAt: "2026-10-30T05:34:29Z"
-lastReleaseAt: "2026-10-24T05:13:13Z"
+lastCommitAt: "2026-10-31T08:51:42Z"
+lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 71
-undervaluedScore: 32
+undervaluedScore: 34
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1670030f0277559ba739f5643297ac919e0436a07918ff9dc19243e3079ea49d/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/f4682146987943c2493e1b97274489a443fc2b6fa07f45bec87751efa515cd0f/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

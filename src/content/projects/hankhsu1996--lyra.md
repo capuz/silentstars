@@ -10,7 +10,7 @@ languagePcts: [77, 20]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda", "hdl", "llvm", "verification"]
 stars: 6
 forks: 1
-openIssues: 312
+openIssues: 314
 closedIssues: 41
 watchers: 1
 contributors: 4
