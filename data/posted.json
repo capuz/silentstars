@@ -2190,5 +2190,16 @@
         "postedAt": "2026-10-31T02:07:17.829Z"
       }
     }
+  },
+  {
+    "repo": "suirindo/agent-role-contracts",
+    "slug": "suirindo--agent-role-contracts",
+    "postedAt": "2026-10-31T07:53:30.293Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mz5suq562d2n",
+        "postedAt": "2026-10-31T07:53:30.293Z"
+      }
+    }
   }
 ]
