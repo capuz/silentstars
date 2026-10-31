@@ -22,6 +22,7 @@ healthScore: 87
 undervaluedScore: 80
 maintainers: ["Piranha91", "cavy8"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1e40e726d97c0c0d274082bb995453724bf9f30a657c025bc63ac58a4787017e/Piranha91/NPC-Plugin-Chooser-2"
+postedAt: "2026-10-31T10:02:23.169Z"
 ---
 
 **NPC Plugin Chooser 2**

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-08T18:30:17Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "quiet"
 tags: ["solo_builder"]
-healthScore: 81
+healthScore: 80
 undervaluedScore: 71
 maintainers: ["SiergiejW"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/923078276/6b9b9202-9a46-4423-b9bd-d29b90de0b8d"

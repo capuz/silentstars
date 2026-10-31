@@ -14,16 +14,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 9
+recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-10-31T01:51:22Z"
-lastReleaseAt: "2026-10-31T01:51:26Z"
+lastCommitAt: "2026-10-31T15:54:01Z"
+lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 80
-undervaluedScore: 38
+undervaluedScore: 41
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/00b8c617cd4f0e6d928ffa6d24a24a7002a93e97ba6414a40441b53108fc4619/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/29b2e0c7522c4e94631e63a40c8a61189293346139515425c8570cbf0e8cb47f/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---
