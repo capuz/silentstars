@@ -8,8 +8,8 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [86]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 620
-forks: 65
+stars: 629
+forks: 66
 openIssues: 2
 closedIssues: 10
 watchers: 1

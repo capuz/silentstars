@@ -9,20 +9,20 @@ languages: ["Python"]
 languagePcts: [100]
 topics: ["readme", "homepage", "github", "github-actions"]
 stars: 10
-forks: 4
+forks: 3
 openIssues: 0
 closedIssues: 3
 watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-10-31T01:10:22Z"
+lastCommitAt: "2026-10-31T07:10:09Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
-undervaluedScore: 79
+undervaluedScore: 78
 maintainers: ["github-actions[bot]", "jimbrig", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f5bf6bd77c2e0a7a983b80c5e969aa85996cc92e193f843b446fc1cd5b027c67/jimbrig/jimbrig"
+openGraphImageUrl: "https://opengraph.githubassets.com/5b2b978fc88b6080cdaab20b45a5d3d758228d6f2312fe7fdc8150c31d1c701b/jimbrig/jimbrig"
 fundingLinks: ["GITHUB:https://github.com/jimbrig"]
 discussionCount: 1
 postedAt: "2026-08-17T04:24:00.451Z"
@@ -46,6 +46,8 @@ Successful history of identifying patterns, making interpretations, and producin
       style="max-width:100%;"
     >
 
-| 💻 **Technology** | 🚀 **Projects** |
-| - | - |
-| [](https://www.r-project.org/) | [](https://github.com/rinterface/shinydashboardplus) [](https://github.com/o2r-project/containerit) [](https://github.com/tychobra/polished) [](https://github.com/jimbrig/rtraining) [](https://github.com/jimbrig/jimstaskviews) [](https://github.com/jimbrig/github-issue-table)…
+- Portfolio: [Devfolio](https://devfolio.jimbrig.com)
+- Knowledge as a Service (Official): [KaaS - Obsidian Pubish](https://publish.obsidian.md/kaas-published/) 
+- Knowledge as a Service (GitHub Pages): [KaaS - GitHub Pages](https://kaas.jimbrig.com/)  
+- Distill Blog: [JimsDocs](https://jimbrig.github.io/jimsdocs/)
+- R Blog: [The R…

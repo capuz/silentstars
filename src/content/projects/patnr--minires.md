@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-25T13:40:52Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 66
+healthScore: 65
 undervaluedScore: 76
 maintainers: ["patnr"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6cdd96710600dcf170dd4c47571f23959617db8bc61501ae531e5bdcc6321874/patnr/MiniRes"

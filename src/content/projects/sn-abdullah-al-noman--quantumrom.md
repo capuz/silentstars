@@ -9,7 +9,7 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [68, 32]
 stars: 61
-forks: 157
+forks: 158
 openIssues: 1
 closedIssues: 1
 watchers: 1

@@ -11,20 +11,20 @@ languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 1
-openIssues: 24
-closedIssues: 139
+openIssues: 21
+closedIssues: 142
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-10-29T04:55:53Z"
+lastCommitAt: "2026-10-31T06:25:44Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 89
+healthScore: 91
 undervaluedScore: 84
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
-openGraphImageUrl: "https://opengraph.githubassets.com/45b6678ca7322833b9048d2f3e840b1f39467c1b4d2834b23d142765315ad2d2/nattokin/go-backlog"
+openGraphImageUrl: "https://opengraph.githubassets.com/0708292a85a55bbeeed840737b595f55325dad7c3bc3ef53fb75d541255ec3c1/nattokin/go-backlog"
 postedAt: "2026-10-25T08:46:46.552Z"
 ---
 
@@ -36,7 +36,7 @@ go-backlog
 ## Features
 
 - **Type-safe option builders** — Filter and configure requests using strongly-typed option methods (e.g. `WithKeyword`, `WithCount`, `WithOrder`), avoiding raw string/map parameters.
-- **Idiomatic Go structs** — API responses are mapped to Go structs with proper types (`time.Time`, typed constants, etc.) instead of raw JSON.
+- **Idiomatic Go structs** — API responses are mapped to Go structs with proper types (`Timestamp` values that embed `time.Time`, typed constants, etc.) instead of raw JSON.
 - **Context support** — Every API method accepts `context.Context` for cancellation and timeout control.
 - **Structured error types** — Errors are returned as typed values (e.g. `*APIResponseError` for API errors, `*ValidationError` for invalid arguments), enabling precise handling with `errors.As`.
 
@@ -60,5 +60,4 @@ c, err := backlog.NewClient(
     os.Getenv("BACKLOG_API_KEY"),
 )
 
-// Get all Wiki pages in a project.
-wikis, err :=…
+// Get all Wiki pages…

@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-22T22:25:57Z"
 lastReleaseAt: "2026-10-22T22:27:29Z"
 status: "thriving"
 tags: ["solo_builder", "funded", "fork_magnet"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 79
 maintainers: ["xsrazy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/adf2fa8d1e2925449d823067888af61af1bfa7e1f3e898006c09bbc2ffc80bea/xsrazy/Discord-Bot"

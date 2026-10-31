@@ -16,19 +16,20 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-10-31T01:29:18Z"
+lastCommitAt: "2026-10-31T05:48:51Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8a9e9a39776fa728bf44317d48a580b80877f12f128f5297ebd460d8526a850b/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/c46c83c9b38c19becbcdce6bd53eccee519540803df2f1122e10162d18df6e6a/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
+postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 0.81.4
+# pagesift 0.81.5
 
 **Turn web pages, PDFs and Office files into clean Markdown for LLMs and AI agents.**  
 One self-hosted Rust binary: CLI, Firecrawl-compatible HTTP API, Jina Reader endpoint, MCP server, Python and Node.js packages.
