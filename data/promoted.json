@@ -86,5 +86,9 @@
   {
     "repo": "seifip/kilobat-cli",
     "until": "2026-11-29"
+  },
+  {
+    "repo": "YOLOW92/pagesift",
+    "until": "2026-11-30"
   }
 ]
