@@ -102,5 +102,9 @@
   {
     "repo": "devvvvvX/kanban",
     "until": "2026-11-30"
+  },
+  {
+    "repo": "devdasx/oath-wallet",
+    "until": "2026-12-01"
   }
 ]
