@@ -17,14 +17,15 @@ watchers: 1
 contributors: 15
 recentReleases: 0
 createdAt: "2025-03-19T11:46:24Z"
-lastCommitAt: "2026-11-01T07:14:28Z"
+lastCommitAt: "2026-11-01T15:06:26Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 79
-undervaluedScore: 74
+healthScore: 78
+undervaluedScore: 75
 maintainers: ["Gaurav-205", "claude", "ajitkumarsaini02"]
-openGraphImageUrl: "https://opengraph.githubassets.com/05e5ab6a7bdea994b6598d235a0440411f37ddafff63d9cafbcf2fb20d81518c/Gaurav-205/KampusKart"
+openGraphImageUrl: "https://opengraph.githubassets.com/a3ac19bdcaaa135208de8768c22e478ed263be2750ba9a6cd4f7527dc00e1dba/Gaurav-205/KampusKart"
 discussionCount: 1
+postedAt: "2026-11-01T10:52:16.373Z"
 ---
 
 # KampusKart

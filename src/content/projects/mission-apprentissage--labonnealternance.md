@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-30T16:37:21Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 77
 maintainers: ["kevbarns", "alanlr", "hlaugier"]
 openGraphImageUrl: "https://opengraph.githubassets.com/859b288666dc31ca7fff2758c3b2e371de839bd5889eef257f2c33bfc5aedddd/mission-apprentissage/labonnealternance"

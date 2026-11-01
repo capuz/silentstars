@@ -11,7 +11,7 @@ languagePcts: [99]
 topics: ["fastapi", "faststream", "leader-election", "lock", "microservice", "pydantic", "python", "anyio", "asyncio", "circuit-breaker"]
 stars: 5
 forks: 0
-openIssues: 39
+openIssues: 41
 closedIssues: 335
 watchers: 1
 contributors: 2

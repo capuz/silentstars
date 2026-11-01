@@ -15,16 +15,16 @@ openIssues: 2
 closedIssues: 1
 watchers: 0
 contributors: 3
-recentReleases: 8
+recentReleases: 9
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-01T10:13:57Z"
-lastReleaseAt: "2026-11-01T10:05:26Z"
+lastCommitAt: "2026-11-01T15:36:48Z"
+lastReleaseAt: "2026-11-01T15:37:22Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "release_machine"]
 healthScore: 82
 undervaluedScore: 49
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ed076a88de33ffd2959d7a6a4931f15abef2b9ca2faad40ea6c608756900b059/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/bba53975fb7591fa3b9ebd2e7b5a98af30f26fe088b7e8d462482aad3037f256/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true

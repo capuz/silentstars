@@ -10,20 +10,20 @@ languages: ["TypeScript"]
 languagePcts: [83]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript"]
 stars: 9
-forks: 5
-openIssues: 70
-closedIssues: 254
+forks: 6
+openIssues: 78
+closedIssues: 261
 watchers: 1
-contributors: 5
+contributors: 6
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-10-31T19:29:02Z"
+lastCommitAt: "2026-11-01T22:03:14Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 95
-undervaluedScore: 67
-maintainers: ["Todo-bai", "mykola-lp", "robertoponcepaniagua"]
+undervaluedScore: 68
+maintainers: ["Todo-bai", "mykola-lp", "rogervokma-stack"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
 discussionCount: 3
 promoted: true

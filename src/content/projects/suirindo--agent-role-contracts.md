@@ -17,20 +17,22 @@ watchers: 0
 contributors: 3
 recentReleases: 4
 createdAt: "2026-09-30T06:35:51Z"
-lastCommitAt: "2026-11-01T07:44:25Z"
+lastCommitAt: "2026-11-01T20:04:45Z"
 lastReleaseAt: "2026-10-15T06:47:02Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
 healthScore: 89
 undervaluedScore: 61
 maintainers: ["suirindo", "codex"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1397c229cb0e4038435dbe8955fca8166fc7ef1169b5d8e6e06d6240a2584a73/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/8082e51cf7e462a69392db6369582ed7ef36ef3f1d9a3fc7b78deac42d34d3ab/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"
 ---
 
 # Agent Role Contracts
+
+[日本語](https://github.com/suirindo/agent-role-contracts/blob/HEAD/README.ja.md)
 
 **Catch out-of-scope agent tasks, self-review, and stale handoffs before execution.**
 
@@ -55,6 +57,4 @@ No `npm install`, API key, agent runtime or account is needed. Only cloning uses
 Agent Role Contracts: check a task before handing it to an agent.
 
 1. Normal task
-   Scope: src/example.mjs; allowed: src/**
-   PASS: declarations are consistent.
-   Implementer: implementer…
+   Scope: src/example.mjs; allowed:…

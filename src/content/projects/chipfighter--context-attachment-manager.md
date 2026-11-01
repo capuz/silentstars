@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [88]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 684
+stars: 702
 forks: 67
 openIssues: 2
 closedIssues: 10
@@ -16,13 +16,13 @@ watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"
-lastCommitAt: "2026-11-01T10:42:04Z"
+lastCommitAt: "2026-11-01T14:38:10Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "release_machine"]
 healthScore: 96
 undervaluedScore: 26
-maintainers: ["chipfighter", "lin-coco", "peremunoz"]
+maintainers: ["chipfighter", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
 promoted: true
 postedAt: "2026-10-24T08:14:50.030Z"
