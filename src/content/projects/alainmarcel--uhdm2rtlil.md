@@ -4,9 +4,9 @@ name: "uhdm2rtlil"
 description: "Yosys SystemVerilog Synthesis that matches Verilator (RTL matches gate-level simulation)"
 readmeQualityOk: true
 url: "https://github.com/alainmarcel/uhdm2rtlil"
-language: "IL Assembly"
-languages: ["IL Assembly", "Verilog"]
-languagePcts: [40, 38]
+language: "SystemVerilog"
+languages: ["SystemVerilog"]
+languagePcts: [75]
 stars: 8
 forks: 2
 openIssues: 0
@@ -15,14 +15,14 @@ watchers: 2
 contributors: 3
 recentReleases: 5
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-10-31T17:57:53Z"
+lastCommitAt: "2026-11-01T06:52:35Z"
 lastReleaseAt: "2026-10-15T16:31:22Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f301d661b49b6279b6c5b729897b396421e9db50afc74b408cd780c4cb4c3563/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/da27a058735ba0012af3a82ef64f8d72aeb9b5dc033ca7f68f88d7cce2faa2ad/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 

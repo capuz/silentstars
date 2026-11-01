@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-31T13:34:57Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 81
 maintainers: ["grelinfo", "pre-commit-ci[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/47290243690e0eef662ab63935adf3a204273ead8def4bf74e7c28270bc3a434/grelinfo/grelmicro"

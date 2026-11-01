@@ -15,13 +15,13 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2022-07-01T17:25:49Z"
-lastCommitAt: "2026-10-31T16:45:50Z"
+lastCommitAt: "2026-11-01T07:07:42Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 74
 undervaluedScore: 67
 maintainers: ["come880412"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2b23ce605d5073c471ec33d52b67ec4def1b1b1c86fb819995f6b076ca62653d/come880412/Leetcode_practice"
+openGraphImageUrl: "https://opengraph.githubassets.com/1492892f6678131f07cd892ec8e691c2aeeeeda5bd21bf4a75c30d19670b3cd7/come880412/Leetcode_practice"
 postedAt: "2026-10-18T08:23:38.923Z"
 ---
 
@@ -40,8 +40,8 @@ C++ / Python 解題紀錄。分類依據是**解這題需要想到的技巧**，
 ### Array & Matrix
 
 #### Prefix Sum / Difference Array
-- `M` [48. Rotate Image](https://leetcode.com/problems/rotate-image/) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/0048.cpp)
 - `M` [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/0238.cpp) · 算總乘積再除自己，用 0 的個數分三種情況避開除以零
-- `H 2306` [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/product-of-array-except-self/) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/0862.cpp)
 - `E 1416` [1652. Defuse the Bomb](https://leetcode.com/problems/defuse-the-bomb) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/1652.cpp) · 環狀陣列取模，k 正負決定往後或往前累加
-- `M 1294` [1769. Minimum Number of Operations to Move All Balls to Each…
+- `M 1294` [1769. Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/1769.cpp) · 左右各掃一次，前綴累積「球數 × 距離」
+- `M 1435` [2559. Count Vowel Strings in Ranges](https://leetcode.com/problems/count-vowel-strings-in-ranges) — [C++](https://github.com/come880412/Leetcode_practice/blob/HEAD/Solution/2559.cpp) · 前綴計數頭尾皆母音的字串，查詢 O(1) 相減
+-…

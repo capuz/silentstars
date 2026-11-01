@@ -19,13 +19,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-09-12T02:21:10Z"
-lastCommitAt: "2026-10-31T09:50:35Z"
+lastCommitAt: "2026-11-01T07:12:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 58
 maintainers: ["molimao", "lovable-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/258b94f9a2c1a6450e6b070cf95aaee3924ec367f1e4a679cf80ffa3da8ae21c/molimao/iota"
+openGraphImageUrl: "https://opengraph.githubassets.com/ca2fd070a9af46504ef9a6f4bdf570854012add5c69f0daf9ad5b3094a9d9110/molimao/iota"
 promoted: true
 postedAt: "2026-10-23T09:39:25.066Z"
 ---

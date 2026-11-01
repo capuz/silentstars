@@ -6,9 +6,9 @@ readmeQualityOk: true
 url: "https://github.com/chipfighter/context-attachment-manager"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [86]
+languagePcts: [88]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 671
+stars: 684
 forks: 67
 openIssues: 2
 closedIssues: 10
@@ -16,11 +16,11 @@ watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"
-lastCommitAt: "2026-10-29T11:53:41Z"
+lastCommitAt: "2026-11-01T10:42:04Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "release_machine"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 26
 maintainers: ["chipfighter", "lin-coco", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"

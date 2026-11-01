@@ -9,22 +9,22 @@ language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
 languagePcts: [63, 35]
 topics: ["agent-collaboration", "agent-orchestration", "agent-team", "ai-assistant", "ai-team", "ai-workflow", "autonomous-agents", "local-first", "multi-agent", "multi-agent-system"]
-stars: 6034
-forks: 365
+stars: 7055
+forks: 454
 openIssues: 3
 closedIssues: 6
-watchers: 145
+watchers: 173
 contributors: 14
 recentReleases: 0
 createdAt: "2026-04-29T12:19:08Z"
-lastCommitAt: "2026-10-31T03:36:24Z"
+lastCommitAt: "2026-11-01T01:24:48Z"
 lastReleaseAt: "2026-07-09T13:38:36Z"
 status: "thriving"
 tags: []
 healthScore: 92
 undervaluedScore: 17
 maintainers: ["vaintwyt", "Orkas-AI", "BlueSkyID666"]
-openGraphImageUrl: "https://opengraph.githubassets.com/54972acb53028661fec867be71e009319c9462b8bc37fb918a225aea5bbf805c/Orkas-AI/Orkas"
+openGraphImageUrl: "https://opengraph.githubassets.com/8709bef6af7e6945958115136eaba2e91aadae6f571935e6a749d50df4309347/Orkas-AI/Orkas"
 promoted: true
 postedAt: "2026-10-21T21:20:39.948Z"
 ---

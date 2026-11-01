@@ -11,7 +11,7 @@ languagePcts: [64, 31]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 47
+openIssues: 54
 closedIssues: 2135
 watchers: 0
 contributors: 3

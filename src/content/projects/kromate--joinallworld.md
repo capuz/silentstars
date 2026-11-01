@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [96]
 stars: 5
-forks: 3
+forks: 4
 openIssues: 2
 closedIssues: 0
 watchers: 0
@@ -20,7 +20,7 @@ lastReleaseAt: "2026-10-14T00:58:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 78
-undervaluedScore: 51
+undervaluedScore: 55
 maintainers: ["kromate"]
 openGraphImageUrl: "https://opengraph.githubassets.com/51f754812744a9310a55d24469e4a51153f27b1e044f6d3909382bca2ad10046/kromate/joinallworld"
 promoted: true

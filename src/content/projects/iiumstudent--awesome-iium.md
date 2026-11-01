@@ -11,7 +11,7 @@ languagePcts: [45, 34]
 topics: ["awesome-list", "iium", "awesome", "education", "malaysia", "resources", "university"]
 stars: 8
 forks: 1
-openIssues: 1
+openIssues: 2
 closedIssues: 1
 watchers: 0
 contributors: 3
@@ -20,8 +20,8 @@ createdAt: "2022-12-18T09:37:43Z"
 lastCommitAt: "2026-10-25T03:26:30Z"
 status: "thriving"
 tags: []
-healthScore: 84
-undervaluedScore: 74
+healthScore: 81
+undervaluedScore: 71
 maintainers: ["github-actions[bot]", "claude", "2217441"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f23b0dd7587dc5bc89c15394705a4dd33fdc15e2ce0738dd4eba1835af3db25b/IIUMstudent/Awesome-IIUM"
 discussionCount: 2

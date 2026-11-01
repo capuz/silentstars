@@ -7,7 +7,7 @@ url: "https://github.com/speced/bikeshed-data"
 language: "Python"
 languages: ["Python"]
 languagePcts: [100]
-stars: 10
+stars: 11
 forks: 6
 openIssues: 0
 closedIssues: 9
@@ -15,13 +15,13 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2017-08-24T21:26:04Z"
-lastCommitAt: "2026-10-31T18:00:40Z"
+lastCommitAt: "2026-11-01T06:49:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 93
-undervaluedScore: 81
+undervaluedScore: 79
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/d987db6f25b1ff6c77f5f0b12d57fdea6eddd5c1e79faee8d80c3de8565eb925/speced/bikeshed-data"
+openGraphImageUrl: "https://opengraph.githubassets.com/d071e5af6f8377e9403ca6992eea5c80bf2a837b6ff8de06e29492bc1821bb11/speced/bikeshed-data"
 postedAt: "2026-08-18T04:13:16.671Z"
 ---
 

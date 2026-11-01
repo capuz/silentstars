@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [99]
 topics: ["ai", "coolify", "coolify-alternative", "coolify-compatible", "deplo", "docker", "docker-compose", "dokploy-alternative", "open", "paas"]
-stars: 101
+stars: 102
 forks: 25
 openIssues: 1
 closedIssues: 8
@@ -24,7 +24,7 @@ tags: []
 healthScore: 96
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c57fe2b17ab75d5f1d876774bf14939b3d2c6835d832b30beeb48b1401931e6a/Peon-sh/Peon"
+openGraphImageUrl: "https://opengraph.githubassets.com/c96c3d88f7de3868b67aa24943a45c1b61d89429dfcbb133b06e12ee8d614ffc/Peon-sh/Peon"
 postedAt: "2026-09-29T08:20:14.976Z"
 ---
 

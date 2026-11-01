@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 4
 createdAt: "2026-09-30T06:35:51Z"
-lastCommitAt: "2026-10-31T08:05:27Z"
+lastCommitAt: "2026-11-01T07:44:25Z"
 lastReleaseAt: "2026-10-15T06:47:02Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
 healthScore: 89
 undervaluedScore: 61
 maintainers: ["suirindo", "codex"]
-openGraphImageUrl: "https://opengraph.githubassets.com/55e96b5d1786a2fb2c16bd1d9531097985263c7db586355881210394ce17eae2/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/1397c229cb0e4038435dbe8955fca8166fc7ef1169b5d8e6e06d6240a2584a73/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"
@@ -34,15 +34,27 @@ postedAt: "2026-10-31T07:53:30.293Z"
 
 **Catch out-of-scope agent tasks, self-review, and stale handoffs before execution.**
 
-## 30-second overview
+Choose a starting point: [run the demo](#quick-start--three-minutes), [use the checker in your own repository](https://github.com/suirindo/agent-role-contracts/tree/main/experiments/adoption), or [evaluate a real workflow](https://github.com/suirindo/agent-role-contracts/blob/HEAD/experiments/external-evaluation/README.md).
 
-[Watch the 30-second Agent Role Contracts overview](https://github.com/suirindo/agent-role-contracts/releases/download/v0.5.0/agent-role-contracts-30s-overview.mp4)
+The checker validates declarations. A PASS does not grant execution permission.
 
-The video shows the core preflight flow: declare **role**, **permissions**, and **work scope**; keep implementation and review separate; make the **handoff** explicit; fail on contradictions before execution.
+## Quick Start — three minutes
 
-**PASS ≠ execution authority.** A passing ARC check means the supplied declarations are internally consistent under the checks that ran. Runtime identity, actual permissions, side-effect enforcement, evidence verification, and execution approval remain separate responsibilities.
+**Requirements:** Git and **Node.js 22.5 or newer**, with npm. Clone once, then run the demo:
 
-- [Try the three-minute quick start](#quick-start--three-minutes)
-- [Read the v1.0.0 stable release](https://github.com/suirindo/agent-role-contracts/releases/tag/v1.0.0)
-- [Evaluate one real workflow](https://github.com/suirindo/agent-role-contracts/blob/HEAD/docs/EVALUATE-WORKFLOW.md)
-- [Run the pinned v1.0.0 external evaluation…
+```sh
+git clone https://github.com/suirindo/agent-role-contracts.git
+npm --prefix agent-role-contracts run demo --silent
+```
+
+No `npm install`, API key, agent runtime or account is needed. Only cloning uses the network; the demo runs offline. The commands use Git and npm and do not require Bash, Docker or OS-specific tools.
+
+### Expected output
+
+```text
+Agent Role Contracts: check a task before handing it to an agent.
+
+1. Normal task
+   Scope: src/example.mjs; allowed: src/**
+   PASS: declarations are consistent.
+   Implementer: implementer…
