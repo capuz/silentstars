@@ -2249,5 +2249,16 @@
         "postedAt": "2026-11-01T10:52:33.493Z"
       }
     }
+  },
+  {
+    "repo": "devdasx/oath-wallet",
+    "slug": "devdasx--oath-wallet",
+    "postedAt": "2026-11-01T23:05:53.666Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzbwd4z7632o",
+        "postedAt": "2026-11-01T23:05:53.666Z"
+      }
+    }
   }
 ]
