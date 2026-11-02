@@ -2293,5 +2293,16 @@
         "postedAt": "2026-11-02T15:25:23.833Z"
       }
     }
+  },
+  {
+    "repo": "SankarGaneshb/rover-slim",
+    "slug": "sankarganeshb--rover-slim",
+    "postedAt": "2026-11-02T18:04:21.312Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzdvwubavs2z",
+        "postedAt": "2026-11-02T18:04:21.312Z"
+      }
+    }
   }
 ]
