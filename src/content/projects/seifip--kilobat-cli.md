@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/seifip/kilobat-cli"
 language: "Swift"
 languages: ["Swift"]
-languagePcts: [100]
+languagePcts: [99]
 topics: ["ai-agents", "cli", "macos", "mcp", "mcp-server", "model-context-protocol", "network-diagnostics", "network-monitor", "swift", "wifi"]
 stars: 1
 forks: 0
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-11-02T00:51:01Z"
+lastCommitAt: "2026-11-02T11:57:45Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
-undervaluedScore: 45
+undervaluedScore: 46
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/916233ff2c01940383a027bfc0b8d7d5d2fff7a8bb47b2c605eb9ef5e445cae5/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/35cac647bcb96585aa843a0bcd93572b3aa8564a0137d8ae173c0d152e040d1c/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---

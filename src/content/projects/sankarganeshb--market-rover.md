@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python", "JavaScript"]
 languagePcts: [64, 32]
 topics: ["ai-agents-framework", "bse", "crewai", "financial-intelligence", "fintech", "indian-stocks", "multi-agent-systems", "nse", "portfolio-management", "quantitative-finance"]
-stars: 5
+stars: 6
 forks: 3
 openIssues: 1
 closedIssues: 30
@@ -21,9 +21,9 @@ lastCommitAt: "2026-10-02T12:37:43Z"
 status: "quiet"
 tags: ["solo_builder"]
 healthScore: 73
-undervaluedScore: 86
+undervaluedScore: 82
 maintainers: ["SankarGaneshb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/eff8a048064586a4ea9a7b9bb4c7cdd0e32811ebb651d433723f9ba9a64d4732/SankarGaneshb/Market-Rover"
+openGraphImageUrl: "https://opengraph.githubassets.com/e1f78e3b84acc1b5da4b39035ebdc7d1d8a9639c89eca797e440e029103c1ae5/SankarGaneshb/Market-Rover"
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---

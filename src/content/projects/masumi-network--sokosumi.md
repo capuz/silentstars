@@ -16,14 +16,14 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-02T10:45:53Z"
+lastCommitAt: "2026-11-02T13:22:46Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 88
-maintainers: ["mrosberghaus", "PatrickTobler", "francisluz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3b77196072ea776c26128036d8d618db8d7e41ebb0cdb96621b1f6f4997fa7b0/masumi-network/sokosumi"
+maintainers: ["mrosberghaus", "PatrickTobler", "enjojoy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/3c0f5dc09012f96c4e727fc344b1dde30bf0549e7108e2c6a77ce9f4513a373e/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 

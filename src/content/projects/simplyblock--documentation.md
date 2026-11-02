@@ -16,13 +16,13 @@ watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2025-03-04T08:42:06Z"
-lastCommitAt: "2026-11-01T20:11:36Z"
+lastCommitAt: "2026-11-02T13:23:06Z"
 status: "thriving"
 tags: []
 healthScore: 97
 undervaluedScore: 77
 maintainers: ["noctarius", "michixs", "schmidt-scaled"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a804f667861457738d376ba4cdd664b2b49bb8de7efe86b7db248aaac26a0dff/simplyblock/documentation"
+openGraphImageUrl: "https://opengraph.githubassets.com/dbb1f661fabb6b04e83d1254303b5247276f4ee1f81630b2bcad57d4067a73fe/simplyblock/documentation"
 postedAt: "2026-10-26T09:24:36.515Z"
 ---
 

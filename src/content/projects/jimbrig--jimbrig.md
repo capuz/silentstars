@@ -16,13 +16,13 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-11-02T11:10:01Z"
+lastCommitAt: "2026-11-02T13:12:25Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
 undervaluedScore: 78
 maintainers: ["github-actions[bot]", "jimbrig", "actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/045644df77d51baf57ae9579b7c9ab95655bc05bba87ab6e95cdedd6c4762b51/jimbrig/jimbrig"
+openGraphImageUrl: "https://opengraph.githubassets.com/62e8ac7a64db0c6e6b7f83d3c2ae8cefa26d89c57497ddfbddd064c68b810a8e/jimbrig/jimbrig"
 fundingLinks: ["GITHUB:https://github.com/jimbrig"]
 discussionCount: 1
 postedAt: "2026-08-17T04:24:00.451Z"
@@ -46,8 +46,6 @@ Successful history of identifying patterns, making interpretations, and producin
       style="max-width:100%;"
     >
 
-- Portfolio: [Devfolio](https://devfolio.jimbrig.com)
-- Knowledge as a Service (Official): [KaaS - Obsidian Pubish](https://publish.obsidian.md/kaas-published/) 
-- Knowledge as a Service (GitHub Pages): [KaaS - GitHub Pages](https://kaas.jimbrig.com/)  
-- Distill Blog: [JimsDocs](https://jimbrig.github.io/jimsdocs/)
-- R Blog: [The R…
+| 💻 **Technology** | 🚀 **Projects** |
+| - | - |
+| [](https://www.r-project.org/) | [](https://github.com/rinterface/shinydashboardplus) [](https://github.com/o2r-project/containerit) [](https://github.com/tychobra/polished) [](https://github.com/jimbrig/rtraining) [](https://github.com/jimbrig/jimstaskviews) [](https://github.com/jimbrig/github-issue-table)…

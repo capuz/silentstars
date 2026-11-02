@@ -25,6 +25,7 @@ undervaluedScore: 77
 maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d4aec3433984baa809f5c5f92ebfc104e26b4ab25cefafa2abf38ab1913f782b/immich-app/static-pages"
 fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
+postedAt: "2026-11-02T11:44:50.353Z"
 ---
 
 # Static sites
