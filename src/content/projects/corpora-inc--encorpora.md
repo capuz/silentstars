@@ -9,19 +9,19 @@ languages: ["TypeScript"]
 languagePcts: [77]
 stars: 5
 forks: 3
-openIssues: 165
-closedIssues: 393
+openIssues: 163
+closedIssues: 396
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-11-01T22:55:12Z"
+lastCommitAt: "2026-11-02T11:27:36Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 94
 undervaluedScore: 82
 maintainers: ["skyl"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1b02ee44eeff545522df75731c8b0309a015b1153c1c52c34a1c495369d764da/corpora-inc/encorpora"
+openGraphImageUrl: "https://opengraph.githubassets.com/6ab13d51f6e980516be4b20aaa8d5a926ba8612761ec439799a07e0b5c46a734/corpora-inc/encorpora"
 postedAt: "2026-07-04T19:31:10.093Z"
 ---
 

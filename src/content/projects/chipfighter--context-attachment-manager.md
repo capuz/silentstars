@@ -6,39 +6,43 @@ readmeQualityOk: true
 url: "https://github.com/chipfighter/context-attachment-manager"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [88]
+languagePcts: [89]
 topics: ["chatgpt", "codex", "codex-plugin", "context-management", "developer-tools", "images", "mcp", "model-context-protocol", "openai", "openai-codex"]
-stars: 702
-forks: 67
-openIssues: 2
-closedIssues: 10
+stars: 721
+forks: 68
+openIssues: 0
+closedIssues: 12
 watchers: 1
-contributors: 4
+contributors: 5
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"
-lastCommitAt: "2026-11-01T14:38:10Z"
+lastCommitAt: "2026-11-02T11:19:02Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
-tags: ["solo_builder", "needs_contributors", "release_machine"]
-healthScore: 96
-undervaluedScore: 26
-maintainers: ["chipfighter", "peremunoz"]
+tags: ["solo_builder", "release_machine"]
+healthScore: 100
+undervaluedScore: 27
+maintainers: ["chipfighter", "Aaqibhafeezkhan", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
+discussionCount: 0
 promoted: true
 postedAt: "2026-10-24T08:14:50.030Z"
 ---
 
-## Why I made this
+## The multimodal tax
 
-I was iterating on images with GPT in Codex. After a dozen or so, the chat started failing: it kept reconnecting and never got through. Every message was sending every image in the conversation again, about 44 MB each time. The only way out was a new chat, and with it, losing everything we had built up.
+Use a multimodal model in any agent and the images pile up. The model remembers nothing between turns, so every request sends the whole chat again, every earlier image included. A dozen images in, each message uploads tens of megabytes: the chat gets slower and pricier, then keeps reconnecting and never gets through. The way out is a new chat, and everything you built up is gone.
 
-So I made a panel that keeps the conversation and drops the weight.
+That price, paid again and again for old images, is the multimodal tax.
+
+## Where you pay it
+
+- **Generating images in a chat**: keyframes, posters, product shots, several a turn.
+- **Reading scanned PDFs**: every page is an image.
+- **Letting AI drive a computer or a browser**: a screenshot every step.
+- **Talking about photos, screenshots and charts**: a few turns, a pile of images.
 
 ## What it does
 
 - **The model manages its own images.** Earlier images stay out of your messages, and when the model needs one, it pulls that one back by itself. Nothing to set up. Pin the ones that matter, like a character reference, and they go with every message.
-- **Find any image by what you remember.** Search "best face" or "rainy night", filter by place, or browse by turn. Click one to see it full size.
-- **It remembers every image.** The model quietly notes what each image shows and what you said about it ("too dark", "best face"). Even far into a long chat, or after the chat is compacted, it picks the right one.
-- **Your chat stays light.** No more slowdowns or endless reconnecting. In a 15-image task, a request that carried 24.9 MB went out at 212 KB.
-
-## Watch the 30-second tour…
+- **Find any image by what you remember.** Search "best face" or "rainy night", filter by place, or browse by turn. Click one to see it…

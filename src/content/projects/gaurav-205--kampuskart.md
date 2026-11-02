@@ -7,7 +7,7 @@ url: "https://github.com/Gaurav-205/KampusKart"
 homepage: "https://kampuskart.netlify.app"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [61, 36]
+languagePcts: [60, 36]
 topics: ["full-stack", "mongodb", "nodejs", "react", "socket-io", "tailwindcss", "typescript", "campus-portal"]
 stars: 17
 forks: 56
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 15
 recentReleases: 0
 createdAt: "2025-03-19T11:46:24Z"
-lastCommitAt: "2026-11-01T15:06:26Z"
+lastCommitAt: "2026-11-01T23:21:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 78
-undervaluedScore: 75
+undervaluedScore: 76
 maintainers: ["Gaurav-205", "claude", "ajitkumarsaini02"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a3ac19bdcaaa135208de8768c22e478ed263be2750ba9a6cd4f7527dc00e1dba/Gaurav-205/KampusKart"
+openGraphImageUrl: "https://opengraph.githubassets.com/50718f0f29c9f33524ce2242f4113dfd5c31b91610ee1fc7e1616bac0f787d0c/Gaurav-205/KampusKart"
 discussionCount: 1
 postedAt: "2026-11-01T10:52:16.373Z"
 ---

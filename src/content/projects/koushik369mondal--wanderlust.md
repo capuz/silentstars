@@ -23,7 +23,7 @@ tags: ["hidden_gem", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 79
 maintainers: ["koushik369mondal", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fb40c92564246e73249166b59027d53ef0af89fda84a8f6a163ccf2541aa0980/koushik369mondal/WanderLust"
+openGraphImageUrl: "https://opengraph.githubassets.com/74eab599f1a15afc9d9f913123e9c2faef48b9a02bc4b888ebf1d8df768f2c2e/koushik369mondal/WanderLust"
 discussionCount: 1
 postedAt: "2026-07-14T06:02:00.094Z"
 ---

@@ -11,19 +11,19 @@ languagePcts: [67, 29]
 stars: 6
 forks: 2
 openIssues: 71
-closedIssues: 2345
+closedIssues: 2348
 watchers: 0
 contributors: 3
-recentReleases: 2
+recentReleases: 1
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-01T21:34:48Z"
+lastCommitAt: "2026-11-02T10:52:20Z"
 lastReleaseAt: "2026-09-15T02:19:49Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
-undervaluedScore: 69
+undervaluedScore: 66
 maintainers: ["loom-fleet-dispatch[bot]", "rjwalters"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2e7ebf8cdd19726a2a5a04ffb8a87f7d2b42476f7e0fa3a0173bedb593c110b3/2AMLogic/klayout-tools"
+openGraphImageUrl: "https://opengraph.githubassets.com/f5aec4f872c75c435960210f6c94e42199f674ff02be561e61ebd838e2452526/2AMLogic/klayout-tools"
 postedAt: "2026-10-16T08:33:31.631Z"
 ---
 

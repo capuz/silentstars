@@ -1,0 +1,62 @@
+---
+repo: "immich-app/static-pages"
+name: "static-pages"
+description: "Sites and packages for Immich"
+readmeQualityOk: true
+url: "https://github.com/immich-app/static-pages"
+homepage: "https://immich.app"
+language: "Svelte"
+languages: ["Svelte", "TypeScript"]
+languagePcts: [50, 47]
+stars: 18
+forks: 72
+openIssues: 2
+closedIssues: 5
+watchers: 3
+contributors: 105
+recentReleases: 0
+createdAt: "2024-07-01T17:38:28Z"
+lastCommitAt: "2026-11-02T11:36:45Z"
+lastReleaseAt: "2026-06-15T18:35:17Z"
+status: "thriving"
+tags: ["hidden_gem", "funded", "fork_magnet"]
+healthScore: 93
+undervaluedScore: 77
+maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d4aec3433984baa809f5c5f92ebfc104e26b4ab25cefafa2abf38ab1913f782b/immich-app/static-pages"
+fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
+---
+
+# Static sites
+
+## Structure
+
+This repository structure is as follows
+
+```
+apps/      <-- web apps
+packages/  <-- npm packages
+```
+
+## Setup
+
+Install [Mise](https://mise.jdx.dev/installing-mise.html) and then activate it via `mise install`.
+
+## Mise commands
+
+This `mise dev` command watches both `packages/ui` and `packages/svelte-markdown-preprocess` for changes and rebuilds them automatically. It also launches a svelte-kit development server for the selected app, or `root.immich.app` if unspecified.
+
+```
+mise dev                 # launches root.immich.app
+mise dev <app>           # launches <app>.immich.app
+
+# examples
+mise dev api
+mise dev awesome
+mise dev buy
+mise dev get
+mise dev my
+mise dev root
+mise dev ui
+##
+```

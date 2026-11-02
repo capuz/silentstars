@@ -1,30 +1,31 @@
 ---
 repo: "grelinfo/grelmicro"
 name: "grelmicro"
-description: "Grelmicro is a lightweight framework/toolkit which is ideal for building async microservices in Python."
+description: "Keep your async Python service correct on more than one replica: scheduled jobs, locks, rate limits and circuit breakers on Redis, PostgreSQL or SQLite. FastAPI, Litestar, FastStream."
 readmeQualityOk: true
 url: "https://github.com/grelinfo/grelmicro"
-homepage: "https://grelmicro.grel.info/"
+homepage: "https://grelmicro.grel.info"
 language: "Python"
 languages: ["Python"]
 languagePcts: [99]
-topics: ["fastapi", "faststream", "leader-election", "lock", "microservice", "pydantic", "python", "anyio", "asyncio", "circuit-breaker"]
+topics: ["fastapi", "faststream", "leader-election", "python", "asyncio", "circuit-breaker", "resilience", "cache", "cron", "distributed-lock"]
 stars: 5
 forks: 0
-openIssues: 41
-closedIssues: 335
+openIssues: 55
+closedIssues: 338
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-10-31T13:34:57Z"
+lastCommitAt: "2026-11-02T10:25:35Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
 healthScore: 97
 undervaluedScore: 81
-maintainers: ["grelinfo", "pre-commit-ci[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/47290243690e0eef662ab63935adf3a204273ead8def4bf74e7c28270bc3a434/grelinfo/grelmicro"
+maintainers: ["grelinfo", "pre-commit-ci[bot]"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/875906397/87797c57-2642-4e72-ac92-9d749dcf3d01"
+discussionCount: 0
 postedAt: "2026-10-23T08:52:59.686Z"
 ---
 
@@ -46,7 +47,7 @@ ______________________________________________________________________
 
 ## Start with one pattern
 
-Run a job once a minute across all your replicas, not once per replica. Create a file `main.py` with:
+Run a task once a minute across all your replicas, not once per replica. Create a file `main.py` with:
 
 ```python
 from fastapi import FastAPI

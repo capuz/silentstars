@@ -16,14 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-11-01T10:13:56Z"
+lastCommitAt: "2026-11-02T00:51:01Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 80
-undervaluedScore: 44
+healthScore: 90
+undervaluedScore: 45
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/72f87f2951a5b07ec4d1d3d61fe5783c60e5414662aa2a52be3d49b3a3751f11/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/916233ff2c01940383a027bfc0b8d7d5d2fff7a8bb47b2c605eb9ef5e445cae5/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---
@@ -34,11 +34,9 @@ Kilobat is a macOS command-line tool and MCP server for network monitoring and d
 
 ## Use with AI agents (MCP)
 
-`kilobat mcp` is a stdio MCP server with 43 tools. Read-only tools need no confirmation; tools that change something tell the agent to ask you first.
+`kilobat mcp` is a local stdio MCP server. Connected clients discover available tools with `tools/list`. Read-only tools need no confirmation; tools that change something tell the agent to ask you first.
 
 - **Claude Code:** `claude mcp add kilobat -- kilobat mcp`
 - **Codex CLI:** `codex mcp add kilobat -- kilobat mcp`
-- **Claude Desktop:** download `kilobat-mcp-<version>.mcpb` from [Releases](https://github.com/seifip/kilobat-cli/releases/latest) and open it.
-- **Cursor, Windsurf, Zed, Gemini CLI, Cline and others:** add a stdio server with command `kilobat` and argument `mcp`.
-
-Step-by-step setup for each agent, with example prompts: https://kilobat.app/agents/. Agent skills that teach agents when and how to use Kilobat: `npx skills add…
+- **Claude Desktop:** install the CLI, then configure a local stdio server with the full executable path returned by `/usr/bin/which kilobat` and argument `mcp`. See the [local-server setup guide](https://modelcontextprotocol.io/docs/develop/connect-local-servers).
+- **Cursor, Windsurf, Zed, Gemini CLI, Cline and others:** add a stdio server with command `kilobat` and…

@@ -7,22 +7,22 @@ url: "https://github.com/baipix/baipix"
 homepage: "https://baipix.app"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [83]
+languagePcts: [84]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript"]
 stars: 9
-forks: 6
-openIssues: 78
-closedIssues: 261
+forks: 7
+openIssues: 75
+closedIssues: 266
 watchers: 1
-contributors: 6
+contributors: 7
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-11-01T22:03:14Z"
+lastCommitAt: "2026-11-02T11:18:34Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 95
-undervaluedScore: 68
+undervaluedScore: 70
 maintainers: ["Todo-bai", "mykola-lp", "rogervokma-stack"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
 discussionCount: 3

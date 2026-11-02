@@ -17,21 +17,21 @@ watchers: 1
 contributors: 4
 recentReleases: 6
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-11-01T22:31:11Z"
+lastCommitAt: "2026-11-02T08:02:49Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["cuihairu"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8649fdaa50b507332c86474e0fc5486035a456e3067572dc6a21397503f68af8/cuihairu/croupier"
+openGraphImageUrl: "https://opengraph.githubassets.com/ea0730a72b00f248886a084776cc56542a8421e1c30d48dee6324b4496345771/cuihairu/croupier"
 discussionCount: 1
 postedAt: "2026-10-04T10:09:15.128Z"
 ---
 
 Croupier is a Server / Agent / SDK platform for game operations and control, intended by default for multiple games and multiple environments within a single game company. The architecture has converged on a unified session transport:
 
-- `Agent <-> Server`: TCP session by default, with TLS enabled by default
+- `Agent <-> Server`: TCP session by default; TLS is opt-in via `server.toAgentTLS` (server side) / `server` + `outboundTLS` (agent side), and the bundled development templates default to plaintext
 - `SDK <-> Agent`: TCP session by default, TLS off by default and enabled on demand
 - Both links share the same session transport foundation and differ only in the first handshake message and business semantics
 
@@ -41,5 +41,4 @@ Croupier is a Server / Agent / SDK platform for game operations and control, int
 | --- | --- | --- |
 | sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor wiring, schedule/update lifecycle and function plugins shipped |
 | devops | Allowlisted internal remote access with audit | `devops-agent`; SSH sessions with replay archive shipped; RDP/VNC pending |
-| capture | Database CDC, change rules and alerts | `capture-agent`; MySQL/Mongo/PostgreSQL connectors and checkpoint/alert reliability shipped; source schema history pending |
-| synthetics | External game/service checks with developer plugins | `synthetics-agent`; HTTP/TCP probes with…
+| capture | Database CDC, change rules and alerts | `capture-agent`; MySQL/Mongo/PostgreSQL connectors and checkpoint/alert reliability shipped; source schema…

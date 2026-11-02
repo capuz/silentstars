@@ -20,7 +20,7 @@ createdAt: "2024-03-29T03:05:27Z"
 lastCommitAt: "2026-11-01T21:50:36Z"
 status: "thriving"
 tags: []
-healthScore: 80
+healthScore: 79
 undervaluedScore: 72
 maintainers: ["github-actions[bot]", "iTaoPu"]
 openGraphImageUrl: "https://opengraph.githubassets.com/33ac98857717957143c8371d5b73b35cebc021a879a1476ed01d415b2d30201d/iTaoPu/iCloud"

@@ -15,13 +15,13 @@ watchers: 3
 contributors: 27
 recentReleases: 0
 createdAt: "2023-01-13T16:31:32Z"
-lastCommitAt: "2026-11-01T22:59:43Z"
+lastCommitAt: "2026-11-02T03:20:02Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
 healthScore: 87
 undervaluedScore: 72
 maintainers: ["adowling2"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b4980db7641408241b16a6fcbc7e588eaeb64d253382f7b2ee4bed2b10556880/ndcbe/optimization"
+openGraphImageUrl: "https://opengraph.githubassets.com/f7d8a8859184ab585417fdab706ef2f371dd77a39bc726e0907ba42e99194779/ndcbe/optimization"
 postedAt: "2026-10-17T08:05:51.284Z"
 ---
 
