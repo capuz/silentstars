@@ -114,5 +114,9 @@
   {
     "repo": "SimZhou/vscode-audiolens",
     "until": "2026-12-02"
+  },
+  {
+    "repo": "SankarGaneshb/rover-slim",
+    "until": "2026-12-02"
   }
 ]
