@@ -9,7 +9,7 @@ languages: ["Python", "Jupyter Notebook"]
 languagePcts: [66, 34]
 topics: ["electrophysiology", "imaging", "neuroscience", "vision"]
 stars: 6
-forks: 10
+forks: 11
 openIssues: 1
 closedIssues: 2
 watchers: 3

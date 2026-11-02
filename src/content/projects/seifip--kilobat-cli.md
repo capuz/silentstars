@@ -16,14 +16,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-11-02T11:57:45Z"
+lastCommitAt: "2026-11-02T14:13:01Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
-undervaluedScore: 46
+undervaluedScore: 48
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/35cac647bcb96585aa843a0bcd93572b3aa8564a0137d8ae173c0d152e040d1c/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/da8c99edb47f9dcee889fe521722e7331eecfcc67fa6539e98cd8292465cc924/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---
@@ -34,9 +34,9 @@ Kilobat is a macOS command-line tool and MCP server for network monitoring and d
 
 ## Use with AI agents (MCP)
 
-`kilobat mcp` is a local stdio MCP server. Connected clients discover available tools with `tools/list`. Read-only tools need no confirmation; tools that change something tell the agent to ask you first.
+`kilobat mcp` is a local stdio MCP server. Connected clients discover available tools with `tools/list`. Some tools change settings and request explicit confirmation in their descriptions; clients control permission prompts.
 
 - **Claude Code:** `claude mcp add kilobat -- kilobat mcp`
 - **Codex CLI:** `codex mcp add kilobat -- kilobat mcp`
 - **Claude Desktop:** install the CLI, then configure a local stdio server with the full executable path returned by `/usr/bin/which kilobat` and argument `mcp`. See the [local-server setup guide](https://modelcontextprotocol.io/docs/develop/connect-local-servers).
-- **Cursor, Windsurf, Zed, Gemini CLI, Cline and others:** add a stdio server with command `kilobat` and…
+- **Cursor, Windsurf, Zed, Gemini CLI, Cline and others:** add a stdio server with…

@@ -10,20 +10,20 @@ languages: ["C++"]
 languagePcts: [69]
 stars: 6
 forks: 37
-openIssues: 97
-closedIssues: 205
+openIssues: 99
+closedIssues: 206
 watchers: 1
 contributors: 55
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-02T12:01:51Z"
+lastCommitAt: "2026-11-02T14:09:42Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 100
-maintainers: ["NicolasFussberger", "cameron-craig-etas", "MaciejKaszynski"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6855c099947bd626265aed2332fb47b286d5b633a1f954fa9a2ca4e09ff53f26/eclipse-score/lifecycle"
+maintainers: ["NicolasFussberger", "MaciejKaszynski", "cameron-craig-etas"]
+openGraphImageUrl: "https://opengraph.githubassets.com/d168689d7baf567352ab9a41d0fb1db01ae29db300d37d767453e4a17662f476/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

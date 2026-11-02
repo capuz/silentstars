@@ -11,7 +11,7 @@ languagePcts: [84]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript"]
 stars: 9
 forks: 7
-openIssues: 75
+openIssues: 76
 closedIssues: 266
 watchers: 1
 contributors: 7
@@ -25,7 +25,7 @@ healthScore: 95
 undervaluedScore: 70
 maintainers: ["Todo-bai", "mykola-lp", "rogervokma-stack"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
-discussionCount: 3
+discussionCount: 4
 promoted: true
 postedAt: "2026-10-26T18:14:02.761Z"
 ---
