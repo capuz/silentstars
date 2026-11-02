@@ -10,5 +10,11 @@
     "issue": 7,
     "since": "2026-10-27",
     "until": "2027-01-25"
+  },
+  {
+    "repo": "moskwen/slskprime",
+    "issue": 54,
+    "since": "2026-11-02",
+    "until": "2027-01-31"
   }
 ]
