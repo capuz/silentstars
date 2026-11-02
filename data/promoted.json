@@ -110,5 +110,9 @@
   {
     "repo": "sheepk95/The-Cartographer",
     "until": "2026-12-02"
+  },
+  {
+    "repo": "SimZhou/vscode-audiolens",
+    "until": "2026-12-02"
   }
 ]
