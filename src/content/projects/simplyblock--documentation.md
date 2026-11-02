@@ -7,7 +7,7 @@ url: "https://github.com/simplyblock/documentation"
 homepage: "https://docs.simplyblock.io"
 language: "Python"
 languages: ["Python"]
-languagePcts: [61]
+languagePcts: [62]
 stars: 10
 forks: 2
 openIssues: 3
@@ -16,13 +16,13 @@ watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2025-03-04T08:42:06Z"
-lastCommitAt: "2026-11-02T13:23:06Z"
+lastCommitAt: "2026-11-02T15:52:09Z"
 status: "thriving"
 tags: []
 healthScore: 97
 undervaluedScore: 77
 maintainers: ["noctarius", "michixs", "schmidt-scaled"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dbb1f661fabb6b04e83d1254303b5247276f4ee1f81630b2bcad57d4067a73fe/simplyblock/documentation"
+openGraphImageUrl: "https://opengraph.githubassets.com/cec301e143cde065631a8dab322920a68225fa02de221ce308bae7487d9df4b3/simplyblock/documentation"
 postedAt: "2026-10-26T09:24:36.515Z"
 ---
 

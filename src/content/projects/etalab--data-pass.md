@@ -7,7 +7,7 @@ url: "https://github.com/etalab/data_pass"
 homepage: "https://datapass.api.gouv.fr"
 language: "Ruby"
 languages: ["Ruby", "CSS"]
-languagePcts: [53, 23]
+languagePcts: [54, 23]
 stars: 5
 forks: 8
 openIssues: 0
@@ -16,13 +16,13 @@ watchers: 4
 contributors: 24
 recentReleases: 0
 createdAt: "2023-11-30T11:30:20Z"
-lastCommitAt: "2026-11-02T11:43:40Z"
+lastCommitAt: "2026-11-02T15:38:34Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 100
 undervaluedScore: 94
 maintainers: ["Samuelfaure", "jbfeldis", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3887cfa9cf821b4c66534a1a945eab0f0911d17a8ca14455f4f071db028b9295/etalab/data_pass"
+openGraphImageUrl: "https://opengraph.githubassets.com/1e41f6c269296ba562597f82ab43ddcb9e4530b120de307cdae89e79bae2343b/etalab/data_pass"
 postedAt: "2026-09-21T09:22:04.623Z"
 ---
 

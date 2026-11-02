@@ -26,6 +26,7 @@ undervaluedScore: 27
 maintainers: ["SimZhou", "a5632645", "penguinway"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2aca75642c851a37d6aa240a2062dd24246d1e665b3b283b280fd34ba0033e78/SimZhou/vscode-audiolens"
 promoted: true
+postedAt: "2026-11-02T15:25:23.833Z"
 ---
 
 English | <a href="https://github.com/SimZhou/vscode-audiolens/blob/main/README.zh-CN.md">简体中文</a> | <a href="https://github.com/SimZhou/vscode-audiolens/blob/main/README.ja.md">日本語</a>

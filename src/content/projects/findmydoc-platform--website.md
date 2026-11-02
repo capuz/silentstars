@@ -17,14 +17,14 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2025-02-14T21:56:07Z"
-lastCommitAt: "2026-11-02T14:33:35Z"
+lastCommitAt: "2026-11-02T15:51:07Z"
 lastReleaseAt: "2025-07-04T06:43:15Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 81
 maintainers: ["SebastianSchuetze", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e9204293e71a9865b379a946e8638e4ca0e64cfd21723fd3e6c568feb35c9c3a/findmydoc-platform/website"
+openGraphImageUrl: "https://opengraph.githubassets.com/3ddc9ba5479d8c89d721fba1b3cf64bbecadf8881992684bbbadeb6c759fe48f/findmydoc-platform/website"
 discussionCount: 17
 postedAt: "2026-10-24T08:27:41.607Z"
 ---

@@ -11,19 +11,19 @@ languagePcts: [94]
 stars: 11
 forks: 6
 openIssues: 442
-closedIssues: 1716
+closedIssues: 1717
 watchers: 3
 contributors: 18
 recentReleases: 0
 createdAt: "2022-10-05T13:20:00Z"
-lastCommitAt: "2026-11-02T15:00:27Z"
+lastCommitAt: "2026-11-02T16:13:12Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 77
 maintainers: ["kevbarns", "alanlr", "hlaugier"]
-openGraphImageUrl: "https://opengraph.githubassets.com/eab3094ff8495033c2a0dd9db0709737579da360ad73e4b27e64680a4fcf43cb/mission-apprentissage/labonnealternance"
+openGraphImageUrl: "https://opengraph.githubassets.com/8254af56ce2c8ff57f87c685cb1fcd9c6577f672c663b0ebf3a43f7b2ad616bf/mission-apprentissage/labonnealternance"
 postedAt: "2026-10-29T10:27:48.379Z"
 ---
 
