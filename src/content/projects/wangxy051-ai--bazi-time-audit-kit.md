@@ -24,6 +24,7 @@ undervaluedScore: 23
 maintainers: ["wangxy051-ai"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8d5ad0f0222f808036561f2f1edcc1ab3db293463bad912bac851395029caa24/wangxy051-ai/bazi-time-audit-kit"
 promoted: true
+postedAt: "2026-11-03T12:54:13.102Z"
 ---
 
 # Bazi Time Audit Kit

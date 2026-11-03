@@ -23,7 +23,7 @@ tags: ["solo_builder"]
 healthScore: 84
 undervaluedScore: 83
 maintainers: ["SankarGaneshb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5146cca1e20a5d70dcab928b823b7f78b76bfbfa6751e436052c75c1b0acc6ad/SankarGaneshb/Market-Rover"
+openGraphImageUrl: "https://opengraph.githubassets.com/69bf301816599ca31c06ef41dc7135a7f9c2d84931ae967f60a64ddeaf20aef4/SankarGaneshb/Market-Rover"
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---
