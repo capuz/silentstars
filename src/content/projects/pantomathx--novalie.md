@@ -25,6 +25,7 @@ undervaluedScore: 12
 maintainers: ["PantomathX", "Pantomath01"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a8ed6e5de580554f72d49e1fb4fc2e19c2c91b883df5053bcac2487b6dc73c1d/PantomathX/Novalie"
 promoted: true
+postedAt: "2026-11-03T10:59:38.724Z"
 ---
 
 # Novalie
