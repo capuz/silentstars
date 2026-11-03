@@ -2315,5 +2315,16 @@
         "postedAt": "2026-11-03T10:59:38.724Z"
       }
     }
+  },
+  {
+    "repo": "waldur/waldur-homeport",
+    "slug": "waldur--waldur-homeport",
+    "postedAt": "2026-11-03T11:22:36.120Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzfpxfa72224",
+        "postedAt": "2026-11-03T11:22:36.120Z"
+      }
+    }
   }
 ]
