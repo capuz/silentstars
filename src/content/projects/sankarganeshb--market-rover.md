@@ -11,19 +11,19 @@ languagePcts: [64, 32]
 topics: ["ai-agents-framework", "bse", "crewai", "financial-intelligence", "fintech", "indian-stocks", "multi-agent-systems", "nse", "portfolio-management", "quantitative-finance"]
 stars: 6
 forks: 3
-openIssues: 1
-closedIssues: 30
+openIssues: 0
+closedIssues: 31
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-12-18T15:03:32Z"
-lastCommitAt: "2026-10-02T12:37:43Z"
-status: "quiet"
+lastCommitAt: "2026-11-03T09:39:42Z"
+status: "thriving"
 tags: ["solo_builder"]
-healthScore: 73
-undervaluedScore: 82
+healthScore: 84
+undervaluedScore: 83
 maintainers: ["SankarGaneshb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e1f78e3b84acc1b5da4b39035ebdc7d1d8a9639c89eca797e440e029103c1ae5/SankarGaneshb/Market-Rover"
+openGraphImageUrl: "https://opengraph.githubassets.com/c53b16e32da0bc01e4a7cab606bf42b64390960f6114dc0e107037bb17b57a9f/SankarGaneshb/Market-Rover"
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---

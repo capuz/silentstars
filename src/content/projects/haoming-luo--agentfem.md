@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["abaqus", "ai-agents", "ai-native", "cae", "cast3m", "dolfinx", "fem", "fenicsx", "finite-element-method", "mpi"]
-stars: 33
+stars: 34
 forks: 3
 openIssues: 0
 closedIssues: 0
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 1
 recentReleases: 9
 createdAt: "2026-07-23T02:43:51Z"
-lastCommitAt: "2026-11-02T17:21:43Z"
+lastCommitAt: "2026-11-02T19:37:18Z"
 lastReleaseAt: "2026-08-31T11:32:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 44
 maintainers: ["haoming-luo"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dc0d2625692ec017729ca312d180e1b8b11d85963caf7b187f36f3180d029337/haoming-luo/agentfem"
+openGraphImageUrl: "https://opengraph.githubassets.com/dbd3d167f0f2cea9c83886a2bd04c48db1ec623c3adc6d1b2b1bf1f428704f1c/haoming-luo/agentfem"
 discussionCount: 10
 promoted: true
 postedAt: "2026-10-26T21:15:22.508Z"

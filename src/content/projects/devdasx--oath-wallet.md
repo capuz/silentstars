@@ -1,51 +1,46 @@
 ---
 repo: "devdasx/oath-wallet"
 name: "oath-wallet"
-description: "Oath Wallet — native self-custodial wallet for iPhone and iPad. Public source for version 4.1.14."
+description: "Oath Wallet is an open-source, self-custodial wallet for iPhone and iPad. See Releases for source tags and build verification records."
 readmeQualityOk: true
 url: "https://github.com/devdasx/oath-wallet"
 homepage: "https://oathwallet.org"
 language: "Swift"
 languages: ["Swift"]
-languagePcts: [72]
+languagePcts: [73]
 stars: 1
 forks: 0
 openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 7
+recentReleases: 9
 createdAt: "2026-10-30T17:08:49Z"
-lastCommitAt: "2026-11-02T07:31:51Z"
-lastReleaseAt: "2026-11-02T06:10:59Z"
+lastCommitAt: "2026-11-03T10:49:28Z"
+lastReleaseAt: "2026-11-03T05:12:28Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 67
 maintainers: ["devdasx"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7816492d142f58bc8babd0e13854378f74d2e0334b50607c3f315bba1023e842/devdasx/oath-wallet"
+openGraphImageUrl: "https://opengraph.githubassets.com/aef3b8058909eb0930948d9c3b7a1c7bc2202a445dd86bf6303e3498492c4742/devdasx/oath-wallet"
 promoted: true
 postedAt: "2026-11-01T23:05:53.666Z"
 ---
 
-# Oath Wallet 5.0.0
+# Oath Wallet 5.0.2
 
 A native multichain wallet for iPhone and iPad.
 
-This repository contains **Oath Wallet 5.0.0, build 102**.
+**GitHub prerelease: 5.0.2 (104).** This version contains subsequent audit fixes and has not been uploaded to App Store Connect. The separate **5.0.1 (103)** submission remains the version reported as Waiting for Review on 2 November 2026.
 
-[Release notes](https://github.com/devdasx/oath-wallet/blob/HEAD/releases/5.0.0.md) · [Website](https://oathwallet.org) ·
+[Prerelease notes](https://github.com/devdasx/oath-wallet/blob/HEAD/releases/5.0.2.md) · [Website](https://oathwallet.org) ·
 [Security model](https://github.com/devdasx/oath-wallet/blob/HEAD/Documentation/SecurityModel.md) · [Reporting policy](https://github.com/devdasx/oath-wallet/blob/HEAD/SECURITY.md) · [Build configuration](https://github.com/devdasx/oath-wallet/blob/HEAD/Documentation/PublicBuild.md) ·
 [MIT license](https://github.com/devdasx/oath-wallet/blob/HEAD/LICENSE)
 
 ## What's new
 
-- Faster Bitcoin history loading and more reliable Litecoin payment destinations.
-- Contract-level token approval reviews and individual results for batch revocations.
-- WalletConnect gives specific recovery steps for expired QR codes, offline connections and unsupported requests.
-- Improved compatibility with historical wallet records and stronger verification of encrypted backups.
-
-## Public source boundaries
-
-This public repository includes the app, bundled assets, local packages, patched
-Reown dependency, tests, and the complete [website, Help Center and…
+- Includes the public audit repairs made after build 103: interrupted wallet-import recovery, wallet ordering and Bitcoin address discovery.
+- Improves encrypted backup file handling and stale-progress protection, and clears revealed private keys when the app leaves the foreground.
+- Hardens malformed WalletConnect encodings and XRP amount/simulation validation.
+- Preserves pending…

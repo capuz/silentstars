@@ -6,30 +6,30 @@ readmeQualityOk: true
 url: "https://github.com/YOLOW92/pagesift"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [79]
+languagePcts: [81]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 185
-forks: 19
+stars: 187
+forks: 20
 openIssues: 0
-closedIssues: 1
+closedIssues: 2
 watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-10-31T05:48:51Z"
+lastCommitAt: "2026-11-03T09:02:39Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0ee7953d714b94308e1e3dc17115059dd22b4078c34b5c30f286f2fd4bf79abd/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/95bbae2bc57fd4a2732a2713aad30dbb8bbd6371632fc061c570083fe4d635af/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 0.81.5
+# pagesift 0.91.1
 
 **Turn web pages, PDFs and Office files into clean Markdown for LLMs and AI agents.**  
 One self-hosted Rust binary: CLI, Firecrawl-compatible HTTP API, Jina Reader endpoint, MCP server, Python and Node.js packages.

@@ -8,20 +8,20 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 stars: 11
-forks: 6
+forks: 7
 openIssues: 0
 closedIssues: 9
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2017-08-24T21:26:04Z"
-lastCommitAt: "2026-11-02T09:19:40Z"
+lastCommitAt: "2026-11-03T09:28:04Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 93
-undervaluedScore: 79
+healthScore: 90
+undervaluedScore: 80
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/477149f53be4bd30e1d059fe5e319d0d1c5813a68e8016e74801748b89da8e3e/speced/bikeshed-data"
+openGraphImageUrl: "https://opengraph.githubassets.com/ff31e708c6f39113bbeb6ec1d4d400dd09c622698caa33f346191818b32da6d4/speced/bikeshed-data"
 postedAt: "2026-08-18T04:13:16.671Z"
 ---
 

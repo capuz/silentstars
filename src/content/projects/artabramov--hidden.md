@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-01T04:16:24Z"
 lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 71
+healthScore: 70
 undervaluedScore: 34
 maintainers: ["artabramov"]
 openGraphImageUrl: "https://opengraph.githubassets.com/76156729783a03abf9ffd2258365334adc0cc0d88bb455d4ecea2a2eecb84468/artabramov/hidden"

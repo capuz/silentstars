@@ -11,20 +11,20 @@ languagePcts: [98]
 topics: ["computational-pathology", "feature-extraction", "foundation-models", "nextflow", "pathology", "python", "pytorch", "whole-slide-imaging", "wsi"]
 stars: 8
 forks: 0
-openIssues: 1
-closedIssues: 7
+openIssues: 0
+closedIssues: 8
 watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2024-02-08T14:53:11Z"
-lastCommitAt: "2026-11-02T17:56:58Z"
+lastCommitAt: "2026-11-02T20:13:08Z"
 lastReleaseAt: "2026-05-04T21:26:21Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 91
-undervaluedScore: 67
+healthScore: 93
+undervaluedScore: 71
 maintainers: ["raylim"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a932ccf655ecbca520920b7eb3e176968c8a85ffce743965fd9514f525d17f3c/pathology-data-mining/Mussel"
+openGraphImageUrl: "https://opengraph.githubassets.com/8ec93c0eb09730c64b55ed80bf21ba2ea296babb6489f46206415e7aaa214840/pathology-data-mining/Mussel"
 postedAt: "2026-06-21T02:28:52.953Z"
 ---
 

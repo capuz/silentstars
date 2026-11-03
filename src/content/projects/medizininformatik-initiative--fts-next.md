@@ -9,22 +9,22 @@ language: "Java"
 languages: ["Java"]
 languagePcts: [99]
 topics: ["deidentification", "fhir", "transfer"]
-stars: 14
+stars: 15
 forks: 2
 openIssues: 23
-closedIssues: 430
+closedIssues: 431
 watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-11-02T09:29:34Z"
+lastCommitAt: "2026-11-03T09:46:48Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 99
-undervaluedScore: 71
+undervaluedScore: 70
 maintainers: ["renovate[bot]", "trobanga", "knoppiks"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f12961595691b0ea5a33e30260db36026446294891152f66bc2d547e768c3e1f/medizininformatik-initiative/fts-next"
+openGraphImageUrl: "https://opengraph.githubassets.com/56d6741ba419c6b70664f60fb0ed4bbb5f929e335adfd11e3576cdb0d4679b4d/medizininformatik-initiative/fts-next"
 discussionCount: 18
 postedAt: "2026-08-10T05:09:50.501Z"
 ---

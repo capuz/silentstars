@@ -7,24 +7,24 @@ url: "https://github.com/suirindo/agent-role-contracts"
 homepage: "https://netsujo.jp/en/products/agent-role-contracts"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [97]
+languagePcts: [98]
 topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent", "nodejs", "validation", "workflow", "agent-handoffs", "coding-agents"]
 stars: 4
 forks: 0
-openIssues: 10
+openIssues: 15
 closedIssues: 9
 watchers: 0
 contributors: 3
 recentReleases: 4
 createdAt: "2026-09-30T06:35:51Z"
-lastCommitAt: "2026-11-01T20:04:45Z"
+lastCommitAt: "2026-11-03T02:32:18Z"
 lastReleaseAt: "2026-10-15T06:47:02Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
-healthScore: 89
-undervaluedScore: 61
-maintainers: ["suirindo", "codex"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8082e51cf7e462a69392db6369582ed7ef36ef3f1d9a3fc7b78deac42d34d3ab/suirindo/agent-role-contracts"
+healthScore: 87
+undervaluedScore: 59
+maintainers: ["suirindo", "claude"]
+openGraphImageUrl: "https://opengraph.githubassets.com/8b6a84d51a0ba0e867816c1f3efee8716cf5e05a2a81b3bb2007360f329e5865/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"
