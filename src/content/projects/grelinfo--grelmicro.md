@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-02T10:25:35Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 81
 maintainers: ["grelinfo", "pre-commit-ci[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/875906397/87797c57-2642-4e72-ac92-9d749dcf3d01"

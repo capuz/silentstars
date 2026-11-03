@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python", "JavaScript"]
 languagePcts: [71, 22]
 topics: ["active-learning", "agi", "ai", "artificial-general-intelligence", "causal-discovery", "cuda", "program-synthesis", "python", "self-improvement", "world-models"]
-stars: 14
+stars: 15
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -23,7 +23,7 @@ tags: []
 healthScore: 69
 undervaluedScore: 12
 maintainers: ["PantomathX", "Pantomath01"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a8ed6e5de580554f72d49e1fb4fc2e19c2c91b883df5053bcac2487b6dc73c1d/PantomathX/Novalie"
+openGraphImageUrl: "https://opengraph.githubassets.com/332ac01b9b835593c5120e91180e5eb517c35943930f242803273fd2227a8837/PantomathX/Novalie"
 promoted: true
 postedAt: "2026-11-03T10:59:38.724Z"
 ---

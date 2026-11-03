@@ -17,14 +17,14 @@ watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-11-03T09:46:48Z"
+lastCommitAt: "2026-11-03T12:33:59Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 70
 maintainers: ["renovate[bot]", "trobanga", "knoppiks"]
-openGraphImageUrl: "https://opengraph.githubassets.com/56d6741ba419c6b70664f60fb0ed4bbb5f929e335adfd11e3576cdb0d4679b4d/medizininformatik-initiative/fts-next"
+openGraphImageUrl: "https://opengraph.githubassets.com/8ad2747b5a08a1c3a8acd7eb7a329d7181e35ff5b6405a2f7fcadfd5e8dda6ed/medizininformatik-initiative/fts-next"
 discussionCount: 18
 postedAt: "2026-08-10T05:09:50.501Z"
 ---
