@@ -2324,6 +2324,10 @@
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzfpxfa72224",
         "postedAt": "2026-11-03T11:22:36.120Z"
+      },
+      "ownerEmail": {
+        "url": "info@waldur.com",
+        "postedAt": "2026-11-03T11:22:57.649Z"
       }
     }
   }
