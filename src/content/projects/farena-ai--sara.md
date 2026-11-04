@@ -17,11 +17,11 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-04T07:44:46Z"
+lastCommitAt: "2026-11-04T09:14:59Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 91
+healthScore: 86
 undervaluedScore: 85
 maintainers: ["farena-ai", "Guilsc", "Ehsan-hash"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"
@@ -37,15 +37,15 @@ She talks, remembers, plans your day and reads your books; she writes, runs and 
 sandboxed workspace. All on your own server, with the models you pick, in one app for the web,
 Windows, Mac and phones.
 
-> **Status:** 2.61.5, MIT licensed, with seventy-two feature releases since 1.0 (all below). 2.5 to 2.8
+> **Status:** 2.62.0, MIT licensed, with seventy-three feature releases since 1.0 (all below). 2.5 to 2.8
 > gave the whole app a new look. The [Android app](https://play.google.com/store/apps/details?id=com.backstagecoding.sara)
 > is on Google Play; the iPhone app and the Mac App Store version are coming as soon as Apple approves them.
 > Read [docs/DISCLOSURES.md](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing Sara.
 
+**Recover interrupted work:** Settings → Data & health → Recovery keeps job restart reviews and
+native Telegram/Discord delivery uncertainty visible. Nothing is blindly replayed after startup;
+current privacy and approvals still apply. [Recovery guide](https://github.com/farena-ai/sara/blob/HEAD/docs/RECOVERY.md).
+
 ## Why Sara
 
-- **A personality you set, and keep.** Name her anything, pick she/he/they, start from a ready-made
-  character or turn simple dials (playful, blunt, brief, curious…). She keeps it: moods that change
-  with how things go, her own day, running jokes, and memories of what you told her that you can see,
-  correct and forget.
-- **A real coding harness.** A sandboxed workspace per project with files, shell…
+- **A personality you set, and keep.** Name her anything, pick she/he/they, start from…

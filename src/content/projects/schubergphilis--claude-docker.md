@@ -8,21 +8,21 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [74, 22]
 stars: 9
-forks: 8
+forks: 9
 openIssues: 33
 closedIssues: 49
 watchers: 0
 contributors: 14
 recentReleases: 10
 createdAt: "2026-07-13T11:55:02Z"
-lastCommitAt: "2026-11-03T12:34:33Z"
+lastCommitAt: "2026-11-04T10:48:56Z"
 lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 91
-undervaluedScore: 66
+undervaluedScore: 68
 maintainers: ["stefanwb", "sbp-bvanb", "OnnoJan-SBP"]
-openGraphImageUrl: "https://opengraph.githubassets.com/464ff6d37227a7a5d8c07b702a6ee34c3d8e1de7ba633121ce8b5d508caa02fb/schubergphilis/claude-docker"
+openGraphImageUrl: "https://opengraph.githubassets.com/15838117081e3b48fabbd9cf6b61d2bf0c3d3c899841c3adb484e05c8fec603f/schubergphilis/claude-docker"
 postedAt: "2026-10-12T11:21:10.066Z"
 ---
 

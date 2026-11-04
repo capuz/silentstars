@@ -12,27 +12,29 @@ stars: 192
 forks: 21
 openIssues: 0
 closedIssues: 2
-watchers: 0
+watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-04T07:59:29Z"
+lastCommitAt: "2026-11-04T11:23:09Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
 undervaluedScore: 33
-maintainers: ["YOLOW92", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/da2bdbb8a9d459e2fd462c13fe7ac6a80cb1065a855a0a4eb5c704c40c3e8711/YOLOW92/pagesift"
+maintainers: ["YOLOW92"]
+openGraphImageUrl: "https://opengraph.githubassets.com/0edca0d8037b20e42357238025d1a827619bad9d638b0aef0a198c079566785f/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.1.0
+# pagesift 1.1.2
 
-**The web and document layer for AI agents: any URL, PDF or Office file in, clean Markdown or JSON out.**  
-One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and Python and Node.js packages.
+**The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown or JSON out.**  
+One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.
+
+**Measured:** PDF to Markdown 2.4 ms per page, 20.49× faster than the next best tool; HTML to Markdown 0.24 ms per page, 8.12× faster; main content 1.0 ms per page, 7.26× faster (lower is better); Office 91.7 files/s, 3.40× the next best (higher is better).
 
 **English** · [简体中文](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.zh-CN.md) · [日本語](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.ja.md) · [Español](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.es.md)
 
@@ -42,9 +44,4 @@ pagesift reads the web and documents for software that thinks: it fetches a URL,
 adds content, or opens a local file, and returns the content as Markdown or structured JSON. It covers single pages,
 whole sites, scanned PDFs, browser actions, change monitoring and research runs driven by your own model.
 
-Can replace or sit alongside: **Firecrawl** (same v1/v2 API, self-hosted), **Jina Reader** (`/r/` and `/s/`),
-**Crawl4AI**, **trafilatura**, **Readability**, **pymupdf4llm**, **Docling**, **Kreuzberg**, **xberg**.
-
-## At a glance
-
-- **Input:** URLs, HTML, PDF including scanned pages (OCR), image files (OCR), Word (.docx, .doc), Excel (.xlsx, .xlsb,…
+Can replace or sit alongside:…

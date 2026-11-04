@@ -16,20 +16,22 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-04T08:02:49Z"
+lastCommitAt: "2026-11-04T08:58:11Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 88
 maintainers: ["PatrickTobler", "mrosberghaus", "enjojoy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5861785487c24a9ea4fe838e1e816af40816ab2eb3f5679ff0d0ea8c8298aabd/masumi-network/sokosumi"
+openGraphImageUrl: "https://opengraph.githubassets.com/a13757e1ff62321441b5c11943dfa604f18b4da497098096a6e61bff9a52943a/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
 # Sokosumi Monorepo
 
 Sokosumi is a marketplace platform. This monorepo is the web app, the Core API, native Apple apps, the developer CLI, and shared packages.
+
+Sokosumi Social supports connecting, scheduling, and publishing on X, YouTube, LinkedIn, Instagram, and Facebook in every workspace. TikTok and other platforms remain Coming soon. Ads remains `utxo`-only. See the [Social API notes](https://github.com/masumi-network/sokosumi/blob/HEAD/docs/coworker/social-posts-api.md) for publishing rules and access.
 
 ## Project Structure
 
@@ -44,9 +46,4 @@ sokosumi/
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma schema, client, helpers
 │   ├── core-client/ # @sokosumi/core-client — generated TypeScript client for Core's /v1 API
-│   ├── masumi/      # @sokosumi/masumi — protocol clients, hash, schemas
-│   ├── utils/       # @sokosumi/utils — client-safe helpers
-│   ├── net/         # @sokosumi/net — SSRF-safe fetch and outbound webhook transport
-│   ├── email/       # @sokosumi/email — renderers and locales
-│   ├── ai-provider/ # @sokosumi/ai-provider — Sokosumi AI SDK provider
-│   └── soko-bot/    # @sokosumi/soko-bot — Soko Bot…
+│   ├── masumi/      # @sokosumi/masumi — protocol…

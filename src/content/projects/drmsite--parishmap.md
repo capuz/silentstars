@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [98]
 topics: ["accessibility", "agpl", "firebase", "gis", "kanban", "leaflet", "local-government", "open-source", "parish-council"]
-stars: 0
+stars: 1
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -17,16 +17,17 @@ watchers: 0
 contributors: 2
 recentReleases: 2
 createdAt: "2026-10-26T10:57:14Z"
-lastCommitAt: "2026-11-04T07:08:10Z"
+lastCommitAt: "2026-11-04T08:21:37Z"
 lastReleaseAt: "2026-10-27T09:23:50Z"
 status: "newborn"
 tags: ["hidden_gem"]
 healthScore: 79
-undervaluedScore: 49
+undervaluedScore: 48
 maintainers: ["annoyingmouse", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1434257355/04148c88-0861-4804-aaa4-37efbae37118"
 discussionCount: 0
 promoted: true
+postedAt: "2026-11-04T08:11:23.965Z"
 ---
 
 # ParishMap
@@ -38,4 +39,4 @@ It runs in **your own Firebase project**, so your data, keys and costs stay with
 Built by [DRMSITE LTD](https://drmsite.com) and released under the
 [GNU Affero General Public Licence](https://github.com/DRMSITE/parishmap/blob/HEAD/LICENSE) (AGPL-3.0-or-later).
 
-> **Status: pre-release (0.1.1).** It was built for one parish council's own use. I have followed this packaging once myself, from a fresh clone to a signed-in administrator on a new Firebase project, and…
+**Featured on SilentStars.** ParishMap has been featured on SilentStars, a platform highlighting independently developed open-source projects. [View ParishMap on…
