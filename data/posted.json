@@ -2352,5 +2352,16 @@
         "postedAt": "2026-11-03T19:12:50.773Z"
       }
     }
+  },
+  {
+    "repo": "TRON-ABS/Novera",
+    "slug": "tron-abs--novera",
+    "postedAt": "2026-11-04T03:06:01.260Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzheoe254j2i",
+        "postedAt": "2026-11-04T03:06:01.260Z"
+      }
+    }
   }
 ]
