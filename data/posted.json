@@ -2363,5 +2363,16 @@
         "postedAt": "2026-11-04T03:06:01.260Z"
       }
     }
+  },
+  {
+    "repo": "DRMSITE/parishmap",
+    "slug": "drmsite--parishmap",
+    "postedAt": "2026-11-04T08:11:23.965Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzhvqfyid42z",
+        "postedAt": "2026-11-04T08:11:23.965Z"
+      }
+    }
   }
 ]
