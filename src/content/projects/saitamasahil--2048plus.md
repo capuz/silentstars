@@ -16,15 +16,16 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-27T09:46:11Z"
-lastCommitAt: "2026-11-01T15:44:35Z"
+lastCommitAt: "2026-11-04T02:49:44Z"
 lastReleaseAt: "2026-06-13T13:59:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 54
 maintainers: ["saitamasahil"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0fa0c8c91807d1f42bca66f77653ca16bce7fdea6daf25460450ffa5493319c9/saitamasahil/2048plus"
+openGraphImageUrl: "https://opengraph.githubassets.com/2568d0e589c3b3862a95397e0d888a0a355ae016117109f46f51866a85c2a9a4/saitamasahil/2048plus"
 promoted: true
+postedAt: "2026-11-03T19:12:50.773Z"
 ---
 
 A feature-packed implementation of the classic puzzle game 2048 for muOS, PortMaster, Android, Linux, and Windows, built using the LÖVE framework.

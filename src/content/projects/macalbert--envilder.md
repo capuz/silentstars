@@ -17,7 +17,7 @@ watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-03T17:51:35Z"
+lastCommitAt: "2026-11-03T21:25:49Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
@@ -30,8 +30,6 @@ discussionCount: 3
 promoted: true
 postedAt: "2026-10-25T09:07:05.933Z"
 ---
-
-# 🗝️ Envilder ☁️
 
 ## Why Envilder?
 
@@ -63,4 +61,5 @@ No SaaS middleman. One versioned mapping contract. Secrets stay in your cloud.
 
 ## The problem
 
-- **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which…
+- **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which
+  secrets go where.…

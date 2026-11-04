@@ -1,14 +1,14 @@
 ---
 repo: "YOLOW92/pagesift"
 name: "pagesift"
-description: "Rust web scraper & crawler for AI agents: URLs, PDFs and Office files → clean Markdown/JSON. Firecrawl- and Jina Reader-compatible API, MCP server, Python/Node SDKs. Self-hosted single binary."
+description: "Self-hosted web scraper, crawler and document parser for AI agents: URLs, PDFs with OCR and Office files to clean Markdown/JSON. Firecrawl- and Jina-compatible API, MCP server, agent endpoint, Python/Node SDKs. Single Rust binary."
 readmeQualityOk: true
 url: "https://github.com/YOLOW92/pagesift"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [81]
+languagePcts: [85]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 190
+stars: 191
 forks: 21
 openIssues: 0
 closedIssues: 2
@@ -16,36 +16,36 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-03T16:56:08Z"
+lastCommitAt: "2026-11-04T02:31:13Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/602524ab6b5c9de521f6aa3253762df369d308353c22016ef07233d84a6f0d60/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/f49b2ea54f959e3a27725798ac3149a3af17e9001429d644533789af09786413/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 0.91.1
+# pagesift 1.0.0
 
-**Turn web pages, PDFs and Office files into clean Markdown for LLMs and AI agents.**  
-One self-hosted Rust binary: CLI, Firecrawl-compatible HTTP API, Jina Reader endpoint, MCP server, Python and Node.js packages.
+**The web and document layer for AI agents: any URL, PDF or Office file in, clean Markdown or JSON out.**  
+One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and Python and Node.js packages.
 
 **English** · [简体中文](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.zh-CN.md) · [日本語](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.ja.md) · [Español](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.es.md)
 
 ## What it is
 
-pagesift fetches a URL (rendering JavaScript only when the page needs it) or reads a local file, keeps the
-main content, and returns Markdown plus metadata. It scrapes single pages, batches and whole sites, and
-runs as a command, a library, an HTTP service or an MCP server.
+pagesift reads the web and documents for software that thinks: it fetches a URL, rendering JavaScript only when that
+adds content, or opens a local file, and returns the content as Markdown or structured JSON. It covers single pages,
+whole sites, scanned PDFs, browser actions, change monitoring and research runs driven by your own model.
 
-Can replace or sit alongside: **Firecrawl** (same v1/v2 API, self-hosted), **Jina Reader** (`/r/<url>`),
-**Crawl4AI**, **trafilatura** / **Readability**, **pymupdf4llm** / **pypdf**, **Kreuzberg**.
+Can replace or sit alongside: **Firecrawl** (same v1/v2 API, self-hosted), **Jina Reader** (`/r/` and `/s/`),
+**Crawl4AI**, **trafilatura**, **Readability**, **pymupdf4llm**, **Docling**, **Kreuzberg**.
 
 ## At a glance
 
-- **Input:** URLs (HTTP, or a headless browser when needed), HTML, PDF, Word (.docx), Excel (.xlsx), PowerPoint (.pptx), EPUB, CSV
-- **Output:** Markdown, HTML, raw HTML, links, images, metadata (title, publication…
+- **Input:** URLs, HTML, PDF including scanned pages (OCR), Word, Excel, PowerPoint, EPUB, CSV, WARC archives
+- **Output:** Markdown,…
