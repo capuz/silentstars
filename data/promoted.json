@@ -134,5 +134,9 @@
   {
     "repo": "TRON-ABS/Novera",
     "until": "2026-12-04"
+  },
+  {
+    "repo": "DRMSITE/parishmap",
+    "until": "2026-12-04"
   }
 ]
