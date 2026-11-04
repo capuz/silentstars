@@ -7,8 +7,11 @@ interface Props {
   description?: string;
   ogImage?: string;
   showMetricsFAQ?: boolean;
+  /** 404 page: no canonical (GoatCounter would log every miss as "/404"),
+   *  noindex, and the page counts the hit itself with the real path. */
+  notFound?: boolean;
 }
-const { title, description = 'Not famous. Not abandoned. Just building.', ogImage, showMetricsFAQ = false } = Astro.props;
+const { title, description = 'Not famous. Not abandoned. Just building.', ogImage, showMetricsFAQ = false, notFound = false } = Astro.props;
 const base   = import.meta.env.BASE_URL;
 const ogUrl  = ogImage ?? new URL(`${base}og.png`, Astro.site).href;
 const pageUrl = Astro.url.href;
@@ -19,12 +22,14 @@ const pageUrl = Astro.url.href;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title === 'SilentStars' ? title : `${title} · SilentStars`}</title>
-    <link rel="canonical" href={pageUrl} />
+    {notFound
+      ? <meta name="robots" content="noindex" />
+      : <link rel="canonical" href={pageUrl} />}
     <meta name="description" content={description} />
     <meta property="og:title"       content={`${title} · SilentStars`} />
     <meta property="og:description" content={description} />
     <meta property="og:type"        content="website" />
-    <meta property="og:url"         content={pageUrl} />
+    {!notFound && <meta property="og:url" content={pageUrl} />}
     <meta property="og:image"       content={ogUrl} />
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
@@ -93,7 +98,9 @@ const pageUrl = Astro.url.href;
       </footer>
 
     </div>
-    <script data-goatcounter="https://capuz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    {notFound
+      ? <script id="gc-script" data-goatcounter="https://capuz.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true}' async src="//gc.zgo.at/count.js"></script>
+      : <script data-goatcounter="https://capuz.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>}
   </body>
 </html>
 

@@ -1,18 +1,22 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL;
+// Live slugs let the page fix casing / owner-repo links instead of dead-ending.
+const slugs = (await getCollection('projects')).map(p => p.slug);
 ---
-<Base title="404" description="Page not found — SilentStars">
-  <div class="container section not-found">
+<Base title="404" description="Page not found — SilentStars" notFound>
+  <div class="container section not-found" id="nf" data-slugs={JSON.stringify(slugs)}>
 
     <p class="eyebrow">// 404</p>
-    <h1 class="nf-title">Star not found</h1>
-    <p class="nf-sub">
+    <h1 class="nf-title" id="nf-title">Star not found</h1>
+    <p class="nf-sub" id="nf-sub">
       This repo may have been deleted, renamed, or the link is broken.
     </p>
 
     <div class="nf-actions">
       <a href={`${base}`} class="btn-primary">← Home</a>
+      <a href="#" class="btn-primary" id="nf-github" hidden>Find it on GitHub ↗</a>
       <a href={`${base}projects/`} class="btn-ghost">Browse directory</a>
     </div>
 
@@ -20,6 +24,46 @@ const base = import.meta.env.BASE_URL;
 
   </div>
 </Base>
+
+<script>
+  import { resolveNotFound } from '../../scripts/not-found.ts';
+
+  type GoatCounter = { count?: (o: { path: string; title?: string; event?: boolean }) => void };
+
+  // count.js loads async with no_onload (see Base.astro notFound): wait for it,
+  // but never hold a redirect hostage to a blocked analytics script.
+  function count(opts: { path: string; title?: string; event?: boolean }): Promise<void> {
+    return new Promise(resolve => {
+      const send = () => { (window as unknown as { goatcounter?: GoatCounter }).goatcounter?.count?.(opts); resolve(); };
+      if ((window as unknown as { goatcounter?: GoatCounter }).goatcounter?.count) return send();
+      document.getElementById('gc-script')?.addEventListener('load', send);
+      setTimeout(resolve, 1000);
+    });
+  }
+
+  const root = document.getElementById('nf')!;
+  const live = new Set<string>(JSON.parse(root.dataset.slugs ?? '[]'));
+  const { pathname, search, hash } = location;
+  const res = resolveNotFound(pathname, live);
+
+  if (res.kind === 'redirect') {
+    count({ path: `404-redirect${pathname}`, title: `→ ${res.to}`, event: true })
+      .then(() => location.replace(res.to + search + hash));
+  } else {
+    if (res.kind === 'retired') {
+      document.getElementById('nf-title')!.textContent = 'This star left the map';
+      document.getElementById('nf-sub')!.textContent =
+        `${res.owner}/${res.repoHint} is no longer in the directory — projects drop out when they stop meeting the criteria. The repo itself may still be on GitHub.`;
+      const gh = document.getElementById('nf-github') as HTMLAnchorElement;
+      gh.href = `https://github.com/${res.owner}?tab=repositories&q=${encodeURIComponent(res.repoHint)}`;
+      gh.target = '_blank';
+      gh.rel = 'noopener';
+      gh.hidden = false;
+      root.querySelector('.btn-primary')!.classList.replace('btn-primary', 'btn-ghost');
+    }
+    count({ path: `/404${pathname}`, title: res.kind === 'retired' ? '404 retired project' : '404 unknown' });
+  }
+</script>
 
 <style>
   .not-found {
