@@ -11,17 +11,17 @@ languagePcts: [57, 38]
 topics: ["gutenberg-blocks", "npm-package", "wordpress", "wordpress-plugin", "dx"]
 stars: 6
 forks: 2
-openIssues: 0
+openIssues: 1
 closedIssues: 30
 watchers: 10
 contributors: 4
 recentReleases: 0
 createdAt: "2020-10-08T15:42:19Z"
-lastCommitAt: "2026-10-28T15:12:19Z"
+lastCommitAt: "2026-11-04T11:39:43Z"
 lastReleaseAt: "2021-06-23T14:29:24Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "community_watch"]
-healthScore: 91
+healthScore: 94
 undervaluedScore: 75
 maintainers: ["JanaME", "dependabot[bot]", "palasthotel-release-bot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/302388213/9325b644-8df1-4611-9412-4835c5b8e771"

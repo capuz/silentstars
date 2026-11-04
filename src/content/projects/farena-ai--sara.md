@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-04T09:14:59Z"
+lastCommitAt: "2026-11-04T11:51:20Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -37,15 +37,12 @@ She talks, remembers, plans your day and reads your books; she writes, runs and 
 sandboxed workspace. All on your own server, with the models you pick, in one app for the web,
 Windows, Mac and phones.
 
-> **Status:** 2.62.0, MIT licensed, with seventy-three feature releases since 1.0 (all below). 2.5 to 2.8
+> **Status:** 2.63.1, MIT licensed, with seventy-four feature releases since 1.0 (all below). 2.5 to 2.8
 > gave the whole app a new look. The [Android app](https://play.google.com/store/apps/details?id=com.backstagecoding.sara)
 > is on Google Play; the iPhone app and the Mac App Store version are coming as soon as Apple approves them.
 > Read [docs/DISCLOSURES.md](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing Sara.
 
+**Operate with evidence:** owner-only HTTP/readiness measurements, safe resolved-delivery archival and repeatable local workload/browser checks. [Operations guide](https://github.com/farena-ai/sara/blob/HEAD/docs/OPERATIONS.md).
+
 **Recover interrupted work:** Settings → Data & health → Recovery keeps job restart reviews and
-native Telegram/Discord delivery uncertainty visible. Nothing is blindly replayed after startup;
-current privacy and approvals still apply. [Recovery guide](https://github.com/farena-ai/sara/blob/HEAD/docs/RECOVERY.md).
-
-## Why Sara
-
-- **A personality you set, and keep.** Name her anything, pick she/he/they, start from…
+native Telegram/Discord delivery uncertainty visible. Nothing is blindly replayed after…

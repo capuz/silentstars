@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-04T10:54:39Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 73
 maintainers: ["livenson", "AmbientLighter", "DarinaKulyk"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3075d5a740f03824af73c15b9ad03e8f0b4c432ffd9bdc3a5e59e0c161e173c0/waldur/waldur-homeport"
