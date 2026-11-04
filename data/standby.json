@@ -16,11 +16,5 @@
     "issue": 54,
     "since": "2026-11-02",
     "until": "2027-01-31"
-  },
-  {
-    "repo": "DRMSITE/MealMuster",
-    "issue": 60,
-    "since": "2026-11-04",
-    "until": "2027-02-02"
   }
 ]
