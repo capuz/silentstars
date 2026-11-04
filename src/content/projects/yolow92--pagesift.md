@@ -6,9 +6,9 @@ readmeQualityOk: true
 url: "https://github.com/YOLOW92/pagesift"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [85]
+languagePcts: [84]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 191
+stars: 192
 forks: 21
 openIssues: 0
 closedIssues: 2
@@ -16,20 +16,20 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-04T02:31:13Z"
+lastCommitAt: "2026-11-04T07:59:29Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
-undervaluedScore: 34
+undervaluedScore: 33
 maintainers: ["YOLOW92", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f49b2ea54f959e3a27725798ac3149a3af17e9001429d644533789af09786413/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/da2bdbb8a9d459e2fd462c13fe7ac6a80cb1065a855a0a4eb5c704c40c3e8711/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.0.0
+# pagesift 1.1.0
 
 **The web and document layer for AI agents: any URL, PDF or Office file in, clean Markdown or JSON out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and Python and Node.js packages.
@@ -43,9 +43,8 @@ adds content, or opens a local file, and returns the content as Markdown or stru
 whole sites, scanned PDFs, browser actions, change monitoring and research runs driven by your own model.
 
 Can replace or sit alongside: **Firecrawl** (same v1/v2 API, self-hosted), **Jina Reader** (`/r/` and `/s/`),
-**Crawl4AI**, **trafilatura**, **Readability**, **pymupdf4llm**, **Docling**, **Kreuzberg**.
+**Crawl4AI**, **trafilatura**, **Readability**, **pymupdf4llm**, **Docling**, **Kreuzberg**, **xberg**.
 
 ## At a glance
 
-- **Input:** URLs, HTML, PDF including scanned pages (OCR), Word, Excel, PowerPoint, EPUB, CSV, WARC archives
-- **Output:** Markdown,…
+- **Input:** URLs, HTML, PDF including scanned pages (OCR), image files (OCR), Word (.docx, .doc), Excel (.xlsx, .xlsb,…

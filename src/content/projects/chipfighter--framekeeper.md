@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "token-optimization", "claude-code", "claude-code-plugin", "ai-image", "image-generation"]
-stars: 767
+stars: 768
 forks: 69
 openIssues: 0
 closedIssues: 12

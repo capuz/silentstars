@@ -11,17 +11,17 @@ languagePcts: [98]
 topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent", "nodejs", "validation", "workflow", "agent-handoffs", "coding-agents"]
 stars: 4
 forks: 0
-openIssues: 12
+openIssues: 13
 closedIssues: 12
 watchers: 0
 contributors: 3
-recentReleases: 4
+recentReleases: 5
 createdAt: "2026-09-30T06:35:51Z"
 lastCommitAt: "2026-11-04T02:46:56Z"
-lastReleaseAt: "2026-10-15T06:47:02Z"
+lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
-tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
-healthScore: 90
+tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
+healthScore: 89
 undervaluedScore: 61
 maintainers: ["suirindo", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/718cc7f2c4ecefd6c3fe4890b1fd389015703f334e66231d12605b56c567dca8/suirindo/agent-role-contracts"

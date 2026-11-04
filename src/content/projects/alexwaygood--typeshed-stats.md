@@ -17,14 +17,14 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-09T23:59:17Z"
-lastCommitAt: "2026-11-03T19:22:18Z"
+lastCommitAt: "2026-11-04T05:50:00Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3bf8034a5fd457eb1f5f7b065bbc8b2a2dc5857df54349c32019568e9416aa12/AlexWaygood/typeshed-stats"
+openGraphImageUrl: "https://opengraph.githubassets.com/d6f2dd83988c62951e31d354194902edb792c440123aa9ae6a63a7187d369783/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"
 ---
 
