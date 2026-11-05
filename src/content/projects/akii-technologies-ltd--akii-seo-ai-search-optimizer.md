@@ -1,7 +1,7 @@
 ---
 repo: "akii-technologies-ltd/akii-seo-ai-search-optimizer"
 name: "akii-seo-ai-search-optimizer"
-description: "Free MIT-licensed Claude Code plugin for SEO, AEO and GEO. Audit websites, plan content, generate schema and check links. Includes 12 skills, 5 agents and 3 commands."
+description: "Akii: SEO & AI Search Optimizer. Free MIT-licensed Claude Code plugin for SEO, AEO and GEO. Audit websites, plan content, generate schema and check links. Includes 12 skills, 5 agents and 3 commands."
 readmeQualityOk: true
 url: "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer"
 homepage: "https://akii.com/portfolio#search-optimizer"
@@ -24,9 +24,10 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 86
 undervaluedScore: 15
 maintainers: ["akii-technologies"]
-openGraphImageUrl: "https://opengraph.githubassets.com/91d491eee7a7ab75bb4a56961848d90a901ea4d161cd90f880927b1df07c4bfb/akii-technologies-ltd/akii-seo-ai-search-optimizer"
+openGraphImageUrl: "https://opengraph.githubassets.com/8b913f3753909af99d39e763d8eb3af2619d69685d934370a68b40a7f117399c/akii-technologies-ltd/akii-seo-ai-search-optimizer"
 discussionCount: 0
 promoted: true
+postedAt: "2026-11-05T00:29:41.580Z"
 ---
 
 # Akii — SEO & AI Search Optimizer

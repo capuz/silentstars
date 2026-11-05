@@ -9,7 +9,7 @@ language: "Kotlin"
 languages: ["Kotlin"]
 languagePcts: [78]
 topics: ["android", "bluetooth", "censorship-resistance", "live-streaming", "mesh-network", "off-grid", "bluetooth-low-energy", "privacy", "video-calling", "android-app"]
-stars: 339
+stars: 340
 forks: 50
 openIssues: 3
 closedIssues: 1

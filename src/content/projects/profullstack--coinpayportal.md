@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-03T07:59:34Z"
 lastReleaseAt: "2026-07-26T09:36:26Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 75
 maintainers: ["ralyodio", "sh1pt-actions-fleet[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/69fb9e30118e55dc9c522a2f110d46f8c27de477d0abb5b34fe6f57c0f936c89/profullstack/coinpayportal"

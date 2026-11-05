@@ -10,18 +10,18 @@ languagePcts: [75, 23]
 stars: 10
 forks: 30
 openIssues: 8
-closedIssues: 61
+closedIssues: 62
 watchers: 4
 contributors: 31
 recentReleases: 0
 createdAt: "2021-07-06T16:18:56Z"
-lastCommitAt: "2026-11-04T22:15:01Z"
+lastCommitAt: "2026-11-05T06:04:00Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 97
+healthScore: 98
 undervaluedScore: 82
-maintainers: ["lvca", "github-actions[bot]", "robfrank"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bbe7856c4ccbf703cba1fcb5bdcafa573b2ac252dfcee60abe3bdc4d77f4f4a7/ArcadeData/arcadedb-docs"
+maintainers: ["lvca", "github-actions[bot]", "tae898"]
+openGraphImageUrl: "https://opengraph.githubassets.com/3c3cdb0a467c56c60d65695e6190429a4bdc1237596724ec0dc2020c090164ef/ArcadeData/arcadedb-docs"
 postedAt: "2026-09-07T08:39:00.385Z"
 ---
 

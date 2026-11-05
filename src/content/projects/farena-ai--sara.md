@@ -1,7 +1,7 @@
 ---
 repo: "farena-ai/sara"
 name: "sara"
-description: "Sara: a self-hosted AI companion with a personality you choose, who is also a real coding partner. Chats, remembers, plans, reads your documents, and builds and tests software in a sandbox, on your own server, with any model, local or cloud. MIT, zero runtime dependencies."
+description: "Free, open-source AI companion and coding partner. Self-host Sara with your own models: memory, voice, documents, coding tools and optional shared business workspaces. MIT licensed."
 readmeQualityOk: true
 url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-04T11:51:20Z"
+lastCommitAt: "2026-11-05T06:27:32Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -32,17 +32,14 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 # Sara
 
-**An AI companion with the personality you choose, who is also a real coding partner.**
-She talks, remembers, plans your day and reads your books; she writes, runs and tests code in her own
-sandboxed workspace. All on your own server, with the models you pick, in one app for the web,
-Windows, Mac and phones.
+**Here with a team?** Use the [separate business setup](https://github.com/farena-ai/sara/blob/HEAD/docs/BUSINESS_OPERATIONS.md): individual passkeys, explicit roles and shared workspaces. It is a manual installation with its own data root; personal installers do not convert your companion or household.
 
-> **Status:** 2.63.1, MIT licensed, with seventy-four feature releases since 1.0 (all below). 2.5 to 2.8
-> gave the whole app a new look. The [Android app](https://play.google.com/store/apps/details?id=com.backstagecoding.sara)
-> is on Google Play; the iPhone app and the Mac App Store version are coming as soon as Apple approves them.
-> Read [docs/DISCLOSURES.md](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing Sara.
+> **Status:** 2.65.0, [current stable release](https://github.com/farena-ai/sara/releases/tag/v2.65.0). Guided business setup, invitation management and safer recovery. [See what changed](#whats-new).
+>
+> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). macOS download: signed and notarized. Android: [Google Play](https://play.google.com/store/apps/details?id=com.backstagecoding.sara). iPhone: [home-screen web app](https://github.com/farena-ai/sara/blob/HEAD/docs/PHONE.md).
 
-**Operate with evidence:** owner-only HTTP/readiness measurements, safe resolved-delivery archival and repeatable local workload/browser checks. [Operations guide](https://github.com/farena-ai/sara/blob/HEAD/docs/OPERATIONS.md).
+Sara is AI. Read the [disclosures](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing her. Local mode keeps model calls on your computer; cloud features send data to the providers you choose ([privacy](https://github.com/farena-ai/sara/blob/HEAD/docs/PRIVACY.md)).
 
-**Recover interrupted work:** Settings → Data & health → Recovery keeps job restart reviews and
-native Telegram/Discord delivery uncertainty visible. Nothing is blindly replayed after…
+## Why Sara
+
+- **A personality you…

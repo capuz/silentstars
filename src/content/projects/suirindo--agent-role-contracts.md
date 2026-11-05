@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 5
 createdAt: "2026-09-30T06:35:51Z"
-lastCommitAt: "2026-11-04T02:46:56Z"
+lastCommitAt: "2026-11-05T00:58:41Z"
 lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
 healthScore: 89
 undervaluedScore: 61
 maintainers: ["suirindo", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/718cc7f2c4ecefd6c3fe4890b1fd389015703f334e66231d12605b56c567dca8/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/906719e7ec1fcdfb8df3dda61fd0b40efbbbb3a311fe2bc2245752cfcce12020/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"

@@ -10,7 +10,7 @@ languages: ["Swift"]
 languagePcts: [73]
 stars: 1
 forks: 0
-openIssues: 0
+openIssues: 1
 closedIssues: 0
 watchers: 0
 contributors: 1
@@ -20,8 +20,8 @@ lastCommitAt: "2026-11-04T10:11:06Z"
 lastReleaseAt: "2026-11-03T05:12:28Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
-undervaluedScore: 67
+healthScore: 80
+undervaluedScore: 58
 maintainers: ["devdasx"]
 openGraphImageUrl: "https://opengraph.githubassets.com/880b0b9653c51000bcb4f0ddc1c3750c14d3115e3185fc350bbde2d6783adf13/devdasx/oath-wallet"
 promoted: true
