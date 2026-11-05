@@ -13,7 +13,9 @@
     "history": "tsx scripts/history-snapshot.ts",
     "graduates": "tsx scripts/graduates.ts",
     "weekly-notes": "tsx scripts/weekly-notes.ts",
-    "pipeline": "tsx scripts/discover.ts && tsx scripts/collect.ts"
+    "pipeline": "tsx scripts/discover.ts && tsx scripts/collect.ts",
+    "check": "astro check",
+    "test": "node --test scripts/*.test.ts"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.7",
@@ -24,9 +26,11 @@
     "satori": "^0.26.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@types/node": "^24.19.2",
     "playwright": "^1.61.1",
     "tsx": "^4.19.0",
-    "typescript": "^5.5.0"
+    "typescript": "^5.9.3"
   },
   "allowScripts": {
     "playwright@1.61.1": true
