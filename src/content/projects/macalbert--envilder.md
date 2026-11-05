@@ -11,20 +11,20 @@ languagePcts: [64]
 topics: ["automation", "dotenv", "secrets", "ci-cd", "aws-ssm", "azure-keyvault", "configuration", "developer-tools", "github-actions", "secret-management"]
 stars: 138
 forks: 5
-openIssues: 25
-closedIssues: 39
+openIssues: 24
+closedIssues: 40
 watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-05T01:56:57Z"
+lastCommitAt: "2026-11-05T08:18:12Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]
-openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/cf3a417f-d3c4-4689-8921-72b74112ff28"
+openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"
 fundingLinks: ["GITHUB:https://github.com/macalbert"]
 discussionCount: 3
 promoted: true
@@ -45,7 +45,7 @@ CI/CD (GitHub Action), and application startup (runtime SDKs).
 
 ```bash
 # Push a secret: it is stored in your cloud and mapped in envilder.json
-npx envilder --key=API_KEY --value=s3cret --secret-path=/my-app/api-key
+npx envilder --push --key=API_KEY --value=s3cret --secret-path=/my-app/api-key
 
 # Zero-config: uses envilder.json and .env by default
 npx envilder
@@ -62,4 +62,4 @@ No SaaS middleman. One versioned mapping contract. Secrets stay in your cloud.
 ## The problem
 
 - **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which
-  secrets go where.…
+  secrets go…

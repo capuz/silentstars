@@ -25,6 +25,7 @@ undervaluedScore: 56
 maintainers: ["vladimir-mitev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/714ab4c005d71d833b8d1665d693c70f1ac9421b1edecceea033c67d74ab106d/helena-bioinformatics/folklore-mcp"
 promoted: true
+postedAt: "2026-11-05T08:13:37.322Z"
 ---
 
 # Folklore Clinical Variant Interpretation MCP

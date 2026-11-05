@@ -8,7 +8,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [88]
 stars: 8
-forks: 45
+forks: 46
 openIssues: 57
 closedIssues: 122
 watchers: 9

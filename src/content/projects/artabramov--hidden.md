@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["encryption", "fastapi", "gocryptfs", "self-hosted", "versitygw", "s3"]
-stars: 46
+stars: 50
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 71
 undervaluedScore: 34
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6a688cfa7514fd4c9fc9cc62c740a1068450bb33c3504975de68cb20665a11ef/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/dc8fc577554af3dae70b4a5679a4a6a10271bff44ef750bfa541c712c0d940d3/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

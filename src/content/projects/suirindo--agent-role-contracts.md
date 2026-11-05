@@ -12,7 +12,7 @@ topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent
 stars: 4
 forks: 0
 openIssues: 13
-closedIssues: 12
+closedIssues: 13
 watchers: 0
 contributors: 3
 recentReleases: 5
