@@ -2407,5 +2407,16 @@
         "postedAt": "2026-11-05T00:29:41.580Z"
       }
     }
+  },
+  {
+    "repo": "helena-bioinformatics/folklore-mcp",
+    "slug": "helena-bioinformatics--folklore-mcp",
+    "postedAt": "2026-11-05T08:13:37.322Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzkgdchx7x2o",
+        "postedAt": "2026-11-05T08:13:37.322Z"
+      }
+    }
   }
 ]
