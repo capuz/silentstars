@@ -8,21 +8,21 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [88]
 stars: 8
-forks: 44
-openIssues: 58
-closedIssues: 121
+forks: 45
+openIssues: 57
+closedIssues: 122
 watchers: 9
 contributors: 284
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-04T13:06:09Z"
+lastCommitAt: "2026-11-04T15:49:25Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 91
 undervaluedScore: 83
 maintainers: ["semantic-release-bot", "sharanyavinod", "hannessolo"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ef0c652f39119c3141cb6c5a1aecc9c8279a7b9d56d5401e86060cee2858d8e1/adobe/da-nx"
+openGraphImageUrl: "https://opengraph.githubassets.com/cccaa03ed787d8012ae31503813cf7ac7182fd4663ffe5e926f73b3625af87b1/adobe/da-nx"
 postedAt: "2026-10-27T09:24:29.168Z"
 ---
 

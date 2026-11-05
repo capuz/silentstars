@@ -16,14 +16,14 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2021-07-20T16:35:07Z"
-lastCommitAt: "2026-11-04T13:00:16Z"
+lastCommitAt: "2026-11-04T23:59:30Z"
 lastReleaseAt: "2022-01-05T03:21:41Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 96
 undervaluedScore: 89
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/55f1f9b5e8268778b6dab9d393431d6d62e3498f39349952b8c0390e877c655c/waldronlab/BugSigDBExports"
+openGraphImageUrl: "https://opengraph.githubassets.com/6cd57f6bb82ac4431f50f89301d09b73bc214daedac83b70b9473e3cf23de10a/waldronlab/BugSigDBExports"
 postedAt: "2026-09-04T08:22:03.127Z"
 ---
 

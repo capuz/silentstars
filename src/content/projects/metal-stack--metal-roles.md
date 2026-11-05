@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/metal-stack/metal-roles"
 language: "Jinja"
 languages: ["Jinja", "Python"]
-languagePcts: [71, 25]
+languagePcts: [69, 27]
 topics: ["ansible-roles"]
 stars: 5
 forks: 2
@@ -16,14 +16,14 @@ watchers: 6
 contributors: 24
 recentReleases: 0
 createdAt: "2020-02-11T14:50:20Z"
-lastCommitAt: "2026-11-03T08:00:58Z"
+lastCommitAt: "2026-11-04T13:57:39Z"
 lastReleaseAt: "2020-12-07T11:31:38Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "legacy_hero"]
-healthScore: 93
+healthScore: 94
 undervaluedScore: 75
-maintainers: ["Gerrit91", "simcod", "mwennrich"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2c72e7e6ba14fcfd7416014b8f5240ef37ff5ad66e6e27670d7eb70d072e400e/metal-stack/metal-roles"
+maintainers: ["Gerrit91", "simcod", "GeertJohan"]
+openGraphImageUrl: "https://opengraph.githubassets.com/6fd3c33b6d6a3a73b9348a15d7e1891258ea8ec05cdaab2167bbdf73b4b97eb5/metal-stack/metal-roles"
 postedAt: "2026-10-19T09:20:39.406Z"
 ---
 

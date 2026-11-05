@@ -8,22 +8,22 @@ homepage: "https://eclipse-score.github.io/lifecycle"
 language: "C++"
 languages: ["C++"]
 languagePcts: [70]
-stars: 7
+stars: 8
 forks: 37
-openIssues: 97
-closedIssues: 214
+openIssues: 103
+closedIssues: 216
 watchers: 1
 contributors: 57
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-04T11:14:22Z"
+lastCommitAt: "2026-11-04T16:12:50Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
-undervaluedScore: 99
+undervaluedScore: 97
 maintainers: ["NicolasFussberger", "cameron-craig-etas", "eclipse-score-bot"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6b3dd688d67c19b50fb07090753d426fb762883795293f4763655bc23c7575df/eclipse-score/lifecycle"
+openGraphImageUrl: "https://opengraph.githubassets.com/8829330bb0467e51dc12306b513e0932b407e52f07a81532235a98c994d5c49e/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

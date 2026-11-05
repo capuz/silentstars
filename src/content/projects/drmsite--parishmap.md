@@ -15,14 +15,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 2
+recentReleases: 3
 createdAt: "2026-10-26T10:57:14Z"
-lastCommitAt: "2026-11-04T08:21:37Z"
-lastReleaseAt: "2026-10-27T09:23:50Z"
+lastCommitAt: "2026-11-04T13:44:01Z"
+lastReleaseAt: "2026-11-04T13:34:23Z"
 status: "newborn"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
-undervaluedScore: 48
+undervaluedScore: 55
 maintainers: ["annoyingmouse", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1434257355/04148c88-0861-4804-aaa4-37efbae37118"
 discussionCount: 0

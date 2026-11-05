@@ -9,21 +9,21 @@ languages: ["TypeScript"]
 languagePcts: [93]
 topics: ["self-service", "gui", "portal", "cloud", "react", "openstack", "dashboard", "waldur", "rancher"]
 stars: 32
-forks: 35
+forks: 36
 openIssues: 6
 closedIssues: 30
 watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-04T10:54:39Z"
+lastCommitAt: "2026-11-04T23:33:52Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]
-healthScore: 96
+healthScore: 87
 undervaluedScore: 73
-maintainers: ["livenson", "AmbientLighter", "DarinaKulyk"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3075d5a740f03824af73c15b9ad03e8f0b4c432ffd9bdc3a5e59e0c161e173c0/waldur/waldur-homeport"
+maintainers: ["livenson", "AmbientLighter", "Emil60"]
+openGraphImageUrl: "https://opengraph.githubassets.com/4298c4293c3dcdf675e13081d86df72bf132476a3db661c902de98e2e1448943/waldur/waldur-homeport"
 postedAt: "2026-11-03T11:22:36.120Z"
 ---
 

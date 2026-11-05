@@ -11,20 +11,20 @@ languagePcts: [99]
 topics: ["caching", "github-actions", "runners", "aws", "cloudwatch", "metrics", "monitoring", "rust"]
 stars: 18
 forks: 9
-openIssues: 2
-closedIssues: 17
+openIssues: 1
+closedIssues: 18
 watchers: 2
 contributors: 8
 recentReleases: 0
 createdAt: "2024-12-19T12:16:33Z"
-lastCommitAt: "2026-10-28T13:05:09Z"
+lastCommitAt: "2026-11-04T22:13:51Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 89
-undervaluedScore: 73
+healthScore: 93
+undervaluedScore: 74
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
-openGraphImageUrl: "https://opengraph.githubassets.com/34248de7f5fdc8bbd6d4fee2577b7a6fcc9914d6a0a861238d774deafb21d59b/runs-on/action"
+openGraphImageUrl: "https://opengraph.githubassets.com/dbf1c7cf5e806f4509f1682478a7ad6bf848cab20bdc6ccc21ecc36e9599f19e/runs-on/action"
 postedAt: "2026-10-11T10:21:15.448Z"
 ---
 

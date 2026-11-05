@@ -17,17 +17,19 @@ watchers: 0
 contributors: 1
 recentReleases: 7
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-04T00:20:29Z"
+lastCommitAt: "2026-11-04T14:41:04Z"
 lastReleaseAt: "2026-11-03T16:25:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fa60ccd055d08c63eb72e1402bed1d46790d80a0f78e93c3802eaa80dadba520/TRON-ABS/Novera"
+openGraphImageUrl: "https://opengraph.githubassets.com/fc0868f7d6bd67bc6762086e67581b5c4296bebb3eff59c89e9b794704063aa9/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---
+
+Data and privacy: [local inference, optional telemetry, error reports and update connections (French)](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/DONNEES_ET_CONFIDENTIALITE.md). License: [Apache 2.0](https://github.com/TRON-ABS/Novera/blob/HEAD/LICENSE) · [Attribution](https://github.com/TRON-ABS/Novera/blob/HEAD/NOTICE).
 
 ---
 
@@ -40,5 +42,4 @@ postedAt: "2026-11-04T03:06:01.260Z"
 | Windows x64 | Public NSIS installer, signed updater; native installation and replacement verified. |
 | Linux x64 | Public AppImage, signed updater; native installation and replacement verified. |
 | Windows x64 / Linux x64 CLI | [Novera CLI](https://github.com/TRON-ABS/Novera/releases/tag/v1.0.0-cli-novera): `novera.exe` / `novera`, with a dedicated signed update channel. |
-| Windows ARM64 | [Public NSIS installer](https://github.com/TRON-ABS/Novera/releases/tag/v1.0.0-windows-arm64), native CPU text engine; installation, replacement and public-channel checks verified. |
-| Android ARM64 | [Public signed APK 1.0.0](https://github.com/TRON-ABS/Novera/releases/tag/v1.0.0-android-1000012), Android 7+, default batch 512. The maintainer confirms build 1000012 works on their…
+| Windows ARM64 | [Public NSIS…

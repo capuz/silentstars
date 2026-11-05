@@ -4,6 +4,7 @@ name: "kilobat-cli"
 description: "macOS network diagnostics CLI and MCP server"
 readmeQualityOk: true
 url: "https://github.com/seifip/kilobat-cli"
+homepage: "https://kilobat.app"
 language: "Swift"
 languages: ["Swift"]
 languagePcts: [99]
@@ -21,9 +22,9 @@ lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
-undervaluedScore: 49
+undervaluedScore: 54
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f8cb04168823bf7c5a837547d4c00a01a2cdd729ca346c064df97a2a06fcfae4/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/8f47c67ed0e3199798340e676cd372abc3840d5e67c19fc939605e28b9120a71/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---

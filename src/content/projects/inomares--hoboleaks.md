@@ -16,13 +16,13 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2017-03-07T10:32:48Z"
-lastCommitAt: "2026-11-04T11:27:57Z"
+lastCommitAt: "2026-11-04T18:38:39Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 89
 undervaluedScore: 74
 maintainers: ["Inomares"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1434b281869af645185c7b5e4f94654d03c0b6864d4b71859d083e1ce07ff08e/Inomares/hoboleaks"
+openGraphImageUrl: "https://opengraph.githubassets.com/4085d7ba1a2d36b9a48f2d717c6eb35d6a20e13af9579e6bebee0c95f4b4a82b/Inomares/hoboleaks"
 postedAt: "2026-11-04T11:36:41.226Z"
 ---
 

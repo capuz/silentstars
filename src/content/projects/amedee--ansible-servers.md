@@ -14,16 +14,16 @@ forks: 1
 openIssues: 10
 closedIssues: 226
 watchers: 1
-contributors: 1
+contributors: 2
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-11-03T17:06:36Z"
+lastCommitAt: "2026-11-04T23:55:13Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
 undervaluedScore: 83
 maintainers: ["amedee", "github-actions[bot]", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0a212a4f89979e3a68fa3442eb68207061f2217fc7783e4d5fa19206d602bcba/amedee/ansible-servers"
+openGraphImageUrl: "https://opengraph.githubassets.com/24fb00fece49706f5ecf06ad3201d976ef8ce244b4279faba6826851c1d280e7/amedee/ansible-servers"
 postedAt: "2026-10-07T10:37:46.775Z"
 ---
 

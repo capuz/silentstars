@@ -7,7 +7,7 @@ url: "https://github.com/macalbert/envilder"
 homepage: "https://envilder.com"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [63]
+languagePcts: [64]
 topics: ["automation", "dotenv", "secrets", "ci-cd", "aws-ssm", "azure-keyvault", "configuration", "developer-tools", "github-actions", "secret-management"]
 stars: 138
 forks: 5
@@ -17,7 +17,7 @@ watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-04T09:52:48Z"
+lastCommitAt: "2026-11-04T23:35:10Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]

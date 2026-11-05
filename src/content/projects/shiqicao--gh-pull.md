@@ -20,7 +20,7 @@ lastCommitAt: "2026-10-31T00:16:42Z"
 lastReleaseAt: "2026-10-27T01:05:18Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 70
 maintainers: ["shiqicao"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2a33f495c483f1e67842b2dcccb9e7e95a2659da2f5a7ec77aea2a1c03cffa4f/shiqicao/gh-pull"

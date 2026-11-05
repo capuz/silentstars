@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-03T03:14:58Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 74
 maintainers: ["mvillmow", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f2df911aeca53ab1b83622672ac781564cef81fdbdba419a2adb1fbca0b611be/HomericIntelligence/Hephaestus"

@@ -7,7 +7,7 @@ url: "https://github.com/MovieHolic-Plex/OpenRPGMaker"
 homepage: "https://openrpgmaker.com"
 language: "TypeScript"
 languages: ["TypeScript", "Python"]
-languagePcts: [57, 29]
+languagePcts: [57, 28]
 topics: ["ai", "ai-assistant", "electron", "game-development", "game-engine", "gamedev", "jrpg", "level-editor", "phaser", "pixel-art"]
 stars: 6
 forks: 1
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-11-04T13:02:50Z"
+lastCommitAt: "2026-11-04T23:05:48Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 97
 undervaluedScore: 67
 maintainers: ["MovieHolic-Plex", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e583b313fa37c42203f109581d1271ee44ee90f20b72366c94592c9bdf38287b/MovieHolic-Plex/OpenRPGMaker"
+openGraphImageUrl: "https://opengraph.githubassets.com/8aa039d858566819da0c9ea0978374f7f01690c6a8221ede3156384c45cfcef8/MovieHolic-Plex/OpenRPGMaker"
 postedAt: "2026-10-30T10:31:15.033Z"
 ---
 

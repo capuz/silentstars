@@ -17,14 +17,14 @@ watchers: 0
 contributors: 1
 recentReleases: 9
 createdAt: "2026-07-23T02:43:51Z"
-lastCommitAt: "2026-11-02T19:37:18Z"
+lastCommitAt: "2026-11-04T23:08:54Z"
 lastReleaseAt: "2026-08-31T11:32:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
 undervaluedScore: 43
 maintainers: ["haoming-luo"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1b515d5e8f84d4459b42bb356854ad6e5de3893f6be6ff647f5346990ae34f15/haoming-luo/agentfem"
+openGraphImageUrl: "https://opengraph.githubassets.com/b8c31fbfefc15c12b34f838688c145e726d676493cbac3d6e64c7a3f0431566d/haoming-luo/agentfem"
 discussionCount: 10
 promoted: true
 postedAt: "2026-10-26T21:15:22.508Z"
@@ -45,17 +45,13 @@ open-source FEM platform. Its longer-term vision is to make finite-element
 simulation an accessible scientific workspace connecting engineering,
 computation, data, and AI.
 
+**Explore before installing:** [Browser demos, datasets & models](https://lab.haoming-luo.com/open-science/)
+· [Six classroom exercises](https://lab.haoming-luo.com/learn/en.html)
+([中文](https://lab.haoming-luo.com/learn/) · [Français](https://lab.haoming-luo.com/learn/fr.html)).
+The exercises include prompts, reference results, and downloadable handouts;
+running your own FEM cases requires the AgentFEM runtime below.
+
 ## All You Need Is an Agent
 
 > [!TIP]
-> **Give this prompt to Codex, DS Harness, or another AI agent:**
-
-```text
-Bring AgentFEM to life.
-
-Use https://haoming-luo.github.io/agentfem/agentfem.json as the guide.
-Detect my platform and reuse a working environment. If I say
-"走镜像通道 / use the mirror channel", retain that choice for later installs.
-On Windows use the linked short WSL/Ubuntu route, without cloning the repo.
-Do every permitted step; if one fails, give me one simple manual action and
-continue after it is resolved.…
+> **Give this prompt to Codex, DS Harness, or another AI agent:**…

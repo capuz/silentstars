@@ -7,7 +7,7 @@ url: "https://github.com/axax/lunuc"
 homepage: "https://www.lunuc.com/"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [98]
+languagePcts: [99]
 topics: ["react", "redux", "boilerplate", "starter-kit", "framework"]
 stars: 6
 forks: 0
@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2017-04-04T20:13:45Z"
-lastCommitAt: "2026-11-04T10:45:34Z"
+lastCommitAt: "2026-11-04T20:38:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 90
 undervaluedScore: 75
 maintainers: ["axax"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1bbd241d821f30415b79904e1866845f29181089775b2ddc65764d859d7cb45e/axax/lunuc"
+openGraphImageUrl: "https://opengraph.githubassets.com/d086bf9880e9b71a4e42884b067b07865116d07655bdb2c318c61dcac50ee561/axax/lunuc"
 postedAt: "2026-07-13T06:46:08.589Z"
 ---
 
