@@ -11,20 +11,20 @@ languagePcts: [98]
 topics: ["payloadcms", "portal", "react", "typescript", "website"]
 stars: 7
 forks: 0
-openIssues: 31
-closedIssues: 762
+openIssues: 30
+closedIssues: 763
 watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2025-02-14T21:56:07Z"
-lastCommitAt: "2026-11-02T15:51:07Z"
+lastCommitAt: "2026-11-05T11:38:51Z"
 lastReleaseAt: "2025-07-04T06:43:15Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 81
 maintainers: ["SebastianSchuetze", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3ddc9ba5479d8c89d721fba1b3cf64bbecadf8881992684bbbadeb6c759fe48f/findmydoc-platform/website"
+openGraphImageUrl: "https://opengraph.githubassets.com/9402ffa84b79bf5609fef5d14970609d79e6ae213ecb71b5421b82d77178378a/findmydoc-platform/website"
 discussionCount: 17
 postedAt: "2026-10-24T08:27:41.607Z"
 ---

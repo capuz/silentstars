@@ -17,14 +17,14 @@ watchers: 1
 contributors: 1
 recentReleases: 9
 createdAt: "2026-07-23T02:43:51Z"
-lastCommitAt: "2026-11-05T05:51:57Z"
+lastCommitAt: "2026-11-05T11:54:54Z"
 lastReleaseAt: "2026-08-31T11:32:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 43
 maintainers: ["haoming-luo"]
-openGraphImageUrl: "https://opengraph.githubassets.com/12e25bb7c963d1542c4412d55adba6843e1272b8b4b3c5155721e0da6ee01ea2/haoming-luo/agentfem"
+openGraphImageUrl: "https://opengraph.githubassets.com/0917b234383b8a7109b8354e300927ca0b64831abd6a33f595a664fbb73ec0c7/haoming-luo/agentfem"
 discussionCount: 10
 promoted: true
 postedAt: "2026-10-26T21:15:22.508Z"

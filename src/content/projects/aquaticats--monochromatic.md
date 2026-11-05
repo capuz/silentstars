@@ -25,7 +25,7 @@ undervaluedScore: 75
 maintainers: ["Aquaticat"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9c443e21d184f5a2a6cc2e773d032ef33cbd39da855ed01f68a333571c309a1e/Aquaticats/Monochromatic"
 discussionCount: 0
-postedAt: "2026-09-30T10:05:46.857Z"
+postedAt: "2026-11-05T11:34:14.162Z"
 ---
 
 # Monochromatic
