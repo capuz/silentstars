@@ -150,5 +150,9 @@
   {
     "repo": "helena-bioinformatics/folklore-mcp",
     "until": "2026-12-05"
+  },
+  {
+    "repo": "JhuoW/OpenMathpix",
+    "until": "2026-12-05"
   }
 ]
