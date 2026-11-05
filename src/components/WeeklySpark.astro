@@ -1,0 +1,95 @@
+---
+// Per-project sparkline for a weekly edition card: stars as a line, issues closed
+// per week as bars. Server-rendered SVG, coloured by the section's --wk-color.
+import type { ProjectSeries } from '../../scripts/weekly.ts';
+
+interface Props { series: ProjectSeries | null; }
+const { series } = Astro.props;
+
+const MIN_POINTS = 2;
+const W = 200, H = 64;
+const LINE_TOP = 6, LINE_BOT = 36;   // stars line band
+const BAR_TOP = 44, BAR_BOT = 62;    // issues bars band
+const PAD_X = 4;
+
+const enough = !!series && series.stars.length >= MIN_POINTS;
+const shortWeek = (k: string) => k.replace(/^\d+-/, '');
+
+let line = '', area = '', last = { x: 0, y: 0 }, bars: Array<{ x: number; y: number; w: number; h: number; zero: boolean }> = [];
+let starsDelta = 0, issuesTotal = 0, label = '';
+
+if (enough) {
+  const { stars, issuesClosed, weeks } = series!;
+  const n = stars.length;
+  const step = (W - PAD_X * 2) / (n - 1);
+  const x = (i: number) => PAD_X + i * step;
+  const lo = Math.min(...stars), hi = Math.max(...stars);
+  const y = (s: number) => hi === lo ? (LINE_TOP + LINE_BOT) / 2 : LINE_BOT - ((s - lo) / (hi - lo)) * (LINE_BOT - LINE_TOP);
+  const pts = stars.map((s, i) => [x(i), y(s)] as const);
+  line = pts.map(([px, py]) => `${px.toFixed(1)},${py.toFixed(1)}`).join(' ');
+  area = `M${x(0).toFixed(1)},${LINE_BOT} L${line.replaceAll(' ', ' L')} L${x(n - 1).toFixed(1)},${LINE_BOT} Z`;
+  last = { x: pts[n - 1]![0], y: pts[n - 1]![1] };
+
+  const maxIssues = Math.max(...issuesClosed);
+  const bw = Math.max(2, Math.min(10, step * 0.55));
+  bars = issuesClosed.map((v, i) => {
+    const h = v === 0 || maxIssues === 0 ? 1.5 : Math.max(3, (v / maxIssues) * (BAR_BOT - BAR_TOP));
+    return { x: x(i) - bw / 2, y: BAR_BOT - h, w: bw, h, zero: v === 0 };
+  });
+
+  starsDelta = stars[n - 1]! - stars[0]!;
+  issuesTotal = issuesClosed.reduce((a, b) => a + b, 0);
+  label = `Stars ${stars[0]} to ${stars[n - 1]}, ${issuesTotal} ${issuesTotal === 1 ? 'issue' : 'issues'} closed, ${shortWeek(weeks[0]!)}–${shortWeek(weeks[n - 1]!)}`;
+}
+const weeksShown = enough ? series!.stars.length : 0;
+---
+{enough ? (
+  <figure class="wk-spark">
+    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={label}>
+      <path d={area} class="sp-area" />
+      <polyline points={line} class="sp-line" />
+      <circle cx={last.x} cy={last.y} r="3" class="sp-dot" />
+      {bars.map(b => <rect x={b.x} y={b.y} width={b.w} height={b.h} rx="1" class={b.zero ? 'sp-bar sp-bar--zero' : 'sp-bar'} />)}
+    </svg>
+    <figcaption>
+      <span>{starsDelta >= 0 ? '+' : '−'}{Math.abs(starsDelta)}★</span> · <span>{`${issuesTotal} ${issuesTotal === 1 ? 'issue' : 'issues'}`}</span> · <span class="sp-dim">{weeksShown}w</span>
+    </figcaption>
+  </figure>
+) : (
+  <figure class="wk-spark wk-spark--new">
+    <figcaption><span class="sp-dot-txt" aria-hidden="true">●</span> tracking since {series ? shortWeek(series.since) : 'this week'}</figcaption>
+  </figure>
+)}
+
+<style>
+  .wk-spark {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+  .wk-spark svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .sp-area { fill: var(--wk-color); opacity: 0.12; }
+  .sp-line {
+    fill: none;
+    stroke: var(--wk-color);
+    stroke-width: 1.75;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  .sp-dot { fill: var(--wk-color); stroke: var(--bg-card); stroke-width: 1.5; }
+  .sp-bar { fill: var(--wk-color); opacity: 0.55; }
+  .sp-bar--zero { fill: var(--text-dim); opacity: 0.45; }
+  figcaption {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    color: var(--text-muted);
+    text-align: right;
+    white-space: nowrap;
+  }
+  .sp-dim { color: var(--text-dim); }
+  .wk-spark--new figcaption { text-align: center; color: var(--text-dim); }
+  .sp-dot-txt { color: var(--wk-color); }
+</style>

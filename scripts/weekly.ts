@@ -300,3 +300,32 @@ export function renderReason(signals: Signal[]): string {
     }
   }).join(' · ');
 }
+
+export interface ProjectSeries {
+  weeks: string[];
+  stars: number[];
+  /** Issues closed during each week; status-page spikes (> ISSUES_SPIKE_MAX) count as 0, like in editions. */
+  issuesClosed: number[];
+  /** First week the project appears in history. */
+  since: string;
+}
+
+/** A project's last `n` weekly snapshots up to (and including) `uptoWeek`, for the edition sparklines. */
+export function projectSeries(history: History, repo: string, uptoWeek: string, n = 12): ProjectSeries | null {
+  const keys = Object.keys(history).sort().filter(k => k <= uptoWeek && history[k]!.projects[repo]);
+  if (keys.length === 0) return null;
+  const window = keys.slice(-(n + 1));
+  const entries = window.map(k => history[k]!.projects[repo]!);
+  const deltas = entries.map((e, i) => {
+    if (i === 0) return 0;
+    const d = e.closedIssues - entries[i - 1]!.closedIssues;
+    return d > 0 && d <= ISSUES_SPIKE_MAX ? d : 0;
+  });
+  const drop = window.length > n ? 1 : 0;
+  return {
+    weeks: window.slice(drop),
+    stars: entries.slice(drop).map(e => e.stars),
+    issuesClosed: deltas.slice(drop),
+    since: keys[0]!,
+  };
+}

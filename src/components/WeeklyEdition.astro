@@ -1,8 +1,11 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
-import type { NumberedEdition, EditionItem } from '../../scripts/weekly.ts';
+import { projectSeries } from '../../scripts/weekly.ts';
+import type { NumberedEdition, EditionItem, History } from '../../scripts/weekly.ts';
 import type { NotesCache } from '../../scripts/weekly-notes.ts';
 import notesJson from '../../data/weekly-notes.json';
+import historyJson from '../../data/history.json';
+import WeeklySpark from './WeeklySpark.astro';
 
 interface Props {
   edition: NumberedEdition;
@@ -16,6 +19,8 @@ const pages = new Map<string, CollectionEntry<'projects'>['data']>((await getCol
 // Claude's one-liners from the week's commits and releases (scripts/weekly-notes.ts);
 // missing for an edition that hasn't been written yet.
 const notes = (notesJson as NotesCache)[edition.week] ?? {};
+// Sparklines stop at the edition's own week, so archived editions show history as of then.
+const history = historyJson as History;
 
 const sections: Array<{ key: string; icon: string; title: string; blurb: string; items: EditionItem[] }> = [
   { key: 'rising',    icon: '🔥', title: 'Rising',        blurb: 'Busiest week of the bunch: releases, issues closed, stars.', items: edition.rising },
@@ -34,6 +39,7 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
         const href = page ? `${base}projects/${i.slug}/` : `https://github.com/${i.repo}`;
         return (
           <li class="wk-item">
+            <div class="wk-body">
             <div class="wk-head">
               <a href={href} class="wk-name" {...(page ? {} : { target: '_blank', rel: 'noopener' })}>{i.name}</a>
               <span class="wk-repo">{i.repo}</span>
@@ -42,6 +48,8 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
             {notes[i.repo] && <p class="wk-note">{notes[i.repo]}</p>}
             <p class="wk-reason">{i.reason}</p>
             {!notes[i.repo] && page?.description && <p class="wk-desc">{page.description}</p>}
+            </div>
+            <WeeklySpark series={projectSeries(history, i.repo, edition.week)} />
           </li>
         );
       })}
@@ -53,7 +61,6 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
   .wk-section {
     --wk-color: var(--accent);
     margin-bottom: 2.75rem;
-    max-width: 720px;
   }
   .wk-newcomers { --wk-color: var(--newborn); }
   .wk-revived   { --wk-color: var(--revived); }
@@ -93,10 +100,21 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
     border: 1px solid var(--border);
     border-left: 3px solid var(--wk-color);
     border-radius: var(--radius);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 0.5rem 1.75rem;
+    align-items: center;
+    min-width: 0;
+  }
+  .wk-body {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
     min-width: 0;
+  }
+  @media (max-width: 680px) {
+    .wk-item { grid-template-columns: minmax(0, 1fr); }
+    .wk-item > :global(.wk-spark) { max-width: 220px; }
   }
   .wk-head {
     display: flex;

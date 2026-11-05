@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   isoWeekKey, weekBounds, formatWeekRange, toSnapshot, upsertWeek, computeEdition, listEditions, renderReason,
+  projectSeries, ISSUES_SPIKE_MAX,
 } from './weekly.ts';
 import type { WeekEntry, WeekSnapshot, History } from './weekly.ts';
 
@@ -252,4 +253,49 @@ test('formatWeekRange: same month, month boundary, year boundary', () => {
   assert.equal(formatWeekRange('2026-W42'), 'Oct 12 – 18, 2026');
   assert.equal(formatWeekRange('2026-W44'), 'Oct 26 – Nov 1, 2026');
   assert.equal(formatWeekRange('2026-W01'), 'Dec 29, 2025 – Jan 4, 2026');
+});
+
+// ---- projectSeries ----
+
+function hist(points: Array<[string, Partial<WeekEntry> | null]>): History {
+  const h: History = {};
+  for (const [k, e] of points) h[k] = week(e ? { 'o/r': entry(e) } : { 'o/other': entry() });
+  return h;
+}
+
+test('projectSeries: cuts at uptoWeek and keeps the last n points', () => {
+  const h = hist([
+    ['2026-W40', { stars: 1 }], ['2026-W41', { stars: 2 }], ['2026-W42', { stars: 3 }],
+    ['2026-W43', { stars: 4 }], ['2026-W44', { stars: 5 }],
+  ]);
+  const s = projectSeries(h, 'o/r', '2026-W43', 3)!;
+  assert.deepEqual(s.weeks, ['2026-W41', '2026-W42', '2026-W43']);
+  assert.deepEqual(s.stars, [2, 3, 4]);
+  assert.equal(s.since, '2026-W40');
+});
+
+test('projectSeries: weekly issue deltas use the snapshot before the window', () => {
+  const h = hist([
+    ['2026-W40', { closedIssues: 10 }], ['2026-W41', { closedIssues: 12 }],
+    ['2026-W42', { closedIssues: 12 }], ['2026-W43', { closedIssues: 15 }],
+  ]);
+  assert.deepEqual(projectSeries(h, 'o/r', '2026-W43', 3)!.issuesClosed, [2, 0, 3]);
+});
+
+test('projectSeries: first-ever point has no delta; negative deltas and status-page spikes count as 0', () => {
+  const h = hist([
+    ['2026-W40', { closedIssues: 5 }], ['2026-W41', { closedIssues: 3 }], ['2026-W42', { closedIssues: 3 + ISSUES_SPIKE_MAX + 1 }],
+  ]);
+  assert.deepEqual(projectSeries(h, 'o/r', '2026-W42')!.issuesClosed, [0, 0, 0]);
+});
+
+test('projectSeries: weeks where the repo is missing are skipped', () => {
+  const h = hist([['2026-W40', { stars: 1 }], ['2026-W41', null], ['2026-W42', { stars: 3 }]]);
+  const s = projectSeries(h, 'o/r', '2026-W42')!;
+  assert.deepEqual(s.weeks, ['2026-W40', '2026-W42']);
+  assert.deepEqual(s.stars, [1, 3]);
+});
+
+test('projectSeries: unknown repo → null', () => {
+  assert.equal(projectSeries(hist([['2026-W40', null]]), 'o/r', '2026-W40'), null);
 });
