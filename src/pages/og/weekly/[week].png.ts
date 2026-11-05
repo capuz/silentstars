@@ -97,7 +97,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
   );
 
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } });
-  return new Response(resvg.render().asPng(), {
+  return new Response(new Uint8Array(resvg.render().asPng()), {
     headers: { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=3600' },
   });
 }

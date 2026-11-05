@@ -4,6 +4,7 @@
  * closing reply pointing at the archive. Pure: post-weekly.ts does the I/O.
  */
 
+import type { AppBskyEmbedExternal, AppBskyRichtextFacet } from '@atproto/api';
 import { type BskyAccount, byteLen, hashtagFacets } from './post-shared.ts';
 import { formatWeekRange } from './weekly.ts';
 import type { NumberedEdition, EditionItem } from './weekly.ts';
@@ -11,10 +12,7 @@ import type { NumberedEdition, EditionItem } from './weekly.ts';
 export const ITEMS_PER_SECTION = 3;
 const MAX_GRAPHEMES = 300;
 
-export interface Facet {
-  index: { byteStart: number; byteEnd: number };
-  features: Array<Record<string, string>>;
-}
+export type Facet = AppBskyRichtextFacet.Main;
 
 export interface ThreadPost {
   text: string;
@@ -22,7 +20,7 @@ export interface ThreadPost {
 }
 
 export interface WeeklyThread {
-  root: ThreadPost & { embed: { $type: string; external: { uri: string; title: string; description: string } } };
+  root: ThreadPost & { embed: { $type: 'app.bsky.embed.external'; external: AppBskyEmbedExternal.External } };
   replies: ThreadPost[];
 }
 
@@ -120,9 +118,9 @@ export function buildWeeklyThread(
     ...(opts.tags?.length ? ['', opts.tags.join(' ')] : []),
   ].join('\n');
 
-  const root = {
+  const root: WeeklyThread['root'] = {
     text: rootText,
-    facets: hashtagFacets(rootText) as Facet[],
+    facets: hashtagFacets(rootText),
     embed: {
       $type: 'app.bsky.embed.external',
       external: {

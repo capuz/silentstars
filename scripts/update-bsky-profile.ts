@@ -45,7 +45,8 @@ export function buildProfile(
   return { ...rest, displayName: DISPLAY_NAME, description: DESCRIPTION, pinnedPost } as AppBskyActorProfile.Record;
 }
 
-export function pinnedPostRecord(createdAt: string): Omit<AppBskyFeedPost.Record, '$type'> {
+// Pick, not Omit: Record has an index signature, so Omit<…, '$type'> would erase text/facets to unknown.
+export function pinnedPostRecord(createdAt: string): Pick<AppBskyFeedPost.Record, 'text' | 'facets' | 'langs' | 'createdAt'> {
   const rt = new RichText({ text: PINNED_TEXT });
   rt.detectFacetsWithoutResolution();
   return { text: rt.text, facets: rt.facets, langs: ['en'], createdAt };

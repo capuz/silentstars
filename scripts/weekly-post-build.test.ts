@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { AppBskyRichtextFacet } from '@atproto/api';
 import { buildWeeklyThread, ITEMS_PER_SECTION } from './weekly-post-build.ts';
 import type { NumberedEdition, EditionItem } from './weekly.ts';
 
@@ -46,7 +47,9 @@ test('one reply per non-empty section, in edition order, then the archive link',
   assert.match(replies[2]!.text, /^🧊 Cooling off/);
   assert.match(replies[3]!.text, /silentstars\.dev\/weekly/);
   const link = replies[3]!.facets.find(f => f.features[0].$type === 'app.bsky.richtext.facet#link');
-  assert.equal(link?.features[0].uri, `${BASE}/weekly/`);
+  const linkFeat = link?.features[0];
+  assert.ok(linkFeat && AppBskyRichtextFacet.isLink(linkFeat));
+  assert.equal(linkFeat.uri, `${BASE}/weekly/`);
 });
 
 test('sections show the top items, notes first, template reason as fallback', () => {
@@ -75,7 +78,9 @@ test('project names link to their pages, with byte offsets that survive emoji', 
     links.map(f => sliceBytes(post.text, f.index.byteStart, f.index.byteEnd)),
     ['alpha', 'beta', 'gamma'],
   );
-  assert.equal(links[0]!.features[0].uri, `${BASE}/projects/a--alpha/`);
+  const firstLink = links[0]!.features[0]!;
+  assert.ok(AppBskyRichtextFacet.isLink(firstLink));
+  assert.equal(firstLink.uri, `${BASE}/projects/a--alpha/`);
 });
 
 test('rising owners with a Bluesky account are mentioned', () => {
@@ -85,7 +90,9 @@ test('rising owners with a Bluesky account are mentioned', () => {
   const post = replies[0]!;
   assert.ok(post.text.includes('beta (@beta.dev) —'));
   const mention = post.facets.find(f => f.features[0].$type === 'app.bsky.richtext.facet#mention');
-  assert.equal(mention?.features[0].did, 'did:plc:beta');
+  const mentionFeat = mention?.features[0];
+  assert.ok(mentionFeat && AppBskyRichtextFacet.isMention(mentionFeat));
+  assert.equal(mentionFeat.did, 'did:plc:beta');
   assert.equal(sliceBytes(post.text, mention!.index.byteStart, mention!.index.byteEnd), '@beta.dev');
 });
 
