@@ -468,15 +468,16 @@ jobs:
   # second email with different wording. Silent no-op if the owner has
   # no public GitHub email (see scripts/notify-owners.ts).
   # ─────────────────────────────────────────────────────────────
+  # Disabled: these go to people who never asked to hear from us, with no way
+  # to opt out. Needs an unsubscribe path before it comes back. Previous
+  # condition: !cancelled() && needs.deploy.result == 'success' &&
+  # inputs.dry_run != true && inputs.submission_repo == '' &&
+  # needs.deploy.outputs.post_slug != '' && needs.post.result == 'success'
   notify-owner:
     name: Notify featured project owner
     runs-on: ubuntu-latest
     needs: [deploy, post]
-    if: >-
-      !cancelled() && needs.deploy.result == 'success' &&
-      inputs.dry_run != true && inputs.submission_repo == '' &&
-      needs.deploy.outputs.post_slug != '' &&
-      needs.post.result == 'success'
+    if: false
     steps:
       - name: Checkout
         uses: actions/checkout@v7
