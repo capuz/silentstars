@@ -23,6 +23,7 @@ undervaluedScore: 76
 maintainers: ["JensKapitza"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0837f1bcc9ff59b455d9e5c4c7753be173261235ccb0e0b71034fb8f07ff4078/JensKapitza/SimpleOffice4Me"
 fundingLinks: ["GITHUB:https://github.com/JensKapitza"]
+postedAt: "2026-11-06T11:44:33.227Z"
 ---
 
 # SimpleOffice4Me

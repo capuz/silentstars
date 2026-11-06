@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-06T10:34:55Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 70
 maintainers: ["renovate[bot]", "trobanga", "knoppiks"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fbe92ea566444bda86842d82bc1b0416b4efda87d3b3a3dc52ffe84640cbed46/medizininformatik-initiative/fts-next"
