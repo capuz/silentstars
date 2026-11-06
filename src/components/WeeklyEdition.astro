@@ -29,6 +29,7 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
   { key: 'cooling',   icon: '🧊', title: 'Cooling off',   blurb: 'Going quiet. A star, an issue or a PR might help.',            items: edition.cooling },
 ];
 ---
+<p class="wk-credit">Numbers come from GitHub. The notes are written by Claude from each project's commits and releases.</p>
 {sections.filter(s => s.items.length > 0).map(s => (
   <section class={`wk-section wk-${s.key}`}>
     <h2 class="wk-title"><span aria-hidden="true">{s.icon}</span> {s.title} <span class="wk-count">{s.items.length}</span></h2>
@@ -142,6 +143,7 @@ const sections: Array<{ key: string; icon: string; title: string; blurb: string;
     font-size: 0.7rem;
     color: var(--text-dim);
   }
+  .wk-credit { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); margin-bottom: 1.5rem; }
   .wk-note {
     font-size: 0.9rem;
     line-height: 1.55;

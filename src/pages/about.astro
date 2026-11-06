@@ -44,7 +44,7 @@ const base = import.meta.env.BASE_URL;
         <p>
           Projects are classified as <em>Thriving</em>, <em>Newborn</em>, <em>Quiet</em>, <em>At Risk</em>, <em>Watched</em>, <em>Revived</em>, or <em>Archived</em>.
           On top of that, each project receives behavioral <strong>tags</strong> — signals like <em>solo_builder</em>, <em>hidden_gem</em>, <em>fork_magnet</em>, or <em>funded</em> — that drive the home page sections.
-          No editorial bias. Pure signal.
+          Scores and tags are computed automatically. The directory leaves out companies' repos and anything over 500 stars, and projects submitted by their maintainers are shown separately for 30 days. The weekly notes are written by Claude from each project's commits and releases.
         </p>
         <a href={`${base}projects/`} class="about-link">→ See all projects</a>
       </section>
