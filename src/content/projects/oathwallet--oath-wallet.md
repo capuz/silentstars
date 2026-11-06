@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-30T17:08:49Z"
-lastCommitAt: "2026-11-06T12:03:29Z"
+lastCommitAt: "2026-11-06T12:49:17Z"
 lastReleaseAt: "2026-11-06T06:23:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 67
 maintainers: ["OathWallet"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ec4c18751689741a626283aa0d64fbcb3a57cc5cf84cc4104e27640f48d40335/OathWallet/oath-wallet"
+openGraphImageUrl: "https://opengraph.githubassets.com/d38f7774d7d9419df78c5960f25869baaac2720e7cf74b825bd042433ffcb773/OathWallet/oath-wallet"
 promoted: true
 postedAt: "2026-11-01T23:05:53.666Z"
 ---

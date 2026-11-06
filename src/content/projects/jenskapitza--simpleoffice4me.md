@@ -15,13 +15,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-05-17T22:00:40Z"
-lastCommitAt: "2026-11-06T11:23:49Z"
+lastCommitAt: "2026-11-06T12:33:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "funded", "under_pressure"]
 healthScore: 97
 undervaluedScore: 76
 maintainers: ["JensKapitza"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0837f1bcc9ff59b455d9e5c4c7753be173261235ccb0e0b71034fb8f07ff4078/JensKapitza/SimpleOffice4Me"
+openGraphImageUrl: "https://opengraph.githubassets.com/055819c4acdcc5cdd7f9ebe529678dfecaf2625dab1148abb537939b2bd7834b/JensKapitza/SimpleOffice4Me"
 fundingLinks: ["GITHUB:https://github.com/JensKapitza"]
 postedAt: "2026-11-06T11:44:33.227Z"
 ---
