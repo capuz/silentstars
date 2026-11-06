@@ -8,9 +8,9 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [74, 22]
 stars: 9
-forks: 9
+forks: 8
 openIssues: 33
-closedIssues: 49
+closedIssues: 50
 watchers: 0
 contributors: 14
 recentReleases: 10
@@ -20,7 +20,7 @@ lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 91
-undervaluedScore: 68
+undervaluedScore: 66
 maintainers: ["stefanwb", "sbp-bvanb", "OnnoJan-SBP"]
 openGraphImageUrl: "https://opengraph.githubassets.com/15838117081e3b48fabbd9cf6b61d2bf0c3d3c899841c3adb484e05c8fec603f/schubergphilis/claude-docker"
 postedAt: "2026-10-12T11:21:10.066Z"

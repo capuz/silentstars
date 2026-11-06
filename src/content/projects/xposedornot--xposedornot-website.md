@@ -10,7 +10,7 @@ languages: ["HTML"]
 languagePcts: [96]
 stars: 9
 forks: 2
-openIssues: 0
+openIssues: 1
 closedIssues: 12
 watchers: 1
 contributors: 3
@@ -19,8 +19,8 @@ createdAt: "2023-12-04T09:43:01Z"
 lastCommitAt: "2026-11-05T02:28:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
-undervaluedScore: 80
+healthScore: 97
+undervaluedScore: 79
 maintainers: ["DevaOnBreaches"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e38295eefcabcb3fec838008dc3e4f3b50f4d610912e4ae37b973f919cd5e54b/XposedOrNot/XposedOrNot-Website"
 postedAt: "2026-07-08T05:49:30.374Z"

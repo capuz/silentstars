@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 9
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-01T15:36:48Z"
+lastCommitAt: "2026-11-06T08:54:00Z"
 lastReleaseAt: "2026-11-01T15:37:22Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "release_machine"]
-healthScore: 80
+healthScore: 82
 undervaluedScore: 47
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f522d32d4e0036febfaddf1179e671bf178d337327ba212b5b1176ce696b58ec/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/2613ef3eedf4c2f2bd53ff3f066b76b95a2940967104c2bb576558899e300c35/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true

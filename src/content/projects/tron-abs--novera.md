@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-04T14:41:04Z"
 lastReleaseAt: "2026-11-03T16:25:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fc0868f7d6bd67bc6762086e67581b5c4296bebb3eff59c89e9b794704063aa9/TRON-ABS/Novera"

@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-05T13:15:34Z"
 lastReleaseAt: "2016-08-25T14:59:08Z"
 status: "watched"
 tags: ["legacy_hero", "community_watch", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["transifex-integration[bot]", "silouone", "silouanegalinoudev-maker"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a163b77a940026ad24d355bcc7191608f2107e2f928d390bc090a4c44e87c0f7/CoorpAcademy/components"

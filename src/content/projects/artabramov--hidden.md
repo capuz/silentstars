@@ -8,9 +8,9 @@ homepage: "https://artabramov.github.io/hidden/"
 language: "Python"
 languages: ["Python"]
 languagePcts: [98]
-topics: ["encryption", "fastapi", "gocryptfs", "self-hosted", "versitygw", "s3"]
-stars: 52
-forks: 1
+topics: ["self-hosted", "s3", "security"]
+stars: 55
+forks: 2
 openIssues: 0
 closedIssues: 0
 watchers: 1
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 71
-undervaluedScore: 34
+undervaluedScore: 33
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/67d37401cc78271e270d99436286efc58894f55564b5f2d7ebf5766ea6e0eaba/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/bcb4f40c9580ba4eaf79d3e7b986eb79b47c503c2a3cd80a5a1b3e433158a8bd/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

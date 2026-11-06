@@ -7,40 +7,39 @@ url: "https://github.com/OathWallet/oath-wallet"
 homepage: "https://oathwallet.org"
 language: "Swift"
 languages: ["Swift"]
-languagePcts: [73]
+languagePcts: [71]
 stars: 1
 forks: 0
-openIssues: 1
+openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 9
+recentReleases: 10
 createdAt: "2026-10-30T17:08:49Z"
-lastCommitAt: "2026-11-05T19:55:57Z"
-lastReleaseAt: "2026-11-03T05:12:28Z"
+lastCommitAt: "2026-11-06T11:13:14Z"
+lastReleaseAt: "2026-11-06T06:23:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 80
-undervaluedScore: 58
+healthScore: 90
+undervaluedScore: 67
 maintainers: ["OathWallet"]
-openGraphImageUrl: "https://opengraph.githubassets.com/29095551ce77eef963569c15cde0055b980fd49d0b544fdbb60a200e4aef4054/OathWallet/oath-wallet"
+openGraphImageUrl: "https://opengraph.githubassets.com/0bf49cb063d0b31db96ca20a1a94816fbd538356ea4b95ac883537e93107c034/OathWallet/oath-wallet"
 promoted: true
 postedAt: "2026-11-01T23:05:53.666Z"
 ---
 
-# Oath Wallet 5.0.2
+# Oath Wallet 5.0.3 prerelease
 
 A native multichain wallet for iPhone and iPad.
 
-**Apple-approved release: 5.0.2 (104).** This release adds receipt and asset-list improvements, a Solana history-date repair, native typography, and further audit fixes. App Store Connect shows Ready for Distribution, confirmed on 5 November 2026.
+**Prerelease: 5.0.3 (105).** This source preview improves scanner review, network recovery, history synchronization, restored-wallet compatibility, asset unit prices, clearer price-coverage guidance, wallet switching, tiny-amount comparisons and right-to-left wallet and transaction presentation. The Apple-approved release remains **5.0.2 (104)**. Build 105 has not been uploaded to App Store Connect.
 
 [Published security review and remaining scope](https://github.com/OathWallet/oath-wallet-security-review) · [Current release metadata](https://oathwallet.org/release-status.json)
 
-[Release notes](https://github.com/OathWallet/oath-wallet/blob/HEAD/releases/5.0.2.md) · [Website](https://oathwallet.org) ·
+[Prerelease notes](https://github.com/OathWallet/oath-wallet/blob/HEAD/releases/5.0.3.md) · [Website](https://oathwallet.org) ·
 [Security model](https://github.com/OathWallet/oath-wallet/blob/HEAD/Documentation/SecurityModel.md) · [Reporting policy](https://github.com/OathWallet/oath-wallet/blob/HEAD/SECURITY.md) · [Build configuration](https://github.com/OathWallet/oath-wallet/blob/HEAD/Documentation/PublicBuild.md) ·
 [MIT license](https://github.com/OathWallet/oath-wallet/blob/HEAD/LICENSE)
 
 ## What's new
 
-- Adds sender totals with separately denominated fees, and identifies wallet-owned Bitcoin inputs and change outputs in receipts.
-- Repairs legacy Solana transaction dates offline while…
+- Scanned addresses…
