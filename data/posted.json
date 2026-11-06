@@ -2466,5 +2466,16 @@
         "postedAt": "2026-11-06T12:25:37.144Z"
       }
     }
+  },
+  {
+    "repo": "aatbit/xflog",
+    "slug": "aatbit--xflog",
+    "postedAt": "2026-11-06T13:31:27.351Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mznikkf67t23",
+        "postedAt": "2026-11-06T13:31:27.351Z"
+      }
+    }
   }
 ]
