@@ -3,6 +3,7 @@
 // time by diffing two consecutive closed weeks. Editions are never stored, so
 // tuning the weights below changes past editions too.
 import { slugify } from './post-shared.ts';
+import { isListable } from './discovery-filter.ts';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -208,7 +209,7 @@ export function computeEdition(prev: WeekSnapshot, curr: WeekSnapshot, weekKey: 
   const cooling: Array<EditionItem & { drop: number }> = [];
 
   for (const [repo, c] of Object.entries(curr.projects)) {
-    if (!c.hasPage) continue;
+    if (!c.hasPage || !isListable(repo, c.stars)) continue;
     const p = prev.projects[repo];
     const activity = activitySignals(p, c, start, end);
 

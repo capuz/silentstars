@@ -12,6 +12,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isExcludedOwner } from './discovery-filter.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -171,7 +172,7 @@ async function main() {
       if (newCandidates.length >= config.maxCandidatesPerNight) break;
       if (item.archived || item.fork || !item.language) continue;
       const fullName = item.full_name;
-      if (!knownRepos.has(fullName.toLowerCase())) {
+      if (!knownRepos.has(fullName.toLowerCase()) && !isExcludedOwner(fullName)) {
         newCandidates.push(fullName);
         knownRepos.add(fullName.toLowerCase());
         added++;

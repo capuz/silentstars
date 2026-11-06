@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { isListable } from './discovery-filter.ts';
 
 export interface PostedEntry {
   repo: string;
@@ -97,6 +98,7 @@ export function selectTop20(projects: Project[], posted: PostedEntry[], platform
     .filter(p => p.readmeQualityOk)
     .filter(p => p.hasPage)
     .filter(p => !alreadyPosted.has(p.repo.toLowerCase()))
+    .filter(p => isListable(p.repo, p.stars))
     .sort((a, b) => b.undervaluedScore - a.undervaluedScore)
     .slice(0, 20);
 }

@@ -299,3 +299,15 @@ test('projectSeries: weeks where the repo is missing are skipped', () => {
 test('projectSeries: unknown repo → null', () => {
   assert.equal(projectSeries(hist([['2026-W40', null]]), 'o/r', '2026-W40'), null);
 });
+
+test('computeEdition: projects over the star ceiling are dropped even when promoted', () => {
+  const prev = week({ 'a/big': entry({ stars: 2000 }) });
+  const curr = week({ 'a/big': entry({ stars: 7000, promoted: true, lastReleaseAt: IN_W42, lastCommitAt: IN_W42 }) });
+  const ed = computeEdition(prev, curr, W42);
+  for (const section of [ed.newcomers, ed.revived, ed.rising, ed.cooling]) assert.equal(section.length, 0);
+});
+
+test('computeEdition: projects from excluded owners are dropped', () => {
+  const curr = week({ 'adobe/da-nx': entry({ stars: 8, postedAt: IN_W42 }) });
+  assert.equal(computeEdition(week({}), curr, W42).newcomers.length, 0);
+});

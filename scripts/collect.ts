@@ -16,7 +16,7 @@ import { claudeEnabled } from './claude-cli.ts';
 import { stripReadmeNoise } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify } from './post-shared.ts';
-import { isExcludedRepo } from './discovery-filter.ts';
+import { isExcludedRepo, isExcludedOwner } from './discovery-filter.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -590,6 +590,7 @@ async function main() {
     ...postedRepos,
     ...discoveredCandidates.filter(r =>
       !isExcludedRepo(r, discoveryConfig?.excludeRepos) &&
+      !isExcludedOwner(r) &&
       !promotedSet.has(r.toLowerCase()) &&
       !postedReposSet.has(r.toLowerCase())
     ),

@@ -4,10 +4,11 @@ import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import WeeklyBanner from '../components/WeeklyBanner.astro';
 import { loadPosted } from '../../scripts/post-shared.ts';
+import { isListable } from '../../scripts/discovery-filter.ts';
 
 const all = await getCollection('projects');
 const visible = all.filter(p => {
-  if (p.data.status === 'archived') return false;
+  if (p.data.status === 'archived' || !isListable(p.data.repo, p.data.stars)) return false;
   const d = p.data.description.trim();
   return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
 });
@@ -187,8 +188,8 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
   {topPicks.length > 0 && (
     <section class="section container">
       <div class="section-header">
-        <h2><span class="mono-prefix">//</span> Top picks</h2>
-        <p>Highest signal-to-reach ratio — building more than their audience knows.</p>
+        <h2><span class="mono-prefix">//</span> Fresh from maintainers</h2>
+        <p>Submitted by the people building them, plus today's pick. Each stays here for 30 days.</p>
       </div>
       <div class="grid">
         {topPicks.map(p => <ProjectCard slug={p.slug} featured={p.slug === featured?.slug} {...p.data} />)}

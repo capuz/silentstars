@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
 import latestData from '../../data/latest.json';
+import { isListable } from '../../scripts/discovery-filter.ts';
 
 const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=submit-project.yml';
 const projectCount = latestData.projects.length;
@@ -22,7 +23,7 @@ const curated = SAMPLE_SLUGS
 // Fill up to 3 cards when curated slugs have rotated out of the collection:
 // promoted (accepted community submissions) first, then most undervalued.
 const fallback = all
-  .filter(p => p.data.status !== 'archived' && !curated.some(c => c.slug === p.slug))
+  .filter(p => p.data.status !== 'archived' && isListable(p.data.repo, p.data.stars) && !curated.some(c => c.slug === p.slug))
   .sort((a, b) => {
     const aP = a.data.promoted ? 1 : 0;
     const bP = b.data.promoted ? 1 : 0;

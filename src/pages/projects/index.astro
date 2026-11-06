@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import promotedRaw from '../../../data/promoted.json';
+import { isListable } from '../../../scripts/discovery-filter.ts';
 
 type PromotedEntry = { repo: string; until: string | null };
 const promotedEntries = promotedRaw as PromotedEntry[];
@@ -12,7 +13,7 @@ const all = await getCollection('projects');
 
 const projects = all
   .filter(p => {
-    if (p.data.status === 'archived') return false;
+    if (p.data.status === 'archived' || !isListable(p.data.repo, p.data.stars)) return false;
     const d = p.data.description.trim();
     return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
   })
@@ -103,7 +104,7 @@ const tagLabels: Record<string, string> = {
 
     {promoted.length > 0 && (
       <div class="promoted-block" id="promoted-block">
-        <p class="promoted-label">// promoted</p>
+        <p class="promoted-label">// submitted by maintainers</p>
         <div class="grid">
           {promoted.map(p => (
             <div

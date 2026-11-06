@@ -2,10 +2,11 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { isListable } from '../../scripts/discovery-filter.ts';
 
 const all = await getCollection('projects');
 const atRisk = all
-  .filter(p => p.data.status === 'at_risk')
+  .filter(p => p.data.status === 'at_risk' && isListable(p.data.repo, p.data.stars))
   .sort((a, b) => b.data.undervaluedScore - a.data.undervaluedScore);
 ---
 <Base
