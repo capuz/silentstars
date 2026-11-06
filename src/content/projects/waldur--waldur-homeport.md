@@ -10,20 +10,20 @@ languagePcts: [93]
 topics: ["self-service", "gui", "portal", "cloud", "react", "openstack", "dashboard", "waldur", "rancher"]
 stars: 32
 forks: 36
-openIssues: 6
+openIssues: 7
 closedIssues: 30
 watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-05T13:55:14Z"
+lastCommitAt: "2026-11-05T21:14:28Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]
-healthScore: 87
+healthScore: 86
 undervaluedScore: 73
 maintainers: ["livenson", "AmbientLighter", "Emil60"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4a58d7ce5ec8abc2f3e07fcf5d94b2a9d8a6805bfa67fe8856c3b9e21b7e44a7/waldur/waldur-homeport"
+openGraphImageUrl: "https://opengraph.githubassets.com/3f6ec62f9d7e0b4d35fdabb7651066a6904d1b4dc1b44b0ac7c586ef0bbace51/waldur/waldur-homeport"
 postedAt: "2026-11-03T11:22:36.120Z"
 ---
 

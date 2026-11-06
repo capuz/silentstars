@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-03T13:45:42Z"
 lastReleaseAt: "2026-10-31T11:05:39Z"
 status: "thriving"
 tags: []
-healthScore: 89
+healthScore: 88
 undervaluedScore: 15
 maintainers: ["PantomathX", "Pantoget", "Pantomath01"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3663163a3892486307c2f38219d4abbbec0470cb5aaffce7e368c010ff307c30/PantomathX/Novalie"

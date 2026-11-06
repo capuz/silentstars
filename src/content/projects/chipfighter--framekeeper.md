@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "token-optimization", "claude-code", "claude-code-plugin", "ai-image", "image-generation"]
-stars: 778
+stars: 789
 forks: 69
 openIssues: 0
 closedIssues: 12
@@ -21,7 +21,7 @@ lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 99
-undervaluedScore: 27
+undervaluedScore: 26
 maintainers: ["chipfighter", "Aaqibhafeezkhan", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
 discussionCount: 0

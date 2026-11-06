@@ -7,23 +7,23 @@ url: "https://github.com/immich-app/static-pages"
 homepage: "https://immich.app"
 language: "Svelte"
 languages: ["Svelte", "TypeScript"]
-languagePcts: [50, 47]
+languagePcts: [49, 47]
 stars: 18
 forks: 74
 openIssues: 2
 closedIssues: 5
 watchers: 3
-contributors: 106
+contributors: 107
 recentReleases: 0
 createdAt: "2024-07-01T17:38:28Z"
-lastCommitAt: "2026-11-04T15:08:09Z"
+lastCommitAt: "2026-11-05T18:54:14Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 77
 maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/88efbf90dafd40d996648ca3416193a647a9ff1f75f907677d5701e4773d9e5f/immich-app/static-pages"
+openGraphImageUrl: "https://opengraph.githubassets.com/44974fa38aea43c4d9023b00fb464adfb345c05b0193b27b4a351e343919bc0f/immich-app/static-pages"
 fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
 postedAt: "2026-11-02T11:44:50.353Z"
 ---

@@ -1,7 +1,7 @@
 ---
 repo: "artabramov/hidden"
 name: "hidden"
-description: "Encrypted self-hosted S3 storage."
+description: "Encrypted self-hosted S3 storage"
 readmeQualityOk: true
 url: "https://github.com/artabramov/hidden"
 homepage: "https://artabramov.github.io/hidden/"
@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["encryption", "fastapi", "gocryptfs", "self-hosted", "versitygw", "s3"]
-stars: 51
+stars: 52
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 71
 undervaluedScore: 34
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0e3c83566a0767506197c3923d575fa354fd5ff91b825f93ddb4a07ce043d5db/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/67d37401cc78271e270d99436286efc58894f55564b5f2d7ebf5766ea6e0eaba/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

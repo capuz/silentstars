@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [74]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative"]
-stars: 39
+stars: 41
 forks: 5
 openIssues: 2
 closedIssues: 0
@@ -23,8 +23,9 @@ tags: ["solo_builder"]
 healthScore: 68
 undervaluedScore: 15
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b850364d03d961298506d3a1ca92b1bd2908f176d34fcc8bd9d8abf1377cb26e/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/83839f9905d1b3f270fa3b066d325bfdc954e6d94ee59c7684b69227e3f21a90/JhuoW/OpenMathpix"
 promoted: true
+postedAt: "2026-11-05T14:14:14.691Z"
 ---
 
 Open-source desktop snipping tool that converts formula screenshots into LaTeX locally with <a href="https://huggingface.co/breezedeus/pix2text-mfr-1.5">Pix2Text MFR-1.5</a>, with optional <a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR</a> APIs for text, tables and document layouts.

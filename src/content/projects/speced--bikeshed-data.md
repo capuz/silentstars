@@ -12,16 +12,16 @@ forks: 7
 openIssues: 0
 closedIssues: 9
 watchers: 1
-contributors: 5
+contributors: 6
 recentReleases: 0
 createdAt: "2017-08-24T21:26:04Z"
-lastCommitAt: "2026-11-05T11:42:30Z"
+lastCommitAt: "2026-11-06T00:26:42Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 90
+healthScore: 95
 undervaluedScore: 80
-maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/36c2c45c20a0539f04a04bc0b5cd1531f83da29a4a8d70804e707347ca1eb5cd/speced/bikeshed-data"
+maintainers: ["tabatkins", "dvk2mvtjmw-code"]
+openGraphImageUrl: "https://opengraph.githubassets.com/744e00c0c669551974352919c29d3851806ba16cf67dcca652e2beddb83a75a8/speced/bikeshed-data"
 postedAt: "2026-08-18T04:13:16.671Z"
 ---
 
@@ -40,7 +40,7 @@ while also limiting the stress on the databases that source the data.
 You probably don't want to file a bug on this project;
 most likely, you want to file it on [Bikeshed](https://github.com/tabatkins/bikeshed/issues/).
 However, if this project stops updating for some reason
-(it typically recieves a new commit at least twice an hour),
+(it typically receives a new commit at least twice an hour),
 feel free to file an issue,
 as the updater process may have fallen over
 and be in need of manual restarting.

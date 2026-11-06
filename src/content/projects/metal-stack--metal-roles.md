@@ -10,20 +10,20 @@ languagePcts: [69, 27]
 topics: ["ansible-roles"]
 stars: 5
 forks: 2
-openIssues: 15
-closedIssues: 69
+openIssues: 14
+closedIssues: 70
 watchers: 6
 contributors: 24
 recentReleases: 0
 createdAt: "2020-02-11T14:50:20Z"
-lastCommitAt: "2026-11-05T13:46:04Z"
+lastCommitAt: "2026-11-05T15:50:25Z"
 lastReleaseAt: "2020-12-07T11:31:38Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "legacy_hero"]
 healthScore: 94
 undervaluedScore: 75
 maintainers: ["Gerrit91", "simcod", "GeertJohan"]
-openGraphImageUrl: "https://opengraph.githubassets.com/801f7cefdbbf3d632e7c1996f7ed575fb6c39c099b7938848ba515d0b4b1de6d/metal-stack/metal-roles"
+openGraphImageUrl: "https://opengraph.githubassets.com/c9365a04d14b0f98334f4c243a7090c9f70a195067d9e49e74a85c7b4e06d5d4/metal-stack/metal-roles"
 postedAt: "2026-10-19T09:20:39.406Z"
 ---
 

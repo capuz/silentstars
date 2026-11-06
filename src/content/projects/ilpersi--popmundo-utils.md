@@ -20,7 +20,7 @@ createdAt: "2022-10-20T20:16:10Z"
 lastCommitAt: "2026-11-05T11:20:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 77
 maintainers: ["ilpersi"]
 openGraphImageUrl: "https://opengraph.githubassets.com/de22749679fe9e38b83ad8c3905d9819355a2556fe4b53250c9a2fb32bc655c4/ilpersi/Popmundo-Utils"

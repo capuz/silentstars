@@ -11,7 +11,7 @@ languagePcts: [66, 30]
 topics: ["container-optimization", "containers", "devops", "devops-tools", "docker", "docker-extension", "docker-extensions", "dockerfile", "dockerfiles", "finops"]
 stars: 0
 forks: 0
-openIssues: 0
+openIssues: 5
 closedIssues: 0
 watchers: 0
 contributors: 1
@@ -20,9 +20,9 @@ createdAt: "2026-10-02T19:16:05Z"
 lastCommitAt: "2026-11-02T19:15:59Z"
 lastReleaseAt: "2026-10-13T05:47:28Z"
 status: "newborn"
-tags: ["solo_builder", "hidden_gem"]
-healthScore: 77
-undervaluedScore: 56
+tags: ["solo_builder", "needs_contributors", "hidden_gem"]
+healthScore: 57
+undervaluedScore: 46
 maintainers: []
 openGraphImageUrl: "https://opengraph.githubassets.com/c1bf9d7d03147956fcbef995be07f1584825bb66b688c238d3a555ec20ee1c5e/SankarGaneshb/rover-slim"
 promoted: true
