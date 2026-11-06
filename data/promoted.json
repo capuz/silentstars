@@ -158,5 +158,9 @@
   {
     "repo": "Deftr0y/PeerBrush",
     "until": "2026-12-06"
+  },
+  {
+    "repo": "aatbit/xflog",
+    "until": "2026-12-06"
   }
 ]
