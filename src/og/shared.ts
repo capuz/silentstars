@@ -35,10 +35,10 @@ export function stat(value: string, label: string) {
   return {
     type: 'div',
     props: {
-      style: { display: 'flex', flexDirection: 'column', gap: '2px' },
+      style: { display: 'flex', flexDirection: 'column', gap: '0px' },
       children: [
-        { type: 'span', props: { style: { color: ACCENT, fontSize: 36, fontWeight: 700, letterSpacing: '-0.02em' }, children: value } },
-        { type: 'span', props: { style: { color: MUTED, fontSize: 15, fontWeight: 500 }, children: label } },
+        { type: 'span', props: { style: { color: ACCENT, fontSize: 64, lineHeight: 1, fontWeight: 700, letterSpacing: '-0.03em' }, children: value } },
+        { type: 'span', props: { style: { color: MUTED, fontSize: 34, fontWeight: 500 }, children: label } },
       ],
     },
   };

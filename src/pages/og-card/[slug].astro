@@ -1,82 +1,40 @@
 ---
 import { getCollection } from 'astro:content';
+import { resolve } from 'node:path';
+import { buildPitch } from '../../../scripts/post-pitch.ts';
+import { activityLabel } from '../../../scripts/post-signal.ts';
+import { cardImageUrl, coverFit, loadCardImages } from '../../../scripts/readme-image.ts';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
+  const images = loadCardImages(resolve('data/card-images.json'));
   return projects.map(p => ({
     params: { slug: p.slug },
-    props: { data: p.data },
+    props: { data: p.data, image: cardImageUrl(p.data.repo, p.data.openGraphImageUrl, images) },
   }));
 }
 
-const { data: d } = Astro.props;
+const { data: d, image } = Astro.props;
 
-const ACCENT = '#e8452e';
-const INK    = '#17150f';
-const MUTED  = '#6b6456';
-const SHADOW = '#c9c0af';
-
-const STATUS_MAP: Record<string, { label: string; bg: string; icon: string }> = {
-  newborn:  { label: 'Newborn',  bg: '#bdebd0',
-    icon: '<path d="M12 21v-8"/><path d="M12 13C12 9 9 6.5 5 6.5 5 10.5 8 13 12 13z"/><path d="M12 13.5c0-3.5 2.6-6 6-6 0 3.5-2.6 6-6 6z"/>' },
-  thriving: { label: 'Thriving', bg: '#ffe08a',
-    icon: '<path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/>' },
-  quiet:    { label: 'Quiet',    bg: '#e6e0d2',
-    icon: '<path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z"/>' },
-  at_risk:  { label: 'At Risk',  bg: '#ffd5cc',
-    icon: '<path d="M12 9v4m0 3h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>' },
-  revived:  { label: 'Revived',  bg: '#e8d5f5',
-    icon: '<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/>' },
-  watched:  { label: 'Watched',  bg: '#d5eeff',
-    icon: '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>' },
-  archived: { label: 'Archived', bg: '#e2e0da',
-    icon: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
+const STATUS: Record<string, { label: string; bg: string }> = {
+  newborn:  { label: 'Newborn',  bg: '#bdebd0' },
+  thriving: { label: 'Thriving', bg: '#ffe08a' },
+  quiet:    { label: 'Quiet',    bg: '#e6e0d2' },
+  at_risk:  { label: 'At risk',  bg: '#ffd5cc' },
+  revived:  { label: 'Revived',  bg: '#e8d5f5' },
+  watched:  { label: 'Watched',  bg: '#d5eeff' },
+  archived: { label: 'Archived', bg: '#e2e0da' },
 };
 
-const deviconMap: Record<string, string> = {
-  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python',
-  Go: 'go', Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin',
-  Swift: 'swift', C: 'c', 'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php',
-  Dart: 'dart', Scala: 'scala', Haskell: 'haskell', Lua: 'lua',
-  Elixir: 'elixir', Zig: 'zig', Shell: 'bash', HTML: 'html5', CSS: 'css3',
-  Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure', Julia: 'julia', Nim: 'nim',
-};
+const status = STATUS[d.status] ?? STATUS.quiet!;
+const description = buildPitch({ name: d.name, description: d.description, readme: '' });
+const detail = [d.language, activityLabel(d, new Date())].filter(Boolean).join(', ');
 
-// Same "why this one" tags shown on ProjectCard.astro's tagLabels — only the
-// three used to prioritize a single narrative pill here, most specific first.
-const NARRATIVE_TAG_LABEL: Record<string, string> = {
-  legacy_hero: 'legacy hero',
-  solo_builder: 'solo',
-  hidden_gem: 'hidden gem',
-};
-const NARRATIVE_TAG_PRIORITY = ['legacy_hero', 'solo_builder', 'hidden_gem'] as const;
-
-function healthColor(h: number) {
-  if (h >= 80) return '#1f9d55';
-  if (h >= 60) return '#c98a1e';
-  if (h >= 40) return '#d4691e';
-  return '#d8392b';
-}
-
-const status      = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
-const hColor      = healthColor(d.healthScore);
-const createdDate = d.createdAt.slice(0, 10); // "2023-06-15"
-const langIconSlug = d.language ? (deviconMap[d.language] ?? null) : null;
-const langIconUrl  = langIconSlug
-  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langIconSlug}/${langIconSlug}-original.svg`
-  : null;
-
-const narrativeTag = NARRATIVE_TAG_PRIORITY.find(t => d.tags.includes(t)) ?? null;
-
-const secondaryLang   = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
-const lang2IconSlug   = secondaryLang ? (deviconMap[secondaryLang] ?? null) : null;
-const lang2IconUrl    = lang2IconSlug
-  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2IconSlug}/${lang2IconSlug}-original.svg`
-  : null;
-
-const now = new Date();
-const pad = (n: number) => String(n).padStart(2, '0');
-const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(now.getUTCDate())} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
+// The feed shows this card about 300 px wide, so a quarter of every size below is what
+// people read. Long names shrink to fit one line, never below the 40 px floor.
+const AVERAGE_GLYPH_WIDTH = 0.56;
+const fitName = (maxSize: number, width: number) =>
+  Math.max(40, Math.min(maxSize, Math.floor(width / (d.name.length * AVERAGE_GLYPH_WIDTH))));
 ---
 <!doctype html>
 <html lang="en">
@@ -94,11 +52,6 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
       src: url('../../fonts/BricolageGrotesque-Medium.ttf') format('truetype');
       font-weight: 500;
     }
-    @font-face {
-      font-family: 'Silkscreen';
-      src: url('../../fonts/Silkscreen-Regular.ttf') format('truetype');
-      font-weight: 400 700;
-    }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -107,331 +60,147 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
       height: 630px;
       overflow: hidden;
       background: #f7f5ef;
+      color: #17150f;
       font-family: 'Bricolage', system-ui, 'Noto Sans CJK SC', 'Noto Sans', sans-serif;
     }
 
     .card {
       width: 1200px;
       height: 630px;
-      background: #f7f5ef;
       border: 5px solid #17150f;
-      padding: 44px 64px 40px;
       display: flex;
       flex-direction: column;
     }
 
-    /* ── Top row ── */
-    .top {
+    .cover {
+      flex: 1;
+      min-height: 0;
+      border-bottom: 5px solid #17150f;
+      background: #17150f;
+    }
+    .cover {
+      position: relative;
+      overflow: hidden;
+    }
+    .cover img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-position: top;
+    }
+    .cover-fill {
+      object-fit: cover;
+      object-position: center;
+      filter: blur(36px) saturate(1.15);
+      transform: scale(1.2);
+    }
+    .cover-main[data-fit='cover'] { object-fit: cover; }
+    .cover-main[data-fit='contain'] { object-fit: contain; object-position: center; }
+
+    .lead {
+      flex: 1;
+      min-height: 0;
+      padding: 44px 48px 0;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
     }
-    .wordmark {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .wordmark img {
-      width: 48px;
-      height: 48px;
-      image-rendering: pixelated;
-    }
-    .wordmark-text {
-      color: #17150f;
-      font-size: 28px;
+    .lead-name, .strip-name {
       font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-    .site-url-block {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 3px;
-    }
-    .site-url {
-      color: #6b6456;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .generated-at {
-      color: #c9c0af;
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    /* ── Name ── */
-    .name {
-      color: #17150f;
-      font-family: 'Silkscreen', monospace;
-      font-size: 58px;
-      font-weight: 400;
-      line-height: 1.1;
-      letter-spacing: 0;
-      margin-top: 28px;
-      max-width: 1060px;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
-
-    /* ── Description ── */
-    .desc {
+    .lead-desc {
       color: #6b6456;
-      font-size: 26px;
+      font-size: 44px;
       font-weight: 500;
-      line-height: 1.4;
-      margin-top: 12px;
-      max-width: 960px;
+      line-height: 1.22;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
 
-    /* ── Stats ── */
-    .stats {
+    .strip {
+      flex: none;
       display: flex;
-      align-items: stretch;
-      margin-top: auto;
-      margin-bottom: 20px;
-      border: 1.5px solid #c9c0af;
-      border-radius: 12px;
-      overflow: hidden;
+      align-items: center;
+      gap: 28px;
+      padding: 18px 40px 20px;
     }
-    .stat {
+    .strip-text {
       flex: 1;
+      min-width: 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      padding: 18px 0 14px;
-    }
-    .stat + .stat { border-left: 1.5px solid #c9c0af; }
-    .stat-value {
-      display: flex;
-      align-items: center;
       gap: 8px;
     }
-    .stat-num {
-      font-size: 72px;
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      line-height: 1;
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
     }
-    .stat-arrow {
-      font-size: 52px;
+    .status {
+      flex: none;
+      background: var(--status-bg);
+      border: 3px solid #17150f;
+      border-radius: 999px;
+      font-size: 34px;
       font-weight: 700;
       line-height: 1;
-      color: #e8452e;
+      padding: 5px 20px 8px;
     }
-    .stat-label {
+    .detail {
       color: #6b6456;
-      font-size: 18px;
+      font-size: 40px;
       font-weight: 500;
-      margin-top: 4px;
+      line-height: 1.1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .star {
+      flex: none;
+      width: 104px;
+      height: 104px;
+      image-rendering: pixelated;
     }
 
-    /* ── Footer ── */
-    .footer {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding-top: 20px;
-      border-top: 2px solid #c9c0af;
-      flex-wrap: nowrap;
-    }
-    .footer-sep {
-      color: #c9c0af;
-      font-size: 22px;
-      margin: 0 2px;
-    }
-    /* Status pill */
-    .status-pill {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--pill-bg);
-      color: #17150f;
-      font-size: 22px;
-      font-weight: 700;
-      padding: 7px 18px 7px 12px;
-      border-radius: 999px;
-      border: 2px solid #17150f;
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-    }
-    .status-pill svg {
-      flex-shrink: 0;
-    }
-    /* Meta items */
-    .meta-item {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: #6b6456;
-      font-size: 22px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    .meta-item svg {
-      flex-shrink: 0;
-      opacity: 0.75;
-    }
-    .lang-pill {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: #6b6456;
-      font-size: 22px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    .lang-pill img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      vertical-align: middle;
-    }
+    body[data-variant='image'] .lead { display: none; }
+    body[data-variant='text'] .cover,
+    body[data-variant='text'] .strip-name { display: none; }
   </style>
 </head>
-<body>
+<body data-variant={image ? 'image' : 'text'}>
   <div class="card">
+    {image && (
+      <div class="cover">
+        {coverFit(image) === 'contain' && <img class="cover-fill" src={image} alt="" />}
+        <img class="cover-main" data-fit={coverFit(image)} src={image} alt="" />
+      </div>
+    )}
 
-    <!-- Top row: wordmark + site URL -->
-    <div class="top">
-      <div class="wordmark">
-        <img src="../../logo-star.png" alt="" />
-        <span class="wordmark-text">SilentStars</span>
-      </div>
-      <div class="site-url-block">
-        <span class="site-url">silentstars.dev</span>
-        <span class="generated-at">{generatedAt}</span>
-      </div>
+    <div class="lead">
+      <div class="lead-name" style={`font-size: ${fitName(112, 1090)}px`}>{d.name}</div>
+      {description && <div class="lead-desc">{description}</div>}
     </div>
 
-    <!-- Name -->
-    <div class="name">{d.name}</div>
-
-    <!-- Description -->
-    <div class="desc">{d.description}</div>
-
-    <!-- Stats -->
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-value">
-          <span class="stat-arrow">↑</span>
-          <span class="stat-num" style={`color: ${ACCENT}`}>{d.undervaluedScore}</span>
+    <div class="strip">
+      <div class="strip-text">
+        <div class="strip-name" style={`font-size: ${fitName(64, 920)}px`}>{d.name}</div>
+        <div class="meta">
+          <span class="status" style={`--status-bg: ${status.bg}`}>{status.label}</span>
+          {detail && <span class="detail">{detail}</span>}
         </div>
-        <span class="stat-label">undervalued</span>
       </div>
-      <div class="stat">
-        <div class="stat-value">
-          <span class="stat-num" style={`color: ${hColor}`}>{d.healthScore}</span>
-        </div>
-        <span class="stat-label">health</span>
-      </div>
-      <div class="stat">
-        <div class="stat-value">
-          <svg width="44" height="44" viewBox="0 0 24 24">
-            <path fill={INK} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
-          <span class="stat-num" style={`color: ${INK}`}>{d.stars}</span>
-        </div>
-        <span class="stat-label">stars</span>
-      </div>
+      <img class="star" src="../../logo-star.png" alt="" />
     </div>
-
-    <!-- Footer: status + metadata -->
-    <div class="footer">
-
-      <!-- Status pill with icon -->
-      <span class="status-pill" style={`--pill-bg: ${status.bg}`}>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
-             stroke="#17150f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
-             set:html={status.icon} />
-        {status.label.toUpperCase()}
-      </span>
-
-      {narrativeTag && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="meta-item">{NARRATIVE_TAG_LABEL[narrativeTag]}</span>
-        </>
-      )}
-
-      <span class="footer-sep">·</span>
-
-      <!-- Created date -->
-      <span class="meta-item">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-          <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
-          <line x1="3" y1="10" x2="21" y2="10"/>
-        </svg>
-        {createdDate}
-      </span>
-
-      {d.watchers > 0 && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="meta-item">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>
-            </svg>
-            {d.watchers}
-          </span>
-        </>
-      )}
-
-      {d.forks > 0 && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="meta-item">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/>
-              <circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/>
-              <path d="M18 9a9 9 0 0 1-9 9"/>
-            </svg>
-            {d.forks}
-          </span>
-        </>
-      )}
-
-      {d.contributors > 0 && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="meta-item">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-            {d.contributors}
-          </span>
-        </>
-      )}
-
-      {d.language && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="lang-pill">
-            {langIconUrl && <img src={langIconUrl} alt={d.language} />}
-            {d.language}
-          </span>
-        </>
-      )}
-
-      {secondaryLang && (
-        <>
-          <span class="footer-sep">·</span>
-          <span class="lang-pill">
-            {lang2IconUrl && <img src={lang2IconUrl} alt={secondaryLang} />}
-            {secondaryLang}
-          </span>
-        </>
-      )}
-
-    </div>
-
   </div>
 </body>
 </html>

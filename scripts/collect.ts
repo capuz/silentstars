@@ -17,6 +17,7 @@ import { stripReadmeNoise } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify } from './post-shared.ts';
 import { isExcludedRepo, isExcludedOwner } from './discovery-filter.ts';
+import { loadCardImages, probeImage, refreshCardImages, saveCardImages, type RefreshItem } from './readme-image.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -229,6 +230,9 @@ const DAY_MS = 86_400_000;
 // Minimum length (chars) of cleaned README prose to count as a "good README" —
 // below this a project is excluded from daily-post selection (still listed on the site).
 const README_MIN_PROSE_CHARS = 200;
+
+// New repos whose README is probed for a card image per night; see refreshCardImages.
+const CARD_IMAGE_BUDGET = 150;
 
 /** Stddev of an array of numbers, normalised to [0,1] given a max. */
 function normalisedStddev(values: number[], maxVal: number): number {
@@ -619,6 +623,8 @@ async function main() {
   const writtenSlugs = new Set<string>();
   // Non-English pages wait here and are translated together after the loop.
   const pendingTranslation: Array<{ repoStr: string; data: RepoData; slug: string; mdPath: string; cleanedReadme: string }> = [];
+  // Raw READMEs wait here too: stripReadmeNoise removes the images the card needs.
+  const cardImageInputs: RefreshItem[] = [];
   const BATCH_SIZE = 10;
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
@@ -778,6 +784,10 @@ async function main() {
       const postedEntry = postedByRepo.get(repoStr.toLowerCase());
       if (postedEntry) data.postedAt = postedEntry.postedAt;
 
+      cardImageInputs.push({
+        repo: repoStr, repoUrl: raw.url, openGraphImageUrl: raw.openGraphImageUrl, readme: raw.readme?.text ?? '',
+      });
+
       // Only pages that pass the checks above get translated: candidates discarded for
       // low health used to be translated too, ~25 calls a night for nothing. The rest
       // are translated together after the loop, a few calls at a time.
@@ -827,6 +837,15 @@ async function main() {
   for (const data of results) {
     data.hasPage = writtenSlugs.has(slugify(data.repo));
   }
+
+  // Always written (even empty) so the workflow's `git add data/card-images.json` has a file.
+  const cardImagesPath = resolve(ROOT, 'data/card-images.json');
+  const cardImages = await refreshCardImages(
+    cardImageInputs, loadCardImages(cardImagesPath), new Date(), probeImage, CARD_IMAGE_BUDGET,
+  );
+  saveCardImages(cardImagesPath, cardImages);
+  const withImage = Object.values(cardImages).filter(entry => entry.url).length;
+  console.log(`🖼  Card images: ${withImage} of ${Object.keys(cardImages).length} repos have one`);
 
   // Always written (even empty) so the workflow's `git add data/translations.json` has a file.
   saveTranslationCache(translationsPath, translator.entries());

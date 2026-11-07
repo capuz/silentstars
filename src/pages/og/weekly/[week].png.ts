@@ -36,7 +36,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
         children: [
           // ── Wordmark + issue ──
           wordmark('36px', [
-            { type: 'span', props: { style: { color: MUTED, fontSize: 24, fontWeight: 500, marginLeft: 'auto' }, children: `Issue #${edition.issue}` } },
+            { type: 'span', props: { style: { color: MUTED, fontSize: 34, fontWeight: 500, marginLeft: 'auto' }, children: `Issue #${edition.issue}` } },
           ]),
 
           // ── Headline ──
@@ -63,7 +63,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
               children: top.map(name => ({
                 type: 'div',
                 props: {
-                  style: { display: 'flex', alignItems: 'center', gap: '10px', color: INK, fontSize: 24, fontWeight: 700, padding: '6px 16px', border: `2px solid ${INK}`, borderRadius: '999px' },
+                  style: { display: 'flex', alignItems: 'center', gap: '10px', color: INK, fontSize: 32, fontWeight: 700, padding: '6px 18px', border: `2px solid ${INK}`, borderRadius: '999px' },
                   children: [
                     { type: 'div', props: { style: { width: 12, height: 12, borderRadius: '50%', background: ACCENT } } },
                     { type: 'span', props: { children: name } },

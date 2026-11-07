@@ -9,6 +9,7 @@ node_modules/
 private/
 .atl/
 data/*
+!data/card-images.json
 !data/community-tags.txt
 !data/discovered.json
 !data/discovery.config.json

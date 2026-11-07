@@ -9,6 +9,7 @@ import {
 import { buildPost } from './post-build.ts';
 import { claudeEnabled } from './claude-cli.ts';
 import { buildPitch, generatePitch, needsLlmPitch, readmeExcerpt } from './post-pitch.ts';
+import { toThumbnail } from './post-thumb.ts';
 
 const DRY_RUN = process.argv.includes('--dry-run') || process.env.DRY_RUN === 'true';
 
@@ -52,7 +53,7 @@ async function main(): Promise<void> {
   const claudePitch = weak && claudeEnabled()
     ? await generatePitch({ name: project.name, description, readme })
     : null;
-  const pitch  = claudePitch ?? buildPitch({ description, readme });
+  const pitch  = claudePitch ?? buildPitch({ name: project.name, description, readme });
   const source = claudePitch ? 'claude' : weak ? 'fallback: weak pitch, claude unavailable' : 'readme/description';
 
   // Mentions notify the owner (and the submitter, for community picks) so the
@@ -81,7 +82,8 @@ async function main(): Promise<void> {
 
   // Loaded before the dry-run gate so dry runs verify image availability too
   const ogBuf = await loadOgImage(slug, baseUrl);
-  console.log(`─── OG image: ${ogBuf.length} bytes`);
+  const thumbBuf = await toThumbnail(ogBuf);
+  console.log(`─── OG image: ${ogBuf.length} bytes, thumbnail ${thumbBuf.length} bytes`);
 
   if (DRY_RUN) {
     console.log('Dry run — not posting.');
@@ -97,7 +99,7 @@ async function main(): Promise<void> {
   const agent = new BskyAgent({ service: 'https://bsky.social' });
   await agent.login({ identifier, password });
 
-  const { data: thumb } = await agent.uploadBlob(ogBuf, { encoding: 'image/png' });
+  const { data: thumb } = await agent.uploadBlob(thumbBuf, { encoding: 'image/jpeg' });
 
   const embedWithThumb = {
     ...embed,
