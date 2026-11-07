@@ -3,8 +3,9 @@
  * and publishes + pins the "how to submit" post.
  *
  * Idempotent: if the currently pinned post already has PINNED_TEXT it is
- * reused, so re-running never publishes a duplicate. Avatar, banner and any
- * other profile fields are preserved.
+ * reused, so re-running never publishes a duplicate. The banner is uploaded from
+ * public/bsky-banner.png when it changes (see generate-bsky-banner.ts). The avatar and
+ * any other profile fields are preserved.
  *
  * Env vars:
  *   BSKY_IDENTIFIER, BSKY_APP_PASSWORD — required
@@ -12,6 +13,8 @@
  */
 
 import { BskyAgent, RichText, type AppBskyActorProfile, type AppBskyFeedPost } from '@atproto/api';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 export const SUBMIT_URL = 'https://silentstars.dev/submit';
@@ -19,20 +22,20 @@ export const SUBMIT_URL = 'https://silentstars.dev/submit';
 export const DISPLAY_NAME = 'SilentStars · OSS radar';
 
 export const DESCRIPTION = [
-  'Daily pick of open-source projects that are alive but invisible. Not famous. Not abandoned. Just building.',
+  'Open-source projects that are alive but invisible, picked every day and sent in by the community. Not famous. Not abandoned. Just building.',
   '',
   'Built one? Submit it 👇',
   'silentstars.dev/submit',
 ].join('\n');
 
-// Keeps the pre-custom-domain link on purpose: editing this text publishes a
-// brand-new pinned post, and GitHub Pages 301s the old URL to silentstars.dev.
+// Editing this text publishes a brand-new pinned post the next time the
+// update-bsky-profile workflow runs without dry run.
 export const PINNED_TEXT = [
-  "📡 SilentStars finds open-source projects that are actively built but nobody's noticed yet. One pick a day, right here.",
+  "📡 SilentStars finds open-source projects that are actively built but nobody's noticed yet. New ones every day, right here.",
   '',
   'Building something quiet? Submit it: a bot checks it in minutes and we post it as a 🙌 Community pick.',
   '',
-  '👉 capuz.github.io/silentstars/submit',
+  '👉 silentstars.dev/submit',
 ].join('\n');
 
 type StrongRef = { uri: string; cid: string };
@@ -40,9 +43,17 @@ type StrongRef = { uri: string; cid: string };
 export function buildProfile(
   existing: AppBskyActorProfile.Record | undefined,
   pinnedPost: StrongRef,
+  banner?: AppBskyActorProfile.Record['banner'],
 ): AppBskyActorProfile.Record {
   const { $type: _type, ...rest } = existing ?? {} as AppBskyActorProfile.Record;
-  return { ...rest, displayName: DISPLAY_NAME, description: DESCRIPTION, pinnedPost } as AppBskyActorProfile.Record;
+  return {
+    ...rest, displayName: DISPLAY_NAME, description: DESCRIPTION, pinnedPost, ...(banner ? { banner } : {}),
+  } as AppBskyActorProfile.Record;
+}
+
+// Blobs are re-encoded refs, so size is the cheap way to tell a re-run from a new image.
+export function bannerIsCurrent(current: AppBskyActorProfile.Record | undefined, size: number): boolean {
+  return current?.banner?.size === size;
 }
 
 // Pick, not Omit: Record has an index signature, so Omit<…, '$type'> would erase text/facets to unknown.
@@ -83,7 +94,9 @@ async function main(): Promise<void> {
   console.log('─── description');
   console.log(`  before: ${JSON.stringify(current.description ?? '')}`);
   console.log(`  after:  ${JSON.stringify(DESCRIPTION)}`);
-  console.log(`─── avatar kept: ${Boolean(current.avatar)} · banner kept: ${Boolean(current.banner)}`);
+  const bannerBuf = readFileSync(join(process.cwd(), 'public', 'bsky-banner.png'));
+  const uploadBanner = !bannerIsCurrent(current, bannerBuf.length);
+  console.log(`─── avatar kept: ${Boolean(current.avatar)} · new banner: ${uploadBanner} (${bannerBuf.length} bytes)`);
 
   const record = pinnedPostRecord(new Date().toISOString());
   if (pinned) {
@@ -104,7 +117,10 @@ async function main(): Promise<void> {
     console.log(`✓ Published: https://bsky.app/profile/${did}/post/${pinned.uri.split('/').pop()}`);
   }
 
-  await agent.upsertProfile(existing => buildProfile(existing, pinned!));
+  const banner = uploadBanner
+    ? (await agent.uploadBlob(bannerBuf, { encoding: 'image/png' })).data.blob
+    : undefined;
+  await agent.upsertProfile(existing => buildProfile(existing, pinned!, banner));
   console.log('✓ Profile updated');
 }
 

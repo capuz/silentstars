@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   DISPLAY_NAME, DESCRIPTION, PINNED_TEXT, SUBMIT_URL,
-  buildProfile, pinnedPostRecord,
+  buildProfile, pinnedPostRecord, bannerIsCurrent,
 } from './update-bsky-profile.ts';
 
 const graphemes = (s: string) => [...new Intl.Segmenter().segment(s)].length;
@@ -39,7 +39,26 @@ test('pinned post fits 300 graphemes and links the submit URL at the right bytes
   assert.equal(links.length, 1);
   const bytes = new TextEncoder().encode(rec.text);
   const shown = new TextDecoder().decode(bytes.slice(links[0]!.index.byteStart, links[0]!.index.byteEnd));
-  // The pinned post keeps its pre-custom-domain link on purpose (see PINNED_TEXT).
-  assert.equal(shown, 'capuz.github.io/silentstars/submit');
-  assert.equal((links[0]!.features[0] as any).uri, 'https://capuz.github.io/silentstars/submit');
+  assert.equal(shown, 'silentstars.dev/submit');
+  assert.equal((links[0]!.features[0] as any).uri, 'https://silentstars.dev/submit');
+});
+
+test('profile copy no longer promises a single pick a day', () => {
+  assert.ok(!/daily pick|one pick a day/i.test(DESCRIPTION));
+  assert.ok(!/one pick a day/i.test(PINNED_TEXT));
+});
+
+test('buildProfile swaps the banner only when a new one is given', () => {
+  const old = { $type: 'blob', ref: { $link: 'old' }, mimeType: 'image/png', size: 1 };
+  const fresh = { $type: 'blob', ref: { $link: 'new' }, mimeType: 'image/png', size: 2 };
+  const pinned = { uri: 'at://did:plc:x/app.bsky.feed.post/1', cid: 'bafy' };
+  assert.equal(buildProfile({ banner: old } as any, pinned).banner, old);
+  assert.equal(buildProfile({ banner: old } as any, pinned, fresh as any).banner, fresh);
+});
+
+test('bannerIsCurrent compares the uploaded blob size, so re-runs do not re-upload', () => {
+  const banner = { size: 1234 };
+  assert.equal(bannerIsCurrent({ banner } as any, 1234), true);
+  assert.equal(bannerIsCurrent({ banner } as any, 999), false);
+  assert.equal(bannerIsCurrent({} as any, 999), false);
 });
