@@ -2477,5 +2477,16 @@
         "postedAt": "2026-11-06T13:31:27.351Z"
       }
     }
+  },
+  {
+    "repo": "anondotli/anon.li",
+    "slug": "anondotli--anon-li",
+    "postedAt": "2026-11-07T09:38:25.611Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzplys5rhd2w",
+        "postedAt": "2026-11-07T09:38:25.611Z"
+      }
+    }
   }
 ]
