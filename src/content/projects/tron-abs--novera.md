@@ -17,14 +17,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-07T08:04:31Z"
-lastReleaseAt: "2026-11-07T06:37:41Z"
+lastCommitAt: "2026-11-07T10:31:04Z"
+lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 88
+healthScore: 89
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ccf8306518d6184022445a5cdc968940a639ee2f182b92fc267081517e10286e/TRON-ABS/Novera"
+openGraphImageUrl: "https://opengraph.githubassets.com/cbc7991ae8823aa4e5b6d48c032a686b55efbc1e5cf75efc299e5839dacc7010/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---

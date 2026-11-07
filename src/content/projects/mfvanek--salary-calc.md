@@ -1,0 +1,85 @@
+---
+repo: "mfvanek/salary-calc"
+name: "salary-calc"
+description: "Demo app for salary calculation (Spring Boot)"
+readmeQualityOk: true
+url: "https://github.com/mfvanek/salary-calc"
+language: "Java"
+languages: ["Java"]
+languagePcts: [100]
+topics: ["checkstyle", "jacoco", "jpa", "pmd", "postgresql", "spotbugs", "spring-boot", "swagger", "java", "maven"]
+stars: 8
+forks: 3
+openIssues: 0
+closedIssues: 9
+watchers: 1
+contributors: 3
+recentReleases: 0
+createdAt: "2020-08-31T11:18:26Z"
+lastCommitAt: "2026-11-07T10:36:23Z"
+lastReleaseAt: "2025-12-07T17:04:33Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem", "legacy_hero"]
+healthScore: 94
+undervaluedScore: 69
+maintainers: ["dependabot[bot]", "mfvanek"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b8a3bdb3f6e049c1f6707cec6311e369ee47450570103697d04af27370bcf760/mfvanek/salary-calc"
+---
+
+# salary-calc
+
+Demo app for salary calculation (Spring Boot)
+
+## Requirements
+
+- Java 25+  
+- Spring Boot 4.0+
+
+## API
+
+### Actuator
+
+- [Swagger UI](http://localhost:8090/actuator/swagger-ui)
+- [Health](http://localhost:8090/actuator/health)
+
+### Endpoints
+```shell
+curl http://localhost:8080/api/employee/dcffa631-595a-44e6-8f8c-1c077de895bf
+```
+
+```shell
+curl -i -X POST -d "{\"firstName\": \"John\",\"lastName\": \"Wick\",\"standardHoursPerDay\": 8,\"salaryPerHour\": 5000}" http://localhost:8080/api/employee -H "Content-Type: application/json"
+```
+
+```shell
+curl http://localhost:8080/api/employee/all
+```
+
+## Run locally
+
+### With database from Testcontainers
+
+```
+mvn spring-boot:test-run -Dspring-boot.run.jvmArguments="-Duser.timezone=Europe/Moscow"
+```
+
+You can also run `LocalDevApplication` (in test sources) directly from your IDE.
+
+### With external database
+
+```
+mvn spring-boot:run -Dspring-boot.run.profiles=extern -Dspring-boot.run.jvmArguments="-Duser.timezone=Europe/Moscow"
+```
+
+## Run in Docker
+
+### Build image
+
+```
+mvn clean spring-boot:build-image -DskipTests -DskipSpotbugs=true
+```
+
+### Build native image
+
+```
+mvn clean spring-boot:build-image -DskipTests…

@@ -25,6 +25,7 @@ undervaluedScore: 42
 maintainers: ["anondotli"]
 openGraphImageUrl: "https://opengraph.githubassets.com/627d4a6953d397f4faeb7cd1e9688a96734e21ee7bd475079c1bc0d88874a750/anondotli/anon.li"
 promoted: true
+postedAt: "2026-11-07T09:38:25.611Z"
 ---
 
 ---

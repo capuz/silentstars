@@ -16,14 +16,14 @@ watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-07T08:50:50Z"
+lastCommitAt: "2026-11-07T10:19:46Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]
 healthScore: 86
 undervaluedScore: 73
 maintainers: ["livenson", "AmbientLighter", "DarinaKulyk"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0c3ebff9d556c83b8d0f7846149f9f393536cf99468b5a9e96a4a44b46cc6738/waldur/waldur-homeport"
+openGraphImageUrl: "https://opengraph.githubassets.com/af1ac68450cdc7555092789e4a4f8c68be60d862e7e991fff1dda24e56531738/waldur/waldur-homeport"
 postedAt: "2026-11-03T11:22:36.120Z"
 ---
 
