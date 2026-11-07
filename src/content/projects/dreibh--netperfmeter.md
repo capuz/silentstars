@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-06T15:41:37Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 77
-undervaluedScore: 75
+undervaluedScore: 74
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"
 postedAt: "2026-09-10T08:25:04.835Z"

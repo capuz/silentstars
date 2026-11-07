@@ -12,14 +12,15 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-11-07T14:27:15Z"
-lastCommitAt: "2026-11-07T15:35:54Z"
+lastCommitAt: "2026-11-07T17:30:10Z"
 status: "newborn"
 tags: ["hidden_gem"]
 healthScore: 80
-undervaluedScore: 13
+undervaluedScore: 14
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6379d951b619bbf28f0e14df7463db4ec8935296761f5f4a713e0a023ed6d1fe/artabramov/awesome-s3"
+openGraphImageUrl: "https://opengraph.githubassets.com/57c84a24f4b4c44b773e2cfedc9473206228ca7f48ea4323a182f2bd0e8ce576/artabramov/awesome-s3"
 promoted: true
+postedAt: "2026-11-07T16:20:05.395Z"
 ---
 
 # Awesome S3
@@ -30,19 +31,20 @@ Projects released under OSI-approved open-source licenses are preferred, but pro
 
 Contributions to this list are welcome. See [CONTRIBUTING.md](https://github.com/artabramov/awesome-s3/blob/HEAD/CONTRIBUTING.md).
 
+
 ## Table of contents
 
-- [Storage clients & tools](#storage-clients--tools) `9`
-- [Proxies & gateways](#proxies--gateways) `6`
-- [Backup, recovery & synchronization](#backup-recovery--synchronization) `4`
-- [Development & integrations](#development--integrations) `6`
-- [Security & testing](#security--testing) `5`
-- [Automation & deployment](#automation--deployment) `5`
+- [Storage clients & tools](#storage-clients--tools) `20`
+- [Proxies & gateways](#proxies--gateways) `8`
+- [Backup, recovery & synchronization](#backup-recovery--synchronization) `11`
+- [Development & integrations](#development--integrations) `27`
+- [Security & testing](#security--testing) `13`
+- [Automation & deployment](#automation--deployment) `9`
+- [S3-compatible storage servers](#s3-compatible-storage-servers) `4`
+- [Data processing & monitoring](#data-processing--monitoring) `4`
+- [Documentation & references](#documentation--references) `1`
+
 
 ## Storage clients & tools
 
-[mickael-kerjean/filestash](https://github.com/mickael-kerjean/filestash) `AGPL-3.0` - Universal File Management Platform (for humans and agents).
-
-[kahing/goofys](https://github.com/kahing/goofys) `Apache-2.0` - A high-performance, POSIX-ish Amazon S3 file system written in Go.
-
-[Kuingsmile/PicList](https://github.com/Kuingsmile/PicList) `MIT` - An image upload and manage tool, base on…
+[mickael-kerjean/filestash](https://github.com/mickael-kerjean/filestash) `AGPL-3.0` - Universal File Management Platform (for humans and agents).…

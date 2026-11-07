@@ -10,19 +10,19 @@ languagePcts: [77, 20]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda", "hdl", "llvm", "verification"]
 stars: 6
 forks: 1
-openIssues: 366
-closedIssues: 99
+openIssues: 374
+closedIssues: 100
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-11-07T05:39:12Z"
+lastCommitAt: "2026-11-07T18:14:46Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 84
 undervaluedScore: 67
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c24d36075bdf0290be78c2daaa61a61af2ef4e69981875060fccb366e43b5636/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/c8e0cd2cd5db6cb8f36dfcd85459a3c05dfaf6deae95392db22d860c9d19c7d2/hankhsu1996/lyra"
 discussionCount: 0
 postedAt: "2026-10-09T10:56:38.881Z"
 ---

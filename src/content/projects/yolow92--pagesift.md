@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [85]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 251
+stars: 252
 forks: 32
 openIssues: 0
 closedIssues: 2
@@ -20,10 +20,10 @@ lastCommitAt: "2026-11-07T00:54:10Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 32
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/87466a9adc699561294aaa1f9dff926d403007c91108e6b1bfdfa060c3880e9b/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/8e91dc367966c7426e9659d280f7d465c67136a4291b0bb41762d5c37dd9033d/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"

@@ -9,8 +9,8 @@ languages: ["JavaScript"]
 languagePcts: [87]
 stars: 10
 forks: 7
-openIssues: 2
-closedIssues: 57
+openIssues: 1
+closedIssues: 58
 watchers: 3
 contributors: 13
 recentReleases: 0

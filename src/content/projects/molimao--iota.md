@@ -22,7 +22,7 @@ createdAt: "2026-09-12T02:21:10Z"
 lastCommitAt: "2026-11-07T14:03:15Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 58
 maintainers: ["molimao", "lovable-dev[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cf90e22cf647cdd5adaa7853da85a118e3669d136e960bda790fdcf332b373b0/molimao/iota"
