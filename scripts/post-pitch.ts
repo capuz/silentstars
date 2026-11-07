@@ -71,12 +71,27 @@ function readmeLead(readme: string): string {
   return '';
 }
 
-export function buildPitch({ description, readme }: { description: string; readme: string }): string {
+// GitHub descriptions often restate the name ("Novera — Local AI workspace"), end in a
+// link ("Trailer: https://…") or carry a translation after a pipe. All three read as
+// noise once the post already opens with the project name and links to it.
+function tidyPitch(text: string, name: string): string {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const repeatedName = new RegExp(`^${escaped}(\\s*[—–:|-]\\s*|\\s{2,})`, 'i');
+  return text
+    .replace(repeatedName, '')
+    .replace(/(?:\b[\p{L}]+:\s*)?https?:\/\/\S+/gu, ' ')
+    .replace(/\s*\|\s*[^|]*\p{Script=Han}.*$/u, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function buildPitch({ name = '', description, readme }: { name?: string; description: string; readme: string }): string {
+  const tidy = (text: string) => (name ? tidyPitch(text, name) : text);
   const desc = description.trim();
-  if (isDescriptive(desc)) return desc;
+  if (isDescriptive(desc)) return tidy(desc);
 
   const lead = readmeLead(readme);
-  if (lead) return lead;
+  if (lead) return tidy(lead);
 
   const stripped = desc.replace(STATUS_PREFIX_RE, '').trim();
   if (stripped !== desc && isDescriptive(stripped)) return stripped[0]!.toUpperCase() + stripped.slice(1);

@@ -203,3 +203,38 @@ test('generatePitch rejects a pitch that talks about status instead of the produ
   const run = async () => 'A dungeon crawler that is still a work in progress but fun to play.';
   assert.equal(await generatePitch(input, run), null);
 });
+
+test('buildPitch drops the project name repeated at the start of the description', () => {
+  assert.equal(
+    buildPitch({ name: 'Novera', description: 'Novera — Local/cloud AI workspace for text.', readme: '' }),
+    'Local/cloud AI workspace for text.',
+  );
+});
+
+test('buildPitch drops a repeated name followed by a run of spaces, ignoring case', () => {
+  assert.equal(
+    buildPitch({ name: 'kanban', description: 'Kanban      Offline-first native macOS workspace.', readme: '' }),
+    'Offline-first native macOS workspace.',
+  );
+});
+
+test('buildPitch keeps a name that is part of the sentence', () => {
+  assert.equal(
+    buildPitch({ name: 'Docker', description: 'Docker images for small home servers.', readme: '' }),
+    'Docker images for small home servers.',
+  );
+});
+
+test('buildPitch removes a labelled URL from the description', () => {
+  assert.equal(
+    buildPitch({ name: 'PeerBrush', description: 'An image editor for humans and AI agents. Trailer: https://peerbrush.com/#demo', readme: '' }),
+    'An image editor for humans and AI agents.',
+  );
+});
+
+test('buildPitch removes a translated tail after a pipe', () => {
+  assert.equal(
+    buildPitch({ name: 'OpenMathpix', description: 'Extract LaTeX from screenshots. | 开源 Mathpix 替代工具', readme: '' }),
+    'Extract LaTeX from screenshots.',
+  );
+});

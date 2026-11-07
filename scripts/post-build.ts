@@ -2,15 +2,17 @@ import {
   type Project, type BskyAccount,
   LANG_HASHTAG,
   loadCommunityTags, truncate, slugify,
-  pickOpener, pickCta, topicHashtags, byteLen, hashtagFacets,
+  topicHashtags, byteLen, hashtagFacets,
 } from './post-shared.ts';
+import { whyLine } from './post-signal.ts';
 
-const COMMUNITY_OPENER = '🙌 Community pick';
-const COMMUNITY_CTA    = '📮 Submit yours →';
+const COMMUNITY_CREDIT = '🙌 Community pick';
 const WEEKLY_SUBMIT_CTA = '📮 Built something quiet? Submit it →';
+const MIN_FITTED_PITCH = 30;
+const CARD_DESCRIPTION = 'Activity, health and history for this project.';
 
-// Once a week the rotating CTA becomes a call for submissions, so the feed
-// asks for projects without adding extra posts.
+// One post a week asks for submissions, so the feed keeps asking without every post
+// ending in a request.
 export function isSubmitCtaDay(today: string): boolean {
   return new Date(`${today}T00:00:00Z`).getUTCDay() === 0;
 }
@@ -24,13 +26,28 @@ export interface BuildPostOptions {
   submitter?: BskyAccount | null;
 }
 
+// "Peon: An editor" reads as a broken sentence; only articles are safe to lowercase,
+// since any other first word may be a proper noun.
+function lowerLeadingArticle(pitch: string): string {
+  return pitch.replace(/^(A|An|The)\b/, word => word.toLowerCase());
+}
+
+// A pitch that doesn't fit stops at its last whole sentence, when that leaves enough to
+// read; otherwise it gets cut with an ellipsis.
+function fitPitch(pitch: string, budget: number): string {
+  if (pitch.length <= budget) return pitch;
+  const lastStop = pitch.slice(0, budget).search(/[.!?](?=\s)[^.!?]*$/);
+  return lastStop >= MIN_FITTED_PITCH ? pitch.slice(0, lastStop + 1) : truncate(pitch, budget);
+}
+
 export function buildPost(p: Project, baseUrl: string, pitch: string, opts: BuildPostOptions = {}) {
   const lang      = p.language ?? '';
   const langTags  = (p.languages ?? (lang ? [lang] : []))
     .map(l => LANG_HASHTAG[l] ?? '')
     .filter(Boolean);
-  const topicTags = topicHashtags(p.topics ?? [], langTags);
-  const tags      = [...loadCommunityTags(), ...langTags, ...topicTags].join(' ');
+  const baseTags  = [...loadCommunityTags(), ...langTags];
+  const topicTags = topicHashtags(p.topics ?? [], baseTags);
+  const tags      = [...new Set([...baseTags, ...topicTags])].join(' ');
   const slug      = slugify(p.repo);
   const siteUrl   = `${baseUrl}/projects/${slug}/`;
   const submitUrl = `${baseUrl}/submit/`;
@@ -40,27 +57,21 @@ export function buildPost(p: Project, baseUrl: string, pitch: string, opts: Buil
   // Self-submitted: the "submitted by" mention already pings the owner.
   const owner = opts.owner && opts.owner.did !== submitter?.did ? opts.owner : null;
 
-  // Opener/CTA rotate by date (not by project — only one post goes out per
-  // day), decorrelated from the project pick in main() via distinct seeds.
   const today  = opts.today ?? new Date().toISOString().slice(0, 10);
-  const opener = community
-    ? (submitter ? `${COMMUNITY_OPENER} — submitted by @${submitter.handle}` : COMMUNITY_OPENER)
-    : pickOpener(`${today}-opener`);
-  const cta = community ? COMMUNITY_CTA
-    : isSubmitCtaDay(today) ? WEEKLY_SUBMIT_CTA
-    : pickCta(`${today}-cta`);
-  const ctaIsSubmit = cta === COMMUNITY_CTA || cta === WEEKLY_SUBMIT_CTA;
+  const cta    = isSubmitCtaDay(today) ? WEEKLY_SUBMIT_CTA : null;
   const byLine = owner ? `by @${owner.handle}` : null;
+  const credit = !community ? null
+    : submitter ? `${COMMUNITY_CREDIT}, submitted by @${submitter.handle}`
+    : COMMUNITY_CREDIT;
+  const why    = whyLine(p, new Date(`${today}T12:00:00Z`));
+  const details = [why, byLine, credit].filter((line): line is string => line !== null);
 
   const layout = (desc: string) => [
-    opener,
-    '',
-    `${p.name} — ${desc}`,
-    ...(byLine ? [byLine] : []),
+    `${p.name}: ${desc}`,
+    ...(details.length ? ['', ...details] : []),
     '',
     tags,
-    '',
-    cta,
+    ...(cta ? ['', cta] : []),
   ];
 
   // Bluesky's hard 300-grapheme cap: work out what's left for the
@@ -68,40 +79,43 @@ export function buildPost(p: Project, baseUrl: string, pitch: string, opts: Buil
   // margin for multi-byte emoji graphemes.
   const skeleton   = layout('').join('\n');
   const descBudget = Math.max(60, 300 - [...skeleton].length - 5);
-  const desc       = truncate(pitch, descBudget);
+  const desc       = fitPitch(lowerLeadingArticle(pitch), descBudget);
 
   // Text without URL — card embed handles the link
-  const text = layout(desc).join('\n');
+  const lines = layout(desc);
+  const text  = lines.join('\n');
 
   const facets: any[] = [];
   const at = (offset: number, len: string) => ({ byteStart: offset, byteEnd: offset + byteLen(len) });
-
-  if (submitter) {
-    const mention = `@${submitter.handle}`;
-    facets.push({
-      index: at(byteLen(opener) - byteLen(mention), mention),
-      features: [{ $type: 'app.bsky.richtext.facet#mention', did: submitter.did }],
-    });
-  }
+  const lineStart = (line: string) => {
+    const i = lines.indexOf(line);
+    return i === 0 ? 0 : byteLen(lines.slice(0, i).join('\n')) + 1;
+  };
 
   // Byte-offset facet: project name → GitHub repo link
-  const nameStart = byteLen(`${opener}\n\n`);
-  facets.push({ index: at(nameStart, p.name), features: [{ $type: 'app.bsky.richtext.facet#link', uri: p.url }] });
+  facets.push({ index: at(0, p.name), features: [{ $type: 'app.bsky.richtext.facet#link', uri: p.url }] });
 
   if (byLine && owner) {
     const mention = `@${owner.handle}`;
-    const lineStart = byteLen(`${opener}\n\n${p.name} — ${desc}\n`);
     facets.push({
-      index: at(lineStart + byteLen('by '), mention),
+      index: at(lineStart(byLine) + byteLen('by '), mention),
       features: [{ $type: 'app.bsky.richtext.facet#mention', did: owner.did }],
+    });
+  }
+
+  if (credit && submitter) {
+    const mention = `@${submitter.handle}`;
+    facets.push({
+      index: at(lineStart(credit) + byteLen(credit) - byteLen(mention), mention),
+      features: [{ $type: 'app.bsky.richtext.facet#mention', did: submitter.did }],
     });
   }
 
   facets.push(...hashtagFacets(text));
 
-  if (ctaIsSubmit) {
+  if (cta) {
     facets.push({
-      index: at(byteLen(text) - byteLen(cta), cta),
+      index: at(lineStart(cta), cta),
       features: [{ $type: 'app.bsky.richtext.facet#link', uri: submitUrl }],
     });
   }
@@ -111,8 +125,8 @@ export function buildPost(p: Project, baseUrl: string, pitch: string, opts: Buil
     $type: 'app.bsky.embed.external',
     external: {
       uri: siteUrl,
-      title: `${p.name} · SilentStars`,
-      description: pitch,
+      title: `${p.name} on SilentStars`,
+      description: CARD_DESCRIPTION,
     },
   };
 

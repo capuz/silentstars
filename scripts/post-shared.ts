@@ -19,6 +19,9 @@ export interface Project {
   topics?: string[];
   createdAt: string;
   revivedAfterMonths?: number;
+  lastCommitAt?: string;
+  recentReleases?: number;
+  contributors?: number;
   stars: number;
   healthScore: number;
   undervaluedScore: number;
@@ -135,31 +138,6 @@ export const LANG_HASHTAG: Record<string, string> = {
   Haxe: '#haxe', MATLAB: '#matlab', Processing: '#processing',
 };
 
-// Rotated by post.ts via a date-seeded pick, independent of which project got
-// picked, so the post shape varies day to day instead of always reading
-// "Silent star of the day".
-const OPENERS = ['🌟 Silent star of the day', "🔭 Today's find", '💎 Underrated pick'];
-const CTAS    = [
-  '⭐ give it a star',
-  '👀 worth a look',
-  '🔗 check it out',
-  '🧭 go explore it',
-  '🛠️ try it out',
-  '🍴 fork it, poke at it',
-  '💬 say hi to the maintainers',
-  '📌 bookmark this one',
-  '🌱 small repo, real work',
-  '🚀 take it for a spin',
-];
-
-export function pickOpener(seed: string): string {
-  return OPENERS[seededIndex(seed, OPENERS.length)]!;
-}
-
-export function pickCta(seed: string): string {
-  return CTAS[seededIndex(seed, CTAS.length)]!;
-}
-
 // GitHub topics as extra hashtags, skipping anything already covered by the
 // language tags and capped so the post doesn't turn into a hashtag wall.
 export function topicHashtags(topics: string[], langTags: string[], max = 2): string[] {
@@ -199,7 +177,8 @@ export function byteLen(str: string): number {
 export function hashtagFacets(text: string) {
   const encoder = new TextEncoder();
   const result  = [];
-  const regex   = /#([a-zA-Z][a-zA-Z0-9]*)/g;
+  // Only a # that starts a word: "example.com/#demo" is a URL fragment, not a tag.
+  const regex   = /(?<=^|\s)#([a-zA-Z][a-zA-Z0-9]*)/g;
   let match;
   while ((match = regex.exec(text)) !== null) {
     const byteStart = encoder.encode(text.slice(0, match.index)).length;

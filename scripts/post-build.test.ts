@@ -68,22 +68,23 @@ test('Sunday swaps the CTA for a submit link to /submit/', () => {
   assert.match(facetText(text, submit!), /Submit/);
 });
 
-test('community pick credits the submitter and invites more submissions', () => {
+test('community pick credits the submitter below the project', () => {
   const { text, facets } = buildPost(project, BASE, 'Deploy apps.', {
     today: WEEKDAY, owner: OWNER, submitter: SUBMITTER,
   });
-  assert.ok(text.startsWith('🙌 Community pick — submitted by @fan.bsky.social'));
+  assert.ok(text.startsWith('Peon: Deploy apps.\n'));
+  assert.ok(text.includes('\n🙌 Community pick, submitted by @fan.bsky.social\n'));
   const mentions = featuresOf(facets, 'mention');
-  assert.deepEqual(mentions.map(m => facetText(text, m)), ['@fan.bsky.social', '@peon.dev']);
-  assert.deepEqual(mentions.map(m => m.features[0].did), [SUBMITTER.did, OWNER.did]);
+  assert.deepEqual(mentions.map(m => facetText(text, m)), ['@peon.dev', '@fan.bsky.social']);
+  assert.deepEqual(mentions.map(m => m.features[0].did), [OWNER.did, SUBMITTER.did]);
   const [name] = featuresOf(facets, 'link');
   assert.equal(facetText(text, name), 'Peon');
-  assert.ok(featuresOf(facets, 'link').some(f => f.features[0].uri === `${BASE}/submit/`));
+  assert.ok(!featuresOf(facets, 'link').some(f => f.features[0].uri === `${BASE}/submit/`));
 });
 
 test('community pick without a submitter handle still labels the post', () => {
   const { text, facets } = buildPost(project, BASE, 'Deploy apps.', { today: WEEKDAY, submitter: null, communityPick: true });
-  assert.ok(text.startsWith('🙌 Community pick\n'));
+  assert.ok(text.includes('\n🙌 Community pick\n'));
   assert.equal(featuresOf(facets, 'mention').length, 0);
 });
 
@@ -116,4 +117,45 @@ test('blueskyHandleFromSocialAccounts reads handle from provider=bluesky URL', (
   ]), 'someone.bsky.social');
   assert.equal(blueskyHandleFromSocialAccounts([{ provider: 'twitter', url: 'https://twitter.com/x' }]), null);
   assert.equal(blueskyHandleFromSocialAccounts([]), null);
+});
+
+test('hashtag facets ignore a URL fragment', () => {
+  const { text, facets } = buildPost(project, BASE, 'See it at example.com/#demo today.', { today: WEEKDAY });
+  const tags = featuresOf(facets, 'tag').map(f => facetText(text, f));
+  assert.ok(!tags.includes('#demo'), `unexpected tag in ${tags.join(' ')}`);
+  assert.ok(tags.includes('#indiedev'));
+});
+
+test('a topic already present as a community tag is not repeated', () => {
+  const { text } = buildPost({ ...project, topics: ['opensource', 'designtool'] }, BASE, 'Deploy apps.', { today: WEEKDAY });
+  assert.equal(text.match(/#opensource\b/g)?.length, 1);
+  assert.ok(text.includes('#designtool'));
+});
+
+test('the post opens with the project, followed by why it is here', () => {
+  const active = { ...project, lastCommitAt: '2026-10-05T12:00:00Z', contributors: 1 };
+  const { text } = buildPost(active, BASE, 'Deploy apps to your own servers.', { today: WEEKDAY });
+  assert.equal(text, 'Peon: Deploy apps to your own servers.\n\nOne maintainer, updated 2 days ago.\n\n#indiedev #opensource #typescript #coolify');
+});
+
+test('a leading article is lowercased after the colon, other words are kept', () => {
+  assert.ok(buildPost(project, BASE, 'An editor for pixels.', { today: WEEKDAY }).text.startsWith('Peon: an editor for pixels.'));
+  assert.ok(buildPost(project, BASE, 'OPRN Studio makes games.', { today: WEEKDAY }).text.startsWith('Peon: OPRN Studio makes games.'));
+});
+
+test('no weekday post carries a rotating call to action', () => {
+  const { text } = buildPost(project, BASE, 'Deploy apps.', { today: WEEKDAY });
+  assert.ok(text.endsWith('#coolify'));
+});
+
+test('the link card names the project and does not repeat the pitch', () => {
+  const { embed } = buildPost(project, BASE, 'Deploy apps to your own servers.', { today: WEEKDAY });
+  assert.equal(embed.external.title, 'Peon on SilentStars');
+  assert.ok(!embed.external.description.includes('Deploy apps'));
+});
+
+test('a long pitch ends at a full sentence when one fits', () => {
+  const pitch = `First sentence about the project. ${'word '.repeat(80)}end.`;
+  const { text } = buildPost(project, BASE, pitch, { today: WEEKDAY });
+  assert.ok(text.startsWith('Peon: First sentence about the project.\n'));
 });
