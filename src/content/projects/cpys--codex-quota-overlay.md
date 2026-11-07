@@ -15,14 +15,14 @@ openIssues: 1
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 4
+recentReleases: 3
 createdAt: "2026-08-09T13:22:11Z"
 lastCommitAt: "2026-10-27T05:52:39Z"
 lastReleaseAt: "2026-08-23T16:04:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 45
-undervaluedScore: 30
+undervaluedScore: 27
 maintainers: ["cpys", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/33d346331c03e202863a64bab4e254ea12bcc107a40cbe16021a8d8b05ddbce0/cpys/codex-quota-overlay"
 discussionCount: 3

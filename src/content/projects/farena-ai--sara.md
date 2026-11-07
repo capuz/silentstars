@@ -7,7 +7,7 @@ url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [58, 30]
+languagePcts: [59, 30]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
 stars: 2
 forks: 2
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-07T07:27:18Z"
+lastCommitAt: "2026-11-07T12:54:10Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -32,8 +32,8 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 2.78.0, [Finished pro look, more developer add-ons](https://github.com/farena-ai/sara/releases/tag/v2.78.0). Name, time and duration on each turn, a model · workspace header, Projects in the sidebar, real tables; plus Documentation Doctor, Release Readiness and Repository Onboarding. [See what changed](#whats-new)
+> **Status:** 2.80.0, [Every installer checked end to end](https://github.com/farena-ai/sara/releases/tag/v2.80.0). Every tool server and add-on installed, used and removed on real Linux and Windows; saved settings survive updates. [See what changed](#whats-new)
 >
 > Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified separately. Android: [Google Play](https://play.google.com/store/apps/details?id=com.backstagecoding.sara). iPhone: [home-screen web app](https://github.com/farena-ai/sara/blob/HEAD/docs/PHONE.md).
 
-Sara is AI. Read the [disclosures](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing her.…
+Sara is AI. Read the [disclosures](https://github.com/farena-ai/sara/blob/HEAD/docs/DISCLOSURES.md) before using or sharing her. Local mode keeps model calls on your computer; cloud features send…

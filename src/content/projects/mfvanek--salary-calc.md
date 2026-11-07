@@ -24,6 +24,7 @@ healthScore: 94
 undervaluedScore: 69
 maintainers: ["dependabot[bot]", "mfvanek"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b8a3bdb3f6e049c1f6707cec6311e369ee47450570103697d04af27370bcf760/mfvanek/salary-calc"
+postedAt: "2026-11-07T10:43:48.972Z"
 ---
 
 # salary-calc

@@ -11,7 +11,7 @@ languagePcts: [72, 21]
 topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "ukrainian-state-standard-2024"]
 stars: 11
 forks: 5
-openIssues: 193
+openIssues: 195
 closedIssues: 4427
 watchers: 0
 contributors: 6

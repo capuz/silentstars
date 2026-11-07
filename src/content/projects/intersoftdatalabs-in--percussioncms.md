@@ -11,20 +11,20 @@ languagePcts: [54, 20]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
 stars: 6
 forks: 1
-openIssues: 46
-closedIssues: 2362
+openIssues: 42
+closedIssues: 2370
 watchers: 0
 contributors: 16
 recentReleases: 0
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-11-07T04:03:48Z"
+lastCommitAt: "2026-11-07T13:53:52Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 99
-undervaluedScore: 85
+healthScore: 100
+undervaluedScore: 86
 maintainers: ["natechadwick-intsof", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/759a64c05eadfb3475456ca9e188d6e882ce067f454eccc3aa430b68f057e908/intersoftdatalabs-in/percussioncms"
+openGraphImageUrl: "https://opengraph.githubassets.com/814ad4e601c2dae74c5683fc7a1f55bc6414758751fc6f9999324c7efd67c168/intersoftdatalabs-in/percussioncms"
 discussionCount: 2
 postedAt: "2026-08-15T04:08:55.111Z"
 ---
