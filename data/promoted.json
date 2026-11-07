@@ -166,5 +166,9 @@
   {
     "repo": "anondotli/anon.li",
     "until": "2026-12-07"
+  },
+  {
+    "repo": "epikodelabs/streamix",
+    "until": "2026-12-07"
   }
 ]
