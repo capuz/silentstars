@@ -170,5 +170,9 @@
   {
     "repo": "epikodelabs/streamix",
     "until": "2026-12-07"
+  },
+  {
+    "repo": "artabramov/awesome-s3",
+    "until": "2026-12-07"
   }
 ]
