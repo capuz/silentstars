@@ -7,7 +7,7 @@ url: "https://github.com/OathWallet/oath-wallet"
 homepage: "https://oathwallet.org"
 language: "Swift"
 languages: ["Swift", "HTML"]
-languagePcts: [68, 22]
+languagePcts: [67, 23]
 stars: 1
 forks: 0
 openIssues: 0
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-30T17:08:49Z"
-lastCommitAt: "2026-11-06T12:49:17Z"
+lastCommitAt: "2026-11-07T08:22:24Z"
 lastReleaseAt: "2026-11-06T06:23:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 67
 maintainers: ["OathWallet"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d38f7774d7d9419df78c5960f25869baaac2720e7cf74b825bd042433ffcb773/OathWallet/oath-wallet"
+openGraphImageUrl: "https://opengraph.githubassets.com/82f50c6752c63c92b5bbec4098c6eff69fdf4c1e6e6def63ccdd1c25f324d5c4/OathWallet/oath-wallet"
 promoted: true
 postedAt: "2026-11-01T23:05:53.666Z"
 ---

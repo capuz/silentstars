@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/waldur/waldur-homeport"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [93]
+languagePcts: [94]
 topics: ["self-service", "gui", "portal", "cloud", "react", "openstack", "dashboard", "waldur", "rancher"]
 stars: 32
 forks: 36
@@ -16,14 +16,14 @@ watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-06T12:57:32Z"
+lastCommitAt: "2026-11-07T08:50:50Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]
 healthScore: 86
 undervaluedScore: 73
 maintainers: ["livenson", "AmbientLighter", "DarinaKulyk"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8dd67ce5c1f0ab507da2ccbfb8086b34b51925a20ee5c802a13d7eeaa2517f5a/waldur/waldur-homeport"
+openGraphImageUrl: "https://opengraph.githubassets.com/0c3ebff9d556c83b8d0f7846149f9f393536cf99468b5a9e96a4a44b46cc6738/waldur/waldur-homeport"
 postedAt: "2026-11-03T11:22:36.120Z"
 ---
 

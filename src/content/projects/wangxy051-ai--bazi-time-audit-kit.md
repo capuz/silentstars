@@ -19,7 +19,7 @@ createdAt: "2026-10-26T14:22:50Z"
 lastCommitAt: "2026-10-26T14:24:20Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 76
+healthScore: 75
 undervaluedScore: 23
 maintainers: ["wangxy051-ai"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8d5ad0f0222f808036561f2f1edcc1ab3db293463bad912bac851395029caa24/wangxy051-ai/bazi-time-audit-kit"

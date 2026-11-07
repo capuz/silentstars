@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-05T00:58:41Z"
 lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 62
 maintainers: ["suirindo", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/906719e7ec1fcdfb8df3dda61fd0b40efbbbb3a311fe2bc2245752cfcce12020/suirindo/agent-role-contracts"

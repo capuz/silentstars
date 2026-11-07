@@ -9,22 +9,22 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["self-hosted", "s3", "security"]
-stars: 55
-forks: 2
+stars: 56
+forks: 4
 openIssues: 0
 closedIssues: 0
-watchers: 1
-contributors: 1
+watchers: 2
+contributors: 4
 recentReleases: 3
 createdAt: "2026-06-07T05:35:30Z"
-lastCommitAt: "2026-11-04T17:28:33Z"
+lastCommitAt: "2026-11-07T08:30:28Z"
 lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 71
-undervaluedScore: 33
-maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bcb4f40c9580ba4eaf79d3e7b986eb79b47c503c2a3cd80a5a1b3e433158a8bd/artabramov/hidden"
+healthScore: 82
+undervaluedScore: 39
+maintainers: ["artabramov", "notdepot", "chatsypatsy"]
+openGraphImageUrl: "https://opengraph.githubassets.com/2a921e50684a24255c4dbd79c2826926e6fd3c4d86d9eadbd84e64455e0440a7/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

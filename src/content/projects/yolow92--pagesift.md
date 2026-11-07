@@ -6,9 +6,9 @@ readmeQualityOk: true
 url: "https://github.com/YOLOW92/pagesift"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [84]
+languagePcts: [85]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 245
+stars: 248
 forks: 32
 openIssues: 0
 closedIssues: 2
@@ -16,20 +16,20 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-06T12:58:32Z"
+lastCommitAt: "2026-11-07T00:54:10Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
 undervaluedScore: 32
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/564cef167ab584f52505a77aa647313238f2c8f96f2589ffb2fb75b7dc42d4be/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/382064075e1294549896c0f62dad194c2b93367d42970b5e01cc9417f69094d3/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.1.3
+# pagesift 1.2.0
 
 **The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown or JSON out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.

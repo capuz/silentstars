@@ -11,13 +11,13 @@ languagePcts: [69, 27]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
 stars: 17
 forks: 11
-openIssues: 9
-closedIssues: 1199
+openIssues: 20
+closedIssues: 1208
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-11-06T08:16:59Z"
+lastCommitAt: "2026-11-07T08:48:06Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
@@ -33,24 +33,11 @@ A private, plugin-extensible desktop agent. It plans and remembers, and it gives
   to the CLI agents you already use, over the Agent Client Protocol. Your chats, memory and
   tasks stay in SQLite on your disk. No analytics, tracking or telemetry — <a href="./docs/explanation/network-egress.md">what it does call out to</a>.
 
-## Get it running
+## Why protoAgent?
 
-**What you need:** a Claude Pro/Max or ChatGPT Plus/Pro plan, an API key
-(OpenAI, OpenRouter, …), or a local model (Ollama / LM Studio).
-Or nothing, to just explore.
+Claude Code and Codex are good at writing code in a session. protoAgent is what sits around them:
 
-**[Download the desktop app](https://agent.protolabs.studio/download)** for macOS,
-Windows, or Linux.
-
-On first run, click **Next** on the welcome screen, connect and test a model (or
-choose **Explore without a model**), choose **Basic** and name your agent, then
-review your choices and click **Finish**.
-The [first-agent tutorial](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/tutorials/first-agent.md) covers installation,
-connection testing, and your first chat.
-
-macOS builds are **Apple Silicon only**. Windows and Linux builds are unsigned;
-expect an OS warning on first launch.
-
-### Run the Python package
-
-With [uv](https://docs.astral.sh/uv/) installed,…
+- **It uses the agents you already pay for.** It drives Claude Code, Codex, or any ACP-speaking CLI agent, so your Claude Pro/Max or ChatGPT Plus/Pro plan does the coding. [CLI coding agents →](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/guides/coding-agents.md)
+- **It remembers across sessions.** Memory, knowledge and tasks stay in SQLite on your disk, and you can inspect and correct what it remembers.
+- **It runs the work, not just the chat.** Schedules, watches and goals keep work moving. The Project Manager archetype takes a brief from board card to worktree, pull request, CI and merge. [Build with a coding agent →](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/guides/build-with-a-coding-agent.md)
+- **It…

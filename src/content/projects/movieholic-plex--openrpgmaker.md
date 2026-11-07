@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "Python"]
 languagePcts: [57, 28]
 topics: ["ai", "ai-assistant", "electron", "game-development", "game-engine", "gamedev", "jrpg", "level-editor", "phaser", "pixel-art"]
-stars: 6
+stars: 7
 forks: 1
 openIssues: 2
 closedIssues: 7
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-11-06T10:35:46Z"
+lastCommitAt: "2026-11-06T22:05:46Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 95
-undervaluedScore: 66
+undervaluedScore: 64
 maintainers: ["MovieHolic-Plex"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5849fddcb3d5f65176c4dc8f489a7a19196c4dcd6e654bc576767a0c43da6264/MovieHolic-Plex/OpenRPGMaker"
+openGraphImageUrl: "https://opengraph.githubassets.com/210537ae6a47fa9ab957ee2a7a8949395587e6db2668b1b360cdb1d79ef07836/MovieHolic-Plex/OpenRPGMaker"
 postedAt: "2026-10-30T10:31:15.033Z"
 ---
 

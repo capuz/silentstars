@@ -11,17 +11,17 @@ languagePcts: [64]
 topics: ["automation", "dotenv", "secrets", "ci-cd", "aws-ssm", "azure-keyvault", "configuration", "developer-tools", "github-actions", "secret-management"]
 stars: 138
 forks: 5
-openIssues: 24
+openIssues: 25
 closedIssues: 40
 watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-05T23:01:01Z"
+lastCommitAt: "2026-11-06T19:43:46Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
-tags: ["funded", "under_pressure"]
-healthScore: 91
+tags: ["solo_builder", "funded", "under_pressure"]
+healthScore: 92
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"

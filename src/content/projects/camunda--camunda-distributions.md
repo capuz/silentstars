@@ -8,7 +8,7 @@ homepage: "https://docs.camunda.io/docs/self-managed/about-self-managed"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [90]
-topics: ["camunda", "camunda-8", "hacktoberfest", "hacktoberfest2024"]
+topics: ["camunda", "camunda-8", "hacktoberfest", "hacktoberfest2024", "team-smx"]
 stars: 30
 forks: 23
 openIssues: 2
@@ -17,14 +17,14 @@ watchers: 6
 contributors: 60
 recentReleases: 3
 createdAt: "2024-09-12T15:02:30Z"
-lastCommitAt: "2026-11-06T13:05:00Z"
-lastReleaseAt: "2026-11-06T13:05:04Z"
+lastCommitAt: "2026-11-07T01:11:15Z"
+lastReleaseAt: "2026-11-06T20:11:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 75
-maintainers: ["renovate[bot]", "aabouzaid"]
-openGraphImageUrl: "https://opengraph.githubassets.com/376bc5d0c80db4473a7d65331c6074f5fa2bace794d5d4c4cb07a72c23b30be8/camunda/camunda-distributions"
+maintainers: ["renovate[bot]", "distro-ci[bot]", "aabouzaid"]
+openGraphImageUrl: "https://opengraph.githubassets.com/217227b8c4a5bd52d3b5cb666fae760db7d903f8aef8bb0b98b03f80a554124b/camunda/camunda-distributions"
 postedAt: "2026-08-28T15:40:10.930Z"
 ---
 

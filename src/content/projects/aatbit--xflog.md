@@ -6,24 +6,25 @@ readmeQualityOk: true
 url: "https://github.com/aatbit/xflog"
 language: "Python"
 languages: ["Python", "JavaScript"]
-languagePcts: [54, 30]
-stars: 0
+languagePcts: [53, 32]
+stars: 1
 forks: 0
 openIssues: 1
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 2
+recentReleases: 10
 createdAt: "2026-10-26T03:28:13Z"
-lastCommitAt: "2026-11-06T10:36:44Z"
-lastReleaseAt: "2026-11-06T10:38:56Z"
+lastCommitAt: "2026-11-06T22:59:21Z"
+lastReleaseAt: "2026-11-06T23:01:19Z"
 status: "newborn"
-tags: ["hidden_gem"]
-healthScore: 79
-undervaluedScore: 11
+tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
+healthScore: 80
+undervaluedScore: 22
 maintainers: ["aakashH242"]
-openGraphImageUrl: "https://opengraph.githubassets.com/5b5b0ed9c82f8f4d6ea8412007bf412549ab427bf2a7dc2d17c55d565ed2a504/aatbit/xflog"
+openGraphImageUrl: "https://opengraph.githubassets.com/a0923a9dfd3175cc34a8a168c1932ff0ce37a2e670603d78e4e0fbb6ddca6cf0/aatbit/xflog"
 promoted: true
+postedAt: "2026-11-06T13:31:27.351Z"
 ---
 
 **X** **F**ollower **Log** is an open-source, self-hosted X activity tracker. Keep a live history of follows, unfollows, paid subscriptions, likes, replies, mentions, quotes and reposts.

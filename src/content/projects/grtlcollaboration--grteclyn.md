@@ -20,7 +20,7 @@ createdAt: "2022-10-04T13:44:45Z"
 lastCommitAt: "2026-11-02T16:23:52Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 75
 maintainers: ["AreefW", "AdamG412", "mirenradia"]
 openGraphImageUrl: "https://opengraph.githubassets.com/91832de8000fd14ce2a4355f6aa369ff5103acbe9ec45205cca560340f3a9388/GRTLCollaboration/GRTeclyn"
