@@ -27,6 +27,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/81a133852cfccf9c17bf0826b
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/streamix"]
 discussionCount: 43
 promoted: true
+postedAt: "2026-11-07T14:03:06.871Z"
 ---
 
 # Getting started

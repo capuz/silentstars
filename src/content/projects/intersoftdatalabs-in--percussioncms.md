@@ -11,7 +11,7 @@ languagePcts: [54, 20]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
 stars: 6
 forks: 1
-openIssues: 42
+openIssues: 44
 closedIssues: 2370
 watchers: 0
 contributors: 16
