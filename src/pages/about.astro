@@ -4,7 +4,7 @@ const base = import.meta.env.BASE_URL;
 ---
 <Base
   title="About"
-  description="SilentStars tracks open source projects that are actively built but chronically undervalued. No hype. Just signal."
+  description="SilentStars tracks open source projects with recent commits and 500 stars or fewer, ranked by work shipped relative to attention."
   showMetricsFAQ
 >
   <div class="container section">
@@ -44,7 +44,7 @@ const base = import.meta.env.BASE_URL;
         <p>
           Projects are classified as <em>Thriving</em>, <em>Newborn</em>, <em>Quiet</em>, <em>At Risk</em>, <em>Watched</em>, <em>Revived</em>, or <em>Archived</em>.
           On top of that, each project receives behavioral <strong>tags</strong> — signals like <em>solo_builder</em>, <em>hidden_gem</em>, <em>fork_magnet</em>, or <em>funded</em> — that drive the home page sections.
-          Scores and tags are computed automatically. The directory leaves out companies' repos and anything over 500 stars, and projects submitted by their maintainers are shown separately for 30 days. The weekly notes are written by Claude from each project's commits and releases.
+          Scores and tags are computed automatically. The directory leaves out repos from a short list of large companies and anything over 500 stars, and projects submitted by their maintainers are shown separately for 30 days. The weekly notes are written by Claude from each project's commits and releases.
         </p>
         <a href={`${base}projects/`} class="about-link">→ See all projects</a>
       </section>
@@ -61,7 +61,7 @@ const base = import.meta.env.BASE_URL;
         </p>
         <p>
           If SilentStars surfaces a project that changes how you work or think about open source, consider
-          <a href="https://www.paypal.com/paypalme/fcapuz" target="_blank" rel="noopener">supporting it</a>.
+          <a href="https://www.paypal.com/donate/?hosted_button_id=US7WTVC7ZDW6Q" target="_blank" rel="noopener">supporting it</a>.
           Zero cost. Zero backend. Built with care.
         </p>
       </section>
@@ -78,7 +78,7 @@ const base = import.meta.env.BASE_URL;
 
     <div class="about-subscribe">
       <p class="eyebrow">// stay in the loop</p>
-      <p class="subscribe-desc">Weekly hidden gems — one digest, no noise.</p>
+      <p class="subscribe-desc">A weekly email is on the way. Leave your address and you'll get the first one. Until then, read <a href={`${base}weekly/`}>this week's edition</a>.</p>
       <form
         id="about-newsletter-form"
         action="https://buttondown.com/api/emails/embed-subscribe/silentstars"
@@ -200,6 +200,7 @@ const base = import.meta.env.BASE_URL;
     color: var(--text-muted);
     margin-bottom: 1rem;
   }
+  .subscribe-desc a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
   .subscribe-form {
     display: flex;
     gap: 0.5rem;

@@ -15,8 +15,8 @@ const base = import.meta.env.BASE_URL;
     <p class="wb-kicker"><span aria-hidden="true">🗞️</span> This week · Issue #{latest.issue} · {formatWeekRange(latest.week)}</p>
     <p class="wb-line">
       {n === 1
-        ? `We spotted it under the radar. Now it flies past ${GRAD_STARS} ★.`
-        : `We spotted them under the radar. Now ${n} fly past ${GRAD_STARS} ★.`}
+        ? `One project we listed has since passed ${GRAD_STARS} ★.`
+        : `${n} projects we listed have since passed ${GRAD_STARS} ★.`}
     </p>
     <p class="wb-sub">Find your project's star trail.</p>
     <span class="wb-cta">See the trails →</span>

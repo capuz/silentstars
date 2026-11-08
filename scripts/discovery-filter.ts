@@ -34,3 +34,21 @@ export function isExcludedOwner(fullName: string, excludeOwners: readonly string
 export function isListable(repo: string, stars: number, rules: ListingRules = CONFIG_RULES): boolean {
   return stars <= rules.maxStars && !isExcludedOwner(repo, rules.excludeOwners);
 }
+
+export interface ShownCandidate {
+  repo: string;
+  name: string;
+  stars: number;
+  status: string;
+  description: string;
+}
+
+/**
+ * What the home page and /submit/ count as "on the site": listable, not
+ * archived, and with a description that says more than the repo name.
+ */
+export function isShownOnSite(p: ShownCandidate, rules: ListingRules = CONFIG_RULES): boolean {
+  if (p.status === 'archived' || !isListable(p.repo, p.stars, rules)) return false;
+  const d = p.description.trim();
+  return d !== '' && d.toLowerCase() !== p.name.toLowerCase();
+}

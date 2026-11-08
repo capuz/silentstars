@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { isExcludedRepo, isListable } from './discovery-filter.ts';
+import { isExcludedRepo, isListable, isShownOnSite } from './discovery-filter.ts';
 
 test('excludes a listed repo regardless of case', () => {
   assert.equal(isExcludedRepo('capuz/silentstars', ['capuz/silentstars']), true);
@@ -39,4 +39,18 @@ test('isListable: defaults to data/discovery.config.json', () => {
   assert.equal(isListable('adobe/da-nx', 8), false);
   assert.equal(isListable('Orkas-AI/Orkas', 9034), false);
   assert.equal(isListable('someone/tool', 12), true);
+});
+
+const SHOWN = { repo: 'someone/tool', name: 'tool', stars: 12, status: 'thriving', description: 'A small tool.' };
+
+test('isShownOnSite: a listable project with a real description is shown', () => {
+  assert.equal(isShownOnSite(SHOWN, RULES), true);
+});
+
+test('isShownOnSite: archived, unlistable or description-less projects are hidden', () => {
+  assert.equal(isShownOnSite({ ...SHOWN, status: 'archived' }, RULES), false);
+  assert.equal(isShownOnSite({ ...SHOWN, stars: 501 }, RULES), false);
+  assert.equal(isShownOnSite({ ...SHOWN, repo: 'adobe/tool' }, RULES), false);
+  assert.equal(isShownOnSite({ ...SHOWN, description: '   ' }, RULES), false);
+  assert.equal(isShownOnSite({ ...SHOWN, description: ' Tool ' }, RULES), false);
 });

@@ -4,5 +4,5 @@
   "maxCandidatesPerNight": 250,
   "vitalityThreshold": 40,
   "excludeRepos": ["capuz/silentstars"],
-  "excludeOwners": ["adobe", "camunda", "eclipse-score", "microsoft", "salesforce", "shopify"]
+  "excludeOwners": ["adobe", "aliyun", "amazeeio", "automattic", "camunda", "coorpacademy", "docker", "eclipse-score", "microsoft", "rocm", "salesforce", "shopify", "tenstorrent"]
 }

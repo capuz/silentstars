@@ -2,11 +2,9 @@
 import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import { getCollection } from 'astro:content';
-import latestData from '../../data/latest.json';
-import { isListable } from '../../scripts/discovery-filter.ts';
+import { isListable, isShownOnSite } from '../../scripts/discovery-filter.ts';
 
 const ISSUE_URL = 'https://github.com/capuz/silentstars/issues/new?template=submit-project.yml';
-const projectCount = latestData.projects.length;
 const base = import.meta.env.BASE_URL;
 
 const SAMPLE_SLUGS = [
@@ -16,6 +14,7 @@ const SAMPLE_SLUGS = [
 ];
 
 const all = await getCollection('projects');
+const projectCount = all.filter(p => isShownOnSite(p.data)).length;
 const curated = SAMPLE_SLUGS
   .map(slug => all.find(p => p.slug === slug))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));

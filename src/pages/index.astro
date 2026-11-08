@@ -4,14 +4,10 @@ import Base from '../layouts/Base.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import WeeklyBanner from '../components/WeeklyBanner.astro';
 import { loadPosted } from '../../scripts/post-shared.ts';
-import { isListable } from '../../scripts/discovery-filter.ts';
+import { isShownOnSite } from '../../scripts/discovery-filter.ts';
 
 const all = await getCollection('projects');
-const visible = all.filter(p => {
-  if (p.data.status === 'archived' || !isListable(p.data.repo, p.data.stars)) return false;
-  const d = p.data.description.trim();
-  return d !== '' && d.toLowerCase() !== p.data.name.toLowerCase();
-});
+const visible = all.filter(p => isShownOnSite(p.data));
 
 // ── Deduplication ─────────────────────────────────────────────────────────────
 // Each project appears in at most one section (highest-priority wins).
@@ -150,8 +146,8 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
       <p class="hero-kicker">// open source is more than stars</p>
       <h1 class="hero-title">Not famous. Not abandoned. <span class="accent">Just building.</span></h1>
       <p class="hero-lede">
-        SilentStars tracks <strong>{totalProjects}</strong> open source projects that are actively built but chronically undervalued.
-        No hype. No trending algorithms. Just signal.
+        SilentStars tracks <strong>{totalProjects}</strong> open source projects with recent commits and 500 stars or fewer.
+        Ranked by how much work ships relative to the attention it gets, not by hype.
       </p>
       <div class="hero-actions">
         <a href={`${base}projects/`} class="btn btn-primary">Browse the directory →</a>
@@ -350,7 +346,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <div class="newsletter-inner">
       <div class="newsletter-copy">
         <p class="newsletter-label"><span class="mono-prefix">//</span> stay in the loop</p>
-        <p class="newsletter-desc">Weekly hidden gems — one digest, no noise.</p>
+        <p class="newsletter-desc">A weekly email is on the way. Leave your address and you'll get the first one. Until then, read <a href={`${base}weekly/`}>this week's edition</a>.</p>
       </div>
       <form
         id="newsletter-form"
@@ -535,6 +531,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     font-size: 0.95rem;
     color: var(--text-muted);
   }
+  .newsletter-desc a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
   .newsletter-form {
     display: flex;
     gap: 0.5rem;
