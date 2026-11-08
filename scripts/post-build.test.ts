@@ -132,6 +132,14 @@ test('a topic already present as a community tag is not repeated', () => {
   assert.ok(text.includes('#designtool'));
 });
 
+test('the activity line counts days from the real run time, like the card does', () => {
+  // Nightly cron runs at 03:37 UTC: 1.95 days since the commit is "yesterday" on the
+  // card, so the post must not round it up to "2 days ago" by anchoring at noon.
+  const active = { ...project, lastCommitAt: '2026-10-05T04:00:00Z', contributors: 1 };
+  const { text } = buildPost(active, BASE, 'Deploy apps.', { today: WEEKDAY, now: new Date('2026-10-07T03:37:00Z') });
+  assert.match(text, /One maintainer, updated yesterday\./);
+});
+
 test('the post opens with the project, followed by why it is here', () => {
   const active = { ...project, lastCommitAt: '2026-10-05T12:00:00Z', contributors: 1 };
   const { text } = buildPost(active, BASE, 'Deploy apps to your own servers.', { today: WEEKDAY });

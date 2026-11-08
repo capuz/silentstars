@@ -19,6 +19,9 @@ export function isSubmitCtaDay(today: string): boolean {
 
 export interface BuildPostOptions {
   today?: string;
+  // Instant the activity line counts from. Defaults to the real clock, which is what
+  // the card uses, so both say the same "updated N days ago".
+  now?: Date;
   // Repo owner's Bluesky account (from their GitHub social links) → "by @handle".
   owner?: BskyAccount | null;
   // Accepted community submission; submitter is credited when they have Bluesky.
@@ -63,7 +66,8 @@ export function buildPost(p: Project, baseUrl: string, pitch: string, opts: Buil
   const credit = !community ? null
     : submitter ? `${COMMUNITY_CREDIT}, submitted by @${submitter.handle}`
     : COMMUNITY_CREDIT;
-  const why    = whyLine(p, new Date(`${today}T12:00:00Z`));
+  const now    = opts.now ?? (opts.today ? new Date(`${today}T12:00:00Z`) : new Date());
+  const why    = whyLine(p, now);
   const details = [why, byLine, credit].filter((line): line is string => line !== null);
 
   const layout = (desc: string) => [
