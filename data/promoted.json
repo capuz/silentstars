@@ -174,5 +174,9 @@
   {
     "repo": "RishabhPande/memory-poison-lab",
     "until": "2026-12-07"
+  },
+  {
+    "repo": "TitanniOpen/SDrive",
+    "until": "2026-12-08"
   }
 ]
