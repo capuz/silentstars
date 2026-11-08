@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-07T05:55:47Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 64
 maintainers: ["SN-Abdullah-Al-Noman", "AlfCraft07"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1a4740ea5c44708976bc92441a1f77eac57217fa9315a20530366e483a150d07/SN-Abdullah-Al-Noman/QuantumROM"

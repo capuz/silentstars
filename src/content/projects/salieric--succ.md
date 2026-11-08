@@ -15,12 +15,12 @@ watchers: 3
 contributors: 13
 recentReleases: 0
 createdAt: "2022-02-08T14:15:47Z"
-lastCommitAt: "2026-09-25T11:54:29Z"
+lastCommitAt: "2026-11-08T05:47:42Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
-status: "quiet"
+status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 79
-undervaluedScore: 56
+healthScore: 95
+undervaluedScore: 59
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"
 fundingLinks: ["KO_FI:https://ko-fi.com/SalieriC"]

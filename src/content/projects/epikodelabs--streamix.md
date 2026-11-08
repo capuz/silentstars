@@ -15,17 +15,18 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 0
+recentReleases: 1
 createdAt: "2026-06-02T16:48:08Z"
 lastCommitAt: "2026-11-06T14:13:37Z"
+lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "community_hub"]
 healthScore: 79
-undervaluedScore: 52
+undervaluedScore: 55
 maintainers: ["oleksii-shepel", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/81a133852cfccf9c17bf0826b1a11b0a792a1d78f3ca6956540e42bee093fac2/epikodelabs/streamix"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/streamix"]
-discussionCount: 43
+discussionCount: 44
 promoted: true
 postedAt: "2026-11-07T14:03:06.871Z"
 ---

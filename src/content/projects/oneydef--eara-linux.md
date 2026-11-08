@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [96]
 topics: ["anc", "bluetooth", "bluez", "cmf", "earbuds", "flatpak", "gnome", "gtk4", "libadwaita", "linux"]
-stars: 20
+stars: 21
 forks: 2
 openIssues: 2
 closedIssues: 1
@@ -24,7 +24,7 @@ tags: ["hidden_gem", "funded", "release_machine"]
 healthScore: 81
 undervaluedScore: 46
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/83360b5d90cbd33a588c3733f048fccc78f59adcbc3e1e37b867c231c6f849d2/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/f9c4e354d893f0253d88af01c047ef02264b48576aee62f2b1d6417c3ac2b6dc/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true

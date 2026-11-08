@@ -11,7 +11,7 @@ languagePcts: [66, 30]
 topics: ["container-optimization", "containers", "devops", "devops-tools", "docker", "docker-extension", "docker-extensions", "dockerfile", "dockerfiles", "finops"]
 stars: 0
 forks: 0
-openIssues: 5
+openIssues: 8
 closedIssues: 0
 watchers: 0
 contributors: 1

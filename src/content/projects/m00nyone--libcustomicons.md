@@ -9,7 +9,7 @@ language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
 stars: 7
-forks: 125
+forks: 126
 openIssues: 0
 closedIssues: 2
 watchers: 3

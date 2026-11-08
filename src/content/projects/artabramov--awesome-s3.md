@@ -12,13 +12,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-11-07T14:27:15Z"
-lastCommitAt: "2026-11-07T17:30:10Z"
+lastCommitAt: "2026-11-08T04:51:17Z"
 status: "newborn"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 14
+undervaluedScore: 15
 maintainers: ["artabramov"]
-openGraphImageUrl: "https://opengraph.githubassets.com/57c84a24f4b4c44b773e2cfedc9473206228ca7f48ea4323a182f2bd0e8ce576/artabramov/awesome-s3"
+openGraphImageUrl: "https://opengraph.githubassets.com/b262abe945c9402d6f15cc27ab37142f202eddf33259cbb975f58cf6d5a90786/artabramov/awesome-s3"
 promoted: true
 postedAt: "2026-11-07T16:20:05.395Z"
 ---
@@ -34,14 +34,14 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](https://github.com
 
 ## Table of contents
 
-- [Storage clients & tools](#storage-clients--tools) `20`
-- [Proxies & gateways](#proxies--gateways) `8`
-- [Backup, recovery & synchronization](#backup-recovery--synchronization) `11`
-- [Development & integrations](#development--integrations) `27`
-- [Security & testing](#security--testing) `13`
-- [Automation & deployment](#automation--deployment) `9`
-- [S3-compatible storage servers](#s3-compatible-storage-servers) `4`
-- [Data processing & monitoring](#data-processing--monitoring) `4`
+- [Storage clients & tools](#storage-clients--tools) `35`
+- [Proxies & gateways](#proxies--gateways) `11`
+- [Backup, recovery & synchronization](#backup-recovery--synchronization) `19`
+- [Development & integrations](#development--integrations) `47`
+- [Security & testing](#security--testing) `17`
+- [Automation & deployment](#automation--deployment) `12`
+- [S3-compatible storage servers](#s3-compatible-storage-servers) `5`
+- [Data processing & monitoring](#data-processing--monitoring) `5`
 - [Documentation & references](#documentation--references) `1`
 
 

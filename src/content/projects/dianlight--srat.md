@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-07T17:35:16Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["renovate[bot]", "github-actions[bot]", "dianlight"]
 openGraphImageUrl: "https://opengraph.githubassets.com/587d6578f1050e22feda4389cff6d784729eafe0dec6ecaff6f75fe0c9bf84d4/dianlight/srat"

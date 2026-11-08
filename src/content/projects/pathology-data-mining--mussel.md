@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-02T20:13:08Z"
 lastReleaseAt: "2026-05-04T21:26:21Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 71
 maintainers: ["raylim"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8ec93c0eb09730c64b55ed80bf21ba2ea296babb6489f46206415e7aaa214840/pathology-data-mining/Mussel"

@@ -18,7 +18,7 @@ contributors: 3
 recentReleases: 0
 createdAt: "2022-12-18T09:37:43Z"
 lastCommitAt: "2026-10-25T03:26:30Z"
-status: "thriving"
+status: "quiet"
 tags: []
 healthScore: 78
 undervaluedScore: 71

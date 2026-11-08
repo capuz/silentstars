@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-07T17:13:11Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 66
-undervaluedScore: 58
+undervaluedScore: 59
 maintainers: ["anondotli"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b7a828bea825aaa0258f8eae284e8677ae54e2a61cf88c10b51b1368b26176f0/anondotli/anon.li"
 promoted: true

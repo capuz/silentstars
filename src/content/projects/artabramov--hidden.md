@@ -17,14 +17,14 @@ watchers: 2
 contributors: 4
 recentReleases: 3
 createdAt: "2026-06-07T05:35:30Z"
-lastCommitAt: "2026-11-07T08:30:28Z"
+lastCommitAt: "2026-11-08T05:02:33Z"
 lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 82
 undervaluedScore: 39
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2a921e50684a24255c4dbd79c2826926e6fd3c4d86d9eadbd84e64455e0440a7/artabramov/hidden"
+openGraphImageUrl: "https://opengraph.githubassets.com/a5335a7e40238929751391ae1e323ce7ac2bc4976bc25c5be311401560fe3251/artabramov/hidden"
 promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---

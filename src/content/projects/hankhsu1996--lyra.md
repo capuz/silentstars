@@ -11,18 +11,18 @@ topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda
 stars: 6
 forks: 1
 openIssues: 374
-closedIssues: 100
+closedIssues: 103
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-11-07T18:14:46Z"
+lastCommitAt: "2026-11-08T09:17:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 84
 undervaluedScore: 67
 maintainers: ["hankhsu1996"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c8e0cd2cd5db6cb8f36dfcd85459a3c05dfaf6deae95392db22d860c9d19c7d2/hankhsu1996/lyra"
+openGraphImageUrl: "https://opengraph.githubassets.com/a51d60a5b57238b108057ee797936c5041cb0937d07d5d32143b22e070609295/hankhsu1996/lyra"
 discussionCount: 0
 postedAt: "2026-10-09T10:56:38.881Z"
 ---

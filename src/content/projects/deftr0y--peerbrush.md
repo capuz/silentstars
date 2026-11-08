@@ -8,7 +8,7 @@ homepage: "https://peerbrush.com/"
 language: "Rust"
 languages: ["Rust"]
 languagePcts: [85]
-stars: 11
+stars: 12
 forks: 0
 openIssues: 1
 closedIssues: 0
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-11-05T18:59:50Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 77
-undervaluedScore: 45
+undervaluedScore: 44
 maintainers: ["Deftr0y"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7eb1fce1c16fc40367fc2c8bf2824b8068f52fafbb8703541528fdecd2337bdc/Deftr0y/PeerBrush"
+openGraphImageUrl: "https://opengraph.githubassets.com/0f449d9fca7d139f69797aef9c57cbc227dbf55d90b22981c757672da84f8aec/Deftr0y/PeerBrush"
 promoted: true
 postedAt: "2026-11-06T12:25:37.144Z"
 ---

@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-05T18:54:14Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 77
 maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/44974fa38aea43c4d9023b00fb464adfb345c05b0193b27b4a351e343919bc0f/immich-app/static-pages"
