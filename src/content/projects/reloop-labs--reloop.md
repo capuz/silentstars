@@ -24,7 +24,7 @@ tags: ["funded"]
 healthScore: 96
 undervaluedScore: 45
 maintainers: ["pranavp10", "twinkalp10", "alfarhans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0cfb4205f14113b3170255cba20449d791060056e4c510a25a45268a864d449e/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/948fa00158e50fffc81e5cb79104692240b3701e54d04b6edf7fc35f3b23ac31/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"

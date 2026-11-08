@@ -17,13 +17,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-08-20T08:53:44Z"
-lastCommitAt: "2026-11-08T10:28:00Z"
+lastCommitAt: "2026-11-08T13:32:36Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 78
 maintainers: ["Ian-Lusule"]
-openGraphImageUrl: "https://opengraph.githubassets.com/436ccae0b7c9991af3e472b25acd03bb30f3fe0f0190767ff737c90229a491b4/Ian-Lusule/Proxies-GUI"
+openGraphImageUrl: "https://opengraph.githubassets.com/138aabb0b353bb03f16ae96f42342acf0b16d3c70c57df1c4b8051142b89b1aa/Ian-Lusule/Proxies-GUI"
 postedAt: "2026-08-25T04:14:18.099Z"
 ---
 

@@ -7,7 +7,7 @@ url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [60, 29]
+languagePcts: [61, 28]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
 stars: 3
 forks: 2
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-08T08:33:38Z"
+lastCommitAt: "2026-11-08T13:47:20Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -34,6 +34,6 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 2.85.0, [Meetings, phone helper, her at work](https://github.com/farena-ai/sara/releases/tag/v2.85.0). Meeting notes with action items, your phone's camera or location on request, a work profile for Slack and Teams, parallel replies. [See what changed](#whats-new)
+> **Status:** 2.87.0, [Workers, spend control, safer updates](https://github.com/farena-ai/sara/releases/tag/v2.87.0). Bring your companion over, prices and limits before paid steps, updates that roll back, workers that stay, device approval. [See what changed](#whats-new)
 >
 > Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified…

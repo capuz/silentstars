@@ -17,13 +17,13 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-12-23T16:14:25Z"
-lastCommitAt: "2026-11-07T17:13:11Z"
+lastCommitAt: "2026-11-08T11:27:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 66
-undervaluedScore: 59
+undervaluedScore: 64
 maintainers: ["anondotli"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b7a828bea825aaa0258f8eae284e8677ae54e2a61cf88c10b51b1368b26176f0/anondotli/anon.li"
+openGraphImageUrl: "https://opengraph.githubassets.com/6e76f933dc206b97c1408b1e888f72f623b252e411ed042645434ef8f9d062de/anondotli/anon.li"
 promoted: true
 postedAt: "2026-11-07T09:38:25.611Z"
 ---

@@ -15,13 +15,13 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-11-08T10:22:56Z"
+lastCommitAt: "2026-11-08T14:06:08Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 95
 maintainers: ["punk6529"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bb666aadcbdc8183fb65829693be5b1cb780203d543674948573ca0c496de41d/6529-Collections/6529seize-backend"
+openGraphImageUrl: "https://opengraph.githubassets.com/037d0aef502b26a8cc3e620a1b3acdaba30ec8c8134f441a94254b1d3d2e2fbd/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 

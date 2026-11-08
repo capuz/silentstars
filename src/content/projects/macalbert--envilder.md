@@ -11,7 +11,7 @@ languagePcts: [64]
 topics: ["automation", "dotenv", "secrets", "ci-cd", "aws-ssm", "azure-keyvault", "configuration", "developer-tools", "github-actions", "secret-management"]
 stars: 138
 forks: 5
-openIssues: 25
+openIssues: 26
 closedIssues: 40
 watchers: 3
 contributors: 2

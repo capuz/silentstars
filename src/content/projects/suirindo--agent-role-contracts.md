@@ -24,7 +24,7 @@ tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_ma
 healthScore: 90
 undervaluedScore: 62
 maintainers: ["suirindo", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1d999a83f8aec4bd30185c855414e15a4c93c16e45524123e84aafba48bafee0/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/bc4284468a594ca56973ea4a7a2ba5ff33a84b1cf02bac67ad3dbd1b37724bfc/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"

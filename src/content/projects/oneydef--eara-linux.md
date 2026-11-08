@@ -7,7 +7,7 @@ url: "https://github.com/oneydef/EarA-linux"
 homepage: "https://oneydef.github.io/EarA-linux/"
 language: "Python"
 languages: ["Python"]
-languagePcts: [96]
+languagePcts: [95]
 topics: ["anc", "bluetooth", "bluez", "cmf", "earbuds", "flatpak", "gnome", "gtk4", "libadwaita", "linux"]
 stars: 21
 forks: 2
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 3
 recentReleases: 9
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-06T08:54:00Z"
+lastCommitAt: "2026-11-08T13:03:54Z"
 lastReleaseAt: "2026-11-01T15:37:22Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "release_machine"]
-healthScore: 81
+healthScore: 82
 undervaluedScore: 46
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f9c4e354d893f0253d88af01c047ef02264b48576aee62f2b1d6417c3ac2b6dc/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/545a9ac260f899aae9e1bcee8b415993dfb0726de65acf71d339717b431e0371/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
 discussionCount: 0
 promoted: true
