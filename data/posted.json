@@ -2532,5 +2532,16 @@
         "postedAt": "2026-11-07T22:58:48.052Z"
       }
     }
+  },
+  {
+    "repo": "carrick-tools/carrick",
+    "slug": "carrick-tools--carrick",
+    "postedAt": "2026-11-08T10:50:02.108Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzsahqxdex2o",
+        "postedAt": "2026-11-08T10:50:02.108Z"
+      }
+    }
   }
 ]
