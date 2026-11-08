@@ -32,10 +32,11 @@ let   ISSUE_AUTHOR     = process.env.ISSUE_AUTHOR_LOGIN ?? '';
 const REPO_OWNER       = process.env.REPO_OWNER ?? '';
 const REPO_NAME_GH     = process.env.REPO_NAME ?? '';
 
-// A repo this young with zero stars/forks has no external signal at all —
-// park it in standby instead of auto-rejecting (SilentStars exists to
-// surface legitimate 0-star projects, so 0 stars alone must never reject).
-const NEW_REPO_DAYS = 7;
+// A repo nobody but its owner has starred has no external signal — park it in
+// standby instead of auto-rejecting (SilentStars exists to surface legitimate
+// 0-star projects, so 0 stars alone must never reject). Forks and the repo's
+// age don't count: issue #70 got in on a mass-forker's fork a day after the
+// old 7-day window closed.
 
 // Same star ceiling as automatic discovery: past it a project has already been noticed.
 const discoveryConfigPath = resolve(ROOT, 'data/discovery.config.json');
@@ -308,7 +309,7 @@ async function handleStandby(repo: string, slug: string, projectName: string, re
   const until = findEntry(entries, repo)!.until;
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** passes the automated criteria, but ${reason}.\n\nSo it's going on **standby** instead of live right away: we check it every day, and as soon as someone other than you stars or forks the repo, this issue reopens on its own, the card goes live and it gets its 🦋 Bluesky post. The standby lasts until **${until}** — after that it's dropped from the queue and you're welcome to resubmit.\n\nClosing this for now — no need to do anything else. ⭐`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\n**${projectName}** passes the automated criteria, but ${reason}.\n\nSo it's going on **standby** instead of live right away: we check it every day, and as soon as someone other than you stars the repo, this issue reopens on its own, the card goes live and it gets its 🦋 Bluesky post. The standby lasts until **${until}** — after that it's dropped from the queue and you're welcome to resubmit.\n\nClosing this for now — no need to do anything else. ⭐`,
   );
   await labelIssue(['standby']);
   await closeIssue('not_planned');
@@ -436,24 +437,23 @@ async function main() {
     );
   }
 
-  // Already parked: it only goes live once someone other than the owner stars
-  // or forks it — getting older alone is not signal.
-  if (findEntry(readStandby(), repo)) {
-    if (!hasExternalSignal(repo, await fetchSignal(repo, token))) {
+  // It only goes live once someone other than the owner has starred it, new
+  // submission or already parked alike — getting older alone is not signal.
+  const parked = findEntry(readStandby(), repo);
+  if (!hasExternalSignal(repo, await fetchSignal(repo, token))) {
+    if (parked) {
       setOutput('status', 'still_standby');
       setOutput('repo', repo);
       console.log(`${repo} still has no external signal — staying on standby.`);
       return;
     }
+    return handleStandby(repo, slug, ghRepo.name,
+      'nobody other than you has starred it yet, and a star from someone else is the signal we wait for',
+    );
+  }
+  if (parked) {
     await reopenIssue();
     await unlabelIssue('standby');
-  } else {
-    const daysSinceRepoCreated = (Date.now() - new Date(ghRepo.created_at).getTime()) / 86_400_000;
-    if (daysSinceRepoCreated < NEW_REPO_DAYS && ghRepo.stargazers_count === 0 && ghRepo.forks_count === 0) {
-      return handleStandby(repo, slug, ghRepo.name,
-        `the repo was created ${Math.round(daysSinceRepoCreated)} day(s) ago with 0 stars and 0 forks — no external signal yet to weigh against the submission`,
-      );
-    }
   }
 
   // All checks passed

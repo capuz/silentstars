@@ -2,7 +2,7 @@ name: Standby recheck
 
 # Daily pass over data/standby.json: drops submissions whose 90-day standby
 # expired and re-dispatches process-submission.yml for those that gained a
-# star/fork from someone other than the owner (see scripts/standby.ts).
+# star from someone other than the owner (see scripts/standby.ts).
 
 on:
   schedule:

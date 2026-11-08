@@ -2,7 +2,7 @@
  * standby-recheck.ts — daily pass over data/standby.json
  *
  * Expired entries (past `until`) are dropped; their issue was already closed
- * when they were parked, so it is left alone. Entries that gained a star/fork
+ * when they were parked, so it is left alone. Entries that gained a star
  * from someone other than the owner are handed back to process-submission.yml
  * (workflow_dispatch), which reopens the issue, publishes and closes it — the
  * accept/reject decision lives only there.

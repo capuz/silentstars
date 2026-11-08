@@ -37,15 +37,19 @@ test('isExpired is false inside the window and true once until has passed', () =
   assert.equal(isExpired(e, new Date('2027-03-01T00:00:00Z')), true);
 });
 
-test('hasExternalSignal ignores the owner starring or forking their own repo', () => {
-  assert.equal(hasExternalSignal('owner/repo', { stars: 0, ownerStarred: false, forkOwners: [] }), false);
-  assert.equal(hasExternalSignal('owner/repo', { stars: 1, ownerStarred: true, forkOwners: ['Owner'] }), false);
+test('hasExternalSignal ignores the owner starring their own repo', () => {
+  assert.equal(hasExternalSignal('owner/repo', { stars: 0, ownerStarred: false }), false);
+  assert.equal(hasExternalSignal('owner/repo', { stars: 1, ownerStarred: true }), false);
 });
 
-test('hasExternalSignal is true for a star or a fork from someone else', () => {
-  assert.equal(hasExternalSignal('owner/repo', { stars: 1, ownerStarred: false, forkOwners: [] }), true);
-  assert.equal(hasExternalSignal('owner/repo', { stars: 2, ownerStarred: true, forkOwners: [] }), true);
-  assert.equal(hasExternalSignal('owner/repo', { stars: 0, ownerStarred: false, forkOwners: ['bob'] }), true);
+test('hasExternalSignal is true for a star from someone else', () => {
+  assert.equal(hasExternalSignal('owner/repo', { stars: 1, ownerStarred: false }), true);
+  assert.equal(hasExternalSignal('owner/repo', { stars: 2, ownerStarred: true }), true);
+});
+
+test('hasExternalSignal does not count forks: mass-forking accounts are not interest', () => {
+  const forkedOnly = { stars: 0, ownerStarred: false, forkOwners: ['Vamsi-2581'] } as Parameters<typeof hasExternalSignal>[1];
+  assert.equal(hasExternalSignal('owner/repo', forkedOnly), false);
 });
 
 test('readStandby/writeStandby round-trip, missing file reads as empty', () => {

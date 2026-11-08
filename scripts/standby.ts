@@ -1,11 +1,13 @@
 /**
  * standby.ts — submissions on hold until they show external signal
  *
- * A submission with no external signal (brand-new repo, 0 stars, 0 forks) is
- * parked in data/standby.json for STANDBY_DAYS and its issue is closed. The
- * daily standby-recheck workflow re-dispatches process-submission for any
- * entry that gains a star/fork from someone other than the owner (the issue
- * is reopened, published and closed again); entries past `until` are dropped.
+ * A submission with no external signal (no star from anyone but the owner,
+ * whatever the repo's age) is parked in data/standby.json for STANDBY_DAYS and
+ * its issue is closed. The daily standby-recheck workflow re-dispatches
+ * process-submission for any entry that gains a star from someone other than
+ * the owner (the issue is reopened, published and closed again); entries past
+ * `until` are dropped. Forks don't count: mass-forking accounts fork new repos
+ * within minutes, so a fork says nothing about interest.
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -55,14 +57,11 @@ export function isExpired(entry: StandbyEntry, now: Date): boolean {
 export interface Signal {
   stars: number;
   ownerStarred: boolean;
-  forkOwners: string[];
 }
 
-/** True once anyone other than the repo owner has starred or forked it. */
-export function hasExternalSignal(repo: string, signal: Signal): boolean {
-  const owner = repo.split('/')[0] ?? '';
-  const externalStars = signal.stars - (signal.ownerStarred ? 1 : 0);
-  return externalStars > 0 || signal.forkOwners.some(login => !same(login, owner));
+/** True once anyone other than the repo owner has starred it. */
+export function hasExternalSignal(_repo: string, signal: Signal): boolean {
+  return signal.stars - (signal.ownerStarred ? 1 : 0) > 0;
 }
 
 // GitHub no longer lists a repo's stargazers to anyone but its owner (404), so
@@ -82,10 +81,7 @@ export async function fetchSignal(repo: string, token: string): Promise<Signal> 
     return res.json() as Promise<T>;
   };
   const owner = repo.split('/')[0] ?? '';
-  const [meta, forks] = await Promise.all([
-    get<{ stargazers_count: number }>(`repos/${repo}`),
-    get<Array<{ owner: { login: string } }>>(`repos/${repo}/forks?per_page=100`),
-  ]);
+  const meta = await get<{ stargazers_count: number }>(`repos/${repo}`);
   let ownerStarred = false;
   if (meta.stargazers_count > 0) {
     for (let page = 1; page <= OWNER_STARRED_PAGES && !ownerStarred; page++) {
@@ -94,5 +90,5 @@ export async function fetchSignal(repo: string, token: string): Promise<Signal> 
       if (starred.length < 100) break;
     }
   }
-  return { stars: meta.stargazers_count, ownerStarred, forkOwners: forks.map(f => f.owner.login) };
+  return { stars: meta.stargazers_count, ownerStarred };
 }
