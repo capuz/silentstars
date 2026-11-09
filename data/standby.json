@@ -16,5 +16,11 @@
     "issue": 54,
     "since": "2026-11-02",
     "until": "2027-01-31"
+  },
+  {
+    "repo": "DRA3V50/Technical-Operations-Support-System",
+    "issue": 74,
+    "since": "2026-11-09",
+    "until": "2027-02-07"
   }
 ]
