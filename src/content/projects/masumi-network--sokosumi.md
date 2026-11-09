@@ -16,14 +16,14 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-09T03:51:21Z"
+lastCommitAt: "2026-11-09T10:55:03Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 88
 maintainers: ["PatrickTobler", "mrosberghaus", "enjojoy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b523feca7880f012eba42557420a1f1268aa0f6cd78bfddb7db98f9051dbe35f/masumi-network/sokosumi"
+openGraphImageUrl: "https://opengraph.githubassets.com/c68cb4cfb5532e11c5bdde1198369352af9c67286bcdda3e57029ad88a971900/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
 
@@ -31,7 +31,7 @@ postedAt: "2026-09-06T08:08:53.944Z"
 
 Sokosumi is a marketplace platform. This monorepo is the web app, the Core API, native Apple apps, the developer CLI, and shared packages.
 
-Sokosumi Social supports connecting, scheduling, and publishing on X, YouTube, LinkedIn, Instagram, and Facebook in every workspace. TikTok and other platforms remain Coming soon. Ads remains `utxo`-only. See the [Social API notes](https://github.com/masumi-network/sokosumi/blob/HEAD/docs/coworker/social-posts-api.md) for publishing rules and access.
+Sokosumi Social supports connecting, scheduling, and publishing on X, YouTube, LinkedIn, Instagram, and Facebook in every workspace. TikTok and other platforms remain Coming soon. Ads is open in every workspace. See the [Social API notes](https://github.com/masumi-network/sokosumi/blob/HEAD/docs/coworker/social-posts-api.md) for publishing rules and access.
 
 ## Project Structure
 

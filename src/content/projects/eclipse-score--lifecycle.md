@@ -16,14 +16,14 @@ watchers: 1
 contributors: 57
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-06T17:00:02Z"
+lastCommitAt: "2026-11-09T09:09:02Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 97
 maintainers: ["NicolasFussberger", "eclipse-score-bot", "cameron-craig-etas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/842e71aacad8d2f0f00c365be9812f3e602de9789e2212fd3c90c94fa2b4a2fb/eclipse-score/lifecycle"
+openGraphImageUrl: "https://opengraph.githubassets.com/5543e73b93ae373f33b0cdef50ec89846b6260a1fbc1060a0c706be841af1ffd/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---
 

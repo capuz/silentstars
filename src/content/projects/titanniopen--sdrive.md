@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-03T20:23:00Z"
 lastReleaseAt: "2026-11-03T21:39:03Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 78
+healthScore: 77
 undervaluedScore: 49
 maintainers: ["anderbytes"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436381970/7a05b60d-de1e-427b-be5c-c8c2e64ba752"

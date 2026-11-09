@@ -17,10 +17,10 @@ watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-08T23:27:22Z"
+lastCommitAt: "2026-11-09T09:24:05Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
-tags: ["solo_builder", "funded", "under_pressure"]
+tags: ["funded", "under_pressure"]
 healthScore: 92
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]

@@ -11,7 +11,7 @@ topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda
 stars: 6
 forks: 1
 openIssues: 373
-closedIssues: 104
+closedIssues: 105
 watchers: 1
 contributors: 4
 recentReleases: 0

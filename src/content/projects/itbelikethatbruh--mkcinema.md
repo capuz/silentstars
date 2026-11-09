@@ -9,7 +9,7 @@ language: "HTML"
 languages: ["HTML"]
 languagePcts: [82]
 topics: ["android-tv", "pwa", "streaming", "anime", "family", "fire-tv", "free", "home-cinema", "iptv", "live-tv"]
-stars: 20
+stars: 22
 forks: 2
 openIssues: 0
 closedIssues: 2
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-11-08T03:00:10Z"
 status: "newborn"
 tags: ["hidden_gem", "funded", "release_machine"]
 healthScore: 100
-undervaluedScore: 56
+undervaluedScore: 54
 maintainers: ["claude", "itbelikethatbruh"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6fdb58849e3402a71cc501644d9769e5cc8d066e50f26928581927ab9a015177/itbelikethatbruh/MKCinema"
+openGraphImageUrl: "https://opengraph.githubassets.com/819585ce160e4169a0c727249439477a9a53daaa67ccdb43f157fd5621ff81b3/itbelikethatbruh/MKCinema"
 fundingLinks: ["KO_FI:https://ko-fi.com/mkcinema"]
 promoted: true
 ---

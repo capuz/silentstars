@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-07T01:11:15Z"
 lastReleaseAt: "2026-11-06T20:11:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "distro-ci[bot]", "aabouzaid"]
 openGraphImageUrl: "https://opengraph.githubassets.com/22b4ee636c72f253388fdfd234140be834d0cfb57cd520fcfda5115040db4203/camunda/camunda-distributions"

@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [97]
 topics: ["audio", "audio-processing", "vscode", "vscode-extension", "audio-analysis", "kaldi", "pcm", "remote-development", "spectrogram", "speech-processing"]
-stars: 73
+stars: 75
 forks: 13
 openIssues: 3
 closedIssues: 9
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 64
 undervaluedScore: 26
 maintainers: ["SimZhou", "a5632645", "penguinway"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4d3f801b0083b693ad7bb0244dcef34131b829eb73406e77c799003bab22662f/SimZhou/vscode-audiolens"
+openGraphImageUrl: "https://opengraph.githubassets.com/398f7a991beac403847c74e2e240c78e480972a08f175e405938d353137daa57/SimZhou/vscode-audiolens"
 promoted: true
 postedAt: "2026-11-02T15:25:23.833Z"
 ---

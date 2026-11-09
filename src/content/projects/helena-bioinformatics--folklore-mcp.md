@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-06T11:40:50Z"
 lastReleaseAt: "2026-10-30T19:59:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 75
+healthScore: 74
 undervaluedScore: 56
 maintainers: ["vladimir-mitev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3e1984821d6f59d077bd9b32f53a0e3811e7e8f620f2c8eabfa14ad129b32545/helena-bioinformatics/folklore-mcp"
