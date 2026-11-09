@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-06T10:51:24Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 84
 maintainers: ["mstomar125", "malibio"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d6e644ddbf8118d50083c4be791464bafc4653d7cfa7cefa5fe9276887e73cc5/NodeSpaceAI/nodespace-core"

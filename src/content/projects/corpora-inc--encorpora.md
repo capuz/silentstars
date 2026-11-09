@@ -10,7 +10,7 @@ languagePcts: [78]
 stars: 5
 forks: 3
 openIssues: 176
-closedIssues: 400
+closedIssues: 401
 watchers: 2
 contributors: 6
 recentReleases: 0

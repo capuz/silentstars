@@ -4,6 +4,7 @@ name: "dachshund"
 description: "An embedded, real-time hostable admin dashboard for any Python service"
 readmeQualityOk: true
 url: "https://github.com/PenguinBoi12/dachshund"
+homepage: "http://dachshund.pboi.dev/"
 language: "Python"
 languages: ["Python"]
 languagePcts: [87]
@@ -13,17 +14,18 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 2
+recentReleases: 3
 createdAt: "2026-08-11T15:25:15Z"
-lastCommitAt: "2026-11-08T07:09:47Z"
-lastReleaseAt: "2026-11-08T07:00:44Z"
+lastCommitAt: "2026-11-09T01:52:13Z"
+lastReleaseAt: "2026-11-09T01:53:31Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 90
-undervaluedScore: 17
+healthScore: 65
+undervaluedScore: 27
 maintainers: ["PenguinBoi12"]
-openGraphImageUrl: "https://opengraph.githubassets.com/75d75c174b4735a8e448d9431a88b17e46894cfe19a897aacec99eeaaac88165/PenguinBoi12/dachshund"
+openGraphImageUrl: "https://opengraph.githubassets.com/770c7604ecf1ee077ab85e67926c7ef95e625d48c19d59f516fced34afbb7228/PenguinBoi12/dachshund"
 promoted: true
+postedAt: "2026-11-09T01:00:43.749Z"
 ---
 
 # Dachshund
@@ -49,11 +51,9 @@ Dachshund runs as a thread inside your web app, bot, worker or daemon. There's n
 **Requirements:** Python 3.12 or higher
 
 ```bash
-pip install --pre dachshund
+pip install dachshund
 ```
-
-`--pre` is needed while dachshund is in beta; pip skips pre-releases otherwise.
 
 #### 2- Start the dashboard
 
-Call `init()` once, when your…
+Call `init()` once, when your application starts. The dashboard runs on a background thread for as long as your process…
