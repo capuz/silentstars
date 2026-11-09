@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-07T10:36:23Z"
 lastReleaseAt: "2025-12-07T17:04:33Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 69
 maintainers: ["dependabot[bot]", "mfvanek"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b8a3bdb3f6e049c1f6707cec6311e369ee47450570103697d04af27370bcf760/mfvanek/salary-calc"

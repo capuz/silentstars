@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-09T03:34:09.795Z",
+  "checkedAt": "2026-11-09T04:38:26.454Z",
   "stars": {
-    "0sec-labs/0sec": 657,
-    "AgnesAI-Labs/agnes-harness": 2004,
+    "0sec-labs/0sec": 684,
+    "AgnesAI-Labs/agnes-harness": 2006,
     "autonomous-ai/autonomous-os": 552,
     "callstackincubator/simlock": 625,
     "cortex-docs/cortex": 3294,
@@ -12,11 +12,11 @@
     "hajisensai/hibiki": 813,
     "KunoLu/640-skills": 557,
     "LivXue/dsh-plugin-shop": 662,
-    "misakano7545/workbuddy2api-panel": 990,
+    "misakano7545/workbuddy2api-panel": 994,
     "OluOlus/ops-agent-controller": 605,
-    "poco-ai/Agentero": 2072,
-    "smartdoca/doca": 553,
-    "webbrain-one/webbrain": 1680,
+    "poco-ai/Agentero": 2083,
+    "smartdoca/doca": 554,
+    "webbrain-one/webbrain": 1681,
     "wuyoscar/AISafetyHot-Hub": 2115
   }
 }

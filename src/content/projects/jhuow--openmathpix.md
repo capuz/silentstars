@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 78
 undervaluedScore: 20
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b1c41d69efb19577ef7acf25366248e7b14a868a4f3616951dd67718dbe75d30/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/a6d913c70e48a98b0678e446ed4ebd0a6a87c21664da17a7a9e6fd4931f15e97/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---

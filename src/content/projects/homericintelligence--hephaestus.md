@@ -11,19 +11,19 @@ languagePcts: [99]
 stars: 8
 forks: 1
 openIssues: 37
-closedIssues: 1719
+closedIssues: 1720
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2025-12-29T19:05:37Z"
-lastCommitAt: "2026-11-09T00:29:17Z"
+lastCommitAt: "2026-11-09T04:11:18Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 72
 maintainers: ["mvillmow", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4508a569e8b860d0f1038ca5e34fee2155af2aef8d28b80c47d1cd81aa816e22/HomericIntelligence/Hephaestus"
+openGraphImageUrl: "https://opengraph.githubassets.com/7cb37a5a56a66048ac71c817a63134e9493770e2a44381f437d0d0f192c3b107/HomericIntelligence/Hephaestus"
 postedAt: "2026-08-23T04:14:00.397Z"
 ---
 

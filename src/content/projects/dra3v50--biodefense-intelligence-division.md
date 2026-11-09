@@ -24,6 +24,7 @@ undervaluedScore: 50
 maintainers: ["github-actions[bot]", "DRA3V50"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a0e31efbedafffb5a5dd77eaf1c662040237c83ab13b628836a05caf27143d90/DRA3V50/BioDefense-Intelligence-Division"
 promoted: true
+postedAt: "2026-11-09T03:37:22.051Z"
 ---
 
 # BioDefense-Intelligence-Division
