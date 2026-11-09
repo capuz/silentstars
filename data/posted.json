@@ -2576,5 +2576,16 @@
         "postedAt": "2026-11-09T03:37:22.051Z"
       }
     }
+  },
+  {
+    "repo": "parttimenerd/hprof-analyzer",
+    "slug": "parttimenerd--hprof-analyzer",
+    "postedAt": "2026-11-09T12:06:47.127Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzuv7w3xu32e",
+        "postedAt": "2026-11-09T12:06:47.127Z"
+      }
+    }
   }
 ]
