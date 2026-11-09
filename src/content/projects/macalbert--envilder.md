@@ -1,7 +1,7 @@
 ---
 repo: "macalbert/envilder"
 name: "envilder"
-description: "One secret mapping for local dev, CI/CD, and runtime. Envilder resolves cloud secrets from your own vaults without SaaS middlemen, duplicated config, or .env drift."
+description: "One envilder.json maps env vars to secrets in AWS SSM or Azure Key Vault. The same contract works in local dev (CLI), CI/CD (GitHub Action) and at runtime (Node.js, Python, .NET SDKs). Validate the mapping, run apps with secrets in memory. No SaaS: secrets stay in your cloud."
 readmeQualityOk: true
 url: "https://github.com/macalbert/envilder"
 homepage: "https://envilder.com"
@@ -11,17 +11,17 @@ languagePcts: [64]
 topics: ["automation", "dotenv", "secrets", "ci-cd", "aws-ssm", "azure-keyvault", "configuration", "developer-tools", "github-actions", "secret-management"]
 stars: 138
 forks: 5
-openIssues: 26
-closedIssues: 40
+openIssues: 25
+closedIssues: 41
 watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-06T19:43:46Z"
+lastCommitAt: "2026-11-08T23:27:22Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["solo_builder", "funded", "under_pressure"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"

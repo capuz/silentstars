@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-08T13:47:20Z"
+lastCommitAt: "2026-11-08T23:58:57Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -34,6 +34,6 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 2.87.0, [Workers, spend control, safer updates](https://github.com/farena-ai/sara/releases/tag/v2.87.0). Bring your companion over, prices and limits before paid steps, updates that roll back, workers that stay, device approval. [See what changed](#whats-new)
+> **Status:** 3.0.1, [Every page in the new look](https://github.com/farena-ai/sara/releases/tag/v3.0.1). Every page in the 3.0 look, one project list with status dots, her own picture, folded run cards. [See what changed](#whats-new)
 >
-> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified…
+> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified separately. Android: [Google…

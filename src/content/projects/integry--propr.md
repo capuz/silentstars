@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [88]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
-stars: 30
+stars: 31
 forks: 9
 openIssues: 12
 closedIssues: 1439
@@ -17,14 +17,14 @@ watchers: 1
 contributors: 4
 recentReleases: 5
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-11-01T12:10:58Z"
+lastCommitAt: "2026-11-08T22:36:28Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 97
-undervaluedScore: 72
+healthScore: 99
+undervaluedScore: 71
 maintainers: ["integry", "proprdev", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9dd78178cb52b02bfb4b224fea48c075a14b7cf0dd46df99101a4b2b4a4919ea/integry/propr"
+openGraphImageUrl: "https://opengraph.githubassets.com/0c947d4d3add50be38e53caae57d43f0308c5147bdf31cad4512cf365fd4f3e0/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
 ---

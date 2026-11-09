@@ -7,7 +7,7 @@ url: "https://github.com/TRON-ABS/Novera"
 homepage: "https://tron-abs.github.io/Novera/web/"
 language: "Rust"
 languages: ["Rust", "TypeScript"]
-languagePcts: [48, 42]
+languagePcts: [47, 42]
 topics: ["ai-assistant", "llm", "local-ai", "mcp", "multilingual", "novera", "accessibility", "education", "generative-ai", "gguf"]
 stars: 0
 forks: 0
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-07T23:35:28Z"
+lastCommitAt: "2026-11-09T00:29:57Z"
 lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/18bc022a00fbad8940834556f878eea2f6bc1706bae563c36d9e090332f7294d/TRON-ABS/Novera"
+openGraphImageUrl: "https://opengraph.githubassets.com/a87497b65837251697b409ede6de8a83448190a6de2760ea70e754cabccd9998/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---

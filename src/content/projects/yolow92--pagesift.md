@@ -4,6 +4,7 @@ name: "pagesift"
 description: "Self-hosted web scraper, crawler and document parser for AI agents: URLs, PDFs with OCR and Office files to clean Markdown/JSON. Firecrawl- and Jina-compatible API, MCP server, agent endpoint, Python/Node SDKs. Single Rust binary."
 readmeQualityOk: true
 url: "https://github.com/YOLOW92/pagesift"
+homepage: "https://pagesift.tech"
 language: "Rust"
 languages: ["Rust"]
 languagePcts: [85]
@@ -21,9 +22,9 @@ lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 100
-undervaluedScore: 32
+undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a25a4a4251eb7b42c3ed016d4ab07103f2e459a8764dab7bf83b4c14aebe2d75/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/47b45a4b5c3e0a22eedf5f0b407591aaf7e826be172422c72d3e71cfd00fa1ea/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"

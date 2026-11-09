@@ -19,7 +19,7 @@ createdAt: "2023-05-18T02:24:55Z"
 lastCommitAt: "2026-11-08T07:16:56Z"
 status: "thriving"
 tags: ["funded", "fork_magnet"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 83
 maintainers: ["yzhao062", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/40b02f78d012ba87456a7b21708a77e7c0ce6eaf7ec7baf61f7a13323259058b/yzhao062/yzhao062.github.io"

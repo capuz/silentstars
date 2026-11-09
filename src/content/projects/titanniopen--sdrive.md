@@ -25,6 +25,7 @@ undervaluedScore: 49
 maintainers: ["anderbytes"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436381970/7a05b60d-de1e-427b-be5c-c8c2e64ba752"
 promoted: true
+postedAt: "2026-11-08T14:21:41.277Z"
 ---
 
 # SDrive
