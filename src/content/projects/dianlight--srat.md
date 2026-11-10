@@ -11,7 +11,7 @@ languagePcts: [57, 38]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 9
 forks: 3
-openIssues: 14
+openIssues: 15
 closedIssues: 300
 watchers: 1
 contributors: 5
@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-09T11:01:43Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["renovate[bot]", "github-actions[bot]", "dianlight"]
 openGraphImageUrl: "https://opengraph.githubassets.com/46d6587937036b9dacf777994a9861ba88179d944f453ac2b65d2c376ace621b/dianlight/srat"

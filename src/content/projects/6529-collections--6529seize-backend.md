@@ -8,20 +8,20 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [98]
 stars: 6
-forks: 6
+forks: 7
 openIssues: 3
 closedIssues: 114
 watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-11-09T11:17:30Z"
+lastCommitAt: "2026-11-10T08:59:39Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "fork_magnet"]
+tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 95
-maintainers: ["punk6529", "prxt6529", "GelatoGenesis"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7ad0d38fa9da0f720e02d618f5fb2e21a442c36149831035a59c545389036c88/6529-Collections/6529seize-backend"
+maintainers: ["punk6529", "GelatoGenesis", "prxt6529"]
+openGraphImageUrl: "https://opengraph.githubassets.com/5c6dba2adec0d3eda4adadff47089a1976ade076b213084f6fb50251b4841965/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 

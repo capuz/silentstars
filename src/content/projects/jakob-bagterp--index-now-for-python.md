@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-01T09:51:39Z"
 lastReleaseAt: "2025-05-29T21:11:35Z"
 status: "thriving"
 tags: ["solo_builder", "funded"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 82
 maintainers: ["jakob-bagterp", "dependabot[bot]", "pre-commit-ci[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/56cfdd46185e9f80a81dd5c6b3b34a6e2cf8fb1570d607c232f24a8bb79054ad/jakob-bagterp/index-now-for-python"

@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [83]
 stars: 21
-forks: 8
+forks: 7
 openIssues: 0
 closedIssues: 1
 watchers: 2

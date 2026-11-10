@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-04T06:37:58Z"
 lastReleaseAt: "2026-11-03T07:31:20Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 71
 undervaluedScore: 27
 maintainers: ["annoyingmouse"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4d38d4d38bb7df46494b7328f48769a0118a5974b49390d54da987f168802d8e/DRMSITE/MealMuster"

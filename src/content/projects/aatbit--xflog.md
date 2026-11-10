@@ -7,7 +7,7 @@ url: "https://github.com/aatbit/xflog"
 language: "Python"
 languages: ["Python", "JavaScript"]
 languagePcts: [53, 32]
-stars: 1
+stars: 3
 forks: 0
 openIssues: 1
 closedIssues: 0
@@ -20,9 +20,9 @@ lastReleaseAt: "2026-11-06T23:01:19Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
 healthScore: 79
-undervaluedScore: 23
+undervaluedScore: 21
 maintainers: ["aakashH242"]
-openGraphImageUrl: "https://opengraph.githubassets.com/68072332d921e68019f0a984c1e859e853d25cadab02beab22cd5fe8586c88f1/aatbit/xflog"
+openGraphImageUrl: "https://opengraph.githubassets.com/87b6e2941c1f3e4370c61f457a5009b60a7ae44d32b196cc43695e76ce4df607/aatbit/xflog"
 promoted: true
 postedAt: "2026-11-06T13:31:27.351Z"
 ---

@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/TitanniOpen/SDrive"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [51, 30]
+languagePcts: [51, 29]
 topics: ["cloud", "drive", "remote", "storage", "aws-s3", "ftp", "ftps", "mount", "sftp", "smb"]
 stars: 9
 forks: 2
@@ -14,13 +14,13 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 6
+recentReleases: 7
 createdAt: "2026-10-27T23:20:09Z"
-lastCommitAt: "2026-11-03T20:23:00Z"
-lastReleaseAt: "2026-11-03T21:39:03Z"
+lastCommitAt: "2026-11-10T00:12:47Z"
+lastReleaseAt: "2026-11-10T00:16:04Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 77
+healthScore: 79
 undervaluedScore: 49
 maintainers: ["anderbytes"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436381970/7a05b60d-de1e-427b-be5c-c8c2e64ba752"

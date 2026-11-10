@@ -7,7 +7,7 @@ url: "https://github.com/ilpersi/Popmundo-Utils"
 homepage: "https://chrome.google.com/webstore/detail/popmundo-utils/hadmgokiimlhekhogafchemcebilkcgi"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [86]
+languagePcts: [85]
 topics: ["chrome-extension", "popmundo"]
 stars: 5
 forks: 1
@@ -17,13 +17,13 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-20T20:16:10Z"
-lastCommitAt: "2026-11-05T11:20:23Z"
+lastCommitAt: "2026-11-10T09:05:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 96
+healthScore: 98
 undervaluedScore: 77
 maintainers: ["ilpersi"]
-openGraphImageUrl: "https://opengraph.githubassets.com/de22749679fe9e38b83ad8c3905d9819355a2556fe4b53250c9a2fb32bc655c4/ilpersi/Popmundo-Utils"
+openGraphImageUrl: "https://opengraph.githubassets.com/4fd6ec11473219e5cff5ad3a5087df859dacb0a64ed8d5e642342d26384fcd0a/ilpersi/Popmundo-Utils"
 discussionCount: 3
 postedAt: "2026-10-13T11:03:34.841Z"
 ---

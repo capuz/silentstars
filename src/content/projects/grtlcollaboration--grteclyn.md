@@ -10,7 +10,7 @@ languages: ["C++"]
 languagePcts: [96]
 topics: ["amrex", "numerical-relativity"]
 stars: 18
-forks: 21
+forks: 22
 openIssues: 33
 closedIssues: 79
 watchers: 5
@@ -20,7 +20,7 @@ createdAt: "2022-10-04T13:44:45Z"
 lastCommitAt: "2026-11-02T16:23:52Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 75
 maintainers: ["AreefW", "AdamG412", "mirenradia"]
 openGraphImageUrl: "https://opengraph.githubassets.com/91832de8000fd14ce2a4355f6aa369ff5103acbe9ec45205cca560340f3a9388/GRTLCollaboration/GRTeclyn"

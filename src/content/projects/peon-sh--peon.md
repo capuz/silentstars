@@ -10,7 +10,7 @@ languages: ["TypeScript"]
 languagePcts: [99]
 topics: ["ai", "coolify", "coolify-alternative", "coolify-compatible", "deplo", "docker", "docker-compose", "dokploy-alternative", "open", "paas"]
 stars: 103
-forks: 25
+forks: 23
 openIssues: 1
 closedIssues: 8
 watchers: 0

@@ -5,10 +5,10 @@ description: "An open-source alternative to Mathpix Snip Tool. Instantly extract
 readmeQualityOk: true
 url: "https://github.com/JhuoW/OpenMathpix"
 language: "TypeScript"
-languages: ["TypeScript"]
-languagePcts: [74]
+languages: ["TypeScript", "JavaScript"]
+languagePcts: [72, 22]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative"]
-stars: 61
+stars: 101
 forks: 6
 openIssues: 1
 closedIssues: 1
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 2
 createdAt: "2026-03-23T12:59:26Z"
-lastCommitAt: "2026-11-08T12:52:59Z"
+lastCommitAt: "2026-11-10T10:23:50Z"
 lastReleaseAt: "2026-11-01T15:14:24Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder"]
 healthScore: 78
-undervaluedScore: 19
+undervaluedScore: 18
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/47b433e4a9f89e6a28d702802b9b54bd7bfa98a6ef61e66525f016b90bb8cf68/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/9fb0f7a564e7b37138001d516bdbd0b6fca402f8f1ff7f3c458db771e0f1ae8a/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---

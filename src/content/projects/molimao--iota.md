@@ -9,7 +9,7 @@ url: "https://github.com/molimao/iota"
 homepage: "https://iotahome.site"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [91]
+languagePcts: [90]
 topics: ["bittensor", "dashboard", "miner-monitoring", "react", "typescript", "iota-train-at-home", "sn9", "mining-dashboard", "multilingual", "open-source"]
 stars: 1
 forks: 0
@@ -19,13 +19,13 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-09-12T02:21:10Z"
-lastCommitAt: "2026-11-09T06:45:04Z"
+lastCommitAt: "2026-11-09T14:24:00Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 58
 maintainers: ["molimao", "lovable-dev[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9c0740d4a09c42909e4e3cfd926acdbb8836274501535e8b5f9a041a70d1bb45/molimao/iota"
+openGraphImageUrl: "https://opengraph.githubassets.com/0e0536112e886507a762d5a284433b5df29c822440b4969e91e9b45c679f108e/molimao/iota"
 promoted: true
 postedAt: "2026-10-23T09:39:25.066Z"
 ---

@@ -6,8 +6,8 @@ readmeQualityOk: true
 url: "https://github.com/etalab/data_pass"
 homepage: "https://datapass.api.gouv.fr"
 language: "Ruby"
-languages: ["Ruby", "CSS"]
-languagePcts: [54, 23]
+languages: ["Ruby"]
+languagePcts: [72]
 stars: 5
 forks: 8
 openIssues: 0
@@ -16,13 +16,13 @@ watchers: 4
 contributors: 24
 recentReleases: 0
 createdAt: "2023-11-30T11:30:20Z"
-lastCommitAt: "2026-11-09T09:13:22Z"
+lastCommitAt: "2026-11-10T10:53:21Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 94
-maintainers: ["Samuelfaure", "jbfeldis", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bf6ece2744bc08ccd3ce4391480c03e4d58951adc10a894cf2f6425b3aa87dfe/etalab/data_pass"
+maintainers: ["Samuelfaure", "jbfeldis", "evaspae"]
+openGraphImageUrl: "https://opengraph.githubassets.com/f10777a9f3a57ae68aa5a24ba1c4559d0ae16f92a6f9b7922b5b29c1af44b163/etalab/data_pass"
 postedAt: "2026-09-21T09:22:04.623Z"
 ---
 
@@ -31,7 +31,7 @@ postedAt: "2026-09-21T09:22:04.623Z"
 L'outil de gestion des habilitations juridiques pour les données à accès restreint.
 
 Version en ligne:
-[https://sandbox.v2.datapass.api.gouv.fr/](https://sandbox.v2.datapass.api.gouv.fr/)
+[https://sandbox.datapass.api.gouv.fr/](https://sandbox.datapass.api.gouv.fr/)
 
 Les comptes disponibles en simili-production (couple email/password sur
 ProConnect) :

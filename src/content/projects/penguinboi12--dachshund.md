@@ -14,16 +14,16 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 3
+recentReleases: 5
 createdAt: "2026-08-11T15:25:15Z"
-lastCommitAt: "2026-11-09T01:52:13Z"
-lastReleaseAt: "2026-11-09T01:53:31Z"
+lastCommitAt: "2026-11-10T08:07:46Z"
+lastReleaseAt: "2026-11-10T06:33:31Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 65
-undervaluedScore: 27
+undervaluedScore: 29
 maintainers: ["PenguinBoi12"]
-openGraphImageUrl: "https://opengraph.githubassets.com/770c7604ecf1ee077ab85e67926c7ef95e625d48c19d59f516fced34afbb7228/PenguinBoi12/dachshund"
+openGraphImageUrl: "https://opengraph.githubassets.com/302ba887fe3bd9e4c028b6f28295756da42c7131dcf59c24e426c3fcfefbf5ba/PenguinBoi12/dachshund"
 promoted: true
 postedAt: "2026-11-09T01:00:43.749Z"
 ---

@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-06T10:26:10Z"
 lastReleaseAt: "2020-12-07T11:31:38Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "legacy_hero"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 75
 maintainers: ["Gerrit91", "simcod", "GeertJohan"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a896c564080a0a690cd2bf892c27b915dcf7c5352cbf5c7693b20b27c3cca353/metal-stack/metal-roles"

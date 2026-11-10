@@ -15,14 +15,14 @@ watchers: 0
 contributors: 4
 recentReleases: 1
 createdAt: "2026-10-04T01:22:30Z"
-lastCommitAt: "2026-10-26T16:25:01Z"
+lastCommitAt: "2026-11-10T09:13:09Z"
 lastReleaseAt: "2026-10-14T00:58:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 74
+healthScore: 79
 undervaluedScore: 55
 maintainers: ["kromate"]
-openGraphImageUrl: "https://opengraph.githubassets.com/51f754812744a9310a55d24469e4a51153f27b1e044f6d3909382bca2ad10046/kromate/joinallworld"
+openGraphImageUrl: "https://opengraph.githubassets.com/1ec90d0a3c5582a0fae2f61603c84d7553df87cf5dfabad3f7e40ad9f30a5f35/kromate/joinallworld"
 promoted: true
 postedAt: "2026-10-21T23:41:38.422Z"
 ---
