@@ -28,5 +28,11 @@
     "issue": 81,
     "since": "2026-11-10",
     "until": "2027-02-08"
+  },
+  {
+    "repo": "njerschow/figment-site-check",
+    "issue": 82,
+    "since": "2026-11-10",
+    "until": "2027-02-08"
   }
 ]
