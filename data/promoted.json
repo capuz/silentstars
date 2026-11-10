@@ -190,5 +190,9 @@
   {
     "repo": "itbelikethatbruh/MKCinema",
     "until": "2026-12-09"
+  },
+  {
+    "repo": "SiftingIO/sdk-python",
+    "until": "2026-12-10"
   }
 ]
