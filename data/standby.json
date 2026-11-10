@@ -22,5 +22,11 @@
     "issue": 74,
     "since": "2026-11-09",
     "until": "2027-02-07"
+  },
+  {
+    "repo": "bugraskl/telegram-agent",
+    "issue": 81,
+    "since": "2026-11-10",
+    "until": "2027-02-08"
   }
 ]
