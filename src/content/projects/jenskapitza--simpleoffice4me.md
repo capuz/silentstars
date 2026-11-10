@@ -15,13 +15,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-05-17T22:00:40Z"
-lastCommitAt: "2026-11-06T12:33:10Z"
+lastCommitAt: "2026-11-10T13:28:34Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "funded", "under_pressure"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 76
 maintainers: ["JensKapitza"]
-openGraphImageUrl: "https://opengraph.githubassets.com/055819c4acdcc5cdd7f9ebe529678dfecaf2625dab1148abb537939b2bd7834b/JensKapitza/SimpleOffice4Me"
+openGraphImageUrl: "https://opengraph.githubassets.com/d54396da2347e2e692f810b2647f0afd0b430b47fb38c11184934578acb79a35/JensKapitza/SimpleOffice4Me"
 fundingLinks: ["GITHUB:https://github.com/JensKapitza"]
 postedAt: "2026-11-06T11:44:33.227Z"
 ---
@@ -41,5 +41,4 @@ Ein geschlossenes Funktions-Issue bedeutet daher keine Gesamtfreigabe für 3.0.
 - [3.0-Betrieb: Funktionen, Schalter, Freigaben und Rückkehr](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/V3_BETRIEBSLEITFADEN.md)
 - [Konfigurationsregister mit Quellen und Sicherheitsgrenzen](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/KONFIGURATIONSREGISTER.md)
 - [Dokumentations- und Issue-Prüfung samt bekannten Abweichungen](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/DOKUMENTATIONSPRUEFUNG_3_0.md)
-
-Das…
+- [Öffentliche, rein lesende…

@@ -1,7 +1,7 @@
 ---
 repo: "saitamasahil/2048plus"
 name: "2048plus"
-description: " 2048 Plus  A feature-packed implementation of the classic puzzle game 2048 for muOS, PortMaster, Android, Linux, and Windows, built using the LÖVE framework."
+description: "A feature-packed implementation of the classic puzzle game 2048 for muOS, PortMaster, Android, Linux, and Windows, built using the LÖVE framework."
 readmeQualityOk: true
 url: "https://github.com/saitamasahil/2048plus"
 language: "Lua"
@@ -16,14 +16,14 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-27T09:46:11Z"
-lastCommitAt: "2026-11-09T15:13:30Z"
+lastCommitAt: "2026-11-10T14:02:12Z"
 lastReleaseAt: "2026-06-13T13:59:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 54
 maintainers: ["saitamasahil"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f73e8ecb2328fda407922a4d8ad1d80c5c86c41675128287cc20f28ba11c1d1e/saitamasahil/2048plus"
+openGraphImageUrl: "https://opengraph.githubassets.com/89fc00c4643f00432e47575ed251b80ea84211b8eb611d86c8027362a16e62b1/saitamasahil/2048plus"
 promoted: true
 postedAt: "2026-11-03T19:12:50.773Z"
 ---

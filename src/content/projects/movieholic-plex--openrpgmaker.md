@@ -17,14 +17,14 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-11-10T11:37:21Z"
+lastCommitAt: "2026-11-10T14:48:19Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 98
 undervaluedScore: 66
 maintainers: ["MovieHolic-Plex", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0b059dc22a27c24f6f100eb71054a8c869acc50aafe0ffa9f597e96b7f8c84a0/MovieHolic-Plex/OpenRPGMaker"
+openGraphImageUrl: "https://opengraph.githubassets.com/803dff051ade0a2c54bebf2e10e193e4d476875fab254f5bd9b69ef198072de6/MovieHolic-Plex/OpenRPGMaker"
 postedAt: "2026-10-30T10:31:15.033Z"
 ---
 

@@ -11,7 +11,7 @@ languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 348
 forks: 41
-openIssues: 66
+openIssues: 68
 closedIssues: 193
 watchers: 9
 contributors: 18

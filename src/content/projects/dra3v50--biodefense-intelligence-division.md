@@ -15,14 +15,14 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2026-06-05T01:26:54Z"
-lastCommitAt: "2026-11-10T03:39:44Z"
+lastCommitAt: "2026-11-10T13:30:57Z"
 lastReleaseAt: "2026-08-25T23:07:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
 undervaluedScore: 50
 maintainers: ["github-actions[bot]", "DRA3V50"]
-openGraphImageUrl: "https://opengraph.githubassets.com/924645f78d5da54e6e7d9b10515d134a9891cb7005e9731e9d2cc1e9ed3325a2/DRA3V50/BioDefense-Intelligence-Division"
+openGraphImageUrl: "https://opengraph.githubassets.com/a66c55534d1a7b99c2cd80d02fa7db3aa96559d33fb056a78a2bfe7f77683cbb/DRA3V50/BioDefense-Intelligence-Division"
 promoted: true
 postedAt: "2026-11-09T03:37:22.051Z"
 ---
@@ -37,11 +37,11 @@ postedAt: "2026-11-09T03:37:22.051Z"
 ◆ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score (JSON)</a><br>
 ◆ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score (XML)</a><br>
 ◆ <a href="reports/investigative_leads.md">Investigative Leads</a></td>
-◆ <a href="evidence/BID-2026-6794/evidence_manifest.json">Evidence Manifest</a><br>
-◆ <a href="evidence/BID-2026-6794/evidence_correlations.json">Evidence Correlations</a><br>
-◆ <a href="evidence/BID-2026-6794/chain_of_custody.md">Chain of Custody</a><br>
-◆ <a href="evidence/BID-2026-6794/forensic_summary.md">Forensic Summary</a><br>
-◆ <a href="evidence/BID-2026-6794/acquisition_summary.md">Acquisition Summary</a></td>
+◆ <a href="evidence/BID-2026-1439/evidence_manifest.json">Evidence Manifest</a><br>
+◆ <a href="evidence/BID-2026-1439/evidence_correlations.json">Evidence Correlations</a><br>
+◆ <a href="evidence/BID-2026-1439/chain_of_custody.md">Chain of Custody</a><br>
+◆ <a href="evidence/BID-2026-1439/forensic_summary.md">Forensic Summary</a><br>
+◆ <a href="evidence/BID-2026-1439/acquisition_summary.md">Acquisition Summary</a></td>
 ◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Exposure Matrix (Excel)</a></td>

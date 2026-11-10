@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-10T11:28:40Z"
+lastCommitAt: "2026-11-10T14:44:03Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -34,6 +34,6 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 3.1.2, [Research that keeps going](https://github.com/farena-ai/sara/releases/tag/v3.1.2). Research runs in the background with a plan, live progress, Pause and Resume, and never ends blank. [See what changed](#whats-new)
+> **Status:** 3.3.0, [Easy mode](https://github.com/farena-ai/sara/releases/tag/v3.3.0). Plain words, Fix it buttons, a phone QR that works, Tailscale away from home, and settings you can just ask for. [See what changed](#whats-new)
 >
 > Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified separately. Android: [Google…

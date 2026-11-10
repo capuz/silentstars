@@ -16,14 +16,14 @@ watchers: 3
 contributors: 107
 recentReleases: 0
 createdAt: "2024-07-01T17:38:28Z"
-lastCommitAt: "2026-11-10T11:25:19Z"
+lastCommitAt: "2026-11-10T11:54:20Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 77
 maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/504cb313859ae253623d801ce8b94705f31bca1da9e26b1d8815ac529d27f999/immich-app/static-pages"
+openGraphImageUrl: "https://opengraph.githubassets.com/9dc6fdc220b406fc0d84d8f78d016de5e1637527b69522213a73619b0a81a7fa/immich-app/static-pages"
 fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
 postedAt: "2026-11-02T11:44:50.353Z"
 ---

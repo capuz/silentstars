@@ -10,7 +10,7 @@ languages: ["MDX"]
 languagePcts: [100]
 stars: 6
 forks: 19
-openIssues: 178
+openIssues: 179
 closedIssues: 497
 watchers: 7
 contributors: 56
