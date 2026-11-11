@@ -29,8 +29,10 @@ export function buildPost(p: Project, baseUrl: string, pitch: string, opts: Buil
   const langTags  = (p.languages ?? (lang ? [lang] : []))
     .map(l => LANG_HASHTAG[l] ?? '')
     .filter(Boolean);
-  const topicTags = topicHashtags(p.topics ?? [], langTags);
-  const tags      = [...loadCommunityTags(), ...langTags, ...topicTags].join(' ');
+  const communityTags = loadCommunityTags();
+  // Skip topics already covered by the fixed community tags, not just the language ones.
+  const topicTags = topicHashtags(p.topics ?? [], [...communityTags, ...langTags]);
+  const tags      = [...communityTags, ...langTags, ...topicTags].join(' ');
   const slug      = slugify(p.repo);
   const siteUrl   = `${baseUrl}/projects/${slug}/`;
   const submitUrl = `${baseUrl}/submit/`;

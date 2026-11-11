@@ -201,7 +201,8 @@ export function byteLen(str: string): number {
 export function hashtagFacets(text: string) {
   const encoder = new TextEncoder();
   const result  = [];
-  const regex   = /#([a-zA-Z][a-zA-Z0-9]*)/g;
+  // Only a # that starts a word: "example.com/#demo" is a URL fragment, not a tag.
+  const regex   = /(?<=^|\s)#([a-zA-Z][a-zA-Z0-9]*)/g;
   let match;
   while ((match = regex.exec(text)) !== null) {
     const byteStart = encoder.encode(text.slice(0, match.index)).length;
