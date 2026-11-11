@@ -25,14 +25,14 @@ export const DESCRIPTION = [
   'silentstars.dev/submit',
 ].join('\n');
 
-// Keeps the pre-custom-domain link on purpose: editing this text publishes a
-// brand-new pinned post, and GitHub Pages 301s the old URL to silentstars.dev.
+// Editing this text publishes a brand-new pinned post the next time the
+// update-bsky-profile workflow runs without dry run.
 export const PINNED_TEXT = [
-  "📡 SilentStars finds small open-source projects that are still actively built. One pick a day, right here.",
+  'Steady work, few eyes on it yet: one open-source pick a day from SilentStars.',
   '',
-  'Building something quiet? Submit it: a bot checks it in minutes and we post it as a 🙌 Community pick.',
+  'Building yours steadily? Submit it. Our bot checks it in minutes, and good fits go out as a 🙌 Community pick.',
   '',
-  '👉 capuz.github.io/silentstars/submit',
+  '👉 silentstars.dev/submit',
 ].join('\n');
 
 type StrongRef = { uri: string; cid: string };
