@@ -54,7 +54,7 @@ export function acceptedHtml(d: EmailData): string {
           <tr><td style="padding-bottom:24px;">
             <p style="margin:0;color:#8b949e;font-size:15px;line-height:1.7;">
               Your project has been accepted into the SilentStars directory —
-              a curated index of undervalued open source projects that deserve more visibility.
+              a directory of small, active open source projects.
               It will be refreshed nightly and featured in our daily posts.
             </p>
           </td></tr>
@@ -117,9 +117,8 @@ export function featuredHtml(d: EmailData): string {
 
           <tr><td style="padding-bottom:24px;">
             <p style="margin:0;color:#8b949e;font-size:15px;line-height:1.7;">
-              We came across <strong style="color:#c9d1d9;">${d.projectName}</strong> and thought it deserved more
-              visibility, so we added it to SilentStars — a curated directory of undervalued open source projects —
-              and featured it in today's daily post. No action needed on your end; just wanted you to know.
+              We came across <strong style="color:#c9d1d9;">${d.projectName}</strong> and added it to
+              SilentStars, a directory of small, active open source projects, and featured it in today's daily post. No action needed on your end; just wanted you to know.
             </p>
           </td></tr>
 
@@ -131,7 +130,8 @@ export function featuredHtml(d: EmailData): string {
             <p style="margin:0;color:#484f58;font-size:12px;line-height:1.6;">
               This email was sent because <strong style="color:#6e7681;">${d.projectName}</strong> was featured on
               SilentStars. We found your public GitHub email and wanted to let you know — feel free to ignore this
-              if it's not relevant to you.
+              if it's not relevant to you. If you'd rather not be listed,
+              <a href="https://github.com/capuz/silentstars/issues/new?template=remove-project.yml" style="color:#6e7681;">ask us to remove it</a>.
             </p>
           </td></tr>
 

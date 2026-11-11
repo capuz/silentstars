@@ -19,7 +19,7 @@ export const SUBMIT_URL = 'https://silentstars.dev/submit';
 export const DISPLAY_NAME = 'SilentStars · OSS radar';
 
 export const DESCRIPTION = [
-  'Daily pick of open-source projects that are alive but invisible. Not famous. Not abandoned. Just building.',
+  'Daily pick of small open-source projects that are still shipping. Not famous. Not abandoned. Just building.',
   '',
   'Built one? Submit it 👇',
   'silentstars.dev/submit',
@@ -28,7 +28,7 @@ export const DESCRIPTION = [
 // Keeps the pre-custom-domain link on purpose: editing this text publishes a
 // brand-new pinned post, and GitHub Pages 301s the old URL to silentstars.dev.
 export const PINNED_TEXT = [
-  "📡 SilentStars finds open-source projects that are actively built but nobody's noticed yet. One pick a day, right here.",
+  "📡 SilentStars finds small open-source projects that are still actively built. One pick a day, right here.",
   '',
   'Building something quiet? Submit it: a bot checks it in minutes and we post it as a 🙌 Community pick.',
   '',

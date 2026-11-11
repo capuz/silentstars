@@ -140,7 +140,7 @@ export const LANG_HASHTAG: Record<string, string> = {
 // Rotated by post.ts via a date-seeded pick, independent of which project got
 // picked, so the post shape varies day to day instead of always reading
 // "Silent star of the day".
-const OPENERS = ['🌟 Silent star of the day', "🔭 Today's find", '💎 Underrated pick'];
+const OPENERS = ['🌟 Silent star of the day', "🔭 Today's find", '🔎 Small but active'];
 const CTAS    = [
   '⭐ give it a star',
   '👀 worth a look',
@@ -150,7 +150,7 @@ const CTAS    = [
   '🍴 fork it, poke at it',
   '💬 say hi to the maintainers',
   '📌 bookmark this one',
-  '🌱 small repo, real work',
+  '🌱 small repo, steady commits',
   '🚀 take it for a spin',
 ];
 

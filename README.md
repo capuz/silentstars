@@ -6,7 +6,7 @@
 [![Nightly collect + deploy](https://github.com/capuz/silentstars/actions/workflows/collect.yml/badge.svg)](https://github.com/capuz/silentstars/actions/workflows/collect.yml)
 [![Live site](https://img.shields.io/badge/site-live-brightgreen)](https://silentstars.dev/)
 
-A static site that surfaces open source projects that are **alive but invisible** — newborns, solo builders, projects that came back from the edge. Ranked by how much they deserve attention, not by star count.
+A static site that surfaces small open source projects that are **still shipping**: newborns, solo builders, projects that came back after a long pause. Ranked by activity relative to stars and watchers.
 
 **Live:** https://silentstars.dev
 
@@ -18,7 +18,7 @@ A static site that surfaces open source projects that are **alive but invisible*
 
 ## What this is
 
-A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars.dev](https://bsky.app/profile/silentstars.dev)), and every Monday a [weekly edition](https://silentstars.dev/weekly/) rounds up the projects that moved — rising, shipping, lighting up — and goes out as a Bluesky thread. About 375 projects are listed as of October 2026.
+A directory of open source projects that are actively maintained but under-recognized. Every night the pipeline scores each tracked project on two axes — `healthScore` (is it alive right now?) and `undervaluedScore` (signal relative to reach) — classifies it into one of 7 vital states, and tags it with behavioral signals (`solo_builder`, `hidden_gem`, `fork_magnet`, `funded`, etc.) that drive the home page sections. One project is highlighted daily on Bluesky ([@silentstars.dev](https://bsky.app/profile/silentstars.dev)), and every Monday a [weekly edition](https://silentstars.dev/weekly/) rounds up the projects that moved — rising, shipping, lighting up — and goes out as a Bluesky thread. About 420 projects are listed as of November 2026.
 
 ---
 
@@ -52,7 +52,7 @@ Configure discovery in `data/discovery.config.json`:
 
 | Field | Description |
 |---|---|
-| `starsRange` | Avoids empty repos (0–4) and already-famous ones (>500) |
+| `starsRange` | Avoids empty repos (0–4) and larger ones (>500) |
 | `pushedWithinDays` | Only considers repos pushed to recently |
 | `maxCandidatesPerNight` | Hard cap — prevents exhausting the 30 req/min rate limit |
 | `vitalityThreshold` | Discovered repos with `healthScore` below this won't appear in the directory |
@@ -123,7 +123,10 @@ depends on Claude Code being available.
   `scripts/claude-cli.ts` to generate one.
 - **Translation** — `scripts/collect-i18n.ts` detects non-English descriptions/READMEs
   and translates them via Claude Code, caching results in `data/translations.json` keyed
-  by repo and content hash so an unchanged project never costs a repeat call.
+  by repo and content hash so an unchanged project never costs a repeat call. Translated
+  pages say so and link to the original on GitHub.
+- **Weekly notes** — `scripts/weekly-notes.ts` writes the one-line note under each project
+  in the [weekly edition](https://silentstars.dev/weekly/) from its commits and releases.
 
 ---
 
@@ -186,11 +189,11 @@ score  = round((signal / reach) × 100), capped at 100
 
 | State | Meaning |
 |-------|---------|
-| `thriving` | Commit in the last 30 days |
-| `quiet` | Some activity, no recent release |
-| `at_risk` | 3–12 months with no commits + open issues/PRs |
-| `newborn` | Created < 6 months ago, README + license + recent commit |
-| `revived` | Was dormant > 6 months; back to active in the last 30 days |
+| `thriving` | Commit in the last 14 days |
+| `quiet` | None of the other states apply |
+| `at_risk` | 2–12 months with no commits + open issues/PRs |
+| `newborn` | Created < 2 months ago, README + license + commit in the last 14 days |
+| `revived` | Gap of > 6 months between commits; latest commit in the last 30 days |
 | `watched` | Small repo with an unusually high watcher-to-star ratio (`watchers ÷ stars ≥ 2`, `watchers ≥ 5`, `stars ≤ 150`) — people are following closely before it has star traction |
 | `archived` | Officially archived or no commits in 18+ months — hidden from directory |
 
