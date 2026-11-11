@@ -118,6 +118,10 @@ jobs:
             *)        MSG="chore(standby): drop ${SUBMISSION_REPO} (issue #${ISSUE_NUMBER}, ${STATUS}) [skip ci]" ;;
           esac
           git commit -m "$MSG"
+          # Two submissions accepted seconds apart both append to the end of
+          # promoted.json/standby.json, a textual conflict no retry can fix
+          # (issue #77). The driver merges those arrays by repo (.gitattributes).
+          git config merge.json-entries.driver "npx tsx scripts/merge-json-entries.ts %O %A %B"
           # rebase-retry: a nightly collect or a second submission can move main
           # between this job's checkout and here; a bare push would be rejected
           # non-fast-forward, failing validate and skipping collect-deploy-post.

@@ -46,6 +46,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/standby.json
           git commit -m "chore(standby): drop expired entries [skip ci]"
+          # Two submissions accepted seconds apart both append to the end of
+          # promoted.json/standby.json, a textual conflict no retry can fix
+          # (issue #77). The driver merges those arrays by repo (.gitattributes).
+          git config merge.json-entries.driver "npx tsx scripts/merge-json-entries.ts %O %A %B"
           # Same rebase-retry loop as collect.yml / process-submission.yml.
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && exit 0

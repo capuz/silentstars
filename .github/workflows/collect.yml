@@ -167,6 +167,10 @@ jobs:
           # failures starting when KoalaSync's 30-day entry expired 2026-07-26).
           git add data/latest.json data/discovered.json data/promoted.json data/translations.json src/content/projects/ data/posted.json data/history.json data/weekly-notes.json data/graduates.json
           git diff --cached --quiet || git commit -m "chore: nightly data collect [skip ci]"
+          # Two submissions accepted seconds apart both append to the end of
+          # promoted.json/standby.json, a textual conflict no retry can fix
+          # (issue #77). The driver merges those arrays by repo (.gitattributes).
+          git config merge.json-entries.driver "npx tsx scripts/merge-json-entries.ts %O %A %B"
           # pull --rebase before pushing: reruns are pinned to the original
           # commit, so main may have moved and a bare push is rejected as
           # non-fast-forward (attempt 2 of run 28999134437). Same loop as the
