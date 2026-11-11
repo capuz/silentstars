@@ -275,18 +275,19 @@ function computeHealthScore(repo: GraphQLRepo, lastCommitAt: string, now: number
  * Undervalued Score (0–100) — signal ÷ reach.
  * Above 50 means the project is outrunning its audience.
  *
- * signal = 0.40·commit_velocity  (commits in 90d, norm. 30=max)
- *        + 0.25·contributor_work (people × activity proxy)
- *        + 0.20·issue_response   (resolution rate)
- *        + 0.15·release_cadence  (releases in 90d, norm. 3=max)
+ * signal = 0.25·commit_velocity  (commits in 90d, norm. 30=max)
+ *        + 0.20·contributor_work (unique authors × commits in 90d, norm. 100=max)
+ *        + 0.20·issue_response   (resolution rate, 0.5 if no issues)
+ *        + 0.20·fork_ratio       (forks ÷ stars, cap 1)
+ *        + 0.10·release_cadence  (releases in 90d, norm. 3=max)
+ *        + age_bonus             (0–0.30, linear from 6 to 30 months old)
+ *        + homepage_bonus        (0.05 if a homepage is set)
  *
  * reach  = log10(stars + watchers + 10)
+ * score  = min(round(signal / reach × 100), 100)
  *
- * Calibration: signal=0.5, reach≈1.7 (~50 stars+watchers) → score≈50
- *
- * v2 weights: forkRatio replaces pure commitVelocity dominance to prevent
- * vibe-coding repos (5 stars, 0 forks, many commits) from scoring 80+.
- * ageBonus rewards maturity; hasHomepage rewards commitment to docs.
+ * fork_ratio keeps repos with many commits but no forks or stars (5 stars,
+ * 0 forks) from scoring 80+. Mirrored in src/components/MetricsFAQ.astro.
  */
 function computeUndervaluedScore(
   repo: GraphQLRepo,

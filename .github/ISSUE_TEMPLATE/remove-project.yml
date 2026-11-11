@@ -1,0 +1,19 @@
+name: Remove a project
+description: Ask for a project to be taken off SilentStars
+labels: ["removal"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repo to remove (owner/repo)
+      placeholder: "e.g. owner/repo"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Anything we should know? (optional)
+      description: No reason needed. If you maintain the project, it comes off.
+    validations:
+      required: false

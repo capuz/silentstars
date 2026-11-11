@@ -65,9 +65,27 @@ const base = import.meta.env.BASE_URL;
       </section>
 
       <section class="about-card">
+        <h2>// fine print</h2>
+        <p>
+          <strong>AI.</strong> Scores, tags and rankings are plain arithmetic on GitHub data; no model picks projects.
+          Claude translates non-English descriptions and READMEs (those pages say so and link to the original),
+          writes the one-line notes in the weekly edition, and drafts the Bluesky hook line when a repo's own description is too thin.
+        </p>
+        <p>
+          <strong>Your project is listed and you'd rather it wasn't?</strong>
+          <a href="https://github.com/capuz/silentstars/issues/new?template=remove-project.yml" target="_blank" rel="noopener">Open a removal request</a>. No reason needed.
+        </p>
+        <p>
+          <strong>Privacy.</strong> Page views are counted with <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>,
+          which sets no cookies and doesn't track you across sites. Newsletter addresses are held by
+          <a href="https://buttondown.com/" target="_blank" rel="noopener">Buttondown</a> and used only for that email.
+        </p>
+      </section>
+
+      <section class="about-card">
         <h2>// contribute</h2>
         <p>
-          Know a small project that fits? <a href={`${base}submit/`} class="about-link">Submit it via GitHub Issues</a> — the bot validates the repo instantly and, if accepted, adds it to the directory and posts it on Bluesky automatically.
+          Know a small project that fits? <a href={`${base}submit/`} class="about-link">Submit it via GitHub Issues</a> — a bot checks the repo within minutes and, if accepted, adds it to the directory and posts it on Bluesky automatically.
         </p>
         <a href={`${base}submit/`} class="btn-submit">Submit a project →</a>
       </section>
