@@ -39,7 +39,6 @@ test('pinned post fits 300 graphemes and links the submit URL at the right bytes
   assert.equal(links.length, 1);
   const bytes = new TextEncoder().encode(rec.text);
   const shown = new TextDecoder().decode(bytes.slice(links[0]!.index.byteStart, links[0]!.index.byteEnd));
-  // The pinned post keeps its pre-custom-domain link on purpose (see PINNED_TEXT).
-  assert.equal(shown, 'capuz.github.io/silentstars/submit');
-  assert.equal((links[0]!.features[0] as any).uri, 'https://capuz.github.io/silentstars/submit');
+  assert.equal(shown, 'silentstars.dev/submit');
+  assert.equal((links[0]!.features[0] as any).uri, 'https://silentstars.dev/submit');
 });
