@@ -226,10 +226,10 @@ jobs:
 
       - name: Install Playwright Chromium
         if: steps.pw-cache.outputs.cache-hit != 'true'
-        run: npx playwright install chromium --with-deps
+        run: npx playwright install chromium
 
       - name: Install CJK fonts
-        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
+        uses: ./.github/actions/cjk-fonts
 
       # Single source of truth for today's pick: the post job consumes post_slug
       # instead of re-running the selection and hoping it agrees. Runs before the

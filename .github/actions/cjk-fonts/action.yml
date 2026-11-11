@@ -1,0 +1,68 @@
+name: Install CJK fonts
+description: >-
+  Noto Sans CJK (SC/TC/JP/KR) for the OG card screenshots, so project names and
+  descriptions in Chinese, Japanese or Korean don't render as tofu. Sources, in
+  order: actions cache → pinned GitHub download (sha256-checked) → apt. apt used
+  to be the only source, and a DNS outage on the Ubuntu mirrors (2026-11-11,
+  run 43056296370) took down every deploy. Fails only if all three fail: an OG
+  card with tofu must never be published.
+
+runs:
+  using: composite
+  steps:
+    - name: Restore CJK font cache
+      id: cache
+      uses: actions/cache/restore@v6
+      with:
+        path: ~/.local/share/fonts/noto-cjk
+        key: noto-cjk-sans2.004-v1
+
+    - name: Download CJK fonts
+      id: download
+      if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        DIR="$HOME/.local/share/fonts/noto-cjk"
+        BASE="https://github.com/notofonts/noto-cjk/raw/Sans2.004/Sans/OTC"
+        mkdir -p "$DIR"
+        if curl -fsSL --retry 5 --retry-all-errors --connect-timeout 20 -o "$DIR/NotoSansCJK-Regular.ttc" "$BASE/NotoSansCJK-Regular.ttc" \
+          && curl -fsSL --retry 5 --retry-all-errors --connect-timeout 20 -o "$DIR/NotoSansCJK-Bold.ttc" "$BASE/NotoSansCJK-Bold.ttc" \
+          && (cd "$DIR" && sha256sum -c --strict - <<'SUMS'
+        b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a  NotoSansCJK-Regular.ttc
+        faa5f3656a78b2e2d450d27fe8382c778bc2b6bb5ea29c986664a6a435056ceb  NotoSansCJK-Bold.ttc
+        SUMS
+        ); then
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+        else
+          # Never leave a partial download behind to be cached or half-used.
+          rm -rf "$DIR"
+          echo "::warning::CJK font download from GitHub failed — falling back to apt"
+          echo "ok=false" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Save CJK font cache
+      if: steps.download.outputs.ok == 'true'
+      uses: actions/cache/save@v6
+      with:
+        path: ~/.local/share/fonts/noto-cjk
+        key: noto-cjk-sans2.004-v1
+
+    - name: Fall back to apt
+      if: steps.download.outputs.ok == 'false'
+      shell: bash
+      run: |
+        sudo apt-get -o Acquire::Retries=3 update
+        sudo apt-get -o Acquire::Retries=3 install -y fonts-noto-cjk
+
+    - name: Verify CJK coverage
+      shell: bash
+      run: |
+        fc-cache -f >/dev/null
+        for lang in zh ja ko; do
+          font=$(fc-list ":lang=$lang" family | grep -m1 "Noto Sans CJK" || true)
+          if [ -z "$font" ]; then
+            echo "::error::No Noto Sans CJK font covers '$lang' — refusing to render OG cards with tofu"
+            exit 1
+          fi
+          echo "✓ $lang → $font"
+        done
