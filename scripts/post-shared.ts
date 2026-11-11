@@ -7,6 +7,8 @@ export interface PostedEntry {
   slug: string;
   postedAt: string;
   platforms: Record<string, { url: string; postedAt: string }>;
+  /** Slugs this post lived under before its repo was renamed; they redirect here. */
+  previousSlugs?: string[];
 }
 
 export interface Project {

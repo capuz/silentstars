@@ -15,7 +15,8 @@ import { fileURLToPath } from 'node:url';
 import { claudeEnabled } from './claude-cli.ts';
 import { stripReadmeNoise } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
-import { slugify } from './post-shared.ts';
+import { slugify, type PostedEntry } from './post-shared.ts';
+import { applyRenames, absorbAliasPages } from './posted-renames.ts';
 import { isExcludedRepo, isExcludedOwner } from './discovery-filter.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -29,15 +30,6 @@ type VitalStatus = 'thriving' | 'quiet' | 'at_risk' | 'newborn' | 'revived' | 'a
 type Tag = 'solo_builder' | 'needs_contributors' | 'hidden_gem' | 'legacy_hero' | 'community_watch'
          | 'funded' | 'release_machine' | 'under_pressure' | 'community_hub' | 'fork_magnet';
 
-interface PostedEntry {
-  repo: string;
-  slug: string;
-  postedAt: string;
-  platforms: {
-    bsky?: { url: string; postedAt: string };
-    x?:    { url: string; postedAt: string };
-  };
-}
 
 interface RepoData {
   repo: string;
@@ -566,6 +558,8 @@ async function main() {
   const postedRepoSet = new Set(postedEntries.map(e => e.repo.toLowerCase()));
   const postedSlugSet = new Set(postedEntries.map(e => e.slug));
   const postedByRepo  = new Map(postedEntries.map(e => [e.repo.toLowerCase(), e]));
+  // Name GitHub answers with for each posted repo — differs once it was renamed.
+  const postedFreshNames = new Map<string, string>();
 
   const discoveredPath = resolve(ROOT, 'data/discovered.json');
   const discoveredCandidates: string[] = [];
@@ -662,6 +656,10 @@ async function main() {
           }
         }
         continue;
+      }
+
+      if (postedRepoSet.has(repoStr.toLowerCase())) {
+        postedFreshNames.set(repoStr.toLowerCase(), raw.nameWithOwner);
       }
 
       const commits = raw.defaultBranchRef?.target.history.nodes ?? [];
@@ -809,6 +807,27 @@ async function main() {
 
   // Remove orphan MDs whose repo is no longer in the active set
   const projectsDir = resolve(ROOT, 'src/content/projects');
+
+  // Posted repos renamed or transferred since their post: move their posted.json
+  // entry to the new slug (the old one redirects, see astro.config.ts) and drop the
+  // frozen page left under the old slug — see posted-renames.ts.
+  const renames = applyRenames(postedEntries, postedFreshNames);
+  for (const r of renames.renamed) console.log(`  ↪  Posted repo renamed: ${r.from} → ${r.to}`);
+  const postedPages = readdirSync(projectsDir)
+    .filter(f => f.endsWith('.md') && !writtenSlugs.has(f.slice(0, -3)))
+    .map(f => ({
+      slug: f.slice(0, -3),
+      postedAt: /^postedAt: "([^"]+)"/m.exec(readFileSync(resolve(projectsDir, f), 'utf8'))?.[1],
+    }));
+  const absorbed = absorbAliasPages(renames.entries, postedPages);
+  for (const slug of absorbed.aliases) {
+    unlinkSync(resolve(projectsDir, `${slug}.md`));
+    console.log(`  🗑  Removed page left by a rename: ${slug}.md`);
+  }
+  if (JSON.stringify(absorbed.entries) !== JSON.stringify(postedEntries)) {
+    writeFileSync(postedPath, JSON.stringify(absorbed.entries, null, 2));
+    for (const e of absorbed.entries) postedSlugSet.add(e.slug);
+  }
 
   // Fallback: scan existing MDs for postedAt in frontmatter — protects pages even if posted.json is lost
   for (const file of readdirSync(projectsDir).filter(f => f.endsWith('.md'))) {
