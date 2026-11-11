@@ -13,23 +13,24 @@ interface Props {
   /** Keep the page out of search results (it still gets a canonical). */
   noindex?: boolean;
 }
-const { title, description = 'Not famous. Not abandoned. Just building.', ogImage, showMetricsFAQ = false, notFound = false, noindex = false } = Astro.props;
+const { title, description = 'Small open source projects that are still shipping: 500 stars or fewer, ranked by activity relative to attention.', ogImage, showMetricsFAQ = false, notFound = false, noindex = false } = Astro.props;
 const base   = import.meta.env.BASE_URL;
 const ogUrl  = ogImage ?? new URL(`${base}og.png`, Astro.site).href;
 const pageUrl = Astro.url.href;
+const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title === 'SilentStars' ? title : `${title} · SilentStars`}</title>
+    <title>{fullTitle}</title>
     {notFound
       ? <meta name="robots" content="noindex" />
       : <link rel="canonical" href={pageUrl} />}
     {noindex && !notFound && <meta name="robots" content="noindex" />}
     <meta name="description" content={description} />
-    <meta property="og:title"       content={`${title} · SilentStars`} />
+    <meta property="og:title"       content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type"        content="website" />
     {!notFound && <meta property="og:url" content={pageUrl} />}
@@ -37,7 +38,7 @@ const pageUrl = Astro.url.href;
     <meta property="og:image:width"  content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card"        content="summary_large_image" />
-    <meta name="twitter:title"       content={`${title} · SilentStars`} />
+    <meta name="twitter:title"       content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image"       content={ogUrl} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
