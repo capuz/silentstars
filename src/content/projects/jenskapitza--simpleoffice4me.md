@@ -9,19 +9,19 @@ languages: ["Python"]
 languagePcts: [76]
 stars: 5
 forks: 0
-openIssues: 17
+openIssues: 23
 closedIssues: 86
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-05-17T22:00:40Z"
-lastCommitAt: "2026-11-10T13:28:34Z"
+lastCommitAt: "2026-11-10T19:54:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "funded", "under_pressure"]
-healthScore: 96
-undervaluedScore: 76
-maintainers: ["JensKapitza"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d54396da2347e2e692f810b2647f0afd0b430b47fb38c11184934578acb79a35/JensKapitza/SimpleOffice4Me"
+healthScore: 95
+undervaluedScore: 75
+maintainers: ["JensKapitza", "dependabot[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/c092cd711e9b5aaceae60233ff77bb94f7f3eaf88ee7198a047b2d878f38caaf/JensKapitza/SimpleOffice4Me"
 fundingLinks: ["GITHUB:https://github.com/JensKapitza"]
 postedAt: "2026-11-06T11:44:33.227Z"
 ---

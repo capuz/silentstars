@@ -9,7 +9,7 @@ language: "Markdown"
 languages: ["Markdown"]
 languagePcts: [81]
 topics: ["aeo", "ai-seo", "ai-visibility", "chatgpt-seo", "claude-code-plugin", "claude-plugin", "claude-seo", "geo", "llms-txt", "perplexity-seo"]
-stars: 79
+stars: 80
 forks: 6
 openIssues: 0
 closedIssues: 4
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 83
 undervaluedScore: 15
 maintainers: ["akii-technologies"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8b913f3753909af99d39e763d8eb3af2619d69685d934370a68b40a7f117399c/akii-technologies-ltd/akii-seo-ai-search-optimizer"
+openGraphImageUrl: "https://opengraph.githubassets.com/c163f4dad8eed2de78e928fe851c3cb77826322ea11898532d89b963238dbccc/akii-technologies-ltd/akii-seo-ai-search-optimizer"
 discussionCount: 0
 promoted: true
 postedAt: "2026-11-05T00:29:41.580Z"

@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 1
 createdAt: "2026-06-02T16:48:08Z"
-lastCommitAt: "2026-11-10T13:30:11Z"
+lastCommitAt: "2026-11-11T10:39:51Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "community_hub"]
-healthScore: 79
+healthScore: 69
 undervaluedScore: 55
 maintainers: ["oleksii-shepel", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f3e0c5454d8c7c583e544a34e4a1c61801125793fd2f5085b35970ca8793a922/epikodelabs/streamix"
+openGraphImageUrl: "https://opengraph.githubassets.com/ad217f90b125c1be321e08f80b89440a9af5bce9d367d14b56873ba890ff806b/epikodelabs/streamix"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/streamix"]
 discussionCount: 44
 promoted: true
@@ -47,14 +47,21 @@ Run any of them with the Angular CLI:
 npx ng serve app1   # ... through app9
 ```
 
-# Getting started
+## Builder not found after cloning
 
-Configure your editor and build tools, then create your first reactive counter in Angular, React, or Vue. Start with an **existing application** and the Node.js and TypeScript versions supported by your framework.
+Starting an application in a fresh checkout can fail with:
 
-| Framework | Requirements | Source preprocessing |
-| --- | --- | --- |
-| [Angular](#angular) | Angular 20+, TypeScript 5.5+ compatible with your Angular version | Angular builder |
-| [React](#react) | React 18+, TypeScript 5.5+ | Vite plugin: `sx()` before `react()` |
-| [Vue](#vue) | Vue 3.4+, TypeScript 5.5+ | Vite plugin: `sxVue()` before `vue()` |
+```text
+Error: Could not find the '@epikodelabs/streamix/angular/builder:application' builder's node package.
+```
 
-Install `@epikodelabs/streamix` once; no separate compiler, builder, or editor packages are needed. Configure both the build and…
+**Cause:** the workspace applications and the Streamix builder resolve `@epikodelabs/streamix` from `node_modules`. There, the package is linked to `dist/streamix`, which does not exist until the library has been built. `npm install` installs dependencies but does not produce that build output.
+
+**Solution:** build the package once, then start the application:
+
+```sh
+npm run build
+npx ng serve app1
+```
+
+`npm run build` compiles the library into `dist/streamix` and links it into…

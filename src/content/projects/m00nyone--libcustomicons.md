@@ -8,8 +8,8 @@ homepage: "https://www.esoui.com/downloads/info4161-LibCustomIcons.html"
 language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
-stars: 7
-forks: 127
+stars: 8
+forks: 128
 openIssues: 0
 closedIssues: 2
 watchers: 3
@@ -21,9 +21,9 @@ lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 98
-undervaluedScore: 92
+undervaluedScore: 91
 maintainers: ["m00nyONE", "Cote2Go", "haaidandb"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ceaadcf318a7dc4a86c15c68ab5bd04196658d64bd94f8607f2507e457d8b94d/m00nyONE/LibCustomIcons"
+openGraphImageUrl: "https://opengraph.githubassets.com/7005284759e9f2d68c0fd649bc24430162494ddc6cfe9b46fd844e993229109a/m00nyONE/LibCustomIcons"
 postedAt: "2026-09-03T08:19:41.539Z"
 ---
 

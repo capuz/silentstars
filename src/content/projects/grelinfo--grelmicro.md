@@ -7,17 +7,17 @@ url: "https://github.com/grelinfo/grelmicro"
 homepage: "https://grelmicro.grel.info"
 language: "Python"
 languages: ["Python"]
-languagePcts: [99]
+languagePcts: [100]
 topics: ["fastapi", "faststream", "leader-election", "python", "asyncio", "circuit-breaker", "resilience", "cache", "cron", "distributed-lock"]
 stars: 5
 forks: 0
-openIssues: 59
-closedIssues: 350
+openIssues: 56
+closedIssues: 354
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-11-10T14:00:37Z"
+lastCommitAt: "2026-11-11T10:44:54Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]

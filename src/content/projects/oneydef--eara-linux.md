@@ -7,26 +7,26 @@ url: "https://github.com/oneydef/EarA-linux"
 homepage: "https://oneydef.github.io/EarA-linux/"
 language: "Python"
 languages: ["Python"]
-languagePcts: [95]
+languagePcts: [96]
 topics: ["anc", "bluetooth", "bluez", "cmf", "earbuds", "flatpak", "gnome", "gtk4", "libadwaita", "linux"]
 stars: 22
-forks: 3
-openIssues: 2
+forks: 5
+openIssues: 4
 closedIssues: 1
 watchers: 0
 contributors: 3
-recentReleases: 9
+recentReleases: 10
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-08T20:17:25Z"
-lastReleaseAt: "2026-11-01T15:37:22Z"
+lastCommitAt: "2026-11-10T20:02:52Z"
+lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
-tags: ["hidden_gem", "funded", "release_machine"]
+tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
 healthScore: 76
 undervaluedScore: 46
 maintainers: ["oneydef", "alevas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/365364c5820a2d63d33bba97da3496e2f5e84bbfdf99072275209d30c7b8e41f/oneydef/EarA-linux"
+openGraphImageUrl: "https://opengraph.githubassets.com/e07350deb29b8f8d91f5225163343615ee3d8655557293109d79379649817701/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
-discussionCount: 0
+discussionCount: 1
 promoted: true
 postedAt: "2026-10-29T12:34:03.259Z"
 ---

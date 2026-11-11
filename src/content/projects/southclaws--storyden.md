@@ -12,12 +12,12 @@ topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "for
 stars: 348
 forks: 41
 openIssues: 68
-closedIssues: 193
+closedIssues: 195
 watchers: 9
 contributors: 18
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-11-09T22:54:02Z"
+lastCommitAt: "2026-11-10T23:03:07Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]

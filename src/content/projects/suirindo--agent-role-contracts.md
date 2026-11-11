@@ -11,20 +11,20 @@ languagePcts: [97]
 topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent", "nodejs", "validation", "workflow", "agent-handoffs", "coding-agents"]
 stars: 4
 forks: 0
-openIssues: 14
-closedIssues: 15
+openIssues: 13
+closedIssues: 16
 watchers: 0
 contributors: 3
 recentReleases: 5
 createdAt: "2026-09-30T06:35:51Z"
-lastCommitAt: "2026-11-07T17:02:25Z"
+lastCommitAt: "2026-11-11T02:44:35Z"
 lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 88
-undervaluedScore: 61
+healthScore: 90
+undervaluedScore: 62
 maintainers: ["suirindo", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/bc4284468a594ca56973ea4a7a2ba5ff33a84b1cf02bac67ad3dbd1b37724bfc/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/2d110adfec1179a64e2446a3f505b51600481daa9100be61429fc4c7436ec68b/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 promoted: true
 postedAt: "2026-10-31T07:53:30.293Z"

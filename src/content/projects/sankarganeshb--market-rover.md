@@ -19,11 +19,12 @@ recentReleases: 0
 createdAt: "2025-12-18T15:03:32Z"
 lastCommitAt: "2026-11-03T10:57:55Z"
 status: "thriving"
-tags: ["solo_builder"]
+tags: ["solo_builder", "funded"]
 healthScore: 81
 undervaluedScore: 83
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/69bf301816599ca31c06ef41dc7135a7f9c2d84931ae967f60a64ddeaf20aef4/SankarGaneshb/Market-Rover"
+fundingLinks: ["GITHUB:https://github.com/SankarGaneshb"]
 discussionCount: 1
 postedAt: "2026-09-24T08:50:00.142Z"
 ---

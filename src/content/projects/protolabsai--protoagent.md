@@ -7,22 +7,22 @@ url: "https://github.com/protoLabsAI/protoAgent"
 homepage: "https://agent.protolabs.studio"
 language: "Python"
 languages: ["Python", "TypeScript"]
-languagePcts: [69, 27]
+languagePcts: [68, 27]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
 stars: 17
 forks: 11
-openIssues: 13
-closedIssues: 1252
+openIssues: 11
+closedIssues: 1258
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-11-10T13:46:56Z"
+lastCommitAt: "2026-11-11T11:15:54Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 100
-undervaluedScore: 60
+undervaluedScore: 61
 maintainers: ["mabry1985", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1213686959/26f00f2d-a32d-4e23-94a1-c235b8b2ac37"
 discussionCount: 0

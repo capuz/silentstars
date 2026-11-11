@@ -15,14 +15,14 @@ watchers: 0
 contributors: 16
 recentReleases: 10
 createdAt: "2026-07-13T11:55:02Z"
-lastCommitAt: "2026-11-10T11:17:42Z"
+lastCommitAt: "2026-11-11T07:11:32Z"
 lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 67
 maintainers: ["stefanwb", "dtump", "OnnoJan-SBP"]
-openGraphImageUrl: "https://opengraph.githubassets.com/453324126de62a24bf5fef8cd63dc24363ddc9ee7561399f18278d18f64b3410/schubergphilis/claude-docker"
+openGraphImageUrl: "https://opengraph.githubassets.com/4ddceed6522198e7b5b7a6221ffe19e6f75ac82db7fa210e840b67c634fe7560/schubergphilis/claude-docker"
 postedAt: "2026-10-12T11:21:10.066Z"
 ---
 

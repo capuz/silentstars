@@ -5,57 +5,46 @@ description: "An open-source alternative to Mathpix Snip Tool. Instantly extract
 readmeQualityOk: true
 url: "https://github.com/JhuoW/OpenMathpix"
 language: "TypeScript"
-languages: ["TypeScript", "JavaScript"]
-languagePcts: [72, 22]
-topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative"]
-stars: 105
-forks: 6
+languages: ["TypeScript"]
+languagePcts: [77]
+topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative", "latex-ocr", "latex-ocr-document-ai", "math-ocr"]
+stars: 161
+forks: 26
 openIssues: 1
 closedIssues: 1
-watchers: 0
+watchers: 18
 contributors: 1
-recentReleases: 2
+recentReleases: 3
 createdAt: "2026-03-23T12:59:26Z"
-lastCommitAt: "2026-11-10T10:23:50Z"
-lastReleaseAt: "2026-11-01T15:14:24Z"
+lastCommitAt: "2026-11-11T10:21:19Z"
+lastReleaseAt: "2026-11-11T09:25:26Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 78
-undervaluedScore: 18
+undervaluedScore: 19
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2a98fe37f6714858b32902685865ad0f0cadbb50171700aad16ce512bc0510ff/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/130f84dc3313cd13e030a542952b43142e1b42bbab60baa21dfdcb2b52bd64a8/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---
 
-Open-source desktop snipping tool that converts formula screenshots into LaTeX locally with <a href="https://huggingface.co/breezedeus/pix2text-mfr-1.5">Pix2Text MFR-1.5</a>, with optional <a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR</a> APIs for text, tables and document layouts.
+Free and open source · Runs fully offline · Fast and accurate
 
----
+## Features
 
-## Installation
+- **Snip from anything.** PDFs, slides, web pages, videos, scanned notes. Press `Ctrl+Shift+S`, drag
+  around a formula, and the LaTeX is already on your clipboard. You can also paste or drop an image.
+- **Private by design.** Recognition runs on your CPU. Your screenshots never leave your computer.
+- **Two local models.** A fast default for everyday formulas, and a larger one for long,
+  multi-line and matrix-heavy formulas. Each downloads once with one click and then works offline.
+- **Paste-ready output.** Copy as LaTeX, `$…$`, `$$…$$`, `\[…\]`, an `equation` environment, or
+  MathML for an editable Microsoft Word equation. Need a picture instead? **Copy Image** or **Save Image…** as PNG or SVG.
+- **Easy to correct.** Fix a symbol in the source and the preview updates as you type. Recent
+  results are kept in a searchable history.
+- **Stays out of your way.** Lives in the system tray and starts with Windows. Optionally copies in
+  the background and shows a small popup instead of opening the window.
+- English and 简体中文 interface, light and dark themes, and in-app updates.
 
-### Windows (portable, recommended)
+## Download
 
-1. Open the [latest release](https://github.com/JhuoW/OpenMathpix/releases/latest) and download **OpenMathpix-portable.exe** from **Assets** (Windows x64).
-2. For local formula recognition, install the [Microsoft Visual C++ x64 Redistributable](https://aka.ms/vc14/vc_redist.x64.exe) if it is not already installed.
-3. Double-click **OpenMathpix-portable.exe** to launch the portable app.
-4. Follow [Local formula recognition](#local-formula-recognition-recommended) below to test and use.
-
-### Build from source (optional)
-
-Requires Node.js 22.12 or later and npm.
-
-```bash
-git clone git@github.com:JhuoW/OpenMathpix.git
-cd OpenMathpix
-npm install
-npm run dev
-npm run check      # TypeScript, ESLint, regression tests, production build
-npm run package
-```
-
-## Getting started
-
-### Local formula recognition (recommended)
-
-1. Open…
+1. Download…

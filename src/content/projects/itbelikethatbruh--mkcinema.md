@@ -9,22 +9,22 @@ language: "HTML"
 languages: ["HTML", "JavaScript"]
 languagePcts: [52, 35]
 topics: ["android-tv", "pwa", "streaming", "anime", "family", "fire-tv", "free", "home-cinema", "iptv", "live-tv"]
-stars: 24
+stars: 25
 forks: 2
 openIssues: 0
 closedIssues: 2
-watchers: 1
+watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-26T02:25:02Z"
-lastCommitAt: "2026-11-10T14:35:08Z"
+lastCommitAt: "2026-11-11T08:03:39Z"
 lastReleaseAt: "2026-11-08T03:00:10Z"
 status: "newborn"
 tags: ["hidden_gem", "funded", "release_machine"]
 healthScore: 100
 undervaluedScore: 53
 maintainers: ["claude", "itbelikethatbruh"]
-openGraphImageUrl: "https://opengraph.githubassets.com/431e2920ecf561746abb1b25b7e1e7e1a0acb5684830a6bcb5341a7fc427e248/itbelikethatbruh/MKCinema"
+openGraphImageUrl: "https://opengraph.githubassets.com/0596a6feb78afc84a3609cbf625ed1b74858531ede7d9d89fec3d1094062143a/itbelikethatbruh/MKCinema"
 fundingLinks: ["KO_FI:https://ko-fi.com/mkcinema"]
 promoted: true
 ---
@@ -36,8 +36,4 @@ MKCinema brings everything you watch into one place and turns the evening into a
 You bring the sources: Stremio-compatible addons, your own Plex, Jellyfin or Emby server, live TV playlists, or the streaming services you already pay for. MKCinema is free forever, with no ads, no paywalls and no account needed.
 
 > [!IMPORTANT]
-> **New in 2.56:** a cleaner phone remote, cast and details on your phone while the film plays, and Miko, the remote's assistant. 2.55 brought party cameras, subtitles on smart glasses and sensory-friendly mode. [See what's new](https://github.com/itbelikethatbruh/MKCinema/blob/HEAD/CHANGELOG.md).
-
-## A powerhouse player, right in the browser
-
-Most web players give up at the first MKV file and send you off to VLC. MKCinema doesn't. Its player engine runs inside the…
+> **New in 2.63:** **Friends.** Pick a username, add friends, see who's online and what they're watching, chat, send watch party invites, and call with voice or camera, never during a film. Xtream TV logins now bring live channels, catch-up, films and series. 2.62 brought a Top 10 you can filter by country, network, category and year, homes for Films and Series, and Miko on every screen. [See what's…

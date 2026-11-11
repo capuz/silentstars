@@ -10,7 +10,7 @@ languages: ["Python", "TypeScript"]
 languagePcts: [66, 30]
 topics: ["container-optimization", "containers", "devops", "devops-tools", "docker", "docker-extension", "docker-extensions", "dockerfile", "dockerfiles", "finops"]
 stars: 0
-forks: 0
+forks: 1
 openIssues: 7
 closedIssues: 1
 watchers: 0
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-10T07:07:58Z"
 lastReleaseAt: "2026-10-13T05:47:28Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
-healthScore: 80
-undervaluedScore: 57
+healthScore: 70
+undervaluedScore: 77
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b47182e2a7b5a44001b123a1dc216c7ffeed9f7cbc07403e4f54364c21488c3b/SankarGaneshb/rover-slim"
 fundingLinks: ["GITHUB:https://github.com/SankarGaneshb"]

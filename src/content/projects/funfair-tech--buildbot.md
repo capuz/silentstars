@@ -10,20 +10,20 @@ languagePcts: [99]
 topics: ["discord-bot", "buildbot", "discord"]
 stars: 7
 forks: 1
-openIssues: 6
-closedIssues: 24
+openIssues: 5
+closedIssues: 25
 watchers: 5
 contributors: 11
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-11-10T09:45:39Z"
+lastCommitAt: "2026-11-10T14:58:37Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 95
+tags: ["hidden_gem", "legacy_hero"]
+healthScore: 96
 undervaluedScore: 70
 maintainers: ["credfeto", "dnyw4l3n13"]
-openGraphImageUrl: "https://opengraph.githubassets.com/652cf68cc901d04dc1a775d3e3e0a7c99fd9ba746c37e8ed14bb034b87ceb8a7/funfair-tech/BuildBot"
+openGraphImageUrl: "https://opengraph.githubassets.com/0ebf4a8cbf2101771af217b52971e1cda9115c0b2f6afca89c14793856c775c1/funfair-tech/BuildBot"
 postedAt: "2026-09-01T08:56:05.310Z"
 ---
 

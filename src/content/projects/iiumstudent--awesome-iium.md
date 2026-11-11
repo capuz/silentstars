@@ -23,7 +23,7 @@ tags: []
 healthScore: 77
 undervaluedScore: 71
 maintainers: ["github-actions[bot]", "claude", "2217441"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f23b0dd7587dc5bc89c15394705a4dd33fdc15e2ce0738dd4eba1835af3db25b/IIUMstudent/Awesome-IIUM"
+openGraphImageUrl: "https://opengraph.githubassets.com/66d35c47f6c338545ba4d59c9a597004bcd23198650d508dfedc006e0bf11792/IIUMstudent/Awesome-IIUM"
 discussionCount: 2
 postedAt: "2026-08-19T04:12:56.778Z"
 ---

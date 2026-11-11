@@ -7,7 +7,7 @@ url: "https://github.com/AniChikage/open-resume"
 homepage: "https://justcv.org"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [94]
+languagePcts: [93]
 topics: ["cv", "docker", "react", "resume-builder", "resume-template", "self-hosted", "typescript"]
 stars: 21
 forks: 1
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 1
 createdAt: "2026-10-19T13:50:59Z"
-lastCommitAt: "2026-10-27T03:07:33Z"
+lastCommitAt: "2026-11-11T10:07:30Z"
 lastReleaseAt: "2026-10-27T03:10:16Z"
-status: "quiet"
+status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 83
-undervaluedScore: 27
+healthScore: 86
+undervaluedScore: 29
 maintainers: ["AniChikage"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4427e3d516fb584cfdf5cfa7f87f7f36f90f85d82c4db102572524b6cf90439f/AniChikage/open-resume"
+openGraphImageUrl: "https://opengraph.githubassets.com/f2733318694b96f2084b84800cbd980151296f0acf91c48b1d185689f4000336/AniChikage/open-resume"
 promoted: true
 postedAt: "2026-10-25T02:53:35.126Z"
 ---
@@ -38,7 +38,7 @@ English · <a href="README.zh-CN.md">简体中文</a><br>
 ## Features
 
 - **156 templates, all included** — browse, filter, preview, and switch layouts without unlocking a plan.
-- **An editor that stays out of your way** — live A4 preview, autosave, undo/redo, photos, section ordering, fonts, and accent colors.
-- **Unlimited resumes and free exports** — PDF, PNG, and JSON backups, without watermarks.
-- **Find and organize your resumes** — search by title, name, or target role; sort by update time or title; rename and duplicate from your workspace.
-- **Local resume checks** — review content, contact details, and date ranges, then jump to the relevant editor fields. Runs in…
+- **An editor that stays out of your way** — Content, Design, Check and Share workspaces, a PDF preview of the exact file you download, autosave, undo/redo, photos, section ordering, fonts, and accent colors.
+- **Unlimited resumes and free exports** — searchable PDF, editable Word (.docx), PNG, and JSON backups, without watermarks.
+- **Bring your existing resume** — read PDF, DOCX, TXT, Markdown or pasted text on your device, review the detected content, then create an editable copy.
+- **Back up and…

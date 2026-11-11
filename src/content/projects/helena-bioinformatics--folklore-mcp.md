@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [99]
 stars: 1
-forks: 0
+forks: 1
 openIssues: 1
 closedIssues: 0
 watchers: 0
@@ -20,8 +20,8 @@ lastCommitAt: "2026-11-06T11:40:50Z"
 lastReleaseAt: "2026-10-30T19:59:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 74
-undervaluedScore: 56
+healthScore: 64
+undervaluedScore: 74
 maintainers: ["vladimir-mitev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3e1984821d6f59d077bd9b32f53a0e3811e7e8f620f2c8eabfa14ad129b32545/helena-bioinformatics/folklore-mcp"
 promoted: true

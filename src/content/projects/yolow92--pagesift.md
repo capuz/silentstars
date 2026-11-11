@@ -17,20 +17,20 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-09T09:32:58Z"
+lastCommitAt: "2026-11-11T07:56:16Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1d7663b7e81eaaf26e0a7fd957ad88502cd96c9b2427ffc0312442ffe36a2293/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/c4cd33d67a8c77fc36961c60cf9591c342f7b995ff7946f1c08c87eb4317aa6e/YOLOW92/pagesift"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.2.4
+# pagesift 1.2.6
 
 **The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown or JSON out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.
