@@ -9,6 +9,8 @@ export interface PostedEntry {
   platforms: Record<string, { url: string; postedAt: string }>;
   /** Slugs this post lived under before its repo was renamed; they redirect here. */
   previousSlugs?: string[];
+  /** Posted from an accepted submission; counts toward the daily cap in bsky-queue.ts. */
+  communityPick?: true;
 }
 
 export interface Project {
@@ -105,15 +107,19 @@ export function selectTop20(projects: Project[], posted: PostedEntry[], platform
     .slice(0, 20);
 }
 
-export function recordPost(repo: string, platform: string, url: string, entries: PostedEntry[]): PostedEntry[] {
+export function recordPost(
+  repo: string, platform: string, url: string, entries: PostedEntry[], opts: { communityPick?: boolean } = {},
+): PostedEntry[] {
   const slug = slugify(repo);
   const now  = new Date().toISOString();
+  const flag = opts.communityPick ? { communityPick: true as const } : {};
   const existing = entries.find(e => e.repo.toLowerCase() === repo.toLowerCase());
   if (existing) {
     existing.platforms[platform] = { url, postedAt: now };
+    Object.assign(existing, flag);
     return entries;
   }
-  return [...entries, { repo, slug, postedAt: now, platforms: { [platform]: { url, postedAt: now } } }];
+  return [...entries, { repo, slug, postedAt: now, platforms: { [platform]: { url, postedAt: now } }, ...flag }];
 }
 
 export const LANG_HASHTAG: Record<string, string> = {

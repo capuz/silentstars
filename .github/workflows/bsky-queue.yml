@@ -1,0 +1,88 @@
+name: Bluesky queue
+
+# Posts the accepted submissions waiting in data/bsky-queue.json, up to the
+# daily cap (scripts/bsky-queue.ts), then closes each one's issue with the post
+# link and emails the submitter. A quiet day leaves nothing here: submissions
+# post right after they deploy. This catches the rest — busy days, and posts
+# skipped because a deploy timed out.
+
+on:
+  schedule:
+    # Off the top of the hour: hosted runners are most congested at :00.
+    - cron: '17 9,15,21 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run — mostrar qué se publicaría sin publicar ni escribir"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  drain:
+    name: Post queued submissions
+    runs-on: ubuntu-latest
+    environment: BSKY_IDENTIFIER
+    # Shared with collect.yml's post job: one poster at a time.
+    concurrency:
+      group: bsky-post
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Same as collect.yml: the hook line may be written by Claude Code.
+      - name: Install Claude Code CLI
+        env:
+          HAS_CLAUDE_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: |
+          if [ "$HAS_CLAUDE_TOKEN" = "true" ]; then npm install -g @anthropic-ai/claude-code; fi
+
+      - name: Drain the queue
+        id: drain
+        run: npx tsx scripts/bsky-queue-drain.ts
+        env:
+          # A scheduled run has no inputs: it always posts for real.
+          DRY_RUN:           ${{ inputs.dry_run == true }}
+          BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER:        ${{ github.repository_owner }}
+          REPO_NAME:         ${{ github.event.repository.name }}
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
+          BASE_URL:          https://silentstars.dev
+
+      - name: Commit posted.json / bsky-queue.json
+        if: steps.drain.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/posted.json data/bsky-queue.json
+          git commit -m "chore(bsky-queue): post queued submissions [skip ci]"
+          # A submission accepted meanwhile appends to bsky-queue.json; the
+          # driver merges those arrays by repo (.gitattributes).
+          git config merge.json-entries.driver "npx tsx scripts/merge-json-entries.ts %O %A %B"
+          # Same rebase-retry loop as collect.yml / standby-recheck.yml.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Failed to push posted.json after 5 attempts" >&2
+          exit 1

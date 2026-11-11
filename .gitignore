@@ -20,6 +20,7 @@ data/*
 !data/posted-weekly.json
 !data/promoted.json
 !data/standby.json
+!data/bsky-queue.json
 !data/translations.json
 !data/weekly-notes.json
 
