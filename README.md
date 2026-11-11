@@ -12,7 +12,7 @@ A static site that surfaces small open source projects that are **still shipping
 
 | Home | Project page | Weekly edition |
 |---|---|---|
-| [![SilentStars home page: hero, stats and top picks](docs/screenshots/home.jpg)](https://silentstars.dev/) | [![Project page for haoming-luo/agentfem with health bar, signals and README](docs/screenshots/project.jpg)](https://silentstars.dev/projects/haoming-luo--agentfem/) | [![Weekly edition 2026-W43 listing the projects that moved that week](docs/screenshots/weekly.jpg)](https://silentstars.dev/weekly/2026-W43/) |
+| [![SilentStars home page: hero, stats and top picks](docs/screenshots/home.jpg)](https://silentstars.dev/) | [![Project page for haoming-luo/agentfem with health bar, signals and README](docs/screenshots/project.jpg)](https://silentstars.dev/projects/haoming-luo--agentfem/) | [![Weekly edition 2026-W45 listing the projects that moved that week](docs/screenshots/weekly.jpg)](https://silentstars.dev/weekly/2026-W45/) |
 
 ---
 
