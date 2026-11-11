@@ -34,5 +34,11 @@
     "issue": 82,
     "since": "2026-11-10",
     "until": "2027-02-08"
+  },
+  {
+    "repo": "yangdoh/agents-md-check",
+    "issue": 84,
+    "since": "2026-11-11",
+    "until": "2027-02-09"
   }
 ]
