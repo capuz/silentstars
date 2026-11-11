@@ -113,7 +113,12 @@ const tagLabels: Record<string, string> = {
 };
 
 const base    = import.meta.env.BASE_URL;
-const ogImage = d.postedAt
+// Daily-highlight post published for this project (recorded by the post job)
+const postedEntry = loadPosted().find(e => e.slug === project.slug);
+const bskyPostUrl = postedEntry?.platforms.bsky?.url;
+// posted.json is checked too: the frontmatter postedAt only lands at the next
+// collect, but the og/<slug>.png exists from the build that posted it.
+const ogImage = d.postedAt || postedEntry
   ? new URL(`${base}og/${project.slug}.png`, Astro.site).href
   : new URL(`${base}og/index.png`, Astro.site).href;
 const customImage = d.openGraphImageUrl?.includes('repository-images.githubusercontent.com')
@@ -121,10 +126,6 @@ const customImage = d.openGraphImageUrl?.includes('repository-images.githubuserc
 const pageUrl = new URL(`${base}projects/${project.slug}/`, Astro.site).href;
 const shareText = encodeURIComponent(`★ ${d.name} — ${d.description}\n\n${pageUrl}`);
 const shareUrl  = `https://bsky.app/intent/compose?text=${shareText}`;
-
-// Daily-highlight post published for this project (recorded by the post job)
-const postedEntry = loadPosted().find(e => e.slug === project.slug);
-const bskyPostUrl = postedEntry?.platforms.bsky?.url;
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage}>
   <div class="container section">
