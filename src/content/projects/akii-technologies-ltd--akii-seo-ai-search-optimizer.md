@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2026-05-20T07:55:35Z"
-lastCommitAt: "2026-11-02T12:11:04Z"
+lastCommitAt: "2026-11-09T23:01:18Z"
 lastReleaseAt: "2026-05-26T08:58:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 83
-undervaluedScore: 15
+healthScore: 86
+undervaluedScore: 16
 maintainers: ["akii-technologies"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c163f4dad8eed2de78e928fe851c3cb77826322ea11898532d89b963238dbccc/akii-technologies-ltd/akii-seo-ai-search-optimizer"
+openGraphImageUrl: "https://opengraph.githubassets.com/afd843dcf0e20678f1bd377d2f9c769cdec305c18be807e793bb6ca2e10e8ceb/akii-technologies-ltd/akii-seo-ai-search-optimizer"
 discussionCount: 0
 promoted: true
 postedAt: "2026-11-05T00:29:41.580Z"

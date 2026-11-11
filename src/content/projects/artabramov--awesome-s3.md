@@ -15,7 +15,7 @@ createdAt: "2026-11-07T14:27:15Z"
 lastCommitAt: "2026-11-08T04:51:17Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 79
+healthScore: 78
 undervaluedScore: 15
 maintainers: ["artabramov"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b262abe945c9402d6f15cc27ab37142f202eddf33259cbb975f58cf6d5a90786/artabramov/awesome-s3"

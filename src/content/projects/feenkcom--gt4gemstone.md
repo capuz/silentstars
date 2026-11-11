@@ -15,13 +15,13 @@ watchers: 9
 contributors: 12
 recentReleases: 0
 createdAt: "2021-07-07T08:15:38Z"
-lastCommitAt: "2026-11-11T08:27:11Z"
+lastCommitAt: "2026-11-11T13:06:48Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 87
 undervaluedScore: 73
 maintainers: ["chisandrei", "akgrant43", "brunobuzzi"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7bfdc4320b1d0521d6ef1f5edb5995043183777f0b638c258f18ce6237b52f81/feenkcom/gt4gemstone"
+openGraphImageUrl: "https://opengraph.githubassets.com/c4f421c9f74a5769e9e2e172c5b39ca6caed9a6da6826dbe689228c8e8199e18/feenkcom/gt4gemstone"
 postedAt: "2026-09-18T08:31:33.689Z"
 ---
 

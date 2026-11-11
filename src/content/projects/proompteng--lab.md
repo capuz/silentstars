@@ -22,7 +22,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
 undervaluedScore: 76
 maintainers: ["gregkonush"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9d80edad21bc3f4e5ff029bc5d83ceb255d56d73cb5d1a1a242bef27d22dc98c/proompteng/lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/96dc301fec28a7ac411d1fdb0b061961d88ead0ee51c2e3766a1725236809190/proompteng/lab"
 postedAt: "2026-08-05T06:11:42.802Z"
 ---
 

@@ -8,22 +8,23 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["cli", "html-to-markdown", "llms", "markdown", "markdown-converter", "python", "web-scraping"]
-stars: 5
+stars: 6
 forks: 1
-openIssues: 2
-closedIssues: 59
+openIssues: 0
+closedIssues: 61
 watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2025-12-11T00:46:52Z"
-lastCommitAt: "2026-11-11T11:22:35Z"
+lastCommitAt: "2026-11-11T14:58:54Z"
 lastReleaseAt: "2026-11-09T15:30:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 99
-undervaluedScore: 85
+healthScore: 100
+undervaluedScore: 83
 maintainers: ["CamiloMartinezM"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cf5ab988e1502cc1d645dbbba8f80fc1f5cc388911d6d5978870d41c9bbdb04d/CamiloMartinezM/site2md"
+openGraphImageUrl: "https://opengraph.githubassets.com/e24725a2878c3625ebf086512b3f0a36e1b5d8e7f8ce89e0f03829a40c71d2a3/CamiloMartinezM/site2md"
+postedAt: "2026-11-11T11:30:46.402Z"
 ---
 
 # 📄 site2md
@@ -40,7 +41,7 @@ openGraphImageUrl: "https://opengraph.githubassets.com/cf5ab988e1502cc1d645dbbba
 
 ### Standalone Executable (Windows/Linux) 🚀
 
-The executable starts faster than a Python environment and needs neither Python nor pip. It is a second download next to the package, which stays the default install. Download the archive for your system from the [latest release](https://github.com/CamiloMartinezM/site2md/releases/latest). `<version>` below is the release's version, such as `0.6.0`.
+The executable starts faster than a Python environment and needs neither Python nor pip. It is a second download next to the package, which stays the default install. Download the archive for your system from the [latest release](https://github.com/CamiloMartinezM/site2md/releases/latest). `<version>` below is the release's version, such as `0.7.0`.
 
 - `site2md-<version>-windows-x86_64.zip` for Windows.
 - `site2md-<version>-linux-x86_64.tar.gz` for Linux, built on Ubuntu…

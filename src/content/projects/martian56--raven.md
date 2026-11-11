@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-12T07:38:07Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "at_risk"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 74
+healthScore: 73
 undervaluedScore: 36
 maintainers: ["martian56", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f4c047875ca987bcd99e0b32324fd71773941a67a826b9ea0a5b039b347aced5/martian56/raven"

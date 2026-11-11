@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-11T10:35:16Z"
+lastCommitAt: "2026-11-11T19:43:10Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -34,6 +34,6 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 3.4.1, [She remembers as much as her model can hold](https://github.com/farena-ai/sara/releases/tag/v3.4.1). Chat memory follows each model's real window, with a cost guard; local Ollama models stop forgetting long chats. [See what changed](#whats-new)
+> **Status:** 3.5.0, [A desktop app that does more](https://github.com/farena-ai/sara/releases/tag/v3.5.0). The Windows app updates itself, quick-asks with your selection or window, takes drops, saves to your PC, runs approved commands and works offline. [See what changed](#whats-new)
 >
-> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified separately.…
+> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is…

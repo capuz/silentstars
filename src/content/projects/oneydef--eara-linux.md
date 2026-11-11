@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-10T20:02:52Z"
 lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 76
+healthScore: 77
 undervaluedScore: 46
 maintainers: ["oneydef", "alevas"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e07350deb29b8f8d91f5225163343615ee3d8655557293109d79379649817701/oneydef/EarA-linux"

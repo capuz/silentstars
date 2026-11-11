@@ -9,15 +9,15 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
-stars: 348
-forks: 41
-openIssues: 68
-closedIssues: 195
+stars: 349
+forks: 42
+openIssues: 72
+closedIssues: 196
 watchers: 9
 contributors: 18
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-11-10T23:03:07Z"
+lastCommitAt: "2026-11-11T19:17:55Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors"]

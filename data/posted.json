@@ -45,7 +45,7 @@
     }
   },
   {
-    "repo": "ukncsp/cdds-cmip7-mappings",
+    "repo": "UKNCSP/CDDS-CMIP7-mappings",
     "slug": "ukncsp--cdds-cmip7-mappings",
     "postedAt": "2026-06-28T07:04:35.686Z",
     "platforms": {
@@ -60,7 +60,7 @@
     }
   },
   {
-    "repo": "myfriendqaz/livetvcollector",
+    "repo": "myfriendqaz/LiveTVCollector",
     "slug": "myfriendqaz--livetvcollector",
     "postedAt": "2026-06-28T02:10:40.289Z",
     "platforms": {
@@ -86,7 +86,7 @@
     }
   },
   {
-    "repo": "shik3i/koalasync",
+    "repo": "Shik3i/KoalaSync",
     "slug": "shik3i--koalasync",
     "postedAt": "2026-06-26T21:38:25.211Z",
     "platforms": {
@@ -112,7 +112,7 @@
     }
   },
   {
-    "repo": "opn-build/openalive",
+    "repo": "opn-build/OpenAlive",
     "slug": "opn-build--openalive",
     "postedAt": "2026-06-25T22:59:39.704Z",
     "platforms": {
@@ -138,7 +138,7 @@
     }
   },
   {
-    "repo": "salieric/succ",
+    "repo": "SalieriC/SUCC",
     "slug": "salieric--succ",
     "postedAt": "2026-06-25T02:12:49.344Z",
     "platforms": {
@@ -164,7 +164,7 @@
     }
   },
   {
-    "repo": "cizzko/-270_on_celsius",
+    "repo": "cizzko/-270_on_Celsius",
     "slug": "cizzko---270-on-celsius",
     "postedAt": "2026-06-24T00:25:19.628Z",
     "platforms": {
@@ -186,7 +186,7 @@
     }
   },
   {
-    "repo": "dcgo2/dcgo",
+    "repo": "DCGO2/DCGO",
     "slug": "dcgo2--dcgo",
     "postedAt": "2026-06-23T23:22:50.306Z",
     "platforms": {
@@ -208,7 +208,7 @@
     }
   },
   {
-    "repo": "xsrazy/discord-bot",
+    "repo": "xsrazy/Discord-Bot",
     "slug": "xsrazy--discord-bot",
     "postedAt": "2026-06-21T07:32:11.420Z",
     "platforms": {
@@ -223,7 +223,7 @@
     }
   },
   {
-    "repo": "dc123456789/britannia-the-winter-king-ck3",
+    "repo": "DC123456789/Britannia-The-Winter-King-CK3",
     "slug": "dc123456789--britannia-the-winter-king-ck3",
     "postedAt": "2026-06-21T05:26:06.376Z",
     "platforms": {
@@ -234,7 +234,7 @@
     }
   },
   {
-    "repo": "easydata/expired-cn-domains",
+    "repo": "EasyData/expired-cn-domains",
     "slug": "easydata--expired-cn-domains",
     "postedAt": "2026-06-21T04:14:27.566Z",
     "platforms": {
@@ -245,7 +245,7 @@
     }
   },
   {
-    "repo": "pathology-data-mining/mussel",
+    "repo": "pathology-data-mining/Mussel",
     "slug": "pathology-data-mining--mussel",
     "postedAt": "2026-06-21T02:28:52.953Z",
     "platforms": {
@@ -256,7 +256,7 @@
     }
   },
   {
-    "repo": "adya84/ha-world-cup-2026",
+    "repo": "Adya84/ha-world-cup-2026",
     "slug": "adya84--ha-world-cup-2026",
     "postedAt": "2026-06-21T02:12:50.330Z",
     "platforms": {
@@ -297,7 +297,7 @@
     }
   },
   {
-    "repo": "echotools/nakama",
+    "repo": "EchoTools/nakama",
     "slug": "echotools--nakama",
     "postedAt": "2026-06-20T19:53:48.072Z",
     "platforms": {
@@ -312,15 +312,18 @@
     }
   },
   {
-    "repo": "gimhol/little-fighter-2-WEMAKE",
-    "slug": "gimhol--little-fighter-2-wemake",
+    "repo": "gimhol/Little-Fighter-Wemake",
+    "slug": "gimhol--little-fighter-wemake",
     "postedAt": "2026-07-03T12:28:26.382Z",
     "platforms": {
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mpqkbv74ls2r",
         "postedAt": "2026-07-03T12:28:26.382Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "gimhol--little-fighter-2-wemake"
+    ]
   },
   {
     "repo": "openfoodfacts/openfoodfacts-upptime",
@@ -1538,8 +1541,8 @@
     }
   },
   {
-    "repo": "Aquaticat/Monochromatic",
-    "slug": "aquaticat--monochromatic",
+    "repo": "Aquaticats/Monochromatic",
+    "slug": "aquaticats--monochromatic",
     "postedAt": "2026-09-30T10:05:46.857Z",
     "platforms": {
       "bsky": {
@@ -1550,7 +1553,10 @@
         "url": "contact@aquati.cat",
         "postedAt": "2026-09-30T10:06:06.239Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "aquaticat--monochromatic"
+    ]
   },
   {
     "repo": "sahilrajput03/sahilrajput03",
@@ -1950,7 +1956,10 @@
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mymasg7cdf2a",
         "postedAt": "2026-10-24T08:14:50.030Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "chipfighter--framekeeper"
+    ]
   },
   {
     "repo": "findmydoc-platform/website",
@@ -2093,15 +2102,18 @@
     }
   },
   {
-    "repo": "artabramov/hidden",
-    "slug": "artabramov--hidden",
+    "repo": "artabramov/hidden-s3",
+    "slug": "artabramov--hidden-s3",
     "postedAt": "2026-10-29T05:58:03.283Z",
     "platforms": {
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3myylifxajw2n",
         "postedAt": "2026-10-29T05:58:03.283Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "artabramov--hidden"
+    ]
   },
   {
     "repo": "mission-apprentissage/labonnealternance",
@@ -2251,15 +2263,18 @@
     }
   },
   {
-    "repo": "devdasx/oath-wallet",
-    "slug": "devdasx--oath-wallet",
+    "repo": "OathWallet/oath-wallet",
+    "slug": "oathwallet--oath-wallet",
     "postedAt": "2026-11-01T23:05:53.666Z",
     "platforms": {
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mzbwd4z7632o",
         "postedAt": "2026-11-01T23:05:53.666Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "devdasx--oath-wallet"
+    ]
   },
   {
     "repo": "immich-app/static-pages",

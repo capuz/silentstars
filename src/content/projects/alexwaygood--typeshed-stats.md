@@ -17,10 +17,10 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2022-10-09T23:59:17Z"
-lastCommitAt: "2026-11-11T05:43:21Z"
+lastCommitAt: "2026-11-11T19:31:06Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]

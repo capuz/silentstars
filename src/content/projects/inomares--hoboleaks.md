@@ -22,7 +22,7 @@ tags: ["solo_builder", "legacy_hero"]
 healthScore: 89
 undervaluedScore: 74
 maintainers: ["Inomares"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4631ca6556394b58404679e6ffb0e8968589d095599318e2cbc7286a247edcfa/Inomares/hoboleaks"
+openGraphImageUrl: "https://opengraph.githubassets.com/3592d80b7d40a1ef66dafab04d37a652768800df7bd754aaadb89272a488a343/Inomares/hoboleaks"
 postedAt: "2026-11-04T11:36:41.226Z"
 ---
 

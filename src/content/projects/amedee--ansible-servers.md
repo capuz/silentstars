@@ -20,7 +20,7 @@ createdAt: "2024-06-04T23:55:48Z"
 lastCommitAt: "2026-11-10T20:00:44Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 83
 maintainers: ["amedee", "github-actions[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e79e7a76291d729210f240d9d17f4804411b0d8c0741a809d82f10bd30401818/amedee/ansible-servers"

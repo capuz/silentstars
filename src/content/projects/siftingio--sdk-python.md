@@ -25,6 +25,7 @@ undervaluedScore: 25
 maintainers: ["aprsn"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2bf77bf9179d8a2d4fa31c38b95011195552b02ad98b3e7571c53b59b021989f/SiftingIO/sdk-python"
 promoted: true
+postedAt: "2026-11-11T17:41:00.079Z"
 ---
 
 # SiftingIO Python SDK

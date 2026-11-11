@@ -22,7 +22,7 @@ tags: ["solo_builder"]
 healthScore: 98
 undervaluedScore: 75
 maintainers: ["moto-renovate[bot]", "motoki317"]
-openGraphImageUrl: "https://opengraph.githubassets.com/205534468e13b348f3a76236dc48bbb1b1b9839c15727f401bbf67035f3e6b65/motoki317/manifest"
+openGraphImageUrl: "https://opengraph.githubassets.com/b3acf546687e1efad64a328bb39774de997157b5f6621a94d3945d4b4bc35d18/motoki317/manifest"
 postedAt: "2026-08-04T06:15:28.702Z"
 ---
 

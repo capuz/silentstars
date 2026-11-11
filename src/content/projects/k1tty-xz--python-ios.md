@@ -9,7 +9,7 @@ language: "HTML"
 languages: ["HTML", "Shell"]
 languagePcts: [53, 47]
 stars: 13
-forks: 2
+forks: 3
 openIssues: 0
 closedIssues: 0
 watchers: 0
@@ -20,8 +20,8 @@ lastCommitAt: "2026-10-05T13:28:44Z"
 lastReleaseAt: "2026-09-23T20:30:13Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 75
-undervaluedScore: 73
+healthScore: 74
+undervaluedScore: 74
 maintainers: ["k1tty-xz"]
 openGraphImageUrl: "https://opengraph.githubassets.com/348f7459dd8e29c59bb5495b9ff80f8fdeb31603a52babd33cc1016080267e0b/k1tty-xz/python-ios"
 postedAt: "2026-09-16T08:51:55.843Z"

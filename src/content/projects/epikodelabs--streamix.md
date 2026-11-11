@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem", "funded", "community_hub"]
 healthScore: 69
 undervaluedScore: 55
 maintainers: ["oleksii-shepel", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ad217f90b125c1be321e08f80b89440a9af5bce9d367d14b56873ba890ff806b/epikodelabs/streamix"
+openGraphImageUrl: "https://opengraph.githubassets.com/b1910d58f9ad02daeaecf530c85d20fc2234cb81676df449776912c919529345/epikodelabs/streamix"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/streamix"]
 discussionCount: 44
 promoted: true

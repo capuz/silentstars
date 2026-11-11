@@ -22,7 +22,7 @@ lastReleaseAt: "2026-07-20T14:43:05Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 67
-undervaluedScore: 29
+undervaluedScore: 25
 maintainers: ["rootasjey", "semantic-release-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e13e57736f0227b9549213bd316e9fb80a68229a46675517b3e37013c156c2a9/rootasjey/tronche"
 promoted: true

@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 76
 undervaluedScore: 43
 maintainers: ["Deftr0y"]
-openGraphImageUrl: "https://opengraph.githubassets.com/af9d611d7145516281eac793466cc96ddacc09cc59f56a24c17ab1472b588d05/Deftr0y/PeerBrush"
+openGraphImageUrl: "https://opengraph.githubassets.com/b17e504786718eca7df0b4a13f451ed9de7490a6a6cb0e461617a2b73d36d23c/Deftr0y/PeerBrush"
 promoted: true
 postedAt: "2026-11-06T12:25:37.144Z"
 ---

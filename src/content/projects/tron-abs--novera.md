@@ -17,19 +17,19 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-11T08:13:12Z"
+lastCommitAt: "2026-11-11T18:55:23Z"
 lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/32c69428120a9abd52c83d1f5ccc6cb2d817d6df798dac7b9975e3ee98cca49a/TRON-ABS/Novera"
+openGraphImageUrl: "https://opengraph.githubassets.com/73ae8bf7f404361c04cdbcf0bd14429746d1edfc837ba53309eab2712de63a9f/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---
 
-[Novera Web 1.0.1 · Experimental](https://tron-abs.github.io/Novera/web/)
+[Novera Web 1.0.2 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.2 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.2-android-1000023/Novera_1.0.2_android-arm64.apk)
 
 Data and privacy: [local inference, optional telemetry, error reports and update connections (French)](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/DONNEES_ET_CONFIDENTIALITE.md). License: [Apache 2.0](https://github.com/TRON-ABS/Novera/blob/HEAD/LICENSE) · [Attribution](https://github.com/TRON-ABS/Novera/blob/HEAD/NOTICE).
 
@@ -39,4 +39,4 @@ Data and privacy: [local inference, optional telemetry, error reports and update
 
 ## Novera 1.0.1
 
-Novera 1.0.1 is available for the platforms listed below. Download the package for your system or use its signed update channel. Existing installations update when you install the new package or…
+Novera 1.0.1…
