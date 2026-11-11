@@ -5,6 +5,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { History } from './weekly.ts';
+import { isExcludedOwner } from './discovery-filter.ts';
 
 export const GRAD_STARS = 500;
 export const GRAD_FROM_MAX = 100;
@@ -68,7 +69,7 @@ export function buildTrails(history: History, graduates: Graduates, withPage: Se
 
   const repos: Trail[] = [];
   for (const [r, s] of points) {
-    if (HIDDEN.has(r)) continue;
+    if (HIDDEN.has(r) || isExcludedOwner(r)) continue;
     const measured = Object.keys(s).map(Number);
     const today = graduates.stars[r];
     const trail: Trail = { r, s };

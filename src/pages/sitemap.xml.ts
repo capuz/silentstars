@@ -3,13 +3,15 @@ import { getCollection } from 'astro:content';
 import { listEditions } from '../../scripts/weekly.ts';
 import type { History } from '../../scripts/weekly.ts';
 import historyJson from '../../data/history.json';
+import { isExcludedOwner } from '../../scripts/discovery-filter.ts';
 
 export const GET: APIRoute = async ({ site }) => {
   const base = import.meta.env.BASE_URL;
   const origin = site ? site.origin : 'https://silentstars.dev';
   const root = `${origin}${base}`;
 
-  const projects = await getCollection('projects');
+  // Pages of excluded owners stay up for links from old posts, but aren't advertised.
+  const projects = (await getCollection('projects')).filter(p => !isExcludedOwner(p.data.repo));
   const today = new Date().toISOString().slice(0, 10);
 
   const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/', 'weekly/'];
