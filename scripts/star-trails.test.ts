@@ -93,3 +93,12 @@ test('buildTrails: repos in HIDDEN never show, as a trail or as a graduate', () 
   assert.deepEqual(d.repos.map(r => r.r), []);
   assert.ok(!graduateCandidates(history({ [hidden]: [10, null, null, null, null, null] })).includes(hidden));
 });
+
+test('buildTrails: leaves out repos from excluded owners (data/discovery.config.json)', () => {
+  const h = history({
+    'amazeeio/amazee.ai': [10, 11, 12, 13, 14, 15],
+    'a/indie': [10, 11, 12, 13, 14, 15],
+  });
+  const d = buildTrails(h, { checkedAt: '', stars: {} }, new Set());
+  assert.deepEqual(d.repos.map(r => r.r), ['a/indie']);
+});

@@ -3,6 +3,7 @@ import ScoreHelp from '../../components/ScoreHelp.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { loadPosted } from '../../../scripts/post-shared.ts';
+import { isExcludedOwner } from '../../../scripts/discovery-filter.ts';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -124,10 +125,14 @@ const ogImage = d.postedAt || postedEntry
 const customImage = d.openGraphImageUrl?.includes('repository-images.githubusercontent.com')
   ? d.openGraphImageUrl : null;
 const pageUrl = new URL(`${base}projects/${project.slug}/`, Astro.site).href;
+// Description and README were machine-translated (scripts/collect-i18n.ts).
+const translatedFrom = d.descriptionLang
+  ? (new Intl.DisplayNames(['en'], { type: 'language' }).of(d.descriptionLang) ?? d.descriptionLang)
+  : null;
 const shareText = encodeURIComponent(`★ ${d.name} — ${d.description}\n\n${pageUrl}`);
 const shareUrl  = `https://bsky.app/intent/compose?text=${shareText}`;
 ---
-<Base title={d.name} description={d.description} ogImage={ogImage}>
+<Base title={d.name} description={d.description} ogImage={ogImage} noindex={isExcludedOwner(d.repo)}>
   <div class="container section">
 
     <nav class="breadcrumb">
@@ -183,6 +188,12 @@ const shareUrl  = `https://bsky.app/intent/compose?text=${shareText}`;
 
       <!-- description -->
       <p class="card-desc">{d.description}</p>
+      {translatedFrom && (
+        <p class="card-translated">
+          Translated from {translatedFrom} by Claude ·
+          <a href={d.url} target="_blank" rel="noopener noreferrer">original on GitHub ↗</a>
+        </p>
+      )}
 
       {d.homepage && (
         <a href={d.homepage} target="_blank" rel="noopener" class="card-homepage">
@@ -434,6 +445,12 @@ const shareUrl  = `https://bsky.app/intent/compose?text=${shareText}`;
     display: block;
   }
 
+  .card-translated {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin: -0.25rem 0 0.75rem;
+  }
+  .card-translated a { color: inherit; }
   .card-desc {
     font-size: 14px;
     line-height: 1.6;

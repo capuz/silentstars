@@ -33,7 +33,7 @@ const samples = [...curated, ...fallback].slice(0, 3);
 ---
 <Base
   title="Submit a project"
-  description="Know an open source project that deserves more attention? Submit it to SilentStars."
+  description="Know a small open source project that's still active? Submit it to SilentStars."
 >
   <div class="container section">
 
@@ -41,8 +41,9 @@ const samples = [...curated, ...fallback].slice(0, 3);
       <p class="eyebrow">// automated pipeline</p>
       <h1>Submit a project</h1>
       <p class="lead">
-        Know something that's actively built but flying under the radar?
-        Submit it — the bot validates instantly. If accepted, your project goes live in minutes.
+        Know a small project that's still being built?
+        Submit it and a bot checks it against the criteria below. Most accepted projects go live within minutes;
+        a repo nobody else has starred yet waits on standby until someone does.
       </p>
       <div class="hero-actions">
         <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-cta">
@@ -67,7 +68,7 @@ const samples = [...curated, ...fallback].slice(0, 3);
             </svg>
           </div>
           <div class="step-title">Fill a short form</div>
-          <p class="step-desc">Repo link + one sentence on why it deserves attention. GitHub hosts the form.</p>
+          <p class="step-desc">Repo link + one sentence on what it does. GitHub hosts the form.</p>
         </div>
         <div class="step">
           <div class="step-head">
@@ -77,7 +78,7 @@ const samples = [...curated, ...fallback].slice(0, 3);
             </svg>
           </div>
           <div class="step-title">Bot validates</div>
-          <p class="step-desc">We check activity, stars, open issues, and recent commits. Instant response.</p>
+          <p class="step-desc">We check activity, stars, open issues, and recent commits. Usually answers in a few minutes.</p>
         </div>
         <div class="step">
           <div class="step-head">
@@ -116,15 +117,13 @@ const samples = [...curated, ...fallback].slice(0, 3);
           <li><span class="check">✓</span> Real code, not just a README</li>
           <li><span class="check">✓</span> 500 stars or fewer</li>
           <li><span class="x">✗</span> No abandonware or archived repos</li>
-          <li><span class="x">✗</span> No repos already viral or trending</li>
-          <li><span class="x">✗</span> No self-promotion without substance</li>
         </ul>
       </div>
 
       <div class="cta-card">
         <h2>// ready?</h2>
         <p>
-          No gatekeeping — if the project is real and active, it gets in.
+          If it meets the criteria, the bot accepts it.
           Accepted projects join the directory and get posted on Bluesky as a 🙌 Community pick.
         </p>
         <a href={ISSUE_URL} target="_blank" rel="noopener noreferrer" class="btn-cta btn-cta-lg">

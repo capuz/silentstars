@@ -1,7 +1,7 @@
 /**
  * discover.ts — SilentStars nightly candidate discovery
  *
- * Queries the GitHub REST Search API to find repos that are alive but invisible.
+ * Queries the GitHub REST Search API to find small repos that are still active.
  * Two passes — "fresh" (last 90d) and "deep" (90–180d) — with no language filter.
  *
  * Output: data/discovered.json  { discoveredAt, candidates: ["owner/repo", ...] }

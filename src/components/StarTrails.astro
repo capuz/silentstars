@@ -157,8 +157,8 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
       arrivals ? `${arrivals} new ${arrivals === 1 ? 'project joins' : 'projects join'} the sky.` : 'A quiet week. Most stars hold their place.';
     if (i > 0 && best && bd >= CLIMB_MIN && arrivals) txt += ` ${arrivals} new ${arrivals === 1 ? 'arrival' : 'arrivals'}.`;
     if (i === LAST) txt = grads.length === 1
-      ? `We spotted it under the radar. Now it flies past ${GRAD_STARS} ★.`
-      : `We spotted them under the radar. Now ${grads.length} fly past ${GRAD_STARS} ★.`;
+      ? `Listed here when it was small. Now it's past ${GRAD_STARS} ★.`
+      : `Listed here when they were small. Now ${grads.length} are past ${GRAD_STARS} ★.`;
     events.push(txt);
   }
 

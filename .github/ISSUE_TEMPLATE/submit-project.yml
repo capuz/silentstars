@@ -13,9 +13,9 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: Why does it deserve to be tracked?
-      description: What makes this project undervalued? Active commits? Interesting niche? Ignored by the algorithm?
-      placeholder: "Active dev since 2022, consistent releases, under 500 stars despite solving a real problem..."
+      label: What does it do?
+      description: One sentence is enough. Anything else worth knowing (how active it is, who it's for) is welcome too.
+      placeholder: "A CLI that syncs dotfiles across machines. Active since 2022, regular releases."
     validations:
       required: true
 

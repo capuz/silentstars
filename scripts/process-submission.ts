@@ -250,7 +250,7 @@ async function handleRejected(repo: string, slug: string, projectName: string, r
   setOutput('submitter_email', '');
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on undervalued projects the algorithm hasn't noticed yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on smaller projects\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
   );
   if (repo) dropFromStandby(repo);
   await labelIssue(['rejected']);
@@ -426,7 +426,7 @@ async function main() {
 
   if (ghRepo.stargazers_count > MAX_STARS) {
     return handleRejected(repo, slug, ghRepo.name,
-      `The repository has ${ghRepo.stargazers_count.toLocaleString()} stars. SilentStars focuses on projects with ${MAX_STARS} stars or fewer — the ones the algorithm hasn't noticed yet.`,
+      `The repository has ${ghRepo.stargazers_count.toLocaleString()} stars. SilentStars focuses on projects with ${MAX_STARS} stars or fewer.`,
     );
   }
 

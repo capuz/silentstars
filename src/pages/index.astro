@@ -143,11 +143,11 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
 <Base title="SilentStars">
   <section class="hero">
     <div class="container">
-      <p class="hero-kicker">// open source is more than stars</p>
+      <p class="hero-kicker">// small projects, still shipping</p>
       <h1 class="hero-title">Not famous. Not abandoned. <span class="accent">Just building.</span></h1>
       <p class="hero-lede">
         SilentStars tracks <strong>{totalProjects}</strong> open source projects with recent commits and 500 stars or fewer.
-        Ranked by how much work ships relative to the attention it gets, not by hype.
+        Ranked by how much work ships relative to the attention it gets.
       </p>
       <div class="hero-actions">
         <a href={`${base}projects/`} class="btn btn-primary">Browse the directory →</a>
@@ -203,7 +203,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Shipping</h2>
-        <p>5+ releases in 90 days — these teams don't stop.</p>
+        <p>5+ releases in the last 90 days.</p>
       </div>
       <div class="grid">
         {shipping.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -216,7 +216,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Help wanted</h2>
-        <p>The maintainer labelled the door open. Time to walk in.</p>
+        <p>Open issues labelled good first issue or help wanted.</p>
       </div>
       <div class="grid">
         {helpWanted.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -229,7 +229,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Under pressure</h2>
-        <p>Healthy project, overwhelmed solo team. Worth saving.</p>
+        <p>Healthy, with more than 10 open issues and one or two people to handle them. Extra hands would help.</p>
       </div>
       <div class="grid">
         {underPressure.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -242,7 +242,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Solo builders</h2>
-        <p>One person carrying it all. No team. No VC. Just commits.</p>
+        <p>One person wrote more than 80% of the recent commits.</p>
       </div>
       <div class="grid">
         {soloBuilders.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -255,7 +255,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Legacy heroes</h2>
-        <p>5+ years old and still committing. Resilience over hype.</p>
+        <p>Over 5 years old and still getting commits this year.</p>
       </div>
       <div class="grid">
         {legacyHeroes.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -268,7 +268,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Fork magnets</h2>
-        <p>More forks than stars — used as a building block, not just bookmarked.</p>
+        <p>Forks at more than half their stars. People may be building on them.</p>
       </div>
       <div class="grid">
         {forkMagnets.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -281,7 +281,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Watched</h2>
-        <p>Devs are tracking these before the public notices.</p>
+        <p>More people watching the repo than starring it.</p>
       </div>
       <div class="grid">
         {watchedProjs.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -294,7 +294,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Funded</h2>
-        <p>Financially supported. Committed to shipping long-term.</p>
+        <p>The repo has a sponsorship or funding link.</p>
       </div>
       <div class="grid">
         {funded.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -307,7 +307,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Hidden gems</h2>
-        <p>Under 100 stars. Documented. Alive. Look closer.</p>
+        <p>Under 100 stars, with a README and a license, and a commit in the last 3 months.</p>
       </div>
       <div class="grid">
         {hiddenGems.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -320,7 +320,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Newborn</h2>
-        <p>Born in the last 2 months, committed in the last 2 weeks — fragile, alive, worth watching.</p>
+        <p>Created in the last 2 months, with a commit in the last 2 weeks.</p>
       </div>
       <div class="grid">
         {newborns.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
@@ -333,7 +333,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
     <section class="section container">
       <div class="section-header">
         <h2><span class="mono-prefix">//</span> Revived</h2>
-        <p>Back from the dead. Someone cared enough to pick it up again.</p>
+        <p>Getting commits again after a long pause.</p>
       </div>
       <div class="grid">
         {revived.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
