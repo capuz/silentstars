@@ -117,3 +117,16 @@ test('blueskyHandleFromSocialAccounts reads handle from provider=bluesky URL', (
   assert.equal(blueskyHandleFromSocialAccounts([{ provider: 'twitter', url: 'https://twitter.com/x' }]), null);
   assert.equal(blueskyHandleFromSocialAccounts([]), null);
 });
+
+test('hashtag facets ignore a URL fragment', () => {
+  const { text, facets } = buildPost(project, BASE, 'Trailer: https://example.com/#demo', { today: WEEKDAY });
+  const tags = featuresOf(facets, 'tag').map(f => facetText(text, f));
+  assert.ok(!tags.includes('#demo'), `unexpected tag in ${tags.join(' ')}`);
+  assert.ok(tags.includes('#indiedev'));
+});
+
+test('a topic already present as a community tag is not repeated', () => {
+  const { text } = buildPost({ ...project, topics: ['opensource', 'designtool'] }, BASE, 'Deploy apps.', { today: WEEKDAY });
+  assert.equal(text.match(/#opensource\b/g)?.length, 1, text);
+  assert.ok(text.includes('#designtool'));
+});
