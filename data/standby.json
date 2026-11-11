@@ -40,5 +40,11 @@
     "issue": 84,
     "since": "2026-11-11",
     "until": "2027-02-09"
+  },
+  {
+    "repo": "njerschow/hoptire-tire-size",
+    "issue": 83,
+    "since": "2026-11-10",
+    "until": "2027-02-08"
   }
 ]
