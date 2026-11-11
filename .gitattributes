@@ -1,0 +1,4 @@
+# Key-aware 3-way merge for the repo-keyed data arrays (scripts/merge-json-entries.ts).
+# Inert unless the driver is registered with `git config` — the CI commit steps do that.
+data/promoted.json merge=json-entries
+data/standby.json  merge=json-entries
