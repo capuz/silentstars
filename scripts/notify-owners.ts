@@ -14,7 +14,7 @@
  * Env:
  *   RESEND_API_KEY      — required
  *   NOTIFY_FROM_EMAIL   — required
- *   NOTIFY_BCC          — optional (e.g. fcapuz@gmail.com)
+ *   NOTIFY_BCC          — optional (e.g. you@example.com)
  *   GITHUB_TOKEN        — required (to resolve owners' public email)
  *   SLUGS               — optional, comma-separated project slugs to target
  *                          instead of the 5 most recently posted
