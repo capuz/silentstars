@@ -22,6 +22,8 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
 import { addEntry, fetchSignal, findEntry, hasExternalSignal, readStandby, removeEntry, writeStandby } from './standby.ts';
+import { parseIssueBody } from './issue-body.ts';
+import { enqueue, readQueue, writeQueue } from './bsky-queue.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -73,24 +75,6 @@ function setOutput(key: string, value: string) {
 // Body parsing
 // ──────────────────────────────────────────────────────────────────────────────
 
-function parseIssueBody(body: string): { repo: string; email: string; subscribe: boolean } {
-  const extract = (label: string): string => {
-    // GitHub YAML template renders as:  ### Label\n\nvalue\n\n### Next...
-    const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const m = body.match(new RegExp(`###\\s+${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n###|$)`));
-    const value = m ? m[1].trim() : '';
-    // Empty optional field: \n+ eats the blank lines, so the lazy group starts
-    // right on the next "###" heading and the (?=\n###) lookahead can no longer
-    // stop it — it swallows that whole section (issue #8: TO_EMAIL became the
-    // "### Newsletter" block). A capture starting with ### means "field empty".
-    return value.startsWith('###') ? '' : value;
-  };
-  return {
-    repo:      extract('GitHub repo (owner/repo)'),
-    email:     extract('Contact email (optional)'),
-    subscribe: /- \[x\] Subscribe me to the SilentStars/i.test(body),
-  };
-}
 
 function repoToSlug(repo: string): string {
   return slugify(repo);
@@ -339,6 +323,9 @@ async function handleAccepted(
     `Hey @${ISSUE_AUTHOR}! ✅\n\n**${projectName}** looks great and has been accepted!\n\nWe're building your card and preparing the 🦋 Bluesky post right now — this usually takes a few minutes. We'll update this comment with the links when everything is live. Thanks for the awesome submission! ⭐`,
   );
   if (ackCommentId != null) setOutput('ack_comment_id', String(ackCommentId));
+  // The Bluesky post goes through the queue (bsky-queue.ts): out within minutes
+  // on a quiet day, held for a later day once the daily cap is reached.
+  if (!DRY_RUN) writeQueue(enqueue(readQueue(), repo, ISSUE_NUMBER, ISSUE_AUTHOR, new Date(), ackCommentId ?? undefined));
   await labelIssue(['submission']);
   // Issue stays OPEN — the notify job closes it after the pipeline finishes
 }

@@ -60,7 +60,7 @@ jobs:
           gh label create "already-listed" --color "e99b27" --description "Already in SilentStars"  --force
           gh label create "needs-review"   --color "fbca04" --description "Needs manual review before publishing" --force
           gh label create "standby"        --color "c5def5" --description "Waiting for external signal (90 days)"  --force
-          gh label create "bsky-pending"   --color "8b5cf6" --description "Card live, Bluesky post pending"       --force
+          gh label create "bsky-queued"    --color "8b5cf6" --description "Card live, Bluesky post queued"        --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -87,7 +87,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/promoted.json data/standby.json
+          git add data/promoted.json data/standby.json data/bsky-queue.json
           case "$STATUS" in
             accepted) MSG="feat(promoted): add ${SUBMISSION_REPO} via issue #${ISSUE_NUMBER} (30d)" ;;
             standby)  MSG="chore(standby): park ${SUBMISSION_REPO} from issue #${ISSUE_NUMBER} (90d) [skip ci]" ;;
@@ -206,6 +206,16 @@ jobs:
           echo "bsky_url=${BSKY_URL}" >> "$GITHUB_OUTPUT"
           echo "card_built=${CARD_BUILT} card_live=${CARD_LIVE} bsky_url=${BSKY_URL:-<none>}"
 
+      # Card live but no post yet: it's waiting in the Bluesky queue.
+      - name: Queued comment
+        if: steps.state.outputs.bsky_url == ''
+        env:
+          SUBMISSION_REPO: ${{ needs.validate.outputs.repo }}
+          ISSUE_AUTHOR:    ${{ needs.validate.outputs.issue_author }}
+          PROJ_NAME:       ${{ needs.validate.outputs.project_name }}
+          PROJ_SLUG:       ${{ needs.validate.outputs.slug }}
+        run: npx tsx scripts/bsky-queue-comment.ts > "$RUNNER_TEMP/queued-comment.md"
+
       - name: Update acknowledgement comment, label and close
         uses: actions/github-script@v7
         env:
@@ -235,8 +245,9 @@ jobs:
               labels = ['accepted'];
               close  = true;
             } else if (cardOk) {
-              body   = `Hey @${author}! ✅\n\n**${name}** has been accepted and your card is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n\nThe 🦋 Bluesky post didn't go out automatically — I'll post it manually and add the link here shortly. Thanks for the awesome submission! ⭐`;
-              labels = ['accepted', 'bsky-pending'];
+              // scripts/bsky-queue.ts queuedComment(); bsky-queue.yml closes the issue once posted.
+              body   = require('fs').readFileSync(`${process.env.RUNNER_TEMP}/queued-comment.md`, 'utf8');
+              labels = ['accepted', 'bsky-queued'];
               close  = false;
             } else {
               body   = `Hey @${author}! ✅\n\n**${name}** has been accepted, but I hit a snag building the card — I'm on it and will update this comment once it's live.`;

@@ -92,6 +92,13 @@ is closed. `standby-recheck.yml` checks them daily: once a repo gets a star or f
 someone other than its owner, the submission is reprocessed and published; entries still
 silent after 90 days are dropped.
 
+Accepted submissions go live on the site right away, but their Bluesky posts go through a
+**queue** in `data/bsky-queue.json` (`scripts/bsky-queue.ts`): at most 3 community picks
+per UTC day, oldest first. On a quiet day the queue is empty and the post goes out a few
+minutes after the deploy. Past the cap, or when a deploy times out, the issue is labelled
+`bsky-queued` with its place in line, and `bsky-queue.yml` (3 times a day) posts it,
+edits the issue comment with the link, emails the submitter and closes the issue.
+
 ---
 
 ## Running locally

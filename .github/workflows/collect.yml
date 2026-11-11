@@ -269,8 +269,17 @@ jobs:
             const d = JSON.parse(fs.readFileSync(p, 'utf8'));
             process.stdout.write(d.map(e => e.slug).join(','));
           ")
+          # Submissions waiting in the Bluesky queue: bsky-queue.yml posts them
+          # later and fetches their card image from the deployed site.
+          QUEUED_SLUGS=$(node -e "
+            const fs = require('fs');
+            const p = 'data/bsky-queue.json';
+            if (!fs.existsSync(p)) { process.stdout.write(''); process.exit(0); }
+            const slug = r => r.toLowerCase().replace('/', '--').replace(/[^a-z0-9-]/g, '-');
+            process.stdout.write(JSON.parse(fs.readFileSync(p, 'utf8')).map(e => slug(e.repo)).join(','));
+          ")
           # Combine today's pick with the backlog and deduplicate
-          ALL="${POSTED_SLUGS}${POST_SLUG:+,}${POST_SLUG}"
+          ALL="${POSTED_SLUGS}${QUEUED_SLUGS:+,}${QUEUED_SLUGS}${POST_SLUG:+,}${POST_SLUG}"
           ONLY_SLUGS=$(echo "$ALL" | tr ',' '\n' | grep -v '^$' | sort -u | paste -sd ',')
           echo "ONLY_SLUGS=${ONLY_SLUGS}" >> $GITHUB_ENV
           COUNT=$(echo "$ONLY_SLUGS" | tr ',' '\n' | grep -c '.' || echo 0)
@@ -311,6 +320,15 @@ jobs:
     runs-on: ubuntu-latest
     needs: [deploy]
     environment: BSKY_IDENTIFIER
+    # issues: the queue drain closes the issues of submissions it posts.
+    permissions:
+      contents: write
+      issues: write
+    # One poster at a time across collect.yml and bsky-queue.yml, so the same
+    # queued submission can't be picked up twice.
+    concurrency:
+      group: bsky-post
+      cancel-in-progress: false
     # !cancelled() breaks GHA's transitive skip propagation: with skip_collect,
     # collect's skip would otherwise cascade past a successful deploy and skip
     # this job too.
@@ -363,15 +381,23 @@ jobs:
         run: |
           if [ "$HAS_CLAUDE_TOKEN" = "true" ]; then npm install -g @anthropic-ai/claude-code; fi
 
+      # A submission doesn't post itself: it drains the Bluesky queue
+      # (scripts/bsky-queue.ts), where process-submission already put it. On a
+      # quiet day that's just this submission, out right away; past the daily
+      # cap it waits for bsky-queue.yml. The daily pick posts as before.
       - name: Post to Bluesky
         id: post_bluesky
         run: |
           set +e
-          OUTPUT=$(npx tsx scripts/post.ts 2>&1)
+          if [ -n "$SUBMISSION_REPO" ]; then
+            OUTPUT=$(npx tsx scripts/bsky-queue-drain.ts 2>&1)
+          else
+            OUTPUT=$(npx tsx scripts/post.ts 2>&1)
+          fi
           EXIT_CODE=$?
           set -e
           echo "$OUTPUT"
-          BSKY_URL=$(echo "$OUTPUT" | grep "^BSKY_POST_URL=" | cut -d= -f2-)
+          BSKY_URL=$(echo "$OUTPUT" | grep "^BSKY_POST_URL=" | tail -1 | cut -d= -f2-)
           echo "bsky_url=${BSKY_URL}" >> $GITHUB_OUTPUT
           exit $EXIT_CODE
         env:
@@ -384,13 +410,22 @@ jobs:
           PROJECT_SLUG:      ${{ steps.submission_slug.outputs.value || needs.deploy.outputs.post_slug }}
           SUBMITTER_LOGIN:   ${{ inputs.submitter_login }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+          # Queue drain only: this submission's issue is closed by
+          # process-submission.yml's notify job; earlier ones by the drain.
+          SUBMISSION_REPO:   ${{ inputs.submission_repo }}
+          SKIP_NOTIFY_REPO:  ${{ inputs.submission_repo }}
+          REPO_OWNER:        ${{ github.repository_owner }}
+          REPO_NAME:         ${{ github.event.repository.name }}
+          RESEND_API_KEY:    ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM_EMAIL: ${{ secrets.NOTIFY_FROM_EMAIL }}
 
       - name: Commit posted.json
         if: inputs.dry_run != true
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/posted.json
+          git add data/posted.json data/bsky-queue.json
+          git config merge.json-entries.driver "npx tsx scripts/merge-json-entries.ts %O %A %B"
           git diff --cached --quiet || git commit -m "chore: record bsky post [skip ci]"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push; then
