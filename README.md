@@ -124,8 +124,6 @@ depends on Claude Code being available.
 - **Translation** — `scripts/collect-i18n.ts` detects non-English descriptions/READMEs
   and translates them via Claude Code, caching results in `data/translations.json` keyed
   by repo and content hash so an unchanged project never costs a repeat call.
-- **Submission take** — `scripts/ai-opinion.ts` posts a short qualitative opinion on a
-  newly submitted repo as a GitHub issue comment.
 
 ---
 
