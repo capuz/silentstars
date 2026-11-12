@@ -56,7 +56,7 @@ async function main(): Promise<void> {
 
   const thread = buildWeeklyThread(edition, editionNotes, baseUrl, { tags: loadCommunityTags(), owners });
 
-  console.log(`─── weekly thread: ${edition.week} (issue #${edition.issue}) ───`);
+  console.log(`─── weekly thread: ${edition.week} (edition #${edition.issue}) ───`);
   for (const [n, post] of [thread.root, ...thread.replies].entries()) {
     console.log(`\n[${n + 1}/${thread.replies.length + 1}] (${[...new Intl.Segmenter().segment(post.text)].length} graphemes)`);
     console.log(post.text);

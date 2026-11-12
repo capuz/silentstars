@@ -26,7 +26,7 @@ const base = import.meta.env.BASE_URL;
       </p>
       {latest && (
         <p class="latest-meta">
-          <a href={`${base}weekly/${latest.week}/`}>Issue #{latest.issue}</a> · {formatWeekRange(latest.week)}
+          <a href={`${base}weekly/${latest.week}/`}>Edition #{latest.issue}</a> · {formatWeekRange(latest.week)}
         </p>
       )}
     </header>

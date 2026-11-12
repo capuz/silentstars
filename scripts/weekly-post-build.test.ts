@@ -26,9 +26,10 @@ const graphemes = (s: string) => [...new Intl.Segmenter().segment(s)].length;
 const bytes = (s: string) => new TextEncoder().encode(s);
 const sliceBytes = (s: string, start: number, end: number) => new TextDecoder().decode(bytes(s).slice(start, end));
 
-test('root: issue, date range and section counts, with a card to the edition', () => {
+test('root: edition, date range and section counts, with a card to the edition', () => {
   const { root } = buildWeeklyThread(edition(), {}, BASE, { tags: ['#opensource'] });
-  assert.match(root.text, /Issue #17/);
+  assert.match(root.text, /Edition #17/);
+  assert.doesNotMatch(root.text, /Issue #/);
   assert.match(root.text, /Oct 12 – 18, 2026/);
   assert.match(root.text, /4 rising/);
   assert.match(root.text, /1 new/);

@@ -109,7 +109,7 @@ export function buildWeeklyThread(
     .join(' · ');
 
   const rootText = [
-    `🗞️ This week on SilentStars · Issue #${edition.issue}`,
+    `🗞️ This week on SilentStars · Edition #${edition.issue}`,
     range,
     '',
     counts,
@@ -125,7 +125,7 @@ export function buildWeeklyThread(
       $type: 'app.bsky.embed.external',
       external: {
         uri: pageUrl,
-        title: `This week on SilentStars · Issue #${edition.issue}`,
+        title: `This week on SilentStars · Edition #${edition.issue}`,
         description: `What moved in small open source, ${range}: ${counts}.`,
       },
     },
