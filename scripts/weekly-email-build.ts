@@ -1,6 +1,6 @@
 /**
- * weekly-email-build.ts — the Monday email for a /weekly/ edition: the edition card and
- * a button to the edition page, then the top projects of each non-empty section with
+ * weekly-email-build.ts — the Monday email for a /weekly/ edition: the edition card
+ * (linking to the star trails on /weekly/) and a button to the edition page, then the top projects of each non-empty section with
  * their notes.
  * Pure: send-weekly-email.ts does the I/O.
  */
@@ -42,6 +42,7 @@ function section(title: string, items: EditionItem[], notes: Record<string, stri
 export function buildWeeklyEmail(edition: NumberedEdition, notes: Record<string, string>, baseUrl: string): WeeklyEmail {
   const range = formatWeekRange(edition.week);
   const subject = `SilentStars · Edition #${edition.issue} · ${range}`;
+  const trailsUrl = `${baseUrl}/weekly/`; // the card opens the star trails
   const pageUrl = `${baseUrl}/weekly/${edition.week}/`;
   const present = SECTIONS.filter(s => edition[s.key].length > 0);
   const counts = present.map(s => `${s.icon} ${edition[s.key].length} ${s.count}`).join(' · ');
@@ -57,7 +58,7 @@ export function buildWeeklyEmail(edition: NumberedEdition, notes: Record<string,
           </td></tr>
 
           <tr><td style="padding-bottom:24px;">
-            <a href="${esc(pageUrl)}" style="display:block;text-decoration:none;">
+            <a href="${esc(trailsUrl)}" style="display:block;text-decoration:none;">
               <img src="${esc(`${baseUrl}/og/weekly/${edition.week}.png`)}" alt="SilentStars · Edition #${edition.issue} · ${esc(range)}" width="560"
                    style="width:100%;max-width:560px;border-radius:12px;display:block;border:1px solid #21262d;">
             </a>
