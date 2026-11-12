@@ -13,7 +13,7 @@ interface Props {
   /** Keep the page out of search results (it still gets a canonical). */
   noindex?: boolean;
 }
-const { title, description = 'Small open source projects that are still shipping: 500 stars or fewer, ranked by activity relative to attention.', ogImage, showMetricsFAQ = false, notFound = false, noindex = false } = Astro.props;
+const { title, description = 'Open source projects still shipping under the radar: 500 stars or fewer, ranked by activity relative to attention.', ogImage, showMetricsFAQ = false, notFound = false, noindex = false } = Astro.props;
 const base   = import.meta.env.BASE_URL;
 const ogUrl  = ogImage ?? new URL(`${base}og.png`, Astro.site).href;
 const pageUrl = Astro.url.href;

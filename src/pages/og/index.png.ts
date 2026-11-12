@@ -45,7 +45,7 @@ export async function GET() {
             type: 'div',
             props: {
               style: { color: MUTED, fontSize: 24, fontWeight: 500, lineHeight: 1.4, marginBottom: 'auto', maxWidth: '700px' },
-              children: 'Small open source projects that keep shipping. 500 stars or fewer, recent commits.',
+              children: 'Open source projects that keep shipping under the radar. 500 stars or fewer, recent commits.',
             },
           },
 

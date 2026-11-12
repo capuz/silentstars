@@ -27,14 +27,26 @@ test('subject names the edition and its week', () => {
   assert.equal(subject, 'SilentStars · Edition #17 · Oct 12 – 18, 2026');
 });
 
-test('the star trails page is the main link, the edition page comes after it', () => {
+test('the button and the card link to the edition page, never to /weekly/ alone', () => {
   const { html } = buildWeeklyEmail(edition(), {}, BASE);
-  const main = html.indexOf(`href="${BASE}/weekly/"`);
-  const edition42 = html.indexOf(`href="${BASE}/weekly/2026-W42/"`);
-  assert.ok(main >= 0, 'links to /weekly/');
-  assert.ok(edition42 >= 0, 'links to the edition page');
-  assert.ok(main < edition42, '/weekly/ comes first');
-  assert.match(html, /star trails/i);
+  assert.match(html, /This week&#39;s details →/);
+  assert.ok(html.includes(`href="${BASE}/weekly/2026-W42/"`), 'links to the edition page');
+  assert.ok(!html.includes(`href="${BASE}/weekly/"`), 'no link to the star trails page');
+  assert.doesNotMatch(html, /star trails/i);
+});
+
+test('link text carries its own colour, so the newsletter template cannot repaint it', () => {
+  const { html } = buildWeeklyEmail(edition(), {}, BASE);
+  const anchors = html.match(/<a [^>]*>[\s\S]*?<\/a>/g) ?? [];
+  const textAnchors = anchors.filter(a => !/<img/.test(a));
+  assert.ok(textAnchors.length > 0);
+  for (const a of textAnchors) assert.match(a, /<span style="[^"]*color:#[0-9a-f]{6}/i, a);
+});
+
+test('never calls the projects small', () => {
+  const { subject, html } = buildWeeklyEmail(edition(), {}, BASE);
+  assert.doesNotMatch(subject + html, /\bsmall\b/i);
+  assert.match(html, /What moved under the radar, Oct 12 – 18, 2026/);
 });
 
 test('shows the edition OG image', () => {
@@ -48,7 +60,7 @@ test('top projects per section, empty sections left out, the rest counted', () =
   assert.match(html, /New this week/);
   assert.match(html, /Cooling off/);
   assert.doesNotMatch(html, /Came back/);
-  for (const n of ['alpha', 'beta', 'gamma']) assert.match(html, new RegExp(`>${n}<`));
+  for (const n of ['alpha', 'beta', 'gamma']) assert.match(html, new RegExp(`>${n}</span>`));
   assert.equal(ITEMS_PER_SECTION, 3);
   assert.doesNotMatch(html, />delta</);
   assert.match(html, /\+1 more/);

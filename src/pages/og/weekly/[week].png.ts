@@ -44,7 +44,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
             type: 'div',
             props: {
               style: { color: INK, fontSize: 72, fontWeight: 700, lineHeight: 1.05, letterSpacing: '-0.03em', marginBottom: '14px' },
-              children: 'This week in small open source',
+              children: 'This week under the radar',
             },
           },
           {

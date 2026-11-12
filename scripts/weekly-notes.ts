@@ -106,7 +106,7 @@ Commit headlines this week:
 ${i.commits.map(c => `- ${unfence(c)}`).join('\n') || '(none)'}
 </project>`);
 
-  return `You write the one-line notes of "This week on SilentStars", a weekly digest of small open-source projects.
+  return `You write the one-line notes of "This week on SilentStars", a weekly digest of open-source projects flying under the radar.
 
 For each project below, write ONE sentence in English (max ${NOTE_MAX_CHARS - 20} characters) saying what happened to it this week, concretely: name the feature, fix or release when the commits or releases show it.
 

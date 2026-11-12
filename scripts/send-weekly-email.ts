@@ -83,7 +83,7 @@ async function main(): Promise<void> {
   const status = MODE === 'send' ? 'about_to_send' : 'draft';
   const email = await buttondown<{ id: string }>('/emails', {
     subject, body, status, image: `${baseUrl}/og/weekly/${edition.week}.png`,
-    description: `What moved in small open source this week. Edition #${edition.issue}.`,
+    description: `What moved under the radar this week. Edition #${edition.issue}.`,
   });
   console.log(`✓ Buttondown email ${email.id} created as ${status}`);
 
