@@ -48,13 +48,23 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     <input id="st-scrub" type="range" min="0" step="0.01" value="0" aria-label="Timeline">
   </div>
 
-  <form class="st-find" id="st-find" role="search">
-    <label for="st-q">Find your project</label>
-    <input id="st-q" list="st-repos" placeholder="owner/repo" autocomplete="off" spellcheck="false">
-    <datalist id="st-repos">{data.repos.map(t => <option value={t.r} />)}</datalist>
-    <button type="submit">Show trail</button>
-    <p class="st-found" id="st-found" hidden></p>
-  </form>
+  <!-- both forms share one grid, so their labels, boxes and buttons line up at the same size -->
+  <div class="st-forms">
+    <form class="st-find" id="st-find" role="search">
+      <label for="st-q">Find your project</label>
+      <input id="st-q" list="st-repos" placeholder="owner/repo" autocomplete="off" spellcheck="false">
+      <datalist id="st-repos">{data.repos.map(t => <option value={t.r} />)}</datalist>
+      <button type="submit">Show trail</button>
+      <p class="st-found" id="st-found" hidden></p>
+    </form>
+    <form class="st-find" id="st-mail" action="https://buttondown.com/api/emails/embed-subscribe/silentstars" method="post" target="popupwindow">
+      <label for="st-email">Get it by email, every Monday</label>
+      <input id="st-email" type="email" name="email" required placeholder="your@email.com">
+      <input type="hidden" name="embed" value="1">
+      <button type="submit">Subscribe</button>
+      <p class="st-found" id="st-mail-msg" aria-live="polite" hidden></p>
+    </form>
+  </div>
 
   <div class="st-legend" id="st-legend"></div>
   <script type="application/json" id="st-data" set:html={JSON.stringify(data)} />
@@ -89,7 +99,14 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   .st-text { font-family: var(--f-display); font-style: italic; font-size: clamp(18px, 2.4vw, 22px); line-height: 1.25; min-width: 0; flex: 1; text-wrap: balance; }
   .st-text.in { animation: st-rise .9s ease both; }
   @keyframes st-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-  .st-controls, .st-find { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .st-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .st-forms { display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content; align-items: center; gap: 10px 14px; }
+  .st-find { display: contents; }
+  .st-find button { justify-self: stretch; }
+  @media (max-width: 680px) {
+    .st-forms { grid-template-columns: minmax(0, 1fr) max-content; }
+    .st-find label { grid-column: 1 / -1; margin-top: 4px; }
+  }
   .st button { font: 500 14px var(--f-body); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
   .st button:hover { border-color: var(--st-muted); }
   .st button:focus-visible, .st input:focus-visible, .st a:focus-visible { outline: 2px solid var(--st-gold); outline-offset: 2px; }
@@ -99,8 +116,8 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   .st-speed button[aria-pressed="true"] { background: var(--st-ink-2); color: var(--st-gold); }
   #st-scrub { flex: 1 1 200px; min-width: 0; accent-color: var(--st-gold); }
   .st-find label { font-family: var(--f-mono); font-size: 12px; color: var(--st-muted); }
-  .st-find input { flex: 1 1 220px; min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
-  .st-found { flex-basis: 100%; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
+  .st-find input { min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
+  .st-found { grid-column: 1 / -1; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
   .st-found a { color: var(--st-gold); }
   .st-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--st-muted); border-top: 1px solid var(--st-line); padding-block: 12px 0; }
   .st-legend :global(span) { display: inline-flex; align-items: center; gap: 7px; }
@@ -518,6 +535,11 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     if (!reduce) { t = Math.max(0, p.first - .5); setPlaying(true); }
   }
   $('st-find').addEventListener('submit', (e: Event) => { e.preventDefault(); pin(q.value); });
+  // Buttondown confirms the address in a popup; the form posts into it
+  $('st-mail').addEventListener('submit', () => {
+    window.open('https://buttondown.com/silentstars', 'popupwindow');
+    const msg = $('st-mail-msg'); msg.hidden = false; msg.textContent = '✓ Complete the verification in the window that opened.';
+  });
   const fromHash = () => { const m = location.hash.match(/^#trail=(.+)$/); if (m) pin(decodeURIComponent(m[1])); };
 
   function syncUI() {
