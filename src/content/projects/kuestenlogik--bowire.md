@@ -24,7 +24,7 @@ tags: ["hidden_gem"]
 healthScore: 98
 undervaluedScore: 53
 maintainers: ["github-actions[bot]", "thomas-stegemann", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d83e382ef3be86eb8065711379178adf1f5c6a59951e7d8b7f9cee0a6f0c902b/Kuestenlogik/Bowire"
+openGraphImageUrl: "https://opengraph.githubassets.com/57d80f89b40f312c1af3f45a1829f20a8a3d47f1d648c69004ef3adbf4bd1998/Kuestenlogik/Bowire"
 discussionCount: 15
 postedAt: "2026-07-17T06:06:24.975Z"
 ---

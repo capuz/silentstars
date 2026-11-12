@@ -17,14 +17,14 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-09-14T20:17:04Z"
-lastCommitAt: "2026-11-11T13:08:08Z"
+lastCommitAt: "2026-11-12T07:25:04Z"
 lastReleaseAt: "2026-03-29T16:38:45Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 98
 undervaluedScore: 81
 maintainers: ["ericcornelissen", "renovate[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6700c7988b8fd8da43016623c61183a72bf28a86511e55677dd5ba81b70a3de9/ericcornelissen/js-regex-security-scanner"
+openGraphImageUrl: "https://opengraph.githubassets.com/fbc7c920c8fd2c0a06af40e39be1ed952cd69317e364d1edefaa92e76aaa6ea4/ericcornelissen/js-regex-security-scanner"
 postedAt: "2026-07-30T06:14:34.980Z"
 ---
 

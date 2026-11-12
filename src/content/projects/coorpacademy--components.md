@@ -16,14 +16,14 @@ watchers: 13
 contributors: 55
 recentReleases: 0
 createdAt: "2015-11-27T14:48:12Z"
-lastCommitAt: "2026-11-06T19:20:04Z"
+lastCommitAt: "2026-11-12T10:16:48Z"
 lastReleaseAt: "2016-08-25T14:59:08Z"
 status: "watched"
 tags: ["legacy_hero", "community_watch", "fork_magnet"]
-healthScore: 97
+healthScore: 98
 undervaluedScore: 81
 maintainers: ["transifex-integration[bot]", "silouone", "silouanegalinoudev-maker"]
-openGraphImageUrl: "https://opengraph.githubassets.com/361a7a45b8779c5ecddc773c1ba40d59fd910fd065878997bf5e0b624b942049/CoorpAcademy/components"
+openGraphImageUrl: "https://opengraph.githubassets.com/fee8c44c7a11b53afebe7985cac5ea5876be3a71bbcc9c54cca71c63bd78c8fb/CoorpAcademy/components"
 postedAt: "2026-10-28T10:06:27.573Z"
 ---
 

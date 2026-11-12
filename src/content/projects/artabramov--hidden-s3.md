@@ -1,7 +1,7 @@
 ---
 repo: "artabramov/hidden-s3"
 name: "hidden-s3"
-description: "Encrypted self-hosted S3 storage"
+description: "Encrypted self-hosted S3-compatible object storage."
 readmeQualityOk: true
 url: "https://github.com/artabramov/hidden-s3"
 homepage: "https://artabramov.github.io/hidden-s3/"
@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["self-hosted", "s3", "security"]
-stars: 58
+stars: 60
 forks: 4
 openIssues: 0
 closedIssues: 0
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 82
-undervaluedScore: 39
+undervaluedScore: 38
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cbd34702200417ac073187bbbd6dc03c399a1c16f06f5fff4ac6e742f576c9a6/artabramov/hidden-s3"
+openGraphImageUrl: "https://opengraph.githubassets.com/214cfa7238d4dd41fa9f4813ef9b0f5b6aefbd076f239bc835f24fd4d4e8006b/artabramov/hidden-s3"
 postedAt: "2026-10-29T05:58:03.283Z"
 ---
 

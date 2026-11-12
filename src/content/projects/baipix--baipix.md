@@ -14,16 +14,16 @@ forks: 14
 openIssues: 68
 closedIssues: 290
 watchers: 1
-contributors: 13
+contributors: 14
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-11-11T20:35:40Z"
+lastCommitAt: "2026-11-12T07:55:24Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 69
-maintainers: ["Todo-bai", "abhirajadhikary06", "mykola-lp"]
+maintainers: ["Todo-bai", "abhirajadhikary06", "jay23606"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
 discussionCount: 4
 promoted: true

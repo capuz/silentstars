@@ -13,17 +13,17 @@ forks: 76
 openIssues: 2
 closedIssues: 5
 watchers: 3
-contributors: 108
+contributors: 109
 recentReleases: 0
 createdAt: "2024-07-01T17:38:28Z"
-lastCommitAt: "2026-11-11T09:40:48Z"
+lastCommitAt: "2026-11-12T09:34:51Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 77
 maintainers: ["renovate[bot]", "jrasm91", "bo0tzz"]
-openGraphImageUrl: "https://opengraph.githubassets.com/edd8594d40be83eaeb1fbeb1e6dcf2ad954648da56549ec0ac8b30bb89e0fed0/immich-app/static-pages"
+openGraphImageUrl: "https://opengraph.githubassets.com/ccc9159255dba6fbe9445ac305fa1affeffeb9e0eb6427067e7d9f64c4da01e2/immich-app/static-pages"
 fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
 postedAt: "2026-11-02T11:44:50.353Z"
 ---

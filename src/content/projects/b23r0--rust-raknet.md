@@ -26,6 +26,7 @@ maintainers: ["b23r0"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4f45458744eb08688605f356d994e1c0c40c8231c144509442b428e522903abc/b23r0/rust-raknet"
 discussionCount: 2
 promoted: true
+postedAt: "2026-11-12T05:52:24.648Z"
 ---
 
 # rust-raknet

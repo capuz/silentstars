@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
 undervaluedScore: 79
 maintainers: []
-openGraphImageUrl: "https://opengraph.githubassets.com/b28f63ae8010a3902baca640ace481888155e98c1fd1486ec4a58b708befdc6b/UKNCSP/CDDS-CMIP7-mappings"
+openGraphImageUrl: "https://opengraph.githubassets.com/819ec9ff724a37b7504917ff974d5f0d857ae0fc615d9a74c04f844e11f6a400/UKNCSP/CDDS-CMIP7-mappings"
 discussionCount: 0
 postedAt: "2026-06-28T07:04:35.686Z"
 ---

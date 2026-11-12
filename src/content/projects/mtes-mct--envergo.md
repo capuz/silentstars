@@ -22,7 +22,7 @@ tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 94
 maintainers: ["thibault", "tut-tuuut", "pyDez"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fa378ea278bc025d66088bb9ce970ab8acdb69da6b66215c920508dd27c35c12/MTES-MCT/envergo"
+openGraphImageUrl: "https://opengraph.githubassets.com/9b9c7e2e6f84d70ceca1b50e19008ade3853631846b0862322166f2a69b7e935/MTES-MCT/envergo"
 postedAt: "2026-08-13T05:22:15.856Z"
 ---
 

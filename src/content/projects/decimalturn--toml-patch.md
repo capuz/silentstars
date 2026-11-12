@@ -12,19 +12,19 @@ topics: ["comment-preserving", "toml", "toml-config", "toml-parser", "toml-parsi
 stars: 9
 forks: 2
 openIssues: 5
-closedIssues: 15
+closedIssues: 16
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-03-24T20:46:33Z"
-lastCommitAt: "2026-11-12T05:12:51Z"
+lastCommitAt: "2026-11-12T07:54:10Z"
 lastReleaseAt: "2026-01-18T04:55:37Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 94
-undervaluedScore: 76
+undervaluedScore: 77
 maintainers: ["DecimalTurn"]
-openGraphImageUrl: "https://opengraph.githubassets.com/38f3a638f7c3a422a852a3f1496fe2d7afeaea625b6d47fba860d3433a29ff0a/DecimalTurn/toml-patch"
+openGraphImageUrl: "https://opengraph.githubassets.com/78e5df8ef57da27c517fd74437a5ef1f9ea2de36cb732ed681c62d8e581942ed/DecimalTurn/toml-patch"
 fundingLinks: ["GITHUB:https://github.com/DecimalTurn"]
 discussionCount: 2
 postedAt: "2026-08-07T05:19:39.636Z"
