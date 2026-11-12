@@ -24,13 +24,13 @@ const range = formatWeekRange(edition.week);
 const total = edition.rising.length + edition.newcomers.length + edition.revived.length + edition.cooling.length;
 ---
 <Base
-  title={`Week #${edition.issue}`}
+  title={`Edition #${edition.issue}`}
   ogImage={new URL(`${base}og/weekly/${edition.week}.png`, Astro.site).href}
   description={`What moved in small open source, ${range}: ${edition.rising.length} rising, ${edition.newcomers.length} new, ${edition.revived.length} back, ${edition.cooling.length} cooling off.`}
 >
   <div class="container section">
     <header class="page-header">
-      <p class="eyebrow">// issue #{edition.issue} · {edition.week}</p>
+      <p class="eyebrow">// edition #{edition.issue} · {edition.week}</p>
       <h1>This week on SilentStars</h1>
       <p class="lead">{range} · {total} projects moved.</p>
     </header>

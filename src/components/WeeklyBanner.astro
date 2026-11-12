@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL;
 ---
 {latest && (
   <a class="wb" href={`${base}weekly/`}>
-    <p class="wb-kicker"><span aria-hidden="true">🗞️</span> This week · Issue #{latest.issue} · {formatWeekRange(latest.week)}</p>
+    <p class="wb-kicker"><span aria-hidden="true">🗞️</span> This week · Edition #{latest.issue} · {formatWeekRange(latest.week)}</p>
     <p class="wb-line">
       {n === 1
         ? `One project we listed has since passed ${GRAD_STARS} ★.`

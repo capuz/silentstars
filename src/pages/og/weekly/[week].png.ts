@@ -36,7 +36,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
         children: [
           // ── Wordmark + issue ──
           wordmark('36px', [
-            { type: 'span', props: { style: { color: MUTED, fontSize: 24, fontWeight: 500, marginLeft: 'auto' }, children: `Issue #${edition.issue}` } },
+            { type: 'span', props: { style: { color: MUTED, fontSize: 24, fontWeight: 500, marginLeft: 'auto' }, children: `Edition #${edition.issue}` } },
           ]),
 
           // ── Headline ──
