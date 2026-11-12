@@ -6,8 +6,8 @@ readmeQualityOk: true
 url: "https://github.com/MeshLive/meshlive-android"
 homepage: "https://github.com/MeshLive/meshlive-android/releases/latest"
 language: "Kotlin"
-languages: ["Kotlin"]
-languagePcts: [78]
+languages: ["Kotlin", "Python"]
+languagePcts: [78, 20]
 topics: ["android", "bluetooth", "censorship-resistance", "live-streaming", "mesh-network", "off-grid", "bluetooth-low-energy", "privacy", "video-calling", "android-app"]
 stars: 346
 forks: 51
@@ -17,11 +17,11 @@ watchers: 7
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-10T05:25:21Z"
-lastCommitAt: "2026-10-29T12:14:13Z"
+lastCommitAt: "2026-11-12T02:04:10Z"
 lastReleaseAt: "2026-11-02T08:09:13Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "release_machine"]
-healthScore: 62
+healthScore: 66
 undervaluedScore: 24
 maintainers: ["gautamgpt1", "Aaqibhafeezkhan"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1412791111/ed3319e9-b779-427d-b481-41e0e1f29f63"
@@ -36,6 +36,7 @@ Calls, chats and livestreams over a Bluetooth mesh.<br/>
 Every phone passes it on, so you reach further than Bluetooth alone.<br/>
 No internet, no SIM, no account.
 
+&nbsp;
 &nbsp;
 
 ## What it does
@@ -64,4 +65,4 @@ Works wherever there's no signal or Wi-Fi, like hikes, festivals, trips and base
 
 ## How it works
 
-Bluetooth on its own reaches about 10 to 30 metres. MeshLive turns every…
+Bluetooth on its own reaches about 10 to 30 metres. MeshLive turns…

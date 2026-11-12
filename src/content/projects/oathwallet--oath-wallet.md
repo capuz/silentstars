@@ -25,7 +25,6 @@ healthScore: 90
 undervaluedScore: 67
 maintainers: ["OathWallet"]
 openGraphImageUrl: "https://opengraph.githubassets.com/86925ecf1b3e1cc0630155e851d541f2b50d5a7129ded649b857d735124a5f99/OathWallet/oath-wallet"
-promoted: true
 postedAt: "2026-11-01T23:05:53.666Z"
 ---
 

@@ -1,7 +1,7 @@
 ---
 repo: "TRON-ABS/Novera"
 name: "Novera"
-description: "Novera — Espace de travail IA local/cloud : texte, images, musique et vidéo. Version 1.0.1 : Windows, Linux, macOS et Android. Web 1.0.1 expérimental. 104 langues d’interface. Paquets Mac non notariés par Apple. TRON-ABS — L’art de l’humain avec l’IA."
+description: "Novera — Espace de travail IA local/cloud : texte, images, musique et vidéo. Desktop, CLI et portable 1.0.2. Android 1.0.3, build 1000025. Web 1.0.2 expérimental. 120 langues et variantes d’interface. Paquets Mac non notariés par Apple. iOS en attente. TRON-ABS — L’art de l’humain avec l’IA."
 readmeQualityOk: true
 url: "https://github.com/TRON-ABS/Novera"
 homepage: "https://tron-abs.github.io/Novera/web/"
@@ -17,26 +17,24 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-11T18:55:23Z"
+lastCommitAt: "2026-11-12T01:30:24Z"
 lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 70
 maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/73ae8bf7f404361c04cdbcf0bd14429746d1edfc837ba53309eab2712de63a9f/TRON-ABS/Novera"
+openGraphImageUrl: "https://opengraph.githubassets.com/b2c596d1275c83fd2288e7d9010979ad2d4be541fcde32d34180485d7f2752a0/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---
 
-[Novera Web 1.0.2 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.2 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.2-android-1000023/Novera_1.0.2_android-arm64.apk)
+[Novera Web 1.0.2 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.3 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.3-android-1000025/Novera_1.0.3_android-arm64.apk)
 
 Data and privacy: [local inference, optional telemetry, error reports and update connections (French)](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/DONNEES_ET_CONFIDENTIALITE.md). License: [Apache 2.0](https://github.com/TRON-ABS/Novera/blob/HEAD/LICENSE) · [Attribution](https://github.com/TRON-ABS/Novera/blob/HEAD/NOTICE).
 
-**Novera Web 1.0.1 — public experimental channel:** the Desktop interface and colors, 32k local text context, and keyless Exa search with connection preparation on activation have been tested in Edge. Local image/music work is documented; Wan video remains outside the browser conversation flow. The experimental Web application is online; use the Web link above. Large-image performance and Wan video are not Desktop-equivalent. [Features, measured tests and remaining publication checks](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/WEB_BROWSER_PREPARATION.md).
+**Novera Web 1.0.2 — public experimental channel:** the Desktop interface and colors, 32k local text context, and keyless Exa search with connection preparation on activation have been tested in Edge. Local image/music work is documented; Wan video remains outside the browser conversation flow. The experimental Web application is online; use the Web link above. Large-image performance and Wan video are not Desktop-equivalent. [Features, measured tests and remaining publication checks](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/WEB_BROWSER_PREPARATION.md).
 
 ---
 
-## Novera 1.0.1
-
-Novera 1.0.1…
+## Availability — Novera 1.0.2…

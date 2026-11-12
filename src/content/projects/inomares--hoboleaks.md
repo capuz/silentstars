@@ -19,7 +19,7 @@ createdAt: "2017-03-07T10:32:48Z"
 lastCommitAt: "2026-11-11T11:07:52Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 74
 maintainers: ["Inomares"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3592d80b7d40a1ef66dafab04d37a652768800df7bd754aaadb89272a488a343/Inomares/hoboleaks"

@@ -7,7 +7,7 @@ url: "https://github.com/6529-Collections/6529seize-backend"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [98]
-stars: 6
+stars: 7
 forks: 7
 openIssues: 3
 closedIssues: 114
@@ -15,13 +15,13 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-11-11T15:55:08Z"
+lastCommitAt: "2026-11-12T00:35:09Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 95
+undervaluedScore: 93
 maintainers: ["punk6529", "GelatoGenesis", "prxt6529"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4e7b7cef29d722d67f40b8098c0b3bbcd00e051c9cb65ebfe94c5384c135dc60/6529-Collections/6529seize-backend"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d7853c220e7d7975fec1cff6a4dac557fcf7dfc5f2babe3ef62a67b25edc895/6529-Collections/6529seize-backend"
 postedAt: "2026-07-23T06:23:21.217Z"
 ---
 

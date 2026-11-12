@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["agent-memory", "ai-agents", "llm-security", "red-teaming"]
-stars: 0
+stars: 1
 forks: 1
 openIssues: 3
 closedIssues: 0
@@ -20,10 +20,10 @@ createdAt: "2026-10-31T13:21:57Z"
 lastCommitAt: "2026-11-07T16:20:34Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 75
-undervaluedScore: 51
+healthScore: 74
+undervaluedScore: 49
 maintainers: ["RishabhPande"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9f87283bbd87811b6f6e9181bc79539c9d08daa23f51b70f9446c91ffc2b8335/RishabhPande/memory-poison-lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/c6a376c85cbfbef02c7b21af275c7414d9121babeb4173f40464bf97a907d126/RishabhPande/memory-poison-lab"
 promoted: true
 postedAt: "2026-11-07T22:58:48.052Z"
 ---

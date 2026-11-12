@@ -7,23 +7,23 @@ url: "https://github.com/2AMLogic/klayout-tools"
 homepage: "https://klayout-tools.org"
 language: "Python"
 languages: ["Python", "Shell"]
-languagePcts: [68, 28]
+languagePcts: [69, 27]
 stars: 6
 forks: 2
-openIssues: 57
-closedIssues: 2578
+openIssues: 66
+closedIssues: 2594
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-11T19:41:39Z"
+lastCommitAt: "2026-11-12T05:21:06Z"
 lastReleaseAt: "2026-09-15T02:19:49Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 66
-maintainers: ["loom-fleet-dispatch[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9e4c6d871c0b8310e905561d1ff8d6e5c125e91f714aaceff5fbf8e2a9bd7de9/2AMLogic/klayout-tools"
+maintainers: ["loom-fleet-dispatch[bot]", "rjwalters"]
+openGraphImageUrl: "https://opengraph.githubassets.com/58e852a6a21078c93dd309d521a08d0ea932faae64fdbec7b4b7650e8fc0c2c2/2AMLogic/klayout-tools"
 postedAt: "2026-10-16T08:33:31.631Z"
 ---
 

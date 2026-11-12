@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-08T03:24:43Z"
 lastReleaseAt: "2026-04-25T14:52:24Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 35
 maintainers: ["Shik3i", "claude", "actions-user"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1216603421/316ca25b-4775-4f7f-8723-72ad5569e655"

@@ -25,7 +25,6 @@ healthScore: 82
 undervaluedScore: 39
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/cbd34702200417ac073187bbbd6dc03c399a1c16f06f5fff4ac6e742f576c9a6/artabramov/hidden-s3"
-promoted: true
 postedAt: "2026-10-29T05:58:03.283Z"
 ---
 

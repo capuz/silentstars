@@ -15,12 +15,12 @@ openIssues: 0
 closedIssues: 1
 watchers: 1
 contributors: 1
-recentReleases: 5
+recentReleases: 4
 createdAt: "2024-05-22T10:40:51Z"
 lastCommitAt: "2026-09-09T06:39:52Z"
 lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "at_risk"
-tags: ["hidden_gem", "release_machine"]
+tags: ["hidden_gem"]
 healthScore: 72
 undervaluedScore: 85
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]

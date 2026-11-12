@@ -9,7 +9,7 @@ languages: ["Python", "JavaScript"]
 languagePcts: [53, 32]
 stars: 3
 forks: 1
-openIssues: 1
+openIssues: 2
 closedIssues: 0
 watchers: 0
 contributors: 1

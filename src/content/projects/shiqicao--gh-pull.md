@@ -29,7 +29,7 @@ promoted: true
 postedAt: "2026-10-26T03:11:03.556Z"
 ---
 
-# <img src="docs/favicon.png" width="32" height="32" align="absmiddle" alt=""> gh-pull
+# <img src="https://raw.githubusercontent.com/shiqicao/gh-pull/HEAD/docs/favicon.png" width="32" height="32" align="absmiddle" alt=""> gh-pull
 
 **A local pull request dashboard for GitHub CLI**
 
@@ -49,6 +49,4 @@ Both use your existing GitHub CLI login or a personal access token. No separate 
 Install [GitHub CLI](https://cli.github.com/) if needed, then run:
 
 ```sh
-gh auth login --hostname github.com  # Skip if already signed in
-gh extension install shiqicao/gh-pull
-gh pull…
+gh auth login --hostname github.com  # Skip if already…

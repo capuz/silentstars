@@ -24,7 +24,7 @@ tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "AlexWaygood"]
-openGraphImageUrl: "https://opengraph.githubassets.com/62f27f2bafed67725621ad21f3e2ea1f1566949dd63909f3cd508438c64bd25b/AlexWaygood/typeshed-stats"
+openGraphImageUrl: "https://opengraph.githubassets.com/f6a2a4b28aeb62a9e291978d2fdd3acb736b7089c9d876259ef69d520822f921/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"
 ---
 

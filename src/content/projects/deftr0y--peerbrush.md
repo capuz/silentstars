@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-05T18:03:11Z"
 lastReleaseAt: "2026-11-05T18:59:50Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 76
+healthScore: 75
 undervaluedScore: 43
 maintainers: ["Deftr0y"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b17e504786718eca7df0b4a13f451ed9de7490a6a6cb0e461617a2b73d36d23c/Deftr0y/PeerBrush"

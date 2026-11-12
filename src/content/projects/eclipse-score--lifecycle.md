@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-11T13:01:39Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 96
 maintainers: ["NicolasFussberger", "eclipse-score-bot", "MaciejKaszynski"]
 openGraphImageUrl: "https://opengraph.githubassets.com/979bfa2cf5d08fceb58e5552cc2b2565342bd67189465e3253c3d0733d42120e/eclipse-score/lifecycle"

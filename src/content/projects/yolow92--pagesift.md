@@ -7,10 +7,10 @@ url: "https://github.com/YOLOW92/pagesift"
 homepage: "https://pagesift.tech"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [85]
+languagePcts: [83]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 263
-forks: 34
+stars: 265
+forks: 35
 openIssues: 0
 closedIssues: 2
 watchers: 1
@@ -24,7 +24,7 @@ tags: ["solo_builder", "release_machine"]
 healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/00abb9cbd17ba72e1057d47ffbea600fe0d71db481b9e05d92d2858ef2a22606/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/7ec7c30fe1646f9fb10836f670c6f4017f6734f692ea4b26d41e73f735aab71e/YOLOW92/pagesift"
 discussionCount: 1
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"

@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "claude-code", "claude-code-plugin", "image-generation", "ai-agents", "multimodal"]
-stars: 795
+stars: 796
 forks: 71
 openIssues: 0
 closedIssues: 12
@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-06T15:09:02Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 26
 maintainers: ["chipfighter", "Aaqibhafeezkhan", "peremunoz"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
