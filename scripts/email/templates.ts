@@ -54,7 +54,7 @@ export function acceptedHtml(d: EmailData): string {
           <tr><td style="padding-bottom:24px;">
             <p style="margin:0;color:#8b949e;font-size:15px;line-height:1.7;">
               Your project has been accepted into the SilentStars directory —
-              a directory of small, active open source projects.
+              a directory of active open source projects flying under the radar.
               It will be refreshed nightly and featured in our daily posts.
             </p>
           </td></tr>
@@ -118,7 +118,7 @@ export function featuredHtml(d: EmailData): string {
           <tr><td style="padding-bottom:24px;">
             <p style="margin:0;color:#8b949e;font-size:15px;line-height:1.7;">
               We came across <strong style="color:#c9d1d9;">${d.projectName}</strong> and added it to
-              SilentStars, a directory of small, active open source projects, and featured it in today's daily post. No action needed on your end; just wanted you to know.
+              SilentStars, a directory of active open source projects flying under the radar, and featured it in today's daily post. No action needed on your end; just wanted you to know.
             </p>
           </td></tr>
 

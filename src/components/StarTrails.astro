@@ -231,8 +231,8 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
       best && bd >= CLIMB_MIN ? `${best.name} climbs ${bd} stars this week.` :
       arrivals ? ARRIVALS[arrivalLines++ % ARRIVALS.length](arrivals, repos.filter((r: any) => r.first <= i && i <= r.last).length) : 'A quiet week. Most stars hold their place.';
     if (i === LAST) txt = grads.length === 1
-      ? `Listed here when it was small. Now it's past ${GRAD_STARS} ★.`
-      : `Listed here when they were small. Now ${grads.length} are past ${GRAD_STARS} ★.`;
+      ? `Listed here before the crowd found it. Now it's past ${GRAD_STARS} ★.`
+      : `Listed here before the crowd found them. Now ${grads.length} are past ${GRAD_STARS} ★.`;
     events.push(txt);
   }
 

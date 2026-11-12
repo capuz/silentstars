@@ -19,7 +19,7 @@ export const SUBMIT_URL = 'https://silentstars.dev/submit';
 export const DISPLAY_NAME = 'SilentStars · OSS radar';
 
 export const DESCRIPTION = [
-  'Daily pick of small open-source projects that are still shipping. Not famous. Not abandoned. Just building.',
+  'Daily pick of open-source projects still shipping under the radar. Not famous. Not abandoned. Just building.',
   '',
   'Built one? Submit it 👇',
   'silentstars.dev/submit',

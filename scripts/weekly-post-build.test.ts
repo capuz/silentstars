@@ -30,6 +30,8 @@ test('root: edition, date range and section counts, with a card to the edition',
   const { root } = buildWeeklyThread(edition(), {}, BASE, { tags: ['#opensource'] });
   assert.match(root.text, /Edition #17/);
   assert.doesNotMatch(root.text, /Issue #/);
+  assert.match(root.text, /What moved under the radar this week/);
+  assert.doesNotMatch(root.text + root.embed.external.description, /\bsmall\b/i);
   assert.match(root.text, /Oct 12 – 18, 2026/);
   assert.match(root.text, /4 rising/);
   assert.match(root.text, /1 new/);

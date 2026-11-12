@@ -114,7 +114,7 @@ export function buildWeeklyThread(
     '',
     counts,
     '',
-    'What moved in small open source this week 🧵👇',
+    'What moved under the radar this week 🧵👇',
     ...(opts.tags?.length ? ['', opts.tags.join(' ')] : []),
   ].join('\n');
 
@@ -126,7 +126,7 @@ export function buildWeeklyThread(
       external: {
         uri: pageUrl,
         title: `This week on SilentStars · Edition #${edition.issue}`,
-        description: `What moved in small open source, ${range}: ${counts}.`,
+        description: `What moved under the radar, ${range}: ${counts}.`,
       },
     },
   };

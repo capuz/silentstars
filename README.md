@@ -6,7 +6,7 @@
 [![Nightly collect + deploy](https://github.com/capuz/silentstars/actions/workflows/collect.yml/badge.svg)](https://github.com/capuz/silentstars/actions/workflows/collect.yml)
 [![Live site](https://img.shields.io/badge/site-live-brightgreen)](https://silentstars.dev/)
 
-A static site that surfaces small open source projects that are **still shipping**: newborns, solo builders, projects that came back after a long pause. Ranked by activity relative to stars and watchers.
+A static site that surfaces open source projects flying under the radar that are **still shipping**: newborns, solo builders, projects that came back after a long pause. Ranked by activity relative to stars and watchers.
 
 **Live:** https://silentstars.dev
 
