@@ -1,0 +1,39 @@
+name: Weekly email preview
+
+# Sends the latest edition's email (scripts/send-weekly-email.ts) as a Buttondown
+# draft to ONE address, to check how it looks. Subscribers get nothing: the real
+# Monday send runs from post-weekly.yml, and only when vars.WEEKLY_EMAIL is "on".
+on:
+  workflow_dispatch:
+    inputs:
+      preview_to:
+        description: "Send the preview only to this address"
+        type: string
+        required: true
+
+jobs:
+  preview:
+    name: Send preview draft
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Send preview
+        run: npx tsx scripts/send-weekly-email.ts
+        env:
+          MODE:               preview
+          PREVIEW_TO:         ${{ inputs.preview_to }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          BASE_URL:           https://silentstars.dev

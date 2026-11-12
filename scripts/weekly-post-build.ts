@@ -30,7 +30,7 @@ export interface WeeklyThreadOptions {
   owners?: Record<string, BskyAccount>;
 }
 
-const SECTIONS = [
+export const SECTIONS = [
   { key: 'rising',    icon: '🔥', title: 'Rising',        count: 'rising' },
   { key: 'newcomers', icon: '🌱', title: 'New this week', count: 'new' },
   { key: 'revived',   icon: '⚡', title: 'Came back',     count: 'back' },

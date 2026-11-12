@@ -53,6 +53,17 @@ jobs:
           BASE_URL:          https://silentstars.dev
           DRY_RUN:           ${{ inputs.dry_run }}
 
+      # The email goes out after the thread, and only once vars.WEEKLY_EMAIL is "on"
+      # (set it after approving a preview from weekly-email.yml). Idempotent through
+      # data/sent-weekly-email.json; dry runs never send.
+      - name: Email the edition
+        if: vars.WEEKLY_EMAIL == 'on' && inputs.dry_run != true
+        run: npx tsx scripts/send-weekly-email.ts
+        env:
+          MODE:               send
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          BASE_URL:           https://silentstars.dev
+
       # always(): the root is recorded before the replies go out, so a failed
       # reply must still commit the record or a re-run would post a second root.
       - name: Commit posted-weekly.json
@@ -60,9 +71,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/posted-weekly.json 2>/dev/null || exit 0
+          git add data/posted-weekly.json data/sent-weekly-email.json 2>/dev/null || git add data/posted-weekly.json 2>/dev/null || exit 0
           git diff --cached --quiet && exit 0
-          git commit -m "chore: record weekly thread [skip ci]"
+          git commit -m "chore: record weekly thread and email [skip ci]"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push; then
               exit 0
