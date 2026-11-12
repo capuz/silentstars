@@ -2647,5 +2647,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "moul/moul",
+    "slug": "moul--moul",
+    "postedAt": "2026-11-12T11:51:26.094Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n24fraba5b2u",
+        "postedAt": "2026-11-12T11:51:26.094Z"
+      }
+    }
   }
 ]
