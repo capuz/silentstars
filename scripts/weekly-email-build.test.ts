@@ -27,12 +27,12 @@ test('subject names the edition and its week', () => {
   assert.equal(subject, 'SilentStars · Edition #17 · Oct 12 – 18, 2026');
 });
 
-test('the button and the card link to the edition page, never to /weekly/ alone', () => {
+test('the card opens the star trails on /weekly/, the button opens the edition page', () => {
   const { html } = buildWeeklyEmail(edition(), {}, BASE);
-  assert.match(html, /This week&#39;s details →/);
-  assert.ok(html.includes(`href="${BASE}/weekly/2026-W42/"`), 'links to the edition page');
-  assert.ok(!html.includes(`href="${BASE}/weekly/"`), 'no link to the star trails page');
-  assert.doesNotMatch(html, /star trails/i);
+  const card = html.match(/<a href="([^"]+)"[^>]*>\s*<img/);
+  assert.equal(card?.[1], `${BASE}/weekly/`);
+  const button = html.match(/<a href="([^"]+)"[^>]*><span[^>]*>This week&#39;s details →/);
+  assert.equal(button?.[1], `${BASE}/weekly/2026-W42/`);
 });
 
 test('link text carries its own colour, so the newsletter template cannot repaint it', () => {
