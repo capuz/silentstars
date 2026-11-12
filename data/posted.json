@@ -2635,5 +2635,17 @@
         "postedAt": "2026-11-11T17:41:00.079Z"
       }
     }
+  },
+  {
+    "repo": "b23r0/rust-raknet",
+    "slug": "b23r0--rust-raknet",
+    "postedAt": "2026-11-12T05:52:24.648Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n23rpamezb2g",
+        "postedAt": "2026-11-12T05:52:24.648Z"
+      }
+    },
+    "communityPick": true
   }
 ]
