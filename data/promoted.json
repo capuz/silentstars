@@ -194,5 +194,9 @@
   {
     "repo": "SiftingIO/sdk-python",
     "until": "2026-12-10"
+  },
+  {
+    "repo": "b23r0/rust-raknet",
+    "until": "2026-12-12"
   }
 ]
