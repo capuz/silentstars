@@ -1,8 +1,9 @@
 ---
-// Star trails: each project is a point of light at the height of its GitHub stars,
-// trailing its weekly history (data/history.json). Graduates come from data/graduates.json.
+// Star trails: each project is a point of light at the height of its GitHub stars, with a
+// fixed place in the sky and a trail of its last weeks (data/history.json), drawn like a
+// long-exposure photo. Graduates come from data/graduates.json.
 import { getCollection } from 'astro:content';
-import { buildTrails, loadGraduates, MIN_WEEKS } from '../../scripts/star-trails.ts';
+import { buildTrails, loadGraduates, pickHeadlines, MIN_WEEKS, SOAR_MIN } from '../../scripts/star-trails.ts';
 import type { History } from '../../scripts/weekly.ts';
 import historyJson from '../../data/history.json';
 
@@ -13,6 +14,8 @@ const slugs = new Map((await getCollection('projects')).map(p => [p.data.repo, p
 const trails = buildTrails(historyJson as History, graduates, new Set(slugs.keys()));
 const data = {
   ...trails,
+  headlines: pickHeadlines(trails.repos, trails.weeks.length),
+  soarMin: SOAR_MIN,
   repos: trails.repos.map(t => ({ ...t, h: t.p ? `${base}projects/${slugs.get(t.r)}/` : `https://github.com/${t.r}` })),
 };
 const first = trails.weeks[0]?.replace(/^\d+-/, '');
@@ -25,7 +28,7 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   </header>
 
   <div class="st-stage" id="st-stage">
-    <canvas id="st-sky" role="img" aria-label={`Animation: each project is a point of light at the height of its GitHub stars, leaving a trail as the weeks pass from ${first} to ${last}.`}></canvas>
+    <canvas id="st-sky" role="img" aria-label={`Animation: each project is a point of light at the height of its GitHub stars, trailing its last weeks as time passes from ${first} to ${last}.`}></canvas>
     <div class="st-tip" id="st-tip" hidden></div>
   </div>
 
@@ -45,13 +48,23 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     <input id="st-scrub" type="range" min="0" step="0.01" value="0" aria-label="Timeline">
   </div>
 
-  <form class="st-find" id="st-find" role="search">
-    <label for="st-q">Find your project</label>
-    <input id="st-q" list="st-repos" placeholder="owner/repo" autocomplete="off" spellcheck="false">
-    <datalist id="st-repos">{data.repos.map(t => <option value={t.r} />)}</datalist>
-    <button type="submit">Show trail</button>
-    <p class="st-found" id="st-found" hidden></p>
-  </form>
+  <!-- both forms share one grid, so their labels, boxes and buttons line up at the same size -->
+  <div class="st-forms">
+    <form class="st-find" id="st-find" role="search">
+      <label for="st-q">Find your project</label>
+      <input id="st-q" list="st-repos" placeholder="owner/repo" autocomplete="off" spellcheck="false">
+      <datalist id="st-repos">{data.repos.map(t => <option value={t.r} />)}</datalist>
+      <button type="submit">Show trail</button>
+      <p class="st-found" id="st-found" hidden></p>
+    </form>
+    <form class="st-find" id="st-mail" action="https://buttondown.com/api/emails/embed-subscribe/silentstars" method="post" target="popupwindow">
+      <label for="st-email">Get it by email, every Monday</label>
+      <input id="st-email" type="email" name="email" required placeholder="your@email.com">
+      <input type="hidden" name="embed" value="1">
+      <button type="submit">Subscribe</button>
+      <p class="st-found" id="st-mail-msg" aria-live="polite" hidden></p>
+    </form>
+  </div>
 
   <div class="st-legend" id="st-legend"></div>
   <script type="application/json" id="st-data" set:html={JSON.stringify(data)} />
@@ -78,15 +91,22 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   .st h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.05; margin: 0; color: var(--st-fg); }
   .st h2 em { color: var(--st-gold); font-style: italic; }
   .st-sub { margin: 0; font-family: var(--f-display); font-style: italic; font-size: 17px; color: var(--st-muted); }
-  .st-stage { position: relative; border-radius: 6px; overflow: hidden; border: 1px solid var(--st-line); background: var(--st-ink); }
-  canvas { display: block; width: 100%; touch-action: none; }
+  .st-stage { position: relative; border-radius: 6px; overflow: hidden; background: #03050d; }
+  canvas { display: block; width: 100%; touch-action: pan-y; }
   .st-tip { position: absolute; pointer-events: none; background: var(--st-ink-2); border: 1px solid var(--st-line); color: var(--st-fg); font: 12px/1.45 var(--f-mono); padding: 7px 10px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 12px)); }
   .st-caption { display: flex; align-items: baseline; gap: 16px; min-height: 2.4em; flex-wrap: wrap; }
   .st-age { font-family: var(--f-mono); font-size: 13px; color: var(--st-gold); font-variant-numeric: tabular-nums; min-width: 6.5em; letter-spacing: .02em; }
   .st-text { font-family: var(--f-display); font-style: italic; font-size: clamp(18px, 2.4vw, 22px); line-height: 1.25; min-width: 0; flex: 1; text-wrap: balance; }
   .st-text.in { animation: st-rise .9s ease both; }
   @keyframes st-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-  .st-controls, .st-find { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .st-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .st-forms { display: grid; grid-template-columns: max-content minmax(0, 1fr) max-content; align-items: center; gap: 10px 14px; }
+  .st-find { display: contents; }
+  .st-find button { justify-self: stretch; }
+  @media (max-width: 680px) {
+    .st-forms { grid-template-columns: minmax(0, 1fr) max-content; }
+    .st-find label { grid-column: 1 / -1; margin-top: 4px; }
+  }
   .st button { font: 500 14px var(--f-body); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
   .st button:hover { border-color: var(--st-muted); }
   .st button:focus-visible, .st input:focus-visible, .st a:focus-visible { outline: 2px solid var(--st-gold); outline-offset: 2px; }
@@ -96,8 +116,8 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   .st-speed button[aria-pressed="true"] { background: var(--st-ink-2); color: var(--st-gold); }
   #st-scrub { flex: 1 1 200px; min-width: 0; accent-color: var(--st-gold); }
   .st-find label { font-family: var(--f-mono); font-size: 12px; color: var(--st-muted); }
-  .st-find input { flex: 1 1 220px; min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
-  .st-found { flex-basis: 100%; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
+  .st-find input { min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
+  .st-found { grid-column: 1 / -1; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
   .st-found a { color: var(--st-gold); }
   .st-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--st-muted); border-top: 1px solid var(--st-line); padding-block: 12px 0; }
   .st-legend :global(span) { display: inline-flex; align-items: center; gap: 7px; }
@@ -116,198 +136,215 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   const wk = (i: number) => DATA.weeks[Math.max(0, Math.min(LAST, Math.round(i)))].replace(/^\d+-/, '');
 
   const STATUS = ['thriving', 'newborn', 'quiet', 'at_risk', 'watched', 'graduated'];
-  const C: Record<string, number[]> = { thriving: [150, 240, 200], newborn: [150, 200, 255], quiet: [235, 215, 175], at_risk: [255, 150, 160], watched: [196, 176, 255], graduated: [255, 200, 90] };
-  // the graduation rule itself lives in scripts/star-trails.ts; this only draws it
-  const GRAD_STARS = DATA.gradStars;
-  const CLIMB_MIN = 5, SOAR_MIN = 50; // weekly gains worth a caption: climbs / soars
+  const GRADUATED = STATUS.indexOf('graduated');
+  const C: Record<string, number[]> = { thriving: [150, 240, 200], newborn: [150, 200, 255], quiet: [235, 215, 175], at_risk: [255, 150, 160], watched: [196, 176, 255], graduated: [255, 205, 100] };
+  // the graduation and headline rules live in scripts/star-trails.ts; this only draws them
+  const GRAD_STARS = DATA.gradStars, LG = Math.log10(GRAD_STARS);
+  const CLIMB_MIN = 5, SOAR_MIN = DATA.soarMin; // weekly gains worth a caption: climbs / soars
   const LABEL: Record<string, string> = { thriving: 'Thriving', newborn: 'Newborn', quiet: 'Quiet', at_risk: 'At risk', watched: 'Watched', graduated: `Lit up (${GRAD_STARS}+ ★)` };
   const rgba = (c: number[], a: number) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
-  const sIdx = (s: string) => Math.max(0, STATUS.indexOf(s));
+  const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+  const fmt = (n: number) => Math.round(n).toLocaleString('en-US');
   $('st-legend').innerHTML = STATUS.map(k => `<span><i style="color:${rgba(C[k], 1)};background:${rgba(C[k], 1)}"></i>${LABEL[k]}</span>`).join('');
 
   function rng(seed: number) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
-  const R = rng(7);
+  const R = rng(11);
+  // seeded by the repo name, so a project keeps its place in the sky between visits
+  function hash(s: string) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return rng(h); }
 
+  // ---- per-project samples, independent of the canvas size ----
   // g = graduate: m = the weeks we actually measured it, its last point is today's
   // GitHub count, and nothing was measured in between.
+  const STEP = .125, WIN = 6; // sample spacing and trail length, in weeks
+  const smooth = (u: number) => u * u * (3 - 2 * u);
   const repos = DATA.repos.map(({ r, s, g, m, h }: any) => {
     const pts = Array.from({ length: NW }, (_, i) => s[i] ? { stars: s[i][0], status: s[i][1] } : null);
     const idx = pts.map((p, i) => p ? i : -1).filter(i => i >= 0);
-    const measured = m || idx, lastSeen = measured[measured.length - 1];
-    return { repo: r, name: r.split('/')[1], href: h, pts, first: idx[0], last: idx[idx.length - 1], wob: R() * 6.283, lastSeen,
-      grad: !!g, seenStars: pts[lastSeen]!.stars, gain: pts[idx[idx.length - 1]]!.stars - pts[idx[0]]!.stars } as any;
+    const measured = m || idx, lastSeen = measured[measured.length - 1], q = hash(r);
+    return { repo: r, name: r.split('/')[1], href: h, pts, first: idx[0], last: idx[idx.length - 1], lastSeen, grad: !!g,
+      seenStars: pts[lastSeen]!.stars, gain: pts[idx[idx.length - 1]]!.stars - pts[idx[0]]!.stars, u: q(), z: q(), wob: q() * 6.2832 } as any;
   });
-  const byRepo = new Map(repos.map((p: any) => [p.repo.toLowerCase(), p]));
+  const byRepo = new Map<string, any>(repos.map((p: any) => [p.repo.toLowerCase(), p]));
   const maxStars = Math.max(...repos.flatMap((r: any) => r.pts.filter(Boolean).map((p: any) => p.stars)));
-  const grads = repos.filter((r: any) => r.grad);
-  const named = new Set([...[...grads].sort((a, b) => b.gain - a.gain).slice(0, 8), ...repos.filter((r: any) => !r.grad).sort((a: any, b: any) => b.gain - a.gain).slice(0, 3)]);
+  const L0 = -.1, L1 = Math.log10(maxStars * 1.25); // log10(stars) at the bottom and top of the sky
+  const grads = repos.filter((r: any) => r.grad).sort((a: any, b: any) => b.gain - a.gain);
+  const named = new Set([...grads.slice(0, 8), ...repos.filter((r: any) => !r.grad).sort((a: any, b: any) => b.gain - a.gain).slice(0, 3)]);
 
-  // captions: the week's biggest climber, plus arrivals
-  const events: string[] = [];
-  for (let i = 0; i < NW; i++) {
-    let best: any = null, bd = 0, arrivals = 0;
-    for (const r of repos) {
-      if (r.first === i && i > 0) arrivals++;
-      const a = r.pts[i - 1], b = r.pts[i];
-      if (a && b && b.status !== 'graduated' && b.stars - a.stars > bd) { bd = b.stars - a.stars; best = r; }
+  // log10(stars) at week t, interpolated in log space so long gaps look straight on the log axis
+  function logStars(p: any, t: number) {
+    let i = Math.min(Math.floor(t), p.last), j = i + 1;
+    while (i > p.first && !p.pts[i]) i--;
+    while (j <= p.last && !p.pts[j]) j++;
+    const a = p.pts[i], b = p.pts[j] || a;
+    const u = j > p.last ? 0 : smooth(clamp((t - i) / (j - i), 0, 1));
+    const la = Math.log10(Math.max(1, a.stars)), lb = Math.log10(Math.max(1, b.stars));
+    return la + (lb - la) * u;
+  }
+  for (const p of repos) {
+    const n = p.n = Math.floor((p.last + .999 - p.first) / STEP) + 1;
+    p.ls = new Float32Array(n); p.as = new Float32Array(n); p.cs = new Uint8Array(n);
+    p.gap = new Uint8Array(n); // 1 = between our last sighting and today: no measurements
+    p.cross = Infinity; // when a graduate crosses GRAD_STARS
+    for (let k = 0; k < n; k++) {
+      const tt = p.first + k * STEP, ls = logStars(p, tt);
+      p.ls[k] = ls;
+      let a = 1;
+      if (p.first > 0) a = Math.min(a, (tt - p.first) / .6);
+      if (p.last < LAST) a = Math.min(a, (p.last + 1 - tt) / .6);
+      p.as[k] = clamp(a, 0, 1);
+      let st = p.pts[p.first].status;
+      for (let i = Math.min(p.lastSeen, Math.floor(tt)); i >= p.first; i--) if (p.pts[i]) { st = p.pts[i].status; break; }
+      if (p.grad && ls >= LG) { st = 'graduated'; if (p.cross === Infinity) p.cross = tt; }
+      p.cs[k] = Math.max(0, STATUS.indexOf(st));
+      p.gap[k] = p.grad && tt > p.lastSeen ? 1 : 0;
     }
-    let txt = i === 0 ? `The sky so far: ${repos.filter((r: any) => r.first === 0).length} projects already shining.` :
-      best && bd >= SOAR_MIN ? `${best.name} soars ${bd} stars this week.` :
+  }
+  const alive = (p: any, t: number) => t >= p.first && t <= p.last + .999;
+  const kAt = (p: any, t: number) => clamp(Math.floor((t - p.first) / STEP), 0, p.n - 1);
+  function lsAt(p: any, t: number) { const f = clamp((t - p.first) / STEP, 0, p.n - 1), k = Math.floor(f), k2 = Math.min(p.n - 1, k + 1); return p.ls[k] + (p.ls[k2] - p.ls[k]) * (f - k); }
+  // a project "moved" if its stars changed by 2+ within the trail window
+  function moved(p: any, t: number) {
+    let lo = Infinity, hi = -Infinity;
+    for (let i = Math.max(p.first, Math.floor(t - WIN)); i <= Math.min(p.last, Math.ceil(t)); i++) {
+      const q = p.pts[i]; if (!q) continue;
+      if (q.stars < lo) lo = q.stars; if (q.stars > hi) hi = q.stars;
+    }
+    return hi - lo >= 2;
+  }
+
+  // captions: the week's headline project, or its arrivals
+  // arrival weeks rotate through these so a run of them doesn't read as one repeated line
+  const ARRIVALS: Array<(n: number, all: number) => string> = [
+    n => `${n} new ${n === 1 ? 'project joins' : 'projects join'} the sky.`,
+    (n, all) => `${n} more ${n === 1 ? 'point' : 'points'} of light. ${all} in view now.`,
+    n => `${n === 1 ? 'One newcomer' : n + ' newcomers'} this week, still under the radar.`,
+    (n, all) => `The sky fills in: ${n} ${n === 1 ? 'arrival' : 'arrivals'}, ${all} projects overhead.`,
+    n => `${n} fresh ${n === 1 ? 'trail begins' : 'trails begin'}.`,
+  ];
+  const events: string[] = [];
+  let arrivalLines = 0;
+  for (let i = 0; i < NW; i++) {
+    const hl = DATA.headlines[i], best = hl && byRepo.get(hl.r.toLowerCase()), bd = hl ? hl.d : 0;
+    const arrivals = i > 0 ? repos.filter((r: any) => r.first === i).length : 0;
+    let txt = i === 0 ? `A small corner of the sky. ${repos.length} projects will cross it in ${NW} weeks.` :
+      best && bd >= SOAR_MIN ? `${best.name} soars ${fmt(bd)} stars this week.` :
       best && bd >= CLIMB_MIN ? `${best.name} climbs ${bd} stars this week.` :
-      arrivals ? `${arrivals} new ${arrivals === 1 ? 'project joins' : 'projects join'} the sky.` : 'A quiet week. Most stars hold their place.';
-    if (i > 0 && best && bd >= CLIMB_MIN && arrivals) txt += ` ${arrivals} new ${arrivals === 1 ? 'arrival' : 'arrivals'}.`;
+      arrivals ? ARRIVALS[arrivalLines++ % ARRIVALS.length](arrivals, repos.filter((r: any) => r.first <= i && i <= r.last).length) : 'A quiet week. Most stars hold their place.';
     if (i === LAST) txt = grads.length === 1
       ? `Listed here when it was small. Now it's past ${GRAD_STARS} ★.`
       : `Listed here when they were small. Now ${grads.length} are past ${GRAD_STARS} ★.`;
     events.push(txt);
   }
 
-  // ---- per-project functions of time (used only to precompute paths) ----
-  const smooth = (u: number) => u * u * (3 - 2 * u);
-  function starsAt(p: any, t: number) {
-    if (t < p.first || t > p.last + .999) return null;
-    let i = Math.min(Math.floor(t), p.last), j = i + 1;
-    while (i > p.first && !p.pts[i]) i--;
-    while (j <= p.last && !p.pts[j]) j++;
-    const a = p.pts[i], b = p.pts[j] || a;
-    const u = j > p.last ? 0 : smooth(Math.max(0, Math.min(1, (t - i) / (j - i))));
-    // interpolate in log space so long gaps look straight on the log axis
-    const la = Math.log10(Math.max(1, a.stars)), lb = Math.log10(Math.max(1, b.stars));
-    return 10 ** (la + (lb - la) * u);
-  }
-  function statusAt(p: any, t: number) {
-    if (p.grad && starsAt(p, t)! >= GRAD_STARS) return 'graduated';
-    for (let i = Math.min(p.lastSeen, Math.floor(t)); i >= p.first; i--) if (p.pts[i]) return p.pts[i].status;
-    return p.pts[p.first].status;
-  }
-  function aAt(p: any, t: number) {
-    let a = 1;
-    if (p.first > 0) a = Math.min(a, (t - p.first) / .6);
-    if (p.last < LAST) a = Math.min(a, (p.last + 1 - t) / .6);
-    return Math.max(0, Math.min(1, a));
-  }
-  const jit = (p: any, t: number) => 3 * Math.sin(t * 1.3 + p.wob * 3);
-  const wav = (p: any, t: number) => 1.6 * Math.sin(t * 2.1 + p.wob);
+  // ---- geometry ----
+  const FONT = '500 12px "Hanken Grotesk", system-ui, sans-serif', FONT_SM = '500 11px "Hanken Grotesk", system-ui, sans-serif';
+  let W = 0, H = 0, dpr = 1, ppw = 0, top = 0, bot = 0, bgCanvas: HTMLCanvasElement;
+  const yL = (ls: number) => bot - (ls - L0) / (L1 - L0) * (bot - top);
+  const hx = (p: any) => W * (.05 + .88 * p.u);
 
-  // ---- geometry + precomputed paths ----
-  const STEP = .125, BANDS = 6, MOVED = 2;
-  const MONO = '10px "Space Mono", ui-monospace, monospace';
-  let W = 0, H = 0, dpr = 1, headX = 0, ppw = 0, win = 0, top = 0, bot = 0, bgCanvas: HTMLCanvasElement;
-  const yS = (s: number) => { const v = Math.log10(Math.max(1, s)) / Math.log10(maxStars * 1.3); return bot - v * (bot - top); };
-
-  const bg: any[] = [];
-  for (let i = 0; i < 190; i++) bg.push({ x: R(), y: R(), s: R() * 1.1 + .3, ph: R() * 6.28, sp: .6 + R() * 1.6 });
-  const twinkle = bg.slice(0, 30);
+  const dust: any[] = [];
+  for (let i = 0; i < 240; i++) dust.push({ x: R(), y: R(), s: R() * 1.2 + .3, ph: R() * 6.28, sp: .5 + R() * 1.8, layer: Math.floor(R() * 3) });
 
   // one pre-rendered glow sprite per status colour
   const sprites = STATUS.map(k => {
-    const c = document.createElement('canvas'); c.width = c.height = 64;
-    const g = c.getContext('2d')!, gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-    gr.addColorStop(0, rgba(C[k], 1)); gr.addColorStop(1, rgba(C[k], 0));
-    g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+    const c = document.createElement('canvas'); c.width = c.height = 96;
+    const g = c.getContext('2d')!, gr = g.createRadialGradient(48, 48, 0, 48, 48, 48);
+    gr.addColorStop(0, rgba(C[k], 1)); gr.addColorStop(.18, rgba(C[k], .55)); gr.addColorStop(.5, rgba(C[k], .12)); gr.addColorStop(1, rgba(C[k], 0));
+    g.fillStyle = gr; g.fillRect(0, 0, 96, 96);
     return c;
   });
 
   function layout() {
     const w = stage.clientWidth;
-    let h = w < 640 ? w * 1.15 : w * 0.56;
+    let h = w < 640 ? w * 1.2 : w * 0.56;
     h = Math.max(340, Math.min(h, innerHeight * 0.78));
     W = w; H = h; dpr = Math.min(1.5, devicePixelRatio || 1);
     cvs.width = Math.round(w * dpr); cvs.height = Math.round(h * dpr); cvs.style.height = h + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    headX = W * (W < 640 ? 0.66 : 0.62);
-    ppw = W < 640 ? W / 9 : W / 18;
-    win = headX / ppw;
-    top = 26; bot = H - 30;
+    ppw = W / (W < 640 ? 11 : 21);
+    top = 30; bot = H - 26;
 
-    // static sky: gradient, still stars, star-count guides
+    // static sky: gradient, a milky way of haze and fine dust, vignette
     bgCanvas = document.createElement('canvas');
     bgCanvas.width = cvs.width; bgCanvas.height = cvs.height;
     const b = bgCanvas.getContext('2d')!; b.setTransform(dpr, 0, 0, dpr, 0, 0);
     const g = b.createLinearGradient(0, 0, 0, H);
-    g.addColorStop(0, '#05081a'); g.addColorStop(.45, '#0a1029'); g.addColorStop(1, '#101a38');
+    g.addColorStop(0, '#03050d'); g.addColorStop(.55, '#081029'); g.addColorStop(1, '#16203f');
     b.fillStyle = g; b.fillRect(0, 0, W, H);
-    b.fillStyle = 'rgba(220,226,255,0.2)';
-    for (const s of bg.slice(30)) b.fillRect(s.x * W, s.y * H, s.s, s.s);
-    b.font = MONO; b.textAlign = 'left'; b.textBaseline = 'middle';
-    for (const s of [1, 10, 100, 1000, 10000]) {
-      if (s > maxStars * 1.3) continue;
-      const y = yS(s);
-      b.strokeStyle = 'rgba(140,150,190,0.10)'; b.lineWidth = 1;
-      b.beginPath(); b.moveTo(0, y); b.lineTo(W, y); b.stroke();
-      b.fillStyle = 'rgba(160,170,205,0.55)'; b.fillText((s >= 1000 ? s / 1000 + 'k' : s) + ' ★', 8, y - 7);
+    const r2 = rng(5);
+    b.globalCompositeOperation = 'lighter';
+    for (let i = 0; i < 150; i++) {
+      const u = r2(), off = (r2() + r2() + r2() - 1.5) * .22;
+      const x = W * (u * 1.2 - .1), y = H * (.88 - u * .8 + off), rad = (30 + r2() * 110) * (W / 1100 + .3);
+      const gr = b.createRadialGradient(x, y, 0, x, y, rad), tint = r2() < .5 ? '120,140,255' : '190,150,255';
+      gr.addColorStop(0, `rgba(${tint},.03)`); gr.addColorStop(1, `rgba(${tint},0)`);
+      b.fillStyle = gr; b.fillRect(x - rad, y - rad, rad * 2, rad * 2);
     }
-    // the graduation line
-    const gy = yS(GRAD_STARS);
-    b.strokeStyle = rgba(C.graduated, .45); b.setLineDash([6, 6]);
-    b.beginPath(); b.moveTo(0, gy); b.lineTo(W, gy); b.stroke(); b.setLineDash([]);
-    b.fillStyle = rgba(C.graduated, .85); b.fillText(`lit up · ${GRAD_STARS} ★`, 8, gy - 7);
-
-    for (const p of repos) {
-      const n = Math.floor((p.last + .999 - p.first) / STEP) + 1;
-      p.ys = new Float32Array(n); p.js = new Float32Array(n); p.as = new Float32Array(n); p.cs = new Uint8Array(n);
-      p.gap = new Uint8Array(n); // 1 = between our last sighting and today: no measurements
-      for (let k = 0; k < n; k++) {
-        const tt = p.first + k * STEP;
-        p.ys[k] = yS(starsAt(p, tt)!) + wav(p, tt); p.js[k] = jit(p, tt); p.as[k] = aAt(p, tt); p.cs[k] = sIdx(statusAt(p, tt));
-        p.gap[k] = p.grad && tt > p.lastSeen ? 1 : 0;
-      }
+    for (let i = 0; i < 900; i++) {
+      const u = r2(), off = (r2() + r2() + r2() - 1.5) * .3, s = r2() * .9 + .2;
+      b.fillStyle = `rgba(215,222,255,${.08 + r2() * .22})`;
+      b.fillRect(W * (u * 1.2 - .1), H * (.88 - u * .8 + off), s, s);
     }
+    b.globalCompositeOperation = 'source-over';
+    const v = b.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, Math.max(W, H) * .75);
+    v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.55)');
+    b.fillStyle = v; b.fillRect(0, 0, W, H);
   }
-  // fonts change text metrics in the static layer
+  // fonts change text metrics, and with them which names fit
   document.fonts?.ready.then(layout);
 
-  // a project "moved" if its stars changed by MOVED+ within the visible window
-  function moved(p: any, t: number) {
-    let lo = Infinity, hi = -Infinity;
-    for (let i = Math.max(p.first, Math.floor(t - win)); i <= Math.min(p.last, Math.floor(t)); i++) {
-      const q = p.pts[i]; if (!q) continue;
-      if (q.stars < lo) lo = q.stars; if (q.stars > hi) hi = q.stars;
-    }
-    return hi - lo >= MOVED;
-  }
-
-  // head position at exact time t (between samples)
-  function head(p: any, t: number) {
-    if (t < p.first || t > p.last + .999) return null;
-    const f = (t - p.first) / STEP, k = Math.min(p.ys.length - 1, Math.floor(f)), k2 = Math.min(p.ys.length - 1, k + 1), u = f - k;
-    return { x: headX + p.js[k] + (p.js[k2] - p.js[k]) * u, y: p.ys[k] + (p.ys[k2] - p.ys[k]) * u, a: p.as[k], c: p.cs[k] };
-  }
-
-  function drawTrail(p: any, t: number, hl: boolean, h: any) {
-    const kEnd = Math.min(p.ys.length - 1, Math.floor((t - p.first) / STEP));
-    const kStart = Math.max(0, Math.ceil((t - win - p.first) / STEP));
+  // ---- drawing ----
+  // a tapered, glowing trail: thick and bright at the star, fading over WIN weeks
+  function drawTrail(p: any, t: number, x: number, y: number, width: number, alpha: number) {
+    const kEnd = Math.min(p.n - 1, Math.floor((t - p.first) / STEP));
+    const kStart = Math.max(0, Math.ceil((t - WIN - p.first) / STEP));
     if (kEnd - kStart < 1) return;
-    const X = (k: number) => headX + p.js[k] + (p.first + k * STEP - t) * ppw;
-    if (!hl && !moved(p, t)) {
-      ctx.strokeStyle = rgba(C[STATUS[p.cs[kEnd]]], .16 * h.a); ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.moveTo(X(kStart), p.ys[kStart]);
-      for (let k = kStart + 4; k < kEnd; k += 4) ctx.lineTo(X(k), p.ys[k]);
-      ctx.lineTo(h.x, h.y); ctx.stroke();
-      return;
-    }
-    const span = kEnd - kStart;
-    ctx.lineWidth = hl ? 2 : 1.1;
+    const X = (k: number) => x - (t - (p.first + k * STEP)) * ppw;
+    const span = kEnd - kStart, BANDS = 8;
+    ctx.lineCap = 'butt'; // round caps would stack into bright beads where bands meet
     for (let b = 0; b < BANDS; b++) {
       const from = kStart + Math.floor(span * b / BANDS), to = b === BANDS - 1 ? kEnd : kStart + Math.floor(span * (b + 1) / BANDS);
       if (to <= from && b < BANDS - 1) continue;
-      const mid = (from + to) >> 1, age = (t - (p.first + mid * STEP)) / win;
-      const a = Math.pow(Math.max(0, 1 - age), 1.4) * p.as[mid] * (hl ? .95 : .55);
-      if (a < .01) continue;
-      ctx.strokeStyle = rgba(C[STATUS[p.cs[to]]], a);
-      // split the band into runs: solid where measured, dotted across the unmeasured gap
-      let k = from;
-      while (k < to) {
-        const g = p.gap[k + 1];
-        ctx.setLineDash(g ? [2, 5] : []);
-        ctx.globalAlpha = g ? .7 : 1;
-        ctx.beginPath(); ctx.moveTo(X(k), p.ys[k]);
-        while (k < to && p.gap[k + 1] === g) { k++; ctx.lineTo(X(k), p.ys[k]); }
-        if (k === to && b === BANDS - 1) ctx.lineTo(h.x, h.y);
-        ctx.stroke();
-      }
-      ctx.setLineDash([]); ctx.globalAlpha = 1;
+      const mid = (from + to) >> 1, f = 1 - (t - (p.first + mid * STEP)) / WIN;
+      if (f <= 0) continue;
+      // dotted and dimmer across the unmeasured gap
+      const gap = p.gap[to], a = Math.pow(f, 1.5) * alpha * p.as[mid] * (gap ? .75 : 1);
+      if (a < .012) continue;
+      ctx.setLineDash(gap ? [2, 6] : []);
+      ctx.beginPath(); ctx.moveTo(X(from), yL(p.ls[from]));
+      for (let k = from + 1; k <= to; k++) ctx.lineTo(X(k), yL(p.ls[k]));
+      if (b === BANDS - 1) ctx.lineTo(x, y);
+      const col = C[STATUS[p.cs[to]]], w = width * (.18 + .82 * f);
+      if (!gap) { ctx.strokeStyle = rgba(col, a * .17); ctx.lineWidth = w * 3.6; ctx.stroke(); }
+      ctx.strokeStyle = rgba(col, a); ctx.lineWidth = w; ctx.stroke();
     }
+    ctx.setLineDash([]);
+  }
+
+  function drawStar(h: any, r: number, clock: number) {
+    const lit = h.c === GRADUATED, tw = .82 + .18 * Math.sin(clock * 1.7 + h.p.wob * 5), gr = r * (lit ? 9 : 5.5);
+    ctx.globalAlpha = Math.min(1, h.a * tw * (lit ? .75 : .5));
+    ctx.drawImage(sprites[h.c], h.x - gr, h.y - gr, gr * 2, gr * 2);
+    if (lit) { // a lit-up star gets diffraction spikes
+      const L = r * 7 * tw;
+      ctx.globalAlpha = h.a * .5; ctx.strokeStyle = rgba(C.graduated, 1); ctx.lineWidth = .8;
+      ctx.beginPath(); ctx.moveTo(h.x - L, h.y); ctx.lineTo(h.x + L, h.y); ctx.moveTo(h.x, h.y - L); ctx.lineTo(h.x, h.y + L); ctx.stroke();
+    }
+    ctx.globalAlpha = h.a;
+    ctx.fillStyle = lit ? '#fff6dc' : rgba(C[STATUS[h.c]], 1);
+    ctx.beginPath(); ctx.arc(h.x, h.y, r, 0, 6.2832); ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
+  // names never sit on top of each other: first come, first placed
+  let placed: number[][] = [];
+  function label(txt: string, x: number, y: number, col: number[], a: number, font: string, force: boolean) {
+    ctx.font = font;
+    const w = ctx.measureText(txt).width, lx = x + 11 + w > W - 6 ? x - 11 - w : x + 11;
+    if (!force) for (const q of placed) if (lx < q[0] + q[2] + 6 && lx + w + 6 > q[0] && y - 7 < q[1] + q[3] && y + 7 > q[1]) return;
+    placed.push([lx, y - 7, w, 14]);
+    ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+    ctx.fillStyle = rgba(col, a); ctx.fillText(txt, lx, y);
   }
 
   // hover follows the pointer; pinned is the project picked in "Find your project"
@@ -316,13 +353,12 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   // ---- the ending: once the story is over, tour the graduates one by one ----
   const TOUR_SECS = 3.5;
   const tour: any[] = []; // null = the closing line, every few graduates
-  [...grads].sort((a: any, b: any) => b.gain - a.gain).forEach((g: any, i: number) => { if (i % 4 === 0) tour.push(null); tour.push(g); });
+  grads.forEach((g: any, i: number) => { if (i % 4 === 0) tour.push(null); tour.push(g); });
   let tourIdx = 0, tourAt = 0;
   const idle = () => !playing && !dragging && t >= LAST + .9;
   // the tour's current stop: undefined while playing; the caption keeps it while the
   // visitor hovers or pins a project, but only an untouched tour highlights it
   const tourStop = () => idle() && tour.length ? tour[tourIdx % tour.length] : undefined;
-  const fmt = (n: number) => n.toLocaleString('en-US');
 
   // a shooting star now and then
   let shoot: any = null, nextShoot = 4;
@@ -334,63 +370,88 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     if (!shoot) return;
     const u = (clock - shoot.at) / .8;
     if (u >= 1) { shoot = null; nextShoot = clock + 6 + R() * 6; return; }
-    const hx = shoot.x + shoot.vx * u * .8, hy = shoot.y + shoot.vy * u * .8;
-    const g = ctx.createLinearGradient(hx - shoot.vx * .18, hy - shoot.vy * .18, hx, hy);
+    const sx = shoot.x + shoot.vx * u * .8, sy = shoot.y + shoot.vy * u * .8;
+    const g = ctx.createLinearGradient(sx - shoot.vx * .18, sy - shoot.vy * .18, sx, sy);
     g.addColorStop(0, 'rgba(220,226,255,0)'); g.addColorStop(1, `rgba(220,226,255,${.55 * Math.sin(u * Math.PI)})`);
     ctx.strokeStyle = g; ctx.lineWidth = 1.2;
-    ctx.beginPath(); ctx.moveTo(hx - shoot.vx * .18, hy - shoot.vy * .18); ctx.lineTo(hx, hy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(sx - shoot.vx * .18, sy - shoot.vy * .18); ctx.lineTo(sx, sy); ctx.stroke();
   }
 
   function draw(t: number, clock: number) {
+    placed = [];
     ctx.drawImage(bgCanvas, 0, 0, W, H);
-    for (const s of twinkle) {
-      ctx.fillStyle = `rgba(220,226,255,${(.12 + .2 * (.5 + .5 * Math.sin(clock * s.sp + s.ph)))})`;
-      ctx.fillRect(s.x * W, s.y * H, s.s, s.s);
+    // background stars drift at three depths as the weeks pass
+    for (const s of dust) {
+      const x = (((s.x * W - t * ppw * (.04 + s.layer * .07)) % W) + W) % W;
+      ctx.fillStyle = `rgba(220,226,255,${(.1 + .09 * s.layer) * (.6 + .4 * Math.sin(clock * s.sp + s.ph))})`;
+      ctx.fillRect(x, s.y * H, s.s, s.s);
     }
     if (!reduce) drawShoot(clock);
 
-    // week ticks
-    ctx.font = MONO;
-    ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
-    ctx.strokeStyle = 'rgba(140,150,190,0.12)'; ctx.lineWidth = 1; ctx.setLineDash([2, 5]);
-    ctx.fillStyle = 'rgba(160,170,205,0.5)';
-    const step = W < 640 ? 2 : 1;
-    ctx.beginPath();
-    for (let i = Math.max(0, Math.ceil(t - win)); i <= Math.min(LAST, t); i++) {
-      if (i % step) continue;
-      const x = headX + (i - t) * ppw;
-      ctx.moveTo(x, top - 10); ctx.lineTo(x, H - 20);
-      ctx.fillText(wk(i), x, H - 8);
+    // the graduation line, as a glowing horizon
+    const gy = yL(LG);
+    const band = ctx.createLinearGradient(0, gy - 46, 0, gy + 46);
+    band.addColorStop(0, rgba(C.graduated, 0)); band.addColorStop(.5, rgba(C.graduated, .075)); band.addColorStop(1, rgba(C.graduated, 0));
+    ctx.fillStyle = band; ctx.fillRect(0, gy - 46, W, 92);
+    const ln = ctx.createLinearGradient(0, 0, W, 0);
+    ln.addColorStop(0, rgba(C.graduated, 0)); ln.addColorStop(.15, rgba(C.graduated, .55)); ln.addColorStop(.85, rgba(C.graduated, .55)); ln.addColorStop(1, rgba(C.graduated, 0));
+    ctx.strokeStyle = ln; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(W, gy); ctx.stroke();
+    ctx.font = FONT_SM; ctx.textAlign = 'right'; ctx.textBaseline = 'alphabetic';
+    ctx.fillStyle = rgba(C.graduated, .9); ctx.fillText(`${GRAD_STARS} ★ · lit up`, W - 12, gy - 7);
+    placed.push([W - 110, gy - 20, 104, 16]);
+    // star counts as quiet marks on the right edge, not a grid
+    ctx.textBaseline = 'middle';
+    for (const s of [1, 10, 100, 1000, 10000]) {
+      if (s > maxStars * 1.2) continue;
+      const y = yL(Math.log10(s));
+      ctx.strokeStyle = 'rgba(160,170,205,.3)'; ctx.beginPath(); ctx.moveTo(W - 8, y); ctx.lineTo(W, y); ctx.stroke();
+      ctx.fillStyle = 'rgba(160,170,205,.5)'; ctx.fillText((s >= 1000 ? s / 1000 + 'k' : s) + ' ★', W - 12, y);
+      placed.push([W - 56, y - 8, 50, 16]);
     }
-    ctx.stroke(); ctx.setLineDash([]);
 
     // at rest the stars keep breathing, so the ending doesn't freeze
     const breathe = idle() && !reduce;
-    heads = [];
-    for (const p of repos) {
-      const h = head(p, t);
-      if (!h || h.a <= 0) continue;
-      if (breathe) h.y += 1.2 * Math.sin(clock * 1.4 + p.wob * 4);
-      heads.push({ p, ...h });
-    }
-
-    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
     const spot = hover || pinned ? null : tourStop() || null;
     const focus = new Set([hover, pinned, spot].filter(Boolean));
-    const fhs: any[] = [];
-    for (const h of heads) { if (focus.has(h.p)) fhs.push(h); else drawTrail(h.p, t, false, h); }
-    for (const fh of fhs) drawTrail(fh.p, t, true, fh);
+    heads = [];
+    for (const p of repos) {
+      if (!alive(p, t)) continue;
+      const k = kAt(p, t); if (p.as[k] <= 0) continue;
+      let y = yL(lsAt(p, t));
+      if (breathe) y += 1.2 * Math.sin(clock * 1.4 + p.wob * 4);
+      heads.push({ p, x: hx(p), y, a: p.as[k], c: p.cs[k], hot: focus.has(p), mv: moved(p, t) });
+    }
 
-    // arrivals: a ring where a project first appears
-    ctx.lineWidth = 1.2;
+    ctx.lineJoin = 'round';
+    ctx.globalCompositeOperation = 'lighter';
+    // only projects on the move leave a trail; the rest are stars holding their place
     for (const h of heads) {
       const p = h.p;
-      if (!(p.first > 0 && t < p.first + 1.2)) continue;
-      const u = (t - p.first) / 1.2;
-      ctx.strokeStyle = rgba(C[STATUS[h.c]], .6 * (1 - u));
-      ctx.beginPath(); ctx.arc(headX + p.js[0] + (p.first - t) * ppw, p.ys[0], 3 + u * 22, 0, 6.2832); ctx.stroke();
+      if (!h.hot && !h.mv && !(p.grad && t > p.lastSeen)) continue;
+      drawTrail(p, t, h.x, h.y, h.hot ? 3.4 : 1.5 + p.z * 1.1, h.hot ? 1 : .5 + p.z * .3);
     }
-    // the toured graduate gets one ring when its turn starts
+    for (const h of heads) {
+      const p = h.p;
+      // the moment a graduate crosses the line: a flash and a ring
+      const u = (t - p.cross) / 1.4;
+      if (u >= 0 && u <= 1) {
+        ctx.strokeStyle = rgba(C.graduated, .8 * (1 - u)); ctx.lineWidth = 1.4;
+        ctx.beginPath(); ctx.arc(h.x, h.y, 4 + u * 46, 0, 6.2832); ctx.stroke();
+        const gr = 60 * (1 - u * .6);
+        ctx.globalAlpha = .7 * (1 - u); ctx.drawImage(sprites[GRADUATED], h.x - gr, h.y - gr, gr * 2, gr * 2); ctx.globalAlpha = 1;
+      }
+      drawStar(h, (1 + .5 * lsAt(p, t)) * (.75 + .45 * p.z) * (h.hot ? 1.5 : 1), clock);
+    }
+    ctx.globalCompositeOperation = 'source-over';
+
+    // rings: a pulse on the pinned project, one ring when a toured graduate's turn starts
+    ctx.lineWidth = 1.3;
+    const ph = pinned && heads.find(h => h.p === pinned);
+    if (ph) {
+      const u = reduce ? .5 : (clock % 2.2) / 2.2;
+      ctx.strokeStyle = `rgba(255,255,255,${.75 * (1 - u)})`;
+      ctx.beginPath(); ctx.arc(ph.x, ph.y, 7 + u * 18, 0, 6.2832); ctx.stroke();
+    }
     const sh = spot && !reduce && heads.find(h => h.p === spot);
     if (sh && clock - tourAt < 1.2) {
       const u = (clock - tourAt) / 1.2;
@@ -398,36 +459,12 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
       ctx.beginPath(); ctx.arc(sh.x, sh.y, 3 + u * 22, 0, 6.2832); ctx.stroke();
     }
 
-    // glows (sprites) then dots, batched per colour
-    ctx.globalCompositeOperation = 'lighter';
-    for (const h of heads) {
-      const r = focus.has(h.p) ? 14 : 8, tw = .85 + .15 * Math.sin(clock * 1.7 + h.p.wob * 5);
-      ctx.globalAlpha = .35 * h.a * tw;
-      ctx.drawImage(sprites[h.c], h.x - r, h.y - r, r * 2, r * 2);
-    }
-    ctx.globalAlpha = 1;
-    for (let c = 0; c < STATUS.length; c++) {
-      ctx.fillStyle = rgba(C[STATUS[c]], 1);
-      ctx.beginPath();
-      for (const h of heads) {
-        if (h.c !== c) continue;
-        if (h.a < 1) { ctx.globalAlpha = h.a; ctx.fill(); ctx.beginPath(); }
-        const r = focus.has(h.p) ? 2.8 : 2;
-        ctx.moveTo(h.x + r, h.y); ctx.arc(h.x, h.y, r, 0, 6.2832);
-        if (h.a < 1) { ctx.fill(); ctx.globalAlpha = 1; ctx.beginPath(); }
-      }
-      ctx.fill();
-    }
-    ctx.globalCompositeOperation = 'source-over';
-
-    ctx.font = '500 11px "Hanken Grotesk", system-ui, sans-serif'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
-    // skip a label that would sit on top of one already drawn
-    let lastLabelY = -Infinity;
-    for (const h of heads.filter(h => named.has(h.p) || focus.has(h.p)).sort((a, b) => a.y - b.y)) {
-      if (!focus.has(h.p) && h.y - lastLabelY < 12) continue;
-      lastLabelY = h.y;
-      ctx.fillStyle = rgba(C[STATUS[h.c]], .85 * h.a);
-      ctx.fillText(h.p.name, Math.min(h.x + 9, W - ctx.measureText(h.p.name).width - 6), h.y);
+    // every project gets its name unless it would sit on another one. The order is
+    // stable (picked, lit up, top climbers, then most stars) so names don't flicker.
+    const rank = (h: any) => h.hot ? 3 : h.c === GRADUATED ? 2 : named.has(h.p) ? 1 : 0;
+    for (const h of [...heads].sort((a, b) => rank(b) - rank(a) || b.p.seenStars - a.p.seenStars || (a.p.repo < b.p.repo ? -1 : 1))) {
+      const strong = rank(h) > 0 || h.mv;
+      label(h.p.name, h.x, h.y, C[STATUS[h.c]], (strong ? .9 : .55) * h.a, strong ? FONT : FONT_SM, h.hot);
     }
   }
 
@@ -461,14 +498,13 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     hover = best && best.p;
     cvs.style.cursor = best ? 'pointer' : '';
     if (best) {
-      const rect = cvs.getBoundingClientRect();
-      const now = Math.min(LAST, Math.floor(t)), prev = best.p.pts[now - 1], cur = best.p.pts[now];
+      const rect = cvs.getBoundingClientRect(), p = best.p;
+      const now = Math.min(LAST, Math.floor(t)), prev = p.pts[now - 1], cur = p.pts[now];
       const d = prev && cur ? cur.stars - prev.stars : null;
-      const s = starsAt(best.p, Math.min(t, best.p.last + .999))!;
-      tip.innerHTML = best.p.grad
-        ? `${best.p.repo}<br>seen at ${best.p.seenStars} ★ in ${wk(best.p.lastSeen)} · today ${best.p.pts[best.p.last].stars} ★`
-        : `${best.p.repo}<br>${Math.round(s)} ★${d != null ? ` · ${d >= 0 ? '+' : ''}${d} this week` : ''} · ${LABEL[STATUS[best.c]]}`;
-      tip.hidden = false; tip.style.left = Math.max(130, Math.min(rect.width - 130, best.x)) + 'px'; tip.style.top = best.y + 'px';
+      tip.innerHTML = p.grad
+        ? `${p.repo}<br>seen at ${fmt(p.seenStars)} ★ in ${wk(p.lastSeen)} · today ${fmt(p.pts[p.last].stars)} ★`
+        : `${p.repo}<br>${fmt(10 ** lsAt(p, t))} ★${d != null ? ` · ${d >= 0 ? '+' : ''}${d} this week` : ''} · ${LABEL[STATUS[best.c]]}`;
+      tip.hidden = false; tip.style.left = Math.max(130, Math.min(rect.width - 130, best.x)) + 'px'; tip.style.top = Math.max(56, best.y) + 'px';
     } else tip.hidden = true;
   });
   cvs.addEventListener('pointerleave', () => { hover = null; tip.hidden = true; cvs.style.cursor = ''; });
@@ -492,13 +528,18 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     history.replaceState(null, '', `#trail=${p.repo}`);
     const lastPt = p.pts[p.last];
     const story = p.grad
-      ? `seen at ${p.seenStars} ★ in ${wk(p.lastSeen)}, ${lastPt.stars} ★ today`
-      : `${p.pts[p.first].stars} ★ in ${wk(p.first)} → ${lastPt.stars} ★ in ${wk(p.last)}`;
+      ? `seen at ${fmt(p.seenStars)} ★ in ${wk(p.lastSeen)}, ${fmt(lastPt.stars)} ★ today`
+      : `${fmt(p.pts[p.first].stars)} ★ in ${wk(p.first)} → ${fmt(lastPt.stars)} ★ in ${wk(p.last)}`;
     found.innerHTML = `${esc(p.repo)}: ${story} · <a href="${esc(p.href)}">open project</a>`;
     // play its whole trail again, unless motion is reduced
     if (!reduce) { t = Math.max(0, p.first - .5); setPlaying(true); }
   }
   $('st-find').addEventListener('submit', (e: Event) => { e.preventDefault(); pin(q.value); });
+  // Buttondown confirms the address in a popup; the form posts into it
+  $('st-mail').addEventListener('submit', () => {
+    window.open('https://buttondown.com/silentstars', 'popupwindow');
+    const msg = $('st-mail-msg'); msg.hidden = false; msg.textContent = '✓ Complete the verification in the window that opened.';
+  });
   const fromHash = () => { const m = location.hash.match(/^#trail=(.+)$/); if (m) pin(decodeURIComponent(m[1])); };
 
   function syncUI() {

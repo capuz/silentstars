@@ -84,6 +84,43 @@ export function buildTrails(history: History, graduates: Graduates, withPage: Se
   return { weeks, gradStars: GRAD_STARS, repos };
 }
 
+// Captions: a project headlines at most MAX_HEADLINES weeks, more than REPEAT_GAP weeks
+// apart, so one busy repo doesn't narrate the whole animation. A soar (SOAR_MIN+ stars
+// in a week) is news even if the project was up recently: it only waits 2 weeks.
+export const REPEAT_GAP = 4;
+export const MAX_HEADLINES = 2;
+export const SOAR_MIN = 40;
+
+export interface Headline {
+  r: string;
+  /** stars gained that week */
+  d: number;
+}
+
+/** week index -> the project that headlines it. The biggest gains claim their week first. */
+export function pickHeadlines(repos: Trail[], weeks: number): Record<number, Headline> {
+  const climbs: Array<Headline & { i: number }> = [];
+  for (let i = 1; i < weeks; i++) {
+    for (const t of repos) {
+      const a = t.s[i - 1], b = t.s[i];
+      if (a && b && b[1] !== 'graduated' && b[0] > a[0]) climbs.push({ i, r: t.r, d: b[0] - a[0] });
+    }
+  }
+  climbs.sort((x, y) => y.d - x.d || x.i - y.i || (x.r < y.r ? -1 : 1));
+  const picked: Record<number, Headline> = {};
+  const times = new Map<string, number>();
+  for (const { i, r, d } of climbs) {
+    if (picked[i] || (times.get(r) ?? 0) >= MAX_HEADLINES) continue;
+    const gap = d >= SOAR_MIN ? 2 : REPEAT_GAP;
+    let near = false;
+    for (let k = i - gap; k <= i + gap; k++) if (picked[k]?.r === r) near = true;
+    if (near) continue;
+    picked[i] = { r, d };
+    times.set(r, (times.get(r) ?? 0) + 1);
+  }
+  return picked;
+}
+
 export function countGraduates(history: History, graduates: Graduates): number {
   return buildTrails(history, graduates, new Set()).repos.filter(r => r.g).length;
 }

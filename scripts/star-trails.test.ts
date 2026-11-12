@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { graduateCandidates, buildTrails, countGraduates, HIDDEN, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS } from './star-trails.ts';
+import { graduateCandidates, buildTrails, countGraduates, pickHeadlines, HIDDEN, starsQuery, readStars, GRAD_STARS, GRAD_FROM_MAX, MIN_WEEKS, REPEAT_GAP, MAX_HEADLINES, SOAR_MIN } from './star-trails.ts';
+import type { Trail } from './star-trails.ts';
 import type { WeekEntry, History } from './weekly.ts';
 
 function entry(stars: number, status = 'quiet'): WeekEntry {
@@ -101,4 +102,48 @@ test('buildTrails: leaves out repos from excluded owners (data/discovery.config.
   });
   const d = buildTrails(h, { checkedAt: '', stars: {} }, new Set());
   assert.deepEqual(d.repos.map(r => r.r), ['a/indie']);
+});
+
+// a trail measured every week from week 0, one star count per week
+function trail(r: string, stars: number[]): Trail {
+  return { r, s: Object.fromEntries(stars.map((n, i) => [i, [n, 'quiet']])) };
+}
+
+test('pickHeadlines: the biggest weekly gain headlines its week', () => {
+  const h = pickHeadlines([trail('a/one', [1, 4, 4]), trail('a/two', [1, 2, 9])], 3);
+  assert.deepEqual(h, { 1: { r: 'a/one', d: 3 }, 2: { r: 'a/two', d: 7 } });
+});
+
+test('pickHeadlines: a repo keeps its biggest week and leaves the weeks around it to the next climber', () => {
+  const h = pickHeadlines([trail('a/hot', [1, 9, 19, 26]), trail('a/next', [1, 3, 6, 8])], 4);
+  // week 3 stays empty: a/hot and a/next both headlined a week too close to it
+  assert.deepEqual(h, { 1: { r: 'a/next', d: 2 }, 2: { r: 'a/hot', d: 10 } });
+});
+
+test('pickHeadlines: the same repo waits more than REPEAT_GAP weeks to headline again', () => {
+  const stars = [1, 11]; // +10 in week 1
+  for (let i = 2; i <= REPEAT_GAP + 2; i++) stars.push(stars[i - 1] + (i === REPEAT_GAP + 1 || i === REPEAT_GAP + 2 ? 5 : 0));
+  const h = pickHeadlines([trail('a/hot', stars)], stars.length);
+  // week REPEAT_GAP + 1 is still inside the gap; the next one is free
+  assert.deepEqual(Object.keys(h).map(Number), [1, REPEAT_GAP + 2]);
+});
+
+test('pickHeadlines: a soar only waits 2 weeks', () => {
+  const big = SOAR_MIN + 5;
+  const h = pickHeadlines([trail('a/rocket', [1, 1 + big, 1 + big, 1 + 2 * big, 1 + 3 * big])], 5);
+  // weeks 1 and 4 claim first (ties go to the earlier week); week 3 is 1 week from week 4
+  assert.deepEqual(Object.keys(h).map(Number), [1, 4]);
+});
+
+test('pickHeadlines: no repo headlines more than MAX_HEADLINES weeks', () => {
+  const stars = [1];
+  for (let i = 1; i <= 30; i++) stars.push(stars[i - 1] + (i % 6 === 0 ? 10 + i : 0));
+  const h = pickHeadlines([trail('a/hot', stars)], stars.length);
+  assert.equal(Object.keys(h).length, MAX_HEADLINES);
+  assert.deepEqual(Object.keys(h).map(Number), [24, 30]);
+});
+
+test("pickHeadlines: a graduate's jump to today's count is not a weekly gain", () => {
+  const grad: Trail = { r: 'a/grad', s: { 0: [10, 'quiet'], 1: [900, 'graduated'] }, m: [0], g: 1 };
+  assert.deepEqual(pickHeadlines([grad, trail('a/one', [1, 3])], 2), { 1: { r: 'a/one', d: 2 } });
 });
