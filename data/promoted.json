@@ -202,5 +202,9 @@
   {
     "repo": "BYPASS-IDC/triagekit",
     "until": "2026-12-13"
+  },
+  {
+    "repo": "unorouter/unorouter",
+    "until": "2026-12-13"
   }
 ]
