@@ -12,7 +12,7 @@ stars: 1
 forks: 0
 openIssues: 0
 closedIssues: 0
-watchers: 0
+watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2026-11-12T04:59:11Z"
@@ -20,11 +20,12 @@ lastCommitAt: "2026-11-12T06:44:44Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 80
-undervaluedScore: 16
+undervaluedScore: 15
 maintainers: ["alidexter001"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1454848083/994ae37e-238f-42a5-ad4b-218189c0ffac"
 fundingLinks: ["KO_FI:https://ko-fi.com/smartkey001"]
 promoted: true
+postedAt: "2026-11-13T05:52:15.279Z"
 ---
 
 # 🔥 TriageKit 🔥

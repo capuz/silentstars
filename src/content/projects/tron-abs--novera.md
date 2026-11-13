@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-13T01:59:36Z"
+lastCommitAt: "2026-11-13T09:14:20Z"
 lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
@@ -29,12 +29,12 @@ promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---
 
-[Novera Web 1.0.3 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.3 · build 1000027 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.3-android-1000027/Novera_1.0.3_android-arm64.apk)
+[Novera Web 1.0.4 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.3 · build 1000027 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.3-android-1000027/Novera_1.0.3_android-arm64.apk)
 
 Data and privacy: [local inference, optional telemetry, error reports and update connections (French)](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/DONNEES_ET_CONFIDENTIALITE.md). License: [Apache 2.0](https://github.com/TRON-ABS/Novera/blob/HEAD/LICENSE) · [Attribution](https://github.com/TRON-ABS/Novera/blob/HEAD/NOTICE).
 
-**Novera Web 1.0.3 — public experimental channel:** the Desktop interface and colors, 32k local text context, and keyless Exa search with connection preparation on activation have been tested in Edge. Local image/music work is documented; Wan video remains outside the browser conversation flow. The experimental Web application is online; use the Web link above. Large-image performance and Wan video are not Desktop-equivalent. [Features, measured tests and remaining publication checks](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/WEB_BROWSER_PREPARATION.md).
+**Novera Web 1.0.4 — public experimental channel:** the Desktop interface and colors, 32k local text context, and keyless Exa search with connection preparation on activation have been tested in Edge. Local image/music work is documented; Wan video remains outside the browser conversation flow. The experimental Web application is online; use the Web link above. Large-image performance and Wan video are not Desktop-equivalent. [Features, measured tests and remaining publication checks](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/WEB_BROWSER_PREPARATION.md).
 
 ---
 
-## Availability…
+## Model…

@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-05T07:17:58Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 87
+healthScore: 86
 undervaluedScore: 55
 maintainers: ["seifip"]
 openGraphImageUrl: "https://opengraph.githubassets.com/73943bbe182888187ae69046efddb5f7cd7c437a596008f5e0f8f948fad6274a/seifip/kilobat-cli"

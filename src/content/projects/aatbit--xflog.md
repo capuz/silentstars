@@ -9,7 +9,7 @@ languages: ["Python", "JavaScript"]
 languagePcts: [50, 35]
 stars: 3
 forks: 1
-openIssues: 6
+openIssues: 7
 closedIssues: 4
 watchers: 0
 contributors: 1
@@ -20,7 +20,7 @@ lastReleaseAt: "2026-11-06T23:01:19Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
 healthScore: 85
-undervaluedScore: 35
+undervaluedScore: 34
 maintainers: ["aakashH242"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e04328951b70e686cb251af03342ab0b7d8af62f061dab45e192d35f8dc0f50c/aatbit/xflog"
 promoted: true

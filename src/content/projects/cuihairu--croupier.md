@@ -15,10 +15,10 @@ openIssues: 0
 closedIssues: 1
 watchers: 1
 contributors: 5
-recentReleases: 8
+recentReleases: 9
 createdAt: "2024-07-31T10:19:15Z"
 lastCommitAt: "2026-11-12T22:44:15Z"
-lastReleaseAt: "2026-11-12T09:53:37Z"
+lastReleaseAt: "2026-11-13T09:44:05Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100

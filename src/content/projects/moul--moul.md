@@ -17,7 +17,7 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2020-07-08T18:03:31Z"
-lastCommitAt: "2026-11-13T05:43:58Z"
+lastCommitAt: "2026-11-13T10:43:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero", "funded"]
 healthScore: 79
@@ -33,6 +33,7 @@ postedAt: "2026-11-12T11:51:26.094Z"
 :atom_symbol: co-founder and vp engineering at [gno.land](https://gno.land), resistance infrastructure<br/>
 :hammer: founder of [berty technologies](https://berty.tech), unstoppable communication<br/>
 
+  
   
   
   

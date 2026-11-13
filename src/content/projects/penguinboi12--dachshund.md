@@ -14,12 +14,12 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 1
-recentReleases: 5
+recentReleases: 4
 createdAt: "2026-08-11T15:25:15Z"
 lastCommitAt: "2026-11-10T08:07:46Z"
 lastReleaseAt: "2026-11-10T06:33:31Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 64
 undervaluedScore: 29
 maintainers: ["PenguinBoi12"]

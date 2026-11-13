@@ -19,7 +19,7 @@ lastCommitAt: "2026-11-12T17:08:37Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 83
 maintainers: ["amol-anand", "semantic-release-bot", "dicagno"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5aae36c876c3ba9afc5dd120be8c0c2a960b4b1a0bafad6ba98757589ba3e52b/adobe/da-nx"

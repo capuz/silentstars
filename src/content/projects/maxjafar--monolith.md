@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-10T18:25:55Z"
 lastReleaseAt: "2026-10-21T15:52:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 68
+healthScore: 67
 undervaluedScore: 42
 maintainers: ["MaxJafar"]
 openGraphImageUrl: "https://opengraph.githubassets.com/545e8451f7d6d519e5e970b4029bf26b6c51966160b034699baafb9cb2a16bda/MaxJafar/monolith"

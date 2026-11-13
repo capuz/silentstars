@@ -8,7 +8,7 @@ language: "C#"
 languages: ["C#"]
 languagePcts: [99]
 stars: 6
-forks: 4
+forks: 5
 openIssues: 0
 closedIssues: 2
 watchers: 1
@@ -17,9 +17,9 @@ recentReleases: 0
 createdAt: "2025-04-09T07:53:57Z"
 lastCommitAt: "2026-10-31T09:54:25Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 92
-undervaluedScore: 85
+undervaluedScore: 88
 maintainers: ["Piranha91", "cavy8"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1e40e726d97c0c0d274082bb995453724bf9f30a657c025bc63ac58a4787017e/Piranha91/NPC-Plugin-Chooser-2"
 postedAt: "2026-10-31T10:02:23.169Z"

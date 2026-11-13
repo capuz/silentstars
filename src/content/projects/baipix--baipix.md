@@ -9,20 +9,20 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [82]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript", "animation", "aseprite-alternative", "browser"]
-stars: 14
+stars: 15
 forks: 14
-openIssues: 73
-closedIssues: 295
+openIssues: 72
+closedIssues: 296
 watchers: 1
 contributors: 14
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-11-13T00:42:23Z"
+lastCommitAt: "2026-11-13T06:19:51Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 96
-undervaluedScore: 69
+undervaluedScore: 67
 maintainers: ["Todo-bai", "abhirajadhikary06", "mykola-lp"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
 discussionCount: 4

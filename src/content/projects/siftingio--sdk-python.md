@@ -20,7 +20,7 @@ createdAt: "2026-05-24T18:00:48Z"
 lastCommitAt: "2026-10-21T11:46:05Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 51
+healthScore: 50
 undervaluedScore: 25
 maintainers: ["aprsn"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2bf77bf9179d8a2d4fa31c38b95011195552b02ad98b3e7571c53b59b021989f/SiftingIO/sdk-python"
