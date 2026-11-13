@@ -6,21 +6,21 @@ readmeQualityOk: true
 url: "https://github.com/aatbit/xflog"
 language: "Python"
 languages: ["Python", "JavaScript"]
-languagePcts: [50, 35]
+languagePcts: [53, 35]
 stars: 3
 forks: 1
-openIssues: 7
-closedIssues: 4
+openIssues: 2
+closedIssues: 9
 watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-26T03:28:13Z"
-lastCommitAt: "2026-11-12T15:59:09Z"
+lastCommitAt: "2026-11-13T17:09:21Z"
 lastReleaseAt: "2026-11-06T23:01:19Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 85
-undervaluedScore: 34
+healthScore: 96
+undervaluedScore: 48
 maintainers: ["aakashH242"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e04328951b70e686cb251af03342ab0b7d8af62f061dab45e192d35f8dc0f50c/aatbit/xflog"
 promoted: true

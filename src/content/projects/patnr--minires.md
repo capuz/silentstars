@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [89]
 topics: ["history-matching", "reservoir-simulation"]
-stars: 14
+stars: 15
 forks: 3
 openIssues: 0
 closedIssues: 0
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 60
-undervaluedScore: 76
+undervaluedScore: 74
 maintainers: ["patnr"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6cdd96710600dcf170dd4c47571f23959617db8bc61501ae531e5bdcc6321874/patnr/MiniRes"
+openGraphImageUrl: "https://opengraph.githubassets.com/b72f53914fc693aed217b01b02c22421662b5e088b4539085afa8a5d485e8b7f/patnr/MiniRes"
 postedAt: "2026-09-15T08:59:38.490Z"
 ---
 

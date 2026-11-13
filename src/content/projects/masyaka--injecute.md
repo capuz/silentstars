@@ -26,6 +26,7 @@ undervaluedScore: 78
 maintainers: ["Masyaka", "github-actions[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/bf6b6edc9031135d89607edc438486720cfada3317148464030c8b7170e2cc94/Masyaka/injecute"
 discussionCount: 0
+postedAt: "2026-11-13T11:35:19.386Z"
 ---
 
 # injecute

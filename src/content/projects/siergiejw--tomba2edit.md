@@ -17,11 +17,11 @@ watchers: 1
 contributors: 1
 recentReleases: 3
 createdAt: "2025-01-27T15:56:30Z"
-lastCommitAt: "2026-11-09T14:03:02Z"
+lastCommitAt: "2026-11-13T18:30:11Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 86
+healthScore: 88
 undervaluedScore: 71
 maintainers: ["SiergiejW"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/923078276/6b9b9202-9a46-4423-b9bd-d29b90de0b8d"
@@ -33,7 +33,7 @@ postedAt: "2026-09-11T08:19:17.827Z"
 
 **A modding, translation and asset-extraction toolkit for _Tomba! 2: The Evil Swine Return_ (PlayStation).**
 
-Tomba2Edit opens a disc image of the game and shows you what is inside it:
+Tomba2Edit opens a disc image of the game and shows:
 levels, collision, 3D models, animations, sprites, textures, dialogue,
 music, sound effects and movies - each in a viewer that understands the
 format, and most of them editable. Changes are staged, repacked and
@@ -64,4 +64,6 @@ object, every animation.
 
 ### Text and translation, with the in-game dialogue box previewed live
 
-### The font page - every character the game can…
+### The font page - every character the game can draw, editable
+
+###…

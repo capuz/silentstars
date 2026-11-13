@@ -9,19 +9,19 @@ languages: ["JavaScript"]
 languagePcts: [88]
 stars: 8
 forks: 48
-openIssues: 57
-closedIssues: 125
+openIssues: 56
+closedIssues: 126
 watchers: 9
 contributors: 286
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-12T17:08:37Z"
+lastCommitAt: "2026-11-13T16:51:15Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 83
-maintainers: ["amol-anand", "semantic-release-bot", "dicagno"]
+maintainers: ["semantic-release-bot", "dicagno", "amol-anand"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5aae36c876c3ba9afc5dd120be8c0c2a960b4b1a0bafad6ba98757589ba3e52b/adobe/da-nx"
 postedAt: "2026-10-27T09:24:29.168Z"
 ---

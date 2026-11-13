@@ -7,7 +7,7 @@ url: "https://github.com/dreibh/netperfmeter"
 homepage: "https://www.nntb.no/~dreibh/netperfmeter/"
 language: "C++"
 languages: ["C++"]
-languagePcts: [38]
+languagePcts: [37]
 topics: ["dccp", "ip", "ipv4", "ipv6", "measurements", "mptcp", "performance", "quic", "sctp", "tcp"]
 stars: 15
 forks: 6
@@ -17,10 +17,10 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2014-07-02T12:07:59Z"
-lastCommitAt: "2026-11-13T10:41:12Z"
+lastCommitAt: "2026-11-13T15:25:03Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 78
+healthScore: 79
 undervaluedScore: 75
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"
