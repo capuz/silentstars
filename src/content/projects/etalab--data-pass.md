@@ -19,7 +19,7 @@ createdAt: "2023-11-30T11:30:20Z"
 lastCommitAt: "2026-11-10T10:53:21Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 99
+healthScore: 98
 undervaluedScore: 94
 maintainers: ["Samuelfaure", "jbfeldis", "evaspae"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f10777a9f3a57ae68aa5a24ba1c4559d0ae16f92a6f9b7922b5b29c1af44b163/etalab/data_pass"

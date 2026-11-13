@@ -9,8 +9,8 @@ language: "C++"
 languages: ["C++"]
 languagePcts: [90]
 topics: ["cpp", "data-analysis", "data-profiling", "data-quality", "desktop-app", "docker", "executive-brief", "fastapi", "python", "qt"]
-stars: 9
-forks: 0
+stars: 10
+forks: 1
 openIssues: 0
 closedIssues: 1
 watchers: 1
@@ -21,10 +21,10 @@ lastCommitAt: "2026-09-09T06:39:52Z"
 lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "at_risk"
 tags: ["hidden_gem"]
-healthScore: 72
+healthScore: 71
 undervaluedScore: 85
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/852ad9f09802c308dca19829f3ac1bc7219ce476ad6bbb58e292235872a5fbdd/Phoenix0531-sudo/TablePilot"
+openGraphImageUrl: "https://opengraph.githubassets.com/fe0edd71dda01e4199df022111d730467b8c53e841915366e0bf0f90f4bf466f/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"
 ---
 

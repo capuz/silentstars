@@ -9,13 +9,13 @@ languages: ["Shell", "Python"]
 languagePcts: [73, 23]
 stars: 9
 forks: 8
-openIssues: 30
-closedIssues: 59
+openIssues: 29
+closedIssues: 60
 watchers: 0
 contributors: 16
 recentReleases: 10
 createdAt: "2026-07-13T11:55:02Z"
-lastCommitAt: "2026-11-12T09:23:14Z"
+lastCommitAt: "2026-11-12T15:58:24Z"
 lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]

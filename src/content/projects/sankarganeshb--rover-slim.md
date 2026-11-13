@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-10T07:07:58Z"
 lastReleaseAt: "2026-10-13T05:47:28Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
-healthScore: 70
+healthScore: 69
 undervaluedScore: 77
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b47182e2a7b5a44001b123a1dc216c7ffeed9f7cbc07403e4f54364c21488c3b/SankarGaneshb/rover-slim"

@@ -7,22 +7,22 @@ url: "https://github.com/carrick-tools/carrick"
 homepage: "https://carrick.tools"
 language: "Rust"
 languages: ["Rust", "TypeScript"]
-languagePcts: [74, 25]
+languagePcts: [73, 26]
 topics: ["ai-agents", "code-intelligence", "developer-tools", "github-actions", "llm", "mcp", "mcp-server", "microservices", "rust", "static-analysis"]
 stars: 7
 forks: 1
-openIssues: 1297
-closedIssues: 690
+openIssues: 1357
+closedIssues: 712
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-04-03T10:08:36Z"
-lastCommitAt: "2026-11-12T10:39:07Z"
+lastCommitAt: "2026-11-13T05:23:27Z"
 lastReleaseAt: "2025-06-12T12:56:41Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 86
-undervaluedScore: 72
+undervaluedScore: 71
 maintainers: ["daveymoores"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/959763391/dac13534-76f2-4ea8-a118-9b822f967248"
 postedAt: "2026-11-08T10:50:02.108Z"

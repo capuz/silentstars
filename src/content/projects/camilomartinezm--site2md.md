@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-11T14:58:54Z"
 lastReleaseAt: "2026-11-09T15:30:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 83
 maintainers: ["CamiloMartinezM"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e24725a2878c3625ebf086512b3f0a36e1b5d8e7f8ce89e0f03829a40c71d2a3/CamiloMartinezM/site2md"

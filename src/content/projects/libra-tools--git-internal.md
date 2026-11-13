@@ -9,7 +9,7 @@ languages: ["Rust"]
 languagePcts: [100]
 topics: ["rust", "git", "vcs"]
 stars: 14
-forks: 114
+forks: 112
 openIssues: 0
 closedIssues: 18
 watchers: 2

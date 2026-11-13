@@ -17,14 +17,14 @@ watchers: 1
 contributors: 10
 recentReleases: 1
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-11-12T11:05:24Z"
+lastCommitAt: "2026-11-12T15:39:32Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 45
 maintainers: ["pranavp10", "twinkalp10", "alfarhans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/78840f875b171ad00fcfcd7b3deff12a4e7aefb570fb4b49391feeacccb32984/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/ddb5c0a97178f5acdd64b2b6f57332ea4cbf9a673fa7b18367b1fce84c0ad74e/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"

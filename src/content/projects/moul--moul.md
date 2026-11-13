@@ -17,14 +17,15 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2020-07-08T18:03:31Z"
-lastCommitAt: "2026-11-12T11:43:54Z"
+lastCommitAt: "2026-11-13T05:43:58Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero", "funded"]
 healthScore: 79
 undervaluedScore: 85
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/96db798f2cb12d27de42481d3dcc95a526d35b59ff128a0dbbac6ce978d6edc3/moul/moul"
+openGraphImageUrl: "https://opengraph.githubassets.com/80704c056f6542850df87d942dd9725e4b0587fe72af13ecda3d75773d2486c2/moul/moul"
 fundingLinks: ["GITHUB:https://github.com/moul", "PATREON:https://patreon.com/moul", "OPEN_COLLECTIVE:https://opencollective.com/moul", "CUSTOM:https://manfred.life/donate"]
+postedAt: "2026-11-12T11:51:26.094Z"
 ---
 
 ## greetings from France 🇫🇷👋
@@ -32,8 +33,6 @@ fundingLinks: ["GITHUB:https://github.com/moul", "PATREON:https://patreon.com/mo
 :atom_symbol: co-founder and vp engineering at [gno.land](https://gno.land), resistance infrastructure<br/>
 :hammer: founder of [berty technologies](https://berty.tech), unstoppable communication<br/>
 
-  
-  
   
   
   

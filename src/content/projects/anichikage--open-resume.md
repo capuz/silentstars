@@ -10,8 +10,8 @@ languages: ["TypeScript"]
 languagePcts: [93]
 topics: ["cv", "docker", "react", "resume-builder", "resume-template", "self-hosted", "typescript"]
 stars: 21
-forks: 1
-openIssues: 0
+forks: 2
+openIssues: 1
 closedIssues: 1
 watchers: 0
 contributors: 2
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-11T10:07:30Z"
 lastReleaseAt: "2026-10-27T03:10:16Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 86
-undervaluedScore: 29
+healthScore: 76
+undervaluedScore: 23
 maintainers: ["AniChikage"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f2733318694b96f2084b84800cbd980151296f0acf91c48b1d185689f4000336/AniChikage/open-resume"
 promoted: true

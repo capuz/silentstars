@@ -14,22 +14,22 @@ forks: 0
 openIssues: 0
 closedIssues: 0
 watchers: 0
-contributors: 1
+contributors: 2
 recentReleases: 10
 createdAt: "2026-10-23T14:51:26Z"
-lastCommitAt: "2026-11-12T09:41:18Z"
+lastCommitAt: "2026-11-13T01:59:36Z"
 lastReleaseAt: "2026-11-07T10:26:43Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 90
 undervaluedScore: 70
-maintainers: ["TRON-ABS"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ec00a6c95437efe5092c30ca9735b1e8bf4ba238f01a9859f08e5dd75c40d8c6/TRON-ABS/Novera"
+maintainers: ["TRON-ABS", "codex"]
+openGraphImageUrl: "https://opengraph.githubassets.com/0b188f75a2fc1a115f33b5b1d3e78fd0711250aacc9696b92459a540152c2107/TRON-ABS/Novera"
 promoted: true
 postedAt: "2026-11-04T03:06:01.260Z"
 ---
 
-[Novera Web 1.0.3 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.3 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.3-android-1000025/Novera_1.0.3_android-arm64.apk)
+[Novera Web 1.0.3 · Experimental · 120 interface languages and variants](https://tron-abs.github.io/Novera/web/) · [Novera Android 1.0.3 · build 1000027 · ARM64 · APK](https://github.com/TRON-ABS/Novera/releases/download/v1.0.3-android-1000027/Novera_1.0.3_android-arm64.apk)
 
 Data and privacy: [local inference, optional telemetry, error reports and update connections (French)](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/DONNEES_ET_CONFIDENTIALITE.md). License: [Apache 2.0](https://github.com/TRON-ABS/Novera/blob/HEAD/LICENSE) · [Attribution](https://github.com/TRON-ABS/Novera/blob/HEAD/NOTICE).
 
@@ -37,4 +37,4 @@ Data and privacy: [local inference, optional telemetry, error reports and update
 
 ---
 
-## Availability — Novera 1.0.3…
+## Availability…

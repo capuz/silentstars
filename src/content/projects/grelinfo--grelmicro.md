@@ -12,12 +12,12 @@ topics: ["fastapi", "faststream", "leader-election", "python", "asyncio", "circu
 stars: 5
 forks: 0
 openIssues: 54
-closedIssues: 356
+closedIssues: 358
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-11-12T07:56:41Z"
+lastCommitAt: "2026-11-12T19:45:24Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]

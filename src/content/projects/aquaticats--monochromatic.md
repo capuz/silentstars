@@ -11,19 +11,19 @@ topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise",
 stars: 7
 forks: 6
 openIssues: 4936
-closedIssues: 1305
+closedIssues: 1306
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-11-12T09:59:15Z"
+lastCommitAt: "2026-11-13T03:22:16Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
 healthScore: 84
 undervaluedScore: 77
 maintainers: ["Aquaticat", "github-actions[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/17141d49006cad2870b24976920ac3957892e0ce73f45e75d64ecca4a53309ce/Aquaticats/Monochromatic"
+openGraphImageUrl: "https://opengraph.githubassets.com/3065ce6ee5c7a1c7052bcaa19619c3cb4cfe3da1ed5b43e5fd48ed2f3b4dc87d/Aquaticats/Monochromatic"
 discussionCount: 0
 postedAt: "2026-11-05T11:34:14.162Z"
 ---

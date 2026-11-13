@@ -17,14 +17,14 @@ watchers: 0
 contributors: 4
 recentReleases: 6
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-12T11:31:25Z"
+lastCommitAt: "2026-11-12T21:22:58Z"
 lastReleaseAt: "2026-11-11T23:25:05Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 72
 maintainers: ["parttimenerd"]
-openGraphImageUrl: "https://opengraph.githubassets.com/99d2bfb458aeaaf6c2eb123ce315e5e080588d242e4ffc6786a5c41c2216720a/parttimenerd/hprof-analyzer"
+openGraphImageUrl: "https://opengraph.githubassets.com/0bfeb49872e66c4372995b0bc002426fa36cc13dbf8e3e79102fe18a51bbbe27/parttimenerd/hprof-analyzer"
 postedAt: "2026-11-09T12:06:47.127Z"
 ---
 

@@ -11,13 +11,13 @@ languagePcts: [69, 27]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
 stars: 17
 forks: 11
-openIssues: 17
-closedIssues: 1263
+openIssues: 18
+closedIssues: 1265
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-11-12T11:42:30Z"
+lastCommitAt: "2026-11-13T05:32:24Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]

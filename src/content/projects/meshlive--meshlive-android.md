@@ -9,7 +9,7 @@ language: "Kotlin"
 languages: ["Kotlin", "Python"]
 languagePcts: [78, 20]
 topics: ["android", "bluetooth", "censorship-resistance", "live-streaming", "mesh-network", "off-grid", "bluetooth-low-energy", "privacy", "video-calling", "android-app"]
-stars: 348
+stars: 350
 forks: 51
 openIssues: 3
 closedIssues: 1
@@ -17,7 +17,7 @@ watchers: 7
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-10T05:25:21Z"
-lastCommitAt: "2026-11-12T02:04:10Z"
+lastCommitAt: "2026-11-12T19:45:22Z"
 lastReleaseAt: "2026-11-02T08:09:13Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "release_machine"]

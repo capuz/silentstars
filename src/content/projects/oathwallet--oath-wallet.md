@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-11T16:43:31Z"
 lastReleaseAt: "2026-11-06T06:23:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 67
 maintainers: ["OathWallet"]
 openGraphImageUrl: "https://opengraph.githubassets.com/86925ecf1b3e1cc0630155e851d541f2b50d5a7129ded649b857d735124a5f99/OathWallet/oath-wallet"
