@@ -2693,5 +2693,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "davidgrier/QVideo",
+    "slug": "davidgrier--qvideo",
+    "postedAt": "2026-11-14T10:59:04.328Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2bdrgspve2h",
+        "postedAt": "2026-11-14T10:59:04.328Z"
+      }
+    }
   }
 ]
