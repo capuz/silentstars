@@ -125,7 +125,7 @@ const tagLabels: Record<string, string> = {
   <!-- custom OG thumbnail (only for repos with uploaded social preview) -->
   {customImage && (
     <a href={`${base}projects/${slug}/`} class="card-thumb" tabindex="-1" aria-hidden="true">
-      <img src={customImage} alt="" loading="lazy" decoding="async" />
+      <img src={customImage} alt="" width="1280" height="640" loading="lazy" decoding="async" />
     </a>
   )}
 
