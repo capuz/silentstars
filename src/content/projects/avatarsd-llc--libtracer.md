@@ -10,13 +10,13 @@ languages: ["C++"]
 languagePcts: [83]
 stars: 5
 forks: 1
-openIssues: 155
-closedIssues: 897
+openIssues: 161
+closedIssues: 898
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-03T13:50:36Z"
-lastCommitAt: "2026-11-12T20:51:27Z"
+lastCommitAt: "2026-11-14T08:32:38Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "under_pressure"]

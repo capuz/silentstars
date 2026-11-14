@@ -17,7 +17,7 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2026-02-15T22:40:51Z"
-lastCommitAt: "2026-11-13T18:30:53Z"
+lastCommitAt: "2026-11-14T02:48:45Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 80
@@ -25,6 +25,7 @@ undervaluedScore: 47
 maintainers: ["0-don"]
 openGraphImageUrl: "https://opengraph.githubassets.com/841cb9a664f698339796994c139ee74d5e02e40ac4701fd64a3154c6ea78dfa8/unorouter/unorouter"
 promoted: true
+postedAt: "2026-11-13T18:45:06.666Z"
 ---
 
 # UnoRouter

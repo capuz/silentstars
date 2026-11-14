@@ -17,11 +17,11 @@ watchers: 3
 contributors: 2
 recentReleases: 0
 createdAt: "2024-09-19T10:58:20Z"
-lastCommitAt: "2026-11-13T13:46:02Z"
+lastCommitAt: "2026-11-14T02:10:37Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"

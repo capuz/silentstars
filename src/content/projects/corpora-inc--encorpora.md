@@ -6,16 +6,16 @@ readmeQualityOk: true
 url: "https://github.com/corpora-inc/encorpora"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [78]
+languagePcts: [79]
 stars: 5
 forks: 3
-openIssues: 189
-closedIssues: 416
+openIssues: 182
+closedIssues: 424
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-11-13T18:30:00Z"
+lastCommitAt: "2026-11-14T05:08:42Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 94

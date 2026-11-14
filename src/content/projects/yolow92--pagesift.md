@@ -7,35 +7,35 @@ url: "https://github.com/YOLOW92/pagesift"
 homepage: "https://pagesift.tech"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [83]
+languagePcts: [81]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 271
-forks: 36
+stars: 272
+forks: 37
 openIssues: 0
 closedIssues: 2
 watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-12T07:28:48Z"
+lastCommitAt: "2026-11-14T00:06:49Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/abb87b6071e7cb5d9157c7c4e0f2d3838e209e840042da99c9a8aa568d15c5d4/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/1692da406b7fc6d3f7e58ea53888d766276371b1af45d2b178ee78ab508c9e54/YOLOW92/pagesift"
 discussionCount: 1
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.3.0
+# pagesift 1.4.1
 
-**The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown or JSON out.**  
+**The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown, structured JSON or DataGraph relations out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.
 
-**Measured:** PDF to Markdown 2.4 ms per page, 20.49× faster than the next best tool; HTML to Markdown 0.24 ms per page, 8.12× faster; main content 1.0 ms per page, 7.26× faster (lower is better); Office 91.7 files/s, 3.40× the next best (higher is better).
+**Measured:** PDF to Markdown 2.5 ms per page, 20.08× faster than the next best tool; HTML to Markdown 0.23 ms per page, 8.36× faster; main content 1.0 ms per page, 7.26× faster (lower is better); Office 81.9 files/s, 3.03× the next best (higher is better).
 
 **English** · [简体中文](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.zh-CN.md) · [日本語](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.ja.md) · [Español](https://github.com/YOLOW92/pagesift/blob/HEAD/docs/README.es.md)
 
@@ -45,4 +45,4 @@ pagesift reads the web and documents for software that thinks: it fetches a URL,
 adds content, or opens a local file, and returns the content as Markdown or structured JSON. It covers single pages,
 whole sites, scanned PDFs, browser actions, change monitoring and research runs driven by your own model.
 
-Can replace or sit alongside:…
+Can…

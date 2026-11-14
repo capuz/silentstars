@@ -8,14 +8,14 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [88]
 stars: 8
-forks: 48
-openIssues: 56
+forks: 49
+openIssues: 57
 closedIssues: 126
 watchers: 9
 contributors: 286
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-13T16:51:15Z"
+lastCommitAt: "2026-11-14T05:29:38Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]

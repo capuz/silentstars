@@ -11,13 +11,13 @@ languagePcts: [82]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript", "animation", "aseprite-alternative", "browser"]
 stars: 15
 forks: 14
-openIssues: 72
-closedIssues: 296
+openIssues: 70
+closedIssues: 298
 watchers: 1
 contributors: 14
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-11-13T06:19:51Z"
+lastCommitAt: "2026-11-14T08:49:44Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]

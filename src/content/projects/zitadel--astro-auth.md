@@ -20,7 +20,7 @@ createdAt: "2025-08-12T12:26:32Z"
 lastCommitAt: "2026-09-11T04:46:09Z"
 lastReleaseAt: "2026-06-20T23:36:31Z"
 status: "at_risk"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 58
 undervaluedScore: 46
 maintainers: ["mridang", "semantic-release-bot", "dependabot[bot]"]

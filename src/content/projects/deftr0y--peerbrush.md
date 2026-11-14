@@ -9,7 +9,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [85]
 stars: 14
-forks: 0
+forks: 1
 openIssues: 1
 closedIssues: 0
 watchers: 1
@@ -20,8 +20,8 @@ lastCommitAt: "2026-11-05T18:03:11Z"
 lastReleaseAt: "2026-11-05T18:59:50Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 75
-undervaluedScore: 43
+healthScore: 74
+undervaluedScore: 44
 maintainers: ["Deftr0y"]
 openGraphImageUrl: "https://opengraph.githubassets.com/739a2f789755f5c0d08aede00babbe0a834a50a614c8f53788c8981ee5f95406/Deftr0y/PeerBrush"
 promoted: true

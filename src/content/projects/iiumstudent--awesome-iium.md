@@ -17,10 +17,10 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2022-12-18T09:37:43Z"
-lastCommitAt: "2026-10-25T03:26:30Z"
-status: "quiet"
+lastCommitAt: "2026-11-14T01:59:55Z"
+status: "thriving"
 tags: []
-healthScore: 76
+healthScore: 82
 undervaluedScore: 71
 maintainers: ["github-actions[bot]", "claude", "2217441"]
 openGraphImageUrl: "https://opengraph.githubassets.com/66d35c47f6c338545ba4d59c9a597004bcd23198650d508dfedc006e0bf11792/IIUMstudent/Awesome-IIUM"

@@ -11,18 +11,18 @@ languagePcts: [51, 34]
 topics: ["android-tv", "pwa", "streaming", "anime", "family", "fire-tv", "free", "home-cinema", "iptv", "live-tv"]
 stars: 26
 forks: 3
-openIssues: 0
+openIssues: 2
 closedIssues: 2
 watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-26T02:25:02Z"
-lastCommitAt: "2026-11-13T06:36:49Z"
+lastCommitAt: "2026-11-14T04:05:38Z"
 lastReleaseAt: "2026-11-08T03:00:10Z"
 status: "newborn"
 tags: ["hidden_gem", "funded", "release_machine"]
-healthScore: 100
-undervaluedScore: 53
+healthScore: 89
+undervaluedScore: 46
 maintainers: ["claude", "itbelikethatbruh"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9191da60ceddef7b454d61c9a7a027150788d12d15a15c1480ed8ab9dfdec98b/itbelikethatbruh/MKCinema"
 fundingLinks: ["KO_FI:https://ko-fi.com/mkcinema"]

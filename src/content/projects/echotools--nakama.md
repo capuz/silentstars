@@ -15,10 +15,10 @@ watchers: 1
 contributors: 88
 recentReleases: 0
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-11-12T13:43:57Z"
+lastCommitAt: "2026-11-13T23:20:56Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
-tags: ["hidden_gem", "fork_magnet"]
+tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 93
 undervaluedScore: 85
 maintainers: ["metis-sprock", "thesprockee"]
