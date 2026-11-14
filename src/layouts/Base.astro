@@ -60,7 +60,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <div aria-hidden="true" style="position:fixed;inset:0;z-index:9;pointer-events:none;opacity:var(--grain-op,.35);mix-blend-mode:var(--grain-blend,multiply);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-repeat:repeat;background-size:140px 140px;"></div>
 
     <!-- radar sonar -->
-    <div id="ss-radar" aria-hidden="true"></div>
+    <div id="ss-radar" aria-hidden="true" hidden></div>
 
     <div style="position:relative;z-index:1;display:flex;flex-direction:column;min-height:100dvh;">
 
@@ -124,11 +124,20 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     }
 
     // radar sonar
+    // Only for a fine pointer that can hover, and never with reduced motion.
+    // Position is written once per frame with a transform (no layout).
     var radar = document.getElementById('ss-radar');
-    if (radar) {
+    if (radar && matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
+      var rx = 0, ry = 0, queued = false;
       window.addEventListener('mousemove', function(e){
-        radar.style.left = e.clientX + 'px';
-        radar.style.top  = e.clientY + 'px';
+        rx = e.clientX; ry = e.clientY;
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(function(){
+          queued = false;
+          radar.style.transform = 'translate(' + rx + 'px,' + ry + 'px)';
+          radar.hidden = false;
+        });
       }, { passive: true });
     }
 
@@ -154,26 +163,35 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
   /* ── Radar sonar ── */
   #ss-radar {
     position: fixed;
+    left: 0;
+    top: 0;
     pointer-events: none;
     z-index: 8;
     width: 0;
     height: 0;
-    left: -300px;
-    top: -300px;
   }
+  #ss-radar[hidden] { display: none; }
   #ss-radar::before,
   #ss-radar::after {
     content: '';
     position: absolute;
+    left: -55px;
+    top: -55px;
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid var(--accent);
-    transform: translate(-50%, -50%);
     animation: ss-sonar 3s ease-out infinite;
   }
   #ss-radar::after { animation-delay: 1.5s; }
+  /* scale + opacity only: runs on the compositor instead of relayouting */
   @keyframes ss-sonar {
-    0%   { width: 0;     height: 0;     opacity: 0.55; }
-    100% { width: 110px; height: 110px; opacity: 0;    }
+    0%   { transform: scale(0); opacity: 0.55; }
+    100% { transform: scale(1); opacity: 0;    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #ss-radar { display: none; }
   }
 
   /* ── Nav ── */
