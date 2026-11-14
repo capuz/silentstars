@@ -1,4 +1,5 @@
 ---
+import { langIconUrl } from '../lib/lang-icons.ts';
 import ScoreHelp from './ScoreHelp.astro';
 import { loadPosted } from '../../scripts/post-shared.ts';
 
@@ -78,22 +79,12 @@ const langCodes: Record<string, string> = {
   Zig: 'ZG', Shell: 'SH', HTML: 'HT', CSS: 'CS', Vue: 'VU', Svelte: 'SV',
   Clojure: 'CL', Julia: 'JL', C: 'C ',
 };
-const deviconMap: Record<string, string> = {
-  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Go: 'go',
-  Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin', Swift: 'swift',
-  'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php', Dart: 'dart', Scala: 'scala',
-  Haskell: 'haskell', Lua: 'lua', Elixir: 'elixir', Zig: 'zig', Shell: 'bash',
-  HTML: 'html5', CSS: 'css3', Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure',
-  Julia: 'julia', C: 'c',
-};
-const langSlug  = language ? deviconMap[language] : undefined;
-const langIcon  = langSlug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langSlug}/${langSlug}-original.svg` : null;
+const langIcon  = langIconUrl(language);
 const langCode  = language ? (langCodes[language] ?? language.slice(0, 2).toUpperCase()) : null;
 const lang1Pct  = Astro.props.languagePcts?.[0] ?? null;
 
 const secondaryLang = languages[1] && languages[1] !== language ? languages[1] : null;
-const lang2Slug = secondaryLang ? deviconMap[secondaryLang] : undefined;
-const lang2Icon = lang2Slug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2Slug}/${lang2Slug}-original.svg` : null;
+const lang2Icon = langIconUrl(secondaryLang);
 const lang2Code = secondaryLang ? (langCodes[secondaryLang] ?? secondaryLang.slice(0, 2).toUpperCase()) : null;
 const lang2Pct  = Astro.props.languagePcts?.[1] ?? null;
 

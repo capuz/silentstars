@@ -1,4 +1,5 @@
 ---
+import { langIconUrl } from '../../lib/lang-icons.ts';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -33,15 +34,6 @@ const STATUS_MAP: Record<string, { label: string; bg: string; icon: string }> = 
     icon: '<rect x="2" y="4" width="20" height="5" rx="2"/><path d="M4 9v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/>' },
 };
 
-const deviconMap: Record<string, string> = {
-  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python',
-  Go: 'go', Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin',
-  Swift: 'swift', C: 'c', 'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php',
-  Dart: 'dart', Scala: 'scala', Haskell: 'haskell', Lua: 'lua',
-  Elixir: 'elixir', Zig: 'zig', Shell: 'bash', HTML: 'html5', CSS: 'css3',
-  Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure', Julia: 'julia', Nim: 'nim',
-};
-
 // Same "why this one" tags shown on ProjectCard.astro's tagLabels — only the
 // three used to prioritize a single narrative pill here, most specific first.
 const NARRATIVE_TAG_LABEL: Record<string, string> = {
@@ -61,18 +53,13 @@ function healthColor(h: number) {
 const status      = STATUS_MAP[d.status] ?? STATUS_MAP.quiet!;
 const hColor      = healthColor(d.healthScore);
 const createdDate = d.createdAt.slice(0, 10); // "2023-06-15"
-const langIconSlug = d.language ? (deviconMap[d.language] ?? null) : null;
-const langIconUrl  = langIconSlug
-  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langIconSlug}/${langIconSlug}-original.svg`
-  : null;
+// Opened over file:// by og-screenshot.ts, so icons resolve relative to the page.
+const langIconSrc = langIconUrl(d.language, '../../');
 
 const narrativeTag = NARRATIVE_TAG_PRIORITY.find(t => d.tags.includes(t)) ?? null;
 
 const secondaryLang   = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
-const lang2IconSlug   = secondaryLang ? (deviconMap[secondaryLang] ?? null) : null;
-const lang2IconUrl    = lang2IconSlug
-  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2IconSlug}/${lang2IconSlug}-original.svg`
-  : null;
+const lang2IconSrc    = langIconUrl(secondaryLang, '../../');
 
 const now = new Date();
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -414,7 +401,7 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
         <>
           <span class="footer-sep">·</span>
           <span class="lang-pill">
-            {langIconUrl && <img src={langIconUrl} alt={d.language} />}
+            {langIconSrc && <img src={langIconSrc} alt={d.language} />}
             {d.language}
           </span>
         </>
@@ -424,7 +411,7 @@ const generatedAt = `${now.getUTCFullYear()}-${pad(now.getUTCMonth()+1)}-${pad(n
         <>
           <span class="footer-sep">·</span>
           <span class="lang-pill">
-            {lang2IconUrl && <img src={lang2IconUrl} alt={secondaryLang} />}
+            {lang2IconSrc && <img src={lang2IconSrc} alt={secondaryLang} />}
             {secondaryLang}
           </span>
         </>
