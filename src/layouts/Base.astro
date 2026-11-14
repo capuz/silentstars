@@ -1,4 +1,5 @@
 ---
+import CardIcons from '../components/CardIcons.astro';
 import '../styles/fonts.css';
 import '../styles/theme.css';
 import MetricsFAQ from '../components/MetricsFAQ.astro';
@@ -61,6 +62,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
 
     <!-- radar sonar -->
     <div id="ss-radar" aria-hidden="true" hidden></div>
+    <CardIcons />
 
     <div style="position:relative;z-index:1;display:flex;flex-direction:column;min-height:100dvh;">
 
