@@ -24,6 +24,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
     <title>{fullTitle}</title>
     {notFound
       ? <meta name="robots" content="noindex" />
@@ -51,6 +52,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
       (function(){
         var t = localStorage.getItem('ss-theme') || 'light';
         document.documentElement.dataset.theme = t;
+        document.querySelector('meta[name="color-scheme"]').content = t;
       })();
     </script>
   </head>
@@ -141,6 +143,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
       btn.addEventListener('click', function(){
         var t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
         document.documentElement.dataset.theme = t;
+        document.querySelector('meta[name="color-scheme"]').content = t;
         localStorage.setItem('ss-theme', t);
         syncBtn(t);
       });
