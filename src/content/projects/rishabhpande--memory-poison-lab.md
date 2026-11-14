@@ -17,11 +17,11 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-10-31T13:21:57Z"
-lastCommitAt: "2026-11-07T16:20:34Z"
+lastCommitAt: "2026-11-14T15:17:29Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 74
-undervaluedScore: 49
+healthScore: 76
+undervaluedScore: 50
 maintainers: ["RishabhPande"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c6a376c85cbfbef02c7b21af275c7414d9121babeb4173f40464bf97a907d126/RishabhPande/memory-poison-lab"
 promoted: true

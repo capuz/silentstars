@@ -19,9 +19,9 @@ recentReleases: 2
 createdAt: "2026-10-31T17:11:45Z"
 lastCommitAt: "2026-10-31T19:53:35Z"
 lastReleaseAt: "2026-10-31T19:54:17Z"
-status: "newborn"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 75
+healthScore: 74
 undervaluedScore: 26
 maintainers: ["devvvvvX"]
 openGraphImageUrl: "https://opengraph.githubassets.com/55561190d8cf680eee50d5343730e35fe1cc6620f25a1a03f43f2c1a1242a74c/devvvvvX/kanban"

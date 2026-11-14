@@ -19,9 +19,9 @@ recentReleases: 0
 createdAt: "2026-05-14T11:40:49Z"
 lastCommitAt: "2026-09-15T13:41:32Z"
 lastReleaseAt: "2026-06-08T02:49:57Z"
-status: "quiet"
+status: "at_risk"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 62
+healthScore: 61
 undervaluedScore: 26
 maintainers: ["SimZhou", "a5632645", "penguinway"]
 openGraphImageUrl: "https://opengraph.githubassets.com/161659876ee896d725f55736438bacb59021910069b1b47e258f0fd3654b1157/SimZhou/vscode-audiolens"

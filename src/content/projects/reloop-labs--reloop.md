@@ -11,7 +11,7 @@ languagePcts: [85]
 topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email", "bun", "developer-tools", "docker", "email-api"]
 stars: 195
 forks: 33
-openIssues: 5
+openIssues: 6
 closedIssues: 38
 watchers: 1
 contributors: 10

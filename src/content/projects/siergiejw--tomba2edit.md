@@ -15,14 +15,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 3
+recentReleases: 1
 createdAt: "2025-01-27T15:56:30Z"
-lastCommitAt: "2026-11-13T18:30:11Z"
+lastCommitAt: "2026-11-14T18:45:21Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 88
-undervaluedScore: 71
+undervaluedScore: 66
 maintainers: ["SiergiejW"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/923078276/6b9b9202-9a46-4423-b9bd-d29b90de0b8d"
 discussionCount: 1

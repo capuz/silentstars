@@ -7,7 +7,7 @@ url: "https://github.com/bykaj/home-ops"
 homepage: "https://docs.bykaj.com/"
 language: "YAML"
 languages: ["YAML"]
-languagePcts: [66]
+languagePcts: [67]
 topics: ["flux", "gitops", "home-operations", "k8s", "k8s-at-home", "kubernetes", "renovate", "mise", "justfile", "ansible"]
 stars: 9
 forks: 2
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-11-13T18:57:25Z"
+lastCommitAt: "2026-11-14T18:28:52Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 95

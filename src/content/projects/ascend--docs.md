@@ -20,7 +20,7 @@ createdAt: "2024-05-24T11:19:03Z"
 lastCommitAt: "2026-11-13T02:02:21Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 78
 maintainers: ["hipudding", "Devin-DC-Huang", "licy666"]
 openGraphImageUrl: "https://opengraph.githubassets.com/86ccf8917e418643680127d9f5915b142a3ff1c72c18cffbd39cdb2202f7623d/Ascend/docs"

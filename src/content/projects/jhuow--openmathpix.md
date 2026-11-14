@@ -1,29 +1,29 @@
 ---
 repo: "JhuoW/OpenMathpix"
 name: "OpenMathpix"
-description: "An open-source alternative to Mathpix Snip Tool. Instantly extract LaTeX, math equations, and text from images and screenshots. | 开源 Mathpix 替代工具，支持公式截图转 LaTeX"
+description: "An open-source alternative to Mathpix Snip Tool. Instantly extract LaTeX, math equations, and text from images and screenshots. | 开源 Mathpix 替代工具，支持公式截图转 LaTeX，请在Releases中下载最新版"
 readmeQualityOk: true
 url: "https://github.com/JhuoW/OpenMathpix"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [77]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative", "latex-ocr", "latex-ocr-document-ai", "math-ocr"]
-stars: 165
-forks: 26
+stars: 168
+forks: 27
 openIssues: 1
 closedIssues: 1
 watchers: 18
 contributors: 1
-recentReleases: 4
+recentReleases: 5
 createdAt: "2026-03-23T12:59:26Z"
-lastCommitAt: "2026-11-13T17:10:56Z"
-lastReleaseAt: "2026-11-13T16:56:46Z"
+lastCommitAt: "2026-11-14T13:35:43Z"
+lastReleaseAt: "2026-11-14T13:43:37Z"
 status: "thriving"
-tags: ["solo_builder"]
-healthScore: 78
-undervaluedScore: 21
+tags: ["solo_builder", "release_machine"]
+healthScore: 79
+undervaluedScore: 22
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d79dddc3196d75d072ed36fe4ae40711541b304ff4267428b2d3e84c50c8bc91/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/ed40e11f831472f67badbd3786f8fe88fe77818dc554040c31793458d06c30bc/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---

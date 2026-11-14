@@ -9,19 +9,19 @@ language: "Go"
 languages: ["Go", "TypeScript"]
 languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
-stars: 350
+stars: 351
 forks: 42
-openIssues: 73
-closedIssues: 196
+openIssues: 72
+closedIssues: 198
 watchers: 9
 contributors: 18
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-11-11T19:17:55Z"
+lastCommitAt: "2026-11-14T19:51:09Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
-tags: ["solo_builder", "needs_contributors"]
-healthScore: 92
+tags: ["solo_builder", "needs_contributors", "legacy_hero"]
+healthScore: 93
 undervaluedScore: 38
 maintainers: ["Southclaws", "LEnc95", "renovate[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
