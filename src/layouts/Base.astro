@@ -47,6 +47,10 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="sitemap" type="application/xml" href={`${base}sitemap.xml`} />
     <link rel="preload" href={`${base}fonts/web/HankenGrotesk-latin-400.woff2`} as="font" type="font/woff2" crossorigin />
+    <!-- Prefetch same-site pages on hover/pointerdown (Chromium; other browsers ignore it). -->
+    <script type="speculationrules" is:inline>
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}]}
+    </script>
     <!-- theme init — before paint to avoid flash -->
     <script is:inline>
       (function(){
