@@ -206,5 +206,9 @@
   {
     "repo": "unorouter/unorouter",
     "until": "2026-12-13"
+  },
+  {
+    "repo": "masondelan/selvedge",
+    "until": "2026-12-14"
   }
 ]
