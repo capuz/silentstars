@@ -27,6 +27,7 @@ maintainers: ["Hugo0"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b5cd176232ada6ff2720a14befaf1bbb61700f5f290c292bbc7db1fc130306e7/Hugo0/voiceio"
 discussionCount: 1
 promoted: true
+postedAt: "2026-11-15T08:37:20.001Z"
 ---
 
 # voiceio

@@ -11,13 +11,13 @@ languagePcts: [92]
 topics: ["async-iterators", "javascript", "observables", "reactive-programming", "streamix", "typescript", "rxjs-alternative"]
 stars: 4
 forks: 0
-openIssues: 151
-closedIssues: 12
+openIssues: 148
+closedIssues: 15
 watchers: 0
 contributors: 2
 recentReleases: 1
 createdAt: "2026-06-02T16:48:08Z"
-lastCommitAt: "2026-11-15T06:33:40Z"
+lastCommitAt: "2026-11-15T08:59:23Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "under_pressure", "community_hub"]
@@ -38,8 +38,8 @@ This repository is an Angular CLI monorepo that hosts **Angular, React, and Vue*
 | Projects | Framework |
 | --- | --- |
 | `app1` – `app4` | Angular |
-| `app5` – `app7` | React |
-| `app8` – `app9` | Vue |
+| `app5` – `app8` | React |
+| `app9` – `app10` | Vue |
 
 Run any of them with the Angular CLI:
 

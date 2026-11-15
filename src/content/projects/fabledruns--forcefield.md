@@ -8,7 +8,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [96]
 topics: ["ai", "ai-agents", "developer-tools", "go", "golang", "harness", "skills"]
-stars: 6
+stars: 7
 forks: 0
 openIssues: 0
 closedIssues: 2
@@ -21,7 +21,7 @@ lastReleaseAt: "2026-09-15T09:31:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
-undervaluedScore: 62
+undervaluedScore: 61
 maintainers: ["fabledruns", "claude", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1311100791/9a6332dd-17f9-48db-8b8c-95ae61f53036"
 promoted: true

@@ -9,7 +9,7 @@ language: "Svelte"
 languages: ["Svelte", "TypeScript"]
 languagePcts: [50, 47]
 stars: 19
-forks: 77
+forks: 78
 openIssues: 2
 closedIssues: 5
 watchers: 3

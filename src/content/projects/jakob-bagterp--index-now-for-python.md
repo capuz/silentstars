@@ -19,7 +19,7 @@ recentReleases: 0
 createdAt: "2025-05-04T10:01:09Z"
 lastCommitAt: "2026-11-01T09:51:39Z"
 lastReleaseAt: "2025-05-29T21:11:35Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "funded"]
 healthScore: 93
 undervaluedScore: 82

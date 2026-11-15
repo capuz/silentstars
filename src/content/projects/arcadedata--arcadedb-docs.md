@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python", "HTML"]
 languagePcts: [78, 20]
 stars: 10
-forks: 30
+forks: 29
 openIssues: 9
 closedIssues: 62
 watchers: 4

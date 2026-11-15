@@ -11,7 +11,7 @@ languagePcts: [98]
 topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent", "nodejs", "validation", "workflow", "agent-handoffs", "coding-agents"]
 stars: 5
 forks: 0
-openIssues: 12
+openIssues: 13
 closedIssues: 18
 watchers: 0
 contributors: 3

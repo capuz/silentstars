@@ -7,7 +7,7 @@ url: "https://github.com/YOLOW92/pagesift"
 homepage: "https://pagesift.tech"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [81]
+languagePcts: [82]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
 stars: 274
 forks: 37
@@ -17,7 +17,7 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-15T06:44:35Z"
+lastCommitAt: "2026-11-15T10:01:20Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
@@ -30,7 +30,7 @@ promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.5.0
+# pagesift 1.5.1
 
 **The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown, structured JSON or DataGraph relations out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.
