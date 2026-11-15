@@ -210,5 +210,9 @@
   {
     "repo": "masondelan/selvedge",
     "until": "2026-12-14"
+  },
+  {
+    "repo": "fabledruns/forcefield",
+    "until": "2026-12-15"
   }
 ]
