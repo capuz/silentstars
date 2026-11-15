@@ -214,5 +214,9 @@
   {
     "repo": "fabledruns/forcefield",
     "until": "2026-12-15"
+  },
+  {
+    "repo": "Hugo0/voiceio",
+    "until": "2026-12-15"
   }
 ]
