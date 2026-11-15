@@ -25,6 +25,7 @@ undervaluedScore: 62
 maintainers: ["fabledruns", "claude", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1311100791/9a6332dd-17f9-48db-8b8c-95ae61f53036"
 promoted: true
+postedAt: "2026-11-15T08:26:35.957Z"
 ---
 
 <img

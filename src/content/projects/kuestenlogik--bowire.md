@@ -11,13 +11,13 @@ languagePcts: [61, 29]
 topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tools", "dotnet", "graphql", "grpc", "http-client", "mcp"]
 stars: 12
 forks: 1
-openIssues: 55
-closedIssues: 596
+openIssues: 54
+closedIssues: 597
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-11-15T05:26:46Z"
+lastCommitAt: "2026-11-15T08:28:32Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
