@@ -1,4 +1,5 @@
 ---
+import { langIconUrl } from '../lib/lang-icons.ts';
 interface Props {
   language?: string;
   size?: number;
@@ -6,40 +7,7 @@ interface Props {
 
 const { language, size = 18 } = Astro.props;
 
-const deviconMap: Record<string, string> = {
-  TypeScript:  'typescript',
-  JavaScript:  'javascript',
-  Python:      'python',
-  Go:          'go',
-  Rust:        'rust',
-  Ruby:        'ruby',
-  Java:        'java',
-  Kotlin:      'kotlin',
-  Swift:       'swift',
-  C:           'c',
-  'C++':       'cplusplus',
-  'C#':        'csharp',
-  PHP:         'php',
-  Dart:        'dart',
-  Scala:       'scala',
-  Haskell:     'haskell',
-  Lua:         'lua',
-  Elixir:      'elixir',
-  Zig:         'zig',
-  Shell:       'bash',
-  HTML:        'html5',
-  CSS:         'css3',
-  Vue:         'vuejs',
-  Svelte:      'svelte',
-  Clojure:     'clojure',
-  Julia:       'julia',
-  Nim:         'nim',
-};
-
-const slug = language ? deviconMap[language] : undefined;
-const src = slug
-  ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${slug}/${slug}-original.svg`
-  : null;
+const src = langIconUrl(language);
 ---
 {src ? (
   <img

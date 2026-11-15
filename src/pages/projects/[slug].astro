@@ -1,4 +1,5 @@
 ---
+import { langIconUrl } from '../../lib/lang-icons.ts';
 import ScoreHelp from '../../components/ScoreHelp.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
@@ -44,22 +45,12 @@ const langCodes: Record<string, string> = {
   Zig: 'ZG', Shell: 'SH', HTML: 'HT', CSS: 'CS', Vue: 'VU', Svelte: 'SV',
   Clojure: 'CL', Julia: 'JL', C: 'C ',
 };
-const deviconMap: Record<string, string> = {
-  TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Go: 'go',
-  Rust: 'rust', Ruby: 'ruby', Java: 'java', Kotlin: 'kotlin', Swift: 'swift',
-  'C++': 'cplusplus', 'C#': 'csharp', PHP: 'php', Dart: 'dart', Scala: 'scala',
-  Haskell: 'haskell', Lua: 'lua', Elixir: 'elixir', Zig: 'zig', Shell: 'bash',
-  HTML: 'html5', CSS: 'css3', Vue: 'vuejs', Svelte: 'svelte', Clojure: 'clojure',
-  Julia: 'julia', C: 'c',
-};
-const langSlug = d.language ? deviconMap[d.language] : undefined;
-const langIcon  = langSlug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${langSlug}/${langSlug}-original.svg` : null;
+const langIcon  = langIconUrl(d.language);
 const langCode  = d.language ? (langCodes[d.language] ?? d.language.slice(0, 2).toUpperCase()) : null;
 const lang1Pct  = d.languagePcts?.[0] ?? null;
 
 const secondaryLang = d.languages?.[1] && d.languages[1] !== d.language ? d.languages[1] : null;
-const lang2Slug = secondaryLang ? deviconMap[secondaryLang] : undefined;
-const lang2Icon = lang2Slug ? `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${lang2Slug}/${lang2Slug}-original.svg` : null;
+const lang2Icon = langIconUrl(secondaryLang);
 const lang2Code = secondaryLang ? (langCodes[secondaryLang] ?? secondaryLang.slice(0, 2).toUpperCase()) : null;
 const lang2Pct  = d.languagePcts?.[1] ?? null;
 

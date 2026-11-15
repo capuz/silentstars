@@ -1,6 +1,7 @@
 /* ── Light (default) ── */
 :root,
 [data-theme='light'] {
+  color-scheme: light;
   --paper:  #edeae2;
   --ink:    #17150f;
   --muted:  #6f6757;
@@ -49,6 +50,7 @@
 
 /* ── Dark ── */
 [data-theme='dark'] {
+  color-scheme: dark;
   --paper:  #15140f;
   --ink:    #f1eee5;
   --muted:  #9a9281;

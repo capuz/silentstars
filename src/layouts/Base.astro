@@ -1,4 +1,5 @@
 ---
+import CardIcons from '../components/CardIcons.astro';
 import '../styles/theme.css';
 import MetricsFAQ from '../components/MetricsFAQ.astro';
 
@@ -24,6 +25,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
     <title>{fullTitle}</title>
     {notFound
       ? <meta name="robots" content="noindex" />
@@ -46,11 +48,16 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Prefetch same-site pages on hover/pointerdown (Chromium; other browsers ignore it). -->
+    <script type="speculationrules" is:inline>
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}]}
+    </script>
     <!-- theme init — before paint to avoid flash -->
     <script is:inline>
       (function(){
         var t = localStorage.getItem('ss-theme') || 'light';
         document.documentElement.dataset.theme = t;
+        document.querySelector('meta[name="color-scheme"]').content = t;
       })();
     </script>
   </head>
@@ -59,7 +66,8 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <div aria-hidden="true" style="position:fixed;inset:0;z-index:9;pointer-events:none;opacity:var(--grain-op,.35);mix-blend-mode:var(--grain-blend,multiply);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E&quot;);background-repeat:repeat;background-size:140px 140px;"></div>
 
     <!-- radar sonar -->
-    <div id="ss-radar" aria-hidden="true"></div>
+    <div id="ss-radar" aria-hidden="true" hidden></div>
+    <CardIcons />
 
     <div style="position:relative;z-index:1;display:flex;flex-direction:column;min-height:100dvh;">
 
@@ -95,7 +103,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
             · <a href="https://github.com/capuz/silentstars/blob/main/NOTICE" target="_blank" rel="noopener">Notice</a>
           </div>
           <a href="https://www.paypal.com/donate/?hosted_button_id=US7WTVC7ZDW6Q" target="_blank" rel="noopener" class="ss-donate">
-            <img src="https://img.shields.io/badge/Donate-PayPal-blue" alt="Donate with PayPal" height="20" style="display:block;" />
+            <img src={`${base}badges/donate-paypal.svg`} alt="Donate with PayPal" width="96" height="20" loading="lazy" style="display:block;" />
           </a>
         </div>
       </footer>
@@ -123,11 +131,20 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     }
 
     // radar sonar
+    // Only for a fine pointer that can hover, and never with reduced motion.
+    // Position is written once per frame with a transform (no layout).
     var radar = document.getElementById('ss-radar');
-    if (radar) {
+    if (radar && matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)').matches) {
+      var rx = 0, ry = 0, queued = false;
       window.addEventListener('mousemove', function(e){
-        radar.style.left = e.clientX + 'px';
-        radar.style.top  = e.clientY + 'px';
+        rx = e.clientX; ry = e.clientY;
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(function(){
+          queued = false;
+          radar.style.transform = 'translate(' + rx + 'px,' + ry + 'px)';
+          radar.hidden = false;
+        });
       }, { passive: true });
     }
 
@@ -141,6 +158,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
       btn.addEventListener('click', function(){
         var t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
         document.documentElement.dataset.theme = t;
+        document.querySelector('meta[name="color-scheme"]').content = t;
         localStorage.setItem('ss-theme', t);
         syncBtn(t);
       });
@@ -152,26 +170,35 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
   /* ── Radar sonar ── */
   #ss-radar {
     position: fixed;
+    left: 0;
+    top: 0;
     pointer-events: none;
     z-index: 8;
     width: 0;
     height: 0;
-    left: -300px;
-    top: -300px;
   }
+  #ss-radar[hidden] { display: none; }
   #ss-radar::before,
   #ss-radar::after {
     content: '';
     position: absolute;
+    left: -55px;
+    top: -55px;
+    width: 110px;
+    height: 110px;
+    box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid var(--accent);
-    transform: translate(-50%, -50%);
     animation: ss-sonar 3s ease-out infinite;
   }
   #ss-radar::after { animation-delay: 1.5s; }
+  /* scale + opacity only: runs on the compositor instead of relayouting */
   @keyframes ss-sonar {
-    0%   { width: 0;     height: 0;     opacity: 0.55; }
-    100% { width: 110px; height: 110px; opacity: 0;    }
+    0%   { transform: scale(0); opacity: 0.55; }
+    100% { transform: scale(1); opacity: 0;    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #ss-radar { display: none; }
   }
 
   /* ── Nav ── */
