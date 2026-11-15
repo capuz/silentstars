@@ -19,7 +19,7 @@ recentReleases: 0
 createdAt: "2026-04-22T03:34:11Z"
 lastCommitAt: "2026-11-01T05:13:11Z"
 lastReleaseAt: "2026-06-17T03:54:28Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 88
 undervaluedScore: 45
@@ -27,6 +27,7 @@ maintainers: ["masondelan", "dependabot[bot]", "cursoragent"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e7bd21f6b8ac9fa1ba2a1d0d736102f818b4936ff9c509195550cc8092dd1b27/masondelan/selvedge"
 discussionCount: 4
 promoted: true
+postedAt: "2026-11-14T22:12:08.760Z"
 ---
 
 &nbsp;·&nbsp;

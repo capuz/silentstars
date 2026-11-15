@@ -9,7 +9,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [81]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 272
+stars: 274
 forks: 37
 openIssues: 0
 closedIssues: 2
@@ -17,20 +17,20 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-14T00:06:49Z"
+lastCommitAt: "2026-11-15T06:44:35Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1692da406b7fc6d3f7e58ea53888d766276371b1af45d2b178ee78ab508c9e54/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/57a5c440a63fb0dd995957e377984b9edc2c6fb95dcd41eca5673bcb45949fbb/YOLOW92/pagesift"
 discussionCount: 1
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.4.1
+# pagesift 1.5.0
 
 **The web and document layer for AI agents: any URL, document, email, archive or source file in, clean Markdown, structured JSON or DataGraph relations out.**  
 One self-hosted Rust binary with a CLI, Firecrawl and Jina Reader APIs, an MCP server, and packages for Python, Node.js, Go, Java, C#, Ruby, PHP and more.

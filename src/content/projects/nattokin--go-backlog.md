@@ -11,17 +11,17 @@ languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 1
-openIssues: 20
-closedIssues: 143
+openIssues: 19
+closedIssues: 144
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-11-01T08:51:30Z"
+lastCommitAt: "2026-11-15T03:01:15Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 85
+healthScore: 90
 undervaluedScore: 84
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
 openGraphImageUrl: "https://opengraph.githubassets.com/783fc54d52199c17d0e0f326e84c4073f6a2dc90ed94493a158d3e64196f7e67/nattokin/go-backlog"

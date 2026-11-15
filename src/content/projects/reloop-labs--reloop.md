@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-13T07:18:57Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 44
 maintainers: ["pranavp10", "twinkalp10", "alfarhans"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f5a37328000d1957006039feb61e9bedb123b2fbe13848b1a64e26e62c56a292/reloop-labs/reloop"

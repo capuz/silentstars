@@ -7,17 +7,17 @@ url: "https://github.com/openfoodfacts/openfoodfacts-upptime"
 homepage: "https://status.openfoodfacts.org/"
 language: "Markdown"
 languages: ["Markdown", "JSON"]
-languagePcts: [60, 35]
+languagePcts: [60, 34]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 13
 forks: 4
 openIssues: 4
-closedIssues: 13968
+closedIssues: 13979
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-11-14T20:41:14Z"
+lastCommitAt: "2026-11-15T07:56:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100

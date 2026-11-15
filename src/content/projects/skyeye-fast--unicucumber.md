@@ -15,13 +15,13 @@ openIssues: 0
 closedIssues: 17
 watchers: 1
 contributors: 3
-recentReleases: 9
+recentReleases: 8
 createdAt: "2024-10-26T16:39:27Z"
 lastCommitAt: "2026-10-22T13:16:50Z"
 lastReleaseAt: "2026-09-12T11:32:21Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 90
 maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8d6ee470c61f9498252499d6fc55abccd30f2cb5e6827d554d7fbf08a03da5f4/SkyEye-FAST/unicucumber"

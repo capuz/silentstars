@@ -15,14 +15,14 @@ openIssues: 0
 closedIssues: 1
 watchers: 1
 contributors: 1
-recentReleases: 2
+recentReleases: 1
 createdAt: "2024-05-22T10:40:51Z"
 lastCommitAt: "2026-09-09T06:39:52Z"
 lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "at_risk"
 tags: ["hidden_gem"]
 healthScore: 71
-undervaluedScore: 82
+undervaluedScore: 80
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fe0edd71dda01e4199df022111d730467b8c53e841915366e0bf0f90f4bf466f/Phoenix0531-sudo/TablePilot"
 postedAt: "2026-08-11T04:52:57.433Z"

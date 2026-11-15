@@ -17,16 +17,16 @@ watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-14T07:25:28Z"
+lastCommitAt: "2026-11-15T07:24:26Z"
 lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 81
+healthScore: 83
 undervaluedScore: 42
 maintainers: ["oneydef", "mendumohanpramodh-debug", "alevas"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7f9bd0d52eff56783d8f927c2c62daf469a6d6cb075dd50f0e3be2e796c63ad5/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]
-discussionCount: 3
+discussionCount: 4
 promoted: true
 postedAt: "2026-10-29T12:34:03.259Z"
 ---
