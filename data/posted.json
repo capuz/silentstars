@@ -2728,5 +2728,17 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "Hugo0/voiceio",
+    "slug": "hugo0--voiceio",
+    "postedAt": "2026-11-15T08:37:20.001Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2dmcvym5u2n",
+        "postedAt": "2026-11-15T08:37:20.001Z"
+      }
+    },
+    "communityPick": true
   }
 ]
