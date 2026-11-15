@@ -2740,5 +2740,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "euroargodev/argopy-status",
+    "slug": "euroargodev--argopy-status",
+    "postedAt": "2026-11-15T11:32:31.547Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2dw46kmg32w",
+        "postedAt": "2026-11-15T11:32:31.547Z"
+      }
+    }
   }
 ]
