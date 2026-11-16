@@ -2751,5 +2751,17 @@
         "postedAt": "2026-11-15T11:32:31.547Z"
       }
     }
+  },
+  {
+    "repo": "GSX-Eis/jq-factor-lab",
+    "slug": "gsx-eis--jq-factor-lab",
+    "postedAt": "2026-11-16T04:39:55.630Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2fpjcwz6t2h",
+        "postedAt": "2026-11-16T04:39:55.630Z"
+      }
+    },
+    "communityPick": true
   }
 ]
