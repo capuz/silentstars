@@ -23,6 +23,7 @@ undervaluedScore: 14
 maintainers: ["GSX-Eis"]
 openGraphImageUrl: "https://opengraph.githubassets.com/19f3efeabec58c54578bcf13aae23407bb788662c8eb17f32bfb2d23f498a6fa/GSX-Eis/jq-factor-lab"
 promoted: true
+postedAt: "2026-11-16T04:39:55.630Z"
 ---
 
 # JQ Factor Lab

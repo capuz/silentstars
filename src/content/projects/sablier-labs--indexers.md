@@ -17,10 +17,10 @@ watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-11-16T00:04:57Z"
+lastCommitAt: "2026-11-16T11:43:36Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
-tags: ["solo_builder", "community_hub"]
+tags: ["community_hub"]
 healthScore: 99
 undervaluedScore: 74
 maintainers: ["github-actions[bot]", "PaulRBerg"]

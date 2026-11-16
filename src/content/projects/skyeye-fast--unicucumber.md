@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "Vue"]
 languagePcts: [49, 46]
 topics: ["unifont", "vue", "vue3"]
-stars: 8
+stars: 9
 forks: 2
 openIssues: 0
 closedIssues: 17
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-09-12T11:32:21Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 89
-undervaluedScore: 90
+undervaluedScore: 88
 maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
-openGraphImageUrl: "https://opengraph.githubassets.com/8d6ee470c61f9498252499d6fc55abccd30f2cb5e6827d554d7fbf08a03da5f4/SkyEye-FAST/unicucumber"
+openGraphImageUrl: "https://opengraph.githubassets.com/2a4cd98e24e515e633dacbfc29ba6d893a193313f402c142e0f85c48f16f1405/SkyEye-FAST/unicucumber"
 postedAt: "2026-09-05T07:53:50.587Z"
 ---
 

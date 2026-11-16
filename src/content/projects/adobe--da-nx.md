@@ -6,22 +6,22 @@ readmeQualityOk: true
 url: "https://github.com/adobe/da-nx"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [88]
+languagePcts: [89]
 stars: 8
 forks: 49
-openIssues: 57
+openIssues: 58
 closedIssues: 126
 watchers: 9
 contributors: 285
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-15T03:52:55Z"
+lastCommitAt: "2026-11-16T10:19:23Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 91
+healthScore: 92
 undervaluedScore: 83
-maintainers: ["semantic-release-bot", "dicagno", "amol-anand"]
+maintainers: ["dicagno", "semantic-release-bot", "amol-anand"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5aae36c876c3ba9afc5dd120be8c0c2a960b4b1a0bafad6ba98757589ba3e52b/adobe/da-nx"
 postedAt: "2026-10-27T09:24:29.168Z"
 ---
