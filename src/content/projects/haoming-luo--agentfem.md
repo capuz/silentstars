@@ -17,11 +17,11 @@ watchers: 1
 contributors: 1
 recentReleases: 6
 createdAt: "2026-07-23T02:43:51Z"
-lastCommitAt: "2026-11-13T03:19:07Z"
+lastCommitAt: "2026-11-16T04:27:35Z"
 lastReleaseAt: "2026-08-31T11:32:14Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 42
 maintainers: ["haoming-luo"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d393b786ba65d2f07a95479e56f9161a330bd913c4097948e282f38b29d0c901/haoming-luo/agentfem"

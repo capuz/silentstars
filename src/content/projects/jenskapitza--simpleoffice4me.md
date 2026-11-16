@@ -15,7 +15,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-05-17T22:00:40Z"
-lastCommitAt: "2026-11-15T09:38:46Z"
+lastCommitAt: "2026-11-15T20:32:12Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "funded", "under_pressure"]
 healthScore: 97
@@ -32,13 +32,13 @@ postedAt: "2026-11-06T11:44:33.227Z"
 
 Die 3.0-Erweiterungen bauen auf dem bestehenden V2/Post-V2-System auf. Ihre
 16 registrierten Capabilities sind standardmäßig deaktiviert. Die Paketversion
-ist derzeit weiterhin **2.0.0**; die 3.0-Release-Freigabe in
-[#506](https://github.com/JensKapitza/SimpleOffice4Me/issues/506) ist offen.
+ist auf **3.0.0** angehoben. Die 3.0-Release-Freigabe in
+[#506](https://github.com/JensKapitza/SimpleOffice4Me/issues/506) bleibt offen;
+die Versionsnummer bereitet Metadaten vor und bedeutet keine Veröffentlichung.
 Ein geschlossenes Funktions-Issue bedeutet daher keine Gesamtfreigabe für 3.0.
 
 - [Dokumentationsübersicht mit vollständigem Markdown-Dateiregister](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/README.md)
 - [Tauri-2-Client für bestehende HTTPS-Server](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/desktop/tauri/README.md)
 - [3.0-Betrieb: Funktionen, Schalter, Freigaben und Rückkehr](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/V3_BETRIEBSLEITFADEN.md)
 - [Konfigurationsregister mit Quellen und Sicherheitsgrenzen](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/KONFIGURATIONSREGISTER.md)
-- [Dokumentations- und Issue-Prüfung samt bekannten Abweichungen](https://github.com/JensKapitza/SimpleOffice4Me/blob/HEAD/docs/DOKUMENTATIONSPRUEFUNG_3_0.md)
-- [Öffentliche, rein lesende…
+- [Dokumentations- und Issue-Prüfung samt bekannten…

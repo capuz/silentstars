@@ -7,9 +7,9 @@ url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [62, 26]
+languagePcts: [63, 26]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
-stars: 3
+stars: 4
 forks: 2
 openIssues: 5
 closedIssues: 9
@@ -17,12 +17,12 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-14T21:46:26Z"
+lastCommitAt: "2026-11-15T18:27:35Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 92
-undervaluedScore: 77
+healthScore: 93
+undervaluedScore: 72
 maintainers: ["farena-ai", "Guilsc"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"
 discussionCount: 1
@@ -32,8 +32,8 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Run it now:** Docker `git clone https://github.com/farena-ai/sara && cd sara && sudo docker compose up -d` (image `ghcr.io/farena-ai/sara`, amd64 and ARM) · a Linux server in one command, Windows, macOS and phones: [install guide](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md) · installers: [latest release](https://github.com/farena-ai/sara/releases/latest).
 
-**Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Data & health → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
+**Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Privacy & system → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 3.10.0, [Everywhere you are, knows your world, works with your team](https://github.com/farena-ai/sara/releases/tag/v3.10.0). Mac parity, share to Sara and car mode on phones, a facts page with sources, cited answers from your documents, shared lists, clients and time tracking. [See what changed](#whats-new)
+> **Status:** 3.13.1, [Her pictures with ComfyUI, sent where you choose](https://github.com/farena-ai/sara/releases/tag/v3.13.1). Pictures from her work with ComfyUI again, and Send one now shows its progress instead of hanging. [See what changed](#whats-new)
 >
-> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and…
+> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed and notarized downloads; each build is qualified separately.…

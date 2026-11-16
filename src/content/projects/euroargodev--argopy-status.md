@@ -17,13 +17,14 @@ watchers: 1
 contributors: 9
 recentReleases: 0
 createdAt: "2020-09-25T14:30:05Z"
-lastCommitAt: "2026-11-15T11:18:59Z"
+lastCommitAt: "2026-11-16T04:23:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 99
 undervaluedScore: 84
 maintainers: ["argobot-hub"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a6dcfb5efdbd87173006039c5a22d4a062fa523dd5696022e0bfc5f8625460a6/euroargodev/argopy-status"
+postedAt: "2026-11-15T11:32:31.547Z"
 ---
 
 # Argopy online resource status

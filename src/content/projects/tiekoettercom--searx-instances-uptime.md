@@ -1,0 +1,39 @@
+---
+repo: "tiekoettercom/searx-instances-uptime"
+name: "searx-instances-uptime"
+description: "📈 Uptime monitor and status page for SearXNG and SearX instances"
+readmeQualityOk: true
+url: "https://github.com/tiekoettercom/searx-instances-uptime"
+homepage: "https://searx-instances.tiekoetter.com"
+language: "Markdown"
+languages: ["Markdown", "JSON"]
+languagePcts: [59, 33]
+topics: ["uptime-monitor", "status-page", "upptime", "search-engine", "searx-instances", "searx", "searx-metasearch-engine", "searxng"]
+stars: 24
+forks: 2
+openIssues: 3
+closedIssues: 28157
+watchers: 0
+contributors: 3
+recentReleases: 0
+createdAt: "2022-03-29T13:26:43Z"
+lastCommitAt: "2026-11-16T04:27:39Z"
+status: "thriving"
+tags: ["solo_builder", "hidden_gem", "funded"]
+healthScore: 90
+undervaluedScore: 66
+maintainers: ["tiekoetter-bot"]
+openGraphImageUrl: "https://opengraph.githubassets.com/05fbfd73883f8acec5ef30cd967a0b0dcd2a00cb7cb29611a67a08979543dd86/tiekoettercom/searx-instances-uptime"
+fundingLinks: ["GITHUB:https://github.com/tiekoettercom", "CUSTOM:https://www.tiekoetter.com/donate/"]
+discussionCount: 0
+---
+
+# [📈 Live Status](https://searx-instances.tiekoetter.com):  **🟧 Partial outage**
+
+This repository contains the open-source uptime monitor and status page for [Tiekötter.com](https://www.tiekoetter.com), powered by [Upptime](https://github.com/upptime/upptime).
+
+With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/tiekoettercom/searx-instances-uptime/issues) as incident reports, [Actions](https://github.com/tiekoettercom/searx-instances-uptime/actions) as uptime monitors, and [Pages](https://searx-instances.tiekoetter.com) for the status page.
+
+| URL | Status | History | Response Time | Uptime |
+| --- | ------ | ------- | ------------- | ------ |
+| <img alt="" src="https://icons.duckduckgo.com/ip3/searx.tiekoetter.com.ico" height="13"> [searx.tiekoetter.com](https://searx.tiekoetter.com/) | 🟩 Up | [searx-tiekoetter-com.yml](https://github.com/tiekoettercom/searx-instances-uptime/commits/HEAD/history/searx-tiekoetter-com.yml) | <details><summary><img alt="Response time graph"…

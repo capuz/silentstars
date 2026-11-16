@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [98]
 topics: ["agent-governance", "ai-agents", "cli", "developer-tools", "multi-agent", "nodejs", "validation", "workflow", "agent-handoffs", "coding-agents"]
-stars: 5
+stars: 6
 forks: 0
 openIssues: 13
 closedIssues: 18
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
 healthScore: 91
-undervaluedScore: 61
+undervaluedScore: 59
 maintainers: ["suirindo", "claude"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0654b36c6e8bf8d05c963cc2ca130bddab0dd716a351a19009aa6a326b7b8158/suirindo/agent-role-contracts"
+openGraphImageUrl: "https://opengraph.githubassets.com/cb25bbf31bac279f6d6cafd77b8203636cdb09691c7fbcee04937b4659404ee2/suirindo/agent-role-contracts"
 fundingLinks: ["GITHUB:https://github.com/netsujo-inc"]
 discussionCount: 1
 promoted: true
