@@ -2763,5 +2763,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "matthiaskoenig/sbmlsim",
+    "slug": "matthiaskoenig--sbmlsim",
+    "postedAt": "2026-11-16T12:05:24.686Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2gifvlbk32s",
+        "postedAt": "2026-11-16T12:05:24.686Z"
+      }
+    }
   }
 ]
