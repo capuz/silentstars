@@ -91,8 +91,11 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
   .st h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(26px, 4vw, 36px); line-height: 1.05; margin: 0; color: var(--st-fg); }
   .st h2 em { color: var(--st-gold); font-style: italic; }
   .st-sub { margin: 0; font-family: var(--f-display); font-style: italic; font-size: 17px; color: var(--st-muted); }
-  .st-stage { position: relative; border-radius: 6px; overflow: hidden; background: #03050d; }
-  canvas { display: block; width: 100%; touch-action: pan-y; }
+  .st-stage { position: relative; border-radius: 6px; overflow: hidden; background: #03050d; container-type: inline-size; }
+  /* Reserve the height layout() will set (1.2x the width under 640px, 0.56x above, clamped to
+     340px..78% of the viewport), so the controls below don't jump when the script runs. */
+  canvas { display: block; width: 100%; touch-action: pan-y; aspect-ratio: 5 / 6; min-height: 340px; max-height: 78vh; max-height: 78dvh; }
+  @container (min-width: 640px) { canvas { aspect-ratio: 100 / 56; } }
   .st-tip { position: absolute; pointer-events: none; background: var(--st-ink-2); border: 1px solid var(--st-line); color: var(--st-fg); font: 12px/1.45 var(--f-mono); padding: 7px 10px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, calc(-100% - 12px)); }
   .st-caption { display: flex; align-items: baseline; gap: 16px; min-height: 2.4em; flex-wrap: wrap; }
   .st-age { font-family: var(--f-mono); font-size: 13px; color: var(--st-gold); font-variant-numeric: tabular-nums; min-width: 6.5em; letter-spacing: .02em; }
@@ -107,16 +110,18 @@ const last = trails.weeks.at(-1)?.replace(/^\d+-/, '');
     .st-forms { grid-template-columns: minmax(0, 1fr) max-content; }
     .st-find label { grid-column: 1 / -1; margin-top: 4px; }
   }
-  .st button { font: 500 14px var(--f-body); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+  /* Explicit line-heights (the ones the web fonts give with `normal`) so the fallback font
+     takes the same height and nothing below moves when Space Mono / Hanken Grotesk swap in. */
+  .st button { font: 500 14px/18px var(--f-body); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 16px; cursor: pointer; }
   .st button:hover { border-color: var(--st-muted); }
   .st button:focus-visible, .st input:focus-visible, .st a:focus-visible { outline: 2px solid var(--st-gold); outline-offset: 2px; }
   .st button.primary { background: var(--st-gold); color: var(--st-ink); border-color: var(--st-gold); min-width: 8.5em; }
   .st-speed { display: inline-flex; border: 1px solid var(--st-line); border-radius: 999px; overflow: hidden; }
-  .st-speed button { border: 0; border-radius: 0; padding: 8px 12px; background: transparent; color: var(--st-muted); font-family: var(--f-mono); font-size: 13px; }
+  .st-speed button { border: 0; border-radius: 0; padding: 8px 12px; background: transparent; color: var(--st-muted); font-family: var(--f-mono); font-size: 13px; line-height: 20px; }
   .st-speed button[aria-pressed="true"] { background: var(--st-ink-2); color: var(--st-gold); }
   #st-scrub { flex: 1 1 200px; min-width: 0; accent-color: var(--st-gold); }
   .st-find label { font-family: var(--f-mono); font-size: 12px; color: var(--st-muted); }
-  .st-find input { min-width: 0; font: 14px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
+  .st-find input { min-width: 0; font: 14px/21px var(--f-mono); color: var(--st-fg); background: var(--st-ink-2); border: 1px solid var(--st-line); border-radius: 999px; padding: 8px 14px; }
   .st-found { grid-column: 1 / -1; margin: 0; font: 13px/1.5 var(--f-mono); color: var(--st-muted); }
   .st-found a { color: var(--st-gold); }
   .st-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--st-muted); border-top: 1px solid var(--st-line); padding-block: 12px 0; }
