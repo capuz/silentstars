@@ -333,8 +333,10 @@ const tagLabels: Record<string, string> = {
      at once (status filter, reset) cost up to 1 s of presentation delay at 4x CPU.
      The first 6 cards are above the fold on desktop, so they render normally.
      contain-intrinsic-size keeps the scrollbar stable; `auto` remembers real heights.
+     The promoted cards sit below the whole grid, so all of them get it too.
      Baseline newly available (2025-09); other browsers ignore it. */
-  #project-grid > .grid-item:nth-child(n + 7) {
+  #project-grid > .grid-item:nth-child(n + 7),
+  .promoted-block .grid-item {
     content-visibility: auto;
     contain-intrinsic-size: auto none auto 340px;
   }
