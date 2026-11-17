@@ -1,5 +1,6 @@
 ---
 import { langIconUrl } from '../lib/lang-icons.ts';
+import { withRef } from '../lib/ref.ts';
 import ScoreHelp from './ScoreHelp.astro';
 import { loadPosted } from '../../scripts/post-shared.ts';
 
@@ -47,7 +48,7 @@ const base = import.meta.env.BASE_URL;
 // Daily-highlight Bluesky post for this project, if one was published
 // (recorded in data/posted.json by the post job — same source the detail
 // page uses). ?.platforms.bsky?.url tolerates legacy entries that only have X.
-const bskyPostUrl = loadPosted().find(e => e.slug === slug)?.platforms.bsky?.url;
+const bskyPostUrl = withRef(loadPosted().find(e => e.slug === slug)?.platforms.bsky?.url);
 
 // ── Category badge ────────────────────────────────────────
 const catMap: Record<string, { label: string; bg: string; path: string }> = {
@@ -217,11 +218,11 @@ const tagLabels: Record<string, string> = {
           {watchers}
         </span>
       )}
-      <a href={url} target="_blank" rel="noopener noreferrer" class="footer-stars">
+      <a href={withRef(url)} target="_blank" rel="noopener" class="footer-stars">
         <span>★</span>{stars}
       </a>
       {bskyPostUrl && (
-        <a href={bskyPostUrl} target="_blank" rel="noopener noreferrer" class="card-bsky" title="View the Bluesky post" aria-label="View the Bluesky post">
+        <a href={bskyPostUrl} target="_blank" rel="noopener" class="card-bsky" title="View the Bluesky post" aria-label="View the Bluesky post">
           <svg width="12" height="12" aria-hidden="true"><use href="#ic-bsky"/></svg>
         </a>
       )}
