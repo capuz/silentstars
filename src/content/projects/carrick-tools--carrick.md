@@ -11,13 +11,13 @@ languagePcts: [72, 27]
 topics: ["ai-agents", "code-intelligence", "developer-tools", "github-actions", "llm", "mcp", "mcp-server", "microservices", "rust", "static-analysis"]
 stars: 7
 forks: 1
-openIssues: 1494
-closedIssues: 843
+openIssues: 1495
+closedIssues: 844
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-04-03T10:08:36Z"
-lastCommitAt: "2026-11-17T11:29:13Z"
+lastCommitAt: "2026-11-17T14:17:30Z"
 lastReleaseAt: "2025-06-12T12:56:41Z"
 status: "thriving"
 tags: ["solo_builder"]

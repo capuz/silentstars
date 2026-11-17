@@ -7,21 +7,21 @@ url: "https://github.com/epikodelabs/streamix"
 homepage: "https://epikodelabs.github.io/streamix"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [92]
+languagePcts: [93]
 topics: ["async-iterators", "javascript", "observables", "reactive-programming", "streamix", "typescript", "rxjs-alternative"]
 stars: 4
 forks: 0
-openIssues: 117
-closedIssues: 51
+openIssues: 113
+closedIssues: 55
 watchers: 0
 contributors: 2
 recentReleases: 1
 createdAt: "2026-06-02T16:48:08Z"
-lastCommitAt: "2026-11-17T07:21:24Z"
+lastCommitAt: "2026-11-17T13:20:27Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "under_pressure", "community_hub"]
-healthScore: 77
+healthScore: 86
 undervaluedScore: 52
 maintainers: ["oleksii-shepel"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1eff40b17b69465cdd8a1c5ace5611cd61481a95d6ccf8431a9f957cfd9a6c66/epikodelabs/streamix"

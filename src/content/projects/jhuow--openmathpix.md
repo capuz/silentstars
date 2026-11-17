@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-14T13:35:43Z"
 lastReleaseAt: "2026-11-14T13:43:37Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 78
+healthScore: 77
 undervaluedScore: 22
 maintainers: ["JhuoW"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4957f7b6a7c844c5baedb9f5af6d58eb09fa5dd28463f845951a7b2d62e8e100/JhuoW/OpenMathpix"
