@@ -2774,5 +2774,16 @@
         "postedAt": "2026-11-16T12:05:24.686Z"
       }
     }
+  },
+  {
+    "repo": "stokaro/ptah",
+    "slug": "stokaro--ptah",
+    "postedAt": "2026-11-17T12:29:50.936Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2j2ajhzp525",
+        "postedAt": "2026-11-17T12:29:50.936Z"
+      }
+    }
   }
 ]
