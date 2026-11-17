@@ -420,12 +420,16 @@ const help = helpLinks(d);
         <article class="prose">
           <Content />
         </article>
+        <a href={withRef(`${d.url}#readme`)} target="_blank" rel="noopener" class="readme-more">
+          Read the full README on GitHub ↗
+        </a>
       </div>
     </div>
 
     {related.length > 0 && (
       <section class="related" aria-labelledby="related-label">
-        <p class="related-label" id="related-label">// related projects</p>
+        <h2 class="related-label" id="related-label">// related projects</h2>
+        <p class="related-sub">Projects sharing topics with {d.name}</p>
         <div class="related-grid">
           {related.map(r => <ProjectCard {...r} />)}
         </div>
@@ -736,15 +740,42 @@ const help = helpLinks(d);
   .help-link:hover { text-decoration: none; transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
 
   /* ── Related ── */
-  .related { margin-top: 2rem; }
+  .related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px dashed var(--faint);
+  }
   .related-label {
     font-family: var(--f-mono);
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin: 0 0 0.75rem;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+    margin: 0 0 0.25rem;
   }
+  .related-sub {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0 0 1rem;
+  }
+
+  /* ── README: full-README link + GitHub alerts (rendered as blockquotes) ── */
+  .readme-more {
+    display: block;
+    font-family: var(--f-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 10px 16px 14px;
+    border-top: 1.5px solid var(--faint);
+  }
+  .prose :global(blockquote) {
+    margin: 0 0 1rem;
+    padding: 0.6rem 0.9rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    background: color-mix(in srgb, var(--accent) 7%, transparent);
+  }
+  .prose :global(blockquote p:last-child) { margin-bottom: 0; }
   .related-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

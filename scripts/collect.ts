@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync, existsSync, unlinkSync, readdirSync } from
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { claudeEnabled } from './claude-cli.ts';
-import { stripReadmeNoise } from './readme-clean.ts';
+import { stripReadmeNoise, clipReadme } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify, type PostedEntry } from './post-shared.ts';
 import { applyRenames, absorbAliasPages } from './posted-renames.ts';
@@ -505,14 +505,10 @@ function toFrontmatter(data: RepoData): string {
 // Main
 // ──────────────────────────────────────────────────────────────────────────────
 
-// Pages only render the first 1200 chars of the body; translating more would only make
-// each call slower and the cached entry bigger.
-function clipBody(text: string): string {
-  return text.length > 1200 ? text.slice(0, 1200).replace(/\s+\S*$/, '') + '…' : text;
-}
-
+// Pages only show an excerpt of the README (clipReadme, ~1200 chars); translating more would
+// only make each call slower and the cached entry bigger.
 function writeProjectPage(mdPath: string, data: RepoData, source: string): void {
-  const body = source ? clipBody(source) : data.description;
+  const body = source ? clipReadme(source) : data.description;
   writeFileSync(mdPath, `${toFrontmatter(data)}\n\n${body}\n`);
 }
 
@@ -780,7 +776,7 @@ async function main() {
   }
 
   const translations = await translator.translateAll(
-    pendingTranslation.map(p => ({ repo: p.repoStr, input: { description: p.data.description, body: clipBody(p.cleanedReadme) } })),
+    pendingTranslation.map(p => ({ repo: p.repoStr, input: { description: p.data.description, body: clipReadme(p.cleanedReadme) } })),
   );
   pendingTranslation.forEach((p, k) => {
     const translation = translations[k];
