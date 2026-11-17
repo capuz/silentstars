@@ -3,15 +3,17 @@
  * and publishes + pins the "how to submit" post.
  *
  * Idempotent: if the currently pinned post already has PINNED_TEXT it is
- * reused, so re-running never publishes a duplicate. Avatar, banner and any
- * other profile fields are preserved.
+ * reused, so re-running never publishes a duplicate. Avatar and any other
+ * profile fields are preserved; the banner too unless UPDATE_BANNER=true.
  *
  * Env vars:
  *   BSKY_IDENTIFIER, BSKY_APP_PASSWORD — required
+ *   UPDATE_BANNER — optional; 'true' uploads BANNER_FILE as the profile banner
  *   DRY_RUN — optional; logs in and reads the profile, prints the diff, writes nothing
  */
 
 import { BskyAgent, RichText, type AppBskyActorProfile, type AppBskyFeedPost } from '@atproto/api';
+import { readFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 
 export const SUBMIT_URL = 'https://silentstars.dev/submit';
@@ -19,11 +21,14 @@ export const SUBMIT_URL = 'https://silentstars.dev/submit';
 export const DISPLAY_NAME = 'SilentStars · OSS radar';
 
 export const DESCRIPTION = [
-  'Daily pick of open-source projects still shipping under the radar. Not famous. Not abandoned. Just building.',
+  'One open-source project a day, still shipping under the radar. Not famous. Not abandoned. Just building.',
   '',
-  'Built one? Submit it 👇',
-  'silentstars.dev/submit',
+  '📬 Weekly roundup → silentstars.dev/weekly',
+  '🛠️ Built one? → silentstars.dev/submit',
 ].join('\n');
+
+// Rendered by scripts/render-bsky-banner.ts; uploaded only when UPDATE_BANNER=true.
+export const BANNER_FILE = 'assets/bsky-banner.png';
 
 // Editing this text publishes a brand-new pinned post the next time the
 // update-bsky-profile workflow runs without dry run.
@@ -40,9 +45,13 @@ type StrongRef = { uri: string; cid: string };
 export function buildProfile(
   existing: AppBskyActorProfile.Record | undefined,
   pinnedPost: StrongRef,
+  banner?: AppBskyActorProfile.Record['banner'],
 ): AppBskyActorProfile.Record {
   const { $type: _type, ...rest } = existing ?? {} as AppBskyActorProfile.Record;
-  return { ...rest, displayName: DISPLAY_NAME, description: DESCRIPTION, pinnedPost } as AppBskyActorProfile.Record;
+  return {
+    ...rest, displayName: DISPLAY_NAME, description: DESCRIPTION, pinnedPost,
+    ...(banner ? { banner } : {}),
+  } as AppBskyActorProfile.Record;
 }
 
 // Pick, not Omit: Record has an index signature, so Omit<…, '$type'> would erase text/facets to unknown.
@@ -53,7 +62,8 @@ export function pinnedPostRecord(createdAt: string): Pick<AppBskyFeedPost.Record
 }
 
 async function main(): Promise<void> {
-  const dryRun     = process.env.DRY_RUN === 'true';
+  const dryRun       = process.env.DRY_RUN === 'true';
+  const updateBanner = process.env.UPDATE_BANNER === 'true';
   const identifier = (process.env.BSKY_IDENTIFIER ?? '').replace(/^@/, '');
   const password   = process.env.BSKY_APP_PASSWORD;
   if (!identifier || !password) throw new Error('BSKY_IDENTIFIER and BSKY_APP_PASSWORD env vars are required');
@@ -83,7 +93,9 @@ async function main(): Promise<void> {
   console.log('─── description');
   console.log(`  before: ${JSON.stringify(current.description ?? '')}`);
   console.log(`  after:  ${JSON.stringify(DESCRIPTION)}`);
-  console.log(`─── avatar kept: ${Boolean(current.avatar)} · banner kept: ${Boolean(current.banner)}`);
+  const bannerBytes = updateBanner ? readFileSync(BANNER_FILE) : null;
+  console.log(`─── avatar kept: ${Boolean(current.avatar)} · banner: ${
+    bannerBytes ? `replace with ${BANNER_FILE} (${bannerBytes.length} bytes)` : `kept (${Boolean(current.banner)})`}`);
 
   const record = pinnedPostRecord(new Date().toISOString());
   if (pinned) {
@@ -104,7 +116,14 @@ async function main(): Promise<void> {
     console.log(`✓ Published: https://bsky.app/profile/${did}/post/${pinned.uri.split('/').pop()}`);
   }
 
-  await agent.upsertProfile(existing => buildProfile(existing, pinned!));
+  let banner: AppBskyActorProfile.Record['banner'];
+  if (bannerBytes) {
+    const { data } = await agent.uploadBlob(bannerBytes, { encoding: 'image/png' });
+    banner = data.blob;
+    console.log(`✓ Banner uploaded (${bannerBytes.length} bytes)`);
+  }
+
+  await agent.upsertProfile(existing => buildProfile(existing, pinned!, banner));
   console.log('✓ Profile updated');
 }
 
