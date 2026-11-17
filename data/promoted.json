@@ -222,5 +222,9 @@
   {
     "repo": "GSX-Eis/jq-factor-lab",
     "until": "2026-12-16"
+  },
+  {
+    "repo": "Md-nexus/Hoard",
+    "until": "2026-12-17"
   }
 ]
