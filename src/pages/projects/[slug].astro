@@ -4,16 +4,41 @@ import { withRef } from '../../lib/ref.ts';
 import ScoreHelp from '../../components/ScoreHelp.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { loadPosted } from '../../../scripts/post-shared.ts';
-import { isExcludedOwner } from '../../../scripts/discovery-filter.ts';
+import { postedFor } from '../../lib/posted.ts';
+import { isExcludedOwner, isListable } from '../../../scripts/discovery-filter.ts';
+import ProjectCard from '../../components/ProjectCard.astro';
+import WeeklySpark from '../../components/WeeklySpark.astro';
+import { listEditions, projectSeries, isoWeekKey, type History, type ProjectSeries } from '../../../scripts/weekly.ts';
+import { editionsByRepo, starsSince, whyItsHere, helpLinks, relatedProjects, type FeaturedIn } from '../../../scripts/project-insights.ts';
+import historyJson from '../../../data/history.json';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
-  return projects.map(p => ({ params: { slug: p.slug }, props: { project: p } }));
+  // Computed once for all pages, not once per page.
+  const history = historyJson as History;
+  const latestWeek = Object.keys(history).sort().at(-1) ?? '';
+  const featuredIdx = editionsByRepo(listEditions(history, new Date()));
+  const listable = projects
+    .filter(p => isListable(p.data.repo, p.data.stars) && p.data.description.trim() !== '')
+    .map(p => ({ ...p.data, slug: p.slug }));
+  return projects.map(p => ({
+    params: { slug: p.slug },
+    props: {
+      project: p,
+      series: latestWeek ? projectSeries(history, p.data.repo, latestWeek) : null,
+      featuredIn: featuredIdx.get(p.data.repo) ?? [],
+      related: relatedProjects(p.data, listable, 4),
+    },
+  }));
 }
 
-interface Props { project: CollectionEntry<'projects'>; }
-const { project } = Astro.props;
+interface Props {
+  project: CollectionEntry<'projects'>;
+  series: ProjectSeries | null;
+  featuredIn: FeaturedIn[];
+  related: Array<CollectionEntry<'projects'>['data'] & { slug: string }>;
+}
+const { project, series, featuredIn, related } = Astro.props;
 const { Content } = await project.render();
 const d = project.data;
 
@@ -107,7 +132,7 @@ const tagLabels: Record<string, string> = {
 
 const base    = import.meta.env.BASE_URL;
 // Daily-highlight post published for this project (recorded by the post job)
-const postedEntry = loadPosted().find(e => e.slug === project.slug);
+const postedEntry = postedFor(project.slug);
 const bskyPostUrl = withRef(postedEntry?.platforms.bsky?.url);
 // posted.json is checked too: the frontmatter postedAt only lands at the next
 // collect, but the og/<slug>.png exists from the build that posted it.
@@ -123,6 +148,16 @@ const translatedFrom = d.descriptionLang
   : null;
 const shareText = encodeURIComponent(`★ ${d.name} — ${d.description}\n\n${pageUrl}`);
 const shareUrl  = withRef(`https://bsky.app/intent/compose?text=${shareText}`);
+
+// ── Insights (scripts/project-insights.ts) ────────────────────
+const featuredAt = d.postedAt ?? postedEntry?.postedAt;
+const sinceFeatured = featuredAt
+  ? starsSince(historyJson as History, d.repo, isoWeekKey(new Date(featuredAt)), d.stars)
+  : null;
+const featuredDate = featuredAt ? featuredAt.slice(0, 10) : null;
+const sectionLabels = { newcomers: 'new', rising: 'rising', revived: 'back' } as const;
+const why  = whyItsHere(d);
+const help = helpLinks(d);
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage} noindex={isExcludedOwner(d.repo)}>
   <div class="container section">
@@ -253,6 +288,56 @@ const shareUrl  = withRef(`https://bsky.app/intent/compose?text=${shareText}`);
       </div>
     </article>
 
+    <!-- ── Insights: momentum, why it's here, how to help ── -->
+    <div class="insights-grid">
+      {series && (
+        <section class="insight-panel momentum" aria-labelledby="momentum-label">
+          <p class="panel-label" id="momentum-label">// momentum</p>
+          <div class="insight-body">
+            <WeeklySpark series={series} />
+            {sinceFeatured && sinceFeatured.delta > 0 && (
+              <p class="since-featured">
+                <strong>+{sinceFeatured.delta}★</strong> since featured on SilentStars
+                <span class="dim">({featuredDate})</span>
+              </p>
+            )}
+            {featuredIn.length > 0 && (
+              <>
+                <p class="sub-label">featured in</p>
+                <ul class="featured-list">
+                  {featuredIn.map(f => (
+                    <li>
+                      <a href={`${base}weekly/${f.week}/`}>Edition #{f.issue}</a>
+                      <span class={`fi-section fi-${f.section}`}>{sectionLabels[f.section]}</span>
+                      <span class="fi-reason">{f.reason}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        </section>
+      )}
+
+      <section class="insight-panel" aria-labelledby={why.length > 0 ? 'why-label' : 'help-label'}>
+        {why.length > 0 && (
+          <>
+            {/* Text in an expression: an apostrophe would open a JS string, so it goes through a literal. */}
+            <p class="panel-label" id="why-label">{"// why it's here"}</p>
+            <ul class="why-list insight-body">
+              {why.map(line => <li>{line}</li>)}
+            </ul>
+          </>
+        )}
+        <p class="panel-label" id="help-label">// how to help</p>
+        <div class="help-links insight-body">
+          {help.map(l => (
+            <a href={withRef(l.href)} target="_blank" rel="noopener" class="help-link">{l.label} ↗</a>
+          ))}
+        </div>
+      </section>
+    </div>
+
     <!-- ── Expanded stats + content ── -->
     <div class="detail-grid">
 
@@ -338,6 +423,14 @@ const shareUrl  = withRef(`https://bsky.app/intent/compose?text=${shareText}`);
       </div>
     </div>
 
+    {related.length > 0 && (
+      <section class="related" aria-labelledby="related-label">
+        <p class="related-label" id="related-label">// related projects</p>
+        <div class="related-grid">
+          {related.map(r => <ProjectCard {...r} />)}
+        </div>
+      </section>
+    )}
   </div>
 </Base>
 
@@ -559,6 +652,108 @@ const shareUrl  = withRef(`https://bsky.app/intent/compose?text=${shareText}`);
   .btn-gh:hover { opacity: .8; text-decoration: none; }
 
   /* ── Detail grid ── */
+  /* ── Insights ── */
+  .insights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 680px) {
+    .insights-grid { grid-template-columns: 1fr; }
+  }
+  .insight-panel {
+    border: 2px solid var(--ink);
+    border-radius: 8px;
+    background: var(--card);
+    box-shadow: 2px 2px 0 var(--shadow);
+    overflow: hidden;
+    min-width: 0;
+  }
+  .insight-panel .panel-label + .insight-body + .panel-label { border-top: 1.5px solid var(--faint); }
+  .insight-body { padding: 12px; margin: 0; }
+  .momentum { --wk-color: var(--accent); }
+  .since-featured {
+    font-family: var(--f-mono);
+    font-size: 0.75rem;
+    margin: 0.75rem 0 0;
+  }
+  .since-featured strong { color: var(--accent); }
+  .dim { color: var(--muted); }
+  .sub-label {
+    font-family: var(--f-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0.9rem 0 0.4rem;
+  }
+  .featured-list, .why-list { list-style: none; }
+  .featured-list { margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+  .momentum :global(.wk-spark) { max-width: 320px; }
+  .featured-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+  }
+  .featured-list a { font-family: var(--f-mono); font-weight: 700; }
+  .fi-section {
+    font-family: var(--f-mono);
+    font-size: 0.6rem;
+    padding: 1px 6px;
+    border: 1.2px solid var(--ink);
+    border-radius: 4px;
+    color: #17150f;
+  }
+  .fi-newcomers { background: #bdebd0; }
+  .fi-rising    { background: #ffe08a; }
+  .fi-revived   { background: #e8d5f5; }
+  .fi-reason { color: var(--text-muted); }
+  .why-list { display: grid; gap: 0.45rem; font-size: 0.85rem; }
+  .why-list li { position: relative; padding-left: 1.1rem; }
+  .why-list li::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.75rem;
+  }
+  .help-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .help-link {
+    font-family: var(--f-mono);
+    font-size: 0.72rem;
+    padding: 5px 10px;
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    color: var(--ink);
+    background: var(--card);
+    box-shadow: 2px 2px 0 var(--shadow);
+    transition: transform .1s, box-shadow .1s;
+  }
+  .help-link:hover { text-decoration: none; transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--shadow); }
+
+  /* ── Related ── */
+  .related { margin-top: 2rem; }
+  .related-label {
+    font-family: var(--f-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  @media (max-width: 680px) {
+    .related-grid { grid-template-columns: 1fr; }
+  }
+
   .detail-grid {
     display: grid;
     grid-template-columns: 200px 1fr;
