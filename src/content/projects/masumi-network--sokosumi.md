@@ -16,13 +16,13 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-16T11:57:02Z"
+lastCommitAt: "2026-11-17T12:09:29Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 99
 undervaluedScore: 88
-maintainers: ["PatrickTobler", "mrosberghaus", "schaier-io"]
+maintainers: ["mrosberghaus", "schaier-io", "PatrickTobler"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5e9c2e88b9d4edf89fd45eac9011c54c8c5211609bb1392d87a898fa209760ff/masumi-network/sokosumi"
 postedAt: "2026-09-06T08:08:53.944Z"
 ---
@@ -41,7 +41,7 @@ sokosumi/
 │   ├── web/         # Next.js 16 web app (TypeScript, Tailwind, Shadcn UI)
 │   ├── core/        # Hono API — owns all Postgres/Prisma access
 │   ├── cmo/         # Next.js 16 CMO app at app.cmo.xyz (Sign in with Sokosumi; no database)
-│   ├── apple/       # Native macOS + iOS — Xcode (outside turbo and Biome)
+│   ├── apple/       # Native macOS — Xcode (outside turbo and Biome)
 │   └── cli/         # Developer CLI — Ink TUI and headless commands (SPEC + VISION)
 ├── packages/
 │   ├── database/    # @sokosumi/database — Prisma schema, client, helpers

@@ -16,11 +16,11 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-09T03:33:14Z"
-lastCommitAt: "2026-11-13T07:34:41Z"
+lastCommitAt: "2026-11-17T06:05:35Z"
 lastReleaseAt: "2026-10-27T01:05:18Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 71
 maintainers: ["shiqicao"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1bb52bb4765872defd4c1dd71d12121293783ac28f732b75a07d9aa4d121f98a/shiqicao/gh-pull"
@@ -31,22 +31,26 @@ postedAt: "2026-10-26T03:11:03.556Z"
 
 # <img src="https://raw.githubusercontent.com/shiqicao/gh-pull/HEAD/docs/favicon.png" width="32" height="32" align="absmiddle" alt=""> gh-pull
 
-**A local pull request dashboard for GitHub CLI**
+**Your pull requests. One clear view.**
 
-Organize PRs across repositories, track reviews and checks, and manage your work in the browser using your existing GitHub login.
+A local dashboard for GitHub CLI. Find your next review, follow stacked PRs, and get straight to failing checks—all with your existing GitHub login.
 
-Choose how to run it:
+[Get started](#github-cli-extension) · [Watch the dashboard tour](https://youtu.be/LfIj6tZMKWM) · [Full dashboard](https://github.com/shiqicao/gh-pull/blob/HEAD/docs/demo.png) · [Usage guide](https://github.com/shiqicao/gh-pull/blob/HEAD/docs/usage.md)
 
-- **[GitHub CLI extension](#github-cli-extension) — recommended:** Install once, then run `gh pull`. No Node installation or source checkout needed.
-- **[Local app from source](#local-app-from-source):** Clone the repository and run it with Node.js. Useful for development and customization.
+## Features
 
-Both use your existing GitHub CLI login or a personal access token. No separate GitHub App installation is required. You can access the repositories your credentials allow, subject to your organization's token and SSO policies. A **GitHub.com** account is required; GitHub Enterprise hosts are not supported.
+### Find your focus. Save it for tomorrow.
 
-[▶ Watch the quick tour](https://youtu.be/4LBga5H5Wwk) · 81 seconds · narrated with captions
+Search across repositories with GitHub qualifiers and autocomplete. Save your go-to searches as one-click views, then group PRs by repository, author, status, or checks.
 
-## GitHub CLI extension
+### See the stack. Know what comes next.
 
-Install [GitHub CLI](https://cli.github.com/) if needed, then run:
+Follow branch dependencies at a glance. Connected lanes keep parent and child PRs together—even when a stack branches.
 
-```sh
-gh auth login --hostname github.com  # Skip if already…
+### Find the failure. Jump to the job.
+
+Hover a failed CI badge to see which checks broke, then open the job directly. Running checks show progress without leaving the dashboard.
+
+### Keep reviews moving.
+
+See who…

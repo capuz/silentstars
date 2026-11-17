@@ -10,13 +10,13 @@ languages: ["TypeScript"]
 languagePcts: [94]
 stars: 11
 forks: 6
-openIssues: 439
-closedIssues: 1775
+openIssues: 440
+closedIssues: 1779
 watchers: 3
 contributors: 18
 recentReleases: 0
 createdAt: "2022-10-05T13:20:00Z"
-lastCommitAt: "2026-11-16T10:23:42Z"
+lastCommitAt: "2026-11-17T08:31:30Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]

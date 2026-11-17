@@ -10,16 +10,16 @@ languages: ["MDX"]
 languagePcts: [100]
 stars: 6
 forks: 19
-openIssues: 182
-closedIssues: 499
+openIssues: 185
+closedIssues: 501
 watchers: 7
 contributors: 56
 recentReleases: 0
 createdAt: "2024-10-21T02:01:43Z"
-lastCommitAt: "2026-11-12T09:03:10Z"
+lastCommitAt: "2026-11-16T17:32:31Z"
 status: "thriving"
 tags: ["needs_contributors", "fork_magnet"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 84
 maintainers: ["rw-jarvis-bot[bot]", "wjf3121", "xuhui-lu"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/875864923/75401980-9a68-47bb-b0d8-4c7874e52b4c"

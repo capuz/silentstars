@@ -7,7 +7,7 @@ url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [63, 26]
+languagePcts: [64, 25]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
 stars: 4
 forks: 2
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-16T11:56:04Z"
+lastCommitAt: "2026-11-17T11:09:40Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
@@ -34,6 +34,6 @@ postedAt: "2026-10-31T16:06:55.950Z"
 
 **Update:** on a Linux server `sudo sara update` (backs up first, rolls back if she doesn't answer) · Docker: `sudo git pull && sudo docker compose up -d --build` · Windows and Mac apps: Settings → Privacy & system → Updates · Android: Google Play. [Upgrading](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md#upgrading).
 
-> **Status:** 3.15.0, [Choices to tap, goals, research, ask anything, private messages](https://github.com/farena-ai/sara/releases/tag/v3.15.0). Tap her options instead of typing, goals over days, cited research reports, one search across your life, and private messages between Sara servers. [See what changed](#whats-new)
+> **Status:** 3.18.2, [Several Google accounts from either mail page, approved code fixes on servers](https://github.com/farena-ai/sara/releases/tag/v3.18.2). One account list with + Add an account on both mail pages, a different Google sign-in always adds, and server installs can apply owner-approved code fixes with rollback. [See what changed](#whats-new)
 >
-> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The macOS release process requires signed…
+> Windows installer: unsigned ([SmartScreen guidance](https://github.com/farena-ai/sara/blob/HEAD/docs/INSTALL.md)). The…

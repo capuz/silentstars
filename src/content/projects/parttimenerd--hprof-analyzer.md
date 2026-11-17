@@ -17,11 +17,11 @@ watchers: 0
 contributors: 4
 recentReleases: 7
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-13T13:03:03Z"
+lastCommitAt: "2026-11-17T11:50:57Z"
 lastReleaseAt: "2026-11-13T15:14:19Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 72
 maintainers: ["parttimenerd"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0bfeb49872e66c4372995b0bc002426fa36cc13dbf8e3e79102fe18a51bbbe27/parttimenerd/hprof-analyzer"

@@ -19,10 +19,10 @@ recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
 lastCommitAt: "2026-11-02T20:46:36Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
-status: "thriving"
+status: "quiet"
 tags: ["funded"]
 healthScore: 78
-undervaluedScore: 67
+undervaluedScore: 60
 maintainers: ["ssnfts24", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]

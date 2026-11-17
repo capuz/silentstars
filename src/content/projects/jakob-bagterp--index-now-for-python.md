@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["indexnow", "python", "seo", "seotools", "bing", "naver", "seznam", "yandex", "yep", "duckduckgo"]
-stars: 9
+stars: 10
 forks: 3
 openIssues: 0
 closedIssues: 4
@@ -22,9 +22,9 @@ lastReleaseAt: "2025-05-29T21:11:35Z"
 status: "quiet"
 tags: ["solo_builder", "funded"]
 healthScore: 93
-undervaluedScore: 82
+undervaluedScore: 80
 maintainers: ["jakob-bagterp", "dependabot[bot]", "pre-commit-ci[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/56cfdd46185e9f80a81dd5c6b3b34a6e2cf8fb1570d607c232f24a8bb79054ad/jakob-bagterp/index-now-for-python"
+openGraphImageUrl: "https://opengraph.githubassets.com/c35cbb94b993dbf8f5b53ef6a70155b23ac28bc5c11c5afb8f42418f4cef0888/jakob-bagterp/index-now-for-python"
 fundingLinks: ["GITHUB:https://github.com/jakob-bagterp"]
 postedAt: "2026-10-06T10:54:19.559Z"
 ---

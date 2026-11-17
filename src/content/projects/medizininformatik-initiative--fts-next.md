@@ -11,7 +11,7 @@ languagePcts: [99]
 topics: ["deidentification", "fhir", "transfer"]
 stars: 15
 forks: 2
-openIssues: 26
+openIssues: 28
 closedIssues: 431
 watchers: 3
 contributors: 19

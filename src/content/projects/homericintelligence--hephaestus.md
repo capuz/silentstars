@@ -10,13 +10,13 @@ languages: ["Python"]
 languagePcts: [99]
 stars: 8
 forks: 1
-openIssues: 35
-closedIssues: 1737
+openIssues: 28
+closedIssues: 1745
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2025-12-29T19:05:37Z"
-lastCommitAt: "2026-11-15T16:13:06Z"
+lastCommitAt: "2026-11-17T00:10:21Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

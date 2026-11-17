@@ -7,20 +7,20 @@ url: "https://github.com/DMS-Menula/developer-starter-pack-2026"
 homepage: "https://dms-menula.github.io/"
 topics: ["2026", "ai-tools", "beginners", "developer", "javascript", "learning", "opensource", "react", "resources", "starter-kit"]
 stars: 50
-forks: 8
+forks: 10
 openIssues: 0
 closedIssues: 1
 watchers: 6
-contributors: 7
+contributors: 9
 recentReleases: 1
 createdAt: "2025-12-16T13:19:26Z"
-lastCommitAt: "2026-11-15T10:16:14Z"
+lastCommitAt: "2026-11-17T05:13:20Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 90
-undervaluedScore: 53
-maintainers: ["DMS-Menula", "DMS-ranil", "pushkarsingh32"]
+healthScore: 91
+undervaluedScore: 54
+maintainers: ["DMS-Menula", "DMS-ranil", "Yuzu-Peel"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"
 discussionCount: 1
 promoted: true
@@ -66,18 +66,11 @@ Perfect for:
 ## 🛠️ Must-Have Developer Tools
 
 * [BestJSON](https://bestjson.com/) – Free browser-based tools to format, validate, repair, compare, query, and convert JSON locally without uploading input.
+* [AppScreen](https://appscreen.pro/) – Free browser tool for making App Store and Google Play screenshots for your mobile app, no sign-up needed.
 * VS Code – Code editor
 * Git & GitHub – Version control
 * Postman – API testing
 * Figma – UI / UX design
 * Chrome DevTools – Debugging
 
----
-
-## ⚡ Best VS Code Extensions
-
-* Prettier – Code formatter
-* ESLint – Code quality
-* Live Server – Local development
-* GitLens – Git superpowers
-*…
+---…

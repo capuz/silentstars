@@ -7,17 +7,17 @@ url: "https://github.com/amedee/ansible-servers"
 homepage: "https://amedee.be"
 language: "Jinja"
 languages: ["Jinja", "Python"]
-languagePcts: [53, 31]
+languagePcts: [53, 32]
 topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "email", "github-actions", "mail-in-a-box"]
 stars: 6
 forks: 1
 openIssues: 10
-closedIssues: 238
+closedIssues: 240
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-11-16T08:57:28Z"
+lastCommitAt: "2026-11-17T01:35:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 98

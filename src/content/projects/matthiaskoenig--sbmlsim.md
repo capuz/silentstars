@@ -11,13 +11,13 @@ languagePcts: [99]
 topics: ["sbml", "sbml-simulation"]
 stars: 13
 forks: 8
-openIssues: 10
-closedIssues: 236
+openIssues: 14
+closedIssues: 238
 watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2019-10-02T11:24:50Z"
-lastCommitAt: "2026-11-16T11:23:16Z"
+lastCommitAt: "2026-11-17T12:14:56Z"
 lastReleaseAt: "2020-11-11T22:00:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
@@ -25,20 +25,16 @@ healthScore: 99
 undervaluedScore: 81
 maintainers: ["matthiaskoenig"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4c139326c6a3e122e9548612145a38e85e24f427a71a5c9295c7d8b166d21532/matthiaskoenig/sbmlsim"
+postedAt: "2026-11-16T12:05:24.686Z"
 ---
 
 # sbmlsim: SBML simulation made easy
 
-`sbmlsim` is a collection of python utilities for the simulation of models in the [Systems Biology Markup Language](https://sbml.org) (SBML), built on [libroadrunner](https://libroadrunner.org).
+`sbmlsim` is a collection of python utilities for the simulation of models in the [Systems Biology Markup Language](https://sbml.org) (SBML), with four simulation engines, compared in the [benchmarks](https://matthiaskoenig.github.io/sbmlsim/benchmarks/): the Rust engine core of [sbmlsim-core](https://github.com/matthiaskoenig/sbmlsim-core) (the model compiled to WebAssembly), [libroadrunner](https://libroadrunner.org), which is the default and the reference the others are measured against, [COPASI](https://copasi.org) and [AMICI](https://github.com/AMICI-dev/AMICI).
 
 Features include
 
 - **timecourse simulations** - concatenated timecourses with changes of parameters and initial conditions, in the units of the model
 - **parameter scans** - simulations over dimensions of values, simulations and models, serially or in a pool of processes, with results as labeled N-dimensional arrays with units ([xarray](https://xarray.dev))
 - **simulation experiments** - models, datasets, simulations, tasks and figures of an experiment as one reproducible python object, with HTML and markdown reports
-- **parameter fitting** - optimization problems from experimental data with local and global optimizers, and PEtab archives
-- **sensitivity analysis** - local sensitivities and the global Morris, Sobol and FAST methods
-
-The documentation is available at [https://matthiaskoenig.github.io/sbmlsim](https://matthiaskoenig.github.io/sbmlsim).
-
-If you have any questions or issues please [open an…
+- **parameter fitting** - optimization problems from…
