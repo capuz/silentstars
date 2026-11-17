@@ -226,5 +226,9 @@
   {
     "repo": "Md-nexus/Hoard",
     "until": "2026-12-17"
+  },
+  {
+    "repo": "Daronely/metora-tempmail",
+    "until": "2026-12-17"
   }
 ]

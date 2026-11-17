@@ -52,11 +52,5 @@
     "issue": 95,
     "since": "2026-11-11",
     "until": "2027-02-09"
-  },
-  {
-    "repo": "Daronely/metora-tempmail",
-    "issue": 109,
-    "since": "2026-11-16",
-    "until": "2027-02-14"
   }
 ]
