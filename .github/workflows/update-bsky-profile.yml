@@ -7,6 +7,10 @@ on:
         description: "Dry run — mostrar el diff sin escribir nada"
         type: boolean
         default: true
+      update_banner:
+        description: "Subir assets/bsky-banner.png como banner del perfil"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -39,3 +43,4 @@ jobs:
           BSKY_IDENTIFIER:   ${{ secrets.BSKY_IDENTIFIER }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           DRY_RUN:           ${{ inputs.dry_run }}
+          UPDATE_BANNER:     ${{ inputs.update_banner }}
