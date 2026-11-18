@@ -167,22 +167,45 @@ export interface RelatedCandidate {
 const GENERIC_LANGUAGES = new Set(['HTML', 'CSS', 'SCSS', 'Shell', 'PowerShell', 'Batchfile', 'Dockerfile',
   'Makefile', 'Jupyter Notebook', 'Markdown', 'MDX', 'TeX', 'Nix', 'HCL']);
 
+// Below this a match is noise. Against the ~440-project catalog it takes one
+// topic shared by at most ~3 projects, or two mid-frequency ones; a lone
+// "open-source"/"education", with or without the language, stays out.
+const MIN_RELATED_SCORE = 5;
+const LANGUAGE_WEIGHT = 0.5;
+
 /**
- * Projects that share topics (×2 each) or the main language (×1) with `target`;
- * a generic language (HTML, Shell…) adds nothing.
- * Archived projects and the target itself are skipped; ties go to the higher
- * undervalued score. Callers pre-filter what is listable.
+ * Projects related to `target`, scored by rarity (IDF over `all`): each shared
+ * topic adds ln(N / projects with that topic), and the same main language adds
+ * half its own IDF, so it can tip a match but never make one alone. A generic
+ * language (HTML, Shell…) adds nothing. Scores under MIN_RELATED_SCORE are
+ * dropped, so a page may get none. Archived projects and the target itself
+ * are skipped; ties go to the higher undervalued score. Callers pre-filter
+ * what is listable.
  */
 export function relatedProjects<T extends RelatedCandidate>(target: RelatedCandidate, all: T[], n = 4): T[] {
+  const N = all.length;
+  const topicDf = new Map<string, number>();
+  const langDf = new Map<string, number>();
+  for (const p of all) {
+    for (const t of new Set(p.topics.map(t => t.toLowerCase()))) topicDf.set(t, (topicDf.get(t) ?? 0) + 1);
+    if (p.language) langDf.set(p.language, (langDf.get(p.language) ?? 0) + 1);
+  }
+  const idf = (df: number | undefined) => (df ? Math.log(N / df) : 0);
+
   const topics = new Set(target.topics.map(t => t.toLowerCase()));
+  const langBonus = target.language && !GENERIC_LANGUAGES.has(target.language)
+    ? LANGUAGE_WEIGHT * idf(langDf.get(target.language))
+    : 0;
   return all
     .filter(p => p.repo !== target.repo && p.status !== 'archived')
     .map(p => {
-      const shared = p.topics.filter(t => topics.has(t.toLowerCase())).length;
-      const lang = target.language && p.language === target.language && !GENERIC_LANGUAGES.has(target.language) ? 1 : 0;
-      return { p, score: shared * 2 + lang };
+      const shared = new Set(p.topics.map(t => t.toLowerCase()).filter(t => topics.has(t)));
+      let score = 0;
+      for (const t of shared) score += idf(topicDf.get(t));
+      if (p.language === target.language) score += langBonus;
+      return { p, score };
     })
-    .filter(x => x.score > 0)
+    .filter(x => x.score >= MIN_RELATED_SCORE)
     .sort((a, b) => b.score - a.score || b.p.undervaluedScore - a.p.undervaluedScore)
     .slice(0, n)
     .map(x => x.p);
