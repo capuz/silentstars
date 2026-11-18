@@ -14,7 +14,7 @@ export const GET: APIRoute = async ({ site }) => {
   const projects = (await getCollection('projects')).filter(p => !isExcludedOwner(p.data.repo));
   const today = new Date().toISOString().slice(0, 10);
 
-  const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/', 'weekly/'];
+  const staticRoutes = ['', 'about/', 'submit/', 'projects/', 'at-risk/', 'resurrections/', 'weekly/', 'first-issues/'];
 
   const entries = [
     ...staticRoutes.map((r) => ({ url: `${root}${r}`, lastmod: today })),

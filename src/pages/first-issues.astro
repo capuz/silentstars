@@ -1,0 +1,346 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { withRef } from '../lib/ref.ts';
+import { isListable } from '../../scripts/discovery-filter.ts';
+import type { FirstIssuesJson, IssueKind } from '../../scripts/first-issues.ts';
+import firstIssuesJson from '../../data/first-issues.json';
+
+const data = firstIssuesJson as FirstIssuesJson;
+const pages = new Map<string, CollectionEntry<'projects'>>((await getCollection('projects')).map(p => [p.slug, p]));
+
+// Same listing rule as /projects/, so every card links to a page that exists.
+const entries = data.projects.flatMap(fi => {
+  const page = pages.get(fi.slug);
+  if (!page || page.data.status === 'archived' || !isListable(page.data.repo, page.data.stars)) return [];
+  const d = page.data.description.trim();
+  if (!d || d.toLowerCase() === page.data.name.toLowerCase()) return [];
+  return [{ fi, page }];
+});
+
+const issueCount = entries.reduce((n, e) => n + e.fi.issues.length, 0);
+const languages = [...new Set(entries.map(e => e.page.data.language).filter((l): l is string => !!l))]
+  .map(l => ({ l, n: entries.filter(e => e.page.data.language === l).length }))
+  .sort((a, b) => b.n - a.n || a.l.localeCompare(b.l))
+  .map(x => x.l);
+const kinds: IssueKind[] = ['good first issue', 'help wanted'];
+
+const now = Date.parse(data.collectedAt);
+function age(iso: string): string {
+  const days = Math.floor((now - Date.parse(iso)) / 86_400_000);
+  if (days < 1) return 'today';
+  if (days < 14) return `${days}d ago`;
+  if (days < 60) return `${Math.round(days / 7)}w ago`;
+  if (days < 365) return `${Math.round(days / 30)}mo ago`;
+  return `${Math.round(days / 365)}y ago`;
+}
+---
+<Base
+  title="First issues"
+  description="Open good first issue and help wanted issues in active open source projects under the radar. Nobody assigned, no pull request linked yet."
+>
+  <div class="container section">
+    <header class="page-header">
+      <p class="eyebrow">// first_issues</p>
+      <h1>First issues, still open</h1>
+      <p class="lead">
+        Issues labelled <code>good first issue</code> or <code>help wanted</code> in active projects
+        under the radar. Nobody is assigned and no pull request is linked yet.
+      </p>
+      <p class="lead">
+        Each project shows how many pull requests from outside contributors it merged in the
+        last six months, and roughly how much code there is to read.
+      </p>
+      <p class="note">
+        // checked nightly: an issue may have been picked up since. Say hi on the issue before you start.
+      </p>
+    </header>
+
+    {entries.length === 0 ? (
+      <p class="empty">// no open first issues right now. check back tomorrow.</p>
+    ) : (
+      <>
+        <div class="filters" id="fi-filters">
+          <div class="filter-group">
+            <span class="filter-label">label</span>
+            {kinds.map(k => <button class="filter-btn" data-filter-kind={k}>{k}</button>)}
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">language</span>
+            {languages.map(l => <button class="filter-btn" data-filter-lang={l}>{l}</button>)}
+          </div>
+          <button class="filter-reset" id="fi-reset">reset</button>
+        </div>
+
+        <p class="count" id="fi-count" data-total={`${issueCount} issues in ${entries.length} projects`}>
+          // {issueCount} issues in {entries.length} projects
+        </p>
+
+        <div class="fi-list">
+          {entries.map(({ fi, page }) => {
+            const s = fi.signals;
+            return (
+              <article class="fi-card" id={fi.slug} data-lang={page.data.language ?? ''}>
+                <header class="fi-head">
+                  <h2><a href={`/projects/${fi.slug}/`}>{page.data.name}</a></h2>
+                  <span class="fi-repo">{fi.repo}</span>
+                  {page.data.language && <span class="fi-lang">{page.data.language}</span>}
+                </header>
+                <p class="fi-desc">{page.data.description}</p>
+                <ul class="fi-signals">
+                  {s.outsidePRsMerged > 0 && (
+                    <li>{s.outsidePRsMerged}{s.outsidePRsCapped ? '+' : ''} outside PR{s.outsidePRsMerged === 1 ? '' : 's'} merged · 6 mo</li>
+                  )}
+                  {s.approxKloc && <li>~{s.approxKloc}k lines of code</li>}
+                  <li>last commit {age(fi.lastCommitAt)}</li>
+                </ul>
+                <ul class="fi-issues">
+                  {fi.issues.map(i => (
+                    <li class="fi-issue" data-kind={i.kind}>
+                      <span class={`fi-kind ${i.kind === 'good first issue' ? 'is-gfi' : 'is-hw'}`}>{i.kind}</span>
+                      <a href={withRef(i.url)} target="_blank" rel="noopener" class="fi-title">{i.title}</a>
+                      <span class="fi-meta">#{i.number} · opened {age(i.createdAt)} · {i.comments} comment{i.comments === 1 ? '' : 's'}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
+        </div>
+
+        <p class="empty-state" id="fi-empty" hidden>No issues match the selected filters.</p>
+      </>
+    )}
+  </div>
+</Base>
+
+<script>
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.fi-card'));
+  const empty = document.getElementById('fi-empty');
+  const count = document.getElementById('fi-count');
+  let kind = '';
+  let lang = '';
+
+  function apply() {
+    let shownIssues = 0;
+    let shownCards = 0;
+    for (const card of cards) {
+      const langOk = !lang || card.dataset.lang === lang;
+      let visible = 0;
+      card.querySelectorAll<HTMLElement>('.fi-issue').forEach(li => {
+        const show = langOk && (!kind || li.dataset.kind === kind);
+        li.hidden = !show;
+        if (show) visible++;
+      });
+      card.hidden = visible === 0;
+      shownIssues += visible;
+      if (visible > 0) shownCards++;
+    }
+    if (empty) empty.hidden = shownCards > 0;
+    if (count) {
+      count.textContent = kind || lang
+        ? `// ${shownIssues} issue${shownIssues === 1 ? '' : 's'} in ${shownCards} project${shownCards === 1 ? '' : 's'}`
+        : `// ${count.dataset.total}`;
+    }
+  }
+
+  // Single choice per group: clicking the active button clears it.
+  function bind(attr: 'filterKind' | 'filterLang', set: (v: string) => void, get: () => string) {
+    const btns = Array.from(document.querySelectorAll<HTMLButtonElement>(`[data-${attr === 'filterKind' ? 'filter-kind' : 'filter-lang'}]`));
+    for (const btn of btns) {
+      btn.addEventListener('click', () => {
+        const v = btn.dataset[attr]!;
+        set(get() === v ? '' : v);
+        for (const b of btns) b.classList.toggle('active', b.dataset[attr] === get());
+        apply();
+      });
+    }
+  }
+  bind('filterKind', v => { kind = v; }, () => kind);
+  bind('filterLang', v => { lang = v; }, () => lang);
+
+  document.getElementById('fi-reset')?.addEventListener('click', () => {
+    kind = '';
+    lang = '';
+    document.querySelectorAll('#fi-filters .filter-btn').forEach(b => b.classList.remove('active'));
+    apply();
+  });
+</script>
+
+<style>
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--thriving);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .page-header { max-width: 660px; margin-bottom: 2.5rem; }
+  .page-header h1 { font-size: 1.75rem; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+  .lead {
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+    font-size: 0.925rem;
+  }
+  .lead code, .note code {
+    font-family: var(--font-mono);
+    background: var(--bg-code);
+    padding: 0.1em 0.35em;
+    border-radius: 2px;
+    font-size: 0.85em;
+  }
+  .note {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+  .empty, .count {
+    font-family: var(--font-mono);
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  .empty { font-size: 0.75rem; margin-bottom: 3rem; }
+  .count { font-size: 0.65rem; margin-bottom: 1.25rem; }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding: 0.875rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .filter-group { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem; }
+  .filter-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    margin-right: 0.2rem;
+    letter-spacing: 0.04em;
+  }
+  .filter-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.2em 0.6em;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--text-muted); color: var(--text-muted); }
+  .filter-btn.active { border-color: var(--revived); color: var(--revived); }
+  .filter-reset {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+  .filter-reset:hover { color: var(--text); }
+
+  .fi-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr));
+    gap: 0.875rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+  .fi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.2rem;
+    min-width: 0;
+    scroll-margin-top: 5rem;
+  }
+  .fi-card:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .fi-card[hidden], .fi-issue[hidden] { display: none; }
+  .fi-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.6rem; margin-bottom: 0.4rem; }
+  .fi-head h2 { font-size: 1.05rem; letter-spacing: -0.01em; margin: 0; }
+  .fi-head h2 a { color: var(--text); text-decoration: none; }
+  .fi-head h2 a:hover { color: var(--accent); }
+  .fi-repo, .fi-lang {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-dim);
+    overflow-wrap: anywhere;
+  }
+  .fi-lang { margin-left: auto; }
+  .fi-desc {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .fi-signals {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .fi-signals li {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 0.15em 0.5em;
+  }
+  .fi-issues { list-style: none; padding: 0; margin: 0; border-top: 1px dashed var(--border); }
+  .fi-issue {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.15rem 0.6rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .fi-issue:last-child { border-bottom: none; padding-bottom: 0; }
+  .fi-kind {
+    grid-row: span 2;
+    align-self: start;
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.03em;
+    padding: 0.2em 0.45em;
+    border-radius: 2px;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+    margin-top: 0.15rem;
+  }
+  .fi-kind.is-gfi { color: var(--thriving); }
+  .fi-kind.is-hw { color: var(--newborn); }
+  .fi-title {
+    color: var(--text);
+    font-size: 0.875rem;
+    line-height: 1.45;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+  .fi-title:hover { color: var(--accent); text-decoration: underline; }
+  .fi-meta { font-family: var(--font-mono); font-size: 0.6rem; color: var(--text-dim); }
+  .empty-state {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 3rem 0;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+  }
+</style>

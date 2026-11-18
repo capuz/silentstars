@@ -132,13 +132,16 @@ export function whyItsHere(f: ProjectFacts, now = new Date()): string[] {
 
 export interface HelpLink { label: string; href: string; }
 
-export function helpLinks(f: ProjectFacts): HelpLink[] {
+export function helpLinks(f: ProjectFacts, opts: { firstIssuesSlug?: string } = {}): HelpLink[] {
   const links: HelpLink[] = [];
   if (f.homepage) links.push({ label: 'Try it', href: f.homepage });
   links.push({ label: 'Star it', href: f.url });
+  // Listed on /first-issues/: send people to the issues nobody has taken yet.
+  if (opts.firstIssuesSlug) {
+    links.push({ label: 'Help with an open issue', href: `/first-issues/#${opts.firstIssuesSlug}` });
   // needs_contributors means open issues labelled "good first issue" or "help wanted"
   // (collect.ts); /contribute would list only the first, so search for both.
-  if (f.tags.includes('needs_contributors')) {
+  } else if (f.tags.includes('needs_contributors')) {
     const q = encodeURIComponent('is:issue is:open label:"good first issue","help wanted"');
     links.push({ label: 'Help with an open issue', href: `${f.url}/issues?q=${q}` });
   }
