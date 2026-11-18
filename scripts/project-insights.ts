@@ -136,8 +136,12 @@ export function helpLinks(f: ProjectFacts): HelpLink[] {
   const links: HelpLink[] = [];
   if (f.homepage) links.push({ label: 'Try it', href: f.homepage });
   links.push({ label: 'Star it', href: f.url });
-  if (f.tags.includes('needs_contributors')) links.push({ label: 'Pick a good first issue', href: `${f.url}/contribute` });
-  links.push({ label: 'Give feedback', href: `${f.url}/issues/new/choose` });
+  // needs_contributors means open issues labelled "good first issue" or "help wanted"
+  // (collect.ts); /contribute would list only the first, so search for both.
+  if (f.tags.includes('needs_contributors')) {
+    const q = encodeURIComponent('is:issue is:open label:"good first issue","help wanted"');
+    links.push({ label: 'Help with an open issue', href: `${f.url}/issues?q=${q}` });
+  }
   const seen = new Set<string>();
   for (const raw of f.fundingLinks) {
     const { platform, url } = parseFunding(raw);

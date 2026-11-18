@@ -107,17 +107,24 @@ test('whyItsHere covers every tag and never says "small"', () => {
 
 // ── helpLinks ─────────────────────────────────────────────────
 
-test('helpLinks always offers star and feedback, adds try/contribute/sponsor when available', () => {
+test('helpLinks always offers star, adds try/open issues/sponsor when available', () => {
   const basic = helpLinks(facts());
-  assert.deepEqual(basic.map(l => l.label), ['Star it', 'Give feedback']);
-  assert.equal(basic[1]!.href, 'https://github.com/a/proj/issues/new/choose');
+  assert.deepEqual(basic.map(l => l.label), ['Star it']);
 
   const full = helpLinks(facts({
     homepage: 'https://proj.dev', tags: ['needs_contributors'], fundingLinks: ['KO_FI:https://ko-fi.com/x'],
   }));
-  assert.deepEqual(full.map(l => l.label), ['Try it', 'Star it', 'Pick a good first issue', 'Give feedback', 'Sponsor on ko fi']);
-  assert.equal(full.find(l => l.label.startsWith('Pick'))!.href, 'https://github.com/a/proj/contribute');
+  assert.deepEqual(full.map(l => l.label), ['Try it', 'Star it', 'Help with an open issue', 'Sponsor on ko fi']);
+  // Both labels that earn needs_contributors, not just "good first issue" (/contribute lists only that one).
+  const issues = full.find(l => l.label === 'Help with an open issue')!.href;
+  assert.equal(issues, 'https://github.com/a/proj/issues?q='
+    + encodeURIComponent('is:issue is:open label:"good first issue","help wanted"'));
   assert.equal(full.at(-1)!.href, 'https://ko-fi.com/x');
+});
+
+test('helpLinks never sends visitors to open a new issue', () => {
+  const all = helpLinks(facts({ homepage: 'https://proj.dev', tags: ['needs_contributors'], fundingLinks: ['GITHUB:https://github.com/sponsors/x'] }));
+  for (const l of all) assert.doesNotMatch(l.href, /\/issues\/new/);
 });
 
 // ── relatedProjects ───────────────────────────────────────────
