@@ -122,6 +122,14 @@ test('helpLinks always offers star, adds try/open issues/sponsor when available'
   assert.equal(full.at(-1)!.href, 'https://ko-fi.com/x');
 });
 
+test('helpLinks points to the first issues section when the project is listed there', () => {
+  const links = helpLinks(facts({ tags: ['needs_contributors'] }), { firstIssuesSlug: 'a--proj' });
+  assert.equal(links.find(l => l.label === 'Help with an open issue')!.href, '/first-issues/#a--proj');
+  // Listed there even when the tag is missing: the section is the source of truth.
+  const untagged = helpLinks(facts(), { firstIssuesSlug: 'a--proj' });
+  assert.equal(untagged.find(l => l.label === 'Help with an open issue')!.href, '/first-issues/#a--proj');
+});
+
 test('helpLinks never sends visitors to open a new issue', () => {
   const all = helpLinks(facts({ homepage: 'https://proj.dev', tags: ['needs_contributors'], fundingLinks: ['GITHUB:https://github.com/sponsors/x'] }));
   for (const l of all) assert.doesNotMatch(l.href, /\/issues\/new/);

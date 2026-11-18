@@ -11,6 +11,7 @@ import WeeklySpark from '../../components/WeeklySpark.astro';
 import { listEditions, projectSeries, isoWeekKey, type History, type ProjectSeries } from '../../../scripts/weekly.ts';
 import { editionsByRepo, starsSince, whyItsHere, helpLinks, relatedProjects, type FeaturedIn } from '../../../scripts/project-insights.ts';
 import historyJson from '../../../data/history.json';
+import firstIssuesJson from '../../../data/first-issues.json';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -157,7 +158,8 @@ const sinceFeatured = featuredAt
 const featuredDate = featuredAt ? featuredAt.slice(0, 10) : null;
 const sectionLabels = { newcomers: 'new', rising: 'rising', revived: 'back' } as const;
 const why  = whyItsHere(d);
-const help = helpLinks(d);
+const onFirstIssues = firstIssuesJson.projects.some(p => p.slug === project.slug);
+const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.slug } : {});
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage} noindex={isExcludedOwner(d.repo)}>
   <div class="container section">
@@ -332,7 +334,9 @@ const help = helpLinks(d);
         <p class="panel-label" id="help-label">// how to help</p>
         <div class="help-links insight-body">
           {help.map(l => (
-            <a href={withRef(l.href)} target="_blank" rel="noopener" class="help-link">{l.label} ↗</a>
+            l.href.startsWith('/')
+              ? <a href={l.href} class="help-link">{l.label} →</a>
+              : <a href={withRef(l.href)} target="_blank" rel="noopener" class="help-link">{l.label} ↗</a>
           ))}
         </div>
       </section>

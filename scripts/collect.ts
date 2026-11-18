@@ -16,6 +16,10 @@ import { claudeEnabled } from './claude-cli.ts';
 import { stripReadmeNoise, clipReadme } from './readme-clean.ts';
 import { looksNonEnglish, createTranslator, loadTranslationCache, saveTranslationCache } from './collect-i18n.ts';
 import { slugify, type PostedEntry } from './post-shared.ts';
+import {
+  buildFirstIssueProject, rankFirstIssueProjects, MERGED_PRS_FETCHED,
+  type RawIssue, type RawMergedPR, type FirstIssueProject, type FirstIssuesJson,
+} from './first-issues.ts';
 import { applyRenames, absorbAliasPages } from './posted-renames.ts';
 import { isExcludedRepo, isExcludedOwner } from './discovery-filter.ts';
 import { rewriteRelativeLinks, rewriteRelativeImages } from './readme-links.ts';
@@ -69,6 +73,8 @@ interface RepoData {
   openGraphImageUrl?: string;
   fundingLinks?: Array<{ platform: string; url: string }>;
   discussionCount?: number;
+  goodFirstIssues?: number;
+  helpWantedIssues?: number;
 }
 
 interface LatestJson {
@@ -104,6 +110,8 @@ interface GraphQLRepo {
   mergedPRs: { totalCount: number };
   helpWantedIssues: { totalCount: number };
   goodFirstIssues: { totalCount: number };
+  contribIssues: { nodes: RawIssue[] };
+  recentMergedPRs: { nodes: RawMergedPR[] };
   readme: { text: string } | null;
   hasLicense: { id: string } | null;
   repositoryTopics: { nodes: Array<{ topic: { name: string } }> };
@@ -161,6 +169,19 @@ query($owner: String!, $name: String!, $since: GitTimestamp!) {
     mergedPRs: pullRequests(states: MERGED) { totalCount }
     helpWantedIssues: issues(states: OPEN, labels: ["help wanted"])  { totalCount }
     goodFirstIssues:  issues(states: OPEN, labels: ["good first issue"]) { totalCount }
+    contribIssues: issues(first: 15, states: OPEN, labels: ["good first issue", "help wanted"],
+                          orderBy: { field: UPDATED_AT, direction: DESC }) {
+      nodes {
+        number title url createdAt updatedAt locked
+        labels(first: 5) { nodes { name } }
+        assignees { totalCount }
+        comments { totalCount }
+        closedByPullRequestsReferences(first: 1) { totalCount }
+      }
+    }
+    recentMergedPRs: pullRequests(last: ${MERGED_PRS_FETCHED}, states: MERGED) {
+      nodes { mergedAt authorAssociation }
+    }
     readme:           object(expression: "HEAD:README.md") { ... on Blob { text } }
     hasLicense:       object(expression: "HEAD:LICENSE")   { id }
     repositoryTopics(first: 10) { nodes { topic { name } } }
@@ -600,6 +621,7 @@ async function main() {
   // Non-English pages wait here and are translated together after the loop.
   const pendingTranslation: Array<{ repoStr: string; data: RepoData; slug: string; mdPath: string; cleanedReadme: string }> = [];
   const BATCH_SIZE = 10;
+  const firstIssueCandidates: FirstIssueProject[] = [];
 
   for (let i = 0; i < repos.length; i += BATCH_SIZE) {
     const batch = repos.slice(i, i + BATCH_SIZE);
@@ -740,9 +762,24 @@ async function main() {
         openGraphImageUrl: raw.openGraphImageUrl || undefined,
         fundingLinks: raw.fundingLinks?.length ? raw.fundingLinks : undefined,
         discussionCount: raw.hasDiscussionsEnabled ? raw.discussions.totalCount : undefined,
+        goodFirstIssues: raw.goodFirstIssues.totalCount,
+        helpWantedIssues: raw.helpWantedIssues.totalCount,
       };
 
       results.push(data);
+
+      if (!raw.isArchived) {
+        const fi = buildFirstIssueProject({
+          repo: raw.nameWithOwner,
+          slug: slugify(raw.nameWithOwner),
+          lastCommitAt,
+          issues: raw.contribIssues.nodes,
+          mergedPRs: raw.recentMergedPRs.nodes,
+          languagesTotalSize: raw.languages?.totalSize ?? 0,
+          goodFirstIssueCount: raw.goodFirstIssues.totalCount,
+        }, now);
+        if (fi) firstIssueCandidates.push(fi);
+      }
 
       const isPromoted = promotedSet.has(repoStr.toLowerCase());
       const isPosted    = postedRepoSet.has(repoStr.toLowerCase());
@@ -840,6 +877,14 @@ async function main() {
 
   const output: LatestJson = { collectedAt: new Date().toISOString(), projects: results };
   writeFileSync(latestPath, JSON.stringify(output, null, 2));
+
+  // Only projects with a page: /first-issues/ links each card to it.
+  const firstIssues: FirstIssuesJson = {
+    collectedAt: output.collectedAt,
+    projects: rankFirstIssueProjects(firstIssueCandidates.filter(p => writtenSlugs.has(p.slug))),
+  };
+  writeFileSync(resolve(ROOT, 'data/first-issues.json'), JSON.stringify(firstIssues, null, 2));
+  console.log(`🧩  First issues: ${firstIssues.projects.length} projects → data/first-issues.json`);
 
   console.log(`\n✅  Collected ${results.length} projects → data/latest.json`);
 }
