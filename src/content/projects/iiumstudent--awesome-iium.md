@@ -39,11 +39,3 @@ postedAt: "2026-08-19T04:12:56.778Z"
 _Read this in other languages: [Bahasa Melayu](https://iiumstudent.github.io/Awesome-IIUM/ms/),
 [中文](https://iiumstudent.github.io/Awesome-IIUM/zh/), [العربية](https://iiumstudent.github.io/Awesome-IIUM/ar/),
 [日本語](https://iiumstudent.github.io/Awesome-IIUM/ja/)_
-
-## Table of Contents
-
-- [Welcome](https://github.com/iiumstudent/Awesome-IIUM#welcome) - Introduction to Awesome IIUM.
-- [Admissions](https://iiumstudent.github.io/Awesome-IIUM/categories/admissions/) - How to apply to IIUM.
-- [Academics](https://iiumstudent.github.io/Awesome-IIUM/categories/academics/) - Academic resources and guides.
-- [Postgraduate Studies](https://iiumstudent.github.io/Awesome-IIUM/categories/postgraduate/) - Master's and PhD study.
-- [Fees &…

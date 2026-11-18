@@ -20,7 +20,7 @@ createdAt: "2025-04-01T12:25:32Z"
 lastCommitAt: "2026-10-20T11:11:14Z"
 status: "quiet"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 86
+healthScore: 85
 undervaluedScore: 76
 maintainers: ["koushik369mondal", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/74eab599f1a15afc9d9f913123e9c2faef48b9a02bc4b888ebf1d8df768f2c2e/koushik369mondal/WanderLust"
@@ -47,8 +47,3 @@ postedAt: "2026-07-14T06:02:00.094Z"
 - 📱 **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
 - 🔐 **User Authentication** - Secure login/signup system with Passport.js
 - ✏️ **Full CRUD Operations** - Create, Read, Update, Delete listings and reviews
-
-### Advanced Features
-- 🤖 **AI-Powered Packing List Generator** - Smart travel packing lists with weather integration
-- 🌤️ **Real-Time Weather Integration** - Live weather data for all destinations
-- 📅 **Holiday…

@@ -41,9 +41,3 @@ The metal-stack primarily consists of a control plane and partitions that regist
 It's convenient to use ansible-galaxy in order to use this project. The roles of this repository depend on roles, modules and plugins of the project [ansible-common](https://github.com/metal-stack/ansible-common).
 
 For your deployment project, set up a `requirements.yml`:
-
-```yaml
-- src: https://github.com/metal-stack/ansible-common.git
-  name: ansible-common
-  version: master # use release versions if you want to have stable deployment!
-- src: https://github.com/metal-stack/metal-roles.git…

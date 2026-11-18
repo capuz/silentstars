@@ -15,7 +15,7 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2026-06-05T01:26:54Z"
-lastCommitAt: "2026-11-17T14:24:53Z"
+lastCommitAt: "2026-11-18T02:56:15Z"
 lastReleaseAt: "2026-08-25T23:07:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -45,5 +45,3 @@ postedAt: "2026-11-09T03:37:22.051Z"
 ◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Exposure Matrix (Excel)</a></td>
-
-BioDefense Intelligence Division is a…

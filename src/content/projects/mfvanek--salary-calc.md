@@ -79,8 +79,3 @@ mvn spring-boot:run -Dspring-boot.run.profiles=extern -Dspring-boot.run.jvmArgum
 ```
 mvn clean spring-boot:build-image -DskipTests -DskipSpotbugs=true
 ```
-
-### Build native image
-
-```
-mvn clean spring-boot:build-image -DskipTests…

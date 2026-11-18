@@ -16,11 +16,11 @@ watchers: 13
 contributors: 55
 recentReleases: 0
 createdAt: "2015-11-27T14:48:12Z"
-lastCommitAt: "2026-11-16T09:27:12Z"
+lastCommitAt: "2026-11-18T11:58:01Z"
 lastReleaseAt: "2016-08-25T14:59:08Z"
 status: "watched"
 tags: ["legacy_hero", "community_watch", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 81
 maintainers: ["transifex-integration[bot]", "esa-coorp", "silouone"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f87159e77b02fc80a333f059a300c4b09419d8e18c7500c30590afd119adcc1c/CoorpAcademy/components"
@@ -71,8 +71,3 @@ yarn add myPackage
 ```bash
 lerna add dependency-name --scope=package-name
 ```
-
-### run a specific test file:
-
-```bash
-lerna run --scope @coorpacademy/components…

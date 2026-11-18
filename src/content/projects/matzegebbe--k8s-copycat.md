@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-16T08:22:15Z"
 lastReleaseAt: "2025-09-25T07:02:34Z"
 status: "thriving"
 tags: []
-healthScore: 98
+healthScore: 97
 undervaluedScore: 78
 maintainers: ["dependabot[bot]", "matzegebbe"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d0e64a611cc07ee33b273cd31e38580a27937bd8687805df0b9efaa503928d5c/matzegebbe/k8s-copycat"
@@ -44,5 +44,3 @@ flowchart LR
     U -->|image manifests and layers| C
     C -->|copies images| R[Your registry]
 ```
-
-The controller watches **Deployments, StatefulSets, DaemonSets, Jobs, CronJobs, and Pods**, including regular, init, and ephemeral…

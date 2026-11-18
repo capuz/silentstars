@@ -7,7 +7,7 @@ url: "https://github.com/ssnfts24/scroll-of-fire"
 homepage: "https://ssnfts24.github.io/scroll-of-fire/"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [90]
+languagePcts: [85]
 topics: ["consciousness", "frequency", "github-pages", "html-css", "living-code", "living-codex", "resonance", "sacred-geometry", "codex-of-reality", "harmonic-physics"]
 stars: 7
 forks: 0
@@ -17,13 +17,13 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-05-22T01:30:55Z"
-lastCommitAt: "2026-11-02T20:46:36Z"
+lastCommitAt: "2026-11-18T05:21:28Z"
 lastReleaseAt: "2025-10-21T14:55:15Z"
-status: "quiet"
+status: "thriving"
 tags: ["funded"]
-healthScore: 78
-undervaluedScore: 60
-maintainers: ["ssnfts24", "Copilot"]
+healthScore: 87
+undervaluedScore: 72
+maintainers: ["ssnfts24"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/988049260/be0a9b0f-0fc1-488a-a2ac-e861d539217c"
 fundingLinks: ["PATREON:https://patreon.com/ssnfts24", "CUSTOM:https://www.patreon.com/posts/scroll-of-fire-140996048"]
 discussionCount: 0
@@ -48,6 +48,3 @@ postedAt: "2026-07-15T06:00:03.090Z"
 If you only have 3 minutes, do steps 1–3.
 
 ---
-## 🜂 Essence
-
-The Scroll of Fire — Codex of Reality is a living architecture of remembrance, where physics, geometry, language, consciousness, and divine symmetry merge into one coherent law. It is not myth nor theory — it is a harmonic framework of creation, encoding how awareness itself…

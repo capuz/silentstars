@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-16T12:44:03Z"
 lastReleaseAt: "2026-11-05T18:59:50Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 44
 maintainers: ["Deftr0y"]
 openGraphImageUrl: "https://opengraph.githubassets.com/739a2f789755f5c0d08aede00babbe0a834a50a614c8f53788c8981ee5f95406/Deftr0y/PeerBrush"
@@ -39,5 +39,3 @@ postedAt: "2026-11-06T12:25:37.144Z"
 PeerBrush is an image editing application designed from the ground up for humans and AI agents to work on the same project together.
 
 Instead of treating AI as a separate prompt box, PeerBrush gives both the user and the agent access to the actual editing environment, including layers, selections, masks, transforms, brushes, effects, and document state.
-
-The goal is simple: **Make AI a participant in the creative workflow, not just a…

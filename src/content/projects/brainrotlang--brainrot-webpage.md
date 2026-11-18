@@ -80,8 +80,3 @@ yarn build
 ```
 
 - Outputs a production-ready build in the `build/` folder.
-
-## Deploying: the host must fall back to `index.html`
-
-This is a single-page app with real client-side routes (`/tour/...`), so any
-URL that is not a file on disk has to be…

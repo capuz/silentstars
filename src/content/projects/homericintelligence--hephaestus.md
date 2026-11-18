@@ -11,12 +11,12 @@ languagePcts: [99]
 stars: 8
 forks: 1
 openIssues: 28
-closedIssues: 1745
+closedIssues: 1749
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2025-12-29T19:05:37Z"
-lastCommitAt: "2026-11-17T00:10:21Z"
+lastCommitAt: "2026-11-17T22:35:44Z"
 lastReleaseAt: "2026-06-13T03:34:21Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -57,5 +57,3 @@ import hephaestus
 
 print(hephaestus.__version__)
 ```
-
-> **Upgrading?** When moving across a major version,…

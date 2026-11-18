@@ -46,9 +46,3 @@ framework patterns, server-side rendering, and TypeScript integration.
 
 However, a direct integration isn't always straightforward. Different types
 of applications or deployment scenarios might warrant different approaches:
-
-- **Framework Integration:** OAuth and auth flows operate at the HTTP level, while Astro
-  uses integrations, endpoints, and components. A proper integration should bridge this
-  gap by providing Astro-native primitives for authentication and authorization
-  while maintaining the full OAuth provider ecosystem compatibility.
-- **HTTP Request Handling:** Astro’s…

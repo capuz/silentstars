@@ -16,10 +16,10 @@ watchers: 7
 contributors: 56
 recentReleases: 0
 createdAt: "2024-10-21T02:01:43Z"
-lastCommitAt: "2026-11-16T17:32:31Z"
+lastCommitAt: "2026-11-18T08:41:28Z"
 status: "thriving"
 tags: ["needs_contributors", "fork_magnet"]
-healthScore: 90
+healthScore: 91
 undervaluedScore: 84
 maintainers: ["rw-jarvis-bot[bot]", "wjf3121", "xuhui-lu"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/875864923/75401980-9a68-47bb-b0d8-4c7874e52b4c"
@@ -70,4 +70,4 @@ If you prefer a global install:
 ```
 npm i -g mint
 mint dev
-```…
+```

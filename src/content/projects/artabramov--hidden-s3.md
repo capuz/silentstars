@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-10T04:13:54Z"
 lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 38
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/214cfa7238d4dd41fa9f4813ef9b0f5b6aefbd076f239bc835f24fd4d4e8006b/artabramov/hidden-s3"
@@ -52,5 +52,3 @@ The encrypted filesystem uses a `POSIX` layout, storing S3 objects as
 regular files and directories together with IAM data. This allows files
 and directories to be transferred directly into or out of the storage
 without conversion.
-
-For emergency recovery, the…

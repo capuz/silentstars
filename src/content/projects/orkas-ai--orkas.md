@@ -9,22 +9,22 @@ language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
 languagePcts: [61, 37]
 topics: ["agent-collaboration", "agent-orchestration", "agent-team", "ai-assistant", "ai-team", "ai-workflow", "autonomous-agents", "local-first", "multi-agent", "multi-agent-system"]
-stars: 9427
+stars: 9450
 forks: 561
 openIssues: 10
 closedIssues: 7
 watchers: 220
-contributors: 17
+contributors: 16
 recentReleases: 0
 createdAt: "2026-04-29T12:19:08Z"
-lastCommitAt: "2026-11-17T03:07:21Z"
+lastCommitAt: "2026-11-18T11:09:37Z"
 lastReleaseAt: "2026-07-09T13:38:36Z"
 status: "thriving"
 tags: []
 healthScore: 87
 undervaluedScore: 16
 maintainers: ["Orkas-AI", "vaintwyt", "BlueSkyID666"]
-openGraphImageUrl: "https://opengraph.githubassets.com/43522be29731529150fe37b7eacd5416022218bf0a01ac71986a2328a272050f/Orkas-AI/Orkas"
+openGraphImageUrl: "https://opengraph.githubassets.com/976cda45d089d7ca20c8497e9a0149c5ddbf5cf4e13267085a60e981891fc045/Orkas-AI/Orkas"
 promoted: true
 postedAt: "2026-10-21T21:20:39.948Z"
 ---
@@ -36,5 +36,3 @@ postedAt: "2026-10-21T21:20:39.948Z"
 Orkas is an open-source (MIT), local-first multi-agent desktop app — an AI assistant that works as a team. Tell the **Commander** what you need: it finishes many tasks on its own, and for bigger work it plans the steps and brings in specialist agents along with the coding and personal agents you already use — **Claude Code, Codex, OpenCode, OpenClaw and Hermes-Agent** — to work on it together.
 
 Orkas is built to keep a project moving, not just answer one prompt. A **project** holds the goal, rules, memory and files, so every new conversation picks up where the last one left off. **To-dos** split the work between people and agents, **Auto-advance** lets the team take on the next to-do by itself, and **scheduled automations** repeat routine work hourly, daily, weekly or monthly. All your data stays on your computer, and finished work comes back for your review — so you can trust Orkas with the ongoing work of your business.
-
-**[⬇ Download Orkas for macOS & Windows](https://orkas.ai/download/?source=gh-orkas&entry_point=github_readme&download=1)** — free, with…

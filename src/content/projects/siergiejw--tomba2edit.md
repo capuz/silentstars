@@ -57,13 +57,3 @@ community.
 The level editor runs the area's own code on a MIPS interpreter, so what
 you see is what the game would place: the level, its background, every
 object, every animation.
-
-### Level geometry (MDAT), with its drawmap and textures
-
-### Collision (SCLD)
-
-### Text and translation, with the in-game dialogue box previewed live
-
-### The font page - every character the game can draw, editable
-
-###…

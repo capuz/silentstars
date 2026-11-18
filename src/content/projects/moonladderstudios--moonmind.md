@@ -6,18 +6,18 @@ readmeQualityOk: true
 url: "https://github.com/MoonLadderStudios/MoonMind"
 language: "Python"
 languages: ["Python"]
-languagePcts: [89]
+languagePcts: [88]
 stars: 13
 forks: 5
-openIssues: 20
-closedIssues: 679
+openIssues: 17
+closedIssues: 688
 watchers: 2
 contributors: 10
 recentReleases: 0
 createdAt: "2025-01-14T18:54:41Z"
-lastCommitAt: "2026-11-17T13:24:38Z"
+lastCommitAt: "2026-11-18T12:02:38Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
 undervaluedScore: 73
 maintainers: ["nsticco", "codex", "dependabot[bot]"]
@@ -38,7 +38,3 @@ MoonMind is a self-hosted app for running AI coding workflows. Give it a task, c
 - **Keeps results inspectable.** The dashboard shows progress, logs, diagnostics, and artifacts. You can review a run, intervene when needed, or return to its saved results later.
 
 MoonMind currently focuses on software engineering. Start with a repository task or a reusable Skill.
-
-## Dashboard
-
-These are captures of the current dashboard with synthetic example data. They show the…

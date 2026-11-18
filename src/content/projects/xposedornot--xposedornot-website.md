@@ -45,5 +45,3 @@ The website is a key part of our commitment to making data breach information ac
 ## Show Your Support!
 
 🌟 Give us a star if you like what we're doing! 🍴 Fork it and make it your own!
-
-🤝 And hey, why not contribute? We…

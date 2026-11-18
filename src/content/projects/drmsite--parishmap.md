@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-04T13:44:01Z"
 lastReleaseAt: "2026-11-04T13:34:23Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 74
+healthScore: 73
 undervaluedScore: 55
 maintainers: ["annoyingmouse", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1434257355/04148c88-0861-4804-aaa4-37efbae37118"
@@ -38,5 +38,3 @@ It runs in **your own Firebase project**, so your data, keys and costs stay with
 
 Built by [DRMSITE LTD](https://drmsite.com) and released under the
 [GNU Affero General Public Licence](https://github.com/DRMSITE/parishmap/blob/HEAD/LICENSE) (AGPL-3.0-or-later).
-
-**Featured on SilentStars.** ParishMap has been featured on SilentStars, a platform highlighting independently developed open-source projects. [View ParishMap on…

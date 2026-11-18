@@ -15,7 +15,7 @@ watchers: 0
 contributors: 4
 recentReleases: 0
 createdAt: "2023-02-23T03:36:50Z"
-lastCommitAt: "2026-11-17T08:58:27Z"
+lastCommitAt: "2026-11-18T08:54:48Z"
 status: "thriving"
 tags: ["solo_builder"]
 healthScore: 90
@@ -44,8 +44,3 @@ The script overwrites these files on each run, but we are still able to retrieve
 1. Run `python3 -m venv venv` to create a virtual environment.
 2. Run `source venv/bin/activate` to activate the virtual environment.
 3. Run `pip install -r requirements.txt` to install dependencies.
-
-### Scripts
-
-- Run `./data-api.sh` to generate a SQL database at `data-api.sqlite` of historical data based on `data-api.json` commit history.
-- Run `./data-home.sh` to generate a SQL database at…

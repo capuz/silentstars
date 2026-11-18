@@ -38,7 +38,3 @@ This library handles Git internal objects and Pack files efficiently, supporting
 ## Quickstart
 
 Decode a pack (offline):
-
-```rust
-use std::{fs::File, io::BufReader};
-use git_internal::internal::pack::Pack;…

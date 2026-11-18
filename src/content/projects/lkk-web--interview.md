@@ -17,7 +17,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-10-12T05:38:39Z"
-lastCommitAt: "2026-11-17T06:45:32Z"
+lastCommitAt: "2026-11-18T07:00:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 84
@@ -65,5 +65,3 @@ npx cap open ios
 ```
 
 If you're only renewing the signing without changing content, you don't need to rebuild the web artifacts.
-
-If you've modified the blog content,…

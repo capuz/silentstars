@@ -12,12 +12,12 @@ topics: ["api-client", "api-testing", "api-workbench", "csharp", "developer-tool
 stars: 12
 forks: 1
 openIssues: 54
-closedIssues: 597
+closedIssues: 598
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2026-05-02T20:06:21Z"
-lastCommitAt: "2026-11-17T05:26:42Z"
+lastCommitAt: "2026-11-18T07:50:55Z"
 lastReleaseAt: "2026-05-04T21:44:30Z"
 status: "thriving"
 tags: ["hidden_gem"]
@@ -53,6 +53,3 @@ Mount the workbench inside an existing ASP.NET host:
 ```bash
 dotnet add package Kuestenlogik.Bowire
 ```
-
-```csharp
-var app = WebApplication.Create(args);…

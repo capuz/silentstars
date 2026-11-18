@@ -7,19 +7,19 @@ url: "https://github.com/amedee/ansible-servers"
 homepage: "https://amedee.be"
 language: "Jinja"
 languages: ["Jinja", "Python"]
-languagePcts: [53, 32]
+languagePcts: [55, 30]
 topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "email", "github-actions", "mail-in-a-box"]
 stars: 6
 forks: 1
-openIssues: 10
-closedIssues: 240
+openIssues: 15
+closedIssues: 242
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-11-17T01:35:28Z"
+lastCommitAt: "2026-11-18T11:41:27Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["solo_builder", "hidden_gem", "under_pressure"]
 healthScore: 98
 undervaluedScore: 83
 maintainers: ["amedee", "github-actions[bot]", "dependabot[bot]"]
@@ -63,5 +63,3 @@ ansible-playbook playbooks/site.yml
 ## ✅ Continuous Integration & Code Quality
 
 This repository uses CI to continuously validate configuration quality:
-
-| Role…

@@ -9,7 +9,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [93]
 topics: ["anti-idle", "desktop-app", "golang", "keep-awake", "mouse-simulation", "system-tray", "windows", "keypress", "open-source"]
-stars: 2
+stars: 3
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-07-02T19:50:26Z"
 status: "quiet"
 tags: ["solo_builder"]
 healthScore: 43
-undervaluedScore: 14
+undervaluedScore: 13
 maintainers: ["capuz", "opn-build"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1253973587/b9b71b37-48f0-43f4-bc50-9e74c2723c86"
 postedAt: "2026-06-25T22:59:39.704Z"
@@ -45,9 +45,3 @@ No installation of runtimes required. Single `.exe` — ~4 MB installer, ~6.5 MB
 Working remotely or in a monitored environment, your PC going to sleep or showing "Away" on Teams/Slack breaks your workflow. OpenAlive keeps Windows 10 and Windows 11 awake without requiring admin rights, installing drivers, or using physical mouse jigglers. It runs silently in the system tray, respects your work schedule, and collects zero telemetry.
 
 ---
-
-## Features
-
-- **Mouse activity simulation** — moves the cursor by a configurable number of pixels and returns it to the exact position, imperceptibly
-- **Keystroke simulation** — optionally sends a configurable key (e.g. Shift) alongside the mouse movement
--…

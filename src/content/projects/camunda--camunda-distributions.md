@@ -11,18 +11,18 @@ languagePcts: [90]
 topics: ["camunda", "camunda-8", "hacktoberfest", "hacktoberfest2024", "team-smx"]
 stars: 30
 forks: 23
-openIssues: 2
+openIssues: 3
 closedIssues: 79
 watchers: 5
 contributors: 60
 recentReleases: 3
 createdAt: "2024-09-12T15:02:30Z"
-lastCommitAt: "2026-11-17T11:50:46Z"
-lastReleaseAt: "2026-11-17T11:11:38Z"
+lastCommitAt: "2026-11-18T11:10:12Z"
+lastReleaseAt: "2026-11-18T10:11:17Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 76
+undervaluedScore: 75
 maintainers: ["renovate[bot]", "smx-misc[bot]", "bkenez"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5c05fa12c49164bc69f26a43ada3bde96f8860d82e36712978420ba8ac743ccc/camunda/camunda-distributions"
 postedAt: "2026-08-28T15:40:10.930Z"
@@ -30,7 +30,8 @@ postedAt: "2026-08-28T15:40:10.930Z"
 
 # Camunda 8 Self-Managed
 
-> [!CAUTION]
+> **Caution**
+>
 >
 > This GitHub repository is mainly for development, don't use it directly to deploy Camunda. End users should use the [official documentation](https://docs.camunda.io/docs/self-managed/about-self-managed/).
 
@@ -51,7 +52,3 @@ For the sources behind those archives, check the directory of [Camunda Docker Co
 ## Issues
 
 If you find any problem with the Camunda 8 Self-Managed distributions, create a [new issue](https://github.com/camunda/camunda-distributions/issues).
-
-## Contributing
-
-We value all feedback and…

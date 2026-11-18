@@ -20,7 +20,7 @@ createdAt: "2025-12-18T15:03:32Z"
 lastCommitAt: "2026-11-03T10:57:55Z"
 status: "quiet"
 tags: ["solo_builder", "funded"]
-healthScore: 79
+healthScore: 78
 undervaluedScore: 84
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/69bf301816599ca31c06ef41dc7135a7f9c2d84931ae967f60a64ddeaf20aef4/SankarGaneshb/Market-Rover"
@@ -33,7 +33,8 @@ postedAt: "2026-09-24T08:50:00.142Z"
 
 **Multi-agent AI that reads your Indian equity portfolio like a research desk – portfolios, heatmaps, institutional flows, and forecasts in one place.**
 
-> [!TIP]
+> **Tip**
+>
 > **NEW TO MARKET-ROVER?** Check out our [User Guide](https://github.com/SankarGaneshb/Market-Rover/blob/HEAD/USER_GUIDE.md) for a full onboarding to our AI Agents and Shadow Analysis tools.
 
 **Your complete toolkit for smart investing decisions powered by cutting-edge AI**
@@ -44,6 +45,3 @@ postedAt: "2026-09-24T08:50:00.142Z"
 - **Enterprise v5 Stack**: Decoupled **FastAPI Backend** and **React 19 (Vite) Frontend** for maximum performance and scalability.
 - **LangGraph Intelligence**: 10+ specialized nodes orchestrated via **Gemini 2.0-Flash** for news, sentiment, seasonality, MTC technicals, and forensic signals.
 - **Production-ready**: Hosted on Google Cloud Run with unified **PostgreSQL** and CI/CD coverage gates (70%).
-
-🌐 **Live Unified App:** https://market-rover-app-9514347926.us-central1.run.app/
-* 🧩 **InvestBrand…

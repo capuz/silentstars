@@ -15,7 +15,7 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-11-17T14:07:40Z"
+lastCommitAt: "2026-11-18T10:59:25Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
 healthScore: 99
@@ -86,4 +86,4 @@ again to approve the updated file.
 
 ### 0.3 Verify
 
-From the repo root, you should be able to run:…
+From the repo root, you should be able to run:

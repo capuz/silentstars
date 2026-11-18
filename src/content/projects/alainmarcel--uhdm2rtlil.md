@@ -1,7 +1,7 @@
 ---
 repo: "alainmarcel/uhdm2rtlil"
 name: "uhdm2rtlil"
-description: "Yosys SystemVerilog Synthesis that matches Verilator (RTL matches gate-level simulation)"
+description: "Yosys SystemVerilog 1800-2023 Synthesis that matches Verilator (RTL matches gate-level simulation)"
 readmeQualityOk: true
 url: "https://github.com/alainmarcel/uhdm2rtlil"
 language: "SystemVerilog"
@@ -15,14 +15,14 @@ watchers: 2
 contributors: 3
 recentReleases: 6
 createdAt: "2025-06-19T04:57:46Z"
-lastCommitAt: "2026-11-17T14:39:21Z"
+lastCommitAt: "2026-11-18T10:27:04Z"
 lastReleaseAt: "2026-11-07T16:08:13Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 85
 maintainers: ["alaindargelas"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e1ddcb5d3590a8d999a2ba40a6c0aa53f4d63f0dd6f0d25190514e2b0410477b/alainmarcel/uhdm2rtlil"
+openGraphImageUrl: "https://opengraph.githubassets.com/6f2b1dca631d58c6c9a43b9360e8309dead470ec16383998994d97171486a82d/alainmarcel/uhdm2rtlil"
 postedAt: "2026-07-12T06:25:03.412Z"
 ---
 
@@ -30,15 +30,6 @@ postedAt: "2026-07-12T06:25:03.412Z"
 
 **Gates** (every PR + nightly) — a PR lands only on a clean run:
 
-**Nightly IP sweeps** — one badge per sweep workflow, in the order [docs/supported_ip.md](https://github.com/alainmarcel/uhdm2rtlil/blob/HEAD/docs/supported_ip.md) lists them; each links to its per-module report:
+**IP sweeps** (every other day; half of them on odd days, half on even days) — one badge per sweep workflow, in the order [docs/supported_ip.md](https://github.com/alainmarcel/uhdm2rtlil/blob/HEAD/docs/supported_ip.md) lists them; each links to its per-module report:
 
 A Yosys frontend that enables SystemVerilog synthesis through UHDM (Universal Hardware Data Model) by converting UHDM representations to Yosys RTLIL (Register Transfer Level Intermediate Language). Focused on creating post-synthesis (Gate-level) netlists that matches RTL simulation using Verilator as the golden standard.
-
-> ### ✅ Every result is verified
-> Nothing here is counted as "working" on a read-only or vacuous pass. Every
-> synthesized netlist is proven correct by **formal equivalence** — Yosys
-> `equiv_induct` plus a sound **SAT-from-reset miter** against the Yosys
-> Verilog-frontend golden — **and/or** by **high-activity randomized Verilator
-> co-simulation** against the original RTL. A SAT miter also adjudicates every
-> divergence so an inductive-proof gap is never mistaken for a real bug.
-> See…

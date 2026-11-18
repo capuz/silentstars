@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-17T01:26:14Z"
 lastReleaseAt: "2026-09-11T03:22:30Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 63
 maintainers: ["SN-Abdullah-Al-Noman", "AlfCraft07"]
 openGraphImageUrl: "https://opengraph.githubassets.com/26b6485088908111959ca329181d5273d4990e3535eb9f9a0821a773f8a43ee4/SN-Abdullah-Al-Noman/QuantumROM"
@@ -36,22 +36,3 @@ This Custom ROM is built by combining and refining features from multiple projec
 - Custom firmwqre release version download support.
 - File config and file contexts generate.
 - Extract and img build ( erofs, f2fs, ext4 supported).
-
-### ✨ Key Features.
-- System Optimization.
-- Heavy debloated system (removed unnecessary apps & services). Custom debloat like samsung dex, samsung bixby.
-- Improved performance and smoother UI experience.
-- Optimized background processes.
-- Better battery efficiency.
-- Enhanced Functionality.
-- Screenshot anywhere (enabled globally).
-- Built-in Screen Recorder.
-- More floating features enabled.
-- Edge features fully working.
-- Stock device config always be added.
-- Extra brightness support.
-- Object, shadow and reflection remover support.
-- Multi user support.
-- Camera privacy toggle support.
-- JDM device support.
-- [BluetoothLibraryPatcher](https://github.com/3arthur6/BluetoothLibraryPatcher)…

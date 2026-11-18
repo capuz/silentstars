@@ -9,18 +9,18 @@ language: "Lua"
 languages: ["Lua"]
 languagePcts: [100]
 stars: 8
-forks: 129
+forks: 130
 openIssues: 0
 closedIssues: 2
 watchers: 3
-contributors: 116
+contributors: 117
 recentReleases: 0
 createdAt: "2025-05-05T17:13:44Z"
-lastCommitAt: "2026-11-15T12:31:52Z"
+lastCommitAt: "2026-11-18T10:17:41Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 91
 maintainers: ["m00nyONE", "Cote2Go", "haaidandb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/70d8fb8a7f75042ebecc3e0a13c1c34d126859c24bbfa31893ba9edba7fc65e9/m00nyONE/LibCustomIcons"
@@ -61,6 +61,3 @@ This helps support development and keep the ESO addon ecosystem fun and alive!
 If you're an addon developer and want to use `LibCustomIcons`:
 
 Have a look at the full documentation here: [Github Pages](https://m00nyone.github.io/LibCustomIcons/)
-
-```lua
-local icon, coordsLeft,…

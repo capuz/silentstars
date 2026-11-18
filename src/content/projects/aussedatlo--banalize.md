@@ -18,7 +18,7 @@ createdAt: "2024-08-31T20:29:49Z"
 lastCommitAt: "2026-11-13T10:00:37Z"
 status: "thriving"
 tags: []
-healthScore: 95
+healthScore: 94
 undervaluedScore: 77
 maintainers: ["aussedatlo", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5c56795096c3d2c7b57c16f0c391a56ec8a54b9004d0992d96bf6dabca395b30/aussedatlo/banalize"
@@ -45,11 +45,3 @@ apps/
 log file → regex match → IP extracted → threshold reached → iptables DROP rule
                                                           → auto-expires after ban_time
 ```
-
-- **Watchers** tail one log file per config using inotify
-- **Matches** are counted in an in-memory store (per config + IP) for fast threshold checks, rebuilt from the SQLite audit log on restart
-- **Bans** are applied synchronously via iptables and persisted across restarts
-- **Events** (match, ban, unban) are recorded asynchronously in SQLite for auditing
-- **Cleaner** runs periodically to expire bans and matches outside their time windows
-- **REST API** on port 6040 — documented at `GET /api/openapi.json`, UI at `GET /swagger`
-- **Dashboard** at…

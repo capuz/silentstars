@@ -34,8 +34,3 @@ postedAt: "2026-08-29T10:26:28.549Z"
 Strength Journeys is a free, open-source web app to visualize your barbell lifting data from Google Sheets. Privacy-first — your lifting data is never stored on our servers. All analysis happens client-side in your browser. Chalk not included.
 
 Powerlifters and barbell weirdos will love this app, but our real target audience is the novice. If we can help someone start barbell training and keep them going for ten years, their life and their family will be transformed. Barbell strength training is one of the most effective things you can do for your health, longevity, and quality of life. Stronger people are harder to kill, more useful in general, and tend to live longer.
-
-## Features
-
-- **[Home dashboard](https://www.strengthjourneys.xyz/)** — activity heatmaps, PR tracking and session highlights across all your lifts (this was formerly the separate Analyzer page)
-- **Big four lift cards** — at-a-glance dashboard showing PRs, estimated 1RM, tonnage, and recent activity for…

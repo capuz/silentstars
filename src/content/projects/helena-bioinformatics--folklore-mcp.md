@@ -46,7 +46,3 @@ Create a key in your Folklore account for the selected account and sources.
 Keep it in your client's secret store, never in prompts, tool arguments or URLs.
 The selected account's native subscription capabilities, usage limits and
 eligible credits govern processing. A key does not grant funded compute.
-
-See [case workflows](https://github.com/helena-bioinformatics/folklore-mcp/blob/HEAD/docs/CASE_WORKFLOWS.md), the
-[18 authenticated tool schemas](https://github.com/helena-bioinformatics/folklore-mcp/blob/HEAD/registry/authenticated-tools.json) and the
-[public task…

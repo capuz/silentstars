@@ -47,4 +47,4 @@ Contributions to this list are welcome. See [CONTRIBUTING.md](https://github.com
 
 ## Storage clients & tools
 
-[mickael-kerjean/filestash](https://github.com/mickael-kerjean/filestash) `AGPL-3.0` - Universal File Management Platform (for humans and agents).…
+[mickael-kerjean/filestash](https://github.com/mickael-kerjean/filestash) `AGPL-3.0` - Universal File Management Platform (for humans and agents).

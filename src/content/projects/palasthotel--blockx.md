@@ -37,12 +37,3 @@ This is a npm package as well as a WordPress plugin for easier Gutenberg Block d
 - **Changelogs:** [wp-plugin/CHANGELOG.md](https://github.com/palasthotel/blockX/blob/HEAD/wp-plugin/CHANGELOG.md) and
   [npm-package/CHANGELOG.md](https://github.com/palasthotel/blockX/blob/HEAD/npm-package/CHANGELOG.md) - release-please owns both, so
   do not edit them by hand
-
-## Repository layout
-
-| Path | What it is |
-|---|---|
-| `wp-plugin/public/` | exactly what ships to wordpress.org |
-| `wp-plugin/src/` | sources of the editor bundle, built to `wp-plugin/public/assets/dist/` (not in the repository) |
-| `npm-package/` | the `@palasthotel/blockx` library the editor bundle and your own editor scripts import |
-| `assets/` | media for the wordpress.org plugin page - not part of…

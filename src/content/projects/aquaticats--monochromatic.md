@@ -16,7 +16,7 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-11-17T00:43:02Z"
+lastCommitAt: "2026-11-18T00:36:59Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
@@ -58,15 +58,3 @@ this package implements only JSON-RPC 2.0,
 `server/discover`,
 `tools/list`,
 and `tools/call`.
-
-**Coding-agent infrastructure**:
-[`claude-code-plugin`](https://github.com/Aquaticats/Monochromatic/blob/HEAD/package/claude-code-plugin/) packages Claude Code hooks and plugins
-(guardrail,
-statusline,
-bash output filtering,
-session spawning,
-housekeeping),
-and [`pi-plugin`](https://github.com/Aquaticats/Monochromatic/blob/HEAD/package/pi-plugin/) does the same for the Pi coding agent
-(advisor,
-guardrail,
-model selection).…

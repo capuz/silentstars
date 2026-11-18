@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-13T09:10:32Z"
 lastReleaseAt: "2026-05-26T08:58:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 85
+healthScore: 84
 undervaluedScore: 17
 maintainers: ["akii-technologies"]
 openGraphImageUrl: "https://opengraph.githubassets.com/94855d1c91bc68205f1f0157ebf5772bf46b336184f0487f381018594ba33260/akii-technologies-ltd/akii-seo-ai-search-optimizer"
@@ -39,5 +39,3 @@ Free AI-powered SEO, AEO, and GEO toolkit by [Akii](https://akii.com/?utm_source
 **All skills run on your Claude Code session model** (Claude Sonnet / Opus / etc) — same model you're already using.
 
 Audit websites, plan content strategy, optimize pages, generate schema markup, cluster keywords, **estimate** your AI visibility for ChatGPT, Claude, Gemini, Perplexity, Copilot, and Google AI Overviews, generate `llms.txt` for non-Google AI crawlers, and apply the cross-engine GEO rewrite tactics from the Princeton/IIT Delhi study ([Aggarwal et al., KDD 2024, arXiv:2311.09735](https://arxiv.org/abs/2311.09735)) — all without leaving your terminal or IDE.
-
-> **On AI visibility analysis:** the…

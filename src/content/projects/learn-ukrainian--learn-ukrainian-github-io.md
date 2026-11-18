@@ -17,7 +17,7 @@ watchers: 0
 contributors: 6
 recentReleases: 3
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-11-17T13:44:57Z"
+lastCommitAt: "2026-11-18T05:11:05Z"
 lastReleaseAt: "2026-10-20T12:59:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -49,12 +49,3 @@ A comprehensive Ukrainian language curriculum with 1,778 modules across 22 track
 - **Interactive exercises** -- quizzes, matching, fill-in-the-blank, error correction
 - **Cultural context** -- decolonization perspective, authentic Ukrainian sources
 - **100% free** -- no ads, no subscriptions, no paywalls
-
-## Tracks
-
-### Core Levels
-
-| Level | Modules | Description |
-|-------|---------|-------------|
-| [**A1**](https://learn-ukrainian.github.io/a1/) | 55 | Beginner -- Cyrillic alphabet, basic grammar, practical scenarios |
-| [**A2**](https://learn-ukrainian.github.io/a2/) | 69 | Elementary…

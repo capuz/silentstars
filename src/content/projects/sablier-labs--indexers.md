@@ -17,7 +17,7 @@ watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-11-17T11:28:49Z"
+lastCommitAt: "2026-11-18T00:03:50Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
@@ -43,12 +43,3 @@ them into structured GraphQL data APIs used by the [Sablier Interface](https://a
 
 The repository maintains indexers for [Envio](https://envio.dev) and [The Graph](https://thegraph.com). Envio is the
 preferred hosted provider; The Graph subgraphs remain available for multi-vendor coverage.
-
-## Links
-
-- [API documentation](https://docs.sablier.com/api/overview)
-- [Airdrops indexer docs](https://docs.sablier.com/api/airdrops/indexers)
-- [Flow indexer docs](https://docs.sablier.com/api/flow/indexers)
-- [Lockup indexer docs](https://docs.sablier.com/api/lockup/indexers)
-- [Package on npm](https://www.npmjs.com/package/@sablier/indexers)
--…

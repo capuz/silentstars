@@ -8,10 +8,10 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [77]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative", "latex-ocr", "latex-ocr-document-ai", "math-ocr"]
-stars: 171
+stars: 173
 forks: 27
-openIssues: 1
-closedIssues: 1
+openIssues: 0
+closedIssues: 2
 watchers: 18
 contributors: 1
 recentReleases: 5
@@ -20,10 +20,10 @@ lastCommitAt: "2026-11-14T13:35:43Z"
 lastReleaseAt: "2026-11-14T13:43:37Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 77
-undervaluedScore: 22
+healthScore: 87
+undervaluedScore: 27
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/4957f7b6a7c844c5baedb9f5af6d58eb09fa5dd28463f845951a7b2d62e8e100/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/9622f567a9fc7c687cb5a11166afe3312eaf383654dfe004eede43b111b55f71/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---
@@ -44,7 +44,3 @@ Free and open source · Runs fully offline · Fast and accurate
 - **Stays out of your way.** Lives in the system tray and starts with Windows. Optionally copies in
   the background and shows a small popup instead of opening the window.
 - English and 简体中文 interface, light and dark themes, and in-app updates.
-
-## Download
-
-1. Download…

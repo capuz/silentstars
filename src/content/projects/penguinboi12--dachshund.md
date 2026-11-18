@@ -53,7 +53,3 @@ Dachshund runs as a thread inside your web app, bot, worker or daemon. There's n
 ```bash
 pip install dachshund
 ```
-
-#### 2- Start the dashboard
-
-Call `init()` once, when your application starts. The dashboard runs on a background thread for as long as your process…

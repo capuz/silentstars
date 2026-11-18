@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-28T11:09:01Z"
 lastReleaseAt: "2025-06-06T02:32:11Z"
 status: "quiet"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 73
 maintainers: ["zu2"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e081d1d65370c6866c639222b3d832629176f424142f429d47c1a8e81f9f7641/zu2/chibicc-6800-v1"
@@ -41,9 +41,3 @@ Many C programs, including Dhrystone and Whetstone benchmarks, now run on the MC
 Some test code or implementation notes may still remain. Feedback and bug reports are always welcome.
 
 ----
-# Topics
-
-- **Data types:** `int` and pointers are 16-bit; `long` and `float` are 32-bit. `double` and `long long` (64-bit or more) are unsupported.
-- **Function parameters:** Only the first parameter is passed via registers (A/B/@long). If the first parameter is a struct/union, all parameters are passed via the stack.
-- **Return values:** Struct/union return values pass their address as an implicit first argument in a register. All other normal arguments are passed on the stack.
-- **IEEE 754 floating-point:** 32-bit floating-point arithmetic is implemented in…

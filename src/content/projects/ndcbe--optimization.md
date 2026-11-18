@@ -15,7 +15,7 @@ watchers: 3
 contributors: 27
 recentReleases: 0
 createdAt: "2023-01-13T16:31:32Z"
-lastCommitAt: "2026-11-16T19:17:38Z"
+lastCommitAt: "2026-11-18T02:45:32Z"
 status: "thriving"
 tags: ["solo_builder", "fork_magnet"]
 healthScore: 86
@@ -66,5 +66,3 @@ idaes get-extensions
 ```
 
 They install to `~/.idaes/bin`. Add that directory to your `PATH` so Pyomo can find them:
-
-```bash…

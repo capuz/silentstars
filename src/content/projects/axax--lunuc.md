@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2017-04-04T20:13:45Z"
-lastCommitAt: "2026-11-17T13:09:34Z"
+lastCommitAt: "2026-11-18T10:49:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 90
@@ -82,6 +82,3 @@ Url to access the mongo database:
 ### Run as docker container
 #### Building docker image
 `docker build -t axax06/lunuc .`
-
-#### Running docker image
-You need to pass the environment variable MONGO_URL…

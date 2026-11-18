@@ -10,9 +10,9 @@ languages: ["Go", "TypeScript"]
 languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 351
-forks: 43
-openIssues: 72
-closedIssues: 198
+forks: 42
+openIssues: 74
+closedIssues: 199
 watchers: 9
 contributors: 18
 recentReleases: 0
@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-14T19:51:09Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 38
 maintainers: ["Southclaws", "LEnc95", "renovate[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
@@ -51,7 +51,3 @@ You can try it right now! Run the image and open http://localhost:8000 in your b
 ```sh
 docker run -p 8000:8000 ghcr.io/southclaws/storyden
 ```
-
-## Releases and versions
-
-Storyden releases tagged versions using a simple version number which applies to the product _as a whole_ not the API surface. For this reason, we do not use "semantic versioning" and breaking API changes are avoided as much as possible. Sometimes breaking changes may occur but these will always be documented and called out in release notes as…

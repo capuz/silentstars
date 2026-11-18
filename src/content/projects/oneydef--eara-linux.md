@@ -17,7 +17,7 @@ watchers: 1
 contributors: 4
 recentReleases: 10
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-15T14:05:58Z"
+lastCommitAt: "2026-11-17T17:51:36Z"
 lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
@@ -43,9 +43,3 @@ EarA brings battery status, noise control, EQ, gestures, Find My Earbuds, and Bl
 - Light connection and recovery screens with dark Device, Sound, Gestures, and Tools workspaces
 - More reliable discovery, reconnection, service diagnostics, and state restoration
 - Corrected equalizer presets and synchronized quick controls across Device and Sound
-
-## Features
-
-- Battery levels for the left earbud, right earbud, and case
-- ANC, transparency, listening modes, bass, and equalizer controls
-- Gesture remapping, in-ear detection, ear-tip fit test, and…

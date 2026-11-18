@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-17T14:46:26Z"
 lastReleaseAt: "2025-07-06T00:41:20Z"
 status: "thriving"
 tags: ["funded", "under_pressure"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 43
 maintainers: ["macalbert", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"
@@ -58,8 +58,3 @@ npx envilder exec -- npm run dev
 ```
 
 No SaaS middleman. One versioned mapping contract. Secrets stay in your cloud.
-
-## The problem
-
-- **Onboarding takes hours, not seconds.** Every new developer needs someone to explain which
-  secrets go…

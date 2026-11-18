@@ -50,5 +50,3 @@ uvx the-cartographer ask "Add property-based tests for our Python date-parsing m
 
 In Claude Code 2.1.275 or later, the plugin asks it for you at the start of each task (needs uv):
 `/plugin install the-cartographer --marketplace sheepk95/The-Cartographer`. Other installs: [Quick start](#quick-start).
-
-### A…

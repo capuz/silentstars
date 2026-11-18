@@ -11,19 +11,19 @@ languagePcts: [99]
 topics: ["database", "database-migrations", "database-schema", "database-tools", "mariadb", "migration-tool", "mysql", "sqlite", "clickhouse", "schema-migration"]
 stars: 21
 forks: 3
-openIssues: 18
-closedIssues: 1514
+openIssues: 19
+closedIssues: 1518
 watchers: 0
 contributors: 4
 recentReleases: 7
 createdAt: "2025-06-01T23:22:06Z"
-lastCommitAt: "2026-11-17T14:47:28Z"
+lastCommitAt: "2026-11-18T12:07:51Z"
 lastReleaseAt: "2026-09-22T21:57:50Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["hidden_gem", "release_machine"]
 healthScore: 100
 undervaluedScore: 76
-maintainers: ["denisvmedia", "renovate[bot]"]
+maintainers: ["denisvmedia", "renovate[bot]", "ptah-automation[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5ca65b233609a6597a366fda287b97868b1be917e625b50b0f9816696e09dc24/stokaro/ptah"
 discussionCount: 2
 postedAt: "2026-11-17T12:29:50.936Z"
@@ -60,6 +60,3 @@ whether SQL becomes a reviewed artifact in version control before it runs.
 Ptah orchestrates the migration; it does not run inference. It reads source
 rows, calls the external endpoint, and writes the candidate generation itself,
 leaving the active generation untouched until verification and cutover.
-
-The [inference migrations guide](https://docs.ptah.run/edge/inference/overview/)
-covers the…

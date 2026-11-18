@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-10T07:07:58Z"
 lastReleaseAt: "2026-10-13T05:47:28Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
-healthScore: 68
+healthScore: 67
 undervaluedScore: 77
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b47182e2a7b5a44001b123a1dc216c7ffeed9f7cbc07403e4f54364c21488c3b/SankarGaneshb/rover-slim"
@@ -39,8 +39,3 @@ postedAt: "2026-11-02T18:04:21.312Z"
 ## 📸 Container Desktop Extension Dashboard
 
 ---
-
-## 🎯 Key Capabilities
-
-- **🚀 Official GitHub Action**: Published on [GitHub Marketplace](https://github.com/marketplace/actions/rover-slim-container-optimization-governance) to automate container optimization and layer bloat governance directly in CI/CD with automated PR diff comments.
-- **☕ Polyglot Enterprise Ecosystems**: Auto-detects and optimizes **Java** (Spring Boot Layertools splitting, Maven/Gradle test exclusion), **.NET Core** (ASP.NET 8/9, MSBuild `PackageReference`…

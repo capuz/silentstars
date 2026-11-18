@@ -9,13 +9,13 @@ languages: ["TypeScript"]
 languagePcts: [79]
 stars: 5
 forks: 3
-openIssues: 179
-closedIssues: 448
+openIssues: 181
+closedIssues: 449
 watchers: 2
 contributors: 6
 recentReleases: 0
 createdAt: "2024-11-10T17:05:23Z"
-lastCommitAt: "2026-11-17T14:42:49Z"
+lastCommitAt: "2026-11-18T05:12:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 94
@@ -45,4 +45,3 @@ squash-merge to `main`. See [AGENTS.md](https://github.com/corpora-inc/encorpora
   — the newest product: children's mathematics, grades 1–6 plus an introduction
   to pre-algebra, set in an ancient-futurist world of astrolabes, gears and
   mechanical computers.
-- **Books & publishing** (`books/`) — the authored source for…

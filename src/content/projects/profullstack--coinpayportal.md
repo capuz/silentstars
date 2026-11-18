@@ -17,11 +17,11 @@ watchers: 0
 contributors: 21
 recentReleases: 0
 createdAt: "2025-11-26T13:29:53Z"
-lastCommitAt: "2026-11-14T11:55:35Z"
+lastCommitAt: "2026-11-18T07:14:01Z"
 lastReleaseAt: "2026-07-26T09:36:26Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 76
 maintainers: ["ralyodio", "sh1pt-actions-fleet[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/9ccfd207a8c3dda6e7391535ff59ed7a2eb46d527d43fc7b626bee11949b00b0/profullstack/coinpayportal"
@@ -39,5 +39,3 @@ The multi-chain payment infrastructure for humans and AI agents. Crypto payments
 ## What is CoinPay?
 
 CoinPay is a payment gateway that lets merchants accept crypto, Lightning, and card payments. It's designed for both traditional e-commerce and the agent economy — AI agents can create wallets, send payments, manage escrows, and pay for APIs autonomously.
-
-**Custody, up front:** CoinPay is not non-custodial as a whole, and we don't market it that way. The web wallet is genuinely non-custodial (keys are generated client-side and never reach the server). On-chain payments land at a CoinPay-derived address and are forwarded to the merchant, so we hold the key for that window. Default escrow is custodial for the whole escrow window; `multisig_2of3` escrow is not (we hold one key of three). Lightning is custodial until withdrawal. Full breakdown — including shutdown and dispute handling — lives…

@@ -11,13 +11,13 @@ languagePcts: [81]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript", "animation", "aseprite-alternative", "browser"]
 stars: 18
 forks: 14
-openIssues: 70
-closedIssues: 306
+openIssues: 69
+closedIssues: 307
 watchers: 1
 contributors: 16
 recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
-lastCommitAt: "2026-11-17T06:29:18Z"
+lastCommitAt: "2026-11-17T21:10:37Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
@@ -43,7 +43,3 @@ The sky above is [`docs/sunset.baipix`](https://github.com/baipix/baipix/blob/HE
 ## Pixel art that leaves as clean vector
 
 Every color becomes a single SVG path, with neighboring pixels merged: light files, no seams between pixels, and one click to recolor in your design tool. Layers and groups stay apart, named as in Baipix. **Copy as SVG** and paste straight into Figma or Illustrator, pixel gap included.
-
-## Features
-
-- **Drawing tools:** pencil with pixel-perfect mode and a stabilizer, eraser, lasso fill, spray, paint bucket (contiguous or…

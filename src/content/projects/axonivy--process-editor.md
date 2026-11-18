@@ -65,5 +65,3 @@ pnpm run build
 #build integrations (sometimes you need to delete the node_modules folder first because of a missing monaco-editor dependency)
 pnpm run package
 ```
-
-## Running the process editor…

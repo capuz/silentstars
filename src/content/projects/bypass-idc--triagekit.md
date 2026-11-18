@@ -47,5 +47,3 @@ TriageKit is designed to make security analysis more contextual, structured, and
 Traditional scanning tools often produce large collections of alerts without adequately explaining their relationships, their relevance to the application, or what developers should investigate first.
 
 TriageKit approaches this problem through multiple analysis layers that work together to evaluate code changes, repository contents, dependencies, and exposed web applications.
-
-Rather than treating every pattern match as an independent vulnerability, TriageKit uses standardized findings, correlation, severity…

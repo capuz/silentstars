@@ -20,7 +20,7 @@ createdAt: "2026-10-31T13:21:57Z"
 lastCommitAt: "2026-11-14T15:17:29Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
-healthScore: 75
+healthScore: 74
 undervaluedScore: 50
 maintainers: ["RishabhPande"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c6a376c85cbfbef02c7b21af275c7414d9121babeb4173f40464bf97a907d126/RishabhPande/memory-poison-lab"
@@ -39,7 +39,3 @@ A local test range for agent memory poisoning: persistent memory as an attack su
 ## Why this exists
 
 Agent memory layers are shipping fast, and the attack classes against them are documented in research (see Sources). This repo is a small, local place to *watch* those attacks happen and test a fix. The first four scenarios are built from the published taxonomy; A5 extends the range to the ranking window itself, and A6 to a second decision the owner never wrote a policy for:
-
-| Scenario | Attack class | Mechanic under test |
-| --- | --- | --- |
-| **A1 - Direct injection** | Instruction-shaped content in…

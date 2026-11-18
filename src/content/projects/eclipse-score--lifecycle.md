@@ -10,13 +10,13 @@ languages: ["C++"]
 languagePcts: [70]
 stars: 8
 forks: 37
-openIssues: 105
+openIssues: 106
 closedIssues: 231
 watchers: 1
 contributors: 61
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-17T13:43:16Z"
+lastCommitAt: "2026-11-18T11:21:21Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
@@ -42,5 +42,3 @@ High level functionality provided by Lifecycle:
     * **Dependency Resolution**: Ensuring components start and stop in the correct order based on declared startup and shutdown dependencies.
     * **Failure Recovery**: Detecting unexpected process termination and executing configured recovery actions such as restarting a component or switching to a recovery Run Target.
     * **External Watchdog Integration**: Compatible with external watchdogs through a configurable watchdog device file.
-* **Health Monitor**
-    * **Supervision Types**: Supports Heartbeat,…

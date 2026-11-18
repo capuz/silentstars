@@ -9,7 +9,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [82]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 278
+stars: 280
 forks: 37
 openIssues: 0
 closedIssues: 2
@@ -24,7 +24,7 @@ tags: ["solo_builder", "release_machine"]
 healthScore: 99
 undervaluedScore: 34
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9853b3635c3e58deb03f99d131a624d741eb414e968772edd02b90ee7b57d3ba/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/a39ef680c09cc6450b8726ca65eab5b2a16cd784a8b89b4a0a59f4086ba2c964/YOLOW92/pagesift"
 discussionCount: 1
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
@@ -40,5 +40,3 @@ One self-hosted Rust binary with a CLI, Firecrawl v1/v2 & Jina Reader HTTP APIs,
 ## Overview
 
 `pagesift` turns live web pages, uploaded binary documents, archives, and long-lived monitored sources into clean Markdown, schema-validated JSON, and provenance-tracked `DataGraph` relations inside a single memory-bounded Rust binary. HTTP fetching, native document readers, HTML extraction, adaptive sync state, and evidence storage run in-process without requiring Python, JVM, or Node workers; a headless browser pool, NVIDIA GPU OCR, and user-configured LLM endpoints attach only when requested.
-
-Drop-in or companion for: **Firecrawl** (self-hosted v1/v2 API), **Jina Reader** (`/r/` and `/s/`), **Crawl4AI**,…

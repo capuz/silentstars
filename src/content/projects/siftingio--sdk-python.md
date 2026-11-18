@@ -44,7 +44,3 @@ This SDK is built for Python developers integrating market data into financial a
 * **Resource-mapped API design** with method names that mirror the [SiftingIO API documentation](https://sifting.io/docs).
 * **Production-oriented defaults** including retry handling for `429` and `5xx`, gzip negotiation, cursor auto-pagination, and an auto-reconnecting WebSocket client.
 * **Lightweight dependencies** using only `httpx` and `websockets`.
-
-## Runnable tutorial
-
-[Gold-silver ratio in…

@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [85]
 topics: ["mailchimp-alternative", "resend-alternative", "self-hosted", "sendgrid-alternative", "smtp", "transactional-email", "bun", "developer-tools", "docker", "email-api"]
-stars: 197
+stars: 199
 forks: 33
 openIssues: 6
 closedIssues: 38
@@ -21,10 +21,10 @@ lastCommitAt: "2026-11-13T07:18:57Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 43
 maintainers: ["pranavp10", "twinkalp10", "alfarhans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c855ccaa1178e8b31fb560da3424afbe0838564da1946c115774cb30692dbb06/reloop-labs/reloop"
+openGraphImageUrl: "https://opengraph.githubassets.com/114a2f703ee42fcff7ece0aa4f9a7eca2ea488aedd1b3624e7e74e774ed02d52/reloop-labs/reloop"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/reloop"]
 discussionCount: 0
 postedAt: "2026-07-21T06:19:24.167Z"
@@ -44,12 +44,3 @@ No vendor lock-in. Full transparency. No proprietary black boxes.
 ## What is Reloop?
 
 Reloop gives you the same capabilities as SendGrid, Mailchimp, Resend, and Loops — but the codebase is open source and fully self-hostable.
-
-- **Transactional email** — REST API and SMTP relay for programmatic sending
-- **Email campaigns** — broadcast and sequence campaigns with audience segmentation
-- **Inbound email** — receive, parse, and process incoming mail at your own domain
-- **Email templates** — a visual drag-and-drop editor built for developers and marketers
-- **Real-time analytics** — open rates, click rates, bounces, and delivery events stored in PostgreSQL
-- **Webhooks** — push delivery events to your own endpoints the moment they happen
-- **Contacts & lists** — manage subscribers, tags, and suppression lists
-- **Workflows** — automate…

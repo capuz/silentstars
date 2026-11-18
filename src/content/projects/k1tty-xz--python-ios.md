@@ -76,7 +76,3 @@ brew install dpkg
 ```
 
 Packages are written to `dist/`.
-
-## License
-
-Maintained by k1tty-xz. Build scripts are [MIT…

@@ -12,12 +12,12 @@ topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 13
 forks: 4
 openIssues: 5
-closedIssues: 14046
+closedIssues: 14066
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-11-17T14:48:50Z"
+lastCommitAt: "2026-11-18T11:59:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100
@@ -33,7 +33,3 @@ postedAt: "2026-07-03T12:38:00.517Z"
 This repository contains the open-source uptime [monitor and status page for Open Food Facts](https://github.com/openfoodfacts/openfoodfacts-upptime/blob/HEAD/<[https://upptime.js.org](https://status.openfoodfacts.org/)>), powered by [Upptime](https://github.com/upptime/upptime).
 
 With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/upptime/upptime/issues) as incident reports, [Actions](https://github.com/openfoodfacts/openfoodfacts-upptime/actions) as uptime monitors, and [Pages](https://upptime.github.io/upptime) for the status page.
-
-| URL | Status | History | Response Time | Uptime |
-| --- | ------ | ------- | ------------- | ------ |
-| <img alt="" src="https://icons.duckduckgo.com/ip3/world.openfoodfacts.org.ico" height="13"> [Main website (Open Food Facts)](https://world.openfoodfacts.org) | 🟩 Up | [main-website-open-food-facts.yml](https://github.com/openfoodfacts/openfoodfacts-upptime/commits/HEAD/history/main-website-open-food-facts.yml) |…

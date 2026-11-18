@@ -50,5 +50,3 @@ Use this repo as a GitHub template (recommended), or clone it directly:
 
 - `git clone https://github.com/robertlinde/next-nest-turbo-boilerplate.git`
 - `cd next-nest-turbo-boilerplate`
-
-###…

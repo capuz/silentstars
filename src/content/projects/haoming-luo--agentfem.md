@@ -50,8 +50,3 @@ computation, data, and AI.
 ([中文](https://lab.haoming-luo.com/learn/) · [Français](https://lab.haoming-luo.com/learn/fr.html)).
 The exercises include prompts, reference results, and downloadable handouts;
 running your own FEM cases requires the AgentFEM runtime below.
-
-## All You Need Is an Agent
-
-> [!TIP]
-> **Give this prompt to Codex, DS Harness, or another AI agent:**…

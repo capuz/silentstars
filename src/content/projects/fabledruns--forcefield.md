@@ -8,7 +8,7 @@ language: "Go"
 languages: ["Go"]
 languagePcts: [96]
 topics: ["ai", "ai-agents", "developer-tools", "go", "golang", "harness", "skills"]
-stars: 7
+stars: 8
 forks: 0
 openIssues: 0
 closedIssues: 2
@@ -21,7 +21,7 @@ lastReleaseAt: "2026-09-15T09:31:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 98
-undervaluedScore: 61
+undervaluedScore: 60
 maintainers: ["fabledruns", "claude", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1311100791/9a6332dd-17f9-48db-8b8c-95ae61f53036"
 promoted: true
@@ -50,7 +50,3 @@ Forcefield is a local-first runtime for executing AI agents.
 It provides the complete host execution harness around a language model: deterministic tool dispatch, on-demand skill indexing, project-scoped memory, atomic session recovery, 3-state permission gating, shell execution, and provider transport abstraction. It runs as a single static binary.
 
 Forcefield does not require a local model. It works with local inference engines (AMD Lemonade, Ollama, LM Studio, llama.cpp) and remote API providers (Anthropic, OpenAI, Google Gemini, AWS Bedrock, Azure AI, NVIDIA NIM, Groq, Mistral, Together, OpenRouter, and OpenCode). Running models locally is optional.
-
-| Architectural Invariant | Specification |
-| :--- | :--- |
-| **Local-First Boundary** | Zero user accounts, zero central cloud, zero telemetry, and zero…

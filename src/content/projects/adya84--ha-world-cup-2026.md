@@ -31,7 +31,8 @@ postedAt: "2026-06-21T02:12:50.330Z"
 
 # ⚽ World Cup 2026 has moved
 
-> [!IMPORTANT]
+> **Important**
+>
 > This project has moved to **Football Hub**. This repository is no longer being actively developed.
 
 Football Hub replaces the original World Cup integration and includes domestic leagues, European competitions, live scores, fixtures, results, tables, clubs, players, transfers and news.

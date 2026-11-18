@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-10T18:25:55Z"
 lastReleaseAt: "2026-10-21T15:52:48Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 66
+healthScore: 65
 undervaluedScore: 42
 maintainers: ["MaxJafar"]
 openGraphImageUrl: "https://opengraph.githubassets.com/545e8451f7d6d519e5e970b4029bf26b6c51966160b034699baafb9cb2a16bda/MaxJafar/monolith"
@@ -43,5 +43,3 @@ Your pages, projects and everyday tools in one self-hosted workspace.<br />Use t
 ## What is Monolith?
 
 An idea becomes a page. A page becomes a project. Tasks need dates, records need context, and useful tools should be close to the work.
-
-Monolith brings those pieces together. Write rich documents, organize structured information, plan projects and build a dashboard around what matters to you.…

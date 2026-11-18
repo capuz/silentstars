@@ -38,11 +38,3 @@ postedAt: "2026-06-26T21:38:25.211Z"
 *   **🌐 Universal**: Works on any website with a `<video>` tag.
 
 ---
-
-### ✨ Key Features
-
-- **Global Synchronization**: Synchronize Play, Pause, and Seeking on any website with a `<video>` tag.
-- **Episode Auto-Sync**: Perfectly sync series binges. All peers wait until everyone has loaded the next episode before starting together.
-- **Host Control & Co-Hosts**: Room hosts can lock playback control to trusted controllers while guests keep watching in sync.
-- **Smart Matching**: Automatically highlights tabs containing matching video titles.
-- **Dual Heartbeat Architecture**: Robust session tracking that prevents ghost rooms and stale…

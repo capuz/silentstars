@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-02T20:13:08Z"
 lastReleaseAt: "2026-05-04T21:26:21Z"
 status: "quiet"
 tags: ["solo_builder"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 70
 maintainers: ["raylim"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8ec93c0eb09730c64b55ed80bf21ba2ea296babb6489f46206415e7aaa214840/pathology-data-mining/Mussel"
@@ -53,9 +53,3 @@ Supported systems:
 Mussel reads whole-slide images via [tiffslide](https://github.com/Bayer-Group/tiffslide)
 (backed by [tifffile](https://github.com/cgohlke/tifffile)).
 The following formats are supported:
-
-| Extension | Format | Scanner / Vendor | Tiffslide support |
-|-----------|--------|-----------------|-------------------|
-| `.svs` | Aperio SVS | Leica (Aperio) | ✅ Full |
-| `.scn` | Leica SCN | Leica | ✅ Full |
-| `.tif` / `.tiff` | TIFF, BigTIFF, OME-TIFF | Generic / various | ✅ Full |…

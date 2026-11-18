@@ -7,7 +7,7 @@ url: "https://github.com/MTES-MCT/envergo"
 homepage: "https://envergo.beta.gouv.fr"
 language: "Python"
 languages: ["Python"]
-languagePcts: [76]
+languagePcts: [77]
 stars: 8
 forks: 10
 openIssues: 0
@@ -56,5 +56,3 @@ Pour développer en local, deux solutions :
 1/ [Créer un environnement local sur sa machine.](https://cookiecutter-django.readthedocs.io/en/latest/developing-locally.html)
 
 2/ [Utiliser l'image Docker](https://cookiecutter-django.readthedocs.io/en/latest/developing-locally-docker.html).
-
-Il est…

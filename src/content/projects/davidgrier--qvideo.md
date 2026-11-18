@@ -15,7 +15,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-09-03T18:45:03Z"
-lastCommitAt: "2026-11-14T18:59:04Z"
+lastCommitAt: "2026-11-17T19:26:14Z"
 lastReleaseAt: "2026-05-04T16:57:41Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
@@ -38,11 +38,3 @@ out of the box. QVideo provides hassle-free support for high frame rates and ext
 bit depths, including pixel-accurate video recording with lossless compression.
 Optional Jupyter integration facilitates rapid prototyping. Web-enabled display and control
 supports remote interaction and collaboration.
-
-## Features
-
-- **Unified camera API** — `QCamera` subclasses expose adjustable parameters
-  via `registerProperty` / `registerMethod`; UI and recording layers consume
-  them without knowing the underlying hardware.
-- **Auto-built property trees** — `QCameraTree` reads the registered property
-  map and builds a `pyqtgraph`…

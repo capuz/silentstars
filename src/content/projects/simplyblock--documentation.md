@@ -41,8 +41,3 @@ With simplyblock, you can seamlessly integrate **software-defined storage (SDS)*
 - ☁️ **Cloud & on-prem flexibility**: Deploy anywhere Proxmox runs
 
 👉 The deployed documentation is available at [https://docs.simplyblock.io](https://docs.simplyblock.io/latest/).
-
-## How To Extend The Documentation
-
-This repository contains the [simplyblock documentation](https://docs.simpylblock.io). It is built using
-[mkdocs](https://www.mkdocs.org/) and uses a provided shell script `doc-builder` to ease the process of working…

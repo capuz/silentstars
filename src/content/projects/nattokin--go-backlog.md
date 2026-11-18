@@ -10,19 +10,19 @@ languages: ["Go"]
 languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
-forks: 1
-openIssues: 32
-closedIssues: 146
+forks: 2
+openIssues: 23
+closedIssues: 156
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-11-16T01:30:17Z"
+lastCommitAt: "2026-11-17T23:04:42Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
-healthScore: 92
-undervaluedScore: 83
+healthScore: 93
+undervaluedScore: 88
 maintainers: ["nattokin", "dependabot[bot]", "x0Lazarus"]
 openGraphImageUrl: "https://opengraph.githubassets.com/783fc54d52199c17d0e0f326e84c4073f6a2dc90ed94493a158d3e64196f7e67/nattokin/go-backlog"
 postedAt: "2026-10-25T08:46:46.552Z"
@@ -42,7 +42,7 @@ go-backlog
 
 ## Requirements
 
-- Go >= 1.23
+- Go >= 1.26
 
 ## Installation
 
@@ -53,11 +53,3 @@ go get github.com/nattokin/go-backlog
 ## Examples
 
 `NewClient` authenticates with a Backlog [API key](https://developer.nulab.com/docs/backlog/auth/#api-key), which is sent in the `Backlog-API-Key` request header.
-
-```go
-c, err := backlog.NewClient(
-    os.Getenv("BACKLOG_BASE_URL"),
-    os.Getenv("BACKLOG_API_KEY"),
-)
-
-// Get all Wiki pages…

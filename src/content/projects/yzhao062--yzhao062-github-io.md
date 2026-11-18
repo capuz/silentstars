@@ -16,7 +16,7 @@ watchers: 1
 contributors: 21
 recentReleases: 0
 createdAt: "2023-05-18T02:24:55Z"
-lastCommitAt: "2026-11-17T07:43:13Z"
+lastCommitAt: "2026-11-17T22:46:07Z"
 status: "thriving"
 tags: ["funded", "fork_magnet"]
 healthScore: 89
@@ -49,16 +49,3 @@ Member sections are data-driven. Update JSON files instead of editing `lab.html`
 4. **Preview locally** by opening `lab.html` in a browser.
 5. **Keep commits clean** (no `.DS_Store`, `.idea/*.xml`, etc.).
 6. **Open a PR**.
-
-### JSON Examples
-
-#### Current Ph.D. student (`data/lab-current-phd.json`)
-
-```json
-{
-  "name": "Jane Doe",
-  "profile_url": "https://example.com",
-  "image": "images/others/jane_doe.webp",
-  "alt": "Jane Doe",
-  "year_info": "1st year, Joined Fortis in Aug 2026",
-  "research": "LLM Safety, Robustness",…

@@ -35,6 +35,3 @@ This module is meant to change the condition icons and effects in the SWADE syst
 
 * We use [Weblate](https://hosted.weblate.org/projects/swade-ultimate-condition-changer/main/) to manage translations. Please register there to help get the module translated into your language. To request a new language, please open an issue or reach out to us on Discord.
 * Thanks to Weblate for giving us free hosting. If you would like to donate to them, you can do that at https://weblate.org/donate/.
-
-## Mentions & Credits
-### Chat…

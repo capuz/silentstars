@@ -15,7 +15,7 @@ watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2017-08-24T21:26:04Z"
-lastCommitAt: "2026-11-17T13:19:05Z"
+lastCommitAt: "2026-11-18T03:41:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
 healthScore: 95
@@ -44,10 +44,3 @@ However, if this project stops updating for some reason
 feel free to file an issue,
 as the updater process may have fallen over
 and be in need of manual restarting.
-
-## My Spec Is Missing From Bikeshed?
-
-Bikeshed draws most of its data from [Browser Specs](https://github.com/w3c/browser-specs),
-which should capture all the specs (W3C and otherwise)
-that are relevant for web browsers.
-If your spec isn't on [the list](https://github.com/speced/bikeshed-data/blob/main/data/specs.json) but you think it…

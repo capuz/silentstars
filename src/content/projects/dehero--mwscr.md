@@ -16,7 +16,7 @@ watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-04-05T06:35:39Z"
-lastCommitAt: "2026-11-17T09:52:29Z"
+lastCommitAt: "2026-11-18T09:25:22Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
@@ -52,9 +52,3 @@ game from [Bethesda Softworks](https://elderscrolls.bethesda.net/en/morrowind). 
 
 Full information about the project is available in the [guide](https://github.com/dehero/mwscr/blob/HEAD/CONTRIBUTING.md). If you want to participate in the
 project, please read it.
-
-## About the repository
-
-### Data
-
-Information about main…

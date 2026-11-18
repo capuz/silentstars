@@ -11,19 +11,19 @@ languagePcts: [89]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 34
 forks: 9
-openIssues: 56
-closedIssues: 1507
+openIssues: 55
+closedIssues: 1526
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-11-17T14:01:24Z"
+lastCommitAt: "2026-11-18T07:46:28Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
 undervaluedScore: 63
-maintainers: ["integry", "propr-dev[bot]", "proprdev"]
+maintainers: ["propr-dev[bot]", "integry", "proprdev"]
 openGraphImageUrl: "https://opengraph.githubassets.com/104031c52a03a594f6769612bef77be43b7b7b3559c363fd8ae9d19ef1323f8c/integry/propr"
 discussionCount: 0
 postedAt: "2026-09-23T08:56:00.034Z"
@@ -39,8 +39,3 @@ Run Claude Code, Codex and other coding agents on your own server.<br />
 ProPR is an **open-source, self-hosted platform** that manages AI coding agents the way you manage engineers: through issues, pull requests and code review. Claude Code, Codex and other agents write the code. ProPR gives them a shared engineering process — a plan, an isolated workspace, a pull request, and a review loop — on your own server, with the AI subscriptions or API keys you already have.
 
 **Label a GitHub issue and get a pull request back.**
-
-|        | Step                        | What happens                                                                                             |
-| ------ | --------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **01** | Label an issue              | Add the `AI` label to a normal GitHub issue. Add a model label such as `llm-claude-opus55` to pick the agent. |
-| **02** | Get a pull request          | The agent works in its own Docker…

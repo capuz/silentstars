@@ -39,5 +39,3 @@ Bring your own X API credentials. X API charges and any hosting costs still appl
 ## X prerequisites
 
 **The offline demo needs no X account, tokens or X API credits.** The installer requires the complete live setup below, including automatic token renewal. To get started, create an app in the [X Developer Console](https://console.x.com), check its [X Activity access](https://docs.x.com/x-api/activity/quickstart), and provide the settings below.
-
-| Setting | What to…

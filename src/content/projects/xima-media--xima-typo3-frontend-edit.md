@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-14T09:36:04Z"
 lastReleaseAt: "2025-05-25T11:43:10Z"
 status: "thriving"
 tags: []
-healthScore: 95
+healthScore: 94
 undervaluedScore: 70
 maintainers: ["konradmichalik", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/699bfec2960999ab3c1a49c1fe3df7fce147d3498301c81316f348255534c817/xima-media/xima-typo3-frontend-edit"
@@ -34,12 +34,6 @@ Edit, hide, delete, reorder and create TYPO3 content, without leaving the fronte
 
 It adds an edit button to every content element, a page-level toolbar, and optional inline editing and drag & drop, all rendered directly on top of the live frontend.
 
-> [!NOTE]
+> **Note**
+>
 > **Why?** TYPO3 editors constantly switch between frontend and backend just to find the right content element. This extension removes that context switch: the editing actions appear exactly where the content is displayed.
-
-## ✨ Features
-
-- [Edit Menu](https://docs.typo3.org/p/xima/xima-typo3-frontend-edit/main/en-us/Usage/EditMenu.html): edit, hide, delete, move, info and history per content element, with a confirmation dialog before deleting
-- [Toolbar](https://docs.typo3.org/p/xima/xima-typo3-frontend-edit/main/en-us/Usage/Toolbar.html): page-level actions and a toggle to switch frontend editing on and off
-- [Inline Editing](https://docs.typo3.org/p/xima/xima-typo3-frontend-edit/main/en-us/Usage/InlineEditing.html) (experimental, opt-in): edit content and page properties in a panel next to the page, sidebar on TYPO3 v14.2+, slide-in modal on v13
-- [New…

@@ -43,5 +43,3 @@ Roll an alt of a class you already play and you lay its bars out like the others
 Addons have been putting spells on keys without a bar slot for years. None of them answer the next question:
 
 **Which characters is this key for?**
-
-Most of your binds are the same on every character. Some belong to one class. A few to one spec, one or two to a single character. WoW's own switch is all-or-nothing — the whole set shared, or the whole set per-character — and…

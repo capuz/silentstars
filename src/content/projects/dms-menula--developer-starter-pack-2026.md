@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/DMS-Menula/developer-starter-pack-2026"
 homepage: "https://dms-menula.github.io/"
 topics: ["2026", "ai-tools", "beginners", "developer", "javascript", "learning", "opensource", "react", "resources", "starter-kit"]
-stars: 50
+stars: 49
 forks: 10
 openIssues: 0
 closedIssues: 1
@@ -18,8 +18,8 @@ lastCommitAt: "2026-11-17T05:13:20Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 91
-undervaluedScore: 54
+healthScore: 90
+undervaluedScore: 55
 maintainers: ["DMS-Menula", "DMS-ranil", "Yuzu-Peel"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"
 discussionCount: 1
@@ -73,4 +73,4 @@ Perfect for:
 * Figma – UI / UX design
 * Chrome DevTools – Debugging
 
----…
+---

@@ -45,5 +45,3 @@ framework's opinions.
   nothing else. Only the files that wire the app import it: one file in a small app, one per module in a
   larger one. Decorator-based containers put their imports into every service file
   ([comparison](https://masyaka.github.io/injecute/concepts/comparison#footprint-in-your-code)).
-- **Modules and private services.** Each module declares the services it needs, and the compiler checks
-  that the app provides…

@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-17T02:39:51Z"
 lastReleaseAt: "2026-11-04T03:51:45Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 59
 maintainers: ["suirindo", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7938992b12863dd6c3b063f5fb3cf272c96c1469977451095f53cfe89975c7c8/suirindo/agent-role-contracts"
@@ -51,11 +51,3 @@ npm --prefix agent-role-contracts run demo --silent
 ```
 
 No `npm install`, API key, agent runtime or account is needed. Only cloning uses the network; the demo runs offline. The commands use Git and npm and do not require Bash, Docker or OS-specific tools.
-
-### Expected output
-
-```text
-Agent Role Contracts: check a task before handing it to an agent.
-
-1. Normal task
-   Scope: src/example.mjs; allowed:…

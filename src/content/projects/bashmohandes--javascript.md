@@ -16,7 +16,7 @@ watchers: 2
 contributors: 1
 recentReleases: 5
 createdAt: "2016-12-17T17:18:51Z"
-lastCommitAt: "2026-11-16T17:44:56Z"
+lastCommitAt: "2026-11-17T18:21:10Z"
 lastReleaseAt: "2026-09-12T04:56:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "release_machine"]
@@ -40,10 +40,3 @@ topology and subsystem flows. Architectural decisions are indexed in
 [the ADR directory](https://github.com/bashmohandes/Javascript/blob/HEAD/docs/adr/README.md), with a dedicated guide to
 [online rendering smoothing and prediction](https://github.com/bashmohandes/Javascript/blob/HEAD/docs/online-rendering.md) and an
 operator-focused [release process](https://github.com/bashmohandes/Javascript/blob/HEAD/docs/release-process.md).
-
-## Games
-
-| Game | About | Play |
-| --- | --- | --- |
-| **Sudoku** | The refreshed, responsive version with notes, hints, keyboard controls, and an animated backtracking solver. | [Play modern Sudoku](https://bashmohandes.github.io/Javascript/Sudoku/) |
-| **Sudoku Classic** | The original p5.js experiment, preserved alongside the new game. | [Play Sudoku…

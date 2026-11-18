@@ -16,7 +16,7 @@ watchers: 0
 contributors: 7
 recentReleases: 0
 createdAt: "2020-08-07T21:48:06Z"
-lastCommitAt: "2026-11-17T12:53:29Z"
+lastCommitAt: "2026-11-18T09:33:53Z"
 status: "thriving"
 tags: ["legacy_hero", "funded"]
 healthScore: 97
@@ -45,7 +45,3 @@ Successful history of identifying patterns, making interpretations, and producin
       alt="GitHub Streak" data-canonical-src="https://github-readme-activity-graph.vercel.app/graph?username=jimbrig&theme=react-dark"
       style="max-width:100%;"
     >
-
-| 💻 **Technology** | 🚀 **Projects** |
-| - | - |
-| [](https://www.r-project.org/) | [](https://github.com/rinterface/shinydashboardplus) [](https://github.com/o2r-project/containerit) [](https://github.com/tychobra/polished) [](https://github.com/jimbrig/rtraining) [](https://github.com/jimbrig/jimstaskviews) [](https://github.com/jimbrig/github-issue-table)…

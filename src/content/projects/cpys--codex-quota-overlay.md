@@ -38,10 +38,6 @@ Codex Quota Overlay keeps the current limit beside the Codex conversation title,
 
 The screenshot preserves the real Codex window and overlay placement. Unrelated workspace, conversation, and account content is blurred, and the original screenshot is not committed.
 
-> [!IMPORTANT]
+> **Important**
+>
 > This is an independent community project. It is not affiliated with, endorsed by, or supported by OpenAI.
-
-## Features
-
-- Offers compact, balanced, and insight overlay modes with remaining quota, reset countdown, and optional burn-rate context.
-- Opens a local Quota Center from…

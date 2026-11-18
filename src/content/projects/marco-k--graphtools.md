@@ -50,7 +50,3 @@ postedAt: "2026-10-02T10:06:49.533Z"
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [License](#license)
-
-## 🎯 Overview
-
-**GraphTools** is a high-performance, enterprise-grade PowerShell module designed for IT security professionals, identity architects, and cloud administrators…

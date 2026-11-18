@@ -54,4 +54,4 @@ it learned, **Erase everything** starts it from zero.
 
 Nothing tells it where the web is: its reading begins where you point it. Write a link to it on its page (Talk), or put
 a file of links (one per line) or any file in `novalie_inbox/`. From there it follows links by itself, and reading
-becomes one of its acts.…
+becomes one of its acts.

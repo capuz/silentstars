@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-08T08:36:46Z"
 lastReleaseAt: "2026-06-20T01:45:32Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 35
 maintainers: ["sricola"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b80dba01dc00f016434d5a8377773ab65262a019a8dca9fc778cde69cafe3569/sricola/drydock"
@@ -44,9 +44,3 @@ reaches your real code until you approve it.
   needs, nothing else).
 - **Nothing touches your repo until you say so.** You read the diff and approve
   it before it ever reaches `origin`.
-
-Most agent tooling tries to keep the agent *well-behaved*: permission
-prompts, output filters, policy. drydock takes the opposite stance: **contain
-the blast radius**. A hostile agent (a poisoned repo, a malicious dependency,
-a prompt injection that turns a fetched URL into a shell command) can't reach
-your key, your filesystem, your…

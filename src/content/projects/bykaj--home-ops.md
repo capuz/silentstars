@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-06-09T15:23:13Z"
-lastCommitAt: "2026-11-17T06:15:59Z"
+lastCommitAt: "2026-11-18T10:39:51Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 95
@@ -50,7 +50,3 @@ _Managed with Flux, Renovate, and GitHub Actions_
 7. [License](#-license)
 
 ---
-
-## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="20" height="20"> Overview
-
-This is a mono repository for my wildly over-engineered home infrastructure and Kubernetes cluster, because apparently I hate free time. I try to follow Infrastructure as Code (IaC) and GitOps practices using enterprise-grade tools like [Ansible](https://www.ansible.com/), [Kubernetes](https://kubernetes.io/), [Flux](https://github.com/fluxcd/flux2), [Renovate](https://github.com/renovatebot/renovate) and [GitHub Actions](https://github.com/features/actions)—you know, the same stack Netflix uses, except mine just runs my Plex…

@@ -47,7 +47,3 @@ Welcome to the **OMOIKA** project where you can connect, combine, and get insigh
 
 OMOIKA is currently developed by an individual aiming to grow into a small focused team.  
 There is no open contribution process as of now however you may contribute plugins to this repo or in time, themes too.
-
-- **Website**: https://omoika.institute
-- **Email**: omoika-institute@proton.me
-- **Discord**: [Join our community](https://discord.gg/b8vW4J4skv) for discussions…

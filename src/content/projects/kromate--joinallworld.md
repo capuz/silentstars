@@ -34,7 +34,3 @@ Allworld is an open-source browser game. A digital world to live in. Real-world 
 Play it at [joinallworld.com](https://joinallworld.com).
 
 **Status: early beta.** [What works today](https://github.com/kromate/joinallworld/blob/HEAD/docs/REFERENCE.md#what-works-today) and [what does not work yet](https://github.com/kromate/joinallworld/blob/HEAD/docs/REFERENCE.md#what-does-not-work-yet) are listed in the reference.
-
-## Build a game for Allworld
-
-The cartridge standard is open. Anyone can build a live game that every player can play on [joinallworld.com](https://joinallworld.com): two to four people (or a bot) in one match, judged by the server, with replays, clips, controllers and capped game-money stakes coming for…

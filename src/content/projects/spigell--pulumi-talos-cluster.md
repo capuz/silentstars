@@ -15,7 +15,7 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-11-11T01:51:17Z"
-lastCommitAt: "2026-11-16T21:39:06Z"
+lastCommitAt: "2026-11-18T02:49:32Z"
 lastReleaseAt: "2026-07-14T11:12:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -47,5 +47,3 @@ Only Linux is supported as the runner operating system. The following tools must
 1. Install `bash` (at `/bin/bash`), `printf`, and `talosctl` on a Linux machine.
 2. Clone this repository.
 3. Run an example program, such as those under `integration-tests/testdata`, using `pulumi up`. The provider plugin installs automatically.
-
-Existing stacks that use the Pulumiverse Talos provider must follow the [migration…

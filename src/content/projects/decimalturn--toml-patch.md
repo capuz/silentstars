@@ -49,5 +49,3 @@ We hope that these improvements can be incorporated upstream one day if the orig
 - [Changelog](https://github.com/DecimalTurn/toml-patch/blob/v3.3.3/CHANGELOG.md)
 - [Contributing](https://github.com/DecimalTurn/toml-patch/blob/v3.3.3/CONTRIBUTING.md)
 - [MIT License](https://github.com/DecimalTurn/toml-patch/blob/v3.3.3/LICENSE)
-
-##…

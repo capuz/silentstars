@@ -17,7 +17,7 @@ watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-11-17T03:29:54Z"
+lastCommitAt: "2026-11-18T05:24:03Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
@@ -50,5 +50,3 @@ Every demo below was made with OPRN Studio and runs in the browser — no instal
 ## What's new
 
 Since the first public release in early October 2026:
-
-- 🎮 **Play on phones and tablets.** Exported games have touch controls — an on-screen stick, tap-to-walk and…

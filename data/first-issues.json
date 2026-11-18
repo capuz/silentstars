@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-18T01:39:22.210Z",
+  "collectedAt": "2026-11-18T12:12:34.432Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,141 +55,23 @@
       ]
     },
     {
-      "repo": "cds-snc/forms-terraform",
-      "slug": "cds-snc--forms-terraform",
-      "lastCommitAt": "2026-11-17T15:16:53Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true,
-        "approxKloc": 17
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 654,
-          "title": "Make all ECR repositories immutable",
-          "url": "https://github.com/cds-snc/forms-terraform/issues/654",
-          "kind": "good first issue",
-          "createdAt": "2024-05-03T19:48:12Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "Varanda-org/varanda",
-      "slug": "varanda-org--varanda",
-      "lastCommitAt": "2026-11-18T01:24:45Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 153,
-          "title": "Revisar a acessibilidade de Publicar e Denunciar",
-          "url": "https://github.com/Varanda-org/varanda/issues/153",
-          "kind": "help wanted",
-          "createdAt": "2026-10-26T20:25:36Z",
-          "comments": 1
-        },
-        {
-          "number": 55,
-          "title": "Revisar a acessibilidade das telas do piloto (rótulos, leitor de tela, contraste)",
-          "url": "https://github.com/Varanda-org/varanda/issues/55",
-          "kind": "help wanted",
-          "createdAt": "2026-10-23T00:37:15Z",
-          "comments": 1
-        },
-        {
-          "number": 223,
-          "title": "Executar os roteiros manuais do cliente (verification.md §18 a §203)",
-          "url": "https://github.com/Varanda-org/varanda/issues/223",
-          "kind": "help wanted",
-          "createdAt": "2026-10-30T07:13:10Z",
-          "comments": 0
-        },
-        {
-          "number": 155,
-          "title": "Revisar a acessibilidade de Diário, Perfil, Seguindo e do onboarding",
-          "url": "https://github.com/Varanda-org/varanda/issues/155",
-          "kind": "help wanted",
-          "createdAt": "2026-10-26T20:25:51Z",
-          "comments": 0
-        },
-        {
-          "number": 48,
-          "title": "Sincronizar sozinho: ao abrir o app, no Wi-Fi por padrão e em segundo plano",
-          "url": "https://github.com/Varanda-org/varanda/issues/48",
-          "kind": "help wanted",
-          "createdAt": "2026-10-23T00:37:00Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "Ishannaik/seatsniper",
-      "slug": "ishannaik--seatsniper",
-      "lastCommitAt": "2026-11-17T14:48:25Z",
-      "signals": {
-        "outsidePRsMerged": 28,
-        "outsidePRsCapped": false,
-        "approxKloc": 11
-      },
-      "goodFirstIssueCount": 19,
-      "issues": [
-        {
-          "number": 146,
-          "title": "Docs: docker-compose.yml comment says 'monitor via UPTIME_KUMA_PUSH_URL' but that var isn't in .env.example",
-          "url": "https://github.com/Ishannaik/seatsniper/issues/146",
-          "kind": "good first issue",
-          "createdAt": "2026-10-05T03:42:11Z",
-          "comments": 1
-        },
-        {
-          "number": 87,
-          "title": "help embed: document after/before time filters from #84",
-          "url": "https://github.com/Ishannaik/seatsniper/issues/87",
-          "kind": "good first issue",
-          "createdAt": "2026-08-20T07:48:01Z",
-          "comments": 2
-        },
-        {
-          "number": 152,
-          "title": "No test proves /stop on someone else's watch ID returns false rather than silently deleting",
-          "url": "https://github.com/Ishannaik/seatsniper/issues/152",
-          "kind": "good first issue",
-          "createdAt": "2026-10-05T03:43:22Z",
-          "comments": 0
-        },
-        {
-          "number": 144,
-          "title": "Feature: /help should mention the 5-watch-per-user cap",
-          "url": "https://github.com/Ishannaik/seatsniper/issues/144",
-          "kind": "good first issue",
-          "createdAt": "2026-10-05T03:42:04Z",
-          "comments": 0
-        },
-        {
-          "number": 23,
-          "title": "District provider: movies + events open-alerts (research → implement)",
-          "url": "https://github.com/Ishannaik/seatsniper/issues/23",
-          "kind": "help wanted",
-          "createdAt": "2026-08-06T04:44:12Z",
-          "comments": 3
-        }
-      ]
-    },
-    {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-17T14:36:50Z",
+      "lastCommitAt": "2026-11-18T11:21:21Z",
       "signals": {
         "outsidePRsMerged": 28,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 14,
       "issues": [
+        {
+          "number": 578,
+          "title": "Cleanup code documentation",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/578",
+          "kind": "good first issue",
+          "createdAt": "2026-09-01T14:55:33Z",
+          "comments": 1
+        },
         {
           "number": 329,
           "title": "Mocks for lifecycle",
@@ -221,94 +103,26 @@
           "kind": "good first issue",
           "createdAt": "2026-08-06T08:31:01Z",
           "comments": 1
-        },
-        {
-          "number": 676,
-          "title": "Get rid of git override for score_crates",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/676",
-          "kind": "good first issue",
-          "createdAt": "2026-09-22T08:26:54Z",
-          "comments": 0
         }
       ]
     },
     {
-      "repo": "Copperpour/Copperpour",
-      "slug": "copperpour--copperpour",
-      "lastCommitAt": "2026-11-17T23:07:58Z",
+      "repo": "paritytech/web3-storage",
+      "slug": "paritytech--web3-storage",
+      "lastCommitAt": "2026-11-18T12:03:17Z",
       "signals": {
-        "outsidePRsMerged": 28,
+        "outsidePRsMerged": 14,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 3,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 251,
-          "title": "docs(readme): add a Copperpour hero banner and badges",
-          "url": "https://github.com/Copperpour/Copperpour/issues/251",
+          "number": 36,
+          "title": "[ProviderNode] Default storage/bucket internal implementation",
+          "url": "https://github.com/paritytech/web3-storage/issues/36",
           "kind": "good first issue",
-          "createdAt": "2026-11-01T19:28:39Z",
-          "comments": 1
-        },
-        {
-          "number": 43,
-          "title": "create_symbol should warn when a pin coordinate is not on the 1.27 mm grid",
-          "url": "https://github.com/Copperpour/Copperpour/issues/43",
-          "kind": "good first issue",
-          "createdAt": "2026-10-27T13:26:14Z",
+          "createdAt": "2026-03-05T22:09:45Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "hivecommons/hive",
-      "slug": "hivecommons--hive",
-      "lastCommitAt": "2026-11-18T01:21:16Z",
-      "signals": {
-        "outsidePRsMerged": 19,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 18740,
-          "title": "🐛 Sessions: Codex and OpenCode OAuth logins can still split from the shared login when a session refreshes them",
-          "url": "https://github.com/hivecommons/hive/issues/18740",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T15:25:31Z",
-          "comments": 2
-        },
-        {
-          "number": 18830,
-          "title": "[shared-ci] server-tests failing across hivecommons/hive",
-          "url": "https://github.com/hivecommons/hive/issues/18830",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T22:09:00Z",
-          "comments": 1
-        },
-        {
-          "number": 18764,
-          "title": "PR Verifier leaves the required `PR Type` and `PR Issue` checks stuck in progress when it cannot update its own check runs (404), blocking an approved PR",
-          "url": "https://github.com/hivecommons/hive/issues/18764",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T16:27:40Z",
-          "comments": 3
-        },
-        {
-          "number": 18798,
-          "title": "[selfreport] unclassified_error_repeated: proxy: agent could not be identified — defaulting to ADVISORY and blocking a …",
-          "url": "https://github.com/hivecommons/hive/issues/18798",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T18:00:48Z",
-          "comments": 1
-        },
-        {
-          "number": 18661,
-          "title": "[scanner] quorum-companion: Linux capture module (PipeWire per-node capture)",
-          "url": "https://github.com/hivecommons/hive/issues/18661",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T08:00:30Z",
-          "comments": 3
         }
       ]
     },
@@ -334,209 +148,21 @@
       ]
     },
     {
-      "repo": "muhammademanaftab/pulse",
-      "slug": "muhammademanaftab--pulse",
-      "lastCommitAt": "2026-11-17T14:51:36Z",
+      "repo": "hiKareeem/Clawshot",
+      "slug": "hikareeem--clawshot",
+      "lastCommitAt": "2026-11-18T11:39:01Z",
       "signals": {
-        "outsidePRsMerged": 12,
-        "outsidePRsCapped": false,
-        "approxKloc": 6
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 56,
-          "title": "Capture sessions from Cursor",
-          "url": "https://github.com/muhammademanaftab/pulse/issues/56",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T13:38:59Z",
-          "comments": 0
-        },
-        {
-          "number": 55,
-          "title": "Capture sessions from Codex CLI",
-          "url": "https://github.com/muhammademanaftab/pulse/issues/55",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T13:38:57Z",
-          "comments": 0
-        },
-        {
-          "number": 53,
-          "title": "New skill: turn the rules in your notes into CLAUDE.md suggestions",
-          "url": "https://github.com/muhammademanaftab/pulse/issues/53",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T13:38:54Z",
-          "comments": 0
-        },
-        {
-          "number": 52,
-          "title": "Session briefing: give Claude a project's open items, decisions and rules when a session starts",
-          "url": "https://github.com/muhammademanaftab/pulse/issues/52",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T13:38:53Z",
-          "comments": 0
-        },
-        {
-          "number": 54,
-          "title": "New skill: a timesheet of estimated hours per project",
-          "url": "https://github.com/muhammademanaftab/pulse/issues/54",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T13:38:56Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "ohad6k/VibeRaven",
-      "slug": "ohad6k--viberaven",
-      "lastCommitAt": "2026-11-17T14:37:07Z",
-      "signals": {
-        "outsidePRsMerged": 10,
-        "outsidePRsCapped": false,
-        "approxKloc": 1
-      },
-      "goodFirstIssueCount": 17,
-      "issues": [
-        {
-          "number": 58,
-          "title": "docs: guide — run VibeRaven on an app exported from Lovable / Bolt / v0",
-          "url": "https://github.com/ohad6k/VibeRaven/issues/58",
-          "kind": "good first issue",
-          "createdAt": "2026-07-02T22:19:22Z",
-          "comments": 1
-        },
-        {
-          "number": 57,
-          "title": "docs: translate the README quickstart (\"Your first 5 minutes\") — ES / PT / HI / ZH / others",
-          "url": "https://github.com/ohad6k/VibeRaven/issues/57",
-          "kind": "good first issue",
-          "createdAt": "2026-07-02T22:19:21Z",
-          "comments": 0
-        },
-        {
-          "number": 35,
-          "title": "provider:resend - domain verification evidence example",
-          "url": "https://github.com/ohad6k/VibeRaven/issues/35",
-          "kind": "good first issue",
-          "createdAt": "2026-06-26T17:20:16Z",
-          "comments": 0
-        },
-        {
-          "number": 28,
-          "title": "check-registry - Add a new provider evidence rule",
-          "url": "https://github.com/ohad6k/VibeRaven/issues/28",
-          "kind": "good first issue",
-          "createdAt": "2026-06-25T15:25:16Z",
-          "comments": 0
-        },
-        {
-          "number": 22,
-          "title": "provider:sentry - Add monitoring evidence example",
-          "url": "https://github.com/ohad6k/VibeRaven/issues/22",
-          "kind": "good first issue",
-          "createdAt": "2026-06-25T15:25:07Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "beppe2880/opencode-mobile",
-      "slug": "beppe2880--opencode-mobile",
-      "lastCommitAt": "2026-11-17T22:08:22Z",
-      "signals": {
-        "outsidePRsMerged": 7,
+        "outsidePRsMerged": 6,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 5,
-          "title": "Archive sessions",
-          "url": "https://github.com/beppe2880/opencode-mobile/issues/5",
-          "kind": "good first issue",
-          "createdAt": "2026-10-16T15:52:38Z",
-          "comments": 2
-        },
-        {
           "number": 11,
-          "title": "Baseline profile for faster startup",
-          "url": "https://github.com/beppe2880/opencode-mobile/issues/11",
-          "kind": "help wanted",
-          "createdAt": "2026-10-16T15:52:50Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "zephyrproject-rtos/west",
-      "slug": "zephyrproject-rtos--west",
-      "lastCommitAt": "2026-11-17T14:48:35Z",
-      "signals": {
-        "outsidePRsMerged": 6,
-        "outsidePRsCapped": false,
-        "approxKloc": 18
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 952,
-          "title": "HOWTO use west logging without a WestCommand object (and without the deprecated west.log global)",
-          "url": "https://github.com/zephyrproject-rtos/west/issues/952",
-          "kind": "help wanted",
-          "createdAt": "2026-05-20T23:14:50Z",
-          "comments": 1
-        },
-        {
-          "number": 625,
-          "title": "Investigate git clone --reference[-if-able] when using --path-cache/--name-cache",
-          "url": "https://github.com/zephyrproject-rtos/west/issues/625",
-          "kind": "help wanted",
-          "createdAt": "2023-02-13T21:04:20Z",
-          "comments": 8
-        }
-      ]
-    },
-    {
-      "repo": "shadcn-labs/transition-kit",
-      "slug": "shadcn-labs--transition-kit",
-      "lastCommitAt": "2026-11-17T17:42:52Z",
-      "signals": {
-        "outsidePRsMerged": 6,
-        "outsidePRsCapped": false,
-        "approxKloc": 28
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 17,
-          "title": "Show the new UI components in the home gallery",
-          "url": "https://github.com/shadcn-labs/transition-kit/issues/17",
+          "title": "Shuffle the 40-token Skulltula reward",
+          "url": "https://github.com/hiKareeem/Clawshot/issues/11",
           "kind": "good first issue",
-          "createdAt": "2026-11-14T07:34:46Z",
-          "comments": 3
-        },
-        {
-          "number": 18,
-          "title": "Collapsible sidebar: keyboard shortcut, tooltips when collapsed, mobile behaviour",
-          "url": "https://github.com/shadcn-labs/transition-kit/issues/18",
-          "kind": "help wanted",
-          "createdAt": "2026-11-14T07:34:48Z",
-          "comments": 2
-        },
-        {
-          "number": 16,
-          "title": "Toast stack: collapsed stack, swipe and Escape to dismiss, variants",
-          "url": "https://github.com/shadcn-labs/transition-kit/issues/16",
-          "kind": "help wanted",
-          "createdAt": "2026-11-14T07:34:44Z",
-          "comments": 0
-        },
-        {
-          "number": 6,
-          "title": "New component: Image lightbox (grid to full screen shared-element transition)",
-          "url": "https://github.com/shadcn-labs/transition-kit/issues/6",
-          "kind": "help wanted",
-          "createdAt": "2026-11-07T18:07:29Z",
+          "createdAt": "2026-11-12T17:46:26Z",
           "comments": 0
         }
       ]
@@ -584,7 +210,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-17T11:09:40Z",
+      "lastCommitAt": "2026-11-18T10:42:16Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -634,39 +260,66 @@
       ]
     },
     {
-      "repo": "jannikmi/extremitypathfinder",
-      "slug": "jannikmi--extremitypathfinder",
-      "lastCommitAt": "2026-11-17T18:44:47Z",
+      "repo": "elsa-workflows/elsa-foundation",
+      "slug": "elsa-workflows--elsa-foundation",
+      "lastCommitAt": "2026-11-18T11:23:00Z",
       "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false,
-        "approxKloc": 19
+        "outsidePRsMerged": 4,
+        "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 255,
-          "title": "Break up utils.py into modules by topic",
-          "url": "https://github.com/jannikmi/extremitypathfinder/issues/255",
+          "number": 1918,
+          "title": "Share tooling exit diagnostics across migration tests",
+          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/1918",
           "kind": "good first issue",
-          "createdAt": "2026-11-12T20:01:16Z",
-          "comments": 0
+          "createdAt": "2026-09-21T12:32:34Z",
+          "comments": 5
         },
         {
-          "number": 80,
-          "title": "further compile the core visibility algorithms",
-          "url": "https://github.com/jannikmi/extremitypathfinder/issues/80",
-          "kind": "help wanted",
-          "createdAt": "2023-06-16T21:48:35Z",
-          "comments": 0
+          "number": 1231,
+          "title": "U1: make SideEffectProfile discoverable to activity authors",
+          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/1231",
+          "kind": "good first issue",
+          "createdAt": "2026-08-09T23:40:01Z",
+          "comments": 4
         },
         {
-          "number": 6,
-          "title": "Line obstacles: walls and open polylines",
-          "url": "https://github.com/jannikmi/extremitypathfinder/issues/6",
+          "number": 2445,
+          "title": "Task: Repair JavaScript rendering catalog navigation",
+          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/2445",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T03:58:23Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "repo": "IHUI-INF-AI/IHUI-AI",
+      "slug": "ihui-inf-ai--ihui-ai",
+      "lastCommitAt": "2026-11-18T12:03:37Z",
+      "signals": {
+        "outsidePRsMerged": 4,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 22,
+          "title": "🌟 Welcome new contributors! 5 good-first-issues ready",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/22",
           "kind": "help wanted",
-          "createdAt": "2018-10-09T09:43:56Z",
-          "comments": 3
+          "createdAt": "2026-07-27T11:34:04Z",
+          "comments": 1
+        },
+        {
+          "number": 31,
+          "title": "help wanted: 寻求 v2.0 AI 操作系统愿景的社区反馈",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/31",
+          "kind": "help wanted",
+          "createdAt": "2026-08-01T05:44:49Z",
+          "comments": 0
         }
       ]
     },
@@ -779,9 +432,9 @@
       ]
     },
     {
-      "repo": "unitaryfoundation/qldpc-challenge",
-      "slug": "unitaryfoundation--qldpc-challenge",
-      "lastCommitAt": "2026-11-17T23:42:15Z",
+      "repo": "RYOITABASHI/Shelly",
+      "slug": "ryoitabashi--shelly",
+      "lastCommitAt": "2026-11-18T12:05:11Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -789,11 +442,11 @@
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 6198,
-          "title": "Explore code-calculus v0.2: greedy gated campaigns — seven campaign designs to run",
-          "url": "https://github.com/unitaryfoundation/qldpc-challenge/issues/6198",
+          "number": 143,
+          "title": "Set up ESLint + Prettier",
+          "url": "https://github.com/RYOITABASHI/Shelly/issues/143",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T17:09:09Z",
+          "createdAt": "2026-09-12T00:16:28Z",
           "comments": 0
         }
       ]
@@ -820,105 +473,105 @@
       ]
     },
     {
-      "repo": "engviniciusbs/hoprs",
-      "slug": "engviniciusbs--hoprs",
-      "lastCommitAt": "2026-11-17T14:43:46Z",
+      "repo": "AhmetErenLapanta/TeamHandbook",
+      "slug": "ahmeterenlapanta--teamhandbook",
+      "lastCommitAt": "2026-11-18T12:04:04Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 4,
+      "goodFirstIssueCount": 8,
       "issues": [
         {
-          "number": 17,
-          "title": "keyring_smoke: remove the test entry even when the test fails",
-          "url": "https://github.com/engviniciusbs/hoprs/issues/17",
+          "number": 11,
+          "title": "A lesson candidate whose project is gone is written into whichever project the review runs from",
+          "url": "https://github.com/AhmetErenLapanta/TeamHandbook/issues/11",
           "kind": "good first issue",
-          "createdAt": "2026-11-15T20:15:57Z",
+          "createdAt": "2026-10-09T07:03:37Z",
           "comments": 0
         },
         {
-          "number": 20,
-          "title": "File sizes from 1000 to 1023 are not digit-grouped",
-          "url": "https://github.com/engviniciusbs/hoprs/issues/20",
+          "number": 10,
+          "title": "A draft's verification section cannot name the repository's own check command, because the evidence never carries it",
+          "url": "https://github.com/AhmetErenLapanta/TeamHandbook/issues/10",
           "kind": "good first issue",
-          "createdAt": "2026-11-15T20:16:01Z",
+          "createdAt": "2026-10-09T07:03:35Z",
           "comments": 0
         },
         {
-          "number": 19,
-          "title": "Translate hoprs into your language",
-          "url": "https://github.com/engviniciusbs/hoprs/issues/19",
+          "number": 9,
+          "title": "Any path with `changelog` in it counts as documentation: a Liquibase repository's migrations drop out of the measurements",
+          "url": "https://github.com/AhmetErenLapanta/TeamHandbook/issues/9",
           "kind": "good first issue",
-          "createdAt": "2026-11-15T20:16:00Z",
+          "createdAt": "2026-10-09T07:03:34Z",
           "comments": 0
         },
         {
-          "number": 18,
-          "title": "CI: move actions/* off Node 20",
-          "url": "https://github.com/engviniciusbs/hoprs/issues/18",
+          "number": 8,
+          "title": "The review screen's hygiene lines name the file but not the line, while the share screen names both",
+          "url": "https://github.com/AhmetErenLapanta/TeamHandbook/issues/8",
           "kind": "good first issue",
-          "createdAt": "2026-11-15T20:15:58Z",
+          "createdAt": "2026-10-09T07:03:32Z",
           "comments": 0
         },
         {
-          "number": 22,
-          "title": "Translate the FileZilla import report",
-          "url": "https://github.com/engviniciusbs/hoprs/issues/22",
-          "kind": "help wanted",
-          "createdAt": "2026-11-15T20:16:05Z",
+          "number": 7,
+          "title": "A slash command reached through a symbolic link is missing from the share screen",
+          "url": "https://github.com/AhmetErenLapanta/TeamHandbook/issues/7",
+          "kind": "good first issue",
+          "createdAt": "2026-10-09T07:03:30Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "OpenLakeForge/openlakeforge",
-      "slug": "openlakeforge--openlakeforge",
-      "lastCommitAt": "2026-11-18T00:06:05Z",
+      "repo": "nambean/Pygg",
+      "slug": "nambean--pygg",
+      "lastCommitAt": "2026-11-18T12:08:57Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 4,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 482,
-          "title": "test(dbt): validate the inventory mart's product–warehouse grain",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/482",
+          "number": 6,
+          "title": "Capture Gemini's quota answer (429 RESOURCE_EXHAUSTED) as a provider-error fixture",
+          "url": "https://github.com/nambean/Pygg/issues/6",
           "kind": "good first issue",
-          "createdAt": "2026-10-21T16:03:44Z",
+          "createdAt": "2026-11-18T02:56:36Z",
           "comments": 0
         },
         {
-          "number": 479,
-          "title": "chore: add a concise pull request template",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/479",
-          "kind": "help wanted",
-          "createdAt": "2026-10-21T16:03:38Z",
-          "comments": 1
-        },
-        {
-          "number": 197,
-          "title": "Destructive-apply guards query an empty kube context on AWS and Azure",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/197",
-          "kind": "help wanted",
-          "createdAt": "2026-09-10T12:57:23Z",
+          "number": 5,
+          "title": "Verify Aider through Pygg's OpenAI endpoint and add it to Getting Started",
+          "url": "https://github.com/nambean/Pygg/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T02:56:34Z",
           "comments": 0
         },
         {
-          "number": 206,
-          "title": "Compare derived stage exports by embedded identity, not stage words",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/206",
-          "kind": "help wanted",
-          "createdAt": "2026-09-15T07:48:02Z",
-          "comments": 1
+          "number": 4,
+          "title": "Verify Cline, Continue or Roo Code through Pygg and document its settings",
+          "url": "https://github.com/nambean/Pygg/issues/4",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T02:56:31Z",
+          "comments": 0
         },
         {
-          "number": 517,
-          "title": "feat: optional stage-scoped Object Storage Explorer in the portal",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/517",
-          "kind": "help wanted",
-          "createdAt": "2026-10-22T19:18:33Z",
+          "number": 3,
+          "title": "Try the CLI gateway on your Linux distribution and report what happens",
+          "url": "https://github.com/nambean/Pygg/issues/3",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T02:56:29Z",
+          "comments": 0
+        },
+        {
+          "number": 2,
+          "title": "Try the CLI gateway on a real Mac and report what happens",
+          "url": "https://github.com/nambean/Pygg/issues/2",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T02:56:28Z",
           "comments": 0
         }
       ]
@@ -948,35 +601,6 @@
           "url": "https://github.com/SankarGaneshb/rover-slim/issues/8",
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "AirKyzzZ/hermes-superagent",
-      "slug": "airkyzzz--hermes-superagent",
-      "lastCommitAt": "2026-11-17T14:47:36Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 23
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 92,
-          "title": "Add a Taskwarrior block to the connector guide",
-          "url": "https://github.com/AirKyzzZ/hermes-superagent/issues/92",
-          "kind": "good first issue",
-          "createdAt": "2026-11-17T14:29:36Z",
-          "comments": 0
-        },
-        {
-          "number": 91,
-          "title": "Add an ICS calendar connector",
-          "url": "https://github.com/AirKyzzZ/hermes-superagent/issues/91",
-          "kind": "good first issue",
-          "createdAt": "2026-11-17T14:29:34Z",
           "comments": 0
         }
       ]
@@ -1068,42 +692,64 @@
       ]
     },
     {
-      "repo": "iowarp/clio-kit",
-      "slug": "iowarp--clio-kit",
-      "lastCommitAt": "2026-11-17T14:41:40Z",
+      "repo": "brycewang-stanford/Free-Research-Crew",
+      "slug": "brycewang-stanford--free-research-crew",
+      "lastCommitAt": "2026-11-18T12:08:12Z",
       "signals": {
         "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "outsidePRsCapped": false,
+        "approxKloc": 13
       },
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 282,
-          "title": "Support partial installations with optional dependencies",
-          "url": "https://github.com/iowarp/clio-kit/issues/282",
+          "number": 10,
+          "title": "Contribute a bench seed task (replication or small ML study)",
+          "url": "https://github.com/brycewang-stanford/Free-Research-Crew/issues/10",
           "kind": "good first issue",
-          "createdAt": "2025-11-16T04:51:46Z",
+          "createdAt": "2026-11-18T11:56:51Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "Ozero-top/luci-app-adguardhome-lite",
+      "slug": "ozero-top--luci-app-adguardhome-lite",
+      "lastCommitAt": "2026-11-18T12:03:14Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false,
+        "approxKloc": 11
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 1,
+          "title": "置顶 - 收集去广告规则",
+          "url": "https://github.com/Ozero-top/luci-app-adguardhome-lite/issues/1",
+          "kind": "good first issue",
+          "createdAt": "2026-11-11T03:13:03Z",
           "comments": 1
         }
       ]
     },
     {
-      "repo": "ZKNoxHQ/ETHFALCON",
-      "slug": "zknoxhq--ethfalcon",
-      "lastCommitAt": "2026-11-17T14:46:48Z",
+      "repo": "zhexusun10/grapher",
+      "slug": "zhexusun10--grapher",
+      "lastCommitAt": "2026-11-18T12:06:42Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 24,
-          "title": "Include python tests in the CI",
-          "url": "https://github.com/ZKNoxHQ/ETHFALCON/issues/24",
-          "kind": "good first issue",
-          "createdAt": "2025-03-05T09:55:30Z",
-          "comments": 1
+          "number": 11,
+          "title": "Community feedback: Compare Grapher with other coding agents",
+          "url": "https://github.com/zhexusun10/grapher/issues/11",
+          "kind": "help wanted",
+          "createdAt": "2026-10-02T15:28:37Z",
+          "comments": 0
         }
       ]
     }

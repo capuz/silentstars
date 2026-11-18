@@ -43,6 +43,3 @@ postedAt: "2026-11-15T08:37:20.001Z"
 ## Install
 
 **With a coding agent.** Paste this into Claude Code, Codex or any agent with a shell:
-
-```text
-Install voiceio on this machine following https://voiceio.dev/llms.txt. Ask me which hotkey I want and whether to keep my…

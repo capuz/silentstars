@@ -11,13 +11,13 @@ languagePcts: [69, 27]
 topics: ["a2a", "agent-framework", "agent2agent", "ai-agent", "ai-agents", "autonomous-agents", "langgraph", "llm-agent", "mcp", "multi-agent-systems"]
 stars: 18
 forks: 11
-openIssues: 24
-closedIssues: 1312
+openIssues: 27
+closedIssues: 1318
 watchers: 0
 contributors: 5
 recentReleases: 0
 createdAt: "2026-04-17T16:45:59Z"
-lastCommitAt: "2026-11-17T10:02:12Z"
+lastCommitAt: "2026-11-18T11:24:56Z"
 lastReleaseAt: "2026-05-27T09:09:20Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
@@ -39,5 +39,4 @@ Claude Code and Codex are good at writing code in a session. protoAgent is what 
 
 - **It uses the agents you already pay for.** It drives Claude Code, Codex, or any ACP-speaking CLI agent, so your Claude Pro/Max or ChatGPT Plus/Pro plan does the coding. [CLI coding agents →](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/guides/coding-agents.md)
 - **It remembers across sessions.** Memory, knowledge and tasks stay in SQLite on your disk, and you can inspect and correct what it remembers.
-- **It runs the work, not just the chat.** Schedules, watches and goals keep work moving. The Project Manager archetype takes a brief from board card to worktree, pull request, CI and merge. [Build with a coding agent →](https://github.com/protoLabsAI/protoAgent/blob/HEAD/docs/guides/build-with-a-coding-agent.md)
-- **It…
+- **It runs the work, not just the chat.** Schedules, watches and goals keep work moving. The Project Manager archetype takes a brief from board card to worktree, pull request, CI and merge.

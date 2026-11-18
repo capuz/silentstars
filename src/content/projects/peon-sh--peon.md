@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-12T08:34:55Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: []
-healthScore: 95
+healthScore: 94
 undervaluedScore: 40
 maintainers: ["arpit-advant", "kuldip-advant", "parth-advant019"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2ae89844b6940941b6b3880383ab1e1eac08d794ff9b2430e748302247d2e576/Peon-sh/Peon"
@@ -49,10 +49,3 @@ Security reports: see [SECURITY.md](https://github.com/Peon-sh/Peon/blob/HEAD/SE
 - Workspace / project tenancy with role-based access
 - Background worker for deployments, backups, and async tasks
 - Self-host with your own Postgres and AWS SQS or local ElasticMQ (SES/S3 optional for email and assets)
-
-## Related repositories
-
-| Repository | Description |
-|------------|-------------|
-| [Peon-sh/Peon](https://github.com/Peon-sh/Peon) | This app (dashboard, API, worker) |
-| [Peon-sh/Peon-Website](https://github.com/Peon-sh/Peon-Website) |…

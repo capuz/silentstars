@@ -44,5 +44,3 @@ packages for where the logs actually go.
   transport that sends log records to Datadog's Logs API.
 - [`@caravan-logger/transport-better-stack`](https://github.com/carlos-menezes/caravan/blob/HEAD/caravan/transport-better-stack): a
   transport that sends log records to Better Stack's Logs ingesting API.
-- [`@caravan-logger/transport-sqlite`](https://github.com/carlos-menezes/caravan/blob/HEAD/caravan/transport-sqlite): a
-  transport that inserts…

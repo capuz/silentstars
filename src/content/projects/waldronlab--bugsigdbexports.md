@@ -16,7 +16,7 @@ watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2021-07-20T16:35:07Z"
-lastCommitAt: "2026-11-17T13:59:52Z"
+lastCommitAt: "2026-11-18T11:59:41Z"
 lastReleaseAt: "2022-01-05T03:21:41Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
@@ -52,5 +52,3 @@ BugSigDB captures patterns of differential abundance across a broad range of hos
 At the core of the repo is the 
 [dump_release.R](https://github.com/waldronlab/BugSigDBExports/blob/main/inst/scripts/dump_release.R) 
 script which
-
-1. obtains and merges the exported study, experiment, and signature tables (Plan A: canonical S3 export URLs; Plan B fallback: dynamic URL resolution via…

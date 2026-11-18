@@ -17,9 +17,9 @@ watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2026-02-15T22:40:51Z"
-lastCommitAt: "2026-11-17T01:10:45Z"
+lastCommitAt: "2026-11-17T23:50:43Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem"]
+tags: ["hidden_gem"]
 healthScore: 80
 undervaluedScore: 47
 maintainers: ["0-don", "renovate[bot]"]
@@ -39,7 +39,3 @@ Surfaces:
 - **AI API Model Tester**: probes an endpoint with nonce-tagged prompts to tell whether it serves the model it claims; public rankings leaderboard with server-issued (unforgeable) probe mode.
 
 Chat and tester state live in ONE SQLocal/OPFS database per device in the browser; that copy is the only copy. Everything works for guests and offline. Cross-device transfer is export/import. The server DB (Turso/libSQL) holds only the public rankings.
-
-## Stack
-
-Next.js 16, React 19 compiler, Tailwind v4, shadcn/ui, Jotai, React Query 5,…

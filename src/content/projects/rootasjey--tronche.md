@@ -40,25 +40,3 @@ Tronche generates unique SVG avatars from a name and a color palette. Available 
 ```sh
 npm install tronche
 ```
-
-### Package structure
-
-```
-node_modules/tronche/
-├── dist/
-│   ├── index.js         # Core library (ESM, framework-agnostic)
-│   ├── index.d.ts       # Core TypeScript declarations
-│   ├── vue/
-│   │   ├── index.js     # Vue components (pre-compiled)
-│   │   └── index.d.ts   # Vue component types
-│   ├── react/
-│   │   ├── index.js     # React components (pre-compiled)
-│   │   └── index.d.ts   # React component types
-│   ├── solid/
-│   │   ├── index.js     # Solid components (pre-compiled)
-│   │   └── index.d.ts   # Solid component types
-│   ├── svelte/
-│   │   ├── index.js     # Svelte components (pre-compiled)
-│   │   └── index.d.ts   # Svelte component types
-│   ├── lit/
-│   │   ├── index.js…

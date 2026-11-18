@@ -17,7 +17,7 @@ watchers: 1
 contributors: 5
 recentReleases: 5
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-11-17T14:35:59Z"
+lastCommitAt: "2026-11-18T01:18:49Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
@@ -34,11 +34,3 @@ Croupier is a Server / Agent / SDK platform for game operations and control, int
 - `Agent <-> Server`: TCP session by default; TLS is opt-in via `server.toAgentTLS` (server side) / `server` + `outboundTLS` (agent side), and the bundled development templates default to plaintext
 - `SDK <-> Agent`: TCP session by default, TLS off by default and enabled on demand
 - Both links share the same session transport foundation and differ only in the first handshake message and business semantics
-
-## Agent Roles
-
-| Role | Responsibility | Delivery status |
-| --- | --- | --- |
-| sidecar | Game function gateway, task forwarding and game-side observation | `croupier-agent`; supervisor wiring, schedule/update lifecycle and function plugins shipped |
-| devops | Allowlisted internal remote access with audit | `devops-agent`; SSH sessions with replay archive shipped; RDP/VNC pending |
-| capture | Database CDC, change rules and alerts | `capture-agent`; MySQL/Mongo/PostgreSQL connectors and checkpoint/alert reliability shipped; source schema…

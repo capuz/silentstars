@@ -40,9 +40,3 @@ postedAt: "2026-10-31T19:08:55.490Z"
 **Kanban is a private, lightweight engineering workspace built natively for macOS.**
 
 Most modern project management tools have evolved into heavy cloud web applications burdened by mandatory subscription lock-in, sluggish multi-second page transitions, tracking telemetry, and opaque cloud databases.
-
-Kanban was built with a different philosophy:
-- **Zero Cloud Lock-in**: All tickets, epics, notes, and projects reside locally on your Mac in SQLite (Write-Ahead Logging).
-- **Sub-100ms Performance**: Instant card dragging, live visual query compilation across 5,000+ tickets, and keyboard-first navigation (<kbd>Cmd</kbd> + <kbd>K</kbd>, <kbd>Cmd</kbd> + <kbd>N</kbd>, <kbd>Cmd</kbd> + <kbd>\</kbd>).
-- **First-Class AI Agent Co-Working**: Native **Model Context Protocol (MCP)** stdio server allows Claude Desktop, Cursor, and autonomous coding agents to inspect your backlog, plan sprints, and update tickets in real time.
-- **Deep Relational Tracking**: Full `Account → Workspace → Project → Epic…

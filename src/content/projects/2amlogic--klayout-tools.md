@@ -7,22 +7,22 @@ url: "https://github.com/2AMLogic/klayout-tools"
 homepage: "https://klayout-tools.org"
 language: "Python"
 languages: ["Python", "Shell"]
-languagePcts: [70, 26]
+languagePcts: [71, 25]
 stars: 7
 forks: 2
-openIssues: 344
-closedIssues: 2855
+openIssues: 297
+closedIssues: 3080
 watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-17T14:49:54Z"
+lastCommitAt: "2026-11-18T11:28:13Z"
 lastReleaseAt: "2026-11-15T20:16:17Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 97
 undervaluedScore: 68
-maintainers: ["loom-fleet-dispatch[bot]"]
+maintainers: ["loom-fleet-dispatch[bot]", "rjwalters"]
 openGraphImageUrl: "https://opengraph.githubassets.com/70b1a75ad7a4ecca470e31424280bc4bd8cf1f3356ae95128fb2712506f21b4e/2AMLogic/klayout-tools"
 postedAt: "2026-10-16T08:33:31.631Z"
 ---
@@ -40,11 +40,3 @@ GDSII/OASIS streams, DRC decks, LVS — programmatically, headless, with
 machine-readable JSON everywhere. Built on [KLayout](https://www.klayout.de)'s
 Python API the way kicad-tools builds on KiCad's file formats: the heavy
 lifting stays in the proven engine; the agent-native surface is ours.
-
-The target capability: **an agent can take a spec through one of three
-peer paths on an open PDK, unaided, with every step headless and
-JSON-contracted — analog (spec → schematic/generator → sized circuit →
-layout → DRC/LVS clean → extracted netlist → simulation-verified),
-digital (spec → RTL → synthesis → place-and-route → DRC/LVS clean →
-timing-closed), and mixed-signal (both paths plus the signoff seam
-between them).** [ROADMAP.md](https://github.com/2AMLogic/klayout-tools/blob/HEAD/ROADMAP.md) holds the build order,…

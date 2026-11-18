@@ -64,6 +64,3 @@ Create a `config.yml`:
 USERNAME: "@yourbot:matrix.org"
 PASSWORD: "your_password"
 ```
-
-```python
-from…

@@ -50,5 +50,3 @@ node resolve-local-time.mjs 2024-11-03T01:30 America/New_York
 ```
 
 The repeated-hour example returns UTC candidates `2024-11-03T05:30:00.000Z` and `2024-11-03T06:30:00.000Z`. A gap returns no candidates rather than inventing a time.
-
-## What…

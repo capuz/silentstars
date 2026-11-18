@@ -16,13 +16,13 @@ watchers: 2
 contributors: 17
 recentReleases: 6
 createdAt: "2025-02-17T14:20:03Z"
-lastCommitAt: "2026-11-17T06:22:34Z"
+lastCommitAt: "2026-11-18T09:05:28Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 97
 undervaluedScore: 60
-maintainers: ["dspachos", "amazee-ai-automation[bot]"]
+maintainers: ["dspachos", "amazee-ai-automation[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4b21a8589178bb5bd93aff8ce6a9e3e81b7e432eb085c47c312935712ffb73a8/amazeeio/amazee.ai"
 postedAt: "2026-09-22T08:53:36.022Z"
 ---
@@ -49,10 +49,3 @@ Three steps, all of them yours to start.
 2. **Review and merge the `Deploy vX.Y.Z to production` pull request** it opens.
 3. **Promote `main` to prod in Lagoon**, by hand. Nothing before this touches
    production.
-
-### What the Release workflow does
-
-- Reads the newest `vX.Y.Z` tag and raises the part you chose.
-- Cuts `release/vX.Y.Z` from `main`, merges `dev` into it, then writes the new
-  version into every file that carries one.
-- Tags that commit and creates the GitHub Release,…

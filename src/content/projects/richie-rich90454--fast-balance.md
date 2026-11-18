@@ -22,7 +22,7 @@ lastReleaseAt: "2026-10-24T01:10:17Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 61
-undervaluedScore: 73
+undervaluedScore: 74
 maintainers: ["richie-rich90454"]
 openGraphImageUrl: "https://opengraph.githubassets.com/05b22959d2949b3586812c661bb8e3f22f0acd0f2b0d3db8716f4a481dd9dc1b/richie-rich90454/fast-balance"
 promoted: true
@@ -44,4 +44,3 @@ postedAt: "2026-10-24T00:21:33.516Z"
 - **Spectator species** — a species on both sides is balanced, not rejected (`C3H8 + O2 + N2 -> CO2 + H2O + N2`).
 - **Underdetermined systems** — the minimal positive solution is returned and flagged; `balanceAll` returns every independent balance.
 - **Honest errors** — typed `BalanceError` with stable codes; unknown elements, ambiguous input and unbalanceable equations are reported explicitly.
-- **Small and tree-shakeable** — zero runtime dependencies, dual ESM/CommonJS build, TypeScript types, and `"sideEffects": false` so…

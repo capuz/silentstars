@@ -15,7 +15,7 @@ watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-03-10T21:08:04Z"
-lastCommitAt: "2026-11-17T07:43:24Z"
+lastCommitAt: "2026-11-18T07:05:44Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
@@ -43,4 +43,3 @@ A GitHub repository that automatically collects, filters, and exports live TV st
   - `LiveTV.m3u`: Standard M3U playlist.
   - `LiveTV.txt`: Human-readable text format with detailed channel info.
   - `LiveTV.json`: Structured JSON with channel metadata.
-  - `LiveTV`: Custom JSON format without extension, designed for easy…

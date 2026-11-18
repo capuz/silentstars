@@ -17,7 +17,7 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2025-08-20T08:53:44Z"
-lastCommitAt: "2026-11-17T13:02:11Z"
+lastCommitAt: "2026-11-18T10:09:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
@@ -56,12 +56,3 @@ Proxies-GUI/
 ```
 
 ---
-
-## ✅ Features
-- **Responsive Design**: Works on desktop and mobile.
-- **Dark Mode**: Toggle persists between sessions.
-- **Live Data**: Proxies auto-refresh every 30s.
-- **Filtering & Search**: Find proxies by IP, country, protocol, or speed.
-- **Sorting**: Click on headers to sort.
-- **Pagination**: Handles large lists efficiently.
--…

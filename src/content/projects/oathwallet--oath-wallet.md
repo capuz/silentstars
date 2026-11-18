@@ -41,7 +41,3 @@ A native multichain wallet for iPhone and iPad.
 [Release notes and verification](https://github.com/OathWallet/oath-wallet/blob/HEAD/releases/5.0.2.md) · [Website](https://oathwallet.org) ·
 [Security model](https://github.com/OathWallet/oath-wallet/blob/HEAD/Documentation/SecurityModel.md) · [Reporting policy](https://github.com/OathWallet/oath-wallet/blob/HEAD/SECURITY.md) · [Build configuration](https://github.com/OathWallet/oath-wallet/blob/HEAD/Documentation/PublicBuild.md) ·
 [MIT license](https://github.com/OathWallet/oath-wallet/blob/HEAD/LICENSE)
-
-## Latest source release
-
-[Oath 5.1.0…

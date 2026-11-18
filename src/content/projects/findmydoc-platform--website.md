@@ -48,7 +48,3 @@ All rights are reserved by findmydoc. See [LICENSE.md](https://github.com/findmy
    a. `docker compose up` or
    b. `docker compose run --rm postgres` & `pnpm run dev`
 5. Open http://localhost:3000
-
-## Environment variables
-
-- `NEXT_PUBLIC_SUPABASE_RESET_REDIRECT` — absolute URL that Supabase uses when sending password recovery emails. Point it to the public password reset completion page (for example,…

@@ -15,7 +15,7 @@ watchers: 17
 contributors: 40
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-11-17T14:36:15Z"
+lastCommitAt: "2026-11-18T11:50:30Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 90
@@ -47,6 +47,3 @@ You can find more information about generating the static json files [here](http
 ### 🔮 Usage
 
 Here are the different tokens json file you can fetch/download to integrate on your product:
-
-- Mainnet: [https://raw.githubusercontent.com/InjectiveLabs/injective-lists/master/json/tokens/mainnet.json](https://github.com/InjectiveLabs/injective-lists/blob/HEAD/json/tokens/mainnet.json)
-- Testnet:…

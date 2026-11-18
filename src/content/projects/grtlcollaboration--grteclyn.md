@@ -43,5 +43,3 @@ Please consult this [documentation page](https://grtlcollaboration.github.io/GRT
 ## Documentation
 
 Documentation can be found [here](https://grtlcollaboration.github.io/GRTeclyn/) (under construction). Note that the GitHub wiki is no longer in use.
-
-The documentation contains useful information on obtaining…

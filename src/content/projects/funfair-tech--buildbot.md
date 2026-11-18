@@ -51,7 +51,3 @@ dotnet run --project src/BuildBot/BuildBot.csproj
 ```
 
 The service listens on port 8080; `curl http://localhost:8080/ping` checks that it is running.
-
-## Installation
-
-BuildBot is not published as a NuGet package. It…

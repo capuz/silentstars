@@ -17,7 +17,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-31T03:23:06Z"
-lastCommitAt: "2026-11-17T06:38:40Z"
+lastCommitAt: "2026-11-18T06:38:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
@@ -51,5 +51,3 @@ An [Every Door](https://every-door.app/) plugin to add support for the above tag
 ## Credits
 
 - Lumikieju ([GitHub](https://github.com/Lumikeiju), [OSM](https://www.openstreetmap.org/user/Lumikeiju)) - Author and Maintainer
-
-- dschep ([GitHub](https://github.com/dschep), [OSM](https://www.openstreetmap.org/user/dpschep)) - Developer of [Ultra](https://gitlab.com/trailstash/ultra) (and [much…

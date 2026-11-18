@@ -43,6 +43,3 @@ It is on by default; you do not need to open the panel. Typical uses: image and 
 ## Install
 
 Send this to your agent. It identifies its platform and installs the right setup:
-
-```text
-Install Context Attachment Manager for me, following…

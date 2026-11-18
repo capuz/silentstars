@@ -10,16 +10,16 @@ languagePcts: [94]
 stars: 8
 forks: 13
 openIssues: 71
-closedIssues: 156
+closedIssues: 157
 watchers: 1
 contributors: 88
 recentReleases: 0
 createdAt: "2024-04-17T00:08:11Z"
-lastCommitAt: "2026-11-13T23:20:56Z"
+lastCommitAt: "2026-11-17T22:43:04Z"
 lastReleaseAt: "2026-04-30T22:07:51Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 85
 maintainers: ["metis-sprock", "thesprockee"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d6f02cd426899dd1fd1ce196b377ebe2cf9cb1a54560ebb9b86b9bdfbbff0e46/EchoTools/nakama"
@@ -43,7 +43,3 @@ EchoTools Nakama is a specialized fork of the [Nakama game server](https://githu
 * **Web Console** - Administrative interface for server management and monitoring
 
 For complete feature documentation, see the [upstream Nakama documentation](https://heroiclabs.com/docs/).
-
-## Documentation
-
-* **[Game Server URL…

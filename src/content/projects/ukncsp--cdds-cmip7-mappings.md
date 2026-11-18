@@ -16,7 +16,7 @@ watchers: 3
 contributors: 16
 recentReleases: 0
 createdAt: "2025-05-02T11:33:42Z"
-lastCommitAt: "2026-11-17T13:58:29Z"
+lastCommitAt: "2026-11-18T03:56:48Z"
 lastReleaseAt: "2026-08-18T15:29:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -41,5 +41,3 @@ postedAt: "2026-06-28T07:04:35.686Z"
 **UPDATE 13/01/26: Update to Data Request v1.2.2.3 Completed. Most changes minor, see #1888 for full details**
 
 **UPDATE 24/11/25: Some changes were missed in last weeks update. I've now fixed this and confirmed consistency with the data request**
-
-**UPDATE 21/11/25: I've updated the issues to match version 1.2.2.2 of the Data Request**. Most changes are cosmetic, but there are some variables that have been removed (issues will be closed) and some variables where there might be an impact on what data is needed from the model. I'll be contacting experts on these variables in…

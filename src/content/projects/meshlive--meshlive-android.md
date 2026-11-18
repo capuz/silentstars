@@ -9,7 +9,7 @@ language: "Kotlin"
 languages: ["Kotlin", "Python"]
 languagePcts: [78, 20]
 topics: ["android", "bluetooth", "censorship-resistance", "live-streaming", "mesh-network", "off-grid", "bluetooth-low-energy", "privacy", "video-calling", "android-app"]
-stars: 357
+stars: 359
 forks: 52
 openIssues: 3
 closedIssues: 1
@@ -62,7 +62,3 @@ No internet, no SIM, no account.
 - Delete everything from the phone in seconds
 
 Works wherever there's no signal or Wi-Fi, like hikes, festivals, trips and basements. MeshLive is in **beta**: see [which phones work](https://github.com/MeshLive/meshlive-android/blob/HEAD/docs/devices.md), and don't rely on it where your safety depends on it.
-
-## How it works
-
-Bluetooth on its own reaches about 10 to 30 metres. MeshLive turns…

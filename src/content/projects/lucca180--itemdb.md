@@ -79,5 +79,3 @@ The seed script creates two local test users and optionally imports item data du
 ```bash
 npx prisma db seed
 ```
-
-To…

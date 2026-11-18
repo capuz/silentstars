@@ -50,7 +50,3 @@ Follow branch dependencies at a glance. Connected lanes keep parent and child PR
 ### Find the failure. Jump to the job.
 
 Hover a failed CI badge to see which checks broke, then open the job directly. Running checks show progress without leaving the dashboard.
-
-### Keep reviews moving.
-
-See who…

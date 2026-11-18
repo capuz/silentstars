@@ -6,20 +6,20 @@ readmeQualityOk: true
 url: "https://github.com/hankhsu1996/lyra"
 language: "C++"
 languages: ["C++", "SystemVerilog"]
-languagePcts: [76, 20]
+languagePcts: [76, 21]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda", "hdl", "llvm", "verification"]
 stars: 6
 forks: 1
-openIssues: 376
-closedIssues: 122
+openIssues: 379
+closedIssues: 124
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-11-16T22:11:14Z"
+lastCommitAt: "2026-11-18T09:22:04Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 84
+healthScore: 85
 undervaluedScore: 68
 maintainers: ["hankhsu1996"]
 openGraphImageUrl: "https://opengraph.githubassets.com/948b1bca49b8e241d24adcf5de29ac4875b79ee9e49e1670e2ff34e916813a1a/hankhsu1996/lyra"
@@ -70,7 +70,3 @@ endmodule
 ```
 
 Run it:
-
-```console
-$ lyra run --top counter_tb counter.sv
-10: count…

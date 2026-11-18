@@ -17,7 +17,7 @@ watchers: 4
 contributors: 28
 recentReleases: 0
 createdAt: "2024-05-24T11:19:03Z"
-lastCommitAt: "2026-11-17T11:32:44Z"
+lastCommitAt: "2026-11-18T09:34:30Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 96
@@ -40,7 +40,3 @@ This repository is a collection of documentation for Huawei Ascend supported ope
 - `install.rst`: installation guide, including common installation (such as binary, pypi, conda) for developers and a quick installation verification
 - `tutorial.rst`: more complex than quickstart, help people learn about **products** and solve **real world problems** by guiding them through **the entire workflow to complete a task**. See also in [Github tutorial guide](https://docs.github.com/en/contributing/style-guide-and-content-model/tutorial-content-type).
 - `faq.rst`: A frequently asked questions (FAQ) list.
-
-## Documentation from Official Project Sites
-
-Some communities already maintain Ascend/NPU documentation on their own…

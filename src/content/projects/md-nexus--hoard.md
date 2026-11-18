@@ -20,10 +20,10 @@ lastCommitAt: "2026-11-16T12:33:20Z"
 lastReleaseAt: "2026-11-16T12:28:52Z"
 status: "newborn"
 tags: ["hidden_gem"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 15
 maintainers: ["Md-nexus"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3e679f827a772ab79224597ed1cd2524fe6cd785f402b834d17aeba3508eed10/Md-nexus/Hoard"
+openGraphImageUrl: "https://opengraph.githubassets.com/61ab6cb85f28aef8b56e30b5ef199ea5168cd9149d6fd3b55c1b470922bb6ce8/Md-nexus/Hoard"
 promoted: true
 postedAt: "2026-11-17T14:47:54.591Z"
 ---
@@ -41,5 +41,3 @@ two taps. No copy-pasting links into sketchy websites, no ads, no accounts, no s
 | 🔔 **Live notifications** | A heads-up when the download starts, a quiet progress bar with thumbnail, file name and uploader, and another heads-up with **Open** and **Share** when it's done. |
 | 🎬 **Real gallery files** | Videos land in `Movies/Hoard/` and show up in your gallery. No storage permission needed. |
 | 🌍 **Works nearly everywhere** | Powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp), which knows over a thousand sites. Links it can't handle get a clear "Unsupported link" notice. |
-| 🔐 **Optional login** | Log in to Instagram or TikTok inside the app for content that needs an account. Cookies are encrypted with the Android Keystore and never leave your phone. |
-| 📚 **Library…

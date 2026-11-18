@@ -10,13 +10,13 @@ languages: ["C++"]
 languagePcts: [83]
 stars: 5
 forks: 1
-openIssues: 163
-closedIssues: 903
+openIssues: 160
+closedIssues: 907
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2025-03-03T13:50:36Z"
-lastCommitAt: "2026-11-17T11:56:37Z"
+lastCommitAt: "2026-11-18T03:56:13Z"
 lastReleaseAt: "2026-08-12T17:17:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "under_pressure"]
@@ -39,7 +39,3 @@ This repo is not just a library — it **defines a protocol the community can im
 > **📖 Full documentation:** **[libtracer.avatarsd.com](https://libtracer.avatarsd.com/)** — architecture, the normative spec, reproducible benchmarks, worked examples, and the [implementation capability matrix](https://libtracer.avatarsd.com/docs/capability-matrix.html).
 
 ---
-
-## Why libtracer — the keystones
-
-- **One…

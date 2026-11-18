@@ -11,13 +11,13 @@ languagePcts: [57, 38]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 10
 forks: 4
-openIssues: 7
+openIssues: 8
 closedIssues: 320
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-11-17T06:59:53Z"
+lastCommitAt: "2026-11-18T04:29:24Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]
@@ -40,5 +40,3 @@ SRAT (SambaNAS Rest Administration Tool) is a system designed to provide a simpl
 - **Alpha** — Home Assistant custom-component tools (install/upgrade/uninstall of the SRAT custom component); excluded from release builds entirely, so not part of 2026.10.1.
 
 Legacy SambaNAS YAML configuration is retired progressively — SRAT is set to become the preferred way to configure and use this addon, eventually "retiring" the YAML configuration.
-
--…

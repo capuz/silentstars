@@ -9,7 +9,7 @@ language: "Swift"
 languages: ["Swift"]
 languagePcts: [99]
 topics: ["ai-agents", "cli", "macos", "mcp", "mcp-server", "model-context-protocol", "network-diagnostics", "network-monitor", "swift", "wifi"]
-stars: 1
+stars: 3
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -21,10 +21,10 @@ lastCommitAt: "2026-11-05T07:17:58Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 85
-undervaluedScore: 55
+healthScore: 84
+undervaluedScore: 51
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/73943bbe182888187ae69046efddb5f7cd7c437a596008f5e0f8f948fad6274a/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/114f391b83c59917507ef76eb7271ec9fd3a68a077958b7c22844369aa17d7f5/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---
@@ -47,10 +47,3 @@ kilobat diagnose
 ```
 
 Homebrew also installs `kb` as a short alias for `kilobat`.
-
-| Find out… | Command |
-| --- | --- |
-| Which apps are using the connection | `kilobat status --watch` |
-| Why a host or API won't connect | `kilobat why api.github.com` |
-| How strong the Wi-Fi signal is | `kilobat wifi` |
-| Which Wi-Fi channels are less crowded | `kilobat…

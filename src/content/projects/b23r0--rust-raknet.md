@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [98]
 topics: ["minecraft", "networking", "raknet", "reliable-udp", "udp", "udp-protocol", "accelerator", "arq", "asynchronous", "low-latency"]
-stars: 299
+stars: 321
 forks: 22
 openIssues: 0
 closedIssues: 11
@@ -23,7 +23,7 @@ tags: ["solo_builder"]
 healthScore: 94
 undervaluedScore: 34
 maintainers: ["b23r0"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c9d4fdbb41a1a710f2e7e67d9c1f15b80f23ff5372132ba74d90266a11e53e62/b23r0/rust-raknet"
+openGraphImageUrl: "https://opengraph.githubassets.com/cc68c1f239c0841bbc3333d162ddb3337061843c6570b5924a3f70208e94e331/b23r0/rust-raknet"
 discussionCount: 2
 promoted: true
 postedAt: "2026-11-12T05:52:24.648Z"
@@ -38,10 +38,3 @@ postedAt: "2026-11-12T05:52:24.648Z"
 [Features](#features) · [Wiki](https://github.com/b23r0/rust-raknet/wiki) · [Get started](#get-started) · [Benchmarks](#benchmarks) · [Contributing](#contributing)
 
 `rust-raknet` is a high-performance asynchronous networking library written in Rust, implementing a Reliable UDP protocol for real-time messaging.
-
-## Features
-
-- **Five delivery modes.** Send best-effort updates, discard stale state, deliver reliable events, or keep messages ordered on independent channels.
-- **Async client and server.** Tokio-based connect, listen, accept, send and receive APIs, with IPv4 and IPv6 address encoding.
-- **Blocking client and server.** The optional `blocking` feature provides synchronous connect, listen, accept, send, receive and timeout APIs backed by a shared Tokio runtime. Background workers keep ACKs and retries running between calls. [Usage](#blocking-api).
-- **Message boundaries.** Receive complete application messages rather than reconstructing them from a byte stream. Large `ReliableOrdered` messages are…

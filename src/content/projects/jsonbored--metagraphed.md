@@ -17,7 +17,7 @@ watchers: 0
 contributors: 83
 recentReleases: 0
 createdAt: "2026-06-06T00:29:04Z"
-lastCommitAt: "2026-11-17T07:24:36Z"
+lastCommitAt: "2026-11-17T15:45:27Z"
 lastReleaseAt: "2026-06-16T01:40:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "fork_magnet"]
@@ -38,7 +38,3 @@ Bittensor didn't ship with a map, so we drew one. Every health figure here is pr
 **[Website](https://metagraph.sh)** &nbsp;·&nbsp; [API](https://api.metagraph.sh) &nbsp;·&nbsp; [OpenAPI](https://api.metagraph.sh/metagraph/openapi.json) &nbsp;·&nbsp; [MCP](https://api.metagraph.sh/mcp) &nbsp;·&nbsp; [Agent docs](https://api.metagraph.sh/llms.txt) &nbsp;·&nbsp; [Agent workflows](https://api.metagraph.sh/agent-workflows.md) &nbsp;·&nbsp; [Feeds](https://api.metagraph.sh/api/v1/feeds/registry) &nbsp;·&nbsp; [npm](https://www.npmjs.com/package/@jsonbored/metagraphed) &nbsp;·&nbsp; [PyPI](https://pypi.org/project/metagraphed/)
 
 ---
-
-## What it is
-
-The native Bittensor metagraph tells you what's happening at the protocol layer. Metagraphed adds the **builder-facing layer it lacks**: a chain-direct block explorer (its own Rust indexer, no third-party RPC dependency), a registry of…

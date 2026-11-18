@@ -39,12 +39,3 @@ Free and open source. Your storage, your accounts, one place to manage your conn
 [Features](#what-you-can-do) · [Get started](#get-started) · [User guide](https://github.com/TitanniOpen/SDrive/blob/HEAD/docs/usage.md) · [Contribute](#help-improve-sdrive)
 
 *The current interface with fictional demonstration data.*
-
-## What you can do
-
-- **Work from Explorer.** Connect storage as a drive letter or a local folder and use your usual applications.
-- **Keep connections together.** Open, connect and disconnect your drives from one window or the system tray.
-- **See what is happening.** Check connection status, storage space when available, pending uploads and recovery alerts.
-- **Make it yours.** Choose light, dark or system appearance, change the interface language and personalize drive cards.
-- **Choose how you connect.** Set read-only access, automatic connections and transfer limits when needed.
-- **Reuse your…

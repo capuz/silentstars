@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-09T06:39:52Z"
 lastReleaseAt: "2026-08-18T13:49:33Z"
 status: "at_risk"
 tags: ["hidden_gem"]
-healthScore: 70
+healthScore: 69
 undervaluedScore: 44
 maintainers: ["Phoenix0531-sudo", "dependabot[bot]", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/fe0edd71dda01e4199df022111d730467b8c53e841915366e0bf0f90f4bf466f/Phoenix0531-sudo/TablePilot"
@@ -41,7 +41,3 @@ It is a hybrid stack. A **Python FastAPI analysis service** (`analysis_service/`
 ## Features
 
 Real capabilities wired into `analysis_service/app/main.py` (service `v0.5.0`):
-
-- **Dataset directory** — `GET /api/datasets` lists the local data dir; `POST /api/analyze` (and `-upload`) load a table by name or by file upload, with optional Excel `sheet`.
-- **Table profiling** — `profile_dataset` / `profile_table` produce a schema- and quality-oriented profile per table.
-- **Cleaning preview &…

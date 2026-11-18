@@ -41,5 +41,3 @@ A Python implementation of the **Zencontrol TPI Advanced** protocol, organised i
 In addition to its own test suite, this library is exercised heavily by
 [zencontrol-simulator](https://github.com/sjwright/zencontrol-simulator), a nearly feature-complete simulator of zencontrol hardware.
 As part of that suite, the simulator imports and drives this library to a substantial extent.
-
-As a practical demonstration of the library in production use, [zencontrol-homeassistant](https://github.com/sjwright/zencontrol-homeassistant) exposes the full capability of this library. Home Assistant is an open source smart building system ostensibly designed for residential homes, but is seeing…

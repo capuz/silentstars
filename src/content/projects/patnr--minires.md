@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-25T13:40:52Z"
 lastReleaseAt: "2026-09-15T13:09:34Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 59
+healthScore: 58
 undervaluedScore: 74
 maintainers: ["patnr"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b72f53914fc693aed217b01b02c22421662b5e088b4539085afa8a5d485e8b7f/patnr/MiniRes"
@@ -42,6 +42,3 @@ using TPFA (two-point flux approximation).
   or [](https://patnr.github.io/MiniRes/wasm/) (no backend!).
 - **Fast**: similar to [JutulDarcy's](https://github.com/sintefmath/JutulDarcy.jl) (but no JIT startup/wait) at equal accuracy on 2D two-phase cases of size $100$ – $10^5$.
 - **Reliable**: reproduces the numbers of the [Matlab code (2007)](http://folk.ntnu.no/andreas/papers/ResSimMatlab.pdf) from NTNU/Sintef by Jørg E. Aarnes, Tore Gimse, and Knut–Andreas Lie.
-  Further validated against Buckley–Leverett's
-  analytic solution, ECLIPSE's numbers on the Egg model
-  and JutulDarcy's on…

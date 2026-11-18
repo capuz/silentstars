@@ -22,7 +22,7 @@ lastReleaseAt: "2026-06-08T02:49:57Z"
 status: "at_risk"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 60
-undervaluedScore: 26
+undervaluedScore: 27
 maintainers: ["SimZhou", "a5632645", "penguinway"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7b82b2f30b92c2776495d46314afc57a6c783af0e0cae541ae51500b58143158/SimZhou/vscode-audiolens"
 promoted: true
@@ -39,11 +39,3 @@ It focuses on the daily workflow that generic audio players miss: inspect wavefo
   ·
 
   Other platforms: <a href="https://github.com/CinderellaQAQ/pycharm-audiolens"><img src="https://cdn.simpleicons.org/pycharm/21D789" alt="" width="20" height="20"> <strong>AudioLens for PyCharm</strong></a> · maintained by <a href="https://github.com/CinderellaQAQ">@CinderellaQAQ</a>
-
-## Preview
-
-## Why AudioLens
-
-| Workflow | What AudioLens gives you |
-| --- | --- |
-| Speech and ML datasets | Inspect audio next to manifests, transcripts, logs, training scripts, and…

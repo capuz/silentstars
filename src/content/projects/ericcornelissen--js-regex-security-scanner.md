@@ -62,8 +62,3 @@ docker run --rm -v $(pwd):/project:ro docker.io/ericornelissen/js-re-scan:latest
 To use [Podman] instead of [Docker] you can replace `docker` by `podman` in any
 example command. To use the [GitHub Container Registry] instead of [Docker] hub
 you can use `ghcr.io/ericcornelissen/js-re-scan` instead.
-
-### SARIF
-
-It is possible to get a report in SARIF format for programmatic consuption of
-the scan results. Simply use the `--sarif` and `--output-file`…

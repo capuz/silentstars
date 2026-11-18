@@ -36,5 +36,3 @@ Data and privacy: [local inference, optional telemetry, error reports and update
 **Novera Web 1.0.4 — public experimental channel:** the Desktop interface and colors, 32k local text context, and keyless Exa search with connection preparation on activation have been tested in Edge. Local image/music work is documented; Wan video remains outside the browser conversation flow. The experimental Web application is online; use the Web link above. Large-image performance and Wan video are not Desktop-equivalent. [Features, measured tests and remaining publication checks](https://github.com/TRON-ABS/Novera/blob/HEAD/docs/WEB_BROWSER_PREPARATION.md).
 
 ---
-
-## Model…

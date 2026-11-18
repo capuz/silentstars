@@ -56,6 +56,3 @@ Requires [uv](https://docs.astral.sh/uv/getting-started/installation/) and Pytho
 Python 3.11–3.14 is recommended; Python 3.10 remains compatible but is end of life.
 The demo uses a temporary database. Follow the [quickstart](#quickstart)
 to connect your agent to a real project.
-
-Use `selvedge demo --mcp` to save through a local stdio MCP server, restart it
-and retrieve…

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-21T18:50:29Z"
 lastReleaseAt: "2026-10-21T19:24:31Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 70
+healthScore: 69
 undervaluedScore: 25
 maintainers: ["linqingzi"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a9ff61e6e8ea042ec5beec58900193cf18f82b926a2af083772ca8c869515592/linqingzi/candle-audit-kit"
@@ -40,5 +40,3 @@ For quantitative researchers and Python data engineers checking local OHLCV inpu
 **Read first — no installation:** [Open the English sample report](https://linqingzi.github.io/candle-audit-kit/examples/synthetic-report.en.html) · [閱讀中文報告](https://linqingzi.github.io/candle-audit-kit/examples/synthetic-report.html) · [Preview and local trial guide](https://linqingzi.github.io/candle-audit-kit/).
 
 The public preview displays a fixed synthetic example and has no file upload. Local commands run the actual checks on your machine.
-
-**A real run, using invented data.** Eight hourly candles become two complete 4-hour bars. The report keeps `UNVERIFIED` and `UNKNOWN`…

@@ -68,5 +68,3 @@ Download the installer or archive for your platform from the [releases page](htt
 
 - Linux: `.deb`, `.rpm`, or `.tar.gz`
 - Windows: `.msi` or `.zip`
-
-This installs the `raven` compiler and the `rvpm` package manager and adds them to your…

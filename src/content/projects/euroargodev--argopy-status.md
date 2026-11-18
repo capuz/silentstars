@@ -17,7 +17,7 @@ watchers: 1
 contributors: 9
 recentReleases: 0
 createdAt: "2020-09-25T14:30:05Z"
-lastCommitAt: "2026-11-17T14:49:02Z"
+lastCommitAt: "2026-11-18T11:49:05Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 99
@@ -64,6 +64,3 @@ Markdown to insert these badges:
 ## API status monitoring
 
 [More details on the Green-coding page here][ci-energy-link]
-
-[ci-energy-badge]: https://api.green-coding.io/v1/ci/badge/get?repo=euroargodev/argopy-status&branch=master&workflow=2724029&metric=carbon
-[ci-energy-badge-30]:…

@@ -17,8 +17,8 @@ watchers: 0
 contributors: 4
 recentReleases: 7
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-17T13:25:40Z"
-lastReleaseAt: "2026-11-13T15:14:19Z"
+lastCommitAt: "2026-11-18T11:37:55Z"
+lastReleaseAt: "2026-11-18T12:08:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
@@ -30,16 +30,13 @@ postedAt: "2026-11-09T12:06:47.127Z"
 
 # hprof-analyzer
 
-Heap dump analyzer for JVM applications. Generates MAT-parity reports (leak suspects, retained-size breakdown, OQL queries) with peak RSS well below the dump size for dumps ≥ 1 GiB. One binary covers the full workflow: automated reports, interactive analysis, AI-assisted triage via MCP, heap redaction, and Eclipse MAT cache generation. For dumps up to 3 GB there is also a [browser version](https://parttimenerd.github.io/hprof-analyzer/) that runs entirely in WebAssembly.
+Analyze Java heap dumps and find memory leaks. One binary, no JVM required — generates self-contained HTML reports you can email, diff in CI, or open offline. Peak RSS stays well below the dump size (15 GiB on a 34 GiB dump), so you can analyze on the same machine that took the dump.
 
 *By the [SapMachine](https://sapmachine.io) team.*
 
-## Capabilities at a glance
-
-| Capability | How to use |
+| | |
 |-----------|------------|
-| **[Analysis reports](#analysis-reports)** (System Overview, Leak Suspects, Top Consumers, Threads) | `hprof-analyzer heap.hprof report.html` |
-| **[OQL queries](#oql-queries)** (SQL-flavoured, MAT-compatible, with extensions) | `hprof-analyzer query heap.hprof --query "..."` |
-| **[Cached interactive analysis](#cached-interactive-analysis)** (histogram, dominator tree, inspect objects) | `hprof-analyzer heap summary heap.hprof` |
-| **[MCP server](#mcp-server)** (AI-assisted triage in Claude, Cline, and other agents) | `hprof-analyzer mcp` |
-| **[HTTP…
+| **[Analysis reports](#analysis-reports)** — leak suspects, retained-size breakdown, top consumers, threads ([sample](https://parttimenerd.github.io/hprof-analyzer/reports/)) | `hprof-analyzer heap.hprof report.html` |
+| **[OQL queries](#oql-queries)** — GROUP BY, aggregates, viz directives, Eclipse MAT-compatible | `hprof-analyzer query heap.hprof --query "..."` |
+| **[Interactive analysis](#cached-interactive-analysis)** — histogram, dominator tree, inspect objects (cached, sub-second after first run) | `hprof-analyzer heap summary heap.hprof` |
+| **[MCP server](#mcp-server)** — AI-assisted triage in Claude, Cline, and other agents | `hprof-analyzer mcp` |

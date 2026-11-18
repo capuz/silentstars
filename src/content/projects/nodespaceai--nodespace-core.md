@@ -11,13 +11,13 @@ languagePcts: [65, 30]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 20
-closedIssues: 2206
+openIssues: 19
+closedIssues: 2213
 watchers: 0
 contributors: 3
 recentReleases: 1
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-11-17T13:19:01Z"
+lastCommitAt: "2026-11-18T10:47:49Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -43,8 +43,3 @@ The workspace for agentic development. Specs, plans, decisions and your team's c
 ## The context ladder
 
 How good an agent is depends on the context it starts with. Every team climbs the same ladder, and most stop at step three.
-
-1. **Prompting.** Copy, paste and re-explain every session. The context lives in your head.
-2. **Connecting.** MCP into Jira, Linear or Notion. The context lives in tools built for people, and the agent has to know what to search for.
-3. **Documenting.** Specs, decisions and conventions live as markdown in the repo, starting with CLAUDE.md. The agent greps for them, and they are only as current as each checkout's last pull. Following them is optional.
-4. **Assembling.** Each…

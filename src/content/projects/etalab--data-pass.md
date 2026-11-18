@@ -16,7 +16,7 @@ watchers: 4
 contributors: 24
 recentReleases: 0
 createdAt: "2023-11-30T11:30:20Z"
-lastCommitAt: "2026-11-17T11:59:24Z"
+lastCommitAt: "2026-11-18T10:08:14Z"
 status: "thriving"
 tags: ["fork_magnet"]
 healthScore: 99
@@ -48,9 +48,3 @@ en dehors de DataPass) :
 
 Via un fournisseur d'identité fictif, qui est configuré pour sélectionner /
 ajouter des organisations :
-
-- `whatever@fia1.fr` (pas de mot de passe) : simple demandeur qui possède 2
-    demandes sur la DINUM (lien avec l'organisation non vérifiée). Cet usager
-    est rattaché à la commune de Clamart et le lien avec l'organisation est
-    vérifié. Cet usager peut se rattacher à une organisation.
-- `whatever@fia2.fr` (pas de mot de passe) : simple demandeur sans…
