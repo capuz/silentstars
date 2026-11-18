@@ -133,24 +133,43 @@ function cand(repo: string, o: Partial<RelatedCandidate> = {}): RelatedCandidate
   return { repo, status: 'thriving', language: 'Go', topics: [], undervaluedScore: 10, ...o };
 }
 
-test('relatedProjects ranks by shared topics then language, tie-broken by undervalued score', () => {
-  const target = cand('me/me', { topics: ['cli', 'tui', 'git'], language: 'Go' });
+// A catalog-sized background so topic rarity means something: 400 Python
+// projects, 40 of them tagged with the ubiquitous "open-source".
+function filler(): RelatedCandidate[] {
+  return Array.from({ length: 400 }, (_, i) =>
+    cand(`filler/${i}`, { language: 'Python', topics: i < 40 ? ['open-source'] : [] }));
+}
+
+test('relatedProjects weighs shared topics by rarity, adds half a language match, tie-broken by undervalued score', () => {
+  const target = cand('me/me', { topics: ['cli', 'tui', 'git', 'open-source'], language: 'Go' });
   const all = [
+    ...filler(),
     target,
     cand('a/lang-only', { language: 'Go', undervaluedScore: 99 }),
-    cand('b/two-topics', { topics: ['cli', 'git'], language: 'Rust' }),
-    cand('c/one-topic-lang', { topics: ['tui'], language: 'Go', undervaluedScore: 5 }),
-    cand('d/one-topic-lang-hi', { topics: ['TUI'], language: 'Go', undervaluedScore: 50 }),
-    cand('e/nothing', { language: 'Python' }),
-    cand('f/archived', { topics: ['cli', 'tui', 'git'], status: 'archived' }),
+    cand('b/common-topic-lang', { topics: ['open-source'], language: 'Go', undervaluedScore: 99 }),
+    cand('c/rare-topic', { topics: ['TUI'], language: 'Rust', undervaluedScore: 5 }),
+    cand('d/topic-lang', { topics: ['git'], language: 'Go', undervaluedScore: 50 }),
+    cand('e/two-topics', { topics: ['cli', 'git'], language: 'Rust' }),
+    cand('f/archived', { topics: ['cli'], status: 'archived' }),
   ];
   assert.deepEqual(relatedProjects(target, all, 4).map(p => p.repo),
-    ['b/two-topics', 'd/one-topic-lang-hi', 'c/one-topic-lang', 'a/lang-only']);
+    ['e/two-topics', 'd/topic-lang', 'c/rare-topic']);
+});
+
+test('relatedProjects breaks equal scores by undervalued score', () => {
+  const target = cand('me/me', { topics: ['alpha', 'beta'], language: 'Go' });
+  const all = [
+    ...filler(),
+    target,
+    cand('x/lo', { topics: ['alpha'], language: 'Rust', undervaluedScore: 5 }),
+    cand('y/hi', { topics: ['beta'], language: 'Rust', undervaluedScore: 50 }),
+  ];
+  assert.deepEqual(relatedProjects(target, all).map(p => p.repo), ['y/hi', 'x/lo']);
 });
 
 test('relatedProjects ignores a shared markup/config language on its own', () => {
   const target = cand('me/me', { language: 'HTML', topics: ['iptv'] });
-  const all = [target, cand('a/html-only', { language: 'HTML', undervaluedScore: 99 }), cand('b/topic', { language: 'Go', topics: ['IPTV'] })];
+  const all = [...filler(), target, cand('a/html-only', { language: 'HTML', undervaluedScore: 99 }), cand('b/topic', { language: 'Go', topics: ['IPTV'] })];
   assert.deepEqual(relatedProjects(target, all).map(p => p.repo), ['b/topic']);
 });
 
