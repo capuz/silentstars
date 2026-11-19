@@ -7,7 +7,7 @@ import type { FirstIssuesJson, IssueKind } from '../../scripts/first-issues.ts';
 import firstIssuesJson from '../../data/first-issues.json';
 
 const data = firstIssuesJson as FirstIssuesJson;
-const pages = new Map<string, CollectionEntry<'projects'>>((await getCollection('projects')).map(p => [p.slug, p]));
+const pages = new Map<string, CollectionEntry<'projects'>>((await getCollection('projects')).map(p => [p.id, p]));
 
 // Same listing rule as /projects/, so every card links to a page that exists.
 const entries = data.projects.flatMap(fi => {

@@ -1,11 +1,13 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const VitalStatus = z.enum(['thriving', 'quiet', 'at_risk', 'newborn', 'revived', 'archived', 'watched']);
 const Tag = z.enum(['solo_builder', 'needs_contributors', 'hidden_gem', 'legacy_hero', 'community_watch',
                     'funded', 'release_machine', 'under_pressure', 'community_hub', 'fork_magnet']);
 
 const projects = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '*.md', base: './src/content/projects' }),
   schema: z.object({
     // Identity
     repo: z.string(),
@@ -14,13 +16,13 @@ const projects = defineCollection({
     originalDescription: z.string().optional(),
     descriptionLang: z.string().optional(),
     readmeQualityOk: z.boolean().optional().default(true),
-    url: z.string().url(),
-    homepage: z.string().url().optional(),
+    url: z.url(),
+    homepage: z.url().optional(),
     language: z.string().optional(),
     languages: z.array(z.string()).default([]),
     languagePcts: z.array(z.number()).default([]),
     topics: z.array(z.string()).default([]),
-    openGraphImageUrl: z.string().url().optional(),
+    openGraphImageUrl: z.url().optional(),
     fundingLinks: z.array(z.string()).default([]),
     discussionCount: z.number().int().nonnegative().optional(),
 
