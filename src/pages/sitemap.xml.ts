@@ -19,7 +19,7 @@ export const GET: APIRoute = async ({ site }) => {
   const entries = [
     ...staticRoutes.map((r) => ({ url: `${root}${r}`, lastmod: today })),
     ...projects.map((p) => ({
-      url: `${root}projects/${p.slug}/`,
+      url: `${root}projects/${p.id}/`,
       lastmod: p.data.lastCommitAt.slice(0, 10),
     })),
     ...listEditions(historyJson as History, new Date()).map((e) => ({

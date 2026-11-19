@@ -18,7 +18,7 @@ function take(pool: Entry[], n: number): Entry[] {
   const result: Entry[] = [];
   for (const p of pool) {
     if (result.length >= n) break;
-    if (!shown.has(p.slug)) { shown.add(p.slug); result.push(p); }
+    if (!shown.has(p.id)) { shown.add(p.id); result.push(p); }
   }
   return result;
 }
@@ -41,7 +41,7 @@ function promotedFirst(a: Entry, b: Entry): number {
 const featuredSlug = process.env.FEATURED_SLUG
   || [...loadPosted()]
        .sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime())[0]?.slug;
-const featured = visible.find(p => p.slug === featuredSlug);
+const featured = visible.find(p => p.id === featuredSlug);
 
 const topPicks = take(
   [...(featured ? [featured] : []), ...[...visible].sort(promotedFirst)],
@@ -188,7 +188,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Submitted by the people building them, plus today's pick. Each stays here for 30 days.</p>
       </div>
       <div class="grid">
-        {topPicks.map(p => <ProjectCard slug={p.slug} featured={p.slug === featured?.slug} {...p.data} />)}
+        {topPicks.map(p => <ProjectCard slug={p.id} featured={p.id === featured?.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -206,7 +206,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>5+ releases in the last 90 days.</p>
       </div>
       <div class="grid">
-        {shipping.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {shipping.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -219,7 +219,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Open issues labelled good first issue or help wanted.</p>
       </div>
       <div class="grid">
-        {helpWanted.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {helpWanted.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -232,7 +232,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Healthy, with more than 10 open issues and one or two people to handle them. Extra hands would help.</p>
       </div>
       <div class="grid">
-        {underPressure.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {underPressure.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -245,7 +245,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>One person wrote more than 80% of the recent commits.</p>
       </div>
       <div class="grid">
-        {soloBuilders.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {soloBuilders.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -258,7 +258,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Over 5 years old and still getting commits this year.</p>
       </div>
       <div class="grid">
-        {legacyHeroes.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {legacyHeroes.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -271,7 +271,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Forks at more than half their stars. People may be building on them.</p>
       </div>
       <div class="grid">
-        {forkMagnets.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {forkMagnets.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -284,7 +284,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>More people watching the repo than starring it.</p>
       </div>
       <div class="grid">
-        {watchedProjs.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {watchedProjs.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -297,7 +297,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>The repo has a sponsorship or funding link.</p>
       </div>
       <div class="grid">
-        {funded.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {funded.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -310,7 +310,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Under 100 stars, with a README and a license, and a commit in the last 3 months.</p>
       </div>
       <div class="grid">
-        {hiddenGems.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {hiddenGems.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -323,7 +323,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Created in the last 2 months, with a commit in the last 2 weeks.</p>
       </div>
       <div class="grid">
-        {newborns.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {newborns.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}projects/`}>see more →</a></div>
     </section>
@@ -336,7 +336,7 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
         <p>Getting commits again after a long pause.</p>
       </div>
       <div class="grid">
-        {revived.map(p => <ProjectCard slug={p.slug} {...p.data} />)}
+        {revived.map(p => <ProjectCard slug={p.id} {...p.data} />)}
       </div>
       <div class="see-more"><a href={`${base}resurrections/`}>see more →</a></div>
     </section>

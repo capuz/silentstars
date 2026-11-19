@@ -92,7 +92,7 @@ const tagLabels: Record<string, string> = {
           data-tags={p.data.tags.join(',')}
           data-search={`${p.data.name} ${p.data.repo} ${p.data.description ?? ''} ${p.data.language ?? ''}`.toLowerCase()}
         >
-          <ProjectCard slug={p.slug} {...p.data} />
+          <ProjectCard slug={p.id} {...p.data} />
         </div>
       ))}
     </div>
@@ -114,7 +114,7 @@ const tagLabels: Record<string, string> = {
               data-tags={p.data.tags.join(',')}
               data-search={`${p.data.name} ${p.data.repo} ${p.data.description ?? ''} ${p.data.language ?? ''}`.toLowerCase()}
             >
-              <ProjectCard slug={p.slug} {...p.data} promoted={true} />
+              <ProjectCard slug={p.id} {...p.data} promoted={true} />
             </div>
           ))}
         </div>

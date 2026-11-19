@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import { fonts, borderBox, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../og/shared.ts';
+import { fonts, borderBox, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../og/shared.ts';
 
 // Astro emits this as /og.png (an index route with an extension), the default
 // og:image of every page without its own card — see Base.astro.

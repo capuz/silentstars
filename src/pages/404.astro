@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL;
 // Live slugs let the page fix casing / owner-repo links instead of dead-ending.
-const slugs = (await getCollection('projects')).map(p => p.slug);
+const slugs = (await getCollection('projects')).map(p => p.id);
 ---
 <Base title="404" description="Page not found — SilentStars" notFound>
   <div class="container section not-found" id="nf" data-slugs={JSON.stringify(slugs)}>

@@ -2,7 +2,7 @@
 import { langIconUrl } from '../../lib/lang-icons.ts';
 import { withRef } from '../../lib/ref.ts';
 import ScoreHelp from '../../components/ScoreHelp.astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, type CollectionEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { postedFor } from '../../lib/posted.ts';
 import { isExcludedOwner, isListable } from '../../../scripts/discovery-filter.ts';
@@ -21,9 +21,9 @@ export async function getStaticPaths() {
   const featuredIdx = editionsByRepo(listEditions(history, new Date()));
   const listable = projects
     .filter(p => isListable(p.data.repo, p.data.stars) && p.data.description.trim() !== '')
-    .map(p => ({ ...p.data, slug: p.slug }));
+    .map(p => ({ ...p.data, slug: p.id }));
   return projects.map(p => ({
-    params: { slug: p.slug },
+    params: { slug: p.id },
     props: {
       project: p,
       series: latestWeek ? projectSeries(history, p.data.repo, latestWeek) : null,
@@ -40,7 +40,7 @@ interface Props {
   related: Array<CollectionEntry<'projects'>['data'] & { slug: string }>;
 }
 const { project, series, featuredIn, related } = Astro.props;
-const { Content } = await project.render();
+const { Content } = await render(project);
 const d = project.data;
 
 // ── Category badge (same as ProjectCard) ──────────────────────
@@ -133,16 +133,16 @@ const tagLabels: Record<string, string> = {
 
 const base    = import.meta.env.BASE_URL;
 // Daily-highlight post published for this project (recorded by the post job)
-const postedEntry = postedFor(project.slug);
+const postedEntry = postedFor(project.id);
 const bskyPostUrl = withRef(postedEntry?.platforms.bsky?.url);
 // posted.json is checked too: the frontmatter postedAt only lands at the next
 // collect, but the og/<slug>.png exists from the build that posted it.
 const ogImage = d.postedAt || postedEntry
-  ? new URL(`${base}og/${project.slug}.png`, Astro.site).href
+  ? new URL(`${base}og/${project.id}.png`, Astro.site).href
   : new URL(`${base}og/index.png`, Astro.site).href;
 const customImage = d.openGraphImageUrl?.includes('repository-images.githubusercontent.com')
   ? d.openGraphImageUrl : null;
-const pageUrl = new URL(`${base}projects/${project.slug}/`, Astro.site).href;
+const pageUrl = new URL(`${base}projects/${project.id}/`, Astro.site).href;
 // Description and README were machine-translated (scripts/collect-i18n.ts).
 const translatedFrom = d.descriptionLang
   ? (new Intl.DisplayNames(['en'], { type: 'language' }).of(d.descriptionLang) ?? d.descriptionLang)
@@ -158,8 +158,8 @@ const sinceFeatured = featuredAt
 const featuredDate = featuredAt ? featuredAt.slice(0, 10) : null;
 const sectionLabels = { newcomers: 'new', rising: 'rising', revived: 'back' } as const;
 const why  = whyItsHere(d);
-const onFirstIssues = firstIssuesJson.projects.some(p => p.slug === project.slug);
-const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.slug } : {});
+const onFirstIssues = firstIssuesJson.projects.some(p => p.slug === project.id);
+const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.id } : {});
 ---
 <Base title={d.name} description={d.description} ogImage={ogImage} noindex={isExcludedOwner(d.repo)}>
   <div class="container section">
