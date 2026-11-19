@@ -2820,5 +2820,17 @@
         "postedAt": "2026-11-18T12:17:25.281Z"
       }
     }
+  },
+  {
+    "repo": "soobujmiah/ternux",
+    "slug": "soobujmiah--ternux",
+    "postedAt": "2026-11-19T05:15:56.039Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2ncwhk63i2v",
+        "postedAt": "2026-11-19T05:15:56.039Z"
+      }
+    },
+    "communityPick": true
   }
 ]
