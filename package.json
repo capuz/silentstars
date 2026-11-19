@@ -18,12 +18,11 @@
     "test": "node --test scripts/*.test.ts"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.7",
     "@atproto/api": "^0.20.16",
     "@resvg/resvg-js": "^2.6.2",
     "astro": "^4.15.0",
     "resend": "^6.16.0",
-    "satori": "^0.26.0"
+    "satori": "^0.63.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
@@ -34,5 +33,9 @@
   },
   "allowScripts": {
     "playwright@1.61.1": true
+  },
+  "overrides": {
+    "fflate": "^0.7.5",
+    "sharp": "^0.35.5"
   }
 }
