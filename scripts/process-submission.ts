@@ -22,7 +22,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
 import { addEntry, fetchSignal, findEntry, hasExternalSignal, readStandby, removeEntry, writeStandby } from './standby.ts';
-import { parseIssueBody } from './issue-body.ts';
+import { parseIssueBody, looksLikeOffFormSubmission } from './issue-body.ts';
 import { enqueue, readQueue, writeQueue } from './bsky-queue.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -225,6 +225,21 @@ async function handleSkipped() {
   console.log('Not a submission template — skipping.');
 }
 
+// A submission written by hand (issue #36) never reaches the checks below:
+// point it to the form once instead of leaving it unanswered. Nothing is
+// accepted, rejected or closed.
+async function handleNeedsForm() {
+  setOutput('status', 'needs_form');
+  console.log('Looks like a submission outside the form — pointing to it.');
+  await commentIssue([
+    `Hey @${ISSUE_AUTHOR}, thanks for the submission!`,
+    '',
+    'Submissions are processed automatically from the **Submit a project** form, and this issue didn\'t come through it, so it won\'t be picked up as is.',
+    `If you'd like it considered, please resubmit here: https://github.com/${REPO_OWNER}/${REPO_NAME_GH}/issues/new?template=submit-project.yml`,
+  ].join('\n'));
+  await labelIssue(['needs-form']);
+}
+
 async function handleRejected(repo: string, slug: string, projectName: string, reason: string) {
   setOutput('status', 'rejected');
   setOutput('repo', repo);
@@ -352,6 +367,10 @@ async function main() {
 
   // Guard: only process submission template issues
   if (!issueBody.includes('### GitHub repo (owner/repo)')) {
+    // The maintainer's own notes may link repos; only outside issues get the pointer.
+    if (ISSUE_AUTHOR.toLowerCase() !== REPO_OWNER.toLowerCase() && looksLikeOffFormSubmission(issueBody)) {
+      return handleNeedsForm();
+    }
     return handleSkipped();
   }
 

@@ -1,0 +1,4 @@
+# Blank issues skip every form, and the submission bot only reads the
+# "Submit a project" one (issue #36 sat unanswered for three weeks).
+# "Something else" (other.yml) covers what used to come in blank, like #79.
+blank_issues_enabled: false

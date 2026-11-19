@@ -26,7 +26,12 @@ jobs:
     name: Validate submission
     runs-on: ubuntu-latest
     # On dispatch there is no event issue; the script itself skips non-submissions.
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.body, '### GitHub repo (owner/repo)')
+    # 'github.com/' also lets hand-written submissions in (issue #36): the script
+    # points them to the form instead of the run ending up silently skipped.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.body, '### GitHub repo (owner/repo)') ||
+      contains(github.event.issue.body, 'github.com/')
     outputs:
       issue_number:    ${{ steps.validate.outputs.issue_number }}
       issue_author:    ${{ steps.validate.outputs.issue_author }}
@@ -61,6 +66,7 @@ jobs:
           gh label create "needs-review"   --color "fbca04" --description "Needs manual review before publishing" --force
           gh label create "standby"        --color "c5def5" --description "Waiting for external signal (90 days)"  --force
           gh label create "bsky-queued"    --color "8b5cf6" --description "Card live, Bluesky post queued"        --force
+          gh label create "needs-form"     --color "d4c5f9" --description "Submission outside the form, pointed to it" --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
