@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import satori from 'satori';
 import { Resvg } from '@resvg/resvg-js';
-import { fonts, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../og/shared.ts';
+import { fonts, borderBox, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../og/shared.ts';
 
 // Astro emits this as /og.png (an index route with an extension), the default
 // og:image of every page without its own card — see Base.astro.
@@ -14,7 +14,7 @@ export async function GET() {
   const starsK   = stars >= 1000 ? `${(stars / 1000).toFixed(1)}k` : String(stars);
 
   const svg = await satori(
-    {
+    borderBox({
       type: 'div',
       props: {
         style: {
@@ -71,7 +71,7 @@ export async function GET() {
           },
         ],
       },
-    },
+    }),
     {
       width: 1200,
       height: 630,
