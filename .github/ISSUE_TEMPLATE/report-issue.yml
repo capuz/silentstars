@@ -1,0 +1,11 @@
+name: Report a bug or a correction
+description: Something broken on the site, wrong data on a card, a renamed repo — anything to fix
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: The page or project it's about helps. A link is fine.
+    validations:
+      required: true

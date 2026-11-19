@@ -32,21 +32,31 @@ https://github.com/a/proj
 
 _No response_`;
 
+const T36 = 'Submit project: QRun Blockchain (QZXB)';
+
 test('looksLikeOffFormSubmission flags a hand-written submission with a repo link', () => {
-  assert.equal(looksLikeOffFormSubmission(ISSUE_36), true);
-  assert.equal(looksLikeOffFormSubmission('Please add github.com/a/proj, it is great'), true);
+  assert.equal(looksLikeOffFormSubmission(T36, ISSUE_36), true);
+  // Submission wording in the body alone is enough.
+  assert.equal(looksLikeOffFormSubmission('Cool tool', 'Please add my project https://github.com/a/proj'), true);
 });
 
-test('looksLikeOffFormSubmission leaves the form, other templates and plain messages alone', () => {
-  assert.equal(looksLikeOffFormSubmission(FORM), false);
-  assert.equal(looksLikeOffFormSubmission(REMOVAL), false);
-  assert.equal(looksLikeOffFormSubmission(ISSUE_79), false);
-  assert.equal(looksLikeOffFormSubmission('### What do you need?\n\nhttps://github.com/a/proj was renamed'), false);
-  assert.equal(looksLikeOffFormSubmission(''), false);
+test('looksLikeOffFormSubmission leaves bug reports and corrections alone, even with repo links', () => {
+  assert.equal(looksLikeOffFormSubmission('Wrong star count', 'The card for https://github.com/a/proj shows 10 stars, it has 40.'), false);
+  assert.equal(looksLikeOffFormSubmission('Renamed repo', 'Moved github.com/a/old to github.com/a/new, please fix the card.'), false);
+  assert.equal(looksLikeOffFormSubmission('Broken link', 'The README link to https://github.com/a/proj/blob/main/x.md 404s'), false);
+  assert.equal(looksLikeOffFormSubmission('Renamed repo', ISSUE_79), false);
 });
 
-test('looksLikeOffFormSubmission ignores links to SilentStars itself and to non-repo pages', () => {
-  assert.equal(looksLikeOffFormSubmission('See https://github.com/capuz/silentstars/issues/12'), false);
-  assert.equal(looksLikeOffFormSubmission('My profile: https://github.com/someone'), false);
-  assert.equal(looksLikeOffFormSubmission('Site: https://someone.github.io/proj/'), false);
+test('looksLikeOffFormSubmission leaves the forms alone', () => {
+  assert.equal(looksLikeOffFormSubmission('Ternux', FORM), false);
+  assert.equal(looksLikeOffFormSubmission('Submit removal', REMOVAL), false);
+  assert.equal(looksLikeOffFormSubmission('Submit fix', '### What happened?\n\nhttps://github.com/a/proj'), false);
+  assert.equal(looksLikeOffFormSubmission('', ''), false);
+});
+
+test('looksLikeOffFormSubmission needs a link to a repo other than SilentStars', () => {
+  assert.equal(looksLikeOffFormSubmission('Submit project: X', 'no link here'), false);
+  assert.equal(looksLikeOffFormSubmission('Submit project', 'See https://github.com/capuz/silentstars/issues/12'), false);
+  assert.equal(looksLikeOffFormSubmission('Submit project', 'My profile: https://github.com/someone'), false);
+  assert.equal(looksLikeOffFormSubmission('Submit project', 'Site: https://someone.github.io/proj/'), false);
 });
