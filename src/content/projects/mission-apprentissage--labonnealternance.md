@@ -7,16 +7,16 @@ url: "https://github.com/mission-apprentissage/labonnealternance"
 homepage: "https://labonnealternance.apprentissage.beta.gouv.fr/"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [94]
+languagePcts: [95]
 stars: 11
 forks: 6
-openIssues: 437
-closedIssues: 1786
+openIssues: 439
+closedIssues: 1790
 watchers: 3
 contributors: 18
 recentReleases: 0
 createdAt: "2022-10-05T13:20:00Z"
-lastCommitAt: "2026-11-17T17:16:15Z"
+lastCommitAt: "2026-11-18T15:16:09Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]

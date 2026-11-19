@@ -1,22 +1,22 @@
 {
-  "checkedAt": "2026-11-18T12:13:49.103Z",
+  "checkedAt": "2026-11-19T05:12:30.954Z",
   "stars": {
-    "0sec-labs/0sec": 1477,
-    "AgnesAI-Labs/agnes-harness": 2114,
-    "autonomous-ai/autonomous-os": 577,
-    "callstackincubator/simlock": 682,
+    "0sec-labs/0sec": 1508,
+    "AgnesAI-Labs/agnes-harness": 2119,
+    "autonomous-ai/autonomous-os": 576,
+    "callstackincubator/simlock": 686,
     "cortex-docs/cortex": 3295,
-    "fanyuantaier/wechatauto-replica": 683,
+    "fanyuantaier/wechatauto-replica": 685,
     "farming-labs/farm.js": 660,
-    "fufankeji/deepseek-harness-studio": 727,
-    "hajisensai/hibiki": 892,
+    "fufankeji/deepseek-harness-studio": 728,
+    "hajisensai/hibiki": 895,
     "KunoLu/640-skills": 559,
     "LivXue/dsh-plugin-shop": 666,
-    "misakano7545/workbuddy2api-panel": 1307,
+    "misakano7545/workbuddy2api-panel": 1324,
     "OluOlus/ops-agent-controller": 604,
-    "poco-ai/Agentero": 2636,
-    "smartdoca/doca": 653,
-    "webbrain-one/webbrain": 1719,
-    "wuyoscar/AISafetyHot-Hub": 2134
+    "poco-ai/Agentero": 2658,
+    "smartdoca/doca": 660,
+    "webbrain-one/webbrain": 1727,
+    "wuyoscar/AISafetyHot-Hub": 2136
   }
 }

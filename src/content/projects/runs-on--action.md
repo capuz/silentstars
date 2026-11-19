@@ -19,7 +19,7 @@ recentReleases: 0
 createdAt: "2024-12-19T12:16:33Z"
 lastCommitAt: "2026-11-04T22:13:51Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 87
 undervaluedScore: 75

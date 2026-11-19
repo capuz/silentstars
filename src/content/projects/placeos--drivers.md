@@ -8,7 +8,7 @@ homepage: "https://placeos.com"
 language: "Crystal"
 languages: ["Crystal"]
 languagePcts: [100]
-stars: 13
+stars: 14
 forks: 18
 openIssues: 30
 closedIssues: 160

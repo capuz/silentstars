@@ -11,17 +11,17 @@ stars: 15
 forks: 37
 openIssues: 0
 closedIssues: 0
-watchers: 17
+watchers: 16
 contributors: 40
 recentReleases: 0
 createdAt: "2023-12-28T15:24:52Z"
-lastCommitAt: "2026-11-18T11:50:30Z"
+lastCommitAt: "2026-11-19T05:07:18Z"
 status: "thriving"
 tags: ["solo_builder", "community_watch", "fork_magnet"]
 healthScore: 90
 undervaluedScore: 65
 maintainers: ["actions-user"]
-openGraphImageUrl: "https://opengraph.githubassets.com/469d923842f66dfd9689dbb903885b17482fc96ca25ee644f3da1c23ced2587d/InjectiveLabs/injective-lists"
+openGraphImageUrl: "https://opengraph.githubassets.com/4a172a62c263fd7b64fb14ff0f73c66a406fb3b071c68483e0d9b587e6aa67c7/InjectiveLabs/injective-lists"
 postedAt: "2026-08-30T09:29:46.843Z"
 ---
 

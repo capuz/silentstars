@@ -11,20 +11,21 @@ languagePcts: [100]
 topics: ["acroform", "go", "golang", "markdown-to-pdf", "mit-license", "no-cgo", "ocr", "pdf", "pdf-a", "pdf-generation"]
 stars: 6
 forks: 6
-openIssues: 4
-closedIssues: 14
+openIssues: 0
+closedIssues: 18
 watchers: 0
 contributors: 3
 recentReleases: 3
 createdAt: "2026-05-21T09:00:22Z"
-lastCommitAt: "2026-11-18T11:49:25Z"
+lastCommitAt: "2026-11-18T12:09:52Z"
 lastReleaseAt: "2026-09-16T09:18:55Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 95
-undervaluedScore: 79
+healthScore: 99
+undervaluedScore: 83
 maintainers: ["kaferi"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1245479016/951cc047-39ac-4e79-891e-3843dcf07e27"
+postedAt: "2026-11-18T12:17:25.281Z"
 ---
 
 # Aspose.PDF FOSS for Go

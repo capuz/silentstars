@@ -10,19 +10,19 @@ languages: ["C++"]
 languagePcts: [70]
 stars: 8
 forks: 37
-openIssues: 106
-closedIssues: 231
+openIssues: 105
+closedIssues: 232
 watchers: 1
 contributors: 61
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-18T11:21:21Z"
+lastCommitAt: "2026-11-18T17:43:18Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 97
-maintainers: ["eclipse-score-bot", "NicolasFussberger", "MaciejKaszynski"]
+maintainers: ["NicolasFussberger", "eclipse-score-bot", "MaciejKaszynski"]
 openGraphImageUrl: "https://opengraph.githubassets.com/2331be2a6d6978f18d9f88c24b2497d145c0d89dda966672a27f0486152f798d/eclipse-score/lifecycle"
 postedAt: "2026-08-31T10:05:29.134Z"
 ---

@@ -11,13 +11,13 @@ languagePcts: [99]
 topics: ["database", "database-migrations", "database-schema", "database-tools", "mariadb", "migration-tool", "mysql", "sqlite", "clickhouse", "schema-migration"]
 stars: 21
 forks: 3
-openIssues: 19
-closedIssues: 1518
+openIssues: 16
+closedIssues: 1528
 watchers: 0
 contributors: 4
 recentReleases: 7
 createdAt: "2025-06-01T23:22:06Z"
-lastCommitAt: "2026-11-18T12:07:51Z"
+lastCommitAt: "2026-11-19T05:07:59Z"
 lastReleaseAt: "2026-09-22T21:57:50Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
