@@ -50,7 +50,6 @@ test('looksLikeOffFormSubmission leaves bug reports and corrections alone, even 
 test('looksLikeOffFormSubmission leaves the forms alone', () => {
   assert.equal(looksLikeOffFormSubmission('Ternux', FORM), false);
   assert.equal(looksLikeOffFormSubmission('Submit removal', REMOVAL), false);
-  assert.equal(looksLikeOffFormSubmission('Submit fix', '### What happened?\n\nhttps://github.com/a/proj'), false);
   assert.equal(looksLikeOffFormSubmission('', ''), false);
 });
 

@@ -28,7 +28,6 @@ export function parseIssueBody(body: string): { repo: string; email: string; sub
 const TEMPLATE_HEADINGS = [
   '### GitHub repo (owner/repo)',     // submit-project.yml
   '### Repo to remove (owner/repo)',  // remove-project.yml
-  '### What happened?',               // report-issue.yml
 ];
 
 // owner/repo paths on github.com that aren't repositories.
