@@ -2832,5 +2832,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "peikk0/dotfiles",
+    "slug": "peikk0--dotfiles",
+    "postedAt": "2026-11-19T12:09:36.224Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2o225typr2b",
+        "postedAt": "2026-11-19T12:09:36.224Z"
+      }
+    }
   }
 ]
