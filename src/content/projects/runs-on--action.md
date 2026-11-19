@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-04T22:13:51Z"
 lastReleaseAt: "2026-07-02T07:23:59Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 87
+healthScore: 86
 undervaluedScore: 75
 maintainers: ["crohr", "afreyermuth98", "garysassano"]
 openGraphImageUrl: "https://opengraph.githubassets.com/dbf1c7cf5e806f4509f1682478a7ad6bf848cab20bdc6ccc21ecc36e9599f19e/runs-on/action"

@@ -11,8 +11,8 @@ languagePcts: [90]
 topics: ["async-iterators", "javascript", "observables", "reactive-programming", "streamix", "typescript", "rxjs-alternative"]
 stars: 4
 forks: 0
-openIssues: 103
-closedIssues: 66
+openIssues: 93
+closedIssues: 76
 watchers: 0
 contributors: 2
 recentReleases: 1
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-19T04:15:54Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "under_pressure", "community_hub"]
-healthScore: 88
-undervaluedScore: 53
+healthScore: 89
+undervaluedScore: 54
 maintainers: ["oleksii-shepel"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f1900e0022bcdef8004d5a21855c80121469873e7f422f70fcfa6c626a9a8902/epikodelabs/streamix"
 fundingLinks: ["OPEN_COLLECTIVE:https://opencollective.com/streamix"]

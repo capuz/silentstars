@@ -17,10 +17,10 @@ watchers: 2
 contributors: 1
 recentReleases: 0
 createdAt: "2014-07-02T12:07:59Z"
-lastCommitAt: "2026-11-18T20:10:52Z"
+lastCommitAt: "2026-11-19T11:50:56Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 79
+healthScore: 80
 undervaluedScore: 75
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"

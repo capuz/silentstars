@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["self-hosted", "s3", "security"]
-stars: 61
+stars: 62
 forks: 4
 openIssues: 0
 closedIssues: 0
@@ -24,7 +24,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 79
 undervaluedScore: 38
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b156117ce9ff8381627a4e2baeff85666431983d6410e5bc026ce86b723f1816/artabramov/hidden-s3"
+openGraphImageUrl: "https://opengraph.githubassets.com/683f49222886f791ce6757c1dd68277c47495021dbf635ae9e546c100e88f61f/artabramov/hidden-s3"
 postedAt: "2026-10-29T05:58:03.283Z"
 ---
 

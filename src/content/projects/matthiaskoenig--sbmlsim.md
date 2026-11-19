@@ -17,11 +17,11 @@ watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2019-10-02T11:24:50Z"
-lastCommitAt: "2026-11-18T22:47:00Z"
+lastCommitAt: "2026-11-19T10:32:31Z"
 lastReleaseAt: "2020-11-11T22:00:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 98
+healthScore: 99
 undervaluedScore: 81
 maintainers: ["matthiaskoenig"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4c139326c6a3e122e9548612145a38e85e24f427a71a5c9295c7d8b166d21532/matthiaskoenig/sbmlsim"

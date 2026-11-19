@@ -21,7 +21,7 @@ lastCommitAt: "2026-09-12T07:38:07Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "at_risk"
 tags: ["solo_builder"]
-healthScore: 71
+healthScore: 70
 undervaluedScore: 31
 maintainers: ["martian56", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0fb64d0e6a523dc2d07805b1ac4fa7d696bf34206e6460114e62d069dce59f4a/martian56/raven"
