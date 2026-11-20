@@ -7,7 +7,7 @@ url: "https://github.com/yzhao062/yzhao062.github.io"
 homepage: "https://yzhao062.github.io/"
 language: "HTML"
 languages: ["HTML"]
-languagePcts: [68]
+languagePcts: [67]
 stars: 10
 forks: 27
 openIssues: 0
@@ -16,10 +16,10 @@ watchers: 1
 contributors: 21
 recentReleases: 0
 createdAt: "2023-05-18T02:24:55Z"
-lastCommitAt: "2026-11-17T22:46:07Z"
+lastCommitAt: "2026-11-20T07:53:31Z"
 status: "thriving"
 tags: ["funded", "fork_magnet"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 83
 maintainers: ["yzhao062", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/dff542fdade6297b87c5814bf58e182607fcae1bc78a52e1ef59f2c2f44d3fe4/yzhao062/yzhao062.github.io"

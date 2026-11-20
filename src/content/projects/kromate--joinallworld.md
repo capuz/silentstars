@@ -23,7 +23,6 @@ healthScore: 75
 undervaluedScore: 55
 maintainers: ["kromate"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1ec90d0a3c5582a0fae2f61603c84d7553df87cf5dfabad3f7e40ad9f30a5f35/kromate/joinallworld"
-promoted: true
 postedAt: "2026-10-21T23:41:38.422Z"
 ---
 

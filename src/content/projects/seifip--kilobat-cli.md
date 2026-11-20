@@ -17,12 +17,12 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-11-05T07:17:58Z"
+lastCommitAt: "2026-11-19T17:08:01Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
-status: "quiet"
+status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 84
-undervaluedScore: 48
+healthScore: 88
+undervaluedScore: 54
 maintainers: ["seifip"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d8fc7632721de8739b6dbc95e6f75af7dec07cf0b4f715d6cd38640a9fcfcad4/seifip/kilobat-cli"
 promoted: true

@@ -10,7 +10,7 @@ languages: ["Python"]
 languagePcts: [100]
 topics: ["bot", "matrix", "matrix-bot", "matrix-org", "python"]
 stars: 15
-forks: 7
+forks: 6
 openIssues: 20
 closedIssues: 13
 watchers: 1
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-04-07T00:45:05Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
 healthScore: 76
-undervaluedScore: 48
+undervaluedScore: 47
 maintainers: ["dependabot[bot]", "PenguinBoi12", "chrisdedman"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5352325da61f2e79850f8519e3bbdf40cc961d48c0c9340bf1285a939cb441ad/Code-Society-Lab/matrixpy"
 postedAt: "2026-08-30T01:01:32.547Z"

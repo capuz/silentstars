@@ -7,7 +7,7 @@ url: "https://github.com/soobujmiah/ternux"
 homepage: "https://soobujmiah.github.io/ternux/"
 language: "Shell"
 languages: ["Shell", "Python"]
-languagePcts: [55, 31]
+languagePcts: [56, 31]
 topics: ["adreno", "android", "debian", "gpu-acceleration", "no-root", "proot", "termux", "turnip", "vulkan", "xfce4"]
 stars: 8
 forks: 2
@@ -15,15 +15,15 @@ openIssues: 0
 closedIssues: 0
 watchers: 0
 contributors: 3
-recentReleases: 5
+recentReleases: 6
 createdAt: "2026-08-13T01:02:33Z"
-lastCommitAt: "2026-11-18T15:06:53Z"
-lastReleaseAt: "2026-11-06T22:21:45Z"
+lastCommitAt: "2026-11-20T10:38:56Z"
+lastReleaseAt: "2026-11-19T17:54:53Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 60
-maintainers: ["codex", "soobujmiah"]
+maintainers: ["codex", "soobujmiah", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
 promoted: true
 postedAt: "2026-11-19T05:15:56.039Z"

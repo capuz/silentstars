@@ -1,6 +1,58 @@
 {
-  "collectedAt": "2026-11-19T12:05:04.132Z",
+  "collectedAt": "2026-11-20T12:08:17.753Z",
   "projects": [
+    {
+      "repo": "eclipse-score/lifecycle",
+      "slug": "eclipse-score--lifecycle",
+      "lastCommitAt": "2026-11-20T10:10:27Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 12,
+      "issues": [
+        {
+          "number": 329,
+          "title": "Mocks for lifecycle",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
+          "kind": "good first issue",
+          "createdAt": "2026-07-16T13:40:10Z",
+          "comments": 1
+        },
+        {
+          "number": 842,
+          "title": "Move all \"Default\" asserts to debug",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
+          "kind": "good first issue",
+          "createdAt": "2026-10-22T12:57:03Z",
+          "comments": 0
+        },
+        {
+          "number": 488,
+          "title": "Make use of static create methods",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
+          "kind": "good first issue",
+          "createdAt": "2026-08-18T10:13:34Z",
+          "comments": 0
+        },
+        {
+          "number": 424,
+          "title": "Update legacy ProcessGroupManager names",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
+          "kind": "good first issue",
+          "createdAt": "2026-08-06T08:31:01Z",
+          "comments": 1
+        },
+        {
+          "number": 570,
+          "title": "Standardize ProcessInfoNode logs",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/570",
+          "kind": "good first issue",
+          "createdAt": "2026-08-31T08:30:12Z",
+          "comments": 0
+        }
+      ]
+    },
     {
       "repo": "Code-Society-Lab/matrixpy",
       "slug": "code-society-lab--matrixpy",
@@ -55,207 +107,208 @@
       ]
     },
     {
-      "repo": "eclipse-score/lifecycle",
-      "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-19T11:38:17Z",
+      "repo": "competemath/tengoku",
+      "slug": "competemath--tengoku",
+      "lastCommitAt": "2026-11-20T10:50:53Z",
       "signals": {
-        "outsidePRsMerged": 28,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 13,
+      "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 329,
-          "title": "Mocks for lifecycle",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
+          "number": 293,
+          "title": "Write a contributor cheat sheet with suggested starting points",
+          "url": "https://github.com/competemath/tengoku/issues/293",
           "kind": "good first issue",
-          "createdAt": "2026-07-16T13:40:10Z",
-          "comments": 1
-        },
-        {
-          "number": 842,
-          "title": "Move all \"Default\" asserts to debug",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
-          "kind": "good first issue",
-          "createdAt": "2026-10-22T12:57:03Z",
+          "createdAt": "2026-10-05T06:45:04Z",
           "comments": 0
         },
         {
-          "number": 488,
-          "title": "Make use of static create methods",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
+          "number": 292,
+          "title": "Add a social preview image for the repository",
+          "url": "https://github.com/competemath/tengoku/issues/292",
           "kind": "good first issue",
-          "createdAt": "2026-08-18T10:13:34Z",
+          "createdAt": "2026-10-05T06:45:03Z",
           "comments": 0
         },
         {
-          "number": 424,
-          "title": "Update legacy ProcessGroupManager names",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
+          "number": 286,
+          "title": "Keep a versioned archive of the record formats (ids, author lines, credit lines)",
+          "url": "https://github.com/competemath/tengoku/issues/286",
           "kind": "good first issue",
-          "createdAt": "2026-08-06T08:31:01Z",
-          "comments": 1
+          "createdAt": "2026-10-05T06:44:54Z",
+          "comments": 0
         },
         {
-          "number": 676,
-          "title": "Get rid of git override for score_crates",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/676",
-          "kind": "good first issue",
-          "createdAt": "2026-09-22T08:26:54Z",
+          "number": 280,
+          "title": "Publish a table of what each check covers, and which checks run in CI today versus are in progress",
+          "url": "https://github.com/competemath/tengoku/issues/280",
+          "kind": "help wanted",
+          "createdAt": "2026-10-05T06:44:45Z",
+          "comments": 3
+        },
+        {
+          "number": 283,
+          "title": "Design and evaluate an optional \"tawatur\" status: a theorem with three independent proofs",
+          "url": "https://github.com/competemath/tengoku/issues/283",
+          "kind": "help wanted",
+          "createdAt": "2026-10-05T06:44:49Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "Blosc/python-blosc2",
-      "slug": "blosc--python-blosc2",
-      "lastCommitAt": "2026-11-19T11:55:41Z",
+      "repo": "GriffonAV/griffon",
+      "slug": "griffonav--griffon",
+      "lastCommitAt": "2026-11-13T10:22:31Z",
       "signals": {
-        "outsidePRsMerged": 28,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true,
+        "approxKloc": 21
       },
-      "goodFirstIssueCount": 2,
+      "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 644,
-          "title": "[Tutorial] CTable copy() with reblocking and recompression",
-          "url": "https://github.com/Blosc/python-blosc2/issues/644",
+          "number": 227,
+          "title": "[CLI]: Update the UX of the cli",
+          "url": "https://github.com/GriffonAV/griffon/issues/227",
           "kind": "good first issue",
-          "createdAt": "2026-06-02T11:14:28Z",
-          "comments": 2
-        },
-        {
-          "number": 645,
-          "title": "Document SUMMARY indexes for end users",
-          "url": "https://github.com/Blosc/python-blosc2/issues/645",
-          "kind": "good first issue",
-          "createdAt": "2026-06-02T11:16:50Z",
-          "comments": 1
-        },
-        {
-          "number": 466,
-          "title": "Array API compliance",
-          "url": "https://github.com/Blosc/python-blosc2/issues/466",
-          "kind": "help wanted",
-          "createdAt": "2025-09-10T11:48:16Z",
-          "comments": 2
-        },
-        {
-          "number": 476,
-          "title": "Array-api Linalg functions",
-          "url": "https://github.com/Blosc/python-blosc2/issues/476",
-          "kind": "help wanted",
-          "createdAt": "2025-09-15T08:16:49Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "luiacuaniello/perspectivegraph",
-      "slug": "luiacuaniello--perspectivegraph",
-      "lastCommitAt": "2026-11-19T11:55:58Z",
-      "signals": {
-        "outsidePRsMerged": 23,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 93,
-          "title": "feat: Guard colour contrast in CI so a WCAG regression cannot merge",
-          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/93",
-          "kind": "good first issue",
-          "createdAt": "2026-08-03T14:52:07Z",
-          "comments": 2
-        },
-        {
-          "number": 303,
-          "title": "feat: Read GitLab.com and HCP Terraform OIDC trusts, not only GitHub's",
-          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/303",
-          "kind": "help wanted",
-          "createdAt": "2026-10-02T15:42:45Z",
+          "createdAt": "2026-09-25T09:59:48Z",
           "comments": 0
         },
         {
-          "number": 302,
-          "title": "feat: Add a Grype collector that meets Trivy on the same packages",
-          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/302",
-          "kind": "help wanted",
-          "createdAt": "2026-10-02T15:42:18Z",
+          "number": 225,
+          "title": "[Cleaner-Extension]: Implement LogsCleaner module in the Cleaner-extension",
+          "url": "https://github.com/GriffonAV/griffon/issues/225",
+          "kind": "good first issue",
+          "createdAt": "2026-09-25T09:41:35Z",
+          "comments": 0
+        },
+        {
+          "number": 220,
+          "title": "👋 Welcome to Griffon!",
+          "url": "https://github.com/GriffonAV/griffon/issues/220",
+          "kind": "good first issue",
+          "createdAt": "2026-09-25T08:38:18Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "afharo/matterbridge-xiaomi-roborock",
-      "slug": "afharo--matterbridge-xiaomi-roborock",
-      "lastCommitAt": "2026-11-19T11:55:37Z",
+      "repo": "TauCetiProject/TauCeti",
+      "slug": "taucetiproject--tauceti",
+      "lastCommitAt": "2026-11-20T00:39:39Z",
       "signals": {
-        "outsidePRsMerged": 19,
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 804,
+          "title": "Analysis/Contour: make the on-curve winding-number layer real (HW Prop 2.2 and regularity-condition witnesses)",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/804",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:30Z",
+          "comments": 1
+        },
+        {
+          "number": 805,
+          "title": "Analysis/Complex/Conformal: prove the Schwarz reflection crossing theorem",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/805",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:31Z",
+          "comments": 0
+        },
+        {
+          "number": 803,
+          "title": "CompletelyMonotone: final assembly of Bernstein's theorem",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/803",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:29Z",
+          "comments": 0
+        },
+        {
+          "number": 802,
+          "title": "KnotTheory/Grid: prove the square of the fully blocked grid differential is zero",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/802",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:28Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "cylc/cylc-ui",
+      "slug": "cylc--cylc-ui",
+      "lastCommitAt": "2026-11-20T11:58:23Z",
+      "signals": {
+        "outsidePRsMerged": 26,
         "outsidePRsCapped": false,
-        "approxKloc": 4
+        "approxKloc": 29
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 387,
-          "title": "Looking for new maintainer(s)",
-          "url": "https://github.com/afharo/matterbridge-xiaomi-roborock/issues/387",
-          "kind": "help wanted",
-          "createdAt": "2026-11-18T20:33:20Z",
-          "comments": 0
+          "number": 1536,
+          "title": "Use `eslint-plugin-vue` strongly-recommended rules",
+          "url": "https://github.com/cylc/cylc-ui/issues/1536",
+          "kind": "good first issue",
+          "createdAt": "2023-10-30T12:55:46Z",
+          "comments": 1
         }
       ]
     },
     {
-      "repo": "storytold/craft-libs",
-      "slug": "storytold--craft-libs",
-      "lastCommitAt": "2026-11-19T11:54:33Z",
+      "repo": "exmergo/dex",
+      "slug": "exmergo--dex",
+      "lastCommitAt": "2026-11-20T11:53:03Z",
       "signals": {
-        "outsidePRsMerged": 16,
+        "outsidePRsMerged": 15,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 16,
       "issues": [
         {
-          "number": 2218,
-          "title": "PERF-BUILD-ONE-TEST-BINARY-PER-CRATE",
-          "url": "https://github.com/storytold/craft-libs/issues/2218",
+          "number": 1497,
+          "title": "fix(cube): a time bucket reads differently under --api and --local",
+          "url": "https://github.com/exmergo/dex/issues/1497",
           "kind": "help wanted",
-          "createdAt": "2026-11-18T12:42:34Z",
-          "comments": 1
+          "createdAt": "2026-11-20T00:15:53Z",
+          "comments": 0
         },
         {
-          "number": 2335,
-          "title": "PERF-UI-RUNTIME-GENERIC-COPIES",
-          "url": "https://github.com/storytold/craft-libs/issues/2335",
+          "number": 1496,
+          "title": "fix(declarations): a test added to a YAML-aliased test list lands on every column sharing it",
+          "url": "https://github.com/exmergo/dex/issues/1496",
           "kind": "help wanted",
-          "createdAt": "2026-11-19T06:07:13Z",
-          "comments": 1
+          "createdAt": "2026-11-20T00:15:51Z",
+          "comments": 0
         },
         {
-          "number": 2334,
-          "title": "PERF-UI-RUNTIME-TEST-COSTS",
-          "url": "https://github.com/storytold/craft-libs/issues/2334",
+          "number": 1495,
+          "title": "fix(declarations): a declaration cannot be written into an entry whose data_tests list is indentless",
+          "url": "https://github.com/exmergo/dex/issues/1495",
           "kind": "help wanted",
-          "createdAt": "2026-11-19T06:07:12Z",
-          "comments": 1
+          "createdAt": "2026-11-20T00:15:50Z",
+          "comments": 0
         },
         {
-          "number": 2333,
-          "title": "PERF-UI-TEXT-LAYOUT-MEMO",
-          "url": "https://github.com/storytold/craft-libs/issues/2333",
+          "number": 1494,
+          "title": "feat(explore): leave Elementary's tables out of explore diagram and explore relationships by default",
+          "url": "https://github.com/exmergo/dex/issues/1494",
           "kind": "help wanted",
-          "createdAt": "2026-11-19T06:07:11Z",
-          "comments": 1
+          "createdAt": "2026-11-20T00:15:48Z",
+          "comments": 0
         },
         {
-          "number": 2332,
-          "title": "PERF-BUILD-TEST-KIT-AND-REGISTRY",
-          "url": "https://github.com/storytold/craft-libs/issues/2332",
+          "number": 1447,
+          "title": "test(maintain): show whether an Elementary package upgrade reads as drift in maintain check",
+          "url": "https://github.com/exmergo/dex/issues/1447",
           "kind": "help wanted",
-          "createdAt": "2026-11-19T06:07:10Z",
-          "comments": 1
+          "createdAt": "2026-11-19T19:13:39Z",
+          "comments": 0
         }
       ]
     },
@@ -281,53 +334,62 @@
       ]
     },
     {
-      "repo": "hivecommons/hive",
-      "slug": "hivecommons--hive",
-      "lastCommitAt": "2026-11-19T11:51:21Z",
+      "repo": "qgis/QGIS-Website",
+      "slug": "qgis--qgis-website",
+      "lastCommitAt": "2026-11-20T12:04:53Z",
       "signals": {
-        "outsidePRsMerged": 12,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 10,
+        "outsidePRsCapped": false,
+        "approxKloc": 14
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 7,
       "issues": [
         {
-          "number": 19221,
-          "title": "[scanner] egress audit: resolve-once and dial-pinning for server-side fetchers",
-          "url": "https://github.com/hivecommons/hive/issues/19221",
+          "number": 994,
+          "title": "Broken links to OGC conformance tests",
+          "url": "https://github.com/qgis/QGIS-Website/issues/994",
           "kind": "good first issue",
-          "createdAt": "2026-11-19T06:12:42Z",
-          "comments": 4
+          "createdAt": "2026-05-26T19:34:50Z",
+          "comments": 3
         },
         {
-          "number": 19250,
-          "title": "[selfreport] inference_backend_auth_failure: inference backend auth failure",
-          "url": "https://github.com/hivecommons/hive/issues/19250",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T11:37:09Z",
+          "number": 1097,
+          "title": "MrSID and ECW format are not available for QGIS provided by macOS installers",
+          "url": "https://github.com/qgis/QGIS-Website/issues/1097",
+          "kind": "good first issue",
+          "createdAt": "2026-09-08T22:08:30Z",
+          "comments": 2
+        },
+        {
+          "number": 938,
+          "title": "QGIS Debian/Ubuntu Installation unnecessary step",
+          "url": "https://github.com/qgis/QGIS-Website/issues/938",
+          "kind": "good first issue",
+          "createdAt": "2026-03-30T14:51:56Z",
+          "comments": 2
+        },
+        {
+          "number": 937,
+          "title": "Missing feature in Changelog for QGIS 3.44",
+          "url": "https://github.com/qgis/QGIS-Website/issues/937",
+          "kind": "good first issue",
+          "createdAt": "2026-03-29T08:28:36Z",
           "comments": 0
         },
         {
-          "number": 19164,
-          "title": "📖 Customers: disclosure text, docs and live verification for hub import (phase 4 of #19088)",
-          "url": "https://github.com/hivecommons/hive/issues/19164",
-          "kind": "help wanted",
-          "createdAt": "2026-11-18T22:54:28Z",
-          "comments": 4
-        },
-        {
-          "number": 19229,
-          "title": "[governor] follow-up: A reviewer handed this to a person: security requires human: Not deeply reviewed: the diff touches Hive prox…",
-          "url": "https://github.com/hivecommons/hive/issues/19229",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T06:39:55Z",
-          "comments": 3
+          "number": 918,
+          "title": "Contributors Present Twice on map",
+          "url": "https://github.com/qgis/QGIS-Website/issues/918",
+          "kind": "good first issue",
+          "createdAt": "2026-03-10T12:52:21Z",
+          "comments": 5
         }
       ]
     },
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-19T10:14:46Z",
+      "lastCommitAt": "2026-11-20T11:46:40Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -347,7 +409,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-19T10:14:46Z",
+      "lastCommitAt": "2026-11-20T11:46:40Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -367,7 +429,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-19T08:29:43Z",
+      "lastCommitAt": "2026-11-20T08:35:10Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -417,11 +479,31 @@
       ]
     },
     {
+      "repo": "AsoBeast/asobeast",
+      "slug": "asobeast--asobeast",
+      "lastCommitAt": "2026-11-20T12:01:17Z",
+      "signals": {
+        "outsidePRsMerged": 4,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 733,
+          "title": "docs: add console screenshots and an optional video to the store integration guides",
+          "url": "https://github.com/AsoBeast/asobeast/issues/733",
+          "kind": "good first issue",
+          "createdAt": "2026-11-07T10:16:09Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "baipix/baipix",
       "slug": "baipix--baipix",
-      "lastCommitAt": "2026-11-19T00:29:18Z",
+      "lastCommitAt": "2026-11-19T21:30:59Z",
       "signals": {
-        "outsidePRsMerged": 1,
+        "outsidePRsMerged": 2,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 5,
@@ -469,6 +551,79 @@
       ]
     },
     {
+      "repo": "lynxbase/lynxdb",
+      "slug": "lynxbase--lynxdb",
+      "lastCommitAt": "2026-11-20T11:58:35Z",
+      "signals": {
+        "outsidePRsMerged": 2,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 46,
+          "title": "(proposal) Reflect configuration defaults in readme",
+          "url": "https://github.com/lynxbase/lynxdb/issues/46",
+          "kind": "good first issue",
+          "createdAt": "2026-06-07T22:23:08Z",
+          "comments": 0
+        },
+        {
+          "number": 17,
+          "title": "Tested Filebeat, Fluent Bit, Vector and OpenTelemetry Collector recipes.",
+          "url": "https://github.com/lynxbase/lynxdb/issues/17",
+          "kind": "good first issue",
+          "createdAt": "2026-05-02T07:15:39Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "Anshumanv28/A.R.T.E.M.I.S",
+      "slug": "anshumanv28--a-r-t-e-m-i-s",
+      "lastCommitAt": "2026-11-20T12:03:58Z",
+      "signals": {
+        "outsidePRsMerged": 1,
+        "outsidePRsCapped": false,
+        "approxKloc": 16
+      },
+      "goodFirstIssueCount": 4,
+      "issues": [
+        {
+          "number": 6,
+          "title": "Add pull request template",
+          "url": "https://github.com/Anshumanv28/A.R.T.E.M.I.S/issues/6",
+          "kind": "good first issue",
+          "createdAt": "2026-02-27T05:12:49Z",
+          "comments": 0
+        },
+        {
+          "number": 5,
+          "title": "Improve inline docstrings across the agent layer",
+          "url": "https://github.com/Anshumanv28/A.R.T.E.M.I.S/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-02-27T05:11:37Z",
+          "comments": 0
+        },
+        {
+          "number": 3,
+          "title": "Add CHANGELOG.md",
+          "url": "https://github.com/Anshumanv28/A.R.T.E.M.I.S/issues/3",
+          "kind": "good first issue",
+          "createdAt": "2026-02-27T04:54:58Z",
+          "comments": 0
+        },
+        {
+          "number": 2,
+          "title": "Add CONTRIBUTING.md",
+          "url": "https://github.com/Anshumanv28/A.R.T.E.M.I.S/issues/2",
+          "kind": "good first issue",
+          "createdAt": "2026-02-27T04:54:08Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "MeshLive/meshlive-android",
       "slug": "meshlive--meshlive-android",
       "lastCommitAt": "2026-11-16T12:13:28Z",
@@ -505,26 +660,6 @@
       ]
     },
     {
-      "repo": "davanstrien/uv-scripts",
-      "slug": "davanstrien--uv-scripts",
-      "lastCommitAt": "2026-11-19T11:55:40Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 43,
-          "title": "Bump pinned GitHub Actions off deprecated Node 20 (checkout@v4, setup-uv@v5)",
-          "url": "https://github.com/davanstrien/uv-scripts/issues/43",
-          "kind": "good first issue",
-          "createdAt": "2026-06-05T15:13:56Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "Itqan-community/cms-frontend",
       "slug": "itqan-community--cms-frontend",
       "lastCommitAt": "2026-11-14T15:19:16Z",
@@ -545,9 +680,9 @@
       ]
     },
     {
-      "repo": "hffgzktbcc-blip/ounce-core",
-      "slug": "hffgzktbcc-blip--ounce-core",
-      "lastCommitAt": "2026-11-19T12:01:51Z",
+      "repo": "userFRM/egui-charts",
+      "slug": "userfrm--egui-charts",
+      "lastCommitAt": "2026-11-20T11:59:26Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -555,64 +690,44 @@
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 489,
-          "title": "Re-run docs/verify/fp-workload on a different ARM64 host and commit the result",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/489",
+          "number": 3743,
+          "title": "The terminal lets users edit and lock drawings whose user edits are off",
+          "url": "https://github.com/userFRM/egui-charts/issues/3743",
           "kind": "help wanted",
-          "createdAt": "2026-11-17T14:47:50Z",
+          "createdAt": "2026-11-20T09:24:50Z",
           "comments": 1
         },
         {
-          "number": 488,
-          "title": "fp-workload: extend to vector (SIMD) FP ops and the remaining FCVT forms",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/488",
+          "number": 3767,
+          "title": "The terminal closes alert toasts the settings keep until dismissed",
+          "url": "https://github.com/userFRM/egui-charts/issues/3767",
           "kind": "help wanted",
-          "createdAt": "2026-11-17T14:47:48Z",
-          "comments": 1
+          "createdAt": "2026-11-20T11:22:34Z",
+          "comments": 0
         },
         {
-          "number": 485,
-          "title": "Run docs/verify/fp-workload in CI on a Linux ARM64 runner",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/485",
+          "number": 3766,
+          "title": "The terminal cannot hide or show the drawing toolbar",
+          "url": "https://github.com/userFRM/egui-charts/issues/3766",
           "kind": "help wanted",
-          "createdAt": "2026-11-17T14:47:42Z",
-          "comments": 1
+          "createdAt": "2026-11-20T11:22:32Z",
+          "comments": 0
         },
         {
-          "number": 479,
-          "title": "Q3: deterministic insns_executed budgets for CI performance regressions",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/479",
+          "number": 3765,
+          "title": "The terminal forgets starred drawing tools and the favourites strip",
+          "url": "https://github.com/userFRM/egui-charts/issues/3765",
           "kind": "help wanted",
-          "createdAt": "2026-11-17T14:16:41Z",
-          "comments": 1
+          "createdAt": "2026-11-20T11:22:30Z",
+          "comments": 0
         },
         {
-          "number": 482,
-          "title": "Q4: 2027 independent reproduction & benchmark dossier",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/482",
+          "number": 3397,
+          "title": "Terminal hide commands clear each object's own visibility",
+          "url": "https://github.com/userFRM/egui-charts/issues/3397",
           "kind": "help wanted",
-          "createdAt": "2026-11-17T14:16:46Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "ferretgeek/prokbot-plus",
-      "slug": "ferretgeek--prokbot-plus",
-      "lastCommitAt": "2026-11-19T11:58:08Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 6,
-          "title": "能不能出一个支持Intel (x86_64) 架构的mac包",
-          "url": "https://github.com/ferretgeek/prokbot-plus/issues/6",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T02:03:47Z",
-          "comments": 1
+          "createdAt": "2026-11-18T16:30:52Z",
+          "comments": 0
         }
       ]
     },
@@ -633,71 +748,6 @@
           "url": "https://github.com/oneydef/EarA-linux/issues/1",
           "kind": "help wanted",
           "createdAt": "2026-08-31T11:44:50Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "timfennis/andy-cpp",
-      "slug": "timfennis--andy-cpp",
-      "lastCommitAt": "2026-11-19T10:58:31Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 46
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 105,
-          "title": "Add named math constants (PI, E, TAU)",
-          "url": "https://github.com/timfennis/andy-cpp/issues/105",
-          "kind": "good first issue",
-          "createdAt": "2026-03-16T21:11:40Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "matrixarkai/TemporalStore",
-      "slug": "matrixarkai--temporalstore",
-      "lastCommitAt": "2026-11-19T11:55:58Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 4,
-      "issues": [
-        {
-          "number": 2046,
-          "title": "A validator cannot run because the runner it checks against has never existed here",
-          "url": "https://github.com/matrixarkai/TemporalStore/issues/2046",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T07:48:52Z",
-          "comments": 0
-        },
-        {
-          "number": 2045,
-          "title": "A validator asserts engine.rs declares a module that does not exist, and exits 1 on main",
-          "url": "https://github.com/matrixarkai/TemporalStore/issues/2045",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T07:48:50Z",
-          "comments": 0
-        },
-        {
-          "number": 2036,
-          "title": "A rolled WAL file is called a segment in most of the tree and a piece in three helpers",
-          "url": "https://github.com/matrixarkai/TemporalStore/issues/2036",
-          "kind": "good first issue",
-          "createdAt": "2026-09-30T18:32:15Z",
-          "comments": 0
-        },
-        {
-          "number": 1984,
-          "title": "Unused use super::* in engine/tests/range_free_bucket_id.rs, left in so the merged tree matched the gated tree",
-          "url": "https://github.com/matrixarkai/TemporalStore/issues/1984",
-          "kind": "good first issue",
-          "createdAt": "2026-09-27T07:28:42Z",
           "comments": 0
         }
       ]
@@ -818,43 +868,31 @@
       ]
     },
     {
-      "repo": "PrimeBuild-pc/LightCrosshair",
-      "slug": "primebuild-pc--lightcrosshair",
-      "lastCommitAt": "2026-11-19T11:56:48Z",
+      "repo": "Open-EO/openeo-web-editor",
+      "slug": "open-eo--openeo-web-editor",
+      "lastCommitAt": "2026-11-20T11:57:13Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false,
-        "approxKloc": 29
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 35,
-          "title": "Report: does LightCrosshair work in your game and display mode?",
-          "url": "https://github.com/PrimeBuild-pc/LightCrosshair/issues/35",
-          "kind": "good first issue",
-          "createdAt": "2026-11-13T01:47:47Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "o8-run/o8",
-      "slug": "o8-run--o8",
-      "lastCommitAt": "2026-11-19T10:40:27Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "approxKloc": 14
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 2204,
-          "title": "Tracking: Windows port",
-          "url": "https://github.com/o8-run/o8/issues/2204",
+          "number": 283,
+          "title": "Relation between Data Processing and Web Services",
+          "url": "https://github.com/Open-EO/openeo-web-editor/issues/283",
           "kind": "help wanted",
-          "createdAt": "2026-09-11T22:00:02Z",
-          "comments": 2
+          "createdAt": "2022-10-17T11:45:55Z",
+          "comments": 0
+        },
+        {
+          "number": 155,
+          "title": "Show and use examples",
+          "url": "https://github.com/Open-EO/openeo-web-editor/issues/155",
+          "kind": "help wanted",
+          "createdAt": "2021-06-17T16:40:23Z",
+          "comments": 1
         }
       ]
     }

@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-22T13:16:50Z"
 lastReleaseAt: "2026-09-12T11:32:21Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 86
 maintainers: ["SkyEye-FAST", "dependabot[bot]", "Kaohaaa"]
 openGraphImageUrl: "https://opengraph.githubassets.com/893fde03421ae242fed46bcc4e7f3f39b0f93b3a82a4a2047512a665021d8574/SkyEye-FAST/unicucumber"

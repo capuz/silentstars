@@ -21,11 +21,10 @@ lastCommitAt: "2026-10-21T18:50:29Z"
 lastReleaseAt: "2026-10-21T19:24:31Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 69
+healthScore: 68
 undervaluedScore: 25
 maintainers: ["linqingzi"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a9ff61e6e8ea042ec5beec58900193cf18f82b926a2af083772ca8c869515592/linqingzi/candle-audit-kit"
-promoted: true
 postedAt: "2026-10-21T20:06:46.664Z"
 ---
 

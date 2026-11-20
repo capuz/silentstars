@@ -7,22 +7,22 @@ url: "https://github.com/farena-ai/sara"
 homepage: "https://www.backstagecoding.com"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [65, 25]
+languagePcts: [65, 24]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
 stars: 4
-forks: 2
+forks: 1
 openIssues: 5
 closedIssues: 9
 watchers: 0
 contributors: 3
 recentReleases: 10
 createdAt: "2026-10-28T03:17:03Z"
-lastCommitAt: "2026-11-19T08:29:43Z"
+lastCommitAt: "2026-11-20T08:35:10Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
 healthScore: 93
-undervaluedScore: 72
+undervaluedScore: 68
 maintainers: ["farena-ai", "Guilsc"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"
 discussionCount: 1

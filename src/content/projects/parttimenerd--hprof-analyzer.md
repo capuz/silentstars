@@ -7,7 +7,7 @@ url: "https://github.com/parttimenerd/hprof-analyzer"
 homepage: "https://parttimenerd.github.io/hprof-analyzer/"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [79]
+languagePcts: [78]
 topics: ["heap-dump-analysis", "java"]
 stars: 7
 forks: 3
@@ -17,11 +17,11 @@ watchers: 0
 contributors: 4
 recentReleases: 8
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-19T09:51:39Z"
+lastCommitAt: "2026-11-19T16:48:43Z"
 lastReleaseAt: "2026-11-19T11:10:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 72
 maintainers: ["parttimenerd"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0bfeb49872e66c4372995b0bc002426fa36cc13dbf8e3e79102fe18a51bbbe27/parttimenerd/hprof-analyzer"
@@ -38,5 +38,5 @@ Analyze Java heap dumps and find memory leaks. One binary, no JVM required — g
 |-----------|------------|
 | **[Analysis reports](#analysis-reports)** — leak suspects, retained-size breakdown, top consumers, threads ([sample](https://parttimenerd.github.io/hprof-analyzer/reports/)) | `hprof-analyzer heap.hprof report.html` |
 | **[OQL queries](#oql-queries)** — GROUP BY, aggregates, viz directives, Eclipse MAT-compatible | `hprof-analyzer query heap.hprof --query "..."` |
+| **[Interactive REPL](#interactive-repl)** — Tab completion, named views, result shaping, persistent history | `hprof-analyzer query heap.hprof --repl` |
 | **[Interactive analysis](#cached-interactive-analysis)** — histogram, dominator tree, inspect objects (cached, sub-second after first run) | `hprof-analyzer heap summary heap.hprof` |
-| **[MCP server](#mcp-server)** — AI-assisted triage in Claude, Cline, and other agents | `hprof-analyzer mcp` |

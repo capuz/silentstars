@@ -19,7 +19,7 @@ lastCommitAt: "2026-11-16T09:05:13Z"
 lastReleaseAt: "2026-10-08T16:53:24Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 91
+healthScore: 90
 undervaluedScore: 68
 maintainers: ["stefanwb", "dtump", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f721ff131a02ddf8f790f563bddc739a5bdd32537af0d6c70ff5f47c5db3af45/schubergphilis/claude-docker"

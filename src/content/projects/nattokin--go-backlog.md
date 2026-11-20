@@ -12,12 +12,12 @@ topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 2
 openIssues: 21
-closedIssues: 158
+closedIssues: 159
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-11-18T16:54:38Z"
+lastCommitAt: "2026-11-19T16:33:28Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]

@@ -11,13 +11,13 @@ languagePcts: [57, 38]
 topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 10
 forks: 4
-openIssues: 8
+openIssues: 11
 closedIssues: 320
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-11-19T10:57:39Z"
+lastCommitAt: "2026-11-20T08:42:08Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]

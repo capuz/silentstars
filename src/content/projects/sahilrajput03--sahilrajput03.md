@@ -17,7 +17,7 @@ contributors: 2
 recentReleases: 0
 createdAt: "2020-07-25T09:11:03Z"
 lastCommitAt: "2026-11-06T10:07:32Z"
-status: "thriving"
+status: "quiet"
 tags: ["solo_builder", "legacy_hero", "fork_magnet"]
 healthScore: 84
 undervaluedScore: 98
