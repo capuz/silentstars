@@ -31,3 +31,7 @@ skills-lock.json
 
 # Playwright MCP snapshots/screenshots
 .playwright-mcp/
+
+# Claude Code parallel sessions
+.claude/worktrees/
+.claude/session.lock*
