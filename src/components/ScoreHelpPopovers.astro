@@ -1,0 +1,46 @@
+---
+// One popover per score topic for the whole page, opened by every ScoreHelp "?"
+// (a /projects/ page can hold ~280 cards; one popover each would bloat the DOM).
+// The text is the same answer as the /about/ FAQ entry.
+import { faqItem } from '../lib/metrics-faq.ts';
+const base = import.meta.env.BASE_URL;
+const topics = [
+  { id: 'health', title: 'Health score' },
+  { id: 'undervalued', title: 'Undervalued score' },
+  { id: 'tags', title: 'Tags' },
+] as const;
+---
+{topics.map(t => (
+  <div popover id={`score-help-${t.id}`} class="score-pop">
+    <p class="score-pop-title">{t.title}</p>
+    <p class="score-pop-body">{faqItem(t.id).a}</p>
+    <a class="score-pop-more" href={`${base}about/#${t.id}`}>How it's calculated</a>
+  </div>
+))}
+
+<style>
+  .score-pop {
+    /* Anchored to the "?" that opened it (implicit anchor from popovertarget). */
+    position-area: block-end span-inline-end;
+    position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
+    margin: 6px 0;
+    width: min(300px, calc(100vw - 32px));
+    padding: 12px 14px;
+    background: var(--card);
+    color: var(--ink);
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    box-shadow: 3px 3px 0 var(--shadow);
+    font-family: var(--f-body);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  /* Without anchor positioning, show it centred instead of at the page corner. */
+  @supports not (anchor-name: --a) {
+    .score-pop { position: fixed; inset: 0; margin: auto; height: fit-content; }
+  }
+  .score-pop-title { font-family: var(--f-display); font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+  .score-pop-body { color: var(--muted); text-wrap: pretty; }
+  .score-pop-more { display: inline-block; margin-top: 8px; color: var(--accent); font-weight: 600; }
+  .score-pop-more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
