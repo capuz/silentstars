@@ -72,16 +72,16 @@ const tagLabels: Record<string, string> = {
       <div class="filter-group">
         <span class="filter-label">status</span>
         {statuses.map(s => (
-          <button class="filter-btn" data-filter-status={s}>{statusLabels[s]}</button>
+          <button type="button" class="filter-btn" data-filter-status={s} aria-pressed="false">{statusLabels[s]}</button>
         ))}
       </div>
       <div class="filter-group">
         <span class="filter-label">tags</span>
         {tags.map(t => (
-          <button class="filter-btn" data-filter-tag={t}>{tagLabels[t]}</button>
+          <button type="button" class="filter-btn" data-filter-tag={t} aria-pressed="false">{tagLabels[t]}</button>
         ))}
       </div>
-      <button class="filter-reset" id="filter-reset">reset</button>
+      <button type="button" class="filter-reset" id="filter-reset">reset</button>
     </div>
 
     <div class="grid" id="project-grid" data-batch-size={BATCH_SIZE}>
@@ -98,9 +98,10 @@ const tagLabels: Record<string, string> = {
     </div>
     <div id="scroll-sentinel" aria-hidden="true"></div>
 
-    <p class="empty-state" id="empty-state" style="display:none">
-      No projects match the selected filters.
-    </p>
+    <div class="empty-state" id="empty-state" style="display:none">
+      <p>No projects match these filters.</p>
+      <button type="button" class="filter-reset" id="empty-reset">Clear filters</button>
+    </div>
 
     {promoted.length > 0 && (
       <div class="promoted-block" id="promoted-block">
@@ -124,6 +125,8 @@ const tagLabels: Record<string, string> = {
 </Base>
 
 <script>
+  import { parseFilters, serializeFilters } from '../../lib/project-filters.ts';
+
   const grid         = document.getElementById('project-grid')!;
   const emptyState   = document.getElementById('empty-state')!;
   const resetBtn     = document.getElementById('filter-reset')!;
@@ -139,6 +142,22 @@ const tagLabels: Record<string, string> = {
   let searchQuery    = '';
   let revealedCount  = BATCH_SIZE;
   let hasMoreToReveal = false;
+
+  const statusBtns = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter-status]'));
+  const tagBtns    = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-filter-tag]'));
+
+  function syncButtons() {
+    statusBtns.forEach(b => { const on = activeStatuses.has(b.dataset.filterStatus!); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
+    tagBtns.forEach(b => { const on = activeTags.has(b.dataset.filterTag!); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
+  }
+
+  // Keep the filters in the URL (replaceState: no history entry per click) so a
+  // filtered view can be shared and comes back with the Back button.
+  function syncUrl() {
+    const qs = serializeFilters({ statuses: [...activeStatuses], tags: [...activeTags], q: searchQuery });
+    const url = location.pathname + (qs ? `?${qs}` : '') + location.hash;
+    if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
+  }
 
   function applyFilters() {
     const q = searchQuery.length >= 3 ? searchQuery : '';
@@ -195,34 +214,51 @@ const tagLabels: Record<string, string> = {
   searchEl.addEventListener('input', () => {
     searchQuery = searchEl.value.trim().toLowerCase();
     applyFilters();
+    syncUrl();
   });
 
-  document.querySelectorAll<HTMLButtonElement>('[data-filter-status]').forEach(btn => {
+  statusBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const s = btn.dataset.filterStatus!;
       activeStatuses.has(s) ? activeStatuses.delete(s) : activeStatuses.add(s);
-      btn.classList.toggle('active', activeStatuses.has(s));
+      syncButtons();
       applyFilters();
+      syncUrl();
     });
   });
 
-  document.querySelectorAll<HTMLButtonElement>('[data-filter-tag]').forEach(btn => {
+  tagBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const t = btn.dataset.filterTag!;
       activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
-      btn.classList.toggle('active', activeTags.has(t));
+      syncButtons();
       applyFilters();
+      syncUrl();
     });
   });
 
-  resetBtn.addEventListener('click', () => {
+  const reset = () => {
     activeStatuses.clear();
     activeTags.clear();
     searchQuery = '';
     searchEl.value = '';
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    syncButtons();
     applyFilters();
+    syncUrl();
+  };
+  resetBtn.addEventListener('click', reset);
+  document.getElementById('empty-reset')?.addEventListener('click', () => { reset(); searchEl.focus(); });
+
+  // Restore filters from the URL (shared link, reload, Back).
+  const initial = parseFilters(new URLSearchParams(location.search), {
+    statuses: statusBtns.map(b => b.dataset.filterStatus!),
+    tags: tagBtns.map(b => b.dataset.filterTag!),
   });
+  activeStatuses = new Set(initial.statuses);
+  activeTags = new Set(initial.tags);
+  searchQuery = initial.q;
+  searchEl.value = initial.q;
+  syncButtons();
 
   // Server already rendered the correct display:none split for BATCH_SIZE,
   // but hasMoreToReveal (read by the sentinel observer above) is only
@@ -328,6 +364,9 @@ const tagLabels: Record<string, string> = {
     font-family: var(--font-mono);
     font-size: 0.8rem;
   }
+  .empty-state p { margin-bottom: .75rem; }
+  /* The in-grid reset is the visible way out of an empty result, so it reads as a button. */
+  .empty-state .filter-reset { border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 14px; color: var(--ink); }
 
   /* Skip style/layout/paint for cards outside the viewport. Showing ~300 cards
      at once (status filter, reset) cost up to 1 s of presentation delay at 4x CPU.
