@@ -50,18 +50,18 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-    <!-- Prefetch same-site pages on hover/pointerdown, and prerender project pages so
+    {/* Prefetch same-site pages on hover/pointerdown, and prerender project pages so
          the card → page view transition starts instantly (Chromium; others ignore it).
          GoatCounter's count.js waits for visibilityState 'visible', so a prerendered
-         page that is never opened is not counted. -->
+         page that is never opened is not counted. */}
     <script type="speculationrules" is:inline>
       {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}],
        "prerender":[{"where":{"and":[{"href_matches":"/projects/:slug/"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}]}
     </script>
-    <!-- Card → project page view transition. Names go only on the card that was
+    {/* Card → project page view transition. Names go only on the card that was
          clicked (or, coming back, the first card of that project): the same project
          can sit in several home sections, and duplicate view-transition-names would
-         cancel the whole transition. Classic inline script so pagereveal fires. -->
+         cancel the whole transition. Classic inline script so pagereveal fires. */}
     <script is:inline>
       (function(){
         var clicked = null;
