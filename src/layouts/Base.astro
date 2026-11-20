@@ -27,6 +27,7 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#edeae2" />
     <title>{fullTitle}</title>
     {notFound
       ? <meta name="robots" content="noindex" />
@@ -91,9 +92,13 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <!-- theme init — before paint to avoid flash -->
     <script is:inline>
       (function(){
-        var t = localStorage.getItem('ss-theme') || 'light';
+        // A saved choice wins; otherwise follow the system setting.
+        var t = null;
+        try { t = localStorage.getItem('ss-theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.dataset.theme = t;
         document.querySelector('meta[name="color-scheme"]').content = t;
+        document.querySelector('meta[name="theme-color"]').content = t === 'dark' ? '#15140f' : '#edeae2';
       })();
     </script>
   </head>
@@ -164,8 +169,11 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
         void star.offsetWidth;
         star.style.animation = 'ss-coin-3d 0.8s ease-in-out';
       };
-      setTimeout(spin, 500);
-      setInterval(spin, 10000);
+      // Decorative: skip with reduced motion, and don't wake a background tab.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        setTimeout(spin, 500);
+        setInterval(function(){ if (!document.hidden) spin(); }, 10000);
+      }
     }
 
     // radar sonar
@@ -197,7 +205,8 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
         var t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
         document.documentElement.dataset.theme = t;
         document.querySelector('meta[name="color-scheme"]').content = t;
-        localStorage.setItem('ss-theme', t);
+        document.querySelector('meta[name="theme-color"]').content = t === 'dark' ? '#15140f' : '#edeae2';
+        try { localStorage.setItem('ss-theme', t); } catch (e) {}
         syncBtn(t);
       });
     }
