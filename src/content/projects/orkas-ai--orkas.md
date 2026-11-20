@@ -10,7 +10,7 @@ languages: ["JavaScript", "TypeScript"]
 languagePcts: [61, 37]
 topics: ["agent-collaboration", "agent-orchestration", "agent-team", "ai-assistant", "ai-team", "ai-workflow", "autonomous-agents", "local-first", "multi-agent", "multi-agent-system"]
 stars: 9474
-forks: 562
+forks: 563
 openIssues: 10
 closedIssues: 7
 watchers: 220

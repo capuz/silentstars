@@ -11,12 +11,12 @@ languagePcts: [72, 24]
 stars: 7
 forks: 2
 openIssues: 244
-closedIssues: 3235
+closedIssues: 3236
 watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-20T10:48:00Z"
+lastCommitAt: "2026-11-20T12:06:30Z"
 lastReleaseAt: "2026-11-15T20:16:17Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]

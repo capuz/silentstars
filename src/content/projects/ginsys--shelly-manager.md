@@ -23,6 +23,7 @@ undervaluedScore: 76
 maintainers: ["srgvg"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e5edd995b6966c585746947c1c05e298f7df603c777e5db98f46f6b277978097/ginsys/shelly-manager"
 discussionCount: 0
+postedAt: "2026-11-20T12:12:55.935Z"
 ---
 
 # Shelly Device Manager

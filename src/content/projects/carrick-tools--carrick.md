@@ -11,7 +11,7 @@ languagePcts: [71, 28]
 topics: ["ai-agents", "code-intelligence", "developer-tools", "github-actions", "llm", "mcp", "mcp-server", "microservices", "rust", "static-analysis"]
 stars: 7
 forks: 1
-openIssues: 1565
+openIssues: 1566
 closedIssues: 871
 watchers: 1
 contributors: 3
