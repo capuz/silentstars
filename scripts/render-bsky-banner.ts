@@ -16,7 +16,7 @@ import { Resvg } from '@resvg/resvg-js';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { fonts, ACCENT, INK, PAPER, MUTED, SHADOW, wordmark } from '../src/og/shared.ts';
+import { fonts, borderBox, ACCENT, INK, PAPER, MUTED, SHADOW, wordmark } from '../src/og/shared.ts';
 
 export const BANNER_PATH = resolve('assets/bsky-banner.png');
 export const WIDTH  = 1500;
@@ -48,7 +48,7 @@ function trailsSvg(): string {
 export async function renderBanner(): Promise<Buffer> {
   const trails = `data:image/svg+xml;base64,${Buffer.from(trailsSvg()).toString('base64')}`;
   const svg = await satori(
-    {
+    borderBox({
       type: 'div',
       props: {
         style: { display: 'flex', position: 'relative', width: WIDTH, height: HEIGHT, background: PAPER, fontFamily: 'Bricolage' },
@@ -80,7 +80,7 @@ export async function renderBanner(): Promise<Buffer> {
           },
         ],
       },
-    },
+    }),
     { width: WIDTH, height: HEIGHT, fonts },
   );
   return new Resvg(svg, { fitTo: { mode: 'width', value: WIDTH * SCALE } }).render().asPng();

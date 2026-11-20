@@ -43,3 +43,21 @@ export function stat(value: string, label: string) {
     },
   };
 }
+
+// satori ≥0.27 defaults to content-box like CSS; these cards were laid out for the
+// old border-box default (padding and border inside width/height). Wrap the tree
+// passed to satori() to restore it on every node that doesn't set its own.
+export function borderBox<T>(node: T): T {
+  if (!node || typeof node !== 'object') return node;
+  if (Array.isArray(node)) return node.map(borderBox) as T;
+  const el = node as { props?: { style?: Record<string, unknown>; children?: unknown } };
+  if (!el.props) return node;
+  return {
+    ...node,
+    props: {
+      ...el.props,
+      style: { boxSizing: 'border-box', ...el.props.style },
+      children: borderBox(el.props.children),
+    },
+  };
+}

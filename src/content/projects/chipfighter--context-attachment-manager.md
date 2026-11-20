@@ -10,7 +10,7 @@ languagePcts: [89]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "claude-code", "claude-code-plugin", "image-generation", "ai-agents", "multimodal"]
 stars: 806
 forks: 75
-openIssues: 0
+openIssues: 1
 closedIssues: 11
 watchers: 1
 contributors: 6
@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-17T07:06:19Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 97
 undervaluedScore: 26
 maintainers: ["chipfighter", "inhm112", "Aaqibhafeezkhan"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"

@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-19T05:11:16.841Z",
+  "collectedAt": "2026-11-19T12:05:04.132Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,102 +55,14 @@
       ]
     },
     {
-      "repo": "yeixio/toskar-core",
-      "slug": "yeixio--toskar-core",
-      "lastCommitAt": "2026-11-19T05:05:45Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 10,
-      "issues": [
-        {
-          "number": 824,
-          "title": "Native-speaker review: French chat screen",
-          "url": "https://github.com/yeixio/toskar-core/issues/824",
-          "kind": "good first issue",
-          "createdAt": "2026-10-24T20:03:09Z",
-          "comments": 0
-        },
-        {
-          "number": 823,
-          "title": "Native-speaker review: Brazilian Portuguese chat screen",
-          "url": "https://github.com/yeixio/toskar-core/issues/823",
-          "kind": "good first issue",
-          "createdAt": "2026-10-24T20:03:08Z",
-          "comments": 0
-        },
-        {
-          "number": 822,
-          "title": "Native-speaker review: Japanese chat screen",
-          "url": "https://github.com/yeixio/toskar-core/issues/822",
-          "kind": "good first issue",
-          "createdAt": "2026-10-24T20:03:08Z",
-          "comments": 0
-        },
-        {
-          "number": 821,
-          "title": "Native-speaker review: German chat screen",
-          "url": "https://github.com/yeixio/toskar-core/issues/821",
-          "kind": "good first issue",
-          "createdAt": "2026-10-24T20:03:07Z",
-          "comments": 0
-        },
-        {
-          "number": 820,
-          "title": "Native-speaker review: Spanish chat screen",
-          "url": "https://github.com/yeixio/toskar-core/issues/820",
-          "kind": "good first issue",
-          "createdAt": "2026-10-24T20:03:06Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "ldbumble/taskuary",
-      "slug": "ldbumble--taskuary",
-      "lastCommitAt": "2026-11-19T05:07:14Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 258,
-          "title": "Industry packs: write packs for more industries (legal, construction, accounting, ...)",
-          "url": "https://github.com/ldbumble/taskuary/issues/258",
-          "kind": "help wanted",
-          "createdAt": "2026-10-16T15:57:49Z",
-          "comments": 4
-        },
-        {
-          "number": 267,
-          "title": "Help wanted: new connectors and larger features",
-          "url": "https://github.com/ldbumble/taskuary/issues/267",
-          "kind": "help wanted",
-          "createdAt": "2026-10-21T19:21:18Z",
-          "comments": 0
-        },
-        {
-          "number": 171,
-          "title": "Zulip or Signal as a messaging connector",
-          "url": "https://github.com/ldbumble/taskuary/issues/171",
-          "kind": "help wanted",
-          "createdAt": "2026-10-12T01:58:12Z",
-          "comments": 3
-        }
-      ]
-    },
-    {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-18T17:43:18Z",
+      "lastCommitAt": "2026-11-19T11:38:17Z",
       "signals": {
         "outsidePRsMerged": 28,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 14,
+      "goodFirstIssueCount": 13,
       "issues": [
         {
           "number": 329,
@@ -195,37 +107,154 @@
       ]
     },
     {
-      "repo": "michelangelo-ai/michelangelo",
-      "slug": "michelangelo-ai--michelangelo",
-      "lastCommitAt": "2026-11-19T04:19:25Z",
+      "repo": "Blosc/python-blosc2",
+      "slug": "blosc--python-blosc2",
+      "lastCommitAt": "2026-11-19T11:55:41Z",
       "signals": {
-        "outsidePRsMerged": 20,
+        "outsidePRsMerged": 28,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 4,
+      "goodFirstIssueCount": 2,
       "issues": [
         {
-          "number": 1088,
-          "title": "Restructure test files into nested describes",
-          "url": "https://github.com/michelangelo-ai/michelangelo/issues/1088",
+          "number": 644,
+          "title": "[Tutorial] CTable copy() with reblocking and recompression",
+          "url": "https://github.com/Blosc/python-blosc2/issues/644",
           "kind": "good first issue",
-          "createdAt": "2026-04-10T21:04:50Z",
-          "comments": 0
+          "createdAt": "2026-06-02T11:14:28Z",
+          "comments": 2
         },
         {
-          "number": 1075,
-          "title": "Support trigger batch rerun and auto flip due to pipeline revision",
-          "url": "https://github.com/michelangelo-ai/michelangelo/issues/1075",
+          "number": 645,
+          "title": "Document SUMMARY indexes for end users",
+          "url": "https://github.com/Blosc/python-blosc2/issues/645",
           "kind": "good first issue",
-          "createdAt": "2026-04-08T19:39:29Z",
-          "comments": 0
+          "createdAt": "2026-06-02T11:16:50Z",
+          "comments": 1
         },
         {
-          "number": 2155,
-          "title": "Run Trigger / Run Pipeline dialogs: should Production / auto-switch be restricted by source branch?",
-          "url": "https://github.com/michelangelo-ai/michelangelo/issues/2155",
+          "number": 466,
+          "title": "Array API compliance",
+          "url": "https://github.com/Blosc/python-blosc2/issues/466",
           "kind": "help wanted",
-          "createdAt": "2026-09-23T21:55:07Z",
+          "createdAt": "2025-09-10T11:48:16Z",
+          "comments": 2
+        },
+        {
+          "number": 476,
+          "title": "Array-api Linalg functions",
+          "url": "https://github.com/Blosc/python-blosc2/issues/476",
+          "kind": "help wanted",
+          "createdAt": "2025-09-15T08:16:49Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "luiacuaniello/perspectivegraph",
+      "slug": "luiacuaniello--perspectivegraph",
+      "lastCommitAt": "2026-11-19T11:55:58Z",
+      "signals": {
+        "outsidePRsMerged": 23,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 93,
+          "title": "feat: Guard colour contrast in CI so a WCAG regression cannot merge",
+          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/93",
+          "kind": "good first issue",
+          "createdAt": "2026-08-03T14:52:07Z",
+          "comments": 2
+        },
+        {
+          "number": 303,
+          "title": "feat: Read GitLab.com and HCP Terraform OIDC trusts, not only GitHub's",
+          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/303",
+          "kind": "help wanted",
+          "createdAt": "2026-10-02T15:42:45Z",
+          "comments": 0
+        },
+        {
+          "number": 302,
+          "title": "feat: Add a Grype collector that meets Trivy on the same packages",
+          "url": "https://github.com/luiacuaniello/perspectivegraph/issues/302",
+          "kind": "help wanted",
+          "createdAt": "2026-10-02T15:42:18Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "afharo/matterbridge-xiaomi-roborock",
+      "slug": "afharo--matterbridge-xiaomi-roborock",
+      "lastCommitAt": "2026-11-19T11:55:37Z",
+      "signals": {
+        "outsidePRsMerged": 19,
+        "outsidePRsCapped": false,
+        "approxKloc": 4
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 387,
+          "title": "Looking for new maintainer(s)",
+          "url": "https://github.com/afharo/matterbridge-xiaomi-roborock/issues/387",
+          "kind": "help wanted",
+          "createdAt": "2026-11-18T20:33:20Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "storytold/craft-libs",
+      "slug": "storytold--craft-libs",
+      "lastCommitAt": "2026-11-19T11:54:33Z",
+      "signals": {
+        "outsidePRsMerged": 16,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 2218,
+          "title": "PERF-BUILD-ONE-TEST-BINARY-PER-CRATE",
+          "url": "https://github.com/storytold/craft-libs/issues/2218",
+          "kind": "help wanted",
+          "createdAt": "2026-11-18T12:42:34Z",
+          "comments": 1
+        },
+        {
+          "number": 2335,
+          "title": "PERF-UI-RUNTIME-GENERIC-COPIES",
+          "url": "https://github.com/storytold/craft-libs/issues/2335",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T06:07:13Z",
+          "comments": 1
+        },
+        {
+          "number": 2334,
+          "title": "PERF-UI-RUNTIME-TEST-COSTS",
+          "url": "https://github.com/storytold/craft-libs/issues/2334",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T06:07:12Z",
+          "comments": 1
+        },
+        {
+          "number": 2333,
+          "title": "PERF-UI-TEXT-LAYOUT-MEMO",
+          "url": "https://github.com/storytold/craft-libs/issues/2333",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T06:07:11Z",
+          "comments": 1
+        },
+        {
+          "number": 2332,
+          "title": "PERF-BUILD-TEST-KIT-AND-REGISTRY",
+          "url": "https://github.com/storytold/craft-libs/issues/2332",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T06:07:10Z",
           "comments": 1
         }
       ]
@@ -233,9 +262,9 @@
     {
       "repo": "GRTLCollaboration/GRTeclyn",
       "slug": "grtlcollaboration--grteclyn",
-      "lastCommitAt": "2026-11-02T16:23:52Z",
+      "lastCommitAt": "2026-11-19T10:45:27Z",
       "signals": {
-        "outsidePRsMerged": 14,
+        "outsidePRsMerged": 13,
         "outsidePRsCapped": false,
         "approxKloc": 21
       },
@@ -252,9 +281,53 @@
       ]
     },
     {
+      "repo": "hivecommons/hive",
+      "slug": "hivecommons--hive",
+      "lastCommitAt": "2026-11-19T11:51:21Z",
+      "signals": {
+        "outsidePRsMerged": 12,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 19221,
+          "title": "[scanner] egress audit: resolve-once and dial-pinning for server-side fetchers",
+          "url": "https://github.com/hivecommons/hive/issues/19221",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T06:12:42Z",
+          "comments": 4
+        },
+        {
+          "number": 19250,
+          "title": "[selfreport] inference_backend_auth_failure: inference backend auth failure",
+          "url": "https://github.com/hivecommons/hive/issues/19250",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T11:37:09Z",
+          "comments": 0
+        },
+        {
+          "number": 19164,
+          "title": "📖 Customers: disclosure text, docs and live verification for hub import (phase 4 of #19088)",
+          "url": "https://github.com/hivecommons/hive/issues/19164",
+          "kind": "help wanted",
+          "createdAt": "2026-11-18T22:54:28Z",
+          "comments": 4
+        },
+        {
+          "number": 19229,
+          "title": "[governor] follow-up: A reviewer handed this to a person: security requires human: Not deeply reviewed: the diff touches Hive prox…",
+          "url": "https://github.com/hivecommons/hive/issues/19229",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T06:39:55Z",
+          "comments": 3
+        }
+      ]
+    },
+    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-19T05:02:23Z",
+      "lastCommitAt": "2026-11-19T10:14:46Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -274,7 +347,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-19T05:02:23Z",
+      "lastCommitAt": "2026-11-19T10:14:46Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -294,7 +367,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-19T03:33:19Z",
+      "lastCommitAt": "2026-11-19T08:29:43Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -432,9 +505,9 @@
       ]
     },
     {
-      "repo": "OpenReliant/openreliant",
-      "slug": "openreliant--openreliant",
-      "lastCommitAt": "2026-11-19T04:36:29Z",
+      "repo": "davanstrien/uv-scripts",
+      "slug": "davanstrien--uv-scripts",
+      "lastCommitAt": "2026-11-19T11:55:40Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -442,20 +515,12 @@
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 749,
-          "title": "Write example mods for the features that have none",
-          "url": "https://github.com/OpenReliant/openreliant/issues/749",
+          "number": 43,
+          "title": "Bump pinned GitHub Actions off deprecated Node 20 (checkout@v4, setup-uv@v5)",
+          "url": "https://github.com/davanstrien/uv-scripts/issues/43",
           "kind": "good first issue",
-          "createdAt": "2026-10-06T10:16:21Z",
+          "createdAt": "2026-06-05T15:13:56Z",
           "comments": 0
-        },
-        {
-          "number": 1315,
-          "title": "Recognize the German, Japanese and re-released discs in openreliant install",
-          "url": "https://github.com/OpenReliant/openreliant/issues/1315",
-          "kind": "help wanted",
-          "createdAt": "2026-10-22T12:46:27Z",
-          "comments": 3
         }
       ]
     },
@@ -480,6 +545,78 @@
       ]
     },
     {
+      "repo": "hffgzktbcc-blip/ounce-core",
+      "slug": "hffgzktbcc-blip--ounce-core",
+      "lastCommitAt": "2026-11-19T12:01:51Z",
+      "signals": {
+        "outsidePRsMerged": 1,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 489,
+          "title": "Re-run docs/verify/fp-workload on a different ARM64 host and commit the result",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/489",
+          "kind": "help wanted",
+          "createdAt": "2026-11-17T14:47:50Z",
+          "comments": 1
+        },
+        {
+          "number": 488,
+          "title": "fp-workload: extend to vector (SIMD) FP ops and the remaining FCVT forms",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/488",
+          "kind": "help wanted",
+          "createdAt": "2026-11-17T14:47:48Z",
+          "comments": 1
+        },
+        {
+          "number": 485,
+          "title": "Run docs/verify/fp-workload in CI on a Linux ARM64 runner",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/485",
+          "kind": "help wanted",
+          "createdAt": "2026-11-17T14:47:42Z",
+          "comments": 1
+        },
+        {
+          "number": 479,
+          "title": "Q3: deterministic insns_executed budgets for CI performance regressions",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/479",
+          "kind": "help wanted",
+          "createdAt": "2026-11-17T14:16:41Z",
+          "comments": 1
+        },
+        {
+          "number": 482,
+          "title": "Q4: 2027 independent reproduction & benchmark dossier",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/482",
+          "kind": "help wanted",
+          "createdAt": "2026-11-17T14:16:46Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "ferretgeek/prokbot-plus",
+      "slug": "ferretgeek--prokbot-plus",
+      "lastCommitAt": "2026-11-19T11:58:08Z",
+      "signals": {
+        "outsidePRsMerged": 1,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 6,
+          "title": "能不能出一个支持Intel (x86_64) 架构的mac包",
+          "url": "https://github.com/ferretgeek/prokbot-plus/issues/6",
+          "kind": "help wanted",
+          "createdAt": "2026-11-19T02:03:47Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
       "repo": "oneydef/EarA-linux",
       "slug": "oneydef--eara-linux",
       "lastCommitAt": "2026-11-17T17:51:36Z",
@@ -496,6 +633,71 @@
           "url": "https://github.com/oneydef/EarA-linux/issues/1",
           "kind": "help wanted",
           "createdAt": "2026-08-31T11:44:50Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "timfennis/andy-cpp",
+      "slug": "timfennis--andy-cpp",
+      "lastCommitAt": "2026-11-19T10:58:31Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false,
+        "approxKloc": 46
+      },
+      "goodFirstIssueCount": 5,
+      "issues": [
+        {
+          "number": 105,
+          "title": "Add named math constants (PI, E, TAU)",
+          "url": "https://github.com/timfennis/andy-cpp/issues/105",
+          "kind": "good first issue",
+          "createdAt": "2026-03-16T21:11:40Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "matrixarkai/TemporalStore",
+      "slug": "matrixarkai--temporalstore",
+      "lastCommitAt": "2026-11-19T11:55:58Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 4,
+      "issues": [
+        {
+          "number": 2046,
+          "title": "A validator cannot run because the runner it checks against has never existed here",
+          "url": "https://github.com/matrixarkai/TemporalStore/issues/2046",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T07:48:52Z",
+          "comments": 0
+        },
+        {
+          "number": 2045,
+          "title": "A validator asserts engine.rs declares a module that does not exist, and exits 1 on main",
+          "url": "https://github.com/matrixarkai/TemporalStore/issues/2045",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T07:48:50Z",
+          "comments": 0
+        },
+        {
+          "number": 2036,
+          "title": "A rolled WAL file is called a segment in most of the tree and a piece in three helpers",
+          "url": "https://github.com/matrixarkai/TemporalStore/issues/2036",
+          "kind": "good first issue",
+          "createdAt": "2026-09-30T18:32:15Z",
+          "comments": 0
+        },
+        {
+          "number": 1984,
+          "title": "Unused use super::* in engine/tests/range_free_bucket_id.rs, left in so the merged tree matched the gated tree",
+          "url": "https://github.com/matrixarkai/TemporalStore/issues/1984",
+          "kind": "good first issue",
+          "createdAt": "2026-09-27T07:28:42Z",
           "comments": 0
         }
       ]
@@ -566,42 +768,6 @@
       ]
     },
     {
-      "repo": "Jstar269/Nakagawa-Recomp",
-      "slug": "jstar269--nakagawa-recomp",
-      "lastCommitAt": "2026-11-19T05:01:29Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 302,
-          "title": "Media: check YCbCr, colour conversion and PCM HLE against real PSP behaviour",
-          "url": "https://github.com/Jstar269/Nakagawa-Recomp/issues/302",
-          "kind": "help wanted",
-          "createdAt": "2026-09-21T03:36:29Z",
-          "comments": 5
-        },
-        {
-          "number": 317,
-          "title": "Codegen: compare GCC and Clang/LLVM on generated code, requiring identical behaviour",
-          "url": "https://github.com/Jstar269/Nakagawa-Recomp/issues/317",
-          "kind": "help wanted",
-          "createdAt": "2026-09-21T04:10:52Z",
-          "comments": 4
-        },
-        {
-          "number": 1391,
-          "title": "Tooling: reach a clean mypy baseline for tools/ and make it a shared check",
-          "url": "https://github.com/Jstar269/Nakagawa-Recomp/issues/1391",
-          "kind": "help wanted",
-          "createdAt": "2026-10-26T09:25:17Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "RishabhPande/memory-poison-lab",
       "slug": "rishabhpande--memory-poison-lab",
       "lastCommitAt": "2026-11-14T15:17:29Z",
@@ -652,61 +818,30 @@
       ]
     },
     {
-      "repo": "Olanetsoft/agent-lookout",
-      "slug": "olanetsoft--agent-lookout",
-      "lastCommitAt": "2026-11-19T05:00:24Z",
+      "repo": "PrimeBuild-pc/LightCrosshair",
+      "slug": "primebuild-pc--lightcrosshair",
+      "lastCommitAt": "2026-11-19T11:56:48Z",
       "signals": {
         "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "outsidePRsCapped": false,
+        "approxKloc": 29
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 40,
-          "title": "Auggie adapter",
-          "url": "https://github.com/Olanetsoft/agent-lookout/issues/40",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T11:30:50Z",
-          "comments": 1
-        },
-        {
-          "number": 15,
-          "title": "Cursor adapter",
-          "url": "https://github.com/Olanetsoft/agent-lookout/issues/15",
-          "kind": "help wanted",
-          "createdAt": "2026-10-04T01:18:56Z",
-          "comments": 1
-        },
-        {
-          "number": 37,
-          "title": "Aider adapter",
-          "url": "https://github.com/Olanetsoft/agent-lookout/issues/37",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T11:30:45Z",
-          "comments": 1
-        },
-        {
-          "number": 71,
-          "title": "Muse Code adapter",
-          "url": "https://github.com/Olanetsoft/agent-lookout/issues/71",
-          "kind": "help wanted",
-          "createdAt": "2026-10-06T21:05:26Z",
-          "comments": 0
-        },
-        {
-          "number": 41,
-          "title": "Kiro adapter",
-          "url": "https://github.com/Olanetsoft/agent-lookout/issues/41",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T11:30:52Z",
+          "number": 35,
+          "title": "Report: does LightCrosshair work in your game and display mode?",
+          "url": "https://github.com/PrimeBuild-pc/LightCrosshair/issues/35",
+          "kind": "good first issue",
+          "createdAt": "2026-11-13T01:47:47Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "UOR-Foundation/uor-r4",
-      "slug": "uor-foundation--uor-r4",
-      "lastCommitAt": "2026-11-19T04:58:45Z",
+      "repo": "o8-run/o8",
+      "slug": "o8-run--o8",
+      "lastCommitAt": "2026-11-19T10:40:27Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -714,64 +849,12 @@
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 3957,
-          "title": "Preserve RunPod pod cleanup across the API migration",
-          "url": "https://github.com/UOR-Foundation/uor-r4/issues/3957",
+          "number": 2204,
+          "title": "Tracking: Windows port",
+          "url": "https://github.com/o8-run/o8/issues/2204",
           "kind": "help wanted",
-          "createdAt": "2026-11-13T14:14:22Z",
-          "comments": 0
-        },
-        {
-          "number": 2870,
-          "title": "Prepare the checksummed alpha release package and install path",
-          "url": "https://github.com/UOR-Foundation/uor-r4/issues/2870",
-          "kind": "help wanted",
-          "createdAt": "2026-10-20T20:39:00Z",
-          "comments": 1
-        },
-        {
-          "number": 2869,
-          "title": "Independently verify the alpha on consumer hardware",
-          "url": "https://github.com/UOR-Foundation/uor-r4/issues/2869",
-          "kind": "help wanted",
-          "createdAt": "2026-10-20T20:38:57Z",
-          "comments": 1
-        },
-        {
-          "number": 2867,
-          "title": "Build the library, CLI and browser bit-identity parity harness",
-          "url": "https://github.com/UOR-Foundation/uor-r4/issues/2867",
-          "kind": "help wanted",
-          "createdAt": "2026-10-20T20:38:52Z",
-          "comments": 7
-        },
-        {
-          "number": 2862,
-          "title": "Measure M1-class laptop cost on the accepted served model",
-          "url": "https://github.com/UOR-Foundation/uor-r4/issues/2862",
-          "kind": "help wanted",
-          "createdAt": "2026-10-20T20:38:39Z",
-          "comments": 5
-        }
-      ]
-    },
-    {
-      "repo": "LanternOps/breeze",
-      "slug": "lanternops--breeze",
-      "lastCommitAt": "2026-11-19T03:40:14Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 405,
-          "title": "Privacy screen — blank the remote display during admin sessions",
-          "url": "https://github.com/LanternOps/breeze/issues/405",
-          "kind": "help wanted",
-          "createdAt": "2026-04-12T02:22:06Z",
-          "comments": 3
+          "createdAt": "2026-09-11T22:00:02Z",
+          "comments": 2
         }
       ]
     }

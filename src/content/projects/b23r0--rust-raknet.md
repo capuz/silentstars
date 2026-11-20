@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [98]
 topics: ["minecraft", "networking", "raknet", "reliable-udp", "udp", "udp-protocol", "accelerator", "arq", "asynchronous", "low-latency"]
-stars: 334
+stars: 335
 forks: 22
 openIssues: 0
 closedIssues: 11
@@ -23,7 +23,7 @@ tags: ["solo_builder"]
 healthScore: 94
 undervaluedScore: 33
 maintainers: ["b23r0"]
-openGraphImageUrl: "https://opengraph.githubassets.com/3c41c124a20af94d4163ae9853b7558ad41b821be0b6e31b0b1f7299c915e5ab/b23r0/rust-raknet"
+openGraphImageUrl: "https://opengraph.githubassets.com/287e008444515fa2e26479e0914bb92b7e87ab6b3c257ebe493c5f7bc59e469a/b23r0/rust-raknet"
 discussionCount: 2
 promoted: true
 postedAt: "2026-11-12T05:52:24.648Z"

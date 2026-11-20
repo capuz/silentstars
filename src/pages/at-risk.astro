@@ -33,7 +33,7 @@ const atRisk = all
         <p class="count">// {atRisk.length} project{atRisk.length > 1 ? 's' : ''} waiting</p>
         <div class="grid">
           {atRisk.map(p => (
-            <ProjectCard slug={p.slug} {...p.data} />
+            <ProjectCard slug={p.id} {...p.data} />
           ))}
         </div>
       </>

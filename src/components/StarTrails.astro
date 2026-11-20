@@ -10,7 +10,7 @@ import historyJson from '../../data/history.json';
 const base = import.meta.env.BASE_URL;
 const graduates = loadGraduates();
 // Discovered projects rotate out of the directory: link to GitHub when the page is gone.
-const slugs = new Map((await getCollection('projects')).map(p => [p.data.repo, p.slug]));
+const slugs = new Map((await getCollection('projects')).map(p => [p.data.repo, p.id]));
 const trails = buildTrails(historyJson as History, graduates, new Set(slugs.keys()));
 const data = {
   ...trails,

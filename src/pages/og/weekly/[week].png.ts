@@ -4,7 +4,7 @@ import { listEditions, formatWeekRange } from '../../../../scripts/weekly.ts';
 import type { History, NumberedEdition } from '../../../../scripts/weekly.ts';
 import historyJson from '../../../../data/history.json';
 
-import { fonts, ACCENT, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../../og/shared.ts';
+import { fonts, borderBox, ACCENT, INK, PAPER, MUTED, SHADOW, wordmark, stat } from '../../../og/shared.ts';
 
 // Card for each /weekly/ edition: its page's og:image and the Bluesky thread's embed.
 
@@ -20,7 +20,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
   const top = edition.rising.slice(0, 3).map(i => i.name);
 
   const svg = await satori(
-    {
+    borderBox({
       type: 'div',
       props: {
         style: {
@@ -88,7 +88,7 @@ export async function GET({ props }: { props: { edition: NumberedEdition } }) {
           },
         ],
       },
-    },
+    }),
     {
       width: 1200,
       height: 630,

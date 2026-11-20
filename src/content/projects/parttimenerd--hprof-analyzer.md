@@ -7,7 +7,7 @@ url: "https://github.com/parttimenerd/hprof-analyzer"
 homepage: "https://parttimenerd.github.io/hprof-analyzer/"
 language: "Rust"
 languages: ["Rust"]
-languagePcts: [78]
+languagePcts: [79]
 topics: ["heap-dump-analysis", "java"]
 stars: 7
 forks: 3
@@ -17,8 +17,8 @@ watchers: 0
 contributors: 4
 recentReleases: 8
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-18T21:15:24Z"
-lastReleaseAt: "2026-11-18T21:55:20Z"
+lastCommitAt: "2026-11-19T09:51:39Z"
+lastReleaseAt: "2026-11-19T11:10:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100
