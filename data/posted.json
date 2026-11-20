@@ -2843,5 +2843,16 @@
         "postedAt": "2026-11-19T12:09:36.224Z"
       }
     }
+  },
+  {
+    "repo": "ginsys/shelly-manager",
+    "slug": "ginsys--shelly-manager",
+    "postedAt": "2026-11-20T12:12:55.935Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2qkozt3wh2v",
+        "postedAt": "2026-11-20T12:12:55.935Z"
+      }
+    }
   }
 ]
