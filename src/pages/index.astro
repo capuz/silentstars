@@ -388,13 +388,13 @@ const starsDisplay  = totalStars >= 1000 ? `${(totalStars / 1000).toFixed(1)}k` 
   .hero { width: 100%; padding: 26px 0 22px; border-bottom: 1px solid var(--border); }
 
   .hero-kicker {
-    font-family: 'Space Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px; font-weight: 700;
     color: var(--accent);
     margin: 0 0 10px;
   }
   .hero-title {
-    font-family: 'Silkscreen', monospace;
+    font-family: var(--f-pixel);
     font-weight: 700;
     font-size: clamp(10px, 2.5vw, 32px);
     line-height: 1.15;

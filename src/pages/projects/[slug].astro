@@ -174,7 +174,7 @@ const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.id } : {});
 
       {customImage && (
         <div class="hero-thumb">
-          <img src={customImage} alt={d.name} loading="eager" decoding="async" style={`view-transition-name: ${vtName(project.id, 'thumb')}`} />
+          <img src={customImage} alt={d.name} width="1280" height="640" loading="eager" fetchpriority="high" decoding="async" style={`view-transition-name: ${vtName(project.id, 'thumb')}`} />
         </div>
       )}
 

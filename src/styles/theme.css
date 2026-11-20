@@ -1,3 +1,28 @@
+/* ── Metric-matched fallback fonts ──
+   Google Fonts load with display=swap; until they arrive the text renders in a
+   system font whose widths differ, and the swap re-wraps lines (CLS 0.18 on /,
+   0.22 on /projects/ on a slow mobile connection). These faces size the system
+   fallback to the web font's metrics (values from @capsizecss/metrics via
+   createFontStack), with size-adjust then scaled by the measured text width
+   of each family's dominant weight (body 400–500, display 700). Liberation/
+   Arimo/Cousine are metric clones of Arial and Courier New on Linux. */
+@font-face { font-family: 'Hanken Grotesk Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
+  ascent-override: 95.5782%; descent-override: 28.9603%; line-gap-override: 0%; size-adjust: 104.6263%; }
+@font-face { font-family: 'Hanken Grotesk Fallback Roboto'; src: local('Roboto Regular'), local('Roboto-Regular');
+  ascent-override: 95.3688%; descent-override: 28.8968%; line-gap-override: 0%; size-adjust: 104.8561%; }
+@font-face { font-family: 'Bricolage Grotesque Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
+  ascent-override: 84.8841%; descent-override: 24.6438%; line-gap-override: 0%; size-adjust: 109.5611%; }
+@font-face { font-family: 'Bricolage Grotesque Fallback Roboto'; src: local('Roboto Regular'), local('Roboto-Regular');
+  ascent-override: 84.6982%; descent-override: 24.5898%; line-gap-override: 0%; size-adjust: 109.8016%; }
+@font-face { font-family: 'Space Mono Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
+  ascent-override: 109.8218%; descent-override: 35.3979%; line-gap-override: 0%; size-adjust: 101.9834%; }
+@font-face { font-family: 'Space Mono Fallback Roboto'; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
+  ascent-override: 109.8218%; descent-override: 35.3979%; line-gap-override: 0%; size-adjust: 101.9834%; }
+@font-face { font-family: 'Silkscreen Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
+  ascent-override: 94.0323%; descent-override: 22.8233%; line-gap-override: 0%; size-adjust: 109.5369%; }
+@font-face { font-family: 'Silkscreen Fallback Roboto'; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
+  ascent-override: 94.0323%; descent-override: 22.8233%; line-gap-override: 0%; size-adjust: 109.5369%; }
+
 /* ── Light (default) ── */
 :root,
 [data-theme='light'] {
@@ -18,10 +43,10 @@
   --term-fg: #5dffa0;
 
   /* font stacks */
-  --f-display: 'Bricolage Grotesque', sans-serif;
-  --f-pixel:   'Silkscreen', monospace;
-  --f-body:    'Hanken Grotesk', system-ui, sans-serif;
-  --f-mono:    'Space Mono', monospace;
+  --f-display: 'Bricolage Grotesque', 'Bricolage Grotesque Fallback', 'Bricolage Grotesque Fallback Roboto', sans-serif;
+  --f-pixel:   'Silkscreen', 'Silkscreen Fallback', 'Silkscreen Fallback Roboto', monospace;
+  --f-body:    'Hanken Grotesk', 'Hanken Grotesk Fallback', 'Hanken Grotesk Fallback Roboto', system-ui, sans-serif;
+  --f-mono:    'Space Mono', 'Space Mono Fallback', 'Space Mono Fallback Roboto', monospace;
 
   /* layout */
   --max-w: 1100px;
@@ -74,7 +99,8 @@
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
+html { font-size: 16px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body {
   font-family: var(--f-body);
   background: var(--paper);
@@ -105,7 +131,9 @@ details[open] .ss-plus { transform: rotate(45deg); }
 .container { max-width: var(--max-w); margin: 0 auto; padding: 0 30px; }
 @media (max-width: 680px) { .container { padding: 0 16px; } }
 .section   { padding-block: 0.75rem; }
-h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; }
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; text-wrap: balance; }
+/* Long-form text: avoid one-word last lines. */
+.card-desc, .prose p, .prose li { text-wrap: pretty; }
 
 /* ── Page transitions ──
    Same-origin navigations cross-fade; a clicked card's name and thumbnail morph
