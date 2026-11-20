@@ -106,3 +106,13 @@ details[open] .ss-plus { transform: rotate(45deg); }
 @media (max-width: 680px) { .container { padding: 0 16px; } }
 .section   { padding-block: 0.75rem; }
 h1, h2, h3 { font-family: var(--f-display); line-height: 1.15; }
+
+/* ── Page transitions ──
+   Same-origin navigations cross-fade; a clicked card's name and thumbnail morph
+   into the project page header (names are set by the script in Base.astro).
+   This is the site's one motion moment, so it stays short. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-group(root) { animation-duration: 180ms; }
+  ::view-transition-group(*) { animation-duration: 280ms; animation-timing-function: cubic-bezier(.2, .7, .2, 1); }
+}

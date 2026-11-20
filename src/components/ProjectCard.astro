@@ -2,6 +2,7 @@
 import { langIconUrl } from '../lib/lang-icons.ts';
 import { withRef } from '../lib/ref.ts';
 import ScoreHelp from './ScoreHelp.astro';
+import { vtName } from '../lib/view-transition.ts';
 import { postedFor } from '../lib/posted.ts';
 
 interface Props {
@@ -122,7 +123,7 @@ const tagLabels: Record<string, string> = {
   fork_magnet:        'fork magnet',
 };
 ---
-<article class="card">
+<article class="card" data-vt-name={vtName(slug, 'name')} data-vt-thumb={vtName(slug, 'thumb')}>
   <!-- custom OG thumbnail (only for repos with uploaded social preview) -->
   {customImage && (
     <a href={`${base}projects/${slug}/`} class="card-thumb" tabindex="-1" aria-hidden="true">

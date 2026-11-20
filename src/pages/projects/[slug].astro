@@ -7,6 +7,7 @@ import Base from '../../layouts/Base.astro';
 import { postedFor } from '../../lib/posted.ts';
 import { isExcludedOwner, isListable } from '../../../scripts/discovery-filter.ts';
 import ProjectCard from '../../components/ProjectCard.astro';
+import { vtName } from '../../lib/view-transition.ts';
 import WeeklySpark from '../../components/WeeklySpark.astro';
 import { listEditions, projectSeries, isoWeekKey, type History, type ProjectSeries } from '../../../scripts/weekly.ts';
 import { editionsByRepo, starsSince, whyItsHere, helpLinks, relatedProjects, type FeaturedIn } from '../../../scripts/project-insights.ts';
@@ -173,7 +174,7 @@ const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.id } : {});
 
       {customImage && (
         <div class="hero-thumb">
-          <img src={customImage} alt={d.name} loading="eager" decoding="async" />
+          <img src={customImage} alt={d.name} loading="eager" decoding="async" style={`view-transition-name: ${vtName(project.id, 'thumb')}`} />
         </div>
       )}
 
@@ -212,7 +213,7 @@ const help = helpLinks(d, onFirstIssues ? { firstIssuesSlug: project.id } : {});
       </div>
 
       <!-- name + repo -->
-      <a href={withRef(d.url)} target="_blank" rel="noopener" class="card-name">{d.name}</a>
+      <a href={withRef(d.url)} target="_blank" rel="noopener" class="card-name" style={`view-transition-name: ${vtName(project.id, 'name')}`}>{d.name}</a>
       <span class="card-slug">{d.repo}</span>
 
       <!-- description -->

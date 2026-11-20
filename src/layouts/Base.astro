@@ -48,9 +48,44 @@ const fullTitle = title === 'SilentStars' ? title : `${title} · SilentStars`;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-    <!-- Prefetch same-site pages on hover/pointerdown (Chromium; other browsers ignore it). -->
+    <!-- Prefetch same-site pages on hover/pointerdown, and prerender project pages so
+         the card → page view transition starts instantly (Chromium; others ignore it).
+         GoatCounter's count.js waits for visibilityState 'visible', so a prerendered
+         page that is never opened is not counted. -->
     <script type="speculationrules" is:inline>
-      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}]}
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}],
+       "prerender":[{"where":{"and":[{"href_matches":"/projects/:slug/"},{"not":{"selector_matches":"[target=_blank], [download]"}}]},"eagerness":"moderate"}]}
+    </script>
+    <!-- Card → project page view transition. Names go only on the card that was
+         clicked (or, coming back, the first card of that project): the same project
+         can sit in several home sections, and duplicate view-transition-names would
+         cancel the whole transition. Classic inline script so pagereveal fires. -->
+    <script is:inline>
+      (function(){
+        var clicked = null;
+        var slugOf = function(url){ var m = new URL(url, location.href).pathname.match(/^\/projects\/([^/]+)\/$/); return m && m[1]; };
+        var tag = function(card){
+          if (!card) return function(){};
+          var parts = [[card.querySelector('.card-name'), card.dataset.vtName], [card.querySelector('.card-thumb img'), card.dataset.vtThumb]];
+          parts.forEach(function(p){ if (p[0]) p[0].style.viewTransitionName = p[1]; });
+          return function(){ parts.forEach(function(p){ if (p[0]) p[0].style.viewTransitionName = ''; }); };
+        };
+        document.addEventListener('click', function(e){ clicked = e.target.closest && e.target.closest('.card[data-vt-name]'); }, true);
+        addEventListener('pageswap', function(e){
+          if (!e.viewTransition || !clicked || !e.activation) return;
+          var to = slugOf(e.activation.entry.url);
+          var link = clicked.querySelector('.card-name');
+          if (to && link && slugOf(link.href) === to) tag(clicked);
+        });
+        addEventListener('pagereveal', function(e){
+          if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+          var from = slugOf(navigation.activation.from.url);
+          if (!from) return;
+          var link = document.querySelector('.card[data-vt-name] .card-name[href$="/projects/' + from + '/"]');
+          var untag = tag(link && link.closest('.card'));
+          e.viewTransition.finished.finally(untag);
+        });
+      })();
     </script>
     <!-- theme init — before paint to avoid flash -->
     <script is:inline>
