@@ -153,7 +153,14 @@ const tagLabels: Record<string, string> = {
 
   // Keep the filters in the URL (replaceState: no history entry per click) so a
   // filtered view can be shared and comes back with the Back button.
+  // Runs after the next paint so the URL write stays out of the interaction (INP).
+  let urlQueued = false;
   function syncUrl() {
+    if (urlQueued) return;
+    urlQueued = true;
+    requestAnimationFrame(() => setTimeout(() => { urlQueued = false; writeUrl(); }));
+  }
+  function writeUrl() {
     const qs = serializeFilters({ statuses: [...activeStatuses], tags: [...activeTags], q: searchQuery });
     const url = location.pathname + (qs ? `?${qs}` : '') + location.hash;
     if (url !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', url);
