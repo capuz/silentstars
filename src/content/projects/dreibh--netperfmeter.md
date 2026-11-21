@@ -14,13 +14,13 @@ forks: 6
 openIssues: 0
 closedIssues: 5
 watchers: 2
-contributors: 1
+contributors: 2
 recentReleases: 0
 createdAt: "2014-07-02T12:07:59Z"
-lastCommitAt: "2026-11-20T12:19:12Z"
+lastCommitAt: "2026-11-20T14:50:06Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 80
+healthScore: 100
 undervaluedScore: 75
 maintainers: ["dreibh"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/21422703/b1d0ee00-bd4a-11e9-8398-a0fec37a3789"

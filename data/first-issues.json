@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-20T12:29:10.764Z",
+  "collectedAt": "2026-11-21T11:42:07.468Z",
   "projects": [
     {
       "repo": "eclipse-score/lifecycle",
@@ -44,12 +44,12 @@
           "comments": 1
         },
         {
-          "number": 570,
-          "title": "Standardize ProcessInfoNode logs",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/570",
+          "number": 437,
+          "title": "Create Basic Stress Tests for LM and HM",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/437",
           "kind": "good first issue",
-          "createdAt": "2026-08-31T08:30:12Z",
-          "comments": 0
+          "createdAt": "2026-08-07T12:27:08Z",
+          "comments": 1
         }
       ]
     },
@@ -107,138 +107,231 @@
       ]
     },
     {
-      "repo": "prime-radiant-inc/evener",
-      "slug": "prime-radiant-inc--evener",
-      "lastCommitAt": "2026-11-20T11:51:44Z",
+      "repo": "KaotoIO/kaoto",
+      "slug": "kaotoio--kaoto",
+      "lastCommitAt": "2026-11-21T11:23:24Z",
       "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
+        "outsidePRsMerged": 29,
+        "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 9,
       "issues": [
         {
-          "number": 2354,
-          "title": "[Architecture audit] CORE-09: Recursive distillation uses shrinking history length as its work clock",
-          "url": "https://github.com/prime-radiant-inc/evener/issues/2354",
+          "number": 3528,
+          "title": "Flaky e2e: metadata.cy.ts — Metadata tab not found under load (untrue ready signal in loading providers)",
+          "url": "https://github.com/KaotoIO/kaoto/issues/3528",
           "kind": "good first issue",
-          "createdAt": "2026-09-26T03:16:38Z",
+          "createdAt": "2026-07-21T09:09:07Z",
+          "comments": 2
+        },
+        {
+          "number": 3527,
+          "title": "Monaco Source Code Editor shows errors when opening",
+          "url": "https://github.com/KaotoIO/kaoto/issues/3527",
+          "kind": "good first issue",
+          "createdAt": "2026-07-21T07:46:09Z",
+          "comments": 2
+        },
+        {
+          "number": 3445,
+          "title": "[Citrus testing] Paste a complete test route does not update source code nor visualisation",
+          "url": "https://github.com/KaotoIO/kaoto/issues/3445",
+          "kind": "good first issue",
+          "createdAt": "2026-07-07T13:03:47Z",
+          "comments": 4
+        },
+        {
+          "number": 3127,
+          "title": "Extract group `vizNode` creation from `BaseVisualEntity`",
+          "url": "https://github.com/KaotoIO/kaoto/issues/3127",
+          "kind": "good first issue",
+          "createdAt": "2026-04-16T07:53:16Z",
+          "comments": 0
+        },
+        {
+          "number": 3557,
+          "title": "Topology View: support multiple routes files in VS Code Kaoto",
+          "url": "https://github.com/KaotoIO/kaoto/issues/3557",
+          "kind": "help wanted",
+          "createdAt": "2026-07-24T11:06:02Z",
           "comments": 1
         }
       ]
     },
     {
-      "repo": "tingly-dev/tingly-box",
-      "slug": "tingly-dev--tingly-box",
-      "lastCommitAt": "2026-11-20T11:23:50Z",
+      "repo": "benelabs/crucible",
+      "slug": "benelabs--crucible",
+      "lastCommitAt": "2026-11-21T11:35:58Z",
       "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
+        "outsidePRsMerged": 28,
+        "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 12,
       "issues": [
         {
-          "number": 1774,
-          "title": "[TEP-1774] Expose model capability metadata (context_length, modalities, reasoning) on the /models listing",
-          "url": "https://github.com/tingly-dev/tingly-box/issues/1774",
-          "kind": "help wanted",
-          "createdAt": "2026-09-18T09:54:52Z",
-          "comments": 4
+          "number": 1465,
+          "title": "[PROD-READY 087/120] Correct fork() semantics or rename it to reflect shared ledger state",
+          "url": "https://github.com/benelabs/crucible/issues/1465",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:48:50Z",
+          "comments": 0
         },
         {
-          "number": 415,
-          "title": "[TEP-415] Support Token Helper for AI Provider Authentication",
-          "url": "https://github.com/tingly-dev/tingly-box/issues/415",
-          "kind": "help wanted",
-          "createdAt": "2026-03-05T05:36:01Z",
+          "number": 1456,
+          "title": "[PROD-READY 038/120] Consolidate the two divergent ErrorResponse types",
+          "url": "https://github.com/benelabs/crucible/issues/1456",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:47:49Z",
+          "comments": 0
+        },
+        {
+          "number": 1447,
+          "title": "[PROD-READY 029/120] Parse Content-Type as a MIME type instead of using starts_with",
+          "url": "https://github.com/benelabs/crucible/issues/1447",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:46:46Z",
+          "comments": 0
+        },
+        {
+          "number": 1435,
+          "title": "[PROD-READY 017/120] Replace usable-looking default credentials in .env.example with inert placeholders",
+          "url": "https://github.com/benelabs/crucible/issues/1435",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:45:19Z",
+          "comments": 0
+        },
+        {
+          "number": 1423,
+          "title": "[PROD-READY 071/120] Add tests and persistence assertions for LanguageSwitcher",
+          "url": "https://github.com/benelabs/crucible/issues/1423",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:43:59Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "gjsify/gjsify",
-      "slug": "gjsify--gjsify",
-      "lastCommitAt": "2026-11-20T11:20:05Z",
+      "repo": "eljulians/skillfile",
+      "slug": "eljulians--skillfile",
+      "lastCommitAt": "2026-11-21T11:33:52Z",
       "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
+        "outsidePRsMerged": 27,
+        "outsidePRsCapped": false,
+        "approxKloc": 35
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 17,
       "issues": [
         {
-          "number": 1051,
-          "title": "iOS symbolic-icon backend needs on-device verification",
-          "url": "https://github.com/gjsify/gjsify/issues/1051",
-          "kind": "help wanted",
-          "createdAt": "2026-08-07T23:34:57Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "Kromatic-Innovation/athenaeum",
-      "slug": "kromatic-innovation--athenaeum",
-      "lastCommitAt": "2026-11-20T11:49:01Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 1101,
-          "title": "WONT: LLM provider adapters (OpenAI / Gemini / local / Mistral / Bedrock) — seam exists, adapters do not",
-          "url": "https://github.com/Kromatic-Innovation/athenaeum/issues/1101",
-          "kind": "help wanted",
-          "createdAt": "2026-08-23T23:13:04Z",
-          "comments": 2
-        }
-      ]
-    },
-    {
-      "repo": "praxis-proxy/praxis",
-      "slug": "praxis-proxy--praxis",
-      "lastCommitAt": "2026-11-20T12:18:51Z",
-      "signals": {
-        "outsidePRsMerged": 15,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 1384,
-          "title": "policy: warn when an authenticated credential is forwarded upstream",
-          "url": "https://github.com/praxis-proxy/praxis/issues/1384",
+          "number": 244,
+          "title": "Add npm (skillpm) to the skill search",
+          "url": "https://github.com/eljulians/skillfile/issues/244",
           "kind": "good first issue",
-          "createdAt": "2026-10-10T14:57:46Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "deepgram/deepgram-dotnet-sdk",
-      "slug": "deepgram--deepgram-dotnet-sdk",
-      "lastCommitAt": "2026-11-20T12:21:04Z",
-      "signals": {
-        "outsidePRsMerged": 15,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 348,
-          "title": "Implement Speaker Class for Agent API for Local Laptop",
-          "url": "https://github.com/deepgram/deepgram-dotnet-sdk/issues/348",
-          "kind": "help wanted",
-          "createdAt": "2024-11-01T16:52:19Z",
-          "comments": 2
+          "createdAt": "2026-11-21T11:37:54Z",
+          "comments": 0
         },
         {
-          "number": 230,
-          "title": "C# Linter / Code Formatter",
-          "url": "https://github.com/deepgram/deepgram-dotnet-sdk/issues/230",
+          "number": 243,
+          "title": "Add GitHub topic search to the skill search",
+          "url": "https://github.com/eljulians/skillfile/issues/243",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T11:37:53Z",
+          "comments": 0
+        },
+        {
+          "number": 242,
+          "title": "Add clawhub.ai to the skill search",
+          "url": "https://github.com/eljulians/skillfile/issues/242",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T11:37:51Z",
+          "comments": 0
+        },
+        {
+          "number": 241,
+          "title": "Add tessl.io to the skill search",
+          "url": "https://github.com/eljulians/skillfile/issues/241",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T11:37:50Z",
+          "comments": 0
+        },
+        {
+          "number": 240,
+          "title": "Add skillmd.com to the skill search",
+          "url": "https://github.com/eljulians/skillfile/issues/240",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T11:37:49Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "legend-esc/carbonchain",
+      "slug": "legend-esc--carbonchain",
+      "lastCommitAt": "2026-11-21T11:34:40Z",
+      "signals": {
+        "outsidePRsMerged": 27,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 15,
+      "issues": [
+        {
+          "number": 1389,
+          "title": "docs: Carbon credit taxonomy and regulatory compliance mapping document (Verra, Gold Standard, CDM)",
+          "url": "https://github.com/legend-esc/carbonchain/issues/1389",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T12:07:14Z",
+          "comments": 0
+        },
+        {
+          "number": 1388,
+          "title": "test(api): Chaos engineering testing for Redis sequence manager network partitions",
+          "url": "https://github.com/legend-esc/carbonchain/issues/1388",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T12:06:41Z",
+          "comments": 0
+        },
+        {
+          "number": 1387,
+          "title": "docs: Verifier node operations and MRV oracle integration technical handbook",
+          "url": "https://github.com/legend-esc/carbonchain/issues/1387",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T12:06:05Z",
+          "comments": 0
+        },
+        {
+          "number": 1386,
+          "title": "security: Automated secrets detection pre-commit hook using Gitleaks",
+          "url": "https://github.com/legend-esc/carbonchain/issues/1386",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T12:05:27Z",
+          "comments": 0
+        },
+        {
+          "number": 1385,
+          "title": "test(contracts): Negative test cases for replay protection nonces across all 4 contracts",
+          "url": "https://github.com/legend-esc/carbonchain/issues/1385",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T12:04:44Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "lucid-softworks/browser",
+      "slug": "lucid-softworks--browser",
+      "lastCommitAt": "2026-11-21T11:36:30Z",
+      "signals": {
+        "outsidePRsMerged": 17,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 40,
+          "title": "Tracking: WPT conformance",
+          "url": "https://github.com/lucid-softworks/browser/issues/40",
           "kind": "help wanted",
-          "createdAt": "2024-02-12T20:10:48Z",
-          "comments": 1
+          "createdAt": "2026-06-21T21:43:32Z",
+          "comments": 0
         }
       ]
     },
@@ -264,22 +357,90 @@
       ]
     },
     {
-      "repo": "AshayK003/nse-sentiment-analyzer",
-      "slug": "ashayk003--nse-sentiment-analyzer",
-      "lastCommitAt": "2026-11-20T12:25:34Z",
+      "repo": "lenny-ts/caddy-analyzer",
+      "slug": "lenny-ts--caddy-analyzer",
+      "lastCommitAt": "2026-11-17T21:19:40Z",
       "signals": {
-        "outsidePRsMerged": 6,
+        "outsidePRsMerged": 11,
         "outsidePRsCapped": false,
-        "approxKloc": 12
+        "approxKloc": 23
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 13,
       "issues": [
         {
-          "number": 35,
-          "title": "Add Streamlit caching for performance",
-          "url": "https://github.com/AshayK003/nse-sentiment-analyzer/issues/35",
+          "number": 148,
+          "title": "Document and package the self-hosted web console deployment",
+          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/148",
+          "kind": "good first issue",
+          "createdAt": "2026-11-17T15:22:24Z",
+          "comments": 0
+        },
+        {
+          "number": 147,
+          "title": "Add secure Guard and firewall controls to the web console",
+          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/147",
+          "kind": "good first issue",
+          "createdAt": "2026-11-17T15:22:22Z",
+          "comments": 0
+        },
+        {
+          "number": 146,
+          "title": "Synchronize Guard state for live administrative actions",
+          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/146",
+          "kind": "good first issue",
+          "createdAt": "2026-11-17T15:22:19Z",
+          "comments": 0
+        },
+        {
+          "number": 145,
+          "title": "Add blocklist feed status and refresh to the web console",
+          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/145",
+          "kind": "good first issue",
+          "createdAt": "2026-11-17T15:22:16Z",
+          "comments": 0
+        },
+        {
+          "number": 144,
+          "title": "Add validated configuration and whitelist management to the web console",
+          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/144",
+          "kind": "good first issue",
+          "createdAt": "2026-11-17T15:22:14Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "Helemen7/RedNavi",
+      "slug": "helemen7--rednavi",
+      "lastCommitAt": "2026-11-21T11:17:26Z",
+      "signals": {
+        "outsidePRsMerged": 9,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 3,
+      "issues": [
+        {
+          "number": 1,
+          "title": "[Data Collection] Linux IP Discovery & DCN Register Dumps for Navi 31 (RX 7900 XTX)⁠",
+          "url": "https://github.com/Helemen7/RedNavi/issues/1",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T08:50:38Z",
+          "comments": 6
+        },
+        {
+          "number": 2,
+          "title": "[Data Collection] DCN 3.2 HDMI and Secondary DisplayPort Dumps (Navi 32 / 7800 XT)",
+          "url": "https://github.com/Helemen7/RedNavi/issues/2",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T08:52:32Z",
+          "comments": 0
+        },
+        {
+          "number": 23,
+          "title": "[Hardware testing] First read-only runs on RX 7700 XT and RX 7600, plane capture for the 7700 XT",
+          "url": "https://github.com/Helemen7/RedNavi/issues/23",
           "kind": "help wanted",
-          "createdAt": "2026-09-20T08:45:33Z",
+          "createdAt": "2026-11-16T19:04:57Z",
           "comments": 0
         }
       ]
@@ -287,7 +448,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-20T11:46:40Z",
+      "lastCommitAt": "2026-11-21T09:35:54Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -307,7 +468,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-20T11:46:40Z",
+      "lastCommitAt": "2026-11-21T09:35:54Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -327,7 +488,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-20T08:35:10Z",
+      "lastCommitAt": "2026-11-20T13:40:51Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -377,9 +538,9 @@
       ]
     },
     {
-      "repo": "LimitlessAgents/lakegen",
-      "slug": "limitlessagents--lakegen",
-      "lastCommitAt": "2026-11-20T12:19:24Z",
+      "repo": "nmfisher/thermion",
+      "slug": "nmfisher--thermion",
+      "lastCommitAt": "2026-11-21T11:31:21Z",
       "signals": {
         "outsidePRsMerged": 3,
         "outsidePRsCapped": false
@@ -387,11 +548,39 @@
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 52,
-          "title": "Session parent_id Is Lost on Eviction Because It Is Not Persisted in the Database",
-          "url": "https://github.com/LimitlessAgents/lakegen/issues/52",
+          "number": 40,
+          "title": "OBJ/STL asset loading support",
+          "url": "https://github.com/nmfisher/thermion/issues/40",
           "kind": "good first issue",
-          "createdAt": "2026-10-18T06:21:16Z",
+          "createdAt": "2024-06-18T06:23:11Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "parime/glpi-iso27001-management",
+      "slug": "parime--glpi-iso27001-management",
+      "lastCommitAt": "2026-11-21T11:33:14Z",
+      "signals": {
+        "outsidePRsMerged": 3,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 487,
+          "title": "Matrice des flux : import d'un export FortiGate (contribution attendue)",
+          "url": "https://github.com/parime/glpi-iso27001-management/issues/487",
+          "kind": "help wanted",
+          "createdAt": "2026-11-06T19:07:48Z",
+          "comments": 1
+        },
+        {
+          "number": 833,
+          "title": "Matrice des flux : import Ubiquiti UniFi (UDM, Cloud Gateways) - contribution attendue",
+          "url": "https://github.com/parime/glpi-iso27001-management/issues/833",
+          "kind": "help wanted",
+          "createdAt": "2026-11-20T21:37:10Z",
           "comments": 0
         }
       ]
@@ -449,53 +638,21 @@
       ]
     },
     {
-      "repo": "GUYI-AI/gugu",
-      "slug": "guyi-ai--gugu",
-      "lastCommitAt": "2026-11-20T12:06:13Z",
+      "repo": "IlyaKuprov/Spinach",
+      "slug": "ilyakuprov--spinach",
+      "lastCommitAt": "2026-11-21T11:30:10Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 5,
+      "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 443,
-          "title": "Quick switcher ranking differs from member suggestions",
-          "url": "https://github.com/GUYI-AI/gugu/issues/443",
+          "number": 13,
+          "title": "[Performance] Linear scaling dipolar network analysis",
+          "url": "https://github.com/IlyaKuprov/Spinach/issues/13",
           "kind": "good first issue",
-          "createdAt": "2026-10-26T06:15:37Z",
-          "comments": 0
-        },
-        {
-          "number": 512,
-          "title": "Delivery failure toast incorrectly claims a running task has stopped",
-          "url": "https://github.com/GUYI-AI/gugu/issues/512",
-          "kind": "good first issue",
-          "createdAt": "2026-10-26T16:16:39Z",
-          "comments": 0
-        },
-        {
-          "number": 907,
-          "title": "[Bug] Direct-chat task failure notices cannot be dismissed",
-          "url": "https://github.com/GUYI-AI/gugu/issues/907",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T10:01:15Z",
-          "comments": 1
-        },
-        {
-          "number": 889,
-          "title": "app_search offers the market's only match for an unrelated query",
-          "url": "https://github.com/GUYI-AI/gugu/issues/889",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T08:26:09Z",
-          "comments": 0
-        },
-        {
-          "number": 1697,
-          "title": "Unit test fixtures with hard-coded dates expire on their own (serverRestartUpdate941 went red at 2026-11-05 00:00Z)",
-          "url": "https://github.com/GUYI-AI/gugu/issues/1697",
-          "kind": "good first issue",
-          "createdAt": "2026-11-05T01:46:08Z",
+          "createdAt": "2024-05-06T13:03:29Z",
           "comments": 0
         }
       ]
@@ -537,6 +694,26 @@
       ]
     },
     {
+      "repo": "Chang-Yo/Dela",
+      "slug": "chang-yo--dela",
+      "lastCommitAt": "2026-11-21T11:38:48Z",
+      "signals": {
+        "outsidePRsMerged": 1,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 199,
+          "title": "【Contributor】Dela贡献者信息展示添加",
+          "url": "https://github.com/Chang-Yo/Dela/issues/199",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T06:40:47Z",
+          "comments": 5
+        }
+      ]
+    },
+    {
       "repo": "Itqan-community/cms-frontend",
       "slug": "itqan-community--cms-frontend",
       "lastCommitAt": "2026-11-14T15:19:16Z",
@@ -557,9 +734,9 @@
       ]
     },
     {
-      "repo": "cofade/open-garden-planner",
-      "slug": "cofade--open-garden-planner",
-      "lastCommitAt": "2026-11-20T12:19:12Z",
+      "repo": "hex-dump/perihub",
+      "slug": "hex-dump--perihub",
+      "lastCommitAt": "2026-11-21T11:39:08Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -567,19 +744,35 @@
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 554,
-          "title": "Per-plant lifecycle records with precision-preserving dates (perennials, shrubs, trees)",
-          "url": "https://github.com/cofade/open-garden-planner/issues/554",
+          "number": 74,
+          "title": "Flathub package",
+          "url": "https://github.com/hex-dump/perihub/issues/74",
           "kind": "help wanted",
-          "createdAt": "2026-10-21T20:12:23Z",
+          "createdAt": "2026-11-18T17:17:15Z",
           "comments": 0
         },
         {
-          "number": 553,
-          "title": "Add a French (fr) translation",
-          "url": "https://github.com/cofade/open-garden-planner/issues/553",
+          "number": 2,
+          "title": "Help test PeriHub with your Logitech mouse",
+          "url": "https://github.com/hex-dump/perihub/issues/2",
           "kind": "help wanted",
-          "createdAt": "2026-10-21T20:12:18Z",
+          "createdAt": "2026-10-18T13:05:39Z",
+          "comments": 2
+        },
+        {
+          "number": 18,
+          "title": "Help test PeriHub with your Corsair mouse or keyboard",
+          "url": "https://github.com/hex-dump/perihub/issues/18",
+          "kind": "help wanted",
+          "createdAt": "2026-11-08T12:20:36Z",
+          "comments": 0
+        },
+        {
+          "number": 9,
+          "title": "Support more SteelSeries Apex keyboards",
+          "url": "https://github.com/hex-dump/perihub/issues/9",
+          "kind": "help wanted",
+          "createdAt": "2026-10-18T13:05:48Z",
           "comments": 0
         }
       ]
@@ -601,208 +794,6 @@
           "url": "https://github.com/oneydef/EarA-linux/issues/1",
           "kind": "help wanted",
           "createdAt": "2026-08-31T11:44:50Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "yrn-dev/Operator",
-      "slug": "yrn-dev--operator",
-      "lastCommitAt": "2026-11-11T10:10:53Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 1
-      },
-      "goodFirstIssueCount": 3614,
-      "issues": [
-        {
-          "number": 48855,
-          "title": "Add TypeScript types for routes",
-          "url": "https://github.com/yrn-dev/Operator/issues/48855",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T11:46:58Z",
-          "comments": 1
-        },
-        {
-          "number": 48801,
-          "title": "Add unit tests for auth",
-          "url": "https://github.com/yrn-dev/Operator/issues/48801",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T09:48:20Z",
-          "comments": 4
-        },
-        {
-          "number": 48847,
-          "title": "Add unit tests for hooks",
-          "url": "https://github.com/yrn-dev/Operator/issues/48847",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T11:30:41Z",
-          "comments": 1
-        },
-        {
-          "number": 48789,
-          "title": "Update middleware documentation",
-          "url": "https://github.com/yrn-dev/Operator/issues/48789",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T09:22:29Z",
-          "comments": 2
-        },
-        {
-          "number": 48799,
-          "title": "Update lib documentation",
-          "url": "https://github.com/yrn-dev/Operator/issues/48799",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T09:44:15Z",
-          "comments": 2
-        }
-      ]
-    },
-    {
-      "repo": "svayatta/pratidhvani",
-      "slug": "svayatta--pratidhvani",
-      "lastCommitAt": "2026-11-20T12:19:56Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 8
-      },
-      "goodFirstIssueCount": 8,
-      "issues": [
-        {
-          "number": 27,
-          "title": "Long-form placement and joined-audio watermark are untested",
-          "url": "https://github.com/svayatta/pratidhvani/issues/27",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T20:37:07Z",
-          "comments": 0
-        },
-        {
-          "number": 26,
-          "title": "Add issue templates for bugs, features, and experiments",
-          "url": "https://github.com/svayatta/pratidhvani/issues/26",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T20:37:06Z",
-          "comments": 0
-        },
-        {
-          "number": 25,
-          "title": "Python support says 3.10, CI only installs 3.12",
-          "url": "https://github.com/svayatta/pratidhvani/issues/25",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T20:37:04Z",
-          "comments": 0
-        },
-        {
-          "number": 24,
-          "title": "Studio upload target takes keyboard focus and does nothing",
-          "url": "https://github.com/svayatta/pratidhvani/issues/24",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T20:37:02Z",
-          "comments": 0
-        },
-        {
-          "number": 23,
-          "title": "Listening page assumes a male northern-Kannada speaker",
-          "url": "https://github.com/svayatta/pratidhvani/issues/23",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T20:37:00Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "OpenLakeForge/openlakeforge",
-      "slug": "openlakeforge--openlakeforge",
-      "lastCommitAt": "2026-11-20T12:12:26Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 4,
-      "issues": [
-        {
-          "number": 482,
-          "title": "test(dbt): validate the inventory mart's product–warehouse grain",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/482",
-          "kind": "good first issue",
-          "createdAt": "2026-10-21T16:03:44Z",
-          "comments": 0
-        },
-        {
-          "number": 197,
-          "title": "Destructive-apply guards query an empty kube context on AWS and Azure",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/197",
-          "kind": "help wanted",
-          "createdAt": "2026-09-10T12:57:23Z",
-          "comments": 0
-        },
-        {
-          "number": 479,
-          "title": "chore: add a concise pull request template",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/479",
-          "kind": "help wanted",
-          "createdAt": "2026-10-21T16:03:38Z",
-          "comments": 1
-        },
-        {
-          "number": 206,
-          "title": "Compare derived stage exports by embedded identity, not stage words",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/206",
-          "kind": "help wanted",
-          "createdAt": "2026-09-15T07:48:02Z",
-          "comments": 1
-        },
-        {
-          "number": 517,
-          "title": "feat: optional stage-scoped Object Storage Explorer in the portal",
-          "url": "https://github.com/OpenLakeForge/openlakeforge/issues/517",
-          "kind": "help wanted",
-          "createdAt": "2026-10-22T19:18:33Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "ChrisVip001/Jeeves",
-      "slug": "chrisvip001--jeeves",
-      "lastCommitAt": "2026-11-20T12:21:23Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 4,
-      "issues": [
-        {
-          "number": 2,
-          "title": "Windows writable-boundary support",
-          "url": "https://github.com/ChrisVip001/Jeeves/issues/2",
-          "kind": "good first issue",
-          "createdAt": "2026-11-12T15:26:05Z",
-          "comments": 0
-        },
-        {
-          "number": 4,
-          "title": "Add a replay eval case for a new failure mode",
-          "url": "https://github.com/ChrisVip001/Jeeves/issues/4",
-          "kind": "good first issue",
-          "createdAt": "2026-11-12T15:26:07Z",
-          "comments": 0
-        },
-        {
-          "number": 5,
-          "title": "Screenshots and a 10-second terminal demo",
-          "url": "https://github.com/ChrisVip001/Jeeves/issues/5",
-          "kind": "good first issue",
-          "createdAt": "2026-11-12T15:26:08Z",
-          "comments": 0
-        },
-        {
-          "number": 1,
-          "title": "Connect the Discord gateway to a real Discord bot",
-          "url": "https://github.com/ChrisVip001/Jeeves/issues/1",
-          "kind": "good first issue",
-          "createdAt": "2026-11-12T15:26:04Z",
           "comments": 0
         }
       ]
@@ -833,6 +824,62 @@
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
           "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "mblua/AgentsCommander",
+      "slug": "mblua--agentscommander",
+      "lastCommitAt": "2026-11-21T11:33:16Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 327,
+          "title": "Remove empty OpenCode section from src/guide/components/HintsTab.tsx",
+          "url": "https://github.com/mblua/AgentsCommander/issues/327",
+          "kind": "good first issue",
+          "createdAt": "2026-05-28T00:14:29Z",
+          "comments": 0
+        },
+        {
+          "number": 325,
+          "title": "Replace or delete stale src-tauri/icons/icon.svg (SummonGate-era portal arch)",
+          "url": "https://github.com/mblua/AgentsCommander/issues/325",
+          "kind": "good first issue",
+          "createdAt": "2026-05-28T00:05:47Z",
+          "comments": 0
+        },
+        {
+          "number": 320,
+          "title": "macOS verification: testers wanted",
+          "url": "https://github.com/mblua/AgentsCommander/issues/320",
+          "kind": "help wanted",
+          "createdAt": "2026-05-27T20:33:11Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "nightscout/nocturne",
+      "slug": "nightscout--nocturne",
+      "lastCommitAt": "2026-11-21T11:26:49Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 276,
+          "title": "Vote for Nocturne to be added to PikaPods",
+          "url": "https://github.com/nightscout/nocturne/issues/276",
+          "kind": "help wanted",
+          "createdAt": "2026-05-31T08:09:59Z",
+          "comments": 1
         }
       ]
     },
@@ -923,9 +970,9 @@
       ]
     },
     {
-      "repo": "Tripstack-Corp/spyc",
-      "slug": "tripstack-corp--spyc",
-      "lastCommitAt": "2026-11-20T12:24:04Z",
+      "repo": "MartinPTielemans/ilo",
+      "slug": "martinptielemans--ilo",
+      "lastCommitAt": "2026-11-21T11:33:13Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -933,64 +980,33 @@
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 66,
-          "title": "PgUp/PgDn scrollback discoverability in panes",
-          "url": "https://github.com/Tripstack-Corp/spyc/issues/66",
+          "number": 3790,
+          "title": "Settings: a row's detail line breaks inside a path",
+          "url": "https://github.com/MartinPTielemans/ilo/issues/3790",
           "kind": "good first issue",
-          "createdAt": "2026-07-03T12:00:03Z",
+          "createdAt": "2026-11-21T10:43:22Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "Faisal-Fayaz/sidekick",
-      "slug": "faisal-fayaz--sidekick",
-      "lastCommitAt": "2026-11-20T12:18:33Z",
+      "repo": "Ozero-top/luci-app-adguardhome-lite",
+      "slug": "ozero-top--luci-app-adguardhome-lite",
+      "lastCommitAt": "2026-11-21T11:35:00Z",
       "signals": {
         "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "outsidePRsCapped": false,
+        "approxKloc": 11
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 115,
-          "title": "Sustainability options",
-          "url": "https://github.com/Faisal-Fayaz/sidekick/issues/115",
-          "kind": "help wanted",
-          "createdAt": "2026-09-27T05:35:55Z",
-          "comments": 0
-        },
-        {
-          "number": 106,
-          "title": "Managed enterprise flavor",
-          "url": "https://github.com/Faisal-Fayaz/sidekick/issues/106",
-          "kind": "help wanted",
-          "createdAt": "2026-09-27T05:34:41Z",
-          "comments": 0
-        },
-        {
-          "number": 104,
-          "title": "Distilled sidekick-optimized small model",
-          "url": "https://github.com/Faisal-Fayaz/sidekick/issues/104",
-          "kind": "help wanted",
-          "createdAt": "2026-09-27T05:34:31Z",
-          "comments": 0
-        },
-        {
-          "number": 101,
-          "title": "Thin IDE extension",
-          "url": "https://github.com/Faisal-Fayaz/sidekick/issues/101",
-          "kind": "help wanted",
-          "createdAt": "2026-09-27T05:34:15Z",
-          "comments": 0
-        },
-        {
-          "number": 97,
-          "title": "Air-gapped install",
-          "url": "https://github.com/Faisal-Fayaz/sidekick/issues/97",
-          "kind": "help wanted",
-          "createdAt": "2026-09-27T05:33:57Z",
-          "comments": 0
+          "number": 1,
+          "title": "置顶 - 收集拦截广告规则",
+          "url": "https://github.com/Ozero-top/luci-app-adguardhome-lite/issues/1",
+          "kind": "good first issue",
+          "createdAt": "2026-11-11T03:13:03Z",
+          "comments": 1
         }
       ]
     }

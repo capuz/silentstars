@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-12T04:09:56Z"
 lastReleaseAt: "2026-04-07T00:45:05Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem"]
-healthScore: 76
+healthScore: 75
 undervaluedScore: 47
 maintainers: ["dependabot[bot]", "PenguinBoi12", "chrisdedman"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5352325da61f2e79850f8519e3bbdf40cc961d48c0c9340bf1285a939cb441ad/Code-Society-Lab/matrixpy"

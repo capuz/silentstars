@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-19T21:30:59Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 63
 maintainers: ["Todo-bai", "abhirajadhikary06", "mykola-lp"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"

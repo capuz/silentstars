@@ -8,7 +8,7 @@ language: "Kotlin"
 languages: ["Kotlin", "Dart"]
 languagePcts: [52, 48]
 topics: ["android", "android-app", "dart", "downloader", "flutter", "instagram", "kotlin", "open-source", "share-sheet", "social-media"]
-stars: 2
+stars: 3
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -23,7 +23,7 @@ tags: ["hidden_gem"]
 healthScore: 78
 undervaluedScore: 15
 maintainers: ["Md-nexus"]
-openGraphImageUrl: "https://opengraph.githubassets.com/61ab6cb85f28aef8b56e30b5ef199ea5168cd9149d6fd3b55c1b470922bb6ce8/Md-nexus/Hoard"
+openGraphImageUrl: "https://opengraph.githubassets.com/61f690b0f5f3a331b7a0af67d3d009661a816168d0e3fb989a21787659eff1ea/Md-nexus/Hoard"
 promoted: true
 postedAt: "2026-11-17T14:47:54.591Z"
 ---

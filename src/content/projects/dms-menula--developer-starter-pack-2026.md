@@ -18,7 +18,7 @@ lastCommitAt: "2026-11-17T05:13:20Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 90
+healthScore: 89
 undervaluedScore: 55
 maintainers: ["DMS-Menula", "DMS-ranil", "Yuzu-Peel"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"

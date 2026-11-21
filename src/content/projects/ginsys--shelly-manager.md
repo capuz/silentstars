@@ -6,20 +6,20 @@ readmeQualityOk: true
 url: "https://github.com/ginsys/shelly-manager"
 language: "Go"
 languages: ["Go"]
-languagePcts: [74]
+languagePcts: [73]
 stars: 7
 forks: 0
-openIssues: 20
-closedIssues: 256
+openIssues: 9
+closedIssues: 301
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-08-07T16:38:11Z"
-lastCommitAt: "2026-11-20T11:57:24Z"
+lastCommitAt: "2026-11-21T11:07:03Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "under_pressure"]
-healthScore: 98
-undervaluedScore: 76
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 99
+undervaluedScore: 77
 maintainers: ["srgvg"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e5edd995b6966c585746947c1c05e298f7df603c777e5db98f46f6b277978097/ginsys/shelly-manager"
 discussionCount: 0

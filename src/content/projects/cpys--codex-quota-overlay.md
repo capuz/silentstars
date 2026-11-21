@@ -9,7 +9,7 @@ language: "JavaScript"
 languages: ["JavaScript"]
 languagePcts: [71]
 topics: ["codex", "codex-desktop", "desktop-app", "electron", "macos", "productivity", "quota", "windows", "developer-tool", "menu-bar"]
-stars: 4
+stars: 3
 forks: 1
 openIssues: 1
 closedIssues: 0
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-08-23T16:04:41Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 40
-undervaluedScore: 14
+undervaluedScore: 16
 maintainers: ["cpys", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/33d346331c03e202863a64bab4e254ea12bcc107a40cbe16021a8d8b05ddbce0/cpys/codex-quota-overlay"
+openGraphImageUrl: "https://opengraph.githubassets.com/8e264510c0981609074c413ed60be148948a828ebd1977ede04863f32d5dc86f/cpys/codex-quota-overlay"
 discussionCount: 3
 promoted: true
 postedAt: "2026-10-27T12:47:25.041Z"

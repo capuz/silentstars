@@ -11,13 +11,13 @@ languagePcts: [60, 34]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 13
 forks: 4
-openIssues: 5
-closedIssues: 14115
+openIssues: 4
+closedIssues: 14141
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-11-20T12:20:13Z"
+lastCommitAt: "2026-11-21T10:50:56Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 100

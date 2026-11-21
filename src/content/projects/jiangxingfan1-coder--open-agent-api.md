@@ -7,25 +7,26 @@ url: "https://github.com/jiangxingfan1-coder/Open-Agent-API"
 homepage: "https://openagentapi.pages.dev/"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [67, 22]
-topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted"]
+languagePcts: [68, 21]
+topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted", "coding-agents", "human-in-the-loop", "dsh-plugin"]
 stars: 2
 forks: 0
 openIssues: 1
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 1
+recentReleases: 4
 createdAt: "2026-11-13T23:45:35Z"
-lastCommitAt: "2026-11-18T05:29:28Z"
-lastReleaseAt: "2026-11-14T03:04:33Z"
+lastCommitAt: "2026-11-21T11:27:01Z"
+lastReleaseAt: "2026-11-21T09:34:10Z"
 status: "newborn"
 tags: ["hidden_gem"]
-healthScore: 79
-undervaluedScore: 35
+healthScore: 76
+undervaluedScore: 56
 maintainers: ["jiangxingfan1-coder"]
-openGraphImageUrl: "https://opengraph.githubassets.com/1433d255375b4e901c663a4e8d3c3aa53d762c0a04a9e2d6439b0753bf15a1e9/jiangxingfan1-coder/Open-Agent-API"
+openGraphImageUrl: "https://opengraph.githubassets.com/f4f807ccb0d883bbe28bcf85c09d7c1febc65c1ae779ca746c7b9db3dc317c3a/jiangxingfan1-coder/Open-Agent-API"
 promoted: true
+postedAt: "2026-11-20T12:33:44.346Z"
 ---
 
 You call an agent, not a model: one with its own tools, skills, and permissions. One call is one task.

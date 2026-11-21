@@ -22,7 +22,7 @@ lastReleaseAt: "2026-09-16T09:18:55Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 99
-undervaluedScore: 83
+undervaluedScore: 84
 maintainers: ["kaferi"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1245479016/951cc047-39ac-4e79-891e-3843dcf07e27"
 postedAt: "2026-11-18T12:17:25.281Z"

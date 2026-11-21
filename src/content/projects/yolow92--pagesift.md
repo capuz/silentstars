@@ -9,7 +9,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [83]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
-stars: 291
+stars: 294
 forks: 37
 openIssues: 0
 closedIssues: 2
@@ -17,20 +17,20 @@ watchers: 1
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-20T17:30:59Z"
-lastCommitAt: "2026-11-18T13:03:04Z"
+lastCommitAt: "2026-11-21T11:12:20Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 33
 maintainers: ["YOLOW92"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2954eca40601ff02ce467f29fd33ddcfc8f42795a53c377b29b3d1364cbdc244/YOLOW92/pagesift"
+openGraphImageUrl: "https://opengraph.githubassets.com/f0e0a08c6605d0422e8ba67de62f882e709b789bb2e8169cd9e1acd6c63b5348/YOLOW92/pagesift"
 discussionCount: 1
 promoted: true
 postedAt: "2026-10-31T02:07:17.829Z"
 ---
 
-# pagesift 1.6.0
+# pagesift 1.6.1
 
 **Local-first web & document ingestion engine in Rust — HTTP/browser capture, layout-aware PDF/Office/OCR parsing, persistent sync, verifiable data graphs, and evidence-grounded AI context.**  
 One self-hosted Rust binary with a CLI, Firecrawl v1/v2 & Jina Reader HTTP APIs, an MCP server, a C ABI, and native Python / Node.js packages.

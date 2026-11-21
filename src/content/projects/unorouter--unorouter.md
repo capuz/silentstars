@@ -9,21 +9,21 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [99]
 topics: ["ai-marketplace", "nextjs", "react", "storefront", "tailwind", "unorouter", "ai-api", "character-ai", "llm-gateway", "llm-router"]
-stars: 24
-forks: 12
+stars: 25
+forks: 13
 openIssues: 1
 closedIssues: 0
 watchers: 2
 contributors: 2
 recentReleases: 0
 createdAt: "2026-02-15T22:40:51Z"
-lastCommitAt: "2026-11-20T10:50:17Z"
+lastCommitAt: "2026-11-20T23:05:38Z"
 status: "thriving"
-tags: ["hidden_gem"]
+tags: ["hidden_gem", "fork_magnet"]
 healthScore: 80
 undervaluedScore: 47
 maintainers: ["0-don", "renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/6a3e49ef530b54db48e78f907df7b265d75e0392c2b16a732105bd8711424f9b/unorouter/unorouter"
+openGraphImageUrl: "https://opengraph.githubassets.com/880bcc978bff23cbf378c2d83542b849150617b4f09f30e23500e853ca4277d0/unorouter/unorouter"
 promoted: true
 postedAt: "2026-11-13T18:45:06.666Z"
 ---

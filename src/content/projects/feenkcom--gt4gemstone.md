@@ -12,13 +12,13 @@ forks: 8
 openIssues: 7
 closedIssues: 6
 watchers: 9
-contributors: 12
+contributors: 13
 recentReleases: 0
 createdAt: "2021-07-07T08:15:38Z"
-lastCommitAt: "2026-11-18T15:28:35Z"
+lastCommitAt: "2026-11-20T14:16:49Z"
 status: "thriving"
 tags: ["hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 86
+healthScore: 85
 undervaluedScore: 73
 maintainers: ["chisandrei", "akgrant43", "JurajKubelka"]
 openGraphImageUrl: "https://opengraph.githubassets.com/817361b4addada52a3a5d088227aabde70dcfca08bd399564d9bb1ba30a1598d/feenkcom/gt4gemstone"

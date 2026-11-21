@@ -9,7 +9,7 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [56, 31]
 topics: ["adreno", "android", "debian", "gpu-acceleration", "no-root", "proot", "termux", "turnip", "vulkan", "xfce4"]
-stars: 8
+stars: 7
 forks: 2
 openIssues: 0
 closedIssues: 0
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-20T10:38:56Z"
 lastReleaseAt: "2026-11-19T17:54:53Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 90
-undervaluedScore: 60
+healthScore: 89
+undervaluedScore: 62
 maintainers: ["codex", "soobujmiah", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
 promoted: true

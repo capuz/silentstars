@@ -14,13 +14,13 @@ openIssues: 0
 closedIssues: 2
 watchers: 0
 contributors: 2
-recentReleases: 10
+recentReleases: 9
 createdAt: "2026-07-24T14:05:36Z"
 lastCommitAt: "2026-11-14T15:19:54Z"
 lastReleaseAt: "2026-09-15T09:31:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 60
 maintainers: ["fabledruns", "claude", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1311100791/9a6332dd-17f9-48db-8b8c-95ae61f53036"

@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [98]
 topics: ["agent-memory", "agent-trace", "ai-agent-reasoning", "ai-agents", "ai-code-provenance", "ai-codebase-memory", "ai-coding", "codebase-change-tracking", "decision-memory", "developer-tools"]
-stars: 25
+stars: 26
 forks: 1
 openIssues: 3
 closedIssues: 10
@@ -21,10 +21,10 @@ lastCommitAt: "2026-11-19T22:50:00Z"
 lastReleaseAt: "2026-06-17T03:54:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 93
-undervaluedScore: 46
+healthScore: 92
+undervaluedScore: 45
 maintainers: ["masondelan", "dependabot[bot]", "cursoragent"]
-openGraphImageUrl: "https://opengraph.githubassets.com/ca5e410abf8bd2198953cf685a513c7a616d5740328b8d5f562a57af736ce82f/masondelan/selvedge"
+openGraphImageUrl: "https://opengraph.githubassets.com/af026b9ea73f74d1f2cecd79cd1f8f05b0aac858f3ce7e5ca83add82ea91e83f/masondelan/selvedge"
 discussionCount: 4
 promoted: true
 postedAt: "2026-11-14T22:12:08.760Z"

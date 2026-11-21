@@ -16,10 +16,10 @@ watchers: 5
 contributors: 11
 recentReleases: 0
 createdAt: "2017-08-08T10:07:18Z"
-lastCommitAt: "2026-11-18T16:08:33Z"
+lastCommitAt: "2026-11-20T18:27:35Z"
 lastReleaseAt: "2023-06-22T19:19:27Z"
 status: "thriving"
-tags: ["hidden_gem", "legacy_hero"]
+tags: ["solo_builder", "hidden_gem", "legacy_hero"]
 healthScore: 96
 undervaluedScore: 71
 maintainers: ["credfeto", "dnyw4l3n13"]
