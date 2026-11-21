@@ -52,5 +52,11 @@
     "issue": 95,
     "since": "2026-11-11",
     "until": "2027-02-09"
+  },
+  {
+    "repo": "Ranis2023/ostum-desktop",
+    "issue": 126,
+    "since": "2026-11-21",
+    "until": "2027-02-19"
   }
 ]
