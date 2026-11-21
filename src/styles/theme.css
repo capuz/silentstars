@@ -6,21 +6,21 @@
    createFontStack), with size-adjust then scaled by the measured text width
    of each family's dominant weight (body 400–500, display 700). Liberation/
    Arimo/Cousine are metric clones of Arial and Courier New on Linux. */
-@font-face { font-family: 'Hanken Grotesk Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
+@font-face { font-family: 'Hanken Grotesk Fallback'; font-display: swap; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
   ascent-override: 95.5782%; descent-override: 28.9603%; line-gap-override: 0%; size-adjust: 104.6263%; }
-@font-face { font-family: 'Hanken Grotesk Fallback Roboto'; src: local('Roboto Regular'), local('Roboto-Regular');
+@font-face { font-family: 'Hanken Grotesk Fallback Roboto'; font-display: swap; src: local('Roboto Regular'), local('Roboto-Regular');
   ascent-override: 95.3688%; descent-override: 28.8968%; line-gap-override: 0%; size-adjust: 104.8561%; }
-@font-face { font-family: 'Bricolage Grotesque Fallback'; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
+@font-face { font-family: 'Bricolage Grotesque Fallback'; font-display: swap; src: local('Arial'), local('ArialMT'), local('Liberation Sans'), local('Arimo');
   ascent-override: 84.8841%; descent-override: 24.6438%; line-gap-override: 0%; size-adjust: 109.5611%; }
-@font-face { font-family: 'Bricolage Grotesque Fallback Roboto'; src: local('Roboto Regular'), local('Roboto-Regular');
+@font-face { font-family: 'Bricolage Grotesque Fallback Roboto'; font-display: swap; src: local('Roboto Regular'), local('Roboto-Regular');
   ascent-override: 84.6982%; descent-override: 24.5898%; line-gap-override: 0%; size-adjust: 109.8016%; }
-@font-face { font-family: 'Space Mono Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
+@font-face { font-family: 'Space Mono Fallback'; font-display: swap; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
   ascent-override: 109.8218%; descent-override: 35.3979%; line-gap-override: 0%; size-adjust: 101.9834%; }
-@font-face { font-family: 'Space Mono Fallback Roboto'; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
+@font-face { font-family: 'Space Mono Fallback Roboto'; font-display: swap; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
   ascent-override: 109.8218%; descent-override: 35.3979%; line-gap-override: 0%; size-adjust: 101.9834%; }
-@font-face { font-family: 'Silkscreen Fallback'; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
+@font-face { font-family: 'Silkscreen Fallback'; font-display: swap; src: local('Courier New'), local('CourierNewPSMT'), local('Liberation Mono'), local('Cousine');
   ascent-override: 94.0323%; descent-override: 22.8233%; line-gap-override: 0%; size-adjust: 109.5369%; }
-@font-face { font-family: 'Silkscreen Fallback Roboto'; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
+@font-face { font-family: 'Silkscreen Fallback Roboto'; font-display: swap; src: local('Roboto Mono Regular'), local('RobotoMono-Regular');
   ascent-override: 94.0323%; descent-override: 22.8233%; line-gap-override: 0%; size-adjust: 109.5369%; }
 
 /* ── Light (default) ── */
