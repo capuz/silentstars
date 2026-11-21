@@ -11,7 +11,7 @@ languagePcts: [100]
 topics: ["fastapi", "faststream", "leader-election", "python", "asyncio", "circuit-breaker", "resilience", "cache", "cron", "distributed-lock"]
 stars: 5
 forks: 0
-openIssues: 57
+openIssues: 58
 closedIssues: 364
 watchers: 1
 contributors: 2

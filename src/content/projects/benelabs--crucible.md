@@ -22,7 +22,8 @@ tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 72
 maintainers: ["Dimank92", "semantic-release-bot", "adams813"]
-openGraphImageUrl: "https://opengraph.githubassets.com/25ddb938d0763176a821d7cc044d3aeafffd414e9816ca9bf53b5ab689f37c90/benelabs/crucible"
+openGraphImageUrl: "https://opengraph.githubassets.com/43ff1e8a658ede6fcc92d1dd98b7c2e71781bf67540ef973d4273cd792813fd5/benelabs/crucible"
+postedAt: "2026-11-21T11:46:31.167Z"
 ---
 
 # crucible

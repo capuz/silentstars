@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-21T11:42:07.468Z",
+  "collectedAt": "2026-11-21T13:37:49.771Z",
   "projects": [
     {
       "repo": "eclipse-score/lifecycle",
@@ -107,53 +107,157 @@
       ]
     },
     {
-      "repo": "KaotoIO/kaoto",
-      "slug": "kaotoio--kaoto",
-      "lastCommitAt": "2026-11-21T11:23:24Z",
+      "repo": "clarvia-org/clarvia-graph",
+      "slug": "clarvia-org--clarvia-graph",
+      "lastCommitAt": "2026-11-21T13:30:48Z",
       "signals": {
-        "outsidePRsMerged": 29,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 9,
+      "goodFirstIssueCount": 8,
       "issues": [
         {
-          "number": 3528,
-          "title": "Flaky e2e: metadata.cy.ts — Metadata tab not found under load (untrue ready signal in loading providers)",
-          "url": "https://github.com/KaotoIO/kaoto/issues/3528",
+          "number": 347,
+          "title": "Add reviewed bereavement guidance for Portugal",
+          "url": "https://github.com/clarvia-org/clarvia-graph/issues/347",
           "kind": "good first issue",
-          "createdAt": "2026-07-21T09:09:07Z",
-          "comments": 2
-        },
-        {
-          "number": 3527,
-          "title": "Monaco Source Code Editor shows errors when opening",
-          "url": "https://github.com/KaotoIO/kaoto/issues/3527",
-          "kind": "good first issue",
-          "createdAt": "2026-07-21T07:46:09Z",
-          "comments": 2
-        },
-        {
-          "number": 3445,
-          "title": "[Citrus testing] Paste a complete test route does not update source code nor visualisation",
-          "url": "https://github.com/KaotoIO/kaoto/issues/3445",
-          "kind": "good first issue",
-          "createdAt": "2026-07-07T13:03:47Z",
-          "comments": 4
-        },
-        {
-          "number": 3127,
-          "title": "Extract group `vizNode` creation from `BaseVisualEntity`",
-          "url": "https://github.com/KaotoIO/kaoto/issues/3127",
-          "kind": "good first issue",
-          "createdAt": "2026-04-16T07:53:16Z",
+          "createdAt": "2026-09-24T11:42:20Z",
           "comments": 0
         },
         {
-          "number": 3557,
-          "title": "Topology View: support multiple routes files in VS Code Kaoto",
-          "url": "https://github.com/KaotoIO/kaoto/issues/3557",
+          "number": 346,
+          "title": "Add reviewed bereavement guidance for Germany",
+          "url": "https://github.com/clarvia-org/clarvia-graph/issues/346",
+          "kind": "good first issue",
+          "createdAt": "2026-09-24T11:42:12Z",
+          "comments": 0
+        },
+        {
+          "number": 345,
+          "title": "Add reviewed bereavement guidance for Belgium",
+          "url": "https://github.com/clarvia-org/clarvia-graph/issues/345",
+          "kind": "good first issue",
+          "createdAt": "2026-09-24T11:42:04Z",
+          "comments": 0
+        },
+        {
+          "number": 344,
+          "title": "Add reviewed bereavement guidance for France",
+          "url": "https://github.com/clarvia-org/clarvia-graph/issues/344",
+          "kind": "good first issue",
+          "createdAt": "2026-09-24T11:41:56Z",
+          "comments": 0
+        },
+        {
+          "number": 246,
+          "title": "[Teams] Clarvia volunteer sprint — pick roles and ship one starter issue",
+          "url": "https://github.com/clarvia-org/clarvia-graph/issues/246",
+          "kind": "good first issue",
+          "createdAt": "2026-08-12T09:52:49Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "InnerWarden/inner-warden",
+      "slug": "innerwarden--inner-warden",
+      "lastCommitAt": "2026-11-21T12:46:53Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 7,
+      "issues": [
+        {
+          "number": 229,
+          "title": "Dashboard: announce Copied to screen readers",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/229",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:16Z",
+          "comments": 0
+        },
+        {
+          "number": 228,
+          "title": "CONTRIBUTING: list every gate CI runs, with its local command",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/228",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:14Z",
+          "comments": 0
+        },
+        {
+          "number": 225,
+          "title": "Add benchmark corpus cases for the thin attack categories",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/225",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:09Z",
+          "comments": 0
+        },
+        {
+          "number": 222,
+          "title": "Suggest the nearest command on a typo",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/222",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:03Z",
+          "comments": 0
+        },
+        {
+          "number": 220,
+          "title": "Make four Unix-assuming unit tests pass on Windows",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/220",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:00Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "sunrise-org/sunrise",
+      "slug": "sunrise-org--sunrise",
+      "lastCommitAt": "2026-11-21T13:14:35Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 5,
+      "issues": [
+        {
+          "number": 3973,
+          "title": "parity(client): the F3 FPS/TPS charts send no ServerboundDebugSubscriptionRequestPacket and draw no server tick times",
+          "url": "https://github.com/sunrise-org/sunrise/issues/3973",
           "kind": "help wanted",
-          "createdAt": "2026-07-24T11:06:02Z",
+          "createdAt": "2026-11-21T11:37:16Z",
+          "comments": 3
+        },
+        {
+          "number": 3951,
+          "title": "Bend the player model's limbs and torso (BendableCuboids, used with Player Animation Library)",
+          "url": "https://github.com/sunrise-org/sunrise/issues/3951",
+          "kind": "help wanted",
+          "createdAt": "2026-11-21T11:04:01Z",
+          "comments": 2
+        },
+        {
+          "number": 3974,
+          "title": "parity(client): keep-alives are answered while the window is frozen in the event loop (Windows move/resize), where vanilla holds them",
+          "url": "https://github.com/sunrise-org/sunrise/issues/3974",
+          "kind": "help wanted",
+          "createdAt": "2026-11-21T11:37:17Z",
+          "comments": 1
+        },
+        {
+          "number": 3972,
+          "title": "parity(client): the recipe book never sends ServerboundRecipeBookSeenRecipePacket, so the server keeps every new recipe highlighted",
+          "url": "https://github.com/sunrise-org/sunrise/issues/3972",
+          "kind": "help wanted",
+          "createdAt": "2026-11-21T11:37:14Z",
+          "comments": 1
+        },
+        {
+          "number": 3970,
+          "title": "A replaceable `translateToHand` step for held items (where BendableCuboids turns the item with a bent forearm)",
+          "url": "https://github.com/sunrise-org/sunrise/issues/3970",
+          "kind": "help wanted",
+          "createdAt": "2026-11-21T11:33:20Z",
           "comments": 1
         }
       ]
@@ -211,126 +315,127 @@
       ]
     },
     {
-      "repo": "eljulians/skillfile",
-      "slug": "eljulians--skillfile",
-      "lastCommitAt": "2026-11-21T11:33:52Z",
+      "repo": "iobroker-community-adapters/ioBroker.mihome-vacuum",
+      "slug": "iobroker-community-adapters--iobroker-mihome-vacuum",
+      "lastCommitAt": "2026-11-21T13:27:06Z",
       "signals": {
-        "outsidePRsMerged": 27,
+        "outsidePRsMerged": 28,
         "outsidePRsCapped": false,
-        "approxKloc": 35
-      },
-      "goodFirstIssueCount": 17,
-      "issues": [
-        {
-          "number": 244,
-          "title": "Add npm (skillpm) to the skill search",
-          "url": "https://github.com/eljulians/skillfile/issues/244",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T11:37:54Z",
-          "comments": 0
-        },
-        {
-          "number": 243,
-          "title": "Add GitHub topic search to the skill search",
-          "url": "https://github.com/eljulians/skillfile/issues/243",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T11:37:53Z",
-          "comments": 0
-        },
-        {
-          "number": 242,
-          "title": "Add clawhub.ai to the skill search",
-          "url": "https://github.com/eljulians/skillfile/issues/242",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T11:37:51Z",
-          "comments": 0
-        },
-        {
-          "number": 241,
-          "title": "Add tessl.io to the skill search",
-          "url": "https://github.com/eljulians/skillfile/issues/241",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T11:37:50Z",
-          "comments": 0
-        },
-        {
-          "number": 240,
-          "title": "Add skillmd.com to the skill search",
-          "url": "https://github.com/eljulians/skillfile/issues/240",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T11:37:49Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "legend-esc/carbonchain",
-      "slug": "legend-esc--carbonchain",
-      "lastCommitAt": "2026-11-21T11:34:40Z",
-      "signals": {
-        "outsidePRsMerged": 27,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 15,
-      "issues": [
-        {
-          "number": 1389,
-          "title": "docs: Carbon credit taxonomy and regulatory compliance mapping document (Verra, Gold Standard, CDM)",
-          "url": "https://github.com/legend-esc/carbonchain/issues/1389",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T12:07:14Z",
-          "comments": 0
-        },
-        {
-          "number": 1388,
-          "title": "test(api): Chaos engineering testing for Redis sequence manager network partitions",
-          "url": "https://github.com/legend-esc/carbonchain/issues/1388",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T12:06:41Z",
-          "comments": 0
-        },
-        {
-          "number": 1387,
-          "title": "docs: Verifier node operations and MRV oracle integration technical handbook",
-          "url": "https://github.com/legend-esc/carbonchain/issues/1387",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T12:06:05Z",
-          "comments": 0
-        },
-        {
-          "number": 1386,
-          "title": "security: Automated secrets detection pre-commit hook using Gitleaks",
-          "url": "https://github.com/legend-esc/carbonchain/issues/1386",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T12:05:27Z",
-          "comments": 0
-        },
-        {
-          "number": 1385,
-          "title": "test(contracts): Negative test cases for replay protection nonces across all 4 contracts",
-          "url": "https://github.com/legend-esc/carbonchain/issues/1385",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T12:04:44Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "lucid-softworks/browser",
-      "slug": "lucid-softworks--browser",
-      "lastCommitAt": "2026-11-21T11:36:30Z",
-      "signals": {
-        "outsidePRsMerged": 17,
-        "outsidePRsCapped": false
+        "approxKloc": 25
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 40,
-          "title": "Tracking: WPT conformance",
-          "url": "https://github.com/lucid-softworks/browser/issues/40",
+          "number": 642,
+          "title": "ijai.vacuum.* support (Mop 2S v19, Mop 2 Pro v3)",
+          "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/issues/642",
           "kind": "help wanted",
-          "createdAt": "2026-06-21T21:43:32Z",
+          "createdAt": "2022-08-27T08:16:34Z",
+          "comments": 7
+        }
+      ]
+    },
+    {
+      "repo": "flisk-sh/flisk",
+      "slug": "flisk-sh--flisk",
+      "lastCommitAt": "2026-11-21T13:27:50Z",
+      "signals": {
+        "outsidePRsMerged": 17,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 441,
+      "issues": [
+        {
+          "number": 4896,
+          "title": "refactor(cli): cli/src/utils/service-manifest.ts is 918 lines — the nine field-slice modules exist (service-manifest-{ports,container,depends-on,volumes,providers,...}.ts) but the hub still holds validateServiceManifest (+126), healthCheckErrors (+93), sidecarErrors (+89), validateGeneratedStringFields (+75) and five more; finish the split so each validator lives with its field",
+          "url": "https://github.com/flisk-sh/flisk/issues/4896",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T21:08:20Z",
+          "comments": 0
+        },
+        {
+          "number": 4895,
+          "title": "refactor(cli): cli/src/utils/service-config-checks.ts is 1,023 lines — eight service-config checks live in one file by host layer (checkDockerfilePorts L662 +157, checkRequiredSecrets +98, checkNetworkPorts +93, checkServicePorts +83, checkModelRunner +50, checkSchemaVersions +41, enforceServiceConfigGate +40, checkGpuRuntime +39); split them into `service-config-checks/` concept modules like #4881 did for doctor-wiring",
+          "url": "https://github.com/flisk-sh/flisk/issues/4895",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T21:05:16Z",
+          "comments": 0
+        },
+        {
+          "number": 4894,
+          "title": "refactor(cli): cli/src/commands/status.ts is 702 lines — `strictNotReady` at L57 spans +646 (~the whole file) and the action mixes \"is this service ready\" probes with status printing and exit-code logic; extract `strictNotReady` + its probing helpers into `commands/status/not-ready.ts`, and the rest into `commands/status/action.ts`",
+          "url": "https://github.com/flisk-sh/flisk/issues/4894",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T21:02:11Z",
+          "comments": 0
+        },
+        {
+          "number": 2814,
+          "title": "[security] glob: CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal (.github/npm-cli/package-lock.json)",
+          "url": "https://github.com/flisk-sh/flisk/issues/2814",
+          "kind": "help wanted",
+          "createdAt": "2026-10-31T01:29:46Z",
+          "comments": 1
+        },
+        {
+          "number": 2813,
+          "title": "[security] minimatch: CVE-2026-118764: minimatch has potential denial of service via globparts amplification (.github/npm-cli/package-lock.json)",
+          "url": "https://github.com/flisk-sh/flisk/issues/2813",
+          "kind": "help wanted",
+          "createdAt": "2026-10-31T01:29:44Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "repo": "Agentboxx-dev/Agentboxx",
+      "slug": "agentboxx-dev--agentboxx",
+      "lastCommitAt": "2026-11-21T13:31:30Z",
+      "signals": {
+        "outsidePRsMerged": 14,
+        "outsidePRsCapped": false,
+        "approxKloc": 11
+      },
+      "goodFirstIssueCount": 9,
+      "issues": [
+        {
+          "number": 81,
+          "title": "feat(attestation): external witness anchoring via RFC 3161 timestamping and Rekor transparency log",
+          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/81",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T05:23:18Z",
+          "comments": 0
+        },
+        {
+          "number": 65,
+          "title": "feat(detector): calibrate loop detection thresholds against real agent benchmarks (SWE-bench / GAIA)",
+          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/65",
+          "kind": "good first issue",
+          "createdAt": "2026-11-16T17:54:52Z",
+          "comments": 0
+        },
+        {
+          "number": 66,
+          "title": "feat(export): stream signed events to OpenTelemetry / OTLP collectors",
+          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/66",
+          "kind": "good first issue",
+          "createdAt": "2026-11-16T17:55:57Z",
+          "comments": 0
+        },
+        {
+          "number": 68,
+          "title": "ci(windows): enable Docker sandbox tests on Windows runners",
+          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/68",
+          "kind": "good first issue",
+          "createdAt": "2026-11-16T17:56:58Z",
+          "comments": 0
+        },
+        {
+          "number": 51,
+          "title": "feat(integrations): Add OpenAI Agents SDK tracing processor",
+          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/51",
+          "kind": "good first issue",
+          "createdAt": "2026-11-10T06:35:41Z",
           "comments": 0
         }
       ]
@@ -357,131 +462,95 @@
       ]
     },
     {
-      "repo": "lenny-ts/caddy-analyzer",
-      "slug": "lenny-ts--caddy-analyzer",
-      "lastCommitAt": "2026-11-17T21:19:40Z",
+      "repo": "Aquaticats/Monochromatic",
+      "slug": "aquaticats--monochromatic",
+      "lastCommitAt": "2026-11-21T09:35:54Z",
       "signals": {
-        "outsidePRsMerged": 11,
+        "outsidePRsMerged": 6,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 250,
+          "title": "Decide: how to eliminate per-package mise task `extends` boilerplate (4 prototypes built, vote needed)",
+          "url": "https://github.com/Aquaticats/Monochromatic/issues/250",
+          "kind": "help wanted",
+          "createdAt": "2026-06-11T04:05:41Z",
+          "comments": 3
+        }
+      ]
+    },
+    {
+      "repo": "Aquaticats/Monochromatic",
+      "slug": "aquaticats--monochromatic",
+      "lastCommitAt": "2026-11-21T09:35:54Z",
+      "signals": {
+        "outsidePRsMerged": 6,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 250,
+          "title": "Decide: how to eliminate per-package mise task `extends` boilerplate (4 prototypes built, vote needed)",
+          "url": "https://github.com/Aquaticats/Monochromatic/issues/250",
+          "kind": "help wanted",
+          "createdAt": "2026-06-11T04:05:41Z",
+          "comments": 3
+        }
+      ]
+    },
+    {
+      "repo": "btclib-org/ai-agents-process",
+      "slug": "btclib-org--ai-agents-process",
+      "lastCommitAt": "2026-11-21T13:29:38Z",
+      "signals": {
+        "outsidePRsMerged": 5,
         "outsidePRsCapped": false,
-        "approxKloc": 23
+        "approxKloc": 11
       },
-      "goodFirstIssueCount": 13,
+      "goodFirstIssueCount": 6,
       "issues": [
         {
-          "number": 148,
-          "title": "Document and package the self-hosted web console deployment",
-          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/148",
+          "number": 737,
+          "title": "writing.md: the block that reads <gate wt>'s git directories writes with >, which noclobber refuses where <name> repeats",
+          "url": "https://github.com/btclib-org/ai-agents-process/issues/737",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T15:22:24Z",
+          "createdAt": "2026-11-21T08:37:48Z",
           "comments": 0
         },
         {
-          "number": 147,
-          "title": "Add secure Guard and firewall controls to the web console",
-          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/147",
+          "number": 732,
+          "title": "_gl_idle prints an awk error where iostat prints nothing",
+          "url": "https://github.com/btclib-org/ai-agents-process/issues/732",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T15:22:22Z",
+          "createdAt": "2026-11-21T01:31:58Z",
           "comments": 0
         },
         {
-          "number": 146,
-          "title": "Synchronize Guard state for live administrative actions",
-          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/146",
+          "number": 731,
+          "title": "test-sweep.sh's zsh paste case does not read the sweep line or its work=<work> fence",
+          "url": "https://github.com/btclib-org/ai-agents-process/issues/731",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T15:22:19Z",
+          "createdAt": "2026-11-21T01:31:16Z",
           "comments": 0
         },
         {
-          "number": 145,
-          "title": "Add blocklist feed status and refresh to the web console",
-          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/145",
+          "number": 675,
+          "title": "sweep.sh's marked-file and update-refs checks pass where awk fails",
+          "url": "https://github.com/btclib-org/ai-agents-process/issues/675",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T15:22:16Z",
+          "createdAt": "2026-11-20T08:20:23Z",
           "comments": 0
         },
         {
-          "number": 144,
-          "title": "Add validated configuration and whitelist management to the web console",
-          "url": "https://github.com/lenny-ts/caddy-analyzer/issues/144",
+          "number": 625,
+          "title": "/btclib-inbox stops on one transient HTTP 502 from GitHub",
+          "url": "https://github.com/btclib-org/ai-agents-process/issues/625",
           "kind": "good first issue",
-          "createdAt": "2026-11-17T15:22:14Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "Helemen7/RedNavi",
-      "slug": "helemen7--rednavi",
-      "lastCommitAt": "2026-11-21T11:17:26Z",
-      "signals": {
-        "outsidePRsMerged": 9,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 1,
-          "title": "[Data Collection] Linux IP Discovery & DCN Register Dumps for Navi 31 (RX 7900 XTX)⁠",
-          "url": "https://github.com/Helemen7/RedNavi/issues/1",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T08:50:38Z",
-          "comments": 6
-        },
-        {
-          "number": 2,
-          "title": "[Data Collection] DCN 3.2 HDMI and Secondary DisplayPort Dumps (Navi 32 / 7800 XT)",
-          "url": "https://github.com/Helemen7/RedNavi/issues/2",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T08:52:32Z",
-          "comments": 0
-        },
-        {
-          "number": 23,
-          "title": "[Hardware testing] First read-only runs on RX 7700 XT and RX 7600, plane capture for the 7700 XT",
-          "url": "https://github.com/Helemen7/RedNavi/issues/23",
-          "kind": "help wanted",
-          "createdAt": "2026-11-16T19:04:57Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "Aquaticats/Monochromatic",
-      "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-21T09:35:54Z",
-      "signals": {
-        "outsidePRsMerged": 6,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 250,
-          "title": "Decide: how to eliminate per-package mise task `extends` boilerplate (4 prototypes built, vote needed)",
-          "url": "https://github.com/Aquaticats/Monochromatic/issues/250",
-          "kind": "help wanted",
-          "createdAt": "2026-06-11T04:05:41Z",
-          "comments": 3
-        }
-      ]
-    },
-    {
-      "repo": "Aquaticats/Monochromatic",
-      "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-21T09:35:54Z",
-      "signals": {
-        "outsidePRsMerged": 6,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 250,
-          "title": "Decide: how to eliminate per-package mise task `extends` boilerplate (4 prototypes built, vote needed)",
-          "url": "https://github.com/Aquaticats/Monochromatic/issues/250",
-          "kind": "help wanted",
-          "createdAt": "2026-06-11T04:05:41Z",
-          "comments": 3
+          "createdAt": "2026-11-19T17:46:01Z",
+          "comments": 1
         }
       ]
     },
@@ -538,49 +607,29 @@
       ]
     },
     {
-      "repo": "nmfisher/thermion",
-      "slug": "nmfisher--thermion",
-      "lastCommitAt": "2026-11-21T11:31:21Z",
+      "repo": "IHUI-INF-AI/IHUI-AI",
+      "slug": "ihui-inf-ai--ihui-ai",
+      "lastCommitAt": "2026-11-21T13:26:30Z",
       "signals": {
-        "outsidePRsMerged": 3,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 40,
-          "title": "OBJ/STL asset loading support",
-          "url": "https://github.com/nmfisher/thermion/issues/40",
-          "kind": "good first issue",
-          "createdAt": "2024-06-18T06:23:11Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "parime/glpi-iso27001-management",
-      "slug": "parime--glpi-iso27001-management",
-      "lastCommitAt": "2026-11-21T11:33:14Z",
-      "signals": {
-        "outsidePRsMerged": 3,
+        "outsidePRsMerged": 4,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 487,
-          "title": "Matrice des flux : import d'un export FortiGate (contribution attendue)",
-          "url": "https://github.com/parime/glpi-iso27001-management/issues/487",
+          "number": 22,
+          "title": "🌟 Welcome new contributors! 5 good-first-issues ready",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/22",
           "kind": "help wanted",
-          "createdAt": "2026-11-06T19:07:48Z",
+          "createdAt": "2026-07-27T11:34:04Z",
           "comments": 1
         },
         {
-          "number": 833,
-          "title": "Matrice des flux : import Ubiquiti UniFi (UDM, Cloud Gateways) - contribution attendue",
-          "url": "https://github.com/parime/glpi-iso27001-management/issues/833",
+          "number": 31,
+          "title": "help wanted: 寻求 v2.0 AI 操作系统愿景的社区反馈",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/31",
           "kind": "help wanted",
-          "createdAt": "2026-11-20T21:37:10Z",
+          "createdAt": "2026-08-01T05:44:49Z",
           "comments": 0
         }
       ]
@@ -638,26 +687,6 @@
       ]
     },
     {
-      "repo": "IlyaKuprov/Spinach",
-      "slug": "ilyakuprov--spinach",
-      "lastCommitAt": "2026-11-21T11:30:10Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 13,
-          "title": "[Performance] Linear scaling dipolar network analysis",
-          "url": "https://github.com/IlyaKuprov/Spinach/issues/13",
-          "kind": "good first issue",
-          "createdAt": "2024-05-06T13:03:29Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "MeshLive/meshlive-android",
       "slug": "meshlive--meshlive-android",
       "lastCommitAt": "2026-11-16T12:13:28Z",
@@ -694,26 +723,6 @@
       ]
     },
     {
-      "repo": "Chang-Yo/Dela",
-      "slug": "chang-yo--dela",
-      "lastCommitAt": "2026-11-21T11:38:48Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 199,
-          "title": "【Contributor】Dela贡献者信息展示添加",
-          "url": "https://github.com/Chang-Yo/Dela/issues/199",
-          "kind": "good first issue",
-          "createdAt": "2026-11-06T06:40:47Z",
-          "comments": 5
-        }
-      ]
-    },
-    {
       "repo": "Itqan-community/cms-frontend",
       "slug": "itqan-community--cms-frontend",
       "lastCommitAt": "2026-11-14T15:19:16Z",
@@ -734,46 +743,43 @@
       ]
     },
     {
-      "repo": "hex-dump/perihub",
-      "slug": "hex-dump--perihub",
-      "lastCommitAt": "2026-11-21T11:39:08Z",
+      "repo": "progrium/hyper9",
+      "slug": "progrium--hyper9",
+      "lastCommitAt": "2026-11-21T13:34:42Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
       },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 92,
+          "title": "kvm: test the KVM backend on arm64 Linux",
+          "url": "https://github.com/progrium/hyper9/issues/92",
+          "kind": "good first issue",
+          "createdAt": "2026-11-08T18:28:02Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "adamdecaf/trustprune",
+      "slug": "adamdecaf--trustprune",
+      "lastCommitAt": "2026-11-21T13:28:38Z",
+      "signals": {
+        "outsidePRsMerged": 1,
+        "outsidePRsCapped": false,
+        "approxKloc": 44
+      },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 74,
-          "title": "Flathub package",
-          "url": "https://github.com/hex-dump/perihub/issues/74",
+          "number": 8,
+          "title": "store: windows support (XP?, 7, 8, 8.1, 10)",
+          "url": "https://github.com/adamdecaf/trustprune/issues/8",
           "kind": "help wanted",
-          "createdAt": "2026-11-18T17:17:15Z",
-          "comments": 0
-        },
-        {
-          "number": 2,
-          "title": "Help test PeriHub with your Logitech mouse",
-          "url": "https://github.com/hex-dump/perihub/issues/2",
-          "kind": "help wanted",
-          "createdAt": "2026-10-18T13:05:39Z",
-          "comments": 2
-        },
-        {
-          "number": 18,
-          "title": "Help test PeriHub with your Corsair mouse or keyboard",
-          "url": "https://github.com/hex-dump/perihub/issues/18",
-          "kind": "help wanted",
-          "createdAt": "2026-11-08T12:20:36Z",
-          "comments": 0
-        },
-        {
-          "number": 9,
-          "title": "Support more SteelSeries Apex keyboards",
-          "url": "https://github.com/hex-dump/perihub/issues/9",
-          "kind": "help wanted",
-          "createdAt": "2026-10-18T13:05:48Z",
-          "comments": 0
+          "createdAt": "2017-10-14T19:03:50Z",
+          "comments": 8
         }
       ]
     },
@@ -824,62 +830,6 @@
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "mblua/AgentsCommander",
-      "slug": "mblua--agentscommander",
-      "lastCommitAt": "2026-11-21T11:33:16Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 327,
-          "title": "Remove empty OpenCode section from src/guide/components/HintsTab.tsx",
-          "url": "https://github.com/mblua/AgentsCommander/issues/327",
-          "kind": "good first issue",
-          "createdAt": "2026-05-28T00:14:29Z",
-          "comments": 0
-        },
-        {
-          "number": 325,
-          "title": "Replace or delete stale src-tauri/icons/icon.svg (SummonGate-era portal arch)",
-          "url": "https://github.com/mblua/AgentsCommander/issues/325",
-          "kind": "good first issue",
-          "createdAt": "2026-05-28T00:05:47Z",
-          "comments": 0
-        },
-        {
-          "number": 320,
-          "title": "macOS verification: testers wanted",
-          "url": "https://github.com/mblua/AgentsCommander/issues/320",
-          "kind": "help wanted",
-          "createdAt": "2026-05-27T20:33:11Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "nightscout/nocturne",
-      "slug": "nightscout--nocturne",
-      "lastCommitAt": "2026-11-21T11:26:49Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 276,
-          "title": "Vote for Nocturne to be added to PikaPods",
-          "url": "https://github.com/nightscout/nocturne/issues/276",
-          "kind": "help wanted",
-          "createdAt": "2026-05-31T08:09:59Z",
-          "comments": 1
         }
       ]
     },
@@ -970,43 +920,22 @@
       ]
     },
     {
-      "repo": "MartinPTielemans/ilo",
-      "slug": "martinptielemans--ilo",
-      "lastCommitAt": "2026-11-21T11:33:13Z",
+      "repo": "tomast1337/RCT3PlusPlus",
+      "slug": "tomast1337--rct3plusplus",
+      "lastCommitAt": "2026-11-21T12:31:43Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 3790,
-          "title": "Settings: a row's detail line breaks inside a path",
-          "url": "https://github.com/MartinPTielemans/ilo/issues/3790",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T10:43:22Z",
+          "number": 215,
+          "title": "Render: Metal backend from our Slang shaders (future, low priority)",
+          "url": "https://github.com/tomast1337/RCT3PlusPlus/issues/215",
+          "kind": "help wanted",
+          "createdAt": "2026-11-12T18:11:51Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "Ozero-top/luci-app-adguardhome-lite",
-      "slug": "ozero-top--luci-app-adguardhome-lite",
-      "lastCommitAt": "2026-11-21T11:35:00Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 11
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 1,
-          "title": "置顶 - 收集拦截广告规则",
-          "url": "https://github.com/Ozero-top/luci-app-adguardhome-lite/issues/1",
-          "kind": "good first issue",
-          "createdAt": "2026-11-11T03:13:03Z",
-          "comments": 1
         }
       ]
     }

@@ -15,7 +15,7 @@ watchers: 1
 contributors: 1
 recentReleases: 1
 createdAt: "2026-06-05T01:26:54Z"
-lastCommitAt: "2026-11-21T02:16:53Z"
+lastCommitAt: "2026-11-21T13:32:23Z"
 lastReleaseAt: "2026-08-25T23:07:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
@@ -37,11 +37,11 @@ postedAt: "2026-11-09T03:37:22.051Z"
 ◆ <a href="reports/bioterror_threat_score_csharp.json">C# Canonical Threat Score (JSON)</a><br>
 ◆ <a href="reports/bioterror_threat_score_csharp.xml">C# Canonical Threat Score (XML)</a><br>
 ◆ <a href="reports/investigative_leads.md">Investigative Leads</a></td>
-◆ <a href="evidence/BID-2026-2356/evidence_manifest.json">Evidence Manifest</a><br>
-◆ <a href="evidence/BID-2026-2356/evidence_correlations.json">Evidence Correlations</a><br>
-◆ <a href="evidence/BID-2026-2356/chain_of_custody.md">Chain of Custody</a><br>
-◆ <a href="evidence/BID-2026-2356/forensic_summary.md">Forensic Summary</a><br>
-◆ <a href="evidence/BID-2026-2356/acquisition_summary.md">Acquisition Summary</a></td>
+◆ <a href="evidence/BID-2026-6162/evidence_manifest.json">Evidence Manifest</a><br>
+◆ <a href="evidence/BID-2026-6162/evidence_correlations.json">Evidence Correlations</a><br>
+◆ <a href="evidence/BID-2026-6162/chain_of_custody.md">Chain of Custody</a><br>
+◆ <a href="evidence/BID-2026-6162/forensic_summary.md">Forensic Summary</a><br>
+◆ <a href="evidence/BID-2026-6162/acquisition_summary.md">Acquisition Summary</a></td>
 ◆ <a href="operations/investigation_timeline.md">Investigation Timeline</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.csv">Exposure Matrix (CSV Preview)</a><br>
 ◆ <a href="workbooks/Exposure-Tracking-Matrix.xlsx">Exposure Matrix (Excel)</a></td>
