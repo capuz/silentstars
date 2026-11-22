@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 1
 createdAt: "2026-06-02T16:48:08Z"
-lastCommitAt: "2026-11-20T07:10:11Z"
+lastCommitAt: "2026-11-21T14:16:59Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "under_pressure", "community_hub"]

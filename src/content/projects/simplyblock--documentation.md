@@ -8,7 +8,7 @@ homepage: "https://docs.simplyblock.io"
 language: "Python"
 languages: ["Python"]
 languagePcts: [67]
-stars: 10
+stars: 11
 forks: 2
 openIssues: 3
 closedIssues: 27
@@ -20,9 +20,9 @@ lastCommitAt: "2026-11-20T10:13:45Z"
 status: "thriving"
 tags: []
 healthScore: 96
-undervaluedScore: 77
+undervaluedScore: 76
 maintainers: ["boddumanohar", "wmousa", "michixs"]
-openGraphImageUrl: "https://opengraph.githubassets.com/baef69178e184033e4203cd839669b2a2dee91b70552de05fbd23b2386a082f4/simplyblock/documentation"
+openGraphImageUrl: "https://opengraph.githubassets.com/794e74f4718bd5fc41a1321b83817545428dc92efab188ac69e8be4fe6111654/simplyblock/documentation"
 postedAt: "2026-10-26T09:24:36.515Z"
 ---
 

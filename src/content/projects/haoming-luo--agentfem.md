@@ -15,12 +15,12 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 5
+recentReleases: 4
 createdAt: "2026-07-23T02:43:51Z"
 lastCommitAt: "2026-11-21T12:12:07Z"
 lastReleaseAt: "2026-08-31T11:32:14Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["solo_builder", "hidden_gem"]
 healthScore: 89
 undervaluedScore: 42
 maintainers: ["haoming-luo"]

@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-26T02:25:02Z"
-lastCommitAt: "2026-11-21T13:24:30Z"
+lastCommitAt: "2026-11-21T20:51:32Z"
 lastReleaseAt: "2026-11-08T03:00:10Z"
 status: "newborn"
 tags: ["hidden_gem", "funded", "release_machine"]
 healthScore: 96
 undervaluedScore: 41
 maintainers: ["itbelikethatbruh", "claude", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/e053344b1de699450cb36b56e35527f611244a6977590a82af65f1c01e398b1e/itbelikethatbruh/MKCinema"
+openGraphImageUrl: "https://opengraph.githubassets.com/b873098badabfc4d4609c702e4b81df7ae0a18d25508292258941d297a1e0f7c/itbelikethatbruh/MKCinema"
 fundingLinks: ["KO_FI:https://ko-fi.com/mkcinema"]
 promoted: true
 postedAt: "2026-11-11T17:36:20.558Z"

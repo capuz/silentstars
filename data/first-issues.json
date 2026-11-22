@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-21T13:37:49.771Z",
+  "collectedAt": "2026-11-22T02:17:06.150Z",
   "projects": [
     {
       "repo": "eclipse-score/lifecycle",
@@ -107,158 +107,91 @@
       ]
     },
     {
-      "repo": "clarvia-org/clarvia-graph",
-      "slug": "clarvia-org--clarvia-graph",
-      "lastCommitAt": "2026-11-21T13:30:48Z",
+      "repo": "WebDecoy/FCaptcha",
+      "slug": "webdecoy--fcaptcha",
+      "lastCommitAt": "2026-11-22T02:07:04Z",
       "signals": {
         "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 8,
-      "issues": [
-        {
-          "number": 347,
-          "title": "Add reviewed bereavement guidance for Portugal",
-          "url": "https://github.com/clarvia-org/clarvia-graph/issues/347",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T11:42:20Z",
-          "comments": 0
-        },
-        {
-          "number": 346,
-          "title": "Add reviewed bereavement guidance for Germany",
-          "url": "https://github.com/clarvia-org/clarvia-graph/issues/346",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T11:42:12Z",
-          "comments": 0
-        },
-        {
-          "number": 345,
-          "title": "Add reviewed bereavement guidance for Belgium",
-          "url": "https://github.com/clarvia-org/clarvia-graph/issues/345",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T11:42:04Z",
-          "comments": 0
-        },
-        {
-          "number": 344,
-          "title": "Add reviewed bereavement guidance for France",
-          "url": "https://github.com/clarvia-org/clarvia-graph/issues/344",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T11:41:56Z",
-          "comments": 0
-        },
-        {
-          "number": 246,
-          "title": "[Teams] Clarvia volunteer sprint — pick roles and ship one starter issue",
-          "url": "https://github.com/clarvia-org/clarvia-graph/issues/246",
-          "kind": "good first issue",
-          "createdAt": "2026-08-12T09:52:49Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "InnerWarden/inner-warden",
-      "slug": "innerwarden--inner-warden",
-      "lastCommitAt": "2026-11-21T12:46:53Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 7,
-      "issues": [
-        {
-          "number": 229,
-          "title": "Dashboard: announce Copied to screen readers",
-          "url": "https://github.com/InnerWarden/inner-warden/issues/229",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T09:14:16Z",
-          "comments": 0
-        },
-        {
-          "number": 228,
-          "title": "CONTRIBUTING: list every gate CI runs, with its local command",
-          "url": "https://github.com/InnerWarden/inner-warden/issues/228",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T09:14:14Z",
-          "comments": 0
-        },
-        {
-          "number": 225,
-          "title": "Add benchmark corpus cases for the thin attack categories",
-          "url": "https://github.com/InnerWarden/inner-warden/issues/225",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T09:14:09Z",
-          "comments": 0
-        },
-        {
-          "number": 222,
-          "title": "Suggest the nearest command on a typo",
-          "url": "https://github.com/InnerWarden/inner-warden/issues/222",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T09:14:03Z",
-          "comments": 0
-        },
-        {
-          "number": 220,
-          "title": "Make four Unix-assuming unit tests pass on Windows",
-          "url": "https://github.com/InnerWarden/inner-warden/issues/220",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T09:14:00Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "sunrise-org/sunrise",
-      "slug": "sunrise-org--sunrise",
-      "lastCommitAt": "2026-11-21T13:14:35Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
+        "outsidePRsCapped": true,
+        "approxKloc": 42
       },
       "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 3973,
-          "title": "parity(client): the F3 FPS/TPS charts send no ServerboundDebugSubscriptionRequestPacket and draw no server tick times",
-          "url": "https://github.com/sunrise-org/sunrise/issues/3973",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T11:37:16Z",
-          "comments": 3
-        },
-        {
-          "number": 3951,
-          "title": "Bend the player model's limbs and torso (BendableCuboids, used with Player Animation Library)",
-          "url": "https://github.com/sunrise-org/sunrise/issues/3951",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T11:04:01Z",
-          "comments": 2
-        },
-        {
-          "number": 3974,
-          "title": "parity(client): keep-alives are answered while the window is frozen in the event loop (Windows move/resize), where vanilla holds them",
-          "url": "https://github.com/sunrise-org/sunrise/issues/3974",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T11:37:17Z",
+          "number": 123,
+          "title": "Add Swahili (sw) widget translation",
+          "url": "https://github.com/WebDecoy/FCaptcha/issues/123",
+          "kind": "good first issue",
+          "createdAt": "2026-10-13T14:25:48Z",
           "comments": 1
         },
         {
-          "number": 3972,
-          "title": "parity(client): the recipe book never sends ServerboundRecipeBookSeenRecipePacket, so the server keeps every new recipe highlighted",
-          "url": "https://github.com/sunrise-org/sunrise/issues/3972",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T11:37:14Z",
+          "number": 122,
+          "title": "Add Bengali (bn) widget translation",
+          "url": "https://github.com/WebDecoy/FCaptcha/issues/122",
+          "kind": "good first issue",
+          "createdAt": "2026-10-13T14:25:47Z",
           "comments": 1
         },
         {
-          "number": 3970,
-          "title": "A replaceable `translateToHand` step for held items (where BendableCuboids turns the item with a bent forearm)",
-          "url": "https://github.com/sunrise-org/sunrise/issues/3970",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T11:33:20Z",
+          "number": 126,
+          "title": "Example: Laravel form with server-side verification",
+          "url": "https://github.com/WebDecoy/FCaptcha/issues/126",
+          "kind": "good first issue",
+          "createdAt": "2026-10-13T14:25:53Z",
           "comments": 1
+        },
+        {
+          "number": 125,
+          "title": "Example: Django form with server-side verification",
+          "url": "https://github.com/WebDecoy/FCaptcha/issues/125",
+          "kind": "good first issue",
+          "createdAt": "2026-10-13T14:25:52Z",
+          "comments": 1
+        },
+        {
+          "number": 121,
+          "title": "Add Urdu (ur) widget translation",
+          "url": "https://github.com/WebDecoy/FCaptcha/issues/121",
+          "kind": "good first issue",
+          "createdAt": "2026-10-13T14:25:45Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "velt-lang/velt",
+      "slug": "velt-lang--velt",
+      "lastCommitAt": "2026-11-22T01:42:58Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 3,
+      "issues": [
+        {
+          "number": 52,
+          "title": "Test infra cleanups: fmt gate for goldens, Cranelift release in goldens, flaky timing test, difftest generator",
+          "url": "https://github.com/velt-lang/velt/issues/52",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T08:54:18Z",
+          "comments": 1
+        },
+        {
+          "number": 51,
+          "title": "Diagnostics and fix-its for common TS/JS idioms",
+          "url": "https://github.com/velt-lang/velt/issues/51",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T08:54:14Z",
+          "comments": 0
+        },
+        {
+          "number": 55,
+          "title": "Logical assignment operators `??=`, `&&=`, `||=`",
+          "url": "https://github.com/velt-lang/velt/issues/55",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T08:54:28Z",
+          "comments": 0
         }
       ]
     },
@@ -315,132 +248,6 @@
       ]
     },
     {
-      "repo": "iobroker-community-adapters/ioBroker.mihome-vacuum",
-      "slug": "iobroker-community-adapters--iobroker-mihome-vacuum",
-      "lastCommitAt": "2026-11-21T13:27:06Z",
-      "signals": {
-        "outsidePRsMerged": 28,
-        "outsidePRsCapped": false,
-        "approxKloc": 25
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 642,
-          "title": "ijai.vacuum.* support (Mop 2S v19, Mop 2 Pro v3)",
-          "url": "https://github.com/iobroker-community-adapters/ioBroker.mihome-vacuum/issues/642",
-          "kind": "help wanted",
-          "createdAt": "2022-08-27T08:16:34Z",
-          "comments": 7
-        }
-      ]
-    },
-    {
-      "repo": "flisk-sh/flisk",
-      "slug": "flisk-sh--flisk",
-      "lastCommitAt": "2026-11-21T13:27:50Z",
-      "signals": {
-        "outsidePRsMerged": 17,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 441,
-      "issues": [
-        {
-          "number": 4896,
-          "title": "refactor(cli): cli/src/utils/service-manifest.ts is 918 lines — the nine field-slice modules exist (service-manifest-{ports,container,depends-on,volumes,providers,...}.ts) but the hub still holds validateServiceManifest (+126), healthCheckErrors (+93), sidecarErrors (+89), validateGeneratedStringFields (+75) and five more; finish the split so each validator lives with its field",
-          "url": "https://github.com/flisk-sh/flisk/issues/4896",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T21:08:20Z",
-          "comments": 0
-        },
-        {
-          "number": 4895,
-          "title": "refactor(cli): cli/src/utils/service-config-checks.ts is 1,023 lines — eight service-config checks live in one file by host layer (checkDockerfilePorts L662 +157, checkRequiredSecrets +98, checkNetworkPorts +93, checkServicePorts +83, checkModelRunner +50, checkSchemaVersions +41, enforceServiceConfigGate +40, checkGpuRuntime +39); split them into `service-config-checks/` concept modules like #4881 did for doctor-wiring",
-          "url": "https://github.com/flisk-sh/flisk/issues/4895",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T21:05:16Z",
-          "comments": 0
-        },
-        {
-          "number": 4894,
-          "title": "refactor(cli): cli/src/commands/status.ts is 702 lines — `strictNotReady` at L57 spans +646 (~the whole file) and the action mixes \"is this service ready\" probes with status printing and exit-code logic; extract `strictNotReady` + its probing helpers into `commands/status/not-ready.ts`, and the rest into `commands/status/action.ts`",
-          "url": "https://github.com/flisk-sh/flisk/issues/4894",
-          "kind": "good first issue",
-          "createdAt": "2026-11-20T21:02:11Z",
-          "comments": 0
-        },
-        {
-          "number": 2814,
-          "title": "[security] glob: CVE-2026-118773: Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal (.github/npm-cli/package-lock.json)",
-          "url": "https://github.com/flisk-sh/flisk/issues/2814",
-          "kind": "help wanted",
-          "createdAt": "2026-10-31T01:29:46Z",
-          "comments": 1
-        },
-        {
-          "number": 2813,
-          "title": "[security] minimatch: CVE-2026-118764: minimatch has potential denial of service via globparts amplification (.github/npm-cli/package-lock.json)",
-          "url": "https://github.com/flisk-sh/flisk/issues/2813",
-          "kind": "help wanted",
-          "createdAt": "2026-10-31T01:29:44Z",
-          "comments": 2
-        }
-      ]
-    },
-    {
-      "repo": "Agentboxx-dev/Agentboxx",
-      "slug": "agentboxx-dev--agentboxx",
-      "lastCommitAt": "2026-11-21T13:31:30Z",
-      "signals": {
-        "outsidePRsMerged": 14,
-        "outsidePRsCapped": false,
-        "approxKloc": 11
-      },
-      "goodFirstIssueCount": 9,
-      "issues": [
-        {
-          "number": 81,
-          "title": "feat(attestation): external witness anchoring via RFC 3161 timestamping and Rekor transparency log",
-          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/81",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T05:23:18Z",
-          "comments": 0
-        },
-        {
-          "number": 65,
-          "title": "feat(detector): calibrate loop detection thresholds against real agent benchmarks (SWE-bench / GAIA)",
-          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/65",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T17:54:52Z",
-          "comments": 0
-        },
-        {
-          "number": 66,
-          "title": "feat(export): stream signed events to OpenTelemetry / OTLP collectors",
-          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/66",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T17:55:57Z",
-          "comments": 0
-        },
-        {
-          "number": 68,
-          "title": "ci(windows): enable Docker sandbox tests on Windows runners",
-          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/68",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T17:56:58Z",
-          "comments": 0
-        },
-        {
-          "number": 51,
-          "title": "feat(integrations): Add OpenAI Agents SDK tracing processor",
-          "url": "https://github.com/Agentboxx-dev/Agentboxx/issues/51",
-          "kind": "good first issue",
-          "createdAt": "2026-11-10T06:35:41Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "GRTLCollaboration/GRTeclyn",
       "slug": "grtlcollaboration--grteclyn",
       "lastCommitAt": "2026-11-19T10:45:27Z",
@@ -464,7 +271,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-21T09:35:54Z",
+      "lastCommitAt": "2026-11-22T01:39:57Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -484,7 +291,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-21T09:35:54Z",
+      "lastCommitAt": "2026-11-22T01:39:57Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -502,55 +309,55 @@
       ]
     },
     {
-      "repo": "btclib-org/ai-agents-process",
-      "slug": "btclib-org--ai-agents-process",
-      "lastCommitAt": "2026-11-21T13:29:38Z",
+      "repo": "ErBharatMalhotra/open-source-ai-radar",
+      "slug": "erbharatmalhotra--open-source-ai-radar",
+      "lastCommitAt": "2026-11-22T02:08:18Z",
       "signals": {
         "outsidePRsMerged": 5,
         "outsidePRsCapped": false,
-        "approxKloc": 11
+        "approxKloc": 15
       },
       "goodFirstIssueCount": 6,
       "issues": [
         {
-          "number": 737,
-          "title": "writing.md: the block that reads <gate wt>'s git directories writes with >, which noclobber refuses where <name> repeats",
-          "url": "https://github.com/btclib-org/ai-agents-process/issues/737",
+          "number": 6,
+          "title": "Add CONTRIBUTING.md with setup and PR guidelines",
+          "url": "https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/6",
           "kind": "good first issue",
-          "createdAt": "2026-11-21T08:37:48Z",
+          "createdAt": "2026-11-02T08:12:50Z",
           "comments": 0
         },
         {
-          "number": 732,
-          "title": "_gl_idle prints an awk error where iostat prints nothing",
-          "url": "https://github.com/btclib-org/ai-agents-process/issues/732",
+          "number": 5,
+          "title": "Add FAQ documentation covering common contributor questions",
+          "url": "https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/5",
           "kind": "good first issue",
-          "createdAt": "2026-11-21T01:31:58Z",
+          "createdAt": "2026-11-02T08:12:23Z",
           "comments": 0
         },
         {
-          "number": 731,
-          "title": "test-sweep.sh's zsh paste case does not read the sweep line or its work=<work> fence",
-          "url": "https://github.com/btclib-org/ai-agents-process/issues/731",
+          "number": 4,
+          "title": "Document scoring formula with a real worked example",
+          "url": "https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/4",
           "kind": "good first issue",
-          "createdAt": "2026-11-21T01:31:16Z",
+          "createdAt": "2026-11-02T08:12:16Z",
           "comments": 0
         },
         {
-          "number": 675,
-          "title": "sweep.sh's marked-file and update-refs checks pass where awk fails",
-          "url": "https://github.com/btclib-org/ai-agents-process/issues/675",
+          "number": 3,
+          "title": "Add velocity-only badge variant generator",
+          "url": "https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/3",
           "kind": "good first issue",
-          "createdAt": "2026-11-20T08:20:23Z",
+          "createdAt": "2026-11-02T08:12:09Z",
           "comments": 0
         },
         {
-          "number": 625,
-          "title": "/btclib-inbox stops on one transient HTTP 502 from GitHub",
-          "url": "https://github.com/btclib-org/ai-agents-process/issues/625",
+          "number": 2,
+          "title": "Improve MCP category keywords and topics in config",
+          "url": "https://github.com/ErBharatMalhotra/open-source-ai-radar/issues/2",
           "kind": "good first issue",
-          "createdAt": "2026-11-19T17:46:01Z",
-          "comments": 1
+          "createdAt": "2026-11-02T08:11:12Z",
+          "comments": 0
         }
       ]
     },
@@ -607,30 +414,106 @@
       ]
     },
     {
-      "repo": "IHUI-INF-AI/IHUI-AI",
-      "slug": "ihui-inf-ai--ihui-ai",
-      "lastCommitAt": "2026-11-21T13:26:30Z",
+      "repo": "philpaz/recusal",
+      "slug": "philpaz--recusal",
+      "lastCommitAt": "2026-11-22T01:18:40Z",
       "signals": {
-        "outsidePRsMerged": 4,
+        "outsidePRsMerged": 3,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 10,
+      "issues": [
+        {
+          "number": 262,
+          "title": "Smoke-test each adapter's wheel on its minimum Python, not only on 3.12",
+          "url": "https://github.com/philpaz/recusal/issues/262",
+          "kind": "good first issue",
+          "createdAt": "2026-11-14T16:52:17Z",
+          "comments": 0
+        },
+        {
+          "number": 227,
+          "title": "Cookbook recipe 24: operating the audit log, what a refused append means and the recovery",
+          "url": "https://github.com/philpaz/recusal/issues/227",
+          "kind": "good first issue",
+          "createdAt": "2026-11-05T22:53:31Z",
+          "comments": 0
+        },
+        {
+          "number": 226,
+          "title": "recusal audit repair: the recovery AuditFramingError names, as a command",
+          "url": "https://github.com/philpaz/recusal/issues/226",
+          "kind": "good first issue",
+          "createdAt": "2026-11-05T22:53:29Z",
+          "comments": 0
+        },
+        {
+          "number": 225,
+          "title": "Property tests for the audit line framing: any file ending, the append terminates a complete record or refuses, never fuses",
+          "url": "https://github.com/philpaz/recusal/issues/225",
+          "kind": "good first issue",
+          "createdAt": "2026-11-05T22:53:28Z",
+          "comments": 0
+        },
+        {
+          "number": 171,
+          "title": "Cookbook recipe 17: protect secrets from being read, the read-side twin of recipe 3",
+          "url": "https://github.com/philpaz/recusal/issues/171",
+          "kind": "good first issue",
+          "createdAt": "2026-11-02T23:58:00Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "teh-hippo/ha-govee-led-ble",
+      "slug": "teh-hippo--ha-govee-led-ble",
+      "lastCommitAt": "2026-11-22T02:11:41Z",
+      "signals": {
+        "outsidePRsMerged": 3,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 22,
-          "title": "🌟 Welcome new contributors! 5 good-first-issues ready",
-          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/22",
+          "number": 451,
+          "title": "H7025: owner confirmations by hardware and firmware revision",
+          "url": "https://github.com/teh-hippo/ha-govee-led-ble/issues/451",
           "kind": "help wanted",
-          "createdAt": "2026-07-27T11:34:04Z",
-          "comments": 1
+          "createdAt": "2026-10-24T11:15:12Z",
+          "comments": 3
         },
         {
-          "number": 31,
-          "title": "help wanted: 寻求 v2.0 AI 操作系统愿景的社区反馈",
-          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/31",
+          "number": 662,
+          "title": "Model support request: H6053",
+          "url": "https://github.com/teh-hippo/ha-govee-led-ble/issues/662",
           "kind": "help wanted",
-          "createdAt": "2026-08-01T05:44:49Z",
-          "comments": 0
+          "createdAt": "2026-11-20T03:50:23Z",
+          "comments": 5
+        },
+        {
+          "number": 448,
+          "title": "H6179: owner confirmations by hardware and firmware revision",
+          "url": "https://github.com/teh-hippo/ha-govee-led-ble/issues/448",
+          "kind": "help wanted",
+          "createdAt": "2026-10-24T11:15:03Z",
+          "comments": 2
+        },
+        {
+          "number": 622,
+          "title": "Model support request: H6022",
+          "url": "https://github.com/teh-hippo/ha-govee-led-ble/issues/622",
+          "kind": "help wanted",
+          "createdAt": "2026-11-15T07:51:06Z",
+          "comments": 2
+        },
+        {
+          "number": 636,
+          "title": "Model Support Request: H6159",
+          "url": "https://github.com/teh-hippo/ha-govee-led-ble/issues/636",
+          "kind": "help wanted",
+          "createdAt": "2026-11-16T19:00:10Z",
+          "comments": 2
         }
       ]
     },
@@ -682,6 +565,27 @@
           "url": "https://github.com/baipix/baipix/issues/530",
           "kind": "good first issue",
           "createdAt": "2026-10-24T13:09:35Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "oneydef/EarA-linux",
+      "slug": "oneydef--eara-linux",
+      "lastCommitAt": "2026-11-21T15:35:57Z",
+      "signals": {
+        "outsidePRsMerged": 2,
+        "outsidePRsCapped": false,
+        "approxKloc": 13
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 1,
+          "title": "Supported devices — help us test",
+          "url": "https://github.com/oneydef/EarA-linux/issues/1",
+          "kind": "help wanted",
+          "createdAt": "2026-08-31T11:44:50Z",
           "comments": 0
         }
       ]
@@ -743,64 +647,91 @@
       ]
     },
     {
-      "repo": "progrium/hyper9",
-      "slug": "progrium--hyper9",
-      "lastCommitAt": "2026-11-21T13:34:42Z",
+      "repo": "GUYI-AI/gugu",
+      "slug": "guyi-ai--gugu",
+      "lastCommitAt": "2026-11-22T02:08:03Z",
       "signals": {
-        "outsidePRsMerged": 1,
+        "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 92,
-          "title": "kvm: test the KVM backend on arm64 Linux",
-          "url": "https://github.com/progrium/hyper9/issues/92",
+          "number": 1697,
+          "title": "Unit test fixtures with hard-coded dates expire on their own (serverRestartUpdate941 went red at 2026-11-05 00:00Z)",
+          "url": "https://github.com/GUYI-AI/gugu/issues/1697",
           "kind": "good first issue",
-          "createdAt": "2026-11-08T18:28:02Z",
+          "createdAt": "2026-11-05T01:46:08Z",
+          "comments": 1
+        },
+        {
+          "number": 443,
+          "title": "Quick switcher ranking differs from member suggestions",
+          "url": "https://github.com/GUYI-AI/gugu/issues/443",
+          "kind": "good first issue",
+          "createdAt": "2026-10-26T06:15:37Z",
+          "comments": 0
+        },
+        {
+          "number": 512,
+          "title": "Delivery failure toast incorrectly claims a running task has stopped",
+          "url": "https://github.com/GUYI-AI/gugu/issues/512",
+          "kind": "good first issue",
+          "createdAt": "2026-10-26T16:16:39Z",
+          "comments": 0
+        },
+        {
+          "number": 907,
+          "title": "[Bug] Direct-chat task failure notices cannot be dismissed",
+          "url": "https://github.com/GUYI-AI/gugu/issues/907",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T10:01:15Z",
+          "comments": 1
+        },
+        {
+          "number": 889,
+          "title": "app_search offers the market's only match for an unrelated query",
+          "url": "https://github.com/GUYI-AI/gugu/issues/889",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T08:26:09Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "adamdecaf/trustprune",
-      "slug": "adamdecaf--trustprune",
-      "lastCommitAt": "2026-11-21T13:28:38Z",
+      "repo": "OliverRomhagen/vrigstad-joyride",
+      "slug": "oliverromhagen--vrigstad-joyride",
+      "lastCommitAt": "2026-11-22T01:09:29Z",
       "signals": {
-        "outsidePRsMerged": 1,
+        "outsidePRsMerged": 0,
         "outsidePRsCapped": false,
-        "approxKloc": 44
+        "approxKloc": 25
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 4,
       "issues": [
         {
-          "number": 8,
-          "title": "store: windows support (XP?, 7, 8, 8.1, 10)",
-          "url": "https://github.com/adamdecaf/trustprune/issues/8",
-          "kind": "help wanted",
-          "createdAt": "2017-10-14T19:03:50Z",
-          "comments": 8
-        }
-      ]
-    },
-    {
-      "repo": "oneydef/EarA-linux",
-      "slug": "oneydef--eara-linux",
-      "lastCommitAt": "2026-11-17T17:51:36Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false,
-        "approxKloc": 13
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 1,
-          "title": "Supported devices — help us test",
-          "url": "https://github.com/oneydef/EarA-linux/issues/1",
-          "kind": "help wanted",
-          "createdAt": "2026-08-31T11:44:50Z",
+          "number": 135,
+          "title": "Backgränd 6 is a safehouse",
+          "url": "https://github.com/OliverRomhagen/vrigstad-joyride/issues/135",
+          "kind": "good first issue",
+          "createdAt": "2026-11-13T15:13:50Z",
           "comments": 0
+        },
+        {
+          "number": 75,
+          "title": "Keep map attribution visible in game, and self-host fonts",
+          "url": "https://github.com/OliverRomhagen/vrigstad-joyride/issues/75",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T12:46:58Z",
+          "comments": 0
+        },
+        {
+          "number": 68,
+          "title": "If the game script fails to load, the page shows an error instead of a dead Start button",
+          "url": "https://github.com/OliverRomhagen/vrigstad-joyride/issues/68",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T12:46:41Z",
+          "comments": 1
         }
       ]
     },
@@ -829,6 +760,42 @@
           "url": "https://github.com/SankarGaneshb/rover-slim/issues/8",
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "sonichi/sutando",
+      "slug": "sonichi--sutando",
+      "lastCommitAt": "2026-11-22T01:49:59Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 3028,
+          "title": "bridge-marker-no-leak: the gateway bridge is absent from BOTH consumer collections (:174 tuple, :234 dict) — latent, not unguarded",
+          "url": "https://github.com/sonichi/sutando/issues/3028",
+          "kind": "good first issue",
+          "createdAt": "2026-08-17T11:32:32Z",
+          "comments": 5
+        },
+        {
+          "number": 3224,
+          "title": "sync-memory.sh: hardcoded $HOME/Desktop/sutando fallback exits 0 — a cron that reports success while syncing nothing",
+          "url": "https://github.com/sonichi/sutando/issues/3224",
+          "kind": "help wanted",
+          "createdAt": "2026-08-21T02:45:45Z",
+          "comments": 1
+        },
+        {
+          "number": 2453,
+          "title": "feat: Microsoft Teams channel support (message bridge + meeting join)",
+          "url": "https://github.com/sonichi/sutando/issues/2453",
+          "kind": "help wanted",
+          "createdAt": "2026-07-31T14:02:23Z",
           "comments": 0
         }
       ]
@@ -920,22 +887,22 @@
       ]
     },
     {
-      "repo": "tomast1337/RCT3PlusPlus",
-      "slug": "tomast1337--rct3plusplus",
-      "lastCommitAt": "2026-11-21T12:31:43Z",
+      "repo": "MagnaCapax/PMSS",
+      "slug": "magnacapax--pmss",
+      "lastCommitAt": "2026-11-22T02:01:38Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 215,
-          "title": "Render: Metal backend from our Slang shaders (future, low priority)",
-          "url": "https://github.com/tomast1337/RCT3PlusPlus/issues/215",
-          "kind": "help wanted",
-          "createdAt": "2026-11-12T18:11:51Z",
-          "comments": 0
+          "number": 53,
+          "title": "VM Image Template of PMSS, to be easily used with proxmox",
+          "url": "https://github.com/MagnaCapax/PMSS/issues/53",
+          "kind": "good first issue",
+          "createdAt": "2024-02-15T09:26:05Z",
+          "comments": 4
         }
       ]
     }

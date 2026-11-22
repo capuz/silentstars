@@ -26,7 +26,6 @@ healthScore: 79
 undervaluedScore: 58
 maintainers: ["molimao", "lovable-dev[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/785bf16fe47a69962263bcd26e8644b228759b072ebdc780f8c35475b3aa954d/molimao/iota"
-promoted: true
 postedAt: "2026-10-23T09:39:25.066Z"
 ---
 

@@ -1,7 +1,7 @@
 ---
 repo: "soobujmiah/ternux"
 name: "ternux"
-description: "No-root ARM64 Linux desktops on Android via Termux and PRoot. v2.0.0 supports Debian, Ubuntu, and Alpine with Xfce, Termux:X11, Zink/Turnip, audio, and optional local AI. v3 manager CLI work is in source; service and Control Center are still in development."
+description: "Rootless ARM64 Linux desktops on Android via Termux, PRoot, and Termux:X11. Mesa/Zink/Freedreno graphics paths, with a validated Debian Turnip route; renderer support varies by device. Debian, Ubuntu, Kali Linux, and Alpine setups, plus Android audio/camera and optional local AI. Pinned-source install; APT channel unavailable."
 readmeQualityOk: true
 url: "https://github.com/soobujmiah/ternux"
 homepage: "https://soobujmiah.github.io/ternux/"
@@ -14,14 +14,14 @@ forks: 2
 openIssues: 0
 closedIssues: 0
 watchers: 0
-contributors: 3
-recentReleases: 6
+contributors: 4
+recentReleases: 5
 createdAt: "2026-08-13T01:02:33Z"
-lastCommitAt: "2026-11-20T10:38:56Z"
-lastReleaseAt: "2026-11-19T17:54:53Z"
+lastCommitAt: "2026-11-21T18:43:00Z"
+lastReleaseAt: "2026-11-06T22:21:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 62
 maintainers: ["codex", "soobujmiah", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
@@ -35,4 +35,12 @@ postedAt: "2026-11-19T05:15:56.039Z"
 
 ### A Linux desktop for ARM64 Android — no root required
 
-[Website](https://soobujmiah.github.io/ternux/) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [v2 release and current audit](https://github.com/soobujmiah/ternux/blob/HEAD/docs/release/V2-RELEASE-REPORT.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)
+[Website](https://soobujmiah.github.io/ternux/) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)
+
+## About Ternux
+
+Ternux turns an ARM64 Android phone into a Linux desktop without rooting or
+replacing Android. The source installer below uses a pinned source snapshot.
+Termux hosts the Linux guest in PRoot, Termux:X11 displays the Xfce desktop, and
+PulseAudio connects guest audio to Android. A single CLI installs and manages
+guest systems, desktop sessions, graphics, diagnostics, and optional workloads.

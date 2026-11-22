@@ -15,11 +15,11 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2026-11-10T13:31:37Z"
-lastCommitAt: "2026-11-12T08:43:58Z"
+lastCommitAt: "2026-11-21T15:26:10Z"
 status: "newborn"
-tags: ["hidden_gem"]
-healthScore: 76
-undervaluedScore: 14
+tags: ["solo_builder", "hidden_gem"]
+healthScore: 89
+undervaluedScore: 24
 maintainers: ["GSX-Eis"]
 openGraphImageUrl: "https://opengraph.githubassets.com/19f3efeabec58c54578bcf13aae23407bb788662c8eb17f32bfb2d23f498a6fa/GSX-Eis/jq-factor-lab"
 promoted: true
@@ -28,8 +28,10 @@ postedAt: "2026-11-16T04:39:55.630Z"
 
 # JQ Factor Lab
 
-English | [简体中文](https://github.com/GSX-Eis/jq-factor-lab/blob/HEAD/README.zh-CN.md)
+**An AI-native quantitative research harness for multi-factor computation and synthesis, backtesting, and anti-overfitting statistical evaluation through CLI and MCP.**
 
-**Local factor research with Python modules and a CLI for your research harness.**
+English · [简体中文](https://github.com/GSX-Eis/jq-factor-lab/blob/HEAD/README.zh-CN.md)
 
-Run factor calculations and evaluations on your own compute, keep datasets and outputs local, and connect research steps to your existing scheduler, experiment runner, or agent. JQ Factor Lab provides a shared factor interface, DuckDB data access, point-in-time price adjustment, forward returns, Alphalens evaluation, and factor synthesis modules.
+## Why this exists
+
+JQ Factor Lab runs a local, inspectable research loop with DuckDB on one machine. The same evaluation engine covers daily cross-sections and minute-Bar time series. Agents can preflight a command, parse one strict JSON response, and trace the result to the artifacts and their statistical gates.

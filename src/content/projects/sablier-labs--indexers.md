@@ -11,13 +11,13 @@ languagePcts: [98]
 topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "the-graph", "token-streaming", "decentralized-finance", "defi", "real-time-finance"]
 stars: 16
 forks: 5
-openIssues: 9
+openIssues: 10
 closedIssues: 183
 watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-11-21T00:03:56Z"
+lastCommitAt: "2026-11-22T00:04:37Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]

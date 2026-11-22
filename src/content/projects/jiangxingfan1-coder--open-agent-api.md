@@ -7,8 +7,8 @@ url: "https://github.com/jiangxingfan1-coder/Open-Agent-API"
 homepage: "https://openagentapi.pages.dev/"
 language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
-languagePcts: [69, 21]
-topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted", "coding-agents", "human-in-the-loop", "dsh-plugin"]
+languagePcts: [69, 20]
+topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted", "coding-agents", "human-in-the-loop", "dsh-plugin", "mcp-server"]
 stars: 2
 forks: 0
 openIssues: 1
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 4
 createdAt: "2026-11-13T23:45:35Z"
-lastCommitAt: "2026-11-21T12:58:13Z"
+lastCommitAt: "2026-11-21T22:25:33Z"
 lastReleaseAt: "2026-11-21T09:34:10Z"
 status: "newborn"
 tags: ["hidden_gem"]
-healthScore: 74
+healthScore: 69
 undervaluedScore: 56
 maintainers: ["jiangxingfan1-coder"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f4f807ccb0d883bbe28bcf85c09d7c1febc65c1ae779ca746c7b9db3dc317c3a/jiangxingfan1-coder/Open-Agent-API"
+openGraphImageUrl: "https://opengraph.githubassets.com/46fe1a0cfbcb1710d30c0e0c7d93d6bea46d988c7c3d70382547ec0d1c6e0218/jiangxingfan1-coder/Open-Agent-API"
 promoted: true
 postedAt: "2026-11-20T12:33:44.346Z"
 ---
