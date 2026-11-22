@@ -2877,5 +2877,29 @@
         "postedAt": "2026-11-21T11:46:31.167Z"
       }
     }
+  },
+  {
+    "repo": "NexusFox88/Hexagon",
+    "slug": "nexusfox88--hexagon",
+    "postedAt": "2026-11-22T02:21:53.340Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2uklz3wh62t",
+        "postedAt": "2026-11-22T02:21:53.340Z"
+      }
+    },
+    "communityPick": true
+  },
+  {
+    "repo": "BYPASS-IDC/TWIN-AI",
+    "slug": "bypass-idc--twin-ai",
+    "postedAt": "2026-11-22T02:21:58.516Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2ukm5wlon2f",
+        "postedAt": "2026-11-22T02:21:58.516Z"
+      }
+    },
+    "communityPick": true
   }
 ]
