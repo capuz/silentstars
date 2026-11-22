@@ -9,7 +9,7 @@ language: "Swift"
 languages: ["Swift"]
 languagePcts: [99]
 topics: ["ai-agents", "cli", "macos", "mcp", "mcp-server", "model-context-protocol", "network-diagnostics", "network-monitor", "swift", "wifi"]
-stars: 5
+stars: 6
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-27T22:53:53Z"
-lastCommitAt: "2026-11-22T01:59:46Z"
+lastCommitAt: "2026-11-22T07:00:34Z"
 lastReleaseAt: "2026-10-31T15:03:30Z"
 status: "newborn"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["hidden_gem", "release_machine"]
 healthScore: 88
-undervaluedScore: 57
+undervaluedScore: 56
 maintainers: ["seifip"]
-openGraphImageUrl: "https://opengraph.githubassets.com/d8fc7632721de8739b6dbc95e6f75af7dec07cf0b4f715d6cd38640a9fcfcad4/seifip/kilobat-cli"
+openGraphImageUrl: "https://opengraph.githubassets.com/35edd01078023c2347f3de2ef138acb9b26142b4a6b3efbfddf0dd1097af424f/seifip/kilobat-cli"
 promoted: true
 postedAt: "2026-10-30T11:11:14.626Z"
 ---

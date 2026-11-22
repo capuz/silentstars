@@ -1,45 +1,50 @@
 ---
 repo: "chipfighter/context-attachment-manager"
 name: "context-attachment-manager"
-description: "A local plugin for image-heavy chats in Codex, Claude Code and other AI agents: earlier images become short placeholders instead of going out with every message, the model fetches the original back by its ID (also after compaction), and the prompt cache keeps working."
+description: "Keep long, image-heavy Codex and Claude Code chats fast: earlier images become ID placeholders the model fetches back on demand, even after compaction. Local, cache-friendly, MIT."
 readmeQualityOk: true
 url: "https://github.com/chipfighter/context-attachment-manager"
 language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "claude-code", "claude-code-plugin", "image-generation", "ai-agents", "multimodal"]
-stars: 813
-forks: 75
+stars: 814
+forks: 76
 openIssues: 0
 closedIssues: 13
 watchers: 1
-contributors: 6
+contributors: 7
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"
-lastCommitAt: "2026-11-20T02:12:37Z"
+lastCommitAt: "2026-11-22T10:57:52Z"
 lastReleaseAt: "2026-10-21T13:07:33Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
 healthScore: 99
 undervaluedScore: 26
-maintainers: ["chipfighter", "inhm112", "Aaqibhafeezkhan"]
+maintainers: ["chipfighter", "IbukiFuko", "inhm112"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1384702527/6eb1460c-2d64-4c28-a917-848d562824d6"
 discussionCount: 0
 promoted: true
 postedAt: "2026-10-24T08:14:50.030Z"
 ---
 
-## What it does
+## Get started in three steps
 
-An agent normally sends every earlier image again with each message, so a long chat with many images gets slow and can stop going through. This plugin numbers each image (`IMG-001`, `IMG-002`, …) and sends earlier ones as short placeholders instead:
+**1. Install.** Send this to your agent. It identifies its platform and installs the right setup:
 
-- **The model fetches what it needs**: when it has to look at an earlier image again, it gets the original back by its ID.
-- **It can tell images apart**: the model notes one line on what each image shows, plus your comments on it. These stay in the placeholders, also after the chat is compacted.
-- **The cache keeps working**: a placeholder is written once and then stays the same, so the earlier chat is still read from the model's prompt cache. See [the design](#design-keep-the-cache-working).
-- **Nothing is deleted**: your original images and chat history stay as they are.
+```text
+Install Context Attachment Manager for me, following https://github.com/chipfighter/context-attachment-manager/blob/main/INSTALL.md
+```
 
-It is on by default; you do not need to open the panel. Typical uses: image and video creation, scanned documents, computer and browser use.
+Then restart the agent (in Claude Desktop, start a new Code session). To do it by hand, see [installation, updates and uninstall](https://github.com/chipfighter/context-attachment-manager/blob/HEAD/INSTALL.md).
 
-## Install
+**2. Work as usual.** The plugin is on by default. Images from earlier turns go out as one-line placeholders; new images and the references you pin go out as they are. A placeholder looks like this:
 
-Send this to your agent. It identifies its platform and installs the right setup:
+```text
+[Image IMG-004 omitted | shot-1.png | generated image | turn 2 | 505×505]
+Features: place: Street | Qinghe | medium shot, umbrella, lanterns
+For the original, call cam_view_image with "IMG-004".
+```
+
+**3. The model fetches by ID.** When it needs to look at an earlier image again, it fetches the original by its ID, also after compaction. Nothing is deleted, and your images and chat history stay on your computer.

@@ -11,13 +11,13 @@ languagePcts: [56]
 topics: ["cm1", "cmsystem", "content-creation", "content-generation", "content-management", "content-management-system", "content-marketing", "content-platform", "percussion", "percussioncms"]
 stars: 10
 forks: 1
-openIssues: 53
-closedIssues: 2974
+openIssues: 47
+closedIssues: 2982
 watchers: 0
 contributors: 16
 recentReleases: 0
 createdAt: "2023-09-27T14:06:28Z"
-lastCommitAt: "2026-11-22T00:22:35Z"
+lastCommitAt: "2026-11-22T03:09:24Z"
 lastReleaseAt: "2026-06-27T03:53:03Z"
 status: "thriving"
 tags: ["solo_builder"]

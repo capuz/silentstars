@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-21T18:48:59Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 66
 maintainers: ["MovieHolic-Plex", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ebdd4eaaef627462058b5080c5da892466606c49b73753639c8090fe4482ce46/MovieHolic-Plex/OpenRPGMaker"

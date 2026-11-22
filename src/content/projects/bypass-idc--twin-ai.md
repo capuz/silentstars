@@ -8,7 +8,7 @@ homepage: "https://twinaistudio.com"
 language: "Python"
 languages: ["Python", "TypeScript"]
 languagePcts: [70, 21]
-topics: ["digital-twin", "lip-sync", "speech-to-text", "tauri", "text-to-speech", "virtual-camera", "voice-cloning"]
+topics: ["digital-twin", "lip-sync", "speech-to-text", "tauri", "text-to-speech", "virtual-camera", "voice-cloning", "ai-assistant", "ai-avatar", "conversational-ai"]
 stars: 1
 forks: 0
 openIssues: 0
@@ -27,6 +27,7 @@ maintainers: ["alidexter001"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1466925640/e1ad2956-0a9d-4861-a1f1-84bfba168812"
 fundingLinks: ["KO_FI:https://ko-fi.com/smartkey001"]
 promoted: true
+postedAt: "2026-11-22T02:21:58.516Z"
 ---
 
 # TWIN AI

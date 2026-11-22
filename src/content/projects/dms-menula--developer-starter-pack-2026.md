@@ -11,16 +11,16 @@ forks: 11
 openIssues: 0
 closedIssues: 1
 watchers: 6
-contributors: 9
+contributors: 11
 recentReleases: 1
 createdAt: "2025-12-16T13:19:26Z"
-lastCommitAt: "2026-11-17T05:13:20Z"
+lastCommitAt: "2026-11-22T05:55:06Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 87
-undervaluedScore: 55
-maintainers: ["DMS-Menula", "DMS-ranil", "Yuzu-Peel"]
+healthScore: 91
+undervaluedScore: 56
+maintainers: ["DMS-Menula", "DMS-ranil", "DPWonder"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"
 discussionCount: 1
 postedAt: "2026-10-23T12:35:25.143Z"

@@ -11,7 +11,7 @@ languagePcts: [98]
 topics: ["payloadcms", "portal", "react", "typescript", "website"]
 stars: 7
 forks: 0
-openIssues: 33
+openIssues: 37
 closedIssues: 820
 watchers: 0
 contributors: 4

@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
 languagePcts: [64, 21]
 topics: ["agent-infrastructure", "agent-sdk", "ai-agents", "python", "sandbox", "self-hosted", "typescript"]
-stars: 5
+stars: 8
 forks: 0
 openIssues: 1
 closedIssues: 0
@@ -20,11 +20,12 @@ createdAt: "2026-11-20T04:17:47Z"
 lastCommitAt: "2026-11-21T10:58:26Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 70
-undervaluedScore: 17
+healthScore: 69
+undervaluedScore: 16
 maintainers: ["NexusFox88"]
-openGraphImageUrl: "https://opengraph.githubassets.com/136db3c68ce95135e772a0890dc9217afe7ffc4a010e7e6fe29520c054dfe699/NexusFox88/Hexagon"
+openGraphImageUrl: "https://opengraph.githubassets.com/6400b309b94dad56e2ee85c16d4c6fda349047868e2481f757efbe46ceaa06f0/NexusFox88/Hexagon"
 promoted: true
+postedAt: "2026-11-22T02:21:53.340Z"
 ---
 
 Bring your Sandbox, Harness and LLM. Ship headless agents through Python, TypeScript or REST.
