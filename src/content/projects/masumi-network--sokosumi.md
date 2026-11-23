@@ -16,7 +16,7 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-22T09:37:56Z"
+lastCommitAt: "2026-11-23T10:00:26Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
@@ -31,4 +31,4 @@ postedAt: "2026-09-06T08:08:53.944Z"
 
 Sokosumi is a marketplace platform. This monorepo is the web app, the Core API, native Apple apps, the developer CLI, and shared packages.
 
-Sokosumi Social supports connecting, scheduling, and publishing on X, YouTube, LinkedIn, Instagram, and Facebook in every workspace. TikTok and other platforms remain Coming soon. Ads is open in every workspace. See the [Social API notes](https://github.com/masumi-network/sokosumi/blob/HEAD/docs/coworker/social-posts-api.md) for publishing rules and access.
+Sokosumi Social supports connecting, scheduling, and publishing on X, YouTube, LinkedIn, Instagram, and Facebook in every workspace. TikTok is on for every workspace when Core has a Zernio key, and stays Coming soon without one. Other platforms remain Coming soon. Ads is open in every workspace. See the [Social API notes](https://github.com/masumi-network/sokosumi/blob/HEAD/docs/coworker/social-posts-api.md) for publishing rules and access.

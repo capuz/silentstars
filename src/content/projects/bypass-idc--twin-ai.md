@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-21T21:19:17Z"
 lastReleaseAt: "2026-11-21T21:02:12Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 22
 maintainers: ["alidexter001"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1466925640/e1ad2956-0a9d-4861-a1f1-84bfba168812"

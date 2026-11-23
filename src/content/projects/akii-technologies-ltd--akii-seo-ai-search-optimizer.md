@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-13T09:10:32Z"
 lastReleaseAt: "2026-05-26T08:58:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 77
+healthScore: 71
 undervaluedScore: 18
 maintainers: ["akii-technologies"]
 openGraphImageUrl: "https://opengraph.githubassets.com/94855d1c91bc68205f1f0157ebf5772bf46b336184f0487f381018594ba33260/akii-technologies-ltd/akii-seo-ai-search-optimizer"

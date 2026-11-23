@@ -11,17 +11,17 @@ languagePcts: [99]
 topics: ["database", "database-migrations", "database-schema", "database-tools", "mariadb", "migration-tool", "mysql", "sqlite", "clickhouse", "schema-migration"]
 stars: 21
 forks: 3
-openIssues: 26
-closedIssues: 1549
+openIssues: 73
+closedIssues: 1551
 watchers: 0
 contributors: 4
 recentReleases: 7
 createdAt: "2025-06-01T23:22:06Z"
-lastCommitAt: "2026-11-22T11:38:57Z"
+lastCommitAt: "2026-11-23T10:19:24Z"
 lastReleaseAt: "2026-09-22T21:57:50Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 75
 maintainers: ["denisvmedia", "renovate[bot]", "ptah-automation[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5ca65b233609a6597a366fda287b97868b1be917e625b50b0f9816696e09dc24/stokaro/ptah"

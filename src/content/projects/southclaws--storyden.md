@@ -11,19 +11,19 @@ languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 351
 forks: 42
-openIssues: 74
-closedIssues: 199
+openIssues: 72
+closedIssues: 201
 watchers: 9
 contributors: 18
 recentReleases: 0
 createdAt: "2021-11-15T14:54:54Z"
-lastCommitAt: "2026-11-14T19:51:09Z"
+lastCommitAt: "2026-11-23T08:01:49Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero"]
-healthScore: 90
+healthScore: 93
 undervaluedScore: 38
-maintainers: ["Southclaws", "LEnc95", "renovate[bot]"]
+maintainers: ["Southclaws", "renovate[bot]", "LEnc95"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"
 discussionCount: 8
 postedAt: "2026-08-30T01:05:03.111Z"

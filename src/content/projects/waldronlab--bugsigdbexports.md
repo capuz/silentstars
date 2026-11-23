@@ -16,10 +16,10 @@ watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2021-07-20T16:35:07Z"
-lastCommitAt: "2026-11-22T10:59:45Z"
+lastCommitAt: "2026-11-23T09:59:49Z"
 lastReleaseAt: "2022-01-05T03:21:41Z"
 status: "thriving"
-tags: ["legacy_hero"]
+tags: ["solo_builder", "legacy_hero"]
 healthScore: 96
 undervaluedScore: 89
 maintainers: ["actions-user", "lwaldron"]

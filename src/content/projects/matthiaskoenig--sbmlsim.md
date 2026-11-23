@@ -11,13 +11,13 @@ languagePcts: [99]
 topics: ["sbml", "sbml-simulation"]
 stars: 13
 forks: 8
-openIssues: 13
-closedIssues: 245
+openIssues: 4
+closedIssues: 254
 watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2019-10-02T11:24:50Z"
-lastCommitAt: "2026-11-22T11:48:15Z"
+lastCommitAt: "2026-11-23T01:35:41Z"
 lastReleaseAt: "2020-11-11T22:00:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
@@ -30,6 +30,6 @@ postedAt: "2026-11-16T12:05:24.686Z"
 
 # sbmlsim: SBML simulation made easy
 
-`sbmlsim` is a collection of python utilities for the simulation of models in the [Systems Biology Markup Language](https://sbml.org) (SBML), with four simulation engines, compared in the [benchmarks](https://matthiaskoenig.github.io/sbmlsim/benchmarks/): the Rust engine core of [sbmlsim-core](https://github.com/matthiaskoenig/sbmlsim-core) (the model compiled to WebAssembly), [libroadrunner](https://libroadrunner.org), which is the default and the reference the others are measured against, [COPASI](https://copasi.org) and [AMICI](https://github.com/AMICI-dev/AMICI).
+`sbmlsim` is a collection of python utilities for the simulation of models in the [Systems Biology Markup Language](https://sbml.org) (SBML), with four simulation engines, compared in the [benchmarks](https://matthiaskoenig.github.io/sbmlsim/benchmarks/): the Rust engine [sbmlsim-core](https://github.com/matthiaskoenig/sbmlsim-core) (the model compiled to WebAssembly), [libroadrunner](https://libroadrunner.org), which is the default and the reference the others are measured against, [COPASI](https://copasi.org) and [AMICI](https://github.com/AMICI-dev/AMICI).
 
 Features include

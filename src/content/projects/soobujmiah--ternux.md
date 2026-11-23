@@ -9,7 +9,7 @@ language: "Shell"
 languages: ["Shell", "Python"]
 languagePcts: [56, 31]
 topics: ["adreno", "android", "debian", "gpu-acceleration", "no-root", "proot", "termux", "turnip", "vulkan", "xfce4"]
-stars: 7
+stars: 8
 forks: 2
 openIssues: 0
 closedIssues: 0
@@ -17,12 +17,12 @@ watchers: 0
 contributors: 4
 recentReleases: 5
 createdAt: "2026-08-13T01:02:33Z"
-lastCommitAt: "2026-11-21T18:43:00Z"
+lastCommitAt: "2026-11-23T09:25:31Z"
 lastReleaseAt: "2026-11-06T22:21:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
 healthScore: 89
-undervaluedScore: 62
+undervaluedScore: 60
 maintainers: ["codex", "soobujmiah", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
 promoted: true
@@ -35,12 +35,4 @@ postedAt: "2026-11-19T05:15:56.039Z"
 
 ### A Linux desktop for ARM64 Android — no root required
 
-[Website](https://soobujmiah.github.io/ternux/) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)
-
-## About Ternux
-
-Ternux turns an ARM64 Android phone into a Linux desktop without rooting or
-replacing Android. The source installer below uses a pinned source snapshot.
-Termux hosts the Linux guest in PRoot, Termux:X11 displays the Xfce desktop, and
-PulseAudio connects guest audio to Android. A single CLI installs and manages
-guest systems, desktop sessions, graphics, diagnostics, and optional workloads.
+[Website](https://soobujmiah.github.io/ternux/) · [Origin story](https://github.com/soobujmiah/ternux/blob/HEAD/ORIGIN.md) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)

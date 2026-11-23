@@ -11,12 +11,12 @@ languagePcts: [71]
 stars: 8
 forks: 39
 openIssues: 100
-closedIssues: 238
+closedIssues: 239
 watchers: 1
 contributors: 61
 recentReleases: 7
 createdAt: "2025-09-09T09:52:08Z"
-lastCommitAt: "2026-11-20T10:10:27Z"
+lastCommitAt: "2026-11-23T09:54:27Z"
 lastReleaseAt: "2026-10-29T14:05:09Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]

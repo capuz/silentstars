@@ -11,7 +11,7 @@ languagePcts: [59, 22]
 topics: ["typo3", "typo3-cms-extension", "typo3-extension"]
 stars: 16
 forks: 4
-openIssues: 8
+openIssues: 12
 closedIssues: 54
 watchers: 3
 contributors: 9
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-19T06:56:30Z"
 lastReleaseAt: "2025-05-25T11:43:10Z"
 status: "thriving"
 tags: []
-healthScore: 95
-undervaluedScore: 70
+healthScore: 93
+undervaluedScore: 69
 maintainers: ["konradmichalik", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/699bfec2960999ab3c1a49c1fe3df7fce147d3498301c81316f348255534c817/xima-media/xima-typo3-frontend-edit"
 postedAt: "2026-09-20T08:56:12.336Z"

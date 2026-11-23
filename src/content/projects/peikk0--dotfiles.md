@@ -7,7 +7,7 @@ url: "https://github.com/peikk0/dotfiles"
 homepage: "https://gitlab.com/peikk0/dotfiles"
 language: "Shell"
 languages: ["Shell", "Lua"]
-languagePcts: [52, 30]
+languagePcts: [52, 31]
 topics: ["dotfiles", "zsh", "vim", "i3", "mutt", "git", "tmux", "irssi", "bash", "x11"]
 stars: 7
 forks: 3
@@ -17,7 +17,7 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2013-02-03T22:10:38Z"
-lastCommitAt: "2026-11-22T07:52:24Z"
+lastCommitAt: "2026-11-22T13:42:18Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 77

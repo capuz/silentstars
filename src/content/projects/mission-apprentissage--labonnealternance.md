@@ -10,8 +10,8 @@ languages: ["TypeScript"]
 languagePcts: [95]
 stars: 11
 forks: 6
-openIssues: 440
-closedIssues: 1794
+openIssues: 438
+closedIssues: 1805
 watchers: 3
 contributors: 18
 recentReleases: 0
@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-20T13:00:04Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 78
 maintainers: ["kevbarns", "alanlr", "0x68776e64"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4b94b77cb77a58538d52bb60fa6d6f3ad22c3bad55dcb2324b9ccf578d592fe7/mission-apprentissage/labonnealternance"

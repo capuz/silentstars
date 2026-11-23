@@ -9,7 +9,7 @@ language: "Svelte"
 languages: ["Svelte", "TypeScript"]
 languagePcts: [49, 48]
 stars: 19
-forks: 82
+forks: 83
 openIssues: 2
 closedIssues: 5
 watchers: 3
@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-20T19:31:21Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 93
+healthScore: 92
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "jrasm91", "immich-push-o-matic[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c980a57e29f8aaafbcccb68b1f80f314d90b7a42eeabbfafc216ab5c73ed2cc0/immich-app/static-pages"

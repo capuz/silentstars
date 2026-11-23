@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
 languagePcts: [65, 24]
 topics: ["ai-assistant", "ai-companion", "chatbot", "coding-agent", "home-assistant", "llm", "local-llm", "mcp", "mcp-server", "nodejs"]
-stars: 4
+stars: 5
 forks: 1
 openIssues: 5
 closedIssues: 9
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
 healthScore: 92
-undervaluedScore: 68
+undervaluedScore: 65
 maintainers: ["farena-ai", "Guilsc"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"
 discussionCount: 1

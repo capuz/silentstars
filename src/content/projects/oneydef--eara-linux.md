@@ -11,18 +11,18 @@ languagePcts: [96]
 topics: ["anc", "bluetooth", "bluez", "cmf", "earbuds", "flatpak", "gnome", "gtk4", "libadwaita", "linux"]
 stars: 41
 forks: 6
-openIssues: 3
-closedIssues: 2
+openIssues: 2
+closedIssues: 3
 watchers: 1
 contributors: 5
 recentReleases: 10
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-21T15:35:57Z"
+lastCommitAt: "2026-11-23T09:25:36Z"
 lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 82
-undervaluedScore: 41
+healthScore: 87
+undervaluedScore: 44
 maintainers: ["oneydef", "mendumohanpramodh-debug", "alevas"]
 openGraphImageUrl: "https://opengraph.githubassets.com/38e0c1783c6dca8c0eccf9b4349d6970d147441d9e8c8160d746415ad42fc278/oneydef/EarA-linux"
 fundingLinks: ["BUY_ME_A_COFFEE:https://buymeacoffee.com/r18fon7sj9"]

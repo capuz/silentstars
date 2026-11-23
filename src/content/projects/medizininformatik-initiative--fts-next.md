@@ -11,13 +11,13 @@ languagePcts: [99]
 topics: ["deidentification", "fhir", "transfer"]
 stars: 15
 forks: 2
-openIssues: 27
-closedIssues: 434
+openIssues: 26
+closedIssues: 435
 watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-11-20T16:24:21Z"
+lastCommitAt: "2026-11-23T09:51:43Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

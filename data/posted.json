@@ -2483,15 +2483,18 @@
     }
   },
   {
-    "repo": "aatbit/xflog",
-    "slug": "aatbit--xflog",
+    "repo": "aakashH242/xflog",
+    "slug": "aakashh242--xflog",
     "postedAt": "2026-11-06T13:31:27.351Z",
     "platforms": {
       "bsky": {
         "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3mznikkf67t23",
         "postedAt": "2026-11-06T13:31:27.351Z"
       }
-    }
+    },
+    "previousSlugs": [
+      "aatbit--xflog"
+    ]
   },
   {
     "repo": "anondotli/anon.li",

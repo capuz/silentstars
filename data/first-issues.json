@@ -1,55 +1,108 @@
 {
-  "collectedAt": "2026-11-22T11:56:49.361Z",
+  "collectedAt": "2026-11-23T10:24:55.452Z",
   "projects": [
     {
-      "repo": "eclipse-score/lifecycle",
-      "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-20T10:10:27Z",
+      "repo": "swarmauri/swarmauri-sdk",
+      "slug": "swarmauri--swarmauri-sdk",
+      "lastCommitAt": "2026-11-23T10:16:56Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 12,
+      "goodFirstIssueCount": 76,
       "issues": [
         {
-          "number": 329,
-          "title": "Mocks for lifecycle",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
+          "number": 6298,
+          "title": "Verify GeminiTTS alpha component with a live Gemini Interactions speech API account",
+          "url": "https://github.com/swarmauri/swarmauri-sdk/issues/6298",
           "kind": "good first issue",
-          "createdAt": "2026-07-16T13:40:10Z",
-          "comments": 1
-        },
-        {
-          "number": 842,
-          "title": "Move all \"Default\" asserts to debug",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
-          "kind": "good first issue",
-          "createdAt": "2026-10-22T12:57:03Z",
+          "createdAt": "2026-11-18T06:01:21Z",
           "comments": 0
         },
         {
-          "number": 488,
-          "title": "Make use of static create methods",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
+          "number": 6305,
+          "title": "Verify DeepInfraKokoroTTS alpha interface with a live API account",
+          "url": "https://github.com/swarmauri/swarmauri-sdk/issues/6305",
           "kind": "good first issue",
-          "createdAt": "2026-08-18T10:13:34Z",
+          "createdAt": "2026-11-18T06:30:19Z",
           "comments": 0
         },
         {
-          "number": 424,
-          "title": "Update legacy ProcessGroupManager names",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
+          "number": 6270,
+          "title": "Verify swarmauri_tts_together.TogetherTTS with a live API (alpha)",
+          "url": "https://github.com/swarmauri/swarmauri-sdk/issues/6270",
           "kind": "good first issue",
-          "createdAt": "2026-08-06T08:31:01Z",
-          "comments": 1
+          "createdAt": "2026-11-18T05:38:02Z",
+          "comments": 0
         },
         {
-          "number": 437,
-          "title": "Create Basic Stress Tests for LM and HM",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/437",
+          "number": 6307,
+          "title": "Verify DeepInfraQwen3VoiceDesignTTS alpha interface with a live API account",
+          "url": "https://github.com/swarmauri/swarmauri-sdk/issues/6307",
           "kind": "good first issue",
-          "createdAt": "2026-08-07T12:27:08Z",
-          "comments": 1
+          "createdAt": "2026-11-18T06:30:26Z",
+          "comments": 0
+        },
+        {
+          "number": 6301,
+          "title": "Verify PollyTTS alpha component with a live API account",
+          "url": "https://github.com/swarmauri/swarmauri-sdk/issues/6301",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T06:14:36Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "manta-plan/manta",
+      "slug": "manta-plan--manta",
+      "lastCommitAt": "2026-11-23T10:16:08Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true,
+        "approxKloc": 34
+      },
+      "goodFirstIssueCount": 14,
+      "issues": [
+        {
+          "number": 221,
+          "title": "Provide a example project with completed runs for each guest user",
+          "url": "https://github.com/manta-plan/manta/issues/221",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T15:55:33Z",
+          "comments": 0
+        },
+        {
+          "number": 180,
+          "title": "Revise API for authorization",
+          "url": "https://github.com/manta-plan/manta/issues/180",
+          "kind": "good first issue",
+          "createdAt": "2026-10-01T16:12:59Z",
+          "comments": 0
+        },
+        {
+          "number": 99,
+          "title": "[KEY FEATURE] Read logs & terminate runs",
+          "url": "https://github.com/manta-plan/manta/issues/99",
+          "kind": "good first issue",
+          "createdAt": "2026-08-18T14:22:55Z",
+          "comments": 0
+        },
+        {
+          "number": 272,
+          "title": "Sync user profile from the IdP on login",
+          "url": "https://github.com/manta-plan/manta/issues/272",
+          "kind": "good first issue",
+          "createdAt": "2026-11-11T22:50:10Z",
+          "comments": 0
+        },
+        {
+          "number": 268,
+          "title": "Hide the single-block playbook in the FE",
+          "url": "https://github.com/manta-plan/manta/issues/268",
+          "kind": "good first issue",
+          "createdAt": "2026-11-11T21:20:00Z",
+          "comments": 0
         }
       ]
     },
@@ -107,103 +160,118 @@
       ]
     },
     {
-      "repo": "Podcastindex-org/web-ui",
-      "slug": "podcastindex-org--web-ui",
-      "lastCommitAt": "2026-11-22T11:49:55Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true,
-        "approxKloc": 14
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 262,
-          "title": "Comments: Support for custom emojis",
-          "url": "https://github.com/Podcastindex-org/web-ui/issues/262",
-          "kind": "good first issue",
-          "createdAt": "2023-05-13T10:19:20Z",
-          "comments": 0
-        },
-        {
-          "number": 241,
-          "title": "Comments: Use relative dates when showing timestamps",
-          "url": "https://github.com/Podcastindex-org/web-ui/issues/241",
-          "kind": "good first issue",
-          "createdAt": "2023-03-04T13:50:12Z",
-          "comments": 0
-        },
-        {
-          "number": 233,
-          "title": "Comments: reply to comments on the podcast page",
-          "url": "https://github.com/Podcastindex-org/web-ui/issues/233",
-          "kind": "good first issue",
-          "createdAt": "2023-02-15T20:04:26Z",
-          "comments": 2
-        },
-        {
-          "number": 229,
-          "title": "Comments: Support attachments when displaying comments",
-          "url": "https://github.com/Podcastindex-org/web-ui/issues/229",
-          "kind": "good first issue",
-          "createdAt": "2023-02-11T16:23:29Z",
-          "comments": 0
-        },
-        {
-          "number": 282,
-          "title": "Detect if feed has been marked duplicate of another",
-          "url": "https://github.com/Podcastindex-org/web-ui/issues/282",
-          "kind": "good first issue",
-          "createdAt": "2023-07-16T23:14:01Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "corvus-gateway/corvus",
-      "slug": "corvus-gateway--corvus",
-      "lastCommitAt": "2026-11-22T11:50:13Z",
+      "repo": "InnerWarden/inner-warden",
+      "slug": "innerwarden--inner-warden",
+      "lastCommitAt": "2026-11-23T10:14:43Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 3,
+      "goodFirstIssueCount": 7,
       "issues": [
         {
-          "number": 94,
-          "title": "Docs: install notes for Synology and Unraid",
-          "url": "https://github.com/corvus-gateway/corvus/issues/94",
+          "number": 229,
+          "title": "Dashboard: announce Copied to screen readers",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/229",
           "kind": "good first issue",
-          "createdAt": "2026-11-06T01:12:43Z",
+          "createdAt": "2026-10-23T09:14:16Z",
           "comments": 0
         },
         {
-          "number": 93,
-          "title": "Translations: native-speaker review of the console (de, es, fr, ja, ru, zh)",
-          "url": "https://github.com/corvus-gateway/corvus/issues/93",
+          "number": 228,
+          "title": "CONTRIBUTING: list every gate CI runs, with its local command",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/228",
           "kind": "good first issue",
-          "createdAt": "2026-11-06T01:12:41Z",
+          "createdAt": "2026-10-23T09:14:14Z",
           "comments": 0
         },
         {
-          "number": 92,
-          "title": "Docs: add a docker run example to the install guide",
-          "url": "https://github.com/corvus-gateway/corvus/issues/92",
+          "number": 225,
+          "title": "Add benchmark corpus cases for the thin attack categories",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/225",
           "kind": "good first issue",
-          "createdAt": "2026-11-06T01:12:39Z",
+          "createdAt": "2026-10-23T09:14:09Z",
           "comments": 0
+        },
+        {
+          "number": 222,
+          "title": "Suggest the nearest command on a typo",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/222",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:03Z",
+          "comments": 0
+        },
+        {
+          "number": 220,
+          "title": "Make four Unix-assuming unit tests pass on Windows",
+          "url": "https://github.com/InnerWarden/inner-warden/issues/220",
+          "kind": "good first issue",
+          "createdAt": "2026-10-23T09:14:00Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "eclipse-score/lifecycle",
+      "slug": "eclipse-score--lifecycle",
+      "lastCommitAt": "2026-11-23T09:54:27Z",
+      "signals": {
+        "outsidePRsMerged": 29,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 12,
+      "issues": [
+        {
+          "number": 329,
+          "title": "Mocks for lifecycle",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
+          "kind": "good first issue",
+          "createdAt": "2026-07-16T13:40:10Z",
+          "comments": 1
+        },
+        {
+          "number": 842,
+          "title": "Move all \"Default\" asserts to debug",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
+          "kind": "good first issue",
+          "createdAt": "2026-10-22T12:57:03Z",
+          "comments": 0
+        },
+        {
+          "number": 488,
+          "title": "Make use of static create methods",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
+          "kind": "good first issue",
+          "createdAt": "2026-08-18T10:13:34Z",
+          "comments": 0
+        },
+        {
+          "number": 424,
+          "title": "Update legacy ProcessGroupManager names",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
+          "kind": "good first issue",
+          "createdAt": "2026-08-06T08:31:01Z",
+          "comments": 1
+        },
+        {
+          "number": 437,
+          "title": "Create Basic Stress Tests for LM and HM",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/437",
+          "kind": "good first issue",
+          "createdAt": "2026-08-07T12:27:08Z",
+          "comments": 1
         }
       ]
     },
     {
       "repo": "benelabs/crucible",
       "slug": "benelabs--crucible",
-      "lastCommitAt": "2026-11-21T11:35:58Z",
+      "lastCommitAt": "2026-11-23T10:12:22Z",
       "signals": {
         "outsidePRsMerged": 28,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 12,
+      "goodFirstIssueCount": 11,
       "issues": [
         {
           "number": 1465,
@@ -211,7 +279,7 @@
           "url": "https://github.com/benelabs/crucible/issues/1465",
           "kind": "good first issue",
           "createdAt": "2026-11-21T02:48:50Z",
-          "comments": 0
+          "comments": 1
         },
         {
           "number": 1456,
@@ -248,54 +316,174 @@
       ]
     },
     {
-      "repo": "GiroCrab/GiroCrab",
-      "slug": "girocrab--girocrab",
-      "lastCommitAt": "2026-11-22T11:50:57Z",
+      "repo": "nikhilb2/simple-invoicing-free-gst-billing-software",
+      "slug": "nikhilb2--simple-invoicing-free-gst-billing-software",
+      "lastCommitAt": "2026-11-23T09:17:03Z",
       "signals": {
-        "outsidePRsMerged": 24,
+        "outsidePRsMerged": 26,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 2,
       "issues": [
         {
-          "number": 1616,
-          "title": "[Bank] Anbindung ADAC Kreditkarte (Solaris SE) – Web-Portal-Konnektor oder PSD2, sobald verfügbar",
-          "url": "https://github.com/GiroCrab/GiroCrab/issues/1616",
-          "kind": "help wanted",
-          "createdAt": "2026-11-22T07:52:38Z",
-          "comments": 2
-        },
-        {
-          "number": 1567,
-          "title": "[Bank] HUK Versicherungen",
-          "url": "https://github.com/GiroCrab/GiroCrab/issues/1567",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T14:23:16Z",
-          "comments": 2
-        },
-        {
-          "number": 1562,
-          "title": "[Bank] Allianz Parkdepot",
-          "url": "https://github.com/GiroCrab/GiroCrab/issues/1562",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T14:04:08Z",
-          "comments": 1
-        },
-        {
-          "number": 1143,
-          "title": "[Bank] AirPlus Corporate Card anbinden",
-          "url": "https://github.com/GiroCrab/GiroCrab/issues/1143",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T12:15:48Z",
+          "number": 885,
+          "title": "fix(backend): cancelled delivery challan/quotation/credit note PDFs can show a cancellation date before the document date",
+          "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/885",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T15:19:34Z",
           "comments": 0
         },
         {
-          "number": 287,
-          "title": "[Bank] Zürcher Kantonalbank (ZKB)",
-          "url": "https://github.com/GiroCrab/GiroCrab/issues/287",
+          "number": 870,
+          "title": "feat(frontend): keep unsaved form progress when you leave a page and come back",
+          "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/870",
           "kind": "help wanted",
-          "createdAt": "2026-11-13T20:28:02Z",
-          "comments": 2
+          "createdAt": "2026-11-20T08:35:48Z",
+          "comments": 1
+        },
+        {
+          "number": 532,
+          "title": "Found something useful? Open an issue (how to report bugs and ideas)",
+          "url": "https://github.com/nikhilb2/simple-invoicing-free-gst-billing-software/issues/532",
+          "kind": "help wanted",
+          "createdAt": "2026-10-29T12:48:25Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "trina-app/trina-ax",
+      "slug": "trina-app--trina-ax",
+      "lastCommitAt": "2026-11-22T22:32:07Z",
+      "signals": {
+        "outsidePRsMerged": 22,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 5,
+      "issues": [
+        {
+          "number": 13,
+          "title": "Mobile app: buttons on the setup and error screens are not announced as buttons",
+          "url": "https://github.com/trina-app/trina-ax/issues/13",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:50:34Z",
+          "comments": 1
+        },
+        {
+          "number": 12,
+          "title": "Desktop browser pane: button labels leave out the unread count and which tab \"×\" closes",
+          "url": "https://github.com/trina-app/trina-ax/issues/12",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:50:12Z",
+          "comments": 0
+        },
+        {
+          "number": 6,
+          "title": "mobile/README.md tells you to run a test runner that isn't in the repository",
+          "url": "https://github.com/trina-app/trina-ax/issues/6",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:48:30Z",
+          "comments": 0
+        },
+        {
+          "number": 5,
+          "title": "SECURITY.md and docs/PERMISSIONS.md link to a README section that no longer exists",
+          "url": "https://github.com/trina-app/trina-ax/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:47:43Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "quarkiverse/quarkus-langchain4j",
+      "slug": "quarkiverse--quarkus-langchain4j",
+      "lastCommitAt": "2026-11-23T10:14:22Z",
+      "signals": {
+        "outsidePRsMerged": 20,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 1331,
+          "title": "Align configuration options for all embedding stores.",
+          "url": "https://github.com/quarkiverse/quarkus-langchain4j/issues/1331",
+          "kind": "good first issue",
+          "createdAt": "2025-02-27T13:01:04Z",
+          "comments": 4
+        }
+      ]
+    },
+    {
+      "repo": "status-im/status-app",
+      "slug": "status-im--status-app",
+      "lastCommitAt": "2026-11-23T09:15:39Z",
+      "signals": {
+        "outsidePRsMerged": 19,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 8,
+      "issues": [
+        {
+          "number": 13642,
+          "title": "The airdrop address selector is not intuitive",
+          "url": "https://github.com/status-im/status-app/issues/13642",
+          "kind": "good first issue",
+          "createdAt": "2024-02-20T16:43:32Z",
+          "comments": 3
+        },
+        {
+          "number": 21533,
+          "title": "Cannot fully clear Group Chat history",
+          "url": "https://github.com/status-im/status-app/issues/21533",
+          "kind": "good first issue",
+          "createdAt": "2026-07-17T08:14:56Z",
+          "comments": 0
+        },
+        {
+          "number": 16940,
+          "title": "Wrong count of asset shown in notification in activity centre",
+          "url": "https://github.com/status-im/status-app/issues/16940",
+          "kind": "good first issue",
+          "createdAt": "2024-12-11T14:26:51Z",
+          "comments": 0
+        },
+        {
+          "number": 10807,
+          "title": "Return `seq[ContactsDetails]` from `getContactsByGroup`",
+          "url": "https://github.com/status-im/status-app/issues/10807",
+          "kind": "good first issue",
+          "createdAt": "2023-05-25T14:21:00Z",
+          "comments": 1
+        },
+        {
+          "number": 14176,
+          "title": "[Community authentication flow] Password authentication button is not hovering on `Request to join` dialog",
+          "url": "https://github.com/status-im/status-app/issues/14176",
+          "kind": "good first issue",
+          "createdAt": "2024-03-26T16:18:14Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "yonatangross/orchestkit",
+      "slug": "yonatangross--orchestkit",
+      "lastCommitAt": "2026-11-23T09:47:11Z",
+      "signals": {
+        "outsidePRsMerged": 14,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 2735,
+          "title": "docs(memory): reconcile tier model + purge removed-internals references",
+          "url": "https://github.com/yonatangross/orchestkit/issues/2735",
+          "kind": "help wanted",
+          "createdAt": "2026-07-02T14:20:35Z",
+          "comments": 3
         }
       ]
     },
@@ -321,9 +509,61 @@
       ]
     },
     {
+      "repo": "qrdxinc/qrdx",
+      "slug": "qrdxinc--qrdx",
+      "lastCommitAt": "2026-11-23T10:18:32Z",
+      "signals": {
+        "outsidePRsMerged": 10,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 11,
+      "issues": [
+        {
+          "number": 312,
+          "title": "[integration]: Pipedrive (form responses to persons and leads)",
+          "url": "https://github.com/qrdxinc/qrdx/issues/312",
+          "kind": "help wanted",
+          "createdAt": "2026-11-10T19:51:30Z",
+          "comments": 3
+        },
+        {
+          "number": 316,
+          "title": "[plugin]: Adobe Express add-on",
+          "url": "https://github.com/qrdxinc/qrdx/issues/316",
+          "kind": "help wanted",
+          "createdAt": "2026-11-10T19:51:38Z",
+          "comments": 3
+        },
+        {
+          "number": 311,
+          "title": "[integration]: Salesforce (form responses to leads)",
+          "url": "https://github.com/qrdxinc/qrdx/issues/311",
+          "kind": "help wanted",
+          "createdAt": "2026-11-10T19:51:28Z",
+          "comments": 2
+        },
+        {
+          "number": 313,
+          "title": "[integration]: Zoho CRM (form responses to leads)",
+          "url": "https://github.com/qrdxinc/qrdx/issues/313",
+          "kind": "help wanted",
+          "createdAt": "2026-11-10T19:51:32Z",
+          "comments": 2
+        },
+        {
+          "number": 314,
+          "title": "[integration]: Klaviyo (form responses to profiles and lists)",
+          "url": "https://github.com/qrdxinc/qrdx/issues/314",
+          "kind": "help wanted",
+          "createdAt": "2026-11-10T19:51:34Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-22T07:43:01Z",
+      "lastCommitAt": "2026-11-23T10:21:31Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -343,7 +583,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-22T07:43:01Z",
+      "lastCommitAt": "2026-11-23T10:21:31Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -413,104 +653,23 @@
       ]
     },
     {
-      "repo": "RenierM26/ha-ezviz",
-      "slug": "renierm26--ha-ezviz",
-      "lastCommitAt": "2026-11-22T11:45:56Z",
-      "signals": {
-        "outsidePRsMerged": 4,
-        "outsidePRsCapped": false,
-        "approxKloc": 27
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 73,
-          "title": "Ezviz C3W Slow and Unresponsive in HA",
-          "url": "https://github.com/RenierM26/ha-ezviz/issues/73",
-          "kind": "help wanted",
-          "createdAt": "2021-06-03T07:55:27Z",
-          "comments": 5
-        },
-        {
-          "number": 109,
-          "title": "[Feature Request] Local alarm messages",
-          "url": "https://github.com/RenierM26/ha-ezviz/issues/109",
-          "kind": "help wanted",
-          "createdAt": "2022-04-01T09:19:20Z",
-          "comments": 0
-        },
-        {
-          "number": 143,
-          "title": "[Feature Request] access saved video recordings",
-          "url": "https://github.com/RenierM26/ha-ezviz/issues/143",
-          "kind": "help wanted",
-          "createdAt": "2024-06-12T13:13:36Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "flisk-sh/flisk",
-      "slug": "flisk-sh--flisk",
-      "lastCommitAt": "2026-11-22T11:47:47Z",
-      "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 447,
-      "issues": [
-        {
-          "number": 5122,
-          "title": "fix(resource): `--local` frontend lists `api-client`, `env-config`, `api-index` in featuresEnabled but generates none of them, and has no URL, proxy or dependsOn for the backend",
-          "url": "https://github.com/flisk-sh/flisk/issues/5122",
-          "kind": "good first issue",
-          "createdAt": "2026-11-22T11:31:02Z",
-          "comments": 0
-        },
-        {
-          "number": 5120,
-          "title": "fix(up): a `\"restart\": \"no\"` one-shot service that exits 0 is reported as \"kept exiting\" and `flisk up` exits 1",
-          "url": "https://github.com/flisk-sh/flisk/issues/5120",
-          "kind": "good first issue",
-          "createdAt": "2026-11-22T11:17:28Z",
-          "comments": 0
-        },
-        {
-          "number": 5109,
-          "title": "fix(up): `up --wait` timeout blames the waiting dependent and tails its stale log from an earlier run instead of naming the service that never became healthy",
-          "url": "https://github.com/flisk-sh/flisk/issues/5109",
-          "kind": "good first issue",
-          "createdAt": "2026-11-22T10:40:42Z",
-          "comments": 0
-        },
-        {
-          "number": 5107,
-          "title": "feat(doctor): an `env` value in a local-process service.json that references an unset `${VAR}` resolves to empty silently; warn with the variable and where it looked",
-          "url": "https://github.com/flisk-sh/flisk/issues/5107",
-          "kind": "good first issue",
-          "createdAt": "2026-11-22T10:08:35Z",
-          "comments": 0
-        },
-        {
-          "number": 5106,
-          "title": "fix(up): `params` in service.json are silently ignored for a service with a `command`; only `env` reaches the local process and nothing warns",
-          "url": "https://github.com/flisk-sh/flisk/issues/5106",
-          "kind": "good first issue",
-          "createdAt": "2026-11-22T10:07:44Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "baipix/baipix",
       "slug": "baipix--baipix",
-      "lastCommitAt": "2026-11-19T21:30:59Z",
+      "lastCommitAt": "2026-11-22T21:04:33Z",
       "signals": {
-        "outsidePRsMerged": 2,
+        "outsidePRsMerged": 3,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 5,
       "issues": [
+        {
+          "number": 613,
+          "title": "Add an opt-in coverage script",
+          "url": "https://github.com/baipix/baipix/issues/613",
+          "kind": "good first issue",
+          "createdAt": "2026-10-29T19:36:23Z",
+          "comments": 2
+        },
         {
           "number": 830,
           "title": "Add a single npm run verify command",
@@ -525,14 +684,6 @@
           "url": "https://github.com/baipix/baipix/issues/592",
           "kind": "good first issue",
           "createdAt": "2026-10-27T23:14:04Z",
-          "comments": 0
-        },
-        {
-          "number": 613,
-          "title": "Add an opt-in coverage script",
-          "url": "https://github.com/baipix/baipix/issues/613",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T19:36:23Z",
           "comments": 0
         },
         {
@@ -554,9 +705,53 @@
       ]
     },
     {
+      "repo": "engviniciusbs/hoprs",
+      "slug": "engviniciusbs--hoprs",
+      "lastCommitAt": "2026-11-23T10:09:23Z",
+      "signals": {
+        "outsidePRsMerged": 2,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 19,
+          "title": "Translate hoprs into your language",
+          "url": "https://github.com/engviniciusbs/hoprs/issues/19",
+          "kind": "good first issue",
+          "createdAt": "2026-11-15T20:16:00Z",
+          "comments": 0
+        },
+        {
+          "number": 18,
+          "title": "CI: move actions/* off Node 20",
+          "url": "https://github.com/engviniciusbs/hoprs/issues/18",
+          "kind": "good first issue",
+          "createdAt": "2026-11-15T20:15:58Z",
+          "comments": 0
+        },
+        {
+          "number": 22,
+          "title": "Translate the FileZilla import report",
+          "url": "https://github.com/engviniciusbs/hoprs/issues/22",
+          "kind": "help wanted",
+          "createdAt": "2026-11-15T20:16:05Z",
+          "comments": 0
+        },
+        {
+          "number": 21,
+          "title": "Package hoprs for Homebrew, winget, Scoop, Flathub and the AUR",
+          "url": "https://github.com/engviniciusbs/hoprs/issues/21",
+          "kind": "help wanted",
+          "createdAt": "2026-11-15T20:16:03Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "oneydef/EarA-linux",
       "slug": "oneydef--eara-linux",
-      "lastCommitAt": "2026-11-21T15:35:57Z",
+      "lastCommitAt": "2026-11-23T09:25:36Z",
       "signals": {
         "outsidePRsMerged": 2,
         "outsidePRsCapped": false,
@@ -631,6 +826,103 @@
       ]
     },
     {
+      "repo": "chadetov/glyph",
+      "slug": "chadetov--glyph",
+      "lastCommitAt": "2026-11-23T10:21:15Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 8,
+      "issues": [
+        {
+          "number": 189,
+          "title": "Fix the wrong negative-corpus path in CONTRIBUTING.md",
+          "url": "https://github.com/chadetov/glyph/issues/189",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T17:16:54Z",
+          "comments": 0
+        },
+        {
+          "number": 188,
+          "title": "`glyph check --help` contradicts itself about `@example`",
+          "url": "https://github.com/chadetov/glyph/issues/188",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T17:16:51Z",
+          "comments": 0
+        },
+        {
+          "number": 187,
+          "title": "Warn on members TypeScript marks `@deprecated` (G389)",
+          "url": "https://github.com/chadetov/glyph/issues/187",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T17:16:49Z",
+          "comments": 0
+        },
+        {
+          "number": 186,
+          "title": "Show source spelling, not Rust token names, in parse errors",
+          "url": "https://github.com/chadetov/glyph/issues/186",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T17:16:41Z",
+          "comments": 0
+        },
+        {
+          "number": 185,
+          "title": "Name invisible characters by code point in E0001 (G334, first half)",
+          "url": "https://github.com/chadetov/glyph/issues/185",
+          "kind": "good first issue",
+          "createdAt": "2026-11-19T17:16:39Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "open-winmale/wmshare",
+      "slug": "open-winmale--wmshare",
+      "lastCommitAt": "2026-11-23T10:20:53Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false,
+        "approxKloc": 50
+      },
+      "goodFirstIssueCount": 5,
+      "issues": [
+        {
+          "number": 9,
+          "title": "[tool] check_version.py 增加 --apply：发版时自动推进 SECURITY.md 支持版本表",
+          "url": "https://github.com/open-winmale/wmshare/issues/9",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T10:14:54Z",
+          "comments": 0
+        },
+        {
+          "number": 7,
+          "title": "[example] 新增 16_moneyflow_board.py：全市场资金流快照入门分析",
+          "url": "https://github.com/open-winmale/wmshare/issues/7",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T10:14:49Z",
+          "comments": 0
+        },
+        {
+          "number": 6,
+          "title": "[infra] 新增 issue 模板「数据异常反馈」：附 symbol/日期/期望值/实际值",
+          "url": "https://github.com/open-winmale/wmshare/issues/6",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T10:14:27Z",
+          "comments": 0
+        },
+        {
+          "number": 5,
+          "title": "[docs] GUIDE 新增「分位怎么算对」小节：* 与 index.trend 的适用边界",
+          "url": "https://github.com/open-winmale/wmshare/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-11-12T10:14:25Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "SankarGaneshb/rover-slim",
       "slug": "sankarganeshb--rover-slim",
       "lastCommitAt": "2026-11-10T07:07:58Z",
@@ -660,118 +952,9 @@
       ]
     },
     {
-      "repo": "yantrikos/yantrik-os",
-      "slug": "yantrikos--yantrik-os",
-      "lastCommitAt": "2026-11-22T10:49:58Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 553,
-          "title": "Hermes harness: report the endpoint it calls, so the Mind's map can name its provider",
-          "url": "https://github.com/yantrikos/yantrik-os/issues/553",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T20:05:36Z",
-          "comments": 0
-        },
-        {
-          "number": 21,
-          "title": "accessibility: Add high-contrast theme support",
-          "url": "https://github.com/yantrikos/yantrik-os/issues/21",
-          "kind": "good first issue",
-          "createdAt": "2026-04-18T06:27:20Z",
-          "comments": 0
-        },
-        {
-          "number": 19,
-          "title": "docs: Developer docs for CognitiveRouter, tools, recipes, and instincts",
-          "url": "https://github.com/yantrikos/yantrik-os/issues/19",
-          "kind": "help wanted",
-          "createdAt": "2026-04-18T06:27:17Z",
-          "comments": 1
-        },
-        {
-          "number": 18,
-          "title": "accessibility: Add keyboard navigation to shell and settings",
-          "url": "https://github.com/yantrikos/yantrik-os/issues/18",
-          "kind": "help wanted",
-          "createdAt": "2026-04-18T06:27:15Z",
-          "comments": 1
-        },
-        {
-          "number": 15,
-          "title": "ai: Implement workspace snapshots — save and restore work context",
-          "url": "https://github.com/yantrikos/yantrik-os/issues/15",
-          "kind": "help wanted",
-          "createdAt": "2026-04-18T06:26:09Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "AirKyzzZ/hermes-superagent",
-      "slug": "airkyzzz--hermes-superagent",
-      "lastCommitAt": "2026-11-22T11:52:40Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 23
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 92,
-          "title": "Add a Taskwarrior block to the connector guide",
-          "url": "https://github.com/AirKyzzZ/hermes-superagent/issues/92",
-          "kind": "good first issue",
-          "createdAt": "2026-11-17T14:29:36Z",
-          "comments": 0
-        },
-        {
-          "number": 91,
-          "title": "Add an ICS calendar connector",
-          "url": "https://github.com/AirKyzzZ/hermes-superagent/issues/91",
-          "kind": "good first issue",
-          "createdAt": "2026-11-17T14:29:34Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "daniel-ospina/tortoise",
-      "slug": "daniel-ospina--tortoise",
-      "lastCommitAt": "2026-11-22T10:53:20Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 3657,
-          "title": "Verify the Tortoise connector in a real Claude/Cursor UI (the one human step in the MCP connect path)",
-          "url": "https://github.com/daniel-ospina/tortoise/issues/3657",
-          "kind": "good first issue",
-          "createdAt": "2026-09-16T18:37:35Z",
-          "comments": 4
-        },
-        {
-          "number": 4394,
-          "title": "fix(battery): a4_tortoise docstring still calls mitigation_strength 'advisory metadata' (#2315) — same stale claim as #4341/#4385",
-          "url": "https://github.com/daniel-ospina/tortoise/issues/4394",
-          "kind": "good first issue",
-          "createdAt": "2026-09-20T20:11:25Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
       "repo": "grelinfo/grelmicro",
       "slug": "grelinfo--grelmicro",
-      "lastCommitAt": "2026-11-16T19:58:48Z",
+      "lastCommitAt": "2026-11-23T10:10:53Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -834,8 +1017,8 @@
       ]
     },
     {
-      "repo": "aatbit/xflog",
-      "slug": "aatbit--xflog",
+      "repo": "aakashH242/xflog",
+      "slug": "aakashh242--xflog",
       "lastCommitAt": "2026-11-13T17:09:21Z",
       "signals": {
         "outsidePRsMerged": 0,
@@ -847,7 +1030,7 @@
         {
           "number": 3,
           "title": "Expose composable library APIs for credentials, activity ingestion and subscription control",
-          "url": "https://github.com/aatbit/xflog/issues/3",
+          "url": "https://github.com/aakashH242/xflog/issues/3",
           "kind": "good first issue",
           "createdAt": "2026-11-05T17:49:22Z",
           "comments": 0
@@ -855,9 +1038,9 @@
       ]
     },
     {
-      "repo": "Mantux775/NVAI-open",
-      "slug": "mantux775--nvai-open",
-      "lastCommitAt": "2026-11-22T11:47:56Z",
+      "repo": "openteams-ai/whybook",
+      "slug": "openteams-ai--whybook",
+      "lastCommitAt": "2026-11-23T10:13:00Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -866,18 +1049,10 @@
       "issues": [
         {
           "number": 1,
-          "title": "Testers wanted: two or more NVIDIA graphics cards / Tester gesucht: zwei oder mehr NVIDIA-Grafikkarten",
-          "url": "https://github.com/Mantux775/NVAI-open/issues/1",
+          "title": "Test run on Windows and macOS",
+          "url": "https://github.com/openteams-ai/whybook/issues/1",
           "kind": "help wanted",
-          "createdAt": "2026-10-21T07:57:58Z",
-          "comments": 1
-        },
-        {
-          "number": 2,
-          "title": "Testers wanted: AMD Radeon (ROCm) / Tester gesucht: AMD Radeon (ROCm)",
-          "url": "https://github.com/Mantux775/NVAI-open/issues/2",
-          "kind": "help wanted",
-          "createdAt": "2026-10-21T07:58:00Z",
+          "createdAt": "2026-10-21T21:13:12Z",
           "comments": 0
         }
       ]

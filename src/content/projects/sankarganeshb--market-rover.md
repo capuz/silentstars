@@ -20,7 +20,7 @@ createdAt: "2025-12-18T15:03:32Z"
 lastCommitAt: "2026-11-03T10:57:55Z"
 status: "quiet"
 tags: ["solo_builder", "funded"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 85
 maintainers: ["SankarGaneshb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/69bf301816599ca31c06ef41dc7135a7f9c2d84931ae967f60a64ddeaf20aef4/SankarGaneshb/Market-Rover"
