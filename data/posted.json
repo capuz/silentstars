@@ -2927,5 +2927,17 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "Nwokike/Colab",
+    "slug": "nwokike--colab",
+    "postedAt": "2026-11-23T10:38:32.395Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2xwsylw4x2e",
+        "postedAt": "2026-11-23T10:38:32.395Z"
+      }
+    },
+    "communityPick": true
   }
 ]
