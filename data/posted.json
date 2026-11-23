@@ -2951,5 +2951,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "Maaaaaarrk/HiimFilter-PD2-Filter",
+    "slug": "maaaaaarrk--hiimfilter-pd2-filter",
+    "postedAt": "2026-11-23T13:41:07.202Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2yazi47672z",
+        "postedAt": "2026-11-23T13:41:07.202Z"
+      }
+    }
   }
 ]
