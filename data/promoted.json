@@ -226,5 +226,9 @@
   {
     "repo": "Nwokike/proot-distro",
     "until": "2026-12-23"
+  },
+  {
+    "repo": "Nwokike/Colab",
+    "until": "2026-12-23"
   }
 ]
