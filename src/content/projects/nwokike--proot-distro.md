@@ -4,6 +4,7 @@ name: "proot-distro"
 description: "Linux on Android without root or Termux: run Debian, Ubuntu, Alpine and any Docker/OCI image on your phone. "
 readmeQualityOk: true
 url: "https://github.com/Nwokike/proot-distro"
+homepage: "https://play.google.com/store/apps/details?id=ng.kiri.prootdistro"
 language: "Python"
 languages: ["Python", "JavaScript"]
 languagePcts: [69, 28]
@@ -21,10 +22,11 @@ lastReleaseAt: "2026-11-18T11:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 78
-undervaluedScore: 42
+undervaluedScore: 46
 maintainers: ["Nwokike"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1422148008/22be78cb-7bcf-445a-8bbe-347f2b38e939"
 promoted: true
+postedAt: "2026-11-23T10:30:24.972Z"
 ---
 
 Real Debian, Ubuntu, Alpine, Fedora, Arch, Kali, openSUSE, or any public containers,

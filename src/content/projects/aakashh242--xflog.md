@@ -23,7 +23,6 @@ healthScore: 90
 undervaluedScore: 43
 maintainers: ["aakashH242"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5f1af540d7de77220e6d7a29d4496a461560d23f782aa27e6c2eb54ce99fb13f/aakashH242/xflog"
-promoted: true
 postedAt: "2026-11-06T13:31:27.351Z"
 ---
 

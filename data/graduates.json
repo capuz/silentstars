@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-23T10:26:24.426Z",
+  "checkedAt": "2026-11-23T10:35:10.380Z",
   "stars": {
     "0sec-labs/0sec": 1593,
-    "AgnesAI-Labs/agnes-harness": 2454,
+    "AgnesAI-Labs/agnes-harness": 2455,
     "autonomous-ai/autonomous-os": 584,
-    "callstackincubator/simlock": 709,
+    "callstackincubator/simlock": 708,
     "ColinGPT9/clips-studio": 618,
     "cortex-docs/cortex": 3285,
     "fanyuantaier/wechatauto-replica": 711,
@@ -15,8 +15,8 @@
     "LivXue/dsh-plugin-shop": 667,
     "misakano7545/workbuddy2api-panel": 1414,
     "OluOlus/ops-agent-controller": 594,
-    "poco-ai/Agentero": 2813,
-    "smartdoca/doca": 681,
+    "poco-ai/Agentero": 2814,
+    "smartdoca/doca": 682,
     "webbrain-one/webbrain": 1750,
     "wuyoscar/AISafetyHot-Hub": 2080
   }
