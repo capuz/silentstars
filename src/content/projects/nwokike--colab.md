@@ -26,6 +26,7 @@ undervaluedScore: 53
 maintainers: ["Nwokike", "GrCOTE7"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1282471700/377e67c7-8435-4bac-90c2-355168fa5a2a"
 promoted: true
+postedAt: "2026-11-23T10:38:32.395Z"
 ---
 
 Colab Shell — Run cloud notebooks, interactive terminals & manage files natively on your phone

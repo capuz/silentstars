@@ -11,13 +11,13 @@ languagePcts: [66, 29]
 topics: ["ai-coding", "claude-code", "codex", "cursor", "developer-tools", "gemini", "knowledge-graph", "knowledge-management", "local-first", "mcp"]
 stars: 8
 forks: 1
-openIssues: 31
-closedIssues: 2215
+openIssues: 30
+closedIssues: 2216
 watchers: 0
 contributors: 3
 recentReleases: 0
 createdAt: "2025-08-04T14:46:49Z"
-lastCommitAt: "2026-11-23T06:26:28Z"
+lastCommitAt: "2026-11-23T11:18:55Z"
 lastReleaseAt: "2026-08-24T12:46:29Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

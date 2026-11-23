@@ -13,14 +13,14 @@ forks: 83
 openIssues: 2
 closedIssues: 5
 watchers: 3
-contributors: 112
+contributors: 114
 recentReleases: 0
 createdAt: "2024-07-01T17:38:28Z"
-lastCommitAt: "2026-11-20T19:31:21Z"
+lastCommitAt: "2026-11-23T11:07:23Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 92
+healthScore: 93
 undervaluedScore: 76
 maintainers: ["renovate[bot]", "jrasm91", "immich-push-o-matic[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c980a57e29f8aaafbcccb68b1f80f314d90b7a42eeabbfafc216ab5c73ed2cc0/immich-app/static-pages"

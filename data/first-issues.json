@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-23T10:34:44.730Z",
+  "collectedAt": "2026-11-23T12:28:28.452Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,9 +55,62 @@
       ]
     },
     {
+      "repo": "git-pkgs/manifests",
+      "slug": "git-pkgs--manifests",
+      "lastCommitAt": "2026-11-23T12:20:45Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true,
+        "approxKloc": 23
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 94,
+          "title": "Parse documented Nix flake input forms",
+          "url": "https://github.com/git-pkgs/manifests/issues/94",
+          "kind": "help wanted",
+          "createdAt": "2026-09-07T16:32:00Z",
+          "comments": 0
+        },
+        {
+          "number": 126,
+          "title": "Name Swift registry pins by `originalLocation` when Package.resolved has it",
+          "url": "https://github.com/git-pkgs/manifests/issues/126",
+          "kind": "help wanted",
+          "createdAt": "2026-10-26T12:01:08Z",
+          "comments": 0
+        },
+        {
+          "number": 113,
+          "title": "Add Flix manifest and dependency checksum support",
+          "url": "https://github.com/git-pkgs/manifests/issues/113",
+          "kind": "help wanted",
+          "createdAt": "2026-10-05T07:14:22Z",
+          "comments": 0
+        },
+        {
+          "number": 104,
+          "title": "Expose declared runtime and toolchain constraints in ParseResult",
+          "url": "https://github.com/git-pkgs/manifests/issues/104",
+          "kind": "help wanted",
+          "createdAt": "2026-09-26T15:40:50Z",
+          "comments": 0
+        },
+        {
+          "number": 103,
+          "title": "Add Alire and Octave manifest support",
+          "url": "https://github.com/git-pkgs/manifests/issues/103",
+          "kind": "help wanted",
+          "createdAt": "2026-09-22T13:54:51Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-23T09:54:27Z",
+      "lastCommitAt": "2026-11-23T10:11:41Z",
       "signals": {
         "outsidePRsMerged": 29,
         "outsidePRsCapped": false
@@ -103,42 +156,6 @@
           "kind": "good first issue",
           "createdAt": "2026-08-07T12:27:08Z",
           "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "ethereum-optimism/actions",
-      "slug": "ethereum-optimism--actions",
-      "lastCommitAt": "2026-11-23T09:24:28Z",
-      "signals": {
-        "outsidePRsMerged": 28,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 13,
-      "issues": [
-        {
-          "number": 331,
-          "title": "Optimize getQuote to skip calldata encoding when wallet is not needed",
-          "url": "https://github.com/ethereum-optimism/actions/issues/331",
-          "kind": "good first issue",
-          "createdAt": "2026-03-26T03:54:15Z",
-          "comments": 1
-        },
-        {
-          "number": 335,
-          "title": "Full e2e system tests",
-          "url": "https://github.com/ethereum-optimism/actions/issues/335",
-          "kind": "good first issue",
-          "createdAt": "2026-03-26T19:16:16Z",
-          "comments": 1
-        },
-        {
-          "number": 337,
-          "title": "Replace all `any` types with specific types",
-          "url": "https://github.com/ethereum-optimism/actions/issues/337",
-          "kind": "good first issue",
-          "createdAt": "2026-03-26T22:35:13Z",
-          "comments": 0
         }
       ]
     },
@@ -195,42 +212,156 @@
       ]
     },
     {
-      "repo": "unitaryfoundation/qldpc-challenge",
-      "slug": "unitaryfoundation--qldpc-challenge",
-      "lastCommitAt": "2026-11-23T10:27:22Z",
+      "repo": "FROWNINGdev/orm-lens",
+      "slug": "frowningdev--orm-lens",
+      "lastCommitAt": "2026-11-23T12:22:39Z",
       "signals": {
-        "outsidePRsMerged": 24,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 25,
+        "outsidePRsCapped": false,
+        "approxKloc": 46
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 7116,
-          "title": "Explore code-calculus v0.3: new constructors, bounded sector search, and seven directions to run",
-          "url": "https://github.com/unitaryfoundation/qldpc-challenge/issues/7116",
+          "number": 351,
+          "title": "drift: treebeard and tree-queries base columns are reported as removed",
+          "url": "https://github.com/FROWNINGdev/orm-lens/issues/351",
           "kind": "good first issue",
-          "createdAt": "2026-11-20T21:47:31Z",
+          "createdAt": "2026-11-23T11:58:59Z",
+          "comments": 0
+        },
+        {
+          "number": 81,
+          "title": "Finish the Chinese rule reference — DOL001–DOL007",
+          "url": "https://github.com/FROWNINGdev/orm-lens/issues/81",
+          "kind": "good first issue",
+          "createdAt": "2026-08-20T04:30:27Z",
+          "comments": 3
+        },
+        {
+          "number": 99,
+          "title": "Start the Spanish rule reference — the index and the queryset family DOL001–DOL008",
+          "url": "https://github.com/FROWNINGdev/orm-lens/issues/99",
+          "kind": "good first issue",
+          "createdAt": "2026-09-02T07:24:54Z",
           "comments": 0
         }
       ]
     },
     {
-      "repo": "c2corg/c2c_ui",
-      "slug": "c2corg--c2c-ui",
-      "lastCommitAt": "2026-11-23T10:31:51Z",
+      "repo": "OCA/timesheet",
+      "slug": "oca--timesheet",
+      "lastCommitAt": "2026-11-23T12:19:13Z",
       "signals": {
-        "outsidePRsMerged": 15,
-        "outsidePRsCapped": false
+        "outsidePRsMerged": 23,
+        "outsidePRsCapped": false,
+        "approxKloc": 14
       },
-      "goodFirstIssueCount": 2,
+      "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 4502,
-          "title": "Feature: Warn for itineraries / huts without access point",
-          "url": "https://github.com/c2corg/c2c_ui/issues/4502",
+          "number": 966,
+          "title": "Migration to version 20.0",
+          "url": "https://github.com/OCA/timesheet/issues/966",
+          "kind": "help wanted",
+          "createdAt": "2026-10-05T09:31:49Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "repo": "trina-app/trina-ax",
+      "slug": "trina-app--trina-ax",
+      "lastCommitAt": "2026-11-23T10:23:56Z",
+      "signals": {
+        "outsidePRsMerged": 21,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 5,
+      "issues": [
+        {
+          "number": 13,
+          "title": "Mobile app: buttons on the setup and error screens are not announced as buttons",
+          "url": "https://github.com/trina-app/trina-ax/issues/13",
           "kind": "good first issue",
-          "createdAt": "2025-12-09T20:28:23Z",
+          "createdAt": "2026-11-01T02:50:34Z",
+          "comments": 1
+        },
+        {
+          "number": 12,
+          "title": "Desktop browser pane: button labels leave out the unread count and which tab \"×\" closes",
+          "url": "https://github.com/trina-app/trina-ax/issues/12",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:50:12Z",
           "comments": 0
+        },
+        {
+          "number": 6,
+          "title": "mobile/README.md tells you to run a test runner that isn't in the repository",
+          "url": "https://github.com/trina-app/trina-ax/issues/6",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:48:30Z",
+          "comments": 0
+        },
+        {
+          "number": 5,
+          "title": "SECURITY.md and docs/PERMISSIONS.md link to a README section that no longer exists",
+          "url": "https://github.com/trina-app/trina-ax/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T02:47:43Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "hivecommons/hive",
+      "slug": "hivecommons--hive",
+      "lastCommitAt": "2026-11-23T12:03:46Z",
+      "signals": {
+        "outsidePRsMerged": 18,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 19494,
+          "title": "🐛 bug: #6167 and #14096 closed as completed, but a Forgejo-only hive finds no work",
+          "url": "https://github.com/hivecommons/hive/issues/19494",
+          "kind": "help wanted",
+          "createdAt": "2026-11-22T23:17:46Z",
+          "comments": 1
+        },
+        {
+          "number": 19530,
+          "title": "[RFC] When a repo's triage label disagrees with the hive's trust decision, which wins?",
+          "url": "https://github.com/hivecommons/hive/issues/19530",
+          "kind": "help wanted",
+          "createdAt": "2026-11-23T12:19:43Z",
+          "comments": 0
+        },
+        {
+          "number": 19495,
+          "title": "[dedupe] triage: duplicate and overlapping open issues/PRs to consolidate",
+          "url": "https://github.com/hivecommons/hive/issues/19495",
+          "kind": "help wanted",
+          "createdAt": "2026-11-23T00:24:35Z",
+          "comments": 1
+        },
+        {
+          "number": 19527,
+          "title": "[DCO] post-merge trailer failures on v6",
+          "url": "https://github.com/hivecommons/hive/issues/19527",
+          "kind": "help wanted",
+          "createdAt": "2026-11-23T11:40:27Z",
+          "comments": 1
+        },
+        {
+          "number": 19514,
+          "title": "[scanner] ioscan: vendor pinned third-party injection corpora and a benign issue-text corpus with a held-out split",
+          "url": "https://github.com/hivecommons/hive/issues/19514",
+          "kind": "help wanted",
+          "createdAt": "2026-11-23T05:40:15Z",
+          "comments": 1
         }
       ]
     },
@@ -256,9 +387,53 @@
       ]
     },
     {
+      "repo": "helalaou/AeroTizen",
+      "slug": "helalaou--aerotizen",
+      "lastCommitAt": "2026-11-23T12:21:20Z",
+      "signals": {
+        "outsidePRsMerged": 11,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 65,
+          "title": "Home doesn't return to AeroTizen on 2021 TVs (Tizen 6.0)",
+          "url": "https://github.com/helalaou/AeroTizen/issues/65",
+          "kind": "help wanted",
+          "createdAt": "2026-10-27T19:53:28Z",
+          "comments": 1
+        },
+        {
+          "number": 56,
+          "title": "Higher-resolution icons for popular apps",
+          "url": "https://github.com/helalaou/AeroTizen/issues/56",
+          "kind": "help wanted",
+          "createdAt": "2026-10-26T03:55:31Z",
+          "comments": 4
+        },
+        {
+          "number": 19,
+          "title": "More wallpapers, and use wallpapers already on the TV",
+          "url": "https://github.com/helalaou/AeroTizen/issues/19",
+          "kind": "help wanted",
+          "createdAt": "2026-10-23T15:49:11Z",
+          "comments": 1
+        },
+        {
+          "number": 20,
+          "title": "Home return is slow when the TV's local API is slow to answer",
+          "url": "https://github.com/helalaou/AeroTizen/issues/20",
+          "kind": "help wanted",
+          "createdAt": "2026-10-23T15:51:21Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-23T10:32:21Z",
+      "lastCommitAt": "2026-11-23T11:48:02Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -278,7 +453,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-23T10:32:21Z",
+      "lastCommitAt": "2026-11-23T11:48:02Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -298,7 +473,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-20T13:40:51Z",
+      "lastCommitAt": "2026-11-23T11:22:59Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -348,6 +523,43 @@
       ]
     },
     {
+      "repo": "PaSympa/discord-mcp",
+      "slug": "pasympa--discord-mcp",
+      "lastCommitAt": "2026-11-23T12:22:08Z",
+      "signals": {
+        "outsidePRsMerged": 4,
+        "outsidePRsCapped": false,
+        "approxKloc": 22
+      },
+      "goodFirstIssueCount": 3,
+      "issues": [
+        {
+          "number": 211,
+          "title": "docs: fix the invite-link wording and the Cursor docs link",
+          "url": "https://github.com/PaSympa/discord-mcp/issues/211",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T12:23:45Z",
+          "comments": 0
+        },
+        {
+          "number": 210,
+          "title": "fix: list a role's own permission flags in discord_list_roles",
+          "url": "https://github.com/PaSympa/discord-mcp/issues/210",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T12:23:43Z",
+          "comments": 0
+        },
+        {
+          "number": 209,
+          "title": "fix: leave threads out of discord_list_channels",
+          "url": "https://github.com/PaSympa/discord-mcp/issues/209",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T12:23:41Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "baipix/baipix",
       "slug": "baipix--baipix",
       "lastCommitAt": "2026-11-22T21:04:33Z",
@@ -357,14 +569,6 @@
       },
       "goodFirstIssueCount": 5,
       "issues": [
-        {
-          "number": 613,
-          "title": "Add an opt-in coverage script",
-          "url": "https://github.com/baipix/baipix/issues/613",
-          "kind": "good first issue",
-          "createdAt": "2026-10-29T19:36:23Z",
-          "comments": 2
-        },
         {
           "number": 830,
           "title": "Add a single npm run verify command",
@@ -396,50 +600,79 @@
           "kind": "good first issue",
           "createdAt": "2026-10-24T13:09:35Z",
           "comments": 0
+        },
+        {
+          "number": 742,
+          "title": "Website: get found by search engines and AI tools (SEO, GEO)",
+          "url": "https://github.com/baipix/baipix/issues/742",
+          "kind": "help wanted",
+          "createdAt": "2026-11-06T22:24:48Z",
+          "comments": 3
         }
       ]
     },
     {
-      "repo": "ArchiveBox/abx-plugins",
-      "slug": "archivebox--abx-plugins",
-      "lastCommitAt": "2026-11-23T10:25:29Z",
+      "repo": "hffgzktbcc-blip/ounce-core",
+      "slug": "hffgzktbcc-blip--ounce-core",
+      "lastCommitAt": "2026-11-23T12:23:05Z",
       "signals": {
-        "outsidePRsMerged": 2,
+        "outsidePRsMerged": 3,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 20,
-          "title": "Feature Request: New extractor to download javascript/ts sourcemap files for any compiled/minified .js assets used in archived pages",
-          "url": "https://github.com/ArchiveBox/abx-plugins/issues/20",
+          "number": 248,
+          "title": "Independent ARM64 rerun wanted: try one Lua floating-point case (pass/fail/blocked)",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/248",
           "kind": "help wanted",
-          "createdAt": "2023-12-17T14:48:09Z",
-          "comments": 3
+          "createdAt": "2026-11-08T16:13:53Z",
+          "comments": 0
         },
         {
-          "number": 53,
-          "title": "New Extractor Idea: `podcast-archiver` for auto-downloading podcasts",
-          "url": "https://github.com/ArchiveBox/abx-plugins/issues/53",
+          "number": 469,
+          "title": "Close the ~3,900-word instruction coverage gap vs hardware (Unicorn comparison)",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/469",
           "kind": "help wanted",
-          "createdAt": "2024-02-22T10:18:14Z",
+          "createdAt": "2026-11-17T14:16:22Z",
           "comments": 1
         },
         {
-          "number": 44,
-          "title": "Feature Request: add BDfR as a new extractor for archiving Reddit content",
-          "url": "https://github.com/ArchiveBox/abx-plugins/issues/44",
+          "number": 298,
+          "title": "Add a small C library test to help find ARM64 bugs (medium)",
+          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/298",
           "kind": "help wanted",
-          "createdAt": "2021-07-02T01:52:24Z",
-          "comments": 2
+          "createdAt": "2026-11-09T14:47:19Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
+      "repo": "KaykCaputo/WiiOS-webOS",
+      "slug": "kaykcaputo--wiios-webos",
+      "lastCommitAt": "2026-11-23T12:26:38Z",
+      "signals": {
+        "outsidePRsMerged": 2,
+        "outsidePRsCapped": false,
+        "approxKloc": 15
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 5,
+          "title": "[Feature]: Improve visible focus states for remote navigation",
+          "url": "https://github.com/KaykCaputo/WiiOS-webOS/issues/5",
+          "kind": "good first issue",
+          "createdAt": "2026-10-28T17:17:53Z",
+          "comments": 0
         },
         {
-          "number": 43,
-          "title": "New Extractor Idea: Generate e-book files (epub/mobi) from archived article text",
-          "url": "https://github.com/ArchiveBox/abx-plugins/issues/43",
-          "kind": "help wanted",
-          "createdAt": "2021-05-21T17:25:36Z",
-          "comments": 6
+          "number": 2,
+          "title": "[Feature]: Keep README installation examples in sync with release versions",
+          "url": "https://github.com/KaykCaputo/WiiOS-webOS/issues/2",
+          "kind": "good first issue",
+          "createdAt": "2026-10-28T17:17:48Z",
+          "comments": 0
         }
       ]
     },
@@ -461,59 +694,6 @@
           "kind": "help wanted",
           "createdAt": "2026-08-31T11:44:50Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "anoni-net/docs",
-      "slug": "anoni-net--docs",
-      "lastCommitAt": "2026-11-23T10:27:14Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false,
-        "approxKloc": 38
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 609,
-          "title": "新讀者走讀回報，照著一篇文章實際操作",
-          "url": "https://github.com/anoni-net/docs/issues/609",
-          "kind": "good first issue",
-          "createdAt": "2026-09-30T22:05:38Z",
-          "comments": 0
-        },
-        {
-          "number": 482,
-          "title": "content(style): 全站動補結構的口語寫法待逐批處理，扣掉 #480 之後還有 2419 處",
-          "url": "https://github.com/anoni-net/docs/issues/482",
-          "kind": "good first issue",
-          "createdAt": "2026-09-07T21:47:06Z",
-          "comments": 1
-        },
-        {
-          "number": 71,
-          "title": "撰寫 tools/what-is-ipfs.md（IPFS 入門與如何用 IPFS 瀏覽 anoni.net）",
-          "url": "https://github.com/anoni-net/docs/issues/71",
-          "kind": "good first issue",
-          "createdAt": "2026-05-26T17:51:15Z",
-          "comments": 1
-        },
-        {
-          "number": 372,
-          "title": "文件站補示意圖：優先頁面清單",
-          "url": "https://github.com/anoni-net/docs/issues/372",
-          "kind": "good first issue",
-          "createdAt": "2026-08-28T09:52:55Z",
-          "comments": 0
-        },
-        {
-          "number": 60,
-          "title": "翻譯 + 在地脈絡：OpenArchive 如何協助記錄者保全證據（Tor Project blog 2026-05-18）",
-          "url": "https://github.com/anoni-net/docs/issues/60",
-          "kind": "good first issue",
-          "createdAt": "2026-05-23T08:31:19Z",
-          "comments": 1
         }
       ]
     },
@@ -574,58 +754,6 @@
       ]
     },
     {
-      "repo": "pinto-notes/pinto-notes",
-      "slug": "pinto-notes--pinto-notes",
-      "lastCommitAt": "2026-11-23T10:24:45Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 139,
-          "title": "Import Bear backups (.bear2bk and .textpack)",
-          "url": "https://github.com/pinto-notes/pinto-notes/issues/139",
-          "kind": "good first issue",
-          "createdAt": "2026-10-02T07:07:15Z",
-          "comments": 0
-        },
-        {
-          "number": 136,
-          "title": "Write a template for the gallery",
-          "url": "https://github.com/pinto-notes/pinto-notes/issues/136",
-          "kind": "good first issue",
-          "createdAt": "2026-10-02T06:53:51Z",
-          "comments": 0
-        },
-        {
-          "number": 91,
-          "title": "Run every server unit test with one script, in CI and the docs",
-          "url": "https://github.com/pinto-notes/pinto-notes/issues/91",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T06:39:33Z",
-          "comments": 0
-        },
-        {
-          "number": 84,
-          "title": "Add unit tests for stripMarkup, parseType, typeSpec and tableCells",
-          "url": "https://github.com/pinto-notes/pinto-notes/issues/84",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T06:39:15Z",
-          "comments": 0
-        },
-        {
-          "number": 76,
-          "title": "Let scripts/qa-test.sh widen the timing budgets on a busy Mac",
-          "url": "https://github.com/pinto-notes/pinto-notes/issues/76",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T05:52:35Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "SankarGaneshb/rover-slim",
       "slug": "sankarganeshb--rover-slim",
       "lastCommitAt": "2026-11-10T07:07:58Z",
@@ -655,45 +783,37 @@
       ]
     },
     {
-      "repo": "elsa-workflows/elsa-foundation",
-      "slug": "elsa-workflows--elsa-foundation",
-      "lastCommitAt": "2026-11-23T09:26:13Z",
+      "repo": "daniel-ospina/tortoise",
+      "slug": "daniel-ospina--tortoise",
+      "lastCommitAt": "2026-11-23T11:21:40Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 3,
+      "goodFirstIssueCount": 2,
       "issues": [
         {
-          "number": 1918,
-          "title": "Share tooling exit diagnostics across migration tests",
-          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/1918",
+          "number": 3657,
+          "title": "Verify the Tortoise connector in a real Claude/Cursor UI (the one human step in the MCP connect path)",
+          "url": "https://github.com/daniel-ospina/tortoise/issues/3657",
           "kind": "good first issue",
-          "createdAt": "2026-09-21T12:32:34Z",
-          "comments": 5
-        },
-        {
-          "number": 1231,
-          "title": "U1: make SideEffectProfile discoverable to activity authors",
-          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/1231",
-          "kind": "good first issue",
-          "createdAt": "2026-08-09T23:40:01Z",
+          "createdAt": "2026-09-16T18:37:35Z",
           "comments": 4
         },
         {
-          "number": 2445,
-          "title": "Task: Repair JavaScript rendering catalog navigation",
-          "url": "https://github.com/elsa-workflows/elsa-foundation/issues/2445",
+          "number": 4394,
+          "title": "fix(battery): a4_tortoise docstring still calls mitigation_strength 'advisory metadata' (#2315) — same stale claim as #4341/#4385",
+          "url": "https://github.com/daniel-ospina/tortoise/issues/4394",
           "kind": "good first issue",
-          "createdAt": "2026-10-06T03:58:23Z",
-          "comments": 2
+          "createdAt": "2026-09-20T20:11:25Z",
+          "comments": 1
         }
       ]
     },
     {
       "repo": "grelinfo/grelmicro",
       "slug": "grelinfo--grelmicro",
-      "lastCommitAt": "2026-11-23T10:10:53Z",
+      "lastCommitAt": "2026-11-23T10:54:42Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -793,47 +913,6 @@
           "url": "https://github.com/aakashH242/xflog/issues/3",
           "kind": "good first issue",
           "createdAt": "2026-11-05T17:49:22Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "awjreynolds/noctium",
-      "slug": "awjreynolds--noctium",
-      "lastCommitAt": "2026-11-23T10:28:48Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 94,
-          "title": "Noctium assurance roadmap · 12 months, 10 engineers",
-          "url": "https://github.com/awjreynolds/noctium/issues/94",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T19:38:04Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "Overbaker/One-Patch",
-      "slug": "overbaker--one-patch",
-      "lastCommitAt": "2026-11-23T10:24:35Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 4
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 1,
-          "title": "[Unresolved] HyperOS one-handed mode: blocker rect still drifts with display-area transform",
-          "url": "https://github.com/Overbaker/One-Patch/issues/1",
-          "kind": "help wanted",
-          "createdAt": "2026-04-29T02:38:27Z",
           "comments": 0
         }
       ]

@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-17T16:25:33Z"
 lastReleaseAt: "2026-11-17T17:15:00Z"
 status: "newborn"
 tags: ["hidden_gem"]
-healthScore: 78
+healthScore: 77
 undervaluedScore: 23
 maintainers: ["Daronely"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5da3ac34ef67f07edcd2c2b819b2a31f187817e79cd49136f2fb9c6835c9ef30/Daronely/metora-tempmail"

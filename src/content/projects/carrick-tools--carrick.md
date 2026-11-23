@@ -12,12 +12,12 @@ topics: ["ai-agents", "code-intelligence", "developer-tools", "github-actions", 
 stars: 7
 forks: 1
 openIssues: 1613
-closedIssues: 881
+closedIssues: 882
 watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-04-03T10:08:36Z"
-lastCommitAt: "2026-11-23T09:48:58Z"
+lastCommitAt: "2026-11-23T11:06:50Z"
 lastReleaseAt: "2025-06-12T12:56:41Z"
 status: "thriving"
 tags: ["solo_builder"]
