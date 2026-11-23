@@ -1,6 +1,59 @@
 {
-  "collectedAt": "2026-11-23T12:28:28.452Z",
+  "collectedAt": "2026-11-23T13:36:25.062Z",
   "projects": [
+    {
+      "repo": "ebi-webcomponents/protvista",
+      "slug": "ebi-webcomponents--protvista",
+      "lastCommitAt": "2026-11-23T13:31:50Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true,
+        "approxKloc": 6
+      },
+      "goodFirstIssueCount": 14,
+      "issues": [
+        {
+          "number": 320,
+          "title": "Add a JSON-authored example config, and have the examples test discover `config.json`",
+          "url": "https://github.com/ebi-webcomponents/protvista/issues/320",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T08:55:35Z",
+          "comments": 0
+        },
+        {
+          "number": 319,
+          "title": "New example: Kyte–Doolittle hydropathy plot beside UniProt transmembrane helices",
+          "url": "https://github.com/ebi-webcomponents/protvista/issues/319",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T08:55:32Z",
+          "comments": 0
+        },
+        {
+          "number": 318,
+          "title": "Starter Kit: add recipes for your own variants and for per-residue scores",
+          "url": "https://github.com/ebi-webcomponents/protvista/issues/318",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T08:55:29Z",
+          "comments": 0
+        },
+        {
+          "number": 317,
+          "title": "Playground: add a \"Your own variants (CSV)\" preset",
+          "url": "https://github.com/ebi-webcomponents/protvista/issues/317",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T08:55:26Z",
+          "comments": 0
+        },
+        {
+          "number": 316,
+          "title": "Lint every Node script and run the scripts' Python unit tests in CI",
+          "url": "https://github.com/ebi-webcomponents/protvista/issues/316",
+          "kind": "good first issue",
+          "createdAt": "2026-10-06T08:55:22Z",
+          "comments": 0
+        }
+      ]
+    },
     {
       "repo": "Code-Society-Lab/matrixpy",
       "slug": "code-society-lab--matrixpy",
@@ -55,62 +108,9 @@
       ]
     },
     {
-      "repo": "git-pkgs/manifests",
-      "slug": "git-pkgs--manifests",
-      "lastCommitAt": "2026-11-23T12:20:45Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true,
-        "approxKloc": 23
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 94,
-          "title": "Parse documented Nix flake input forms",
-          "url": "https://github.com/git-pkgs/manifests/issues/94",
-          "kind": "help wanted",
-          "createdAt": "2026-09-07T16:32:00Z",
-          "comments": 0
-        },
-        {
-          "number": 126,
-          "title": "Name Swift registry pins by `originalLocation` when Package.resolved has it",
-          "url": "https://github.com/git-pkgs/manifests/issues/126",
-          "kind": "help wanted",
-          "createdAt": "2026-10-26T12:01:08Z",
-          "comments": 0
-        },
-        {
-          "number": 113,
-          "title": "Add Flix manifest and dependency checksum support",
-          "url": "https://github.com/git-pkgs/manifests/issues/113",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T07:14:22Z",
-          "comments": 0
-        },
-        {
-          "number": 104,
-          "title": "Expose declared runtime and toolchain constraints in ParseResult",
-          "url": "https://github.com/git-pkgs/manifests/issues/104",
-          "kind": "help wanted",
-          "createdAt": "2026-09-26T15:40:50Z",
-          "comments": 0
-        },
-        {
-          "number": 103,
-          "title": "Add Alire and Octave manifest support",
-          "url": "https://github.com/git-pkgs/manifests/issues/103",
-          "kind": "help wanted",
-          "createdAt": "2026-09-22T13:54:51Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-23T10:11:41Z",
+      "lastCommitAt": "2026-11-23T12:26:54Z",
       "signals": {
         "outsidePRsMerged": 29,
         "outsidePRsCapped": false
@@ -160,6 +160,27 @@
       ]
     },
     {
+      "repo": "Hochfrequenz/ahb-tabellen",
+      "slug": "hochfrequenz--ahb-tabellen",
+      "lastCommitAt": "2026-11-23T13:30:30Z",
+      "signals": {
+        "outsidePRsMerged": 29,
+        "outsidePRsCapped": false,
+        "approxKloc": 19
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 783,
+          "title": "In der Globalen Suche soll in den Suchergebnissen der gesuchte Ausdruck markiert sein",
+          "url": "https://github.com/Hochfrequenz/ahb-tabellen/issues/783",
+          "kind": "good first issue",
+          "createdAt": "2026-03-04T12:45:46Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "benelabs/crucible",
       "slug": "benelabs--crucible",
       "lastCommitAt": "2026-11-23T10:12:22Z",
@@ -170,20 +191,20 @@
       "goodFirstIssueCount": 11,
       "issues": [
         {
+          "number": 1456,
+          "title": "[PROD-READY 038/120] Consolidate the two divergent ErrorResponse types",
+          "url": "https://github.com/benelabs/crucible/issues/1456",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T02:47:49Z",
+          "comments": 2
+        },
+        {
           "number": 1465,
           "title": "[PROD-READY 087/120] Correct fork() semantics or rename it to reflect shared ledger state",
           "url": "https://github.com/benelabs/crucible/issues/1465",
           "kind": "good first issue",
           "createdAt": "2026-11-21T02:48:50Z",
           "comments": 1
-        },
-        {
-          "number": 1456,
-          "title": "[PROD-READY 038/120] Consolidate the two divergent ErrorResponse types",
-          "url": "https://github.com/benelabs/crucible/issues/1456",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T02:47:49Z",
-          "comments": 0
         },
         {
           "number": 1447,
@@ -212,160 +233,6 @@
       ]
     },
     {
-      "repo": "FROWNINGdev/orm-lens",
-      "slug": "frowningdev--orm-lens",
-      "lastCommitAt": "2026-11-23T12:22:39Z",
-      "signals": {
-        "outsidePRsMerged": 25,
-        "outsidePRsCapped": false,
-        "approxKloc": 46
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 351,
-          "title": "drift: treebeard and tree-queries base columns are reported as removed",
-          "url": "https://github.com/FROWNINGdev/orm-lens/issues/351",
-          "kind": "good first issue",
-          "createdAt": "2026-11-23T11:58:59Z",
-          "comments": 0
-        },
-        {
-          "number": 81,
-          "title": "Finish the Chinese rule reference — DOL001–DOL007",
-          "url": "https://github.com/FROWNINGdev/orm-lens/issues/81",
-          "kind": "good first issue",
-          "createdAt": "2026-08-20T04:30:27Z",
-          "comments": 3
-        },
-        {
-          "number": 99,
-          "title": "Start the Spanish rule reference — the index and the queryset family DOL001–DOL008",
-          "url": "https://github.com/FROWNINGdev/orm-lens/issues/99",
-          "kind": "good first issue",
-          "createdAt": "2026-09-02T07:24:54Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "OCA/timesheet",
-      "slug": "oca--timesheet",
-      "lastCommitAt": "2026-11-23T12:19:13Z",
-      "signals": {
-        "outsidePRsMerged": 23,
-        "outsidePRsCapped": false,
-        "approxKloc": 14
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 966,
-          "title": "Migration to version 20.0",
-          "url": "https://github.com/OCA/timesheet/issues/966",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T09:31:49Z",
-          "comments": 2
-        }
-      ]
-    },
-    {
-      "repo": "trina-app/trina-ax",
-      "slug": "trina-app--trina-ax",
-      "lastCommitAt": "2026-11-23T10:23:56Z",
-      "signals": {
-        "outsidePRsMerged": 21,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 5,
-      "issues": [
-        {
-          "number": 13,
-          "title": "Mobile app: buttons on the setup and error screens are not announced as buttons",
-          "url": "https://github.com/trina-app/trina-ax/issues/13",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T02:50:34Z",
-          "comments": 1
-        },
-        {
-          "number": 12,
-          "title": "Desktop browser pane: button labels leave out the unread count and which tab \"×\" closes",
-          "url": "https://github.com/trina-app/trina-ax/issues/12",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T02:50:12Z",
-          "comments": 0
-        },
-        {
-          "number": 6,
-          "title": "mobile/README.md tells you to run a test runner that isn't in the repository",
-          "url": "https://github.com/trina-app/trina-ax/issues/6",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T02:48:30Z",
-          "comments": 0
-        },
-        {
-          "number": 5,
-          "title": "SECURITY.md and docs/PERMISSIONS.md link to a README section that no longer exists",
-          "url": "https://github.com/trina-app/trina-ax/issues/5",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T02:47:43Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "hivecommons/hive",
-      "slug": "hivecommons--hive",
-      "lastCommitAt": "2026-11-23T12:03:46Z",
-      "signals": {
-        "outsidePRsMerged": 18,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 19494,
-          "title": "🐛 bug: #6167 and #14096 closed as completed, but a Forgejo-only hive finds no work",
-          "url": "https://github.com/hivecommons/hive/issues/19494",
-          "kind": "help wanted",
-          "createdAt": "2026-11-22T23:17:46Z",
-          "comments": 1
-        },
-        {
-          "number": 19530,
-          "title": "[RFC] When a repo's triage label disagrees with the hive's trust decision, which wins?",
-          "url": "https://github.com/hivecommons/hive/issues/19530",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T12:19:43Z",
-          "comments": 0
-        },
-        {
-          "number": 19495,
-          "title": "[dedupe] triage: duplicate and overlapping open issues/PRs to consolidate",
-          "url": "https://github.com/hivecommons/hive/issues/19495",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T00:24:35Z",
-          "comments": 1
-        },
-        {
-          "number": 19527,
-          "title": "[DCO] post-merge trailer failures on v6",
-          "url": "https://github.com/hivecommons/hive/issues/19527",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T11:40:27Z",
-          "comments": 1
-        },
-        {
-          "number": 19514,
-          "title": "[scanner] ioscan: vendor pinned third-party injection corpora and a benign issue-text corpus with a held-out split",
-          "url": "https://github.com/hivecommons/hive/issues/19514",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T05:40:15Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
       "repo": "GRTLCollaboration/GRTeclyn",
       "slug": "grtlcollaboration--grteclyn",
       "lastCommitAt": "2026-11-19T10:45:27Z",
@@ -387,45 +254,29 @@
       ]
     },
     {
-      "repo": "helalaou/AeroTizen",
-      "slug": "helalaou--aerotizen",
-      "lastCommitAt": "2026-11-23T12:21:20Z",
+      "repo": "prompt-edu/prompt",
+      "slug": "prompt-edu--prompt",
+      "lastCommitAt": "2026-11-23T13:29:55Z",
       "signals": {
-        "outsidePRsMerged": 11,
+        "outsidePRsMerged": 9,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 0,
+      "goodFirstIssueCount": 2,
       "issues": [
         {
-          "number": 65,
-          "title": "Home doesn't return to AeroTizen on 2021 TVs (Tizen 6.0)",
-          "url": "https://github.com/helalaou/AeroTizen/issues/65",
-          "kind": "help wanted",
-          "createdAt": "2026-10-27T19:53:28Z",
-          "comments": 1
+          "number": 289,
+          "title": "Debug Phase",
+          "url": "https://github.com/prompt-edu/prompt/issues/289",
+          "kind": "good first issue",
+          "createdAt": "2025-03-18T10:36:04Z",
+          "comments": 0
         },
         {
-          "number": 56,
-          "title": "Higher-resolution icons for popular apps",
-          "url": "https://github.com/helalaou/AeroTizen/issues/56",
-          "kind": "help wanted",
-          "createdAt": "2026-10-26T03:55:31Z",
-          "comments": 4
-        },
-        {
-          "number": 19,
-          "title": "More wallpapers, and use wallpapers already on the TV",
-          "url": "https://github.com/helalaou/AeroTizen/issues/19",
-          "kind": "help wanted",
-          "createdAt": "2026-10-23T15:49:11Z",
-          "comments": 1
-        },
-        {
-          "number": 20,
-          "title": "Home return is slow when the TV's local API is slow to answer",
-          "url": "https://github.com/helalaou/AeroTizen/issues/20",
-          "kind": "help wanted",
-          "createdAt": "2026-10-23T15:51:21Z",
+          "number": 600,
+          "title": "Add conditions to application questions",
+          "url": "https://github.com/prompt-edu/prompt/issues/600",
+          "kind": "good first issue",
+          "createdAt": "2025-06-18T08:31:58Z",
           "comments": 0
         }
       ]
@@ -433,7 +284,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-23T11:48:02Z",
+      "lastCommitAt": "2026-11-23T13:00:21Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -453,7 +304,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-23T11:48:02Z",
+      "lastCommitAt": "2026-11-23T13:00:21Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -523,43 +374,6 @@
       ]
     },
     {
-      "repo": "PaSympa/discord-mcp",
-      "slug": "pasympa--discord-mcp",
-      "lastCommitAt": "2026-11-23T12:22:08Z",
-      "signals": {
-        "outsidePRsMerged": 4,
-        "outsidePRsCapped": false,
-        "approxKloc": 22
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 211,
-          "title": "docs: fix the invite-link wording and the Cursor docs link",
-          "url": "https://github.com/PaSympa/discord-mcp/issues/211",
-          "kind": "good first issue",
-          "createdAt": "2026-11-23T12:23:45Z",
-          "comments": 0
-        },
-        {
-          "number": 210,
-          "title": "fix: list a role's own permission flags in discord_list_roles",
-          "url": "https://github.com/PaSympa/discord-mcp/issues/210",
-          "kind": "good first issue",
-          "createdAt": "2026-11-23T12:23:43Z",
-          "comments": 0
-        },
-        {
-          "number": 209,
-          "title": "fix: leave threads out of discord_list_channels",
-          "url": "https://github.com/PaSympa/discord-mcp/issues/209",
-          "kind": "good first issue",
-          "createdAt": "2026-11-23T12:23:41Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "baipix/baipix",
       "slug": "baipix--baipix",
       "lastCommitAt": "2026-11-22T21:04:33Z",
@@ -612,9 +426,9 @@
       ]
     },
     {
-      "repo": "hffgzktbcc-blip/ounce-core",
-      "slug": "hffgzktbcc-blip--ounce-core",
-      "lastCommitAt": "2026-11-23T12:23:05Z",
+      "repo": "yangheng95/opencorvus",
+      "slug": "yangheng95--opencorvus",
+      "lastCommitAt": "2026-11-23T13:27:47Z",
       "signals": {
         "outsidePRsMerged": 3,
         "outsidePRsCapped": false
@@ -622,56 +436,40 @@
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 248,
-          "title": "Independent ARM64 rerun wanted: try one Lua floating-point case (pass/fail/blocked)",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/248",
+          "number": 31,
+          "title": "[Help wanted] Validate v0.0.63-beta CLI startup on Linux or macOS",
+          "url": "https://github.com/yangheng95/opencorvus/issues/31",
           "kind": "help wanted",
-          "createdAt": "2026-11-08T16:13:53Z",
-          "comments": 0
-        },
-        {
-          "number": 469,
-          "title": "Close the ~3,900-word instruction coverage gap vs hardware (Unicorn comparison)",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/469",
-          "kind": "help wanted",
-          "createdAt": "2026-11-17T14:16:22Z",
-          "comments": 1
-        },
-        {
-          "number": 298,
-          "title": "Add a small C library test to help find ARM64 bugs (medium)",
-          "url": "https://github.com/hffgzktbcc-blip/ounce-core/issues/298",
-          "kind": "help wanted",
-          "createdAt": "2026-11-09T14:47:19Z",
+          "createdAt": "2026-09-09T17:12:47Z",
           "comments": 1
         }
       ]
     },
     {
-      "repo": "KaykCaputo/WiiOS-webOS",
-      "slug": "kaykcaputo--wiios-webos",
-      "lastCommitAt": "2026-11-23T12:26:38Z",
+      "repo": "PSYEONE/interviewr-ai",
+      "slug": "psyeone--interviewr-ai",
+      "lastCommitAt": "2026-11-23T13:06:20Z",
       "signals": {
         "outsidePRsMerged": 2,
         "outsidePRsCapped": false,
-        "approxKloc": 15
+        "approxKloc": 16
       },
-      "goodFirstIssueCount": 2,
+      "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 5,
-          "title": "[Feature]: Improve visible focus states for remote navigation",
-          "url": "https://github.com/KaykCaputo/WiiOS-webOS/issues/5",
-          "kind": "good first issue",
-          "createdAt": "2026-10-28T17:17:53Z",
+          "number": 10,
+          "title": "Confirm the GPU build runs on a real Arch machine",
+          "url": "https://github.com/PSYEONE/interviewr-ai/issues/10",
+          "kind": "help wanted",
+          "createdAt": "2026-10-21T20:32:07Z",
           "comments": 0
         },
         {
-          "number": 2,
-          "title": "[Feature]: Keep README installation examples in sync with release versions",
-          "url": "https://github.com/KaykCaputo/WiiOS-webOS/issues/2",
-          "kind": "good first issue",
-          "createdAt": "2026-10-28T17:17:48Z",
+          "number": 9,
+          "title": "Test the source install on Fedora and openSUSE",
+          "url": "https://github.com/PSYEONE/interviewr-ai/issues/9",
+          "kind": "help wanted",
+          "createdAt": "2026-10-21T20:32:05Z",
           "comments": 0
         }
       ]
@@ -734,22 +532,106 @@
       ]
     },
     {
-      "repo": "Itqan-community/cms-frontend",
-      "slug": "itqan-community--cms-frontend",
-      "lastCommitAt": "2026-11-14T15:19:16Z",
+      "repo": "Hurdadd/ddia-study-lab",
+      "slug": "hurdadd--ddia-study-lab",
+      "lastCommitAt": "2026-11-23T13:30:26Z",
       "signals": {
-        "outsidePRsMerged": 1,
+        "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 7,
       "issues": [
         {
-          "number": 214,
-          "title": "Fanar: Surah → Ayah → Word hierarchy manager (drill-down/tree)",
-          "url": "https://github.com/Itqan-community/cms-frontend/issues/214",
-          "kind": "help wanted",
-          "createdAt": "2026-08-05T04:06:19Z",
-          "comments": 5
+          "number": 20,
+          "title": "Translate the Chapter 1 introduction into Vietnamese (Tiếng Việt)",
+          "url": "https://github.com/Hurdadd/ddia-study-lab/issues/20",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T04:49:19Z",
+          "comments": 0
+        },
+        {
+          "number": 19,
+          "title": "Translate the Chapter 1 introduction into Simplified Chinese (简体中文)",
+          "url": "https://github.com/Hurdadd/ddia-study-lab/issues/19",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T04:49:17Z",
+          "comments": 0
+        },
+        {
+          "number": 18,
+          "title": "Translate the Chapter 1 introduction into Hindi (हिन्दी)",
+          "url": "https://github.com/Hurdadd/ddia-study-lab/issues/18",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T04:49:15Z",
+          "comments": 0
+        },
+        {
+          "number": 15,
+          "title": "Translate the Chapter 1 introduction into Arabic (العربية)",
+          "url": "https://github.com/Hurdadd/ddia-study-lab/issues/15",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T12:05:09Z",
+          "comments": 0
+        },
+        {
+          "number": 14,
+          "title": "Translate the Chapter 1 introduction into Brazilian Portuguese (Português do Brasil)",
+          "url": "https://github.com/Hurdadd/ddia-study-lab/issues/14",
+          "kind": "good first issue",
+          "createdAt": "2026-11-20T12:05:08Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "isaaclins/wax",
+      "slug": "isaaclins--wax",
+      "lastCommitAt": "2026-11-23T12:33:27Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 6,
+      "issues": [
+        {
+          "number": 635,
+          "title": "Unit tests leave an empty settings file in ~/Library/Preferences for every test",
+          "url": "https://github.com/isaaclins/wax/issues/635",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T13:16:14Z",
+          "comments": 0
+        },
+        {
+          "number": 573,
+          "title": "A playlist without a name keeps \"Untitled Playlist\" in the window title after switching from English",
+          "url": "https://github.com/isaaclins/wax/issues/573",
+          "kind": "good first issue",
+          "createdAt": "2026-11-13T03:01:00Z",
+          "comments": 0
+        },
+        {
+          "number": 624,
+          "title": "Queue header grows a line when Autoplay is switched on",
+          "url": "https://github.com/isaaclins/wax/issues/624",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T02:15:44Z",
+          "comments": 0
+        },
+        {
+          "number": 620,
+          "title": "Failed Apple Music library requests still write the playlist ID and the full MusicKit error into the log",
+          "url": "https://github.com/isaaclins/wax/issues/620",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T00:45:14Z",
+          "comments": 0
+        },
+        {
+          "number": 574,
+          "title": "A palette search error can change its wording when the selected service changes",
+          "url": "https://github.com/isaaclins/wax/issues/574",
+          "kind": "good first issue",
+          "createdAt": "2026-11-13T03:01:01Z",
+          "comments": 0
         }
       ]
     },
@@ -783,30 +665,23 @@
       ]
     },
     {
-      "repo": "daniel-ospina/tortoise",
-      "slug": "daniel-ospina--tortoise",
-      "lastCommitAt": "2026-11-23T11:21:40Z",
+      "repo": "tubeagentkit/youtube-transcript-skills",
+      "slug": "tubeagentkit--youtube-transcript-skills",
+      "lastCommitAt": "2026-11-23T13:29:01Z",
       "signals": {
         "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "outsidePRsCapped": false,
+        "approxKloc": 1
       },
       "goodFirstIssueCount": 2,
       "issues": [
         {
-          "number": 3657,
-          "title": "Verify the Tortoise connector in a real Claude/Cursor UI (the one human step in the MCP connect path)",
-          "url": "https://github.com/daniel-ospina/tortoise/issues/3657",
+          "number": 2,
+          "title": "Translate the README into Spanish",
+          "url": "https://github.com/tubeagentkit/youtube-transcript-skills/issues/2",
           "kind": "good first issue",
-          "createdAt": "2026-09-16T18:37:35Z",
-          "comments": 4
-        },
-        {
-          "number": 4394,
-          "title": "fix(battery): a4_tortoise docstring still calls mitigation_strength 'advisory metadata' (#2315) — same stale claim as #4341/#4385",
-          "url": "https://github.com/daniel-ospina/tortoise/issues/4394",
-          "kind": "good first issue",
-          "createdAt": "2026-09-20T20:11:25Z",
-          "comments": 1
+          "createdAt": "2026-10-30T06:18:25Z",
+          "comments": 0
         }
       ]
     },
@@ -914,6 +789,123 @@
           "kind": "good first issue",
           "createdAt": "2026-11-05T17:49:22Z",
           "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "Itqan-community/cms-frontend",
+      "slug": "itqan-community--cms-frontend",
+      "lastCommitAt": "2026-11-23T13:27:05Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 214,
+          "title": "Fanar: Surah → Ayah → Word hierarchy manager (drill-down/tree)",
+          "url": "https://github.com/Itqan-community/cms-frontend/issues/214",
+          "kind": "help wanted",
+          "createdAt": "2026-08-05T04:06:19Z",
+          "comments": 5
+        }
+      ]
+    },
+    {
+      "repo": "tubeagentkit/youtube-mcp",
+      "slug": "tubeagentkit--youtube-mcp",
+      "lastCommitAt": "2026-11-23T13:25:47Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false,
+        "approxKloc": 1
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 3,
+          "title": "Add a keyless CI smoke test for the stdio server",
+          "url": "https://github.com/tubeagentkit/youtube-mcp/issues/3",
+          "kind": "good first issue",
+          "createdAt": "2026-10-30T06:18:11Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "NatronGitHub/openfx-io",
+      "slug": "natrongithub--openfx-io",
+      "lastCommitAt": "2026-11-23T13:29:20Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 76,
+          "title": "WriteFFmpeg: support hardware-accelerated encoders (NVENC, VideoToolbox, QSV, VAAPI)",
+          "url": "https://github.com/NatronGitHub/openfx-io/issues/76",
+          "kind": "help wanted",
+          "createdAt": "2026-11-16T11:04:48Z",
+          "comments": 0
+        },
+        {
+          "number": 73,
+          "title": "New reader: native OpenJPEG JPEG2000 reader with multi-resolution decoding",
+          "url": "https://github.com/NatronGitHub/openfx-io/issues/73",
+          "kind": "help wanted",
+          "createdAt": "2026-11-16T10:57:09Z",
+          "comments": 0
+        },
+        {
+          "number": 72,
+          "title": "ReadOIIO/WriteOIIO: use MIP levels of tiled multi-resolution TIFF/EXR",
+          "url": "https://github.com/NatronGitHub/openfx-io/issues/72",
+          "kind": "help wanted",
+          "createdAt": "2026-11-16T10:57:04Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "CerealAxis/Nola-Translator",
+      "slug": "cerealaxis--nola-translator",
+      "lastCommitAt": "2026-11-23T13:32:04Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 2,
+          "title": "MT2-7B 翻译模型输出问题",
+          "url": "https://github.com/CerealAxis/Nola-Translator/issues/2",
+          "kind": "help wanted",
+          "createdAt": "2026-10-11T10:41:43Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "repo": "Enzoo404/gravitybox",
+      "slug": "enzoo404--gravitybox",
+      "lastCommitAt": "2026-11-23T13:26:14Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 17,
+          "title": "[FEAT] 搞个Windows版本",
+          "url": "https://github.com/Enzoo404/gravitybox/issues/17",
+          "kind": "help wanted",
+          "createdAt": "2026-11-18T08:45:24Z",
+          "comments": 2
         }
       ]
     }

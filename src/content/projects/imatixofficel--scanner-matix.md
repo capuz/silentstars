@@ -1,0 +1,50 @@
+---
+repo: "imatixofficel/Scanner-matix"
+name: "Scanner-matix"
+description: "🔍 Clean Cloudflare IPs, tested every 10 minutes. Real speed. Real results. No duplicates. No fake data. Just fast IPs for your VLESS configs."
+originalDescription: "🔍 Clean Cloudflare IPs, tested every 10 minutes. Real speed. Real results. No duplicates. No fake data. Just fast IPs for your VLESS configs."
+descriptionLang: "fa"
+readmeQualityOk: true
+url: "https://github.com/imatixofficel/Scanner-matix"
+homepage: "https://imatixofficel.github.io/Scanner-matix/"
+language: "Python"
+languages: ["Python", "CSS", "JavaScript"]
+languagePcts: [43, 26, 20]
+topics: ["clean-ip", "fast", "ip", "ping", "scanner"]
+stars: 6
+forks: 3
+openIssues: 0
+closedIssues: 0
+watchers: 0
+contributors: 1
+recentReleases: 0
+createdAt: "2026-09-19T21:35:32Z"
+lastCommitAt: "2026-11-23T13:30:59Z"
+status: "thriving"
+tags: ["solo_builder"]
+healthScore: 80
+undervaluedScore: 58
+maintainers: ["github-actions[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/b259f75121fb108a6ec0e1c0628dd69c3a2fd2a1c0729886f9fb42b2d00b7d81/imatixofficel/Scanner-matix"
+---
+
+# Matix Scanner — Multi-Source VPN-Oriented IP Scanner
+
+> In the name of Allah, the Most Gracious, the Most Merciful 🤍
+
+Matix Scanner is a multi-source scanner for finding **truly reachable** IPs.
+
+The goal of version 4 is to collect IPs from several official sources (**Fastly, Cloudflare, CloudFront, Google**) and let the user choose the source.
+
+## Sources
+
+| Source | Status |
+|---|---|
+| ⚡ Fastly | Official range (Fastly's own API) |1
+| ☁️ Cloudflare | Official range (Cloudflare's own API) |
+| 🟧 CloudFront (Amazon) | Official range `ip-ranges.json` filtered by `CLOUDFRONT` |
+| 🔷 Google | Official range `goog.json` (the percentage of healthy IPs is lower, because it covers only part of the web server range) |
+| 🖥️ Railway | Resolved only from the official hostname; no fixed public range is claimed |
+| 🛡️ VPS / ✍️ Custom | Only the IPs you enter yourself in `custom_ips.txt` |
+
+Each source's share in `all` mode: Fastly 35% · Cloudflare 30% · CloudFront 15% · Google 8% · Custom 10% · Railway 2% (configurable in `DEFAULT_MIX` inside `scanner.py`).

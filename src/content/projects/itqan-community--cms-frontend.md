@@ -15,13 +15,13 @@ watchers: 0
 contributors: 20
 recentReleases: 0
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-11-14T15:19:16Z"
+lastCommitAt: "2026-11-23T13:27:05Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 93
+healthScore: 96
 undervaluedScore: 78
-maintainers: ["hassaanalansary", "dependabot[bot]"]
+maintainers: ["hassaanalansary"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7929aa3e64dcfdcf93d9bf16293aa6771d4115b2898fbc58f3666bde642bdd51/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---

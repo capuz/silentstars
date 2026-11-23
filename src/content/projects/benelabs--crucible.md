@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [66]
 stars: 17
-forks: 141
+forks: 142
 openIssues: 110
 closedIssues: 889
 watchers: 0
