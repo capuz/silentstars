@@ -2939,5 +2939,17 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "waynehamadi/datacircle",
+    "slug": "waynehamadi--datacircle",
+    "postedAt": "2026-11-23T12:33:01.896Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2y57q3ue22t",
+        "postedAt": "2026-11-23T12:33:01.896Z"
+      }
+    },
+    "communityPick": true
   }
 ]
