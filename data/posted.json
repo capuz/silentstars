@@ -2915,5 +2915,17 @@
         "postedAt": "2026-11-22T12:01:23.931Z"
       }
     }
+  },
+  {
+    "repo": "Nwokike/proot-distro",
+    "slug": "nwokike--proot-distro",
+    "postedAt": "2026-11-23T10:30:24.972Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n2xwehyvuy2f",
+        "postedAt": "2026-11-23T10:30:24.972Z"
+      }
+    },
+    "communityPick": true
   }
 ]
