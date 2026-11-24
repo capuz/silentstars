@@ -7,7 +7,7 @@ url: "https://github.com/peikk0/dotfiles"
 homepage: "https://gitlab.com/peikk0/dotfiles"
 language: "Shell"
 languages: ["Shell", "Lua"]
-languagePcts: [52, 31]
+languagePcts: [51, 31]
 topics: ["dotfiles", "zsh", "vim", "i3", "mutt", "git", "tmux", "irssi", "bash", "x11"]
 stars: 7
 forks: 3

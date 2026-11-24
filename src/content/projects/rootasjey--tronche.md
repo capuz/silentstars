@@ -25,7 +25,6 @@ healthScore: 63
 undervaluedScore: 25
 maintainers: ["rootasjey", "semantic-release-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e13e57736f0227b9549213bd316e9fb80a68229a46675517b3e37013c156c2a9/rootasjey/tronche"
-promoted: true
 postedAt: "2026-10-25T22:16:55.952Z"
 ---
 

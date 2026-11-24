@@ -11,16 +11,16 @@ languagePcts: [60, 34]
 topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 13
 forks: 4
-openIssues: 5
-closedIssues: 14189
+openIssues: 4
+closedIssues: 14205
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-11-23T13:28:09Z"
+lastCommitAt: "2026-11-24T00:16:40Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
-healthScore: 100
+healthScore: 98
 undervaluedScore: 77
 maintainers: ["upptime-bot"]
 openGraphImageUrl: "https://opengraph.githubassets.com/204db8f528e4102b8eb18954ac32f265b2f3048f88c84a1814dc35b3c585b076/openfoodfacts/openfoodfacts-upptime"

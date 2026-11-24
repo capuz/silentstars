@@ -7,24 +7,24 @@ url: "https://github.com/Hugo0/voiceio"
 homepage: "https://voiceio.dev"
 language: "Python"
 languages: ["Python"]
-languagePcts: [83]
+languagePcts: [84]
 topics: ["asr", "dictation", "gnome", "ibus", "linux", "offline", "parakeet", "privacy", "python", "speech-to-text"]
-stars: 27
+stars: 28
 forks: 3
-openIssues: 0
+openIssues: 1
 closedIssues: 5
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2026-03-08T18:29:10Z"
-lastCommitAt: "2026-11-21T13:35:00Z"
+lastCommitAt: "2026-11-24T00:35:14Z"
 lastReleaseAt: "2026-04-08T20:44:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
-undervaluedScore: 53
+healthScore: 96
+undervaluedScore: 51
 maintainers: ["Hugo0"]
-openGraphImageUrl: "https://opengraph.githubassets.com/2e6ac2fd93b3cd8466478ee220ba7f83be56e78d0a755b8293d0bff01f540898/Hugo0/voiceio"
+openGraphImageUrl: "https://opengraph.githubassets.com/481d52bd2663a6b6f53c8a404d59cb9f90dd8d1fc65f59eaf42ce762c2f4e1bd/Hugo0/voiceio"
 discussionCount: 1
 promoted: true
 postedAt: "2026-11-15T08:37:20.001Z"

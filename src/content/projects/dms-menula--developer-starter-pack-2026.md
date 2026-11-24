@@ -18,7 +18,7 @@ lastCommitAt: "2026-11-22T05:55:06Z"
 lastReleaseAt: "2026-10-29T13:38:21Z"
 status: "thriving"
 tags: []
-healthScore: 91
+healthScore: 90
 undervaluedScore: 56
 maintainers: ["DMS-Menula", "DMS-ranil", "DPWonder"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1117547644/0980e7a7-9a67-4f7b-84a3-83053cba9ce2"

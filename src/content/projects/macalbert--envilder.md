@@ -27,7 +27,6 @@ maintainers: ["macalbert", "dependabot[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/859829892/effa0a16-43d4-499c-a962-6ba9bd31f793"
 fundingLinks: ["GITHUB:https://github.com/macalbert"]
 discussionCount: 3
-promoted: true
 postedAt: "2026-10-25T09:07:05.933Z"
 ---
 

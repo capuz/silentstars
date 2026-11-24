@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["dashboard", "fixtures", "football", "hacs", "home-assistant", "lovelace", "predictions", "soccer", "sports", "standings"]
-stars: 95
+stars: 93
 forks: 8
 openIssues: 0
 closedIssues: 93

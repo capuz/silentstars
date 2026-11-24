@@ -9,14 +9,14 @@ languages: ["TypeScript"]
 languagePcts: [95]
 topics: ["self-service", "gui", "portal", "cloud", "react", "openstack", "dashboard", "waldur", "rancher"]
 stars: 32
-forks: 36
+forks: 37
 openIssues: 4
 closedIssues: 34
 watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-23T13:03:21Z"
+lastCommitAt: "2026-11-23T23:33:59Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
 tags: ["legacy_hero", "release_machine", "fork_magnet"]

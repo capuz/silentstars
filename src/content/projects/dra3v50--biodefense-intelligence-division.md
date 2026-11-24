@@ -13,14 +13,14 @@ openIssues: 0
 closedIssues: 0
 watchers: 1
 contributors: 1
-recentReleases: 1
+recentReleases: 0
 createdAt: "2026-06-05T01:26:54Z"
-lastCommitAt: "2026-11-23T01:44:35Z"
+lastCommitAt: "2026-11-23T16:02:18Z"
 lastReleaseAt: "2026-08-25T23:07:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 50
+undervaluedScore: 47
 maintainers: ["github-actions[bot]", "DRA3V50"]
 openGraphImageUrl: "https://opengraph.githubassets.com/6d5997d9752f1efe358c0dc1c4626b9dbc5a31a966087bba223888a8f2524583/DRA3V50/BioDefense-Intelligence-Division"
 promoted: true

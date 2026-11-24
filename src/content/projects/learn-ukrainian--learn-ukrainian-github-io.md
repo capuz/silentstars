@@ -11,13 +11,13 @@ languagePcts: [64, 28]
 topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "ukrainian-state-standard-2024"]
 stars: 11
 forks: 5
-openIssues: 147
-closedIssues: 4479
+openIssues: 144
+closedIssues: 4482
 watchers: 0
 contributors: 6
 recentReleases: 3
 createdAt: "2025-12-21T16:34:27Z"
-lastCommitAt: "2026-11-23T11:31:56Z"
+lastCommitAt: "2026-11-24T00:30:30Z"
 lastReleaseAt: "2026-10-20T12:59:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

@@ -11,13 +11,13 @@ languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler", "compiled-language", "concurrency", "cranelift", "garbage-collection", "goroutines", "native-code", "package-manager"]
 stars: 111
 forks: 31
-openIssues: 8
-closedIssues: 418
+openIssues: 7
+closedIssues: 420
 watchers: 2
 contributors: 3
 recentReleases: 0
 createdAt: "2025-04-12T08:49:07Z"
-lastCommitAt: "2026-11-23T11:09:36Z"
+lastCommitAt: "2026-11-24T00:09:06Z"
 lastReleaseAt: "2026-03-31T16:33:14Z"
 status: "thriving"
 tags: ["solo_builder"]

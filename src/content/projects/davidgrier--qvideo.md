@@ -15,11 +15,11 @@ watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-09-03T18:45:03Z"
-lastCommitAt: "2026-11-22T01:07:12Z"
+lastCommitAt: "2026-11-23T21:56:40Z"
 lastReleaseAt: "2026-05-04T16:57:41Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 79
+healthScore: 80
 undervaluedScore: 81
 maintainers: ["davidgrier", "github-actions[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/e8e4d92d269f93825d662f34a40386e6de55bd616e046a95fdc45c0662d639de/davidgrier/QVideo"

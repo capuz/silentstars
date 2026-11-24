@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-23T04:30:15Z"
 lastReleaseAt: "2026-11-22T18:07:00Z"
 status: "newborn"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 80
+healthScore: 79
 undervaluedScore: 52
 maintainers: ["jiangxingfan1-coder"]
 openGraphImageUrl: "https://opengraph.githubassets.com/62f5a0a2b945f49ab4e211fac549b4dcd39eb7576c1cd2b1b7f4a53dfc70abca/jiangxingfan1-coder/Open-Agent-API"

@@ -25,7 +25,6 @@ healthScore: 62
 undervaluedScore: 22
 maintainers: ["AniChikage"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3e8dfbb10dbdd178e94c171407cdd23146bb6f987e69d0cd01124a107e6f657f/AniChikage/open-resume"
-promoted: true
 postedAt: "2026-10-25T02:53:35.126Z"
 ---
 

@@ -9,13 +9,13 @@ languages: ["Go"]
 languagePcts: [75]
 stars: 7
 forks: 0
-openIssues: 4
-closedIssues: 318
+openIssues: 3
+closedIssues: 320
 watchers: 0
 contributors: 2
 recentReleases: 0
 createdAt: "2025-08-07T16:38:11Z"
-lastCommitAt: "2026-11-23T13:09:34Z"
+lastCommitAt: "2026-11-24T00:37:36Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 100
@@ -32,9 +32,11 @@ A Golang application for managing Shelly smart home devices. **In development.**
 
 ## Architecture
 
+See [ARCHITECTURE.md](https://github.com/ginsys/shelly-manager/blob/HEAD/ARCHITECTURE.md) for the code map, the main flows and the rules the code keeps.
+
 - **Dual-binary design**: API server (containerized) + provisioning agent (host-based)
 - **Multi-provider database**: SQLite, PostgreSQL, MySQL
-- **Plugin-based export/import**: SMA, Terraform, Ansible, Kubernetes, Docker Compose, JSON, CSV
+- **Plugin-based export/import**: SMA, JSON, YAML, GitOps, OPNsense, backup
 - **Template engine**: Sprig v3 with security controls and inheritance
 
 ## Features
@@ -49,9 +51,3 @@ A Golang application for managing Shelly smart home devices. **In development.**
 ## Export Formats
 
 Shelly Manager supports multiple export formats for backing up and sharing device configurations:
-
-### Database Backup (`.db`)
-- **Use Case**: Full system backup including all data
-- **Format**: SQLite database file
-- **Compression**: GZIP or ZIP
-- **Best For**: Disaster recovery, system migration
