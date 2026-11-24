@@ -7,7 +7,7 @@ url: "https://github.com/soobujmiah/ternux"
 homepage: "https://soobujmiah.github.io/ternux/"
 language: "Shell"
 languages: ["Shell", "Python"]
-languagePcts: [56, 31]
+languagePcts: [55, 31]
 topics: ["adreno", "android", "debian", "gpu-acceleration", "no-root", "proot", "termux", "turnip", "vulkan", "xfce4"]
 stars: 8
 forks: 2
@@ -17,13 +17,13 @@ watchers: 0
 contributors: 4
 recentReleases: 5
 createdAt: "2026-08-13T01:02:33Z"
-lastCommitAt: "2026-11-23T12:46:44Z"
+lastCommitAt: "2026-11-24T13:11:16Z"
 lastReleaseAt: "2026-11-06T22:21:45Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 60
-maintainers: ["codex", "soobujmiah", "github-actions[bot]"]
+maintainers: ["soobujmiah", "codex", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
 promoted: true
 postedAt: "2026-11-19T05:15:56.039Z"
@@ -35,4 +35,4 @@ postedAt: "2026-11-19T05:15:56.039Z"
 
 ### A Linux desktop for ARM64 Android — no root required
 
-[Website](https://soobujmiah.github.io/ternux/) · [বাংলা Origin Story](https://github.com/soobujmiah/ternux/blob/HEAD/bn/docs/ORIGIN.md) · [English Origin Story](https://github.com/soobujmiah/ternux/blob/HEAD/docs/ORIGIN.md) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)
+[Website](https://soobujmiah.github.io/ternux/) · [বাংলা Origin Story](https://github.com/soobujmiah/ternux/blob/HEAD/bn/docs/ORIGIN.md) · [English Origin Story](https://github.com/soobujmiah/ternux/blob/main/docs/ORIGIN.md) · [Quick start](https://github.com/soobujmiah/ternux/blob/HEAD/docs/QUICK-START.md) · [All documentation](https://github.com/soobujmiah/ternux/blob/HEAD/docs/README.md) · [CLI guide](https://github.com/soobujmiah/ternux/blob/HEAD/docs/CLI.md) · [Benchmarks](https://github.com/soobujmiah/ternux/blob/HEAD/docs/BENCHMARKS.md) · [বাংলা](https://github.com/soobujmiah/ternux/blob/HEAD/bn/README.md) · [Source](https://github.com/soobujmiah/ternux)

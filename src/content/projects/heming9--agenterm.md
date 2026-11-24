@@ -8,7 +8,7 @@ language: "Go"
 languages: ["Go", "Rust"]
 languagePcts: [54, 31]
 topics: ["ai-agent", "mcp", "remote-assistance", "remote-control", "self-hosted", "terminal"]
-stars: 106
+stars: 107
 forks: 3
 openIssues: 0
 closedIssues: 1
@@ -23,7 +23,7 @@ tags: ["solo_builder", "release_machine"]
 healthScore: 98
 undervaluedScore: 37
 maintainers: ["Heming9", "BrethofAI"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c902da90bf24ce17361181577a6cddef846994d2eb278434f06b9438b2e03c8c/Heming9/agenterm"
+openGraphImageUrl: "https://opengraph.githubassets.com/aed93736045ed22aee4616102dc304ebe34821c8c0ba8fd114f5d28a89446f85/Heming9/agenterm"
 promoted: true
 ---
 

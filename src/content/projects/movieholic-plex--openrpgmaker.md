@@ -11,18 +11,18 @@ languagePcts: [60, 26]
 topics: ["ai", "ai-assistant", "electron", "game-development", "game-engine", "gamedev", "jrpg", "level-editor", "phaser", "pixel-art"]
 stars: 7
 forks: 1
-openIssues: 1
+openIssues: 3
 closedIssues: 8
 watchers: 0
 contributors: 7
 recentReleases: 10
 createdAt: "2026-06-22T19:14:44Z"
-lastCommitAt: "2026-11-24T01:28:58Z"
+lastCommitAt: "2026-11-24T14:11:42Z"
 lastReleaseAt: "2026-09-24T01:00:10Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 98
-undervaluedScore: 66
+healthScore: 94
+undervaluedScore: 63
 maintainers: ["MovieHolic-Plex"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ebdd4eaaef627462058b5080c5da892466606c49b73753639c8090fe4482ce46/MovieHolic-Plex/OpenRPGMaker"
 postedAt: "2026-10-30T10:31:15.033Z"

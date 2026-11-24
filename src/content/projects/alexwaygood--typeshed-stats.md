@@ -9,22 +9,22 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [96]
 topics: ["python", "python-typing", "typeshed", "typing"]
-stars: 14
-forks: 6
+stars: 15
+forks: 7
 openIssues: 3
 closedIssues: 178
 watchers: 3
-contributors: 7
+contributors: 8
 recentReleases: 0
 createdAt: "2022-10-09T23:59:17Z"
-lastCommitAt: "2026-11-24T00:41:10Z"
+lastCommitAt: "2026-11-24T14:05:20Z"
 lastReleaseAt: "2024-06-09T01:15:01Z"
 status: "thriving"
 tags: ["hidden_gem"]
 healthScore: 99
-undervaluedScore: 76
-maintainers: ["renovate[bot]", "AlexWaygood"]
-openGraphImageUrl: "https://opengraph.githubassets.com/b8dd65dcbd59e32bdbf85a0c4cda3871b41df7ef98db6596755181df6cd56a5c/AlexWaygood/typeshed-stats"
+undervaluedScore: 75
+maintainers: ["renovate[bot]", "AlexWaygood", "Khabib73"]
+openGraphImageUrl: "https://opengraph.githubassets.com/301495c3a35d7bf9c6b8dc5e1cf6a3b6d7bec1029ce64491ef33149c1ad78057/AlexWaygood/typeshed-stats"
 postedAt: "2026-07-01T07:12:26.962Z"
 ---
 

@@ -8,7 +8,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [66]
 stars: 17
-forks: 143
+forks: 145
 openIssues: 110
 closedIssues: 889
 watchers: 0
@@ -22,7 +22,7 @@ tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 95
 undervaluedScore: 72
 maintainers: ["Dimank92", "semantic-release-bot", "adams813"]
-openGraphImageUrl: "https://opengraph.githubassets.com/9e2be146b300d1a2fb67123eb01697eb0a7461c4fc110dd81ecda76da2b671fb/benelabs/crucible"
+openGraphImageUrl: "https://opengraph.githubassets.com/0fb764a1744949ab76c9a249431caa48ec49f86cba802454c731f5c352997a87/benelabs/crucible"
 postedAt: "2026-11-21T11:46:31.167Z"
 ---
 

@@ -8,7 +8,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [98]
 topics: ["boilerplate", "mikro-orm", "monorepo", "nestjs", "nextjs", "postgresql", "primereact", "react", "rest-api", "tailwindcss"]
-stars: 15
+stars: 16
 forks: 3
 openIssues: 1
 closedIssues: 38
@@ -20,9 +20,9 @@ lastCommitAt: "2026-08-08T05:18:02Z"
 status: "at_risk"
 tags: ["solo_builder"]
 healthScore: 64
-undervaluedScore: 38
+undervaluedScore: 37
 maintainers: ["renovate[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/076c30140c2ecb3439d7803ac6c22790acca6cdd5393dbfbdfe018d2a48fd1c6/robertlinde/next-nest-turbo-boilerplate"
+openGraphImageUrl: "https://opengraph.githubassets.com/5d9292dc1edafba6b57c945a2037cd16be9fe5c6f44f3596a5e09074fdeca3ba/robertlinde/next-nest-turbo-boilerplate"
 postedAt: "2026-07-18T05:53:42.749Z"
 ---
 

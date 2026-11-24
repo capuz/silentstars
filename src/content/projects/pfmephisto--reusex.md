@@ -21,7 +21,7 @@ lastCommitAt: "2026-10-13T12:28:46Z"
 lastReleaseAt: "2026-11-16T14:00:59Z"
 status: "quiet"
 tags: ["solo_builder"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 83
 maintainers: ["pfmephisto"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/707678990/a747bd6b-c265-419f-a7a6-e5f0f22fa2b4"

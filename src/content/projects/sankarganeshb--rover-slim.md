@@ -19,7 +19,7 @@ recentReleases: 4
 createdAt: "2026-10-02T19:16:05Z"
 lastCommitAt: "2026-11-10T07:07:58Z"
 lastReleaseAt: "2026-10-13T05:47:28Z"
-status: "newborn"
+status: "quiet"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "funded"]
 healthScore: 65
 undervaluedScore: 77

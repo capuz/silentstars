@@ -11,13 +11,13 @@ languagePcts: [100]
 topics: ["backlog", "nulab-backlog", "backlog-client", "backlog-api"]
 stars: 5
 forks: 4
-openIssues: 20
-closedIssues: 178
+openIssues: 19
+closedIssues: 179
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2020-03-24T13:03:28Z"
-lastCommitAt: "2026-11-23T08:41:01Z"
+lastCommitAt: "2026-11-24T11:47:57Z"
 lastReleaseAt: "2026-04-17T15:51:01Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero"]

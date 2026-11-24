@@ -19,7 +19,7 @@ lastCommitAt: "2026-11-08T05:47:42Z"
 lastReleaseAt: "2022-07-26T21:09:03Z"
 status: "quiet"
 tags: ["hidden_gem", "funded", "fork_magnet"]
-healthScore: 89
+healthScore: 88
 undervaluedScore: 54
 maintainers: ["ddbrown30", "SalieriC", "Arnok136"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/456961923/1c3e0b1c-0a77-4479-b0fd-5e19dd1f0945"

@@ -17,11 +17,11 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2025-01-27T15:56:30Z"
-lastCommitAt: "2026-11-15T22:09:46Z"
+lastCommitAt: "2026-11-24T10:40:30Z"
 lastReleaseAt: "2026-08-21T12:28:11Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 85
+healthScore: 88
 undervaluedScore: 64
 maintainers: ["SiergiejW"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/923078276/6b9b9202-9a46-4423-b9bd-d29b90de0b8d"

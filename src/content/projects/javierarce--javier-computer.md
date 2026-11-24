@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-22T12:36:52Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
 healthScore: 97
-undervaluedScore: 72
+undervaluedScore: 71
 maintainers: ["javierarce"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7fb4beaaf20fde02341ae99ab44b054169aa04b2d0f758533c349765ffef3b6e/javierarce/javier.computer"
 postedAt: "2026-11-22T12:01:23.931Z"

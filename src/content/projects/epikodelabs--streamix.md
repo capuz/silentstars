@@ -11,7 +11,7 @@ languagePcts: [91]
 topics: ["async-iterators", "javascript", "observables", "reactive-programming", "streamix", "typescript", "rxjs-alternative"]
 stars: 4
 forks: 0
-openIssues: 69
+openIssues: 73
 closedIssues: 114
 watchers: 0
 contributors: 2

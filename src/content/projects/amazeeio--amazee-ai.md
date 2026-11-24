@@ -14,12 +14,12 @@ openIssues: 2
 closedIssues: 22
 watchers: 2
 contributors: 17
-recentReleases: 6
+recentReleases: 5
 createdAt: "2025-02-17T14:20:03Z"
-lastCommitAt: "2026-11-23T18:06:57Z"
+lastCommitAt: "2026-11-24T11:56:01Z"
 lastReleaseAt: "2026-09-17T08:00:40Z"
 status: "thriving"
-tags: ["solo_builder", "hidden_gem", "release_machine"]
+tags: ["hidden_gem", "release_machine"]
 healthScore: 98
 undervaluedScore: 60
 maintainers: ["dspachos", "dan2k3k4", "amazee-ai-automation[bot]"]
