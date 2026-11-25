@@ -4,7 +4,8 @@
  * the Bluesky post hasn't gone out). The count ahead comes from
  * data/bsky-queue.json as of now.
  *
- * Env: SUBMISSION_REPO, ISSUE_AUTHOR, PROJ_NAME, PROJ_SLUG, BASE_URL (optional)
+ * Env: SUBMISSION_REPO, ISSUE_AUTHOR, PROJ_NAME, PROJ_SLUG, CARD_LIVE ('false' = not
+ *      deployed yet), BASE_URL (optional)
  */
 import { readQueue, position, queuedComment } from './bsky-queue.ts';
 
@@ -17,4 +18,5 @@ process.stdout.write(queuedComment({
   name: process.env.PROJ_NAME ?? repo,
   cardUrl: `${baseUrl}/projects/${process.env.PROJ_SLUG ?? ''}/`,
   ahead: Math.max(at, 0),
+  live: process.env.CARD_LIVE !== 'false',
 }));

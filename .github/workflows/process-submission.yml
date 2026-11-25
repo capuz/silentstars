@@ -206,7 +206,8 @@ jobs:
           echo "bsky_url=${BSKY_URL}" >> "$GITHUB_OUTPUT"
           echo "card_built=${CARD_BUILT} card_live=${CARD_LIVE} bsky_url=${BSKY_URL:-<none>}"
 
-      # Card live but no post yet: it's waiting in the Bluesky queue.
+      # Card built but no post yet: it's waiting in the Bluesky queue. The
+      # comment only says "now live" if the card URL answered (card_live).
       - name: Queued comment
         if: steps.state.outputs.bsky_url == ''
         env:
@@ -214,6 +215,7 @@ jobs:
           ISSUE_AUTHOR:    ${{ needs.validate.outputs.issue_author }}
           PROJ_NAME:       ${{ needs.validate.outputs.project_name }}
           PROJ_SLUG:       ${{ needs.validate.outputs.slug }}
+          CARD_LIVE:       ${{ steps.state.outputs.card_live }}
         run: npx tsx scripts/bsky-queue-comment.ts > "$RUNNER_TEMP/queued-comment.md"
 
       - name: Update acknowledgement comment, label and close

@@ -87,6 +87,15 @@ test('queuedComment explains the queue, with the count ahead and no manual promi
   assert.match(queuedComment({ author: 'a', name: 'P', cardUrl: 'u', ahead: 0 }), /it's next in line/);
 });
 
+test('queuedComment only claims the card is live when it is', () => {
+  const parts = { author: 'a', name: 'P', cardUrl: 'u', ahead: 0 };
+  assert.match(queuedComment({ ...parts, live: true }), /your card is now live/);
+  const pending = queuedComment({ ...parts, live: false });
+  assert.doesNotMatch(pending, /now live/);
+  assert.match(pending, /goes live with the next site update/);
+  assert.match(pending, /queued/);
+});
+
 test('postedComment links the card and the Bluesky post', () => {
   const body = postedComment({ author: 'alice', name: 'Proj', cardUrl: 'https://c/', bskyUrl: 'https://b/' });
   assert.match(body, /\[View your card\]\(https:\/\/c\/\)/);
