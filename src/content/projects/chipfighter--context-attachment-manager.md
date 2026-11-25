@@ -8,11 +8,11 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [90]
 topics: ["codex", "codex-plugin", "context-management", "developer-tools", "mcp", "claude-code", "claude-code-plugin", "image-generation", "ai-agents", "multimodal"]
-stars: 815
+stars: 817
 forks: 76
 openIssues: 0
 closedIssues: 13
-watchers: 1
+watchers: 2
 contributors: 7
 recentReleases: 10
 createdAt: "2026-09-24T05:00:09Z"

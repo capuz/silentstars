@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-14T23:06:30Z"
 lastReleaseAt: "2026-11-11T11:06:16Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 75
+healthScore: 74
 undervaluedScore: 78
 maintainers: ["Masyaka", "github-actions[bot]", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/bf6b6edc9031135d89607edc438486720cfada3317148464030c8b7170e2cc94/Masyaka/injecute"

@@ -7,7 +7,7 @@ url: "https://github.com/CoorpAcademy/components"
 homepage: "https://coorpacademy.github.io/components/components"
 language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
-languagePcts: [62, 24]
+languagePcts: [62, 25]
 stars: 6
 forks: 6
 openIssues: 7
@@ -16,13 +16,13 @@ watchers: 13
 contributors: 55
 recentReleases: 0
 createdAt: "2015-11-27T14:48:12Z"
-lastCommitAt: "2026-11-20T15:41:56Z"
+lastCommitAt: "2026-11-24T14:32:24Z"
 lastReleaseAt: "2016-08-25T14:59:08Z"
 status: "watched"
 tags: ["legacy_hero", "community_watch", "fork_magnet"]
-healthScore: 97
+healthScore: 98
 undervaluedScore: 81
-maintainers: ["transifex-integration[bot]", "esa-coorp", "silouone"]
+maintainers: ["esa-coorp", "transifex-integration[bot]", "silouone"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f87159e77b02fc80a333f059a300c4b09419d8e18c7500c30590afd119adcc1c/CoorpAcademy/components"
 postedAt: "2026-10-28T10:06:27.573Z"
 ---

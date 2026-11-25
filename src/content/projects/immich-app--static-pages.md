@@ -5,25 +5,25 @@ description: "Sites and packages for Immich"
 readmeQualityOk: true
 url: "https://github.com/immich-app/static-pages"
 homepage: "https://immich.app"
-language: "Svelte"
-languages: ["Svelte", "TypeScript"]
+language: "TypeScript"
+languages: ["TypeScript", "Svelte"]
 languagePcts: [49, 48]
 stars: 19
-forks: 83
+forks: 82
 openIssues: 1
 closedIssues: 6
 watchers: 3
 contributors: 114
 recentReleases: 0
 createdAt: "2024-07-01T17:38:28Z"
-lastCommitAt: "2026-11-24T11:50:58Z"
+lastCommitAt: "2026-11-24T18:39:57Z"
 lastReleaseAt: "2026-06-15T18:35:17Z"
 status: "thriving"
 tags: ["hidden_gem", "funded", "fork_magnet"]
 healthScore: 96
 undervaluedScore: 78
-maintainers: ["renovate[bot]", "immich-push-o-matic[bot]", "jrasm91"]
-openGraphImageUrl: "https://opengraph.githubassets.com/c980a57e29f8aaafbcccb68b1f80f314d90b7a42eeabbfafc216ab5c73ed2cc0/immich-app/static-pages"
+maintainers: ["renovate[bot]", "jrasm91", "immich-push-o-matic[bot]"]
+openGraphImageUrl: "https://opengraph.githubassets.com/6190c545dc74576605bc2982eef0ec205013edb957bdf7c2bbb01324c6b1c8fa/immich-app/static-pages"
 fundingLinks: ["CUSTOM:https://buy.immich.app", "CUSTOM:https://immich.store"]
 postedAt: "2026-11-02T11:44:50.353Z"
 ---

@@ -17,11 +17,11 @@ watchers: 1
 contributors: 10
 recentReleases: 0
 createdAt: "2025-07-23T17:12:45Z"
-lastCommitAt: "2026-11-13T07:18:57Z"
+lastCommitAt: "2026-11-24T19:03:35Z"
 lastReleaseAt: "2026-08-15T08:14:00Z"
 status: "thriving"
 tags: ["funded"]
-healthScore: 91
+healthScore: 95
 undervaluedScore: 43
 maintainers: ["pranavp10", "twinkalp10", "alfarhans"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5fe85f544bb8abfd421771258f0ce776f3474c310bf5d92a751a94f9c611dd4e/reloop-labs/reloop"

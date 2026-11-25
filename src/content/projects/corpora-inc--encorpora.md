@@ -18,7 +18,7 @@ createdAt: "2024-11-10T17:05:23Z"
 lastCommitAt: "2026-11-23T19:33:23Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 94
+healthScore: 93
 undervaluedScore: 82
 maintainers: ["skyl"]
 openGraphImageUrl: "https://opengraph.githubassets.com/112b876cf4a5d027ee9d37d73ddb32694f3555303c6db2ee5a30c66a6b5a8601/corpora-inc/encorpora"

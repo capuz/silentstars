@@ -19,7 +19,7 @@ recentReleases: 4
 createdAt: "2026-06-27T20:19:36Z"
 lastCommitAt: "2026-11-10T18:43:38Z"
 lastReleaseAt: "2026-11-10T17:05:53Z"
-status: "thriving"
+status: "quiet"
 tags: []
 healthScore: 89
 undervaluedScore: 53

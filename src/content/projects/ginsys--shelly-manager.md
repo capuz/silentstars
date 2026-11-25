@@ -19,7 +19,7 @@ lastCommitAt: "2026-11-24T08:15:30Z"
 lastReleaseAt: "2026-11-24T08:28:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 100
+healthScore: 99
 undervaluedScore: 78
 maintainers: ["srgvg", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/a2dd7719b33583acf98cec5e2c636c4bb8fd5b2ca198fe2a23841079d78f4067/ginsys/shelly-manager"

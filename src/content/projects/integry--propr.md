@@ -10,9 +10,9 @@ languages: ["TypeScript"]
 languagePcts: [89]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 40
-forks: 10
-openIssues: 46
-closedIssues: 1571
+forks: 9
+openIssues: 45
+closedIssues: 1575
 watchers: 1
 contributors: 5
 recentReleases: 0

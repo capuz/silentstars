@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-23T10:50:12Z"
 lastReleaseAt: "2026-11-08T08:59:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded", "under_pressure", "community_hub"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 57
 maintainers: ["oleksii-shepel"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f1900e0022bcdef8004d5a21855c80121469873e7f422f70fcfa6c626a9a8902/epikodelabs/streamix"

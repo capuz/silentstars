@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
 languagePcts: [71, 20]
 topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted", "coding-agents", "human-in-the-loop", "dsh-plugin", "mcp-server"]
-stars: 4
+stars: 5
 forks: 0
 openIssues: 1
 closedIssues: 0
@@ -17,14 +17,14 @@ watchers: 0
 contributors: 2
 recentReleases: 6
 createdAt: "2026-11-13T23:45:35Z"
-lastCommitAt: "2026-11-23T04:30:15Z"
+lastCommitAt: "2026-11-25T03:02:26Z"
 lastReleaseAt: "2026-11-22T18:07:00Z"
 status: "newborn"
 tags: ["hidden_gem", "release_machine"]
-healthScore: 79
-undervaluedScore: 52
+healthScore: 80
+undervaluedScore: 51
 maintainers: ["jiangxingfan1-coder"]
-openGraphImageUrl: "https://opengraph.githubassets.com/62f5a0a2b945f49ab4e211fac549b4dcd39eb7576c1cd2b1b7f4a53dfc70abca/jiangxingfan1-coder/Open-Agent-API"
+openGraphImageUrl: "https://opengraph.githubassets.com/08d4593eab7a918d11244f60e8913a7dc2a90773f60cc62a3c94616ca38566f5/jiangxingfan1-coder/Open-Agent-API"
 promoted: true
 postedAt: "2026-11-20T12:33:44.346Z"
 ---

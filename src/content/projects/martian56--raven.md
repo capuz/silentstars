@@ -9,7 +9,7 @@ language: "Rust"
 languages: ["Rust"]
 languagePcts: [97]
 topics: ["new-programming-language", "programming-language", "compiler", "compiled-language", "concurrency", "cranelift", "garbage-collection", "goroutines", "native-code", "package-manager"]
-stars: 112
+stars: 113
 forks: 31
 openIssues: 7
 closedIssues: 420
@@ -24,7 +24,7 @@ tags: ["solo_builder"]
 healthScore: 99
 undervaluedScore: 50
 maintainers: ["martian56"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cacf30032e914db33c865c296151b0e4c866205df7b18f26b074ebfa68a4c167/martian56/raven"
+openGraphImageUrl: "https://opengraph.githubassets.com/5edb5367fdaf964742d043e47b6c63ff84c9d152d740df008ef4c4bcc8b33bd2/martian56/raven"
 discussionCount: 2
 postedAt: "2026-06-25T06:46:44.859Z"
 ---

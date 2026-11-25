@@ -12,12 +12,12 @@ topics: ["status-page", "upptime", "uptime-monitor", "openfoodfacts"]
 stars: 13
 forks: 4
 openIssues: 5
-closedIssues: 14218
+closedIssues: 14231
 watchers: 1
 contributors: 13
 recentReleases: 0
 createdAt: "2023-01-20T07:38:09Z"
-lastCommitAt: "2026-11-24T14:03:08Z"
+lastCommitAt: "2026-11-25T03:19:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "funded"]
 healthScore: 98

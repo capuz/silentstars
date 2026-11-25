@@ -7,8 +7,8 @@ url: "https://github.com/GSX-Eis/jq-factor-lab"
 language: "Python"
 languages: ["Python"]
 languagePcts: [100]
-stars: 14
-forks: 2
+stars: 15
+forks: 3
 openIssues: 0
 closedIssues: 0
 watchers: 1
@@ -19,9 +19,9 @@ lastCommitAt: "2026-11-21T15:26:10Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 88
-undervaluedScore: 24
+undervaluedScore: 25
 maintainers: ["GSX-Eis"]
-openGraphImageUrl: "https://opengraph.githubassets.com/19f3efeabec58c54578bcf13aae23407bb788662c8eb17f32bfb2d23f498a6fa/GSX-Eis/jq-factor-lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/24363d82b79d3dd2dcdb0fba53781d2c9b693043125ca5be7be695eac5a6d289/GSX-Eis/jq-factor-lab"
 promoted: true
 postedAt: "2026-11-16T04:39:55.630Z"
 ---

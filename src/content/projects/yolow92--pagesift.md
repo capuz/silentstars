@@ -10,7 +10,7 @@ languages: ["Rust"]
 languagePcts: [84]
 topics: ["ai-agents", "browser-automation", "data-extraction", "firecrawl", "html-to-markdown", "markdown", "mcp", "pdf-extraction", "rag", "rust"]
 stars: 310
-forks: 38
+forks: 37
 openIssues: 2
 closedIssues: 2
 watchers: 2

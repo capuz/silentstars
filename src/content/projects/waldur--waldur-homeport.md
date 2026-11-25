@@ -16,10 +16,10 @@ watchers: 4
 contributors: 31
 recentReleases: 10
 createdAt: "2017-05-15T11:56:04Z"
-lastCommitAt: "2026-11-24T13:44:39Z"
+lastCommitAt: "2026-11-24T23:34:02Z"
 lastReleaseAt: "2026-10-22T15:04:26Z"
 status: "thriving"
-tags: ["legacy_hero", "release_machine", "fork_magnet"]
+tags: ["solo_builder", "legacy_hero", "release_machine", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 74
 maintainers: ["livenson", "DarinaKulyk", "AmbientLighter"]

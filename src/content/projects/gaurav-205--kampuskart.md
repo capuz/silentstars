@@ -12,7 +12,7 @@ topics: ["full-stack", "mongodb", "nodejs", "react", "socket-io", "tailwindcss",
 stars: 17
 forks: 56
 openIssues: 46
-closedIssues: 130
+closedIssues: 125
 watchers: 1
 contributors: 15
 recentReleases: 0

@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-24T14:14:22.859Z",
+  "collectedAt": "2026-11-25T03:23:53.610Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,53 +55,89 @@
       ]
     },
     {
-      "repo": "sunrise-org/sunrise",
-      "slug": "sunrise-org--sunrise",
-      "lastCommitAt": "2026-11-24T11:16:29Z",
+      "repo": "stella/stella",
+      "slug": "stella--stella",
+      "lastCommitAt": "2026-11-25T02:46:27Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 5,
+      "goodFirstIssueCount": 4,
       "issues": [
         {
-          "number": 5133,
-          "title": "Remove the orphan crates/sunrise-mod-wasm/wire-loopback test file left by the wasm removal",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5133",
+          "number": 9335,
+          "title": "feat(reports): add .xlsx export for tabular review views",
+          "url": "https://github.com/stella/stella/issues/9335",
           "kind": "good first issue",
-          "createdAt": "2026-11-23T23:04:55Z",
-          "comments": 2
-        },
-        {
-          "number": 5160,
-          "title": "Daily: cargo-sunrise-mod registry_source::tests::a_live_release_verifies_against_the_live_index_and_its_attestation",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5160",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T23:44:26Z",
-          "comments": 2
-        },
-        {
-          "number": 5228,
-          "title": "Eye of ender test: pin the located structure positions instead of asking the locator",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5228",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T02:13:01Z",
+          "createdAt": "2026-11-23T21:33:56Z",
           "comments": 0
         },
         {
-          "number": 5180,
-          "title": "Mod API: a mod applies a post-effect chain to the player's view",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5180",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T00:39:09Z",
+          "number": 9334,
+          "title": "feat(outlook): log a quick time entry from the Outlook add-in",
+          "url": "https://github.com/stella/stella/issues/9334",
+          "kind": "good first issue",
+          "createdAt": "2026-11-23T21:33:54Z",
           "comments": 0
         },
         {
-          "number": 5179,
-          "title": "Mod API: custom render types for a mod's entity, block entity, item, special model and geometry draws",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5179",
+          "number": 1601,
+          "title": "feat(table): translate results",
+          "url": "https://github.com/stella/stella/issues/1601",
+          "kind": "good first issue",
+          "createdAt": "2026-08-03T15:01:25Z",
+          "comments": 6
+        }
+      ]
+    },
+    {
+      "repo": "ordewell/ordewell",
+      "slug": "ordewell--ordewell",
+      "lastCommitAt": "2026-11-25T02:15:07Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 149,
+          "title": "Record whether Cursor reports usage over ACP, and the first CLI version with agent acp",
+          "url": "https://github.com/ordewell/ordewell/issues/149",
+          "kind": "good first issue",
+          "createdAt": "2026-11-05T15:29:42Z",
+          "comments": 0
+        },
+        {
+          "number": 148,
+          "title": "Record Qwen Code resuming a session, and replay it in its tests",
+          "url": "https://github.com/ordewell/ordewell/issues/148",
+          "kind": "good first issue",
+          "createdAt": "2026-11-05T15:29:40Z",
+          "comments": 1
+        },
+        {
+          "number": 76,
+          "title": "Support DeepSeek Harness (dsh) as a runner and as a harness planner",
+          "url": "https://github.com/ordewell/ordewell/issues/76",
           "kind": "help wanted",
-          "createdAt": "2026-11-24T00:38:57Z",
+          "createdAt": "2026-10-08T14:58:25Z",
+          "comments": 0
+        },
+        {
+          "number": 126,
+          "title": "Support Meta Muse Code as a runner and harness planner",
+          "url": "https://github.com/ordewell/ordewell/issues/126",
+          "kind": "help wanted",
+          "createdAt": "2026-10-28T14:53:06Z",
+          "comments": 0
+        },
+        {
+          "number": 135,
+          "title": "Support goose as a runner and harness planner",
+          "url": "https://github.com/ordewell/ordewell/issues/135",
+          "kind": "help wanted",
+          "createdAt": "2026-10-28T14:56:04Z",
           "comments": 0
         }
       ]
@@ -109,7 +145,7 @@
     {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-24T11:15:09Z",
+      "lastCommitAt": "2026-11-24T13:48:27Z",
       "signals": {
         "outsidePRsMerged": 29,
         "outsidePRsCapped": false
@@ -159,6 +195,58 @@
       ]
     },
     {
+      "repo": "conn3xorg/conn3x",
+      "slug": "conn3xorg--conn3x",
+      "lastCommitAt": "2026-11-25T03:18:18Z",
+      "signals": {
+        "outsidePRsMerged": 29,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 7,
+      "issues": [
+        {
+          "number": 1347,
+          "title": "convert leaves cron's `cron_file` for review, though a cron step already writes to /etc/cron.d",
+          "url": "https://github.com/conn3xorg/conn3x/issues/1347",
+          "kind": "good first issue",
+          "createdAt": "2026-11-24T17:34:04Z",
+          "comments": 0
+        },
+        {
+          "number": 1345,
+          "title": "convert leaves the `raw` task that installs Python for review, though Conn3x needs no Python on the host",
+          "url": "https://github.com/conn3xorg/conn3x/issues/1345",
+          "kind": "good first issue",
+          "createdAt": "2026-11-24T17:34:00Z",
+          "comments": 0
+        },
+        {
+          "number": 1343,
+          "title": "ufw_settings can't set logging, so convert leaves ufw's `logging` for review",
+          "url": "https://github.com/conn3xorg/conn3x/issues/1343",
+          "kind": "good first issue",
+          "createdAt": "2026-11-24T17:33:57Z",
+          "comments": 0
+        },
+        {
+          "number": 1332,
+          "title": "go test ./... fails on macOS: three module tests call GNU stat -c",
+          "url": "https://github.com/conn3xorg/conn3x/issues/1332",
+          "kind": "good first issue",
+          "createdAt": "2026-11-24T03:55:04Z",
+          "comments": 0
+        },
+        {
+          "number": 1012,
+          "title": "conn3x convert leaves win_environment for review, though windows_environment exists",
+          "url": "https://github.com/conn3xorg/conn3x/issues/1012",
+          "kind": "good first issue",
+          "createdAt": "2026-11-18T22:35:50Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "benelabs/crucible",
       "slug": "benelabs--crucible",
       "lastCommitAt": "2026-11-23T10:12:22Z",
@@ -174,7 +262,7 @@
           "url": "https://github.com/benelabs/crucible/issues/1465",
           "kind": "good first issue",
           "createdAt": "2026-11-21T02:48:50Z",
-          "comments": 2
+          "comments": 3
         },
         {
           "number": 1447,
@@ -211,166 +299,54 @@
       ]
     },
     {
-      "repo": "konflux-ci/konflux-ci",
-      "slug": "konflux-ci--konflux-ci",
-      "lastCommitAt": "2026-11-24T12:55:42Z",
+      "repo": "sonic-net/sonic-mgmt",
+      "slug": "sonic-net--sonic-mgmt",
+      "lastCommitAt": "2026-11-25T02:14:58Z",
       "signals": {
-        "outsidePRsMerged": 27,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 9,
-      "issues": [
-        {
-          "number": 9388,
-          "title": "Add fast-path approval for bot-authored .tekton/ digest/SHA bumps in pr-review skill",
-          "url": "https://github.com/konflux-ci/konflux-ci/issues/9388",
-          "kind": "good first issue",
-          "createdAt": "2026-10-01T10:15:03Z",
-          "comments": 3
-        }
-      ]
-    },
-    {
-      "repo": "aws-samples/sample-collaborative-ai-dlc",
-      "slug": "aws-samples--sample-collaborative-ai-dlc",
-      "lastCommitAt": "2026-11-24T14:07:44Z",
-      "signals": {
-        "outsidePRsMerged": 24,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 6,
-      "issues": [
-        {
-          "number": 800,
-          "title": "[Bug]: Claude and Kiro stage sessions never load the methodology rule stack (.aidlc/rules.md)",
-          "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/800",
-          "kind": "good first issue",
-          "createdAt": "2026-11-19T05:19:45Z",
-          "comments": 2
-        },
-        {
-          "number": 789,
-          "title": "[Feature]: Make the stage review gate easier to spot on the intent page",
-          "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/789",
-          "kind": "good first issue",
-          "createdAt": "2026-11-18T16:32:21Z",
-          "comments": 0
-        },
-        {
-          "number": 591,
-          "title": "[RFC]: Upload files and share artifacts in chat and discussions",
-          "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/591",
-          "kind": "good first issue",
-          "createdAt": "2026-10-21T15:36:03Z",
-          "comments": 1
-        },
-        {
-          "number": 477,
-          "title": "[Bug]: Unterminated stages in observability",
-          "url": "https://github.com/aws-samples/sample-collaborative-ai-dlc/issues/477",
-          "kind": "good first issue",
-          "createdAt": "2026-09-22T08:36:02Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "DevMortimer/pi-warden",
-      "slug": "devmortimer--pi-warden",
-      "lastCommitAt": "2026-11-24T14:09:33Z",
-      "signals": {
-        "outsidePRsMerged": 19,
+        "outsidePRsMerged": 22,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 127,
-          "title": "Run pi-warden's guards in Claude Code, Codex and OpenCode",
-          "url": "https://github.com/DevMortimer/pi-warden/issues/127",
+          "number": 15680,
+          "title": "[Snappi] Require support in Snappi to pull 'traffic item statistics' to fetch frame rates and throughput parameters.",
+          "url": "https://github.com/sonic-net/sonic-mgmt/issues/15680",
           "kind": "help wanted",
-          "createdAt": "2026-09-27T00:04:58Z",
+          "createdAt": "2024-11-21T19:40:35Z",
           "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "hivecommons/hive",
-      "slug": "hivecommons--hive",
-      "lastCommitAt": "2026-11-24T14:00:05Z",
-      "signals": {
-        "outsidePRsMerged": 17,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 19633,
-          "title": "✨ feature: rotate the GitHub PAT from Settings without editing the data volume or restarting",
-          "url": "https://github.com/hivecommons/hive/issues/19633",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T08:12:32Z",
-          "comments": 4
         },
         {
-          "number": 19494,
-          "title": "🐛 bug: #6167 and #14096 closed as completed, but a Forgejo-only hive finds no work",
-          "url": "https://github.com/hivecommons/hive/issues/19494",
+          "number": 15837,
+          "title": "[Bug]: IXIA Protocols are not stopped in 10 seconds ",
+          "url": "https://github.com/sonic-net/sonic-mgmt/issues/15837",
           "kind": "help wanted",
-          "createdAt": "2026-11-22T23:17:46Z",
-          "comments": 4
+          "createdAt": "2024-12-03T03:36:50Z",
+          "comments": 7
         },
         {
-          "number": 18987,
-          "title": "📝 RFC: session taint - track sensitive reads across an agent's tool calls and restrict later outbound actions",
-          "url": "https://github.com/hivecommons/hive/issues/18987",
+          "number": 16529,
+          "title": "[Bug]: Testcase test_balancing_sub_ports[port_in_lag] fail because select incorrect interface as src_port",
+          "url": "https://github.com/sonic-net/sonic-mgmt/issues/16529",
           "kind": "help wanted",
-          "createdAt": "2026-11-18T14:06:33Z",
-          "comments": 8
-        },
-        {
-          "number": 19620,
-          "title": "✨ feature: serve a spoke dashboard under a URL path prefix",
-          "url": "https://github.com/hivecommons/hive/issues/19620",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T01:05:19Z",
-          "comments": 2
-        },
-        {
-          "number": 19297,
-          "title": "✨ Enforce the push broker's sign-off rules on in-pod agent pushes at the egress proxy",
-          "url": "https://github.com/hivecommons/hive/issues/19297",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T17:34:35Z",
+          "createdAt": "2025-01-15T13:04:03Z",
           "comments": 5
-        }
-      ]
-    },
-    {
-      "repo": "Godcreatebugs/raytrace-cli",
-      "slug": "godcreatebugs--raytrace-cli",
-      "lastCommitAt": "2026-11-23T14:43:29Z",
-      "signals": {
-        "outsidePRsMerged": 14,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 38,
-          "title": "Local sandboxes on Windows don’t download Lima",
-          "url": "https://github.com/Godcreatebugs/raytrace-cli/issues/38",
-          "kind": "help wanted",
-          "createdAt": "2026-11-12T16:05:20Z",
-          "comments": 1
         },
         {
-          "number": 40,
-          "title": "Codex prompts don’t appear on the Prompts page in local sandboxes",
-          "url": "https://github.com/Godcreatebugs/raytrace-cli/issues/40",
+          "number": 17237,
+          "title": "[|Test Gap]:Missing sonic-mgmt tests to cover split mode ion FRR",
+          "url": "https://github.com/sonic-net/sonic-mgmt/issues/17237",
           "kind": "help wanted",
-          "createdAt": "2026-11-12T16:05:22Z",
-          "comments": 0
+          "createdAt": "2025-02-27T23:28:45Z",
+          "comments": 3
+        },
+        {
+          "number": 18966,
+          "title": "Bug: Switch stops advertising eBGP after test_cycle_voq_intf",
+          "url": "https://github.com/sonic-net/sonic-mgmt/issues/18966",
+          "kind": "help wanted",
+          "createdAt": "2025-06-12T17:11:08Z",
+          "comments": 5
         }
       ]
     },
@@ -396,151 +372,9 @@
       ]
     },
     {
-      "repo": "LooperSalty/AnyXboxX",
-      "slug": "loopersalty--anyxboxx",
-      "lastCommitAt": "2026-11-24T14:05:58Z",
-      "signals": {
-        "outsidePRsMerged": 9,
-        "outsidePRsCapped": false,
-        "approxKloc": 35
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 112,
-          "title": "Rapports du banc GPU par carte",
-          "url": "https://github.com/LooperSalty/AnyXboxX/issues/112",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T22:37:15Z",
-          "comments": 5
-        },
-        {
-          "number": 140,
-          "title": "Monde noir sous VIctory : ray tracing (BVH), masques de lanes, composition finale",
-          "url": "https://github.com/LooperSalty/AnyXboxX/issues/140",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T13:51:23Z",
-          "comments": 0
-        },
-        {
-          "number": 68,
-          "title": "Shaders : contrôle de flux structuré et masques de lanes",
-          "url": "https://github.com/LooperSalty/AnyXboxX/issues/68",
-          "kind": "help wanted",
-          "createdAt": "2026-11-21T22:57:16Z",
-          "comments": 2
-        }
-      ]
-    },
-    {
-      "repo": "octacity-org/vigil",
-      "slug": "octacity-org--vigil",
-      "lastCommitAt": "2026-11-24T14:09:44Z",
-      "signals": {
-        "outsidePRsMerged": 7,
-        "outsidePRsCapped": false,
-        "approxKloc": 25
-      },
-      "goodFirstIssueCount": 14,
-      "issues": [
-        {
-          "number": 79,
-          "title": "Wireframes for finding list, company page, finding card and first run",
-          "url": "https://github.com/octacity-org/vigil/issues/79",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T14:18:00Z",
-          "comments": 0
-        },
-        {
-          "number": 84,
-          "title": "Show 'not computable' states explicitly",
-          "url": "https://github.com/octacity-org/vigil/issues/84",
-          "kind": "good first issue",
-          "createdAt": "2026-10-23T14:18:27Z",
-          "comments": 0
-        },
-        {
-          "number": 192,
-          "title": "Export user data (CSV and DuckDB copy)",
-          "url": "https://github.com/octacity-org/vigil/issues/192",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T11:10:38Z",
-          "comments": 0
-        },
-        {
-          "number": 215,
-          "title": "Pagination and sorting conventions",
-          "url": "https://github.com/octacity-org/vigil/issues/215",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T11:12:23Z",
-          "comments": 0
-        },
-        {
-          "number": 235,
-          "title": "Period label: point in time, cumulative, 3-month",
-          "url": "https://github.com/octacity-org/vigil/issues/235",
-          "kind": "good first issue",
-          "createdAt": "2026-11-01T11:13:58Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "blitzcrieg1/agentmetry",
-      "slug": "blitzcrieg1--agentmetry",
-      "lastCommitAt": "2026-11-24T14:10:26Z",
-      "signals": {
-        "outsidePRsMerged": 7,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 3,
-          "title": "Add DLP rules for Google / GCP credentials",
-          "url": "https://github.com/blitzcrieg1/agentmetry/issues/3",
-          "kind": "good first issue",
-          "createdAt": "2026-07-14T15:16:43Z",
-          "comments": 1
-        },
-        {
-          "number": 26,
-          "title": "Dashboard: remove the removed product's state model",
-          "url": "https://github.com/blitzcrieg1/agentmetry/issues/26",
-          "kind": "good first issue",
-          "createdAt": "2026-07-28T15:33:37Z",
-          "comments": 0
-        },
-        {
-          "number": 25,
-          "title": "Grow the detection benchmark corpus with more benign sessions",
-          "url": "https://github.com/blitzcrieg1/agentmetry/issues/25",
-          "kind": "good first issue",
-          "createdAt": "2026-07-28T15:32:23Z",
-          "comments": 0
-        },
-        {
-          "number": 36,
-          "title": "Two published rules have no benchmark corpus case: host-subagent-swarm-burst and off-hours-activity",
-          "url": "https://github.com/blitzcrieg1/agentmetry/issues/36",
-          "kind": "help wanted",
-          "createdAt": "2026-08-01T17:22:19Z",
-          "comments": 1
-        },
-        {
-          "number": 27,
-          "title": "Dashboard: keyboard triage queue for the Detections tab",
-          "url": "https://github.com/blitzcrieg1/agentmetry/issues/27",
-          "kind": "help wanted",
-          "createdAt": "2026-07-28T15:34:03Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-24T12:36:18Z",
+      "lastCommitAt": "2026-11-25T03:06:28Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -560,7 +394,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-24T12:36:18Z",
+      "lastCommitAt": "2026-11-25T03:06:28Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -580,7 +414,7 @@
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-24T13:40:43Z",
+      "lastCommitAt": "2026-11-25T00:00:35Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -625,26 +459,6 @@
           "url": "https://github.com/farena-ai/sara/issues/6",
           "kind": "good first issue",
           "createdAt": "2026-10-28T03:19:42Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "beehive-lab/jitllm",
-      "slug": "beehive-lab--jitllm",
-      "lastCommitAt": "2026-11-24T14:04:25Z",
-      "signals": {
-        "outsidePRsMerged": 3,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 141,
-          "title": "Reduce external implementation types exposed by the GPULlama3 integration API",
-          "url": "https://github.com/beehive-lab/jitllm/issues/141",
-          "kind": "good first issue",
-          "createdAt": "2026-07-30T09:57:19Z",
           "comments": 0
         }
       ]
@@ -761,21 +575,13 @@
     {
       "repo": "grelinfo/grelmicro",
       "slug": "grelinfo--grelmicro",
-      "lastCommitAt": "2026-11-24T13:34:12Z",
+      "lastCommitAt": "2026-11-24T14:43:37Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 1,
       "issues": [
-        {
-          "number": 1237,
-          "title": "📝 Measure the performance and JWT pages again on Python 3.14",
-          "url": "https://github.com/grelinfo/grelmicro/issues/1237",
-          "kind": "good first issue",
-          "createdAt": "2026-11-02T07:19:16Z",
-          "comments": 0
-        },
         {
           "number": 1238,
           "title": "✨ An SQLite backend for the outbox",
@@ -795,54 +601,54 @@
       ]
     },
     {
-      "repo": "ns2switch/irmind",
-      "slug": "ns2switch--irmind",
-      "lastCommitAt": "2026-11-24T14:07:32Z",
+      "repo": "ashlrai/phantom-secrets",
+      "slug": "ashlrai--phantom-secrets",
+      "lastCommitAt": "2026-11-25T03:15:06Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 21,
+      "goodFirstIssueCount": 6,
       "issues": [
         {
-          "number": 203,
-          "title": "Common event mapping: declarative — extend semantic coverage",
-          "url": "https://github.com/ns2switch/irmind/issues/203",
+          "number": 1598,
+          "title": "Update INTEGRATION.md to name the verified v0.8.11 GitHub release",
+          "url": "https://github.com/ashlrai/phantom-secrets/issues/1598",
           "kind": "good first issue",
-          "createdAt": "2026-11-07T11:09:51Z",
-          "comments": 1
+          "createdAt": "2026-11-24T08:01:49Z",
+          "comments": 0
         },
         {
-          "number": 202,
-          "title": "Common event mapping: Apache — extend semantic coverage",
-          "url": "https://github.com/ns2switch/irmind/issues/202",
+          "number": 1597,
+          "title": "Update SUPPORT.md release-state snapshot from v0.8.7 to v0.8.11",
+          "url": "https://github.com/ashlrai/phantom-secrets/issues/1597",
           "kind": "good first issue",
-          "createdAt": "2026-11-07T11:09:51Z",
-          "comments": 1
+          "createdAt": "2026-11-24T08:01:48Z",
+          "comments": 0
         },
         {
-          "number": 201,
-          "title": "Common event mapping: nginx — extend semantic coverage",
-          "url": "https://github.com/ns2switch/irmind/issues/201",
+          "number": 1596,
+          "title": "Point docs/quickstart-platform-sections.md install snippets at v0.8.11",
+          "url": "https://github.com/ashlrai/phantom-secrets/issues/1596",
           "kind": "good first issue",
-          "createdAt": "2026-11-07T11:09:50Z",
-          "comments": 1
+          "createdAt": "2026-11-24T08:01:36Z",
+          "comments": 0
         },
         {
-          "number": 200,
-          "title": "Common event mapping: Linux journald — extend semantic coverage",
-          "url": "https://github.com/ns2switch/irmind/issues/200",
+          "number": 1595,
+          "title": "Update integrations GitHub Actions example from v0.7.5 to the verified v0.8.11 release",
+          "url": "https://github.com/ashlrai/phantom-secrets/issues/1595",
           "kind": "good first issue",
-          "createdAt": "2026-11-07T11:09:49Z",
-          "comments": 1
+          "createdAt": "2026-11-24T08:01:35Z",
+          "comments": 0
         },
         {
-          "number": 199,
-          "title": "Common event mapping: syslog — extend semantic coverage",
-          "url": "https://github.com/ns2switch/irmind/issues/199",
+          "number": 1594,
+          "title": "Include working `phantom open` aliases teams, repo, and home in help and errors",
+          "url": "https://github.com/ashlrai/phantom-secrets/issues/1594",
           "kind": "good first issue",
-          "createdAt": "2026-11-07T11:09:48Z",
-          "comments": 1
+          "createdAt": "2026-11-24T08:01:33Z",
+          "comments": 0
         }
       ]
     },
@@ -872,6 +678,34 @@
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
           "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "Jstar269/Nakagawa-Recomp",
+      "slug": "jstar269--nakagawa-recomp",
+      "lastCommitAt": "2026-11-25T03:17:44Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 317,
+          "title": "Codegen: compare GCC and Clang/LLVM on generated code, requiring identical behaviour",
+          "url": "https://github.com/Jstar269/Nakagawa-Recomp/issues/317",
+          "kind": "help wanted",
+          "createdAt": "2026-09-21T04:10:52Z",
+          "comments": 5
+        },
+        {
+          "number": 302,
+          "title": "Media: check YCbCr, colour conversion and PCM HLE against real PSP behaviour",
+          "url": "https://github.com/Jstar269/Nakagawa-Recomp/issues/302",
+          "kind": "help wanted",
+          "createdAt": "2026-09-21T03:36:29Z",
+          "comments": 6
         }
       ]
     },
@@ -963,6 +797,26 @@
           "kind": "help wanted",
           "createdAt": "2026-08-05T04:06:19Z",
           "comments": 5
+        }
+      ]
+    },
+    {
+      "repo": "zhexusun10/grapher",
+      "slug": "zhexusun10--grapher",
+      "lastCommitAt": "2026-11-25T03:17:44Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 11,
+          "title": "Community feedback: Compare Grapher with other coding agents",
+          "url": "https://github.com/zhexusun10/grapher/issues/11",
+          "kind": "help wanted",
+          "createdAt": "2026-10-02T15:28:37Z",
+          "comments": 0
         }
       ]
     }

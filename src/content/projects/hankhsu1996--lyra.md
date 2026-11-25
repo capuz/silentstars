@@ -10,13 +10,13 @@ languagePcts: [75, 22]
 topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda", "hdl", "llvm", "verification"]
 stars: 7
 forks: 1
-openIssues: 463
-closedIssues: 144
+openIssues: 464
+closedIssues: 146
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-11-23T13:14:26Z"
+lastCommitAt: "2026-11-25T02:28:25Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 84

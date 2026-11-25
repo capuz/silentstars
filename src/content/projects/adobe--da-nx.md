@@ -9,13 +9,13 @@ languages: ["JavaScript"]
 languagePcts: [89]
 stars: 8
 forks: 50
-openIssues: 55
-closedIssues: 131
+openIssues: 54
+closedIssues: 132
 watchers: 9
 contributors: 290
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-24T09:49:03Z"
+lastCommitAt: "2026-11-24T18:00:49Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]

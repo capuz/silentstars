@@ -19,14 +19,13 @@ recentReleases: 10
 createdAt: "2026-09-25T22:33:47Z"
 lastCommitAt: "2026-11-23T21:02:49Z"
 lastReleaseAt: "2026-10-20T23:26:57Z"
-status: "newborn"
+status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 96
+healthScore: 95
 undervaluedScore: 62
 maintainers: ["Todo-bai", "mykola-lp", "abhirajadhikary06"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1388251891/fca86812-0697-4e0f-9e46-5dfda72a8ef7"
 discussionCount: 4
-promoted: true
 postedAt: "2026-10-26T18:14:02.761Z"
 ---
 

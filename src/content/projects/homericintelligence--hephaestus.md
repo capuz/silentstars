@@ -10,8 +10,8 @@ languages: ["Python"]
 languagePcts: [99]
 stars: 7
 forks: 1
-openIssues: 21
-closedIssues: 1789
+openIssues: 26
+closedIssues: 1791
 watchers: 0
 contributors: 5
 recentReleases: 0
