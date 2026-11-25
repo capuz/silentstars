@@ -2986,5 +2986,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "Human-Cognome-Project/human-cognome-project",
+    "slug": "human-cognome-project--human-cognome-project",
+    "postedAt": "2026-11-25T13:31:37.739Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n35bgdtdat2j",
+        "postedAt": "2026-11-25T13:31:37.739Z"
+      }
+    }
   }
 ]
