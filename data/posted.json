@@ -2962,5 +2962,29 @@
         "postedAt": "2026-11-23T13:41:07.202Z"
       }
     }
+  },
+  {
+    "repo": "Heming9/agenterm",
+    "slug": "heming9--agenterm",
+    "postedAt": "2026-11-25T03:28:53.300Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n347ql5d622o",
+        "postedAt": "2026-11-25T03:28:53.300Z"
+      }
+    },
+    "communityPick": true
+  },
+  {
+    "repo": "treseko/treseko-platform",
+    "slug": "treseko--treseko-platform",
+    "postedAt": "2026-11-25T03:28:58.981Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n347qqljfc2t",
+        "postedAt": "2026-11-25T03:28:58.981Z"
+      }
+    },
+    "communityPick": true
   }
 ]
