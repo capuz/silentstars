@@ -1,7 +1,7 @@
 /**
- * weekly-email-build.ts — the Monday email for a /weekly/ edition: the edition card and
- * a button to the edition page, then the top projects of each non-empty section with
- * their notes.
+ * weekly-email-build.ts — the Monday email for a /weekly/ edition: the edition card
+ * (links to the edition page) and a button to the star trails on /weekly/, then the
+ * top projects of each non-empty section with their notes.
  * Pure: send-weekly-email.ts does the I/O.
  */
 
@@ -69,7 +69,7 @@ export function buildWeeklyEmail(edition: NumberedEdition, notes: Record<string,
           <tr><td style="padding-bottom:22px;color:#8b949e;font-size:15px;line-height:1.7;">${esc(counts)}</td></tr>
 
           <tr><td style="padding-bottom:28px;">
-            <a href="${esc(pageUrl)}" style="display:inline-block;background:#ffe4aa;color:#070b18;padding:12px 24px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:700;">${linkText("This week's details →", '#070b18')}</a>
+            <a href="${esc(`${baseUrl}/weekly/`)}" style="display:inline-block;background:#ffe4aa;color:#070b18;padding:12px 24px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:700;">${linkText('Watch the star trails →', '#070b18')}</a>
           </td></tr>
 ${present.map(s => section(`${s.icon} ${s.title}`, edition[s.key], notes, baseUrl)).join('')}
 
