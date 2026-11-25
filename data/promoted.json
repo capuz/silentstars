@@ -218,5 +218,9 @@
   {
     "repo": "Heming9/agenterm",
     "until": "2026-12-24"
+  },
+  {
+    "repo": "treseko/treseko-platform",
+    "until": "2026-12-25"
   }
 ]
