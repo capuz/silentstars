@@ -195,7 +195,7 @@ jobs:
     if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     outputs:
       post_slug: ${{ steps.picks.outputs.post_slug }}
     steps:
@@ -306,8 +306,22 @@ jobs:
         with:
           path: dist/
 
+      # deploy-pages can query the artifact API before a just-finalized upload
+      # is visible ("Found 0 artifact(s)", runs 44900114638 and 45411183872),
+      # so give it one more try after a short wait. A second failure still
+      # fails the job.
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Wait for artifact to become visible
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 20
+
+      - name: Deploy to GitHub Pages (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
   # ─────────────────────────────────────────────────────────────
@@ -454,7 +468,7 @@ jobs:
       needs.post.result == 'success'
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -493,8 +507,24 @@ jobs:
           path: dist/
           name: github-pages-redeploy
 
+      # deploy-pages can query the artifact API before a just-finalized upload
+      # is visible ("Found 0 artifact(s)", runs 44900114638 and 45411183872),
+      # so give it one more try after a short wait. A second failure still
+      # fails the job.
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-redeploy
+
+      - name: Wait for artifact to become visible
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 20
+
+      - name: Deploy to GitHub Pages (retry)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
         with:
           artifact_name: github-pages-redeploy
