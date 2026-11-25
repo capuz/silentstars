@@ -77,10 +77,19 @@ export function takeDue(
 
 interface CommentParts { author: string; name: string; cardUrl: string }
 
-export function queuedComment({ author, name, cardUrl, ahead }: CommentParts & { ahead: number }): string {
+/**
+ * `live` is whether the card URL answered when the comment was written. The
+ * deploy can fail after the card is committed (run 45309246218), so only claim
+ * "now live" when it actually is.
+ */
+export function queuedComment(
+  { author, name, cardUrl, ahead, live = true }: CommentParts & { ahead: number; live?: boolean },
+): string {
   const line = ahead === 0 ? `it's next in line`
     : `there ${ahead === 1 ? 'is' : 'are'} **${ahead}** ahead of it`;
-  return `Hey @${author}! ✅\n\n**${name}** has been accepted and your card is now live on SilentStars!\n\n🃏 [View your card](${cardUrl})\n\nIts 🦋 Bluesky post is **queued**: up to ${DAILY_COMMUNITY_CAP} community picks go out per day, oldest first, and ${line}. When it posts, this comment gets the link, you get the email, and the issue closes on its own. No need to do anything else. ⭐`;
+  const status = live ? 'your card is now live on SilentStars!'
+    : 'your card goes live with the next site update.';
+  return `Hey @${author}! ✅\n\n**${name}** has been accepted and ${status}\n\n🃏 [View your card](${cardUrl})\n\nIts 🦋 Bluesky post is **queued**: up to ${DAILY_COMMUNITY_CAP} community picks go out per day, oldest first, and ${line}. When it posts, this comment gets the link, you get the email, and the issue closes on its own. No need to do anything else. ⭐`;
 }
 
 export function postedComment({ author, name, cardUrl, bskyUrl }: CommentParts & { bskyUrl: string }): string {
