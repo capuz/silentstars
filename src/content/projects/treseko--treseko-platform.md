@@ -25,6 +25,7 @@ undervaluedScore: 48
 maintainers: ["Codificadito"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1298503003/5f3665f2-1895-49e7-bcca-230ac924b1cc"
 promoted: true
+postedAt: "2026-11-25T03:28:58.981Z"
 ---
 
 # Treseko Platform

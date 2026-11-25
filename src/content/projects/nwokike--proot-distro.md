@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python", "JavaScript"]
 languagePcts: [69, 28]
 topics: ["alpine", "android", "containers", "debian", "docker", "flet", "flutter", "linux", "linux-on-android", "oci"]
-stars: 9
+stars: 8
 forks: 0
 openIssues: 0
 closedIssues: 0
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-11-18T11:23:59Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
 healthScore: 77
-undervaluedScore: 45
+undervaluedScore: 46
 maintainers: ["Nwokike"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1422148008/22be78cb-7bcf-445a-8bbe-347f2b38e939"
 promoted: true

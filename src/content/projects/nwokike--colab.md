@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["android", "data-science", "developer-tools", "flet", "gpu-computing", "jupyter-notebook", "machine-learning", "mobile-coding", "python", "tpu"]
-stars: 8
+stars: 7
 forks: 1
 openIssues: 0
 closedIssues: 2
@@ -22,7 +22,7 @@ lastReleaseAt: "2026-11-10T17:05:53Z"
 status: "quiet"
 tags: []
 healthScore: 89
-undervaluedScore: 53
+undervaluedScore: 54
 maintainers: ["Nwokike", "GrCOTE7"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1282471700/377e67c7-8435-4bac-90c2-355168fa5a2a"
 promoted: true

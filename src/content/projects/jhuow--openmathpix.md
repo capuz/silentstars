@@ -8,8 +8,8 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [77]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative", "latex-ocr", "latex-ocr-document-ai", "math-ocr"]
-stars: 183
-forks: 27
+stars: 184
+forks: 29
 openIssues: 1
 closedIssues: 2
 watchers: 18
@@ -23,7 +23,7 @@ tags: ["solo_builder", "release_machine"]
 healthScore: 78
 undervaluedScore: 24
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/76197d8faf25f5c7bd0e366a120363d61ba52c9fa41782fd893316eefb9d5c14/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/80c38e7b9e82dc1802f8ab0e4d070072cb607be450b2d4a7d95dc102643cc277/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---

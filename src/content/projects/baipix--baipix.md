@@ -11,7 +11,7 @@ languagePcts: [82]
 topics: ["design-tool", "open-source", "pixel-art", "pixel-art-editor", "react", "svg", "typescript", "animation", "aseprite-alternative", "browser"]
 stars: 19
 forks: 14
-openIssues: 69
+openIssues: 71
 closedIssues: 310
 watchers: 1
 contributors: 16

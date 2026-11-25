@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-16T12:33:20Z"
 lastReleaseAt: "2026-11-16T12:28:52Z"
 status: "newborn"
 tags: ["hidden_gem"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 15
 maintainers: ["Md-nexus"]
 openGraphImageUrl: "https://opengraph.githubassets.com/61f690b0f5f3a331b7a0af67d3d009661a816168d0e3fb989a21787659eff1ea/Md-nexus/Hoard"

@@ -7,7 +7,7 @@ url: "https://github.com/masumi-network/sokosumi"
 homepage: "https://sokosumi.com"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [93]
+languagePcts: [92]
 stars: 13
 forks: 8
 openIssues: 3
@@ -16,7 +16,7 @@ watchers: 1
 contributors: 15
 recentReleases: 9
 createdAt: "2025-02-03T12:40:15Z"
-lastCommitAt: "2026-11-24T23:39:45Z"
+lastCommitAt: "2026-11-25T13:19:22Z"
 lastReleaseAt: "2026-10-12T14:51:34Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]

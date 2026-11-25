@@ -11,13 +11,13 @@ languagePcts: [89]
 topics: ["ai-agents", "antigravity", "claude", "code-review", "codex", "coding-agent", "devtools", "github-automation", "github-bot", "mistral"]
 stars: 40
 forks: 9
-openIssues: 45
-closedIssues: 1575
+openIssues: 44
+closedIssues: 1580
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2025-05-23T13:09:47Z"
-lastCommitAt: "2026-11-24T10:55:21Z"
+lastCommitAt: "2026-11-25T09:09:41Z"
 lastReleaseAt: "2026-08-13T00:09:34Z"
 status: "thriving"
 tags: ["hidden_gem"]

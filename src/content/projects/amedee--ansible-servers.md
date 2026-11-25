@@ -12,12 +12,12 @@ topics: ["ansible", "mailinabox", "nginx", "postfix", "ubuntu", "wordpress", "em
 stars: 6
 forks: 1
 openIssues: 13
-closedIssues: 252
+closedIssues: 253
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-06-04T23:55:48Z"
-lastCommitAt: "2026-11-24T23:53:15Z"
+lastCommitAt: "2026-11-25T11:33:28Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "under_pressure"]
 healthScore: 98

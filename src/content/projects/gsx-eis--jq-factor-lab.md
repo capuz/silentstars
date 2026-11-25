@@ -1,7 +1,7 @@
 ---
 repo: "GSX-Eis/jq-factor-lab"
 name: "jq-factor-lab"
-description: "JoinQuant and local multi-factor research framework"
+description: "An AI-native quantitative research harness "
 readmeQualityOk: true
 url: "https://github.com/GSX-Eis/jq-factor-lab"
 language: "Python"
@@ -18,10 +18,10 @@ createdAt: "2026-11-10T13:31:37Z"
 lastCommitAt: "2026-11-21T15:26:10Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 87
 undervaluedScore: 25
 maintainers: ["GSX-Eis"]
-openGraphImageUrl: "https://opengraph.githubassets.com/24363d82b79d3dd2dcdb0fba53781d2c9b693043125ca5be7be695eac5a6d289/GSX-Eis/jq-factor-lab"
+openGraphImageUrl: "https://opengraph.githubassets.com/d814591c310c7918b49546aeede2386da88edad50c090e3b04efc84d22ff9a14/GSX-Eis/jq-factor-lab"
 promoted: true
 postedAt: "2026-11-16T04:39:55.630Z"
 ---

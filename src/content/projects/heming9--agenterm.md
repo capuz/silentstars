@@ -25,6 +25,7 @@ undervaluedScore: 37
 maintainers: ["Heming9", "BrethofAI"]
 openGraphImageUrl: "https://opengraph.githubassets.com/aed93736045ed22aee4616102dc304ebe34821c8c0ba8fd114f5d28a89446f85/Heming9/agenterm"
 promoted: true
+postedAt: "2026-11-25T03:28:53.300Z"
 ---
 
 ## 🚀 Quick start

@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-25T00:00:35Z"
 lastReleaseAt: "2026-10-29T02:48:43Z"
 status: "newborn"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "release_machine"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 65
 maintainers: ["farena-ai", "Guilsc"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1436546177/8a88876e-93f4-4e38-aca3-ae53988c402f"

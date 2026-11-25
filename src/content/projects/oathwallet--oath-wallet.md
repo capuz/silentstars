@@ -7,7 +7,7 @@ url: "https://github.com/OathWallet/oath-wallet"
 homepage: "https://oathwallet.org"
 language: "Swift"
 languages: ["Swift", "HTML"]
-languagePcts: [69, 21]
+languagePcts: [68, 22]
 topics: ["bitcoin", "crypto-wallet", "ios", "self-custody", "swift", "walletconnect"]
 stars: 1
 forks: 0
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 1
 recentReleases: 10
 createdAt: "2026-10-30T17:08:49Z"
-lastCommitAt: "2026-11-24T07:14:57Z"
+lastCommitAt: "2026-11-25T07:31:42Z"
 lastReleaseAt: "2026-11-06T06:23:42Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]

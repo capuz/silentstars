@@ -17,11 +17,11 @@ watchers: 1
 contributors: 5
 recentReleases: 10
 createdAt: "2026-08-31T11:15:35Z"
-lastCommitAt: "2026-11-24T08:43:34Z"
+lastCommitAt: "2026-11-25T08:12:24Z"
 lastReleaseAt: "2026-11-10T19:20:07Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "funded", "release_machine"]
-healthScore: 86
+healthScore: 87
 undervaluedScore: 44
 maintainers: ["oneydef", "mendumohanpramodh-debug", "alevas"]
 openGraphImageUrl: "https://opengraph.githubassets.com/38e0c1783c6dca8c0eccf9b4349d6970d147441d9e8c8160d746415ad42fc278/oneydef/EarA-linux"
