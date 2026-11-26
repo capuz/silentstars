@@ -206,5 +206,9 @@
   {
     "repo": "treseko/treseko-platform",
     "until": "2026-12-25"
+  },
+  {
+    "repo": "ankurmans/vertov-screen-recorder",
+    "until": "2026-12-26"
   }
 ]

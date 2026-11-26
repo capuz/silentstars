@@ -58,11 +58,5 @@
     "issue": 126,
     "since": "2026-11-21",
     "until": "2027-02-19"
-  },
-  {
-    "repo": "ankurmans/vertov-screen-recorder",
-    "issue": 132,
-    "since": "2026-11-24",
-    "until": "2027-02-22"
   }
 ]
