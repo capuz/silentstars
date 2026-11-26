@@ -22,3 +22,41 @@ export function parseIssueBody(body: string): { repo: string; email: string; sub
     subscribe: /- \[x\] Subscribe me to the SilentStars/i.test(body),
   };
 }
+
+// Headings of the issue templates. A body with one of them came through a form:
+// the submit form goes through the normal flow, the others aren't submissions.
+const TEMPLATE_HEADINGS = [
+  '### GitHub repo (owner/repo)',     // submit-project.yml
+  '### Repo to remove (owner/repo)',  // remove-project.yml
+];
+
+// owner/repo paths on github.com that aren't repositories.
+const NON_REPO_OWNERS = new Set(['orgs', 'settings', 'sponsors', 'topics', 'features', 'marketplace', 'apps']);
+
+// Wording that asks for a project to be listed. A repo link alone isn't enough:
+// bug reports and corrections link repos too ("the card for github.com/a/b…"),
+// and those must reach the maintainer without a bot reply.
+const SUBMISSION_WORDING = /\b(submit|submission|nominat\w*|(add|list|track|feature|include) (my|our|this) (project|repo|tool|app))\b/i;
+
+function linksAnotherRepo(body: string): boolean {
+  for (const m of body.matchAll(/(?<![\w.-])github\.com\/([\w.-]+)\/([\w.-]+)/gi)) {
+    const owner = m[1]!.toLowerCase();
+    const repo = m[2]!.toLowerCase();
+    if (NON_REPO_OWNERS.has(owner)) continue;
+    if (owner === 'capuz' && repo === 'silentstars') continue;
+    return true;
+  }
+  return false;
+}
+
+/**
+ * True for an issue that asks for a project to be listed but skipped the form
+ * (issue #36): no template heading, submission wording in the title or body,
+ * and a link to a GitHub repo other than SilentStars itself.
+ * process-submission.ts points those to the form.
+ */
+export function looksLikeOffFormSubmission(title: string, body: string): boolean {
+  if (TEMPLATE_HEADINGS.some(h => body.includes(h))) return false;
+  if (!SUBMISSION_WORDING.test(title) && !SUBMISSION_WORDING.test(body)) return false;
+  return linksAnotherRepo(body);
+}

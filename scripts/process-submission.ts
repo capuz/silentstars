@@ -22,7 +22,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
 import { addEntry, fetchSignal, findEntry, hasExternalSignal, readStandby, removeEntry, writeStandby } from './standby.ts';
-import { parseIssueBody } from './issue-body.ts';
+import { parseIssueBody, looksLikeOffFormSubmission } from './issue-body.ts';
 import { enqueue, readQueue, writeQueue } from './bsky-queue.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -159,12 +159,12 @@ async function subscribeToNewsletter(email: string): Promise<void> {
   else console.log(`⚠ Newsletter subscribe failed: ${res.status}`);
 }
 
-async function fetchIssue(owner: string, repo: string, number: number): Promise<{ body: string; author: string }> {
-  const { ok, data } = await ghFetch<{ body?: string | null; user?: { login: string } }>(
+async function fetchIssue(owner: string, repo: string, number: number): Promise<{ title: string; body: string; author: string }> {
+  const { ok, data } = await ghFetch<{ title?: string; body?: string | null; user?: { login: string } }>(
     `/repos/${owner}/${repo}/issues/${number}`,
   );
   if (!ok) throw new Error(`Could not fetch issue #${number}`);
-  return { body: data.body ?? '', author: data.user?.login ?? '' };
+  return { title: data.title ?? '', body: data.body ?? '', author: data.user?.login ?? '' };
 }
 
 async function commentIssue(body: string): Promise<number | null> {
@@ -223,6 +223,24 @@ async function closeIssue(reason: 'completed' | 'not_planned') {
 async function handleSkipped() {
   setOutput('status', 'skipped');
   console.log('Not a submission template — skipping.');
+}
+
+// A submission written by hand (issue #36) never reaches the checks below:
+// point it to the form once instead of leaving it unanswered. Nothing is
+// accepted, rejected or closed, and the wording leaves room for a bug report
+// the detection got wrong: those are read as usual.
+async function handleNeedsForm() {
+  setOutput('status', 'needs_form');
+  console.log('Looks like a submission outside the form — pointing to it.');
+  await commentIssue([
+    `Hey @${ISSUE_AUTHOR}, thanks for opening this!`,
+    '',
+    'If this is a **project submission**: submissions are processed automatically from the **Submit a project** form, so please resubmit there to have it considered: '
+      + `https://github.com/${REPO_OWNER}/${REPO_NAME_GH}/issues/new?template=submit-project.yml`,
+    '',
+    'If it\'s a bug report or a correction, ignore this message: it will be read as usual.',
+  ].join('\n'));
+  await labelIssue(['needs-form']);
 }
 
 async function handleRejected(repo: string, slug: string, projectName: string, reason: string) {
@@ -352,6 +370,10 @@ async function main() {
 
   // Guard: only process submission template issues
   if (!issueBody.includes('### GitHub repo (owner/repo)')) {
+    // The maintainer's own notes may link repos; only outside issues get the pointer.
+    if (ISSUE_AUTHOR.toLowerCase() !== REPO_OWNER.toLowerCase() && looksLikeOffFormSubmission(issue.title, issueBody)) {
+      return handleNeedsForm();
+    }
     return handleSkipped();
   }
 
