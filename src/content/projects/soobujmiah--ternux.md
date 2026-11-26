@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-26T10:18:31Z"
 lastReleaseAt: "2026-11-06T22:21:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 90
+healthScore: 89
 undervaluedScore: 60
 maintainers: ["soobujmiah", "codex", "github-actions[bot]"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"

@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-26T13:06:13.325Z",
+  "collectedAt": "2026-11-26T15:30:17.712Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,29 +55,9 @@
       ]
     },
     {
-      "repo": "stella/stella",
-      "slug": "stella--stella",
-      "lastCommitAt": "2026-11-26T12:19:30Z",
-      "signals": {
-        "outsidePRsMerged": 30,
-        "outsidePRsCapped": true
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 1601,
-          "title": "feat(table): translate results",
-          "url": "https://github.com/stella/stella/issues/1601",
-          "kind": "good first issue",
-          "createdAt": "2026-08-03T15:01:25Z",
-          "comments": 6
-        }
-      ]
-    },
-    {
       "repo": "Human-Cognome-Project/human-cognome-project",
       "slug": "human-cognome-project--human-cognome-project",
-      "lastCommitAt": "2026-11-26T12:34:06Z",
+      "lastCommitAt": "2026-11-26T14:59:03Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
@@ -103,23 +83,59 @@
       ]
     },
     {
+      "repo": "TauCetiProject/TauCeti",
+      "slug": "taucetiproject--tauceti",
+      "lastCommitAt": "2026-11-26T13:27:49Z",
+      "signals": {
+        "outsidePRsMerged": 30,
+        "outsidePRsCapped": true
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 802,
+          "title": "KnotTheory/Grid: prove the square of the fully blocked grid differential is zero",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/802",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:28Z",
+          "comments": 1
+        },
+        {
+          "number": 804,
+          "title": "Analysis/Contour: make the on-curve winding-number layer real (HW Prop 2.2 and regularity-condition witnesses)",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/804",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:30Z",
+          "comments": 1
+        },
+        {
+          "number": 805,
+          "title": "Analysis/Complex/Conformal: prove the Schwarz reflection crossing theorem",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/805",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:31Z",
+          "comments": 0
+        },
+        {
+          "number": 803,
+          "title": "CompletelyMonotone: final assembly of Bernstein's theorem",
+          "url": "https://github.com/TauCetiProject/TauCeti/issues/803",
+          "kind": "help wanted",
+          "createdAt": "2026-07-08T09:21:29Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-26T09:12:15Z",
+      "lastCommitAt": "2026-11-26T14:17:05Z",
       "signals": {
         "outsidePRsMerged": 29,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 9,
+      "goodFirstIssueCount": 10,
       "issues": [
-        {
-          "number": 1106,
-          "title": "Expand `ActivationFixture` and `ControlClientFixture` usage to remove duplicate code",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/1106",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T11:57:16Z",
-          "comments": 0
-        },
         {
           "number": 329,
           "title": "Mocks for lifecycle",
@@ -151,26 +167,6 @@
           "kind": "good first issue",
           "createdAt": "2026-08-06T08:31:01Z",
           "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "Kong/developer.konghq.com",
-      "slug": "kong--developer-konghq-com",
-      "lastCommitAt": "2026-11-26T12:26:31Z",
-      "signals": {
-        "outsidePRsMerged": 29,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 2921,
-          "title": "Dev Portal: Cookie custom modal",
-          "url": "https://github.com/Kong/developer.konghq.com/issues/2921",
-          "kind": "help wanted",
-          "createdAt": "2025-09-17T21:40:26Z",
-          "comments": 2
         }
       ]
     },
@@ -227,75 +223,6 @@
       ]
     },
     {
-      "repo": "BUAASubnet/UBAA",
-      "slug": "buaasubnet--ubaa",
-      "lastCommitAt": "2026-11-24T12:46:51Z",
-      "signals": {
-        "outsidePRsMerged": 26,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 73,
-          "title": "开发基于配置文件解析的部分课程加权平均分/GPA计算方案",
-          "url": "https://github.com/BUAASubnet/UBAA/issues/73",
-          "kind": "good first issue",
-          "createdAt": "2026-05-14T02:02:15Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "medizininformatik-initiative/torch",
-      "slug": "medizininformatik-initiative--torch",
-      "lastCommitAt": "2026-11-26T12:41:18Z",
-      "signals": {
-        "outsidePRsMerged": 23,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 1198,
-          "title": "Handle Locally Contained (\"#id\") References In Reference Extraction",
-          "url": "https://github.com/medizininformatik-initiative/torch/issues/1198",
-          "kind": "help wanted",
-          "createdAt": "2026-08-13T11:37:06Z",
-          "comments": 0
-        },
-        {
-          "number": 700,
-          "title": "Do We Need To Dynamize Batch Sizes?",
-          "url": "https://github.com/medizininformatik-initiative/torch/issues/700",
-          "kind": "help wanted",
-          "createdAt": "2026-01-15T12:25:08Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
-      "repo": "TU-Wien-dataLAB/aqueduct",
-      "slug": "tu-wien-datalab--aqueduct",
-      "lastCommitAt": "2026-11-26T12:58:38Z",
-      "signals": {
-        "outsidePRsMerged": 16,
-        "outsidePRsCapped": false,
-        "approxKloc": 37
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 165,
-          "title": "Announcements",
-          "url": "https://github.com/TU-Wien-dataLAB/aqueduct/issues/165",
-          "kind": "good first issue",
-          "createdAt": "2026-07-15T14:24:48Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "GRTLCollaboration/GRTeclyn",
       "slug": "grtlcollaboration--grteclyn",
       "lastCommitAt": "2026-11-25T10:57:58Z",
@@ -317,29 +244,9 @@
       ]
     },
     {
-      "repo": "NeoTech/Camcraft",
-      "slug": "neotech--camcraft",
-      "lastCommitAt": "2026-11-26T12:06:12Z",
-      "signals": {
-        "outsidePRsMerged": 11,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 915,
-          "title": "Build cycle (#900): test the sccache opt-in and the lighter dev profile on macOS",
-          "url": "https://github.com/NeoTech/Camcraft/issues/915",
-          "kind": "help wanted",
-          "createdAt": "2026-11-11T21:08:58Z",
-          "comments": 3
-        }
-      ]
-    },
-    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-26T12:59:42Z",
+      "lastCommitAt": "2026-11-26T14:42:36Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -359,7 +266,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-26T12:59:42Z",
+      "lastCommitAt": "2026-11-26T14:42:36Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -481,34 +388,6 @@
       ]
     },
     {
-      "repo": "Agent360dk/browser-mcp",
-      "slug": "agent360dk--browser-mcp",
-      "lastCommitAt": "2026-11-26T13:02:28Z",
-      "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 124,
-          "title": "Register with Claude Desktop in `npx @agent360/browser-mcp install`",
-          "url": "https://github.com/Agent360dk/browser-mcp/issues/124",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T00:27:10Z",
-          "comments": 0
-        },
-        {
-          "number": 123,
-          "title": "Add an install page for Claude Desktop",
-          "url": "https://github.com/Agent360dk/browser-mcp/issues/123",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T00:27:03Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "oneydef/EarA-linux",
       "slug": "oneydef--eara-linux",
       "lastCommitAt": "2026-11-25T08:12:24Z",
@@ -568,7 +447,7 @@
     {
       "repo": "grelinfo/grelmicro",
       "slug": "grelinfo--grelmicro",
-      "lastCommitAt": "2026-11-26T12:29:34Z",
+      "lastCommitAt": "2026-11-26T13:06:02Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -589,58 +468,6 @@
           "url": "https://github.com/grelinfo/grelmicro/issues/756",
           "kind": "help wanted",
           "createdAt": "2026-08-16T14:22:14Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "isaaclins/wax",
-      "slug": "isaaclins--wax",
-      "lastCommitAt": "2026-11-26T12:58:39Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 12,
-      "issues": [
-        {
-          "number": 766,
-          "title": "README, SUPPORT and two docs still link to the repo's old name",
-          "url": "https://github.com/isaaclins/wax/issues/766",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T09:53:48Z",
-          "comments": 0
-        },
-        {
-          "number": 699,
-          "title": "Small cleanups in the track list code",
-          "url": "https://github.com/isaaclins/wax/issues/699",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T03:49:23Z",
-          "comments": 1
-        },
-        {
-          "number": 727,
-          "title": "Closing the lyrics twice within 0.3 s cuts the second fade-out short",
-          "url": "https://github.com/isaaclins/wax/issues/727",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T12:00:21Z",
-          "comments": 1
-        },
-        {
-          "number": 725,
-          "title": "testLyricsLoadAgainWhenTheNetworkComesBack can pass even if the network-back path is broken",
-          "url": "https://github.com/isaaclins/wax/issues/725",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T11:41:43Z",
-          "comments": 0
-        },
-        {
-          "number": 696,
-          "title": "The play/pause icon's swap time is written twice, in the app and in its render test",
-          "url": "https://github.com/isaaclins/wax/issues/696",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T03:12:52Z",
           "comments": 0
         }
       ]
@@ -675,9 +502,9 @@
       ]
     },
     {
-      "repo": "nightscout/nocturne",
-      "slug": "nightscout--nocturne",
-      "lastCommitAt": "2026-11-26T12:29:41Z",
+      "repo": "AbsoluteMode/whytap",
+      "slug": "absolutemode--whytap",
+      "lastCommitAt": "2026-11-26T15:14:59Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -685,12 +512,28 @@
       "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 276,
-          "title": "Vote for Nocturne to be added to PikaPods",
-          "url": "https://github.com/nightscout/nocturne/issues/276",
-          "kind": "help wanted",
-          "createdAt": "2026-05-31T08:09:59Z",
-          "comments": 1
+          "number": 365,
+          "title": "install.md: fold the Exodia and pre-2.2.17 notes into a collapsed block",
+          "url": "https://github.com/AbsoluteMode/whytap/issues/365",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T15:51:33Z",
+          "comments": 0
+        },
+        {
+          "number": 364,
+          "title": "CONTRIBUTING: link the network rule to the privacy.md table instead of an outdated list",
+          "url": "https://github.com/AbsoluteMode/whytap/issues/364",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T15:51:31Z",
+          "comments": 0
+        },
+        {
+          "number": 363,
+          "title": "Bug report template: add On this Mac speech and the built-in Agent",
+          "url": "https://github.com/AbsoluteMode/whytap/issues/363",
+          "kind": "good first issue",
+          "createdAt": "2026-11-21T15:51:29Z",
+          "comments": 0
         }
       ]
     },
@@ -766,9 +609,50 @@
       ]
     },
     {
+      "repo": "anzy-renlab-ai/pronounce",
+      "slug": "anzy-renlab-ai--pronounce",
+      "lastCommitAt": "2026-11-26T15:26:29Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false,
+        "approxKloc": 18
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 52,
+          "title": "Source sprint 2026-W36: verify xgboost, cmake, kaggle, clang, nltk",
+          "url": "https://github.com/anzy-renlab-ai/pronounce/issues/52",
+          "kind": "good first issue",
+          "createdAt": "2026-09-01T10:43:33Z",
+          "comments": 2
+        }
+      ]
+    },
+    {
+      "repo": "auroramod/x64-zt",
+      "slug": "auroramod--x64-zt",
+      "lastCommitAt": "2026-11-26T15:23:05Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 317,
+          "title": "IW8 -> IW7 backporting",
+          "url": "https://github.com/auroramod/x64-zt/issues/317",
+          "kind": "good first issue",
+          "createdAt": "2026-11-24T19:08:48Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
       "repo": "Itqan-community/cms-frontend",
       "slug": "itqan-community--cms-frontend",
-      "lastCommitAt": "2026-11-23T13:27:05Z",
+      "lastCommitAt": "2026-11-26T15:22:55Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -786,30 +670,9 @@
       ]
     },
     {
-      "repo": "helhum/typo3-config-handling",
-      "slug": "helhum--typo3-config-handling",
-      "lastCommitAt": "2026-11-26T12:59:48Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 3
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 54,
-          "title": "Moving override-settings to new config/system directory fails composer install with database updateschema command",
-          "url": "https://github.com/helhum/typo3-config-handling/issues/54",
-          "kind": "help wanted",
-          "createdAt": "2024-07-25T10:24:45Z",
-          "comments": 4
-        }
-      ]
-    },
-    {
-      "repo": "ponkoengine/ponko",
-      "slug": "ponkoengine--ponko",
-      "lastCommitAt": "2026-11-26T13:03:18Z",
+      "repo": "IHUI-INF-AI/IHUI-AI",
+      "slug": "ihui-inf-ai--ihui-ai",
+      "lastCommitAt": "2026-11-26T15:23:05Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -817,11 +680,19 @@
       "goodFirstIssueCount": 0,
       "issues": [
         {
-          "number": 282,
-          "title": "[P3][BUILD] Attach packaged desktop builds to releases, with signing and notarization",
-          "url": "https://github.com/ponkoengine/ponko/issues/282",
+          "number": 22,
+          "title": "🌟 Welcome new contributors! 5 good-first-issues ready",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/22",
           "kind": "help wanted",
-          "createdAt": "2026-11-09T21:33:57Z",
+          "createdAt": "2026-07-27T11:34:04Z",
+          "comments": 2
+        },
+        {
+          "number": 31,
+          "title": "help wanted: 寻求 v2.0 AI 操作系统愿景的社区反馈",
+          "url": "https://github.com/IHUI-INF-AI/IHUI-AI/issues/31",
+          "kind": "help wanted",
+          "createdAt": "2026-08-01T05:44:49Z",
           "comments": 0
         }
       ]

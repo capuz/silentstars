@@ -15,7 +15,7 @@ watchers: 3
 contributors: 7
 recentReleases: 0
 createdAt: "2021-08-25T01:02:33Z"
-lastCommitAt: "2026-11-25T15:06:54Z"
+lastCommitAt: "2026-11-26T14:02:15Z"
 lastReleaseAt: "2022-06-12T04:16:32Z"
 status: "thriving"
 tags: ["legacy_hero"]
@@ -29,7 +29,7 @@ postedAt: "2026-11-23T13:41:07.202Z"
 # Project Diablo 2 (PD2) Hiim Loot Filters
 * by *Maaaark
 * by *Hiimdave
-## Last updated November 25th Season 14 - build 267
+## Last updated November 26th Season 14 - build 269
 ## [Hiim PD2 Resources](https://maaaaaarrk.github.io/Hiim-PD2-Resources/)
 ## Put all feedback in the PD2 Discord #lootfilter channel
 ## [Compare the Hiim styles side by side](https://github.com/Maaaaaarrk/HiimFilter-PD2-Filter/blob/HEAD/filtergroups/HIIM_STYLES.md)

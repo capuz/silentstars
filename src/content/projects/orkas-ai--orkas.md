@@ -7,24 +7,24 @@ url: "https://github.com/Orkas-AI/Orkas"
 homepage: "https://orkas.ai?source=gh-orkas"
 language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
-languagePcts: [61, 37]
+languagePcts: [60, 38]
 topics: ["agent-collaboration", "agent-orchestration", "agent-team", "ai-assistant", "ai-team", "ai-workflow", "autonomous-agents", "local-first", "multi-agent", "multi-agent-system"]
-stars: 9575
-forks: 568
-openIssues: 11
+stars: 7861
+forks: 513
+openIssues: 12
 closedIssues: 9
-watchers: 221
+watchers: 187
 contributors: 18
 recentReleases: 0
 createdAt: "2026-04-29T12:19:08Z"
-lastCommitAt: "2026-11-26T06:19:50Z"
+lastCommitAt: "2026-11-26T14:21:38Z"
 lastReleaseAt: "2026-07-09T13:38:36Z"
 status: "thriving"
 tags: []
 healthScore: 88
 undervaluedScore: 16
-maintainers: ["Orkas-AI", "CloudTianTian", "vaintwyt"]
-openGraphImageUrl: "https://opengraph.githubassets.com/235baae6290e94674bb85dead2164c00edd33edbe0e4e407b7d47912f557377a/Orkas-AI/Orkas"
+maintainers: ["Orkas-AI", "vaintwyt", "leochenpm"]
+openGraphImageUrl: "https://opengraph.githubassets.com/03e6ffae74971ba0f304365ef69cb9dbd9cbb1b0f11bca8c984468484ac60a4e/Orkas-AI/Orkas"
 postedAt: "2026-10-21T21:20:39.948Z"
 ---
 

@@ -11,7 +11,7 @@ languagePcts: [100]
 topics: ["acroform", "go", "golang", "markdown-to-pdf", "mit-license", "no-cgo", "ocr", "pdf", "pdf-a", "pdf-generation"]
 stars: 6
 forks: 6
-openIssues: 0
+openIssues: 2
 closedIssues: 20
 watchers: 0
 contributors: 3
@@ -21,8 +21,8 @@ lastCommitAt: "2026-11-26T08:44:57Z"
 lastReleaseAt: "2026-09-16T09:18:55Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 99
-undervaluedScore: 84
+healthScore: 98
+undervaluedScore: 83
 maintainers: ["kaferi"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1245479016/951cc047-39ac-4e79-891e-3843dcf07e27"
 postedAt: "2026-11-18T12:17:25.281Z"

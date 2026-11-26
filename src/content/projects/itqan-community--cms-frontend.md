@@ -15,23 +15,23 @@ watchers: 0
 contributors: 20
 recentReleases: 0
 createdAt: "2025-08-26T17:37:40Z"
-lastCommitAt: "2026-11-23T13:27:05Z"
+lastCommitAt: "2026-11-26T15:22:55Z"
 lastReleaseAt: "2026-06-22T13:06:06Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 95
+healthScore: 96
 undervaluedScore: 78
 maintainers: ["hassaanalansary"]
 openGraphImageUrl: "https://opengraph.githubassets.com/7929aa3e64dcfdcf93d9bf16293aa6771d4115b2898fbc58f3666bde642bdd51/Itqan-community/cms-frontend"
 postedAt: "2026-07-05T21:04:50.552Z"
 ---
 
-# Itqan CMS Frontend
+# Fanar Frontend
 
-> An open-source Quranic Content Management System frontend built with Angular 20. Itqan CMS
-> empowers developers and publishers by providing a comprehensive platform to access, manage, and
-> distribute Quranic assets with proper licensing. Built for the global Islamic tech community to
-> create innovative Quranic applications and services.
+> An open-source Quranic Content Management System frontend built with Angular 20. Fanar empowers
+> developers and publishers by providing a comprehensive platform to access, manage, and distribute
+> Quranic assets with proper licensing. Built for the global Islamic tech community to create
+> innovative Quranic applications and services.
 
 ## 🌟 Features
 
@@ -47,4 +47,4 @@ postedAt: "2026-07-05T21:04:50.552Z"
   property
 - **Internationalization** - Multi-language support (English & Arabic) with RTL support
 - **Authentication & Authorization** - Secure user management with role-based access control
-- **Responsive Design** - Modern, accessible UI built with…
+- **Responsive Design** - Modern, accessible UI built with Ng-Zorro…

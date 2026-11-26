@@ -7,16 +7,16 @@ url: "https://github.com/2AMLogic/klayout-tools"
 homepage: "https://klayout-tools.org"
 language: "Python"
 languages: ["Python", "Shell"]
-languagePcts: [74, 22]
+languagePcts: [73, 23]
 stars: 6
 forks: 2
-openIssues: 77
-closedIssues: 3919
+openIssues: 79
+closedIssues: 3922
 watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-26T07:17:35Z"
+lastCommitAt: "2026-11-26T10:56:27Z"
 lastReleaseAt: "2026-11-15T20:16:17Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine"]

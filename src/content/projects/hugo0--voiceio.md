@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-25T10:51:07Z"
 lastReleaseAt: "2026-04-08T20:44:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 51
 maintainers: ["Hugo0"]
 openGraphImageUrl: "https://opengraph.githubassets.com/64dcf726aa89618c23452702a64bb0414c2af2660a6b6c4487ab85e18653d6ad/Hugo0/voiceio"

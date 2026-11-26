@@ -9,8 +9,8 @@ language: "Kotlin"
 languages: ["Kotlin", "Python"]
 languagePcts: [78, 20]
 topics: ["android", "bluetooth", "censorship-resistance", "live-streaming", "mesh-network", "off-grid", "bluetooth-low-energy", "privacy", "video-calling", "android-app"]
-stars: 369
-forks: 52
+stars: 370
+forks: 53
 openIssues: 3
 closedIssues: 1
 watchers: 7

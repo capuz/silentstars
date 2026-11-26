@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/adobe/da-nx"
 language: "JavaScript"
 languages: ["JavaScript"]
-languagePcts: [89]
+languagePcts: [90]
 stars: 8
 forks: 50
 openIssues: 54

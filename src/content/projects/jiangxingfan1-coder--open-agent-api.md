@@ -7,7 +7,7 @@ url: "https://github.com/jiangxingfan1-coder/Open-Agent-API"
 homepage: "https://openagentapi.pages.dev/"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [73]
+languagePcts: [74]
 topics: ["agent-client-protocol", "agent-gateway", "ai-agents", "mcp", "openai-compatible", "self-hosted", "coding-agents", "human-in-the-loop", "dsh-plugin", "mcp-server"]
 stars: 7
 forks: 0
@@ -15,10 +15,10 @@ openIssues: 1
 closedIssues: 0
 watchers: 0
 contributors: 2
-recentReleases: 6
+recentReleases: 7
 createdAt: "2026-11-13T23:45:35Z"
-lastCommitAt: "2026-11-26T12:32:24Z"
-lastReleaseAt: "2026-11-22T18:07:00Z"
+lastCommitAt: "2026-11-26T14:46:26Z"
+lastReleaseAt: "2026-11-26T15:24:58Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 80
