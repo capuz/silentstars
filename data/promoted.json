@@ -210,5 +210,9 @@
   {
     "repo": "ankurmans/vertov-screen-recorder",
     "until": "2026-12-26"
+  },
+  {
+    "repo": "NikKurkov/sitewatcher",
+    "until": "2026-12-26"
   }
 ]
