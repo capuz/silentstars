@@ -17,11 +17,11 @@ watchers: 1
 contributors: 4
 recentReleases: 1
 createdAt: "2024-08-11T19:21:07Z"
-lastCommitAt: "2026-11-22T01:06:52Z"
+lastCommitAt: "2026-11-25T20:33:08Z"
 lastReleaseAt: "2026-10-30T00:21:23Z"
 status: "thriving"
 tags: ["hidden_gem"]
-healthScore: 87
+healthScore: 88
 undervaluedScore: 78
 maintainers: ["Daio-io", "renovate[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/98fd4902cff72a31d348d6aa8bf938593109c6247ec874e50bba514a17dea601/Daio-io/wild"

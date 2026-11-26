@@ -6,16 +6,16 @@ readmeQualityOk: true
 url: "https://github.com/Human-Cognome-Project/human-cognome-project"
 language: "C++"
 languages: ["C++", "Python"]
-languagePcts: [63, 27]
+languagePcts: [64, 27]
 stars: 7
 forks: 4
 openIssues: 36
-closedIssues: 71
+closedIssues: 72
 watchers: 3
 contributors: 3
 recentReleases: 0
 createdAt: "2026-01-18T19:12:01Z"
-lastCommitAt: "2026-11-25T13:19:03Z"
+lastCommitAt: "2026-11-26T12:34:06Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem"]
 healthScore: 93
@@ -23,6 +23,7 @@ undervaluedScore: 68
 maintainers: ["VagariesOfFate"]
 openGraphImageUrl: "https://opengraph.githubassets.com/61c27121263ce3a7e53a97bc7c9252309856f8f7c9b97346520c41d380e47170/Human-Cognome-Project/human-cognome-project"
 discussionCount: 1
+postedAt: "2026-11-25T13:31:37.739Z"
 ---
 
 # Human Cognome Project (HCP)

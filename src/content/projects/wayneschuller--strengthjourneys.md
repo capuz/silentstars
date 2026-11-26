@@ -17,12 +17,12 @@ watchers: 2
 contributors: 4
 recentReleases: 0
 createdAt: "2022-10-06T08:45:24Z"
-lastCommitAt: "2026-11-14T06:58:50Z"
+lastCommitAt: "2026-11-26T06:58:53Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 95
+healthScore: 99
 undervaluedScore: 72
-maintainers: ["wayneschuller"]
+maintainers: ["wayneschuller", "claude"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3a7a7ca3e466a7ed2abed655dff72f957b66b07d1d92962fdce7574840ee975f/wayneschuller/strengthjourneys"
 postedAt: "2026-08-29T10:26:28.549Z"
 ---

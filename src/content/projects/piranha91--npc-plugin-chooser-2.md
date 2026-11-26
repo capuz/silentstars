@@ -18,7 +18,7 @@ createdAt: "2025-04-09T07:53:57Z"
 lastCommitAt: "2026-11-25T07:58:07Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "fork_magnet"]
-healthScore: 97
+healthScore: 96
 undervaluedScore: 85
 maintainers: ["Piranha91"]
 openGraphImageUrl: "https://opengraph.githubassets.com/1e40e726d97c0c0d274082bb995453724bf9f30a657c025bc63ac58a4787017e/Piranha91/NPC-Plugin-Chooser-2"

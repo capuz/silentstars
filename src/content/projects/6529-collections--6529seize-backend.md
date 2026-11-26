@@ -15,9 +15,9 @@ watchers: 0
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-16T12:19:28Z"
-lastCommitAt: "2026-11-25T12:45:37Z"
+lastCommitAt: "2026-11-26T12:21:36Z"
 status: "thriving"
-tags: ["hidden_gem", "fork_magnet"]
+tags: ["solo_builder", "hidden_gem", "fork_magnet"]
 healthScore: 98
 undervaluedScore: 93
 maintainers: ["punk6529", "prxt6529", "GelatoGenesis"]

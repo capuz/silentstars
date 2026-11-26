@@ -13,14 +13,14 @@ openIssues: 2
 closedIssues: 8
 watchers: 1
 contributors: 1
-recentReleases: 5
+recentReleases: 0
 createdAt: "2024-12-22T18:32:40Z"
 lastCommitAt: "2026-08-29T21:04:45Z"
 lastReleaseAt: "2026-08-28T00:45:47Z"
 status: "at_risk"
-tags: ["solo_builder", "release_machine"]
-healthScore: 59
-undervaluedScore: 42
+tags: ["solo_builder"]
+healthScore: 58
+undervaluedScore: 27
 maintainers: ["carlos-menezes"]
 openGraphImageUrl: "https://opengraph.githubassets.com/c14f1eef8ef1dbda3b73ae01c47c25c5b365211b80cc4317c99f44e66470ae40/carlos-menezes/caravan"
 discussionCount: 2

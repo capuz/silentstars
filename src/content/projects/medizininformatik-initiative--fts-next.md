@@ -12,12 +12,12 @@ topics: ["deidentification", "fhir", "transfer"]
 stars: 15
 forks: 2
 openIssues: 25
-closedIssues: 436
+closedIssues: 438
 watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-11-25T11:43:53Z"
+lastCommitAt: "2026-11-26T06:52:03Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["hidden_gem"]

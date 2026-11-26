@@ -12,12 +12,12 @@ topics: ["addons", "app", "custom-component", "home-assistant", "homeassistant"]
 stars: 11
 forks: 5
 openIssues: 6
-closedIssues: 331
+closedIssues: 332
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2024-12-09T07:25:50Z"
-lastCommitAt: "2026-11-25T11:04:45Z"
+lastCommitAt: "2026-11-26T09:57:14Z"
 lastReleaseAt: "2026-05-27T16:50:52Z"
 status: "thriving"
 tags: ["hidden_gem", "funded"]

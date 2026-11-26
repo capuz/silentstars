@@ -26,7 +26,6 @@ undervaluedScore: 11
 maintainers: ["cpys", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8e264510c0981609074c413ed60be148948a828ebd1977ede04863f32d5dc86f/cpys/codex-quota-overlay"
 discussionCount: 3
-promoted: true
 postedAt: "2026-10-27T12:47:25.041Z"
 ---
 

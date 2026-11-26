@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-21T06:52:31Z"
 lastReleaseAt: "2026-10-31T08:53:52Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 81
+healthScore: 80
 undervaluedScore: 38
 maintainers: ["artabramov", "notdepot", "chatsypatsy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/683f49222886f791ce6757c1dd68277c47495021dbf635ae9e546c100e88f61f/artabramov/hidden-s3"

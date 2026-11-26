@@ -6,7 +6,7 @@ readmeQualityOk: false
 url: "https://github.com/EasyData/expired-cn-domains"
 homepage: "https://www.cnnic.cn/2/3/55/70/172/index.html"
 topics: ["china", "dns"]
-stars: 7
+stars: 8
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -14,13 +14,13 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2023-11-09T10:13:56Z"
-lastCommitAt: "2026-11-25T01:56:40Z"
+lastCommitAt: "2026-11-26T01:36:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 80
-undervaluedScore: 74
+undervaluedScore: 72
 maintainers: ["vimagick"]
-openGraphImageUrl: "https://opengraph.githubassets.com/a736d5bae1330574590f5800b99215485e1b598b311ff83dc410474117d4be70/EasyData/expired-cn-domains"
+openGraphImageUrl: "https://opengraph.githubassets.com/46124216e0691dce037275e29928351c623663b18a46a2ac17babfcb577eb3de/EasyData/expired-cn-domains"
 postedAt: "2026-06-21T04:14:27.566Z"
 ---
 

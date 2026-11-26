@@ -10,19 +10,19 @@ languages: ["Rust"]
 languagePcts: [78]
 topics: ["heap-dump-analysis", "java"]
 stars: 7
-forks: 3
+forks: 2
 openIssues: 0
 closedIssues: 1
 watchers: 0
 contributors: 4
 recentReleases: 8
 createdAt: "2026-07-14T09:55:32Z"
-lastCommitAt: "2026-11-19T16:48:43Z"
+lastCommitAt: "2026-11-26T09:05:38Z"
 lastReleaseAt: "2026-11-19T11:10:26Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 97
-undervaluedScore: 72
+healthScore: 100
+undervaluedScore: 70
 maintainers: ["parttimenerd"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0bfeb49872e66c4372995b0bc002426fa36cc13dbf8e3e79102fe18a51bbbe27/parttimenerd/hprof-analyzer"
 postedAt: "2026-11-09T12:06:47.127Z"

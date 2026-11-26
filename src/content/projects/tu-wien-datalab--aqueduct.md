@@ -1,0 +1,51 @@
+---
+repo: "TU-Wien-dataLAB/aqueduct"
+name: "aqueduct"
+description: "Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django."
+readmeQualityOk: true
+url: "https://github.com/TU-Wien-dataLAB/aqueduct"
+homepage: "https://tu-wien-datalab.github.io/aqueduct/"
+language: "Python"
+languages: ["Python"]
+languagePcts: [87]
+topics: ["ai-gateway", "api-gateway", "gateway", "llm", "llm-inference", "openai", "openai-proxy"]
+stars: 32
+forks: 13
+openIssues: 36
+closedIssues: 94
+watchers: 1
+contributors: 14
+recentReleases: 0
+createdAt: "2025-03-31T12:47:09Z"
+lastCommitAt: "2026-11-26T12:58:38Z"
+lastReleaseAt: "2026-06-03T09:08:04Z"
+status: "thriving"
+tags: ["needs_contributors", "hidden_gem"]
+healthScore: 90
+undervaluedScore: 63
+maintainers: ["meffmadd", "JaeYeonLee0621", "natkam"]
+openGraphImageUrl: "https://repository-images.githubusercontent.com/957975362/3abd7552-8949-4c82-acca-d6b4e67b3a0b"
+---
+
+# Aqueduct AI Gateway
+
+> **Note**
+>
+> This project is still in active development! Contributions welcome!
+
+**Aqueduct AI Gateway** aims to provide a **simple yet fully-featured** AI gateway you can self-host with **MCP server support**:
+
+- no [SSO tax](https://konghq.com/pricing)
+- no [observability tax](https://www.litellm.ai/enterprise)
+- no [self-hosting tax](https://portkey.ai/pricing)
+- no [org management tax](https://www.litellm.ai/enterprise)
+- etc.
+
+We aim to achieve this by:
+
+- Building on top of the **LiteLLM Router SDK** to provide enhanced control and routing capabilities, while avoiding re-implementing the entire OpenAI-compatible APIs or every new feature, and
+- Using **Django** for a clean, efficient, and maintainable implementation.
+
+For more information, please read the [Documentation](https://tu-wien-datalab.github.io/aqueduct/).
+
+If you don't need user self-service, take a look at [Envoy AI Gateway](https://aigateway.envoyproxy.io) instead!

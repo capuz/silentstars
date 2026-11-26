@@ -8,7 +8,7 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [100]
 topics: ["automation", "discord", "python", "requests", "self-bot"]
-stars: 9
+stars: 8
 forks: 7
 openIssues: 0
 closedIssues: 0
@@ -21,9 +21,9 @@ lastReleaseAt: "2026-10-22T22:27:29Z"
 status: "quiet"
 tags: ["solo_builder", "funded", "fork_magnet"]
 healthScore: 70
-undervaluedScore: 79
+undervaluedScore: 81
 maintainers: ["xsrazy"]
-openGraphImageUrl: "https://opengraph.githubassets.com/f6226a85b49d2c14e91ef19bab95c3a21e3429e7921d3685ac5dea3087cc6946/xsrazy/Discord-Bot"
+openGraphImageUrl: "https://opengraph.githubassets.com/99444432852d104b2a73aa514e9047a2d869182ae0e348613fa70e02806a769c/xsrazy/Discord-Bot"
 fundingLinks: ["GITHUB:https://github.com/xsrazy", "BUY_ME_A_COFFEE:https://buymeacoffee.com/xsrazy", "KO_FI:https://ko-fi.com/xsrazy", "PATREON:https://patreon.com/Xsrazy", "CUSTOM:https://paypal.me/xsrazy", "OPEN_COLLECTIVE:https://opencollective.com/xsrazy"]
 postedAt: "2026-06-21T07:32:11.420Z"
 ---

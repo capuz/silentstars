@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-20T11:07:05Z"
 lastReleaseAt: "2026-10-31T15:33:46Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 98
+healthScore: 97
 undervaluedScore: 37
 maintainers: ["Heming9", "BrethofAI"]
 openGraphImageUrl: "https://opengraph.githubassets.com/aed93736045ed22aee4616102dc304ebe34821c8c0ba8fd114f5d28a89446f85/Heming9/agenterm"

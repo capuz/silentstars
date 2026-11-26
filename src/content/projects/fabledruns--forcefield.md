@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-14T15:19:54Z"
 lastReleaseAt: "2026-09-15T09:31:09Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 95
+healthScore: 94
 undervaluedScore: 60
 maintainers: ["fabledruns", "claude", "Copilot"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1311100791/9a6332dd-17f9-48db-8b8c-95ae61f53036"

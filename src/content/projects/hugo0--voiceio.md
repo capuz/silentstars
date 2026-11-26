@@ -9,10 +9,10 @@ language: "Python"
 languages: ["Python"]
 languagePcts: [84]
 topics: ["asr", "dictation", "gnome", "ibus", "linux", "offline", "parakeet", "privacy", "python", "speech-to-text"]
-stars: 29
+stars: 30
 forks: 3
-openIssues: 0
-closedIssues: 6
+openIssues: 1
+closedIssues: 7
 watchers: 0
 contributors: 3
 recentReleases: 0
@@ -21,10 +21,10 @@ lastCommitAt: "2026-11-25T10:51:07Z"
 lastReleaseAt: "2026-04-08T20:44:43Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 99
-undervaluedScore: 52
+healthScore: 97
+undervaluedScore: 51
 maintainers: ["Hugo0"]
-openGraphImageUrl: "https://opengraph.githubassets.com/7062b6f662a629c45fd9e4e3ac9adfbada3c19b8542b4dc7622691ef815cd128/Hugo0/voiceio"
+openGraphImageUrl: "https://opengraph.githubassets.com/64dcf726aa89618c23452702a64bb0414c2af2660a6b6c4487ab85e18653d6ad/Hugo0/voiceio"
 discussionCount: 1
 promoted: true
 postedAt: "2026-11-15T08:37:20.001Z"

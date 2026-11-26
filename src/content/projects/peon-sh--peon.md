@@ -14,16 +14,16 @@ forks: 24
 openIssues: 1
 closedIssues: 8
 watchers: 0
-contributors: 11
+contributors: 12
 recentReleases: 0
 createdAt: "2026-07-10T11:34:59Z"
-lastCommitAt: "2026-11-24T07:03:24Z"
+lastCommitAt: "2026-11-26T10:28:40Z"
 lastReleaseAt: "2026-08-25T16:05:59Z"
 status: "thriving"
 tags: []
-healthScore: 96
+healthScore: 97
 undervaluedScore: 35
-maintainers: ["arpit-advant", "parth-advant019", "kuldip-advant"]
+maintainers: ["arpit-advant", "parth-advant019", "dependabot[bot]"]
 openGraphImageUrl: "https://opengraph.githubassets.com/ad3b6abaaa18c96c4c51ed5554aa85ca7123a0bff7573d0204efac4fa71f0f08/Peon-sh/Peon"
 postedAt: "2026-09-29T08:20:14.976Z"
 ---

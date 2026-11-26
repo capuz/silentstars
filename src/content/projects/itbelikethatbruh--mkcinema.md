@@ -7,7 +7,7 @@ url: "https://github.com/itbelikethatbruh/MKCinema"
 homepage: "https://mkcinema.app"
 language: "HTML"
 languages: ["HTML", "JavaScript"]
-languagePcts: [52, 35]
+languagePcts: [51, 35]
 topics: ["android-tv", "pwa", "streaming", "anime", "family", "fire-tv", "free", "home-cinema", "iptv", "live-tv"]
 stars: 72
 forks: 5
@@ -17,7 +17,7 @@ watchers: 0
 contributors: 2
 recentReleases: 10
 createdAt: "2026-10-26T02:25:02Z"
-lastCommitAt: "2026-11-25T07:35:32Z"
+lastCommitAt: "2026-11-26T10:34:24Z"
 lastReleaseAt: "2026-11-08T03:00:10Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem", "funded", "release_machine"]
