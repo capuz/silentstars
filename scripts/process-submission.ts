@@ -24,6 +24,8 @@ import { slugify, resolveGithubPublicEmail } from './post-shared.ts';
 import { addEntry, fetchSignal, findEntry, hasExternalSignal, readStandby, removeEntry, writeStandby } from './standby.ts';
 import { parseIssueBody } from './issue-body.ts';
 import { enqueue, readQueue, writeQueue } from './bsky-queue.ts';
+import { cardDescription } from './post-pitch.ts';
+import { stripReadmeNoise } from './readme-clean.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -139,6 +141,19 @@ async function fetchRepo(repo: string): Promise<GitHubRepo | null> {
   return data;
 }
 
+// Raw README text, '' when the repo has none (or the fetch fails: the check below
+// then rejects only if the description is missing too).
+async function fetchReadme(repo: string): Promise<string> {
+  const res = await fetch(`https://api.github.com/repos/${repo}/readme`, {
+    headers: {
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github.raw',
+      'X-GitHub-Api-Version': '2022-11-28',
+    },
+  });
+  return res.ok ? res.text() : '';
+}
+
 async function resolveEmail(templateEmail: string): Promise<string> {
   // Only trust template input that actually looks like an email — anything
   // else (parsing artifacts, prose) would bounce off Resend with a 422.
@@ -234,7 +249,7 @@ async function handleRejected(repo: string, slug: string, projectName: string, r
   setOutput('submitter_email', '');
 
   await commentIssue(
-    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on projects that haven't been found yet\n- Have had at least one commit in the **last 90 days**\n\nFeel free to resubmit if the situation changes!`,
+    `Hey @${ISSUE_AUTHOR}! 👋\n\nThanks for the submission. Unfortunately, **${projectName}** doesn't meet the current criteria:\n\n> ${reason}\n\nFor reference, SilentStars accepts projects that:\n- Are public and not archived\n- Have **${MAX_STARS} stars or fewer** — we focus on projects that haven't been found yet\n- Have had at least one commit in the **last 90 days**\n- Say what they do, in the repo description or at the top of the README\n\nFeel free to resubmit if the situation changes!`,
   );
   if (repo) dropFromStandby(repo);
   await labelIssue(['rejected']);
@@ -422,6 +437,18 @@ async function main() {
     return handleRejected(repo, slug, ghRepo.name,
       `The last commit was ${Math.round(daysSinceLastPush)} days ago. SilentStars requires at least one commit in the last 90 days.`,
     );
+  }
+
+  // collect.ts only builds a card when it can say what the project does: the GitHub
+  // description or, for a submission, the README's first prose line. Accepting a repo
+  // with neither left issue #132 "accepted" with no card.
+  if (!ghRepo.description?.trim() || ghRepo.description.trim().toLowerCase() === ghRepo.name.toLowerCase()) {
+    const readme = stripReadmeNoise(await fetchReadme(repo));
+    if (!cardDescription({ description: ghRepo.description ?? '', name: ghRepo.name, readme, promoted: true })) {
+      return handleRejected(repo, slug, ghRepo.name,
+        "The repository has no description and its README doesn't open with a sentence saying what it does. Add a short description to the repo (the About field on GitHub) and resubmit.",
+      );
+    }
   }
 
   // It only goes live once someone other than the owner has starred it, new

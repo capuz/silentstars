@@ -6,7 +6,8 @@
  * the queue. Then it closes the loop on the submission issue: the bot's comment
  * gets the post link, `bsky-queued` becomes `accepted`, the issue closes and
  * the submitter gets the acceptance email. An entry whose project isn't in
- * latest.json yet, or whose card isn't deployed, stays queued for the next run.
+ * latest.json yet, whose card page wasn't built, or whose card isn't deployed,
+ * stays queued for the next run.
  *
  * Runs from bsky-queue.yml (a few times a day) and from collect.yml right after
  * a submission is deployed. In that second case SKIP_NOTIFY_REPO names the
@@ -21,7 +22,7 @@
  *   DRY_RUN                              — optional, preview only: no post, no writes
  */
 
-import { appendFileSync, readFileSync } from 'node:fs';
+import { appendFileSync, existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   type LatestData, loadPosted, savePosted, recordPost, slugify, resolveGithubPublicEmail,
@@ -58,6 +59,8 @@ async function closeIssue(entry: QueueEntry, name: string, bskyUrl: string) {
   if (!comment.ok) console.warn(`  ⚠ #${entry.issue}: comment failed (${comment.status})`);
   await gh(`/issues/${entry.issue}/labels/bsky-queued`, { method: 'DELETE' });
   await gh(`/issues/${entry.issue}/labels`, { method: 'POST', body: JSON.stringify({ labels: ['accepted'] }) });
+  // Left by process-submission.yml when the card failed to build on the first try.
+  await gh(`/issues/${entry.issue}/labels/needs-review`, { method: 'DELETE' });
   const closed = await gh(`/issues/${entry.issue}`, {
     method: 'PATCH', body: JSON.stringify({ state: 'closed', state_reason: 'completed' }),
   });
@@ -93,6 +96,12 @@ async function main() {
   for (const entry of due) {
     const project = data.projects.find(p => same(p.repo, entry.repo));
     if (!project) { console.log(`  … ${entry.repo}: not in latest.json yet, stays queued`); continue; }
+    // latest.json lists every collected repo, card or not: without the page the pitch
+    // has no README to work from and the OG image doesn't exist (issue #132).
+    if (!existsSync(join(process.cwd(), 'src', 'content', 'projects', `${slugify(entry.repo)}.md`))) {
+      console.log(`  … ${entry.repo}: card page not built yet, stays queued`);
+      continue;
+    }
     console.log(`\n▶ ${entry.repo} (issue #${entry.issue}, queued since ${entry.since})`);
     let bskyUrl: string | null;
     try {
