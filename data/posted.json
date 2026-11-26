@@ -3011,5 +3011,29 @@
         "postedAt": "2026-11-26T13:11:12.893Z"
       }
     }
+  },
+  {
+    "repo": "ankurmans/vertov-screen-recorder",
+    "slug": "ankurmans--vertov-screen-recorder",
+    "postedAt": "2026-11-26T23:45:52.021Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n3au7mt5uq2w",
+        "postedAt": "2026-11-26T23:45:52.021Z"
+      }
+    },
+    "communityPick": true
+  },
+  {
+    "repo": "NikKurkov/sitewatcher",
+    "slug": "nikkurkov--sitewatcher",
+    "postedAt": "2026-11-26T23:45:57.074Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n3au7rn5ky2d",
+        "postedAt": "2026-11-26T23:45:57.074Z"
+      }
+    },
+    "communityPick": true
   }
 ]
