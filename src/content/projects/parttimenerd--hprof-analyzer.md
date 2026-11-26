@@ -18,7 +18,7 @@ contributors: 4
 recentReleases: 8
 createdAt: "2026-07-14T09:55:32Z"
 lastCommitAt: "2026-11-26T14:42:43Z"
-lastReleaseAt: "2026-11-19T11:10:26Z"
+lastReleaseAt: "2026-11-26T15:54:36Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 100

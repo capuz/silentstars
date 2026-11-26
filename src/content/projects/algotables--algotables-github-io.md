@@ -11,17 +11,17 @@ languagePcts: [47, 33, 21]
 topics: ["algorand", "blockchain", "defi"]
 stars: 8
 forks: 1
-openIssues: 2
+openIssues: 1
 closedIssues: 1
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2022-05-20T22:00:21Z"
-lastCommitAt: "2026-11-26T15:27:58Z"
+lastCommitAt: "2026-11-26T23:39:27Z"
 status: "thriving"
 tags: ["solo_builder"]
-healthScore: 87
-undervaluedScore: 70
+healthScore: 90
+undervaluedScore: 72
 maintainers: ["algotables"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4caffffde3cabcf21b344939eb63e749adeaabb1c0e3eb03e4bb0b772a760773/algotables/algotables.github.io"
 postedAt: "2026-09-02T08:09:50.581Z"

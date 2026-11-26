@@ -1,7 +1,7 @@
 ---
 repo: "etalab/data_pass"
 name: "data_pass"
-description: "DataPass "
+description: "DataPass"
 readmeQualityOk: true
 url: "https://github.com/etalab/data_pass"
 homepage: "https://datapass.api.gouv.fr"

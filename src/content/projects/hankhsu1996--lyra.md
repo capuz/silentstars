@@ -11,12 +11,12 @@ topics: ["compiler", "simulation", "simulator", "systemverilog", "verilog", "eda
 stars: 7
 forks: 1
 openIssues: 465
-closedIssues: 148
+closedIssues: 149
 watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2025-04-22T05:42:03Z"
-lastCommitAt: "2026-11-25T03:55:29Z"
+lastCommitAt: "2026-11-26T19:09:33Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 84

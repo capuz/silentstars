@@ -20,7 +20,7 @@ createdAt: "2013-02-03T22:10:38Z"
 lastCommitAt: "2026-11-24T08:45:44Z"
 status: "thriving"
 tags: ["solo_builder", "legacy_hero"]
-healthScore: 77
+healthScore: 76
 undervaluedScore: 77
 maintainers: ["peikk0"]
 openGraphImageUrl: "https://opengraph.githubassets.com/8a584594c46b62acf94d5b97660395ff9028c9d80a5d5d970357d2039b82874f/peikk0/dotfiles"

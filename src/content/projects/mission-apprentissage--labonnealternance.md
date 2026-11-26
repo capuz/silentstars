@@ -1,22 +1,22 @@
 ---
 repo: "mission-apprentissage/labonnealternance"
 name: "labonnealternance"
-description: " La bonne alternance a vocation à faciliter la mise en relation des jeunes avec les centres de formation d'apprentis (CFA) et les entreprises"
+description: "La bonne alternance a vocation à faciliter la mise en relation des jeunes avec les centres de formation d'apprentis (CFA) et les entreprises"
 readmeQualityOk: true
 url: "https://github.com/mission-apprentissage/labonnealternance"
 homepage: "https://labonnealternance.apprentissage.beta.gouv.fr/"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [95]
+languagePcts: [87]
 stars: 11
 forks: 6
-openIssues: 441
-closedIssues: 1855
+openIssues: 437
+closedIssues: 1859
 watchers: 3
 contributors: 18
 recentReleases: 0
 createdAt: "2022-10-05T13:20:00Z"
-lastCommitAt: "2026-11-26T15:05:48Z"
+lastCommitAt: "2026-11-26T17:05:28Z"
 lastReleaseAt: "2023-03-29T08:25:23Z"
 status: "thriving"
 tags: ["hidden_gem", "fork_magnet"]

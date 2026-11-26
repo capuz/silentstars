@@ -1,7 +1,7 @@
 ---
 repo: "yzerlaut/physion"
 name: "physion"
-description: "An integrated software for the cellular and circuit physiology of visual processing during behavior --- :movie_camera: :wrench: :minidisc: "
+description: "An integrated software for the cellular and circuit physiology of visual processing during behavior --- :movie_camera: :wrench: :minidisc:"
 readmeQualityOk: true
 url: "https://github.com/yzerlaut/physion"
 language: "Python"

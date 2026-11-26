@@ -1,7 +1,7 @@
 ---
 repo: "Nwokike/proot-distro"
 name: "proot-distro"
-description: "Linux on Android without root or Termux: run Debian, Ubuntu, Alpine and any Docker/OCI image on your phone. "
+description: "Linux on Android without root or Termux: run Debian, Ubuntu, Alpine and any Docker/OCI image on your phone."
 readmeQualityOk: true
 url: "https://github.com/Nwokike/proot-distro"
 homepage: "https://play.google.com/store/apps/details?id=ng.kiri.prootdistro"

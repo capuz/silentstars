@@ -1,7 +1,7 @@
 ---
 repo: "GSX-Eis/jq-factor-lab"
 name: "jq-factor-lab"
-description: "An AI-native quantitative research harness "
+description: "An AI-native quantitative research harness"
 readmeQualityOk: true
 url: "https://github.com/GSX-Eis/jq-factor-lab"
 language: "Python"

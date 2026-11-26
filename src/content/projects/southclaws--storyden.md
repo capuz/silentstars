@@ -1,7 +1,7 @@
 ---
 repo: "Southclaws/storyden"
 name: "storyden"
-description: " With a fresh new take on traditional bulletin board forum software, Storyden is a modern, secure and extensible platform for building communities."
+description: "With a fresh new take on traditional bulletin board forum software, Storyden is a modern, secure and extensible platform for building communities."
 readmeQualityOk: true
 url: "https://github.com/Southclaws/storyden"
 homepage: "https://www.storyden.org/"
@@ -11,7 +11,7 @@ languagePcts: [50, 48]
 topics: ["discussion-board", "discussion-forum", "forum", "forum-software", "forums", "forum-application", "forum-site", "agentic-ai", "cms"]
 stars: 350
 forks: 42
-openIssues: 72
+openIssues: 75
 closedIssues: 201
 watchers: 9
 contributors: 18
@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-23T19:57:41Z"
 lastReleaseAt: "2025-09-14T16:14:41Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "legacy_hero"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 38
 maintainers: ["Southclaws", "renovate[bot]", "LEnc95"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/428306249/990802ee-0de3-4610-8281-37705d4245e4"

@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/proompteng/lab"
 language: "TypeScript"
 languages: ["TypeScript", "Python"]
-languagePcts: [54, 36]
+languagePcts: [55, 36]
 stars: 7
 forks: 1
 openIssues: 2
@@ -15,7 +15,7 @@ watchers: 1
 contributors: 4
 recentReleases: 0
 createdAt: "2024-03-23T00:07:38Z"
-lastCommitAt: "2026-11-26T12:22:25Z"
+lastCommitAt: "2026-11-26T23:39:18Z"
 lastReleaseAt: "2024-08-25T04:14:58Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

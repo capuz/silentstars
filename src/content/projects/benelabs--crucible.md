@@ -9,20 +9,20 @@ languages: ["Rust"]
 languagePcts: [66]
 stars: 17
 forks: 144
-openIssues: 110
-closedIssues: 889
+openIssues: 94
+closedIssues: 905
 watchers: 0
-contributors: 137
-recentReleases: 5
+contributors: 141
+recentReleases: 4
 createdAt: "2026-03-15T23:40:02Z"
-lastCommitAt: "2026-11-23T10:12:22Z"
+lastCommitAt: "2026-11-26T20:05:38Z"
 lastReleaseAt: "2026-08-29T19:57:01Z"
 status: "thriving"
-tags: ["needs_contributors", "hidden_gem", "release_machine", "fork_magnet"]
-healthScore: 94
+tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
+healthScore: 96
 undervaluedScore: 72
 maintainers: ["Dimank92", "semantic-release-bot", "adams813"]
-openGraphImageUrl: "https://opengraph.githubassets.com/0fb764a1744949ab76c9a249431caa48ec49f86cba802454c731f5c352997a87/benelabs/crucible"
+openGraphImageUrl: "https://opengraph.githubassets.com/3ae12d5898fbe4119f43c9ec649034ea9b37b1131c9026649ccc32bee9f143fa/benelabs/crucible"
 postedAt: "2026-11-21T11:46:31.167Z"
 ---
 
