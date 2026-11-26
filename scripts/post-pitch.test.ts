@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
   buildPitch, readmeExcerpt,
-  needsLlmPitch, sanitizePitch, buildPitchPrompt, generatePitch,
+  needsLlmPitch, sanitizePitch, buildPitchPrompt, generatePitch, readmeLead, cardDescription,
 } from './post-pitch.ts';
 
 test('readmeExcerpt drops frontmatter and caps length', () => {
@@ -124,8 +124,7 @@ test('needsLlmPitch is true when the README lead is itself status text', () => {
   assert.equal(needsLlmPitch({ description: 'WIP', readme }), true);
 });
 
-test('needsLlmPitch is true for an empty description or a bare pointer with no README', () => {
-  assert.equal(needsLlmPitch({ description: '', readme: '' }), true);
+test('needsLlmPitch is true for a bare pointer description with no README', () => {
   assert.equal(needsLlmPitch({ description: 'Mirror of https://git.fsfe.org/x', readme: '' }), true);
 });
 
@@ -202,4 +201,44 @@ test('generatePitch returns null when the output is unusable', async () => {
 test('generatePitch rejects a pitch that talks about status instead of the product', async () => {
   const run = async () => 'A dungeon crawler that is still a work in progress but fun to play.';
   assert.equal(await generatePitch(input, run), null);
+});
+
+test('needsLlmPitch is false when there is nothing at all to summarize', () => {
+  assert.equal(needsLlmPitch({ description: '', readme: '' }), false);
+});
+
+test('buildPitchPrompt tells the model to answer NONE when the material is too thin', () => {
+  assert.match(buildPitchPrompt(input), /\bNONE\b/);
+});
+
+test('generatePitch returns null when the model answers NONE', async () => {
+  assert.equal(await generatePitch(input, async () => 'NONE'), null);
+  assert.equal(await generatePitch(input, async () => ' none. '), null);
+});
+
+test('generatePitch never turns a refusal into a pitch (issue #132)', async () => {
+  const refusal = "I can't write this one from the material provided. The description and README for vertov-screen-recorder are both empty, so there's nothing to base a truthful sentence on. If you can share the README or a description, I'll write the hook from that.";
+  assert.equal(await generatePitch(input, async () => refusal), null);
+  assert.equal(await generatePitch(input, async () => 'I cannot describe this project without more information about it.'), null);
+  assert.equal(await generatePitch(input, async () => "I'm unable to summarize this repository from what was provided."), null);
+});
+
+test('readmeLead skips a leading HTML logo and heading and returns the first prose line', () => {
+  const readme = '<img src="public/logo.png" alt="Vertov" width="64" height="64" align="left">\n\n# Vertov\n\n**Open-source screen recorder and video messaging for Show-First Work.**\n\nMore text here.';
+  assert.equal(readmeLead(readme), 'Open-source screen recorder and video messaging for Show-First Work.');
+});
+
+test('cardDescription keeps a meaningful GitHub description', () => {
+  assert.equal(cardDescription({ description: ' A CLI for X ', name: 'x', readme: CLEAR_README, promoted: true }), 'A CLI for X');
+});
+
+test('cardDescription falls back to the README lead only for an accepted submission', () => {
+  const readme = '# Vertov\n\n**Open-source screen recorder and video messaging for Show-First Work.**';
+  assert.equal(cardDescription({ description: '', name: 'vertov', readme, promoted: true }), 'Open-source screen recorder and video messaging for Show-First Work.');
+  assert.equal(cardDescription({ description: 'vertov', name: 'Vertov', readme, promoted: true }), 'Open-source screen recorder and video messaging for Show-First Work.');
+  assert.equal(cardDescription({ description: '', name: 'vertov', readme, promoted: false }), '');
+});
+
+test('cardDescription is empty when neither the description nor the README says anything', () => {
+  assert.equal(cardDescription({ description: '', name: 'x', readme: '# x\n\n## Usage\n', promoted: true }), '');
 });

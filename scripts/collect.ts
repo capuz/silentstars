@@ -23,6 +23,7 @@ import {
 import { applyRenames, absorbAliasPages } from './posted-renames.ts';
 import { isExcludedRepo, isExcludedOwner } from './discovery-filter.ts';
 import { rewriteRelativeLinks, rewriteRelativeImages } from './readme-links.ts';
+import { cardDescription } from './post-pitch.ts';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -790,19 +791,22 @@ async function main() {
 
       const slug = slugify(raw.nameWithOwner);
       const mdPath = resolve(ROOT, `src/content/projects/${slug}.md`);
-      const desc = data.description.trim();
-      if (!desc || desc.toLowerCase() === data.name.toLowerCase()) {
+      const cardDesc = cardDescription({
+        description: data.description, name: data.name, readme: cleanedReadme, promoted: isPromoted,
+      });
+      if (!cardDesc) {
         console.log(`    skip (no meaningful description)`);
         if (!isPosted && existsSync(mdPath)) unlinkSync(mdPath);
         continue;
       }
+      data.description = cardDesc;
       const postedEntry = postedByRepo.get(repoStr.toLowerCase());
       if (postedEntry) data.postedAt = postedEntry.postedAt;
 
       // Only pages that pass the checks above get translated: candidates discarded for
       // low health used to be translated too, ~25 calls a night for nothing. The rest
       // are translated together after the loop, a few calls at a time.
-      if (looksNonEnglish(description) || looksNonEnglish(cleanedReadme)) {
+      if (looksNonEnglish(data.description) || looksNonEnglish(cleanedReadme)) {
         pendingTranslation.push({ repoStr, data, slug, mdPath, cleanedReadme });
         continue;
       }
