@@ -3035,5 +3035,16 @@
       }
     },
     "communityPick": true
+  },
+  {
+    "repo": "anubhab7105/Assembly",
+    "slug": "anubhab7105--assembly",
+    "postedAt": "2026-11-27T13:08:11.077Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n3cb2bswfv2z",
+        "postedAt": "2026-11-27T13:08:11.077Z"
+      }
+    }
   }
 ]
