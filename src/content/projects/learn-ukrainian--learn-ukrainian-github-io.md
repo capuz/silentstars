@@ -9,7 +9,7 @@ language: "Python"
 languages: ["Python", "MDX"]
 languagePcts: [64, 28]
 topics: ["cefr", "education", "language-learning", "open-source", "ukrainian", "ukrainian-state-standard-2024"]
-stars: 11
+stars: 12
 forks: 5
 openIssues: 146
 closedIssues: 4483
@@ -22,9 +22,9 @@ lastReleaseAt: "2026-10-20T12:59:47Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
 healthScore: 99
-undervaluedScore: 84
+undervaluedScore: 82
 maintainers: ["krisztiankoos", "dependabot[bot]"]
-openGraphImageUrl: "https://opengraph.githubassets.com/dbb3e16a7be9bdd29ff0d459390a494333695d1c532315c12e31af9bd5afdb99/learn-ukrainian/learn-ukrainian.github.io"
+openGraphImageUrl: "https://opengraph.githubassets.com/37e7cbe9b8ea91c24bfdc1f7b12db2f3f55daaeea76427fe35eb26bdcf7317ae/learn-ukrainian/learn-ukrainian.github.io"
 discussionCount: 1
 postedAt: "2026-08-24T04:26:39.846Z"
 ---

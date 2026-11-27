@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript"]
 languagePcts: [86]
 topics: ["ai-agents", "cloudflare-workers", "loom-alternative", "mcp", "screen-recorder", "self-hosted", "video-messaging"]
-stars: 15
+stars: 33
 forks: 1
 openIssues: 0
 closedIssues: 0
@@ -21,9 +21,9 @@ lastCommitAt: "2026-11-27T06:29:29Z"
 status: "newborn"
 tags: ["hidden_gem"]
 healthScore: 80
-undervaluedScore: 12
+undervaluedScore: 10
 maintainers: ["ankurmans"]
-openGraphImageUrl: "https://opengraph.githubassets.com/cb62a3a3ea3988c06cd0644713a0557ab699d2b90d73d425d8cba5ad4fee062f/ankurmans/vertov-screen-recorder"
+openGraphImageUrl: "https://opengraph.githubassets.com/de94204ca2a570c8ad7bd6994812e8fc04fa3c6a48321eafc47cb6c1a0644022/ankurmans/vertov-screen-recorder"
 promoted: true
 postedAt: "2026-11-26T23:45:52.021Z"
 ---

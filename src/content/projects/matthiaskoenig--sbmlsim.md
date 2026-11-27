@@ -11,13 +11,13 @@ languagePcts: [99]
 topics: ["sbml", "sbml-simulation"]
 stars: 13
 forks: 8
-openIssues: 3
-closedIssues: 274
+openIssues: 4
+closedIssues: 275
 watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2019-10-02T11:24:50Z"
-lastCommitAt: "2026-11-27T12:45:19Z"
+lastCommitAt: "2026-11-27T15:34:46Z"
 lastReleaseAt: "2020-11-11T22:00:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]

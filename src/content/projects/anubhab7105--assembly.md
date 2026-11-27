@@ -17,7 +17,7 @@ watchers: 0
 contributors: 10
 recentReleases: 0
 createdAt: "2026-08-15T21:36:42Z"
-lastCommitAt: "2026-11-27T12:57:25Z"
+lastCommitAt: "2026-11-27T16:15:44Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]
 healthScore: 92
@@ -25,6 +25,7 @@ undervaluedScore: 66
 maintainers: ["anubhab7105", "piyushbaruadebug"]
 openGraphImageUrl: "https://opengraph.githubassets.com/b10a419e7134c5ebd139097c395f924dc2fe75a1eaea8f238a160733fecbf8e6/anubhab7105/Assembly"
 discussionCount: 1
+postedAt: "2026-11-27T13:08:11.077Z"
 ---
 
 # Assembly

@@ -9,7 +9,7 @@ language: "TypeScript"
 languages: ["TypeScript", "JavaScript"]
 languagePcts: [64, 21]
 topics: ["agent-infrastructure", "agent-sdk", "ai-agents", "python", "sandbox", "self-hosted", "typescript"]
-stars: 22
+stars: 23
 forks: 0
 openIssues: 1
 closedIssues: 0
@@ -23,7 +23,7 @@ tags: ["solo_builder", "hidden_gem"]
 healthScore: 67
 undervaluedScore: 14
 maintainers: ["NexusFox88"]
-openGraphImageUrl: "https://opengraph.githubassets.com/585883781658f29ff40471e17eee548f1390803dd46b024f3a3922aa5a13cbb0/NexusFox88/Hexagon"
+openGraphImageUrl: "https://opengraph.githubassets.com/6fc86e8f814d30c4cba604f489d5e87f494396e64d0b65739c8449d145860926/NexusFox88/Hexagon"
 promoted: true
 postedAt: "2026-11-22T02:21:53.340Z"
 ---

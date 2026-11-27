@@ -11,18 +11,18 @@ languagePcts: [96]
 topics: ["amrex", "numerical-relativity"]
 stars: 18
 forks: 23
-openIssues: 33
-closedIssues: 79
+openIssues: 32
+closedIssues: 80
 watchers: 5
 contributors: 32
 recentReleases: 0
 createdAt: "2022-10-04T13:44:45Z"
-lastCommitAt: "2026-11-25T10:57:58Z"
+lastCommitAt: "2026-11-27T16:26:25Z"
 status: "thriving"
 tags: ["needs_contributors", "hidden_gem", "fork_magnet"]
-healthScore: 89
+healthScore: 91
 undervaluedScore: 75
-maintainers: ["AreefW", "AdamG412", "mirenradia"]
+maintainers: ["mirenradia", "AdamG412", "AreefW"]
 openGraphImageUrl: "https://opengraph.githubassets.com/91832de8000fd14ce2a4355f6aa369ff5103acbe9ec45205cca560340f3a9388/GRTLCollaboration/GRTeclyn"
 discussionCount: 0
 postedAt: "2026-10-15T08:37:55.895Z"

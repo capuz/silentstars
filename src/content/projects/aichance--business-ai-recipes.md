@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-01T08:19:24Z"
 lastReleaseAt: "2026-10-10T06:28:19Z"
 status: "quiet"
 tags: ["solo_builder", "hidden_gem", "release_machine", "under_pressure"]
-healthScore: 70
+healthScore: 69
 undervaluedScore: 54
 maintainers: ["aichance"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1407239185/7c26804c-e6c4-47c2-91de-30cd1fff18c4"

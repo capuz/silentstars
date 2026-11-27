@@ -6,7 +6,7 @@ readmeQualityOk: true
 url: "https://github.com/saitamasahil/2048plus"
 language: "Lua"
 languages: ["Lua"]
-languagePcts: [84]
+languagePcts: [85]
 topics: ["2048", "2048-game", "2048game", "handheld", "handheld-gaming", "muos", "puzzle", "puzzle-game", "retro", "retrogaming"]
 stars: 10
 forks: 1
@@ -16,11 +16,11 @@ watchers: 0
 contributors: 1
 recentReleases: 0
 createdAt: "2026-05-27T09:46:11Z"
-lastCommitAt: "2026-11-26T15:49:37Z"
+lastCommitAt: "2026-11-27T16:30:33Z"
 lastReleaseAt: "2026-06-13T13:59:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 52
 maintainers: ["saitamasahil"]
 openGraphImageUrl: "https://opengraph.githubassets.com/f8e297cbfa95c3187b171194ba832167506524932f3a4a1371a62aed9081c21f/saitamasahil/2048plus"

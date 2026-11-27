@@ -11,12 +11,12 @@ topics: ["ai-agents", "claude-code", "developer-tools", "linter", "mcp", "mise",
 stars: 7
 forks: 6
 openIssues: 5090
-closedIssues: 1449
+closedIssues: 1474
 watchers: 1
 contributors: 5
 recentReleases: 0
 createdAt: "2023-10-26T09:53:10Z"
-lastCommitAt: "2026-11-27T12:49:31Z"
+lastCommitAt: "2026-11-27T16:20:49Z"
 lastReleaseAt: "2026-05-17T22:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "fork_magnet"]

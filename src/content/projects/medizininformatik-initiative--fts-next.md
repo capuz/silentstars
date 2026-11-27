@@ -17,7 +17,7 @@ watchers: 3
 contributors: 19
 recentReleases: 0
 createdAt: "2024-06-21T12:28:38Z"
-lastCommitAt: "2026-11-26T06:52:03Z"
+lastCommitAt: "2026-11-27T15:37:06Z"
 lastReleaseAt: "2025-10-07T11:42:54Z"
 status: "thriving"
 tags: ["hidden_gem"]

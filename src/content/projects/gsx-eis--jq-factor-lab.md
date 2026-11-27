@@ -15,11 +15,11 @@ watchers: 1
 contributors: 1
 recentReleases: 0
 createdAt: "2026-11-10T13:31:37Z"
-lastCommitAt: "2026-11-21T15:26:10Z"
+lastCommitAt: "2026-11-27T16:25:33Z"
 status: "newborn"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 87
-undervaluedScore: 25
+healthScore: 89
+undervaluedScore: 36
 maintainers: ["GSX-Eis"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d814591c310c7918b49546aeede2386da88edad50c090e3b04efc84d22ff9a14/GSX-Eis/jq-factor-lab"
 promoted: true

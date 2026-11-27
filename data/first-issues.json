@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-27T13:03:38.992Z",
+  "collectedAt": "2026-11-27T16:34:11.872Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,53 +55,29 @@
       ]
     },
     {
-      "repo": "finos/open-resource-broker",
-      "slug": "finos--open-resource-broker",
-      "lastCommitAt": "2026-11-27T11:47:25Z",
+      "repo": "cadet/CADET-Core",
+      "slug": "cadet--cadet-core",
+      "lastCommitAt": "2026-11-27T15:30:34Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 3,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 463,
-          "title": "Wheel and single-page-application build robustness follow-ups",
-          "url": "https://github.com/finos/open-resource-broker/issues/463",
+          "number": 30,
+          "title": "Rename parameters to comply with new nomenclature",
+          "url": "https://github.com/cadet/CADET-Core/issues/30",
           "kind": "good first issue",
-          "createdAt": "2026-10-05T16:10:30Z",
-          "comments": 1
+          "createdAt": "2020-03-10T16:02:47Z",
+          "comments": 4
         },
         {
-          "number": 525,
-          "title": "Thread the injected logger through the Kubernetes StatefulSet and Deployment spec builders",
-          "url": "https://github.com/finos/open-resource-broker/issues/525",
+          "number": 681,
+          "title": "Update analytical references",
+          "url": "https://github.com/cadet/CADET-Core/issues/681",
           "kind": "good first issue",
-          "createdAt": "2026-10-05T23:52:50Z",
-          "comments": 1
-        },
-        {
-          "number": 537,
-          "title": "Move logging out of the Template domain aggregate",
-          "url": "https://github.com/finos/open-resource-broker/issues/537",
-          "kind": "good first issue",
-          "createdAt": "2026-10-05T23:55:11Z",
-          "comments": 0
-        },
-        {
-          "number": 677,
-          "title": "OCI: classify OutOfHostCapacity launch errors as definite capacity failures",
-          "url": "https://github.com/finos/open-resource-broker/issues/677",
-          "kind": "help wanted",
-          "createdAt": "2026-10-30T11:55:40Z",
-          "comments": 0
-        },
-        {
-          "number": 493,
-          "title": "Justify or remove getattr() calls in the AWS and Kubernetes providers",
-          "url": "https://github.com/finos/open-resource-broker/issues/493",
-          "kind": "help wanted",
-          "createdAt": "2026-10-05T16:28:35Z",
+          "createdAt": "2026-05-03T16:52:43Z",
           "comments": 0
         }
       ]
@@ -109,7 +85,7 @@
     {
       "repo": "Human-Cognome-Project/human-cognome-project",
       "slug": "human-cognome-project--human-cognome-project",
-      "lastCommitAt": "2026-11-26T18:44:58Z",
+      "lastCommitAt": "2026-11-27T15:54:36Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
@@ -131,50 +107,6 @@
           "kind": "good first issue",
           "createdAt": "2026-08-30T19:17:03Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "eclipse-score/lifecycle",
-      "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-27T10:44:43Z",
-      "signals": {
-        "outsidePRsMerged": 29,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 10,
-      "issues": [
-        {
-          "number": 329,
-          "title": "Mocks for lifecycle",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
-          "kind": "good first issue",
-          "createdAt": "2026-07-16T13:40:10Z",
-          "comments": 1
-        },
-        {
-          "number": 842,
-          "title": "Move all \"Default\" asserts to debug",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
-          "kind": "good first issue",
-          "createdAt": "2026-10-22T12:57:03Z",
-          "comments": 0
-        },
-        {
-          "number": 488,
-          "title": "Make use of static create methods",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
-          "kind": "good first issue",
-          "createdAt": "2026-08-18T10:13:34Z",
-          "comments": 0
-        },
-        {
-          "number": 424,
-          "title": "Update legacy ProcessGroupManager names",
-          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
-          "kind": "good first issue",
-          "createdAt": "2026-08-06T08:31:01Z",
-          "comments": 1
         }
       ]
     },
@@ -231,73 +163,179 @@
       ]
     },
     {
-      "repo": "sunrise-org/sunrise",
-      "slug": "sunrise-org--sunrise",
-      "lastCommitAt": "2026-11-27T12:48:52Z",
+      "repo": "eclipse-score/lifecycle",
+      "slug": "eclipse-score--lifecycle",
+      "lastCommitAt": "2026-11-27T15:22:59Z",
       "signals": {
-        "outsidePRsMerged": 23,
+        "outsidePRsMerged": 28,
         "outsidePRsCapped": false
       },
       "goodFirstIssueCount": 10,
       "issues": [
         {
-          "number": 6060,
-          "title": "Python tool tests: CI-only tests should skip cleanly off Linux (57 failures, 126 errors on Windows)",
-          "url": "https://github.com/sunrise-org/sunrise/issues/6060",
-          "kind": "help wanted",
-          "createdAt": "2026-11-26T09:17:04Z",
-          "comments": 3
+          "number": 329,
+          "title": "Mocks for lifecycle",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/329",
+          "kind": "good first issue",
+          "createdAt": "2026-07-16T13:40:10Z",
+          "comments": 1
         },
         {
-          "number": 5683,
-          "title": "/datapack enable X before vanilla: keep vanilla as an entry of the ordered selection",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5683",
-          "kind": "help wanted",
-          "createdAt": "2026-11-25T05:09:29Z",
-          "comments": 7
+          "number": 842,
+          "title": "Move all \"Default\" asserts to debug",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/842",
+          "kind": "good first issue",
+          "createdAt": "2026-10-22T12:57:03Z",
+          "comments": 0
         },
         {
-          "number": 4826,
-          "title": "Engine: armor stands have no Entity.random; their knockback retries draw from the level's random",
-          "url": "https://github.com/sunrise-org/sunrise/issues/4826",
-          "kind": "help wanted",
-          "createdAt": "2026-11-23T05:11:52Z",
-          "comments": 2
+          "number": 488,
+          "title": "Make use of static create methods",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/488",
+          "kind": "good first issue",
+          "createdAt": "2026-08-18T10:13:34Z",
+          "comments": 0
         },
         {
-          "number": 4679,
-          "title": "Parity: the classic Render Distance slider's low-memory range",
-          "url": "https://github.com/sunrise-org/sunrise/issues/4679",
-          "kind": "help wanted",
-          "createdAt": "2026-11-22T23:10:00Z",
-          "comments": 2
-        },
-        {
-          "number": 5509,
-          "title": "Shaders: sunrise-shaders could translate through sunrise-glsl",
-          "url": "https://github.com/sunrise-org/sunrise/issues/5509",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T17:47:19Z",
-          "comments": 3
+          "number": 424,
+          "title": "Update legacy ProcessGroupManager names",
+          "url": "https://github.com/eclipse-score/lifecycle/issues/424",
+          "kind": "good first issue",
+          "createdAt": "2026-08-06T08:31:01Z",
+          "comments": 1
         }
       ]
     },
     {
-      "repo": "SUNET/vc",
-      "slug": "sunet--vc",
-      "lastCommitAt": "2026-11-27T11:58:39Z",
+      "repo": "hslee16/Archy",
+      "slug": "hslee16--archy",
+      "lastCommitAt": "2026-11-27T16:29:32Z",
       "signals": {
-        "outsidePRsMerged": 15,
+        "outsidePRsMerged": 16,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 1,
+      "goodFirstIssueCount": 42,
       "issues": [
         {
-          "number": 513,
-          "title": "Order of wallets in verifier shuffles around",
-          "url": "https://github.com/SUNET/vc/issues/513",
+          "number": 825,
+          "title": "test(mcp): hoist 17 function-local ToolError imports, use the _dsm helper, and fix a changelog-style comment in test_mcp.py",
+          "url": "https://github.com/hslee16/Archy/issues/825",
           "kind": "good first issue",
-          "createdAt": "2026-07-10T13:03:09Z",
+          "createdAt": "2026-11-05T18:06:48Z",
+          "comments": 0
+        },
+        {
+          "number": 863,
+          "title": "docs(research): CODEGRAPH_COMPETITIVE_ANALYSIS and research/README still count 13 MCP tools (14 are registered)",
+          "url": "https://github.com/hslee16/Archy/issues/863",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T18:36:10Z",
+          "comments": 0
+        },
+        {
+          "number": 867,
+          "title": "test(conventions): the 40-character slug cap on registry literal names has no test",
+          "url": "https://github.com/hslee16/Archy/issues/867",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T19:43:00Z",
+          "comments": 0
+        },
+        {
+          "number": 882,
+          "title": "fix(bench): clone_or_update returns None for every failure, so a ledger row says only \"clone failed\" and the cause is lost",
+          "url": "https://github.com/hslee16/Archy/issues/882",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T20:36:15Z",
+          "comments": 0
+        },
+        {
+          "number": 848,
+          "title": "docs(agents): AGENTS.md restates its hard rules in later sections, and two of its longest paragraphs bury procedural detail",
+          "url": "https://github.com/hslee16/Archy/issues/848",
+          "kind": "good first issue",
+          "createdAt": "2026-11-06T22:50:02Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "SolDevelo/InfraScan",
+      "slug": "soldevelo--infrascan",
+      "lastCommitAt": "2026-11-27T16:30:24Z",
+      "signals": {
+        "outsidePRsMerged": 16,
+        "outsidePRsCapped": false,
+        "approxKloc": 20
+      },
+      "goodFirstIssueCount": 2,
+      "issues": [
+        {
+          "number": 59,
+          "title": "Improve progress bar accuracy",
+          "url": "https://github.com/SolDevelo/InfraScan/issues/59",
+          "kind": "good first issue",
+          "createdAt": "2026-05-11T13:51:59Z",
+          "comments": 2
+        },
+        {
+          "number": 32,
+          "title": "Infrascan should be a bit more verbose",
+          "url": "https://github.com/SolDevelo/InfraScan/issues/32",
+          "kind": "good first issue",
+          "createdAt": "2026-04-13T14:16:33Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "rootsiemen/loophole",
+      "slug": "rootsiemen--loophole",
+      "lastCommitAt": "2026-11-27T16:25:24Z",
+      "signals": {
+        "outsidePRsMerged": 14,
+        "outsidePRsCapped": false,
+        "approxKloc": 6
+      },
+      "goodFirstIssueCount": 10,
+      "issues": [
+        {
+          "number": 54,
+          "title": "[CI]: publish the Docker image to GHCR on release",
+          "url": "https://github.com/rootsiemen/loophole/issues/54",
+          "kind": "good first issue",
+          "createdAt": "2026-11-27T16:22:15Z",
+          "comments": 0
+        },
+        {
+          "number": 53,
+          "title": "[Packaging]: pre-commit framework integration (.pre-commit-hooks.yaml)",
+          "url": "https://github.com/rootsiemen/loophole/issues/53",
+          "kind": "good first issue",
+          "createdAt": "2026-11-27T16:22:13Z",
+          "comments": 0
+        },
+        {
+          "number": 52,
+          "title": "[Packaging]: shell completions for bash and zsh",
+          "url": "https://github.com/rootsiemen/loophole/issues/52",
+          "kind": "good first issue",
+          "createdAt": "2026-11-27T16:22:11Z",
+          "comments": 0
+        },
+        {
+          "number": 51,
+          "title": "[Tests]: parser edge-case tests — malformed config, ignore and baseline files must never crash a scan",
+          "url": "https://github.com/rootsiemen/loophole/issues/51",
+          "kind": "good first issue",
+          "createdAt": "2026-11-27T16:22:09Z",
+          "comments": 0
+        },
+        {
+          "number": 50,
+          "title": "[Tests]: validate SARIF output against the SARIF 2.1.0 structure in the selftest suite",
+          "url": "https://github.com/rootsiemen/loophole/issues/50",
+          "kind": "good first issue",
+          "createdAt": "2026-11-27T16:22:07Z",
           "comments": 0
         }
       ]
@@ -305,7 +343,7 @@
     {
       "repo": "GRTLCollaboration/GRTeclyn",
       "slug": "grtlcollaboration--grteclyn",
-      "lastCommitAt": "2026-11-25T10:57:58Z",
+      "lastCommitAt": "2026-11-27T16:26:25Z",
       "signals": {
         "outsidePRsMerged": 12,
         "outsidePRsCapped": false,
@@ -326,7 +364,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-27T12:49:31Z",
+      "lastCommitAt": "2026-11-27T16:20:49Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -346,7 +384,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-27T12:49:31Z",
+      "lastCommitAt": "2026-11-27T16:20:49Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -364,53 +402,45 @@
       ]
     },
     {
-      "repo": "agentsmith-tools/maintainer-agent",
-      "slug": "agentsmith-tools--maintainer-agent",
-      "lastCommitAt": "2026-11-27T12:54:24Z",
+      "repo": "StopBanning/toaster",
+      "slug": "stopbanning--toaster",
+      "lastCommitAt": "2026-11-27T16:25:05Z",
       "signals": {
         "outsidePRsMerged": 5,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 15,
+      "goodFirstIssueCount": 4,
       "issues": [
         {
-          "number": 291,
-          "title": "Six readers of an issue thread see only its first 30 comments, so a late offer is missed",
-          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/291",
+          "number": 11,
+          "title": "Add a radio station that publishes its stream",
+          "url": "https://github.com/StopBanning/toaster/issues/11",
           "kind": "good first issue",
-          "createdAt": "2026-11-25T18:05:56Z",
+          "createdAt": "2026-10-29T00:43:58Z",
           "comments": 0
         },
         {
-          "number": 175,
-          "title": "maintainer-merge show reads any .json file under the state directory and crashes the listing on a receipt file name with a quote",
-          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/175",
+          "number": 10,
+          "title": "Translate the handheld game into German",
+          "url": "https://github.com/StopBanning/toaster/issues/10",
           "kind": "good first issue",
-          "createdAt": "2026-11-09T11:48:55Z",
-          "comments": 1
-        },
-        {
-          "number": 202,
-          "title": "The failure unit passes %n to alert.sh, so every failure alert lands in all profiles' alerts.log and the journalctl hint is wrong",
-          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/202",
-          "kind": "good first issue",
-          "createdAt": "2026-11-09T11:49:38Z",
+          "createdAt": "2026-10-29T00:43:56Z",
           "comments": 0
         },
         {
-          "number": 200,
-          "title": "The run lock's file descriptor reaches every child process, so a leftover background process keeps the profile locked after run.sh exits",
-          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/200",
+          "number": 9,
+          "title": "Translate the handheld game into Portuguese",
+          "url": "https://github.com/StopBanning/toaster/issues/9",
           "kind": "good first issue",
-          "createdAt": "2026-11-09T11:49:35Z",
+          "createdAt": "2026-10-29T00:43:55Z",
           "comments": 0
         },
         {
-          "number": 197,
-          "title": "transcript.py records a Bash call the wall refused as a command that ran, so audit says a denied command appears in the record",
-          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/197",
+          "number": 8,
+          "title": "Translate the handheld game into French",
+          "url": "https://github.com/StopBanning/toaster/issues/8",
           "kind": "good first issue",
-          "createdAt": "2026-11-09T11:49:15Z",
+          "createdAt": "2026-10-29T00:43:41Z",
           "comments": 0
         }
       ]
@@ -468,6 +498,26 @@
       ]
     },
     {
+      "repo": "francisreboucas/constructcraft",
+      "slug": "francisreboucas--constructcraft",
+      "lastCommitAt": "2026-11-27T16:27:59Z",
+      "signals": {
+        "outsidePRsMerged": 4,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 478,
+          "title": "Structural bar bending work",
+          "url": "https://github.com/francisreboucas/constructcraft/issues/478",
+          "kind": "help wanted",
+          "createdAt": "2026-11-22T21:22:22Z",
+          "comments": 1
+        }
+      ]
+    },
+    {
       "repo": "baipix/baipix",
       "slug": "baipix--baipix",
       "lastCommitAt": "2026-11-26T20:37:18Z",
@@ -516,6 +566,58 @@
           "kind": "help wanted",
           "createdAt": "2026-11-06T22:24:48Z",
           "comments": 3
+        }
+      ]
+    },
+    {
+      "repo": "coco-research/coco",
+      "slug": "coco-research--coco",
+      "lastCommitAt": "2026-11-27T15:29:24Z",
+      "signals": {
+        "outsidePRsMerged": 2,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 4,
+      "issues": [
+        {
+          "number": 26,
+          "title": "[GFI] Add a `coco doctor` health-check command",
+          "url": "https://github.com/coco-research/coco/issues/26",
+          "kind": "good first issue",
+          "createdAt": "2026-06-07T17:14:39Z",
+          "comments": 1
+        },
+        {
+          "number": 439,
+          "title": "check-skill-pages: show fixture build errors when a build fails",
+          "url": "https://github.com/coco-research/coco/issues/439",
+          "kind": "good first issue",
+          "createdAt": "2026-11-01T22:30:45Z",
+          "comments": 1
+        },
+        {
+          "number": 28,
+          "title": "[GFI] Add a Zed editor adapter",
+          "url": "https://github.com/coco-research/coco/issues/28",
+          "kind": "good first issue",
+          "createdAt": "2026-06-07T17:14:41Z",
+          "comments": 0
+        },
+        {
+          "number": 25,
+          "title": "[GFI] Add Antigravity (Google) adapter",
+          "url": "https://github.com/coco-research/coco/issues/25",
+          "kind": "good first issue",
+          "createdAt": "2026-06-07T17:14:38Z",
+          "comments": 0
+        },
+        {
+          "number": 27,
+          "title": "Strengthen evidence sourcing for sub-threshold Superintelligence personas",
+          "url": "https://github.com/coco-research/coco/issues/27",
+          "kind": "help wanted",
+          "createdAt": "2026-06-07T17:14:40Z",
+          "comments": 1
         }
       ]
     },
@@ -605,54 +707,31 @@
       ]
     },
     {
-      "repo": "wssessapple-ux/TACZ-Legacy-Community-Port",
-      "slug": "wssessapple-ux--tacz-legacy-community-port",
-      "lastCommitAt": "2026-11-27T12:59:02Z",
+      "repo": "OliverRomhagen/vrigstad-joyride",
+      "slug": "oliverromhagen--vrigstad-joyride",
+      "lastCommitAt": "2026-11-27T16:12:58Z",
       "signals": {
         "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
+        "outsidePRsCapped": false,
+        "approxKloc": 47
       },
-      "goodFirstIssueCount": 5,
+      "goodFirstIssueCount": 4,
       "issues": [
         {
-          "number": 33,
-          "title": "[docs] 补 F3 / VBO 遥测信息的反馈上报格式说明",
-          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/33",
+          "number": 135,
+          "title": "Backgränd 6 is a safehouse",
+          "url": "https://github.com/OliverRomhagen/vrigstad-joyride/issues/135",
           "kind": "good first issue",
-          "createdAt": "2026-11-21T08:59:29Z",
+          "createdAt": "2026-11-13T15:13:50Z",
           "comments": 0
         },
         {
-          "number": 32,
-          "title": "[docs] 编写枪包作者 1.12.2 兼容写法指南",
-          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/32",
+          "number": 68,
+          "title": "If the game script fails to load, the page shows an error instead of a dead Start button",
+          "url": "https://github.com/OliverRomhagen/vrigstad-joyride/issues/68",
           "kind": "good first issue",
-          "createdAt": "2026-11-21T08:59:26Z",
-          "comments": 0
-        },
-        {
-          "number": 31,
-          "title": "[i18n] 补齐韩文（ko_kr）语言文件缺失翻译",
-          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/31",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T08:58:59Z",
-          "comments": 0
-        },
-        {
-          "number": 30,
-          "title": "[i18n] 补齐日文（ja_jp）语言文件缺失翻译",
-          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/30",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T08:58:56Z",
-          "comments": 0
-        },
-        {
-          "number": 29,
-          "title": "[i18n] 补齐繁体中文（zh_tw）语言文件缺失翻译",
-          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/29",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T08:58:25Z",
-          "comments": 0
+          "createdAt": "2026-11-12T12:46:41Z",
+          "comments": 1
         }
       ]
     },
@@ -681,6 +760,42 @@
           "url": "https://github.com/SankarGaneshb/rover-slim/issues/8",
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "jmelo11/quantsupport",
+      "slug": "jmelo11--quantsupport",
+      "lastCommitAt": "2026-11-27T16:23:06Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 1,
+      "issues": [
+        {
+          "number": 36,
+          "title": "Excessive use of `clone()` where `Copy` semantics would suffice",
+          "url": "https://github.com/jmelo11/quantsupport/issues/36",
+          "kind": "good first issue",
+          "createdAt": "2026-01-06T02:54:59Z",
+          "comments": 0
+        },
+        {
+          "number": 49,
+          "title": "Cargo package",
+          "url": "https://github.com/jmelo11/quantsupport/issues/49",
+          "kind": "help wanted",
+          "createdAt": "2026-01-08T11:41:14Z",
+          "comments": 0
+        },
+        {
+          "number": 35,
+          "title": "Extensive use of unwrap() in fallible paths where errors could be handled",
+          "url": "https://github.com/jmelo11/quantsupport/issues/35",
+          "kind": "help wanted",
+          "createdAt": "2026-01-06T02:43:37Z",
           "comments": 0
         }
       ]
@@ -773,46 +888,6 @@
           "kind": "help wanted",
           "createdAt": "2026-08-05T04:06:19Z",
           "comments": 5
-        }
-      ]
-    },
-    {
-      "repo": "mizchi/zust",
-      "slug": "mizchi--zust",
-      "lastCommitAt": "2026-11-27T12:57:09Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 1,
-      "issues": [
-        {
-          "number": 212,
-          "title": "tests/selfhost.sh: the ast_summary step no longer builds (regions.rs / wf.rs missing from build_ast_summary.py)",
-          "url": "https://github.com/mizchi/zust/issues/212",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T19:11:51Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "qianhaoq/dota2.ai",
-      "slug": "qianhaoq--dota2-ai",
-      "lastCommitAt": "2026-11-27T12:56:25Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 164,
-          "title": "[corpus] Share a 7.42 game where the review got it wrong",
-          "url": "https://github.com/qianhaoq/dota2.ai/issues/164",
-          "kind": "help wanted",
-          "createdAt": "2026-11-20T03:33:39Z",
-          "comments": 0
         }
       ]
     }
