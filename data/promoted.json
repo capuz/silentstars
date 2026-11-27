@@ -214,5 +214,9 @@
   {
     "repo": "NikKurkov/sitewatcher",
     "until": "2026-12-26"
+  },
+  {
+    "repo": "thinpack-js/thinpack.js",
+    "until": "2026-12-27"
   }
 ]
