@@ -11,13 +11,13 @@ languagePcts: [100]
 topics: ["fastapi", "faststream", "leader-election", "python", "asyncio", "circuit-breaker", "resilience", "cache", "cron", "distributed-lock"]
 stars: 5
 forks: 1
-openIssues: 117
-closedIssues: 368
+openIssues: 116
+closedIssues: 369
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2024-10-21T04:31:31Z"
-lastCommitAt: "2026-11-26T13:06:02Z"
+lastCommitAt: "2026-11-27T07:12:30Z"
 lastReleaseAt: "2026-03-17T16:38:57Z"
 status: "thriving"
 tags: ["solo_builder", "needs_contributors", "hidden_gem", "under_pressure"]

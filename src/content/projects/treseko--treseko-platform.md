@@ -20,7 +20,7 @@ lastCommitAt: "2026-11-23T12:15:40Z"
 lastReleaseAt: "2026-10-18T18:32:41Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 84
+healthScore: 83
 undervaluedScore: 48
 maintainers: ["Codificadito"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1298503003/5f3665f2-1895-49e7-bcca-230ac924b1cc"

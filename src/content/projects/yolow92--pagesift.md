@@ -21,7 +21,7 @@ lastCommitAt: "2026-11-23T13:42:09Z"
 lastReleaseAt: "2026-10-26T08:07:54Z"
 status: "newborn"
 tags: ["solo_builder", "release_machine"]
-healthScore: 92
+healthScore: 91
 undervaluedScore: 30
 maintainers: ["YOLOW92"]
 openGraphImageUrl: "https://opengraph.githubassets.com/0a9376991347c1dc94b5b8ee35fe17a648c01b9ade6b1e776acd52b1495277ce/YOLOW92/pagesift"

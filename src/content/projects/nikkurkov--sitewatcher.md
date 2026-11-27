@@ -17,14 +17,15 @@ watchers: 1
 contributors: 3
 recentReleases: 0
 createdAt: "2025-08-26T06:47:08Z"
-lastCommitAt: "2026-11-26T22:50:05Z"
+lastCommitAt: "2026-11-27T11:56:54Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]
-healthScore: 88
+healthScore: 89
 undervaluedScore: 99
-maintainers: ["NikKurkov"]
+maintainers: ["NikKurkov", "0xJoba"]
 openGraphImageUrl: "https://opengraph.githubassets.com/d712a4a8a3be7894f19a3db9cbb18d51f2c99fa37bd76b24b64a3a452f3d0d27/NikKurkov/sitewatcher"
 promoted: true
+postedAt: "2026-11-26T23:45:57.074Z"
 ---
 
 The demo is a public status page. You can see the monitored sites and open the Signal room without signing in. The screenshots above show the signed-in workspace with sample data.

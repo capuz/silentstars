@@ -11,17 +11,17 @@ languagePcts: [99]
 topics: ["sbml", "sbml-simulation"]
 stars: 13
 forks: 8
-openIssues: 6
-closedIssues: 271
+openIssues: 3
+closedIssues: 274
 watchers: 1
 contributors: 6
 recentReleases: 0
 createdAt: "2019-10-02T11:24:50Z"
-lastCommitAt: "2026-11-26T23:21:57Z"
+lastCommitAt: "2026-11-27T12:45:19Z"
 lastReleaseAt: "2020-11-11T22:00:57Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "fork_magnet"]
-healthScore: 99
+healthScore: 100
 undervaluedScore: 81
 maintainers: ["matthiaskoenig"]
 openGraphImageUrl: "https://opengraph.githubassets.com/4c139326c6a3e122e9548612145a38e85e24f427a71a5c9295c7d8b166d21532/matthiaskoenig/sbmlsim"

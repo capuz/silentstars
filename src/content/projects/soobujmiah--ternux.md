@@ -17,13 +17,13 @@ watchers: 0
 contributors: 4
 recentReleases: 5
 createdAt: "2026-08-13T01:02:33Z"
-lastCommitAt: "2026-11-26T16:55:37Z"
+lastCommitAt: "2026-11-27T12:44:49Z"
 lastReleaseAt: "2026-11-06T22:21:45Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "release_machine"]
-healthScore: 89
+healthScore: 90
 undervaluedScore: 60
-maintainers: ["soobujmiah", "github-actions[bot]", "codex"]
+maintainers: ["soobujmiah"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/1332570864/2bdbb754-fc2d-4962-b9f0-040c6910494e"
 promoted: true
 postedAt: "2026-11-19T05:15:56.039Z"

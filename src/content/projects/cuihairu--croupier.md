@@ -7,7 +7,7 @@ url: "https://github.com/cuihairu/croupier"
 homepage: "https://cuihairu.github.io/croupier/"
 language: "Go"
 languages: ["Go", "TypeScript"]
-languagePcts: [59, 28]
+languagePcts: [59, 27]
 topics: ["clickhouse", "game", "game-analytics", "game-backend", "game-telemetry", "golang", "jaeger", "liveops", "logging", "metrics"]
 stars: 10
 forks: 1
@@ -17,7 +17,7 @@ watchers: 1
 contributors: 4
 recentReleases: 4
 createdAt: "2024-07-31T10:19:15Z"
-lastCommitAt: "2026-11-26T22:03:48Z"
+lastCommitAt: "2026-11-27T12:41:53Z"
 lastReleaseAt: "2026-06-02T03:06:10Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem"]

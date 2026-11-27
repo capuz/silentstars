@@ -6,16 +6,16 @@ readmeQualityOk: true
 url: "https://github.com/JensKapitza/SimpleOffice4Me"
 language: "Python"
 languages: ["Python"]
-languagePcts: [73]
+languagePcts: [74]
 stars: 5
 forks: 0
-openIssues: 17
+openIssues: 18
 closedIssues: 112
 watchers: 1
 contributors: 2
 recentReleases: 0
 createdAt: "2021-05-17T22:00:40Z"
-lastCommitAt: "2026-11-26T21:21:43Z"
+lastCommitAt: "2026-11-27T11:58:44Z"
 status: "thriving"
 tags: ["solo_builder", "hidden_gem", "legacy_hero", "funded", "under_pressure"]
 healthScore: 97

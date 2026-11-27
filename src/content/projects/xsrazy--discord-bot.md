@@ -16,15 +16,15 @@ watchers: 2
 contributors: 1
 recentReleases: 1
 createdAt: "2023-01-22T23:38:03Z"
-lastCommitAt: "2026-11-03T15:21:28Z"
+lastCommitAt: "2026-11-27T04:40:08Z"
 lastReleaseAt: "2026-10-22T22:27:29Z"
-status: "quiet"
+status: "thriving"
 tags: ["solo_builder", "funded", "fork_magnet"]
-healthScore: 70
+healthScore: 78
 undervaluedScore: 81
 maintainers: ["xsrazy"]
 openGraphImageUrl: "https://opengraph.githubassets.com/99444432852d104b2a73aa514e9047a2d869182ae0e348613fa70e02806a769c/xsrazy/Discord-Bot"
-fundingLinks: ["GITHUB:https://github.com/xsrazy", "BUY_ME_A_COFFEE:https://buymeacoffee.com/xsrazy", "KO_FI:https://ko-fi.com/xsrazy", "PATREON:https://patreon.com/Xsrazy", "CUSTOM:https://paypal.me/xsrazy", "OPEN_COLLECTIVE:https://opencollective.com/xsrazy"]
+fundingLinks: ["GITHUB:https://github.com/xsrazy", "BUY_ME_A_COFFEE:https://buymeacoffee.com/xsrazy", "KO_FI:https://ko-fi.com/xsrazy", "PATREON:https://patreon.com/Xsrazy", "CUSTOM:https://paypal.me/xsrazydev", "CUSTOM:https://sociabuzz.com/xsrazy", "CUSTOM:https://saweria.co/xsrazy", "CUSTOM:https://trakteer.id/xsrazy", "OPEN_COLLECTIVE:https://opencollective.com/xsrazy"]
 postedAt: "2026-06-21T07:32:11.420Z"
 ---
 

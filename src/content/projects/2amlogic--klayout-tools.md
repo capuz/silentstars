@@ -10,16 +10,16 @@ languages: ["Python", "Shell"]
 languagePcts: [73, 23]
 stars: 6
 forks: 2
-openIssues: 87
-closedIssues: 3932
+openIssues: 89
+closedIssues: 3947
 watchers: 0
 contributors: 3
 recentReleases: 7
 createdAt: "2026-07-28T20:56:04Z"
-lastCommitAt: "2026-11-26T16:04:49Z"
+lastCommitAt: "2026-11-27T01:37:28Z"
 lastReleaseAt: "2026-11-15T20:16:17Z"
 status: "thriving"
-tags: ["hidden_gem", "release_machine"]
+tags: ["solo_builder", "hidden_gem", "release_machine"]
 healthScore: 99
 undervaluedScore: 72
 maintainers: ["loom-fleet-dispatch[bot]", "rjwalters"]

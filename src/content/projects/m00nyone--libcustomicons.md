@@ -13,16 +13,16 @@ forks: 131
 openIssues: 0
 closedIssues: 2
 watchers: 3
-contributors: 118
+contributors: 119
 recentReleases: 0
 createdAt: "2025-05-05T17:13:44Z"
-lastCommitAt: "2026-11-22T12:30:06Z"
+lastCommitAt: "2026-11-27T11:34:03Z"
 lastReleaseAt: "2025-08-04T13:51:00Z"
 status: "thriving"
 tags: ["fork_magnet"]
-healthScore: 97
+healthScore: 99
 undervaluedScore: 89
-maintainers: ["m00nyONE", "Cote2Go", "haaidandb"]
+maintainers: ["m00nyONE", "notagarami", "haaidandb"]
 openGraphImageUrl: "https://opengraph.githubassets.com/3f2bc49e1601fd8e1ccaabb909424f13f467d85d55ad82068d34c4855873cace/m00nyONE/LibCustomIcons"
 postedAt: "2026-09-03T08:19:41.539Z"
 ---

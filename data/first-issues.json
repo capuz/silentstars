@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-26T23:40:56.941Z",
+  "collectedAt": "2026-11-27T13:03:38.992Z",
   "projects": [
     {
       "repo": "Code-Society-Lab/matrixpy",
@@ -55,29 +55,53 @@
       ]
     },
     {
-      "repo": "USAREUR-AF/goatcore",
-      "slug": "usareur-af--goatcore",
-      "lastCommitAt": "2026-11-26T23:34:14Z",
+      "repo": "finos/open-resource-broker",
+      "slug": "finos--open-resource-broker",
+      "lastCommitAt": "2026-11-27T11:47:25Z",
       "signals": {
         "outsidePRsMerged": 30,
         "outsidePRsCapped": true
       },
-      "goodFirstIssueCount": 8,
+      "goodFirstIssueCount": 3,
       "issues": [
         {
-          "number": 950,
-          "title": "Upstream to NetBird: the relay protocol description and the liveness fix, and track the experimental eBPF relay branch",
-          "url": "https://github.com/USAREUR-AF/goatcore/issues/950",
-          "kind": "help wanted",
-          "createdAt": "2026-11-15T22:08:52Z",
+          "number": 463,
+          "title": "Wheel and single-page-application build robustness follow-ups",
+          "url": "https://github.com/finos/open-resource-broker/issues/463",
+          "kind": "good first issue",
+          "createdAt": "2026-10-05T16:10:30Z",
           "comments": 1
         },
         {
-          "number": 949,
-          "title": "goat-relay and the NetBird Go relay have no same-machine throughput comparison; measure and publish one per transport",
-          "url": "https://github.com/USAREUR-AF/goatcore/issues/949",
+          "number": 525,
+          "title": "Thread the injected logger through the Kubernetes StatefulSet and Deployment spec builders",
+          "url": "https://github.com/finos/open-resource-broker/issues/525",
+          "kind": "good first issue",
+          "createdAt": "2026-10-05T23:52:50Z",
+          "comments": 1
+        },
+        {
+          "number": 537,
+          "title": "Move logging out of the Template domain aggregate",
+          "url": "https://github.com/finos/open-resource-broker/issues/537",
+          "kind": "good first issue",
+          "createdAt": "2026-10-05T23:55:11Z",
+          "comments": 0
+        },
+        {
+          "number": 677,
+          "title": "OCI: classify OutOfHostCapacity launch errors as definite capacity failures",
+          "url": "https://github.com/finos/open-resource-broker/issues/677",
           "kind": "help wanted",
-          "createdAt": "2026-11-15T22:08:50Z",
+          "createdAt": "2026-10-30T11:55:40Z",
+          "comments": 0
+        },
+        {
+          "number": 493,
+          "title": "Justify or remove getattr() calls in the AWS and Kubernetes providers",
+          "url": "https://github.com/finos/open-resource-broker/issues/493",
+          "kind": "help wanted",
+          "createdAt": "2026-10-05T16:28:35Z",
           "comments": 0
         }
       ]
@@ -113,7 +137,7 @@
     {
       "repo": "eclipse-score/lifecycle",
       "slug": "eclipse-score--lifecycle",
-      "lastCommitAt": "2026-11-26T14:17:05Z",
+      "lastCommitAt": "2026-11-27T10:44:43Z",
       "signals": {
         "outsidePRsMerged": 29,
         "outsidePRsCapped": false
@@ -207,105 +231,73 @@
       ]
     },
     {
-      "repo": "DojoCodingLabs/hermit",
-      "slug": "dojocodinglabs--hermit",
-      "lastCommitAt": "2026-11-26T23:37:30Z",
+      "repo": "sunrise-org/sunrise",
+      "slug": "sunrise-org--sunrise",
+      "lastCommitAt": "2026-11-27T12:48:52Z",
       "signals": {
-        "outsidePRsMerged": 12,
+        "outsidePRsMerged": 23,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 17,
+      "goodFirstIssueCount": 10,
       "issues": [
         {
-          "number": 107,
-          "title": "Bots: title chats from before the upgrade by their first words",
-          "url": "https://github.com/DojoCodingLabs/hermit/issues/107",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T20:31:47Z",
-          "comments": 1
+          "number": 6060,
+          "title": "Python tool tests: CI-only tests should skip cleanly off Linux (57 failures, 126 errors on Windows)",
+          "url": "https://github.com/sunrise-org/sunrise/issues/6060",
+          "kind": "help wanted",
+          "createdAt": "2026-11-26T09:17:04Z",
+          "comments": 3
         },
         {
-          "number": 115,
-          "title": "Bots: test that a copy of a 40-character bot name still fits",
-          "url": "https://github.com/DojoCodingLabs/hermit/issues/115",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T20:32:27Z",
-          "comments": 1
+          "number": 5683,
+          "title": "/datapack enable X before vanilla: keep vanilla as an entry of the ordered selection",
+          "url": "https://github.com/sunrise-org/sunrise/issues/5683",
+          "kind": "help wanted",
+          "createdAt": "2026-11-25T05:09:29Z",
+          "comments": 7
         },
         {
-          "number": 114,
-          "title": "Bots: use one wording for the pin limit on both screens",
-          "url": "https://github.com/DojoCodingLabs/hermit/issues/114",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T20:32:22Z",
-          "comments": 0
+          "number": 4826,
+          "title": "Engine: armor stands have no Entity.random; their knockback retries draw from the level's random",
+          "url": "https://github.com/sunrise-org/sunrise/issues/4826",
+          "kind": "help wanted",
+          "createdAt": "2026-11-23T05:11:52Z",
+          "comments": 2
         },
         {
-          "number": 113,
-          "title": "Bots: make the wave 1 eval commands run from a clean clone",
-          "url": "https://github.com/DojoCodingLabs/hermit/issues/113",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T20:32:17Z",
-          "comments": 0
+          "number": 4679,
+          "title": "Parity: the classic Render Distance slider's low-memory range",
+          "url": "https://github.com/sunrise-org/sunrise/issues/4679",
+          "kind": "help wanted",
+          "createdAt": "2026-11-22T23:10:00Z",
+          "comments": 2
         },
         {
-          "number": 112,
-          "title": "Bots: count a bot name's 40 characters as the store does",
-          "url": "https://github.com/DojoCodingLabs/hermit/issues/112",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T20:32:12Z",
-          "comments": 0
+          "number": 5509,
+          "title": "Shaders: sunrise-shaders could translate through sunrise-glsl",
+          "url": "https://github.com/sunrise-org/sunrise/issues/5509",
+          "kind": "help wanted",
+          "createdAt": "2026-11-24T17:47:19Z",
+          "comments": 3
         }
       ]
     },
     {
-      "repo": "pyrite-wiki/pyrite",
-      "slug": "pyrite-wiki--pyrite",
-      "lastCommitAt": "2026-11-26T23:12:07Z",
+      "repo": "SUNET/vc",
+      "slug": "sunet--vc",
+      "lastCommitAt": "2026-11-27T11:58:39Z",
       "signals": {
-        "outsidePRsMerged": 12,
+        "outsidePRsMerged": 15,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 14,
+      "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 1247,
-          "title": "Frontmatter int() conversions outside safe_int crash on infinity (qa _schema_version, social reputation/writeup_count, software-kb rank)",
-          "url": "https://github.com/pyrite-wiki/pyrite/issues/1247",
+          "number": 513,
+          "title": "Order of wallets in verifier shuffles around",
+          "url": "https://github.com/SUNET/vc/issues/513",
           "kind": "good first issue",
-          "createdAt": "2026-10-22T12:28:53Z",
-          "comments": 6
-        },
-        {
-          "number": 1848,
-          "title": "Archive nine stale design pages in kb/designs with a pointer each",
-          "url": "https://github.com/pyrite-wiki/pyrite/issues/1848",
-          "kind": "good first issue",
-          "createdAt": "2026-11-21T14:55:59Z",
-          "comments": 2
-        },
-        {
-          "number": 1938,
-          "title": "REST entry writes to a read-only KB answer READ_ONLY instead of KB_READ_ONLY",
-          "url": "https://github.com/pyrite-wiki/pyrite/issues/1938",
-          "kind": "help wanted",
-          "createdAt": "2026-11-26T23:13:08Z",
-          "comments": 0
-        },
-        {
-          "number": 102,
-          "title": "CLI --background starts a daemon thread that dies at exit; jobs stay pending",
-          "url": "https://github.com/pyrite-wiki/pyrite/issues/102",
-          "kind": "help wanted",
-          "createdAt": "2026-09-18T06:58:01Z",
-          "comments": 7
-        },
-        {
-          "number": 1907,
-          "title": "Pin the extension boundary: a shrink-only test of how far the bundled extensions reach into core (ratchet 1 of #1042)",
-          "url": "https://github.com/pyrite-wiki/pyrite/issues/1907",
-          "kind": "help wanted",
-          "createdAt": "2026-11-26T03:26:34Z",
+          "createdAt": "2026-07-10T13:03:09Z",
           "comments": 0
         }
       ]
@@ -332,53 +324,9 @@
       ]
     },
     {
-      "repo": "hivecommons/hive",
-      "slug": "hivecommons--hive",
-      "lastCommitAt": "2026-11-26T23:39:07Z",
-      "signals": {
-        "outsidePRsMerged": 11,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 0,
-      "issues": [
-        {
-          "number": 19905,
-          "title": "[selfreport] agent_lifecycle_repeated: failed to send kick",
-          "url": "https://github.com/hivecommons/hive/issues/19905",
-          "kind": "help wanted",
-          "createdAt": "2026-11-25T19:09:12Z",
-          "comments": 6
-        },
-        {
-          "number": 19297,
-          "title": "✨ Enforce the push broker's sign-off rules on in-pod agent pushes at the egress proxy",
-          "url": "https://github.com/hivecommons/hive/issues/19297",
-          "kind": "help wanted",
-          "createdAt": "2026-11-19T17:34:35Z",
-          "comments": 5
-        },
-        {
-          "number": 18987,
-          "title": "📝 RFC: session taint - track sensitive reads across an agent's tool calls and restrict later outbound actions",
-          "url": "https://github.com/hivecommons/hive/issues/18987",
-          "kind": "help wanted",
-          "createdAt": "2026-11-18T14:06:33Z",
-          "comments": 8
-        },
-        {
-          "number": 19091,
-          "title": "✨ Companion meetings: let Betty speak into the call (spoken replies)",
-          "url": "https://github.com/hivecommons/hive/issues/19091",
-          "kind": "help wanted",
-          "createdAt": "2026-11-18T18:56:10Z",
-          "comments": 8
-        }
-      ]
-    },
-    {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-26T23:34:32Z",
+      "lastCommitAt": "2026-11-27T12:49:31Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -398,7 +346,7 @@
     {
       "repo": "Aquaticats/Monochromatic",
       "slug": "aquaticats--monochromatic",
-      "lastCommitAt": "2026-11-26T23:34:32Z",
+      "lastCommitAt": "2026-11-27T12:49:31Z",
       "signals": {
         "outsidePRsMerged": 6,
         "outsidePRsCapped": false
@@ -412,13 +360,65 @@
           "kind": "help wanted",
           "createdAt": "2026-06-11T04:05:41Z",
           "comments": 3
+        }
+      ]
+    },
+    {
+      "repo": "agentsmith-tools/maintainer-agent",
+      "slug": "agentsmith-tools--maintainer-agent",
+      "lastCommitAt": "2026-11-27T12:54:24Z",
+      "signals": {
+        "outsidePRsMerged": 5,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 15,
+      "issues": [
+        {
+          "number": 291,
+          "title": "Six readers of an issue thread see only its first 30 comments, so a late offer is missed",
+          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/291",
+          "kind": "good first issue",
+          "createdAt": "2026-11-25T18:05:56Z",
+          "comments": 0
+        },
+        {
+          "number": 175,
+          "title": "maintainer-merge show reads any .json file under the state directory and crashes the listing on a receipt file name with a quote",
+          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/175",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T11:48:55Z",
+          "comments": 1
+        },
+        {
+          "number": 202,
+          "title": "The failure unit passes %n to alert.sh, so every failure alert lands in all profiles' alerts.log and the journalctl hint is wrong",
+          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/202",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T11:49:38Z",
+          "comments": 0
+        },
+        {
+          "number": 200,
+          "title": "The run lock's file descriptor reaches every child process, so a leftover background process keeps the profile locked after run.sh exits",
+          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/200",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T11:49:35Z",
+          "comments": 0
+        },
+        {
+          "number": 197,
+          "title": "transcript.py records a Bash call the wall refused as a command that ran, so audit says a denied command appears in the record",
+          "url": "https://github.com/agentsmith-tools/maintainer-agent/issues/197",
+          "kind": "good first issue",
+          "createdAt": "2026-11-09T11:49:15Z",
+          "comments": 0
         }
       ]
     },
     {
       "repo": "farena-ai/sara",
       "slug": "farena-ai--sara",
-      "lastCommitAt": "2026-11-26T18:46:47Z",
+      "lastCommitAt": "2026-11-27T11:38:16Z",
       "signals": {
         "outsidePRsMerged": 4,
         "outsidePRsCapped": false
@@ -520,163 +520,6 @@
       ]
     },
     {
-      "repo": "pacocartones/free-llm-api-hub",
-      "slug": "pacocartones--free-llm-api-hub",
-      "lastCommitAt": "2026-11-26T23:37:48Z",
-      "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 30,
-      "issues": [
-        {
-          "number": 795,
-          "title": "Good first issue: add the official model list (models_url) for one provider",
-          "url": "https://github.com/pacocartones/free-llm-api-hub/issues/795",
-          "kind": "good first issue",
-          "createdAt": "2026-11-25T21:32:05Z",
-          "comments": 1
-        },
-        {
-          "number": 911,
-          "title": "Long-form guides: every title states its count and \"Checked\"",
-          "url": "https://github.com/pacocartones/free-llm-api-hub/issues/911",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T21:02:14Z",
-          "comments": 0
-        },
-        {
-          "number": 889,
-          "title": "CONTRIBUTING: explain how to run a single test file, and which tests need the build first",
-          "url": "https://github.com/pacocartones/free-llm-api-hub/issues/889",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T17:40:03Z",
-          "comments": 0
-        },
-        {
-          "number": 888,
-          "title": "docs: new docs/guides.md: for each long-form guide, which dataset fields it reads and how to change its wording",
-          "url": "https://github.com/pacocartones/free-llm-api-hub/issues/888",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T17:40:01Z",
-          "comments": 0
-        },
-        {
-          "number": 887,
-          "title": "docs/README.md: add a \"The site, page by page\" table (/find/, guides, /embed/, /not-free/, /api/, /quality/, /changes/)",
-          "url": "https://github.com/pacocartones/free-llm-api-hub/issues/887",
-          "kind": "good first issue",
-          "createdAt": "2026-11-26T17:39:53Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "luumlabs/aula",
-      "slug": "luumlabs--aula",
-      "lastCommitAt": "2026-11-26T23:31:38Z",
-      "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 6,
-      "issues": [
-        {
-          "number": 50,
-          "title": "Tests for `CourseCode` (course codes from calendar titles)",
-          "url": "https://github.com/luumlabs/aula/issues/50",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T14:53:14Z",
-          "comments": 2
-        },
-        {
-          "number": 54,
-          "title": "`npm run dev:demo`: a throwaway data folder, a simulated AI and demo progress",
-          "url": "https://github.com/luumlabs/aula/issues/54",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T14:53:19Z",
-          "comments": 0
-        },
-        {
-          "number": 53,
-          "title": "Formula sheet: add Fluids",
-          "url": "https://github.com/luumlabs/aula/issues/53",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T14:53:18Z",
-          "comments": 0
-        },
-        {
-          "number": 52,
-          "title": "Unit converter: add Frequency and Density",
-          "url": "https://github.com/luumlabs/aula/issues/52",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T14:53:17Z",
-          "comments": 0
-        },
-        {
-          "number": 51,
-          "title": "Tests for `AssistantDates` (the dates the AI reads and writes)",
-          "url": "https://github.com/luumlabs/aula/issues/51",
-          "kind": "good first issue",
-          "createdAt": "2026-11-16T14:53:15Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "keremss7/lingolay",
-      "slug": "keremss7--lingolay",
-      "lastCommitAt": "2026-11-26T23:33:31Z",
-      "signals": {
-        "outsidePRsMerged": 2,
-        "outsidePRsCapped": false,
-        "approxKloc": 11
-      },
-      "goodFirstIssueCount": 4,
-      "issues": [
-        {
-          "number": 1,
-          "title": "Translate the interface into your language 🌐",
-          "url": "https://github.com/keremss7/lingolay/issues/1",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T12:58:10Z",
-          "comments": 3
-        },
-        {
-          "number": 2,
-          "title": "Add more translation languages (Vietnamese, Indonesian, Hindi, Thai, …)",
-          "url": "https://github.com/keremss7/lingolay/issues/2",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T12:58:12Z",
-          "comments": 7
-        },
-        {
-          "number": 6,
-          "title": "Show whether the Windows OCR language pack is installed",
-          "url": "https://github.com/keremss7/lingolay/issues/6",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T12:58:17Z",
-          "comments": 0
-        },
-        {
-          "number": 5,
-          "title": "Translation history window with copy & export",
-          "url": "https://github.com/keremss7/lingolay/issues/5",
-          "kind": "good first issue",
-          "createdAt": "2026-09-24T12:58:15Z",
-          "comments": 0
-        },
-        {
-          "number": 7,
-          "title": "Community preprocessing presets per game",
-          "url": "https://github.com/keremss7/lingolay/issues/7",
-          "kind": "help wanted",
-          "createdAt": "2026-09-24T12:58:20Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
       "repo": "oneydef/EarA-linux",
       "slug": "oneydef--eara-linux",
       "lastCommitAt": "2026-11-25T08:12:24Z",
@@ -734,29 +577,9 @@
       ]
     },
     {
-      "repo": "nightscout/nocturne",
-      "slug": "nightscout--nocturne",
-      "lastCommitAt": "2026-11-26T23:35:52Z",
-      "signals": {
-        "outsidePRsMerged": 1,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 2,
-      "issues": [
-        {
-          "number": 276,
-          "title": "Vote for Nocturne to be added to PikaPods",
-          "url": "https://github.com/nightscout/nocturne/issues/276",
-          "kind": "help wanted",
-          "createdAt": "2026-05-31T08:09:59Z",
-          "comments": 1
-        }
-      ]
-    },
-    {
       "repo": "grelinfo/grelmicro",
       "slug": "grelinfo--grelmicro",
-      "lastCommitAt": "2026-11-26T13:06:02Z",
+      "lastCommitAt": "2026-11-27T07:12:30Z",
       "signals": {
         "outsidePRsMerged": 1,
         "outsidePRsCapped": false
@@ -782,106 +605,53 @@
       ]
     },
     {
-      "repo": "Guardians-Stuff/Guardian",
-      "slug": "guardians-stuff--guardian",
-      "lastCommitAt": "2026-11-26T23:29:31Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false,
-        "approxKloc": 17
-      },
-      "goodFirstIssueCount": 8,
-      "issues": [
-        {
-          "number": 57,
-          "title": "LOOKING 4 DEVS :3",
-          "url": "https://github.com/Guardians-Stuff/Guardian/issues/57",
-          "kind": "good first issue",
-          "createdAt": "2026-03-12T16:20:32Z",
-          "comments": 3
-        },
-        {
-          "number": 63,
-          "title": "Profile Filters",
-          "url": "https://github.com/Guardians-Stuff/Guardian/issues/63",
-          "kind": "good first issue",
-          "createdAt": "2026-03-17T04:44:12Z",
-          "comments": 0
-        },
-        {
-          "number": 52,
-          "title": "Add more logging options",
-          "url": "https://github.com/Guardians-Stuff/Guardian/issues/52",
-          "kind": "good first issue",
-          "createdAt": "2026-03-11T17:17:07Z",
-          "comments": 0
-        },
-        {
-          "number": 53,
-          "title": "Starboard",
-          "url": "https://github.com/Guardians-Stuff/Guardian/issues/53",
-          "kind": "good first issue",
-          "createdAt": "2026-03-11T17:17:45Z",
-          "comments": 0
-        },
-        {
-          "number": 56,
-          "title": "AI Moderation",
-          "url": "https://github.com/Guardians-Stuff/Guardian/issues/56",
-          "kind": "good first issue",
-          "createdAt": "2026-03-11T19:58:34Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "AFOS-Analytics/afos-analitica-2026",
-      "slug": "afos-analytics--afos-analitica-2026",
-      "lastCommitAt": "2026-11-26T23:30:09Z",
+      "repo": "wssessapple-ux/TACZ-Legacy-Community-Port",
+      "slug": "wssessapple-ux--tacz-legacy-community-port",
+      "lastCommitAt": "2026-11-27T12:59:02Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
       },
-      "goodFirstIssueCount": 7,
+      "goodFirstIssueCount": 5,
       "issues": [
         {
-          "number": 8,
-          "title": "Add polling institute quality scores to UI",
-          "url": "https://github.com/AFOS-Analytics/afos-analitica-2026/issues/8",
+          "number": 33,
+          "title": "[docs] 补 F3 / VBO 遥测信息的反馈上报格式说明",
+          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/33",
           "kind": "good first issue",
-          "createdAt": "2026-04-16T21:41:15Z",
+          "createdAt": "2026-11-21T08:59:29Z",
           "comments": 0
         },
         {
-          "number": 7,
-          "title": "Add dark mode to dashboard",
-          "url": "https://github.com/AFOS-Analytics/afos-analitica-2026/issues/7",
+          "number": 32,
+          "title": "[docs] 编写枪包作者 1.12.2 兼容写法指南",
+          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/32",
           "kind": "good first issue",
-          "createdAt": "2026-04-16T21:41:13Z",
+          "createdAt": "2026-11-21T08:59:26Z",
           "comments": 0
         },
         {
-          "number": 5,
-          "title": "Translate to German (de)",
-          "url": "https://github.com/AFOS-Analytics/afos-analitica-2026/issues/5",
+          "number": 31,
+          "title": "[i18n] 补齐韩文（ko_kr）语言文件缺失翻译",
+          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/31",
           "kind": "good first issue",
-          "createdAt": "2026-04-16T21:41:09Z",
+          "createdAt": "2026-11-21T08:58:59Z",
           "comments": 0
         },
         {
-          "number": 4,
-          "title": "Translate to French (fr)",
-          "url": "https://github.com/AFOS-Analytics/afos-analitica-2026/issues/4",
+          "number": 30,
+          "title": "[i18n] 补齐日文（ja_jp）语言文件缺失翻译",
+          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/30",
           "kind": "good first issue",
-          "createdAt": "2026-04-16T21:41:08Z",
+          "createdAt": "2026-11-21T08:58:56Z",
           "comments": 0
         },
         {
-          "number": 3,
-          "title": "Add country: South Korea",
-          "url": "https://github.com/AFOS-Analytics/afos-analitica-2026/issues/3",
+          "number": 29,
+          "title": "[i18n] 补齐繁体中文（zh_tw）语言文件缺失翻译",
+          "url": "https://github.com/wssessapple-ux/TACZ-Legacy-Community-Port/issues/29",
           "kind": "good first issue",
-          "createdAt": "2026-04-16T21:41:06Z",
+          "createdAt": "2026-11-21T08:58:25Z",
           "comments": 0
         }
       ]
@@ -912,86 +682,6 @@
           "kind": "good first issue",
           "createdAt": "2026-11-08T09:56:41Z",
           "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "ashlrai/phantom",
-      "slug": "ashlrai--phantom",
-      "lastCommitAt": "2026-11-26T23:33:50Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 8582,
-          "title": "Add a Good first issue template under .github/ISSUE_TEMPLATE",
-          "url": "https://github.com/ashlrai/phantom/issues/8582",
-          "kind": "good first issue",
-          "createdAt": "2026-11-24T07:40:48Z",
-          "comments": 0
-        },
-        {
-          "number": 8581,
-          "title": "Add an issue-template chooser config with a security contact link",
-          "url": "https://github.com/ashlrai/phantom/issues/8581",
-          "kind": "good first issue",
-          "createdAt": "2026-11-24T07:40:47Z",
-          "comments": 0
-        },
-        {
-          "number": 8584,
-          "title": "Verify and close leftover GitHub milestones M83, M85, M86, and M87",
-          "url": "https://github.com/ashlrai/phantom/issues/8584",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T07:40:49Z",
-          "comments": 0
-        },
-        {
-          "number": 8583,
-          "title": "phm release notes --repo fails to read published tags that gh can see",
-          "url": "https://github.com/ashlrai/phantom/issues/8583",
-          "kind": "help wanted",
-          "createdAt": "2026-11-24T07:40:48Z",
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "repo": "javillegasna/oxedi",
-      "slug": "javillegasna--oxedi",
-      "lastCommitAt": "2026-11-26T23:34:37Z",
-      "signals": {
-        "outsidePRsMerged": 0,
-        "outsidePRsCapped": false
-      },
-      "goodFirstIssueCount": 3,
-      "issues": [
-        {
-          "number": 210,
-          "title": "Viewer: split the 170-line createTables closure into named parts",
-          "url": "https://github.com/javillegasna/oxedi/issues/210",
-          "kind": "good first issue",
-          "createdAt": "2026-10-14T13:46:47Z",
-          "comments": 1
-        },
-        {
-          "number": 211,
-          "title": "Viewer: one place for the error-text, size and SNIP level helpers",
-          "url": "https://github.com/javillegasna/oxedi/issues/211",
-          "kind": "good first issue",
-          "createdAt": "2026-10-14T13:46:54Z",
-          "comments": 1
-        },
-        {
-          "number": 209,
-          "title": "COPY edi835 refusal does not name BIT, BIGNUM or newer DuckDB types",
-          "url": "https://github.com/javillegasna/oxedi/issues/209",
-          "kind": "good first issue",
-          "createdAt": "2026-10-14T13:25:05Z",
-          "comments": 1
         }
       ]
     },
@@ -1087,9 +777,9 @@
       ]
     },
     {
-      "repo": "rigplane/rigplane-core",
-      "slug": "rigplane--rigplane-core",
-      "lastCommitAt": "2026-11-26T23:10:16Z",
+      "repo": "mizchi/zust",
+      "slug": "mizchi--zust",
+      "lastCommitAt": "2026-11-27T12:57:09Z",
       "signals": {
         "outsidePRsMerged": 0,
         "outsidePRsCapped": false
@@ -1097,11 +787,31 @@
       "goodFirstIssueCount": 1,
       "issues": [
         {
-          "number": 3916,
-          "title": "Looking for a native Japanese speaker to review the Japanese UI translation (日本語UIの翻訳レビュー協力者募集)",
-          "url": "https://github.com/rigplane/rigplane-core/issues/3916",
+          "number": 212,
+          "title": "tests/selfhost.sh: the ast_summary step no longer builds (regions.rs / wf.rs missing from build_ast_summary.py)",
+          "url": "https://github.com/mizchi/zust/issues/212",
           "kind": "good first issue",
-          "createdAt": "2026-09-28T22:55:36Z",
+          "createdAt": "2026-11-25T19:11:51Z",
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "repo": "qianhaoq/dota2.ai",
+      "slug": "qianhaoq--dota2-ai",
+      "lastCommitAt": "2026-11-27T12:56:25Z",
+      "signals": {
+        "outsidePRsMerged": 0,
+        "outsidePRsCapped": false
+      },
+      "goodFirstIssueCount": 0,
+      "issues": [
+        {
+          "number": 164,
+          "title": "[corpus] Share a 7.42 game where the review got it wrong",
+          "url": "https://github.com/qianhaoq/dota2.ai/issues/164",
+          "kind": "help wanted",
+          "createdAt": "2026-11-20T03:33:39Z",
           "comments": 0
         }
       ]

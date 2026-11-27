@@ -10,19 +10,19 @@ languages: ["TypeScript"]
 languagePcts: [97]
 topics: ["ethereum", "graphql", "blockchain", "money-streaming", "subgraph", "the-graph", "token-streaming", "decentralized-finance", "defi", "real-time-finance"]
 stars: 16
-forks: 6
+forks: 5
 openIssues: 8
 closedIssues: 185
 watchers: 1
 contributors: 11
 recentReleases: 0
 createdAt: "2022-12-24T11:40:44Z"
-lastCommitAt: "2026-11-26T21:24:32Z"
+lastCommitAt: "2026-11-27T00:03:37Z"
 lastReleaseAt: "2026-07-30T13:10:13Z"
 status: "thriving"
 tags: ["community_hub"]
 healthScore: 99
-undervaluedScore: 75
+undervaluedScore: 74
 maintainers: ["github-actions[bot]", "PaulRBerg"]
 openGraphImageUrl: "https://repository-images.githubusercontent.com/581801142/00017717-05a6-4534-9660-06e5d3422c1b"
 discussionCount: 28

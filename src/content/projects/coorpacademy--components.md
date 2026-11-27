@@ -7,7 +7,7 @@ url: "https://github.com/CoorpAcademy/components"
 homepage: "https://coorpacademy.github.io/components/components"
 language: "JavaScript"
 languages: ["JavaScript", "TypeScript"]
-languagePcts: [60, 28]
+languagePcts: [59, 28]
 stars: 6
 forks: 6
 openIssues: 7
@@ -16,7 +16,7 @@ watchers: 13
 contributors: 55
 recentReleases: 0
 createdAt: "2015-11-27T14:48:12Z"
-lastCommitAt: "2026-11-26T18:01:44Z"
+lastCommitAt: "2026-11-27T12:01:11Z"
 lastReleaseAt: "2016-08-25T14:59:08Z"
 status: "watched"
 tags: ["solo_builder", "legacy_hero", "community_watch", "fork_magnet"]

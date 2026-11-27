@@ -12,16 +12,16 @@ forks: 50
 openIssues: 54
 closedIssues: 132
 watchers: 9
-contributors: 290
+contributors: 289
 recentReleases: 10
 createdAt: "2025-02-20T23:58:56Z"
-lastCommitAt: "2026-11-26T17:05:13Z"
+lastCommitAt: "2026-11-27T11:34:43Z"
 lastReleaseAt: "2026-10-06T21:34:48Z"
 status: "thriving"
 tags: ["hidden_gem", "release_machine", "fork_magnet"]
 healthScore: 92
 undervaluedScore: 83
-maintainers: ["semantic-release-bot", "amol-anand", "sharanyavinod"]
+maintainers: ["semantic-release-bot", "hannessolo", "dicagno"]
 openGraphImageUrl: "https://opengraph.githubassets.com/5aae36c876c3ba9afc5dd120be8c0c2a960b4b1a0bafad6ba98757589ba3e52b/adobe/da-nx"
 postedAt: "2026-10-27T09:24:29.168Z"
 ---

@@ -6,9 +6,9 @@ readmeQualityOk: true
 url: "https://github.com/JhuoW/OpenMathpix"
 language: "TypeScript"
 languages: ["TypeScript"]
-languagePcts: [77]
+languagePcts: [76]
 topics: ["latex", "mathpix", "mathpix-ocr", "paddleocr", "paddleocr-vl", "paddlepaddle", "mathpix-alternative", "latex-ocr", "latex-ocr-document-ai", "math-ocr"]
-stars: 185
+stars: 186
 forks: 29
 openIssues: 1
 closedIssues: 2
@@ -16,14 +16,14 @@ watchers: 18
 contributors: 1
 recentReleases: 5
 createdAt: "2026-03-23T12:59:26Z"
-lastCommitAt: "2026-11-14T13:35:43Z"
+lastCommitAt: "2026-11-27T08:02:20Z"
 lastReleaseAt: "2026-11-14T13:43:37Z"
 status: "thriving"
 tags: ["solo_builder", "release_machine"]
-healthScore: 77
-undervaluedScore: 24
+healthScore: 81
+undervaluedScore: 25
 maintainers: ["JhuoW"]
-openGraphImageUrl: "https://opengraph.githubassets.com/fcda9948d7d77952447eb3ba060ae0190e902f98d51b203205a56678b08fc577/JhuoW/OpenMathpix"
+openGraphImageUrl: "https://opengraph.githubassets.com/cab9f1e2d3be9ebceda6ec91c5cb6dc02c2a3fab65e32e581e0be16d317c436d/JhuoW/OpenMathpix"
 promoted: true
 postedAt: "2026-11-05T14:14:14.691Z"
 ---
