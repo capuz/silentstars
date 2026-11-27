@@ -58,5 +58,11 @@
     "issue": 126,
     "since": "2026-11-21",
     "until": "2027-02-19"
+  },
+  {
+    "repo": "jiangxingfan1-coder/EverythingConnect",
+    "issue": 140,
+    "since": "2026-11-27",
+    "until": "2027-02-25"
   }
 ]
