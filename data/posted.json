@@ -3046,5 +3046,17 @@
         "postedAt": "2026-11-27T13:08:11.077Z"
       }
     }
+  },
+  {
+    "repo": "thinpack-js/thinpack.js",
+    "slug": "thinpack-js--thinpack-js",
+    "postedAt": "2026-11-27T16:38:49.629Z",
+    "platforms": {
+      "bsky": {
+        "url": "https://bsky.app/profile/did:plc:xjtfxopnyb3cdbngayn34prj/post/3n3cmswrb4b26",
+        "postedAt": "2026-11-27T16:38:49.629Z"
+      }
+    },
+    "communityPick": true
   }
 ]
